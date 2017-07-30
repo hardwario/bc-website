@@ -1,3 +1,13 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://bigclown.com/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+languageCode = "en"
+title = "BigClown"
+
+[Languages]
+[Languages.en]
+weight = 1
+languageName = "English"
+[Languages.cs]
+weight = 2
+languageName = "Čeština"

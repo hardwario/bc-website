@@ -1,3 +1,4 @@
 ---
 title: "Kontakt"
+slug: "kontakt"
 ---

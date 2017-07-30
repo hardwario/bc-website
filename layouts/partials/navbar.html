@@ -1,0 +1,10 @@
+<div class="navbar">
+  <p>Navigation bar: {{ .Page.Lang }}</p>
+  <ul>
+    <li><a href="/{{ .Page.Lang }}/blog/">BLOG</a></li>
+    <li><a href="https://shop.bigclown.com/">SHOP</a></li>
+    <li><a href="/{{ .Page.Lang }}/doc/">DOCUMENTATION</a></li>
+    <li><a href="{{ "www/contact/" | relLangURL }}">CONTACT</a></li>
+    <li><a href="https://github.com/bigclownlabs">GITHUB</a></li>
+  </ul>
+</div>

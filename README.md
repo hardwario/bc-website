@@ -10,4 +10,5 @@ This repository contains all *main* BigClown websites.
 - Navigate to project directory `cd bc-website`.
 - Install all dependencies `npm install`.
 - Run local webserver `npm start.
+- Open browser and navigate to `localhost:1313`.
 `

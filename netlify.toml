@@ -1,2 +1,0 @@
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.25.1"

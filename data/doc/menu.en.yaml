@@ -1,0 +1,100 @@
+items:
+  - title: Introduction
+    link: README
+
+  - title: Core Module
+    items:
+    - title: Getting Started
+      link: core-module
+
+    - title: SDK Description (API)
+      link: core-module-sdk
+
+    - title: Development Setup
+      items:
+      - title: Development Setup
+        link: core-module-setup
+
+      - title: macOS Desktop
+        link: core-module-setup-macos
+
+      - title: Ubuntu Desktop
+        link: core-module-setup-ubuntu
+
+      - title: Windows Desktop
+        link: core-module-setup-windows
+
+    - title: Firmware Flashing
+      link: core-module-flashing
+
+    - title: Firmware Development
+      items:
+      - title: Firmware Development
+        link: index
+
+      - title: Getting Started and LED Blinking
+        link: uvod-a-led
+
+      - title: Button and Instance
+        link: tlacitko-a-instance
+
+    - title: API Reference
+      link: core-module-api
+
+  - title: Hardware
+    items:
+      - title: Headers & Signals
+        link: headers
+
+  - title: Reference
+    items:
+    - title: I2C Address Space
+      link: i2c-space
+
+  - title: Sample Projects
+    items:
+    - title: Smart LED Strip
+      link: smart-led-strip
+
+    - title: Easy Home Automation Programming
+      link: easy-programming
+
+    - title: Tweeting Doorbell Project
+      link: doorbell
+
+    - title: Workroom Project
+      link: workroom
+
+    - title: Bridge Project
+      link: bridge
+
+    - title: Climate Station with LED Thermometer and Dashboard
+      link: climate-station
+
+  - title: Tutorials
+    items:
+    - title: Raspberry Pi - Installation
+      link: raspberry-pi-installation
+
+    - title: Mosquitto - MQTT Broker
+      link: mosquitto
+
+    - title: Blynk - Mobile App Builder
+      link: blynk
+
+    - title: Node RED - Visual Tool for IoT
+      link: node-red
+
+    - title: IFTTT - If This Then That
+      link: ifttt
+
+  - title: Academy
+    items:
+    - title: I2C - Communication Interface
+      link: i2c
+
+    - title: MQTT - Messaging via Broker
+      link: mqtt
+
+    - title: WebSocket - Real-time Protocol
+      link: websocket

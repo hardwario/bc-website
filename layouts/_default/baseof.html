@@ -5,11 +5,11 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   </head>
   <body>
+    {{ block "navbar" . }}
+    {{ end }}
     {{ block "main" . }}
-    <!-- Blocks may include default content. -->
     {{ end }}
     {{ block "footer" . }}
-    <!-- Blocks may include default content. -->
     {{ end }}
   </body>
 </html>

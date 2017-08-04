@@ -1,0 +1,60 @@
+<hr>
+<div class="footer">
+  {{- if eq .Page.Lang "cs" }}
+  <p><strong>Kontakt</strong></p>
+  {{ partial "address.html" . }}
+  <p>
+    ask@bigclown.com<br><br>
+    +420 725 190 630
+  </p>
+  <p><strong>Odkazy</strong></p>
+  <ul>
+    <li><a href="{{ relref . "www/tos.cs.md" }}">Obchodní podmínky</a></li>
+    <li><a href="{{ relref . "www/cookies.cs.md" }}">Cookies</a></li>
+  </ul>
+  <p><strong>Podpora</strong></p>
+  <ul>
+    <li><a href="/cs/doc/">Dokumentace</a></li>
+    <li><a href="{{ relref . "www/faq.cs.md" }}">FAQ</a></li>
+    <li><a href="https://forum.bigclown.com/">Fórum</a></li>
+    <li><a href="https://github.com/bigclownlabs">GitHub</a></li>
+    <li>podpora@bigclown.cz</li>
+  </ul>
+  <p><strong>Média</strong></p>
+  <ul>
+    <li>Facebook</li>
+    <li>Twitter</li>
+    <li>YouTube</li>
+    <li>LinkedIn</li>
+    <li>Presskit</li>
+  </ul>
+  {{- else }}
+  <p><strong>Contact</strong></p>
+  {{ partial "address.html" . }}
+  <p>
+    ask@bigclown.com<br><br>
+    +420 725 190 630
+  </p>
+  <p><strong>Links</strong></p>
+  <ul>
+    <li><a href="{{ relref . "www/shopping-info.en.md" }}">Shopping Info</a></li>
+    <li><a href="{{ relref . "www/cookies.en.md" }}">Cookies</a></li>
+  </ul>
+  <p><strong>Support</strong></p>
+  <ul>
+    <li><a href="/en/doc/">Documentation</a></li>
+    <li><a href="{{ relref . "www/faq.en.md" }}">FAQ</a></li>
+    <li><a href="https://forum.bigclown.com/">Forum</a></li>
+    <li><a href="https://github.com/bigclownlabs">GitHub</a></li>
+    <li>support@bigclown.com</li>
+  </ul>
+  <p><strong>Media</strong></p>
+  <ul>
+    <li>Facebook</li>
+    <li>Twitter</li>
+    <li>YouTube</li>
+    <li>LinkedIn</li>
+    <li>Presskit</li>
+  </ul>
+  {{- end }}
+</div>

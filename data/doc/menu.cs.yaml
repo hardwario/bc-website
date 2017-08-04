@@ -1,0 +1,116 @@
+items:
+  - title: Rocestník
+    link:
+
+  - title: Úvod
+    link: introduction
+
+  - title: Koncept
+    link: concept
+
+  - title: Řízení napájení
+    link: power-management
+
+  - title: Core Module
+    items:
+    - title: Úvod
+      link: core-module
+
+    - title: Hardware
+      link: core-module-hardware
+
+    - title: SDK, Ukázky, projekty
+      link: core-module-sdk
+
+    - title: Vývojové prostředí
+      items:
+        - title: Vývojové prostředí
+          link: core-module-setup
+
+        - title: macOS
+          link: core-module-setup-macos
+
+        - title: Ubuntu
+          link: core-module-setup-ubuntu
+
+        - title: Windows
+          link: core-module-setup-windows
+
+    - title: Nahrání firmware
+      link: core-module-flashing
+
+    - title: Píšeme firmware
+      items:
+        - title: Píšeme firmware
+          link: index
+
+        - title: Úvod a rozblikání LED
+          link: uvod-a-led
+
+        - title: Tlačítko a instance
+          link: tlacitko-a-instance
+
+        - title: Digitální LED pásek
+          link: akcelerometr-a-led-pasek
+
+    - title: I2C adresní prostor
+      link: i2c-space
+
+    - title: MQTT Příkazy
+      link: mqtt-reference
+
+  - title: Přehled modulů
+    items:
+      - title: Battery + Mini Battery
+        link: modules-battery
+  - title: Vzorové projekty
+    items:
+    - title: Sigfox Detektor Pohybu
+      link: sigfox-motion-detector
+
+    - title: Smart LED Strip
+      link: smart-led-strip
+
+    - title: Jednoduché programování domácí automatizace
+      link: easy-programming
+
+    - title: Tweetovací zvonek
+      link: doorbell
+
+    - title: Bezdrátový LCD termostat
+      link: bcp-wireless-lcd-thermostat
+
+    - title: Klimastanice s LED teploměr
+      link: climate-station
+
+    - title: Počítadlo skóre
+      link: ping-pong
+
+    - title: Parkovací senzor
+      link: car-proximity-sensor
+
+  - title: Návody
+    items:
+      - title: Raspberry Pi - Instalace
+        link: raspberry-pi-installation
+
+      - title: Mosquitto - MQTT Broker
+        link: mosquitto
+
+      - title: Blynk - Ovládej moduly BigClown z mobilu
+        link: blynk
+
+      - title: Node RED - Visual Tool for IoT
+        link: node-red
+
+      - title: Grafana + InfluxDB
+        link: grafana-influxdb
+
+      - title: IFTT - If This Then That
+        link: ifttt
+
+      - title: Turris Omnia & 1.x
+        link: turris
+
+      - title: Turris Omnia LXC
+        link: turris-omnia-lxc

@@ -1,8 +1,12 @@
 baseURL = "https://bigclown.com/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+disableKinds = ["RSS", "sitemap"]
 languageCode = "en"
 title = "BigClown"
+
+[blackfriday]
+fractions = false
 
 [Languages]
 [Languages.en]

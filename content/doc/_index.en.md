@@ -1,5 +1,5 @@
 ---
-title: "Documentation Home"
+title: "Documentation Homepage"
 ---
 
 Welcome to documentation!

@@ -43,7 +43,7 @@ All direct payment gateways adhere to the standards set by PCI-DSS as managed by
 
 PCI-DSS requirements help ensure the secure handling of credit card information by our store and its service providers.
 
-For more insight, you may also want to read Shopify’s [Terms of Service](https://www.shopify.com/legal/terms) or [Privacy Statement] (https://www.shopify.com/legal/privacy).
+For more insight, you may also want to read Shopify’s [Terms of Service](https://www.shopify.com/legal/terms) or [Privacy Statement](https://www.shopify.com/legal/privacy).
 
 # SECTION 5 - THIRD-PARTY SERVICES
 

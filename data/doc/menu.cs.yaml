@@ -1,116 +1,122 @@
 items:
   - title: Rocestník
-    link:
+    link: doc/old/rozcestnik.cs.md
 
   - title: Úvod
-    link: introduction
+    link: doc/old/introduction.cs.md
 
   - title: Koncept
-    link: concept
+    link: doc/old/concept.cs.md
 
   - title: Řízení napájení
-    link: power-management
+    link: doc/old/power-management.cs.md
 
   - title: Core Module
     items:
+
     - title: Úvod
-      link: core-module
+      link: doc/old/core-module.cs.md
 
     - title: Hardware
-      link: core-module-hardware
+      link: doc/old/core-module-hardware.cs.md
 
     - title: SDK, Ukázky, projekty
-      link: core-module-sdk
+      link: doc/old/core-module-sdk.cs.md
 
     - title: Vývojové prostředí
+      link: doc/old/core-module-setup.cs.md
       items:
-        - title: Vývojové prostředí
-          link: core-module-setup
 
         - title: macOS
-          link: core-module-setup-macos
+          link: doc/old/core-module-setup-macos.cs.md
 
         - title: Ubuntu
-          link: core-module-setup-ubuntu
+          link: doc/old/core-module-setup-ubuntu.cs.md
 
         - title: Windows
-          link: core-module-setup-windows
+          link: doc/old/core-module-setup-windows.cs.md
 
     - title: Nahrání firmware
-      link: core-module-flashing
+      link: doc/old/core-module-flashing.cs.md
 
     - title: Píšeme firmware
+      link: doc/old/piseme-firmware.cs.md
       items:
-        - title: Píšeme firmware
-          link: index
 
         - title: Úvod a rozblikání LED
-          link: uvod-a-led
+          link: doc/old/uvod-a-led.cs.md
 
         - title: Tlačítko a instance
-          link: tlacitko-a-instance
+          link: doc/old/tlacitko-a-instance.cs.md
 
         - title: Digitální LED pásek
-          link: akcelerometr-a-led-pasek
+          link: doc/old/akcelerometr-a-led-pasek.cs.md
 
     - title: I2C adresní prostor
-      link: i2c-space
+      link: doc/old/i2c-space.cs.md
 
     - title: MQTT Příkazy
-      link: mqtt-reference
+      link: doc/old/mqtt-reference.cs.md
 
   - title: Přehled modulů
     items:
+
       - title: Battery + Mini Battery
-        link: modules-battery
+        link: doc/old/modules-battery.cs.md
+
   - title: Vzorové projekty
     items:
+
     - title: Sigfox Detektor Pohybu
-      link: sigfox-motion-detector
+      link: doc/old/sigfox-motion-detector.cs.md
 
     - title: Smart LED Strip
-      link: smart-led-strip
+      link: doc/old/smart-led-strip.cs.md
 
     - title: Jednoduché programování domácí automatizace
-      link: easy-programming
+      link: doc/old/easy-programming.cs.md
 
     - title: Tweetovací zvonek
-      link: doorbell
+      link: doc/old/tweetovaci-zvonek.cs.md
 
     - title: Bezdrátový LCD termostat
-      link: bcp-wireless-lcd-thermostat
+      link: doc/old/bcp-wireless-lcd-thermostat.cs.md
 
     - title: Klimastanice s LED teploměr
-      link: climate-station
+      link: doc/old/climate-station.cs.md
 
     - title: Počítadlo skóre
-      link: ping-pong
+      link: doc/old/ping-pong.cs.md
 
     - title: Parkovací senzor
-      link: car-proximity-sensor
+      link: doc/old/car-proximity-sensor.cs.md
 
   - title: Návody
     items:
+
       - title: Raspberry Pi - Instalace
-        link: raspberry-pi-installation
+        link: doc/old/raspberry-pi-installation.cs.md
 
       - title: Mosquitto - MQTT Broker
-        link: mosquitto
+        link: doc/old/mosquitto.cs.md
 
       - title: Blynk - Ovládej moduly BigClown z mobilu
-        link: blynk
+        link: doc/old/blynk.cs.md
 
       - title: Node RED - Visual Tool for IoT
-        link: node-red
+        link: doc/old/node-red.cs.md
 
       - title: Grafana + InfluxDB
-        link: grafana-influxdb
+        link: doc/old/grafana-influxdb.cs.md
 
       - title: IFTT - If This Then That
-        link: ifttt
+        link: doc/old/ifttt.cs.md
 
       - title: Turris Omnia & 1.x
-        link: turris
+        link: doc/old/turris.cs.md
 
       - title: Turris Omnia LXC
-        link: turris-omnia-lxc
+        link: doc/old/turris-omnia-lxc.cs.md
+
+      - title: MySigfox.com tutoriál
+        link: doc/old/mysigfox.com-tutorial.cs.md

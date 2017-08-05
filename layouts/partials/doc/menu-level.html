@@ -1,0 +1,14 @@
+{{ $page := .page }}
+<ul>
+{{- range .context }}
+  <li>
+  {{- $title := .title | default "(Untitled)" }}
+  {{- if .link }}
+    <span><a href="{{ relref $page .link }}">{{ $title }}</a></span>
+  {{- else }}
+    <span>{{ $title }}</span>
+  {{- end -}}
+  {{ with .items -}}{{- partial "doc/menu-level.html" (dict "context" . "page" $page) -}}{{- end }}
+  </li>
+{{- end }}
+</ul>

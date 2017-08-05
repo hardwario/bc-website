@@ -1,100 +1,95 @@
 items:
+
   - title: Introduction
-    link: README
+    link: doc/old/introduction.en.md
 
   - title: Core Module
     items:
+
     - title: Getting Started
-      link: core-module
+      link: doc/old/core-module.en.md
 
     - title: SDK Description (API)
-      link: core-module-sdk
+      link: doc/old/core-module-sdk.en.md
 
     - title: Development Setup
+      link: doc/old/core-module-setup.en.md
       items:
-      - title: Development Setup
-        link: core-module-setup
 
       - title: macOS Desktop
-        link: core-module-setup-macos
+        link: doc/old/core-module-setup-macos.en.md
 
       - title: Ubuntu Desktop
-        link: core-module-setup-ubuntu
+        link: doc/old/core-module-setup-ubuntu.en.md
 
       - title: Windows Desktop
-        link: core-module-setup-windows
+        link: doc/old/core-module-setup-windows.en.md
 
     - title: Firmware Flashing
-      link: core-module-flashing
-
-    - title: Firmware Development
-      items:
-      - title: Firmware Development
-        link: index
-
-      - title: Getting Started and LED Blinking
-        link: uvod-a-led
-
-      - title: Button and Instance
-        link: tlacitko-a-instance
+      link: doc/old/core-module-flashing.en.md
 
     - title: API Reference
-      link: core-module-api
+      link: doc/old/core-module-api.en.md
 
   - title: Hardware
     items:
+
       - title: Headers & Signals
-        link: headers
+        link: doc/old/headers.en.md
 
   - title: Reference
     items:
+
     - title: I2C Address Space
-      link: i2c-space
+      link: doc/old/i2c-space.en.md
 
   - title: Sample Projects
     items:
+
     - title: Smart LED Strip
-      link: smart-led-strip
+      link: doc/old/smart-led-strip.en.md
 
     - title: Easy Home Automation Programming
-      link: easy-programming
+      link: doc/old/easy-programming.en.md
 
     - title: Tweeting Doorbell Project
-      link: doorbell
+      link: doc/old/doorbell.en.md
 
     - title: Workroom Project
-      link: workroom
+      link: doc/old/workroom.en.md
 
     - title: Bridge Project
-      link: bridge
+      link: doc/old/bridge.en.md
 
     - title: Climate Station with LED Thermometer and Dashboard
-      link: climate-station
+      link: doc/old/climate-station.en.md
 
   - title: Tutorials
     items:
+
     - title: Raspberry Pi - Installation
-      link: raspberry-pi-installation
+      link: doc/old/raspberry-pi-installation.en.md
 
     - title: Mosquitto - MQTT Broker
-      link: mosquitto
+      link: doc/old/mosquitto.en.md
 
     - title: Blynk - Mobile App Builder
-      link: blynk
+      link: doc/old/blynk.en.md
 
     - title: Node RED - Visual Tool for IoT
-      link: node-red
+      link: doc/old/node-red.en.md
 
     - title: IFTTT - If This Then That
-      link: ifttt
+      link: doc/old/ifttt.en.md
 
   - title: Academy
     items:
+
     - title: I2C - Communication Interface
-      link: i2c
+      link: doc/old/i2c.en.md
 
     - title: MQTT - Messaging via Broker
-      link: mqtt
+      link: doc/old/mqtt.en.md
 
     - title: WebSocket - Real-time Protocol
-      link: websocket
+      link: doc/old/websocket.en.md

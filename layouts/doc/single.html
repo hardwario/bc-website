@@ -1,0 +1,20 @@
+{{- define "navbar" }}
+{{- partial "navbar.html" . }}
+{{- end }}
+
+{{- define "main" }}
+{{- partial "doc/menu.html" . }}
+{{- partial "translations.html" . }}
+<main aria-role="main">
+  <header class="page-header">
+    <h1 id="title">{{ .Title }}</h1>
+  </header>
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+</main>
+{{ end }}
+
+{{ define "footer"}}
+{{ partial "footer.html" . }}
+{{ end }}

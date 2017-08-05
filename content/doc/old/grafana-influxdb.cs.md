@@ -198,6 +198,6 @@ sudo apt install mosquitto mosquitto-clients -y
 
   * Nyní bys měl vidět naměřené hodnoty.
 
-  ![](images/climate-station/grafana.png)
+  ![](grafana.png)
 
 

@@ -25,17 +25,17 @@ Tato jednotka je zodpovědná za řízení LED pásku a bezdrátový příjem da
 Přijatá data jsou z Base jednotky přenášena do Raspberry Pi, kde se vyhodnotí a dle definovaných pravidel se nastaví požadované barvy LED pásku.
 Jednotku Base lze použít samostatně nezávisle na Remote, např. pouze pro ovládání světla a silového relé z mobilu.
 
-![](images/smart-led-strip/unit-base.png)
+![](unit-base.png)
 
 ### Remote jednotka
 
 Jednotka Remote je napájena z baterií a s Base komunikuje bezdrátově ve frekvenčním pásmu 868 MHz. Remote se stará o měření hodnot teploty a vlhkosti, které jsou každých 30 s vysílány a přijímány jednotkou Base. Tlačítko boot na Core modulu lze použít pro dálkové ovládání (zapínání / vypínání LED pásku).
 
-![](images/smart-led-strip/unit-remote.png)
+![](unit-remote.png)
 
 Celý koncept popisuje následující diagram:
 
-![](images/smart-led-strip/block-diagram.png)
+![](block-diagram.png)
 
 
 ## Co všechno k projektu potřebuješ
@@ -69,7 +69,7 @@ Remote unit:
 * 1x Napájecí adaptér 5V/3A pro Power Modul
 
 
-![](images/smart-led-strip/smart-led-strip-set.png)
+![](smart-led-strip-set.png)
 
 Dále budeš potřebovat:
 
@@ -83,44 +83,44 @@ Dále budeš potřebovat:
 
 1. Sestav si Base jednotku:
 
-   ![](images/smart-led-strip/build-base.png)
+   ![](build-base.png)
 
 2. Sestav si Remote jednotku:
 
-   ![](images/smart-led-strip/build-remote.png)
+   ![](build-remote.png)
 
 3. Připoj LED pásek k Base jednotce:
 
-   ![](images/smart-led-strip/connect-led-strip.png)
+   ![](connect-led-strip.png)
 
 4. Připoj MicroUSB kabelem Base jednotku k Raspberry Pi:
 
-   ![](images/smart-led-strip/connect-base-to-rpi.png)
+   ![](connect-base-to-rpi.png)
 
 5. Připoj Ethernet kabel k Raspberry Pi:
 
-   ![](images/smart-led-strip/connect-ethernet-to-rpi.png)
+   ![](connect-ethernet-to-rpi.png)
 
 6. Připoj napájecí adaptér k Base jednotce:
 
-   ![](images/smart-led-strip/connect-power-to-base.png)
+   ![](connect-power-to-base.png)
 
 7. Připoj napájecí adaptér k Raspberry Pi:
 
-   ![](images/smart-led-strip/connect-power-to-rpi.png)
+   ![](connect-power-to-rpi.png)
 
 8. Vlož baterie do Remote jednotky:
 
-   ![](images/smart-led-strip/insert-batteries.png)
+   ![](insert-batteries.png)
 
 9. Aktivuj párovací mód na Base jednotce:
 
-   ![](images/smart-led-strip/pairing-base.png)
+   ![](pairing-base.png)
 
    Zmáčkni a drž tlačítko BOOT (označeno písmenem *B*) na Core modulu Base jednotky dokud červená LED na Core Modulu nezačne blikat.
    Párovací mód na Base jednotce je aktivní dokud nepřijme párovací signál z      Remote jednotky.
 
-   ![](images/smart-led-strip/core-module-boot-button.png)
+   ![](core-module-boot-button.png)
 
 10. *Vyšli párovací signál z remote jednotky*
 
@@ -128,7 +128,7 @@ Dále budeš potřebovat:
     BOOT tlačítko na Core modulu je označeno písmenem "B".
     Nyní došlo k odeslání párovacího signálu a LED na Base jednotce přestane blikat.
 
-    ![](images/smart-led-strip/pairing-remote.png)
+    ![](pairing-remote.png)
 
 11. Zapni světlo na LED pásku:
 
@@ -136,7 +136,7 @@ Dále budeš potřebovat:
     Zhasnutí světla lze provézt opětovným stiskem tlačítka BOOT.
     Nyní se systém nachází v tzv. režimu “rules”, kdy reaguje na překročení přednastavených hodnot teploty a vlhkosti změnou barvy [**(podrobněji viz dále)**](https://doc.bigclown.cz/smart-led-strip.html#použití-led-pásku-pro-indikaci-hodnot-teploty-a-vlhkosti)
 
-    ![](images/smart-led-strip/turn-on-light.png)
+    ![](turn-on-light.png)
 
 
 ## Rychlý test a oživení pomocí konzole
@@ -163,7 +163,7 @@ Pro ověření funkce systému a komunikaci s MQTT brokerem se připoj k Raspber
    V poli “*Saved Sessions*” si můžeš konfiguraci uložit pro opakované použití stiskem “*Save*”.
    Připojení zahájíš stiskem tlačítka “*Open*”.
 
-   ![](images/smart-led-strip/putty.png)
+   ![](putty.png)
 
    **V Linuxu a MacOS:**
 
@@ -174,7 +174,7 @@ Pro ověření funkce systému a komunikaci s MQTT brokerem se připoj k Raspber
    Výchozí heslo je "raspberry".
    Po úspěšném zadání hesla bys měl vidět odpověď podobnou příkladu:
 
-   ![](images/smart-led-strip/rpi-connected.png)
+   ![](rpi-connected.png)
 
 4.  Než se pustíš do testování a následujících kroků je nutné aktualizovat SW balíčky v Raspberry Pi (aktualizuje BigClown komponenty):
 
@@ -216,7 +216,7 @@ Doporučujeme zkusit alespoň několik prvních příkazů pro otestování funk
 
 5.  Nastav bílé světlo:
 
-    ![](images/smart-led-strip/rgbw.png)
+    ![](rgbw.png)
 
     ```
     mosquitto_pub -t "plugin/led-strip/color/set" -m '"#000000(ff)"'
@@ -387,22 +387,22 @@ Ujisti se, že máš v Blynku dostatek volné energie, [viz bod 5](https://doc.b
 
 Ovládání LED pásku a intenzity, volba barvy a intenzity bílé složky, spínání relé a indikace aktuální hodnot teploty a vlhkosti (vyžaduje 2000 bodů energie):
 
-![](images/smart-led-strip/blynk-project-smart-led-1.png)
+![](blynk-project-smart-led-1.png)
 
 QR kód pro naklonování:
 
-![](images/smart-led-strip/blynk-project-smart-led-1-QR.png)
+![](blynk-project-smart-led-1-QR.png)
 
 
 **Projekt Smart LED Strip 2: **
 
 Spínání LED pásku a relé, nastavení intenzity LED, indikace aktuální hodnot teploty a vlhkosti a zobrazení grafu historie hodnot (vyžaduje 2000 bodů energie):
 
-![](images/smart-led-strip/blynk-project-smart-led-2.png)
+![](blynk-project-smart-led-2.png)
 
 QR kód pro naklonování:
 
-![](images/smart-led-strip/blynk-project-smart-led-2-QR.png)
+![](blynk-project-smart-led-2-QR.png)
 
 
 **Projekt Smart LED Strip 3: **
@@ -411,12 +411,12 @@ Všechny funkce i grafy v jednom projektu (vyžaduje 5000 bodů energie).
 V projektu jsou použita také uživatelská tlačítka pro vyvolání rychlých předvoleb.
 Pro jejich zprovoznění je nutné upravit konfigurační soubor *etc/bigclown/plugin/led-strip.user* [dle bodu 5.1](https://doc.bigclown.cz/smart-led-strip.html#přidání-uživatelských-tlačítek-pro-vyvolání-scénických-režimů)
 
-![](images/smart-led-strip/blynk-project-smart-led-3-a.png)
-![](images/smart-led-strip/blynk-project-smart-led-3-b.png)
+![](blynk-project-smart-led-3-a.png)
+![](blynk-project-smart-led-3-b.png)
 
 QR kód pro naklonování:
 
-![](images/smart-led-strip/blynk-project-smart-led-3-QR.png)
+![](blynk-project-smart-led-3-QR.png)
 
 ### Přidání uživatelských tlačítek pro vyvolání scénických režimů
 Rychlé předvolby pro RGBW LED pásek lze definovat pomocí konfiguračního souboru uloženého v Raspberry Pi: *"etc/bigclown/plugin/led-strip.user"*.

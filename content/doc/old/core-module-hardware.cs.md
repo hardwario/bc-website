@@ -7,7 +7,7 @@ Popis pinů budeš potřebovat, pokud budeš zapojovat nějaké vlastní extern�
 Pokud budeš používat tagy a moduly, tak ty mají v SDK své vlastní piny a nemusíš se o ně starat.
 
 
-![](images/core-module/core-module.png)
+![](core-module.png)
 
 Piny označené jako **Px** jsou zapojeny pouze k mikrokontroléru.
 Nejsou připojené k žádným jiným obvodům na Core Module a jsou tedy k dispozici pro tvoji aplikaci.
@@ -84,7 +84,7 @@ Formát **Module** je definován:
 ### Schéma Module
 
 
-![](images/headers/module.png)
+![](module.png)
 
 
 ### Signály Module
@@ -173,7 +173,7 @@ Formát **Tag** je definován:
 ### Schéma Tagu
 
 
-![](images/headers/tag.png)
+![](tag.png)
 
 
 ### Signály Tagu

@@ -106,7 +106,7 @@ This concludes the exchange.
 
 With respect to QoS, the broker sends the message on the level that it was received, with the option of lowering the level if the client can only handle a lower level.
 
-![](images/mqtt/mqtt-qos-levels.png)
+![](mqtt-qos-levels.png)
 
 In addition to QoS, a message can also set the retain flag, i.e. a symbol that says that the broker should not delete the message after sending, but should save it and send it to new subscribers for the given topic.
 The broker always sends the last saved message with a retain flag.
@@ -130,12 +130,12 @@ The switch will be the publisher, and it will publish in the topic room/switch (
 
 Something like this:
 
-![](images/mqtt/mqtt-pub-sub-simple.png)
+![](mqtt-pub-sub-simple.png)
 
 The second approach is more complex and requires a certain amount of intelligence.
 The bulb need not listen only to the switch; the pathway may include a minimal amount of intelligence that evaluates messages from publishers and based on these sends instructions to subscribers.
 
-![](images/mqtt/mqtt-pub-sub-extended.png)
+![](mqtt-pub-sub-extended.png)
 
 With this kind of arrangement it is much easier to give the entire system another level of abstraction.
 We can easily logically rearrange the entire system if necessary or add logic that the devices themselves do not implement - for example a step switch with a timer, or a “cross” switch where we control one light from multiple places, or other intelligent behavior.

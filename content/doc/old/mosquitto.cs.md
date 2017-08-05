@@ -112,4 +112,4 @@ Po instalaci zadej IP adresu tvého MQTT brokeru a přihlaš se k tématům nebo
 > **Tip** Tento nástroj podporuje přihlašovací skripty psané v JavaScriptu.
 >         Tímto si můžeš zautomatizovat tvé úlohy.
 
-![](images/mosquitto/mqtt-spy.png)
+![](mqtt-spy.png)

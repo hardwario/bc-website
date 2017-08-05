@@ -17,7 +17,7 @@ Oba moduly slouží pro napájení BigClown komponent z baterií. Jelikož jsou 
 
 ## Battery Module
 
-![](images/modules/battery-module.png)
+![](battery-module.png)
 
 **Specifické vlastnosti**:
 - Vstup 4x AAA (6.0 V)
@@ -35,7 +35,7 @@ Ze spodní strany jsou vyvedeny piny pouze pro NFC Module, jiné komponenty do n
 
 ## Mini Battery Module
 
-![](images/modules/mini-battery-module.png)
+![](mini-battery-module.png)
 
 **Specifické vlastnosti**:
 - Vstup 2x AAA (3.0 V)

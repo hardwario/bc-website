@@ -36,7 +36,7 @@ Remote unit is a battery-operated wireless node measuring temperature and humidi
 
 The whole concept is best described by the following diagram:
 
-![](images/workroom/block-diagram.png)
+![](block-diagram.png)
 
 
 ## Requirements
@@ -61,7 +61,7 @@ Individual components in the set are:
 * 1x Power adapter for Raspberry Pi 3
 * 1x Power adapter for Power Module
 
-![](images/workroom/workroom-set.png)
+![](workroom-set.png)
 
 You will also need:
 
@@ -82,42 +82,42 @@ You can also follow these step by step instructions:
 
 1. *Build your Remote unit*
 
-   ![](images/workroom/build-remote.png)
+   ![](build-remote.png)
 
 2. *Build your Base unit*
 
-   ![](images/workroom/build-base.png)
+   ![](build-base.png)
 
 3. *Connect LED strip to Base unit*
 
-   ![](images/workroom/connect-led-strip.png)
+   ![](connect-led-strip.png)
 
 4. *Connect Base unit to Raspberry Pi using MicroUSB cable*
 
-   ![](images/workroom/connect-base-to-rpi.png)
+   ![](connect-base-to-rpi.png)
 
 5. *Connect Ethernet cable to Raspberry Pi*
 
-   ![](images/workroom/connect-ethernet-to-rpi.png)
+   ![](connect-ethernet-to-rpi.png)
 
 6. *Connect power adapter to Base unit and plug it to AC-line*
 
-   ![](images/workroom/connect-power-to-base.png)
+   ![](connect-power-to-base.png)
 
 7. *Connect power adapter to Raspberry Pi and plug it to AC-line*
 
-   ![](images/workroom/connect-power-to-rpi.png)
+   ![](connect-power-to-rpi.png)
 
 8. *Insert batteries to your Remote unit*
 
-   ![](images/workroom/insert-batteries.png)
+   ![](insert-batteries.png)
 
 9. *Activate pairing mode on Base unit*
 
    Press and hold BOOT button on Core Module of Base unit until red LED on Core Module starts blinking.
    BOOT button is marked on Core Module with letter "B". Pairing mode on Base unit is now active until pairing signal is received from the Remote unit.
 
-![](images/workroom/pairing-base.png)
+![](pairing-base.png)
 
 10. *Transmit pairing signal on Remote unit*
 
@@ -125,14 +125,14 @@ You can also follow these step by step instructions:
     BOOT button is marked on Core Module with letter "B".
     Now pairing signal has been sent and Remote unit should stop blinking.
 
-    ![](images/workroom/pairing-remote.png)
+    ![](pairing-remote.png)
 
 11. *Turn on the light*
 
     Shortly press BOOT button either on Base unit or Remote unit to turn on the light.
     You can use this button any time you will want to turn the LED strip on or off.
 
-    ![](images/workroom/turn-on-light.png)
+    ![](turn-on-light.png)
 
 
 * You can see pairing setup and testing the functionality in this short video:
@@ -345,8 +345,8 @@ Everybody likes different environment so the preset thresholds for temperature a
 
 2. Run Blynk and select **Create new project**. and give it a name (e.g. “Workroom Project”) and select **Generic Board** as a hardware.
 
-   ![](images/workroom/blynk-create-project-1.png)
-   ![](images/workroom/blynk-create-project-2.png)
+   ![](blynk-create-project-1.png)
+   ![](blynk-create-project-2.png)
 
 3. Write down your Auth Token (or let the application to send it to you by e-mail).
 
@@ -357,26 +357,26 @@ Everybody likes different environment so the preset thresholds for temperature a
   ```
 4. Create widgets for temperature and humidity sensors
 
-   ![](images/workroom/blynk-value-temperature.png)
-   ![](images/workroom/blynk-value-humidity.png)
+   ![](blynk-value-temperature.png)
+   ![](blynk-value-humidity.png)
 
 5. Create widgets for History Graph and slider for brightness
 
-   ![](images/workroom/blynk-history-graph.png)
-   ![](images/workroom/blynk-slider-brightness.png)
+   ![](blynk-history-graph.png)
+   ![](blynk-slider-brightness.png)
 
 6. Create button widgets for light and relay
 
-   ![](images/workroom/blynk-button-light.png)
-   ![](images/workroom/blynk-button-relay.png)
+   ![](blynk-button-light.png)
+   ![](blynk-button-relay.png)
 
 7. Create widget zeRGBa
 
-   ![](images/workroom/blynk-zergba.png)
+   ![](blynk-zergba.png)
 
 8. Now you have a working Blynk dashboard.
 
-   ![](images/workroom/blynk-dashboard.png)
+   ![](blynk-dashboard.png)
 
    > **Note** When you click on the white dot switches back to the rules
 

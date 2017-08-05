@@ -10,7 +10,7 @@ Už nikdy tvoje manželka nebo přítelkyně nemusí narazit do stěny. :-)
 
 ## Funkčnost
 
-![Diagram](images/car-proximity-sensor/diagram.png)
+![Diagram](diagram.png)
 
 Jako senzor pohybu je použit ultrazvukový senzor HC-SR04P, který je schopný pracovat na 3,3V logice (některé senzory to nepodporují a musíš to zjistit z dokumentace), což je pro nás ideální.
 Z něho jdou data do Core Modulu, kde proběhne vyhodnocení a graficky promítne vzdálenost auta od senzoru do LED pásku.
@@ -39,19 +39,19 @@ Jsou velmi spolehlivé i ve znečištěném prostředí.
 
 1. Začni s Base Modulem.
 
-    ![Diagram](images/car-proximity-sensor/1-Base.png)
+    ![Diagram](1-Base.png)
 
 2. Na Base Module nasaď Power Module.
 
-    ![](images/car-proximity-sensor/2-Base-Power.png)
+    ![](2-Base-Power.png)
 
-    ![](images/car-proximity-sensor/3-Base-Power.png)
+    ![](3-Base-Power.png)
 
 3. Na Power Module nasaď Core Module.
 
-    ![](images/car-proximity-sensor/4-Base-Power-Core.png)
+    ![](4-Base-Power-Core.png)
 
-    ![](images/car-proximity-sensor/5-Base-Power-Core.png)
+    ![](5-Base-Power-Core.png)
 
 4. Propoj senzor s Core Modulem:
     - *Napájení* zapoj na **PIN 16 (VDD)**
@@ -59,7 +59,7 @@ Jsou velmi spolehlivé i ve znečištěném prostředí.
     - *Trigger* zapoj na **PIN 10 (P9)**
     - *Echo* zapoj na **PIN 9 (P8)**
 
-    ![Pinout](images/car-proximity-sensor/6-Base-Power-Core-Ultrasonic.png)
+    ![Pinout](6-Base-Power-Core-Ultrasonic.png)
 
 5. Zapoj LED pásek do Power Modulu
 6. Zkompiluj a nahraj firmware ([GitHub repozitář k projektu](https://github.com/bigclownlabs/bcp-car-proximity-sensor))

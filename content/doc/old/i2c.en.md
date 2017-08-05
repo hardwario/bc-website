@@ -39,7 +39,7 @@ There are several types of serial buses (1-Wire, SPI, I²C, ...) that vary in te
 
 In our case a pair of signals are used for connection, SCL (Synchronous Clock) and SDA (Synchronous Data). The I²C bus always has one control device (usually a microcontroller called Master) and several controlled devices (Slaves).
 
-![](images/i2c/i2c.png)
+![](i2c.png)
 
 In theory the I²C bus can connect up to 128 devices (but in reality certain addresses are reserved for special purposes).
 To clearly indicate which one it is communicating with, each device has an address ranging from 0-127 (Ox7F), i.e. seven bit.

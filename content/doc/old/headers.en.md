@@ -34,7 +34,7 @@ Format **Module** defines:
 ### Module Drawing
 
 
-![](images/headers/module.png)
+![](module.png)
 
 
 ### Module Signals
@@ -123,7 +123,7 @@ Format **tag** defines:
 ### Tag Drawing
 
 
-![](images/headers/tag.png)
+![](tag.png)
 
 
 ### Tag Signals

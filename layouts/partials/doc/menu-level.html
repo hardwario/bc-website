@@ -8,7 +8,7 @@
   {{- else }}
     <span>{{ $title }}</span>
   {{- end -}}
-  {{ with .items -}}{{- partial "doc/menu-level.html" (dict "context" . "page" $page) -}}{{- end }}
+  {{- with .items -}}{{- partial "doc/menu-level.html" (dict "context" . "page" $page) -}}{{- end }}
   </li>
 {{- end }}
 </ul>

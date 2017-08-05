@@ -119,7 +119,7 @@ If you configured and started your Node RED, open browser on &lt;raspiAddress&gt
 * Twitter out block
 
 
-![](images/doorbell/flow.png)
+![](flow.png)
 
 
 You can also import the saved Node RED json below.
@@ -137,7 +137,7 @@ Then you can skip the next steps explaining how to setup each block, except the 
 This block connects to the MQTT broker and listens for the messages.
 Set the correct server address and topic.
 
-![](images/doorbell/mqtt.png)
+![](mqtt.png)
 
 
 ### JSON block
@@ -151,7 +151,7 @@ No configuration there
 
 This block transforms MQTT message into the text for Twitter.
 
-![](images/doorbell/message.png)
+![](message.png)
 
 
 ### Twitter out block
@@ -166,11 +166,11 @@ You will need to set the Twitter block to your credentials.
 Now you press `Deploy` in the top right corner.
 When you press the Core Module button you should see `tweeting` text near the Tweet block for a fraction of the second.
 
-![](images/doorbell/tweeting.png)
+![](tweeting.png)
 
 Congratulations! You've made a new project.
 
-![Twitter screenshot](images/doorbell/twitter_screenshot.png)
+![Twitter screenshot](twitter_screenshot.png)
 
 
 ## Debugging
@@ -180,4 +180,4 @@ In case something is not working.
 You can use Debug block and connect it somewhere in the chain.
 Then deploy the flow again, make sure that the green flag on the block is on and switch to the debug output tab on the right panel.
 
-![Debugging](images/doorbell/debug.png)
+![Debugging](debug.png)

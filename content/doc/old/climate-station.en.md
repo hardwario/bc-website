@@ -8,7 +8,7 @@
 Climate station is one of the basic elements of home automation.
 Information about temperature, humidity, atmospheric pressure and CO2 concentration are needed to ensure proper living conditions and the thermal comfort of your home or office.
 
-![](images/climate-station/LED-cable-on.png)
+![](LED-cable-on.png)
 
 The basis of this project is unit assembled from:
 
@@ -36,7 +36,7 @@ You will also need:
 3. Insert Barometer and Humidity Tags to Power Module's 5-pin sockets
 4. Insert Lux Meter Tag to lower right corner of Core Module
 
-![](images/climate-station/clima-station.png)
+![](clima-station.png)
 
 5. Connect LED Thermometer to Power Module
 6. Connect AC adapter to Power Module
@@ -219,6 +219,6 @@ sudo systemctl start mqtt_to_influxdb.service
 
   * You should see measured data.
 
-  ![](images/climate-station/grafana.png)
+  ![](grafana.png)
 
 

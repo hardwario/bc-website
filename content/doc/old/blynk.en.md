@@ -13,11 +13,11 @@ This tutorial will show you how to connect to BigClown.Hub remotely from your sm
 
 2. Run Blynk and select **Create new project**.
 
-   ![](images/blynk/blynk-create-project-1.png)
+   ![](blynk-create-project-1.png)
 
 3. Give it a name (e.g. “bigclown demo”) and select **Generic Board** as a hardware.
 
-   ![](images/blynk/blynk-create-project-2.png)
+   ![](blynk-create-project-2.png)
 
 4. Write down your Auth Token (or let the application to send it to you by e-mail).
 
@@ -27,26 +27,26 @@ This tutorial will show you how to connect to BigClown.Hub remotely from your sm
 
    Set output as virtual pin V1 (see below for pin assignment).
 
-   ![](images/blynk/blynk-menu-led-1.png)
+   ![](blynk-menu-led-1.png)
 
 6. Create selections “on”, “off”, “1 dot”, “2 dot”, and “3 dot” as menu items.
 
-   ![](images/blynk/blynk-menu-led-2.png)
+   ![](blynk-menu-led-2.png)
 
 7. Create relay button on pin V19.
 
-   ![](images/blynk/blynk-button-relay.png)
+   ![](blynk-button-relay.png)
 
 8. Create widgets for your sensors, i.e. humidity, temperature, lux-meter and barometer.
 
-   ![](images/blynk/blynk-value-humidity.png)
-   ![](images/blynk/blynk-value-temperature.png)
-   ![](images/blynk/blynk-value-lux-meter.png)
-   ![](images/blynk/blynk-value-barometer.png)
+   ![](blynk-value-humidity.png)
+   ![](blynk-value-temperature.png)
+   ![](blynk-value-lux-meter.png)
+   ![](blynk-value-barometer.png)
 
 7. Now you have a working Blynk dashboard.
 
-   ![](images/blynk/blynk-dashboard.png)
+   ![](blynk-dashboard.png)
 
 > **Tip** If you will contend with busy state of the virtual pin, then you should simply logout and login to Blynk app again.
 

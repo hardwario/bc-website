@@ -1,6 +1,6 @@
 # Sigfox Detektor Pohybu
 
-![Obrázek BigClown Sigfox Detektor Pohybu - krabička](images//sigfox-motion-detector/sigfox-motion-detector-enclosures.png)
+![Obrázek BigClown Sigfox Detektor Pohybu - krabička](sigfox-motion-detector/sigfox-motion-detector-enclosures.png)
 
 
 ## Úvod
@@ -28,7 +28,7 @@ Služba Twilio umožňuje odeslat SMS zprávu s libovolným textem na zadané te
 * Domácí automatizace (spuštění akce na průchod chodbou, apod.)
 
 
-![Obrázek detekce PIR](images/sigfox-motion-detector/fresnel-lens.jpg)
+![Obrázek detekce PIR](fresnel-lens.jpg)
 
 
 ### Co je to Sigfox
@@ -63,7 +63,7 @@ Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy
 _Sigfox Module musí být včetně [předplacené konektivity na 3 roky](https://obchod.bigclown.cz/products/sigfox-module-predplatne-na-3-roky)._
 
 
-![Obrázek BigClown Sigfox Detektor Pohybu - rozložené moduly](images//sigfox-motion-detector/sigfox-motion-detector-set.png)
+![Obrázek BigClown Sigfox Detektor Pohybu - rozložené moduly](sigfox-motion-detector/sigfox-motion-detector-set.png)
 
 #### Internetové účty
 
@@ -86,24 +86,24 @@ _Sigfox Module musí být včetně [předplacené konektivity na 3 roky](https:/
 
 2. Začněte s Mini Battery Module.
 
-   ![Obrázek Mini Battery Module](images//sigfox-motion-detector/sf-md-mbm.png)
+   ![Obrázek Mini Battery Module](sigfox-motion-detector/sf-md-mbm.png)
 
 3. Připojte Sigfox Module.
 
-   ![Obrázek Mini Battery Module, Core Module, Sigfox Module](images//sigfox-motion-detector/sf-md-mbm-sf.png)
+   ![Obrázek Mini Battery Module, Core Module, Sigfox Module](sigfox-motion-detector/sf-md-mbm-sf.png)
 
 4. Připojte Core Module.
 
-   ![Obrázek Mini Battery Module a Core Module](images//sigfox-motion-detector/sf-md-mbm-sf-core.png)
+   ![Obrázek Mini Battery Module a Core Module](sigfox-motion-detector/sf-md-mbm-sf-core.png)
 
 
 5. Připojte PIR Module.
 
-   ![Obrázek Mini Battery Module, Core Module, Sigfox Module, PIR Module](images//sigfox-motion-detector/sf-md-mbm-sf-core-pir.png)
+   ![Obrázek Mini Battery Module, Core Module, Sigfox Module, PIR Module](sigfox-motion-detector/sf-md-mbm-sf-core-pir.png)
 
 6. Připojte USB kabel do Core Module.
 
-   ![Obrázek Sigfox Detektor Pohybu - zapojení USB](images//sigfox-motion-detector/sf-md-mbm-sf-core-pir-usb.png)
+   ![Obrázek Sigfox Detektor Pohybu - zapojení USB](sigfox-motion-detector/sf-md-mbm-sf-core-pir-usb.png)
 
 7. Nahrajte firmware do Core Module.
 
@@ -117,7 +117,7 @@ _Sigfox Module musí být včetně [předplacené konektivity na 3 roky](https:/
 
 8. Vložte alkalické baterie do Mini Battery Module.
 
-   ![Obrázek Sigfox Detektor Pohybu - vložení baterií](images//sigfox-motion-detector/sf-md-mbm-sf-core-pir-bat.png)
+   ![Obrázek Sigfox Detektor Pohybu - vložení baterií](sigfox-motion-detector/sf-md-mbm-sf-core-pir-bat.png)
 
 9. Zkontrolujte, že se LED na Core Module na 30 sekund rozsvítí.
 
@@ -161,9 +161,9 @@ Podle těchto kroků zprovozníte odesílání SMS pro pohybový detektor:
      * **Twilio Token** - autentizační token
      * **Twilio Phone Number** - telefonní číslo ze kterého je možné odesílat SMS
 
-   ![Obrázek služby Twilio - účet](images/sigfox-motion-detector/twilio-account.png)
+   ![Obrázek služby Twilio - účet](twilio-account.png)
 
-   ![Obrázek služby Twilio - čísla](images/sigfox-motion-detector/twilio-numbers.png)
+   ![Obrázek služby Twilio - čísla](twilio-numbers.png)
 
 2. Aktivujte aplikaci BigClown Motion
 
@@ -181,7 +181,7 @@ Podle těchto kroků zprovozníte odesílání SMS pro pohybový detektor:
    _Používejte pouze mezinárodní formát telefonního čísla bez mezer.
    Příklad: +447481342988_
 
-   ![Obrázek aplikace BigClown Motion](images/sigfox-motion-detector/application-bigclown-motion.png)
+   ![Obrázek aplikace BigClown Motion](application-bigclown-motion.png)
 
 3. Nastavte službu MySigfox
 
@@ -195,7 +195,7 @@ Podle těchto kroků zprovozníte odesílání SMS pro pohybový detektor:
    * **E-mail** - váš e-mail (pro využití v případě nutnosti kontaktu provozovatele služby s vámi)
    * **Webhook URL** - vyplňte adresu `https://motion.bigclown.com/update`
 
-   ![Obrázek služby MySigfox](images/sigfox-motion-detector/service-mysigfox.png)
+   ![Obrázek služby MySigfox](service-mysigfox.png)
 
 
 ## Závěr

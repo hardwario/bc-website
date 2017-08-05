@@ -112,4 +112,4 @@ After installation connect to your MQTT's broker IP address and subscribe to top
 > **Tip** This tool supports subscription scripts written in JavaScript.
 >         You can automate your tasks with this feature.
 
-![](images/mosquitto/mqtt-spy.png)
+![](mqtt-spy.png)

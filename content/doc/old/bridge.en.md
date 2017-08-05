@@ -24,7 +24,7 @@ You can also control relay through this web dashboard (with Relay Module) and co
 
 The hardware concept is best described by the following diagram:
 
-![](images/bridge/block-diagram.png)
+![](block-diagram.png)
 
 
 ## Requirements
@@ -46,7 +46,7 @@ Individual components in the set are:
 * 1x Enclosure for Raspberry Pi 3
 * 1x Power adapter for Raspberry Pi 3
 
-![](images/bridge/bridge-set.png)
+![](bridge-set.png)
 
 You will also need:
 
@@ -64,19 +64,19 @@ You can either follow step-by-step instructions in the text below or watch this 
 
 1. Build the Bridge node.
 
-   ![](images/bridge/build-bridge.png)
+   ![](build-bridge.png)
 
 2. Connect Bridge Module to Raspberry Pi using MicroUSB cable.
 
-   ![](images/bridge/connect-bridge-to-rpi.png)
+   ![](connect-bridge-to-rpi.png)
 
 3. Connect Ethernet cable to Raspberry Pi.
 
-   ![](images/bridge/connect-ethernet-to-rpi.png)
+   ![](connect-ethernet-to-rpi.png)
 
 4. Connect power adapter to Raspberry Pi and plug it to AC-line.
 
-   ![](images/bridge/connect-power-to-rpi.png)
+   ![](connect-power-to-rpi.png)
 
 5. Wait until the Raspberry Pi boots up (approximately 30 seconds).
 
@@ -84,7 +84,7 @@ You can either follow step-by-step instructions in the text below or watch this 
 
 7. Dashboard shows all measured values, you can also control relay output with a button.
 
-   ![](images/bridge/dashboard.png)
+   ![](dashboard.png)
 
 
 ## Tweaking and Hacking

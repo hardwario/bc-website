@@ -46,7 +46,7 @@ My jsme chtěli něco víc kompaktního, něco, co má na sobě ARM procesor, r�
 Je osazen výkonným ARM mikrokontrolérem Cortex M0+, rádiovým čipem SIPIRIT 1 komunikujícím v pásmu 868 MHz, najdeš na něm také teplotní senzor, akcelerometr, kryptočip, USBčko, standardní debuggovací konektor, LEDku a tlačítko.
 Prostě obrázek mluví za vše... ;-)
 
-![](images/core-module/core-module.png)
+![](core-module.png)
 
 #### Firmware Core modulu
 
@@ -182,33 +182,3 @@ Dokážeme taky propojit BigClown s Microsoft Azure/Power BI nebo s AWS.
 Naše krásné modulky můžou existovat i bez krabiček, ale chápeme, že můžeš mít jiný vkus :-)
 Proto jsou pro tebe v našem obchodě připraveny [modely STL pro 3D tisk ke stažení](https://obchod.bigclown.cz/collections/krabicky).
 A pracujeme na konfigurátoru, který ti v budoucnu pomůže lépe a rychleji upravovat velikost i vzhled krabiček.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

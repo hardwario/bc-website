@@ -40,17 +40,17 @@ Do formuláře přepiš položky
 
   * ID zařízení - je šestimístný kód na nálepce vedle čárového kódu
 
-![](images/mysigfox.com-tutorial/device_id.jpg)
+![](device_id.jpg)
 
   * Token - je bezpečnostní heslo, které najdeš na obalu SigFox modulu
 
-![](images/mysigfox.com-tutorial/token.jpg)
+![](token.jpg)
 
 
   * E-mail - zde zadej svůj email
   * Webhook URL - tady vyplň předchozí URL kterou jsi získal z RequestBin
 
-![](images/mysigfox.com-tutorial/mysigfox.png)
+![](mysigfox.png)
 
 Formulář odešli, zobrazí se ti potvrzení změny údajů.
 
@@ -71,4 +71,4 @@ Po nahrání firmware spuštěný firmware rozsvítí červenou stavovou LED a p
 Nyní se přepni zpět do webového prohlížeče na stránku RequestBin.
 Dej obnovit stránku a pokud jsi vše nastavil správně, měl bys vidět přijatý JSON.
 
-![](images/mysigfox.com-tutorial/requestbin.png)
+![](requestbin.png)

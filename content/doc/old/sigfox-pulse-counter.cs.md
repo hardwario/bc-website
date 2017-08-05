@@ -8,7 +8,7 @@ Informace o počtu pulzů (a stavu baterií) se přenáší přímo do sítě si
 
 Výstup je ve formě dat (grafu) v google sheetu.
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-v1.png)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-v1.png)
 
 ## Popis funkce
 
@@ -44,7 +44,7 @@ Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy
 
 Dále budeš potřebovat:
 
-![Obrázek BigClown Sigfox Počítadla Impulzů - rozložené moduly](images//sigfox-pulse-counter/sigfox-impulse-counter-set.png)
+![Obrázek BigClown Sigfox Počítadla Impulzů - rozložené moduly](sigfox-pulse-counter/sigfox-impulse-counter-set.png)
 
 ## 2. Sestavení počítadla
 
@@ -52,29 +52,29 @@ Dále budeš potřebovat:
 
 2. Začněte s Mini Battery Module.
 
-   ![Obrázek Mini Battery Module](images//sigfox-pulse-counter/sf-ic-mbm.png)
+   ![Obrázek Mini Battery Module](sigfox-pulse-counter/sf-ic-mbm.png)
 
 3. Připojte Sigfox Module.
 
-   ![Obrázek Mini Battery Module, Core Module, Sigfox Module](images//sigfox-pulse-counter/sf-ic-mbm-sf.png)
+   ![Obrázek Mini Battery Module, Core Module, Sigfox Module](sigfox-pulse-counter/sf-ic-mbm-sf.png)
 
 4. Připojte Core Module.
 
-   ![Obrázek Mini Battery Module a Core Module](images//sigfox-pulse-counter/sf-ic-mbm-sf-core.png)
+   ![Obrázek Mini Battery Module a Core Module](sigfox-pulse-counter/sf-ic-mbm-sf-core.png)
 
 
 5. Připojte Sensor Module.
 
-   ![Obrázek Mini Battery Module, Core Module, Sigfox Module, Sensor Module](images//sigfox-pulse-counter/sf-ic-mbm-sf-core-sen.png)
+   ![Obrázek Mini Battery Module, Core Module, Sigfox Module, Sensor Module](sigfox-pulse-counter/sf-ic-mbm-sf-core-sen.png)
 
 6. Vložte baterie
 
-   ![Obrázek Sigfox Počítadlo pulzů - vložené baterie](images//sigfox-pulse-counter/sf-ic-mbm-sf-core-sen-bat.png)
+   ![Obrázek Sigfox Počítadlo pulzů - vložené baterie](sigfox-pulse-counter/sf-ic-mbm-sf-core-sen-bat.png)
 
 
 7. Připojte USB kabel do Core Module.
 
-  ![Obrázek Sigfox Počítadlo pulzů - zapojení USB](images//sigfox-pulse-counter/sf-ic-mbm-sf-core-sen-usb.png)
+  ![Obrázek Sigfox Počítadlo pulzů - zapojení USB](sigfox-pulse-counter/sf-ic-mbm-sf-core-sen-usb.png)
 
 8. Nahrajte firmware do Core Module.
 
@@ -92,19 +92,19 @@ Dále budeš potřebovat:
 
 2. Vytvoř google sheet, klikni pravím tlačítkem a vyber "Google Sheets" (nezáleží na tom jak ho pojmenuješ)
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-t1.png)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-t1.png)
 
 3. Teď je potřeba přidat Google Apps Script. Klikni pravím tlačítkem myši a vyber "Connect more apps" (viz. obrázek)
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-t2.png)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-t2.png)
 
 4. Pomocí vyhledávacího pole najdi "Google Apps Script"
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-t3.png)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-t3.png)
 
 5. Vytvoř nový script
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-t5.png)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-t5.png)
 
 6. kopíruj do něj následující kód místo výchozího
 
@@ -162,7 +162,7 @@ var spreadsheets_id = "";
 
 vlož ID tebou vytvořeného google sheetu (tabulky)
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-t6.png)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-t6.png)
 
 například:
 
@@ -186,17 +186,17 @@ Pomocí CTRL + S ulož (na názvu nezáleží).
 
 Klikni na publikovat a vyber zprovoznit jako webovou aplikaci.
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-t7.png)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-t7.png)
 
 Je potřeba nastavit, že k aplikaci má přístup kdokoli
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-t8.png)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-t8.png)
 
 a klikni na zprovoznit.
 
 Proklikej se a výsledkem bude "Aktuální adresa URL webové aplikace:".
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-t9.png)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-t9.png)
 
 ## Nastavte službu MySigfox
 
@@ -210,22 +210,22 @@ Proklikej se a výsledkem bude "Aktuální adresa URL webové aplikace:".
    * **E-mail** - váš e-mail (pro využití v případě nutnosti kontaktu provozovatele služby s vámi)
    * **Webhook URL** - vyplňte adresu na váš google script. (Aktuální adresa URL webové aplikace)
 
-   ![Obrázek služby MySigfox](images/sigfox-motion-detector/service-mysigfox.png)
+   ![Obrázek služby MySigfox](service-mysigfox.png)
 
 ## 4. Instalace
 
 Když máš připravenou sestavu a nejuniverzálnější nástroj na světě (izolačku libovolné barvy).
 
-   ![Obrázek sestavy](images//sigfox-pulse-counter/sf-ic-i2.jpg)
+   ![Obrázek sestavy](sigfox-pulse-counter/sf-ic-i2.jpg)
 
 Ještě je potřeba připravit fotoprvek, ideálně fototranzistor (použil jsem
 OED-PCC-9P5-1L)
 
-   ![Obrázek fototranzistoru s vodiči](images//sigfox-pulse-counter/sf-ic-i1.jpg)
+   ![Obrázek fototranzistoru s vodiči](sigfox-pulse-counter/sf-ic-i1.jpg)
 
 Fototranzistor se zapojí do vstupní svorky Sensor modulu a přilepí se pomocí izolačky tak aby snímal LED diodu elektroměru. Kanál si můžeš zvolit.
 
-   ![Obrázek kompletní instalace](images//sigfox-pulse-counter/sf-ic-i3.jpg)
+   ![Obrázek kompletní instalace](sigfox-pulse-counter/sf-ic-i3.jpg)
 
 ## 5. Datový rámec - pro zvídavé
 

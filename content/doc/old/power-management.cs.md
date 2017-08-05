@@ -40,13 +40,13 @@ Z tohoto je patrné, že energizer moduly mezi sebou řetězí (chain) signál V
 Toto je ukázka obvodového řešení baterkového energizeru:
 
 
-![](images/power-management/battery-energizer-circuit.png)
+![](battery-energizer-circuit.png)
 
 
 Toto je ukázka obvodového řešení energizeru z pevného zdroje:
 
 
-![](images/power-management/usb-energizer-circuit.png)
+![](usb-energizer-circuit.png)
 
 
 Ať už se jedná o bateriový energizer, nebo z pevného zdroje, na výstupu napájení je vždy zapojení dvou P-kanálových MOSFETů - tzv. back-to-back obvod.

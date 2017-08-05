@@ -10,7 +10,7 @@ This tutorial will guide you through some fundamental insights about Core Module
 ## Block Diagram
 
 
-![](images/core-module/core-module.png)
+![](core-module.png)
 
 
 ## GPIO Mapping

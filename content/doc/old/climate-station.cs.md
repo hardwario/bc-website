@@ -8,7 +8,7 @@
 Klimastanice je jedním ze základních prvků domácí automatizace.
 Informace o teplotě, vlhkosti, tlaku a koncentraci CO2 jsou potřebné pro zajištění správných životních podmínek a tepelné pohody doma i v kanceláři.
 
-![](images/climate-station/LED-cable-on.png)
+![](LED-cable-on.png)
 
 Základem projektu je jednotka skládající se z:
 
@@ -36,7 +36,7 @@ Dále budeš potřebovat:
 3. Do volných 5pinových zásuvek Power Module zasuň Barometer a Humidity Tagy
 4. Do pravé dolní pozice Core Module zasuň Lux Meter Tag
 
-![](images/climate-station/clima-station.png)
+![](clima-station.png)
 
 5. K Power Module připoj LED teploměr
 6. K Power Module připoj napájení z adaptéru
@@ -219,5 +219,5 @@ sudo systemctl start mqtt_to_influxdb.service
 
   * Nyní bys měl vidět naměřené hodnoty.
 
-  ![](images/climate-station/grafana.png)
+  ![](grafana.png)
 

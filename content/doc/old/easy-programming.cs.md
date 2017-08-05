@@ -203,10 +203,10 @@ Možná je to trochu mimo, ale ukazuje to na nekonečné možnosti dnešní dom�
   ```
 {% endraw %}
 
-![](images/easy-programming/twitter.png)
+![](twitter.png)
 
-![](images/easy-programming/dashboard.png)
+![](dashboard.png)
 
-![](images/easy-programming/pocasi.png)
+![](pocasi.png)
 
-![](images/easy-programming/ui.png)
+![](ui.png)

@@ -120,7 +120,7 @@ URL &lt;adresa-rpi&gt;:1880 a vytvoř následující flow:
 * Twitter out blok
 
 
-![](images/doorbell/flow.png)
+![](flow.png)
 
 Můžeš také importovat celou ukázku zkopírováním kódu níže. V Node-RED potom v menu zvol import ze schránky.
 V tomto případě můžeš přeskočit následující popis jak vytvářet jednotlivé bloky.
@@ -136,7 +136,7 @@ V tomto případě můžeš přeskočit následující popis jak vytvářet jedn
 Tento blok se připojí na MQTT brokera a přijímá příchozí zprávy.
 Nastav adresu serveru a téma (topic).
 
-![](images/doorbell/mqtt.png)
+![](mqtt.png)
 
 
 ### JSON blok
@@ -150,7 +150,7 @@ Není nutná žádní konfigurace.
 
 Tento blok změní MQTT zprávu na řetězec, kterou pak lze poslat na Twitter.
 
-![](images/doorbell/message.png)
+![](message.png)
 
 
 ### Twitter out blok
@@ -165,11 +165,11 @@ Zde nastav své přihlášení do Twitter účtu.
 Nyní můžeš stisknout `Deploy` tlačítko v pravém horním rohu Node-RED.
 Teď když na Core Module stiskneš tlačítko `B`, uvidíš na zlomek sekundy text `tweeting` vedle Tweet bloku.
 
-![](images/doorbell/tweeting.png)
+![](tweeting.png)
 
 Gratulujeme k úspěšnému projektu.
 
-![Twitter screenshot](images/doorbell/twitter_screenshot.png)
+![Twitter screenshot](twitter_screenshot.png)
 
 
 ## Ladění a hledání chyb
@@ -177,7 +177,7 @@ Gratulujeme k úspěšnému projektu.
 V případě, že něco nefunguje, použij `Debug` blok a zapoj jej někde do řetězce.
 Poté udělej znova `Deploy` a ujisti se, že `Debug` blok má vpravo zakliknutou zelenou barvu a je aktivní. Poté v pravém panelu přepni na `Debug` záložku a uvidíš ladící zprávy.
 
-![Debugging](images/doorbell/debug.png)
+![Debugging](debug.png)
 
 ## Konfigurace pro Windows
 

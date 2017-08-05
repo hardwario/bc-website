@@ -8,7 +8,7 @@ Výsledkem je unikátní ping-pongový stůl, který vždy dokáže minimálně 
 Zatím...
 Pro lepší představu se podívej na [video k projektu](https://youtu.be/otJfNo_x1-Q).
 
- ![](images/ping-pong/table-1.jpg)
+ ![](table-1.jpg)
 
 
 ## Co všechno k projektu potřebuješ
@@ -39,20 +39,20 @@ Zápustný hliníkový profil perfektně zapadne do mezery mezi polovinami stolu
 
  1. Seřízni zápustný ALU profil přesně na šířku ping-pongového stolu.
 
- ![](images/ping-pong/table-al-tube.jpg)
+ ![](table-al-tube.jpg)
 
  2. Do profilu vyvrtej na krajích dva otvory pro šroub se zápustnou hlavou, tak aby bylo možné na spodní stranu stolu přiložit plechy pro ukotvení. Jejich přesná velikost není nijak kritická. Po upnutí plechu pomocí rychloupínacího držáku na síťku se obě hrací plochy stolu pevně spojí.
 
- ![](images/ping-pong/table-bottom.jpg)
+ ![](table-bottom.jpg)
 
  3. Nakonec se po stranách připevní tlačítka s kabelem dostatečné délky.
 
- ![](images/ping-pong/table-button.jpg)
+ ![](table-button.jpg)
 
 ### Složení stavebnice
  1. Sestav Node z modulů BigClown.
 
- ![](images/ping-pong/node-2.jpg)
+ ![](node-2.jpg)
 
 2. Stáhni si [zkompilovaný firmware](https://github.com/bigclownlabs/bcp-ping-pong-table/releases/latest)
  nebo zdrojové kódy k projektu. GitHub repozitář k projektu nalezneš [zde](https://github.com/bigclownlabs/bcp-ping-pong-table).
@@ -64,15 +64,15 @@ Zápustný hliníkový profil perfektně zapadne do mezery mezi polovinami stolu
 
  2. Zapoj tlačítka do Senzor Module do 4 pinové svorkovnice (tlačítko A na pozice 1 a 2, tlačítko B na pozice 3 a 4).
 
- ![](images/ping-pong/node-buttons.jpg)
+ ![](node-buttons.jpg)
 
  3. Zapoj LED pásek do Power Module.
 
- ![](images/ping-pong/node-led-strip.jpg)
+ ![](node-led-strip.jpg)
 
  4. Zapoj 5V napájecí adaptér do Power Module.
 
- ![](images/ping-pong/table-node.jpg)
+ ![](table-node.jpg)
 
 
 ## Volitelná Rozšíření a popis FW

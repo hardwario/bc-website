@@ -1,0 +1,42 @@
+{{- define "navbar" }}
+{{- partial "navbar.html" . }}
+{{- end }}
+
+{{- define "main" }}
+{{- partial "translations.html" . }}
+<main aria-role="main">
+  <header class="page-header">
+    <h1 id="title">{{ .Title }}</h1>
+  </header>
+  <div>
+    {{ .Content }}
+  </div>
+  <div class="page-content">
+    <ul>
+    {{ range (.Paginator 2).Pages }} 
+      <li class="post">
+        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        <time class="post-time">{{ .Date.Format "15:04 January 2, 2006" }}</time>
+        <div class="post-content">
+            <p>{{ .Summary }}</p>
+        </div>
+    </li>
+    {{ end }}
+    </ul>
+      {{ if .Paginator.HasPrev }}
+        <a class="btn btn-default" href="{{ .Paginator.Prev.URL }}">
+          &lt;
+        </a>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+        <a class="btn btn-default" href="{{ .Paginator.Next.URL }}">
+          &gt;
+        </a>
+      {{ end }}
+  </div>
+</main>
+{{ end }}
+
+{{ define "footer"}}
+{{ partial "footer.html" . }}
+{{ end }}

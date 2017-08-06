@@ -1,0 +1,18 @@
+{{- define "navbar" }}
+{{- partial "navbar.html" . }}
+{{- end }}
+
+{{- define "main" }}
+<main aria-role="main">
+  <header class="page-header">
+    {{- .Title -}}
+  </header>
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+</main>
+{{ end }}
+
+{{ define "footer"}}
+{{ partial "footer.html" . }}
+{{ end }}

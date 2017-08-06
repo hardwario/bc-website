@@ -1,7 +1,6 @@
 ---
 title: "Druhy Prispevek"
 date: 2017-07-29T18:58:18+02:00
-draft: false
 ---
 
 Lorem ipsum dolor sit amet, pro an imperdiet scribentur cotidieque, eum ei mundi molestie efficiantur. Usu nibh forensibus constituam no, qui clita graecis ut. Est vitae fuisset an, nihil moderatius liberavisse et ius, vis vivendo forensibus expetendis ei. Ut pro esse sale vulputate, inimicus consetetur duo eu, ut eos vide porro discere. No eam oporteat ocurreret consectetuer. Id nostrud appareat nam, cum ipsum quaestio ea.

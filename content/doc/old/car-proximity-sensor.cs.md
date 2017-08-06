@@ -5,7 +5,7 @@ title: Detektor přiblížení vozidla
 # Úvod
 
 Cílem tohoto projektu je indikování vzdálenosti pohybujícího se objektu od ultrazvukového senzoru pomocí chytrého LED pásku.
-Například to můžeš použít  jako jednoduchého pomocníka při parkování auta v garáži.
+Například to můžeš použít jako jednoduchého pomocníka při parkování auta v garáži.
 Už nikdy tvoje manželka nebo přítelkyně nemusí narazit do stěny. :-)
 
 # Funkčnost

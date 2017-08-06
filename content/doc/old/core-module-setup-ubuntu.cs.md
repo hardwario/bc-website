@@ -12,38 +12,38 @@ Tato sekce tě provede instalací GCC ARM Embedded toolchainu na tvůj Ubuntu de
 
 1. Otevři Terminál a přidej PPA repozitář:
 
-   ```
-   sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
-   ```
+    ```
+    sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
+    ```
 
    > **Note** Tento PPA umožní jednoduchou instalaci [GNU ARM Embedded toolchainu](https://launchpad.net/gcc-arm-embedded).
 
 2. Aktualizuj seznamy balíčků:
 
-   ```
-   sudo apt update
-   ```
+    ```
+    sudo apt update
+    ```
 
 3. Stáhni a nainstaluj balíček s ARM GCC kompilátorem:
 
-   ```
-   sudo apt install gcc-arm-embedded
-   ```
+    ```
+    sudo apt install gcc-arm-embedded
+    ```
 
 4. Zkontroluj, že je ARM GCC kompilátor nainstalován správně:
 
-   ```
-   arm-none-eabi-gcc --version
-   ```
+    ```
+    arm-none-eabi-gcc --version
+    ```
 
-   Měl bys dostat tento výstup v Terminálu:
+    Měl bys dostat tento výstup v Terminálu:
 
-   ```
-   arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 6.2.1 20161205 (release) [ARM/embedded-6-branch revision 243739]
-   Copyright (C) 2016 Free Software Foundation, Inc.
-   This is free software; see the source for copying conditions.  There is NO
-   warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-   ```
+    ```
+    arm-none-eabi-gcc (GNU Tools for ARM Embedded Processors) 6.2.1 20161205 (release) [ARM/embedded-6-branch revision 243739]
+    Copyright (C) 2016 Free Software Foundation, Inc.
+    This is free software; see the source for copying conditions.  There is NO
+    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    ```
 
 # Zkompilování firmware
 
@@ -51,33 +51,33 @@ Tato sekce tě provede procesem zkompilování firmware pro BigClown Core Module
 
 1. Nainstaluj potřebné balíčky (`git` + `make`):
 
-   ```
-   sudo apt install git build-essential
-   ```
+    ```
+    sudo apt install git build-essential
+    ```
 
 2. Stáhni hlavní repozitář pro BigClown Core Module:
 
-   ```
-   git clone --recursive https://github.com/bigclownlabs/bc-core-module.git
-   ```
+    ```
+    git clone --recursive https://github.com/bigclownlabs/bc-core-module.git
+    ```
 
 3. Přesuň se do staženého repozitáře:
 
-   ```
-   cd bc-core-module
-   ```
+    ```
+    cd bc-core-module
+    ```
 
 4. Spusť kompilaci:
 
-   ```
-   make
-   ```
+    ```
+    make
+    ```
 
 5. Zkontroluj, že byl vytvořen soubor `firmware.elf`:
 
-   ```
-   ls -l out
-   ```
+    ```
+    ls -l out
+    ```
 
 # Instalace Mosquitto
 

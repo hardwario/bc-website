@@ -54,7 +54,6 @@ Perform an upgrade and install Node-RED:
 
 Connect to Raspberry Pi.
 
-
 ### Firmware
 
 It's always reccomended to upgrade a firmware on your Core Modules. If you want to perform an upgrade trough your PC, please follow instructions [here]({{< relref "doc/old/core-module-flashing.en.md" >}}). Or you can use Raspberry Pi like me...
@@ -148,7 +147,6 @@ def main():
 
     client.loop_forever()
 
-
 if __name__ == '__main__':
     main()
 ```
@@ -166,7 +164,6 @@ if __name__ == '__main__':
   [{"id":"92298281.d0ca5","type":"tab","label":"Twitter(Temperature and humidity)"},{"id":"2d1d3d32.b2d7d2","type":"mqtt in","z":"92298281.d0ca5","name":"thermometer","topic":"nodes/remote/thermometer/+","qos":"2","broker":"fc8241ff.e69d68","x":110,"y":100,"wires":[["65e5412e.ef424"]]},{"id":"2d5a3b21.61043c","type":"function","z":"92298281.d0ca5","name":"text","func":"var text = \"Kancelář\";\n\nif (msg.payload[\"temperature\"]) {\n    text += \" teplota: \" + \n    msg.payload[\"temperature\"][0] + \n    msg.payload[\"temperature\"][1] ;\n}\n\nif (msg.payload[\"relative-humidity\"]) {\n    text += \" humidity: \" +\n    msg.payload[\"relative-humidity\"][0] +\n    msg.payload[\"relative-humidity\"][1];\n}\n\nmsg.payload = text;\nreturn msg;","outputs":1,"noerr":0,"x":790,"y":160,"wires":[["8ec0d340.85b338","557fae8c.a8c028"]]},{"id":"8ec0d340.85b338","type":"debug","z":"92298281.d0ca5","name":"","active":true,"console":"false","complete":"true","x":970,"y":220,"wires":[]},{"id":"557fae8c.a8c028","type":"twitter out","z":"92298281.d0ca5","twitter":"","name":"Tweet","x":970,"y":160,"wires":[]},{"id":"742fb418.b09dfc","type":"join","z":"92298281.d0ca5","name":"","mode":"custom","build":"merged","property":"payload","propertyType":"msg","key":"topic","joiner":"\\n","timeout":"5","count":"2","x":450,"y":160,"wires":[["17ff364d.4d7c82"]]},{"id":"2448519.8315d2e","type":"mqtt in","z":"92298281.d0ca5","name":"humidity-sensor","topic":"nodes/remote/humidity-sensor/+","qos":"2","broker":"fc8241ff.e69d68","x":100,"y":240,"wires":[["221f12cf.db5476"]]},{"id":"65e5412e.ef424","type":"json","z":"92298281.d0ca5","name":"","x":250,"y":100,"wires":[["742fb418.b09dfc"]]},{"id":"221f12cf.db5476","type":"json","z":"92298281.d0ca5","name":"","x":250,"y":240,"wires":[["742fb418.b09dfc"]]},{"id":"17ff364d.4d7c82","type":"delay","z":"92298281.d0ca5","name":"","pauseType":"rate","timeout":"5","timeoutUnits":"seconds","rate":"1","nbRateUnits":"15","rateUnits":"minute","randomFirst":"1","randomLast":"5","randomUnits":"seconds","drop":true,"x":620,"y":160,"wires":[["2d5a3b21.61043c"]]},{"id":"fc8241ff.e69d68","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"30","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
   ```
 So you have imported a flow, which will tweet every 5 minutes message about temperature and humidity.
-
 
 ### Visualize measured data thanks to Node-RED plugin
 

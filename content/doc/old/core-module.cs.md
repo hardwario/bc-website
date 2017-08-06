@@ -1,6 +1,5 @@
 # Core Module - Úvod
 
-
 Tato sekce ti vysvětlí základní vlastnosti a použití Core Module.
 
 Na Core Module je moderní nízkopříkonový mikrokontrolér ARM Cortex M0+ [STM32L083CZ](http://www.st.com/en/microcontrollers/stm32l083cz.html).

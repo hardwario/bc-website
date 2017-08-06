@@ -2,13 +2,10 @@
 
 # Rozcestník
 
-
 Na této stránce najdeš přehled BigClown ekosystému a rychlé odkazy na související dokumenty a projekty.
-
 
 Můžeš začít i s jedním Core Module. Můžeš vytvořit plnohodnotnou IoT síť.
 BigClown ekosystém si rozšíříš tak, jak chceš ty sám.
-
 
 <table border="0">
 
@@ -85,6 +82,5 @@ BigClown ekosystém si rozšíříš tak, jak chceš ty sám.
     </tr>
 
 </table>
-
 
 <!--TODO: BigClown Modules, Tags-->

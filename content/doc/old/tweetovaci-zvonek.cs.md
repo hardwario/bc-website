@@ -1,9 +1,5 @@
 # Tweetovací zvonek
 
-
-
-
-
 ## Úvod
 
 Tento jednoduchý projekt tě snadno seznámí, jak použít BigClown Core Modul.
@@ -11,19 +7,15 @@ Cílem projektu bude zaslání tweetu po stisku tlačítka na Core Module, nebo 
 Core Module bude připojen USB kabelem na Raspberry Pi, nebo k jakémukoliv jinému počítači, kde spustíš naši Python gateway.
 Můžete monitorovat vaše návštěvy a zjisti, jestli jste někoho nezmeškali!
 
-
 Využijeme grafického rozhraní Node-Red pro nastavení pravidla, kdy MQTT zpráva po stisku tlačítka pošle tweet.
 [Zde je ukázková výsledná tweetovací stránka](https://twitter.com/bcDoorbell)
 
-
 ## Co potřebujeme
-
 
 * 1x [Core Module](https://obchod.bigclown.cz/products/core-module)
 * 1x [Raspberry Pi 3](https://obchod.bigclown.cz/products/raspberry-pi-3-set)
 * 1x Micro SD kartu ([stáhni obraz pro Rpi]({{< relref "doc/old/raspberry-pi-installation.cs.md" >}}) nebo [objednej předinstalovanou kartu](https://obchod.bigclown.cz/products/apacer-industrial-microsdhc-card-4gb))
 * 1x [Micro USB kabel](https://obchod.bigclown.cz/products/usb2-0-cable-am-b-micro-0-6m)
-
 
 ## Core Module
 
@@ -35,7 +27,6 @@ Více na [GPIO SDK stránce](http://sdk.bigclown.com/group__bc__gpio.html).
 
 ```c
 #include <application.h>
-
 
 // Instance LED
 bc_led_t led;
@@ -96,9 +87,7 @@ Pokud stiskneš tlačítko na Core Module, v konzoli uvidíš příchozí zpráv
 
 `nodes/push-button/- {"event-count": 5}`
 
-
 ## Konfigurace Raspberry Pi
-
 
 ### Instalace a konfigurace
 
@@ -107,7 +96,6 @@ Připoj se na konzoli Raspberry Pi přímo, nebo přes SSH.
 Na Raspberry Pi musí být nainstalované balíčky od BigClown - buď jsi použil předinstalovaný image, nebo musíš [balíčky doinstalovat]({{< relref "doc/old/raspberry-pi-installation.cs.md" >}}).
 
 Pak ještě budeme potřebovat Node-RED, abychom propojili tlačítko Core Module s Twitterem. [Instalace Node-RED na Raspberry Pi]({{< relref "doc/old/node-red.cs.md" >}})
-
 
 ## Konfigurace Node RED
 
@@ -119,17 +107,14 @@ URL &lt;adresa-rpi&gt;:1880 a vytvoř následující flow:
 * Message blok
 * Twitter out blok
 
-
 ![](flow.png)
 
 Můžeš také importovat celou ukázku zkopírováním kódu níže. V Node-RED potom v menu zvol import ze schránky.
 V tomto případě můžeš přeskočit následující popis jak vytvářet jednotlivé bloky.
 
-
 ```json
 [{"id":"4f1ddaf2.8d8ff4","type":"tab","label":"Flow 1"},{"id":"3adfde65.667022","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"856fe615.8f1008","type":"twitter-credentials","z":"","screen_name":"@bcDoorbell"},{"id":"b9060d89.926bd","type":"mqtt in","z":"4f1ddaf2.8d8ff4","name":"","topic":"nodes/push-button/-","qos":"0","broker":"3adfde65.667022","x":275,"y":133,"wires":[["aab295ba.d087e8"]]},{"id":"1eb962d4.06a4ad","type":"twitter out","z":"4f1ddaf2.8d8ff4","twitter":"856fe615.8f1008","name":"Tweet","x":739,"y":133,"wires":[]},{"id":"62d4fc7.ea3b104","type":"template","z":"4f1ddaf2.8d8ff4","name":"Message","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"Somebody is at the door! ({{payload.event-count}})","x":597,"y":133,"wires":[["1eb962d4.06a4ad"]]},{"id":"aab295ba.d087e8","type":"json","z":"4f1ddaf2.8d8ff4","name":"","x":451,"y":133,"wires":[["62d4fc7.ea3b104"]]}]
 ```
-
 
 ### MQTT in blok
 
@@ -138,29 +123,21 @@ Nastav adresu serveru a téma (topic).
 
 ![](mqtt.png)
 
-
 ### JSON blok
-
 
 Není nutná žádní konfigurace.
 
-
 ### Message blok
-
 
 Tento blok změní MQTT zprávu na řetězec, kterou pak lze poslat na Twitter.
 
 ![](message.png)
 
-
 ### Twitter out blok
-
 
 Zde nastav své přihlášení do Twitter účtu.
 
-
 ## Testování
-
 
 Nyní můžeš stisknout `Deploy` tlačítko v pravém horním rohu Node-RED.
 Teď když na Core Module stiskneš tlačítko `B`, uvidíš na zlomek sekundy text `tweeting` vedle Tweet bloku.
@@ -170,7 +147,6 @@ Teď když na Core Module stiskneš tlačítko `B`, uvidíš na zlomek sekundy t
 Gratulujeme k úspěšnému projektu.
 
 ![Twitter screenshot](twitter_screenshot.png)
-
 
 ## Ladění a hledání chyb
 
@@ -209,7 +185,6 @@ Virtuální propojení USB portu (`COM3`) s gateway.
 Pokud stiskneš tlačítko `B` na Core Module, v konzoli uvidíš příchozí zprávy:
 
 `DEBUG: b'["push-button/-", {"event-count": 0}]\n'`
-
 
 ### Propojení Mosquitto a gateway
 

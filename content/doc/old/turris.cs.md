@@ -1,7 +1,5 @@
 # Turris
 
-
-
 ## Update
   Před jakoukoliv instalací doporučuji aktualizovat opkg
   ```
@@ -37,7 +35,6 @@
     mosquitto_pub -t 'hello' -m 'world'
     ```
     Pokud brouker neběží dostanem hlášku `Error: Connection refused`, zkute znovu spustit, případně onidtalovat a znovu naintalovat.
-
 
 ## Gateway mezi USB serial a MQTT brokerem
 

@@ -1,23 +1,14 @@
 # Core Module
 
-
-
-
-
 This tutorial will guide you through some fundamental insights about Core Module.
-
 
 ## Block Diagram
 
-
 ![](core-module.png)
-
 
 ## GPIO Mapping
 
-
 The following table lists GPIO mapping to microcontroller (MCU) pins [STM32L083CZ](http://www.st.com/en/microcontrollers/stm32l083cz.html):
-
 
 | Pin | Signal     | MCU Pin      | 5 V Tolerant |
 | --- | :--------- | :----------- | :----------- |
@@ -40,9 +31,7 @@ The following table lists GPIO mapping to microcontroller (MCU) pins [STM32L083C
 |  27 | P16/SCL1   | PB8  (45)    | Yes          |
 |  28 | P17/SDA1   | PB9  (46)    | Yes          |
 
-
 The following electrical limitations apply for GPIO pins:
-
 
 * Maximum sink current for any GPIO is 16 mA.
 
@@ -50,8 +39,6 @@ The following electrical limitations apply for GPIO pins:
 
 * Maximum total output current sunk / sourced by all GPIOs is 90 / -90 mA.
 
-
 ## Hardware Schematic Drawing
-
 
 Core Module schematic drawing can be downloaded by clicking on [this link](https://github.com/bigclownlabs/bc-hardware/raw/master/out/bc-module-core/bc-module-core-rev-1-3-sch.pdf).

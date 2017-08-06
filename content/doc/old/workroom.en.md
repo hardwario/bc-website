@@ -1,8 +1,5 @@
 # Workroom Project
 
-
-
-
 ## Introduction
 
 With this setup you will be able to monitor environmental conditions in your workroom.
@@ -21,12 +18,10 @@ Besides this primary function the project may also serve as a pleasant lighting 
 
 Workroom project consists of two units described below.
 
-
 ### Base unit
 
 This unit is responsible for driving of the LED strip and receiving wireless data from Remote unit.
 Wireless data are dispatched from Base unit to Raspberry Pi which decides about the color of the connected LED strip.
-
 
 ### Remote unit
 
@@ -35,7 +30,6 @@ Remote unit is a battery-operated wireless node measuring temperature and humidi
 The whole concept is best described by the following diagram:
 
 ![](block-diagram.png)
-
 
 ## Requirements
 
@@ -68,13 +62,11 @@ You will also need:
 * LAN router/switch with one available port
 * Internet connectivity
 
-
 ## Installation instructions
 
 * You can either follow the step-by-step instructions in the text below or watch this short video:
 
   {%youtube%}Azui3VXtKJA{%endyoutube%}
-
 
 You can also follow these step by step instructions:
 
@@ -132,11 +124,9 @@ You can also follow these step by step instructions:
 
     ![](turn-on-light.png)
 
-
 * You can see pairing setup and testing the functionality in this short video:
 
   {%youtube%}3q05fJHeQrg{%endyoutube%}
-
 
 ## MQTT Data Playground
 
@@ -193,7 +183,6 @@ How-to communicate with MQTT broker:
    mosquitto_pub -t "plugin/led-strip/data/set" -m '{"state": "rules"}'
    ```
 
-
 ### Sensors on remote
 
 * Measured temperature and humidity values reported by Remote unit:
@@ -203,7 +192,6 @@ How-to communicate with MQTT broker:
   nodes/remote/humidity-sensor/i2c0-40 {"relative-humidity": [33.2, "%"]}
   ```
 
-
 ### Relay on base
 
 * Relay has state true (switched on) or false (switched off)
@@ -211,7 +199,6 @@ How-to communicate with MQTT broker:
   ```
   mosquitto_pub -t 'nodes/base/relay/-' -m '{"state": true}'
   ```
-
 
 #### Examples
 
@@ -234,7 +221,6 @@ How-to communicate with MQTT broker:
   mosquitto_pub -t "nodes/base/relay/-/get" -m '{}'
   ```
 
-
 ### LED strip on base
 
 * Desired color of the LED strip connected to Base unit
@@ -254,7 +240,6 @@ How-to communicate with MQTT broker:
   mosquitto_pub -t 'nodes/base/led-strip/-/config/set' -m '{"mode": "rgbw", "count": 144}'
   ```
   Count can be set from 1 to 150.
-
 
 ### Plugin led-strip
 
@@ -315,7 +300,6 @@ Plugin serves also as comfort driver for LED strip.
   mosquitto_pub -t "nodes/base/light/-/get" -m '{}'
   nodes/base/light/- {"state": true}
   ```
-
 
 #### Change default thresholds
 

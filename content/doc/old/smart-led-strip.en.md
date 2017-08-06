@@ -1,8 +1,5 @@
 # Smart LED Strip Project
 
-
-
-
 ## What is this project about
 
 It is a very simple project, which aims at building a simple home automation.
@@ -23,12 +20,10 @@ Any of these limit values can be adjusted in configuration (later we will show y
 
 Smart LED Strip project consists of two units described below.
 
-
 ### Base unit
 
 This unit is responsible for driving of the LED strip and receiving wireless data from Remote unit.
 Wireless data are dispatched from Base unit to Raspberry Pi which decides about the color of the connected LED strip.
-
 
 ### Remote unit
 
@@ -37,7 +32,6 @@ Remote unit is a battery-operated wireless node measuring temperature and humidi
 The whole concept is best described by the following diagram:
 
 ![](block-diagram.png)
-
 
 ## Requirements
 
@@ -72,7 +66,6 @@ You will also need:
 * Ethernet cable
 * LAN router/switch with one available port
 * Internet connectivity
-
 
 ## Installation instructions
 
@@ -130,11 +123,9 @@ You will also need:
 
     ![](turn-on-light.png)
 
-
 * You can see pairing setup and testing the functionality in this short video:
 
   {%youtube%}3q05fJHeQrg{%endyoutube%}
-
 
 ## MQTT Data Playground
 
@@ -191,7 +182,6 @@ How-to communicate with MQTT broker:
    mosquitto_pub -t "plugin/led-strip/data/set" -m '{"state": "rules"}'
    ```
 
-
 ### Sensors on remote
 
 * Measured temperature and humidity values reported by Remote unit:
@@ -201,7 +191,6 @@ How-to communicate with MQTT broker:
   nodes/remote/humidity-sensor/i2c0-40 {"relative-humidity": [33.2, "%"]}
   ```
 
-
 ### Relay on base
 
 * Relay has state true (switched on) or false (switched off)
@@ -209,7 +198,6 @@ How-to communicate with MQTT broker:
   ```
   mosquitto_pub -t 'nodes/base/relay/-' -m '{"state": true}'
   ```
-
 
 #### Examples
 
@@ -232,7 +220,6 @@ How-to communicate with MQTT broker:
   mosquitto_pub -t "nodes/base/relay/-/get" -m '{}'
   ```
 
-
 ### LED strip on base
 
 * Desired color of the LED strip connected to Base unit
@@ -247,7 +234,6 @@ How-to communicate with MQTT broker:
   mosquitto_pub -t 'nodes/base/led-strip/-/config/set' -m '{"mode": "rgb", "count": 150}'
   mosquitto_pub -t 'nodes/base/led-strip/-/config/set' -m '{"mode": "rgbw", "count": 144}'
   ```
-
 
 ### Plugin led-strip
 
@@ -308,7 +294,6 @@ Plugin serves also as comfort driver for LED strip.
   mosquitto_pub -t "nodes/base/light/-/get" -m '{}'
   nodes/base/light/- {"state": true}
   ```
-
 
 #### Change default thresholds
 

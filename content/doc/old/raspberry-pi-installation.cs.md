@@ -7,7 +7,6 @@ Návod byl otestován na Raspberry Pi 3 (Model B), ale měl by fungovat i pro Ra
 
 Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější distribuci Linuxu pro Raspberry Pi.
 
-
 ## Požadavky
 
 * Raspberry Pi 3 (Model B)
@@ -21,13 +20,11 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
   * macOS (otestována verze 10.12.1)
   * Linux (otestováno na Ubuntu 16.04 LTS)
 
-
 ## Příprava MicroSD karty
 
 1. Vlož MicroSD kartu do MicroSD čtečky karet.
 
 2. Stáhni si aktuální verzi BigClown Raspbian image z https://github.com/bigclownlabs/bc-raspbian/releases.
-
 
 ### Návod pro Windows
 
@@ -40,7 +37,6 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
    Můžeš pro to použít [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/files/latest/download).
 
    > **Poznámka** Win32 Disk Imager musí běžet s právy správce.
-
 
 ### Návod pro macOS
 
@@ -84,7 +80,6 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
    ```
    diskutil eject /dev/diskX
    ```
-
 
 ### Návod pro Linux
 
@@ -130,7 +125,6 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
    eject /dev/sdX
    ```
 
-
 ## Nastartuj Raspberry Pi
 
 1. Vlož MicroSD kartu do Raspberry Pi.
@@ -138,7 +132,6 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
 2. Připoj Ethernet kabel k Raspberry Pi.
 
 3. Připoj USB napájecí adaptér k Raspberry Pi.
-
 
 ## Připojení k Raspberry Pi
 
@@ -149,7 +142,6 @@ Můžeš se k němu připojit dvěmi způsoby:
  1. Použitím IP adresy (musíš si zjistit jakou adresu přidělil DHCP server tvému Raspberry Pi).
 
  2. Použitím zeroconf mechanismu skrze přístup k `hub.local` hostu (tento způsob by měl být funkční pro všechny typy PC).
-
 
 ### Návod pro Windows
 
@@ -162,7 +154,6 @@ Můžeš se k němu připojit dvěmi způsoby:
    * Zadej login: `pi`
 
    * Zadej heslo: `raspberry`
-
 
 ### Postup pro macOS a Linux
 
@@ -182,7 +173,6 @@ Můžeš se k němu připojit dvěmi způsoby:
 
    3. Zadej heslo: `raspberry`
 
-
 ## Proveď update tvé instalace
 
 V případě prvního připojení NEZAPOMEŇ ZMĚNIT DEFAULTNÍ HESLO.
@@ -199,7 +189,6 @@ Pro update systému použij tento příkaz:
 ```
 sudo apt update && sudo apt upgrade
 ```
-
 
 ## Rozdíly oproti oficiálnímu Raspbianu
 
@@ -232,7 +221,6 @@ Toto je stručný výpis změn:
   * bc-gateway
   * bc-workroom-led-strip
   * bc-workroom-blynk
-
 
 ## Instalace BigClown balíčků na existující systém
 

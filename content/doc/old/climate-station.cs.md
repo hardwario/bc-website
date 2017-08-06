@@ -1,8 +1,5 @@
 # Projekt "Klimastanice s LED teploměrem a dashboardem"
 
-
-
-
 ## O čem projekt je a co ti přinese
 
 Klimastanice je jedním ze základních prvků domácí automatizace.
@@ -28,7 +25,6 @@ Dále budeš potřebovat:
 * LAN router/switch s jedním volným portem
 * Připojení k internetu
 
-
 ## Postup sestavení jednotky
 
 1. Na Base Module zasuň Power Module
@@ -40,7 +36,6 @@ Dále budeš potřebovat:
 
 5. K Power Module připoj LED teploměr
 6. K Power Module připoj napájení z adaptéru
-
 
 ## Postup instalace a napojení aplikace Grafana
 

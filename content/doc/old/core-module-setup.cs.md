@@ -1,6 +1,5 @@
 # Core Module vývojové nástroje
 
-
 Vývoj firmare probíhá v následujících krocích:
 
 1. **Instalace toolchainu**
@@ -19,9 +18,7 @@ Vývoj firmare probíhá v následujících krocích:
 
 2. **Nasazení**
 
-
 ## Instalace toolchainu
-
 
 Na odkazech níže je popis zprovoznění toolchainu na jednotlivých platformách.
 

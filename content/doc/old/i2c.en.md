@@ -1,17 +1,13 @@
 # I²C - Communication Interface
 
-
-
 In the world of the internet we encounter many abbreviations and names for technology that can be confusing for a novice.
 Let’s take a look at some of them and see what they mean.
-
 
 ## What is I²C?
 
 I²C, or more correctly I²C (read I squared C and standing for Inter-Integrated Circuit) is a serial bus that has become a de facto standard for connecting various sensors and other electronic devices.
 It was developed by the Philips Company, and since I²C is a registered trademark, some manufacturers use the abbreviation TWI (Two Wire Interface).
 Practically it means the same thing.
-
 
 ## What is Serial?
 
@@ -24,7 +20,6 @@ A parallel connection is theoretically faster, but it has its drawbacks: you mus
 A serial connection is theoretically slower, but since data is sent along a single wire that can easily be shielded, it is able to handle communication over greater distances.
 It is also not necessary to connect so many wires as in the case of a parallel connection.
 
-
 ## What is Bus?
 
 Sometimes a single device is connected rigidly to certain microcontroller pins.
@@ -33,7 +28,6 @@ Unfortunately, the number of pins is not unlimited and there may be multiple dev
 In such cases a bus is used.
 A bus is a manner of connection where one or more devices are connected to one or more wires, and where the bus always communicates in some manner with only one of them at a time.
 There are several types of serial buses (1-Wire, SPI, I²C, ...) that vary in terms of attributes, the number of wires required, and the manner of selecting the device with which they communicate.
-
 
 ## I²C Bus
 
@@ -66,7 +60,6 @@ List of certain devices and their addresses in the BigClown system:
 | Barometer          | MPL3115A2 | 0x60        |
 | Lux Meter          | OPT3001   | 0x44 / 0x45 |
 | Relay Module       | TCA9534A  | 0x3B / 0x3F |
-
 
 ## Communication through I²C
 

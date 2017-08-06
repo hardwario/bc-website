@@ -1,12 +1,10 @@
 # Detektor přiblížení vozidla
 
-
 ## Úvod
 
 Cílem tohoto projektu je indikování vzdálenosti pohybujícího se objektu od ultrazvukového senzoru pomocí chytrého LED pásku.
 Například to můžeš použít  jako jednoduchého pomocníka při parkování auta v garáži.
 Už nikdy tvoje manželka nebo přítelkyně nemusí narazit do stěny. :-)
-
 
 ## Funkčnost
 
@@ -14,7 +12,6 @@ Už nikdy tvoje manželka nebo přítelkyně nemusí narazit do stěny. :-)
 
 Jako senzor pohybu je použit ultrazvukový senzor HC-SR04P, který je schopný pracovat na 3,3V logice (některé senzory to nepodporují a musíš to zjistit z dokumentace), což je pro nás ideální.
 Z něho jdou data do Core Modulu, kde proběhne vyhodnocení a graficky promítne vzdálenost auta od senzoru do LED pásku.
-
 
 ## Princip funkce ultrazvukového senzoru
 
@@ -24,7 +21,6 @@ Ultrazvukový senzor vyvolává vysokofrekvenční zvukové vlny (nad 20 kHz) a 
 Výhodou ultrazvukových senzorů je jednoduché nastavení, minimální údržba a velmi široké použití.
 Jsou velmi spolehlivé i ve znečištěném prostředí.
 
-
 ## Co budeme potřebovat
 
 - 4x Propojovací drátek kolíček -> dutinka
@@ -33,7 +29,6 @@ Jsou velmi spolehlivé i ve znečištěném prostředí.
 - BigClown Base Module
 - LED strip RGBW 1m 144 LEDs
 - Auto a garáž :-)
-
 
 ## Sestavení
 
@@ -66,7 +61,6 @@ Jsou velmi spolehlivé i ve znečištěném prostředí.
 7. Přilep si pásek do garáže
 8. Dej Power Module do zásuvky
 9. Raduj se, jelikož tvé auto už vždy zaparkuješ v dostatečné vzdálenosti :-)
-
 
 ## Závěr
 

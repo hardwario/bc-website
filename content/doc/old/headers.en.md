@@ -1,25 +1,16 @@
 # Headers & Signals
 
-
-
-
-
 In BigClown we emphasize hardware modularity and re-usability.
 To achieve such goal we had to come up with proper interconnect system between our components.
 We decided to stick with well-known and widely accepted standard - **headers** with 2.54 mm (0.1 inch) pitch.
 
-
 Our header system consists of two types of components - **pins** and **sockets**.
-
 
 In order to maintain compatibility between various hardware components we came up with our own two standards for electro-mechanical format - **module** and **tag**.
 
-
 ## Module Format
 
-
 Format **Module** defines:
-
 
 * Spacing and signals between two rows of 14-pin **headers**.
 * Four mounting hole positions and their diameter.
@@ -30,18 +21,13 @@ Format **Module** defines:
 * Recommended PCB thickness 1.5 mm.
 * Radius of rounded corners 3.8 mm.
 
-
 ### Module Drawing
-
 
 ![](module.png)
 
-
 ### Module Signals
 
-
 This is a summary of basic peripherals available on **module** header:
-
 
 * 18x **GPIO** channels (General Purpose Input/Output)
 * 5x **ADC** channels (Analog-to-Digital Converter)
@@ -50,9 +36,7 @@ This is a summary of basic peripherals available on **module** header:
 * 2x **I²C** bus (Inter-Integrated Circuit)
 * 1x **SPI** bus (Serial Peripheral Interface)
 
-
 The following table defines signal assignment on **module** header:
-
 
 |     | Signal   | Description                       |
 | --- | :------- | :-------------------------------- |
@@ -102,16 +86,12 @@ The following table defines signal assignment on **module** header:
 | 27  | P16/SCL1 | I²C bus 1 - SCL signal            |
 | 28  | P17/SDA1 | I²C bus 1 - SDA signal            |
 
-
 ## Tag Format
-
 
 The primary purpose of **tag** format is to provide signal break-out for I²C peripheral in a compact form-factor.
 It can be anything I²C-related - e.g. sensors, memories, RTCs, etc.
 
-
 Format **tag** defines:
-
 
 * Signals on a 5-pin **header**.
 * Letter "D"-shaped PCB outline.
@@ -119,18 +99,13 @@ Format **tag** defines:
 * Recommended PCB thickness 1.5 mm.
 * Radius of rounded corners is 3.8 mm.
 
-
 ### Tag Drawing
-
 
 ![](tag.png)
 
-
 ### Tag Signals
 
-
 The following table defines signal assignment on **tag** header:
-
 
 |     | Signal | Description                |
 | --- | :----- | :------------------------- |

@@ -10,7 +10,6 @@ Pro lepší představu se podívej na [video k projektu](https://youtu.be/otJfNo
 
  ![](table-1.jpg)
 
-
 ## Co všechno k projektu potřebuješ
 
 * 1x Adresovatelný LED pásek 1,5 m
@@ -28,7 +27,6 @@ Dále budeš potřebovat:
 * Tlačítka dle vlastní preference
 * Několik metrů dvou-žilového vodiče
 * Zápustný hliníkový profil pro LED pásek s matným difuzorem ([lze koupit např. zde](https://www.ledline.cz/profily-pro-led-pasky/alu-profil-zapustny-174-x-8mm/alu-profil-zapustny-174x8-delka-2m-krytka-mat.html))
-
 
 ## Jak na to
 
@@ -74,12 +72,10 @@ Zápustný hliníkový profil perfektně zapadne do mezery mezi polovinami stolu
 
  ![](table-node.jpg)
 
-
 ## Volitelná Rozšíření a popis FW
 
 ### Akustická odezva na stisk tlačítek
 Na GPIO port P6 Core Module můžeš připojit piezo měnič (druhý vývod zapoj na GND) pro akustickou odezvu po stisku tlačítek. Piezo doporučujeme připojit pokud použiješ tlačítka s málo zřetelným stiskem (bez cvaknutí).
-
 
 ### Konfigurace a nastavení pravidel hry
 Úpravou konfigurace lze zvolit např. barvu hráče a intenzitu podsvětlení.
@@ -89,7 +85,6 @@ Na GPIO port P6 Core Module můžeš připojit piezo měnič (druhý vývod zapo
 #define BRIGHTNESS_BLUE 40
 #define BRIGHTNESS_WHITE_GAP 40
 ```
-
 
 Pro změnu maximálního skóre zadej počet viditelných bodů (tzn. pro hru do 21 nastav 20, 21. vítězný bod je indikován pohyblivým LED efektem v barvě hráče).
 Délka jednotlivých dílků se nastaví automaticky dle zadaného počtu LED celého pásku.
@@ -101,7 +96,6 @@ Délka jednotlivých dílků se nastaví automaticky dle zadaného počtu LED ce
 #define LED_COUNT_PER_POINT ((float)((LED_COUNT - 1.f) / NUMBER_OF_ROUNDS))
 ```
 
-
 GOIO porty jsou nastaveny na použití Sensor Modulu (*BC_GPIO_P4* a *BC_GPIO_P5*), piezo na *BC_GPIO_P6*
 
 ```
@@ -110,12 +104,10 @@ GOIO porty jsou nastaveny na použití Sensor Modulu (*BC_GPIO_P4* a *BC_GPIO_P5
 #define PIEZO_GPIO BC_GPIO_P6
 ```
 
-
 Dále můžeš jednoduše měnit délku tónu při stisku tlačítka a
 ```
 #define PIEZO_BEEP_TIME 300
 ```
-
 
 ### Inicializace
 

@@ -1,8 +1,6 @@
 # BigClown Dokumentace
 
-
 **Vítej na stránkách dokumentační podpory systému BigClown!**
-
 
 Vše na čem pracujeme je určeno lidem, kteří si chtějí dělat věci sami a po svém.
 Snažíme se proto detailně popisovat veškeré hardwarové i softwarové komponenty tak, aby sis s většinou věcí poradil sám. 
@@ -14,9 +12,7 @@ Dokumentaci neustále doplňujeme a opravujeme, ale i ty můžeš aktivně do do
 
 **Přejeme ti hodně radosti při práci na tvých projektech - budování tvé originální domácí automatizace.**
 
-
 ## Struktura dokumentace
-
 
 Dokumentaci máme rozdělenou do několika částí:
 
@@ -32,22 +28,17 @@ Dokumentaci máme rozdělenou do několika částí:
 
 * **Návody** k oblíbeným nástrojům a integrovaným platformám.
 
-
 ## Přispívání
 
 Tvých názorů a spolupráce si velmi ceníme.
 Tato dokumentace je automaticky generována a hostována na technologii [GitBook](https://www.gitbook.com) z veřejného [doc.bigclown.cz repozitáře](https://github.com/bigclownlabs/doc.bigclown.cz).
 Celý obsah je napsán v Markdown.
 
-
 ### Drobné aktualizace a opravy
-
 
 Pokud chceš vylepšit tuto nápovědu, tak neváhej. Klikni na **EDIT THIS PAGE** a pošli nám opravený obsah přímo přes GitHub online editor.
 
-
 ### Jak napsat článek?
-
 
 1. Udělej fork [doc.bigclown.cz repozitáře](https://github.com/bigclownlabs/doc.bigclown.cz) do svého GitHub účtu.
 

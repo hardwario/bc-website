@@ -1,8 +1,6 @@
 # Core Module Development Setup
 
-
 In general firmware development has the following phases:
-
 
 1. **Toolchain Installation**
 
@@ -20,12 +18,9 @@ In general firmware development has the following phases:
 
 2. **Deployment**
 
-
 ## Toolchain Installation
 
-
 Click on one of the supported host operating system platforms for detailed information about the toolchain setup:
-
 
 * [**Ubuntu** Desktop]({{< relref "doc/old/core-module-setup-ubuntu.en.md" >}})
 

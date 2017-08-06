@@ -1,13 +1,9 @@
 # Projekt "Smart LED Strip"
 
-
-
-
 ## O čem projekt je a co ti přinese
 
 Jde o jednoduchý projekt, jehož cílem je ukázat snadnost budování domácí automatizace s našim řešením.
 Výsledkem projektu je "chytrý" LED pásek umístěný na viditelném místě v obývacím pokoji, který si můžeš vzdáleně ovládat z telefonu nebo tabletu.
-
 
 LED pásek je složený ze 144 adresovatelných RGBW čipů a díky výkonu 15W jej lze použít i pro komfortní osvětlení.
 Ve výchozím nastavením je pomocí pásku indikováno překročení nastavených limitů teploty a vlhkosti změnou barvy.
@@ -15,9 +11,7 @@ V návodu si ukážeme, jak lze limity změnit nebo nastavit vlastní pravidla a
 Sestava dále umožňuje dálkově spínat externí spotřebič pomocí relé.
 Ovládání a čtení hodnot si ukážeme pomocí MQTT příkazů, ale hlavně pomocí  mobilní aplikace Blynk.
 
-
 Základem projektu jsou dvě jednotky:
-
 
 ### Base jednotka
 
@@ -37,7 +31,6 @@ Celý koncept popisuje následující diagram:
 
 ![](block-diagram.png)
 
-
 ## Co všechno k projektu potřebuješ
 
 Všechny potřebné výrobky jsme zabalili do [cenově zvýhodněné sady](https://obchod.bigclown.cz/products/smart-led-strip-set), kterou si můžeš koupit v našem obchodě.
@@ -45,7 +38,6 @@ Pokud již vlastníš Core modul nebo si ho koupíš samostatně, pak si ho mus�
 Aktuální firmware pro jednotky Base a Remote [nalezneš zde](https://github.com/bigclownlabs/bcp-wireless-circus/releases/latest).
 Pokud chceš použít vlastní Raspberry Pi s běžícím Raspianem, postupuj [návodem na instalaci BigClown balíčků na existující systém]({{< relref "doc/old/raspberry-pi-installation.cs.md#instalace-bigclown-balíčků-na-existující-systém" >}}).
 Nebo si můžeš [stáhnout image]({{< relref "doc/old/raspberry-pi-installation.cs.md#příprava-microsd-karty" >}}), s již předinstalovaným systémem včetně BigClown balíčků.
-
 
 Sada obsahuje:
 
@@ -68,7 +60,6 @@ Remote unit:
 * 1x Napájecí adaptér 5V/2A pro Raspberry Pi 3
 * 1x Napájecí adaptér 5V/3A pro Power Modul
 
-
 ![](smart-led-strip-set.png)
 
 Dále budeš potřebovat:
@@ -77,7 +68,6 @@ Dále budeš potřebovat:
 * Ethernet kabel
 * LAN router/switch s jedním volným portem
 * Připojení k internetu
-
 
 ## Postup instalace sestavy
 
@@ -138,7 +128,6 @@ Dále budeš potřebovat:
 
     ![](turn-on-light.png)
 
-
 ## Rychlý test a oživení pomocí konzole
 
 Všechny zprávy mezi linuxovými komponentami systému jsou vyměňovány pomocí tzv. MQTT brokeru.
@@ -186,7 +175,6 @@ Pro ověření funkce systému a komunikaci s MQTT brokerem se připoj k Raspber
 Zde si popíšeme, jak rychle otestovat hlavní funkce systému pomocí příkazů MQTT, podrobněji budou všechny funkce popsány později v dalších návodech.
 Pokud si chceš rovnou rozjet ovládání pomocí mobilní aplikace Blynk podívej se [sem]({{< relref "doc/old/smart-led-strip.cs.md#ovládej-systém-komfortně-s-aplikací-blynk" >}}).
 Doporučujeme zkusit alespoň několik prvních příkazů pro otestování funkčnosti.
-
 
 **Ovládání LED pásku:**
 
@@ -274,28 +262,22 @@ Při nastavení maximální svítivosti (brightness = 100 %) nedoporučujeme roz
 Pokud nastavíte všechny čtyři složky (RGBW) na maximální hodnotu (ff) přetížíte napájecí adaptér.
 Pro 100% výkon doporučujeme použít silnější napájecí adaptér min. 5V/5A a dále instalaci LED pásku do hliníkové lišty nebo její přilepení na kovový povrch pro lepší odvod tepla!
 
-
 **Ovládání relé:**
 
 Zapni relé (sepne kontakty *NO* a *C*):
-
 
 ```
 mosquitto_pub -t "nodes/base/relay/-/set" -m '{"state": true}'
 ```
 
-
 Vypni relé (sepne kontakty *NC* a *C*):
-
 
 ```
 mosquitto_pub -t "nodes/base/relay/-/set" -m '{"state": false}'
 ```
 
-
 > **Hint** První pomoc:
 Pokud jsi se úspěšně připojil k Raspberry Pi a LED pásek nebo relé nejde zapnout, zkontroluj, zda jsi připojili 5V DC adaptér do Power Modulu na Base jednotce (rozsvícený pásek je indikován také červenou LED na Core Modulu stanice Base).
-
 
 **Čtení hodnot ze senzorů na Remote unit:**
 
@@ -311,7 +293,6 @@ nodes/remote/humidity-sensor/i2c0-40 {"relative-humidity": [40.6, "%"]}
 ```
 
 Pro ukončení monitorováni stiskni *Ctrl-C*
-
 
 ###Použití LED pásku pro indikaci hodnot teploty a vlhkosti:
 
@@ -343,7 +324,6 @@ mosquitto_pub -t "plugin/led-strip/rules/set" -m '[{"nodes/remote/humidity-senso
 Další pokročilé funkce budou popsány v pozdějších návodech.
 Pro přehlednější editaci vlastních pravidel je možné provést také editací konfiguračního souboru config.yaml [podrobněji níže]({{< relref "doc/old/smart-led-strip.cs.md#konfigurace-vlastních-pravidel-režimu-rules" >}}).
 
-
 ###Změna režimu LED pásku:
 
 LED pásek nebo přesněji "*LED-strip-plugin*" může pracovat ve čtyřech základních režimech:
@@ -363,7 +343,6 @@ Pokud se rozsvítí LED pásek pomocí příkazu plugin/led-strip/color/set, doj
 Každý režim si rovněž uchovává stav všech LED.
 Výchozí režim a stav (předvolbu) každého režimu je možné nastavit pomocí konfiguračního souboru config.yaml popsaného [zde]({{< relref "doc/old/smart-led-strip.cs.md#konfigurace-vlastních-pravidel-režimu-rules" >}}).
 
-
 ## Ovládej systém komfortně s aplikací Blynk
 
 Aplikace [Blynk](http://www.blynk.cc/) je perfektní nástroj pro ovládání tvé domácí automatizace z mobilu nebo tabletu.
@@ -382,7 +361,6 @@ Pro rychlé vyzkoušení vzorových projektů si je můžeš jednoduše naklonov
 ** Pozor:**
 Ujisti se, že máš v Blynku dostatek volné energie, [viz bod 5]({{< relref "doc/old/blynk.cs.md#přidávání-widgetů-v-blynku" >}})
 
-
 **Projekt Smart LED Strip 1: **
 
 Ovládání LED pásku a intenzity, volba barvy a intenzity bílé složky, spínání relé a indikace aktuální hodnot teploty a vlhkosti (vyžaduje 2000 bodů energie):
@@ -393,7 +371,6 @@ QR kód pro naklonování:
 
 ![](blynk-project-smart-led-1-QR.png)
 
-
 **Projekt Smart LED Strip 2: **
 
 Spínání LED pásku a relé, nastavení intenzity LED, indikace aktuální hodnot teploty a vlhkosti a zobrazení grafu historie hodnot (vyžaduje 2000 bodů energie):
@@ -403,7 +380,6 @@ Spínání LED pásku a relé, nastavení intenzity LED, indikace aktuální hod
 QR kód pro naklonování:
 
 ![](blynk-project-smart-led-2-QR.png)
-
 
 **Projekt Smart LED Strip 3: **
 
@@ -449,7 +425,6 @@ Pro vyvolání předvolby v Blynku použij tlačítka nastavené na režim PUSH 
 Pro konfiguraci výchozích režimů a vlastních pravidel slouží soubor: “etc/bigclown/plugin/led-strip.yaml”
 
 **Příklad 1: Výchozí nastavení a pravidla popsaná [v bodu 4.3]({{< relref "doc/old/smart-led-strip.cs.md#použití-led-pásku-pro-indikaci-hodnot-teploty-a-vlhkosti" >}})**
-
 
 ```
 plugin:
@@ -519,7 +494,6 @@ Po přepsání konfiguračního souboru je nutné provést restart led-strip-plu
 ```
 sudo systemctl restart bc-workroom-led-strip.service
 ```
-
 
 ## Závěr
 Na závěr bychom tě chtěli vyzvat k vlastním úpravám a projektům. Je pouze na tobě, zda si pásek nalepíš za TV a v Blynku si definuješ vlastní scénické předvolby pro navození té správné atmosféry k filmu, nebo zda si pásek přiděláš do hliníkové lišty nad pracovní stůl. Těšíme se na tvé projekty s BigClown! Tvůj projekt se může stát inspirací pro další, můžeš ho [přidat na naši dokumentaci sám](https://doc.bigclown.cz/), nebo nám ho [pošli na email](mailto:support@bigclown.com).

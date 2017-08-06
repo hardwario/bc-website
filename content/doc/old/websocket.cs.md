@@ -1,7 +1,5 @@
 # WebSocket - Real-time Protocol
 
-
-
 Web programmers who have done more than just work with content management systems are certainly familiar with the principle of web sockets.
 Basically it is a communication link established between two processes using IP technology.
 Simply put, a socket is described by the pair of IP addresses, protocol and port, that is used for communication.
@@ -15,7 +13,6 @@ With WebSocket it’s much easier to create real-time applications like online c
 An advantage is that the API is very simple and only requires four events and two methods.
 Unlike AJAX, the connection is constantly open with data being sent from either side.
 WebSocket has direct support for UTF-8 and follows the CORS security model as well as AJAX.
-
 
 ## Using WebSocket
 
@@ -77,7 +74,6 @@ When done running the application, it is possible to close the connection by usi
 The server side requires more than just a regular HTTP server – a server that supports WebSocket technology is needed.
 One possibility is to use special services, e.g. a Kaazing or Jetty server, or possibly a local WebSocket node.
 There is also [pywebsocket](https://github.com/google/pywebsocket), an implementation written in Python that functions as a stand-alone server, but that can also work with an Apache server (mod_pywebsocket).
-
 
 ## Examples of using WebSocket
 

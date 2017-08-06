@@ -1,9 +1,7 @@
 # I²C Address Space
 
-
 The following tables lists BigClown I²C address space.
 All addresses are listed in 7-bit format.
-
 
 | Address | Chip         | BigClown Device      | Remark                                  |
 | :------ | :----------- | :------------------- | :-------------------------------------- |

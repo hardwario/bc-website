@@ -1,19 +1,12 @@
 # BigClown development on Windows
 
-
-
-
-
 ## Introduction
-
 
 Our software stack and SDK can be easily run also on Windows with our IDE.
 With few simple steps you can develop and test firmware, MQTT messages and more on Windows.
 This tutorial was tested on Windows 7 Professional x64.
 
-
 ## How to download IDE
-
 
 <a href="https://github.com/bigclownlabs/bc-windows-ide/releases">
 <img src="download.png" width="50"/>
@@ -28,11 +21,9 @@ This installer will take care of installing the following:
 * USB CDC and USB DFU device drivers
 * dfu-util for flashing firmware over USB
 
-
 <img src="vscode.png" width="400" alt="Visual studio code" />
 
 ## How to compile SDK
-
 
 Run the BigClown IDE. There will be opened simple code skeleton with.
 Now you can compile the code by pressing `Ctrl + Shift + B`.
@@ -42,15 +33,11 @@ Please see the tutorials and add you application logic in `app/application.c`.
 
 Congratulation for your first compiled firmware.
 
-
 ## How to upload firmware over USB
-
 
 After compiling the firmware. Press `Ctrl + P` in the Visual Studio code. The cursor will jump to the top command line. Now write `task` and it will display you all the make targets the Makefile contains. We are interested in the `dfu` task. So execute command `task dfu`.
 
-
 <img src="task-dfu.png" alt="Visual studio code" />
-
 
 This Device Firmware Update utility (`dfu-util`) will allow you to upload compiled binary firmware just with USB.
 Please follow this help [how to setup USB driver and use DFU Util on Windows]({{< relref "doc/old/core-module.en.md#on-windows-10-64-bit-desktop" >}}).
@@ -59,9 +46,7 @@ Please follow this help [how to setup USB driver and use DFU Util on Windows]({{
 
 If you use command line then set the device to DFU mode and flash it by typing `make dfu`.
 
-
 ## How to debug core module
-
 
 To debug the running code on Core Module you can use Ozone debugger with J-Link debug probe. It is also possible to use GDB/OpenOCD with other debug probes but this is not documented yet.
 
@@ -70,9 +55,7 @@ Ozone folder also needs to be set in PATH environment variable or you can simply
 
 You start debugging by typing `make ozone` in the command line or `Ctrl+P` and typing `task ozone` in the Visual Studio Code.
 
-
 ## How to generate API documentation
-
 
 Our SDK is using Doxygen to automaticaly generate API documentation from C header files.
 This tool is not necessary to install.
@@ -81,15 +64,12 @@ Download the [latest Doxygen here](http://www.stack.nl/~dimitri/doxygen/download
 
 You generate the docs by `make doc`.
 
-
 ## How to install virtual COM port driver
 
 This step is not necessary when you used the BigClown IDE installer.
 Download and install the [STM32 Virtual COM Port driver](https://drive.google.com/open?id=0B5pXL_JAACMvczQ0MVM1eUZILXc). You can also download latest driver [directly from ST](http://www.st.com/en/development-tools/stsw-stm32102.html) but you will need to register.
 
-
 ## How to install Mosquitto MQTT broker
-
 
 Mosquitto is not necessary for firmware development, but if you would like to send messages over USB to your computer or network you need to install and run it.
 
@@ -98,9 +78,7 @@ Mosquitto is not necessary for firmware development, but if you would like to se
 To run the MQTT broker go to install directory and type `mosquitto.exe -v`.
 Parameter `-v` is for verbose, so you can see the messages.
 
-
 ## How to start the gateway
-
 
 Download and install [Python 3](https://www.python.org/downloads/) which is needed to run the Gateway. Gateway is a small python program which connects virtual USB serial port of Core Module and MQTT broker.
 
@@ -116,8 +94,6 @@ Then run the script with the correct COM port set.
 
 `python bc-gateway.py -d COM2`
 
-
 ## Congratulations!
-
 
 You have sucessfully installed SDK with gateway. Now you can explore and make new interesting projects.

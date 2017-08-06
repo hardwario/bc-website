@@ -1,23 +1,17 @@
 # Core Module - Hardware
 
-
-
 Tady ti naši grafici připravili přehled pojmenování pinů a znázornění základních bloků.
 Popis pinů budeš potřebovat, pokud budeš zapojovat nějaké vlastní externí senzory a součástky.
 Pokud budeš používat tagy a moduly, tak ty mají v SDK své vlastní piny a nemusíš se o ně starat.
-
 
 ![](core-module.png)
 
 Piny označené jako **Px** jsou zapojeny pouze k mikrokontroléru.
 Nejsou připojené k žádným jiným obvodům na Core Module a jsou tedy k dispozici pro tvoji aplikaci.
 
-
 ## Mapování GPIO pinů
 
-
 V následující tabulce je popis pinů a periferií mikrokontroléru [STM32L083CZ](http://www.st.com/en/microcontrollers/stm32l083cz.html):
-
 
 | Pin | Signál     | MCU Pin      | Toleruje 5 V |
 | --- | :--------- | :----------- | :----------- |
@@ -40,36 +34,27 @@ V následující tabulce je popis pinů a periferií mikrokontroléru [STM32L083
 |  27 | P16/SCL1   | PB8  (45)    | Ano          |
 |  28 | P17/SDA1   | PB9  (46)    | Ano          |
 
-
 Pro jednotlivé GPIO piny platí následující omezení:
 
 * Maximální proud na jeden GPIO pin je 16 mA.
 * Maximální součet proudů všech GPIO je 90 mA.
 
-
 ## Schéma hardwaru
-
 
 Kompletní schéma Core Module je [ke stažení v PDF](https://github.com/bigclownlabs/bc-hardware/raw/master/out/bc-module-core/bc-module-core-rev-1-3-sch.pdf).
 
 # Konektory & Signály
 
-
 V našem systému klademe důraz na hardwarovou modularitu a znovupoužitelnost.
 Proto jsme zvolili pro systém propojování našich komponent dobře známý a hojně používaný standard konektorů s 2.54 mm (0.1 palce) roztečí.
 
-
 Náš systém konektorů pak sestává ze dvou typů komponent - **pinů** a **dutinek**.
-
 
 A abychom zajistili kompatibilitu mezi různými hardwarovými komponenty, tak jsme přišli se dvěma našimi standardy - elektromechanickými formáty - **Module** a **Tag**.
 
-
 ## Formát Module
 
-
 Formát **Module** je definován:
-
 
 * Mezerami a signály mezi dvěmi řadami 14pinových konektorů
 * Čtyřmi montážními otvory a jejich průměrem
@@ -80,18 +65,13 @@ Formát **Module** je definován:
 * Doporučenou tloušťkou DPS 1.5 mm
 * Poloměrem zaoblených rohů 3.8 mm
 
-
 ### Schéma Module
-
 
 ![](module.png)
 
-
 ### Signály Module
 
-
 Zde je soupis základních periferií dostupných na konektoru modulu:
-
 
 * 18x **GPIO** channels (General Purpose Input/Output)
 * 5x **ADC** channels (Analog-to-Digital Converter)
@@ -100,9 +80,7 @@ Zde je soupis základních periferií dostupných na konektoru modulu:
 * 2x **I²C** bus (Inter-Integrated Circuit)
 * 1x **SPI** bus (Serial Peripheral Interface)
 
-
 Následující tabulka definuje přiřazení signálů na konektoru modulu:
-
 
 |     | Signal   | Popis                       |
 | --- | :------- | :-------------------------------- |
@@ -152,16 +130,12 @@ Následující tabulka definuje přiřazení signálů na konektoru modulu:
 | 27  | P16/SCL1 | I²C bus 1 - SCL signal            |
 | 28  | P17/SDA1 | I²C bus 1 - SDA signal            |
 
-
 ## Formát Tag
-
 
 Primárním cílem formátu **Tag** je poskytnout výstup signálu pro I²C periferie v kompaktním formát.
 Může to být cokoliv I²C-related - např. sensory, paměti, RTC ad.
 
-
 Formát **Tag** je definován:
-
 
 * Signály na 5pinovém konektoru
 * Tvarem DPS v podobě písmena "D"
@@ -169,18 +143,13 @@ Formát **Tag** je definován:
 * Doporučenou tloušťkou DPS 1.5 mm.
 * Poloměrem zaoblených rohů 3.8 mm.
 
-
 ### Schéma Tagu
-
 
 ![](tag.png)
 
-
 ### Signály Tagu
 
-
 Následující tabulka definuje signály přiřazené na konektoru Tagu:
-
 
 |     | Signal | Popis                |
 | --- | :----- | :------------------------- |

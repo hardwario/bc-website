@@ -1,7 +1,5 @@
 # Grafana + InfluxDB
 
-
-
 ## Instalace
 
 Návod je pro distribuci Debian a Raspbian Jessie a Ubuntu Xenial.

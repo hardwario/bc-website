@@ -2,9 +2,6 @@
 
 # Firmware Programming
 
-
-
-
 Firmware of Core Module is a program stored in an internal flash memory of the microcontroller.
 In this chapter we will call *programming* a process of writing firmware into this internal flash memory.
 
@@ -15,9 +12,7 @@ There are several options how Core Module can be programmed:
 
 These interfaces are further explained in the chapters below.
 
-
 ## Using USB cable and integrated bootloader
-
 
 Bootloader is a small program delivered by STMicroelectronics during microcontroller production.
 This program is stored in read-only memory (ROM) and always co-exists next to the application firmware.
@@ -35,9 +30,7 @@ There are several communication interfaces that can be used to talk to the bootl
 
 We will describe the later one in the chapter below.
 
-
 ## Programming using USB DFU Bootloader
-
 
 Invoking USB DFU bootloader can be done in just a few simple steps:
 
@@ -61,9 +54,7 @@ This procedure can be done very quickly after some practicing.
 
 In the chapters below we will show you how to program the firmware on individual host platforms.
 
-
 ### On Windows 10 64-bit Desktop
-
 
 1. Open Command Prompt (command `cmd`).
 
@@ -92,9 +83,7 @@ In the chapters below we will show you how to program the firmware on individual
 > Core Module must be in bootloader DFU mode prior executing last command.
 > For more information, please refer to [Programming using USB DFU bootloader]({{< relref "#programming-using-usb-dfu-bootloader" >}}).
 
-
 ### On macOS Desktop
-
 
 1. Open Terminal application.
 
@@ -115,9 +104,7 @@ In the chapters below we will show you how to program the firmware on individual
 > Core Module must be in bootloader DFU mode prior executing last command.
 > For more information, please refer to [Programming using USB DFU bootloader]({{< relref "#programming-using-usb-dfu-bootloader" >}}).
 
-
 ### On Ubuntu Desktop
-
 
 1. Open Terminal application.
 
@@ -136,9 +123,7 @@ In the chapters below we will show you how to program the firmware on individual
 > Core Module must be in bootloader DFU mode prior executing last command.
 > For more information, please refer to this [Programming using USB DFU bootloader]({{< relref "#programming-using-usb-dfu-bootloader" >}})
 
-
 ## Using Serial-Wire-Debug Interface
-
 
 This interface allows not only programming but also program debugging.
 
@@ -151,7 +136,6 @@ The debugger is connected via a 10-pin connector on Core Module.
 
 TODO: Insert the picture of Core Module with debug cable connected.
 
-
 # Firmware Files
 
 It is possible to build your own firmware.
@@ -162,7 +146,6 @@ So far you can download two binary files for [Smart LED Strip (Workroom) project
 
 * [Base unit a Remote unit](https://github.com/bigclownlabs/bcp-wireless-circus/releases/latest)
 
-
 ## Smart LED Strip (Workroom) Remote Firmware Features
 
 * Automatic sending of temperature and humidity every 30 seconds
@@ -171,8 +154,6 @@ So far you can download two binary files for [Smart LED Strip (Workroom) project
 
 * Sends message when pin P8 is grounded or released
 
-
 # Development Setup
-
 
 Please, click [here]({{< relref "doc/old/core-module-setup.en.md" >}}) for more details about development setup.

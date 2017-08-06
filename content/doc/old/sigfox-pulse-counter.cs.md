@@ -62,7 +62,6 @@ Dále budeš potřebovat:
 
    ![Obrázek Mini Battery Module a Core Module](sf-ic-mbm-sf-core.png)
 
-
 5. Připojte Sensor Module.
 
    ![Obrázek Mini Battery Module, Core Module, Sigfox Module, Sensor Module](sf-ic-mbm-sf-core-sen.png)
@@ -70,7 +69,6 @@ Dále budeš potřebovat:
 6. Vložte baterie
 
    ![Obrázek Sigfox Počítadlo pulzů - vložené baterie](sf-ic-mbm-sf-core-sen-bat.png)
-
 
 7. Připojte USB kabel do Core Module.
 

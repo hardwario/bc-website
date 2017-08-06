@@ -1,7 +1,5 @@
 # Turris Omnia LXC
 
-
-
 ## Vytvoření kontejneru přes SSH
 
 * Připoj se na SSH routeru:

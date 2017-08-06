@@ -1,8 +1,5 @@
 # Project "Climate Station with LED Thermometer and Dashboard"
 
-
-
-
 ## What is this project about
 
 Climate station is one of the basic elements of home automation.
@@ -19,7 +16,6 @@ The basis of this project is unit assembled from:
 * 1x Barometer Tag
 * 1x Lux Meter Tag
 * 1x LED Strip
-
 
 You will also need:
 
@@ -40,7 +36,6 @@ You will also need:
 
 5. Connect LED Thermometer to Power Module
 6. Connect AC adapter to Power Module
-
 
 ## How to install and connect Grafana application
 

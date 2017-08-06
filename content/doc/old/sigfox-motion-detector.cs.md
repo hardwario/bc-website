@@ -2,12 +2,9 @@
 
 ![Obrázek BigClown Sigfox Detektor Pohybu - krabička](sigfox-motion-detector-enclosures.png)
 
-
 ## Úvod
 
-
 ### K čemu projekt slouží
-
 
 Tento projekt popisuje jednoduchý detektor pohybu osob připojený do sítě Sigfox.
 Detekce osob je založená na principu pasivního snímání tepla z pohybujícího se objektu.
@@ -19,20 +16,15 @@ Informace o detekci pohybu se přenáší rádiově přímo do sítě Sigfox.
 V internetové službě [MySigfox](https://www.mysigfox.cz) je nastavená webhook URL adresa aplikace [BigClown Motion](https://motion.bigclown.cz), která umožňuje jednoduché propojení na službu Twilio.
 Služba Twilio umožňuje odeslat SMS zprávu s libovolným textem na zadané telefonní číslo.
 
-
 ### Příklady použití
-
 
 * Sledování pohybu osob v hlídaném prostoru
 * Monitorování vytíženosti zasedacích místností
 * Domácí automatizace (spuštění akce na průchod chodbou, apod.)
 
-
 ![Obrázek detekce PIR](fresnel-lens.jpg)
 
-
 ### Co je to Sigfox
-
 
 Sigfox je mezinárodní bezdrátová síť pracující v pásmu 868 MHz (EU), případně 915 MHz (USA).
 Hlavní předností této sítě je velmi nízká spotřeba při vysílání ve srovnání s technologií jako je GSM/3G/LTE.
@@ -45,12 +37,9 @@ Není vhodná tam, kde je potřeba často vysílat aktualizovaný stav nebo pos�
 
 Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy mezi zařízením a základnovou stanicí Sigfox přenášet i na vzdálenost přes 100 km.
 
-
 ### Co budeme potřebovat
 
-
 #### Hardwarové komponenty
-
 
 * 1x BigClown [PIR Module](https://obchod.bigclown.cz/products/pir-module)
 
@@ -62,25 +51,19 @@ Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy
 
 _Sigfox Module musí být včetně [předplacené konektivity na 3 roky](https://obchod.bigclown.cz/products/sigfox-module-predplatne-na-3-roky)._
 
-
 ![Obrázek BigClown Sigfox Detektor Pohybu - rozložené moduly](sigfox-motion-detector-set.png)
 
 #### Internetové účty
 
-
 * [Twilio](https://www.twilio.com) - Služba pro posílání SMS
 
-
 #### Ostatní
-
 
 * PC nebo laptop s operačním systémem Windows, macOS nebo Linux
 * MicroUSB kabel pro připojení PC nebo laptopu ke Core Module
 * Internetovou konektivitu
 
-
 ## Sestavení detektoru
-
 
 1. Našroubujte anténu do SMA konektoru na Sigfox Module.
 
@@ -95,7 +78,6 @@ _Sigfox Module musí být včetně [předplacené konektivity na 3 roky](https:/
 4. Připojte Core Module.
 
    ![Obrázek Mini Battery Module a Core Module](sf-md-mbm-sf-core.png)
-
 
 5. Připojte PIR Module.
 
@@ -125,9 +107,7 @@ _Poznámka: Pokud se Core Module rychle rozbliká, potom to indikuje poruchu - n
 V takovém případě zkontrolujte, že jste postupovali správně při sestavení.
 Pokud jste provedli vše správně, obraťte se prosím na naši technickou podporu._
 
-
 ## Popis funkce
-
 
 Po založení baterií se do sítě Sigfox odvysílá událost o resetu zařízení.
 
@@ -142,12 +122,9 @@ Pokud je detekován pohyb a ještě neuplynula "mrtvá doba" PIR čidla, LEDka p
 Každých 24 hodin se odvysílá stav baterie.
 Tato zpráva zároveň indikuje funkční spojení v případě, že se nevyskytuje aktivace PIR čidla pohybu.
 
-
 ## Zprovoznění služby
 
-
 Podle těchto kroků zprovozníte odesílání SMS pro pohybový detektor:
-
 
 1. Založte si účet na službě Twilio
 
@@ -197,9 +174,7 @@ Podle těchto kroků zprovozníte odesílání SMS pro pohybový detektor:
 
    ![Obrázek služby MySigfox](service-mysigfox.png)
 
-
 ## Závěr
-
 
 Tento projekt názorně demonstruje snadné použití BigClown prvků k sestavení bezdrátového PIR detektoru pohybu komunikující prostřednictvím sítě SigFox.
 

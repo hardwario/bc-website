@@ -1,10 +1,7 @@
 # Node RED - Visual Tool for IoT
 
-
-
 To better process data moving through the system we can use the [Node-RED](http://nodered.org) tool.
 As indicated by the name, this is an application built on [Node.js](https://nodejs.org) technology.
-
 
 ## Installation
 
@@ -34,7 +31,6 @@ To launch Node-RED, just use the command:
 `node-red`
 
 After launching you can open the Node-RED editor at http://localhost:1880
-
 
 ## Installation on Raspberry Pi
 
@@ -74,7 +70,6 @@ And then enable autostart with this command:
 
 `sudo systemctl enable nodered.service`
 
-
 ## First steps
 
 Node-RED runs as a web application at http://localhost:1880 (if you are running it on another computer, or on Raspberry, then of course you will not use the localhost, but the address of the remote computer).
@@ -94,7 +89,6 @@ Outputs have roughly the same options as inputs.
 Instead of user source data we can use the "debug" console.
 
 We can process data or events, using special functions (written in JavaScript), or we can use pre-set tools like delay (which delays further transmission of the message by a certain amount of time), trigger (a message can trigger another message to be sent after a certain period of time - useful for timers and switches), or split and join, which is able to combine multiple messages into a single message according to defined rules, or conversely, split a complex message into multiple messages.
-
 
 ## Example
 

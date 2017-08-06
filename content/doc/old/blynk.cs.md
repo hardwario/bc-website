@@ -1,7 +1,5 @@
 # Blynk - Ovládej moduly BigClown z mobilu
 
-
-
 V tomto návodu si ukážeme, jak napojit BigClowní prvky na mobilní aplikaci Blynk.
 Blynk ti umožní ovládat všechny funkce pohodlně ze smartphonu nebo tabletu pomocí grafických widgetů. Tlačítkem tak budeš schopen přepnout relé nebo rozsvítit LED pásek, sliderem měnit intenzitu světla a pomocí grafu zobrazit průběh teploty i dalších veličin.
 
@@ -18,7 +16,6 @@ Zpoždění je při běžném internetovém připojení takřka nepostřehnuteln
 Více o Blynku lze nalézt v [oficiální dokumentaci](http://docs.blynk.cc/).
 
    ![](blynk-architecture-1.png)
-
 
 ## Potřebné SW/HW vybavení
 * telefon / tablet s OS Android 4.0.3 a vyšší nebo iOS 8.0 a vyšší
@@ -45,7 +42,6 @@ Tento návod doplňuje vzorový projekt Smart LED strip, ale slouží také jako
 Vyber způsob komunikace a stiskni *Create*.
 
    ![](blynk-create-project-2.png)
-
 
 ## Přidávání widgetů v Blynku
 
@@ -93,7 +89,6 @@ Např. v projektu Smart LED strip jsou Virtuální Piny přiřazeny následovně
 | 7           | ovládání bílé složky LED pásku               | 0 až 1023      |          |
 | 8-20        | uživatelské předvolby pro tlačítka           | color          |          |
 
-
 ## Spárování Blynk projektu s BigClownem
 
 Pro jednoznačnou identifikaci Blynk projektu slouží autorizační token.
@@ -134,7 +129,6 @@ Pokud se po spuštění projektu Blynk vypíše hláška “Device is offline”
 * připojení Raspberry Pi k internetu
 * zda jsi zadal správný autorizační token
 
-
 ## Slider a Step
 
   ![](blynk-add-step.png)
@@ -143,7 +137,6 @@ Pokud se po spuštění projektu Blynk vypíše hláška “Device is offline”
 Pro regulaci hodnoty ve vetším rozsahu (např. změna intenzity světla), lze vyžít widget *Slider* nebo alternativně *Step H/V* pro změnu hodnot pomocí tlačítek +/-.
 
   ![](blynk-slider-brightness-setting.png)
-
 
 ## zeRGBa - ovládání RGB složek
 

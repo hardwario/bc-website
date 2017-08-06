@@ -1,9 +1,6 @@
 # Blynk - Mobile App Builder
 
-
-
 This tutorial will show you how to connect to BigClown.Hub remotely from your smartphone.
-
 
 ## Installation Procedure
 
@@ -49,7 +46,6 @@ This tutorial will show you how to connect to BigClown.Hub remotely from your sm
    ![](blynk-dashboard.png)
 
 > **Tip** If you will contend with busy state of the virtual pin, then you should simply logout and login to Blynk app again.
-
 
 ## Virtual Pin Assignment for Blynk
 

@@ -54,7 +54,6 @@ Mělo by ti stačit ho aktualizovat a nainstalovat Node-RED těmito příkazy:
 
 Připoj se na Raspberry Pi.
 
-
 ### Firmware
 
 Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware, můžeš k tomu použít vlastní počítač pak postupuj dle návodu [zde]({{< relref "doc/old/core-module-flashing.cs.md" >}}), nebo k tomu využít Raspberry jako já.
@@ -151,7 +150,6 @@ def main():
     client.connect('localhost', keepalive=10)
 
     client.loop_forever()
-
 
 if __name__ == '__main__':
     main()

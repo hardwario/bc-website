@@ -1,7 +1,5 @@
 # Bridge Project
 
-
-
 ## Introduction
 
 Bridge project is suitable for those, who would like to integrate our system with the 3rd party platforms or for those who are working on their own IoT or BigData projects.
@@ -22,7 +20,6 @@ You can also control relay through this web dashboard (with Relay Module) and co
 The hardware concept is best described by the following diagram:
 
 ![](block-diagram.png)
-
 
 ## Requirements
 
@@ -51,7 +48,6 @@ You will also need:
 * Ethernet cable
 * LAN router/switch with one available port
 * Internet connectivity
-
 
 ## Installation Instructions
 
@@ -83,12 +79,10 @@ You can either follow step-by-step instructions in the text below or watch this 
 
    ![](dashboard.png)
 
-
 ## Tweaking and Hacking
 
 Next step is to login to Raspberry Pi via SSH terminal so we can later play with MQTT messages.
 Again, use http://hub.local or the IP from the previous chapter.
-
 
 ### SSH from Windows Desktop
 
@@ -102,7 +96,6 @@ Again, use http://hub.local or the IP from the previous chapter.
 
    * Use password: `raspberry`
 
-
 ### SSH from OS X or Linux Desktop
 
 1. Open Terminal and connect to Raspberry Pi:
@@ -114,7 +107,6 @@ Again, use http://hub.local or the IP from the previous chapter.
    * Use username: `pi`
 
    * Use password: `raspberry`
-
 
 ### MQTT Playground
 

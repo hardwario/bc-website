@@ -5,13 +5,13 @@ title: I²C - Communication Interface
 In the world of the internet we encounter many abbreviations and names for technology that can be confusing for a novice.
 Let’s take a look at some of them and see what they mean.
 
-## What is I²C?
+# What is I²C?
 
 I²C, or more correctly I²C (read I squared C and standing for Inter-Integrated Circuit) is a serial bus that has become a de facto standard for connecting various sensors and other electronic devices.
 It was developed by the Philips Company, and since I²C is a registered trademark, some manufacturers use the abbreviation TWI (Two Wire Interface).
 Practically it means the same thing.
 
-## What is Serial?
+# What is Serial?
 
 Every peripheral, sensor or similar device must be connected in some way to a control unit.
 In electronics this control unit is often a microcontroller (dedicated computer embedded in a single chip).
@@ -22,7 +22,7 @@ A parallel connection is theoretically faster, but it has its drawbacks: you mus
 A serial connection is theoretically slower, but since data is sent along a single wire that can easily be shielded, it is able to handle communication over greater distances.
 It is also not necessary to connect so many wires as in the case of a parallel connection.
 
-## What is Bus?
+# What is Bus?
 
 Sometimes a single device is connected rigidly to certain microcontroller pins.
 The programmer then knows that the given pins are working with a single specific device.
@@ -31,7 +31,7 @@ In such cases a bus is used.
 A bus is a manner of connection where one or more devices are connected to one or more wires, and where the bus always communicates in some manner with only one of them at a time.
 There are several types of serial buses (1-Wire, SPI, I²C, ...) that vary in terms of attributes, the number of wires required, and the manner of selecting the device with which they communicate.
 
-## I²C Bus
+# I²C Bus
 
 In our case a pair of signals are used for connection, SCL (Synchronous Clock) and SDA (Synchronous Data). The I²C bus always has one control device (usually a microcontroller called Master) and several controlled devices (Slaves).
 
@@ -63,7 +63,7 @@ List of certain devices and their addresses in the BigClown system:
 | Lux Meter          | OPT3001   | 0x44 / 0x45 |
 | Relay Module       | TCA9534A  | 0x3B / 0x3F |
 
-## Communication through I²C
+# Communication through I²C
 
 When idle both the SCL and SDA wires will have a logical 1 (pull-up keep signals at this level).
 The Master always starts communication by setting SCL to logical 1 and SDA to logical 0 - START event.

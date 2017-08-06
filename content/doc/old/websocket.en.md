@@ -16,7 +16,7 @@ An advantage is that the API is very simple and only requires four events and tw
 Unlike AJAX, the connection is constantly open with data being sent from either side.
 WebSocket has direct support for UTF-8 and follows the CORS security model as well as AJAX.
 
-## Using WebSocket
+# Using WebSocket
 
 [WebSocket](https://html.spec.whatwg.org/multipage/comms.html#network) offers a very simple interface to establish connections for the bi-directional exchange of messages between client and server.
 On the client side (most often in the browser) the WebSocket class is available.
@@ -77,7 +77,7 @@ The server side requires more than just a regular HTTP server – a server that 
 One possibility is to use special services, e.g. a Kaazing or Jetty server, or possibly a local WebSocket node.
 There is also [pywebsocket](https://github.com/google/pywebsocket), an implementation written in Python that functions as a stand-alone server, but that can also work with an Apache server (mod_pywebsocket).
 
-## Examples of using WebSocket
+# Examples of using WebSocket
 
 Let’s look at a simple example that sets up a WebSocket connection with the Clown.Hub server, sends a message, and displays the received message.
 

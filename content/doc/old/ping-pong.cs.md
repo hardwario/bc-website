@@ -2,7 +2,7 @@
 title: Počítadlo skóre
 ---
 
-## O čem projekt je a co ti přinese
+# O čem projekt je a co ti přinese
 
 Velmi jednoduchý projekt, který velice originálně řeší problémy s počítáním bodů, například při hraní stolního tenisu.
 V podstatě se jedná o počítadlo na body, které se inkrementuje pokaždé, když jeden, nebo druhý hráč získá bod a po dosažení 21 bodů oznámí vítěze.
@@ -12,7 +12,7 @@ Pro lepší představu se podívej na [video k projektu](https://youtu.be/otJfNo
 
  ![](table-1.jpg)
 
-## Co všechno k projektu potřebuješ
+# Co všechno k projektu potřebuješ
 
 * 1x Adresovatelný LED pásek 1,5 m
 * 1x Core Module
@@ -30,9 +30,9 @@ Dále budeš potřebovat:
 * Několik metrů dvou-žilového vodiče
 * Zápustný hliníkový profil pro LED pásek s matným difuzorem ([lze koupit např. zde](https://www.ledline.cz/profily-pro-led-pasky/alu-profil-zapustny-174-x-8mm/alu-profil-zapustny-174x8-delka-2m-krytka-mat.html))
 
-## Jak na to
+# Jak na to
 
-### Příprava stolu:
+## Příprava stolu:
 
 Mechanika celého problému by se dala shrnout asi tak, že výrobce stolu snad počítal s tím, že se tam bude pásek instalovat, jelikož byl celý zákrok neinvazivní, ale výsledek je i přesto velice robustní.
 Zápustný hliníkový profil perfektně zapadne do mezery mezi polovinami stolu.
@@ -49,7 +49,7 @@ Zápustný hliníkový profil perfektně zapadne do mezery mezi polovinami stolu
 
  ![](table-button.jpg)
 
-### Složení stavebnice
+## Složení stavebnice
  1. Sestav Node z modulů BigClown.
 
  ![](node-2.jpg)
@@ -59,7 +59,7 @@ Zápustný hliníkový profil perfektně zapadne do mezery mezi polovinami stolu
 
 3. Flashni Core Module pomocí micro USB kabelu a dfu [podle tohoto návodu]({{< relref "doc/old/core-module-flashing.cs.md#nahrávání-programu-přes-usb-dfu-bootloader" >}}).
 
-### Instalace
+## Instalace
  1. Zvol místo pro přichycení sestavy a připrav si dostatečně dlouhé kabely pro připojení tlačítek a LED pásku.
 
  2. Zapoj tlačítka do Senzor Module do 4 pinové svorkovnice (tlačítko A na pozice 1 a 2, tlačítko B na pozice 3 a 4).
@@ -74,12 +74,12 @@ Zápustný hliníkový profil perfektně zapadne do mezery mezi polovinami stolu
 
  ![](table-node.jpg)
 
-## Volitelná Rozšíření a popis FW
+# Volitelná Rozšíření a popis FW
 
-### Akustická odezva na stisk tlačítek
+## Akustická odezva na stisk tlačítek
 Na GPIO port P6 Core Module můžeš připojit piezo měnič (druhý vývod zapoj na GND) pro akustickou odezvu po stisku tlačítek. Piezo doporučujeme připojit pokud použiješ tlačítka s málo zřetelným stiskem (bez cvaknutí).
 
-### Konfigurace a nastavení pravidel hry
+## Konfigurace a nastavení pravidel hry
 Úpravou konfigurace lze zvolit např. barvu hráče a intenzitu podsvětlení.
 
 ```
@@ -111,7 +111,7 @@ Dále můžeš jednoduše měnit délku tónu při stisku tlačítka a
 #define PIEZO_BEEP_TIME 300
 ```
 
-### Inicializace
+## Inicializace
 
 Jak je vidět v následující ukázce, inicializace se díky přístupu, kterému by se dalo říkat event-callback, vejde na pár řádků a přesto je velice transparentní.
 
@@ -149,7 +149,7 @@ void application_init(void)
 }
 ```
 
-### Příprava vlastního bufferu pro LED pásek
+## Příprava vlastního bufferu pro LED pásek
 
 Šířka běžného ping-pongového stolu je cca 150 cm a je tedy potřeba si připravit speciální buffer pro delší LED pásek s větším počtem LED. V našem případě vyšel počet počet LED na 204.
 
@@ -164,7 +164,7 @@ const bc_led_strip_buffer_t _led_strip_buffer_rgbw_204 =
 };
 ```
 
-### Obsluha piezo reproduktoru
+## Obsluha piezo reproduktoru
 
 Snad jediná funkce, kterou nenalezneš v BigClown SDK a bylo ji potřeba samostatně implementovat.
 
@@ -183,5 +183,5 @@ void piezo()
 }
 ```
 
-### Další integrace
+## Další integrace
 Připojením sestavy k Raspberry PI s odpovídajícím programem v pythonu, zobrazovat skóre ve vlastní aplikaci nebo výsledky zaznamenávat v databázi. Přes Raspberry PI se lze připojit také např. k Philips HUE a měnit barvu svícení podle současného stavu počítadla, vše je pouze na tvé fantazii.

@@ -5,7 +5,7 @@ title: Node RED - Visual Tool for IoT
 To better process data moving through the system we can use the [Node-RED](http://nodered.org) tool.
 As indicated by the name, this is an application built on [Node.js](https://nodejs.org) technology.
 
-## Installation
+# Installation
 
 You must first install Node.js if you do not already have it in your system.
 Node.js can be run on Windows, Linux or macOS systems.
@@ -34,7 +34,7 @@ To launch Node-RED, just use the command:
 
 After launching you can open the Node-RED editor at http://localhost:1880
 
-## Installation on Raspberry Pi
+# Installation on Raspberry Pi
 
 Node-RED can also be installed on Raspberry Pi.
 If you use Raspberry Pi as a platform to run the Hub, you can install Node-RED on it.
@@ -72,7 +72,7 @@ And then enable autostart with this command:
 
 `sudo systemctl enable nodered.service`
 
-## First steps
+# First steps
 
 Node-RED runs as a web application at http://localhost:1880 (if you are running it on another computer, or on Raspberry, then of course you will not use the localhost, but the address of the remote computer).
 
@@ -92,7 +92,7 @@ Instead of user source data we can use the "debug" console.
 
 We can process data or events, using special functions (written in JavaScript), or we can use pre-set tools like delay (which delays further transmission of the message by a certain amount of time), trigger (a message can trigger another message to be sent after a certain period of time - useful for timers and switches), or split and join, which is able to combine multiple messages into a single message according to defined rules, or conversely, split a complex message into multiple messages.
 
-## Example
+# Example
 
 Let’s take a look at a simple automation script to switch a relay depending on lighting intensity.
 For this we will use the Lux Meter Tag and Relay Module.

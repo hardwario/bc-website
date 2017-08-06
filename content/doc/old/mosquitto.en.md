@@ -2,7 +2,7 @@
 title: Mosquitto - MQTT Broker
 ---
 
-## MQTT Basics
+# MQTT Basics
 
 * MQTT is open, simple, light-weight and message-oriented protocol.
 
@@ -24,7 +24,7 @@ title: Mosquitto - MQTT Broker
 
   [Click here to see more on topics](http://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices)
 
-## MQTT Broker Installation
+# MQTT Broker Installation
 
 BigClown uses open-source broker [Mosquitto](https://mosquitto.org).
 
@@ -40,7 +40,7 @@ You can also install `mosquitto-clients` package if you want to be able to work 
 sudo apt install mosquitto-clients
 ```
 
-## Using Mosquitto Client Tools
+# Using Mosquitto Client Tools
 
 To subscribe to all messages use `mosquitto_sub` command:
 
@@ -60,11 +60,11 @@ You can also publish message with empty (null) payload with this command:
 mosquitto_pub -t 'kitchen/light/set' -n
 ```
 
-## Mosquitto Configuration
+# Mosquitto Configuration
 
 You can edit Mosquitto settings in the configuration file which is located in `/etc/mosquitto/mosquitto.conf` inside the Docker.
 
-### Bridging Mosquitto Brokers
+## Bridging Mosquitto Brokers
 
 Bridging two MQTT brokers together is useful for example when you have your local MQTT server behind NAT and you would like to publish messages from the outside/Internet.
 You can create public MQTT server (for example on AWS server) which you bridge with your home MQTT server.
@@ -89,7 +89,7 @@ Topic command will subscribe to all topics (`#`) on remote server under `remote/
 
 * Parameter `in` describes direction and zero `0` means no QoS.
 
-## GUI Tool for MQTT Messages
+# GUI Tool for MQTT Messages
 
 For debugging and diagnostic purposes, you can use a tool with graphical user interface - [Eclipse Paho mqtt-spy](https://github.com/eclipse/paho.mqtt-spy).
 

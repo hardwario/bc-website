@@ -2,7 +2,7 @@
 title: Turris Omnia LXC
 ---
 
-## Vytvoření kontejneru přes SSH
+# Vytvoření kontejneru přes SSH
 
 * Připoj se na SSH routeru:
 
@@ -70,7 +70,7 @@ title: Turris Omnia LXC
   lxc-attach --name test
   ```
 
-## Konfigurace kontejneru
+# Konfigurace kontejneru
 
 * Oprava locales:
   ```
@@ -82,7 +82,7 @@ title: Turris Omnia LXC
   apt update && apt upgrade -y
   ```
 
-### Instalace SSH serveru
+## Instalace SSH serveru
 
 * Lézt na SSH přes root není moc cool, tedy vytvoř si nového uživatele:
   ```

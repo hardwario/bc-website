@@ -2,20 +2,20 @@
 title: Detektor přiblížení vozidla
 ---
 
-## Úvod
+# Úvod
 
 Cílem tohoto projektu je indikování vzdálenosti pohybujícího se objektu od ultrazvukového senzoru pomocí chytrého LED pásku.
 Například to můžeš použít  jako jednoduchého pomocníka při parkování auta v garáži.
 Už nikdy tvoje manželka nebo přítelkyně nemusí narazit do stěny. :-)
 
-## Funkčnost
+# Funkčnost
 
 ![Diagram](diagram.png)
 
 Jako senzor pohybu je použit ultrazvukový senzor HC-SR04P, který je schopný pracovat na 3,3V logice (některé senzory to nepodporují a musíš to zjistit z dokumentace), což je pro nás ideální.
 Z něho jdou data do Core Modulu, kde proběhne vyhodnocení a graficky promítne vzdálenost auta od senzoru do LED pásku.
 
-## Princip funkce ultrazvukového senzoru
+# Princip funkce ultrazvukového senzoru
 
 Krátké ultrazvukové pulzy jsou generovány na základě nepřímého piezo-elektrického jevu piezo-elektrickým krystalem.
 Ultrazvukový senzor vyvolává vysokofrekvenční zvukové vlny (nad 20 kHz) a zachytává echo.
@@ -23,7 +23,7 @@ Ultrazvukový senzor vyvolává vysokofrekvenční zvukové vlny (nad 20 kHz) a 
 Výhodou ultrazvukových senzorů je jednoduché nastavení, minimální údržba a velmi široké použití.
 Jsou velmi spolehlivé i ve znečištěném prostředí.
 
-## Co budeme potřebovat
+# Co budeme potřebovat
 
 - 4x Propojovací drátek kolíček -> dutinka
 - BigClown Core Module
@@ -32,7 +32,7 @@ Jsou velmi spolehlivé i ve znečištěném prostředí.
 - LED strip RGBW 1m 144 LEDs
 - Auto a garáž :-)
 
-## Sestavení
+# Sestavení
 
 1. Začni s Base Modulem.
 
@@ -64,7 +64,7 @@ Jsou velmi spolehlivé i ve znečištěném prostředí.
 8. Dej Power Module do zásuvky
 9. Raduj se, jelikož tvé auto už vždy zaparkuješ v dostatečné vzdálenosti :-)
 
-## Závěr
+# Závěr
 
 Postavili jsme si ultrazvukový senzor vzdálenosti přibližujícího se objektu.
 Tento projekt ukazuje další praktické využití BigClowna v domácí automatizaci.

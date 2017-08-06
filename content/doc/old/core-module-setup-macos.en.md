@@ -2,11 +2,11 @@
 title: Core Module Development Setup - macOS Desktop
 ---
 
-## Requirements
+# Requirements
 
 * Clean install of macOS (tested with version 10.12 Sierra).
 
-## Install Toolchain
+# Install Toolchain
 
 This section will guide you through GCC ARM Embedded toolchain installation on your macOS desktop.
 
@@ -37,7 +37,7 @@ This section will guide you through GCC ARM Embedded toolchain installation on y
    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
    ```
 
-## Build Firmware
+# Build Firmware
 
 This section will guide you through the BigClown Core Module firmware build process.
 

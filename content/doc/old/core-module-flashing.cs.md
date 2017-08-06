@@ -11,7 +11,7 @@ Je několik možností jak do Core Module nahrát firmware:
 
 Oba tyto postupy jsou vysvětlené v kapitolách níže.
 
-## Nahrávání přes USB bootloader
+# Nahrávání přes USB bootloader
 
 Bootloader je malý program, který i do prázdného mikrokontroléru dovede nahrát požadovaný program.
 Bootloader je uložen v paměti pouze pro čtení (ROM) a nezabírá tak cenné místo ve flash paměti a ani jej nelze omylem vymazat.
@@ -24,7 +24,7 @@ Skok do bootloaderu je možný také programově přes `bc_dfu` module nebo pomo
 Bootloader umí nahrát program přes USB, kdy se zařízení chová jako DFU class (device firmware upgrade). Toto USB rozhraní budeme při nahrávání programu používat.
 Další možnost je naprogramovat jej přes sériovou linku USART1 nebo USART2. Tuto možnost využívat nebudeme, primární je pro nás USB update.
 
-## Nahrávání programu přes USB DFU Bootloader
+# Nahrávání programu přes USB DFU Bootloader
 
 Spuštění USB DFU bootloaderu provedeme následovně:
 
@@ -46,7 +46,7 @@ V tomto okamžiku se Core Module připojí k počítači jako USB DFU zařízen�
 
 Následující kapitoly níže popisují postup nahrávání firmware na různých operačních systémech.
 
-### Windows 10 64-bit Desktop
+## Windows 10 64-bit Desktop
 
 Pokud budeš používat náš instalační balíček s Visual Studio Code, pak stačí nainstalovat ovladač přes Zadig. Program dfu-utils není třeba stahovat.
 
@@ -80,7 +80,7 @@ Pokud budeš používat náš instalační balíček s Visual Studio Code, pak s
 > Core Module musí být přepnut do DFU módu před provedením příkazu `dfu-util`.
 > Postup je v kapitole [Nahrávání programu přes USB DFU Bootloader]({{< relref "#nahrávání-programu-přes-usb-dfu-bootloader" >}}).
 
-### macOS Desktop
+## macOS Desktop
 
 1. Otevři terminál.
 
@@ -103,7 +103,7 @@ Pokud budeš používat náš instalační balíček s Visual Studio Code, pak s
 > Core Module musí být přepnut do DFU módu před provedením příkazu `dfu-util`.
 > Postup je v kapitole [Nahrávání programu přes USB DFU Bootloader]({{< relref "#nahrávání-programu-přes-usb-dfu-bootloader" >}}).
 
-### Ubuntu Desktop
+## Ubuntu Desktop
 
 1. Otevři terminál.
 
@@ -124,7 +124,7 @@ Pokud budeš používat náš instalační balíček s Visual Studio Code, pak s
 > Core Module musí být přepnut do DFU módu před provedením příkazu `dfu-util`.
 > Postup je v kapitole [Nahrávání programu přes USB DFU Bootloader]({{< relref "#nahrávání-programu-přes-usb-dfu-bootloader" >}}).
 
-## Programování přes SWD (Serial-Wire-Debug)
+# Programování přes SWD (Serial-Wire-Debug)
 
 Programováním přes SWD konektor můžeš program nejen nahrát, ale i krokovat a sledovat proměnné přímo za běhu programu.
 Je potřeba speciální hardwarový nástroj nazývaný **debugger**.
@@ -136,7 +136,7 @@ Debugger se na Core Module připojuje na 10 pinový programovací konektor.
 
 TODO: Vložit obrázek.
 
-## Firmware Files
+# Firmware Files
 
 Firmware si můžeš naprogramovat s pomocí [BigClown API](http://sdk.bigclown.com) a zkompilovat sám.
 SDK nalezneš na našem [GitHub](https://github.com/bigclownlabs) účtu.
@@ -145,7 +145,7 @@ Můžeš si stáhnout předkompilované binární soubory pro [ Smart LED Strip 
 
 * [Base unit a Remote unit](https://github.com/bigclownlabs/bcp-wireless-circus/releases/latest)
 
-## Popis funkčnosti Remote unit pro Smart LED Strip (Workroom) project
+# Popis funkčnosti Remote unit pro Smart LED Strip (Workroom) project
 
 * Automatické posílání naměřené teploty a vlhkosti každých 30 sekund.
 
@@ -153,6 +153,6 @@ Můžeš si stáhnout předkompilované binární soubory pro [ Smart LED Strip 
 
 * Odeslání zprávy při změně logické hodnoty na pinu P8. Pin má nastaven pull-up, takže reaguje pokud jej propojíš se zemi (GND)
 
-## Nastavení vývojového prostředí
+# Nastavení vývojového prostředí
 
 Pro nastavení vývojového prostředí a SDK [postupuj podle tohoto návodu]({{< relref "doc/old/core-module-setup.cs.md" >}}).

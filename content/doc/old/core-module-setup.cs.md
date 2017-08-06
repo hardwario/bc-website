@@ -20,7 +20,7 @@ Vývoj firmare probíhá v následujících krocích:
 
 2. **Nasazení**
 
-## Instalace toolchainu
+# Instalace toolchainu
 
 Na odkazech níže je popis zprovoznění toolchainu na jednotlivých platformách.
 

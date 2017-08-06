@@ -2,7 +2,7 @@
 title: Grafana + InfluxDB
 ---
 
-## Instalace
+# Instalace
 
 Návod je pro distribuci Debian a Raspbian Jessie a Ubuntu Xenial.
 
@@ -11,7 +11,7 @@ Testováno na:
 * Raspbian Jessie na Raspberry Pi 3
 * Ubuntu Xenial jako LXC kontejner na Turris Omnia
 
-### InfluxDB
+## InfluxDB
 
 * Nainstaluj závislosti:
   ```
@@ -46,7 +46,7 @@ Testováno na:
 
   > **Poznámka:** Pokud chceš administrovat InfluxDB přes http tak v `/etc/influxdb/influxdb.conf` odkomentuj a uprav `enabled = true` a `bind-address = ":8083"`.
 
-### Grafana
+## Grafana
 
 * Nainstaluj závislosti:
   ```
@@ -96,7 +96,7 @@ Testováno na:
   sudo systemctl start grafana-server
   ```
 
-### MQTT brouker
+## MQTT brouker
 
 Existuje jich víc - my používáme Mosquitto:
 
@@ -104,7 +104,7 @@ Existuje jich víc - my používáme Mosquitto:
 sudo apt install mosquitto mosquitto-clients -y
 ```
 
-### Gateway mezi USB serial a MQTT brokerem
+## Gateway mezi USB serial a MQTT brokerem
 
 * Nainstaluj závislosti:
   ```
@@ -131,7 +131,7 @@ sudo apt install mosquitto mosquitto-clients -y
   sudo systemctl start bc-gateway.service
   ```
 
-### Gateway mezi MQTT a InfluxDB
+## Gateway mezi MQTT a InfluxDB
 
 * Vytvoření databáze jménem `node` v InfluxDB:
   ```
@@ -172,7 +172,7 @@ sudo apt install mosquitto mosquitto-clients -y
   sudo systemctl start mqtt_to_influxdb.service
   ```
 
-### Nastavení Grafana
+## Nastavení Grafana
 
 * Připoj se na Grafana [http://<ip>:3000](http://<ip>:3000)  Uživatel `admin` a heslo `admin`
 

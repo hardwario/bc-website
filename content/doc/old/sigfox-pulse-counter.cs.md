@@ -2,7 +2,7 @@
 title: Sigfox Počítadlo Impulzů
 ---
 
-## 1.1. O čem projekt je a co ti přinese
+# 1.1. O čem projekt je a co ti přinese
 
 Jde o velice jednoduchý projekt jehož cílem je sestavit bezdrátové počítadlo pulzů připojené do sítě sigfox. Počítadlo je mimo jiné vybaveno bateriovým modulem s dvěmy alkalických bateriemi typu AAA (tzv. "mikrotužky"), takže nevyžaduje žádné další napájení.
 
@@ -12,16 +12,16 @@ Výstup je ve formě dat (grafu) v google sheetu.
 
    ![Obrázek sestavy](sf-ic-v1.png)
 
-## Popis funkce
+# Popis funkce
 
 Po založení baterií se po uplynutí 10 sekund odvysílají do sítě sigfox první data obsahující počty pulzů a stav baterie, což se zvenku projevý bliknutím LED diody na core modulu.
 
-## 1.2. Příklady použití
+# 1.2. Příklady použití
 
 * Odečítání spotřeby elektřiny
 * Odečítání spotřeby vody
 
-## 1.3. Co je to Sigfox
+# 1.3. Co je to Sigfox
 
 Sigfox je mezinárodní bezdrátová síť pracující v pásmu 868 MHz (EU), případně 915 MHz (USA).
 Hlavní předností této sítě je velmi nízká spotřeba při vysílání ve srovnání s technologií jako je GSM/3G/LTE.
@@ -34,7 +34,7 @@ Není vhodná tam, kde je potřeba často vysílat aktualizovaný stav nebo pos�
 
 Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy mezi zařízením a základnovou stanicí Sigfox přenášet i na vzdálenost přes 100 km.
 
-## 1.4. Co všechno k projektu potřebuješ
+# 1.4. Co všechno k projektu potřebuješ
 
 * 1x BigClown [Sensor Module](https://obchod.bigclown.cz/products/sensor-module)
 
@@ -48,7 +48,7 @@ Dále budeš potřebovat:
 
 ![Obrázek BigClown Sigfox Počítadla Impulzů - rozložené moduly](sigfox-impulse-counter-set.png)
 
-## 2. Sestavení počítadla
+# 2. Sestavení počítadla
 
 1. Našroubujte anténu do SMA konektoru na Sigfox Module.
 
@@ -86,7 +86,7 @@ Dále budeš potřebovat:
 
    Více se o firmware a jeho principech dozvíte v dokumentaci v sekci [Firmware SDK tutoriál]({{< relref "doc/old/core-module-sdk.cs.md" >}}).
 
-## 3. Propojení služby sigfox a google sheetu pomocí webhooku.
+# 3. Propojení služby sigfox a google sheetu pomocí webhooku.
 
 1. Vytvoř si účet na google, abys měl možnost využívat google disk
 
@@ -198,7 +198,7 @@ Proklikej se a výsledkem bude "Aktuální adresa URL webové aplikace:".
 
    ![Obrázek sestavy](sf-ic-t9.png)
 
-## Nastavte službu MySigfox
+# Nastavte službu MySigfox
 
    Služba MySigfox propojuje Sigfox backend s uživatelem definovanou webovou službou prostřednictvím požadavku HTTP POST - tzv. webhooku.
    Samozřejmě je možné použít zabezpečenou variantu HTTPS.
@@ -212,7 +212,7 @@ Proklikej se a výsledkem bude "Aktuální adresa URL webové aplikace:".
 
    ![Obrázek služby MySigfox](service-mysigfox.png)
 
-## 4. Instalace
+# 4. Instalace
 
 Když máš připravenou sestavu a nejuniverzálnější nástroj na světě (izolačku libovolné barvy).
 
@@ -227,7 +227,7 @@ Fototranzistor se zapojí do vstupní svorky Sensor modulu a přilepí se pomoc�
 
    ![Obrázek kompletní instalace](sf-ic-i3.jpg)
 
-## 5. Datový rámec - pro zvídavé
+# 5. Datový rámec - pro zvídavé
 
 Abyste správně pochopili co google skript vlastně dělá.
 
@@ -241,6 +241,6 @@ Abyste správně pochopili co google skript vlastně dělá.
 
 Data se aktualizují každých 60 minut.
 
-## Závěr
+# Závěr
 
 Poměrně lehce si tak uděláš představu kolik co potřebuje elektřiny a bude tě bolet každá otáčku bubnu pračky, zapnutí bojleru a pečení kuřete v troubě.

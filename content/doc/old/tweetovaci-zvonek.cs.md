@@ -2,7 +2,7 @@
 title: Tweetovací zvonek
 ---
 
-## Úvod
+# Úvod
 
 Tento jednoduchý projekt tě snadno seznámí, jak použít BigClown Core Modul.
 Cílem projektu bude zaslání tweetu po stisku tlačítka na Core Module, nebo jakéhokoliv externího tlačítka.
@@ -12,14 +12,14 @@ Můžete monitorovat vaše návštěvy a zjisti, jestli jste někoho nezmeškali
 Využijeme grafického rozhraní Node-Red pro nastavení pravidla, kdy MQTT zpráva po stisku tlačítka pošle tweet.
 [Zde je ukázková výsledná tweetovací stránka](https://twitter.com/bcDoorbell)
 
-## Co potřebujeme
+# Co potřebujeme
 
 * 1x [Core Module](https://obchod.bigclown.cz/products/core-module)
 * 1x [Raspberry Pi 3](https://obchod.bigclown.cz/products/raspberry-pi-3-set)
 * 1x Micro SD kartu ([stáhni obraz pro Rpi]({{< relref "doc/old/raspberry-pi-installation.cs.md" >}}) nebo [objednej předinstalovanou kartu](https://obchod.bigclown.cz/products/apacer-industrial-microsdhc-card-4gb))
 * 1x [Micro USB kabel](https://obchod.bigclown.cz/products/usb2-0-cable-am-b-micro-0-6m)
 
-## Core Module
+# Core Module
 
 Následující kód níže přidej do souboru `app/application.c`.
 Protože je veškerá logika programu v callback funkci tlačítka, není nutné používat nebo vytvářet funkci `application_taks()`.
@@ -89,9 +89,9 @@ Pokud stiskneš tlačítko na Core Module, v konzoli uvidíš příchozí zpráv
 
 `nodes/push-button/- {"event-count": 5}`
 
-## Konfigurace Raspberry Pi
+# Konfigurace Raspberry Pi
 
-### Instalace a konfigurace
+## Instalace a konfigurace
 
 Pro zprovoznění Raspberry Pi [postupuj podle připraveného instalačního návodu]({{< relref "doc/old/raspberry-pi-installation.cs.md" >}}).
 Připoj se na konzoli Raspberry Pi přímo, nebo přes SSH.
@@ -99,7 +99,7 @@ Na Raspberry Pi musí být nainstalované balíčky od BigClown - buď jsi použ
 
 Pak ještě budeme potřebovat Node-RED, abychom propojili tlačítko Core Module s Twitterem. [Instalace Node-RED na Raspberry Pi]({{< relref "doc/old/node-red.cs.md" >}})
 
-## Konfigurace Node RED
+# Konfigurace Node RED
 
 Pokud jsi nainstaloval a spustil Node-RED, otevři internetový prohlížeč na
 URL &lt;adresa-rpi&gt;:1880 a vytvoř následující flow:
@@ -118,28 +118,28 @@ V tomto případě můžeš přeskočit následující popis jak vytvářet jedn
 [{"id":"4f1ddaf2.8d8ff4","type":"tab","label":"Flow 1"},{"id":"3adfde65.667022","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"856fe615.8f1008","type":"twitter-credentials","z":"","screen_name":"@bcDoorbell"},{"id":"b9060d89.926bd","type":"mqtt in","z":"4f1ddaf2.8d8ff4","name":"","topic":"nodes/push-button/-","qos":"0","broker":"3adfde65.667022","x":275,"y":133,"wires":[["aab295ba.d087e8"]]},{"id":"1eb962d4.06a4ad","type":"twitter out","z":"4f1ddaf2.8d8ff4","twitter":"856fe615.8f1008","name":"Tweet","x":739,"y":133,"wires":[]},{"id":"62d4fc7.ea3b104","type":"template","z":"4f1ddaf2.8d8ff4","name":"Message","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"Somebody is at the door! ({{payload.event-count}})","x":597,"y":133,"wires":[["1eb962d4.06a4ad"]]},{"id":"aab295ba.d087e8","type":"json","z":"4f1ddaf2.8d8ff4","name":"","x":451,"y":133,"wires":[["62d4fc7.ea3b104"]]}]
 ```
 
-### MQTT in blok
+## MQTT in blok
 
 Tento blok se připojí na MQTT brokera a přijímá příchozí zprávy.
 Nastav adresu serveru a téma (topic).
 
 ![](mqtt.png)
 
-### JSON blok
+## JSON blok
 
 Není nutná žádní konfigurace.
 
-### Message blok
+## Message blok
 
 Tento blok změní MQTT zprávu na řetězec, kterou pak lze poslat na Twitter.
 
 ![](message.png)
 
-### Twitter out blok
+## Twitter out blok
 
 Zde nastav své přihlášení do Twitter účtu.
 
-## Testování
+# Testování
 
 Nyní můžeš stisknout `Deploy` tlačítko v pravém horním rohu Node-RED.
 Teď když na Core Module stiskneš tlačítko `B`, uvidíš na zlomek sekundy text `tweeting` vedle Tweet bloku.
@@ -150,16 +150,16 @@ Gratulujeme k úspěšnému projektu.
 
 ![Twitter screenshot](twitter_screenshot.png)
 
-## Ladění a hledání chyb
+# Ladění a hledání chyb
 
 V případě, že něco nefunguje, použij `Debug` blok a zapoj jej někde do řetězce.
 Poté udělej znova `Deploy` a ujisti se, že `Debug` blok má vpravo zakliknutou zelenou barvu a je aktivní. Poté v pravém panelu přepni na `Debug` záložku a uvidíš ladící zprávy.
 
 ![Debugging](debug.png)
 
-## Konfigurace pro Windows
+# Konfigurace pro Windows
 
-### Propojení Core Module a gateway
+## Propojení Core Module a gateway
 
 Po zkompilování a nahrání kódu do Core Module (viz. bod 3. Core Module) si stáhni a nainstaluj [Python 3](https://www.python.org/downloads/), který je potřebný ke spuštění gateway.
 
@@ -188,7 +188,7 @@ Pokud stiskneš tlačítko `B` na Core Module, v konzoli uvidíš příchozí zp
 
 `DEBUG: b'["push-button/-", {"event-count": 0}]\n'`
 
-### Propojení Mosquitto a gateway
+## Propojení Mosquitto a gateway
 
 Otevři si příkazový řádek (příkaz `cmd`). Poté změň aktuální adresář (s pomocí `cd`) do složky se souborem `mosquitto_sub.exe`, který se nachází v
 

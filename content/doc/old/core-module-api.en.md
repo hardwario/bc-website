@@ -21,13 +21,13 @@ The complete API can be found on the following URL:
 
 * All headers are documented and accompanied by usage examples.
 
-## Automatic Documentation Build
+# Automatic Documentation Build
 
 All APIs are documented using **Doxygen-style comments directly in source code** of the firmware library.
 We generate documentation automatically using Travis CI (on master branch).
 The generated content is hosted via GitHub Pages (gh-pages branch).
 
-## Sources for Documentation
+# Sources for Documentation
 
 Firmware library can be found in this repository:
 

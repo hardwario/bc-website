@@ -20,7 +20,7 @@ MQTT minimizes the amount of ballast data, so it only adds a minimum of service 
 It establishes three levels of QoS (Quality of Service) - which pertains to message confirmation, with the lowest level meaning that the message is sent without confirmation and delivery is not guaranteed (at-most-once), the middle level says that the message is delivered at least once, and the highest level, QoS 2, means that each message is delivered exactly once.
 However, a client need not support all three levels of QoS.
 
-## MQTT in Detail
+# MQTT in Detail
 
 Messages in MQTT belong to certain topics.
 Each message belongs to a single topic.
@@ -49,7 +49,7 @@ If the name of the topic starts with the `$` symbol, this is a special topic pub
 This is used as a special topic for messages which the broker needs to send.
 The most widely used approach is to begin topics with `$SYS/` - these usages are not yet fixed and a list of recommended topic names is available at [MQTT Wiki](https://github.com/mqtt/mqtt.github.io/wiki/SYS-Topics).
 
-## Exchanging Messages
+# Exchanging Messages
 
 Initially the client (device, node) establishes a connection with the broker via TCP.
 This most often uses port 1883, or port 8883 for a connection via TLS.
@@ -78,7 +78,7 @@ The broker responds with a `PINGACK` message.
 If the connection is lost, the broker can send for a certain topic a “last will” message, which is a message that the device can send when sending a `CONNECT` message to connect with the broker.
 This message is not required.
 
-## QoS & Retain
+# QoS & Retain
 
 So we have already taken a brief look at Quality of Service.
 We mentioned that there are three levels, 0, 1 and 2, that differ depending on degree of confirmation and manner of ensuring delivery.
@@ -117,7 +117,7 @@ The broker then sends messages it receives at the requested QoS.
 If a message is received by the broker at QoS 2, but the subscriber request a maximum of QoS 1, the broker will send the message with QoS 1.
 Of course, this means that the subscriber may get the message multiple times (because QoS 1 does not guarantee delivery “exactly once”).
 
-### An example of MQTT in practice
+## An example of MQTT in practice
 
 Let us assume the simplest situation possible, turning on a light bulb with a switch.
 
@@ -140,7 +140,7 @@ MQTT is very easy to use - many broker implementations exist (probably the most 
 You will find MQTT in cloud services (AWS IoT, Azure IoT), or in various home automation systems (Domoticz) or tools for smartphones.
 Without exaggeration it can be said that MQTT is really one of few IoT standards.
 
-### MQTT and BigClown
+## MQTT and BigClown
 
 The BigClown Hub enables communcation via MQTT.
 Defines topics and subtopics for data, and also defines the format of messages sent.
@@ -195,7 +195,7 @@ nodes/bridge/0/barometer/i2c1-60 {"pressure": [97.062, "kPa"], "altitude": [361.
 
 You see the values from two lux meters (each on a different bus) and from the barometer (here there are two values, pressure and altitude).
 
-## References
+# References
 
 * MQTT
   http://mqtt.org/

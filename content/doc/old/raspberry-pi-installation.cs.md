@@ -9,7 +9,7 @@ Návod byl otestován na Raspberry Pi 3 (Model B), ale měl by fungovat i pro Ra
 
 Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější distribuci Linuxu pro Raspberry Pi.
 
-## Požadavky
+# Požadavky
 
 * Raspberry Pi 3 (Model B)
 * Minimálně 4 GB MicroSD card
@@ -22,13 +22,13 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
   * macOS (otestována verze 10.12.1)
   * Linux (otestováno na Ubuntu 16.04 LTS)
 
-## Příprava MicroSD karty
+# Příprava MicroSD karty
 
 1. Vlož MicroSD kartu do MicroSD čtečky karet.
 
 2. Stáhni si aktuální verzi BigClown Raspbian image z https://github.com/bigclownlabs/bc-raspbian/releases.
 
-### Návod pro Windows
+## Návod pro Windows
 
 3. Rozbal si stažený image.
 
@@ -40,7 +40,7 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
 
    > **Poznámka** Win32 Disk Imager musí běžet s právy správce.
 
-### Návod pro macOS
+## Návod pro macOS
 
 3. Otevři si Terminal a přejdi do složky stahování, např.:
 
@@ -83,7 +83,7 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
    diskutil eject /dev/diskX
    ```
 
-### Návod pro Linux
+## Návod pro Linux
 
 3. Otevři si Terminal a přejdi do složky stahování, např.:
 
@@ -127,7 +127,7 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
    eject /dev/sdX
    ```
 
-## Nastartuj Raspberry Pi
+# Nastartuj Raspberry Pi
 
 1. Vlož MicroSD kartu do Raspberry Pi.
 
@@ -135,7 +135,7 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
 
 3. Připoj USB napájecí adaptér k Raspberry Pi.
 
-## Připojení k Raspberry Pi
+# Připojení k Raspberry Pi
 
 V dalším kroku se připojíme k Raspberry Pi přes SSH terminál.
 
@@ -145,7 +145,7 @@ Můžeš se k němu připojit dvěmi způsoby:
 
  2. Použitím zeroconf mechanismu skrze přístup k `hub.local` hostu (tento způsob by měl být funkční pro všechny typy PC).
 
-### Návod pro Windows
+## Návod pro Windows
 
 1. Stáhni si [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
@@ -157,7 +157,7 @@ Můžeš se k němu připojit dvěmi způsoby:
 
    * Zadej heslo: `raspberry`
 
-### Postup pro macOS a Linux
+## Postup pro macOS a Linux
 
 1. Otevři si Terminal a připoj se k Raspberry Pi:
 
@@ -175,7 +175,7 @@ Můžeš se k němu připojit dvěmi způsoby:
 
    3. Zadej heslo: `raspberry`
 
-## Proveď update tvé instalace
+# Proveď update tvé instalace
 
 V případě prvního připojení NEZAPOMEŇ ZMĚNIT DEFAULTNÍ HESLO.
 Můžeš to provést následujícím příkazem:
@@ -192,7 +192,7 @@ Pro update systému použij tento příkaz:
 sudo apt update && sudo apt upgrade
 ```
 
-## Rozdíly oproti oficiálnímu Raspbianu
+# Rozdíly oproti oficiálnímu Raspbianu
 
 Poč jsme vůbec vytvořili vlastní implementaci Raspbian distribuce?
 Chtěli jsme ti usnadnit proces instalace a zautomatizovat některé naše věci (pro automatizaci používáme Travis CI).
@@ -224,7 +224,7 @@ Toto je stručný výpis změn:
   * bc-workroom-led-strip
   * bc-workroom-blynk
 
-## Instalace BigClown balíčků na existující systém
+# Instalace BigClown balíčků na existující systém
 
 > **Important** Tento postup použij pouze pokud máš vlastní Raspberry Pi a na něm běžící Raspbian distribuci a pokud jsi vynechal všechny předcházející kroky.
 
@@ -274,7 +274,7 @@ Toto je stručný výpis změn:
      sudo apt install bc-workroom-blynk
      ```
 
-## Připojení Raspberry Pi 3 na WiFi
+# Připojení Raspberry Pi 3 na WiFi
 
 S verzí Raspberry Pi 3 přibyla možnost připojení k WiFi síti.
 

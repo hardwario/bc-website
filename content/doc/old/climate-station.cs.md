@@ -2,7 +2,7 @@
 title: Projekt "Klimastanice s LED teploměrem a dashboardem"
 ---
 
-## O čem projekt je a co ti přinese
+# O čem projekt je a co ti přinese
 
 Klimastanice je jedním ze základních prvků domácí automatizace.
 Informace o teplotě, vlhkosti, tlaku a koncentraci CO2 jsou potřebné pro zajištění správných životních podmínek a tepelné pohody doma i v kanceláři.
@@ -27,7 +27,7 @@ Dále budeš potřebovat:
 * LAN router/switch s jedním volným portem
 * Připojení k internetu
 
-## Postup sestavení jednotky
+# Postup sestavení jednotky
 
 1. Na Base Module zasuň Power Module
 2. Na Power Module zasuň Core Module
@@ -39,15 +39,15 @@ Dále budeš potřebovat:
 5. K Power Module připoj LED teploměr
 6. K Power Module připoj napájení z adaptéru
 
-## Postup instalace a napojení aplikace Grafana
+# Postup instalace a napojení aplikace Grafana
 
-### Aktualizace
+## Aktualizace
 
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 
-### Firmware
+## Firmware
 
 Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware:
 
@@ -62,7 +62,7 @@ Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware:
   sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D firmware-72pixel.bin
   ```
 
-#### InfluxDB
+## InfluxDB
 
 ```
 sudo apt install apt-transport-https
@@ -77,7 +77,7 @@ sudo systemctl start influxdb
 Pokud chceš administrovat influx přes http tak v /etc/influxdb/influxdb.conf
 odkomentuj a uprav enabled = true a bind-address = ":8083"
 
-#### Grafana
+## Grafana
 
 ```
 sudo apt install adduser libfontconfig -y
@@ -104,7 +104,7 @@ sudo systemctl enable grafana-server
 sudo systemctl start grafana-server
 ```
 
-### Gateway mezi USB a MQTT brokerem
+## Gateway mezi USB a MQTT brokerem
 
 * Pokud používáš Raspberry od nás nebo sis nahrál náš [bc-raspbian](https://github.com/bigclownlabs/bc-raspbian/releases/latest) použij tyto příkazy:
 
@@ -164,7 +164,7 @@ Test funkčnosti
   mosquitto_sub -v -t '#'
   ```
 
-### Vytvoření databáze node v InfluxDB
+## Vytvoření databáze node v InfluxDB
 ```
 curl -s "http://localhost:8086/query?q=CREATE+DATABASE+%22node%22&db=_internal"
 ```
@@ -173,7 +173,7 @@ kontrola zda došlo k vytvoření
 curl -s "http://localhost:8086/query?q=SHOW+DATABASES&db=_internal" | grep \"node\"
 ```
 
-### Spuštění služby která bude překopírovávat data z MQTT do InfluxDB
+## Spuštění služby která bude překopírovávat data z MQTT do InfluxDB
 
 ```
 sudo apt install python3-pip
@@ -190,7 +190,7 @@ sudo systemctl enable mqtt_to_influxdb.service
 sudo systemctl start mqtt_to_influxdb.service
 ```
 
-### Nastavení Grafany
+## Nastavení Grafany
 
 * Připoj se na Grafanu [http://ip-raspberry:3000](http://ip-raspberry:3000)  User `admin` a Password `admin`
 

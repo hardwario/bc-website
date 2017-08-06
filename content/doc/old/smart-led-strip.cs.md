@@ -2,7 +2,7 @@
 title: Projekt "Smart LED Strip"
 ---
 
-## O čem projekt je a co ti přinese
+# O čem projekt je a co ti přinese
 
 Jde o jednoduchý projekt, jehož cílem je ukázat snadnost budování domácí automatizace s našim řešením.
 Výsledkem projektu je "chytrý" LED pásek umístěný na viditelném místě v obývacím pokoji, který si můžeš vzdáleně ovládat z telefonu nebo tabletu.
@@ -15,7 +15,7 @@ Ovládání a čtení hodnot si ukážeme pomocí MQTT příkazů, ale hlavně p
 
 Základem projektu jsou dvě jednotky:
 
-### Base jednotka
+## Base jednotka
 
 Tato jednotka je zodpovědná za řízení LED pásku a bezdrátový příjem dat z Remote jednotky.
 Přijatá data jsou z Base jednotky přenášena do Raspberry Pi, kde se vyhodnotí a dle definovaných pravidel se nastaví požadované barvy LED pásku.
@@ -23,7 +23,7 @@ Jednotku Base lze použít samostatně nezávisle na Remote, např. pouze pro ov
 
 ![](unit-base.png)
 
-### Remote jednotka
+## Remote jednotka
 
 Jednotka Remote je napájena z baterií a s Base komunikuje bezdrátově ve frekvenčním pásmu 868 MHz. Remote se stará o měření hodnot teploty a vlhkosti, které jsou každých 30 s vysílány a přijímány jednotkou Base. Tlačítko boot na Core modulu lze použít pro dálkové ovládání (zapínání / vypínání LED pásku).
 
@@ -33,7 +33,7 @@ Celý koncept popisuje následující diagram:
 
 ![](block-diagram.png)
 
-## Co všechno k projektu potřebuješ
+# Co všechno k projektu potřebuješ
 
 Všechny potřebné výrobky jsme zabalili do [cenově zvýhodněné sady](https://obchod.bigclown.cz/products/smart-led-strip-set), kterou si můžeš koupit v našem obchodě.
 Pokud již vlastníš Core modul nebo si ho koupíš samostatně, pak si ho musíš flashnout správným firmware a [to podle tohoto návodu]({{< relref "doc/old/core-module-flashing.cs.md" >}}).
@@ -71,7 +71,7 @@ Dále budeš potřebovat:
 * LAN router/switch s jedním volným portem
 * Připojení k internetu
 
-## Postup instalace sestavy
+# Postup instalace sestavy
 
 1. Sestav si Base jednotku:
 
@@ -130,7 +130,7 @@ Dále budeš potřebovat:
 
     ![](turn-on-light.png)
 
-## Rychlý test a oživení pomocí konzole
+# Rychlý test a oživení pomocí konzole
 
 Všechny zprávy mezi linuxovými komponentami systému jsou vyměňovány pomocí tzv. MQTT brokeru.
 MQTT broker tvoří jádro systému domácí automatizace BigClown.
@@ -140,7 +140,7 @@ Více podrobností o technologii MQTT nalezneš zde:
 
 * [Mosquitto - MQTT Broker]({{< relref "doc/old/mosquitto.cs.md" >}})
 
-### Připojení k Raspberry Pi
+## Připojení k Raspberry Pi
 
 Pro ověření funkce systému a komunikaci s MQTT brokerem se připoj k Raspberry Pi pomocí protokolu SSH:
 
@@ -173,7 +173,7 @@ Pro ověření funkce systému a komunikaci s MQTT brokerem se připoj k Raspber
     sudo apt update && sudo apt upgrade
     ```
 
-### Otestování funkcí a hrátky s MQTT
+## Otestování funkcí a hrátky s MQTT
 Zde si popíšeme, jak rychle otestovat hlavní funkce systému pomocí příkazů MQTT, podrobněji budou všechny funkce popsány později v dalších návodech.
 Pokud si chceš rovnou rozjet ovládání pomocí mobilní aplikace Blynk podívej se [sem]({{< relref "doc/old/smart-led-strip.cs.md#ovládej-systém-komfortně-s-aplikací-blynk" >}}).
 Doporučujeme zkusit alespoň několik prvních příkazů pro otestování funkčnosti.
@@ -296,7 +296,7 @@ nodes/remote/humidity-sensor/i2c0-40 {"relative-humidity": [40.6, "%"]}
 
 Pro ukončení monitorováni stiskni *Ctrl-C*
 
-###Použití LED pásku pro indikaci hodnot teploty a vlhkosti:
+##Použití LED pásku pro indikaci hodnot teploty a vlhkosti:
 
 Pro indikaci nastavených hodnot je nutné opětovně zapnout LED pásek a přepnout ho do režimu “*rules*”:
 
@@ -326,7 +326,7 @@ mosquitto_pub -t "plugin/led-strip/rules/set" -m '[{"nodes/remote/humidity-senso
 Další pokročilé funkce budou popsány v pozdějších návodech.
 Pro přehlednější editaci vlastních pravidel je možné provést také editací konfiguračního souboru config.yaml [podrobněji níže]({{< relref "doc/old/smart-led-strip.cs.md#konfigurace-vlastních-pravidel-režimu-rules" >}}).
 
-###Změna režimu LED pásku:
+##Změna režimu LED pásku:
 
 LED pásek nebo přesněji "*LED-strip-plugin*" může pracovat ve čtyřech základních režimech:
 *   rules - pásek se řídí dle nastavených pravidel (indikace teploty apod.)
@@ -345,7 +345,7 @@ Pokud se rozsvítí LED pásek pomocí příkazu plugin/led-strip/color/set, doj
 Každý režim si rovněž uchovává stav všech LED.
 Výchozí režim a stav (předvolbu) každého režimu je možné nastavit pomocí konfiguračního souboru config.yaml popsaného [zde]({{< relref "doc/old/smart-led-strip.cs.md#konfigurace-vlastních-pravidel-režimu-rules" >}}).
 
-## Ovládej systém komfortně s aplikací Blynk
+# Ovládej systém komfortně s aplikací Blynk
 
 Aplikace [Blynk](http://www.blynk.cc/) je perfektní nástroj pro ovládání tvé domácí automatizace z mobilu nebo tabletu.
 Zde si ukážeme jak nastavit aplikaci Blynk pro ovládání a monitorování všech funkcí sestavy [Smart LED Strip Set](https://obchod.bigclown.cz/products/smart-led-strip-set).
@@ -396,7 +396,7 @@ QR kód pro naklonování:
 
 ![](blynk-project-smart-led-3-QR.png)
 
-### Přidání uživatelských tlačítek pro vyvolání scénických režimů
+## Přidání uživatelských tlačítek pro vyvolání scénických režimů
 Rychlé předvolby pro RGBW LED pásek lze definovat pomocí konfiguračního souboru uloženého v Raspberry Pi: *"etc/bigclown/plugin/led-strip.user"*.
 Nejprve se zadává požadovaný Virtual PIN (dostupné jsou 8-99) a následně příkaz color nebo compound:
 
@@ -423,7 +423,7 @@ sudo systemctl restart bc-workroom-blynk.service
 
 Pro vyvolání předvolby v Blynku použij tlačítka nastavené na režim PUSH namapované na PINy  V8, V9, V11, V12. Předvolby jsou použity v ukázkovém projektu *Smart LED Strip 3*.
 
-### Konfigurace vlastních pravidel režimu rules
+## Konfigurace vlastních pravidel režimu rules
 Pro konfiguraci výchozích režimů a vlastních pravidel slouží soubor: “etc/bigclown/plugin/led-strip.yaml”
 
 **Příklad 1: Výchozí nastavení a pravidla popsaná [v bodu 4.3]({{< relref "doc/old/smart-led-strip.cs.md#použití-led-pásku-pro-indikaci-hodnot-teploty-a-vlhkosti" >}})**
@@ -497,6 +497,6 @@ Po přepsání konfiguračního souboru je nutné provést restart led-strip-plu
 sudo systemctl restart bc-workroom-led-strip.service
 ```
 
-## Závěr
+# Závěr
 Na závěr bychom tě chtěli vyzvat k vlastním úpravám a projektům. Je pouze na tobě, zda si pásek nalepíš za TV a v Blynku si definuješ vlastní scénické předvolby pro navození té správné atmosféry k filmu, nebo zda si pásek přiděláš do hliníkové lišty nad pracovní stůl. Těšíme se na tvé projekty s BigClown! Tvůj projekt se může stát inspirací pro další, můžeš ho [přidat na naši dokumentaci sám](https://doc.bigclown.cz/), nebo nám ho [pošli na email](mailto:support@bigclown.com).
 Pokud něčemu neporozumíš nebo najdeš chybu, neboj se nám napsat email nebo příspěvek do [fóra](http://forum.bigclown.com/).

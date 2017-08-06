@@ -17,7 +17,7 @@ Oba moduly slouží pro napájení BigClown komponent z baterií. Jelikož jsou 
 - P0 - měření napětí baterií
 - P1 - připojení/odpojení odporového děliče pro účely tohoto měření
 
-## Battery Module
+# Battery Module
 
 ![](battery-module.png)
 
@@ -35,7 +35,7 @@ Ze spodní strany jsou vyvedeny piny pouze pro NFC Module, jiné komponenty do n
 - <a href="files/modules/bc-module-battery-rev-1-3-sch.pdf" target="_blank">Schéma modulu</a>
 - <a href="files/modules/tps62745.pdf" target="_blank">Datasheet pro step-down TPS62745</a>
 
-## Mini Battery Module
+# Mini Battery Module
 
 ![](mini-battery-module.png)
 

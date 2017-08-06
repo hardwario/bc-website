@@ -7,7 +7,7 @@ Blynk ti umožní ovládat všechny funkce pohodlně ze smartphonu nebo tabletu 
 
    ![](blynk-on-mobile.png)
 
-## Jak funguje Blynk
+# Jak funguje Blynk
 
 Blynk není jen mobilní aplikace, ale také IoT cloud server, který ti umožní ovládat nebo číst data ze senzorů BigClown pomocí mobilu odkudkoliv s připojením k internetu.
 Stačí se přihlásit pod svým uživatelským účtem.
@@ -19,7 +19,7 @@ Více o Blynku lze nalézt v [oficiální dokumentaci](http://docs.blynk.cc/).
 
    ![](blynk-architecture-1.png)
 
-## Potřebné SW/HW vybavení
+# Potřebné SW/HW vybavení
 * telefon / tablet s OS Android 4.0.3 a vyšší nebo iOS 8.0 a vyšší
 * minimálně jednu pevnou stanici BigClown tvořenou Core Modulem popř. dalšími prvky, připojenou k Raspberry Pi nebo jinému Linuxovému počítači s nainstalovaným SW balíčkem BigClown Hub s připojením k internetu
 * samozřejmě lze napojit i další bezdrátové stanice (Nody)
@@ -28,13 +28,13 @@ Podrobný postup zapojení prvků BigClown je popsán ve vzorovém projektu [Sma
 Kompletní sadu lze také zakoupit ve [zvýhodněném setu](https://obchod.bigclown.cz/products/smart-led-strip-set).
 Tento návod doplňuje vzorový projekt Smart LED strip, ale slouží také jako obecný návod pro všechny ostatní BigClowní projekty s Blynkem.
 
-## Instalace a založení účtu v programu Blynk
+# Instalace a založení účtu v programu Blynk
 
 1. Nainstaluj Blynk na svoje zařízení (aplikace je dostupná na Google Play a App Store).
 2. Spusť Blynk.
 3. Vytvoř si uživatelský účet (Create New Account).
 
-## Vytvoření Blynk projektu
+# Vytvoření Blynk projektu
 
 4. Vytvoř nový projekt:
 
@@ -45,7 +45,7 @@ Vyber způsob komunikace a stiskni *Create*.
 
    ![](blynk-create-project-2.png)
 
-## Přidávání widgetů v Blynku
+# Přidávání widgetů v Blynku
 
 Každý vložený prvek (widget) v Blynku “stojí” nějakou energii, po zaregistrování a přihlášení do aplikace je k dispozici zdarma 2000 bodů, což postačí pro přidání většiny potřebných funkcí pro základní projekty s prvky typu tlačítko nebo slider.
 Pokud budeš chtít vytvořit větší projekty s mnoha prvky a využít užitečné funkce jako graf historie pro sledování hodnot ze senzorů, doporučujeme dobít si další energii.
@@ -57,7 +57,7 @@ Stačí se jen přihlásit pod svým uživatelským účtem.
    ![](blynk-add-widget-2.png)
    ![](blynk-add-widget-3.png)
 
-## Tlačítko
+# Tlačítko
 
    ![](blynk-add-button.png)
 
@@ -70,7 +70,7 @@ Lze si také navolit barvu tlačítka a popisky pro stavy *ON* / *OFF*.
    ![](blynk-button.png)
    ![](blynk-button-relay-setup.png)
 
-## Napojení widgetu na prvky BigClown
+# Napojení widgetu na prvky BigClown
 
    ![](blynk-select-pin-cut.png)
 
@@ -91,7 +91,7 @@ Např. v projektu Smart LED strip jsou Virtuální Piny přiřazeny následovně
 | 7           | ovládání bílé složky LED pásku               | 0 až 1023      |          |
 | 8-20        | uživatelské předvolby pro tlačítka           | color          |          |
 
-## Spárování Blynk projektu s BigClownem
+# Spárování Blynk projektu s BigClownem
 
 Pro jednoznačnou identifikaci Blynk projektu slouží autorizační token.
 Token si vygeneruj v Blynku a zadej pomocí SSH v Raspberry Pi, kde běží BigClown Hub.
@@ -131,7 +131,7 @@ Pokud se po spuštění projektu Blynk vypíše hláška “Device is offline”
 * připojení Raspberry Pi k internetu
 * zda jsi zadal správný autorizační token
 
-## Slider a Step
+# Slider a Step
 
   ![](blynk-add-step.png)
   ![](blynk-add-slider.png)
@@ -140,7 +140,7 @@ Pro regulaci hodnoty ve vetším rozsahu (např. změna intenzity světla), lze 
 
   ![](blynk-slider-brightness-setting.png)
 
-## zeRGBa - ovládání RGB složek
+# zeRGBa - ovládání RGB složek
 
   ![](Blynk-add-zergba.png)
 
@@ -152,14 +152,14 @@ Poznámka: Rozsahy hodnot pro ovládání LED pásku jsou zvoleny na výchozích
 
   ![](blynk-zergba-setting.png)
 
-## Menu
+# Menu
 
 Prvek Menu může sloužit pro výběr předvoleb.
 Ve vzorovém projektu [Smart LED Strip]({{< relref "doc/old/smart-led-strip.cs.md" >}}) je menu použito pro výběr režimů LED pásku.
 
   ![](blynk-menu-setting.png)
 
-## Value Display a Labeled Value - čtení hodnot
+# Value Display a Labeled Value - čtení hodnot
 
   ![](blynk-add-value-display-labeled-value.png)
 
@@ -170,7 +170,7 @@ Nastavit lze název, barvu widgetu, rozsah hodnot a frekvenci čtení.
 
   ![](blynk-value-dysplay-temperature.png)
 
-## History Graph - průběhy veličin
+# History Graph - průběhy veličin
 Widget History Graph ti umožní sledovat průběhy měřených veličin.
 V jednom grafu můžeš zobrazit až čtyři různé veličiny.
 Nastavit lze automatický nebo uživatelský rozsah v ose y, zobrazení legendy a časovou osu.
@@ -180,12 +180,12 @@ Nastavit lze automatický nebo uživatelský rozsah v ose y, zobrazení legendy 
 **Tip.** Pro zvětšení plochy grafu stopni projekt, stiskni a drž prst na ploše widgetu a poté ho pohybem roztáhni.
 Zvětšování plochy widgetů je zatím funkční pouze ve verzi pro Android.
 
-## Tab - rozdělení projektu na více záložek
+# Tab - rozdělení projektu na více záložek
 Pokud se ti všechny prvky nevejdou na jednu plochu, lze ji rozšířit pomocí widgetu *Tab*.
 
    ![](blynk-tab-setting.png)
 
-## Rychlé naklonování projektu
+# Rychlé naklonování projektu
 
 Blynk umožňuje sdílet vytvořené projekty pomocí QR kódu.
 

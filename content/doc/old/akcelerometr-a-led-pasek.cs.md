@@ -4,7 +4,7 @@ title: LED pásek a akcelerometr
 
 V této kapitole se seznámíš s ovládáním digitálního LED pásku. V druhé části předvedu jak spojit LED pásek s hodnotami z akcelerometru.
 
-## Digitální LED pásek
+# Digitální LED pásek
 
 Je na čase pořádně rozblikat LED pásek na power modulu.
 Připoj Power Module, LED pásek a napájecí adaptér. Pásek z důvodu velkého příkonu nelze napájet jen z USB.
@@ -48,7 +48,7 @@ void application_init(void)
 }
 ```
 
-## Akcelerometr
+# Akcelerometr
 
 Druhá ukázka je spojení předchozího LED pásku a akcelerometru, který je součástí Core Module. Na LED pásku se uprostřed rozsvítí jeden pixel a bude se posouvat v závislosti na náklonu Core Module doprava a doleva.
 

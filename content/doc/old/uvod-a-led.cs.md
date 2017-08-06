@@ -4,7 +4,7 @@ title: BigClown SDK - úvod a rozblikání LED
 
 Zde najdeš základní popis a strukturu programu. Pokud něčemu v úvodu nerozumíš, němej strach. Podívej se dál na praktické úkázky s LED diodou a zjistíš, že napsat si vlastní firmware je hračka.
 
-## Úvod
+# Úvod
 
 BigClown SDK je modulární API pro Core Module, které nabízí pokročilé funkce pro práci s periferiemi a hardwarovými moduly.
 
@@ -19,7 +19,7 @@ Ve chvíli, kdy není třeba nic vykonávat, se procesor na určitý čas uspí 
 
 Všechny moduly SDK si v tomto seriálu popíšeme a vysvětlíme. Tutoriál se bude postupně doplňovat a vylepšovat a můžeš se na něm podílet i ty. Dej nám vědět, jestli nějaká část potřebuje doplnit nebo upravit. Můžeš to udělat tlačítkem plus (+), které najdeš u každého odstavce, když na něj najedeš myší, nebo nás kontaktuj přímo.
 
-## Kde program začíná?
+# Kde program začíná?
 V programovacích jazycích existuje vstupní bod.
 Může to být funkce `main()`, `loop()`.
 V BC SDK v jazyce C se kód začíná vykonávat ve funkci `main()`.
@@ -44,7 +44,7 @@ void application_task(void)
 }
 ```
 
-## LEDka ##
+# LEDka #
 
 Podívejme se na klasickou ukázku rozblikání LED diody, která je na Core Module umístěna.
 Nejprve budu demonstrovat méně efektivní způsob, který ale vysvětlí základy práce s GPIO piny.

@@ -2,7 +2,7 @@
 title: Tlačítko a instance
 ---
 
-## Tlačítko
+# Tlačítko
 
 Pojďme nyní ovládat LED tlačítkem na Core Module.
 Opět by šlo využít přímé čtení GPIO pinu.
@@ -52,7 +52,7 @@ void button_event_handler(bc_button_t *self, bc_button_event_t event, void *even
 }
 ```
 
-## Instance a objektové programování ##
+# Instance a objektové programování #
 
 Pro LED a tlačíko jsme si museli vytvořit instance `bc_led_t` a `bc_button_t`.
 Tyto vytvořené struktury potom jako pointer posíláme do jednotlivých funkcí jako jejich první parametr.

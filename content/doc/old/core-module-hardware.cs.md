@@ -11,7 +11,7 @@ Pokud budeš používat tagy a moduly, tak ty mají v SDK své vlastní piny a n
 Piny označené jako **Px** jsou zapojeny pouze k mikrokontroléru.
 Nejsou připojené k žádným jiným obvodům na Core Module a jsou tedy k dispozici pro tvoji aplikaci.
 
-## Mapování GPIO pinů
+# Mapování GPIO pinů
 
 V následující tabulce je popis pinů a periferií mikrokontroléru [STM32L083CZ](http://www.st.com/en/microcontrollers/stm32l083cz.html):
 
@@ -41,11 +41,11 @@ Pro jednotlivé GPIO piny platí následující omezení:
 * Maximální proud na jeden GPIO pin je 16 mA.
 * Maximální součet proudů všech GPIO je 90 mA.
 
-## Schéma hardwaru
+# Schéma hardwaru
 
 Kompletní schéma Core Module je [ke stažení v PDF](https://github.com/bigclownlabs/bc-hardware/raw/master/out/bc-module-core/bc-module-core-rev-1-3-sch.pdf).
 
-## Konektory & Signály
+# Konektory & Signály
 
 V našem systému klademe důraz na hardwarovou modularitu a znovupoužitelnost.
 Proto jsme zvolili pro systém propojování našich komponent dobře známý a hojně používaný standard konektorů s 2.54 mm (0.1 palce) roztečí.
@@ -54,7 +54,7 @@ Náš systém konektorů pak sestává ze dvou typů komponent - **pinů** a **d
 
 A abychom zajistili kompatibilitu mezi různými hardwarovými komponenty, tak jsme přišli se dvěma našimi standardy - elektromechanickými formáty - **Module** a **Tag**.
 
-## Formát Module
+# Formát Module
 
 Formát **Module** je definován:
 
@@ -67,11 +67,11 @@ Formát **Module** je definován:
 * Doporučenou tloušťkou DPS 1.5 mm
 * Poloměrem zaoblených rohů 3.8 mm
 
-### Schéma Module
+## Schéma Module
 
 ![](module.png)
 
-### Signály Module
+## Signály Module
 
 Zde je soupis základních periferií dostupných na konektoru modulu:
 
@@ -132,7 +132,7 @@ Následující tabulka definuje přiřazení signálů na konektoru modulu:
 | 27  | P16/SCL1 | I²C bus 1 - SCL signal            |
 | 28  | P17/SDA1 | I²C bus 1 - SDA signal            |
 
-## Formát Tag
+# Formát Tag
 
 Primárním cílem formátu **Tag** je poskytnout výstup signálu pro I²C periferie v kompaktním formát.
 Může to být cokoliv I²C-related - např. sensory, paměti, RTC ad.
@@ -145,11 +145,11 @@ Formát **Tag** je definován:
 * Doporučenou tloušťkou DPS 1.5 mm.
 * Poloměrem zaoblených rohů 3.8 mm.
 
-### Schéma Tagu
+## Schéma Tagu
 
 ![](tag.png)
 
-### Signály Tagu
+## Signály Tagu
 
 Následující tabulka definuje signály přiřazené na konektoru Tagu:
 

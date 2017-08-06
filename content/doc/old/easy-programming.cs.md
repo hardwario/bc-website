@@ -2,7 +2,7 @@
 title: Jednoduché programování domácí automatizace
 ---
 
-## O čem projekt je a co ti přinese
+# O čem projekt je a co ti přinese
 
 Dlouhou dobu jsem snil o tom, že si postavím vlastní automatizaci.
 Ale ten hardware...
@@ -22,24 +22,24 @@ Ukáži ti, jak:
 * Rozblikáme LEDku v případě, když někde ve světě prší
 * Pomocí pluginu do Node RED si zobrazíme měřená data
 
-## Jak na to...
+# Jak na to...
 
-### Kup si zvýhodněný [Basic Wireless Set](https://obchod.bigclown.cz/products/basic-wireless-set)
+## Kup si zvýhodněný [Basic Wireless Set](https://obchod.bigclown.cz/products/basic-wireless-set)
 
-### Poskládej si jednotky Base a Remote
+## Poskládej si jednotky Base a Remote
 
-### Zprovozni si Raspberry Pi
+## Zprovozni si Raspberry Pi
 
 Můžeš použít předpřipravené BigClown Raspberry Pi, nebo použij své, pokud na něm máš Raspbian Jessie.
 
-#### Předpřipravené Raspberry Pi
+## Předpřipravené Raspberry Pi
 
 Mělo by ti stačit ho aktualizovat a nainstalovat Node-RED těmito příkazy:
 
   `sudo apt update && sudo apt upgrade`
   `sudo npm install -g node-red`
 
-#### Vlastní Raspberry Pi
+## Vlastní Raspberry Pi
 
 * Přidej si repozitář BigClown
 * Nainstaluj si aktuální verzi node.js pomocí těchto příkazů
@@ -56,11 +56,11 @@ Mělo by ti stačit ho aktualizovat a nainstalovat Node-RED těmito příkazy:
 
 Připoj se na Raspberry Pi.
 
-### Firmware
+## Firmware
 
 Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware, můžeš k tomu použít vlastní počítač pak postupuj dle návodu [zde]({{< relref "doc/old/core-module-flashing.cs.md" >}}), nebo k tomu využít Raspberry jako já.
 
-#### Aktualizace přes Raspberry Pi
+## Aktualizace přes Raspberry Pi
 
 * Nainstaluj si nástroj pro aktualizaci
 
@@ -86,21 +86,21 @@ Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware, může�
 
   `sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D firmware-base.bin`
 
-### Párování Base s Remote
+## Párování Base s Remote
 
 * Podrž pravé tlačítko na Base dokud nezačne dioda blikat
 * Podrž pravé tlačítko na Remote dokud nezačne dioda blikat
 * Zkoušej klikat na tlačítko Remote jednotky a na Base jednotce by měla podle toho svítit či nesvítit dioda
 
-### Pošli si a přijmi pár testovacích zpráv
+## Pošli si a přijmi pár testovacích zpráv
 
-#### Rozsvícení diody
+## Rozsvícení diody
 `mosquitto_pub -t "nodes/base/light/-/set" -m '{"state": true}'`
 
-#### Zhasnutí diody
+## Zhasnutí diody
 `mosquitto_pub -t "nodes/base/light/-/set" -m '{"state": false}'`
 
-#### Zachycení zpráv z Remote jednotky
+## Zachycení zpráv z Remote jednotky
 `mosquitto_sub -v -t 'nodes/remote/#'`
 
 > **Poznámka:** Chce to chvilku trpělivosti data chodí jednou za 30s až dorazí uvidíš něco jako
@@ -110,7 +110,7 @@ Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware, může�
 
 **Pokud ses dostal až sem, tak vše funguje jak má a můžeme se posunout k zajímavějším úlohám.**
 
-### Napiš si v Pythonu jednoduchý skript
+## Napiš si v Pythonu jednoduchý skript
 
 Napiš si v Pythonu skript, který přijme přes MQTT data z bezdrátového čidla teploty a vlhkosti a rozsvítí LEDku, když jedna z hodnot přeleze nastavenou mez.
 
@@ -157,7 +157,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### Pomocí Node-RED zatvítuj teplotu a vlhkost
+## Pomocí Node-RED zatvítuj teplotu a vlhkost
 
 1. Spusť si Node-RED příkazem
 `node-red-pi`
@@ -174,7 +174,7 @@ if __name__ == '__main__':
 
 Tímto jsi naimportoval flow, který každých 5 minut tvítne zprávu o teplotě a vlhkosti.
 
-### Pomocí Node-RED si graficky zobraz naměřená data
+## Pomocí Node-RED si graficky zobraz naměřená data
 
 * Doinstaluj si `sudo npm install -g node-red-dashboard`
 
@@ -188,7 +188,7 @@ Tímto jsi naimportoval flow, který každých 5 minut tvítne zprávu o teplot�
 
 * Podívej se na grafické zobrazení naměřených hodnot **http://ip-tveho-raspberry:1880/ui**
 
-### Pomocí Node-RED zablikáme LEDkou, pokud začne v Londýně pršet a zároveň si informaci o počasí zobrazíme do ui
+## Pomocí Node-RED zablikáme LEDkou, pokud začne v Londýně pršet a zároveň si informaci o počasí zobrazíme do ui
 Možná je to trochu mimo, ale ukazuje to na nekonečné možnosti dnešní domácí automatizace :-)
 
 * Doinstaluj si **openweathermap** `sudo npm install -g node-red-node-openweathermap`
@@ -197,11 +197,9 @@ Možná je to trochu mimo, ale ukazuje to na nekonečné možnosti dnešní dom�
 
 * Vpravo nahoře klikni na menu > import > clipboard, překliknout na new flow a vlož následující text:
 
-{% raw %}
   ```json
   [{"id":"e72e5e5c.0d2bc","type":"tab","label":"Počasí"},{"id":"2bc6a772.07e128","type":"openweathermap in","z":"e72e5e5c.0d2bc","name":"","lon":"","lat":"","city":"London","country":"UK","language":"en","x":180,"y":120,"wires":[["40be2a63.8a72f4","d5f0d2ef.066ea","5ab2a431.0d3c6c"]]},{"id":"40be2a63.8a72f4","type":"function","z":"e72e5e5c.0d2bc","name":"prsi?","func":"return {topic:\"prsi\", \npayload: msg.payload.weather == \"Rain\"};","outputs":1,"noerr":0,"x":510,"y":220,"wires":[["d5f0d2ef.066ea","4a53c279.bb0ffc","fc86f110.87b1f"]]},{"id":"d5f0d2ef.066ea","type":"debug","z":"e72e5e5c.0d2bc","name":"","active":true,"console":"false","complete":"true","x":750,"y":200,"wires":[]},{"id":"5ab2a431.0d3c6c","type":"ui_template","z":"e72e5e5c.0d2bc","group":"5c9f8529.e22d0c","name":"widget na ui","order":0,"width":"6","height":"3","format":"<div>\n    <img ng-src=\"http://openweathermap.org/img/w/{{msg.data.weather[0].icon}}.png\" />\n    {{msg.payload.description}}\n</div>\n","storeOutMessages":true,"fwdInMessages":true,"x":770,"y":40,"wires":[[]]},{"id":"4a53c279.bb0ffc","type":"ui_switch","z":"e72e5e5c.0d2bc","name":"","label":"prší ?","group":"5c9f8529.e22d0c","order":0,"width":0,"height":0,"passthru":true,"topic":"","style":"","onvalue":"true","onvalueType":"bool","onicon":"","oncolor":"","offvalue":"false","offvalueType":"bool","officon":"","offcolor":"","x":750,"y":100,"wires":[[]]},{"id":"53170763.536f68","type":"inject","z":"e72e5e5c.0d2bc","name":"Testovací tlačítko","topic":"","payload":"true","payloadType":"bool","repeat":"","crontab":"","once":false,"x":360,"y":360,"wires":[["fc86f110.87b1f"]]},{"id":"211f12d5.f9ca8e","type":"mqtt out","z":"e72e5e5c.0d2bc","name":"led set","topic":"nodes/base/light/-/set","qos":"","retain":"","broker":"fc8241ff.e69d68","x":1010,"y":360,"wires":[]},{"id":"fc86f110.87b1f","type":"function","z":"e72e5e5c.0d2bc","name":"generátor pulzů","func":"if (msg.payload === false) return;\n\nif (msg.cnt == undefined) {\n    msg.cnt = 20;\n}\nif (msg.cnt < 0) return;\nmsg.cnt--;\nmsg.payload = {state: msg.cnt % 2 == 0}\nreturn msg;","outputs":1,"noerr":0,"x":780,"y":360,"wires":[["5056d513.2a21cc","211f12d5.f9ca8e"]]},{"id":"5056d513.2a21cc","type":"delay","z":"e72e5e5c.0d2bc","name":"","pauseType":"delay","timeout":"500","timeoutUnits":"milliseconds","rate":"1","nbRateUnits":"1","rateUnits":"second","randomFirst":"1","randomLast":"5","randomUnits":"seconds","drop":false,"x":770,"y":500,"wires":[["fc86f110.87b1f"]]},{"id":"5c9f8529.e22d0c","type":"ui_group","z":"","name":"London","tab":"663e87fd.e4e8d8","order":4,"disp":true,"width":"6"},{"id":"fc8241ff.e69d68","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"30","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"663e87fd.e4e8d8","type":"ui_tab","z":"","name":"Kancl","icon":"dashboard"}]
   ```
-{% endraw %}
 
 ![](twitter.png)
 

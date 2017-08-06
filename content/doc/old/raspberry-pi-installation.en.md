@@ -9,7 +9,7 @@ It has been tested on Raspberry Pi 3 (Model B) but it will probably work on Rasp
 
 We will install BigClown's version of Raspbian - the official and the most popular Linux distribution for Raspberry Pi.
 
-## Requirements
+# Requirements
 
 * Raspberry Pi 3 (Model B)
 * Minimum 4 GB MicroSD card
@@ -22,13 +22,13 @@ We will install BigClown's version of Raspbian - the official and the most popul
   * macOS (tested with 10.12.1)
   * Linux (tested with Ubuntu 16.04 LTS)
 
-## Prepare the MicroSD Card
+# Prepare the MicroSD Card
 
 1. Insert the MicroSD card to the MicroSD card reader.
 
 2. Download the latest release of BigClown's Raspbian image from https://github.com/bigclownlabs/bc-raspbian/releases.
 
-### From Windows Desktop
+## From Windows Desktop
 
 3. Unzip the downloaded image.
 
@@ -40,7 +40,7 @@ We will install BigClown's version of Raspbian - the official and the most popul
 
    > **Note** Win32 Disk Imager must be run under administrator privileges.
 
-### From macOS Desktop
+## From macOS Desktop
 
 3. Open Terminal and navigate to your folder with downloads, for example:
 
@@ -83,7 +83,7 @@ We will install BigClown's version of Raspbian - the official and the most popul
    diskutil eject /dev/diskX
    ```
 
-### From Linux Desktop
+## From Linux Desktop
 
 3. Open Terminal and navigate to your folder with downloads, for example:
 
@@ -127,7 +127,7 @@ We will install BigClown's version of Raspbian - the official and the most popul
    eject /dev/sdX
    ```
 
-## Start Raspberry Pi
+# Start Raspberry Pi
 
 1. Insert the MicroSD card to Raspberry Pi.
 
@@ -135,7 +135,7 @@ We will install BigClown's version of Raspbian - the official and the most popul
 
 3. Connect the USB power adapter to Raspberry Pi.
 
-## Log-in to Raspberry Pi
+# Log-in to Raspberry Pi
 
 Next step is to login to Raspberry Pi via SSH terminal.
 
@@ -145,7 +145,7 @@ You can access the device in two ways:
 
  2. Using zeroconf mechanism by accessing `hub.local` host (this mechanism should work on any recent desktop).
 
-### On Windows desktop
+## On Windows desktop
 
 1. Download [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
@@ -157,7 +157,7 @@ You can access the device in two ways:
 
    * Use password: `raspberry`
 
-### On OS X and Linux Desktop
+## On OS X and Linux Desktop
 
 1. Open Terminal and connect to Raspberry Pi:
 
@@ -175,7 +175,7 @@ You can access the device in two ways:
 
    3. Enter password: `raspberry`
 
-## Update your installation
+# Update your installation
 
 At the first time you log in do NOT forget to change the default password.
 You can do it with the following command:
@@ -192,7 +192,7 @@ Run this command to update the system:
 sudo apt update && sudo apt upgrade
 ```
 
-## Differences from the Official Raspbian
+# Differences from the Official Raspbian
 
 Why have we created our own deployment of Raspbian distribution?
 We wanted to simplify the installation process for users and automate some of our own stuff (we use Travis CI for automation).
@@ -224,7 +224,7 @@ This is a brief description of changes:
   * bc-workroom-led-strip
   * bc-workroom-blynk
 
-## Install BigClown Packages on Existing System
+# Install BigClown Packages on Existing System
 
 > **Important** Follow this procedure only if you have already running Raspberry Pi with Raspbian distribution on it and you have skipped all the previous steps.
 
@@ -274,7 +274,7 @@ This is a brief description of changes:
      sudo apt install bc-workroom-blynk
      ```
 
-## Connect Raspberry Pi 3 to WiFi network
+# Connect Raspberry Pi 3 to WiFi network
 
 Raspberry Pi version 3 enables connecting to WiFi network.
 

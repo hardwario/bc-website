@@ -2,11 +2,11 @@
 title: Core Module vývojové nástroje - macOS Desktop
 ---
 
-## Požadavky
+# Požadavky
 
 * Čistá instalace macOS (testováno s verzí 10.12 Sierra).
 
-## Instalace toolchainu
+# Instalace toolchainu
 
 Tato sekce tě provede instalací GCC ARM Embedded toolchainu na tvůj macOS desktop.
 
@@ -37,7 +37,7 @@ Tato sekce tě provede instalací GCC ARM Embedded toolchainu na tvůj macOS des
    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
    ```
 
-## Zkompilování firmware
+# Zkompilování firmware
 
 Tato sekce tě provede procesem zkompilování firmware pro BigClown Core Module.
 

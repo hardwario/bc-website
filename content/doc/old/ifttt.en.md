@@ -2,7 +2,7 @@
 title: IFTTT - If This Then That
 ---
 
-## Introduction
+# Introduction
 
 **IFTTT** or “If This Then That” is a free web-based service that aggregates many other web apps into one place and can then perform actions given a certain set of criteria.
 
@@ -13,7 +13,7 @@ As a trigger service can be used **Maker** service that allows you to communicat
 
 The Maker service is useful for BigClown Hub integration.
 
-## How to create a new Applet?
+# How to create a new Applet?
 
 1. The first step is to create your account on [**IFTTT**](https://ifttt.com).
 
@@ -35,7 +35,7 @@ The Maker service is useful for BigClown Hub integration.
 
 9. Finally click on **"Create action"** and you are done!
 
-## How to send data to IFTTT using Maker service?
+# How to send data to IFTTT using Maker service?
 
 When you create an account on the **Maker** service, maker generates a unique key that allows you to communicate with IFTTT.
 
@@ -70,12 +70,12 @@ Data is sent using the **POST** method in the **JSON** format:
 
 You can send up to **3 values** in one request.
 
-## Example
+# Example
 
 A simple **Python 3** example for BigClown Hub has been provided to test IFTTT service.
 You can find it in the following GitHub repository: [**BigClown IFTTT Service Integration Example**](https://github.com/bigclownlabs/bc-ifttt).
 
-### Usage
+## Usage
 
 1. Set your `event` name and Maker `key` in **_url** variable in **IFTTTWorker** class.
 

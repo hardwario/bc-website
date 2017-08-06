@@ -2,11 +2,11 @@
 title: Core Module vývojové nástroje - Ubuntu Desktop
 ---
 
-## Požadavky
+# Požadavky
 
 * Čistá instalace 32-bitového nebo 64-bitového Ubuntu 16.04 LTS.
 
-## Instalace toolchainu
+# Instalace toolchainu
 
 Tato sekce tě provede instalací GCC ARM Embedded toolchainu na tvůj Ubuntu desktop.
 
@@ -45,7 +45,7 @@ Tato sekce tě provede instalací GCC ARM Embedded toolchainu na tvůj Ubuntu de
    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
    ```
 
-## Zkompilování firmware
+# Zkompilování firmware
 
 Tato sekce tě provede procesem zkompilování firmware pro BigClown Core Module.
 
@@ -79,11 +79,11 @@ Tato sekce tě provede procesem zkompilování firmware pro BigClown Core Module
    ls -l out
    ```
 
-## Instalace Mosquitto
+# Instalace Mosquitto
 
 [Mosquitto MQTT Broker]({{< relref "doc/old/mosquitto.cs.md#instalace-mqtt-brokera" >}}).
 
-## Instalace gateway
+# Instalace gateway
 
 Gateway je malý skript v pythonu, který propojuje USB sériový port Core Module a MQTT broker. Stáhni si repozitář `bch-gateway`
 

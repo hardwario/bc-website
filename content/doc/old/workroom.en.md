@@ -2,7 +2,7 @@
 title: Workroom Project
 ---
 
-## Introduction
+# Introduction
 
 With this setup you will be able to monitor environmental conditions in your workroom.
 Project will periodically measure relative humidity and temperature.
@@ -20,12 +20,12 @@ Besides this primary function the project may also serve as a pleasant lighting 
 
 Workroom project consists of two units described below.
 
-### Base unit
+## Base unit
 
 This unit is responsible for driving of the LED strip and receiving wireless data from Remote unit.
 Wireless data are dispatched from Base unit to Raspberry Pi which decides about the color of the connected LED strip.
 
-### Remote unit
+## Remote unit
 
 Remote unit is a battery-operated wireless node measuring temperature and humidity and transmitting these data to Base unit in regular 30-second intervals.
 
@@ -33,7 +33,7 @@ The whole concept is best described by the following diagram:
 
 ![](block-diagram.png)
 
-## Requirements
+# Requirements
 
 All items can be purchased as a [pre-installed set](https://shop.bigclown.com/products/workroom-project-collection) in our e-shop.
 If you buy core modules as a separate items, you have to program them [using this Core module tutorial]({{< relref "doc/old/core-module.en.md" >}}).
@@ -64,7 +64,7 @@ You will also need:
 * LAN router/switch with one available port
 * Internet connectivity
 
-## Installation instructions
+# Installation instructions
 
 * You can either follow the step-by-step instructions in the text below or watch this short video:
 
@@ -130,7 +130,7 @@ You can also follow these step by step instructions:
 
   {%youtube%}3q05fJHeQrg{%endyoutube%}
 
-## MQTT Data Playground
+# MQTT Data Playground
 
 All messages between Linux components in the system are exchanged via MQTT broker.
 MQTT broker is the heart of BigClown home automation system.
@@ -185,7 +185,7 @@ How-to communicate with MQTT broker:
    mosquitto_pub -t "plugin/led-strip/data/set" -m '{"state": "rules"}'
    ```
 
-### Sensors on remote
+## Sensors on remote
 
 * Measured temperature and humidity values reported by Remote unit:
 
@@ -194,7 +194,7 @@ How-to communicate with MQTT broker:
   nodes/remote/humidity-sensor/i2c0-40 {"relative-humidity": [33.2, "%"]}
   ```
 
-### Relay on base
+## Relay on base
 
 * Relay has state true (switched on) or false (switched off)
 
@@ -202,7 +202,7 @@ How-to communicate with MQTT broker:
   mosquitto_pub -t 'nodes/base/relay/-' -m '{"state": true}'
   ```
 
-#### Examples
+## Examples
 
 * Switch Relay ON:
 
@@ -223,7 +223,7 @@ How-to communicate with MQTT broker:
   mosquitto_pub -t "nodes/base/relay/-/get" -m '{}'
   ```
 
-### LED strip on base
+## LED strip on base
 
 * Desired color of the LED strip connected to Base unit
 
@@ -243,7 +243,7 @@ How-to communicate with MQTT broker:
   ```
   Count can be set from 1 to 150.
 
-### Plugin led-strip
+## Plugin led-strip
 
 Temperature and humididy limits are evaluated by Python script running on Raspberry Pi in Linux (we use Raspbian as the official Linux distribution).
 
@@ -267,7 +267,7 @@ Plugin serves also as comfort driver for LED strip.
   mosquitto_pub -t "plugin/led-strip/data/set" -m '{"state": "rules"}'
   ```
 
-#### Examples
+## Examples
 
 * Use LED strip as light
 
@@ -303,7 +303,7 @@ Plugin serves also as comfort driver for LED strip.
   nodes/base/light/- {"state": true}
   ```
 
-#### Change default thresholds
+## Change default thresholds
 
 Everybody likes different environment so the preset thresholds for temperature and humidity might not be optimal for you.
 
@@ -321,7 +321,7 @@ Everybody likes different environment so the preset thresholds for temperature a
    }' -r
    ```
 
-### Plugin blynk
+## Plugin blynk
 
 1. Install Blynk on your smartphone / tablet.
 
@@ -364,7 +364,7 @@ Everybody likes different environment so the preset thresholds for temperature a
 
    > **Note** When you click on the white dot switches back to the rules
 
-## Virtual Pin Assignment for Blynk
+# Virtual Pin Assignment for Blynk
 
 | Virtual PIN  | Topic                                | Payload key       | Unit  |
 | ------------ | ------------------------------------ | ----------------- | ----- |

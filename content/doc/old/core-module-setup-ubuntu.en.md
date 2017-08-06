@@ -2,11 +2,11 @@
 title: Core Module Development Setup - Ubuntu Desktop
 ---
 
-## Requirements
+# Requirements
 
 * Clean install of 32-bit or 64-bit Ubuntu 16.04 LTS.
 
-## Install Toolchain
+# Install Toolchain
 
 This section will guide you through GCC ARM Embedded toolchain installation on your Ubuntu desktop.
 
@@ -45,7 +45,7 @@ This section will guide you through GCC ARM Embedded toolchain installation on y
    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
    ```
 
-## Build Firmware
+# Build Firmware
 
 This section will guide you through the BigClown Core Module firmware build process.
 
@@ -79,11 +79,11 @@ This section will guide you through the BigClown Core Module firmware build proc
    ls -l out
    ```
 
-## Install Mosquitto
+# Install Mosquitto
 
 Mosquitto is a MQTT broker which is the central hub of BigClown communication. Please follow [Mosquitto installation steps in this tutorial]({{< relref "doc/old/mosquitto.en.md" >}}).
 
-## Install Gateway
+# Install Gateway
 
 Gateway is a simple Python script which is connecting serial port and MQTT together. Clone `bch-gateway` repository
 

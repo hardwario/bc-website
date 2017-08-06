@@ -2,7 +2,7 @@
 title: Easily Program your Home Automation
 ---
 
-## What is this project about?
+# What is this project about?
 
 For a long time I dreamed about my own home automation.
 But the hardware...
@@ -22,24 +22,24 @@ I'll demonstrate how to:
 * Turn on the LED on the Core Module using Python once the pre-defined values have been exceeded
 * Tweet the temperature and humidity through Node-RED
 
-## How to do it…
+# How to do it…
 
-### Buy a discounted [Basic Wireless Set](https://shop.bigclown.com/products/basic-wireless-set)
+## Buy a discounted [Basic Wireless Set](https://shop.bigclown.com/products/basic-wireless-set)
 
-### Assembly hardware
+## Assembly hardware
 
-### Setup a Raspberry Pi
+## Setup a Raspberry Pi
 
 You can use preconfigured Raspberry Pi from BigClown, but feel free to use your own, as long as you have Raspbian Jessie.
 
-#### Preconfigured Raspberry Pi
+## Preconfigured Raspberry Pi
 
 Perform an upgrade and install Node-RED:
 
   `sudo apt update && sudo apt upgrade`
   `sudo npm install -g node-red`
 
-#### You own Raspberry Pi
+## You own Raspberry Pi
 
 * Add BigClown repositiry
 * Install an actual version of node.js:
@@ -56,11 +56,11 @@ Perform an upgrade and install Node-RED:
 
 Connect to Raspberry Pi.
 
-### Firmware
+## Firmware
 
 It's always reccomended to upgrade a firmware on your Core Modules. If you want to perform an upgrade trough your PC, please follow instructions [here]({{< relref "doc/old/core-module-flashing.en.md" >}}). Or you can use Raspberry Pi like me...
 
-#### Upgrade through Raspberry Pi
+## Upgrade through Raspberry Pi
 
 * Install a tool for an upgrade
 
@@ -82,21 +82,21 @@ It's always reccomended to upgrade a firmware on your Core Modules. If you want 
 
   `sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D bc-workroom-base.binary`
 
-### Base and Remote units pairing
+## Base and Remote units pairing
 
 * Hold the right button on a Base unit untill LED starts blinking
 * Hold the right button on a Remote unit untill LED starts blinking
 * Try press button on a Remote unit and LED on on a Base unit should turn on or off
 
-### Send and receive few test messages
+## Send and receive few test messages
 
-#### Turn LED on
+## Turn LED on
 `mosquitto_pub -t "nodes/base/light/-/set" -m '{"state": true}'`
 
-#### Turn LED off
+## Turn LED off
 `mosquitto_pub -t "nodes/base/light/-/set" -m '{"state": false}'`
 
-#### Get messages from Remote unit
+## Get messages from Remote unit
 `mosquitto_sub -v -t 'nodes/remote/#'`
 
 > **Note:** It will take a while, data are sent every 30 seconds and you will see something like this:
@@ -106,7 +106,7 @@ It's always reccomended to upgrade a firmware on your Core Modules. If you want 
 
 **If you got here, then everything works fine and we can pass to more interesting tasks.**
 
-### Write simple Python script
+## Write simple Python script
 
 Your Python script will receive data from wireless temperature and humidity sensors and will turn on the LED on the Core Module once the pre-defined values have been exceeded.
 
@@ -153,7 +153,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### Tweet the temperature and humidity through Node-RED
+## Tweet the temperature and humidity through Node-RED
 
 1. Run Node-RED
 `node-red-pi`
@@ -167,7 +167,7 @@ if __name__ == '__main__':
   ```
 So you have imported a flow, which will tweet every 5 minutes message about temperature and humidity.
 
-### Visualize measured data thanks to Node-RED plugin
+## Visualize measured data thanks to Node-RED plugin
 
 * Install a dashboard `sudo npm install -g node-red-dashboard`
 
@@ -179,7 +179,7 @@ So you have imported a flow, which will tweet every 5 minutes message about temp
 
 * Take a look on a dashboard with measured data **http://ip-of-your-raspberry:1880/ui**
 
-### Make the LED light flash in case it rains in London and visualise wheather information on your dashboard.
+## Make the LED light flash in case it rains in London and visualise wheather information on your dashboard.
 Maybe it's a crazy idea, but you can see unlimited possibilities of your home automation :-)
 
 * Install **openweathermap** `sudo npm install -g node-red-node-openweathermap`

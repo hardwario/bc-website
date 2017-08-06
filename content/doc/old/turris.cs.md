@@ -2,18 +2,18 @@
 title: Turris
 ---
 
-## Update
+# Update
   Před jakoukoliv instalací doporučuji aktualizovat opkg
   ```
   opkg update
   ```
 
-## Instalace ovladačů
+# Instalace ovladačů
   ```
   opkg install kmod-usb-acm kmod-usb-serial-ftdi
   ```
 
-## MQTT brouker
+# MQTT brouker
 
   Balíček `mosquitto-client` obsahuje velmi užitečné nástroje `mosquitto_sub` a `mosquitto_pub`
 
@@ -38,7 +38,7 @@ title: Turris
     ```
     Pokud brouker neběží dostanem hlášku `Error: Connection refused`, zkute znovu spustit, případně onidtalovat a znovu naintalovat.
 
-## Gateway mezi USB serial a MQTT brokerem
+# Gateway mezi USB serial a MQTT brokerem
 
   * Závislosti
     ```

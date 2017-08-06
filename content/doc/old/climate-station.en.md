@@ -2,7 +2,7 @@
 title: Project "Climate Station with LED Thermometer and Dashboard"
 ---
 
-## What is this project about
+# What is this project about
 
 Climate station is one of the basic elements of home automation.
 Information about temperature, humidity, atmospheric pressure and CO2 concentration are needed to ensure proper living conditions and the thermal comfort of your home or office.
@@ -27,7 +27,7 @@ You will also need:
 * LAN router/switch with one available port
 * Internet connection
 
-## How to assemble a unit
+# How to assemble a unit
 
 1. Insert Power Module to Base Module
 2. Insert Core Module to Power Module
@@ -39,15 +39,15 @@ You will also need:
 5. Connect LED Thermometer to Power Module
 6. Connect AC adapter to Power Module
 
-## How to install and connect Grafana application
+# How to install and connect Grafana application
 
-### Update
+## Update
 
 ```
 sudo apt update && sudo apt upgrade -y
 ```
 
-### Firmware
+## Firmware
 
 It's always better to have your system updated, so please perform a firmware update first:
 
@@ -62,7 +62,7 @@ It's always better to have your system updated, so please perform a firmware upd
   sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D firmware-72pixel.bin
   ```
 
-#### InfluxDB
+## InfluxDB
 
 ```
 sudo apt install apt-transport-https
@@ -77,7 +77,7 @@ sudo systemctl start influxdb
 If you want to admin influx over http, then in /etc/influxdb/influxdb.conf
 uncomment and enable = true a bind-address = ":8083"
 
-#### Grafana
+## Grafana
 
 ```
 sudo apt install adduser libfontconfig -y
@@ -104,7 +104,7 @@ sudo systemctl enable grafana-server
 sudo systemctl start grafana-server
 ```
 
-### Gateway between USB and MQTT broker
+## Gateway between USB and MQTT broker
 
 * If you are using our Raspberry Pi or you have downloaded our [bc-raspbian](https://github.com/bigclownlabs/bc-raspbian/releases/latest), then use these commands:
 
@@ -164,7 +164,7 @@ Funcionality test:
   mosquitto_sub -v -t '#'
   ```
 
-### Database creation in InfluxDB
+## Database creation in InfluxDB
 ```
 curl -s "http://localhost:8086/query?q=CREATE+DATABASE+%22node%22&db=_internal"
 ```
@@ -173,7 +173,7 @@ To check out if database was created
 curl -s "http://localhost:8086/query?q=SHOW+DATABASES&db=_internal" | grep \"node\"
 ```
 
-### Run service of copying MQTT data to InfluxDB
+## Run service of copying MQTT data to InfluxDB
 
 ```
 sudo apt install python3-pip
@@ -190,7 +190,7 @@ sudo systemctl enable mqtt_to_influxdb.service
 sudo systemctl start mqtt_to_influxdb.service
 ```
 
-### Grafana settings
+## Grafana settings
 
 * Log in to Grafana [http://ip-raspberry:3000](http://ip-raspberry:3000)  User `admin` and Password `admin`
 

@@ -10,7 +10,7 @@ Například to, že když je připojený externí zdroj (adaptér nebo USB), pot
 Také je možné mít v sestavě připojených více externích zdrojů najednou - například adaptér zapojený do Power Module a zároveň USB kabel v Core Module.
 V takovém případě "vítězí" ten modul, který je fyzicky umístěný v sestavě níže.
 
-## Jak jsme toho docílili?
+# Jak jsme toho docílili?
 
 Na BigClown headeru jsou dva signály pro napájení komponent:
 
@@ -41,7 +41,7 @@ Toto je ukázka obvodového řešení energizeru z pevného zdroje:
 Ať už se jedná o bateriový energizer, nebo z pevného zdroje, na výstupu napájení je vždy zapojení dvou P-kanálových MOSFETů - tzv. back-to-back obvod.
 Toto zapojení zajišťuje úplné odpojení napájecího obvodu a tím zabraňuje zpětnému protékání proudu při nečinnosti zdroje / požadavku na odpojení baterií.
 
-## Shrnutí
+# Shrnutí
 
 Při návrhu konceptu řízení napájení jsme věnovali veliké úsilí jednoduchosti a komfortu pro uživatele a bezpečnosti proti poničení.
 Díky tomu se není třeba obávat připojení více zdrojů napájení ve stejný okamžik.

@@ -76,7 +76,7 @@ void application_init(void)
 {
     // Inicializujeme obě instance
     bc_led_init(&led[0], BC_GPIO_LED, false, false);
-    bc_led_init(&led[1], BC_GPIO_P8, false, false);    
+    bc_led_init(&led[1], BC_GPIO_P8, false, false);
 
     // Rozblikáme obě LEDky. Každou jinou rychlostí
     bc_led_set_mode(&led[0], BC_LED_MODE_BLINK);

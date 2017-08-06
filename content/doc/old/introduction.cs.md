@@ -3,7 +3,7 @@
 **Vítej na stránkách dokumentační podpory systému BigClown!**
 
 Vše na čem pracujeme je určeno lidem, kteří si chtějí dělat věci sami a po svém.
-Snažíme se proto detailně popisovat veškeré hardwarové i softwarové komponenty tak, aby sis s většinou věcí poradil sám. 
+Snažíme se proto detailně popisovat veškeré hardwarové i softwarové komponenty tak, aby sis s většinou věcí poradil sám.
 Pokud si však nebudeš s něčím jistý, tak nám [napiš](mailto:support@bigclown.com), nebo se podívej do našeho [fóra](http://forum.bigclown.com/).
 
 Bude fajn, když si nejdříve přečteš [pár slov]({{< relref "doc/old/concept.cs.md" >}}) o naší motivaci k založení firmy a přístupu k vývoji.

@@ -17,14 +17,14 @@ I'll demonstrate how to:
 
 * Make the LED light  flash in case it rains in London, for example
 * Visualize measured data thanks to Node-RED plugin
-* Turn on the LED on the Core Module using Python once the pre-defined values have been exceeded 
-* Tweet the temperature and humidity through Node-RED 
+* Turn on the LED on the Core Module using Python once the pre-defined values have been exceeded
+* Tweet the temperature and humidity through Node-RED
 
 ## How to do it…
 
 ### Buy a discounted [Basic Wireless Set](https://shop.bigclown.com/products/basic-wireless-set)
 
-### Assembly hardware 
+### Assembly hardware
 
 ### Setup a Raspberry Pi
 

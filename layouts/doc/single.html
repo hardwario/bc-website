@@ -3,14 +3,20 @@
 {{- end }}
 
 {{- define "main" }}
-{{- partial "doc/menu.html" . }}
 {{- partial "translations.html" . }}
 <main aria-role="main">
-  <header class="page-header">
-    <h1 id="title">{{ .Title }}</h1>
-  </header>
-  <div class="page-content">
-    {{ .Content }}
+  <div class="row">
+    <div class="col-sm-4">
+      {{- partial "doc/menu.html" . }}
+    </div>
+    <div class="col-sm-8">
+      <header class="page-header">
+        <h1 id="title">{{ .Title }}</h1>
+      </header>
+      <div class="page-content">
+        {{ .Content }}
+      </div>
+    </div>
   </div>
 </main>
 {{ end }}

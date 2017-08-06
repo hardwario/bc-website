@@ -1,6 +1,9 @@
-# Setup for local
+# About
 
 This repository contains all *main* BigClown websites.
+
+
+# Setup for local
 
 
 ## MacOS
@@ -9,6 +12,5 @@ This repository contains all *main* BigClown websites.
 - Make sure that *npm* is installed by typing `npm --version`.
 - Navigate to project directory `cd bc-website`.
 - Install all dependencies `npm install`.
-- Run local webserver `npm start.
+- Run local webserver `npm start`.
 - Open browser and navigate to `localhost:1313`.
-`

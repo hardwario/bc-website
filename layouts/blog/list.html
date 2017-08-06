@@ -1,0 +1,28 @@
+{{- define "navbar" }}
+{{- partial "navbar.html" . }}
+{{- end }}
+
+{{- define "main" }}
+{{- partial "translations.html" . }}
+<main aria-role="main">
+  <header class="page-header">
+    <h1 id="title">{{ .Title }}</h1>
+  </header>
+  <div>
+    {{ .Content }}
+  </div>
+  <div class="page-content">
+    <ul>
+    {{ range .Data.Pages }}
+      <li>
+        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+      </li>
+    {{ end }}
+    </ul>
+  </div>
+</main>
+{{ end }}
+
+{{ define "footer"}}
+{{ partial "footer.html" . }}
+{{ end }}

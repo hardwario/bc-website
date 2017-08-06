@@ -4,3 +4,6 @@ public/
 # NPM
 node_modules/
 package-lock.json
+
+# Mac env
+.DS_Store

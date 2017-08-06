@@ -36,23 +36,24 @@ You can use preconfigured Raspberry Pi from BigClown, but feel free to use your 
 
 Perform an upgrade and install Node-RED:
 
-  `sudo apt update && sudo apt upgrade`
-  `sudo npm install -g node-red`
+`sudo apt update && sudo apt upgrade`
+
+`sudo npm install -g node-red`
 
 ## You own Raspberry Pi
 
 * Add BigClown repositiry
 * Install an actual version of node.js:
 
-  `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
+    `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
 
-  `sudo apt install -y nodejs`
+    `sudo apt install -y nodejs`
 
 * Install Node-RED `sudo npm install -g node-red`
 * Install MQTT broker `sudo apt install mosquitto mosquitto-clients`
 * Install a gateway which serves communication between MQTT and units
 
-  `sudo apt install bc-workroom-gateway`
+    `sudo apt install bc-workroom-gateway`
 
 Connect to Raspberry Pi.
 
@@ -64,23 +65,23 @@ It's always reccomended to upgrade a firmware on your Core Modules. If you want 
 
 * Install a tool for an upgrade
 
-  `sudo apt install dfu-util`
+    `sudo apt install dfu-util`
 
 * Download actual version of the firmware
 
-  `wget "https://docs.google.com/uc?export=download&id=0B5pXL_JAACMvVkNRT2dPd1VJRlE" -O bc-workroom-remote.binary`
+    `wget "https://docs.google.com/uc?export=download&id=0B5pXL_JAACMvVkNRT2dPd1VJRlE" -O bc-workroom-remote.binary`
 
-  `wget "https://docs.google.com/uc?export=download&id=0B5pXL_JAACMvM284WW9sSFNCWkE" -O bc-workroom-base.binary`
+    `wget "https://docs.google.com/uc?export=download&id=0B5pXL_JAACMvM284WW9sSFNCWkE" -O bc-workroom-base.binary`
 
 * Get know what 'dfu mode' is [here]({{< relref "doc/old/core-module-flashing.en.md" >}})
 
 * Connect Remote unit, switch it to the dfu mode and install new firmware
 
-  `sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D bc-workroom-remote.binary`
+    `sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D bc-workroom-remote.binary`
 
 * Make the same with a Base unit
 
-  `sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D bc-workroom-base.binary`
+    `sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D bc-workroom-base.binary`
 
 ## Base and Remote units pairing
 

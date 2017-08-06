@@ -1,7 +1,7 @@
 # Core Module
 
 
-<!-- toc -->
+
 
 
 This tutorial will guide you through some fundamental insights about Core Module.

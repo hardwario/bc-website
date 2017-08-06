@@ -1,7 +1,7 @@
 # Tweetovací zvonek
 
 
-<!-- toc -->
+
 
 
 ## Úvod
@@ -21,7 +21,7 @@ Využijeme grafického rozhraní Node-Red pro nastavení pravidla, kdy MQTT zpr�
 
 * 1x [Core Module](https://obchod.bigclown.cz/products/core-module)
 * 1x [Raspberry Pi 3](https://obchod.bigclown.cz/products/raspberry-pi-3-set)
-* 1x Micro SD kartu ([stáhni obraz pro Rpi](http://doc.bigclown.com/tutorial/install-rpi.html) nebo [objednej předinstalovanou kartu](https://obchod.bigclown.cz/products/apacer-industrial-microsdhc-card-4gb))
+* 1x Micro SD kartu ([stáhni obraz pro Rpi]({{< relref "doc/old/raspberry-pi-installation.cs.md" >}}) nebo [objednej předinstalovanou kartu](https://obchod.bigclown.cz/products/apacer-industrial-microsdhc-card-4gb))
 * 1x [Micro USB kabel](https://obchod.bigclown.cz/products/usb2-0-cable-am-b-micro-0-6m)
 
 
@@ -83,7 +83,7 @@ void button_event_handler(bc_button_t *self, bc_button_event_t event, void *even
 ```
 
 Ukázku zkompiluj zadáním příkazu `make` do konzole.
-Poté nahraj zkompilovaný binární kód přes J-link Ozone debugger zadáním `make ozone` nebo nahrej binární soubor přes [interní USB DFU bootloader](core-module-flashing.md).
+Poté nahraj zkompilovaný binární kód přes J-link Ozone debugger zadáním `make ozone` nebo nahrej binární soubor přes [interní USB DFU bootloader]({{< relref "doc/old/core-module-flashing.cs.md" >}}).
 
 Po nahrání můžeš vyzkoušet funkčnost MQTT zpráv přes Mosquitto.
 V následující ukázce nahraď `xxx` za svoji IP adresu MQTT brokeru - Raspberry pi.
@@ -102,11 +102,11 @@ Pokud stiskneš tlačítko na Core Module, v konzoli uvidíš příchozí zpráv
 
 ### Instalace a konfigurace
 
-Pro zprovoznění Raspberry Pi [postupuj podle připraveného instalačního návodu](raspberry-pi-installation.md).
+Pro zprovoznění Raspberry Pi [postupuj podle připraveného instalačního návodu]({{< relref "doc/old/raspberry-pi-installation.cs.md" >}}).
 Připoj se na konzoli Raspberry Pi přímo, nebo přes SSH.
-Na Raspberry Pi musí být nainstalované balíčky od BigClown - buď jsi použil předinstalovaný image, nebo musíš [balíčky doinstalovat](raspberry-pi-installation.md#instalace-bigclown-balíčků-na-existující-systém).
+Na Raspberry Pi musí být nainstalované balíčky od BigClown - buď jsi použil předinstalovaný image, nebo musíš [balíčky doinstalovat]({{< relref "doc/old/raspberry-pi-installation.cs.md" >}}).
 
-Pak ještě budeme potřebovat Node-RED, abychom propojili tlačítko Core Module s Twitterem. [Instalace Node-RED na Raspberry Pi](node-red.md)
+Pak ještě budeme potřebovat Node-RED, abychom propojili tlačítko Core Module s Twitterem. [Instalace Node-RED na Raspberry Pi]({{< relref "doc/old/node-red.cs.md" >}})
 
 
 ## Konfigurace Node RED
@@ -221,9 +221,6 @@ Otevři soubor `mosquitto_sub.exe` pomocí příkazového řádku příkazem:
 
 `mosquitto_sub.exe -t "node/push-button/-" -v
 `
-Následně se zobrazí po stisnutí tlačíta `B` na Core module: 
+Následně se zobrazí po stisnutí tlačíta `B` na Core module:
 
-`node/push-button/- {"event-count": 0}` 
-
-
-
+`node/push-button/- {"event-count": 0}`

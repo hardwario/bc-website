@@ -1,6 +1,6 @@
 # Blynk - Ovládej moduly BigClown z mobilu
 
-<!-- toc -->
+
 
 V tomto návodu si ukážeme, jak napojit BigClowní prvky na mobilní aplikaci Blynk.
 Blynk ti umožní ovládat všechny funkce pohodlně ze smartphonu nebo tabletu pomocí grafických widgetů. Tlačítkem tak budeš schopen přepnout relé nebo rozsvítit LED pásek, sliderem měnit intenzitu světla a pomocí grafu zobrazit průběh teploty i dalších veličin.
@@ -25,7 +25,7 @@ Více o Blynku lze nalézt v [oficiální dokumentaci](http://docs.blynk.cc/).
 * minimálně jednu pevnou stanici BigClown tvořenou Core Modulem popř. dalšími prvky, připojenou k Raspberry Pi nebo jinému Linuxovému počítači s nainstalovaným SW balíčkem BigClown Hub s připojením k internetu
 * samozřejmě lze napojit i další bezdrátové stanice (Nody)
 
-Podrobný postup zapojení prvků BigClown je popsán ve vzorovém projektu [Smart LED Strip](https://doc.bigclown.cz/smart-led-strip.html).
+Podrobný postup zapojení prvků BigClown je popsán ve vzorovém projektu [Smart LED Strip]({{< relref "doc/old/smart-led-strip.cs.md" >}}).
 Kompletní sadu lze také zakoupit ve [zvýhodněném setu](https://obchod.bigclown.cz/products/smart-led-strip-set).
 Tento návod doplňuje vzorový projekt Smart LED strip, ale slouží také jako obecný návod pro všechny ostatní BigClowní projekty s Blynkem.
 
@@ -160,7 +160,7 @@ Poznámka: Rozsahy hodnot pro ovládání LED pásku jsou zvoleny na výchozích
 ## Menu
 
 Prvek Menu může sloužit pro výběr předvoleb.
-Ve vzorovém projektu [Smart LED Strip](https://doc.bigclown.cz/smart-led-strip.html) je menu použito pro výběr režimů LED pásku.
+Ve vzorovém projektu [Smart LED Strip]({{< relref "doc/old/smart-led-strip.cs.md" >}}) je menu použito pro výběr režimů LED pásku.
 
   ![](blynk-menu-setting.png)
 
@@ -208,7 +208,7 @@ Pro naklonování existujícího projektu postupuj následovně:
 
    ![](blynk-clone-project-3.png)
 
-    Zkus si naklonovat projekt ze vzorového projektu [Smart LED Strip](https://doc.bigclown.cz/smart-led-strip.html):
+    Zkus si naklonovat projekt ze vzorového projektu [Smart LED Strip]({{< relref "doc/old/smart-led-strip.cs.md" >}}):
 
    ![](blynk-project-smart-led-1-QR.png)
 

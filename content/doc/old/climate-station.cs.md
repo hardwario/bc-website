@@ -1,6 +1,6 @@
 # Projekt "Klimastanice s LED teploměrem a dashboardem"
 
-<!-- toc -->
+
 
 
 ## O čem projekt je a co ti přinese
@@ -54,9 +54,9 @@ sudo apt update && sudo apt upgrade -y
 
 Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware:
 
-* Přečti si co je dfu mód [zde](https://doc.bigclown.cz/core-module-flashing.html#nahrávání-programu-přes-usb-dfu-bootloader)
+* Přečti si co je dfu mód [zde]({{< relref "doc/old/core-module-flashing.cs.md#nahrávání-programu-přes-usb-dfu-bootloader" >}})
 
-* můžeš k tomu použít vlastní počítač pak postupuj dle návodu [zde](https://doc.bigclown.cz/core-module-flashing.html) firmware najdeš zde [https://github.com/bigclownlabs/bcp-climate-station/releases/latest](https://github.com/bigclownlabs/bcp-climate-station/releases/latest), půlmetrový pásek má 72 diod tedy stáhni firmware-72pixel.bin
+* můžeš k tomu použít vlastní počítač pak postupuj dle návodu [zde]({{< relref "doc/old/core-module-flashing.cs.md" >}}) firmware najdeš zde [https://github.com/bigclownlabs/bcp-climate-station/releases/latest](https://github.com/bigclownlabs/bcp-climate-station/releases/latest), půlmetrový pásek má 72 diod tedy stáhni firmware-72pixel.bin
 
 * nebo k tomu můžeš využít Raspberry jako já, stáhni si poslední verzi firmware-72pixel.bin a nahraj ji do Core Module pomocí těchto příkazů
   ```
@@ -116,7 +116,7 @@ sudo systemctl start grafana-server
   sudo systemctl stop bc-workroom-gateway.service
   ```
 
-* Pokud máš svůj Raspbian, je nutné si přidat náš repozitář, co který řádek provádí je popsáno [zde](https://doc.bigclown.cz/raspberry-pi-installation.html#instalace-bigclown-balíčků-na-existující-systém):
+* Pokud máš svůj Raspbian, je nutné si přidat náš repozitář, co který řádek provádí je popsáno [zde]({{< relref "doc/old/raspberry-pi-installation.cs.md#instalace-bigclown-balíčků-na-existující-systém" >}}):
 
   ```
   sudo apt install wget

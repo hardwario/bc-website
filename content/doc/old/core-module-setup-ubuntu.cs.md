@@ -1,7 +1,7 @@
 # Core Module vývojové nástroje - Ubuntu Desktop
 
 
-<!-- toc -->
+
 
 
 ## Požadavky
@@ -92,7 +92,7 @@ Tato sekce tě provede procesem zkompilování firmware pro BigClown Core Module
 ## Instalace Mosquitto
 
 
-[Mosquitto MQTT Broker](https://mosquitto.org/download/) je MQTT server, který tvoří centrální bod všech zpráv v našem systému. Prosím přečti si dokumentaci [jak nainstalovat Mosquitto](https://doc.bigclown.cz/mosquitto.html#instalace-mqtt-brokera).
+[Mosquitto MQTT Broker]({{< relref "doc/old/mosquitto.cs.md#instalace-mqtt-brokera" >}}).
 
 
 ## Instalace gateway

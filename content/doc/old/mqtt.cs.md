@@ -1,6 +1,6 @@
 # MQTT - Messaging via Broker
 
-<!-- toc -->
+
 
 MQTT (formerly Message Queuing Telemetry Transport, today MQTT) is a simple and lightweight protocol for transmitting messages between clients through a central point/broker.
 Thanks to its compact simplicity it can easily be implemented in systems with “small” processors and has spread relatively quickly.
@@ -55,7 +55,7 @@ The most widely used approach is to begin topics with `$SYS/` - these usages are
 
 Initially the client (device, node) establishes a connection with the broker via TCP.
 This most often uses port 1883, or port 8883 for a connection via TLS.
-Another approach that is used is a connection via [WebSocket](websocket.md) (ws/wss), most often to ports 8080/8081 (or via reverse proxy to ports 80 and 443), but naturally it is possible to set communication in any way.
+Another approach that is used is a connection via [WebSocket]({{< relref "doc/old/websocket.cs.md" >}}) (ws/wss), most often to ports 8080/8081 (or via reverse proxy to ports 80 and 443), but naturally it is possible to set communication in any way.
 
 After establishing a connection, the device sends a `CONNECT` message, usually with a clean session flag to ensure that the session starts without any subscriptions to any topics.
 Connection can also take place with some basic verification of name and password.

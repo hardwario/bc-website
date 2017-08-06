@@ -1,6 +1,6 @@
 # Grafana + InfluxDB
 
-<!-- toc -->
+
 
 ## Instalace
 

@@ -1,7 +1,7 @@
 # Headers & Signals
 
 
-<!-- toc -->
+
 
 
 In BigClown we emphasize hardware modularity and re-usability.

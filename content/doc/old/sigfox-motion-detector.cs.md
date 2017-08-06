@@ -1,9 +1,9 @@
-# Sigfox Detektor Pohybu
+# Sigfox Detektor Pohybu
 
-![Obrázek BigClown Sigfox Detektor Pohybu - krabička](sigfox-motion-detector/sigfox-motion-detector-enclosures.png)
+![Obrázek BigClown Sigfox Detektor Pohybu - krabička](sigfox-motion-detector-enclosures.png)
 
 
-## Úvod
+## Úvod
 
 
 ### K čemu projekt slouží
@@ -63,7 +63,7 @@ Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy
 _Sigfox Module musí být včetně [předplacené konektivity na 3 roky](https://obchod.bigclown.cz/products/sigfox-module-predplatne-na-3-roky)._
 
 
-![Obrázek BigClown Sigfox Detektor Pohybu - rozložené moduly](sigfox-motion-detector/sigfox-motion-detector-set.png)
+![Obrázek BigClown Sigfox Detektor Pohybu - rozložené moduly](sigfox-motion-detector-set.png)
 
 #### Internetové účty
 
@@ -79,45 +79,45 @@ _Sigfox Module musí být včetně [předplacené konektivity na 3 roky](https:/
 * Internetovou konektivitu
 
 
-## Sestavení detektoru
+## Sestavení detektoru
 
 
 1. Našroubujte anténu do SMA konektoru na Sigfox Module.
 
 2. Začněte s Mini Battery Module.
 
-   ![Obrázek Mini Battery Module](sigfox-motion-detector/sf-md-mbm.png)
+   ![Obrázek Mini Battery Module](sf-md-mbm.png)
 
 3. Připojte Sigfox Module.
 
-   ![Obrázek Mini Battery Module, Core Module, Sigfox Module](sigfox-motion-detector/sf-md-mbm-sf.png)
+   ![Obrázek Mini Battery Module, Core Module, Sigfox Module](sf-md-mbm-sf.png)
 
 4. Připojte Core Module.
 
-   ![Obrázek Mini Battery Module a Core Module](sigfox-motion-detector/sf-md-mbm-sf-core.png)
+   ![Obrázek Mini Battery Module a Core Module](sf-md-mbm-sf-core.png)
 
 
 5. Připojte PIR Module.
 
-   ![Obrázek Mini Battery Module, Core Module, Sigfox Module, PIR Module](sigfox-motion-detector/sf-md-mbm-sf-core-pir.png)
+   ![Obrázek Mini Battery Module, Core Module, Sigfox Module, PIR Module](sf-md-mbm-sf-core-pir.png)
 
 6. Připojte USB kabel do Core Module.
 
-   ![Obrázek Sigfox Detektor Pohybu - zapojení USB](sigfox-motion-detector/sf-md-mbm-sf-core-pir-usb.png)
+   ![Obrázek Sigfox Detektor Pohybu - zapojení USB](sf-md-mbm-sf-core-pir-usb.png)
 
 7. Nahrajte firmware do Core Module.
 
-   Stáhněte si [zkompilovaný firmware](https://github.com/bigclownlabs/bcp-sigfox-motion-detector/releases/latest) pro tento projekt (soubor `firmware.bin`).
+   Stáhněte si [zkompilovaný firmware](https://github.com/bigclownlabs/bcp-releases/latest) pro tento projekt (soubor `firmware.bin`).
 
-   V dokumentaci najdete podrobný návod pro [nahrání firmware do Core Module](core-module-flashing.md).
+   V dokumentaci najdete podrobný návod pro [nahrání firmware do Core Module]({{< relref "doc/old/core-module-flashing.cs.md" >}}).
 
    Zdrojové kódy firmware obsahuje GitHub repozitář [bcp-sigfox-motion-detector](https://github.com/bigclownlabs/bcp-sigfox-motion-detector).
 
-   Více se o firmware a jeho principech dozvíte v dokumentaci v sekci [Firmware SDK tutoriál](core-module-sdk.md).
+   Více se o firmware a jeho principech dozvíte v dokumentaci v sekci [Firmware SDK tutoriál]({{< relref "doc/old/core-module-sdk.cs.md" >}}).
 
 8. Vložte alkalické baterie do Mini Battery Module.
 
-   ![Obrázek Sigfox Detektor Pohybu - vložení baterií](sigfox-motion-detector/sf-md-mbm-sf-core-pir-bat.png)
+   ![Obrázek Sigfox Detektor Pohybu - vložení baterií](sf-md-mbm-sf-core-pir-bat.png)
 
 9. Zkontrolujte, že se LED na Core Module na 30 sekund rozsvítí.
 
@@ -126,7 +126,7 @@ V takovém případě zkontrolujte, že jste postupovali správně při sestaven
 Pokud jste provedli vše správně, obraťte se prosím na naši technickou podporu._
 
 
-## Popis funkce
+## Popis funkce
 
 
 Po založení baterií se do sítě Sigfox odvysílá událost o resetu zařízení.
@@ -143,7 +143,7 @@ Každých 24 hodin se odvysílá stav baterie.
 Tato zpráva zároveň indikuje funkční spojení v případě, že se nevyskytuje aktivace PIR čidla pohybu.
 
 
-## Zprovoznění služby
+## Zprovoznění služby
 
 
 Podle těchto kroků zprovozníte odesílání SMS pro pohybový detektor:
@@ -198,7 +198,7 @@ Podle těchto kroků zprovozníte odesílání SMS pro pohybový detektor:
    ![Obrázek služby MySigfox](service-mysigfox.png)
 
 
-## Závěr
+## Závěr
 
 
 Tento projekt názorně demonstruje snadné použití BigClown prvků k sestavení bezdrátového PIR detektoru pohybu komunikující prostřednictvím sítě SigFox.

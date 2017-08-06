@@ -34,13 +34,13 @@ BigClown ekosystém si rozšíříš tak, jak chceš ty sám.
     </tr>
 
     <tr align="center">
-        <td bgcolor="#F4CCCC"><img src="images/guidepost/core-module.png" width="100" /></td>
-        <td bgcolor="#F4CCCC"><img src="images/guidepost/wireless.png" width="100" /></td>
-        <td bgcolor="#F4CCCC"><img src="images/guidepost/core-module.png" width="100" /></td>
-        <td bgcolor="#D9EAD3"><img src="images/guidepost/usb.png" width="100" /></td>
-        <td bgcolor="#D9EAD3"><img src="images/guidepost/raspberry-pi.png" width="100" /></td>
-        <td bgcolor="#C9DAF8"><img src="images/guidepost/ethernet.png" width="100" /></td>
-        <td bgcolor="#C9DAF8"><img src="images/guidepost/internet.png" width="100" /></td>
+        <td bgcolor="#F4CCCC"><img src="core-module.png" width="100" /></td>
+        <td bgcolor="#F4CCCC"><img src="wireless.png" width="100" /></td>
+        <td bgcolor="#F4CCCC"><img src="core-module.png" width="100" /></td>
+        <td bgcolor="#D9EAD3"><img src="usb.png" width="100" /></td>
+        <td bgcolor="#D9EAD3"><img src="raspberry-pi.png" width="100" /></td>
+        <td bgcolor="#C9DAF8"><img src="ethernet.png" width="100" /></td>
+        <td bgcolor="#C9DAF8"><img src="internet.png" width="100" /></td>
     </tr>
 
     <tr>
@@ -55,26 +55,26 @@ BigClown ekosystém si rozšíříš tak, jak chceš ty sám.
 
     <tr style="font-size:100%">
         <td colspan="3" bgcolor="#F4CCCC">
-            <a href="https://doc.bigclown.cz/core-module.html" onclick="location.href=this.href; return false">Začínáme s Core Module.</a><br />
+            <a href="{{< relref "doc/old/core-module.cs.md" >}}" onclick="location.href=this.href; return false">Začínáme s Core Module.</a><br />
             <a href="https://obchod.bigclown.cz/products/core-module">Koupit Core Module</a><br />
             <a href="https://github.com/bigclownlabs/bcp-wireless-circus">Standardní firmware</a><br />
-            <a href="https://doc.bigclown.cz/core-module-setup.html" onclick="location.href=this.href; return false">Vývojářské nástroje</a><br />
-            <a href="https://doc.bigclown.cz/core-module-sdk.html" onclick="location.href=this.href; return false">Popis vývojového SDK</a><br />
-            <a href="https://doc.bigclown.cz/core-module-flashing.html" onclick="location.href=this.href; return false">USB nahrávání firmware</a><br />
+            <a href="{{< relref "doc/old/core-module-setup.cs.md" >}}" onclick="location.href=this.href; return false">Vývojářské nástroje</a><br />
+            <a href="{{< relref "doc/old/core-module-sdk.cs.md" >}}" onclick="location.href=this.href; return false">Popis vývojového SDK</a><br />
+            <a href="{{< relref "doc/old/core-module-flashing.cs.md" >}}" onclick="location.href=this.href; return false">USB nahrávání firmware</a><br />
         </td>
 
         <td colspan="2" bgcolor="#D9EAD3">
-            <a href="https://doc.bigclown.cz/raspberry-pi-installation.html" onclick="location.href=this.href; return false">Instalace balíčků</a><br />
+            <a href="{{< relref "doc/old/raspberry-pi-installation.cs.md" >}}" onclick="location.href=this.href; return false">Instalace balíčků</a><br />
             <a href="https://obchod.bigclown.cz/products/raspberry-pi-3-set">Koupit Raspberry Pi3 </a><br />
             USB Python Gateway<br />
-            <a href="https://doc.bigclown.cz/mosquitto.html" onclick="location.href=this.href; return false">Mosquitto MQTT broker</a><br />
-            <a href="https://doc.bigclown.cz/node-red.html" onclick="location.href=this.href; return false">Node-RED tutoriál</a><br />
+            <a href="{{< relref "doc/old/mosquitto.cs.md" >}}" onclick="location.href=this.href; return false">Mosquitto MQTT broker</a><br />
+            <a href="{{< relref "doc/old/node-red.cs.md" >}}" onclick="location.href=this.href; return false">Node-RED tutoriál</a><br />
             Pluginy (Blynk, LED)<br />
         </td>
 
         <td bgcolor="#C9DAF8" colspan="2">
-            <a href="https://doc.bigclown.cz/blynk.html" onclick="location.href=this.href; return false">
-                <img src="images/guidepost/blynk.png" style="height:2em" />
+            <a href="{{< relref "doc/old/blynk.cs.md" >}}" onclick="location.href=this.href; return false">
+                <img src="blynk.png" style="height:2em" />
                 Blynk tutoriál
             </a><br />
             AWS <br />

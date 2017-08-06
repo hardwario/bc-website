@@ -1,8 +1,6 @@
 # Workroom Project
 
-{%youtube%}EFFVnbwtMNg{%endyoutube%}
 
-<!-- toc -->
 
 
 ## Introduction
@@ -42,7 +40,7 @@ The whole concept is best described by the following diagram:
 ## Requirements
 
 All items can be purchased as a [pre-installed set](https://shop.bigclown.com/products/workroom-project-collection) in our e-shop.
-If you buy core modules as a separate items, you have to program them [using this Core module tutorial](core-module.md).
+If you buy core modules as a separate items, you have to program them [using this Core module tutorial]({{< relref "doc/old/core-module.en.md" >}}).
 
 Individual components in the set are:
 
@@ -147,9 +145,9 @@ MQTT broker is the heart of BigClown home automation system.
 
 You can find more about MQTT here:
 
-* [MQTT - Messaging via Broker](mqtt.md)
+* [MQTT - Messaging via Broker]({{< relref "doc/old/mqtt.en.md" >}})
 
-* [Mosquitto - MQTT Broker](mosquitto.md)
+* [Mosquitto - MQTT Broker]({{< relref "doc/old/mosquitto.en.md" >}})
 
 How-to communicate with MQTT broker:
 

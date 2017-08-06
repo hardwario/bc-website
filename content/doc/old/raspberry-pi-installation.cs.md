@@ -1,12 +1,6 @@
 # Raspberry Pi - Instalace
 
-<!-- toc -->
-
-{% set raspbian_zip = "bc-raspbian-v1.0.1-armhf-rpi.zip" %}
-{% set raspbian_img = "bc-raspbian-v1.0.1-armhf-rpi.img" %}
-{% set note_sudo = "**Note** “sudo” znamená že proces začne s oprávněním správce a může vyžadovat zadání tvého hesla (pokud máš práva správce)." %}
-
-> **Important** Pokud už máš své Raspberry Pi a na něm běží Raspbian, pak přeskoč na [Instalace BigClown balíčků na existující systém](#instalace-bigclown-balíčků-na-existující-systém) kde se dozvíš, jak nainstalovat BigClown balíčky na existující systém.
+> **Important** Pokud už máš své Raspberry Pi a na něm běží Raspbian, pak přeskoč na [Instalace BigClown balíčků na existující systém]({{< relref "#instalace-bigclown-balíčků-na-existující-systém" >}}) kde se dozvíš, jak nainstalovat BigClown balíčky na existující systém.
 
 Tento návod tě krok za krokem provede instalací Raspberry Pi.
 Návod byl otestován na Raspberry Pi 3 (Model B), ale měl by fungovat i pro Raspberry Pi 2.
@@ -41,7 +35,7 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
 
    Můžeš pro to použít [7-Zip](http://www.7-zip.org).
 
-4. Zapiš `{{ raspbian_img }}` na MicroSD kartu.
+4. Zapiš `bc-raspbian-v1.0.1-armhf-rpi.img` na MicroSD kartu.
 
    Můžeš pro to použít [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/files/latest/download).
 
@@ -59,7 +53,7 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
 4. Rozbal stažený image:
 
    ```
-   unzip {{ raspbian_zip }}
+   unzip bc-raspbian-v1.0.1-armhf-rpi.zip
    ```
 
 5. Vlož MicroSD kartu do svého Macu a najdi identifikátor disku (může to být /dev/diskX):
@@ -77,10 +71,10 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
 7. Zapiš image na MicroSD kartu (nahraď X správným identifikátorem):
 
    ```
-   sudo dd if={{ raspbian_img }} of=/dev/rdiskX bs=1m
+   sudo dd if=bc-raspbian-v1.0.1-armhf-rpi.img of=/dev/rdiskX bs=1m
    ```
 
-   > {{ note_sudo }}
+   > **Note** “sudo” znamená že proces začne s oprávněním správce a může vyžadovat zadání tvého hesla (pokud máš práva správce).
 
   > **Info** Bude to chvíli trvat.
   > **Tip** Pokud se objeví hláška “permission denied”, ujisti se, že tvá MicroSD karta není chráněna proti zápisu (např. adaptérem SD karty).
@@ -103,7 +97,7 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
 4. Rozbal stažený image:
 
    ```
-   unzip {{ raspbian_zip }}
+   unzip bc-raspbian-v1.0.1-armhf-rpi.zip
    ```
 
 5. Vlož MicroSD kartu do svého PC a najdi identifikátor disku (bude to /dev/diskX):
@@ -118,12 +112,12 @@ Budeme instalovat BigClown verzi Raspbianu - oficiální a nejpopulárnější d
    sudo umount /dev/sdX?
    ```
 
-   > {{ note_sudo }}
+   > **Note** “sudo” znamená že proces začne s oprávněním správce a může vyžadovat zadání tvého hesla (pokud máš práva správce).
 
 7. Zapiš image na MicroSD kartu (nahraď X správným identifikátorem):
 
    ```
-   sudo dd if={{ raspbian_img }} of=/dev/sdX bs=1M status=progress
+   sudo dd if=bc-raspbian-v1.0.1-armhf-rpi.img of=/dev/sdX bs=1M status=progress
    ```
 
    > **Info** Bude to chvíli trvat.

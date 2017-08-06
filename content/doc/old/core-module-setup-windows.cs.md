@@ -1,9 +1,5 @@
 # Vývoj s BigClown na Windows
 
-
-<!-- toc -->
-
-
 ## Úvod
 
 
@@ -16,7 +12,7 @@ Tento návod jsme testovali na Windows 7 Professional x64.
 
 
 <a href="https://github.com/bigclownlabs/bc-windows-ide/releases">
-<img src="images/core-module-setup-windows/download.png" width="50"/>
+<img src="download.png" width="50">
 Stáhnout BigClown IDE
 </a>
 
@@ -29,9 +25,7 @@ Náš instalátor se postará o instalaci následujícího:
 * dfu-util pro nahrávání firmware přes USB
 
 
-<a href="images/core-module-setup-windows/vscode.png">
-<img src="images/core-module-setup-windows/vscode.png" width="400" alt="Visual studio code" />
-</a>
+<img src="vscode.png" width="400" alt="Visual studio code">
 
 ## Jak zkompilovat SDK
 
@@ -50,12 +44,12 @@ Gratulujeme k tvému prvnímu zkompilovanému firmware!
 Po zkompilování firmware zmáčkni `Ctrl + P` ve Visual Studio Code. Kurzor přeskočí do dialogového okénka pro příkazy. Nyní napiš `task` a zobrazí se seznam úkolů, které obsahuje Makefile. Nyní nás zajímá úkol `dfu`, takže spusť příkaz `task dfu`.
 
 
-<img src="images/core-module-setup-windows/task-dfu.png" alt="Visual studio code" />
+<img src="task-dfu.png" alt="Visual studio code">
 
 
-Pomocí Device Firmware Update utility (`dfu-util`) můžeš nahrát zkompilovaný firmware jednoduše přes USB. Prosím přečti si dokumentaci [jak nainstalovat ovladač USB a používat DFU Util na Windows](https://doc.bigclown.cz/core-module-flashing.html#windows-10-64-bit-desktop).
+Pomocí Device Firmware Update utility (`dfu-util`) můžeš nahrát zkompilovaný firmware jednoduše přes USB. Prosím přečti si dokumentaci [jak nainstalovat ovladač USB a používat DFU Util na Windows]({{< relref "doc/old/core-module-flashing.cs.md#windows-10-64-bit-desktop" >}}).
 
-[Nezapomeň nastavit zařízení do DFU módu](https://doc.bigclown.cz/core-module-flashing.html#nahrávání-programu-přes-usb-dfu-bootloader).
+[Nezapomeň nastavit zařízení do DFU módu]({{< relref "doc/old/core-module-flashing.cs.md#nahrávání-programu-přes-usb-dfu-bootloader" >}}).
 
 Pokud používáš příkazový řádek, tak nastav zařízení do DFU módu a nahraj firmare pomocí příkazu `make dfu`.
 

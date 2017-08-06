@@ -1,7 +1,7 @@
 # Core Module Development Setup - Ubuntu Desktop
 
 
-<!-- toc -->
+
 
 
 ## Requirements
@@ -92,7 +92,7 @@ This section will guide you through the BigClown Core Module firmware build proc
 ## Install Mosquitto
 
 
-Mosquitto is a MQTT broker which is the central hub of BigClown communication. Please follow [Mosquitto installation steps in this tutorial](mosquitto.md).
+Mosquitto is a MQTT broker which is the central hub of BigClown communication. Please follow [Mosquitto installation steps in this tutorial]({{< relref "doc/old/mosquitto.en.md" >}}).
 
 
 ## Install Gateway

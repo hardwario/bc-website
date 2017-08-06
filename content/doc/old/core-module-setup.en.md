@@ -27,8 +27,8 @@ In general firmware development has the following phases:
 Click on one of the supported host operating system platforms for detailed information about the toolchain setup:
 
 
-* [**Ubuntu** Desktop](core-module-setup-ubuntu.md)
+* [**Ubuntu** Desktop]({{< relref "doc/old/core-module-setup-ubuntu.en.md" >}})
 
-* [**macOS** Desktop](core-module-setup-macos.md)
+* [**macOS** Desktop]({{< relref "doc/old/core-module-setup-macos.en.md" >}})
 
-* [**Windows 10** Desktop](core-module-setup-windows.md)
+* [**Windows 10** Desktop]({{< relref "doc/old/core-module-setup-windows.en.md" >}})

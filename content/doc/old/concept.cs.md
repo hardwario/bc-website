@@ -59,7 +59,7 @@ Protože trendem poslední doby je dělat event-driven single-threaded aplikace 
 Jednotkou se u nás rozumí sestava modulů, která komunikuje do systému.
 Například si můžete poskládat jednotku s funkcí meteostanice, pohybového detektoru, relé, displeje apod.
 Až na pár výjimek je nezbytnou součástí každé jednotky tzv. Core Module, který dává jednotce logiku, zabezpečuje komunikaci a jsou v něm bezpečně uloženy bezpečnostní klíče.
-Bezdrátové jednotky komunikují v síti typu hvězda do centrální jednotky, kterou nazýváme [Gateway](#gateway).
+Bezdrátové jednotky komunikují v síti typu hvězda do centrální jednotky, kterou nazýváme [Gateway]({{< relref "#gateway" >}}).
 Počet bezdrátových jednotek komunikujících na jednu Gateway je omezen na 64.
 
 Každou jednotku si můžeš poskládat z modulů a tagů.

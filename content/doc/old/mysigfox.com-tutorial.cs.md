@@ -1,7 +1,7 @@
 # MySigfox.com tutoriál
 
 
-<!-- toc -->
+
 
 
 ## Úvod
@@ -60,7 +60,7 @@ Formulář odešli, zobrazí se ti potvrzení změny údajů.
 
 Nyní stačí do Core Module jen nahrát firmware, který pošle nějakou zprávu.
 Můžeš vyjít z kódu pro Sigfox detektor pohybu z adresy https://github.com/bigclownlabs/bcf-sigfox-motion-detector
-Můžeš si stáhnout i přímo zkompilovaný kód ze záložky release na GitHubu a tuto binárku přes [DFU naprogramovat](core-module-flashing.md) do Core Module.
+Můžeš si stáhnout i přímo zkompilovaný kód ze záložky release na GitHubu a tuto binárku přes [DFU naprogramovat]({{< relref "doc/old/core-module-flashing.cs.md" >}}) do Core Module.
 Pokud nemáš PIR Module, nezoufej. Firmware automaticky po startu odešle testovací paket bez ohledu, zda je PIR Module zapojený.
 Po nahrání firmware spuštěný firmware rozsvítí červenou stavovou LED a po odeslání zprávy LED zhasne. Tím je odeslání první zprávy dokončeno.
 

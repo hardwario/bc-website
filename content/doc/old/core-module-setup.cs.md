@@ -25,8 +25,8 @@ Vývoj firmare probíhá v následujících krocích:
 
 Na odkazech níže je popis zprovoznění toolchainu na jednotlivých platformách.
 
-* [**Ubuntu** Desktop](core-module-setup-ubuntu.md)
+* [**Ubuntu** Desktop]({{< relref "doc/old/core-module-setup-ubuntu.cs.md" >}})
 
-* [**macOS** Desktop](core-module-setup-macos.md)
+* [**macOS** Desktop]({{< relref "doc/old/core-module-setup-macos.cs.md" >}})
 
-* [**Windows 10** Desktop](core-module-setup-windows.md)
+* [**Windows 10** Desktop]({{< relref "doc/old/core-module-setup-windows.cs.md" >}})

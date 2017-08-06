@@ -1,7 +1,7 @@
 # BigClown development on Windows
 
 
-<!-- toc -->
+
 
 
 ## Introduction
@@ -16,7 +16,7 @@ This tutorial was tested on Windows 7 Professional x64.
 
 
 <a href="https://github.com/bigclownlabs/bc-windows-ide/releases">
-<img src="images/core-module-setup-windows/download.png" width="50"/>
+<img src="download.png" width="50"/>
 Download BigClown IDE
 </a>
 
@@ -29,9 +29,7 @@ This installer will take care of installing the following:
 * dfu-util for flashing firmware over USB
 
 
-<a href="images/core-module-setup-windows/vscode.png">
-<img src="images/core-module-setup-windows/vscode.png" width="400" alt="Visual studio code" />
-</a>
+<img src="vscode.png" width="400" alt="Visual studio code" />
 
 ## How to compile SDK
 
@@ -51,13 +49,13 @@ Congratulation for your first compiled firmware.
 After compiling the firmware. Press `Ctrl + P` in the Visual Studio code. The cursor will jump to the top command line. Now write `task` and it will display you all the make targets the Makefile contains. We are interested in the `dfu` task. So execute command `task dfu`.
 
 
-<img src="images/core-module-setup-windows/task-dfu.png" alt="Visual studio code" />
+<img src="task-dfu.png" alt="Visual studio code" />
 
 
 This Device Firmware Update utility (`dfu-util`) will allow you to upload compiled binary firmware just with USB.
-Please follow this help [how to setup USB driver and use DFU Util on Windows](https://doc.bigclown.com/core-module.html#on-windows-10-64-bit-desktop).
+Please follow this help [how to setup USB driver and use DFU Util on Windows]({{< relref "doc/old/core-module.en.md#on-windows-10-64-bit-desktop" >}}).
 
-[Do not forget to set the device to the boot mode](https://doc.bigclown.com/core-module.html#programming-using-usb-dfu-bootloader).
+[Do not forget to set the device to the boot mode]({{< relref "doc/old/core-module.en.md#programming-using-usb-dfu-bootloader" >}}).
 
 If you use command line then set the device to DFU mode and flash it by typing `make dfu`.
 
@@ -93,7 +91,7 @@ Download and install the [STM32 Virtual COM Port driver](https://drive.google.co
 ## How to install Mosquitto MQTT broker
 
 
-Mosquitto is not necessary for firmware development, but if you would like to send messages over USB to your computer or network you need to install and run it.  
+Mosquitto is not necessary for firmware development, but if you would like to send messages over USB to your computer or network you need to install and run it.
 
 [Mosquitto MQTT Broker](https://mosquitto.org/download/) is a MQTT server which is a central message hub in our system. Please download, install and run this broker. This broker needs to be running in the background all the time you use our Python Gateway.
 

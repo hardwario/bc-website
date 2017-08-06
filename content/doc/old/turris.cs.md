@@ -1,6 +1,6 @@
 # Turris
 
-<!-- toc -->
+
 
 ## Update
   Před jakoukoliv instalací doporučuji aktualizovat opkg

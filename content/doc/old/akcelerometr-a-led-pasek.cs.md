@@ -1,5 +1,4 @@
-
-# LED pásek a akcelerometr #
+# LED pásek a akcelerometr
 
 V této kapitole se seznámíš s ovládáním digitálního LED pásku. V druhé části předvedu jak spojit LED pásek s hodnotami z akcelerometru.
 
@@ -13,39 +12,38 @@ Nejprve se podíváme na jednoduchý příklad jak pásek oživit. V dalších k
 Následující kód po startu spustí funkcí `bc_led_strip_effect_test(bc_led_strip_t *self)`, která zobrazí testovací animaci na pásku.
 Další stisk tlačítka `B` na Core Module provede tento test znova.
 
-``` C
-	#include <application.h>
-    #include <bcl.h>
+```c
+#include <application.h>
+#include <bcl.h>
 
-    //Instance tlačítka
-    bc_button_t button;
-    //Instance pásku
-    bc_led_strip_t led_strip;
+//Instance tlačítka
+bc_button_t button;
+//Instance pásku
+bc_led_strip_t led_strip;
 
-	void button_event_handler(bc_button_t *self, bc_button_event_t event, void *param)
+void button_event_handler(bc_button_t *self, bc_button_event_t event, void *param)
+{
+	(void) self;
+	(void) param;
+	if (event == BC_BUTTON_EVENT_PRESS)
 	{
-		(void) self;
-		(void) param;
-		if (event == BC_BUTTON_EVENT_PRESS)
-		{
-            bc_led_strip_effect_test(&led_strip);
-		}
+          bc_led_strip_effect_test(&led_strip);
 	}
+}
 
-	void application_init(void)
-	{
-		bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
-		bc_button_set_event_handler(&button, button_event_handler, NULL);
+void application_init(void)
+{
+	bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
+	bc_button_set_event_handler(&button, button_event_handler, NULL);
 
-        // Inicializuj Power Module
-        bc_module_power_init();
-        // Inicializuj driver, buffer, délku a typ pásku
-        bc_led_strip_init(&led_strip, bc_module_power_get_led_strip_driver(), &bc_module_power_led_strip_buffer_rgbw_144);
+      // Inicializuj Power Module
+      bc_module_power_init();
+      // Inicializuj driver, buffer, délku a typ pásku
+      bc_led_strip_init(&led_strip, bc_module_power_get_led_strip_driver(), &bc_module_power_led_strip_buffer_rgbw_144);
 
-        // Spusť testovací animaci
-        bc_led_strip_effect_test(&led_strip);
-	}
-
+      // Spusť testovací animaci
+      bc_led_strip_effect_test(&led_strip);
+}
 ```
 
 ## Akcelerometr
@@ -61,7 +59,7 @@ My použijeme pouze osu X a rozsah mezi +1g a -1g přepočteme na pozici na LED 
 
 Podmínkou `if(position >= 0 && position < 144)` si musíme ohlídat rozsahy, protože akcelerometr může vracet i hodnoty větší jak 1 g pokud s ním pohybujeme.
 
-```C
+```c
 #include <application.h>
 #include <bcl.h>
 
@@ -119,7 +117,6 @@ void lis2dh12_event_handler(bc_lis2dh12_t *self, bc_lis2dh12_event_t event, void
        }
    }
 }
-
 
 void application_init(void)
 {

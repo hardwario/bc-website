@@ -57,7 +57,7 @@ Zápustný hliníkový profil perfektně zapadne do mezery mezi polovinami stolu
 2. Stáhni si [zkompilovaný firmware](https://github.com/bigclownlabs/bcp-ping-pong-table/releases/latest)
  nebo zdrojové kódy k projektu. GitHub repozitář k projektu nalezneš [zde](https://github.com/bigclownlabs/bcp-ping-pong-table).
 
-3. Flashni Core Module pomocí micro USB kabelu a dfu [podle tohoto návodu](https://doc.bigclown.cz/core-module-flashing.html#nahrávání-programu-přes-usb-dfu-bootloader).
+3. Flashni Core Module pomocí micro USB kabelu a dfu [podle tohoto návodu]({{< relref "doc/old/core-module-flashing.cs.md#nahrávání-programu-přes-usb-dfu-bootloader" >}}).
 
 ### Instalace
  1. Zvol místo pro přichycení sestavy a připrav si dostatečně dlouhé kabely pro připojení tlačítek a LED pásku.

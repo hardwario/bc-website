@@ -57,7 +57,7 @@ Připoj se na Raspberry Pi.
 
 ### Firmware
 
-Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware, můžeš k tomu použít vlastní počítač pak postupuj dle návodu [zde](https://doc.bigclown.cz/core-module-flashing.html), nebo k tomu využít Raspberry jako já.
+Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware, můžeš k tomu použít vlastní počítač pak postupuj dle návodu [zde]({{< relref "doc/old/core-module-flashing.cs.md" >}}), nebo k tomu využít Raspberry jako já.
 
 #### Aktualizace přes Raspberry Pi
 
@@ -75,7 +75,7 @@ Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware, může�
 
     `wget $(wget "https://api.github.com/repos/bigclownlabs/bcp-wireless-circus/releases/latest" -q -O - | grep browser_download_url | grep remote.bin | head -n 1 | cut -d '"' -f 4)`
 
-* Přečti si co je dfu mód [zde](https://doc.bigclown.cz/core-module-flashing.html#nahrávání-programu-přes-usb-dfu-bootloader)
+* Přečti si co je dfu mód [zde]({{< relref "doc/old/core-module-flashing.cs.md#nahrávání-programu-přes-usb-dfu-bootloader" >}})
 
 * Připoj jednotku Remote, přepni jí do dfu módu a nahraj nový firmware
 

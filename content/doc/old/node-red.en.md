@@ -1,6 +1,6 @@
 # Node RED - Visual Tool for IoT
 
-<!-- toc -->
+
 
 To better process data moving through the system we can use the [Node-RED](http://nodered.org) tool.
 As indicated by the name, this is an application built on [Node.js](https://nodejs.org) technology.

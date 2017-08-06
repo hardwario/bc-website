@@ -3,7 +3,7 @@
 Zde je seznam míst, kde najdeš funkce a zdrojové kódy na kterých můžeš stavět své projekty.
 Dokumentace máme hodně a ne vše je na jednom místě.
 
-<!-- toc -->
+
 
 
 ## Generovaná dokumentace SDK
@@ -87,10 +87,10 @@ Dokumentace se pak generuje automaticky pomocí Travis CI (z větve `master`).
 Vygenerovaný obsah se hostuje přes GitHub Pages (z větve `gh-pages`).
 
 
-Než začneš vývoj firmwaru, [zprovozni si vývojové prostředí](core-module-setup.md).
+Než začneš vývoj firmwaru, [zprovozni si vývojové prostředí]({{< relref "doc/old/core-module-setup.cs.md" >}}).
 
 
-Více informací o základech Core Module najdeš na [tomto odkaze](core-module.md).
+Více informací o základech Core Module najdeš na [tomto odkaze]({{< relref "doc/old/core-module.cs.md" >}}).
 
 > **Poznámka:** Klidně můžeš používat Core Module jako low-level platformu bez našeho SDK-čka.
 >               Tenhle přístup ale vyžaduje hlubší znalosti o embedded vývoji.

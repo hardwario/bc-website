@@ -1,6 +1,6 @@
 # Project "Climate Station with LED Thermometer and Dashboard"
 
-<!-- toc -->
+
 
 
 ## What is this project about
@@ -54,9 +54,9 @@ sudo apt update && sudo apt upgrade -y
 
 It's always better to have your system updated, so please perform a firmware update first:
 
-* Find more about dfu mode [here](https://doc.bigclown.com/core-module-flashing.html#flashing-firmware-thru-usb-dfu-bootloader)
+* Find more about dfu mode [here]({{< relref "doc/old/core-module-flashing.en.md#flashing-firmware-thru-usb-dfu-bootloader" >}})
 
-* if you will use your own PC, then follow these instructions [here](https://doc.bigclown.com/core-module-flashing.html) you will find a firmware here [https://github.com/bigclownlabs/bcp-climate-station/releases/latest](https://github.com/bigclownlabs/bcp-climate-station/releases/latest), LED Thermometer has 72 diodes, so download firmware-72pixel.bin
+* if you will use your own PC, then follow these instructions [here]({{< relref "doc/old/core-module-flashing.en.md" >}}) you will find a firmware here [https://github.com/bigclownlabs/bcp-climate-station/releases/latest](https://github.com/bigclownlabs/bcp-climate-station/releases/latest), LED Thermometer has 72 diodes, so download firmware-72pixel.bin
 
 * if you will use Raspberry Pi, then download the latest version of firmware-72pixel.bin and upload it to Core Module with these commands:
   ```

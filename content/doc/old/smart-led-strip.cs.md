@@ -1,6 +1,6 @@
 # Projekt "Smart LED Strip"
 
-<!-- toc -->
+
 
 
 ## O čem projekt je a co ti přinese
@@ -41,10 +41,10 @@ Celý koncept popisuje následující diagram:
 ## Co všechno k projektu potřebuješ
 
 Všechny potřebné výrobky jsme zabalili do [cenově zvýhodněné sady](https://obchod.bigclown.cz/products/smart-led-strip-set), kterou si můžeš koupit v našem obchodě.
-Pokud již vlastníš Core modul nebo si ho koupíš samostatně, pak si ho musíš flashnout správným firmware a [to podle tohoto návodu](https://doc.bigclown.cz/core-module-flashing.html).
+Pokud již vlastníš Core modul nebo si ho koupíš samostatně, pak si ho musíš flashnout správným firmware a [to podle tohoto návodu]({{< relref "doc/old/core-module-flashing.cs.md" >}}).
 Aktuální firmware pro jednotky Base a Remote [nalezneš zde](https://github.com/bigclownlabs/bcp-wireless-circus/releases/latest).
-Pokud chceš použít vlastní Raspberry Pi s běžícím Raspianem, postupuj [návodem na instalaci BigClown balíčků na existující systém](https://doc.bigclown.cz/raspberry-pi-installation.html#instalace-bigclown-balíčků-na-existující-systém).
-Nebo si můžeš [stáhnout image](https://doc.bigclown.cz/raspberry-pi-installation.html#příprava-microsd-karty), s již předinstalovaným systémem včetně BigClown balíčků.
+Pokud chceš použít vlastní Raspberry Pi s běžícím Raspianem, postupuj [návodem na instalaci BigClown balíčků na existující systém]({{< relref "doc/old/raspberry-pi-installation.cs.md#instalace-bigclown-balíčků-na-existující-systém" >}}).
+Nebo si můžeš [stáhnout image]({{< relref "doc/old/raspberry-pi-installation.cs.md#příprava-microsd-karty" >}}), s již předinstalovaným systémem včetně BigClown balíčků.
 
 
 Sada obsahuje:
@@ -134,7 +134,7 @@ Dále budeš potřebovat:
 
     Pro rozsvícení LED pásku krátce stiskni tlačítko BOOT na jednotce Base nebo Remote.
     Zhasnutí světla lze provézt opětovným stiskem tlačítka BOOT.
-    Nyní se systém nachází v tzv. režimu “rules”, kdy reaguje na překročení přednastavených hodnot teploty a vlhkosti změnou barvy [**(podrobněji viz dále)**](https://doc.bigclown.cz/smart-led-strip.html#použití-led-pásku-pro-indikaci-hodnot-teploty-a-vlhkosti)
+    Nyní se systém nachází v tzv. režimu “rules”, kdy reaguje na překročení přednastavených hodnot teploty a vlhkosti změnou barvy [**(podrobněji viz dále)**]({{< relref "doc/old/smart-led-strip.cs.md#použití-led-pásku-pro-indikaci-hodnot-teploty-a-vlhkosti" >}})
 
     ![](turn-on-light.png)
 
@@ -145,9 +145,9 @@ Všechny zprávy mezi linuxovými komponentami systému jsou vyměňovány pomoc
 MQTT broker tvoří jádro systému domácí automatizace BigClown.
 Více podrobností o technologii MQTT nalezneš zde:
 
-* [MQTT - Messaging via Broker](mqtt.md)
+* [MQTT - Messaging via Broker]({{< relref "doc/old/mqtt.cs.md" >}})
 
-* [Mosquitto - MQTT Broker](mosquitto.md)
+* [Mosquitto - MQTT Broker]({{< relref "doc/old/mosquitto.cs.md" >}})
 
 ### Připojení k Raspberry Pi
 
@@ -184,7 +184,7 @@ Pro ověření funkce systému a komunikaci s MQTT brokerem se připoj k Raspber
 
 ### Otestování funkcí a hrátky s MQTT
 Zde si popíšeme, jak rychle otestovat hlavní funkce systému pomocí příkazů MQTT, podrobněji budou všechny funkce popsány později v dalších návodech.
-Pokud si chceš rovnou rozjet ovládání pomocí mobilní aplikace Blynk podívej se [sem](https://doc.bigclown.cz/smart-led-strip.html#ovládej-systém-komfortně-s-aplikací-blynk).
+Pokud si chceš rovnou rozjet ovládání pomocí mobilní aplikace Blynk podívej se [sem]({{< relref "doc/old/smart-led-strip.cs.md#ovládej-systém-komfortně-s-aplikací-blynk" >}}).
 Doporučujeme zkusit alespoň několik prvních příkazů pro otestování funkčnosti.
 
 
@@ -341,7 +341,7 @@ mosquitto_pub -t "plugin/led-strip/rules/set" -m '[{"nodes/remote/humidity-senso
 ```
 
 Další pokročilé funkce budou popsány v pozdějších návodech.
-Pro přehlednější editaci vlastních pravidel je možné provést také editací konfiguračního souboru config.yaml [podrobněji níže](https://doc.bigclown.cz/smart-led-strip.html#konfigurace-vlastních-pravidel-režimu-rules).
+Pro přehlednější editaci vlastních pravidel je možné provést také editací konfiguračního souboru config.yaml [podrobněji níže]({{< relref "doc/old/smart-led-strip.cs.md#konfigurace-vlastních-pravidel-režimu-rules" >}}).
 
 
 ###Změna režimu LED pásku:
@@ -361,7 +361,7 @@ mosquitto_pub -t "plugin/led-strip/mode/set" -m \"rules\"
 > **Note** Poznámka:
 Pokud se rozsvítí LED pásek pomocí příkazu plugin/led-strip/color/set, dojde automaticky také k přepnutím režimu na “color”, obdobně fungují i ostatní režimy.
 Každý režim si rovněž uchovává stav všech LED.
-Výchozí režim a stav (předvolbu) každého režimu je možné nastavit pomocí konfiguračního souboru config.yaml popsaného [zde](https://doc.bigclown.cz/smart-led-strip.html#konfigurace-vlastních-pravidel-režimu-rules).
+Výchozí režim a stav (předvolbu) každého režimu je možné nastavit pomocí konfiguračního souboru config.yaml popsaného [zde]({{< relref "doc/old/smart-led-strip.cs.md#konfigurace-vlastních-pravidel-režimu-rules" >}}).
 
 
 ## Ovládej systém komfortně s aplikací Blynk
@@ -369,18 +369,18 @@ Výchozí režim a stav (předvolbu) každého režimu je možné nastavit pomoc
 Aplikace [Blynk](http://www.blynk.cc/) je perfektní nástroj pro ovládání tvé domácí automatizace z mobilu nebo tabletu.
 Zde si ukážeme jak nastavit aplikaci Blynk pro ovládání a monitorování všech funkcí sestavy [Smart LED Strip Set](https://obchod.bigclown.cz/products/smart-led-strip-set).
 
-Pro platformu Blynk jsme připravili [**samostatný návod**](https://doc.bigclown.cz/blynk.html):
+Pro platformu Blynk jsme připravili [**samostatný návod**]({{< relref "doc/old/blynk.cs.md" >}}):
 
-1.  [Můžeš si přečíst, jak funguje Blynk](https://doc.bigclown.cz/blynk.html#jak-funguje-blynk)
+1.  [Můžeš si přečíst, jak funguje Blynk]({{< relref "doc/old/blynk.cs.md#jak-funguje-blynk" >}})
 
-2.  [Zde zjistíš potřebné SW/HW vybavení](https://doc.bigclown.cz/blynk.html#potřebné-swhw-vybavení)
+2.  [Zde zjistíš potřebné SW/HW vybavení]({{< relref "doc/old/blynk.cs.md#potřebné-swhw-vybavení" >}})
 
-3.  Pro seznámení s Blynkem a vytvoření prvního funkčního tlačítka pro ovládání relé postupuj dle [bodů 3 až 8](https://doc.bigclown.cz/blynk.html).
+3.  Pro seznámení s Blynkem a vytvoření prvního funkčního tlačítka pro ovládání relé postupuj dle [bodů 3 až 8]({{< relref "doc/old/blynk.cs.md" >}}).
     V dalších bodech jsou popsány další Blynk widgety, které se ti mohou hodit.
 
-Pro rychlé vyzkoušení vzorových projektů si je můžeš jednoduše naklonovat dle [následujícího postupu:](https://doc.bigclown.cz/blynk.html#rychlé-naklonování-projektu)
+Pro rychlé vyzkoušení vzorových projektů si je můžeš jednoduše naklonovat dle [následujícího postupu:]({{< relref "doc/old/blynk.cs.md#rychlé-naklonování-projektu" >}})
 ** Pozor:**
-Ujisti se, že máš v Blynku dostatek volné energie, [viz bod 5](https://doc.bigclown.cz/blynk.html#přidávání-widgetů-v-blynku)
+Ujisti se, že máš v Blynku dostatek volné energie, [viz bod 5]({{< relref "doc/old/blynk.cs.md#přidávání-widgetů-v-blynku" >}})
 
 
 **Projekt Smart LED Strip 1: **
@@ -409,7 +409,7 @@ QR kód pro naklonování:
 
 Všechny funkce i grafy v jednom projektu (vyžaduje 5000 bodů energie).
 V projektu jsou použita také uživatelská tlačítka pro vyvolání rychlých předvoleb.
-Pro jejich zprovoznění je nutné upravit konfigurační soubor *etc/bigclown/plugin/led-strip.user* [dle bodu 5.1](https://doc.bigclown.cz/smart-led-strip.html#přidání-uživatelských-tlačítek-pro-vyvolání-scénických-režimů)
+Pro jejich zprovoznění je nutné upravit konfigurační soubor *etc/bigclown/plugin/led-strip.user* [dle bodu 5.1]({{< relref "doc/old/smart-led-strip.cs.md#přidání-uživatelských-tlačítek-pro-vyvolání-scénických-režimů" >}})
 
 ![](blynk-project-smart-led-3-a.png)
 ![](blynk-project-smart-led-3-b.png)
@@ -448,7 +448,7 @@ Pro vyvolání předvolby v Blynku použij tlačítka nastavené na režim PUSH 
 ### Konfigurace vlastních pravidel režimu rules
 Pro konfiguraci výchozích režimů a vlastních pravidel slouží soubor: “etc/bigclown/plugin/led-strip.yaml”
 
-**Příklad 1: Výchozí nastavení a pravidla popsaná [v bodu 4.3](https://doc.bigclown.cz/smart-led-strip.html#použití-led-pásku-pro-indikaci-hodnot-teploty-a-vlhkosti)**
+**Příklad 1: Výchozí nastavení a pravidla popsaná [v bodu 4.3]({{< relref "doc/old/smart-led-strip.cs.md#použití-led-pásku-pro-indikaci-hodnot-teploty-a-vlhkosti" >}})**
 
 
 ```

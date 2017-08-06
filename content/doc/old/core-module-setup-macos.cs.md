@@ -1,7 +1,7 @@
 # Core Module vývojové nástroje - macOS Desktop
 
 
-<!-- toc -->
+
 
 
 ## Požadavky

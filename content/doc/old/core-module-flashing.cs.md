@@ -1,7 +1,7 @@
 # Nahrávání firmware
 
 
-<!-- toc -->
+
 
 
 Firmware je zkompilovaný program, který nahraješ do flash paměti mikrokontroléru.
@@ -84,7 +84,7 @@ Pokud budeš používat náš instalační balíček s Visual Studio Code, pak s
 . Po úspěšném nahrání se Core Module automaticky spustí náš program (příkaz `:leave`)
 
 > Core Module musí být přepnut do DFU módu před provedením příkazu `dfu-util`.
-> Postup je v kapitole [Nahrávání programu přes USB DFU Bootloader](#nahravani-programu-pres-usb-dfu-bootloader).
+> Postup je v kapitole [Nahrávání programu přes USB DFU Bootloader]({{< relref "#nahrávání-programu-přes-usb-dfu-bootloader" >}}).
 
 
 ### macOS Desktop
@@ -108,7 +108,7 @@ Pokud budeš používat náš instalační balíček s Visual Studio Code, pak s
 . Po úspěšném nahrání se Core Module automaticky spustí náš program (příkaz `:leave`)
 
 > Core Module musí být přepnut do DFU módu před provedením příkazu `dfu-util`.
-> Postup je v kapitole [Nahrávání programu přes USB DFU Bootloader](#nahravani-programu-pres-usb-dfu-bootloader).
+> Postup je v kapitole [Nahrávání programu přes USB DFU Bootloader]({{< relref "#nahrávání-programu-přes-usb-dfu-bootloader" >}}).
 
 
 ### Ubuntu Desktop
@@ -130,7 +130,7 @@ Pokud budeš používat náš instalační balíček s Visual Studio Code, pak s
    . Po úspěšném nahrání se Core Module automaticky spustí náš program (příkaz `:leave`)
 
 > Core Module musí být přepnut do DFU módu před provedením příkazu `dfu-util`.
-> Postup je v kapitole [Nahrávání programu přes USB DFU Bootloader](#nahravani-programu-pres-usb-dfu-bootloader).
+> Postup je v kapitole [Nahrávání programu přes USB DFU Bootloader]({{< relref "#nahrávání-programu-přes-usb-dfu-bootloader" >}}).
 
 
 
@@ -153,7 +153,7 @@ TODO: Vložit obrázek.
 Firmware si můžeš naprogramovat s pomocí [BigClown API](http://sdk.bigclown.com) a zkompilovat sám.
 SDK nalezneš na našem [GitHub](https://github.com/bigclownlabs) účtu.
 
-Můžeš si stáhnout předkompilované binární soubory pro [ Smart LED Strip (Workroom) project](smart-led-strip.md):
+Můžeš si stáhnout předkompilované binární soubory pro [ Smart LED Strip (Workroom) project]({{< relref "doc/old/smart-led-strip.cs.md" >}}):
 
 * [Base unit a Remote unit](https://github.com/bigclownlabs/bcp-wireless-circus/releases/latest)
 
@@ -170,4 +170,4 @@ Můžeš si stáhnout předkompilované binární soubory pro [ Smart LED Strip 
 # Nastavení vývojového prostředí
 
 
-Pro nastavení vývojového prostředí a SDK [postupuj podle tohoto návodu](core-module-setup.md).
+Pro nastavení vývojového prostředí a SDK [postupuj podle tohoto návodu]({{< relref "doc/old/core-module-setup.cs.md" >}}).

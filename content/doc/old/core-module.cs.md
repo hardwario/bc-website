@@ -19,4 +19,4 @@ Software pro Core Module nazýváme **firmware**.
 Popis a návody nalezneš dál v této sekci.
 
 K modulům a tagům, které se do Core Module zapojují, se dostaneme později.
-Nyní se pojďme podívat na [hardware Core Module](core-module-hardware.md).
+Nyní se pojďme podívat na [hardware Core Module]({{< relref "doc/old/core-module-hardware.cs.md" >}}).

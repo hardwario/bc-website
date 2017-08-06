@@ -3,7 +3,7 @@
 # Firmware Programming
 
 
-<!-- toc -->
+
 
 Firmware of Core Module is a program stored in an internal flash memory of the microcontroller.
 In this chapter we will call *programming* a process of writing firmware into this internal flash memory.
@@ -90,7 +90,7 @@ In the chapters below we will show you how to program the firmware on individual
 . Press the RESET button to start the program.
 
 > Core Module must be in bootloader DFU mode prior executing last command.
-> For more information, please refer to [Programming using USB DFU bootloader](#programming-using-usb-dfu-bootloader).
+> For more information, please refer to [Programming using USB DFU bootloader]({{< relref "#programming-using-usb-dfu-bootloader" >}}).
 
 
 ### On macOS Desktop
@@ -113,7 +113,7 @@ In the chapters below we will show you how to program the firmware on individual
 6. Press the RESET button to start the program.
 
 > Core Module must be in bootloader DFU mode prior executing last command.
-> For more information, please refer to [Programming using USB DFU bootloader](#programming-using-usb-dfu-bootloader).
+> For more information, please refer to [Programming using USB DFU bootloader]({{< relref "#programming-using-usb-dfu-bootloader" >}}).
 
 
 ### On Ubuntu Desktop
@@ -134,7 +134,7 @@ In the chapters below we will show you how to program the firmware on individual
 5. Press the RESET button to start the program.
 
 > Core Module must be in bootloader DFU mode prior executing last command.
-> For more information, please refer to this [Programming using USB DFU bootloader](#programming-using-usb-dfu-bootloader)
+> For more information, please refer to this [Programming using USB DFU bootloader]({{< relref "#programming-using-usb-dfu-bootloader" >}})
 
 
 ## Using Serial-Wire-Debug Interface
@@ -158,7 +158,7 @@ It is possible to build your own firmware.
 But not until we release the source codes on our [GitHub account](https://github.com/bigclownlabs).
 We still want to polish a few things to provide you with a proper start.
 
-So far you can download two binary files for [Smart LED Strip (Workroom) project](smart-led-strip.md):
+So far you can download two binary files for [Smart LED Strip (Workroom) project]({{< relref "doc/old/smart-led-strip.en.md" >}}):
 
 * [Base unit a Remote unit](https://github.com/bigclownlabs/bcp-wireless-circus/releases/latest)
 
@@ -175,4 +175,4 @@ So far you can download two binary files for [Smart LED Strip (Workroom) project
 # Development Setup
 
 
-Please, click [here](core-module-setup.md) for more details about development setup.
+Please, click [here]({{< relref "doc/old/core-module-setup.en.md" >}}) for more details about development setup.

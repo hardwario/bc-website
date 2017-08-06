@@ -1,7 +1,7 @@
 # Core Module Development Setup - macOS Desktop
 
 
-<!-- toc -->
+
 
 
 ## Requirements

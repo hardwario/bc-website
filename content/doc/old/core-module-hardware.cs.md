@@ -1,6 +1,6 @@
 # Core Module - Hardware
 
-<!-- toc -->
+
 
 Tady ti naši grafici připravili přehled pojmenování pinů a znázornění základních bloků.
 Popis pinů budeš potřebovat, pokud budeš zapojovat nějaké vlastní externí senzory a součástky.

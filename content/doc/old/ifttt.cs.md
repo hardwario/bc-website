@@ -1,6 +1,6 @@
 # IFTTT - If This Then That
 
-<!-- toc -->
+
 
 
 ## Co je IFTTT?

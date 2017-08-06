@@ -70,6 +70,9 @@ items:
     - title: Sigfox Detektor Pohybu
       link: doc/old/sigfox-motion-detector.cs.md
 
+    - title: Sigfox Počítadlo Impulzů
+      link: doc/old/sigfox-pulse-counter.cs.md
+
     - title: Smart LED Strip
       link: doc/old/smart-led-strip.cs.md
 
@@ -109,7 +112,7 @@ items:
       - title: Grafana + InfluxDB
         link: doc/old/grafana-influxdb.cs.md
 
-      - title: IFTT - If This Then That
+      - title: IFTTT - If This Then That
         link: doc/old/ifttt.cs.md
 
       - title: Turris Omnia & 1.x

@@ -2,7 +2,7 @@
 
 # Bezdrátový LCD termostat
 
-<!-- toc -->
+
 
 ## Popis funkce
 
@@ -17,7 +17,7 @@ Na Base jednotce je Power Module s výkonovým relé, které sepne v případě,
 
 Zároveň je možné Base jednotku připojit přes USB například do Raspberry Pi nebo jiného počítače a veškeré veličiny sledovat i na dálku.
 
-![Remote jednotka](images\bcp-wireless-lcd-thermostat\placeholder.jpg)
+![Remote jednotka](placeholder.jpg)
 
 
 ## Popis zařízení
@@ -48,7 +48,7 @@ https://github.com/bigclownlabs/bcp-wireless-lcd-thermostat
 
 1. Sestavte Remote jednotku podle obrázku
 * Sestavte Base jednotku podle obrázku
-* Naprogramujte firmware pro obě jednotky z repozitářů z předchozí kapitoly. Můžete postupovat [podle návodu jak nastavit vývojové prostředí](core-module-setup.md) a [jak naprogramovat firmware](core-module-flashing.md).
+* Naprogramujte firmware pro obě jednotky z repozitářů z předchozí kapitoly. Můžete postupovat [podle návodu jak nastavit vývojové prostředí]({{< relref "doc/old/core-module-setup.cs.md" >}}) a [jak naprogramovat firmware]({{< relref "doc/old/core-module-flashing.cs.md" >}}).
 * Po zapnutí je třeba obě jednotky spárovat. Stiskněte na 3 vteřiny tlačítko `B` na Base jednotce. Rozbliká se rychle červená LED. Nyní je Base jednotka ve stavu párování. Remote jednotku spárujete tak, že stisknete enkodér taky na 3 vteřiny (nebo tlačítko `B`).
 * Nyní začnou z Remote jednotky chodit rádiové pakety. Každý paket je signalizován krátkým bliknutím červené LED na Base jednotce.
 

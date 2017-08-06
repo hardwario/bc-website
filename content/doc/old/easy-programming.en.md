@@ -57,7 +57,7 @@ Connect to Raspberry Pi.
 
 ### Firmware
 
-It's always reccomended to upgrade a firmware on your Core Modules. If you want to perform an upgrade trough your PC, please follow instructions [here](https://doc.bigclown.com/core-module-flashing.html). Or you can use Raspberry Pi like me...
+It's always reccomended to upgrade a firmware on your Core Modules. If you want to perform an upgrade trough your PC, please follow instructions [here]({{< relref "doc/old/core-module-flashing.en.md" >}}). Or you can use Raspberry Pi like me...
 
 #### Upgrade through Raspberry Pi
 
@@ -71,7 +71,7 @@ It's always reccomended to upgrade a firmware on your Core Modules. If you want 
 
   `wget "https://docs.google.com/uc?export=download&id=0B5pXL_JAACMvM284WW9sSFNCWkE" -O bc-workroom-base.binary`
 
-* Get know what 'dfu mode' is [here](https://doc.bigclown.com/core-module-flashing.html)
+* Get know what 'dfu mode' is [here]({{< relref "doc/old/core-module-flashing.en.md" >}})
 
 * Connect Remote unit, switch it to the dfu mode and install new firmware
 

@@ -1,4 +1,6 @@
-# Raspberry Pi - Instalace
+---
+title: Raspberry Pi - Instalace
+---
 
 > **Important** Pokud už máš své Raspberry Pi a na něm běží Raspbian, pak přeskoč na [Instalace BigClown balíčků na existující systém]({{< relref "#instalace-bigclown-balíčků-na-existující-systém" >}}) kde se dozvíš, jak nainstalovat BigClown balíčky na existující systém.
 

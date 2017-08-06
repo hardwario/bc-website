@@ -1,4 +1,6 @@
-# Detektor přiblížení vozidla
+---
+title: Detektor přiblížení vozidla
+---
 
 ## Úvod
 

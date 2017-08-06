@@ -1,4 +1,6 @@
-# Blynk - Ovládej moduly BigClown z mobilu
+---
+title: Blynk - Ovládej moduly BigClown z mobilu
+---
 
 V tomto návodu si ukážeme, jak napojit BigClowní prvky na mobilní aplikaci Blynk.
 Blynk ti umožní ovládat všechny funkce pohodlně ze smartphonu nebo tabletu pomocí grafických widgetů. Tlačítkem tak budeš schopen přepnout relé nebo rozsvítit LED pásek, sliderem měnit intenzitu světla a pomocí grafu zobrazit průběh teploty i dalších veličin.
@@ -206,5 +208,3 @@ Pro naklonování existujícího projektu postupuj následovně:
    ![](blynk-project-smart-led-1-QR.png)
 
 3. Po naklonování každého projektu je nutné aktualizovat autorizační token v Raspberry Pi (každý projekt je v rámci jednoho účtu identifikován unikátním tokenem).
-
-

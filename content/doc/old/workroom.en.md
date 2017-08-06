@@ -1,4 +1,6 @@
-# Workroom Project
+---
+title: Workroom Project
+---
 
 ## Introduction
 

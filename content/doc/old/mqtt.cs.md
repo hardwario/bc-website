@@ -1,4 +1,6 @@
-# MQTT - Messaging via Broker
+---
+title: MQTT - Messaging via Broker
+---
 
 MQTT (formerly Message Queuing Telemetry Transport, today MQTT) is a simple and lightweight protocol for transmitting messages between clients through a central point/broker.
 Thanks to its compact simplicity it can easily be implemented in systems with “small” processors and has spread relatively quickly.

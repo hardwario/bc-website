@@ -1,4 +1,6 @@
-# Core Module - Úvod
+---
+title: Core Module - Úvod
+---
 
 Tato sekce ti vysvětlí základní vlastnosti a použití Core Module.
 

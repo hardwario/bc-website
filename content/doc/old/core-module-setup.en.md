@@ -1,4 +1,6 @@
-# Core Module Development Setup
+---
+title: Core Module Development Setup
+---
 
 In general firmware development has the following phases:
 

@@ -1,4 +1,6 @@
-# I²C - Communication Interface
+---
+title: I²C - Communication Interface
+---
 
 In the world of the internet we encounter many abbreviations and names for technology that can be confusing for a novice.
 Let’s take a look at some of them and see what they mean.

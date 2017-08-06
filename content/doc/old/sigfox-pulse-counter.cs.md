@@ -1,4 +1,6 @@
-# Sigfox Počítadlo Impulzů
+---
+title: Sigfox Počítadlo Impulzů
+---
 
 ## 1.1. O čem projekt je a co ti přinese
 

@@ -1,4 +1,6 @@
-# Nahrávání firmware
+---
+title: Nahrávání firmware
+---
 
 Firmware je zkompilovaný program, který nahraješ do flash paměti mikrokontroléru.
 
@@ -134,7 +136,7 @@ Debugger se na Core Module připojuje na 10 pinový programovací konektor.
 
 TODO: Vložit obrázek.
 
-# Firmware Files
+## Firmware Files
 
 Firmware si můžeš naprogramovat s pomocí [BigClown API](http://sdk.bigclown.com) a zkompilovat sám.
 SDK nalezneš na našem [GitHub](https://github.com/bigclownlabs) účtu.
@@ -151,6 +153,6 @@ Můžeš si stáhnout předkompilované binární soubory pro [ Smart LED Strip 
 
 * Odeslání zprávy při změně logické hodnoty na pinu P8. Pin má nastaven pull-up, takže reaguje pokud jej propojíš se zemi (GND)
 
-# Nastavení vývojového prostředí
+## Nastavení vývojového prostředí
 
 Pro nastavení vývojového prostředí a SDK [postupuj podle tohoto návodu]({{< relref "doc/old/core-module-setup.cs.md" >}}).

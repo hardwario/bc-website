@@ -1,5 +1,6 @@
-
-# BigClown SDK - úvod a rozblikání LED #
+---
+title: BigClown SDK - úvod a rozblikání LED
+---
 
 Zde najdeš základní popis a strukturu programu. Pokud něčemu v úvodu nerozumíš, němej strach. Podívej se dál na praktické úkázky s LED diodou a zjistíš, že napsat si vlastní firmware je hračka.
 

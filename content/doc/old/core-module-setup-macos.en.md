@@ -1,4 +1,6 @@
-# Core Module Development Setup - macOS Desktop
+---
+title: Core Module Development Setup - macOS Desktop
+---
 
 ## Requirements
 

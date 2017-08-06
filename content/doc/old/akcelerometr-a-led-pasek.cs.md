@@ -1,4 +1,6 @@
-# LED pásek a akcelerometr
+---
+title: LED pásek a akcelerometr
+---
 
 V této kapitole se seznámíš s ovládáním digitálního LED pásku. V druhé části předvedu jak spojit LED pásek s hodnotami z akcelerometru.
 

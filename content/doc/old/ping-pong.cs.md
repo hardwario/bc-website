@@ -1,4 +1,6 @@
-# Počítadlo skóre
+---
+title: Počítadlo skóre
+---
 
 ## O čem projekt je a co ti přinese
 

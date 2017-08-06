@@ -1,4 +1,6 @@
-# Blynk - Mobile App Builder
+---
+title: Blynk - Mobile App Builder
+---
 
 This tutorial will show you how to connect to BigClown.Hub remotely from your smartphone.
 

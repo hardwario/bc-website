@@ -1,4 +1,6 @@
-# Koncept
+---
+title: Koncept
+---
 
 Tady jsme setřídili naše myšlenky, které nás inspirovaly při vývoji systému BigClown, a také ti zde popisujeme jednotlivé prvky našeho řešení tak, aby jsi lépe pochopil náš záměr a mohl si rychleji začít stavět svou domácí automatizaci.
 

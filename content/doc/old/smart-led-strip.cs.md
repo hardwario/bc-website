@@ -1,4 +1,6 @@
-# Projekt "Smart LED Strip"
+---
+title: Projekt "Smart LED Strip"
+---
 
 ## O čem projekt je a co ti přinese
 

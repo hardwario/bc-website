@@ -1,4 +1,6 @@
-# Sigfox Detektor Pohybu
+---
+title: Sigfox Detektor Pohybu
+---
 
 ![Obrázek BigClown Sigfox Detektor Pohybu - krabička](sigfox-motion-detector-enclosures.png)
 

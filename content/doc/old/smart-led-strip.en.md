@@ -1,4 +1,6 @@
-# Smart LED Strip Project
+---
+title: Smart LED Strip Project
+---
 
 ## What is this project about
 

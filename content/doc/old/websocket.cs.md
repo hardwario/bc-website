@@ -1,4 +1,6 @@
-# WebSocket - Real-time Protocol
+---
+title: WebSocket - Real-time Protocol
+---
 
 Web programmers who have done more than just work with content management systems are certainly familiar with the principle of web sockets.
 Basically it is a communication link established between two processes using IP technology.

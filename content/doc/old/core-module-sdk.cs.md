@@ -1,4 +1,6 @@
-# SDK, ukázky a projekty
+---
+title: SDK, ukázky a projekty
+---
 
 Zde je seznam míst, kde najdeš funkce a zdrojové kódy na kterých můžeš stavět své projekty.
 Dokumentace máme hodně a ne vše je na jednom místě.
@@ -33,7 +35,7 @@ Repozitáře s prefixem bch (BigClown Host) jsou aplikace pro Raspberry Pi, nebo
 Na [BigClown fóru](http://forum.bigclown.com) můžeš také nalézt cenné rady a ukázky.
 Například [USB CDC komunikaci](http://forum.bigclown.com/t/bigclown-core-module-hello-world-app-lets-try-to-find-the-shortest-yet-still-understandable/61)
 
-# Popis SDK knihovny (API)
+## Popis SDK knihovny (API)
 
 Core Module SDK (nebo-li Software Development Kit) je soubor driverů, examplů, hlavičkových souborů, apod.
 Ve firmwarovém projektu ho najdeš v adresáři `sdk`.

@@ -1,4 +1,6 @@
-# BigClown Dokumentace
+---
+title: BigClown Dokumentace
+---
 
 **Vítej na stránkách dokumentační podpory systému BigClown!**
 
@@ -53,4 +55,3 @@ Pokud chceš vylepšit tuto nápovědu, tak neváhej. Klikni na **EDIT THIS PAGE
 6. Pushni svoji větev zpět do svého GitHub repozitáře (s pomocí `git push origin <branch>`).
 
 7. Udělej pull request zpět na [náš repozitář doc.bigclown.cz](https://github.com/bigclownlabs/doc.bigclown.cz).
-

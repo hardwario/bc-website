@@ -1,6 +1,6 @@
-
-
-# Firmware Programming
+---
+title: Firmware Programming
+---
 
 Firmware of Core Module is a program stored in an internal flash memory of the microcontroller.
 In this chapter we will call *programming* a process of writing firmware into this internal flash memory.
@@ -136,7 +136,7 @@ The debugger is connected via a 10-pin connector on Core Module.
 
 TODO: Insert the picture of Core Module with debug cable connected.
 
-# Firmware Files
+## Firmware Files
 
 It is possible to build your own firmware.
 But not until we release the source codes on our [GitHub account](https://github.com/bigclownlabs).
@@ -154,6 +154,6 @@ So far you can download two binary files for [Smart LED Strip (Workroom) project
 
 * Sends message when pin P8 is grounded or released
 
-# Development Setup
+## Development Setup
 
 Please, click [here]({{< relref "doc/old/core-module-setup.en.md" >}}) for more details about development setup.

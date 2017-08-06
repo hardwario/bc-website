@@ -1,4 +1,6 @@
-# Grafana + InfluxDB
+---
+title: Grafana + InfluxDB
+---
 
 ## Instalace
 
@@ -197,5 +199,3 @@ sudo apt install mosquitto mosquitto-clients -y
   * Nyní bys měl vidět naměřené hodnoty.
 
   ![](grafana.png)
-
-

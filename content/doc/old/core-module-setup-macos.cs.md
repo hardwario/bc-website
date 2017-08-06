@@ -1,4 +1,6 @@
-# Core Module vývojové nástroje - macOS Desktop
+---
+title: Core Module vývojové nástroje - macOS Desktop
+---
 
 ## Požadavky
 

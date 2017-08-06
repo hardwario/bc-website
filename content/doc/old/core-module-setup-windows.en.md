@@ -1,4 +1,6 @@
-# BigClown development on Windows
+---
+title: BigClown development on Windows
+---
 
 ## Introduction
 

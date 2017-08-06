@@ -1,6 +1,6 @@
-
-
-# Bezdrátový LCD termostat
+---
+title: Bezdrátový LCD termostat
+---
 
 ## Popis funkce
 

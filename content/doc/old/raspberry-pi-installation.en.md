@@ -1,4 +1,6 @@
-# Raspberry Pi - Installation
+---
+title: Raspberry Pi - Installation
+---
 
 > **Important** If you already have your Raspberry Pi with Raspbian running on it, you can skip to [Install BigClown Packages on Existing System]({{< relref "#install-bigclown-packages-on-existing-system" >}}) to see how to install BigClown packages to your existing system.
 

@@ -1,4 +1,6 @@
-# Project "Climate Station with LED Thermometer and Dashboard"
+---
+title: Project "Climate Station with LED Thermometer and Dashboard"
+---
 
 ## What is this project about
 
@@ -215,5 +217,3 @@ sudo systemctl start mqtt_to_influxdb.service
   * You should see measured data.
 
   ![](grafana.png)
-
-

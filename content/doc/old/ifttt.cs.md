@@ -1,4 +1,6 @@
-# IFTTT - If This Then That
+---
+title: IFTTT - If This Then That
+---
 
 ## Co je IFTTT?
 

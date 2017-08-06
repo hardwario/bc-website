@@ -1,4 +1,6 @@
-# Core Module vývojové nástroje
+---
+title: Core Module vývojové nástroje
+---
 
 Vývoj firmare probíhá v následujících krocích:
 

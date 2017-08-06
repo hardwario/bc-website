@@ -1,4 +1,6 @@
-# Core Module API
+---
+title: Core Module API
+---
 
 If you want to dive into firmware development on Core Module we recommend you to get familiar with the API reference.
 The complete API can be found on the following URL:

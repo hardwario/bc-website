@@ -1,4 +1,6 @@
-# Easily Program your Home Automation
+---
+title: Easily Program your Home Automation
+---
 
 ## What is this project about?
 

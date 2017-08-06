@@ -1,4 +1,6 @@
-# Turris Omnia LXC
+---
+title: Turris Omnia LXC
+---
 
 ## Vytvoření kontejneru přes SSH
 
@@ -103,4 +105,3 @@
   ```
   exit
   ```
-

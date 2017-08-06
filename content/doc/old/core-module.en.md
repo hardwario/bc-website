@@ -1,4 +1,6 @@
-# Core Module
+---
+title: Core Module
+---
 
 This tutorial will guide you through some fundamental insights about Core Module.
 

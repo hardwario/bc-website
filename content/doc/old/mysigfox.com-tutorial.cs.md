@@ -1,4 +1,6 @@
-# MySigfox.com tutoriál
+---
+title: MySigfox.com tutoriál
+---
 
 ## Úvod
 

@@ -1,4 +1,6 @@
-# Headers & Signals
+---
+title: Headers & Signals
+---
 
 In BigClown we emphasize hardware modularity and re-usability.
 To achieve such goal we had to come up with proper interconnect system between our components.

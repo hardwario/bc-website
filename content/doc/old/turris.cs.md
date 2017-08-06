@@ -1,4 +1,6 @@
-# Turris
+---
+title: Turris
+---
 
 ## Update
   Před jakoukoliv instalací doporučuji aktualizovat opkg
@@ -80,4 +82,3 @@
     ```
     mosquitto_sub -v -t '#'
     ```
-

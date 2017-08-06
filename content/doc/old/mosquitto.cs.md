@@ -1,4 +1,6 @@
-# Mosquitto - MQTT Broker
+---
+title: Mosquitto - MQTT Broker
+---
 
 ## Základy MQTT
 

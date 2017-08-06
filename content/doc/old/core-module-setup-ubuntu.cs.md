@@ -1,4 +1,6 @@
-# Core Module vývojové nástroje - Ubuntu Desktop
+---
+title: Core Module vývojové nástroje - Ubuntu Desktop
+---
 
 ## Požadavky
 

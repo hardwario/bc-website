@@ -1,4 +1,6 @@
-# Core Module - Hardware
+---
+title: Core Module - Hardware
+---
 
 Tady ti naši grafici připravili přehled pojmenování pinů a znázornění základních bloků.
 Popis pinů budeš potřebovat, pokud budeš zapojovat nějaké vlastní externí senzory a součástky.
@@ -43,7 +45,7 @@ Pro jednotlivé GPIO piny platí následující omezení:
 
 Kompletní schéma Core Module je [ke stažení v PDF](https://github.com/bigclownlabs/bc-hardware/raw/master/out/bc-module-core/bc-module-core-rev-1-3-sch.pdf).
 
-# Konektory & Signály
+## Konektory & Signály
 
 V našem systému klademe důraz na hardwarovou modularitu a znovupoužitelnost.
 Proto jsme zvolili pro systém propojování našich komponent dobře známý a hojně používaný standard konektorů s 2.54 mm (0.1 palce) roztečí.

@@ -1,4 +1,6 @@
-# Projekt "Klimastanice s LED teploměrem a dashboardem"
+---
+title: Projekt "Klimastanice s LED teploměrem a dashboardem"
+---
 
 ## O čem projekt je a co ti přinese
 
@@ -215,4 +217,3 @@ sudo systemctl start mqtt_to_influxdb.service
   * Nyní bys měl vidět naměřené hodnoty.
 
   ![](grafana.png)
-

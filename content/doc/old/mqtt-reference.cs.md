@@ -1,5 +1,5 @@
-# MQTT Reference
-
+---
+title: MQTT Reference
 ---
 
 ## Commands

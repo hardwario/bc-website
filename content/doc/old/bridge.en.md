@@ -1,4 +1,6 @@
-# Bridge Project
+---
+title: Bridge Project
+---
 
 ## Introduction
 

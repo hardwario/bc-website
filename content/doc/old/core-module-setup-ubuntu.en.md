@@ -1,4 +1,6 @@
-# Core Module Development Setup - Ubuntu Desktop
+---
+title: Core Module Development Setup - Ubuntu Desktop
+---
 
 ## Requirements
 

@@ -1,4 +1,6 @@
-# Battery Module + Mini Battery Module
+---
+title: Battery Module + Mini Battery Module
+---
 
 Oba moduly slouží pro napájení BigClown komponent z baterií. Jelikož jsou všechny naše komponenty low-power a bezproblémový chod z baterií je základní stavební kámen BigClown produktů, tak budou tyto moduly potřeba téměř pro všechny rádiové jednotky (remote node). Součástí modulu je obvod pro měření vstupního napětí, lze tak jednoduše zjišťovat stav vybití baterií. Navíc díky dalšímu pinu se měření jen krátkodobě zapíná, takže nikde zbytečně neutíká proud.
 

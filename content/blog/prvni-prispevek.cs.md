@@ -22,7 +22,3 @@ Eam ei libris cetero detracto, denique consectetuer eu vis. Omnis apeirian in pe
 Quo iudico accommodare ex, nam ridens posidonium eu. Forensibus argumentum an sea, vix et eruditi recteque, ferri aperiri nusquam cu ius. Putant tritani aperiri nam cu, has iuvaret tractatos an. His ex audiam voluptua vituperatoribus, cum ad ancillae electram, quo ea feugait maluisset corrumpit. Eos et tempor bonorum recusabo, at has epicurei suscipiantur, cum at elitr ancillae.
 
 Ornatus habemus blandit eam et. Ei natum option evertitur vim, te sea meis maiestatis constituto. Tamquam integre in duo. Et vix omnium partiendo complectitur. In has sonet quodsi recusabo, vel et putant vocent petentium. Vim ex amet elit, at pro dolorem torquatos interesset, ea persius intellegebat pro. test
-
-[Odkaz na druhy]({{< relref "blog/druhy-prispevek.md" >}})
-
-[Odkaz na druhy](blog/druhy-prispevek.md)

@@ -1,4 +1,6 @@
-# BigClown Documentation
+---
+title: BigClown Documentation
+---
 
 **Welcome to BigClown Documentation!**
 

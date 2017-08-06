@@ -1,4 +1,6 @@
-# Jednoduché programování domácí automatizace
+---
+title: Jednoduché programování domácí automatizace
+---
 
 ## O čem projekt je a co ti přinese
 

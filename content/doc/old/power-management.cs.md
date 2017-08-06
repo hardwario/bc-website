@@ -1,4 +1,6 @@
-# Řízení napájení
+---
+title: Řízení napájení
+---
 
 Naše modulární stavebnice umožňuje připojit více zdrojů napájení.
 Díky tomu je možné Core Module napájet z USB a zároveň mít vložené baterie v Battery Module.

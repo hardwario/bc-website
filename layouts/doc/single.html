@@ -5,10 +5,10 @@
 {{- define "main" }}
 <main aria-role="main">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       {{- partial "doc/menu.html" . }}
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-6">
       <header class="page-header">
         <h1 id="title">{{ .Title }}</h1>
       </header>
@@ -16,6 +16,9 @@
         {{ .Content }}
       </div>
     </div>
+    <aside class="col-sm-3">
+       {{ .TableOfContents }}
+    </aside>
   </div>
 </main>
 {{ end }}

@@ -3,7 +3,7 @@
   {{- range .Site.Languages }}
     {{- $.Scratch.Set "link" (printf "/%s/%s" .Lang $page.Section) }}
     {{- range where $page.AllTranslations "Lang" .Lang }}
-      {{- $.Scratch.Set "link" .Permalink }}
+      {{- $.Scratch.Set "link" .RelPermalink }}
     {{- end }}
   <li><a href="{{ $.Scratch.Get "link" }}" title="{{ .LanguageName }}"><span class="flag-icon flag-icon-{{ .Params.countrycode }}"></span></a></li>
   {{- end }}

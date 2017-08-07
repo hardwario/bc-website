@@ -7,3 +7,7 @@ body {
 .semi-transparent {
   opacity: 0.2;
 }
+
+.avatar {
+  height: 200px;
+}

@@ -1,64 +1,37 @@
-<hr>
-<div class="footer">
-  {{- if eq .Page.Lang "cs" }}
-  <p><strong>Podpora</strong></p>
-  <ul>
-    <li><a href="/cs/doc/">Dokumentace</a></li>
-    <li><a href="{{ relref . "www/faq.cs.md" }}">FAQ</a></li>
-    <li><a href="https://forum.bigclown.com/">Fórum</a></li>
-    <li><a href="https://github.com/bigclownlabs">GitHub</a></li>
-    <li>podpora@bigclown.cz</li>
-  </ul>
-  {{- else }}
-  <p><strong>Support</strong></p>
-  <ul>
-    <li><a href="/en/doc/">Documentation</a></li>
-    <li><a href="{{ relref . "www/faq.en.md" }}">FAQ</a></li>
-    <li><a href="https://forum.bigclown.com/">Forum</a></li>
-    <li><a href="https://github.com/bigclownlabs">GitHub</a></li>
-    <li>support@bigclown.com</li>
-  </ul>
-  {{- end }}
-</div>
-
 <div class="footer-dark">
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-push-6 item text">
-          <h3>Company Name</h3>
-          <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-        </div>
-        <div class="col-md-3 col-md-pull-6 col-sm-4 item">
+        <div class="col-sm-3 item">
           {{- if eq .Page.Lang "cs" }}
           <h3>Kontakt</h3>
           <ul>
-            <li>HARDWARIO s.r.o.</li>
-            <li>Mrštíkova 399/2a</li>
-            <li>460 07 Liberec</li>
-            <li>Česká republika</li>
+            <li>HARDWARIO&nbsp;s.r.o.</li>
+            <li>Mrštíkova&nbsp;399/2a</li>
+            <li>460&nbsp;07&nbsp;Liberec</li>
+            <li>Česká&nbsp;republika</li>
           </ul>
           {{- else }}
           <h3>Contact</h3>
           <ul>
-            <li>HARDWARIO s.r.o.</li>
-            <li>Mrštíkova 399/2a</li>
-            <li>460 07 Liberec</li>
-            <li>Czech Republic</li>
+            <li>HARDWARIO&nbsp;s.r.o.</li>
+            <li>Mrštíkova&nbsp;399/2a</li>
+            <li>460&nbsp;07&nbsp;Liberec</li>
+            <li>Czech&nbsp;Republic</li>
           </ul>
           {{- end }}
           <br>
           <ul>
-            <li><a href="mailto:ask@bigclown.com"><span class="glyphicon glyphicon-envelope"></span> ask@bigclown.com</a></li>
-            <li><a href="tel:+420725190630"><span class="glyphicon glyphicon-phone-alt"></span> +420 725 190 630</a></li>
+            <li><a href="mailto:ask@bigclown.com"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;ask@bigclown.com</a></li>
+            <li><a href="tel:+420725190630"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;+420&nbsp;725&nbsp;190&nbsp;630</a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-md-pull-6 col-sm-4 item">
+        <div class="col-sm-3 item">
           {{- if eq .Page.Lang "cs" }}
           <h3>Odkazy</h3>
           <ul>
             <ul>
-              <li><a href="{{ relref . "www/tos.cs.md" }}">Obchodní podmínky</a></li>
+              <li><a href="{{ relref . "www/tos.cs.md" }}">Obchodní&nbsp;podmínky</a></li>
               <li><a href="{{ relref . "www/cookies.cs.md" }}">Cookies</a></li>
               <li><a href="https://drive.google.com/drive/folders/0B7mImtQnvdScb0NMMjgwOXRyZDA">Presskit</a></li>
             </ul>
@@ -66,15 +39,47 @@
           {{- else }}
           <h3>Links</h3>
           <ul>
-            <li><a href="{{ relref . "www/shopping-info.en.md" }}">Shopping Info</a></li>
+            <li><a href="{{ relref . "www/shopping-info.en.md" }}">Shopping&nbsp;Info</a></li>
             <li><a href="{{ relref . "www/cookies.en.md" }}">Cookies</a></li>
             <li><a href="https://drive.google.com/drive/folders/0B7mImtQnvdScb0NMMjgwOXRyZDA">Presskit</a></li>
           </ul>
           {{- end }}
         </div>
-        <div class="col-md-12 col-sm-4 item social"><a href="https://www.facebook.com/bigclownlabs" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/BigClownLabs" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/company/bigclown-labs-s.r.o." target="_blank"><i class="icon ion-social-linkedin"></i></a><a href="https://www.youtube.com/channel/UCf1CdGt1XBwAAT_Qh__bEhQ" target="_blank"><i class="icon ion-social-youtube"></i></a></div>
+        <div class="col-sm-3 item">
+          {{- if eq .Page.Lang "cs" }}
+          <h3>Podpora</h3>
+          <ul>
+            <li><a href="/cs/doc/">Dokumentace</a></li>
+            <li><a href="{{ relref . "www/faq.cs.md" }}">FAQ</a></li>
+            <li><a href="https://forum.bigclown.com/">Fórum</a></li>
+            <li><a href="https://github.com/bigclownlabs">GitHub</a></li>
+          </ul>
+          <br>
+          <ul>
+            <li><a href="mailto:podpora@bigclown.cz"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;podpora@bigclown.cz</a></li>
+          </ul>
+          {{- else }}
+          <h3>Support</h3>
+          <ul>
+            <li><a href="/en/doc/">Documentation</a></li>
+            <li><a href="{{ relref . "www/faq.en.md" }}">FAQ</a></li>
+            <li><a href="https://forum.bigclown.com/">Forum</a></li>
+            <li><a href="https://github.com/bigclownlabs">GitHub</a></li>
+          </ul>
+          <br>
+          <ul>
+            <li><a href="mailto:support@bigclown.com"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;support@bigclown.com</a></li>
+          </ul>
+          {{- end }}
+        </div>
+        <div class="col-sm-3 item">
+          <p><img src="/svg/bigclown-avatar.svg" class="avatar"></p>
+        </div>
       </div>
-      <p class="copyright">HARDWARIO s.r.o. © 2017</p>
+      <div class="row">
+        <div class="col-sm-12 item social"><a href="https://www.facebook.com/bigclownlabs" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/BigClownLabs" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/company/bigclown-labs-s.r.o." target="_blank"><i class="icon ion-social-linkedin"></i></a><a href="https://www.youtube.com/channel/UCf1CdGt1XBwAAT_Qh__bEhQ" target="_blank"><i class="icon ion-social-youtube"></i></a></div>
+      </div>
+      <p class="copyright">HARDWARIO&nbsp;s.r.o.&nbsp;&copy;&nbsp;2017</p>
     </div>
   </footer>
 </div>

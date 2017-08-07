@@ -56,11 +56,11 @@ Je dobré mít vždy vše aktuální, takže si zaktualizujeme firmware:
 * můžeš k tomu použít vlastní počítač pak postupuj dle návodu [zde]({{< relref "doc/old/core-module-flashing.cs.md" >}}) firmware najdeš zde [https://github.com/bigclownlabs/bcp-climate-station/releases/latest](https://github.com/bigclownlabs/bcp-climate-station/releases/latest), půlmetrový pásek má 72 diod tedy stáhni firmware-72pixel.bin
 
 * nebo k tomu můžeš využít Raspberry jako já, stáhni si poslední verzi firmware-72pixel.bin a nahraj ji do Core Module pomocí těchto příkazů
-  ```
-  sudo apt install dfu-util wget
-  wget $(wget "https://api.github.com/repos/bigclownlabs/bcp-climate-station/releases/latest" -q -O - | grep browser_download_url | grep firmware-72pixel.bin | head -n 1 | cut -d '"' -f 4)
-  sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D firmware-72pixel.bin
-  ```
+    ```
+    sudo apt install dfu-util wget
+    wget $(wget "https://api.github.com/repos/bigclownlabs/bcp-climate-station/releases/latest" -q -O - | grep browser_download_url | grep firmware-72pixel.bin | head -n 1 | cut -d '"' -f 4)
+    sudo dfu-util -s 0x08000000:leave -d 0483:df11 -a 0 -D firmware-72pixel.bin
+    ```
 
 ## InfluxDB
 
@@ -139,36 +139,39 @@ sudo systemctl start bc-gateway.service
 Test funkčnosti
 
 * Zapneme LED na core
-  ```
-  mosquitto_pub -t 'node/climate-station/led/-/state/set' -m true
-  ```
+    ```
+    mosquitto_pub -t 'node/climate-station/led/-/state/set' -m true
+    ```
 
 * Vypneme  LED na core
-  ```
-  mosquitto_pub -t 'node/climate-station/led/-/state/set' -m false
-  ```
+    ```
+    mosquitto_pub -t 'node/climate-station/led/-/state/set' -m false
+    ```
 
 * Zapneme relátko
-  ```
-  mosquitto_pub -t 'node/climate-station/relay/-/state/set' -m true
-  ```
-  > **Hint** První pomoc:
-  Pokud relé neseplo, tak zkontroluj zda jsi připojil 5V DC adaptér do Power Modulu
+    ```
+    mosquitto_pub -t 'node/climate-station/relay/-/state/set' -m true
+    ```
+    > **Hint** První pomoc:
+    Pokud relé neseplo, tak zkontroluj zda jsi připojil 5V DC adaptér do Power Modulu
 
 * Vypneme  relátko
-  ```
-  mosquitto_pub -t 'node/climate-station/relay/-/state/set' -m false
-  ```
+    ```
+    mosquitto_pub -t 'node/climate-station/relay/-/state/set' -m false
+    ```
 * Zobrazíme si všechny zprávy na mqtt (ukončíš ctrl+c)
-  ```
-  mosquitto_sub -v -t '#'
-  ```
+    ```
+    mosquitto_sub -v -t '#'
+    ```
 
 ## Vytvoření databáze node v InfluxDB
+
 ```
 curl -s "http://localhost:8086/query?q=CREATE+DATABASE+%22node%22&db=_internal"
 ```
+
 kontrola zda došlo k vytvoření
+
 ```
 curl -s "http://localhost:8086/query?q=SHOW+DATABASES&db=_internal" | grep \"node\"
 ```
@@ -196,24 +199,24 @@ sudo systemctl start mqtt_to_influxdb.service
 
 * Vytvoření datasource
 
-  * Klikneme na `Add data source` a vyplníme následující hodnoty:
-    * Name: node
-    * Type: InfluxDB
-    * Url: http://localhost:8086
-    * Database: node
+    * Klikneme na `Add data source` a vyplníme následující hodnoty:
+        * Name: node
+        * Type: InfluxDB
+        * Url: http://localhost:8086
+        * Database: node
 
-  * Klikneme na `Add`, Grafana se pokusí připojit na InfluxDB - úspěch oznámí takovouto hláškou `Data source is working`
+    * Klikneme na `Add`, Grafana se pokusí připojit na InfluxDB - úspěch oznámí takovouto hláškou `Data source is working`
 
 * Import dashboardu
 
-  * Vlevo nahoře klikneme na ikonku Grafany, vybereme `Dashboard` a `Import`
+    * Vlevo nahoře klikneme na ikonku Grafany, vybereme `Dashboard` a `Import`
 
-  * Stáhněte si do počítače soubor s dashboardem [https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/grafana-climate-station.json](https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/grafana-climate-station.json)
+    * Stáhněte si do počítače soubor s dashboardem [https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/grafana-climate-station.json](https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/grafana-climate-station.json)
 
-  * Vybereme možnost `Upload .json File` a vybereme stažený json file, teď už jen zvolíme `node` ze seznamu dostupných datasource, to je ten, který jsme si před chvílí vytvořili.
+    * Vybereme možnost `Upload .json File` a vybereme stažený json file, teď už jen zvolíme `node` ze seznamu dostupných datasource, to je ten, který jsme si před chvílí vytvořili.
 
-  * A klikneme na `Import`
+    * A klikneme na `Import`
 
-  * Nyní bys měl vidět naměřené hodnoty.
+    * Nyní bys měl vidět naměřené hodnoty.
 
-  ![](grafana.png)
+    ![](grafana.png)

@@ -1,6 +1,5 @@
 {{- if .IsTranslated }}
-<h4>{{ i18n "translations" }}</h4>
-<ul>
+<ul class="nav navbar-nav navbar-right">
   {{- range .Translations }}
   <li><a href="{{ .RelPermalink }}">{{ .Lang }}</a></li>
   {{- end }}

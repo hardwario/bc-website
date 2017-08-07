@@ -3,7 +3,6 @@
 {{- end }}
 
 {{- define "main" }}
-{{- partial "translations.html" . }}
 <main aria-role="main">
   <header class="page-header">
     <h1 id="title">{{ .Title }}</h1>
@@ -13,7 +12,7 @@
   </div>
   <div class="page-content">
     <ul>
-    {{ range (.Paginator 2).Pages }} 
+    {{ range (.Paginator 2).Pages }}
       <li class="post">
         <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
         <time class="post-time">{{ .Date.Format "15:04 January 2, 2006" }}</time>

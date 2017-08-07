@@ -123,3 +123,180 @@ items:
 
       - title: MySigfox.com tutoriál
         link: doc/old/mysigfox.com-tutorial.cs.md
+
+  - title: ===========================
+
+  - title: Úvod
+    items:
+    - title: Rozcestník
+    - title: O dokumentaci
+      items:
+      - title: Technologie
+      - title: Přispívání
+  - title: Začínáme
+    items:
+    - title: Základní pojmy
+    - title: Blokový koncept systému
+    - title: Samostatný projekt
+    - title: Sigfox
+    - title: Rádiová síť
+      items:
+      - title: USB Dongle
+      - title: Nodes
+    - title: Jaké jsou obecné postupy
+    - title: Kde hledat informace
+    - title: Jak se obrátit o pomoc
+  - title: Projekty
+    items:
+    - title: Sdílejte své projekty
+      items:
+      - title: 3 kategorie projektů
+      - title: Samostatné
+      - title: Lokální 868 MHz
+      - title: LPWAN
+        items:
+        - title: Sigfox
+    - title: Sekce projektu
+      items:
+      - title: Uvod
+      - title: Potřebné komponenty
+      - title: Sestavení
+      - title: Firmware
+      - title: Párování po rádiu (pokud je)
+      - title: Popis chování
+      - title: Integrace služeb (pokud jsou)
+      - title: MQTT příkazy (pokud jsou)
+      - title: Tweakování (pokud lze)
+    - title: Základní projekty
+      items:
+      - title: Sigfox detektor pohyb
+      - title: Sigfox klima senzor
+      - title: Sigfox energy meter
+      - title: Comfort Monitor
+      - title: Smart LED strip
+        items:
+        - title: Blynk
+      - title: Sigfox CO2 Monitor
+      - title: Klimastanice
+        items:
+        - title: Grafana
+      - title: Meteostanice
+        items:
+        - title: Grafana
+  - title: Hub
+    items:
+    - title: Podporované platformy
+      items:
+      - title: Turris Omnia
+      - title: Instalace
+    - title: Raspberry Pi
+      items:
+      - title: Instalace
+      - title: Originál
+      - title: BigClown
+    - title: MQTT
+      items:
+      - title: Broker
+      - title: Clients
+      - title: Popis
+      - title: Instalace
+      - title: Používání
+      - title: Reference příkazů
+    - title: Firmware flasher
+      items:
+      - title: Odkaz na firmware?
+    - title: Gateway
+      items:
+      - title: Popis
+      - title: Instalace
+    - title: Node-RED
+      items:
+      - title: Popis
+      - title: Instalace
+    - title: Grafana + Influx
+      items:
+      - title: Popis
+      - title: Instalace
+  - title: Firmware
+    items:
+    - title: Úvod
+      items:
+      - title: Programovací jazyk
+      - title: Prostředí
+      - title: Coding style
+      - title: Paradigmata
+      - title: Scheduler
+  - title: CLI setup
+    items:
+    - title: Podporované platformy
+      items:
+      - title: Windows
+      - title: macOS
+      - title: Linux
+    - title: Git
+      items:
+      - title: Toolchain
+      - title: Popis Makefile
+      - title: Flasher
+      - title: Debug
+    - title: Nahrávání firmware
+    - title: IDE setup
+      items:
+      - title: Plugin do editoru
+      - title: Workflow
+      - title: Integrace s debuggerem
+    - title: Odkaz na SDK
+    - title: Jak...
+      items:
+      - title: Začít firmware projekt
+      - title: Práce s Git submodul
+      - title: Rozblikat LEDku
+      - title: Číst tlačítko
+      - title: Ovládat GPIO
+      - title: Provést I2C/SPI/UART transakci
+      - title: Číst ADC
+      - title: Nastavit DAC
+      - title: Poslat text na sériovou konzoli
+      - title: Odvysílat zprávu po rádiu
+      - title: Ovládat displej
+      - title: Ovládat LED pásek
+      - title: Ovládat relé
+      - title: Přečíst teplotu z Core Module
+      - title: Detekovat otřes
+      - title: Ovysílat zprávu přes Sigfox
+      - title: Pracovat s jednotlivými HW periferiemi BigClown
+  - title: Hardware
+    items:
+    - title: Základní principy
+    - title: BigClown headery a signály
+    - title: Řízení napájení
+    - title: Upozornění co nedělat
+      items:
+      - title: Napájení
+      - title: Teploty
+      - title: Venkovní použití
+    - title: Popis jednotlivých komponent
+      items:
+      - title: Blokové diagramy
+      - title: Technické parametry
+    - title: Odkaz práce ve firmware
+    - title: Tabulka I2C adres
+    - title: Jednoduchá HW zapojení ke Core Module
+      items:
+      - title: Tlačítko
+      - title: LED
+      - title: I2C senzor
+  - title: Sigfox
+    items:
+    - title: Popis služby
+    - title: Sigfox Module
+    - title: MySigfox
+    - title: Odkaz na práci se Sigfox ve firmware
+  - title: Služby
+    items:
+    - title: MySigfox
+    - title: Motion Sigfox
+    - title: Climate Sigfox
+  - title: GitHub
+    items:
+    - title: Rozcestník a popis repozitářů

@@ -1,10 +1,12 @@
 {{- $page := . }}
 <ul class="nav navbar-nav navbar-right">
   {{- range .Site.Languages }}
+    {{- $.Scratch.Set "opacity" " semi-transparent" }}
     {{- $.Scratch.Set "link" (printf "/%s/%s" .Lang $page.Section) }}
     {{- range where $page.AllTranslations "Lang" .Lang }}
       {{- $.Scratch.Set "link" .RelPermalink }}
+      {{- $.Scratch.Set "opacity" "" }}
     {{- end }}
-  <li><a href="{{ $.Scratch.Get "link" }}" title="{{ .LanguageName }}"><span class="flag-icon flag-icon-{{ .Params.countrycode }}"></span></a></li>
+  <li><a href="{{ $.Scratch.Get "link" }}" title="{{ .LanguageName }}"><span class="flag-icon flag-icon-{{ .Params.countrycode }}{{ $.Scratch.Get "opacity" }}"></span></a></li>
   {{- end }}
 </ul>

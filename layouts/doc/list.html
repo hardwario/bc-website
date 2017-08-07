@@ -3,15 +3,19 @@
 {{- end }}
 
 {{- define "main" }}
-{{- partial "doc/menu.html" . }}
-<main aria-role="main">
-  <header class="page-header">
-    <h1 id="title">{{ .Title }}</h1>
-  </header>
-  <div class="page-content">
-    {{ .Content }}
-  </div>
-</main>
+<div class="row">
+  <nav class="col-md-3">
+    {{- partial "doc/menu.html" . }}
+  </nav>
+  <main class="col-md-9" aria-role="main">
+    <header class="page-header">
+      <h1 id="title">{{ .Title }}</h1>
+    </header>
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+  </main>
+</div>
 {{ end }}
 
 {{ define "footer"}}

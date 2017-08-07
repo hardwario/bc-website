@@ -1,23 +1,29 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">BigClown</a>
+      {{- if eq .Page.Lang "cs" }}
+      <a class="navbar-brand" href="/cs/"><img src="/svg/bigclown-logo.svg" alt="BigClown Logo"></a>
+      {{- else }}
+      <a class="navbar-brand" href="/en/"><img src="/svg/bigclown-logo.svg" alt="BigClown Logo"></a>
+      {{- end }}
     </div>
     <ul class="nav navbar-nav">
     {{- if eq .Page.Lang "cs" }}
-      <li><a href="/cs/blog/">BLOG</a></li>
-      <li><a href="https://shop.bigclown.cz/">OBCHOD</a></li>
-      <li><a href="/cs/doc/">DOKUMENTACE</a></li>
-      <li><a href="{{ relref . "www/support.cs.md" }}">PODPORA</a></li>
-      <li><a href="{{ relref . "www/about-us.cs.md" }}">O NÁS</a></li>
-      <li><a href="https://github.com/bigclownlabs" target="_blank">GITHUB</a></li>
+      <li{{ if eq .RelPermalink "/cs/" }} class="active"{{ end }}><a href="/cs/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+      {{- partial "navbar-item.html" (dict "title" "BLOG" "link" "/cs/blog/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "OBCHOD" "link" "https://shop.bigclown.cz/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "DOKUMENTACE" "link" "/cs/doc/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "PODPORA" "link" "/cs/www/podpora/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "O NÁS" "link" "/cs/www/o-nas/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "GITHUB" "link" "https://github.com/bigclownlabs" "page" .) }}
     {{- else }}
-      <li><a href="/en/blog/">BLOG</a></li>
-      <li><a href="https://shop.bigclown.com/">SHOP</a></li>
-      <li><a href="/en/doc/">DOCUMENTATION</a></li>
-      <li><a href="{{ relref . "www/support.en.md" }}">SUPPORT</a></li>
-      <li><a href="{{ relref . "www/about-us.en.md" }}">ABOUT US</a></li>
-      <li><a href="https://github.com/bigclownlabs" target="_blank">GITHUB</a></li>
+      <li{{ if eq .RelPermalink "/en/" }} class="active"{{ end }}><a href="/en/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+      {{- partial "navbar-item.html" (dict "title" "BLOG" "link" "/en/blog/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "SHOP" "link" "https://shop.bigclown.com/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "DOCUMENTATION" "link" "/en/doc/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "SUPPORT" "link" "/en/www/support/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "ABOUT US" "link" "/en/www/about-us/" "page" .) }}
+      {{- partial "navbar-item.html" (dict "title" "GITHUB" "link" "https://github.com/bigclownlabs" "page" .) }}
     {{- end }}
     </ul>
     {{- partial "translations.html" . }}

@@ -12,6 +12,8 @@ fractions = false
 [Languages.en]
 weight = 1
 languageName = "English"
+countryCode = "gb"
 [Languages.cs]
 weight = 2
 languageName = "Čeština"
+countryCode = "cz"

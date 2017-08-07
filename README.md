@@ -17,7 +17,8 @@ This repository contains all *main* BigClown websites.
 - Run local webserver `npm start`.
 - Open browser and navigate to `localhost:1313`.
 
-## License
+
+# License
 
 Not specified yet.
 

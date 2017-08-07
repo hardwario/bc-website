@@ -3,3 +3,7 @@ body {
   font-size: 1.8em;
   line-height: 2;
 }
+
+.semi-transparent {
+  opacity: 0.2;
+}

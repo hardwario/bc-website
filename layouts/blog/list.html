@@ -1,26 +1,23 @@
 {{ define "main" }}
 <div class="container-fluid main">
   <div class="row">
-    <div class="col-sm-1 col-md-2 col-lg-3"></div>
-    <div class="col-sm-10 col-md-8 col-lg-6">
+    <div class="col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
       <main aria-role="main">
         <div class="page-content">
         {{ .Content }}
         </div>
       </main>
     </div>
-    <div class="col-sm-1 col-md-2 col-lg-3"></div>
   </div>
   <div class="row">
-    <div class="col-sm-1 col-md-2 col-lg-3"></div>
-    <div class="col-sm-10 col-md-8 col-lg-6">
+    <div class="col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
     <ul>
     {{ range (.Paginator 2).Pages }}
       <li class="post">
-        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <header><a href="{{ .RelPermalink }}">{{ .Title }}</a></header>
         <time class="post-time">{{ .Date.Format "15:04 January 2, 2006" }}</time>
         <div class="post-content">
-          <p>{{ .Summary }}</p>
+          <p>{{ .Summary | truncate 200 }}</p>
         </div>
       </li>
     {{ end }}
@@ -32,7 +29,6 @@
     <a class="btn btn-default" href="{{ .Paginator.Next.URL }}">&gt;</a>
     {{ end }}
     </div>
-    <div class="col-sm-1 col-md-2 col-lg-3"></div>
   </div>
 </div>
 {{ end }}

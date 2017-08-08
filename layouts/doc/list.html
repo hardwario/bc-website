@@ -1,23 +1,26 @@
-{{- define "navbar" }}
-{{- partial "navbar.html" . }}
-{{- end }}
-
-{{- define "main" }}
-<div class="row">
-  <nav class="col-md-3">
-    {{- partial "doc/menu.html" . }}
-  </nav>
-  <main class="col-md-9" aria-role="main">
-    <header class="page-header">
-      <h1 id="title">{{ .Title }}</h1>
-    </header>
-    <div class="page-content">
-      {{ .Content }}
+{{ define "main" }}
+<div class="container-fluid main">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-md-3 col-lg-2">
+      {{- partial "doc/menu.html" . }}
     </div>
-  </main>
+    <div class="col-md-6 col-lg-4">
+      <main aria-role="main">
+        <header class="page-header">
+          <h1 id="title">{{ .Title }}</h1>
+        </header>
+        <div class="page-content">
+          {{ .Content }}
+        </div>
+      </main>
+    </div>
+    <div class="col-md-3 col-lg-2">
+      <aside>
+        {{ .TableOfContents }}
+      </aside>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
 </div>
-{{ end }}
-
-{{ define "footer"}}
-{{ partial "footer.html" . }}
 {{ end }}

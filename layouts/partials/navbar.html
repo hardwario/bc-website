@@ -10,20 +10,22 @@
     <ul class="nav navbar-nav">
     {{- if eq .Page.Lang "cs" }}
       <li{{ if eq .RelPermalink "/cs/" }} class="active"{{ end }}><a href="/cs/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+      {{- partial "navbar-item.html" (dict "title" "PROJEKTY" "link" "/cs/www/projekty/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "BLOG" "link" "/cs/blog/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "OBCHOD" "link" "https://shop.bigclown.cz/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "DOKUMENTACE" "link" "/cs/doc/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "PODPORA" "link" "/cs/www/podpora/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "O NÁS" "link" "/cs/www/o-nas/" "page" .) }}
-      {{- partial "navbar-item.html" (dict "title" "GITHUB" "link" "https://github.com/bigclownlabs" "page" .) }}
+      <li><a href="https://github.com/bigclownlabs/" target="_blank">GITHUB</a></li>
     {{- else }}
       <li{{ if eq .RelPermalink "/en/" }} class="active"{{ end }}><a href="/en/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+      {{- partial "navbar-item.html" (dict "title" "PROJECTS" "link" "/en/www/projects/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "BLOG" "link" "/en/blog/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "SHOP" "link" "https://shop.bigclown.com/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "DOCUMENTATION" "link" "/en/doc/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "SUPPORT" "link" "/en/www/support/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "ABOUT US" "link" "/en/www/about-us/" "page" .) }}
-      {{- partial "navbar-item.html" (dict "title" "GITHUB" "link" "https://github.com/bigclownlabs" "page" .) }}
+      <li><a href="https://github.com/bigclownlabs/" target="_blank">GITHUB</a></li>
     {{- end }}
     </ul>
     {{- partial "translations.html" . }}

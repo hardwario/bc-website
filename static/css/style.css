@@ -12,3 +12,8 @@ body {
 .avatar {
   height: 200px;
 }
+
+.main {
+  padding: 20px;
+  margin-bottom: 100px;
+}

@@ -2,9 +2,9 @@
   <div class="container-fluid">
     <div class="navbar-header">
       {{- if eq .Page.Lang "cs" }}
-      <a class="navbar-brand" href="/cs/"><img src="/svg/bigclown-logo.svg" alt="BigClown Logo"></a>
+      <a class="navbar-brand" href="/cs/"><img src="/_assets/svg/bigclown-logo.svg" alt="BigClown Logo"></a>
       {{- else }}
-      <a class="navbar-brand" href="/en/"><img src="/svg/bigclown-logo.svg" alt="BigClown Logo"></a>
+      <a class="navbar-brand" href="/en/"><img src="/_assets/svg/bigclown-logo.svg" alt="BigClown Logo"></a>
       {{- end }}
     </div>
     <ul class="nav navbar-nav">
@@ -16,7 +16,6 @@
       {{- partial "navbar-item.html" (dict "title" "DOKUMENTACE" "link" "/cs/doc/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "PODPORA" "link" "/cs/www/podpora/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "O NÁS" "link" "/cs/www/o-nas/" "page" .) }}
-      <li><a href="https://github.com/bigclownlabs/" target="_blank">GITHUB</a></li>
     {{- else }}
       <li{{ if eq .RelPermalink "/en/" }} class="active"{{ end }}><a href="/en/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
       {{- partial "navbar-item.html" (dict "title" "PROJECTS" "link" "/en/www/projects/" "page" .) }}
@@ -25,6 +24,8 @@
       {{- partial "navbar-item.html" (dict "title" "DOCUMENTATION" "link" "/en/doc/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "SUPPORT" "link" "/en/www/support/" "page" .) }}
       {{- partial "navbar-item.html" (dict "title" "ABOUT US" "link" "/en/www/about-us/" "page" .) }}
+    {{- end }}
+    {{- if eq .Section "doc" }}
       <li><a href="https://github.com/bigclownlabs/" target="_blank">GITHUB</a></li>
     {{- end }}
     </ul>

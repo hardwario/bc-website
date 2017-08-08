@@ -2,7 +2,7 @@
 
 # BigClown Website
 
-This repository contains these parts of BigClown website:
+This repository covers sources for these parts of BigClown website:
 
 * https://www.bigclown.com/
 * https://www.bigclown.cz/
@@ -23,7 +23,7 @@ The website uses the following core technologies:
 * [npm](https://www.npmjs.com/) - package manager for Node.js
 * [gulp](https://gulpjs.com/) - automation toolkit
 
-# Development setup on macOS
+# Development on macOS
 
 1. Open Terminal.
 
@@ -41,7 +41,7 @@ The website uses the following core technologies:
 
     `brew install hugo`
 
-6. Install npm
+6. Install Node.js (for npm):
 
     `brew install node`
 
@@ -62,6 +62,46 @@ The website uses the following core technologies:
     `npm start`
 
 11. Open browser and navigate to http://localhost:1313/.
+
+# Development on Ubuntu
+
+1. Open Terminal.
+
+2. Update & upgrade your system:
+
+    `sudo apt update && sudo apt upgrade`
+
+3. Install Git:
+
+    `sudo apt install git`
+
+4. Install Hugo:
+
+    `sudo apt-get install hugo`
+
+5. Install Node.js (for npm):
+
+    `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
+
+    `sudo apt install nodejs`
+
+6. Clone this repository:
+
+    `git clone git@github.com:bigclownlabs/bc-website.git`
+
+7. Navigate to project directory:
+
+    `cd bc-website`
+
+8. Install all dependencies:
+
+    `npm install`
+
+9. Run local webserver:
+
+    `npm start`
+
+10. Open browser and navigate to http://localhost:1313/.
 
 # License
 

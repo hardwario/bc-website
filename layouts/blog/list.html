@@ -1,33 +1,38 @@
 {{ define "main" }}
-<main aria-role="main">
-  <header class="page-header">
-    <h1 id="title">{{ .Title }}</h1>
-  </header>
-  <div>
-    {{ .Content }}
+<div class="container-fluid main">
+  <div class="row">
+    <div class="col-sm-1 col-md-2 col-lg-3"></div>
+    <div class="col-sm-10 col-md-8 col-lg-6">
+      <main aria-role="main">
+        <div class="page-content">
+        {{ .Content }}
+        </div>
+      </main>
+    </div>
+    <div class="col-sm-1 col-md-2 col-lg-3"></div>
   </div>
-  <div class="page-content">
+  <div class="row">
+    <div class="col-sm-1 col-md-2 col-lg-3"></div>
+    <div class="col-sm-10 col-md-8 col-lg-6">
     <ul>
     {{ range (.Paginator 2).Pages }}
       <li class="post">
-        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <time class="post-time">{{ .Date.Format "15:04 January 2, 2006" }}</time>
         <div class="post-content">
-            <p>{{ .Summary }}</p>
+          <p>{{ .Summary }}</p>
         </div>
-    </li>
+      </li>
     {{ end }}
     </ul>
-      {{ if .Paginator.HasPrev }}
-        <a class="btn btn-default" href="{{ .Paginator.Prev.URL }}">
-          &lt;
-        </a>
-      {{ end }}
-      {{ if .Paginator.HasNext }}
-        <a class="btn btn-default" href="{{ .Paginator.Next.URL }}">
-          &gt;
-        </a>
-      {{ end }}
+    {{ if .Paginator.HasPrev }}
+    <a class="btn btn-default" href="{{ .Paginator.Prev.URL }}">&lt;</a>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+    <a class="btn btn-default" href="{{ .Paginator.Next.URL }}">&gt;</a>
+    {{ end }}
+    </div>
+    <div class="col-sm-1 col-md-2 col-lg-3"></div>
   </div>
-</main>
+</div>
 {{ end }}

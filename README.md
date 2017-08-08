@@ -26,23 +26,41 @@ The website uses the following core technologies:
 # Development setup on macOS
 
 1. Open Terminal.
+
 2. Install [Homebrew](https://brew.sh/).
+
 3. Update & upgrade Homebrew packages:
+
     `brew update && brew upgrade`
+
 4. Install Git:
+
     `brew install git`
+
 5. Install Hugo:
+
     `brew install hugo`
+
 6. Install npm
+
     `brew install node`
+
 7. Clone this repository:
+
     `git clone git@github.com:bigclownlabs/bc-website.git`
+
 8. Navigate to project directory:
+
     `cd bc-website`
+
 9. Install all dependencies:
+
     `npm install`
+
 10. Run local webserver:
+
     `npm start`
+
 11. Open browser and navigate to http://localhost:1313/.
 
 # License

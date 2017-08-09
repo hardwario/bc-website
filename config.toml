@@ -1,4 +1,4 @@
-baseURL = "https://bigclown.com/"
+baseURL = "https://bigclown.netlify.com/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 disableKinds = ["RSS", "sitemap"]

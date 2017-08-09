@@ -17,3 +17,5 @@ cp -R static/_assets public/cs/doc
 cp -R static/_assets public/en/doc
 cp -R static/_assets public/cs/www
 cp -R static/_assets public/en/www
+
+# tidy -m -i --vertical-space no --drop-empty-elements no --drop-empty-paras no --wrap 0

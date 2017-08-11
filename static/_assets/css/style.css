@@ -14,8 +14,10 @@ body {
 }
 
 .main {
-  padding: 20px;
   margin-bottom: 100px;
+  max-width: 1600px;
+  margin-bottom: 100px;
+  padding: 20px;
 }
 
 .note {

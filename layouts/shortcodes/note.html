@@ -1,0 +1,15 @@
+<div class="alert alert-{{ .Get 0 }} note" role="alert">
+  <span class="glyphicon glyphicon-
+    {{- if eq (.Get 0) "success" }}ok
+    {{- else if eq (.Get 0) "info" }}education
+    {{- else if eq (.Get 0) "warning" }}hand-up
+    {{- else if eq (.Get 0) "danger" }}ban-circle
+    {{- end }} note-icon"></span>
+  <div class="note-content">
+    {{- if len .Inner -}}
+      {{- .Inner -}}
+    {{- else -}}
+      {{- .Get 1 -}}
+    {{- end -}}
+  </div>
+</div>

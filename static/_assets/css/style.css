@@ -17,3 +17,24 @@ body {
   padding: 20px;
   margin-bottom: 100px;
 }
+
+.note {
+  display: table;
+  width: 100%;
+}
+
+.note-icon {
+  display: table-cell;
+  font-size: 1.7em;
+  padding-right: 15px;
+}
+
+.note-content {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.note-content p {
+  margin: 0;
+}

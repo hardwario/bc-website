@@ -1,10 +1,14 @@
 {{ define "main" }}
 <div class="container-fluid main">
   <div class="row">
-    <nav class="col-md-3 col-lg-2 col-lg-offset-2">
+    <nav class="col-sm-4 col-md-3">
       {{- partial "doc/menu.html" . }}
     </nav>
-    <div class="col-md-6 col-lg-4">
+    {{- if len .TableOfContents }}
+    <div class="col-sm-8 col-md-6">
+    {{- else }}
+    <div class="col-sm-8 col-md-9">
+    {{- end }}
       <main aria-role="main">
         <header class="page-header">
           <h1 id="title">{{ .Title }}</h1>
@@ -14,11 +18,13 @@
         </div>
       </main>
     </div>
-    <div class="col-md-3 col-lg-2">
+    {{- if len .TableOfContents }}
+    <div class="hidden-sm col-md-3">
       <aside>
         {{ .TableOfContents }}
       </aside>
     </div>
+    {{- end }}
   </div>
 </div>
 {{ end }}

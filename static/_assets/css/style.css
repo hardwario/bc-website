@@ -40,3 +40,47 @@ body {
 .note-content p {
   margin: 0;
 }
+
+.page-content table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.page-content table > thead > tr > th,
+.page-content table > tbody > tr > th,
+.page-content table > tfoot > tr > th,
+.page-content table > thead > tr > td,
+.page-content table > tbody > tr > td,
+.page-content table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.page-content table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+
+.page-content table > caption + thead > tr:first-child > th,
+.page-content table > colgroup + thead > tr:first-child > th,
+.page-content table > thead:first-child > tr:first-child > th,
+.page-content table > caption + thead > tr:first-child > td,
+.page-content table > colgroup + thead > tr:first-child > td,
+.page-content table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+.page-content table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+
+.page-content table .table {
+  background-color: #fff;
+}
+
+.page-content table > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}

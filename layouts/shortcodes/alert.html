@@ -1,0 +1,11 @@
+{{- if len .Inner }}
+<div class="alert alert-{{ .Get 0 }}" role="alert">
+<div style="float: left; width: 50px;display:inline-block;"><span class="glyphicon glyphicon-envelope"></span></div>
+<div style="display: inline-block;">test <span class="glyphicon glyphicon-envelope"></span> {{- .Inner -}}</div>
+<div style="clear: both;"></div>
+</div>
+{{- else }}
+<div>
+<div class="alert alert-{{ .Get 0 }}" role="alert">{{ .Get 1 }}</div>
+</div>
+{{- end }}

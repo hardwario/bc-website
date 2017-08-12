@@ -77,7 +77,11 @@ The website uses the following core technologies:
 
 4. Install Hugo:
 
-    `sudo apt-get install hugo`
+    `wget https://github.com/gohugoio/hugo/releases/download/v0.26/hugo_0.26_Linux-64bit.deb`
+
+    `sudo dpkg -i hugo_0.26_Linux-64bit.deb`
+
+    `rm hugo_0.26_Linux-64bit.deb`
 
 5. Install Node.js (for npm):
 

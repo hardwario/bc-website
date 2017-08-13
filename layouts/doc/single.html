@@ -27,4 +27,15 @@
     {{- end }}
   </div>
 </div>
+<script>
+$(document).ready(() => {
+  // Disable or enable line counting
+  $("pre [class*=language]").parent().map((index,item) => {
+    var element = $(item);
+    var lineCounting = element.next().attr("data-line-counting");
+    lineCounting == undefined || lineCounting == true ? element.addClass("line-numbers") : null;
+  });
+});
+
+</script>
 {{ end }}

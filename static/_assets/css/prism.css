@@ -308,6 +308,8 @@ pre.code-toolbar > .toolbar .toolbar-item {
 pre.code-toolbar > .toolbar a {
   cursor: pointer;
   font-size: 17px !important;
+  color: black !important;
+  text-shadow: none !important;
 }
 
 pre.code-toolbar > .toolbar button {

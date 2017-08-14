@@ -49,6 +49,7 @@ void application_task(void)
 Podívejme se na klasickou ukázku rozblikání LED diody, která je na Core Module umístěna.
 Nejprve budu demonstrovat méně efektivní způsob, který ale vysvětlí základy práce s GPIO piny.
 
+{{% syntax-features line-counting="false" syntax="false" %}}
 ``` C
 #include <application.h>
 
@@ -71,7 +72,7 @@ void application_task()
     bc_scheduler_plan_current_relative(500);
 }
 ```
-{{% syntax-features "false" "false" %}}
+{{% /syntax-features %}}
 
 Předchozí ukázka sice rozbliká LED, ale `bc_scheduler_plan_current_relative` nám zastaví na určitou dobu vykonávání smyčky `application_task`.
 Pokud bysme chtěli provádět ještě jiný úkon kromě LED, vykonal by se taky až za 500ms.

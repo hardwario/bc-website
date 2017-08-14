@@ -1,1 +1,2 @@
-<div data-line-counting="{{ .Get 0 }}" data-syntax="{{ .Get 1 }}"></div>
+{{.Inner}}
+<div data-line-counting={{with .Get "line-counting" }}{{.}}{{else}}true{{end}} data-syntax={{with .Get "syntax"}}{{.}}{{else}}true{{end}}/>

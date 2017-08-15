@@ -5,18 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "hugo serve",
-    "build": "hugo"
+    "build": "hugo",
+    "build:netlify": "npm run build && ./script/pre-deploy.sh"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bigclownlabs/bc-website.git"
   },
-  "author": "BigClown",
+  "author": "BigClown Labs",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bigclownlabs/bc-website/issues"
   },
   "homepage": "https://github.com/bigclownlabs/bc-website#readme",
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

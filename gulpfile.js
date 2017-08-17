@@ -3,16 +3,16 @@ var gutil = require('gulp-util');
 var child = require('child_process');
 
 gulp.task('hugo', () => {
-  const jekyll = child.spawn('hugo', ['serve']);
+  const hugo = child.spawn('hugo', ['serve']);
 
-  const jekyllLogger = (buffer) => {
+  const hugoLogger = (buffer) => {
     buffer.toString()
       .split(/\n/)
       .forEach((message) => gutil.log('Hugo: ' + message))
   };
 
-  jekyll.stdout.on('data', jekyllLogger);
-  jekyll.stderr.on('data', jekyllLogger);
+  hugo.stdout.on('data', hugoLogger);
+  hugo.stderr.on('data', hugoLogger);
 });
 
 gulp.task('start', ['hugo']);

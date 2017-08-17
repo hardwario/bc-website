@@ -11,6 +11,7 @@
         {{- end }}
         <main aria-role="main">
           <header class="page-header">
+            <p>{{ i18n "author" }}:&nbsp;{{ if (isset .Params "author") }}{{.Params.author}}&nbsp;&lt;<a href="mailto:{{.Params.contact}}">{{.Params.contact}}</a>&gt;{{else}}{{ i18n "author-name" }}&nbsp;&lt;<a href="mailto:ask@bigclown.com">ask@bigclown.com</a>&gt;{{end}}</p>
             <h1 id="title">{{ .Title }}</h1>
           </header>
           <div class="page-content">

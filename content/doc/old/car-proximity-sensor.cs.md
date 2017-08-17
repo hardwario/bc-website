@@ -1,6 +1,7 @@
 ---
 title: Detektor přiblížení vozidla
 author: Daniel Sedlak
+contact: daniel.sedlak@bigclown.com
 ---
 
 # Úvod

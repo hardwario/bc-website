@@ -3,3 +3,9 @@ other = "Language"
 
 [edit-this-page]
 other = "Edit this page"
+
+[author]
+other = "Author"
+
+[author-name]
+other = "Unknown author"

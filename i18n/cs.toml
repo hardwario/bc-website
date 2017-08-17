@@ -3,3 +3,9 @@ other = "Jazyk"
 
 [edit-this-page]
 other = "Upravit tuto stránku"
+
+[author]
+other = "Autor"
+
+[author-name]
+other = "Neznamy autor"

@@ -34,13 +34,12 @@
   // Disable or enable line counting
   $("pre [class*=language]").parent().map((index,item) => {
     var element = $(item);
-    var lineCounting = element.next().attr("data-line-counting");
-    (lineCounting == undefined || lineCounting == "true") ? element.addClass("line-numbers") : null;
+    element.next().attr("data-line") == "true" ? element.addClass("line-numbers") : null;
   });
 
   //Search for pure pre's
   $("pre > code").filter((index,item) => {
     return item.getAttribute("class") == null ? true : false;
-  }).addClass("language-text line-numbers");
+  }).addClass("language-text");
 </script>
 {{ end }}

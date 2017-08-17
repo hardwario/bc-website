@@ -10,7 +10,6 @@
     <div class="col-sm-8 col-md-9">
     {{- end }}
       <main aria-role="main">
-        <a class="btn btn-default" style="margin-left: 80%;" href="https://github.com/bigclownlabs/bc-website/tree/master/content/{{.File.Path}}">edit</a>
         <header class="page-header">
           <h1 id="title">{{ .Title }}</h1>
         </header>
@@ -21,6 +20,9 @@
     </div>
     {{- if len .TableOfContents }}
     <div class="hidden-sm col-md-3">
+      <div style="margin-bottom: 20px;">
+        <a class="btn btn-primary" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil"></span> {{ i18n "edit-this-page" | upper }}</a>
+      </div>
       <aside>
         {{ .TableOfContents }}
       </aside>

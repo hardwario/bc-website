@@ -49,7 +49,7 @@ void application_task(void)
 Podívejme se na klasickou ukázku rozblikání LED diody, která je na Core Module umístěna.
 Nejprve budu demonstrovat méně efektivní způsob, který ale vysvětlí základy práce s GPIO piny.
 
-{{% syntax line="true" copy="false" %}}
+{{% syntax line="true" copy="true" %}}
 ``` C
 #include <application.h>
 

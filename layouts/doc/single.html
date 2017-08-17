@@ -6,40 +6,44 @@
     </nav>
     {{- if len .TableOfContents }}
     <div class="col-sm-8 col-md-6">
-    {{- else }}
-    <div class="col-sm-8 col-md-9">
-    {{- end }}
-      <main aria-role="main">
-        <header class="page-header">
-          <h1 id="title">{{ .Title }}</h1>
-        </header>
-        <div class="page-content">
-          {{ .Content }}
-        </div>
-      </main>
-    </div>
-    {{- if len .TableOfContents }}
-    <div class="hidden-sm col-md-3">
-      <div style="margin-bottom: 20px;">
-        <a class="btn btn-primary" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil"></span> {{ i18n "edit-this-page" | upper }}</a>
+      {{- else }}
+      <div class="col-sm-8 col-md-9">
+        {{- end }}
+        <main aria-role="main">
+          <header class="page-header">
+            <h1 id="title">{{ .Title }}</h1>
+          </header>
+          <div class="page-content">
+            {{ .Content }}
+          </div>
+        </main>
       </div>
-      <aside>
-        {{ .TableOfContents }}
-      </aside>
+      {{- if len .TableOfContents }}
+      <div class="hidden-sm col-md-3">
+        <div style="margin-bottom: 20px;">
+          <a class="btn btn-primary" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil"></span> {{ i18n "edit-this-page" | upper }}</a>
+        </div>
+        <aside>
+          {{ .TableOfContents }}
+        </aside>
+      </div>
+      {{- end }}
     </div>
-    {{- end }}
   </div>
-</div>
-<script>
-  // Disable or enable line counting
-  $("pre [class*=language]").parent().map((index,item) => {
-    var element = $(item);
-    element.next().attr("data-line") == "true" ? element.addClass("line-numbers") : null;
-  });
+  <script>
+    $(document).ready(() => {
 
-  //Search for pure pre's
-  $("pre > code").filter((index,item) => {
-    return item.getAttribute("class") == null ? true : false;
-  }).addClass("language-text");
-</script>
-{{ end }}
+      // Disable or enable line counting
+      $("pre [class*=language]").parent().map((index, item) => {
+        var element = $(item);
+        element.next().attr("data-line") == "true" ? element.addClass("line-numbers") : null;
+      });
+
+      //Search for pure pre's
+      $("pre > code").filter((index, item) => {
+        return item.getAttribute("class") == null ? true : false;
+      }).addClass("language-text");
+    });
+
+  </script>
+  {{ end }}

@@ -9,3 +9,6 @@ other = "Autor"
 
 [author-name]
 other = "Neznamý autor"
+
+[help]
+other = "Byl článek nesrozumitelný nebo nešlo něco udělat? Kontaktuj nás skrze email níže."

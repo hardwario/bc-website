@@ -9,3 +9,6 @@ other = "Author"
 
 [author-name]
 other = "Unknown author"
+
+[help]
+other = "Was the article incomprehensible or could not be completed? Contact us via email below."

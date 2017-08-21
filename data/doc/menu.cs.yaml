@@ -133,6 +133,7 @@ items:
       items:
       - title: Technologie
       - title: Přispívání
+        link: doc/contributing.cs.md
   - title: Začínáme
     items:
     - title: Základní pojmy

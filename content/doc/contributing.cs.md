@@ -63,23 +63,37 @@ Každý nadpis vygeneruje název záložky, na který se lze odkazovat v rámci 
 
 # Typografie
 
-* Text je možné zvýraznit jeho uzavřením mezi `**`.
+* Text je možné **zvýraznit** jeho uzavřením mezi `**`.
 
-    Příklad: `**Zvýrazněný text**`
+    Příklad:
 
-* Text je také možné označit kurzivou jeho uzavřením mezi `*`.
+    ```
+    **Zvýrazněný text**
+    ```
 
-    Příklad: `*Text kurzivou*`
+* Text je také možné označit **kurzivou** jeho uzavřením mezi `*`.
 
-* V textu je možné strojově označit slovo jeho uzavřením mezi `` ` ``.
+    Příklad:
 
-    Příklad: `` `Ctrl+C` ``
+    ```
+    *Text kurzivou*
+    ```
+
+* V textu je možné **strojově** označit slovo jeho uzavřením mezi `` ` ``.
+
+    Příklad:
+
+    ```
+    `Ctrl+C`
+    ```
 
     Toto je vhodné používat pro názvy příkazů, programů, klávesových zkratek, apod. Správné použití výrazně urychluje orientaci mezi klíčovými informacemi.
 
 # Seznamy
 
-Položka v nečíslovaném seznamu se uvozuje pomocí znaku `*`:
+Položka v nečíslovaném seznamu se uvozuje pomocí znaku `*`.
+
+Příklad:
 
 ```
 * Položka 1
@@ -87,7 +101,9 @@ Položka v nečíslovaném seznamu se uvozuje pomocí znaku `*`:
 * Položka 3
 ```
 
-Číslované seznamy je možné uvodit pomocí pořadového čísla a tečky:
+Číslované seznamy je možné uvodit pomocí pořadového čísla a tečky.
+
+Příklad:
 
 ```
 1. První položka
@@ -95,7 +111,9 @@ Položka v nečíslovaném seznamu se uvozuje pomocí znaku `*`:
 3. Třetí položka
 ```
 
-Seznamy lze do sebe také zanořovat. V takovém případě se musí pro odsazení použít 4 mezery:
+Seznamy lze do sebe také zanořovat. V takovém případě se musí pro odsazení použít 4 mezery.
+
+Příklad:
 
 ```
 * Položka 1
@@ -106,7 +124,9 @@ Seznamy lze do sebe také zanořovat. V takovém případě se musí pro odsazen
 * Položka 3
 ```
 
-Pokud má položka v seznamu charakter odstavce, je nutné před i po položkou nechat prázdný řádek:
+Pokud má položka v seznamu charakter odstavce, je nutné před i po položkou nechat prázdný řádek.
+
+Příklad:
 
 ```
 
@@ -118,7 +138,9 @@ Pokud má položka v seznamu charakter odstavce, je nutné před i po položkou 
 
 ```
 
-Pokud má položka v seznamu například přidružený kus kódu, je potřeba jej příslušně odsadit:
+Pokud má položka v seznamu například přidružený kus kódu, je potřeba jej příslušně odsadit.
+
+Příklad:
 
 ```
 * Položka
@@ -134,65 +156,137 @@ Existuje několik možností odkazů:
 
 1. **Externí bez pojmenování** - pouze se vloží URL včetně protokolu do textu.
 
-    Příklad: `https://www.google.com/`
+    Příklad:
+
+    ```
+    https://www.google.com/
+    ```
 
 2. **Externí s pojmenováním** - URL se uzavře do formátu `[jméno](odkaz)`.
 
-    Příklad: `[Google](https://www.google.com/)`
+    Příklad:
+
+    ```
+    [Google](https://www.google.com/)
+    ```
 
 3. **Interní bez záložky** - použije se speciální funkce, která převede cestu k dokumentu na relativní URL. Cesta k dokumentu je vždy relativní k adresáři `content`.
 
-    Příklad: `[Tutoriál]({{</* relref "doc/tutorial.cs.md" */>}})`
+    Příklad:
 
-    *Poznámka: Tato funkce zaručuje integritu celé dokumentace. Pokud by uvedený soubor neexistoval, nepovedlo by se dokumentaci sestavit.*
+    ```
+    [Tutoriál]({{</* relref "doc/tutorial.cs.md" */>}})
+    ```
+
+    {{< note "info" "Tato funkce zaručuje integritu odkazů v dokumentaci. Pokud by uvedený soubor neexistoval, nepovedlo by se dokumentaci sestavit." />}}
 
 3. **Interní se záložkou** - stejný formát jako předchozí s tím, že se za název souboru uvede `#` a název záložky.
 
-    Příklad: `[Tutoriál]({{</* relref "doc/tutorial.cs.md#zalozka" */>}})`
+    Příklad:
+
+    ```
+    [Tutoriál]({{</* relref "doc/tutorial.cs.md#zalozka" */>}})
+    ```
 
 4. **V rámci dokumentu** - použije se formát `[Kapitola](#zalozka)`.
 
-    Příklad: `[Další kapitola](#dalsi-kapitola)`
+    Příklad:
+
+    ```
+    [Další kapitola](#dalsi-kapitola)
+    ```
 
 # Obrázky
 
 Nejprve je nutné umístit obrázek do příslušné cesty v adresáři `static`. Pokud je URL k dokumentu `/cs/doc/tutorial/`, potom je nutné např. obrázek `screenshot.png` umístit v repozitáři do cesty `static/cs/doc/tutorial/screenshot.png`.
 
-Samotné vložení v dokumentu se provede standardní Markdown konstrukcí `![alternativní text](cesta)`, tedy v našem případě: `![Snímek z obrazovky](screenshot.png)`.
+Samotné vložení v dokumentu se provede standardní Markdown konstrukcí.
 
-Je dobrým zvykem vždy vyplnit alternativní text obrázku.
+Příklad:
+
+```
+![alternativní text](cesta)
+```
+
+Tedy v našem případě:
+
+```
+![Snímek z obrazovky](screenshot.png)
+```
+
+{{< note "warning" "Je dobrým zvykem vždy vyplnit alternativní text obrázku." />}}
 
 # Vložení kódu
 
-Jsou 3 varianty, jak lze do textu vložit kód:
+Jsou 2 varianty, jak lze do textu vložit kód:
 
-Do dokumentu lze vložit kód uzavřením mezi ```` ``` ````:
+1. **Kód bez zvýraznění syntaxe**
+
+    Toto se provede uzavřením kódu uzavřením mezi ```` ``` ````.
+
+    Příklad:
+
+    ~~~
+    ```
+    for (int i = 0; i < 10; i++)
+    {
+        // Do something...
+    }
+    ```
+    ~~~
+
+2. **Kód se zvýrazněním syntaxe**
+
+    Toto se provede jako předchozí případ, ale s uvedením jména jazyka bezprostředně za otevíracími ```` ``` ```` (bez mezery).
+
+    Příklad:
+
+    ~~~
+    ```c
+    for (int i = 0; i < 10; i++)
+    {
+        // Do something...
+    }
+    ```
+    ~~~
+
+Dále je možné u kódu explicitně povolit zobrazování čísel řádků a tlačítko pro zkopírování do schránky. To se provede uzavřením do `syntax` bloku a konfigurací parametrů `line` a `copy`. Ty nabývají hodnot `true` nebo `false`.
+
+Příklad:
 
 ~~~
-```
-for (int i = 0; i < 10; i++)
-{
-    // Do something...
-}
-```
-~~~
-
-Pokud chceme na kus kódu uplatnit vybarvení syntaxe pro konkrétní jazyk, uvedeme jméno jazyka bezprostředně za otevíracími ```` ``` ```` (bez mezery):
-
-~~~
+{{%/* syntax line="true" copy="true" */%}}
 ```c
-for (int i = 0; i < 10; i++)
+#include <application.h>
+
+void application_init(void)
 {
-    // Do something...
+    bc_gpio_init(BC_GPIO_LED);
 }
 ```
+{{%/* /syntax */%}}
 ~~~
+
+Výsledek:
+
+{{% syntax line="true" copy="true" %}}
+```c
+#include <application.h>
+
+void application_init(void)
+{
+    bc_gpio_init(BC_GPIO_LED);
+}
+```
+{{% /syntax %}}
+
+
 
 # Tabulky
 
 V dokumentu lze vytvářet tabulky prostřednictvím znaků `|`, `-` a `:`.
 
-Pokud chceme vytvořit tabulku, kde bude obsah všech sloupců zarovnaných vlevo:
+Příklad:
 
 ```
 | Sloupec 1 | Sloupec 2 | Sloupec 3 |
@@ -202,7 +296,9 @@ Pokud chceme vytvořit tabulku, kde bude obsah všech sloupců zarovnaných vlev
 | Buňka A3  | Buňka B3  | Buňka C3  |
 ```
 
-Pokud chceme vytvořit tabulku, kde bude obsah sloupce 2 zarovnaný na střed:
+Také je možné obsah sloupce 2 zarovnat na střed.
+
+Příklad:
 
 ```
 | Sloupec 1 | Sloupec 2 | Sloupec 3 |
@@ -212,7 +308,9 @@ Pokud chceme vytvořit tabulku, kde bude obsah sloupce 2 zarovnaný na střed:
 | Buňka A3  | Buňka B3  | Buňka C3  |
 ```
 
-Pokud chceme vytvořit tabulku, kde bude obsah sloupce 3 zarovnaný vpravo:
+Případně je možné slopec 3 zarovnat vpravo.
+
+Příklad:
 
 ```
 | Sloupec 1 | Sloupec 2 | Sloupec 3 |
@@ -224,7 +322,54 @@ Pokud chceme vytvořit tabulku, kde bude obsah sloupce 3 zarovnaný vpravo:
 
 # Anotace
 
+Pro lepší orientaci v textu je vhodné rozdělovat sémantické bloky, které mají charakter upozornění. V této dokumentaci používáme 4 typy upozornění:
 
+1. **Úspěch** - označení `success`
+2. **Doplnění** - označení `info`
+3. **Upozornění** - označení `warning`
+4. **Nebezpečí** - označení `danger`
+
+Existují 3 typy zápisu anotace:
+
+1. **Krátká anotace**
+
+    Tato se zapisuje pomocí:
+
+    ```
+    {{</* note "warning" "This is not recommended." /*/>}}
+    ```
+
+    Výsledek:
+
+    {{< note "warning" "I told you - don't drink and drive..." />}}
+
+2. **Bloková anotace bez nadpisu**
+
+    ```
+    {{</* note "danger" */>}}
+    If you don't obey, things will go apart!
+    {{</* /note */>}}
+    ```
+
+    Výsledek:
+
+    {{< note "danger" >}}
+    If you don't obey, things will go apart!
+    {{< /note >}}
+
+3. **Bloková anotace s nadpisem**
+
+    ```
+    {{</* note "info" "Did you know that..." */>}}
+    ...tomato is a fruit?
+    {{</* /note */>}}
+    ```
+
+    Výsledek:
+
+    {{< note "info" "Did you know that..." >}}
+    ...tomato is a fruit?
+    {{< /note >}}
 
 # Závěr
 

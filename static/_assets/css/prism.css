@@ -183,8 +183,8 @@
 
  pre.code-toolbar > .toolbar {
    position: absolute;
-   top: .3em;
-   right: .2em;
+   top: 0.5em;
+   right: 0;
  }
 
  pre.code-toolbar > .toolbar .toolbar-item {
@@ -212,12 +212,11 @@
  pre.code-toolbar > .toolbar button,
  pre.code-toolbar > .toolbar span {
    color: #000000;
-   font-size: 1em;
-   padding: 0 .5em;
-   background: #f5f2f0;
-   background: rgb(224, 224, 224);
-   box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
-   border-radius: .5em;
+   font-size: 1.3em;
+   font-family: 'Open Sans', sans-serif;
+   padding: 0.5em;
+   background: #337ab7;
+   text-shadow: none;
  }
 
  pre.code-toolbar > .toolbar a:hover,

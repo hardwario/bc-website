@@ -217,6 +217,7 @@
    padding: 0.5em;
    background: #337ab7;
    text-shadow: none;
+   color: whitesmoke;
  }
 
  pre.code-toolbar > .toolbar a:hover,
@@ -229,3 +230,6 @@
    text-decoration: none;
  }
 
+.disable-copy div {
+  visibility: hidden;
+}

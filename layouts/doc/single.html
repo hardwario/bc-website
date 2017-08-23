@@ -49,7 +49,7 @@
 
       $("pre [class*=language]").parent().map((index, item) => {
         var element = $(item);
-        element.next().attr("data-copy") == "false" || element.next().attr("data-copy") == null ? element.addClass("disable-copy") : console.log("ne");
+        element.next().attr("data-copy") == "false" || element.next().attr("data-copy") == null ? element.addClass("disable-copy") : null;
       });
     });
 

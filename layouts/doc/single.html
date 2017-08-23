@@ -36,6 +36,10 @@
   </div>
   <script>
     $(document).ready(() => {
+      //Search for pure pre's
+      $("pre > code").filter((index, item) => {
+        return item.getAttribute("class") == null ? true : false;
+      }).addClass("language-text");
 
       // Disable or enable line counting
       $("pre [class*=language]").parent().map((index, item) => {
@@ -47,11 +51,6 @@
         var element = $(item);
         element.next().attr("data-copy") == "false" || element.next().attr("data-copy") == null ? element.addClass("disable-copy") : console.log("ne");
       });
-
-      //Search for pure pre's
-      $("pre > code").filter((index, item) => {
-        return item.getAttribute("class") == null ? true : false;
-      }).addClass("language-text");
     });
 
   </script>

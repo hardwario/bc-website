@@ -6,12 +6,12 @@ title: Vývoj s BigClown na Windows
 
 Náš balík software a SDK může být jednoduše provozovatelný také na Windows s naším vývojovým prostředím (IDE).
 Stačí pár jednoduchých kroků a můžeš programovat a testovat firmware, pracovat s MQTT zprávami atd.
-Tento návod jsme testovali na Windows 7 Professional x64.
+Tento návod jsme testovali na Windows 7 Professional x64 a Windows 10 Home.
 
 # Jak si stáhnout IDE
 
 <a href="https://github.com/bigclownlabs/bc-windows-ide/releases">
-<img src="download.png" width="50">
+<img src="download.png" style="width:50px;">
 Stáhnout BigClown IDE
 </a>
 
@@ -73,6 +73,8 @@ Stáhni si a nainstaluj [ovladač pro STM32 virtuální COM port](https://drive.
 Mosquitto není potřebný k vývoji firmware, ale pokud chceš posílat zprávy přes USB do svého počítače nebo do sítě, bude nutné ho nainstalovat a spustit.
 
 [Mosquitto MQTT Broker](https://mosquitto.org/download/) je MQTT server, který tvoří centrální bod všech zpráv v našem systému. Tento broker si prosím stáhni, nainstaluj a spusť. Je nutné ho mít spuštěného na pozadí po celou dobu, kdy používáš naši Python Gateway.
+
+Mosquitto ještě potřebuje na Windows postahovat některé DLL a nahrát je do adresáře programu. Odkazy jsou uvedeny v instalátoru. Dejte si jenom pozor, že je potřeba stáhnout starší jedničkovou verzi SSL (Win32 OpenSSL v1.0.2c Light). V novější verzi tyto knihovny nenaleznete. V případě problému doporučuji [tento návod](https://sivatechworld.wordpress.com/2015/06/11/step-by-step-installing-and-configuring-mosquitto-with-windows-7/).
 
 Ke spuštění MQTT brokera jdi do nainstalované složky a napiš `mosquitto.exe -v`.
 Parametr `-v` je pro verbose režim, ve kterém se zobrazují všechny zprávy.

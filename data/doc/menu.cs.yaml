@@ -78,7 +78,7 @@ items:
     - title: Vývojové prostředí
     - title: Sestavování firmware
     - title: Nahrávání firmware
-    - title: Ladění programu
+    - title: Ladění firmware
     - title: Knihovna SDK
     - title: Scheduler a časování
     - title: Jak na GPIO piny

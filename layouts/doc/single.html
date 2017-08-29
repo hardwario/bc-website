@@ -18,13 +18,13 @@
             <hr/>
             <!-- Make sure author and contact frontmatter are defined -->
             <p>{{ i18n "help" }}</p>
-            <p>{{ if (isset .Params "author") }}{{ i18n "author" }}:&nbsp;{{.Params.author}}&nbsp;&lt;<a href="mailto:{{ if (isset .Params "contact") }}{{.Params.contact}}{{else}}ask@bigclown.com{{end}}">{{ if (isset .Params "contact") }}{{.Params.contact}}{{else}}ask@bigclown.com{{end}}</a>&gt;{{else}}&lt;<a href="mailto:ask@bigclown.com">ask@bigclown.com</a>&gt;{{end}}</p>
+            <p>{{ if (isset .Params "author") }}{{ i18n "author" }}:&nbsp;{{ .Params.author }}&nbsp;&lt;<a href="mailto:{{ if (isset .Params "contact") }}{{ .Params.contact }}{{ else }}ask@bigclown.com{{ end }}">{{ if (isset .Params "contact") }}{{ .Params.contact }}{{ else }}ask@bigclown.com{{ end }}</a>&gt;{{ else }}&lt;<a href="mailto:ask@bigclown.com">ask@bigclown.com</a>&gt;{{ end }}</p>
           </div>
         </main>
       </div>
       <div class="hidden-sm col-md-3">
         {{- if len .TableOfContents }}
-        <aside class="well">
+        <aside class="well" style="background-color: #fff9ed; background-image: none;">
           {{ .TableOfContents }}
         </aside>
         {{- end }}

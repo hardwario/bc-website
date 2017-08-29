@@ -1,6 +1,6 @@
 {{ $page := . }}
 {{- $menu := delimit (slice "menu" .Page.Lang) "." }}
-<aside class="well">
+<aside class="well" style="background-color: #e0f0fc; background-image: none;">
 {{- range $.Site.Data }}
   {{- range index . (string $menu) }}
     {{- partial "doc/menu-level.html" (dict "context" . "page" $page) }}

@@ -6,7 +6,7 @@
     </nav>
     {{- if len .TableOfContents }}
     <div class="col-sm-8 col-md-6">
-      {{- else }}
+    {{- else }}
       <div class="col-sm-8 col-md-9">
         {{- end }}
         <main aria-role="main">
@@ -22,16 +22,16 @@
           </div>
         </main>
       </div>
-      {{- if len .TableOfContents }}
       <div class="hidden-sm col-md-3">
-        <div style="margin-bottom: 20px;">
-          <a class="btn btn-primary" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil"></span> {{ i18n "edit-this-page" | upper }}</a>
-        </div>
-        <aside>
+        {{- if len .TableOfContents }}
+        <aside class="well">
           {{ .TableOfContents }}
         </aside>
+        {{- end }}
+        <div>
+          <a class="btn btn-primary" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil"></span> {{ i18n "edit-this-page" | upper }}</a>
+        </div>
       </div>
-      {{- end }}
     </div>
   </div>
   <script>

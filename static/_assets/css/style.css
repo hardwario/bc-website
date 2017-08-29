@@ -1,8 +1,12 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.8em;
-  line-height: 2;
+  line-height: 1.6em;
   padding-top: 60px;
+}
+
+p {
+  margin-top: 10px;
 }
 
 .semi-transparent {
@@ -15,13 +19,14 @@ body {
 
 .main {
   margin-bottom: 100px;
-  max-width: 1600px;
+  max-width: 1800px;
   margin-bottom: 100px;
   padding: 20px;
 }
 
 .note {
   display: table;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -39,6 +44,11 @@ body {
 
 .note-content p {
   margin: 0;
+}
+
+.page-content h1, .page-content h2, .page-content h3 {
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .page-content table {

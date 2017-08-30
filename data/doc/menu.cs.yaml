@@ -16,6 +16,8 @@ items:
     - title: Sigfox detektor pohybu
     - title: Sigfox CO2 senzor
     - title: Sigfox monitor spotřeby
+    - title: Sigfox detektor záplavy
+    - title: Sigfox detektor otřesu
     - title: Chytře řízený LED pásek
     - title: Bezdrátový LCD termostat
   - title: Návody
@@ -74,13 +76,13 @@ items:
     - title: Popis k USB Dongle
   - title: Firmware
     items:
-    - title: Základní principy
+    - title: Základní informace
     - title: Vývojové prostředí
-    - title: Sestavování firmware
+    - title: Kompilace firmware
     - title: Nahrávání firmware
     - title: Ladění firmware
     - title: Knihovna SDK
-    - title: Scheduler a časování
+    - title: Časování a plánovač
     - title: Jak na GPIO piny
     - title: Jak na LED diodou
     - title: Jak na tlačítko
@@ -94,6 +96,7 @@ items:
     - title: Jak na USB konzoli
     - title: Jak na 868 MHz rádio
     - title: Jak na LED pásek
+    - title: Jak na 1-Wire rozhraní
   - title: Dokumentace
     items:
     - title: Přispívání

@@ -46,7 +46,8 @@ items:
     - title: Konektory a signály
     - title: Řízení napájení
     - title: Odkaz práce ve firmware
-    - title: Tabulka I2C adres
+    - title: Adresy na I²C sběrnici
+      link: doc/i2c-address-space.cs.md
     - title: Popis k 1-Wire Module
     - title: Popis k Barometer Tag
     - title: Popis k Base Module

@@ -1,9 +1,23 @@
 {{ $page := . }}
 {{- $menu := delimit (slice "menu" .Page.Lang) "." }}
-<aside class="well" style="background-color: #e0f0fc; background-image: none;">
+<div class="well" data-id="menu" style="background-color: #e0f0fc; background-image: none;">
 {{- range $.Site.Data }}
   {{- range index . (string $menu) }}
     {{- partial "doc/menu-level.html" (dict "context" . "page" $page) }}
   {{- end }}
 {{- end }}
-</aside>
+</div>
+<script>
+  $("[data-id=menu] > ul").find("ul").hide();
+  $("div[data-id=menu] > ul > li").click((event)=>{
+    console.log(event.target)
+    var target = $( event.target );
+    if ( target.is( "li" ) ) {
+      target.children().toggle();
+    }
+  })
+  //.parent().toggle();
+  $("[data-id=menu] [href=\"" + window.location.pathname + "\"]").parent().parent().toggle();
+  console.log();
+  console.log(window.location.pathname);
+</script>

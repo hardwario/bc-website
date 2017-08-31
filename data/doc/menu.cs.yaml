@@ -104,5 +104,7 @@ items:
       link: doc/contributing.cs.md
     - title: Technologie
     - title: Další podpora
-  - title: Stará dokumentace
-    link: doc/legacy.cs.md
+  - title: Odkazy
+    items:
+    - title: Stará dokumentace
+      link: doc/legacy.cs.md

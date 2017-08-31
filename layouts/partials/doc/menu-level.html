@@ -6,8 +6,10 @@
     {{- $link := string (relref $page .link) }}
     <li{{ if eq $page.RelPermalink $link }} class="bg-info"{{ end }}><a href="{{ $link }}">{{ $title }}</a></li>
   {{- else }}
-    <li><span>{{ $title }}</span></li>
+    <li>
+      {{ $title }}
+      {{- with .items -}}{{- partial "doc/menu-level.html" (dict "context" . "page" $page) -}}{{- end }}
+    </li>
   {{- end -}}
-  {{- with .items -}}{{- partial "doc/menu-level.html" (dict "context" . "page" $page) -}}{{- end }}
 {{- end }}
 </ul>

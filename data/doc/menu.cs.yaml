@@ -3,6 +3,8 @@ items:
   - title: Začínáme
     items:
     - title: Základní informace
+    - title: Tutoriál
+      link: doc/quick-start.cs.md
     - title: Od projektu k realizaci
     - title: Sestavování projektů
     - title: Přehled modulů

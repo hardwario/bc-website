@@ -17,6 +17,7 @@ Co budeme potřebovat
 # Instalace Raspberry Pi
 
 **TODO** Zdůvodnit BigClown Raspbian. Popsat stažení a flashnutí image. Odkaz na plný návod.
+
 Do Raspberry Pi si stáhněte poslední BigClown Raspbian z [Releases na GitHubu](https://github.com/bigclownlabs/bc-raspbian/releases). Náš obraz se od Raspbianu liší jen v tom, že má předinstalované BigClown balíčky a služby. Detailní informace o BigClown Raspbianu a jeho flashování naleznete v **TODO** kapitole.
 
 # Připojení k Raspberry Pi

@@ -25,6 +25,9 @@ items:
   - title: Návody
     items:
     - title: Instalace Raspberry Pi
+      link: doc/raspberry-pi-installation.cs.md
+    - title: Přihlášení k Raspberry Pi
+      link: doc/raspberry-pi-login.cs.md
     - title: Instalace Turris Omnia
     - title: Nahrávání firmware
     - title: Aplikace na Heroku

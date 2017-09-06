@@ -5,7 +5,7 @@ slug: tutorial
 
 Tento dokument slouží jako praktická ukázka práce s IoT sadou BigClown. Ukážeme si, jak lze v **Raspberry Pi** vyčítat teplotu z **Core Module**, ovládat LED diodu, měřit relativní vlhkost vzduchu z **Humidity Tag**, řídit malý spotřebič pomocí **Relay Module** nebo vytvořit rádiovou síť prostřednictvím **USB Dongle**. Měření i ovládání je demonstrované pomocí nástroje **Node-RED**, který běží v **Raspberry Pi** a umožňuje uživateli snadnou automatizaci úloh přes webové rozhraní.
 
-Co budeme potřebovat
+Co budeme potřebovat:
 
 * Raspberry Pi + napájecí adaptér + MicroSD kartu
 * USB Dongle
@@ -17,8 +17,6 @@ Co budeme potřebovat
 # Instalace Raspberry Pi
 
 **TODO** Zdůvodnit BigClown Raspbian. Popsat stažení a flashnutí image. Odkaz na plný návod.
-
-Do Raspberry Pi si stáhněte poslední BigClown Raspbian z [Releases na GitHubu](https://github.com/bigclownlabs/bc-raspbian/releases). Náš obraz se od Raspbianu liší jen v tom, že má předinstalované BigClown balíčky a služby. Detailní informace o BigClown Raspbianu a jeho flashování naleznete v **TODO** kapitole.
 
 # Připojení k Raspberry Pi
 

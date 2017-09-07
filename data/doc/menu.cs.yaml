@@ -10,6 +10,7 @@ items:
     - title: Přehled modulů
     - title: Integrace do služeb
     - title: GitHub repozitáře
+      link: doc/github-repositories.cs.md
     - title: Kde hledat informace
   - title: Projekty
     items:

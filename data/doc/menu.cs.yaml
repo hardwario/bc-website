@@ -75,6 +75,7 @@ items:
     - title: Popis k Power Module
     - title: Popis k Probe Module
     - title: Popis k Relay Module
+      link: doc/hardware/relay-module.cs.md
     - title: Popis k Sensor Module
     - title: Popis k Sigfox Module
     - title: Popis k Tag Module

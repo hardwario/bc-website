@@ -165,7 +165,6 @@ Příklad:
 
   * Na Githubu si můžete [stáhnout BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases).
   * Stáhněte si [image BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases). \\
-  
 
 ## Existuje několik možností odkazů:
 

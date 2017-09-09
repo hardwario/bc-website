@@ -9,7 +9,7 @@ Co budeme potřebovat:
 
 * Raspberry Pi + napájecí adaptér + MicroSD kartu
 * USB Dongle
-* Core Module
+* {{< shop "Core Module" >}}
 * Mini Battery Module
 * Humidity Tag (nepovinně)
 * Relay Module (nepovinně)

@@ -5,3 +5,8 @@ products:
   - title: PIR Module
     en: https://shop.bigclown.com/products/pir-module
     cs: https://obchod.bigclown.cz/products/pir-module
+  - title: Relay Module
+    en: https://shop.bigclown.com/products/relay-module
+    cs: https://obchod.bigclown.cz/products/relay-module
+    name_dash: module-relay
+    name_underscore: module_relay

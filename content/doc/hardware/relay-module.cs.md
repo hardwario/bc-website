@@ -15,6 +15,8 @@ Tento modul je I2C-only periferie, takže nezabírá další extra signály z Bi
 
 **TODO** Z e-shopu sem na každý modul musí vést odkaz, zde můžeme daleko flexibilněji doplňovat aktuální ifnromace, než v e-shopu.
 
+{{< hardware "Relay Module" >}}
+
 # Obrázek
 
 

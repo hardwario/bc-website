@@ -31,6 +31,7 @@ items:
       link: doc/raspberry-pi-login.cs.md
     - title: Instalace Turris Omnia
     - title: Nahrávání firmware
+      link: doc/firmware-upload.cs.md
     - title: Aplikace na Heroku
   - title: Komunikace
     items:

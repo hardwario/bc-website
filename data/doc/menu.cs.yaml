@@ -56,33 +56,59 @@ items:
     - title: Adresy na I²C sběrnici
       link: doc/i2c-address-space.cs.md
     - title: Popis k 1-Wire Module
+      link: doc/hardware/1-wire-module.cs.md    
     - title: Popis k Barometer Tag
+      link: doc/hardware/barometer-tag.cs.md    
     - title: Popis k Base Module
+      link: doc/hardware/base-module.cs.md    
     - title: Popis k Battery Module
+      link: doc/hardware/battery-module.cs.md    
     - title: Popis k Breadboard Module
+      link: doc/hardware/breadboard-module.cs.md    
     - title: Popis k Button Module
+      link: doc/hardware/button-module.cs.md    
     - title: Popis k Climate Module
+      link: doc/hardware/climate-module.cs.md    
     - title: Popis k Core Module
+      link: doc/hardware/core-module.cs.md    
     - title: Popis k CO2 Module
+      link: doc/hardware/co2-module.cs.md    
     - title: Popis k Cover Module
+      link: doc/hardware/cover-module.cs.md    
     - title: Popis k Encoder Module
+      link: doc/hardware/encoder-module.cs.md    
     - title: Popis k Humidity Tag
+      link: doc/hardware/humidity-tag.cs.md    
     - title: Popis k LCD Module
+      link: doc/hardware/lcd-module.cs.md    
     - title: Popis k Lux Meter Tag
+      link: doc/hardware/lux-meter-tag.cs.md    
     - title: Popis k Mini Battery Module
+      link: doc/hardware/mini-battery-module.cs.md
     - title: Popis k Mini Cover Module
+      link: doc/hardware/mini-cover-module.cs.md    
     - title: Popis k NFC Tag
+      link: doc/hardware/nfc-tag.cs.md    
     - title: Popis k PIR Module
+      link: doc/hardware/pir-module.cs.md
     - title: Popis k Power Module
+      link: doc/hardware/power-module.cs.md    
     - title: Popis k Probe Module
+      link: doc/hardware/probe-module.cs.md    
     - title: Popis k Relay Module
       link: doc/hardware/relay-module.cs.md
     - title: Popis k Sensor Module
+      link: doc/hardware/sensor-module.cs.md
     - title: Popis k Sigfox Module
+      link: doc/hardware/sigfox-module.cs.md    
     - title: Popis k Tag Module
+      link: doc/hardware/tag-module.cs.md    
     - title: Popis k Temperature Tag
+      link: doc/hardware/temperature-tag.cs.md    
     - title: Popis k Touch Tag
+      link: doc/hardware/touch-tag.cs.md    
     - title: Popis k USB Dongle
+      link: doc/hardware/usb-dongle.cs.md    
   - title: Firmware
     items:
     - title: Základní informace

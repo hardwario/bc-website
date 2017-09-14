@@ -1,0 +1,13 @@
+products:
+  - title: Core Module
+    en: https://shop.bigclown.com/products/core-module
+    cs: https://obchod.bigclown.cz/products/core-module
+  - title: PIR Module
+    name_dash: module-pir
+    name_underscore: module_pir
+  - title: Relay Module
+    name_dash: module-relay
+    name_underscore: module_relay
+  - title: Sigfox Module
+    name_dash: module-sigfox
+    name_underscore: module_sigfox   

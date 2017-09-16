@@ -1,10 +1,38 @@
 products:
+  - title: Barometer Tag
+    en: https://shop.bigclown.com/products/barometer-tag 
+    cs: https://obchod.bigclown.cz/products/barometr-tag
+  - title: Base Module
+    en: https://shop.bigclown.com/products/base-module 
+    cs: https://obchod.bigclown.cz/products/base-module    
+  - title: Battery Module
+    en: https://shop.bigclown.com/products/battery-module
+    cs: https://obchod.bigclown.cz/products/battery-module  
+  - title: Breadboard Module
+    en: https://shop.bigclown.com/products/breadboard-module 
+    cs: https://obchod.bigclown.cz/products/breadboard-module  
   - title: Core Module
     en: https://shop.bigclown.com/products/core-module
-    cs: https://obchod.bigclown.cz/products/core-module
+    cs: https://obchod.bigclown.cz/products/core-module 
+  - title: Climate Module
+    en: https://shop.bigclown.com/products/climate-module
+    cs: https://obchod.bigclown.cz/products/climate-module
+  - title: Humidity Tag
+    en: https://shop.bigclown.com/products/humidity-tag 
+    cs: https://obchod.bigclown.cz/products/humidity-tag
+  - title: Lux Meter Tag
+    en: https://shop.bigclown.com/products/lux-meter-tag
+    cs: https://obchod.bigclown.cz/products/lux-meter-tag
+  - title: NFC Tag
+    en: https://shop.bigclown.com/products/nfc-tag
+    cs: https://obchod.bigclown.cz/products/nfc-tag
   - title: PIR Module
     en: https://shop.bigclown.com/products/pir-module
     cs: https://obchod.bigclown.cz/products/pir-module
   - title: Relay Module
     en: https://shop.bigclown.com/products/relay-module
     cs: https://obchod.bigclown.cz/products/relay-module
+  - title: Temperature Tag
+    en: https://shop.bigclown.com/products/temperature-tag
+    cs: https://obchod.bigclown.cz/products/temperature-tag
+    

@@ -9,6 +9,8 @@ Module je osazen digitálním senzorem od firmy Excelitas, typ PYQ-1648 z rodiny
 
 Typickým příkladem použití PIR Module může být bezdrátový senzor pohybu umístěný na strop místnosti.
 
+E-shop: {{<shop "PIR Module">}}
+
 # Funkce
 
   * Digitální PIR detektor Excelitas PYQ-1648-7053
@@ -23,5 +25,8 @@ Typickým příkladem použití PIR Module může být bezdrátový senzor pohyb
   * Rozsah provozních teplot: -20 až 70 °C
   * Rozměry: 33 x 55 mm
   * 10letá záruka
+  
+  ![Obrázek PIR Module](pir-module.png)
+
 
 {{< hardware "PIR Module" >}}

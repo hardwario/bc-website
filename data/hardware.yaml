@@ -1,7 +1,7 @@
 products:
   - title: Core Module
-    en: https://shop.bigclown.com/products/core-module
-    cs: https://obchod.bigclown.cz/products/core-module
+    name_dash: module-core
+    name_underscore: module_core
   - title: PIR Module
     name_dash: module-pir
     name_underscore: module_pir

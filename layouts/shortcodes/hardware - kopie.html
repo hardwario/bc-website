@@ -1,11 +1,9 @@
 {{- $page := .Page -}}
 {{- $product := .Get 0 -}}
-
-{{- range where $.Site.Data.hardware.products "title" $product -}}
-
-  <h1>Odkazy související s produktem</h1>
+<h1>Odkazy související s produktem</h1>
+{{- range where $.Site.Data.hardware.products "title" .Params.slug -}}
   <div><strong>GitHub sourcecode</strong></div>
-   
+    
   {{- with index . "name_underscore" -}}
     <a href="https://github.com/bigclownlabs/bcf-sdk-core-module/blob/master/bcl/inc/bc_{{- . -}}.h" target="_blank">{{- . -}}.h</a><br />
   {{- else -}}
@@ -34,5 +32,5 @@
   {{- end -}}
   -->
 {{- else -}}
-  
+  Will be added soon
 {{- end -}}

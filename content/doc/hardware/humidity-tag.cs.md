@@ -25,6 +25,6 @@ E-shop: {{<shop "Humidity Tag">}}
   * Rozměry: 16 x 16 mm
   * 10letá záruka
 
-![Obrázek Humidity Tag](humidity-tag.png)
+
 
 {{< hardware "Humidity Tag" >}}

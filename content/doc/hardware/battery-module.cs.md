@@ -29,7 +29,7 @@ E-shop: {{<shop "Battery Module">}}
   * Rozměry: 88 x 55 mm
   * 10letá záruka
 
- ![Obrázek Battery Module](battery-module.png)
+ 
 
   
 {{< hardware "Battery Module" >}}

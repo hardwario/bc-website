@@ -40,7 +40,7 @@ E-shop: {{<shop "Climate Module">}}
   * Rozměry: 33 x 55 mm
   * 10letá záruka
   
-  ![Obrázek Climate Module](climate-module.png)
+  
 
 
 {{< hardware "Climate Module" >}}

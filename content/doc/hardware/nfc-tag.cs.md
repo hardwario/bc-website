@@ -25,7 +25,7 @@ E-shop: {{<shop "NFC Tag">}}
   * Rozměry: 16 x 16 mm
   * 10letá záruka
   
-  ![Obrázek NFC Tag](nfc-tag.png)
+  
 
 
 {{< hardware "NFC Tag" >}}

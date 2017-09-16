@@ -25,7 +25,7 @@ E-shop: {{<shop "Barometer Tag">}}
   * Rozsah provozních teplot: -40 až 85 °C
   * Rozměry: 16 x 16 mm
   * 10letá záruka
-  
-![Obrázek Barometer Tag](barometer-tag.png)
+
+
 
 {{< hardware "Barometer Tag" >}}

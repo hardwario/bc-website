@@ -21,6 +21,6 @@ E-shop: {{<shop "Base Module">}}
   * Rozměry: 88 x 55 mm
   * 10letá záruka
 
-![Obrázek Base Module](base-module.png)
+
   
 {{< hardware "Base Module" >}}

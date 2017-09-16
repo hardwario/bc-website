@@ -33,7 +33,7 @@ E-shop: {{<shop "Core Module">}}
   * Rozměry: 33 x 55 mm
   * 10 let záruky
   
- ![Obrázek Core Module](core-module.png)
+ 
 
 
 {{< hardware "Core Module" >}}

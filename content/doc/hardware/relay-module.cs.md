@@ -22,7 +22,7 @@ Tento modul je I2C-only periferie, takže nezabírá další extra signály z Bi
 
 **TODO** Obrázek bych nejraději dal hned doprava nahoru do popisu, ale nevím jak jej zmenšit v Hugo
 
-![Obrázek Relay Module](relay-module.png)
+
 
 # Funkce 
   * Bistabilní relé pro přepínání výkonů do 60 W:

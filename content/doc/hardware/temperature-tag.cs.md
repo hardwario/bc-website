@@ -30,7 +30,7 @@ E-shop: {{<shop "Temperature Tag">}}
   * Rozměry: 16 x 16 mm
   * 10letá záruka
 
-![Obrázek Temperature Tag](temperature-tag.png)
+
 
 
 {{< hardware "Temperature Tag" >}}

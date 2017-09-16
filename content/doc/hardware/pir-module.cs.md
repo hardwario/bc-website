@@ -26,7 +26,7 @@ E-shop: {{<shop "PIR Module">}}
   * Rozměry: 33 x 55 mm
   * 10letá záruka
   
-  ![Obrázek PIR Module](pir-module.png)
+  
 
 
 {{< hardware "PIR Module" >}}

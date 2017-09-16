@@ -1,13 +1,27 @@
 products:
+  - title: Base Module
+    name: module-base
+  - title: Barometer Tag
+    name: tag-barometer
+  - title: Battery Module
+    name: module-battery
+  - title: Climate Module
+    name: module-climate
   - title: Core Module
-    name_dash: module-core
-    name_underscore: module_core
+    name: module-core
+  - title: Humidity Tag
+    name: tag-humidity
+  - title: Lux Meter Tag
+    name: tag-lux-meter
+  - title: NFC Tag
+    name: tag-nfc
   - title: PIR Module
-    name_dash: module-pir
-    name_underscore: module_pir
+    name: module-pir
   - title: Relay Module
-    name_dash: module-relay
-    name_underscore: module_relay
+    name: module-relay
   - title: Sigfox Module
-    name_dash: module-sigfox
-    name_underscore: module_sigfox   
+    name: module-sigfox
+  - title: Temperature Tag
+    name: tag-temperature
+    
+

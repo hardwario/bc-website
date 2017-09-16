@@ -25,6 +25,6 @@ E-shop: {{<shop "Lux Meter Tag">}}
   * Rozměry: 16 x 16 mm
   * 10letá záruka
   
-  ![Obrázek Lux Meter Tag](lux-meter-tag.png)
+  
 
 {{< hardware "Lux Meter Tag" >}}

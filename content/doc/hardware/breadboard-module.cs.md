@@ -18,7 +18,7 @@ E-shop: {{<shop "Breadboard Module">}}
   * Rozměry: 113.7 x 33 mm
   * 10letá záruka
   
-  ![Obrázek Breadboard Module](breadboard-module.png)
+  
 
 
 {{< hardware "Breadboard Module" >}}

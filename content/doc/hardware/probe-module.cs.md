@@ -1,5 +1,5 @@
 ---
-title: Popis Probe Module
+title: Popis k Probe Module
 slug: probe-module
 ---
 

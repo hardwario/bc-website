@@ -1,5 +1,5 @@
 ---
-title: Popis Core Module
+title: Popis k Core Module
 slug: core-module
 ---
 
@@ -11,7 +11,7 @@ Kombinace těchto funkcí společně s integrovaným bezpečnostní čipem, tepl
 
 E-shop: {{<shop "Core Module">}}
 
-# Funkce
+# Vlastnosti
 
   * ARM Cortex M0+ 32-bit MCU STM32L083CZ
   * 192 kB Flash / 20 kB RAM

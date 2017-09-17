@@ -1,0 +1,17 @@
+<img src="{{ .Get 1 }}.png" style="width: 50%; float:left;padding-right:20px" />
+{{ markdownify .Inner }}
+
+{{- $page := .Page -}}
+{{- $product := .Get 0 -}}
+{{- range where $.Site.Data.shop.products "title" $product -}}
+  {{- with index . $page.Lang -}}
+    <a href="{{ . }}" class="btn btn-primary btn-lg" style="clear:both;float:right;" target="_blank"><span class="glyphicon glyphicon-shop"></span>E-shop {{ $product }}</a>
+  {{- else -}}
+    {{- $product -}}
+  {{- end -}}
+{{- else -}}
+  {{- $product -}}
+{{- end -}}
+
+
+<div style="clear:left;"></div>

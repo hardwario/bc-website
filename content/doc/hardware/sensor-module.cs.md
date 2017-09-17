@@ -1,5 +1,5 @@
 ---
-title: Popis Sensor Module
+title: Popis k Sensor Module
 slug: sensor-module
 ---
 

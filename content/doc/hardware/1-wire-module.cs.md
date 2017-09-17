@@ -1,5 +1,5 @@
 ---
-title: Popis 1-Wire Module
+title: Popis k 1-Wire Module
 slug: 1-wire-module
 ---
 

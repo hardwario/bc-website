@@ -1,5 +1,5 @@
 ---
-title: Popis Base Module
+title: Popis k Base Module
 slug: base-module
 ---
 
@@ -11,7 +11,7 @@ Další funkcí modulu je prototypovací prostor k pájení vašich vlastních o
 
 E-shop: {{<shop "Base Module">}}
 
-# Funkce
+# Vlastnosti
 
   * Praktická základna pro BigClown nody
   * Prototypovací prostor k pájení vlastních obvodů

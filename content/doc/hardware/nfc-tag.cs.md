@@ -1,5 +1,5 @@
 ---
-title: Popis NFC Tag
+title: Popis k NFC Tag
 slug: nfc-tag
 ---
 
@@ -11,7 +11,7 @@ NFC Tag je postaven na čipu **NT3H2111** firmy NXP fungující jako dual-port p
 
 E-shop: {{<shop "NFC Tag">}}
 
-# Funkce
+# Vlastnosti
 
   * Integrovaný NFC čip NT3H2111
   * I2C-only periferie

@@ -1,5 +1,5 @@
 ---
-title: Popis Encoder Module
+title: Popis k Encoder Module
 slug: encoder-module
 ---
 

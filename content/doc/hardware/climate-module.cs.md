@@ -1,5 +1,5 @@
 ---
-title: Popis Climate Module
+title: Popis k Climate Module
 slug: climate-module
 ---
 
@@ -9,7 +9,7 @@ Modul poslouží jako základní stavební prvek pro tvorbu drátové i bezdrát
 
 E-shop: {{<shop "Climate Module">}}
 
-# Funkce
+# Vlastnosti
 
   * Teplotní senzor TMP112
   * Přesnost měření teploty (typické hodnoty):

@@ -1,5 +1,5 @@
 ---
-title: Popis Mini Battery Module
+title: Popis k Mini Battery Module
 slug: mini-battery-module
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Popis Breadboard Module
+title: Popis k Breadboard Module
 slug: breadboard-module
 ---
 
@@ -9,7 +9,7 @@ Breadboard Module nabízí jednoduché připojení jakéhokoliv BigClown modulu 
 
 E-shop: {{<shop "Breadboard Module">}}
 
-# Funkce
+# Vlastnosti
 
   * Adaptér mezi BigClown moduly a nepájivým polem
   * Precizní kolíky optimální pro zasunutí do nepájivého pole

@@ -1,5 +1,5 @@
 ---
-title: Popis PIR Module
+title: Popis k PIR Module
 slug: pir-module
 ---
 
@@ -11,7 +11,7 @@ Typickým příkladem použití PIR Module může být bezdrátový senzor pohyb
 
 E-shop: {{<shop "PIR Module">}}
 
-# Funkce
+# Vlastnosti
 
   * Digitální PIR detektor Excelitas PYQ-1648-7053
   * Čtyři PIR elementy

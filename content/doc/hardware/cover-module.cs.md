@@ -1,5 +1,5 @@
 ---
-title: Popis Cover Module
+title: Popis k Cover Module
 slug: cover-module
 ---
 

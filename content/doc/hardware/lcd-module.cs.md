@@ -1,5 +1,5 @@
 ---
-title: Popis LCD Module
+title: Popis k LCD Module
 slug: lcd-module
 ---
 

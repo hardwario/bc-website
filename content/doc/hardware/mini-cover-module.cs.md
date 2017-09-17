@@ -1,5 +1,5 @@
 ---
-title: Popis Mini Cover Module
+title: Popis k Mini Cover Module
 slug: mini-cover-module
 ---
 

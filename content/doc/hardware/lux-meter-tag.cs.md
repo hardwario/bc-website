@@ -1,5 +1,5 @@
 ---
-title: Popis Lux Meter Tag
+title: Popis k Lux Meter Tag
 slug: lux-meter-tag
 ---
 
@@ -9,7 +9,7 @@ Tento sensor je digitální I2C-only periferie.
 
 E-shop: {{<shop "Lux Meter Tag">}}
 
-# Funkce
+# Vlastnosti
 
   * Integrovaný sensor intenzity osvětlení OPT3001
   * I2C-only periferie

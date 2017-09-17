@@ -1,5 +1,5 @@
 ---
-title: Popis Power Module
+title: Popis k Power Module
 slug: power-module
 ---
 

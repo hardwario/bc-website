@@ -1,5 +1,5 @@
 ---
-title: Popis Relay Module
+title: Popis k Relay Module
 slug: relay-module
 ---
 
@@ -22,7 +22,7 @@ Tento modul je I2C-only periferie, takže nezabírá další extra signály z Bi
 
 **TODO** Obrázek bych nejraději dal hned doprava nahoru do popisu, ale nevím jak jej zmenšit v Hugo
 
-# Funkce
+# Vlastnosti
   * Bistabilní relé pro přepínání výkonů do 60 W:
     * 12 V DC / 5 A
     * 24 V DC / 2.5 A

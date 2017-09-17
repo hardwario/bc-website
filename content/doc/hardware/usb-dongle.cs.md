@@ -1,5 +1,5 @@
 ---
-title: Popis USB dongle
+title: Popis k USB dongle
 slug: usb-dongle
 ---
 

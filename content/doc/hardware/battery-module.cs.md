@@ -1,5 +1,5 @@
 ---
-title: Popis Battery Module
+title: Popis k Battery Module
 slug: battery-module
 ---
 
@@ -11,7 +11,7 @@ Battery Module rovněž poskytuje 5 pinovou zásuvku umožňující připojení 
 
 E-shop: {{<shop "Battery Module">}}
 
-# Funkce
+# Vlastnosti
 
   * Vysoce účinný konverter TPS62745
   * Ultra nízký klidový proud 400 nA

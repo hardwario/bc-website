@@ -22,9 +22,7 @@ Tento modul je I2C-only periferie, takže nezabírá další extra signály z Bi
 
 **TODO** Obrázek bych nejraději dal hned doprava nahoru do popisu, ale nevím jak jej zmenšit v Hugo
 
-
-
-# Funkce 
+# Funkce
   * Bistabilní relé pro přepínání výkonů do 60 W:
     * 12 V DC / 5 A
     * 24 V DC / 2.5 A
@@ -42,12 +40,11 @@ Tento modul je I2C-only periferie, takže nezabírá další extra signály z Bi
   * [Schéma PDF](https://github.com/bigclownlabs/bc-hardware/blob/master/out/bc-module-relay/bc-module-relay-rev-1-3-sch.pdf)
   * [Schéma Eagle](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-relay)
 
-
 # Projekty používající modul
 
   * [bcf-generic-node](https://github.com/bigclownlabs/bcf-generic-node) - Univerzální firmware do bezdrátových nodů.
   * [bcf-usb-gateway](https://github.com/bigclownlabs/bcf-usb-gateway) - Firmware do Core Module pro funkci gateway.
-  
+
 # Odkaz na SDK referenci
 **TODO** Které odkazy vkládat? na github i na exportovaný doxygen?
 
@@ -62,4 +59,3 @@ Tento modul je I2C-only periferie, takže nezabírá další extra signály z Bi
 ## Ukázka v `/sdk/_examples`
 
 [Example Relay Module (TODO)](https://github.com/bigclownlabs/bcf-sdk-core-module/tree/master/_examples)
-

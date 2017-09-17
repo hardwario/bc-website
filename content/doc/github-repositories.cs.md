@@ -1,12 +1,12 @@
 ---
 title: GitHub repozitáře
-slug: github-repositories
+slug: github-repozitare
 ---
 
-Všechna uvolněná data publikujeme na GitHub na adrese https://github.com/bigclownlabs/.
-Tento odkaz je taky na každé stránce v horním menu.
+Všechna uvolněná data publikujeme na GitHub na adrese https://github.com/bigclownlabs/. Tento odkaz je taky na každé stránce v horním menu.
 
 Pro lepší přehlednost má každý repozitář ve svém názvu předponu, která určuje co má za obsah.
+
 # Typy repozitářů
 
 ## **bcf** - BigClown Firmware
@@ -18,7 +18,7 @@ Nejdůležitější repozitáře:
   * [bcf-usb-gateway](https://github.com/bigclownlabs/bcf-usb-gateway) - Firmware do Core Module pro funkci gateway.
   * [bcf-skeleton-core-module](https://github.com/bigclownlabs/bcf-skeleton-core-module) - Prázná kostra aplikace pro váš nový projekt. Obsahuje application.c a sub-repozitář s SDK.
   *  [bcf-sdk-core-module](https://github.com/bigclownlabs/bcf-sdk-core-module) - Submodul s SDK, který se jinak automaticky klonuje do podsložky `/sdk`. Pokud stahujete repozitáře **bcf** jako ZIP soubor, musíte ručně tento repozitář rozbalit do podsložky `/sdk` s vaším projektem.
-  
+
 ## **bch** - BigClown Hub
 
 Repozitáře s prefixem [bch](https://github.com/bigclownlabs?q=bch) obsahují software pro Hub nebo vývojový systém.

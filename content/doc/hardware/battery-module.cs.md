@@ -7,10 +7,9 @@ Battery Module je určen k napájení bateriových BigClown nodů. Použití kon
 
 Modul obsahuje obvod pro bypass baterie, pokud je do systému zapojen jiný napájecí zdroj (např. AC adaptér nebo USB kabel). Napětí baterie může být měřeno na jednom z analogových vstupů standardizovaného headeru.
 
-Battery Module rovněž poskytuje 5 pinovou zásuvku umožňující připojení BigClown tagu (I2C periférie v BigClown Tag formátu) a prototypovací prostor k pájení vlastních obvodů. 
+Battery Module rovněž poskytuje 5 pinovou zásuvku umožňující připojení BigClown tagu (I2C periférie v BigClown Tag formátu) a prototypovací prostor k pájení vlastních obvodů.
 
 E-shop: {{<shop "Battery Module">}}
-
 
 # Funkce
 
@@ -29,7 +28,4 @@ E-shop: {{<shop "Battery Module">}}
   * Rozměry: 88 x 55 mm
   * 10letá záruka
 
- 
-
-  
 {{< hardware "Battery Module" >}}

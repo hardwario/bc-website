@@ -3,14 +3,13 @@ title: Popis Temperature Tag
 slug: temperature-tag
 ---
 
-Digitální teplotní sensor s vysoce přesným měřením teploty. 
+Digitální teplotní sensor s vysoce přesným měřením teploty.
 
 Temperature Tag používá vysoce přesný teplotní sensor TMP112 s typickou přesností ±0.1 °C při 25 °C.
 
 Sensor je zkalibrovaný a jde o I2C-only periferii s velmi nízkým provozním proudem a proudem ve spícím režimu.
 
 E-shop: {{<shop "Temperature Tag">}}
-
 
 # Funkce
 
@@ -30,8 +29,4 @@ E-shop: {{<shop "Temperature Tag">}}
   * Rozměry: 16 x 16 mm
   * 10letá záruka
 
-
-
-
 {{< hardware "Temperature Tag" >}}
-

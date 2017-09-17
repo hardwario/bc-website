@@ -6,4 +6,3 @@ slug: tag-module
 {{< hardware "Tag Module" >}}
 
 # Obrázek
-

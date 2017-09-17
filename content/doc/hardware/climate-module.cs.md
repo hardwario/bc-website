@@ -9,7 +9,6 @@ Modul poslouží jako základní stavební prvek pro tvorbu drátové i bezdrát
 
 E-shop: {{<shop "Climate Module">}}
 
-
 # Funkce
 
   * Teplotní senzor TMP112
@@ -39,8 +38,5 @@ E-shop: {{<shop "Climate Module">}}
   * Rozsah provozních teplot: -40 až 70 °C
   * Rozměry: 33 x 55 mm
   * 10letá záruka
-  
-  
-
 
 {{< hardware "Climate Module" >}}

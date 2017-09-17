@@ -23,5 +23,3 @@ products:
     name: module-sigfox
   - title: Temperature Tag
     name: tag-temperature
-    
-

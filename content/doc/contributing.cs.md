@@ -155,9 +155,9 @@ Příklad:
 ## Volba správného textu v odkazu
 
 {{< note "warning" "Text odkazu by měl obsahovat informaci na co odkaz odkazuje. Jednak je to pro lidi přehlednější, když něco hledají a očima prohlížejí jen modré odkazy. Pro vyhledávače je to lepší kvůli indexaci obsahu. Hlavně nepoužívejte odkazy se samotným textem \"zde\" nebo \"download\"." />}}
-    
+
 **Špatně:**
-    
+
   * Image Bigclown Raspbianu naleznete [zde](https://github.com/bigclownlabs/bc-raspbian/releases). \\
   * Image Bigclown Raspbianu si můžete [stáhnout](https://github.com/bigclownlabs/bc-raspbian/releases).
 
@@ -210,9 +210,9 @@ Příklad:
     [Další kapitola](#dalsi-kapitola)
     ```
 
-    
 
-    
+
+
 # Obrázky
 
 Nejprve je nutné umístit obrázek do příslušné cesty v adresáři `static`. Pokud je URL k dokumentu `/cs/doc/tutorial/`, potom je nutné např. obrázek `screenshot.png` umístit v repozitáři do cesty `static/cs/doc/tutorial/screenshot.png`.

@@ -5,5 +5,4 @@ slug: button-module
 
 **TODO** Bude doplněno
 
-
 {{< hardware "Button Module" >}}

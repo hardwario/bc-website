@@ -6,4 +6,3 @@ slug: touch-tag
 **TODO** Bude doplněno
 
 {{< hardware "Touch Tag" >}}
-

@@ -25,8 +25,5 @@ E-shop: {{<shop "PIR Module">}}
   * Rozsah provozních teplot: -20 až 70 °C
   * Rozměry: 33 x 55 mm
   * 10letá záruka
-  
-  
-
 
 {{< hardware "PIR Module" >}}

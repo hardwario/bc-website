@@ -11,7 +11,6 @@ Kombinace těchto funkcí společně s integrovaným bezpečnostní čipem, tepl
 
 E-shop: {{<shop "Core Module">}}
 
-
 # Funkce
 
   * ARM Cortex M0+ 32-bit MCU STM32L083CZ
@@ -32,8 +31,5 @@ E-shop: {{<shop "Core Module">}}
   * Rozsah provozních teplot: -20 až 70 °C
   * Rozměry: 33 x 55 mm
   * 10 let záruky
-  
- 
-
 
 {{< hardware "Core Module" >}}

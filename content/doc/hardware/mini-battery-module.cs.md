@@ -4,4 +4,3 @@ slug: mini-battery-module
 ---
 
 {{< hardware "Mini Battery Module" >}}
-

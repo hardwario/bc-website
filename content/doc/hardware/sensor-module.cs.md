@@ -4,4 +4,3 @@ slug: sensor-module
 ---
 
 {{< hardware "Sensor Module" >}}
-

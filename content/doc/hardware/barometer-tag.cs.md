@@ -26,6 +26,4 @@ E-shop: {{<shop "Barometer Tag">}}
   * Rozměry: 16 x 16 mm
   * 10letá záruka
 
-
-
 {{< hardware "Barometer Tag" >}}

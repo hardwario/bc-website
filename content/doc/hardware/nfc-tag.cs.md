@@ -11,7 +11,6 @@ NFC Tag je postaven na čipu **NT3H2111** firmy NXP fungující jako dual-port p
 
 E-shop: {{<shop "NFC Tag">}}
 
-
 # Funkce
 
   * Integrovaný NFC čip NT3H2111
@@ -24,8 +23,5 @@ E-shop: {{<shop "NFC Tag">}}
   * Rozsah provozních teplot: -20 až 70 °C
   * Rozměry: 16 x 16 mm
   * 10letá záruka
-  
-  
-
 
 {{< hardware "NFC Tag" >}}

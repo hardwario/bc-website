@@ -4,4 +4,3 @@ slug: lcd-module
 ---
 
 {{< hardware "LCD Module" >}}
-

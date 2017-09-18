@@ -17,6 +17,7 @@ items:
     - title: Sigfox environmentální senzor
     - title: Sigfox tlačítko
     - title: Sigfox detektor pohybu
+      link: doc/sigfox-motion-detector.cs.md
     - title: Sigfox CO2 senzor
     - title: Sigfox monitor spotřeby
     - title: Sigfox detektor záplavy

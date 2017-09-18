@@ -3,7 +3,7 @@ title: Instalace Raspberry Pi
 slug: instalace-raspberry-pi
 ---
 
-{{% note "warning" %}} Pokud už máte Raspberry Pi, na kterém běží originální distribuce Raspbian, přejděte do kapitoly [Instalace v originální distribuci Raspbian]({{< relref "#instalace-v-originální-distribuci-raspbian" >}}).{{% /note %}}
+{{% note "warning" %}}Pokud už máte Raspberry Pi, na kterém běží originální distribuce Raspbian, přejděte do kapitoly [Instalace v originální distribuci Raspbian]({{< relref "#instalace-v-originální-distribuci-raspbian" >}}).{{% /note %}}
 
 Tento návod vás krok za krokem provede instalací Raspberry Pi. Návod je odzkoušený pro Raspberry Pi 3 (Model B), ale měl by fungovat i pro starší Raspberry Pi 2.
 

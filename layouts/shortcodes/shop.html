@@ -1,0 +1,11 @@
+{{- $page := .Page -}}
+{{- $product := .Get 0 -}}
+{{- range where $.Site.Data.shop.products "title" $product -}}
+  {{- with index . $page.Lang -}}
+    <a href="{{- . -}}" target="_blank">{{- $product -}}</a>
+  {{- else -}}
+    {{- $product -}}
+  {{- end -}}
+{{- else -}}
+  {{- $product -}}
+{{- end -}}

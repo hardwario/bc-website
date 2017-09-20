@@ -1,0 +1,32 @@
+{{- $page := .Page -}}
+{{- $product := .Get 0 -}}
+<!--
+<h1>Obrázek</h1>
+<img src="{{ $.Page.Slug }}.png" /><br />
+-->
+{{- range where $.Site.Data.hardware.products "title" $product -}}
+
+  <h1>Odkazy související s produktem</h1>
+  <div><strong>GitHub</strong></div>
+
+  {{- with index . "name" -}}
+  {{ $git := replace . "-" "_" }}
+    <a href="https://github.com/bigclownlabs/bcf-sdk-core-module/blob/master/bcl/inc/bc_{{- $git -}}.h" target="_blank">{{- $git -}}.h</a><br />
+  {{- end -}}
+
+  {{- with index . "name" -}}
+  {{ $git := replace . "-" "_" }}
+    <a href="https://github.com/bigclownlabs/bcf-sdk-core-module/blob/master/bcl/src/bc_{{- $git -}}.c" target="_blank">{{- $git -}}.c</a><br />
+  {{- end -}}
+
+  {{- with index . "name" -}}
+  <div><strong>Schéma</strong></div>
+    <a href="https://github.com/bigclownlabs/bc-hardware/blob/master/out/bc-{{- . -}}" target="_blank">{{- $product -}}&nbsp;PDF schematics</a><br />
+  {{- end -}}
+
+  {{- with index . "name" -}}
+    <div><strong>Doxygen dokumentace</strong></div>
+    <a href="http://sdk.bigclown.com/group__bc__{{- replace . "-" "__" -}}" target="_blank">{{- $product -}}&nbsp;SDK Doxygen dokumentace</a><br />
+  {{- end -}}
+
+{{- end -}}

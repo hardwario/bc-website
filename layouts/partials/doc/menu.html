@@ -9,15 +9,11 @@
 </div>
 <script>
   $("[data-id=menu] > ul").find("ul").hide();
-  $("div[data-id=menu] > ul > li").click((event)=>{
-    console.log(event.target)
+  $("div[data-id=menu] > ul > li").click((event) => {
     var target = $( event.target );
-    if ( target.is( "li" ) ) {
+    if(target.is( "div[data-id=menu] > ul > li" )) {
       target.children().toggle();
     }
-  })
-  //.parent().toggle();
+  });
   $("[data-id=menu] [href=\"" + window.location.pathname + "\"]").parent().parent().toggle();
-  console.log();
-  console.log(window.location.pathname);
 </script>

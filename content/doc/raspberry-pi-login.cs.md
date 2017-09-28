@@ -24,7 +24,7 @@ Přihlásit se lze 2 způsoby:
     * `hub.local` v případě BigClown Raspbian distribuce, nebo:
     * `raspberry.local` v případě originální Raspbian distribuce.
 
-# Návod pro Windows
+## Návod pro Windows
 
 1. Stáhněte si program [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
@@ -35,7 +35,7 @@ Přihlásit se lze 2 způsoby:
     * Zadejte heslo `raspberry`.
     * Relaci si pojmenujte a uložte pro budoucí opětovné přihlášení.
 
-# Návod pro macOS a Linux
+## Návod pro macOS a Linux
 
 1. Spusťte aplikaci `Terminal` a připojte se k Raspberry Pi buď:
 
@@ -53,18 +53,18 @@ Přihlásit se lze 2 způsoby:
 
 2. Zadejte heslo `raspberry`.
 
-# Změna hesla
+## Změna hesla
 
 Po prvním přihlášení nezapomeňte změnit výchozí heslo. Změnu lze provést následujícím příkazem:
 
     passwd
 
-# Aktualizace systému
+## Aktualizace systému
 
 Z důvodu bezpečnosti a stability je důležité mít systém aktualizovaný. Systém se skládá z tzv. balíčků a ty lze aktualizovat následujícím příkazem:
 
     sudo apt update && sudo apt upgrade
 
-# Závěr
+## Závěr
 
 {{% note "success" %}}V tomto návodu jsme si ukázali, jak se lze do Raspberry Pi přihlásit prostřednictvím protokolu SSH, jak si změnit heslo a také proč a jak lze aktualizovat balíčky v systému.{{% /note %}}

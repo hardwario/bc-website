@@ -11,7 +11,7 @@ Typickým příkladem použití PIR Module může být bezdrátový senzor pohyb
 
 E-shop: {{<shop "PIR Module">}}
 
-# Vlastnosti
+## Vlastnosti
 
   * Digitální PIR detektor Excelitas PYQ-1648-7053
   * Čtyři PIR elementy

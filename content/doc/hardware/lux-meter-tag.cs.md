@@ -9,7 +9,7 @@ Tento sensor je digitální I2C-only periferie.
 
 E-shop: {{<shop "Lux Meter Tag">}}
 
-# Vlastnosti
+## Vlastnosti
 
   * Integrovaný sensor intenzity osvětlení OPT3001
   * I2C-only periferie

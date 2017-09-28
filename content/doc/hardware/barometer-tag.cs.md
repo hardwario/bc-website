@@ -8,7 +8,7 @@ Barometer Tag umožňuje **měřit tlak** v rozmezí od 20 kPa do 110 kPa, nebo 
 Tento sensor je digitální I2C-only periferie s velmi nízkou spotřebou energie v provozním i pohotovostním režimu.
 {{< /hardware_intro >}}
 
-# Vlastnosti
+## Vlastnosti
 
   * Sensor atmosférického tlaku MPL3115A2
   * I2C-only periferie

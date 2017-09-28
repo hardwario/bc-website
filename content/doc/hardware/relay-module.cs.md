@@ -17,12 +17,12 @@ Tento modul je I2C-only periferie, takže nezabírá další extra signály z Bi
 
 {{< hardware "Relay Module" >}}
 
-# Obrázek
+## Obrázek
 
 
 **TODO** Obrázek bych nejraději dal hned doprava nahoru do popisu, ale nevím jak jej zmenšit v Hugo
 
-# Vlastnosti
+## Vlastnosti
   * Bistabilní relé pro přepínání výkonů do 60 W:
     * 12 V DC / 5 A
     * 24 V DC / 2.5 A
@@ -35,27 +35,27 @@ Tento modul je I2C-only periferie, takže nezabírá další extra signály z Bi
   * Rozměry: 33 x 55 mm
   * 10letá záruka
 
-# Schéma
+## Schéma
 
   * [Schéma PDF](https://github.com/bigclownlabs/bc-hardware/blob/master/out/bc-module-relay/bc-module-relay-rev-1-3-sch.pdf)
   * [Schéma Eagle](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-relay)
 
-# Projekty používající modul
+## Projekty používající modul
 
   * [bcf-generic-node](https://github.com/bigclownlabs/bcf-generic-node) - Univerzální firmware do bezdrátových nodů.
   * [bcf-usb-gateway](https://github.com/bigclownlabs/bcf-usb-gateway) - Firmware do Core Module pro funkci gateway.
 
-# Odkaz na SDK referenci
+## Odkaz na SDK referenci
 **TODO** Které odkazy vkládat? na github i na exportovaný doxygen?
 
-## Doxygen
+### Doxygen
 [Vygenerovaná dokumentace](http://sdk.bigclown.com/group__bc__module__relay.html)
 
-## GitHub
+### GitHub
 [bc_module_relay.c](https://github.com/bigclownlabs/bcf-sdk-core-module/blob/master/bcl/src/bc_module_relay.c) \
 [bc_module_relay.h]
 (https://github.com/bigclownlabs/bcf-sdk-core-module/blob/master/bcl/inc/bc_module_relay.h)
 
-## Ukázka v `/sdk/_examples`
+### Ukázka v `/sdk/_examples`
 
 [Example Relay Module (TODO)](https://github.com/bigclownlabs/bcf-sdk-core-module/tree/master/_examples)

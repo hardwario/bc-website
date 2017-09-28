@@ -5,7 +5,7 @@ slug: firmware-upload
 
 Je několik způsobů jak do {{<shop "Core Module">}} nahrát firmware. Začneme tím nejjednodušším a postupně si popíšeme všechny možnosti. Možnosti se liší podle verze {{<shop "Core Module">}}, nebo pokud se jedná o SoM Cloony.
 
-# Python utilita `bcf`
+## Python utilita `bcf`
 
 Utilita BigClown Firmware automaticky stáhne z GitHubu zkompilované firmwary všech projektů a nabídne snadný způsob jak jej nahrát do zařízení.
 
@@ -48,8 +48,8 @@ A provedeme nahrání
 
 **TODO** Jak přehledně vysvětlit kdy je potřeba použít DFU, kdy FTDI UART flash?? Jak do toho zakomponovat core module s nativním usb, core module s FTDI a cloony s externím převodníkem?
 
-# dfu-util
+## dfu-util
 
-# Ozone
+## Ozone
 
-# GDB
+## GDB

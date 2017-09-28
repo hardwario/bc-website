@@ -16,7 +16,7 @@ Tato technologie je tedy vhodná např. pro monitoring kvality ovzduší, upozor
 
 Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy mezi zařízením a základnovou stanicí Sigfox přenášet i na vzdálenost několik desítek kilometrů.{{% /note %}}
 
-# Příklady použití
+## Příklady použití
 
 * Sledování pohybu osob v hlídaném prostoru
 * Monitorování vytíženosti zasedacích místností
@@ -24,7 +24,7 @@ Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy
 
 ![Obrázek detekce PIR](fresnel-lens.jpg)
 
-# Co budeme potřebovat
+## Co budeme potřebovat
 
 * 1x BigClown [PIR Module](https://obchod.bigclown.cz/products/pir-module)
 
@@ -38,17 +38,17 @@ Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy
 
 ![Obrázek BigClown Sigfox Detektor Pohybu - rozložené moduly](sigfox-motion-detector-set.png)
 
-# Internetové účty
+## Internetové účty
 
 * [Twilio](https://www.twilio.com) - Služba pro posílání SMS
 
-# Ostatní
+## Ostatní
 
 * PC nebo laptop s operačním systémem Windows, macOS nebo Linux
 * MicroUSB kabel pro připojení PC nebo laptopu ke Core Module
 * Internetovou konektivitu
 
-# Sestavení detektoru
+## Sestavení detektoru
 
 1. Našroubujte anténu do SMA konektoru na Sigfox Module.
 
@@ -90,7 +90,7 @@ Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy
 
     {{% note "warning" %}}Pokud se Core Module rychle rozbliká, potom to indikuje poruchu - například se nezadařilo inicializovat spojení se Sigfox Module. V takovém případě zkontrolujte, že jste postupovali správně při sestavení. Pokud jste provedli vše správně, obraťte se prosím na naši technickou podporu.{{% /note %}}
 
-# Popis funkce
+## Popis funkce
 
 * Po založení baterií se do sítě Sigfox odvysílá událost o resetu zařízení.
 
@@ -102,7 +102,7 @@ Díky narrow-band technologii a nízké modulační rychlosti je možné zprávy
 
 * Každých 24 hodin se odvysílá stav baterie."Tato zpráva zároveň indikuje funkční spojení v případě, že se nevyskytuje aktivace PIR čidla pohybu.
 
-# Zprovoznění služby
+## Zprovoznění služby
 
 Podle těchto kroků zprovozníte odesílání SMS pro pohybový detektor:
 
@@ -158,7 +158,7 @@ Podle těchto kroků zprovozníte odesílání SMS pro pohybový detektor:
 
     ![Obrázek služby MySigfox](service-mysigfox.png)
 
-# Závěr
+## Závěr
 
 Tento projekt názorně demonstruje snadné použití BigClown prvků k sestavení bezdrátového PIR detektoru pohybu komunikující prostřednictvím sítě SigFox.
 

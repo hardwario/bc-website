@@ -11,7 +11,7 @@ Tento návod vás krok za krokem provede instalací Raspberry Pi. Návod je odzk
 
 V následujícím postupu budeme instalovat Linuxovou distribuci BigClown Raspbian. Raspbian je oficiální a nejrozšířenější distribucí Linuxu pro Raspberry Pi. BigClown udržuje modifikovanou verzi této distribuce, která usnadňuje některé kroky a obsahuje předinstalované balíčky, které jsou pro BigClown klíčové.
 
-# Požadavky
+## Požadavky
 
 * Raspberry Pi 3 (Model B)
 * MicroSD karta s minimální kapacitou 4 GB
@@ -24,7 +24,7 @@ V následujícím postupu budeme instalovat Linuxovou distribuci BigClown Raspbi
     * macOS (otestováno na verzi 10.12.x)
     * Ubuntu (otestováno na verzi 16.04)
 
-# Příprava SD karty
+## Příprava SD karty
 
 V následujících krocích si připravíme MicroSD kartu pro Raspberry Pi. Přejděte na postup jedné z podporovaných platforem:
 
@@ -32,7 +32,7 @@ V následujících krocích si připravíme MicroSD kartu pro Raspberry Pi. Pře
 * [Návod pro macOS]({{< relref "#návod-pro-macos" >}})
 * [Návod pro Ubuntu]({{< relref "#návod-pro-ubuntu" >}})
 
-# Návod pro Windows
+## Návod pro Windows
 
 1. Vložte MicroSD kartu do čtečky karet.
 
@@ -58,7 +58,7 @@ V následujících krocích si připravíme MicroSD kartu pro Raspberry Pi. Pře
 
 8. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}}).
 
-# Návod pro macOS
+## Návod pro macOS
 
 1. Vložte MicroSD kartu do čtečky karet.
 
@@ -104,7 +104,7 @@ V následujících krocích si připravíme MicroSD kartu pro Raspberry Pi. Pře
 
 12. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}}).
 
-# Návod pro Ubuntu
+## Návod pro Ubuntu
 
 1. Vložte MicroSD kartu do MicroSD čtečky karet.
 
@@ -150,7 +150,7 @@ V následujících krocích si připravíme MicroSD kartu pro Raspberry Pi. Pře
 
 12. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}}).
 
-# Odlišnosti od originální distribuce Raspbian
+## Odlišnosti od originální distribuce Raspbian
 
 Toto je stručný seznam odlišností:
 
@@ -179,7 +179,7 @@ Toto je stručný seznam odlišností:
     * bc-workroom-led-strip
     * bc-workroom-blynk
 
-# Instalace v originální distribuci Raspbian
+## Instalace v originální distribuci Raspbian
 
 {{% note "warning" %}}Následující postup aplikujte pouze v případě, že používáte Raspberry Pi, na kterém běží originální distribuce Raspbian. Jedná se o alternativní způsob instalace k předchozímu postupu.{{% /note %}}
 
@@ -215,7 +215,7 @@ Toto je stručný seznam odlišností:
 
             sudo apt install bc-workroom-blynk
 
-# Připojení Raspberry Pi 3 k WiFi
+## Připojení Raspberry Pi 3 k WiFi
 
 Od Raspberry Pi verze 3 přibyla možnost připojení k WiFi síti.
 

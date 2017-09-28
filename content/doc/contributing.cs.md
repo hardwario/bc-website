@@ -5,7 +5,7 @@ slug: prispivani-do-dokumentace
 
 Do dokumentace je možné svobodně přispívat formou pull-requestů na GitHub, případně je možné pro drobné úpravy využít tlačítka `EDIT THIS PAGE` v záhlaví každého dokumentu. Zdrojový repozitář na GitHub se nazývá [bc-website](git@github.com:bigclownlabs/bc-website.git). Vlastní obsah dokumentace je umístěn v adresáři `content/doc`.
 
-# Základní pravidla
+## Základní pravidla
 
 * Dbáme na správnost obsažených informací, pravopisné chyby a typografii psaného dokumentu.
 
@@ -23,7 +23,7 @@ Do dokumentace je možné svobodně přispívat formou pull-requestů na GitHub,
 
 * Používáme editor, který má podporu pro EditorConfig plugin - například [Atom](https://atom.io/). Případně si odsazení v editoru nastavíme na **4 mezery**.
 
-# Front matter
+## Front matter
 
 Každý dokument začíná pomocí tzv. "YAML front matter", který se uvozuje a ukončuje `---`. V této sekci front matter lze nastavovat parametry dokumentu.
 
@@ -43,7 +43,7 @@ slug: prispivani-do-dokumentace
 
 * Za ukončením front matter následuje prázdný řádek.
 
-# Nadpisy
+## Nadpisy
 
 Maximální doporučená úroveň zanoření nadpisů je 3. Nadpis se uvozuje znakem `#` a jejich počet určuje úroveň nadpisu. Před nadpisem a po nadpisu je vždy **jeden prázdný řádek**.
 
@@ -61,7 +61,7 @@ Příklad:
 
 Každý nadpis vygeneruje název záložky, na který se lze odkazovat v rámci dokumentu, nebo mezi dokumenty. Ten se odvozuje z nadpisu - například `Nadpis úrovně 1` bude mít název záložky `nadpis-urovne-1`.
 
-# Typografie
+## Typografie
 
 * Text je možné **zvýraznit** jeho uzavřením mezi `**`.
 
@@ -89,7 +89,7 @@ Každý nadpis vygeneruje název záložky, na který se lze odkazovat v rámci 
 
     Toto je vhodné používat pro názvy příkazů, programů, klávesových zkratek, apod. Správné použití výrazně urychluje orientaci mezi klíčovými informacemi.
 
-# Seznamy
+## Seznamy
 
 Položka v nečíslovaném seznamu se uvozuje pomocí znaku `*`.
 
@@ -150,9 +150,9 @@ Příklad:
     ```
 ```
 
-# Odkazy
+## Odkazy
 
-## Volba správného textu v odkazu
+### Volba správného textu v odkazu
 
 {{< note "warning" "Text odkazu by měl obsahovat informaci na co odkaz odkazuje. Jednak je to pro lidi přehlednější, když něco hledají a očima prohlížejí jen modré odkazy. Pro vyhledávače je to lepší kvůli indexaci obsahu. Hlavně nepoužívejte odkazy se samotným textem \"zde\" nebo \"download\"." />}}
 
@@ -166,7 +166,7 @@ Příklad:
   * Na Githubu si můžete [stáhnout BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases).
   * Stáhněte si [image BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases). \\
 
-## Existuje několik možností odkazů:
+### Existuje několik možností odkazů:
 
 1. **Externí bez pojmenování** - pouze se vloží URL včetně protokolu do textu.
 
@@ -213,7 +213,7 @@ Příklad:
 
 
 
-# Obrázky
+## Obrázky
 
 Nejprve je nutné umístit obrázek do příslušné cesty v adresáři `static`. Pokud je URL k dokumentu `/cs/doc/tutorial/`, potom je nutné např. obrázek `screenshot.png` umístit v repozitáři do cesty `static/cs/doc/tutorial/screenshot.png`.
 
@@ -233,7 +233,7 @@ Tedy v našem případě:
 
 {{< note "warning" "Je dobrým zvykem vždy vyplnit alternativní text obrázku." />}}
 
-# Vložení kódu
+## Vložení kódu
 
 Jsou 2 varianty, jak lze do textu vložit kód:
 
@@ -388,7 +388,7 @@ Existují 3 typy zápisu anotace:
     ...tomato is a fruit?
     {{< /note >}}
 
-# Závěr
+## Závěr
 
 Tento dokument shrnuje základní pravidla pro psaní dokumentace BigClown. Kvalitní dokumentace je základním pilířem pro popularizaci každé platformy.
 

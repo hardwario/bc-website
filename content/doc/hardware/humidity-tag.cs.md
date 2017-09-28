@@ -11,7 +11,7 @@ Humidity Tag používá čidlo vlhkosti **HDC2080** nabízející ± 2% přesnos
 
 E-shop: {{<shop "Humidity Tag">}}
 
-# Vlastnosti
+## Vlastnosti
 
   * Integrovaný sensor vlhkosti HDC2080
   * I2C-only periferie

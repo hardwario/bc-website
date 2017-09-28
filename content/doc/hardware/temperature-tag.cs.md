@@ -11,7 +11,7 @@ Sensor je zkalibrovaný a jde o I2C-only periferii s velmi nízkým provozním p
 
 E-shop: {{<shop "Temperature Tag">}}
 
-# Vlastnosti
+## Vlastnosti
 
   * Integrovaný teplotní sensor TMP112
   * I2C-only periferie

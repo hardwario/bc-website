@@ -11,7 +11,7 @@ Další funkcí modulu je prototypovací prostor k pájení vašich vlastních o
 
 E-shop: {{<shop "Base Module">}}
 
-# Vlastnosti
+## Vlastnosti
 
   * Praktická základna pro BigClown nody
   * Prototypovací prostor k pájení vlastních obvodů

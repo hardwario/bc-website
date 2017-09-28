@@ -9,7 +9,7 @@ Adresa GitHub organizace `bigclownlabs `je **https://github.com/bigclownlabs**.
 
 Pro lepší přehlednost má každý repozitář ve svém názvu předponu, která určuje co má za obsah.
 
-# Základní repozitáře
+## Základní repozitáře
 
 | Repozitář                                                            | Popis                                                         | Releases |
 |----------------------------------------------------------------------|---------------------------------------------------------------|----------|
@@ -18,7 +18,7 @@ Pro lepší přehlednost má každý repozitář ve svém názvu předponu, kter
 | [bc&#8209;raspbian](https://github.com/bigclownlabs/bc-raspbian)     | Upravená Linuxová distribuce Raspbian pro Raspberry Pi        | Ano      |
 | [bc&#8209;website](https://github.com/bigclownlabs/bc-website)       | Zdrojový repozitář pro web, dokumentace, blog. atd.           | -        |
 
-# Hub/Host repozitáře
+## Hub/Host repozitáře
 
 Repozitáře s prefixem **[bch](https://github.com/bigclownlabs?q=bch)** obsahují aplikační software pro hub nebo vývojový systém (host).
 
@@ -29,7 +29,7 @@ Repozitáře s prefixem **[bch](https://github.com/bigclownlabs?q=bch)** obsahuj
 | [bch&#8209;usb&#8209;gateway](https://github.com/bigclownlabs/bch-usb-gateway)             | Gateway běžící na pozadí, která propojuje USB gateway a MQTT           | -        |
 | [bch&#8209;firmware&#8209;utility](https://github.com/bigclownlabs/bch-firmware-utility)   | CLI nástroj pro snadnou práci s firmware - vytváření, flashování, atd. | Ano      |
 
-# Firmwarové repozitáře
+## Firmwarové repozitáře
 
 Repozitáře s prefixem **[bcf](https://github.com/bigclownlabs?q=bcf)** obsahují firmwarové projekty pro Core Module, Cloony nebo USB Dongle.
 
@@ -41,7 +41,7 @@ Repozitáře s prefixem **[bcf](https://github.com/bigclownlabs?q=bcf)** obsahuj
 | [bcf&#8209;usb&#8209;dongle](https://github.com/bigclownlabs/bcf-usb-dongle)                           | Firmware do USB Dongle pro funkci gateway                              | Ano      |
 | [bcf&#8209;usb&#8209;gateway](https://github.com/bigclownlabs/bcf-usb-gateway)                         | Firmware do Core Module pro funkci gateway                             | Ano      |
 
-# Projektové repozitáře
+## Projektové repozitáře
 
 Repozitáře s prefixem **[bcp](https://github.com/bigclownlabs?q=bcp)** obsahují pro daný projekt firmware a/nebo aplikaci pro hub/host.
 

@@ -11,103 +11,29 @@ This repository covers sources for these parts of BigClown website:
 * https://blog.bigclown.com/
 * https://blog.bigclown.cz/
 
-# Deployment
+## Deployment
 
 The website automatically deploys with commit to master branch. It is built and served using [Netlify](https://www.netlify.com/) CDN service.
 
-# Technology
+## Technology
 
 The website uses the following core technologies:
 
 * [Hugo](https://gohugo.io/) - static site generator
 * [npm](https://www.npmjs.com/) - package manager for Node.js
 * [gulp](https://gulpjs.com/) - automation toolkit
+* we use [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for text formatting
 
-# Development on macOS
+## Contributing
+Your contribution is welcomed and appreciated. For more information, please see the [CONTRIBUTING.md](CONTRIBUTING.md) document.
 
-1. Open Terminal.
+To see rules and available text formatting for writing/editing documentation (currenty in Czech only), please see specific [documentation contributing](content/doc/contributing.cs.md) file.  
 
-2. Install [Homebrew](https://brew.sh/).
+## Local development
+Simple tutorial how to prepare local development environment, which is needed for contributing, is located in [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
-3. Update & upgrade Homebrew packages:
 
-    `brew update && brew upgrade`
-
-4. Install Git:
-
-    `brew install git`
-
-5. Install Hugo:
-
-    `brew install hugo`
-
-6. Install Node.js (for npm):
-
-    `brew install node`
-
-7. Clone this repository:
-
-    `git clone git@github.com:bigclownlabs/bc-website.git`
-
-8. Navigate to project directory:
-
-    `cd bc-website`
-
-9. Install all dependencies:
-
-    `npm install`
-
-10. Run local webserver:
-
-    `npm start`
-
-11. Open browser and navigate to http://localhost:1313/.
-
-# Development on Ubuntu
-
-1. Open Terminal.
-
-2. Update & upgrade your system:
-
-    `sudo apt update && sudo apt upgrade`
-
-3. Install Git:
-
-    `sudo apt install git`
-
-4. Install Hugo:
-
-    `wget https://github.com/gohugoio/hugo/releases/download/v0.26/hugo_0.26_Linux-64bit.deb`
-
-    `sudo dpkg -i hugo_0.26_Linux-64bit.deb`
-
-    `rm hugo_0.26_Linux-64bit.deb`
-
-5. Install Node.js (for npm):
-
-    `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
-
-    `sudo apt install nodejs`
-
-6. Clone this repository:
-
-    `git clone git@github.com:bigclownlabs/bc-website.git`
-
-7. Navigate to project directory:
-
-    `cd bc-website`
-
-8. Install all dependencies:
-
-    `npm install`
-
-9. Run local webserver:
-
-    `npm start`
-
-10. Open browser and navigate to http://localhost:1313/.
-
-# License
+## License
 
 This project is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) - see the [LICENSE](LICENSE) file for details.
 

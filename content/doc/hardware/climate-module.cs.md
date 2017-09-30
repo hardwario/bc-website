@@ -1,13 +1,14 @@
 ---
 title: Popis k Climate Module
-slug: climate-module
 ---
+
+{{< hardware_intro "Climate Module" climate-module >}}
 
 Climate Module integruje 4 enviromentální čidla připojené na sběrnici I²C na jednu desku a umožňuje měřit hodnoty teploty, vlhkosti, atmosférického tlaku a intenzity osvětlení.
 
 Modul poslouží jako základní stavební prvek pro tvorbu drátové i bezdrátové meteostanici. Při napájení z Mini Battery Module lze vytvořit velmi kompaktní bezdrátový multi senzor.
 
-E-shop: {{<shop "Climate Module">}}
+{{< /hardware_intro >}}
 
 # Vlastnosti
 

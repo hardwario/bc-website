@@ -1,7 +1,7 @@
 ---
 title: Popis k NFC Tag
-slug: nfc-tag
 ---
+{{< hardware_intro "NFC Tag" nfc-tag >}}
 
 Tag poskytující most mezi NFC a sběrnicí I2C.
 
@@ -9,7 +9,7 @@ NFC (neboli Near Field Communication) je špičkovou technologií pro přenos da
 
 NFC Tag je postaven na čipu **NT3H2111** firmy NXP fungující jako dual-port paměť - na jedné straně NFC a na druhé I2C. Je vybaven pamětí 1kB EEPROM. Čip nemusí být napájen když je k němu přistupováno z NFC strany.
 
-E-shop: {{<shop "NFC Tag">}}
+{{< /hardware_intro >}}
 
 ## Vlastnosti
 
@@ -23,5 +23,3 @@ E-shop: {{<shop "NFC Tag">}}
   * Rozsah provozních teplot: -20 až 70 °C
   * Rozměry: 16 x 16 mm
   * 10letá záruka
-
-{{< hardware "NFC Tag" >}}

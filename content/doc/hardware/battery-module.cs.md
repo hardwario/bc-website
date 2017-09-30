@@ -1,7 +1,8 @@
 ---
 title: Popis k Battery Module
-slug: battery-module
 ---
+
+{{< hardware_intro "Battery Module" battery-module >}}
 
 Battery Module je určen k napájení bateriových BigClown nodů. Použití konvertoru s nízkou spotřebou energie poskytuje vynikající účinnost a dlouhou životnost baterie ze čtyřech AAA 1.5 V alkalických článků.
 
@@ -9,7 +10,7 @@ Modul obsahuje obvod pro bypass baterie, pokud je do systému zapojen jiný nap�
 
 Battery Module rovněž poskytuje 5 pinovou zásuvku umožňující připojení BigClown tagu (I2C periférie v BigClown Tag formátu) a prototypovací prostor k pájení vlastních obvodů.
 
-E-shop: {{<shop "Battery Module">}}
+{{< /hardware_intro >}}
 
 ## Vlastnosti
 

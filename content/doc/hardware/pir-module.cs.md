@@ -1,7 +1,7 @@
 ---
 title: Popis k PIR Module
-slug: pir-module
 ---
+{{< hardware_intro "PIR Module" pir-module >}}
 
 PIR module je primárně určen k detekci pohybu osob v interiéru.
 
@@ -9,7 +9,7 @@ Module je osazen digitálním senzorem od firmy Excelitas, typ PYQ-1648 z rodiny
 
 Typickým příkladem použití PIR Module může být bezdrátový senzor pohybu umístěný na strop místnosti.
 
-E-shop: {{<shop "PIR Module">}}
+{{< /hardware_intro >}}
 
 ## Vlastnosti
 

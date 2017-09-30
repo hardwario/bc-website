@@ -70,10 +70,10 @@ items:
       link: doc/hardware/button-module.cs.md
     - title: Popis k Climate Module
       link: doc/hardware/climate-module.cs.md
-    - title: Popis k Core Module
-      link: doc/hardware/core-module.cs.md
     - title: Popis k CO2 Module
       link: doc/hardware/co2-module.cs.md
+    - title: Popis k Core Module
+      link: doc/hardware/core-module.cs.md
     - title: Popis k Cover Module
       link: doc/hardware/cover-module.cs.md
     - title: Popis k Encoder Module

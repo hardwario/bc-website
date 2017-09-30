@@ -1,15 +1,15 @@
 ---
 title: Popis k Base Module
-slug: base-module
 ---
 
+{{< hardware_intro "Base Module" base-module >}}
 Tento modul funguje jako praktická základna pro BigClown nody.
 
 S výjimkou Battery Module můžete jakýkoliv jiný BigClown modul zasunout do standardizované zásuvky Base Module. Base Module můžete umístit na stůl (za použití gumových nožiček), nebo můžete použít speciální plastové klipsy pro umístění na DIN lištu, případně použít oboustranou lepící pásku pro připevnění na zeď.
 
 Další funkcí modulu je prototypovací prostor k pájení vašich vlastních obvodů.
 
-E-shop: {{<shop "Base Module">}}
+{{< /hardware_intro >}}
 
 ## Vlastnosti
 

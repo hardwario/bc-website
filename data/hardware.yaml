@@ -7,19 +7,35 @@ products:
     name: module-battery
   - title: Climate Module
     name: module-climate
+  - title: CO2 Module
+    name: module-co2
   - title: Core Module
     name: module-core
+  - title: Encoder Module
+    name: module-encoder
   - title: Humidity Tag
     name: tag-humidity
+  - title: LCD Module
+    name: module-lcd
   - title: Lux Meter Tag
     name: tag-lux-meter
+  - title: Mini Battery Module
+    name: module-battery-mini
   - title: NFC Tag
     name: tag-nfc
   - title: PIR Module
     name: module-pir
+  - title: Power Module
+    name: module-power
+  - title: Probe Module
+    name: module-probe
   - title: Relay Module
     name: module-relay
+  - title: Sensor Module
+    name: module-sensor
   - title: Sigfox Module
     name: module-sigfox
+  - title: Tag Module
+    name: module-tag
   - title: Temperature Tag
     name: tag-temperature

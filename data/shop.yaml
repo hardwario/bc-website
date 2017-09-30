@@ -11,27 +11,54 @@ products:
   - title: Breadboard Module
     en: https://shop.bigclown.com/products/breadboard-module
     cs: https://obchod.bigclown.cz/products/breadboard-module
-  - title: Core Module
-    en: https://shop.bigclown.com/products/core-module
-    cs: https://obchod.bigclown.cz/products/core-module
   - title: Climate Module
     en: https://shop.bigclown.com/products/climate-module
     cs: https://obchod.bigclown.cz/products/climate-module
+  - title: CO2 Module
+    en: https://shop.bigclown.com/products/co2-module
+    cs: https://obchod.bigclown.cz/products/co2-module
+  - title: Core Module
+    en: https://shop.bigclown.com/products/core-module
+    cs: https://obchod.bigclown.cz/products/core-module
+  - title: Encoder Module
+    en: https://shop.bigclown.com/products/encoder-module
+    cs: https://obchod.bigclown.cz/products/encoder-module
   - title: Humidity Tag
     en: https://shop.bigclown.com/products/humidity-tag
     cs: https://obchod.bigclown.cz/products/humidity-tag
+  - title: LCD Module
+    en: https://shop.bigclown.com/products/lcd-module-b
+    cs: https://obchod.bigclown.cz/products/lcd-module-b
   - title: Lux Meter Tag
     en: https://shop.bigclown.com/products/lux-meter-tag
     cs: https://obchod.bigclown.cz/products/lux-meter-tag
+  - title: Mini Battery Module
+    en: https://shop.bigclown.com/products/mini-battery-module
+    cs: https://obchod.bigclown.cz/products/mini-battery-module
   - title: NFC Tag
     en: https://shop.bigclown.com/products/nfc-tag
     cs: https://obchod.bigclown.cz/products/nfc-tag
   - title: PIR Module
     en: https://shop.bigclown.com/products/pir-module
     cs: https://obchod.bigclown.cz/products/pir-module
+  - title: Power Module
+    en: https://shop.bigclown.com/products/power-module
+    cs: https://obchod.bigclown.cz/products/power-module
+  - title: Probe Module
+    en: https://shop.bigclown.com/products/probe-module
+    cs: https://obchod.bigclown.cz/products/probe-module
   - title: Relay Module
     en: https://shop.bigclown.com/products/relay-module
     cs: https://obchod.bigclown.cz/products/relay-module
+  - title: Sensor Module
+    en: https://shop.bigclown.com/products/sensor-module
+    cs: https://obchod.bigclown.cz/products/sensor-module
+  - title: Sigfox Module
+    en: https://shop.bigclown.com/products/sigfox-module
+    cs: https://obchod.bigclown.cz/products/sigfox-module
+  - title: Tag Module
+    en: https://shop.bigclown.com/products/tag-module
+    cs: https://obchod.bigclown.cz/products/tag-module
   - title: Temperature Tag
     en: https://shop.bigclown.com/products/temperature-tag
     cs: https://obchod.bigclown.cz/products/temperature-tag

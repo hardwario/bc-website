@@ -1,7 +1,8 @@
 ---
 title: Popis k Core Module
-slug: core-module
 ---
+
+{{< hardware_intro "Core Module" core-module >}}
 
 Core Module je klíčovým prvkem každého BigClown nodu. Jeho dvěma nejdůležitějšími komponentami jsou ARM mikroprocesor a 868 MHz rádiový modul.
 
@@ -9,7 +10,7 @@ Core Module může být naprogramován pomocí USB DFU bootloaderu, který je ul
 
 Kombinace těchto funkcí společně s integrovaným bezpečnostní čipem, teplotním čidlem a akcelerometrem, dělají tento modul bezkonkurenčním řešením v oblasti nodů pro domácí automatizaci.
 
-E-shop: {{<shop "Core Module">}}
+{{< /hardware_intro >}}
 
 ## Vlastnosti
 

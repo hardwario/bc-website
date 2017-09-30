@@ -3,9 +3,9 @@ title: Popis k Barometer tag
 ---
 
 {{< hardware_intro "Barometer Tag" barometer-tag >}}
-Barometer Tag umožňuje **měřit tlak** v rozmezí od 20 kPa do 110 kPa, nebo **nadmořskou výšku** v metrech. Používá sensor **MPL3115A2** s nízkou spotřebou energie a s přesností měření ±0.4 kPa.
+Barometer Tag umožňuje **měřit tlak** v rozmezí od 20 kPa do 110 kPa, nebo **nadmořskou výšku** v metrech. Používá senzor **MPL3115A2** s nízkou spotřebou energie a s přesností měření ±0.4 kPa.
 
-Tento sensor je digitální I2C-only periferie s velmi nízkou spotřebou energie v provozním i pohotovostním režimu.
+Tento senzor je digitální I2C-only periferie s velmi nízkou spotřebou energie v provozním i pohotovostním režimu.
 {{< /hardware_intro >}}
 
 ## Vlastnosti

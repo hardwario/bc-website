@@ -1,17 +1,19 @@
 ---
 title: Popis k Lux Meter Tag
-slug: lux-meter-tag
 ---
 
-Sensor intenzity osvětlení s velmi nízkou spotřebou (provozní i v režimu spánku). Tag je osazen sensorem **OPT3001** měřící intenzitu viditelného světla v rozsahu 0.01 až 83k luxů s 23 bitovým dynamickým rozsahem.
+{{< hardware_intro "Lux Meter Tag" lux-meter-tag >}}
 
-Tento sensor je digitální I2C-only periferie.
+Sensor intenzity osvětlení s velmi nízkou spotřebou (provozní i v režimu spánku). Tag je osazen senzorem **OPT3001** měřící intenzitu viditelného světla v rozsahu 0.01 až 83k luxů s 23 bitovým dynamickým rozsahem.
 
-E-shop: {{<shop "Lux Meter Tag">}}
+Tento senzor je digitální I2C-only periferie.
+
+{{< /hardware_intro >}}
+
 
 ## Vlastnosti
 
-  * Integrovaný sensor intenzity osvětlení OPT3001
+  * Integrovaný senzor intenzity osvětlení OPT3001
   * I2C-only periferie
   * Měří v rozsahu od 0.01 do 83k luxů
   * 23-bit efektivní dynamický rozsah

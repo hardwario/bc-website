@@ -8,11 +8,11 @@ Tento dokument slouží jako praktická ukázka práce s IoT sadou BigClown. Uk�
 Co budeme potřebovat:
 
 * Raspberry Pi + napájecí adaptér + MicroSD kartu
-* USB Dongle
+* {{< shop "USB Dongle" >}} (nebo druhý {{< shop "Core Module" >}})
 * {{< shop "Core Module" >}}
-* Mini Battery Module
-* Humidity Tag (nepovinně)
-* Relay Module (nepovinně)
+  * {{< shop "Mini Battery Module" >}} (nebo 5V microUSB adaptér)
+  * {{< shop "Humidity Tag" >}} (nepovinně)
+  * {{< shop "Relay Module" >}} (nepovinně)
 
 ## Instalace Raspberry Pi
 
@@ -22,12 +22,46 @@ Nejjednodušší způsob jak začít je [stáhnout si připravený BigClown Rasp
 
 ## Připojení k Raspberry Pi
 
-**TODO** Popsat SSH. Odkaz na plný návod.
-[Přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}})
+Nahranou kartu vložte do Raspberry Pi, připojte ethernet kabel, Core Module nebo USB Dongle a napájení. Po nabootování byste měli Raspberry Pi najít na adrese `hub.local`. Můžete vyzkoušet příkaz `ping hub.local`.
+
+Pokud se Raspberry Pi nehlásí, je buď něco špatně se sítí nebo vás systém nepodporuje `mDNS` a budete muset najít IP adresu Raspberry Pi ve všem routeru v nastavení `DHCP`.
+
+Pro přihlášení použijte příkaz `ssh pi@hub.localhost` nebo na Windows program `putty`.
+
+[Detailní návod přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}})
 
 ## Nahrání firmware do Core Module
 
-**TODO** Stručně představit bcf. Flashnutí generic node. Odkaz na plný návod.
+Pro snadný začátek jsme vytvořili command-line Python utilitu `bcf`, která stáhne poslední verzi firmware a naprogramuje modul. Na připojeném Raspberry Pi si nejprve aktualizujte všechny firmware release s pomocí `sudo bcf update`. Potom si s pomocí `sudo bcf list` vypiště seznam všech předkompilovaných firmwarů.
+
+V následujícíh krocích je postup flashování pro USB Dongle a Core Module. Pokud nemáte USB Dongle, pak lze jako gateway použít i Core Module, jen je třeba nahrát jiný firmware.
+
+### Nahrání firmware do USB Dongle
+
+Připojte USB Dongle do Raspberry Pi. USB Dongle se do programovacího módu přepne automaticky. Stačí spustit následující příkaz.
+```
+sudo bcf bigclownlabs/bcf-usb-dongle:firmware.bin
+```
+
+**Pokud chcete jako gateway namísto USB Dongle použít Core Module, je to možné, ale třeba nahrát jiný firmware.** Taky je třeba přepnout Core Module ručně do programovacího DFU módu. Nejprve připojte Core Module k Raspberry Pi přes micro USB. Pak modul přepněte do programovacího módu tak, že stisknete a držíte tlačítko `B`, mezitím krátce stisknete tlačítko `R` a pak můžete pustit tlačítko `B`. Poté můžete Core Module naprogramovat následujícím příkazem.
+
+```
+sudo bcf flash --dfu bigclownlabs/bcf-usb-gateway:firmware.bin
+```
+
+### Nahrání firmware do Core Module
+
+Do bezdrátové bateriové jednotky nahrajte `bcf-generic-node`. Tento univerzální firmware obsahuje funkce pro všechny senzory a většinu ostatních modulů. Po startu nadetekuje připojené senzory a posílá jejich hodnoty na rádiovou gateway.
+
+Připojte Core Module do Raspberry Pi a přepněte Core Module do **DFU** módu viz. předchozí kapitola. Nahrajte firmware `generic-node` ve verzi s `firmware-battery-mini`.
+
+```
+sudo bcf flash --dfu bigclownlabs/bcf-generic-node:firmware-battery-mini.bin
+```
+
+Pokud budete bezdrátový node napájet např. adaptérem s Power Module, můžete použít firmware `bigclownlabs/bcf-generic-node:firmware-power-module-RGBW-144.bin`, který zprávy z gateway-e i přijímá a může ovládat barvy na LED pásku, relé a zobrazovat naměřená data i na připojeném LCD Module. Navíc je možné na LCD Module zapisovat i vlastní texty.
+
+[Detailní návod k nahrávání firmware]({{< relref "doc/firmware-upload.cs.md" >}}).
 
 ## Připojení k aplikaci Node-RED
 

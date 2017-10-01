@@ -7,6 +7,8 @@ Tento dokument slouží jako praktická ukázka práce s IoT sadou BigClown. Uk�
 
 Tento tutoriál je rozdělený do několika kapitol. Doporučujeme je prostudovat postupně, protože následující kapitoly staví na znalostech z předchozích kapitol. Na konci téměř každé kapitoly je odkaz na detailní postup, který vám pomůže v případě nejasností.
 
+Nejprve si pro jednoduchost předvedeme základní funkčnost bez rádia s jedním Core Module připojeným USB kabelem do Raspberry Pi. Všechny získané znalosti pak lze bez rozdílu použít i u bezdrátové sítě, která je popsána v pozdějších kapitolách tohoto tutoriálu.
+
 Co budeme potřebovat:
 
   * Raspberry Pi + napájecí adaptér + MicroSD kartu
@@ -53,7 +55,45 @@ Po naprogramování se Core Module sám restartuje a automaticky se spustí nahr
 
 ## Komunikace mezi USB a MQTT
 
-Core Module nebo i USB Dongle komunikují přes USB po virtuálním sériovém portu. Tato komunikace je dále na Raspberry Pi přesměrovaná službou `bch-gateway`, která tyto zprávy přepošle na MQTT brokera Mosquitto. Na tento broker se pak můžou připojovat další služby a aplikace jako Node-RED, nebo např. Android aplikace MQTT Dash. Dále je možné si například promapovat port na routeru a můžete se k vašim MQTT zprávám dostat i z internetu. Další možností u brokeru Mosquitto je nastavit tzv. bridge, kdy lze propojit několik brokerů mezi sebou. Ty pak sdílejí všechny zprávy mezi sebou. Oba tyto popsané způsoby zpřístupnění MQTT zpráv je však potřeba vhodně zabezpečit, např. TLS spojením.
+Core Module nebo i USB Dongle komunikují přes USB po virtuálním sériovém portu. Tato komunikace je dále na Raspberry Pi přesměrovaná službou `bch-gateway`, která tyto zprávy přepošle na MQTT brokera Mosquitto.
+
+Na tento broker se pak můžou připojovat další služby a aplikace jako Node-RED, nebo např. Android aplikace MQTT Dash.
+
+Dále je možné si například promapovat port na routeru a můžete se k vašim MQTT zprávám dostat i z internetu. Další možností u brokeru Mosquitto je nastavit tzv. bridge, kdy lze propojit několik brokerů mezi sebou. Ty pak sdílejí všechny zprávy mezi sebou. Oba tyto popsané způsoby zpřístupnění MQTT zpráv je však potřeba vhodně zabezpečit, např. TLS spojením.
+
+## Práce se zprávami na MQTT
+
+Tato kapitola je zde pouze pro úplnost. Vyčítání hodnot je vysvětlené i v další kapitole v grafickém nástroji Node-RED.
+
+Do Raspberry Pi máme připojený Core Module. Teď si zobrazíme naměřená data, která posílá MQTT broker.
+
+Nejprve vyzkoušíme přihlásit se s pomocí command-line utility `mosquitto_sub`. Pro publikování zpráv slouží druhá utilita `mosquitto_pub`. Do příkazové řádky Raspberry Pi tedy napíšeme:
+
+```
+mosquitto_sub -t "#" -v
+```
+
+A měly by nám po chvíli chodit zprávy od čidla teploty na desce Core Module. Teplota se odesílá jen při změně, tím se šetří baterie. Pro účely testování je tedy vhodné zkusit čidlo ochladit, nebo zahřát. Ve výpisu se zobrazí i stisky tlačítka `B` na Core Module.
+
+```
+pi@hub:~ $ mosquitto_sub -t "#" -v
+node/836d19821664/thermometer/0:1/temperature 24.69
+node/836d19821664/thermometer/0:1/temperature 24.94
+node/836d19821664/push-button/-/event-count 5
+```
+
+Parametr `-t` říká, jaký `topic` chceme odebírat. Mřížka `#` znamená, že chceme odebírat všechny zprávy. Parametr `-v` neboli verbose do konzole vypisuje kromě hodnot i topic.
+
+Dalším zástupným symbolem je otazník `?`, který má podobnou funkci jako `#`, jen jej lze použít pouze v jedné úrovni topicu, mezi lomítky.
+
+Zkusíme nyní rozsvítit LED na Core Module. V následujícím příkazu si musíte upravit `{id}` podle Vašeho ID modulu. To vyčtete z předchozích příchozích zpráv.
+**TODO** ověřit
+
+```
+mosquitto_pub -t "node/{id}/led/-/state/set" -m true
+```
+
+**TODO** Popsat zapnutí debug logu a ukázka ručního ovládání LED.
 
 ## Připojení k aplikaci Node-RED
 
@@ -70,11 +110,6 @@ V pravé části jsou záložky `info` a pro nás později důležitá záložka
 Po jakékoliv změně `flow` je třeba tyto změny aplikovat. To se provede vpravo nahoře tlačítkem `deploy`.
 
 **TODO** Odkaz na článek Integrace > Node-RED
-
-## Práce se zprávami na MQTT
-
-BigClown používá
-**TODO** Popsat zapnutí debug logu a ukázka ručního ovládání LED.
 
 ## Přihlášení k odběru zpráv o teplotě
 

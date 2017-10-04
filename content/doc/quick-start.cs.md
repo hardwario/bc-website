@@ -55,9 +55,12 @@ Po naprogramování se Core Module sám restartuje a automaticky se spustí nahr
 
 ## Komunikace mezi USB a MQTT
 
-Core Module nebo i USB Dongle komunikují přes USB po virtuálním sériovém portu. Tato komunikace je dále na Raspberry Pi přesměrovaná službou `bch-gateway`, která tyto zprávy přepošle na MQTT brokera Mosquitto.
+USB Dongle nebo Core Module v roli **gateway** komunikují s počítačem přes USB po virtuálním sériovém portu. Tato komunikace je dále na Raspberry Pi přesměrovaná službou `bch-gateway`, která tyto zprávy přepošle na MQTT brokera Mosquitto.
 
-Na tento broker se pak můžou připojovat další služby a aplikace jako Node-RED, nebo např. Android aplikace MQTT Dash.
+Všechny zprávy z modulů putují přes gateway na MQTT broker. MQTT je náš páteřní systém na předávání zpráv a to z modulů i do nich.
+Uprostřed tohoto komunikačního systému je MQTT broker, což je server na který se lze připojit z klientů. Po MQTT se předávají zprávy. Každá zpráva obsahuje **topic** (téma) a **payload** (obsah). Topic je textový řetězce a může tvořit jakoby adresářovou strukturu s použitím lomítek `/`. Payload není standardem MQTT definován a BigClown v něm posílá textově čísla, řetězce, boolean hodnoty a JSONy.
+
+Na MQTT broker se pak můžou připojovat další služby a aplikace jako Node-RED, MQTT-Spy nebo např. Android aplikace MQTT Dash.
 
 Dále je možné si například promapovat port na routeru a můžete se k vašim MQTT zprávám dostat i z internetu. Další možností u brokeru Mosquitto je nastavit tzv. bridge, kdy lze propojit několik brokerů mezi sebou. Ty pak sdílejí všechny zprávy mezi sebou. Oba tyto popsané způsoby zpřístupnění MQTT zpráv je však potřeba vhodně zabezpečit, např. TLS spojením.
 
@@ -111,7 +114,44 @@ Po jakékoliv změně `flow` je třeba tyto změny aplikovat. To se provede vpra
 
 **TODO** Odkaz na článek Integrace > Node-RED
 
-## Přihlášení k odběru zpráv o teplotě
+## Přihlášení k odběru zpráv v Node-RED
+
+Nejprve si v Node-RED budeme vypisovat všechny příchozí zprávy. Následující postup vysvětlí, jak vytvořit základní flow vypisující všechny zprávy do záložky **debug**. Je však možné tento popis přeskočit a přes menu v Node-RED vpravo nahoře importovat text, který naleznete níže.
+
+```
+[{"id":"2c3b9c0.ff19564","type":"tab","label":"Flow 0","disabled":false,"info":""},{"id":"fda6ba0.64ecb48","type":"mqtt in","z":"2c3b9c0.ff19564","name":"","topic":"#","qos":"2","broker":"ba3b2e25.7c8b7","x":170,"y":100,"wires":[["2dbd1aa6.284476"]]},{"id":"2dbd1aa6.284476","type":"debug","z":"2c3b9c0.ff19564","name":"","active":true,"console":"false","complete":"false","x":390,"y":100,"wires":[]},{"id":"ba3b2e25.7c8b7","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+```
+
+Pokud chcete flow vytvořit ručně, pak postupujte podle těchto instrukcí. Ze sekce **input** přetáhněte myší blok **mqtt** do prázdného flow. Poté přetáhněte myší ze sekce **output** blok **debug**.
+Teď oba bloky propojte myší mezi sebou. Tím vytvoříte váš první flow.
+
+<img src="mqtt-all-flow.png" style="width:auto;" />
+
+Teď je třeba nakonfigurovat blok **mqtt**. Dvojklikem otevřete nastavení a nastavte tyto parametry:
+
+  * server: localhost:1883
+  * topic: #
+
+<img src="mqtt-configure.png" style="width:auto;" />
+
+Po uložení je třeba aplikovat změny tlačítkem **Deploy** vpravo nahoře. Poté se přepněte vpravo do záložky **debug** a po chvíli začnou chodit zprávy z připojeného Code Module. Můžete stisknout i tlačítko `B` a tato událost se také zobrazí v **debug** logu.
+
+<img src="mqtt-all-debug.png" style="width:auto;" />
+
+## Zobrazení teploty
+
+Nyní se zobrazují všechny příchozí zprávy. Pokud bysme chtěli přijímat jenom teplotu od jednoho zařízení, změníme v bloku **mqtt** v jeho nastavení topic z hodnoty `#` na `node/836d19821664/thermometer/0:1/temperature`. Adresu `836d19821664` nahraďte svým vlastním **ID**, které získáte ze záložky **debug**.
+
+Pro grafické znázornění hodnot můžeme využít v Node-RED **dashboard**. Vložte blok Gauge, najdete jej v seznamu bloků úplně dole, nebo můžete zadat **gauge** vlevo nahoře do vyhledávacího políčka. Propojte jej s MQTT blokem. Blog **gauge** je třeba ještě nakonfigurovat.
+
+<img src="gauge-flow.png" style="width:auto;" />
+
+Poklepejte na něj. Nejprve vytvořte novou skupinu kliknutím na sybol tužky u **Add new ui_group**. Zde v dalším dialogu klikněte opět na symbol tužky u **Add new ui_tab**. Potvrďte otevřené dialogy a vytvoří se vám výchozí záložka i skupina. Upravte ještě rozsah hodnot **Range** na rozsah **0** až **40** a potvrďte i poslední otevřený dialog. Stiskněte **Deploy** a otevřete dashboard.
+
+Dashboard otevřete buď v pravo v záložce **dashboard** klinkutím na symbol se šipkou, nebo na adrese `hub.local:1880/ui`.
+
+<img src="gauge-dashboard.png" style="width:auto;" />
+
 
 **TODO** Popsat demonstraci subscripe na topic se zobrazením hodnoty teploty v debug.
 

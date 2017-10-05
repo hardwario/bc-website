@@ -57,7 +57,7 @@ Po naprogramování se Core Module sám restartuje a automaticky se spustí nahr
 
 USB Dongle nebo Core Module v roli **gateway** komunikují s počítačem přes USB po virtuálním sériovém portu. Tato komunikace je dále na Raspberry Pi přesměrovaná službou `bch-gateway`, která tyto zprávy přepošle na MQTT brokera Mosquitto.
 
-Všechny zprávy z modulů putují přes gateway na MQTT broker. MQTT je náš páteřní systém na předávání zpráv a to z modulů i do nich.
+Všechny zprávy z modulů putují přes gateway na MQTT broker. MQTT je otevřený standard a také náš páteřní systém na předávání zpráv a to z modulů i do nich.
 Uprostřed tohoto komunikačního systému je MQTT broker, což je server na který se lze připojit z klientů. Po MQTT se předávají zprávy. Každá zpráva obsahuje **topic** (téma) a **payload** (obsah). Topic je textový řetězce a může tvořit jakoby adresářovou strukturu s použitím lomítek `/`. Payload není standardem MQTT definován a BigClown v něm posílá textově čísla, řetězce, boolean hodnoty a JSONy.
 
 Na MQTT broker se pak můžou připojovat další služby a aplikace jako Node-RED, MQTT-Spy nebo např. Android aplikace MQTT Dash.
@@ -158,7 +158,7 @@ Zde ještě flow, pokud jej chcete přímo importovat
 [{"id":"2c3b9c0.ff19564","type":"tab","label":"Flow 0","disabled":false,"info":""},{"id":"fda6ba0.64ecb48","type":"mqtt in","z":"2c3b9c0.ff19564","name":"","topic":"node/836d19821664/thermometer/0:1/temperature","qos":"2","broker":"ba3b2e25.7c8b7","x":290,"y":160,"wires":[["2dbd1aa6.284476","5ed6f4cf.a598fc"]]},{"id":"2dbd1aa6.284476","type":"debug","z":"2c3b9c0.ff19564","name":"","active":true,"console":"false","complete":"false","x":630,"y":140,"wires":[]},{"id":"5ed6f4cf.a598fc","type":"ui_gauge","z":"2c3b9c0.ff19564","name":"","group":"6f264394.22341c","order":0,"width":0,"height":0,"gtype":"gage","title":"Gauge","label":"units","format":"{{value}}","min":0,"max":10,"colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":639.1000366210938,"y":229.20001220703125,"wires":[]},{"id":"ba3b2e25.7c8b7","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"6f264394.22341c","type":"ui_group","z":"","name":"Default","tab":"255de32f.157b0c","disp":true,"width":"6"},{"id":"255de32f.157b0c","type":"ui_tab","z":"","name":"Home","icon":"dashboard"}]
 ```
 
-**TODO** Popsat demonstraci subscripe na topic se zobrazením hodnoty teploty v debug.
+**TODO** Popsat demonstraci subscribe na topic se zobrazením hodnoty teploty v debug.
 
 ## Řízení LED v závislosti na teplotě
 
@@ -174,9 +174,15 @@ Zde ještě flow, pokud jej chcete přímo importovat
 
 ## Přeměna v bateriové zařízení
 
+BigClown stavebnice je od základu navržena pro šetrný bateriový provoz. Bateriově napájené bezdrátové moduly po startu automaticky nadetekují přpojené seznory a v pravidelných intervalech jsou naměřené veličiny odesílané na gateway.
+
 **TODO** Popsat výhodu low-power a instalaci Mini Battery Module. Odpojení USB kabelu.
 
 ## Vytvoření rádiové sítě
+
+V současné době je možné vytvořit bezdrátovou topologii hvězda. Středem hvězdy je zařízení nazývané gateway, které se stará o příjem a odesílání všech zpráv z node zařízení. Gateway může být Core Module nebo USB Dongle.
+
+Použitý rádiový modul SPIRIT1 komunikuje na frekvenci 868 MHz a svým výkonem spolehlivě pokryje větší rodinný dům i jeho blízké okolí.
 
 **TODO** Stručně popsat koncept node/gateway. Výhody 868 MHz rádia (dosah/spotřeba).
 
@@ -203,16 +209,47 @@ Připojte Core Module do Raspberry Pi a přepněte Core Module do **DFU** módu 
 sudo bcf flash --dfu bigclownlabs/bcf-generic-node:firmware-battery-mini.bin
 ```
 
-Pokud budete bezdrátový node napájet např. adaptérem z Power Module, můžete použít firmware `bigclownlabs/bcf-generic-node:firmware-power-module-RGBW-144.bin`, který zprávy z gateway-e i přijímá a může ovládat barvy na LED pásku, relé a zobrazovat naměřená data i na připojeném LCD Module. Navíc je možné na LCD Module zapisovat i vlastní texty.
+Pokud budete bezdrátový node napájet např. adaptérem z Power Module, můžete použít firmware `power module` pro odpovídající typ a počet LEDek na pásku `bigclownlabs/bcf-generic-node:firmware-power-module-RGBW-144.bin`, který zprávy z gateway-e i přijímá a může ovládat barvy na LED pásku, relé a zobrazovat naměřená data i na připojeném LCD Module. Navíc je možné na LCD Module zapisovat i vlastní texty.
+
+[Release firmwarů bcf-generic-node](https://github.com/bigclownlabs/bcf-generic-node/releases)
 
 [Detailní návod k nahrávání firmware]({{< relref "doc/firmware-upload.cs.md" >}}).
 
 
 ## Spárování Core Module s USB Dongle
 
+Nyní oba moduly musíme spárovat. Pro Core Module lze navíc proces párování aktivovat a deaktivovat jednoduchým způsobem - dlouhým stiskem tlačítka `B`.
+
+USB Dongle tlačítko nemá a párování je třeba aktivovat MQTT příkazem, stejný postup však funguje i pro Core Module, pokud z nějakého důvodu například nemůžete držet tlačítko.
+
+V následujících příkazech nahraďte `{id}` IP adresou vaší Raspberry Pi. Párování se nejprve aktivuje na gateway. Pro USB Dongle nebo Core Module je třeba aktivovat proces párování posláním MQTT zprávy buď následujícím příkazem z konzole, nebo si lze udělat v Node-RED flow, který odešle tuto zprávu.
+
+```
+mosquitto_pub -t 'gateway/{id}/enrollment/start' -n
+```
+
+Po aktivaci se na gateway rozbliká červená LED. Nyní je čas vyslat párovací příkaz z remote nodu. To se provede dlouhým stiskem tlačítka `B` na remote node. Pokud máte v konzoli nebo v Node-RED subscribe na topic `#`, zobrazí se zpráva s ID nového spárovaného zařízení.
+
+Je možné párovat další node, stačí na všech dalších remote node provést dlouhý stisk tlačítka `B`.
+
+Pokud nebudete párovat další remote node, ukončete proces párování na gateway příkazem.
+
+```
+mosquitto_pub -t 'gateway/{id}/enrollment/stop' -n
+```
+
 **TODO** Možná už bude existovat webový nástroj pro párování? Uživatel si musí poznamenat ID zařízení.
 
 ## Ovládání a měření přes rádio
+
+Remote nody, které mají v názvu firmware `battery` pouze vysílají naměřená data a pak se uspí. Nedovedou zatím přijímat příkazy, protože rádio se po odeslání vždy uspává.
+
+Remote nody, které mají v názvu firmware `power module` a jsou napájeny z adaptéru nebo USB umí vysílat naměřená data na gateway, ale zároveň dovedou i přijímat příkazy z gateway. Díky tomu je možné ovládat prakticky všechny připojené moduly:
+
+  * Power Module - ovláadat relé a posílat barvy a efekty na LED pásek
+  * Relay Module - ovládat bistabilní relé příkazy pro přepnutí, nebo pro krátké pulzy
+  * LCD Module - zobrazovat na displeji texty různých velikostí na požadované souřadnice
+  * ...
 
 **TODO** Zpátky k Node-RED - s pomocí poznamenaného device ID navádět jak pub/sub do rádiového nodu.
 

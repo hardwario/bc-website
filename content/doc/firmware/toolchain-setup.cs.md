@@ -5,7 +5,7 @@ slug: instalace-nastroju
 
 V tomto článku si popíšeme instalaci nástrojů pro práci s firmware. Systém nástrojů je připravený tak, aby umožňoval kompilaci firmware na všech podporovaných operačních systémech prostřednictvím příkazové řádky jednotným způsobem.
 
-{{% note "info" %}}Orientace na příkazovou řádku má tu výhodu, že můžete firmware automaticky kompilovat na serveru.{{% /note %}}
+{{% note "info" %}}Díky použití příkazové řádky můžete také svůj firmware projekt automaticky sestavovat na serveru například při commitu na GitHub pomocí Travis CI.{{% /note %}}
 
 Na konci článku si ukážeme, jak lze vyvíjet a kompilovat firmware pomocí populárních editorů **Atom** a **Visual Studio Code**.
 

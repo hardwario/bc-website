@@ -31,7 +31,7 @@ Jednotlivé operace si ukážeme v následujících kapitolách.
 
 {{% note "info" %}}Pro BigClown projekty jsou binární obrazy firmwaru připravené v sekci **Releases** daného firmwarového GitHub repozitáře.{{% /note %}}
 
-Nástroj bcf má zabudovaný systém nápovědy. Základní seznam příkazů zobrazíte pomocí `bcf help` a detailní použití konkrétního příkladu například pomocí `bcf flash --help`.
+Nástroj **bcf** má zabudovaný systém nápovědy. Základní seznam příkazů zobrazíte pomocí `bcf help` a detailní použití konkrétního příkladu například pomocí `bcf flash --help`.
 
 ## Výpis dostupných firmware balíčků
 
@@ -73,11 +73,11 @@ Pokud si potřebujete stáhnout firmware balíček a pracovat s ním později of
 
 1. Přejděte do adresáře, kde chcete vytvořit adresář s firmware.
 
-2. Spustťe následující příkaz programu `bcf`:
+2. Spustťe následující příkaz programu **bcf**:
 
         bcf create <jméno-firmware>
 
-3. Program `bcf` naklonoval z GitHub základní skeleton firmware, který je okamžitě připravený k sestavení (viz popis níže).
+3. Program **bcf** naklonoval z GitHub základní skeleton firmware, který je okamžitě připravený k sestavení (viz popis níže).
 
 {{% note "info" %}}Výchozím bodem pro vývoj vlastního firmware je soubor `app/application.c`.{{% /note %}}
 

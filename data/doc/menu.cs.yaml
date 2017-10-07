@@ -116,8 +116,6 @@ items:
     items:
     - title: Základní přehled
       link: doc/firmware/overview.cs.md
-    - title: Základní informace
-      link: doc/firmware/basic-information.cs.md
     - title: Instalace nástrojů
       link: doc/firmware/toolchain-setup.cs.md
     - title: Používání nástrojů

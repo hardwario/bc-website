@@ -37,9 +37,11 @@ items:
   - title: Komunikace
     items:
     - title: Protokol MQTT
+      link: doc/mqtt-protocol.cs.md
     - title: Rádio 868 MHz
     - title: Rádio Sigfox
     - title: Rozhraní USB
+      link: doc/usb-connection.cs.md
   - title: Integrace
     items:
       - title: Automatizace pomocí Node-RED
@@ -114,6 +116,8 @@ items:
     items:
     - title: Základní přehled
       link: doc/firmware/overview.cs.md
+    - title: Základní informace
+      link: doc/firmware/basic-information.cs.md
     - title: Instalace nástrojů
       link: doc/firmware/toolchain-setup.cs.md
     - title: Používání nástrojů

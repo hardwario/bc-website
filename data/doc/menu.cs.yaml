@@ -112,10 +112,12 @@ items:
       link: doc/hardware/usb-dongle.cs.md
   - title: Firmware
     items:
-    - title: Základní informace
-    - title: Vývojové prostředí
-    - title: Kompilace firmware
-    - title: Nahrávání firmware
+    - title: Základní přehled
+      link: doc/firmware/overview.cs.md
+    - title: Instalace nástrojů
+      link: doc/firmware/toolchain-setup.cs.md
+    - title: Používání nástrojů
+      link: doc/firmware/toolchain-guide.cs.md
     - title: Ladění firmware
     - title: Knihovna SDK
     - title: Časování a plánovač

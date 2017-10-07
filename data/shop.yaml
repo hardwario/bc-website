@@ -32,6 +32,9 @@ products:
   - title: Lux Meter Tag
     en: https://shop.bigclown.com/products/lux-meter-tag
     cs: https://obchod.bigclown.cz/products/lux-meter-tag
+  - title: MicroSDHC Memory Card 8GB
+    en: https://shop.bigclown.com/products/apacer-industrial-microsdhc-card-4gb
+    cs: https://obchod.bigclown.cz/products/apacer-industrial-microsdhc-card-4gb
   - title: Mini Battery Module
     en: https://shop.bigclown.com/products/mini-battery-module
     cs: https://obchod.bigclown.cz/products/mini-battery-module
@@ -50,6 +53,9 @@ products:
   - title: Relay Module
     en: https://shop.bigclown.com/products/relay-module
     cs: https://obchod.bigclown.cz/products/relay-module
+  - title: Raspberry Pi
+    en: https://shop.bigclown.com/products/raspberry-pi-3-set
+    cs: https://obchod.bigclown.cz/products/raspberry-pi-3-set
   - title: Sensor Module
     en: https://shop.bigclown.com/products/sensor-module
     cs: https://obchod.bigclown.cz/products/sensor-module

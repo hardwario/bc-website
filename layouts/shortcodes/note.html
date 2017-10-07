@@ -10,7 +10,7 @@
       {{- if (index .Params 1) -}}
       <strong>{{- .Get 1 -}}</strong><br>
       {{- end -}}
-      {{- .Inner -}}
+      {{- .Inner | markdownify -}}
     {{- else -}}
       {{- .Get 1 -}}
     {{- end -}}

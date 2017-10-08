@@ -3,7 +3,7 @@ title: Používání nástrojů pro firmware
 slug: pouzivani-nastroju
 ---
 
-{{% note "danger" %}}Tento dokument předpokládá, že máte nainstalované potřebné nástroje dle dokumentu [Instalace nástrojů pro firmware]({{< relref "doc/firmware/toolchain-setup.cs.md" >}}).{{% /note %}}
+{{% note "danger" %}}Tento článek předpokládá, že máte nainstalované potřebné nástroje dle článku [**Instalace nástrojů pro firmware**]({{< relref "doc/firmware/toolchain-setup.cs.md" >}}).{{% /note %}}
 
 {{% note "warning" %}}Všechny níže uvedené postupy předpokládají práci s aplikací **BigClown Toolchain** ve Windows, případně s aplikací **Terminal** v macOS či Ubuntu.{{% /note %}}
 
@@ -49,7 +49,7 @@ Pro hledání mezi dostupnými balíčky z popisu nebo názvu použijte příkaz
 
 ## Nahrání firmware
 
-{{% note "warning" %}}V případě, že potřebujete náhrat firmware do Core Module, je nutné ho nejdříve [uvést do DFU režimu]({{< relref "#uvedení-core-module-do-dfu-režimu" >}}). Dále je nutné příkaz pro nahrávání uvádět ve tvaru `bcf flash --dfu`.{{% /note %}}
+{{% note "warning" %}}V případě, že potřebujete náhrat firmware do Core Module, je nutné ho nejdříve [**uvést do DFU režimu**]({{< relref "#uvedení-core-module-do-dfu-režimu" >}}). Dále je nutné příkaz pro nahrávání uvádět ve tvaru `bcf flash --dfu`.{{% /note %}}
 
 Nahrání firmware je možné příkazem `bcf flash`, a to ze 3 různých zdrojů:
 

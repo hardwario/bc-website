@@ -7,6 +7,7 @@ title = "BigClown"
 
 [blackfriday]
 fractions = false
+smartDashes = false
 
 [Languages]
 [Languages.en]

@@ -3,7 +3,7 @@ title: Firmware upload
 slug: firmware-upload
 ---
 
-There are several ways to upload firmware to {{<shop} Core Module ">}}. Let's start with the simple and later on we will extend the description. The options vary according to the version {{<shop "Core Module">}}, or if it is SoM Cloony {{<shop "Cloony">}}.
+There are several ways to upload firmware to {{<shop "Core Module ">}}. Let's start with the simple and later on we will extend the description. The options vary according to the version {{<shop "Core Module">}}, or if it is SoM Cloony {{<shop "Cloony">}}.
 
 ## Python utility `bcf`
 
@@ -98,7 +98,7 @@ bigclownlabs/bcf-usb-gateway:firmware.bin:v1.3.0
 
 ### Flashing the device
 
-When you have readily available firmware image you can start flashing the devices ({{<shop} Core Module ">}}).
+When you have readily available firmware image you can start flashing the devices ({{<shop "Core Module ">}}).
 
 **TODO** Jak přehledně vysvětlit kdy je potřeba použít DFU, kdy FTDI UART flash?? Jak do toho zakomponovat core module s nativním usb, core module s FTDI a cloony s externím převodníkem?
 

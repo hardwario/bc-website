@@ -1,109 +1,148 @@
 items:
-  - title: Přehled
-  - title: Začínáme
+  - title: "Overview"
+  - title: "Basics"
     items:
-    - title: Základní informace
-    - title: Tutoriál
-    - title: Od projektu k realizaci
-    - title: Sestavování projektů
-    - title: Přehled modulů
-    - title: Integrace do služeb
-    - title: GitHub repozitáře
-    - title: Kde hledat informace
-  - title: Projekty
+    - title: "Getting Started"
+    - title: "Quick Tutorial"
+      link: "doc/basics/quick-tutorial.en.md"
+    - title: "Project Workflow"
+    - title: "Module Overview"
+    - title: "Service Integrations"
+    - title: "GitHub Repositories"
+      link: "doc/basics/github-repositories.en.md"
+    - title: "More Resources"
+  - title: "Projects"
     items:
-    - title: Sigfox environmentální senzor
-    - title: Sigfox tlačítko
-    - title: Sigfox detektor pohybu
-    - title: Sigfox CO2 senzor
-    - title: Sigfox monitor spotřeby
-    - title: Sigfox detektor záplavy
-    - title: Sigfox detektor otřesu
-    - title: Chytře řízený LED pásek
-    - title: Bezdrátový LCD termostat
-  - title: Návody
+    - title: "Wireless Climate Monitor"
+      link: "doc/projects/wireless-climate-monitor.en.md"
+    - title: "Wireless Motion Detector"
+      link: "doc/projects/wireless-motion-detector.en.md"
+    - title: "Wireless LCD Thermostat"
+      link: "doc/projects/wireless-lcd-thermostat.en.md"
+    - title: "Wireless Push Button"
+      link: "doc/projects/wireless-push-button.en.md"
+    - title: "Wireless Flood Detector"
+      link: "doc/projects/wireless-flood-detector.en.md"
+    - title: "Wireless CO2 Monitor"
+      link: "doc/projects/wireless-co2-monitor.en.md"
+    - title: "Sigfox Motion Detector"
+      link: "doc/projects/sigfox-motion-detector.en.md"
+  - title: "Tutorials"
     items:
-    - title: Instalace Raspberry Pi
-    - title: Přihlášení k Raspberry Pi
-    - title: Instalace Turris Omnia
-    - title: Aplikace na Heroku
-  - title: Komunikace
+    - title: "Raspberry Pi Installation"
+      link: "doc/tutorials/raspberry-pi-installation.en.md"
+    - title: "Raspberry Pi Login"
+      link: "doc/tutorials/raspberry-pi-login.en.md"
+    - title: "Turris Omnia Installation"
+    - title: "Application on Heroku"
+    - title: "Firmware upload"
+      link: "doc/tutorials/firmware-upload.en.md"
+  - title: "Interfaces"
     items:
-    - title: Protokol MQTT
-    - title: Rádio 868 MHz
-    - title: Rádio Sigfox
-    - title: Rozhraní USB
-  - title: Integrace
+    - title: "MQTT Protocol"
+      link: "doc/interfaces/mqtt-protocol.en.md"
+    - title: "Sub-GHz Radio"
+    - title: "Sigfox Radio"
+    - title: "USB Interface"
+      link: "doc/interfaces/usb-interface.en.md"
+  - title: "Integrations"
     items:
-      - title: Automatizace pomocí Node-RED
-      - title: Vizualizace dat pomocí Grafana
-      - title: Mobilní aplikace Blynk
-      - title: Služba MySigfox
-      - title: Služba Motion Sigfox
-      - title: Služba Climate Sigfox
-  - title: Hardware
+      - title: "Node-RED for Automation"
+      - title: "Grafana for Visualization"
+      - title: "Blynk for Mobile Application"
+      - title: "Cloud Service MySigfox"
+      - title: "Cloud Service Motion Sigfox"
+      - title: "Cloud Service Climate Sigfox"
+  - title: "Hardware"
     items:
-    - title: Základní informace
-    - title: Konektory a signály
-    - title: Řízení napájení
-    - title: Odkaz práce ve firmware
-    - title: Adresy na I²C sběrnici
-    - title: Popis k 1-Wire Module
-    - title: Popis k Barometer Tag
-    - title: Popis k Base Module
-    - title: Popis k Battery Module
-    - title: Popis k Breadboard Module
-    - title: Popis k Button Module
-    - title: Popis k Climate Module
-    - title: Popis k CO2 Module
-    - title: Popis k Core Module
-    - title: Popis k Cover Module
-    - title: Popis k Encoder Module
-    - title: Popis k Humidity Tag
-    - title: Popis k LCD Module
-    - title: Popis k Lux Meter Tag
-    - title: Popis k Mini Battery Module
-    - title: Popis k Mini Cover Module
-    - title: Popis k NFC Tag
-    - title: Popis k PIR Module
-    - title: Popis k Power Module
-    - title: Popis k Probe Module
-    - title: Popis k Relay Module
-    - title: Popis k Sensor Module
-    - title: Popis k Sigfox Module
-    - title: Popis k Tag Module
-    - title: Popis k Temperature Tag
-    - title: Popis k Touch Tag
-    - title: Popis k USB Dongle
+    - title: "Basic Principles"
+    - title: "Headers and Signals"
+    - title: "Power Management"
+    - title: "I²C Address Space"
+      link: "doc/hardware/i2c-address-space.en.md"
+    - title: "About 1-Wire Module"
+      link: "doc/hardware/about-1-wire-module.en.md"
+    - title: "About Barometer Tag"
+      link: "doc/hardware/about-barometer-tag.en.md"
+    - title: "About Base Module"
+      link: "doc/hardware/about-base-module.en.md"
+    - title: "About Battery Module"
+      link: "doc/hardware/about-battery-module.en.md"
+    - title: "About Breadboard Module"
+      link: "doc/hardware/about-breadboard-module.en.md"
+    - title: "About Button Module"
+      link: "doc/hardware/about-button-module.en.md"
+    - title: "About Climate Module"
+      link: "doc/hardware/about-climate-module.en.md"
+    - title: "About CO2 Module"
+      link: "doc/hardware/about-co2-module.en.md"
+    - title: "About Core Module"
+      link: "doc/hardware/about-core-module.en.md"
+    - title: "About Cover Module"
+      link: "doc/hardware/about-cover-module.en.md"
+    - title: "About Encoder Module"
+      link: "doc/hardware/about-encoder-module.en.md"
+    - title: "About Humidity Tag"
+      link: "doc/hardware/about-humidity-tag.en.md"
+    - title: "About LCD Module"
+      link: "doc/hardware/about-lcd-module.en.md"
+    - title: "About Lux Meter Tag"
+      link: "doc/hardware/about-lux-meter-tag.en.md"
+    - title: "About Mini Battery Module"
+      link: "doc/hardware/about-mini-battery-module.en.md"
+    - title: "About Mini Cover Module"
+      link: "doc/hardware/about-mini-cover-module.en.md"
+    - title: "About NFC Tag"
+      link: "doc/hardware/about-nfc-tag.en.md"
+    - title: "About PIR Module"
+      link: "doc/hardware/about-pir-module.en.md"
+    - title: "About Power Module"
+      link: "doc/hardware/about-power-module.en.md"
+    - title: "About Probe Module"
+      link: "doc/hardware/about-probe-module.en.md"
+    - title: "About Relay Module"
+      link: "doc/hardware/about-relay-module.en.md"
+    - title: "About Sensor Module"
+      link: "doc/hardware/about-sensor-module.en.md"
+    - title: "About Sigfox Module"
+      link: "doc/hardware/about-sigfox-module.en.md"
+    - title: "About Tag Module"
+      link: "doc/hardware/about-tag-module.en.md"
+    - title: "About Temperature Tag"
+      link: "doc/hardware/about-temperature-tag.en.md"
+    - title: "About Touch Tag"
+      link: "doc/hardware/about-touch-tag.en.md"
+    - title: "About USB Dongle"
+      link: "doc/hardware/about-usb-dongle.en.md"
   - title: Firmware
     items:
-    - title: Základní přehled
-    - title: Instalace nástrojů
-      link: doc/firmware/toolchain-setup.en.md
-    - title: Používání nástrojů
-      link: doc/firmware/toolchain-guide.en.md
-    - title: Ladění firmware
-    - title: Knihovna SDK
-    - title: Časování a plánovač
-    - title: Jak na GPIO piny
-    - title: Jak na LED diodou
-    - title: Jak na tlačítko
-    - title: Jak na UART rozhraní
-    - title: Jak na I2C sběrnici
-    - title: Jak na SPI sběrnici
-    - title: Jak na A/D převodník
-    - title: Jak na D/A převodník
-    - title: Jak na teplotní senzor
-    - title: Jak na akcelerometr
-    - title: Jak na USB konzoli
-    - title: Jak na 868 MHz rádio
-    - title: Jak na LED pásek
-    - title: Jak na 1-Wire rozhraní
-  - title: Dokumentace
+    - title: "Basic Overview"
+      link: "doc/firmware/basic-overview.en.md"
+    - title: "Toolchain Setup"
+      link: "doc/firmware/toolchain-setup.en.md"
+    - title: "Toolchain Guide"
+      link: "doc/firmware/toolchain-guide.en.md"
+    - title: "Debugging"
+    - title: "SDK Framework"
+    - title: "Timing and Scheduler"
+    - title: "How to: GPIO Pins"
+    - title: "How to: LED Diode"
+    - title: "How to: Push Button"
+    - title: "How to: UART Interface"
+    - title: "How to: I²C Bus"
+    - title: "How to: SPI Bus"
+    - title: "How to: A/D Converter"
+    - title: "How to: D/A Converter"
+    - title: "How to: Temperature Sensor"
+    - title: "How to: Accelerometer"
+    - title: "How to: USB Console"
+    - title: "How to: 868 MHz Radio"
+    - title: "How to: Smart LED Strip"
+    - title: "How to: 1-Wire Interface"
+  - title: "Documentation"
     items:
-    - title: Přispívání
-    - title: Technologie
-    - title: Další podpora
-  - title: Odkazy
-    items:
-    - title: Stará dokumentace
+    - title: "Contributing"
+      link: "doc/documentation/contributing.en.md"
+    - title: "Technologies"
+    - title: "Legacy Documentation"
+      link: "doc/documentation/legacy.en.md"

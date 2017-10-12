@@ -23,9 +23,9 @@ Volitelně pak pro bateriovou bezdrátovou síť:
 
 ## Instalace Raspberry Pi
 
-Nejjednodušší způsob jak začít je [stáhnout si připravený BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases). Tento obraz má již předinstalované [potřebné služby a nástroje]({{< relref "doc/raspberry-pi-installation.cs.md#odlišnosti-od-originální-distribuce-raspbian" >}}). Obsahuje USB gateway, MQTT broker, Node-Red a flashovací utilitu **bcf**. Obraz nahrajete na kartu z pomocí příkazu `dd` nebo `Win32DiskImager`. Můžete však použít i oficiální image a balíčky si sami doinstalovat.
+Nejjednodušší způsob jak začít je [stáhnout si připravený BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases). Tento obraz má již předinstalované [potřebné služby a nástroje]({{< relref "doc/tutorials/raspberry-pi-installation.en.md#odlišnosti-od-originální-distribuce-raspbian" >}}). Obsahuje USB gateway, MQTT broker, Node-Red a flashovací utilitu **bcf**. Obraz nahrajete na kartu z pomocí příkazu `dd` nebo `Win32DiskImager`. Můžete však použít i oficiální image a balíčky si sami doinstalovat.
 
-[Detailní návod zprovoznění Raspberry Pi]({{< relref "doc/raspberry-pi-installation.cs.md" >}})
+[Detailní návod zprovoznění Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}})
 
 ## Připojení k Raspberry Pi
 
@@ -37,7 +37,7 @@ Pokud se Raspberry Pi nehlásí, je buď něco špatně se sítí nebo vás syst
 
 Pro přihlášení použijte příkaz `ssh pi@hub.localhost` nebo na Windows program **putty**.
 
-[Detailní návod přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}})
+[Detailní návod přihlášení k Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}})
 
 ## Nahrání firmware
 
@@ -53,7 +53,7 @@ sudo bcf flash --dfu bigclownlabs/bcf-usb-gateway:firmware.bin
 
 Po naprogramování se Core Module sám restartuje a automaticky se spustí nahraný firmware.
 
-[Detailní návod k nahrávání firmware]({{< relref "doc/firmware-upload.cs.md" >}}).
+[Detailní návod k nahrávání firmware]({{< relref "doc/tutorials/firmware-upload.en.md" >}}).
 
 ## Komunikace mezi USB a MQTT
 
@@ -231,7 +231,7 @@ Pokud budete bezdrátový node napájet např. adaptérem z Power Module, může
 
 [Release firmwarů bcf-generic-node](https://github.com/bigclownlabs/bcf-generic-node/releases)
 
-[Detailní návod k nahrávání firmware]({{< relref "doc/firmware-upload.cs.md" >}}).
+[Detailní návod k nahrávání firmware]({{< relref "doc/tutorials/firmware-upload.en.md" >}}).
 
 
 ## Spárování Core Module s USB Dongle

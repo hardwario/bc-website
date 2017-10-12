@@ -1,6 +1,5 @@
 ---
-title: Přispívání do dokumentace
-slug: prispivani-do-dokumentace
+title: Contributing
 ---
 
 Do dokumentace je možné svobodně přispívat formou pull-requestů na GitHub, případně je možné pro drobné úpravy využít tlačítka `EDIT THIS PAGE` v záhlaví každého dokumentu. Zdrojový repozitář na GitHub se nazývá [bc-website](git@github.com:bigclownlabs/bc-website.git). Vlastní obsah dokumentace je umístěn v adresáři `content/doc`.

@@ -1,6 +1,5 @@
 ---
-title: Základní přehled
-slug: zakladni-prehled
+title: Basic Overview
 ---
 
 V této sekci si vysvětlíme základní filozofii firmware konceptů v systému BigClown. Naučíme se instalovat a používat nástroje pro práci s firmware. Formou praktických příkladů si ukážeme, jak používat jednotlivé periferie a API z **BigClown SDK**.
@@ -17,7 +16,7 @@ Firmware je implementovaný **v jazyce C**, což je obecně přijímaný standar
 
 {{% note "info" %}}Efektivní využítí hardwarových prostředků je  důležitý faktor pro vývoj zařízení s nízkou spotřebou, což je primární doména ekosystému BigClown.{{% /note %}}
 
-BigClown klade velký důraz na přenositelnost a možnost volby vývojového prostředí. Podporovaný operační systém je Windows, macOS a Ubuntu. Více se dozvíte v článku [**Instalace nástrojů**]({{< relref "doc/firmware/toolchain-setup.cs.md">}}). Jejich používání je pak popsáno v článku [**Používání nástrojů**]({{< relref "doc/firmware/toolchain-guide.cs.md">}}).
+BigClown klade velký důraz na přenositelnost a možnost volby vývojového prostředí. Podporovaný operační systém je Windows, macOS a Ubuntu. Více se dozvíte v článku [**Instalace nástrojů**]({{< relref "doc/firmware/toolchain-setup.en.md">}}). Jejich používání je pak popsáno v článku [**Používání nástrojů**]({{< relref "doc/firmware/toolchain-guide.en.md">}}).
 
 ## Představení SDK
 

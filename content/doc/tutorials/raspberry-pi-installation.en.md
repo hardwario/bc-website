@@ -56,7 +56,7 @@ V následujících krocích si připravíme MicroSD kartu pro Raspberry Pi. Pře
 
 7. Připojte USB napájecí adaptér k Raspberry Pi.
 
-8. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}}).
+8. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}}).
 
 ## Návod pro macOS
 
@@ -102,7 +102,7 @@ V následujících krocích si připravíme MicroSD kartu pro Raspberry Pi. Pře
 
 11. Připojte USB napájecí adaptér k Raspberry Pi.
 
-12. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}}).
+12. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}}).
 
 ## Návod pro Ubuntu
 
@@ -148,7 +148,7 @@ V následujících krocích si připravíme MicroSD kartu pro Raspberry Pi. Pře
 
 11. Připojte USB napájecí adaptér k Raspberry Pi.
 
-12. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}}).
+12. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}}).
 
 ## Odlišnosti od originální distribuce Raspbian
 
@@ -183,7 +183,7 @@ Toto je stručný seznam odlišností:
 
 {{% note "warning" %}}Následující postup aplikujte pouze v případě, že používáte Raspberry Pi, na kterém běží originální distribuce Raspbian. Jedná se o alternativní způsob instalace k předchozímu postupu.{{% /note %}}
 
-1. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/raspberry-pi-login.cs.md" >}}).
+1. Přihlašte se pomocí SSH do Raspberry Pi. Postup tohoto kroku je popsaný v návodu [Přihlášení k Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}}).
 
 2. Nainstalujte tyto závislosti:
 

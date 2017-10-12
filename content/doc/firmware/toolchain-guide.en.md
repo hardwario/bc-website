@@ -1,11 +1,10 @@
 ---
-title: Firmware Toolchain Guide
-slug: toolchain-guide
+title: Toolchain Guide
 ---
 
-{{% note "danger" %}}This document assumes that you have necessary tools installed according to the document [**Firmware Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.en.md" >}}).{{% /note %}}
+{{% note "danger" %}}This document assumes that you have necessary tools installed according to the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.en.md" >}}).{{% /note %}}
 
-{{% note "warning" %}}All of the steps below assume work with **BigClown Toolchain** in Windows or with **Terminal** in macOS or Ubuntu.{{% /note %}}
+{{% note "warning" %}}All of the steps below assume work with **BigClown Toolchain** in Windows or with the **Terminal** application in macOS or Ubuntu.{{% /note %}}
 
 ## Program BigClown Firmware Tool
 
@@ -33,23 +32,23 @@ We will show the individual operations in the following chapters.
 
 The **bcf** tool has a built-in help system. You can see the basic list of commands by using `bcf help` and detailed usage of a given command using e.g. `bcf flash --help`.
 
-## Listing of available firmware packages
+## Firmware Package Listing
 
-To update the list of available firmware packages, use the command:
+Use this command to update the list of available firmware packages:
 
     bcf update
 
-For a listing of available firmware packages, use the command:
+Use this command to list the available firmware packages:
 
     bcf list
 
-Use this command to search for available packages in their title or description:
+Use this command to search in the available packages (in their title and description):
 
     bcf search <searched term>
 
-## Firmware upload
+## Firmware Upload
 
-{{% note "warning" %}}In case you need to upload the firmware into the Core Module, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-the-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash --dfu` format.{{% /note %}}
+{{% note "warning" %}}In case you need to upload the firmware into the Core Module, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash --dfu` format.{{% /note %}}
 
 Firmware upload can be done using the `bcf flash` command. The firmware can be obtained from 3 different sources:
 
@@ -69,7 +68,7 @@ If you need to download the firmware package and work with it later offline, you
 
         bcf pull bigclownlabs/bcf-sigfox-co2-monitor:firmware.bin:v1.0.0
 
-## Create a blank firmware project
+## Create Blank Firmware Project
 
 1. Go to the directory where you want to create a firmware directory.
 
@@ -81,7 +80,7 @@ If you need to download the firmware package and work with it later offline, you
 
 {{% note "info" %}}The starting point for developing your own firmware is the file `app/application.c`.{{% /note %}}
 
-## Firmware build
+## Build Firmware
 
 Firmware build is done using the traditional traditional build system **GNU Make**, which follows the recipe given in the file `Makefile` (found in the firmware root directory).
 
@@ -129,7 +128,7 @@ You can build the firmware by following these steps:
 
     This command generates the file `out/release/firmware.bin`.
 
-## Switching Core Module into the DFU mode
+## Switching Core Module into DFU Mode
 
 To program the Core Module, we must first enter the DFU mode.
 
@@ -148,3 +147,7 @@ We can do this by following this procedure:
 4. Release the **BOOT** button.
 
 5. Now the Core Module is connected to your computer as a DFU USB device and is ready for programming.
+
+## Related Documents
+
+* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.en.md" >}})

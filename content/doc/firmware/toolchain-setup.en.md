@@ -1,11 +1,10 @@
 ---
-title: Firmware Toolchain Setup
-slug: toolchain-setup
+title: Toolchain Setup
 ---
 
-In this document we will describe the installation of tools for working with firmware - the firmware toolchain. The toolchain is designed to allow firmware operations on all the supported operating systems through a command line in a **uniform manner**.
+In this document we will describe the installation of tools for working with firmware - the firmware toolchain. The toolchain is designed to allow the firmware operations on all the supported operating systems using a command line in a **uniform manner**.
 
-{{% note "info" %}}Orientation on command line interface has the advantage to build your firmware automatically on server, e.g. on commit to GitHub via Travis CI continuous integration service.{{% /note %}}
+{{% note "info" %}}Orientation on a command line interface has the advantage to build your firmware automatically on server, e.g. on commit to GitHub via Travis CI continuous integration service.{{% /note %}}
 
 The firmware toolchain consists of several fundamental components:
 
@@ -13,7 +12,7 @@ The firmware toolchain consists of several fundamental components:
 
 * Version control system **Git**
 
-* Scripting language **Python 3**
+* Interpret for scripting language **Python 3**
 
 * DFU upload utility **dfu-util**
 
@@ -45,31 +44,35 @@ To upgrade an existing installation, go to one of the supported platforms:
 
     {{% download "Download from GitHub" "https://github.com/bigclownlabs/bch-windows-toolchain/releases" %}}
 
-2. Spusťte stažený instalátor a zvolte cílové umístění:
+2. Launch the downloaded installer and choose the destination directory:
 
     ![](windows-location.png)
 
-3. Zvolte konfiguraci proměnné prostředí **Path** (doporučujeme ponechat výchozí nastavení) a spusťte instalaci:
+3. Now you can adjust the desired **Path** environment variable (we recommend to leave the default settings if in doubt) and proceed with the installation:
 
     ![](windows-paths.png)
 
-4. V průběhu instalace budete vyzváni k nainstalování ovladačů FTDI, nainstalujte je:
+4. The FTDI driver setup will launch automatically during the installation - install it:
 
     ![](windows-ftdi.png)
 
-5. Po dokončení instalace spusťte **BigClown Toolchain** jedním ze 3 způsobů:
+5. After finishing the installation, lauch the **BigClown Toolchain** using one these 3 ways:
 
     * From the **Desktop**
 
     * From the **Start** menu
 
-    * From the **context menu** on the selected directory (using right click)
+    * From the **context menu** on the selected directory (using a right click)
 
         {{% note "info" %}}The advantage of the context menu is to open the **BigClown Toolchain** directly in the directory location you need to work with.{{% /note %}}
 
     ![](windows-toolchain.png)
 
-6. Pokračujte na článek [**Používání nástrojů**]({{< relref "doc/firmware/toolchain-guide.cs.md" >}}), případně na integraci s editorem [**Atom**]({{< relref "#integrace-s-editorem-atom" >}}) nebo [**Visual Studio Code**]({{< relref "#integrace-s-editorem-visual-studio-code" >}}).
+6. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+
+    * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
+
+    * [**Integration with Visual Studio Code**]({{< relref "#integration-with-visual-studio-code" >}})
 
 ## Update on Windows
 
@@ -85,31 +88,35 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 1. Open the application **Terminal**.
 
-2. Nainstalujte si [**Homebrew**](https://brew.sh) (pokud jej ještě nemáte).
+2. Install [**Homebrew**](https://brew.sh) (unless you already have it).
 
-    {{% note "info" %}}Homebrew je balíčkovací systém a ekosystém balíčků pro macOS.{{% /note %}}
+    {{% note "info" %}}Homebrew is the package management system and the ecosystem of packages for macOS.{{% /note %}}
 
-3. Nainstalujte balíček kompilátoru **GCC ARM Embedded**:
+3. Install **GCC ARM Embedded**:
 
         brew install caskroom/cask/gcc-arm-embedded
 
-4. Nainstalujte balíček verzovacího systému **Git**:
+4. Install **Git**:
 
         brew install git
 
-5. Nainstalujte balíček skriptovacího jazyka **Python 3**:
+5. Install **Python 3**:
 
         brew install python3
 
-6. Nainstalujte balíček DFU nahrávací utility **dfu-util**:
+6. Install **dfu-util**:
 
         brew install dfu-util
 
-7. Nainstalujte firmware utilitu **BigClown Firmware Tool**:
+7. Install **BigClown Firmware Tool**:
 
         sudo pip3 install bcf
 
-8. Pokračujte na článek [**Používání nástrojů**]({{< relref "doc/firmware/toolchain-guide.cs.md" >}}), případně na integraci s editorem [**Atom**]({{< relref "#integrace-s-editorem-atom" >}}) nebo [**Visual Studio Code**]({{< relref "#integrace-s-editorem-visual-studio-code" >}}).
+8. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+
+    * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
+
+    * [**Integration with Visual Studio Code**]({{< relref "#integration-with-visual-studio-code" >}})
 
 ## Update on macOS
 
@@ -127,35 +134,39 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 1. Open the application **Terminal**.
 
-2. Přidejte následující PPA do seznamu repozitářů:
+2. Add the following PPA to the list of available repositories:
 
         sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
 
-3. Zaktualizujte index dostupných balíčků:
+3. Update the index of the available packages:
 
         sudo apt update
 
-4. Nainstalujte balíček kompilátoru **GCC ARM Embedded**:
+4. Install **GCC ARM Embedded**:
 
         sudo apt install gcc-arm-embedded
 
-5. Nainstalujte balíček verzovacího systému **Git**:
+5. Install **Git**:
 
         sudo apt install git
 
-6. Nainstalujte balíček skriptovacího jazyka **Python 3**:
+6. Install **Python 3**:
 
         sudo apt install python3
 
-7. Nainstalujte balíček DFU nahrávací utility **dfu-util**:
+7. Install **dfu-util**:
 
         sudo apt install dfu-util
 
-8. Nainstalujte firmware utilitu **BigClown Firmware Tool**:
+8. Install **BigClown Firmware Tool**:
 
         sudo pip3 install bcf
 
-9. Pokračujte na článek [**Používání nástrojů**]({{< relref "doc/firmware/toolchain-guide.cs.md" >}}), případně na integraci s editorem [**Atom**]({{< relref "#integrace-s-editorem-atom" >}}) nebo [**Visual Studio Code**]({{< relref "#integrace-s-editorem-visual-studio-code" >}}).
+9. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+
+    * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
+
+    * [**Integration with Visual Studio Code**]({{< relref "#integration-with-visual-studio-code" >}})
 
 ## Update on Ubuntu
 
@@ -167,16 +178,14 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         sudo pip3 install --upgrade bcf
 
-## Integration with Atom editor
+## Integration with Atom
 
 **TODO**
 
-## Integration with Visual Studio Code editor
+## Integration with Visual Studio Code
 
 **TODO**
 
-## Summary
+## Related Documents
 
-{{% note "success" %}}V tomto článku jsme si popsali instalaci nástrojů pro firmware a způsob jejich aktualizace. Dále jsme si ukázali možnost integraci nástrojů s populárními editory jako je **Atom** nebo **Visual Studio Code**.{{% /note %}}
-
-Pokračujte na článek [**Používání nástrojů**]({{< relref "doc/firmware/toolchain-guide.cs.md" >}}).
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}})

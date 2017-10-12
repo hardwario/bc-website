@@ -7,7 +7,7 @@ Tento návod popisuje způsob přihlášení k Raspberry Pi pomocí vzdáleného
 
 {{% note "info" %}}Zkratka SSH znamená "Secure Shell". Zjednodušeně to lze vnímat jako zabezpečené připojení do příkazové řádky Raspberry Pi po síti.{{% /note %}}
 
-Pokud ještě nemáte nainstalované Raspberry Pi, přejděte nejdříve do návodu [Instalace Raspberry Pi]({{< relref "doc/raspberry-pi-installation.cs.md" >}}).
+Pokud ještě nemáte nainstalované Raspberry Pi, přejděte nejdříve do návodu [Instalace Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}}).
 
 Přihlásit se lze 2 způsoby:
 

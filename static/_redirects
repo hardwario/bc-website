@@ -1,2 +1,8 @@
-http://test.bigclown.com/* https://soon.bigclown.com/ 301!
-https://test.bigclown.com/* https://soon.bigclown.com/ 301!
+http://doc.bigclown.com/* https://doc.bigclown.cz/ 302!
+https://doc.bigclown.com/* https://doc.bigclown.cz/ 302!
+http://bigclown.com/* https://soon.bigclown.com/ 302!
+https://bigclown.com/* https://soon.bigclown.com/ 302!
+http://www.bigclown.com/* https://soon.bigclown.com/ 302!
+https://www.bigclown.com/* https://soon.bigclown.com/ 302!
+http://lp.bigclown.com/* https://soon.bigclown.com/ 301!
+https://lp.bigclown.com/* https://soon.bigclown.com/ 301!

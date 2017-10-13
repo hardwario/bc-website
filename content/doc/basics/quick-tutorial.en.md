@@ -1,87 +1,95 @@
 ---
-title: Tutoriál
+title: Quick tutorial
 slug: tutorial
 ---
 
-Tento dokument slouží jako praktická ukázka práce s IoT sadou BigClown. Ukážeme si, jak lze v **Raspberry Pi** vyčítat teplotu z **Core Module**, ovládat LED diodu, měřit relativní vlhkost vzduchu z **Humidity Tag**, řídit malý spotřebič pomocí **Relay Module** nebo vytvořit rádiovou síť prostřednictvím **USB Dongle**. Měření i ovládání je demonstrované pomocí nástroje **Node-RED**, který běží v **Raspberry Pi** a umožňuje uživateli snadnou automatizaci úloh přes webové rozhraní.
+This document is a practical guide of using BigClown IoT system. We will guide you how  **Raspberry Pi** can read temperature from **Core Module**, control the LED, measure relative humidity from **Humidity Tag**, control small electronic devices using **Relay Module** or create wireless network using **USB Dongle**. Measurement and control is configurable by user-friendy **Node-RED** web application which is running inside the **Raspberry Pi** and allows an easy task automation in your web browser.
+<!--
+Tento dokument slouží jako praktická ukázka práce s IoT sadou BigClown. Ukážeme si, jak lze v **Raspberry Pi** vyčítat teplotu z **Core Module**, ovládat LED diodu, měřit relativní vlhkost vzduchu z **Humidity Tag**, řídit malý spotřebič pomocí **Relay Module** nebo vytvořit rádiovou síť prostřednictvím **USB Dongle**. Měření i ovládání je demonstrované pomocí nástroje **Node-RED**, který běží v **Raspberry Pi** a umožňuje uživateli snadnou automatizaci úloh přes webové rozhraní.-->
 
+This tutorial is divided to several chapters. We suggest you to study them one by one. The subsequent chapter builds on the knowledge of the previous chapters. At the end of the every chapter there is a link to more detailed instructions, which can help you in case of confusion.
+<!--
 Tento tutoriál je rozdělený do několika kapitol. Doporučujeme je prostudovat postupně, protože následující kapitoly staví na znalostech z předchozích kapitol. Na konci téměř každé kapitoly je odkaz na detailní postup, který vám pomůže v případě nejasností.
-
+-->
+First we will demonstrate basic functionality without a wireless network. We use just a single **Core Module** connected to the **Raspberry Pi** by a USB cable.
+<!--
 Nejprve si pro jednoduchost předvedeme základní funkčnost bez rádia s jedním Core Module připojeným USB kabelem do Raspberry Pi. Všechny získané znalosti pak lze bez rozdílu použít i u bezdrátové sítě, která je popsána v pozdějších kapitolách tohoto tutoriálu.
+-->
 
-Co budeme potřebovat:
+What would we need:
 
   * {{< shop "Raspberry Pi" >}} + {{< shop "MicroSDHC Memory Card 8GB" >}}
   * {{< shop "Core Module" >}}
 
-Volitelně pak pro bateriovou bezdrátovou síť:
+Optionally for wireless network you need:
 
-  * {{< shop "USB Dongle" >}} (nebo druhý {{< shop "Core Module" >}})
+  * {{< shop "USB Dongle" >}} (or second one {{< shop "Core Module" >}})
   * {{< shop "Mini Battery Module" >}}
   * {{< shop "Humidity Tag" >}}
   * {{< shop "Relay Module" >}}
 
-## Instalace Raspberry Pi
+## Raspberry Pi installation
 
-Nejjednodušší způsob jak začít je [stáhnout si připravený BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases). Tento obraz má již předinstalované [potřebné služby a nástroje]({{< relref "doc/tutorials/raspberry-pi-installation.en.md#odlišnosti-od-originální-distribuce-raspbian" >}}). Obsahuje USB gateway, MQTT broker, Node-Red a flashovací utilitu **bcf**. Obraz nahrajete na kartu z pomocí příkazu `dd` nebo `Win32DiskImager`. Můžete však použít i oficiální image a balíčky si sami doinstalovat.
+The easiest way to start is to download [pre-configured BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases). This image already has pre-installed [needed services and tools]({{< relref "doc/tutorials/raspberry-pi-installation.en.md#odlišnosti-od-originální-distribuce-raspbian" >}}). It contaions USB gateway, MQTT broker, Node-RED and **bcf** firmware flash utility. The downloaded Raspberry Pi image has to be flashed to the MicroSD card with `dd` command or by **Win32DiskImager** tool. You can also download official Raspbian and install necessary packages by yourself.
 
-[Detailní návod zprovoznění Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}})
+[Detailed Raspberry Pi instructions]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}})
 
-## Připojení k Raspberry Pi
+## Connecting to the Raspberry Pi
 
-Nahranou kartu vložte do Raspberry Pi, připojte ethernet kabel, Core Module nebo USB Dongle a napájení. Po nabootování byste měli Raspberry Pi najít na adrese `hub.local`. Můžete vyzkoušet příkaz `ping hub.local`.
+Please insert the flashed MicroSD card to the Raspberry Pi. Then connect the Ethernet cable and the **Core Module** or **USB Dongle**. After the **Raspberry Pi** boots up you should be able to find it at address `hub.local`. You can try the command `ping hub.local`.
 
 {{< note "warning" >}}
-Pokud se Raspberry Pi nehlásí, je buď něco špatně se sítí nebo vás systém nepodporuje **mDNS** a budete muset najít IP adresu Raspberry Pi ve všem routeru v nastavení **DHCP**.
+If the Raspberry Pi is not visible on the network, there's something wrong with your network or your system don't support **mDNS** and you have to find Raspberry Pi IP address in your router's **DHCP** configuration.
 {{< /note >}}
 
-Pro přihlášení použijte příkaz `ssh pi@hub.localhost` nebo na Windows program **putty**.
+Please log on the Raspberry Pi shell by typing `ssh pi@hub.localhost` command or use the Windows program **putty**.
 
-[Detailní návod přihlášení k Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}})
+[Detailed Raspberry Pi login instructions]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}})
 
-## Nahrání firmware
+## Firmware upload
 
-Pro rychlý start jsme vytvořili command-line Python utilitu **bcf**, která automaticky stáhne poslední release firmware z GitHubu a naprogramuje modul. Na připojeném Raspberry Pi si nejprve aktualizujte všechny firmware release s pomocí `sudo bcf update`. Potom si s pomocí `sudo bcf list` vypište seznam všech předkompilovaných firmwarů.
+For quick start we've create a Python command-line utility **bcf**, which automatically downloads latest released firmwares from GitHub and will flash the modules. On the Raspberry Pi you need first to update the list of releases by typing `sudo bcf update`. Then by typing `sudo bcf list` you get the list of pre-compiled firmwares.
 
-Do Core Module nahrajeme firmware **bcf-usb-gateway**. Tento firmware pro gateway obsahuje i funkce pro všechny senzory a většinu ostatních modulů. Po startu nadetekuje připojené senzory a posílá jejich hodnoty po USB do Raspberry Pi.
+We'll flash the **bcf-usb-gateway** firmware. This firmware for the gateway contains functions for all BigClown sensors and modules. After the start the **Core Module** automatically detects connected sensors and sends the measured values by USB to the **Raspberry Pi**.
 
-Taky je třeba přepnout Core Module ručně do programovacího **DFU** módu. Nejprve připojte Core Module k Raspberry Pi přes micro USB. Pak modul přepněte do programovacího módu tak, že stisknete a držíte tlačítko `B`, mezitím krátce stisknete tlačítko `R` a pak můžete pustit tlačítko `B`. Poté můžete Core Module naprogramovat následujícím příkazem.
+Before flashing is necessary to switch the **Core Module** to the programming **DFU** mode. First connect the **Core Module** to the **Raspberry Pi** by the micro USB cable. Then set the module to the **DFU** mode by pressing and holding `B` boot button, the shortly press the `R` reset button. Then you can release the `B` boot button. Now you can flash the **Core Module** by typing the command below.
 
 ```
 sudo bcf flash --dfu bigclownlabs/bcf-usb-gateway:firmware.bin
 ```
 
 Po naprogramování se Core Module sám restartuje a automaticky se spustí nahraný firmware.
+After the firmware flashing the **Core Module** will automatically restart and the flashed firmware will be run.
 
-[Detailní návod k nahrávání firmware]({{< relref "doc/tutorials/firmware-upload.en.md" >}}).
+[Detailed firmware flashing instructions]({{< relref "doc/tutorials/firmware-upload.en.md" >}}).
 
-## Komunikace mezi USB a MQTT
+## USB-MQTT communication bridge
 
-USB Dongle nebo Core Module v roli **gateway** komunikují s počítačem přes USB po virtuálním sériovém portu. Tato komunikace je dále na Raspberry Pi přesměrovaná službou **bch-gateway**, která tyto zprávy přepošle na MQTT brokera Mosquitto.
+**USB Dongle** or **Core Module** with the **gateway** firmware is using virtual serial port over USB to exchange the data. This communication is then redirected on the **Raspberry Pi** to the **MQTT** messages thanks to the **bch-gateway** service.
 
-Všechny zprávy z modulů putují přes gateway na MQTT broker. MQTT je otevřený standard a také náš páteřní systém na předávání zpráv a to z modulů i do nich.
-Uprostřed tohoto komunikačního systému je MQTT broker, což je server na který se lze připojit z klientů. Po MQTT se předávají zprávy. Každá zpráva obsahuje **topic** (téma) a **payload** (obsah). Topic je textový řetězce a může tvořit jakoby adresářovou strukturu s použitím lomítek `/`. Payload není standardem MQTT definován a BigClown v něm posílá textově čísla, řetězce, boolean hodnoty a JSONy.
+All the messages from modules go through the gateway to the MQTT broker. The MQTT is an open standard and also our back-bone system for passing the messages both ways.
+In the middle of this communication system is the MQTT broker. Which is a server that accepts client connections. Between the broker and clients are flowing MQTT messages. Each of them contains **topic** and **payload**. Topic is a text string and has directory-like structure with the `/` delimeter (eg. `gateway/dongle/temperature/get`). Payload isn't defined by a MQTT standard and BigClown is sending these data types: numbers, strings, boolean values and JSONs.
 
-Na MQTT broker se pak můžou připojovat další služby a aplikace jako Node-RED, MQTT-Spy nebo např. Android aplikace MQTT Dash.
+Other services can easily connect to the MQTT broker and extend the functionality. Like Node-RED, MQTT-Spy or Android MQTT Dash application.
 
-Dále je možné si například promapovat port na routeru a můžete se k vašim MQTT zprávám dostat i z internetu. Další možností u brokeru Mosquitto je nastavit tzv. bridge, kdy lze propojit několik brokerů mezi sebou. Ty pak sdílejí všechny zprávy mezi sebou. Oba tyto popsané způsoby zpřístupnění MQTT zpráv je však potřeba vhodně zabezpečit, např. TLS spojením.
+Another option is to exnable port-formwarding of 1883 MQTT port on you router. Then you can connect to your broker from anywhere in the world. It is also possible to set-up a **bridge** with other Mosquitto MQTT brokers. All the brokers then share the same messages between each other. Both of these described methods needs proper security settings. For example by TLS connection.
 
-## Práce se zprávami na MQTT
+## Subscribing and publishing MQTT messages
 
-Tato kapitola je zde pouze pro úplnost. Vyčítání hodnot je vysvětlené i v další kapitole v grafickém nástroji Node-RED.
+This chapter is there for completion. Reading of the measured values is explained also in the next chapter with graphical Node-RED application.
 
-Do Raspberry Pi máme připojený Core Module. Teď si zobrazíme naměřená data, která posílá MQTT broker.
+There's a **Core Module** connected to the **Raspberry Pi**. Now we display the measured data which are send by the MQTT broker.
 
-Nejprve vyzkoušíme přihlásit se s pomocí command-line utility `mosquitto_sub`. Pro publikování zpráv slouží druhá utilita `mosquitto_pub`. Do příkazové řádky Raspberry Pi tedy napíšeme:
+First we try to subscribe to the topic with `mosquitto_sub` command-line utility. For publishing MQTT messages there's another utility `mosquitto_pub`. Pelase write the command below to your **Raspberry Pi**
 
 ```
 mosquitto_sub -t "#" -v
 ```
 
-A měly by nám po chvíli chodit zprávy od čidla teploty na desce Core Module. Ve výpisu se zobrazí i stisky tlačítka `B` na Core Module.
+After a while you should see a messages from the temperature sensor on the **Core Module**. You can also see the button events when you press the `B` button on the **Core Module**.
 
 {{< note "info" >}}
-Teplota se odesílá jen při změně, tím se šetří baterie. Pro účely testování je tedy vhodné zkusit čidlo ochladit, nebo zahřát.
+For battery saving reasons the temperature is only send when there's a change. For testing purporses it is appropriate make the temperature sensor cooler or warmer.
 {{< /note >}}
 
 ```

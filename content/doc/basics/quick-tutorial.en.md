@@ -159,9 +159,13 @@ For the graphical representation of received values you can use **Node-RED dasbo
 <img src="gauge-flow.png" style="width:auto;" />
 
 Double click on the **gauge** block for configuration. First create the new dashboard group by clicking the pencil symbol at the **Add new ui_group** field.
-In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dasboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dasboard.
+In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dashboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dasboard.
 
-Dasboard can be opened in the right **dasboard** tab by clicking on the arrow symbol or by typing the `hub.local:1880/ui` address to your browser.
+{{< note "info" >}}
+For battery saving reasons the temperature is only send when there's a change. For testing purporses it is appropriate make the temperature sensor cooler or warmer.
+{{< /note >}}
+
+Dashboard can be opened in the right **dashboard** tab by clicking on the arrow symbol or by typing the `hub.local:1880/ui` address to your browser.
 
 <img src="gauge-dashboard.png" style="width:auto;" />
 

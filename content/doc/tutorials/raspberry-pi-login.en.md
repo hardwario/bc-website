@@ -1,70 +1,73 @@
 ---
-title: Přihlášení k Raspberry Pi
-slug: prihlaseni-k-raspberry-pi
+title: Raspberry Pi Login
 ---
 
-Tento návod popisuje způsob přihlášení k Raspberry Pi pomocí vzdáleného terminálu prostřednictvím protokolu SSH.
+This document describes how to log in to Raspberry Pi using a remote terminal via SSH protocol.
 
-{{% note "info" %}}Zkratka SSH znamená "Secure Shell". Zjednodušeně to lze vnímat jako zabezpečené připojení do příkazové řádky Raspberry Pi po síti.{{% /note %}}
+{{% note "info" %}}The SSH stands for "Secure Shell". In a simple way, this can be seen as a secure connection to the Raspberry Pi command line over the network.{{% /note %}}
 
-Pokud ještě nemáte nainstalované Raspberry Pi, přejděte nejdříve do návodu [Instalace Raspberry Pi]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}}).
+If you do not already have Raspberry Pi installed, first go to the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}}).
 
-Přihlásit se lze 2 způsoby:
+You can log in two ways:
 
-1. **Použitím IP adresy**
+1. **Using an IP address**
 
-    V tomto případě si musíte zjistit, jakou adresu přidělil DHCP server vašemu Raspberry Pi.
+    In this case, you need to find out what address the DHCP server assigned to your Raspberry Pi.
 
-    {{% note "info" %}}IP adresu klienta lze obvykle zjistit prostřednictvím konfiguračního administrátorského rozhraní vašeho routeru v sekci `DHCP Clients`, případně `LAN Status`, apod.{{% /note %}}
+    {{% note "info" %}}The client's IP address can usually be found through the configuration interface of your router in the section **DHCP Clients**, eventually **LAN Status**, etc.{{% /note %}}
 
-2. **Použitím DNS názvu**
+2. **Using the DNS name**
 
-    Ten může být buď:
+    This can either be:
 
-    * `hub.local` v případě BigClown Raspbian distribuce, nebo:
-    * `raspberry.local` v případě originální Raspbian distribuce.
+    * `hub.local` in the case of the **BigClown Raspbian** distribution
 
-## Návod pro Windows
+    * `raspberry.local` in the case of the original Raspbian distribution
 
-1. Stáhněte si program [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
+## Instructions for Windows
 
-2. Spusťte PuTTY a vytvořte SSH relaci:
+1. Download the [**PuTTY**](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) program.
 
-    * Použijte hostname `hub.local` (případně `raspberry.local` pokud používáte originální distribuci Raspbian), nebo IP adresu Raspberry Pi.
-    * Zadejte login `pi`.
-    * Zadejte heslo `raspberry`.
-    * Relaci si pojmenujte a uložte pro budoucí opětovné přihlášení.
+2. Run **PuTTY** and create an SSH session:
 
-## Návod pro macOS a Linux
+    * Use the hostname `hub.local` (or `raspberry.local` if you are using the original **Raspbian** distribution), or the Raspberry Pi IP address
 
-1. Spusťte aplikaci `Terminal` a připojte se k Raspberry Pi buď:
+    * Enter the login `pi`
 
-    * použitím IP adresy místo `...`:
+    * Enter the password `raspberry`
+
+    * Give the session a name and save it for the future use
+
+## Instructions for macOS and Linux
+
+1. Run the **Terminal** application and connect to the Raspberry Pi either:
+
+    * using the IP address instead `...`:
 
             ssh pi@...
 
-    * nebo v případě BigClown Raspbian distribuce použitím DNS názvu `hub.local`:
+    * or using the DNS name `hub.local` if you are using the **BigClown Raspbian** distribution:
 
             ssh pi@hub.local
 
-    * případně DNS názvu `raspberry.local` pokud používáte originální distribuci Raspbian:
+    * or using the DNS name `raspberry.local` if you are using the original **Raspbian** distribution:
 
             ssh pi@raspberry.local
 
-2. Zadejte heslo `raspberry`.
+2. Enter the password `raspberry`.
 
-## Změna hesla
+## Changing the password
 
-Po prvním přihlášení nezapomeňte změnit výchozí heslo. Změnu lze provést následujícím příkazem:
+Remember to change the default password when you first login. You can make the change using the following command:
 
     passwd
 
-## Aktualizace systému
+## System Update
 
-Z důvodu bezpečnosti a stability je důležité mít systém aktualizovaný. Systém se skládá z tzv. balíčků a ty lze aktualizovat následujícím příkazem:
+For reasons of security and stability, it is important to keep the system up to date. The system consists of packages and you can update them with the following command:
 
     sudo apt update && sudo apt upgrade
 
-## Závěr
+## Related Documents
 
-{{% note "success" %}}V tomto návodu jsme si ukázali, jak se lze do Raspberry Pi přihlásit prostřednictvím protokolu SSH, jak si změnit heslo a také proč a jak lze aktualizovat balíčky v systému.{{% /note %}}
+* [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}})

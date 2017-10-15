@@ -58,7 +58,6 @@ Before flashing is necessary to switch the **Core Module** to the programming **
 sudo bcf flash --dfu bigclownlabs/bcf-usb-gateway:firmware.bin
 ```
 
-Po naprogramování se Core Module sám restartuje a automaticky se spustí nahraný firmware.
 After the firmware flashing the **Core Module** will automatically restart and the flashed firmware will be run.
 
 [Detailed firmware flashing instructions]({{< relref "doc/tutorials/firmware-upload.en.md" >}}).
@@ -72,7 +71,7 @@ In the middle of this communication system is the MQTT broker. Which is a server
 
 Other services can easily connect to the MQTT broker and extend the functionality. Like Node-RED, MQTT-Spy or Android MQTT Dash application.
 
-Another option is to exnable port-formwarding of 1883 MQTT port on you router. Then you can connect to your broker from anywhere in the world. It is also possible to set-up a **bridge** with other Mosquitto MQTT brokers. All the brokers then share the same messages between each other. Both of these described methods needs proper security settings. For example by TLS connection.
+Another option is to enaable port-formwarding of the MQTT port (1883) on you NAT/network router. Then you can connect to your broker from anywhere in the world. It is also possible to set-up a **bridge** with other Mosquitto MQTT brokers. All the brokers then share the same messages between each other. Both of these described methods needs proper security settings. For example by TLS connection.
 
 ## Subscribing and publishing MQTT messages
 
@@ -99,35 +98,35 @@ node/836d19821664/thermometer/0:1/temperature 24.94
 node/836d19821664/push-button/-/event-count 5
 ```
 
-Parametr `-t` říká, jaký **topic** chceme odebírat. Mřížka `#` znamená, že chceme odebírat všechny zprávy. Parametr `-v` neboli verbose do konzole vypisuje kromě hodnot i topic.
+The `-t` parameter if for **topic** which we would like to subscribe. The hash symbol `#` means that we would like to subscribe to all topics. The parameter `-v` displays more verbose output to the console, so we can see not only values but also messages topics.
 
-Dalším zástupným symbolem je otazník `?`, který má podobnou funkci jako `#`, jen jej lze použít pouze v jedné úrovni topicu, mezi lomítky.
+Another MQTT wildcard symbol is question mark `?`, which has the similar functionality like `#`, but it can be used only in one MQTT topic level (topic to read all thermometers `node/?/thermometer`).
 
-Zkusíme nyní rozsvítit LED na Core Module. V následujícím příkazu si musíte upravit `{id}` podle Vašeho ID modulu. To vyčtete z předchozích příchozích zpráv.
+We'll try to turn on an LED on the **Core Module**. In the next command you have to edit `{id}` based on your own module ID. The ID can be obtained from the messages you've received previously.
 
 ```
 mosquitto_pub -t "node/{id}/led/-/state/set" -m true
 ```
 
-## Připojení k aplikaci Node-RED
+## Opening the Node-RED
 
-**Node-RED** je webová aplikace běžící Raspberry Pi, kterou si můžete otevřít v internetovém prohlížeči. Díky ní lze zobrazit, zpracovávat naměřené hodnoty a následně odesílat příkazy pro moduly jako například Relay Module, Power Module (relé a digitální RGBW pásky), LCD Module (zobrazovat texty).
+**Node-RED** is a web application pre-installed in **BigClown Raspbian** which runs on **Raspberry Pi**. You can run it in your web browser and display, process measured values and then send commands to other modules like **Relay Module**, **Power Module**, **LCD Module**.
 
-Do webového prohlížeče zadejte adresu `hub.local:1800`.
+Please type the `hub.local:1800` address to your web browser.
 
 ![Node-RED](node-red-mqtt.png)
 
-V levé části máte na výběr stavební bloky, které přetažením můžete umístnit na prostřední plochu. Bloky jsou rozděleny do několika sekcí a nejdůležitější jsou **input**, **output**, **function** a **dashboard**. Po rozmístnění lze bloky mezi sebou spojovat a vytvářet tzv. **flow**.
+On the left panel you choose the building blocks which you place by dragging and dropping to the middle to the **flow**. Blocks are divided to several sections, the most important are **input**, **output**, **function** and **dashboard**. After the placement of the blocks you can connect them with wires and create a **flow**.
 
-V pravé části jsou záložky **info** a pro nás později důležitá záložka **debug**.
+On the right side of the screen there are tabs **info** and very important tab **debug**. Later we will use also the **dashboard** tab to open our own designed page with gauges, switches and buttons.
 
-Po jakékoliv změně **flow** je třeba tyto změny aplikovat. To se provede vpravo nahoře tlačítkem **deploy**.
+When you create any change in the flow or configuration, you have to apply the changes by pressing the **deploy** button at the top right corner of the screen.
 
-**TODO** Odkaz na článek Integrace > Node-RED
+**TODO** link to the article Integration > Node-RED
 
-## Přihlášení k odběru zpráv v Node-RED
+## Subscribing to the MQTT messages in Node-RED
 
-Nejprve si v Node-RED budeme vypisovat všechny příchozí zprávy. Následující postup vysvětlí, jak vytvořit základní flow vypisující všechny zprávy do záložky **debug**. Je však možné tento popis přeskočit a přes menu v Node-RED vpravo nahoře importovat text, který naleznete níže.
+First we will output all the incoming MQTT messages to the **debug** output. The following procedure will explain how to create basic flow printing all MQTT messages to the **debug** tab. You can follow this instructions or import the flow below by the **Import** option in the top right menu.
 
 {{% syntax copy="true" %}}
 ```
@@ -135,37 +134,38 @@ Nejprve si v Node-RED budeme vypisovat všechny příchozí zprávy. Následují
 ```
 {{% /syntax %}}
 
-Pokud chcete flow vytvořit ručně, pak postupujte podle těchto instrukcí. Ze sekce **input** přetáhněte myší blok **mqtt** do prázdného flow. Poté přetáhněte myší ze sekce **output** blok **debug**.
-Teď oba bloky propojte myší mezi sebou. Tím vytvoříte váš první flow.
+If you would like to create this flow manually, please follow these instructions. From the **input** section drag and drop the **mqtt** block to the empty flow. After that select and place from the **output** section the **debug** block.
+Now you need to connect these blocks by the mouse. This way you have created your first flow.
 
 <img src="mqtt-all-flow.png" style="width:auto;" />
 
-Teď je třeba nakonfigurovat blok **mqtt**. Dvojklikem otevřete nastavení a nastavte tyto parametry:
+Now it is necessary to configure **mqtt** block. By double clicking on the block open the setting and set these parameters:
 
   * server: localhost:1883
   * topic: #
 
 <img src="mqtt-configure.png" style="width:auto;" />
 
-Po uložení je třeba aplikovat změny tlačítkem **Deploy** vpravo nahoře. Poté se přepněte vpravo do záložky **debug** a po chvíli začnou chodit zprávy z připojeného Code Module. Můžete stisknout i tlačítko `B` a tato událost se také zobrazí v **debug** logu.
+After you save the block settings you have to apply the changes by the **deploy** button. After deploying switch to the **debug** tab and after few moments you'll see incoming messages from connected **Core Module**. You can also press `B` button on the **Core Module** and this event will also appear in the **debug** log.
 
 <img src="mqtt-all-debug.png" style="width:auto;" />
 
-## Zobrazení teploty
+## Displaying the temperature
 
-Nyní se zobrazují všechny příchozí zprávy. Pokud bysme chtěli přijímat jenom teplotu od jednoho zařízení, změníme v bloku **mqtt** v jeho nastavení topic z hodnoty `#` na `node/836d19821664/thermometer/0:1/temperature`. Adresu `836d19821664` nahraďte svým vlastním **ID**, které získáte ze záložky **debug**.
+Now you can see all the incoming messages. In case we would like to receive only temperature from one module, we have to change the topic in the **mqtt** block. We need to change `#` to the `node/836d19821664/thermometer/0:1/temperature`. The address `836d19821664` needs to be replaced by your own **ID** which you can get from the **debug** tab from other messages.
 
-Pro grafické znázornění hodnot můžeme využít v Node-RED **dashboard**. Vložte blok Gauge, najdete jej v seznamu bloků úplně dole, nebo můžete zadat **gauge** vlevo nahoře do vyhledávacího políčka. Propojte jej s MQTT blokem. Blog **gauge** je třeba ještě nakonfigurovat.
+For the graphical representation of received values you can use **Node-RED dasboard**. Please insert the **gauge** block, which is in the left list of the block at the bottom. This block needs to be configured.
 
 <img src="gauge-flow.png" style="width:auto;" />
 
-Poklepejte na něj. Nejprve vytvořte novou skupinu kliknutím na sybol tužky u **Add new ui_group**. Zde v dalším dialogu klikněte opět na symbol tužky u **Add new ui_tab**. Potvrďte otevřené dialogy a vytvoří se vám výchozí záložka i skupina. Upravte ještě rozsah hodnot **Range** na rozsah **0** až **40** a potvrďte i poslední otevřený dialog. Stiskněte **Deploy** a otevřete dashboard.
+Double click on the **gauge** block for configuration. First create the new dashboard group by clicking the pencil symbol at the **Add new ui_group** field.
+In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dasboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dasboard.
 
-Dashboard otevřete buď v pravo v záložce **dashboard** klinkutím na symbol se šipkou, nebo na adrese `hub.local:1880/ui`.
+Dasboard can be opened in the right **dasboard** tab by clicking on the arrow symbol or by typing the `hub.local:1880/ui` address to your browser.
 
 <img src="gauge-dashboard.png" style="width:auto;" />
 
-Zde ještě flow, pokud jej chcete přímo importovat
+Here's the complete flow in case of any issues.
 
 {{% syntax copy="true" %}}
 ```
@@ -173,110 +173,112 @@ Zde ještě flow, pokud jej chcete přímo importovat
 ```
 {{% /syntax %}}
 
+## Control the LED based on the temperature
 
-**TODO** Popsat demonstraci subscribe na topic se zobrazením hodnoty teploty v debug.
+**TODO** Describe creation of the conditions with **if** block. Connecting the subscribe/publish
 
-## Řízení LED v závislosti na teplotě
+## Extending to relative humidity measurement
 
-**TODO** Popsat vytvoření podmínky - propojení subscribe/publish.
-
-## Rozšíření o měření vlhkosti
-
-Nyní si zkusíme připojit ke Core module senzor vlhkosti. {{< shop "Humidity Tag" >}} lze zapojit přímo do Core Module jak je znázorněno na obrázku, nebo lze použít i {{< shop "Tag Module" >}} do kterého lze připojit více senzorů. Také {{< shop "Battery Module" >}} obsahuje volný konektor pro připojení senzorového tagu.
+Now we try to connect the relative humidity sensor to the **Core Module**. It's possible to connect the {{< shop "Humidity Tag" >}} directly to the **Core Module** as displayed in the picture (**TODO**) or you can use also {{< shop "Tag Module" >}} which can hold many more sensor tags. Also the {{< shop "Battery Module" >}} contains spare connector for sensor tag.
 
 {{< note "info" >}}
-Tento postup lze použít i pro jiné připojené senzory nebo {{< shop "Climate Module" >}}, je třeba jen změnit **topic** ke kterému se připojujete k MQTT brokeru.
+This procedure can be used also for other conencted sensors or {{< shop "Climate Module" >}}. You only need to change **topic** to the MQTT broker you are subscribing to.
 {{< /note >}}
 
-**TODO** Popsat způsob instalace Humidity Tagu a subscribe k dalšímu topic.
+**TODO** Describe humidity tag connection and subscribing to the topic.
 
-## Rozšíření o ovládání reléového výstupu
+## Extending to control the relay
 
-**TODO** Popsat způsob instalace Relay Module a publish topicu.
+**TODO** Describe Relay module installation and publishing the topic
 
-## Přeměna v bateriové zařízení
+## Conversion to the battery operated node
 
-BigClown stavebnice je od základu navržena pro úsporný bateriový provoz. Bateriově napájené bezdrátové moduly s univerzálním firmwarem po svém startu automaticky nadetekují přpojené seznory a v pravidelných intervalech jsou naměřené veličiny odesílané na gateway.
+BigClown building kit is from the ground-up designed for the efficient battery operation. Battery powered module with **bcf-generic-node** firmware will automatically scan connected sensors and modules when powered-up. In the regular intervals the measured values are sent by wireless radio to the gateway.
 
-Do Core Module nyní zapojte Mini Battery Module a vložte do něj dvě AAA baterie.
+Place two AAA batteries to the {{< shop "Mini Battery Module" >}} and connect the **Core Module** to it.
 
 {{< note "info" >}}
-Core Module obsahuje logiku, která vybere nejvhodnější zdroj napájení. Pokud tedy máte zapojen Mini Battery Module, ale například pro účely programování připojíte USB, pak se celé zařízení začne napájet z USB a šetří se tak baterie.
+**Core Module** contains active control circuit which selects the best power source available. So in case you use the **Battery Module** and at the same time you are flashing/debugging the **Core Module** by USB, then the whole is powered by USB to save the battery power.
 {{< /note >}}
 
-## Vytvoření rádiové sítě
+## Creation of the wireless network
 
-V současné době je možné vytvořit bezdrátovou topologii hvězda. Středem hvězdy je zařízení nazývané **gateway**, které se stará o příjem a odesílání všech zpráv z node zařízení. Gateway může být Core Module nebo USB Dongle.
+Currently it is possible to create a wireless network with a star topology. The middle of the star is the device called the **gateway** which handles communication to all wireless nodes. Gateway can be **Core Module** or **USB Dongle**.
 
-Ostatní bezdrátová zařízení označujeme jako **node**.
+All other wireless devices we call as a **node**.
 
-Použitý rádiový modul **SPIRIT1** komunikuje na frekvenci 868 MHz a svým výkonem spolehlivě pokryje větší rodinný dům i jeho blízké okolí.
+The used radio module **SPIRIT** is comunicating at 868 MHz frequency and with its reach will cover a larger family house and its surroundings.
 
-## Nahrání firmware do gateway
+## Flashing gateway firmware
 
-Připojte USB Dongle do Raspberry Pi. USB Dongle se do programovacího módu přepne automaticky. Stačí spustit následující příkaz.
+Connect the **USB Dongle** to the **Raspberry Pi**. The **USB Dongle** will switch to the programming mode automatically. Just execute the next command:
 ```
 sudo bcf bigclownlabs/bcf-usb-dongle:firmware.bin
 ```
 
-**Pokud chcete jako gateway namísto USB Dongle použít Core Module, je to možné, ale třeba nahrát jiný firmware.** Taky je třeba přepnout Core Module ručně do programovacího DFU módu. Nejprve připojte Core Module k Raspberry Pi přes micro USB. Pak modul přepněte do programovacího módu tak, že stisknete a držíte tlačítko `B`, mezitím krátce stisknete tlačítko `R` a pak můžete pustit tlačítko `B`. Poté můžete Core Module naprogramovat následujícím příkazem.
+**In case you would like to use Core Module as a gateway, then you need to flash a different firmware**. Also it is necessary to switch the **Core Module** to the DFU flash mode. First co nnect the **Core Module** to the **Raspberry Pi** by a micro USB cable. Then set the module to the **DFU** mode by pressing and holding `B` boot button, the shortly press the `R` reset button. Then you can release the `B` boot button. Now you can flash the **Core Module** by typing the command below.
 
 ```
 sudo bcf flash --dfu bigclownlabs/bcf-usb-gateway:firmware.bin
 ```
 
-## Nahrání firmware do node
+## Flashing the remote node
 
-Do bezdrátové bateriové jednotky nahrajte `bcf-generic-node`. Tento univerzální firmware obsahuje funkce pro všechny senzory a většinu ostatních modulů. Po startu nadetekuje připojené senzory a posílá jejich hodnoty na rádiovou gateway.
+Upload the `bcf-generic-node` firmware to the remote node unit. This universal firmware contains drivers for all BigClown sensors, tags and modules. After start-up all the connected devices are automatically detected and their values are sent by wireless network to the **gateway**.
 
-Připojte Core Module do Raspberry Pi a přepněte Core Module do **DFU** módu viz. předchozí kapitola. Nahrajte firmware `generic-node` ve verzi s `firmware-battery-mini`.
+Connect the **Core Module** to the **Raspberry Pi** and enable the **DFU** flashing mode as explained in the previous chapter. Upload the `generic-node` with `firmware-battery-mini` option.
 
 ```
 sudo bcf flash --dfu bigclownlabs/bcf-generic-node:firmware-battery-mini.bin
 ```
 
-Pokud budete bezdrátový node napájet např. adaptérem z Power Module, můžete použít firmware `power module` pro odpovídající typ a počet LEDek na pásku `bigclownlabs/bcf-generic-node:firmware-power-module-RGBW-144.bin`, který zprávy z gateway-e i přijímá a může ovládat barvy na LED pásku, relé a zobrazovat naměřená data i na připojeném LCD Module. Navíc je možné na LCD Module zapisovat i vlastní texty.
+In case you would power the remote note with a power adapter, you can flash `power module` firmware for a corresponding number of LED diodes (RGB or RGBWhite) `bigclownlabs/bcf-generic-node:firmware-power-module-RGBW-144.bin`. This firmware is also always listening on the radio and can receive commands co control the LED pixels, relay and display the measured data on the connected **LCD Module**. Moreover it is possible to display custom texts on the display with various sized fonts.
 
-[Release firmwarů bcf-generic-node](https://github.com/bigclownlabs/bcf-generic-node/releases)
+[List of bcf-generic-node released firmwares](https://github.com/bigclownlabs/bcf-generic-node/releases)
 
-[Detailní návod k nahrávání firmware]({{< relref "doc/tutorials/firmware-upload.en.md" >}}).
+[Detailed flashing instructions]({{< relref "doc/tutorials/firmware-upload.en.md" >}}).
 
 
-## Spárování Core Module s USB Dongle
+## Pairing process
 
-Nyní oba moduly musíme spárovat. Pro Core Module lze navíc proces párování aktivovat a deaktivovat jednoduchým způsobem - dlouhým stiskem tlačítka `B`.
+We need to pair the **gateway** with the **node**. In case you are using **Core Module** as a **gateway** you can start the pairing by long press of the `B` button.
 
-USB Dongle tlačítko nemá a párování je třeba aktivovat MQTT příkazem, stejný postup však funguje i pro Core Module, pokud z nějakého důvodu například nemůžete držet tlačítko.
+USB Dongle do not have pairing button and the pairing process needs to be started by a MQTT message. The same works also for the **Core Module** in case you cannot physically press the `B` button.
 
-V následujících příkazech nahraďte `{id}` IP adresou vaší Raspberry Pi. Párování se nejprve aktivuje na gateway. Pro USB Dongle nebo Core Module je třeba aktivovat proces párování posláním MQTT zprávy buď následujícím příkazem z konzole, nebo si lze udělat v Node-RED flow, který odešle tuto zprávu.
+In the next commands replace the `{id}` by the IP address of your **Raspberry Pi**. The pairing process needs to be started on the **gateway**.
+For **USB Dongle** or **Core Module** you need to send MQTT message with console command or by using the flow in the **Node-RED** which sends the pairing start message.
 
 ```
 mosquitto_pub -t 'gateway/{id}/enrollment/start' -n
 ```
 
-Po aktivaci se na gateway rozbliká červená LED. Nyní je čas vyslat párovací příkaz z remote nodu. To se provede dlouhým stiskem tlačítka `B` na remote node. Pokud máte v konzoli nebo v Node-RED subscribe na topic `#`, zobrazí se zpráva s ID nového spárovaného zařízení.
+After enabling the pairing the red LED on the **USB Dongle**/**Core Module** will start to blink. Now its the time to send pairing command from the **remote node**. This can be done by long press of the `B` button on the **remote node**. If you are subscribed to the `#` topic, you will see a message with new paired address.
 
-Je možné párovat další node, stačí na všech dalších remote node provést dlouhý stisk tlačítka `B`.
+{{< note "info" >}}
+If you have **LCD Module**, **Button Module** or **Encoder Module** and it is not physically possible to press the `B` button you can long press any button/encoder to send the pairing command. The buttons on these modules are physically connected also to the `B` button on the **Core Module**.
+{{< /note >}}
 
-Pokud nebudete párovat další remote node, ukončete proces párování na gateway příkazem.
+Now it is possible to pair other **remote** nodes, just long press the `B` button on the other **remote** nodes.
+
+After the pairing of the remotes is completed, disable the pairing process on the **gateway** by command:
 
 ```
 mosquitto_pub -t 'gateway/{id}/enrollment/stop' -n
 ```
 
-## Ovládání a měření přes rádio
+## Measuring and controlling over radio
 
-Remote nody, které mají v názvu firmware **battery** pouze vysílají naměřená data a pak se uspí. Nedovedou zatím přijímat příkazy, protože rádio se po odeslání vždy uspává.
+Remote nodes which has **battery** in the firmware name just transmitts measured data and then they sleep. They cannot receive the commands over the wireless radio while they sleep.
 
-Remote nody, které mají v názvu firmware **power module** a jsou napájeny z adaptéru nebo USB umí vysílat naměřená data na gateway, ale zároveň dovedou i přijímat příkazy z gateway. Díky tomu je možné ovládat prakticky všechny připojené moduly:
+Remote nodes which has **power module** in the firmware name are powered by power adapter or USB and can transmit measured data and also receive commands send from the **gateway**. Thanks to this it is possible to control practically all the connected modules over the radio:
 
-  * Power Module - ovládat relé a posílat barvy a efekty na LED pásek
-  * Relay Module - ovládat bistabilní relé příkazy pro přepnutí, nebo pro krátké pulzy
-  * LCD Module - zobrazovat na displeji texty různých velikostí na požadované souřadnice
-  * Ovládat červenou LED na Core Module
+  * Power Module - control the relay, colors and effects on the LED strip
+  * Relay Module - control bistable relay with commands to toggle, switch or make a pulse
+  * LCD Module - display text on the display on any position with different font sizes
+  * Control red LED on the **Core Module**
 
 **TODO** Zpátky k Node-RED - s pomocí poznamenaného device ID navádět jak pub/sub do rádiového nodu.
 
-## Závěr a další kroky
+## Conclusion and further steps
 
-**TODO** Odehrát shrnutí co jsme se naučili. Neměl by chybět odkaz na referenci MQTT topiců generic nodu a inspirace jaký další HW může číst / ovládat. Taky bych sem dal link na MQTT v Python pokud někdo nebude chtít Node-RED a chce začít kódovat.
+**TODO** Wrap up of what we've learned. Link to the reference to MQTT topics. Different libraries to connect tot he MQTT broker, Python, C#..

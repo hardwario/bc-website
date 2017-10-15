@@ -1,24 +1,23 @@
 ---
-title: Popis k Base Module
+title: About Base Module
 ---
 
 {{< hardware_intro "Base Module" base-module >}}
-Tento modul funguje jako praktická základna pro BigClown nody.
+This module works as a mechanical stand for a BigClown node.
 
-S výjimkou Battery Module můžete jakýkoliv jiný BigClown modul zasunout do standardizované zásuvky Base Module. Base Module můžete umístit na stůl (za použití gumových nožiček), nebo můžete použít speciální plastové klipsy pro umístění na DIN lištu, případně použít oboustranou lepící pásku pro připevnění na zeď.
+With the exception of Battery Module you can plug any other BigClown module into a standardized socket available on Base Module. This module can be used as a stand on a desk (four rubber feet assure stable position on a surface), mounted on a DIN rail using special plastic clips, or it can be sticked on a wall or other vertical surfaces using a double-sided tape.
 
-Další funkcí modulu je prototypovací prostor k pájení vašich vlastních obvodů.
-
+The additional feature of this module is a prototyping area for soldering your own circuits.
 {{< /hardware_intro >}}
 
-## Vlastnosti
+## Features
 
-  * Praktická základna pro BigClown nody
-  * Prototypovací prostor k pájení vlastních obvodů
-  * Gumové nožičky (součást modulu)
-  * Plastové klipsy pro montáž na DIN lištu (volitelné příslušenství)
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 88 x 55 mm
-  * 10letá záruka
+  * Practical stand for BigClown module system
+  * Prototyping area for soldering custom circuits
+  * Rubber feet (included)
+  * Plastic clips for a DIN rail mount (optional accessory)
+  * Operating temperature range: -20 to 70 °C
+  * Mechanical dimensions: 88 x 55 mm
+  * 10-year warranty
 
 {{< hardware "Base Module" >}}

@@ -1,29 +1,31 @@
 ---
-title: Popis k Lux Meter Tag
+title: About Lux Meter Tag
 ---
 
 {{< hardware_intro "Lux Meter Tag" lux-meter-tag >}}
+This tag uses ambient light sensor OPT3001 which measures the intensity of visible light.
 
-Sensor intenzity osvětlení s velmi nízkou spotřebou (provozní i v režimu spánku). Tag je osazen senzorem **OPT3001** měřící intenzitu viditelného světla v rozsahu 0.01 až 83k luxů s 23 bitovým dynamickým rozsahem.
+It measures values in the range from 0.01 to 83k lux with a 23-bit dynamic range. The spectral response of the sensor tightly matches the photopic response of the human eye and includes significant infrared rejection.
 
-Tento senzor je digitální I2C-only periferie.
+This sensor is a digital I2C-only peripheral featuring a very low active and shutdown current.
 
 {{< /hardware_intro >}}
 
 
-## Vlastnosti
+## Features
 
-  * Integrovaný senzor intenzity osvětlení OPT3001
-  * I2C-only periferie
-  * Měří v rozsahu od 0.01 do 83k luxů
-  * 23-bit efektivní dynamický rozsah
-  * Volitelný výstup přerušení
-  * Spotřeba:
-  * Provozní proud: 1.8 µA
-  * Proud v režimu spánku: 0.3 µA
-  * Rozsah provozního napětí: 1.6 V až 3.6 V
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 16 x 16 mm
-  * 10letá záruka
+  * Integrated ambient light sensor OPT3001
+  * I2C-only peripheral
+  * Digital ambient light sensor OPT3001
+  * Measures in the range from 0.01 to 83k lux
+  * 23-bit effective dynamic range
+  * Optional interrupt output
+  * Power consumption:
+  * Active current: 1.8 µA
+  * Shutdown current: 0.3 µA
+  * Operating voltage range: 1.6 V to 3.6 V
+  * Operating temperature range: -20 to 70 °C
+  * Mechanical dimensions: 16 x 16 mm
+  * 10-year warranty
 
 {{< hardware "Lux Meter Tag" >}}

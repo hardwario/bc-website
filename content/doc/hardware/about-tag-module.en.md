@@ -1,20 +1,18 @@
 ---
-title: Popis k Tag Module
+title: About Tag Module
 ---
 
 {{< hardware_intro "Tag Module" tag-module >}}
-Tag Module umožňuje připojení až šesti BigClown tagů, přičemž každý tag má v systému svou unikátní I2C adresu.
+Some BigClown modules have one or more extra 5-pin sockets allowing to connect a BigClown tag (I2C peripheral in a common form factor). But sometimes this is still not enough or you need to extend the I2C bus with an additional channel.
 
-Některé BigClown moduly mají jeden nebo více 5 pinových zásuvek umožňujících připojení dalších BigClown tagů (I2C periferií v BigClown formátu). Tag Module použijete v situacích, kdy potřebujete mít v nodu ještě více zásuvek nebo chcete rozšířit I2C sběrnici o další kanál.
-
-Použitím dvou unikátních I2C sběrnic (I2C0 and I2C1) lze v jednom BigClown nodu umístit dva stejné tagy se stejnou adresou.
+Tag Module enables to connect up to six extra tags. Every tag has a unique I2C address. Using two independent I2C buses (I2C0 and I2C1) makes it possible to connect two tags of the same address to a single BigClown node.
 {{< /hardware_intro >}}
 
-## Vlastnosti
+## Features
 
-  * 6x 5 pinová zásuvka pro BigClown tagy (I2C periferie)
-  * 3x tag pozice jsou připojeny ke sběrnici I2C0 (pravá strana)
-  * 3x tag pozice jsou připojeny ke sběrnici I2C1 (levá strana)
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 44 x 55 mm
-  * 10letá záruka
+  * 6x 5-pin socket position for BigClown tag (I2C peripheral)
+  * 3x tag positions are connected to I2C0 (right side)
+  * 3x tag positions are connected to I2C1 (left side)
+  * Operating temperature range: -20 to 70 °C
+  * Mechanical dimensions: 44 x 55 mm
+  * 10-year warranty

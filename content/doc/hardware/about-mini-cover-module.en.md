@@ -1,5 +1,5 @@
 ---
-title: Popis k Mini Cover Module
+title: About Mini Cover Module
 ---
 
 **TODO** Bude doplněno

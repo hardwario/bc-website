@@ -1,33 +1,32 @@
 ---
-title: Popis k Mini Battery Module
+title: About Mini Battery Module
 ---
 
 {{< hardware_intro "Mini Battery Module" mini-battery-module >}}
+The Mini Battery Module is designed to power BigClown battery-operated devices and has been developed to minimize the size of the entire unit. The dimension does not exceed the size of the standard BigClown modules.
 
-Mini Battery Module je určen k napájení bateriových zařízení BigClown a byl vyvinut s ohledem na minimalizaci rozměrů celé sestavy. Půdorys nepřekračuje velikost standardních modulů BigClown.
+Thanks to the use of a modern, low-power, high-efficiency converter, it provides a long service life of two AAA 1.5 V alkaline cells.
 
-Díky použítí moderního konvertoru s nízkou spotřebou a vysokou účinností poskytuje dlouhou životnost i ze dvou AAA 1.5 V alkalických článků.
+The module contains a battery disconnect circuit when another power supply (such as a DC adapter or USB cable) is connected to the system. The battery voltage can be measured at the analog input of the standardized connector.
 
-Modul obsahuje obvod pro odpojení baterie, pokud je do systému zapojen jiný napájecí zdroj (např. DC adaptér nebo USB kabel). Napětí baterie může být měřeno na analogovém vstupu standardizovaného konektoru.
-
-Typickým příkladem použití je miniaturní bezdrátový detektor pohybu nebo senzor veličin.
+A typical example of use is a miniature wireless motion detector or a climate sensor.
 
 {{< /hardware_intro >}}
 
-## Vlastnosti
+## Features
 
-  * Vysoce účinný zvyšující měnič TPS61099
-  * Velmi nízký klidový proud < 5 μA
-  * Účinnost až 93% při 10 mA
-  * Doporučované typy článků:
-    * 2x AAA 1.5 V Alkaline nebo
+  * Highly efficient TPS61099 inverter
+  * Very low quiescent current <5 μA
+  * Efficiency up to 93% at 10 mA
+  * Recommended types of batteries:
+    * 2x AAA 1.5 V Alkaline or
     * 2x AAA Eneloop NiMH
-  * Jmenovité výstupní napětí 3.1 V
-  * Obvod pro odpojení baterie
-  * Ochrana proti přepólování baterie
-  * Měření vstupního napětí pomocí ADC vstupu
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 33 x 55 mm
-  * 10letá záruka
+  * Rated output voltage 3.1 V
+  * Circuit for disconnecting the battery
+  * Reverse polarity protection
+  * Input voltage measurement via ADC input
+  * Operating temperature range: -20 to 70 ° C
+  * Dimensions: 33 x 55 mm
+  * 10-year warranty
 
 {{< hardware "Battery Module" >}}

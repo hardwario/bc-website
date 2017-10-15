@@ -1,5 +1,5 @@
 ---
-title: Popis k Touch Tag
+title: About Touch Tag
 ---
 
 **TODO** Bude doplněno

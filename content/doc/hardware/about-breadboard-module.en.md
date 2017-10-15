@@ -1,19 +1,19 @@
 ---
-title: Popis k Breadboard Module
+title: About Breadboard Module
 ---
 
 {{< hardware_intro "Breadboard Module" breadboard-module >}}
 
-Breadboard Module nabízí jednoduché připojení jakéhokoliv BigClown modulu k nepájivému poli.
+Breadboard Module offers an easy way to connect any BigClown module to a breadboard.
 
-Úzký breakout Breadboard Modulu poskytuje více prostoru pro drátování a prototypování. Precizní kolíky na spodní straně modulu umožňují hladké zasunutí do vašeho nepájivého pole, přičemž nedochází k jeho poškození.
+Narrow breakout of Breadboard Module provides more space for wiring and prototyping. Optimized precision pin headers from the bottom side allow smooth insertion to your breadboard and prevent its damage.
 
 {{< /hardware_intro >}}
 
-# Vlastnosti
+## Features
 
-  * Adaptér mezi BigClown moduly a nepájivým polem
-  * Precizní kolíky optimální pro zasunutí do nepájivého pole
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 113.7 x 33 mm
-  * 10letá záruka
+  * Adapter between BigClown modules and breadboard
+  * Precision pin headers optimized for breadboard sockets
+  * Operating temperature range: -20 to 70 °C
+  * Mechanical dimensions: 113.7 x 33 mm
+  * 10-year warranty

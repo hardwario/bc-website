@@ -1,36 +1,33 @@
 ---
-title: Popis k Power Module
+title: About Power Module
 ---
 {{< hardware_intro "Power Module" power-module >}}
-Modul určený k napájení BigClown nodů za použití jeho integrovaného LDO regulátoru generujícího výstupní napětí 3.3 V ze vstupního napětí 5V. K Power modulu můžete připojit 5V DC adaptér skrze standardní 2.1 mm jack konektor.
+This module allows to connect 5 V DC wall adapter via a standard 2.1 mm power jack socket. With this module a BigClown node can be powered using its integrated LDO which generates 3.3 V output from a 5 V input.
 
-Další funkcí modulu je vysokoproudové relé (230V AC / 16A).
+Another feature is a high-current relay (230 V AC / 16 A). Moreover you can directly connect (via a 3-terminal block) a programmable RGB(W) LED strip with 5V interface (voltage translation logic is implemented) which is great for driving WS2812B-compatible LEDs.
 
-K modulu si rovněž můžete přes svorkovnici přímo připojit programovatelné RGB(W) LED pásky s 5V rozhraním (logika překladu napětí je implementována), což je ideální pro řízení WS2812B kompatibilních LEDek.
+Reliability is as important for us as it is for you. That’s why we have implemented smart overvoltage, undervoltage and reverse polarity protection on the power jack input to guarantee the input voltage range to always stay within the proper limits.
 
-U Power modulu jsme rovněž na vstupu jack konektoru implementovali chytrou ochranu před přepětím, podpětím a obrácenou polaritou. Tímto je garantováno, že vstupní napětí bude vždy ve správných mezích.
-
-Modul je osazen dvěmi extra 5 pinovými zásuvkami sloužícími pro připojení dalších BigClown tagů (I2C periferií v BigClown formátu).
+Last but not least feature of this module are two extra 5-pin sockets allowing to connect a BigClown tags (I2C peripheral in a common form factor).
 {{< /hardware_intro >}}
 
 
-## Vlastnosti
+## Features
 
-  * Vstup pro 5 V DC adaptér (2.1mm jack) (viz poznámka 1)
-  * Rozsah vstupního napětí od 4.2 V do 5.8 V
-  * Výstup vysokoproudového relé (230 V AC / 16 A)
-  * Integrovaný LDO regulátor s výstupním napětím 3.3 V
-  * Adresovatelný výstup pro RGB(W) LED pásky (viz poznámky 1 a 2)
-  * 2x zásuvka pro BigClown tagy
-  * Ochrana před přepětím, podpětím a obrácenou polaritou
-  * 3-pinový konektor pro releový výstup
-  * 3-pinový konektor pro LED pásek
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 88 x 55 mm
-  * 10letá záruka
+  * 5 V DC adapter input (2.1mm jack) (1)
+  * Input voltage range from 4.2 V to 5.8 V
+  * High-current relay output (230 V AC / 16 A)
+  * Integrated LDO with 3.3 V output voltage
+  * Addressable RGB(W) LED strip output (1) (2)
+  * 2x position for BigClown tag
+  * Overvoltage, undervoltage and reverse polarity protection
+  * Pluggable 3-pin terminal block for relay output
+  * Pluggable 3-pin terminal block for LED strip
+  * Operating temperature range: -20 to 70 °C
+  * Mechanical dimensions: 88 x 55 mm
+  * 10-year warranty
 
-### Poznámky:
-  1. Maximální povolený proud je 6 A
-  * K řízení adresovatelných LED pásků je potřeba Core Module
+## Notes
+(1) Maximum allowed is 6 A (2) Core Module is required to drive an addressable LED strip
 
 {{< hardware "Power Module" >}}

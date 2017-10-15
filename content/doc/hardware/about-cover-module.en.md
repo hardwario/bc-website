@@ -1,5 +1,5 @@
 ---
-title: Popis k Cover Module
+title: About Cover Module
 ---
 
 **TODO** Bude doplněno

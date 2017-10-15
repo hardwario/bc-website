@@ -1,43 +1,52 @@
 ---
-title: Popis k Climate Module
+title: About Climate Module
 ---
 
 {{< hardware_intro "Climate Module" climate-module >}}
 
-Climate Module integruje 4 enviromentální čidla připojené na sběrnici I²C na jednu desku a umožňuje měřit hodnoty teploty, vlhkosti, atmosférického tlaku a intenzity osvětlení.
+Climate Module integrates 4 environmental sensors connected to the I²C bus to one single board and allows you to measure temperature, humidity, atmospheric pressure and light intensity.
 
-Modul poslouží jako základní stavební prvek pro tvorbu drátové i bezdrátové meteostanici. Při napájení z Mini Battery Module lze vytvořit velmi kompaktní bezdrátový multi senzor.
+The module serves as a basic building element for the creation of wired and/or wireless weather stations. When powered from the Mini Battery Module, you can create a very compact wireless multi-sensor.
 
 {{< /hardware_intro >}}
 
-# Vlastnosti
+## Features
 
-  * Teplotní senzor TMP112
-  * Přesnost měření teploty (typické hodnoty):
-  * ±0.1 °C v při 25 °C
-  * ±0.25 °C v pásmu 0 °C až 65 °C
-  * ±0.5 °C v pásmu -40 °C až 125 °C
-  * 12-bit rozlišení (0.0625 °C)
-  * Provozní / klidová spotřeba: 7 µA (4 Hz vzorkování) / 2 µA
-  * Obvodové frézování čidla pro rychlejší odezvu na změnu teploty
-  * Senzor relativní vlhkosti vzduchu SHT20
-  * Rozsah relativní vlhkosti 0 % až 100 %
-  * Přesnost měření vlhkosti ±2 %
-  * Provozní spotřeba: 10 µA
-  * Senzor atmosférického tlaku MPL3115A2
-  * Rozmezí měření atm. tlaku: 20 kPa až 110 kPa
-  * Rozmezí měření nadm. výšky: -698 až 11,775 m
-  * Přesnost: ±0.4 kPa
-  * Provozní / klidová spotřeba: 40 µA (perioda měření 1 Hz) / 2 µA
-  * Senzor intenzity osvětlení OPT3001
-  * Měří v rozsahu od 0.01 do 83000 lux
-  * 23bitový efektivní dynamický rozsah
-  * Provozní / klidová spotřeba: 1.8 µA / 0.3 µA
-  * Společné vlastnosti:
-  * Periferie pouze na I²C sběrnici
-  * Rozsah provozního napětí: 1.6 V až 3.3 V
-  * Rozsah provozních teplot: -40 až 70 °C
-  * Rozměry: 33 x 55 mm
-  * 10letá záruka
+**Temperature sensor TMP112**
+
+  * The accuracy of temperature measurement (typical values):
+  * ± 0.1 ° C at 25 ° C
+  * ± 0.25 ° C in the range 0 ° C to 65 ° C
+  * ± 0.5 ° C in the range -40 ° C to 125 ° C
+  * 12-bit resolution (0.0625 ° C)
+  * Operating / Sleep Consumption: 7 μA (4 Hz Sampling) / 2 μA
+  * Circuit milling of the sensor for quicker temperature change response
+
+**Relative humidity sensor SHT20**
+
+  * RH 0% to 100%
+  * Humidity measurement accuracy ± 2%
+  * Operating consumption: 10 μA
+
+**Atmospheric pressure sensor MPL3115A2**
+
+  * Measurement range atm. pressure: 20 kPa to 110 kPa
+  * Range of altitude measurements: -698 to 11,775 m
+  * Accuracy: ± 0.4 kPa
+  * Operating / Sleep current: 40 μA (1 Hz Measuring Period) / 2 μA
+
+**Light intensity sensor OPT3001**
+
+  * Measures from 0.01 to 83000 lux
+  * 23bit effective dynamic range
+  * Operating / Sleep current: 1.8 μA / 0.3 μA
+
+**Common features**
+
+  * Peripherals only on I²C bus
+  * Operating voltage range: 1.6 V to 3.3 V
+  * Operating temperature range: -40 to 70 ° C
+  * Dimensions: 33 x 55 mm
+  * 10-year warranty
 
 {{< hardware "Climate Module" >}}

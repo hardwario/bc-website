@@ -1,32 +1,33 @@
 ---
-title: Popis k Battery Module
+title: About Battery Module
 ---
 
 {{< hardware_intro "Battery Module" battery-module >}}
 
-Battery Module je určen k napájení bateriových BigClown nodů. Použití konvertoru s nízkou spotřebou energie poskytuje vynikající účinnost a dlouhou životnost baterie ze čtyřech AAA 1.5 V alkalických článků.
+Battery Module is designed as a power supply source for battery-operated nodes. Using a low-power buck converter provides excellent efficiency and long battery lifetime from four AAA 1.5 V Alkaline cells.
 
-Modul obsahuje obvod pro bypass baterie, pokud je do systému zapojen jiný napájecí zdroj (např. AC adaptér nebo USB kabel). Napětí baterie může být měřeno na jednom z analogových vstupů standardizovaného headeru.
+Load disconnect circuit can bypass batteries if any other power supply source is connected in the system (e.g. AC adapter or USB cable). Battery voltage can be measured on one of the analog inputs of the standardized header.
 
-Battery Module rovněž poskytuje 5 pinovou zásuvku umožňující připojení BigClown tagu (I2C periférie v BigClown Tag formátu) a prototypovací prostor k pájení vlastních obvodů.
+Battery Module also provides an extra 5-pin socket allowing to connect a BigClown tag (I2C peripheral in a common form factor).
 
+Another useful feature is a prototyping area for soldering your own circuits.
 {{< /hardware_intro >}}
 
-## Vlastnosti
+## Features
 
-  * Vysoce účinný konverter TPS62745
-  * Ultra nízký klidový proud 400 nA
-  * Doporučované typy článků:
-  * 4x AAA 1.5 V Alkaline nebo
-  * 4x AAA Eneloop NiMH
-  * Výstupní napětí 3.1 V
-  * Obvod pro odpojení baterie
-  * Měření vstupního napětí pomocí ADC vstupu
-  * Prototypovací prostor k pájení vlastních obvodů
-  * Jedna extra zásuvka pro BigClown tag
-  * Připraveno pro NFC Module (dostupné v druhé polovině 2017)
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 88 x 55 mm
-  * 10letá záruka
+  * High efficiency buck converter TPS62745
+  * Ultra low quiescent current: 400 nA
+  * Recommended battery types:
+    * 4x AAA 1.5 V Alkaline or
+    * 4x AAA Eneloop NiMH
+  * Output supply voltage 3.1 V
+  * Battery disconnect circuit
+  * Input voltage measurement using an ADC input
+  * Prototyping soldering area for soldering custom circuits
+  * One extra position for BigClown tag
+  * Ready for NFC Module (coming in 2017)
+  * Operating temperature range: -20 to 70 °C
+  * Mechanical dimensions: 88 x 55 mm
+  * 10-year warranty
 
 {{< hardware "Battery Module" >}}

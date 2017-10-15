@@ -1,19 +1,19 @@
 ---
-title: Popis k Probe Module
+title: About Probe Module
 ---
 
 {{< hardware_intro "Probe Module" probe-module >}}
 
-Tento modul je elektromechanickým rozhraním mezi testovacími body a sondami vašich měřících přístrojů (osciloskopu nebo logického analyzéru).
+Sometimes you need to measure signals during both hardware and software development cycle. And to see what’s going on, you need to quickly hook up an appropriate equipment like an oscilloscope, logic analyzer, etc.
 
-Probe modul umožňuje rychlé připojení sond osciloskopu nebo logického analyzéru k háčkům ve tvaru písmene "O" připojeným k signálům na BigClown headeru.
+We have made that task simple with Probe Module. This module is an electromechanical interface between test points - the "O"-shaped hooks connected to signals on BigClown header - and your equipment’s probes.
 
 {{< /hardware_intro >}}
 
-## Vlastnosti
+## Features
 
-  * Testovací body pro všechny signály dostupné na BigClown headeru
-  * Čtyři pokovené otvory v každém rohu pro komfortní připojení klipsů
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 88 x 55 mm
-  * 10letá záruka
+  * Test points for all signals available on BigClown header
+  * Four plated holes (in every corner) for comfortable ground clip connection
+  * Operating temperature range: -20 to 70 °C
+  * Mechanical dimensions: 88 x 55 mm
+  * 10-year warranty

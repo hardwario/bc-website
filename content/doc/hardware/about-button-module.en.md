@@ -1,5 +1,5 @@
 ---
-title: Popis k Button Module
+title: About Button Module
 ---
 
 **TODO** Bude doplněno

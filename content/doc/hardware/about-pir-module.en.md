@@ -1,29 +1,27 @@
 ---
-title: Popis k PIR Module
+title: About PIR Module
 ---
 {{< hardware_intro "PIR Module" pir-module >}}
 
-PIR module je primárně určen k detekci pohybu osob v interiéru.
+PIR Module is primarily designed to detect the motion of people in the interior. A typical example of using the PIR Module can be a wireless motion detector located on the ceiling of the room
 
-Module je osazen digitálním senzorem od firmy Excelitas, typ PYQ-1648 z rodiny DigiPyro®. Díky čtveřici čidel citlivých na IR záření a použití všesměrové optiky je zaručeno pokrytí běžně velkých místností v domácnosti. Nízký odběr zaručí dlouhý provoz při napájení z baterií.
-
-Typickým příkladem použití PIR Module může být bezdrátový senzor pohybu umístěný na strop místnosti.
+The module is equipped with a digital sensor from Excelitas, type PYQ-1648 from the DigiPyro® family. Thanks to four sensors sensitive to IR radiation and the use of omnidirectional optics, coverage of normally large rooms in the home is guaranteed. An ultra low-power consumption ensures long battery operation.
 
 {{< /hardware_intro >}}
 
-## Vlastnosti
+## Features
 
-  * Digitální PIR detektor Excelitas PYQ-1648-7053
-  * Čtyři PIR elementy
-  * Kompletní digitální zpracování (veškerá analýza probíhá v senzoru)
-  * Rozlišení AD převodníku 14 bitů
-  * Všesměrová čočka Carclo Diamond 37
-  * Úhel snímání 98°
-  * Typický dosah 5 až 10 m
-  * Spotřeba 3 μA
-  * Rozsah provozního napětí: 2.5 V až 3.6 V
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 33 x 55 mm
-  * 10letá záruka
+  * Digital PIR detector Excelitas PYQ-1648-7053
+  * Four PIR elements
+  * Complete digital processing (all analysis takes place in the sensor)
+  * Resolution of the 14-bit AD converter
+  * Omnidirectional lens Carclo Diamond 37
+  * 98° scanning angle (horizontally and vertically)
+  * A typical range of 5 to 10 m
+  * Power consumption: approx. 3 μA
+  * Operating voltage range: 2.5 V to 3.6 V
+  * Operating temperature range: -20 to 70 ° C
+  * Dimensions: 33 x 55 mm
+  * 10-year warranty
 
 {{< hardware "PIR Module" >}}

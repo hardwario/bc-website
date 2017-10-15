@@ -1,5 +1,5 @@
 ---
-title: Popis k 1-Wire Module
+title: About 1-Wire Module
 ---
 
 **TODO** Bude doplněno

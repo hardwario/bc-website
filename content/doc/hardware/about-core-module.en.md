@@ -1,36 +1,36 @@
 ---
-title: Popis k Core Module
+title: About Core Module
 ---
 
 {{< hardware_intro "Core Module" core-module >}}
 
-Core Module je klíčovým prvkem každého BigClown nodu. Jeho dvěma nejdůležitějšími komponentami jsou ARM mikroprocesor a 868 MHz rádiový modul.
+This module is a fundamental element of every BigClown node. The two most important components are ARM microcontroller and 868 MHz radio module.
 
-Core Module může být naprogramován pomocí USB DFU bootloaderu, který je uložen v ROM paměti mikrokontroleru, nebo může být debugován skrze standardní 10-pin SWD konektor.
+Core Module can be programmed using USB DFU bootloader which is stored in ROM memory of the microcontroller or it can be debugged via a standard 10-pin SWD probe.
 
-Kombinace těchto funkcí společně s integrovaným bezpečnostní čipem, teplotním čidlem a akcelerometrem, dělají tento modul bezkonkurenčním řešením v oblasti nodů pro domácí automatizaci.
+Combination of these features, integrated security chip, temperature sensor and accelerometer makes this an unrivaled solution for today’s connected home automation nodes.
 
 {{< /hardware_intro >}}
 
-## Vlastnosti
+## Features
 
   * ARM Cortex M0+ 32-bit MCU STM32L083CZ
   * 192 kB Flash / 20 kB RAM
-  * Rádiový modul (868 MHz) založený na SPIRIT1
-  * Security čip ATSHA204A
-  * Digitální čidlo teploty TMP112
-  * 3-osý akcelerometr LIS2DH12
-  * Červená LEDka
-  * Tlačítka RESET a BOOT (BOOT je k dispozici MCU)
-  * 10 pinový SWD konektor pro debugging
-  * Micro-USB pro komunikaci s hostitelem a/nebo napájení
-  * Integrovaný USB DFU bootloader (bez potřeby předprogramovaného čipu)
-  * 18x GPIO (kompletně volné pro aplikace)
+  * Radio module (868 MHz) based on SPIRIT1
+  * Security chip ATSHA204A
+  * Digital temperature sensor TMP112
+  * 3-axis accelerometer LIS2DH12
+  * Red color LED
+  * Push button RESET and BOOT (BOOT is available to MCU)
+  * 10-pin SWD connector for debugging
+  * Micro-USB for host communication and/or power
+  * Integrated USB DFU bootloader (no need for pre-programmed chip)
+  * 18x GPIO (completely free for application)
   * 3x UART, 2x I2C, 1x SPI, 5x ADC, 2x DAC
-  * Režim hlubokého spánku: < 5 µA
-  * Rozsah provozního napětí: 2.0 V až 3.6 V
-  * Rozsah provozních teplot: -20 až 70 °C
-  * Rozměry: 33 x 55 mm
-  * 10 let záruky
+  * Deep sleep mode: < 5 µA
+  * Operating voltage range: 2.0 V to 3.6 V
+  * Operating temperature range: -20 to 70 °C
+  * Mechanical dimensions: 33 x 55 mm
+  * 10-year warranty
 
 {{< hardware "Core Module" >}}

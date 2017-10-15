@@ -8,7 +8,7 @@ Zde je popis výrobku. Automaticky se doplní obrázek který je textem obtéká
 
 {{< /hardware_intro >}}
 
-## Vlastnosti
+## Features
 
   * Popis
   * vlastností

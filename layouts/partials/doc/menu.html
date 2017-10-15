@@ -1,19 +1,46 @@
-{{ $page := . }}
+{{ "" | safeHTML }}
+{{ "" | safeHTML }}
+{{ "<!-- START OF MENU -->" | safeHTML }}
+{{ "" | safeHTML }}
+{{- $page := . }}
 {{- $menu := delimit (slice "menu" .Page.Lang) "." }}
-<div class="well" data-id="menu" style="background-color: #e0f0fc; background-image: none;">
+<div class="panel-group" id="accordion">
 {{- range $.Site.Data }}
   {{- range index . (string $menu) }}
-    {{- partial "doc/menu-level.html" (dict "context" . "page" $page) }}
+    {{- range . }}
+      {{- $collapse := .title | urlize }}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ $collapse }}">{{ .title }}</a></h4>
+    </div>
+      {{- with .items }}
+        {{- $.Scratch.Set "in" "" }}
+        {{- range . }}
+          {{- if .link }}
+            {{- $link := string (relref $page .link) }}
+            {{- if eq $page.RelPermalink $link }}
+              {{- $.Scratch.Set "in" " in" }}
+            {{- end }}
+          {{- end }}
+        {{- end }}
+    <div id="collapse-{{ $collapse }}" class="panel-collapse collapse{{- $.Scratch.Get "in" }}">
+      <ul class="list-group" style="border-top: none;">
+        {{- range . }}
+          {{- $title := .title | default "(Untitled)" }}
+          {{- if .link }}
+            {{- $link := string (relref $page .link) }}
+        <li class="list-group-item{{ if eq $page.RelPermalink $link }} list-group-item-success{{ end }}"><a href="{{ $link }}">{{ $title }}</a></li>
+          {{- else }}
+        <li class="list-group-item">{{ $title }}</li>
+            {{- end }}
+        {{- end }}
+      </ul>
+    </div>
+      {{- end }}
+  </div>
+    {{- end }}
   {{- end }}
 {{- end }}
 </div>
-<script>
-  $("[data-id=menu] > ul").find("ul").hide();
-  $("div[data-id=menu] > ul > li").click((event) => {
-    var target = $( event.target );
-    if(target.is( "div[data-id=menu] > ul > li" )) {
-      target.children().toggle();
-    }
-  });
-  $("[data-id=menu] [href=\"" + window.location.pathname + "\"]").parent().parent().toggle();
-</script>
+{{ "" | safeHTML }}
+{{ "<!-- END OF MENU -->" | safeHTML }}

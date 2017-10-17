@@ -1,25 +1,27 @@
 ---
-title: MQTT protokol
+title: MQTT protocol
 ---
+* MQTT is open, simple and low overhead communication protocol for sending messages between many clients which are connected to the central MQTT broker.
+* Every **message** contains two parts - **topic** and **payload**.
+* Topic describes content of the message.
+* Topic name contains "directory" structure - each level is divided with symbol `/`.
+* Topic can be `bedroom/temperature` or `kitchen/light/set`.
+* MQTT server is called the **broker** and clients can **publish** messages and **subscribe** to different topics.
+* The task of MQTT broker is to deliver messages from **publishers** to the **subscribers**.
+* You can use the `+` symbol to subscribe to all topics in the current topic (`+/light/set`) and `#` symbol to subscribe to all sub-topics (`kitchen/#`).
 
-* MQTT je otevřený, jednoduchý a nenáročný protokol pro předávání zpráv mezi klienty prostřednictvím centrálního bodu - brokeru.
-* Každá **zpráva** sestává z **tématu (topic)** a **obsahu (payload)**.
-* Témata popisují kategorii zprávy.
-* Témata používají stromovou strukturu - jednotlivé úrovně jsou odděleny symbolem `/`.
-* Vzorové příklady témat: `ložnice/teplota` nebo `kuchyně/světlo/zapnuto`.
-* MQTT server se nazývá **broker** a klienti můžou **publikovat (publish)** zprávy a **přihlásit (subscribe)** se k různým tématům.
-* Funkcí MQTT serveru je doručovat zprávy od publisherů k subscriberům.
-* U subscribe témat se může použít symbol `+` pro přihlášení k odběru zpráv jedné úrovně a symbol `#` pro přihlášení k následujícím úrovním.
+{{< note "info" >}}
+The symbol `#` can be used only at the end of the topic name.
+{{< /note >}}
 
-  > Symbol `#` se může použít pouze na konci přihlášeného tématu.
 
-  [Více informací o tématech](http://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices)
+[More information about MQTT topics](http://www.hivemq.com/blog/mqtt-essentials-part-5-mqtt-topics-best-practices)
 
 # Mosquitto MQTT broker
 
-BigClown používá open-source brokera [Mosquitto](https://mosquitto.org). Všechny zprávy jsou předávány skrz MQTT broker. Díky tomu je možné systém snadno rozšiřovat.
+BigClown is using open-source [Mosquitto](https://mosquitto.org) MQTT broker. All messages are routed through MQTT broker. This allows further expansion of BigClown system.
 
-Pokud máte zprovozněný Core Module nebo bezdrátovou síť co posílá hodnoty, můžete si nechat vypisovat všechny zprávy s pomocí `mosquitto-cli` příkazů:
+When you connect the Core Module or USB Dongle with connected remote node, you can display all incoming messages using `mosquitto-cli` package by typing:
 
 ```
 pi@hub:~ $ mosquitto_sub -t "#" -v
@@ -28,19 +30,24 @@ node/836d19821664/thermometer/0:1/temperature 24.94
 node/836d19821664/push-button/-/event-count 5
 ```
 
-# GUI nástroj pro MQTT zprávy
+# GUI tool for MQTT messages
 
-Pro debugování a diagnostiku můžeš použít nástroj s grafickým uživatelským rozhraním - [Eclipse Paho mqtt-spy](https://github.com/eclipse/paho.mqtt-spy).
+For debugging the communication you can use graphical tool [Eclipse Paho mqtt-spy](https://github.com/eclipse/paho.mqtt-spy).
 
-> Tento nástroj vyžaduje instalaci JRE 8 na hostovaném stroji.
+{{< note "info" >}}
+This tool need JRE 8 installed on your host machine.
+{{< /note >}}
 
-* Pro více informací o tomto nástroji se podívej zde: https://github.com/eclipse/paho.mqtt-spy/wiki
+* More information about Paho https://github.com/eclipse/paho.mqtt-spy/wiki
 
-* Zde si můžeš nástroj stáhnout: https://github.com/eclipse/paho.mqtt-spy/wiki/Downloads
+* [Download Eclipse Paho mqtt-spy](https://github.com/eclipse/paho.mqtt-spy/wiki/Downloads)
 
-Po instalaci zadej IP adresu tvého MQTT brokeru a přihlaš se k tématům nebo začni publikovat zprávy.
+After installation you have to set IP adress of the MQTT broker. For example `hub.local` or IP adress of your **Raspberry Pi**
 
-> **Tip** Tento nástroj podporuje přihlašovací skripty psané v JavaScriptu.
->         Tímto si můžeš zautomatizovat tvé úlohy.
+{{< note "info" >}}
+This tool allows writing of the custom scripts in the JavaScripts.
+You can automate tasks using scripting.
+{{< /note >}}
 
-![](images/mosquitto/mqtt-spy.png)
+
+![MQTT Spy tool](mqtt-spy.png)

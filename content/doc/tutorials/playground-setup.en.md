@@ -24,9 +24,9 @@ Once you install this setup, you will be able to start designing your automation
 
 * One of the **BigClown IoT kits**
 
-## Playground Setup or Upgrade
+## Platform Guides
 
-Select the installation procedure on one of the supported operating systems:
+Select the setup procedure on one of the supported operating systems:
 
 * [**Playground Setup on Windows**]({{< relref "#playground-setup-on-windows" >}})
 
@@ -197,7 +197,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
         bcf flash bigclownlabs/bcf-usb-dongle:latest
 
-        {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
+    {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
 12. Start **BigClown USB Gateway** (in the background):
 

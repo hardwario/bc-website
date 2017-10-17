@@ -101,26 +101,36 @@ If you already have previously installed playground, you can upgrade it at any t
 
 12. Plug the **USB Dongle** into a USB port.
 
-13. Upload the latest firmware into **USB Dongle**:
+13. List available devices:
+
+        bcf devices
+
+    {{% note "warning" %}}You can have multiple devices connected at the same time, but then you must specify which one you want to use. Otherwise the first device in the list is used implicitly.{{% /note %}}
+
+14. Upload the latest firmware into **USB Dongle**:
 
         bcf update
     \
 
         bcf flash bigclownlabs/bcf-usb-dongle:latest
 
-14. Start **BigClown USB Gateway** (in the background):
+    {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
-        bcg --device /dev/cu.*
+15. Start **BigClown USB Gateway** (in the background):
 
-15. Start **Node-RED**:
+        bcg --device ...
+
+    {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+
+16. Start **Node-RED**:
 
         node-red
 
-16. Open your web browser with the URL:
+17. Open your web browser with the URL:
 
     **https://localhost:1880/**
 
-17. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+18. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
 
 ## Playground Upgrade on macOS
 
@@ -174,26 +184,36 @@ If you already have previously installed playground, you can upgrade it at any t
 
 9. Plug the **USB Dongle** into a USB port.
 
-10. Upload the latest firmware into **USB Dongle**:
+10. List available devices:
+
+        bcf devices
+
+    {{% note "warning" %}}You can have multiple devices connected at the same time, but then you must specify which one you want to use. Otherwise the first device in the list is used implicitly.{{% /note %}}
+
+11. Upload the latest firmware into **USB Dongle**:
 
         bcf update
     \
 
         bcf flash bigclownlabs/bcf-usb-dongle:latest
 
-11. Start **BigClown USB Gateway** (in the background):
+        {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
-        bcg --device /dev/cu.*
+12. Start **BigClown USB Gateway** (in the background):
 
-12. Start **Node-RED**:
+        bcg --device ...
+
+    {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+
+13. Start **Node-RED**:
 
         node-red
 
-13. Open your web browser with the URL:
+14. Open your web browser with the URL:
 
     **https://localhost:1880/**
 
-14. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+15. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
 
 ## Playground Upgrade on Ubuntu
 
@@ -216,5 +236,7 @@ If you already have previously installed playground, you can upgrade it at any t
 ## Related Documents
 
 * [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}})
+
 * [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.en.md" >}})
+
 * [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}})

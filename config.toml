@@ -6,8 +6,7 @@ languageCode = "en"
 title = "BigClown"
 
 [blackfriday]
-fractions = false
-smartDashes = false
+smartypants = false
 
 [Languages]
 [Languages.en]

@@ -34,6 +34,10 @@ items:
       link: "doc/projects/sigfox-motion-detector.en.md"
   - title: "Tutorials"
     items:
+    - title: "Playground Setup"
+      link: "doc/tutorials/playground-setup.en.md"
+    - title: "Playground Starter"
+      link: "doc/tutorials/playground-starter.en.md"
     - title: "Raspberry Pi Installation"
       link: "doc/tutorials/raspberry-pi-installation.en.md"
     - title: "Raspberry Pi Login"

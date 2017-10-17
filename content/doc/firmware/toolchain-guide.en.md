@@ -30,7 +30,41 @@ We will show the individual operations in the following chapters.
 
 {{% note "info" %}}BigClown projects offer pre-compiled firmware binary images in the section **Releases** of the given GitHub repository.{{% /note %}}
 
-The **bcf** tool has a built-in help system. You can see the basic list of commands by using `bcf help` and detailed usage of a given command using e.g. `bcf flash --help`.
+The **bcf** tool has a built-in help system. You can see the basic list of commands by using `bcf help`:
+
+    usage: bcf [-h] [-v] COMMAND ...
+
+    BigClown Firmware Tool
+
+    positional arguments:
+      COMMAND
+        update       update list of available firmware
+        list         list firmware
+        flash        flash firmware
+        devices      show devices
+        search       search in firmware names and descriptions
+        pull         pull firmware to cache
+        clean        clean cache
+        create       create new firmware
+        read         download firmware to file
+        help         show help
+
+    optional arguments:
+      -h, --help     show this help message and exit
+      -v, --version  show program's version number and exit
+
+Detailed usage of a given command using e.g. `bcf help flash`:
+
+    usage: bcf flash
+           bcf flash <firmware>
+           bcf flash <file>
+           bcf flash <url>
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      --device {/dev/ttyUSB0}
+                            device
+      --dfu                 use dfu mode
 
 ## Firmware Package Listing
 
@@ -38,9 +72,26 @@ Use this command to update the list of available firmware packages:
 
     bcf update
 
+{{% note "warning" %}}Always use this command before listing the available packages.{{% /note %}}
+
 Use this command to list the available firmware packages:
 
     bcf list
+
+Example output:
+
+    ...
+    bigclownlabs/bcf-ping-pong-table:firmware.bin:v1.0.0
+    bigclownlabs/bcf-sigfox-button:bcf-sigfox-button-v1.0.0.bin:v1.0.0
+    bigclownlabs/bcf-sigfox-climate-monitor:firmware.bin:v1.0.1
+    bigclownlabs/bcf-sigfox-co2-monitor:firmware.bin:v1.0.0
+    bigclownlabs/bcf-sigfox-motion-detector:firmware.bin:v1.0.1
+    bigclownlabs/bcf-sigfox-pulse-counter:firmware.bin:v1.1.0
+    ...
+
+Use this command to list all the versions of the available firmware packages:
+
+    bcf list --all
 
 Use this command to search in the available packages (in their title and description):
 
@@ -54,7 +105,7 @@ Firmware upload can be done using the `bcf flash` command. The firmware can be o
 
 1. Source **firmware package**, for instance:
 
-        bcf flash bigclownlabs/bcf-sigfox-co2-monitor:firmware.bin:v1.0.0
+        bcf flash bigclownlabs/bcf-sigfox-co2-monitor:latest
 
 2. Source **local disk file**, for instance:
 
@@ -64,9 +115,21 @@ Firmware upload can be done using the `bcf flash` command. The firmware can be o
 
         bcf flash https://github.com/bigclownlabs/bcf-sigfox-co2-monitor/releases/download/v1.0.0/firmware.bin
 
+In case you have multiple devices connected to your host, you can list the with the command:
+
+    bcf devices
+
+...and then use the device from the list altogether with the `--device` parameter, e.g.:
+
+    bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-sigfox-co2-monitor:latest
+
 If you need to download the firmware package and work with it later offline, you can download it using the command `bcf pull`, for instance:
 
-        bcf pull bigclownlabs/bcf-sigfox-co2-monitor:firmware.bin:v1.0.0
+    bcf pull bigclownlabs/bcf-sigfox-co2-monitor:latest
+
+If you want to purge the cache of the downloaded packages, use this command:
+
+    bcf clean
 
 ## Create Blank Firmware Project
 

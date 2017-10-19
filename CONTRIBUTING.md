@@ -5,7 +5,7 @@ One of our goals is to provide well written documentation which allows people to
 
 ## Contribution process
 We stick to commonly used contribution process. To add or edit any page, please do following:
-  
+
   - fork this repository
   - clone forked repository -> make changes -> commit & push
   - send a pull request with appropriate description of your changes
@@ -96,3 +96,42 @@ If you are not sure how can you help or should you have any other question, plea
     `npm start`
 
 10. Open browser and navigate to http://localhost:1313/.
+
+
+## Local development on Microsoft Windows
+
+1. Install [Chocolatey](https://chocolatey.org/install) package manager for Windows.
+
+2. Open [administrative shell](https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/) `cmd.exe`.
+
+3. Install Git:
+
+    `choco install git`
+
+4. Install Hugo:
+
+    `choco install hugo`
+
+5. Install Node.js (for npm):
+
+    `choco install nodejs`
+
+6. Open `cmd.exe` (without administrative rights) in your user profile directory (or directory where you like to clone repository).
+
+7. Clone this repository:
+
+    `git clone git@github.com:bigclownlabs/bc-website.git`
+
+8. Navigate to project directory:
+
+    `cd bc-website`
+
+9. Install all dependencies:
+
+    `npm install`
+
+10. Run local webserver:
+
+    `npm start`
+
+11. Open browser and navigate to http://localhost:1313/.

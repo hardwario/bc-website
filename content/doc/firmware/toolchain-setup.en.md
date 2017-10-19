@@ -178,6 +178,93 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         sudo pip3 install --upgrade bcf
 
+## Setup on Linux
+
+If you have other Linux distribution or unsuported Ubuntu version, we recommend to use official *GNU Embedded Toolchain for ARM* from [developer.arm.com](https://developer.arm.com) pages. This package is validated by ARM and tested by us.
+
+1. Go to [https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads) and download **Linux 64-bit** package.
+
+2. Extract package to filesystem, e.g. into /opt folder (you will need root privileges) or into ~/.local folder
+
+    1. **/opt version**
+
+        ```shell
+        cd <folder with package> # go to folder with downloaded file
+        sudo cp gcc-arm-none-eabi-6-*-update-linux.tar.bz2 /opt  # copy to destination folder
+        cd /opt  # go there
+        sudo tar xjf gcc-arm-none-eabi-6-*-update-linux.tar.bz2  # unpack file
+        ```
+
+    2. **~/.local/opt version**
+
+        ```shell
+        mkdir ~/.local/opt  # create folder
+        cd <folder with package> # go to folder with downloaded file
+        cp gcc-arm-none-eabi-6-*-update-linux.tar.bz2 ~/.local/opt  # copy to destination folder
+        cd ~/.local/opt  # go there
+        tar xjf gcc-arm-none-eabi-6-*-update-linux.tar.bz2  # unpack file
+        ```
+3. Create a symbolic link `gcc-arm-none-eabi-6`
+
+        sudo ln -s gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2
+
+4. Update `PATH` variable so you can use arm-none-eabi-* binaries directly
+
+
+    ```shell
+    cd  # go to user home folder
+    # use your favorite editor and edit ".profile" file
+    # find line with `PATH` variable. e.g.:
+
+    # export PATH="$PATH:/…"
+
+    {{% note "warning" %}}Please note that three dots (…) represents some text there{{% /note %}}
+
+    # and add to your path to the end:
+
+    export PATH="$PATH:/…:/opt/gcc-arm-none-eabi-6/bin"
+
+    # if there is no `PATH` line, add it
+
+    export PATH="$PATH:/opt/gcc-arm-none-eabi-6/bin"
+    ```
+
+5. Use your distribution package manager and install
+    * **Git**
+    * **Python 3**
+    * **dfu-util**
+
+6. Install **BigClown Firmware Tool**:
+
+        sudo pip3 install bcf
+
+7. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+
+    * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
+
+    * [**Integration with Visual Studio Code**]({{< relref "#integration-with-visual-studio-code" >}})
+
+## Update on Linux
+
+* Update **Toolchain**
+    * Download new package
+    * Extract it into selected folder (`/opt`, `~/.local/opt` or other)
+    * Update symbolic link
+
+        `sudo ln -sf gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2`
+
+        or
+
+        `ln -sf gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2`
+
+* Update packages
+    * Use your distribution package manager
+
+* BigClown Firmware tool update:
+
+        sudo pip3 install --upgrade bcf
+
+
 ## Integration with Atom
 
 **TODO**

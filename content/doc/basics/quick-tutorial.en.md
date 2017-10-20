@@ -161,6 +161,9 @@ For the graphical representation of received values you can use **Node-RED dasbo
 Double click on the **gauge** block for configuration. First create the new dashboard group by clicking the pencil symbol at the **Add new ui_group** field.
 In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dashboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dasboard.
 
+<img src="temperature-mqtt-dashboard.gif" style="width:100%;" />
+
+
 {{< note "info" >}}
 For battery saving reasons the temperature is only send when there's a change. For testing purporses it is appropriate make the temperature sensor cooler or warmer.
 {{< /note >}}
@@ -185,15 +188,36 @@ Here's the complete flow in case of any issues.
 
 Now we try to connect the relative humidity sensor to the **Core Module**. It's possible to connect the {{< shop "Humidity Tag" >}} directly to the **Core Module** as displayed in the picture (**TODO**) or you can use also {{< shop "Tag Module" >}} which can hold many more sensor tags. Also the {{< shop "Battery Module" >}} contains spare connector for sensor tag.
 
+<img src="humidity-added.jpg" style="width:50%;" />
+
 {{< note "info" >}}
 This procedure can be used also for other conencted sensors or {{< shop "Climate Module" >}}. You only need to change **topic** to the MQTT broker you are subscribing to.
 {{< /note >}}
 
-**TODO** Describe humidity tag connection and subscribing to the topic.
+Then you can use debug nodes in **Node-RED** to get the right MQTT topic and copy and paste it to your new flow.
+
+The MQTT topic will have the format `node/{id}/hygrometer/0:2/relative-humidity`. Replace the `{id}` with your node's address.
+
+<img src="humidity-tag-node-animation.gif" style="width:100%;" />
 
 ## Extending to control the relay
 
-**TODO** Describe Relay module installation and publishing the topic
+Now let's add the relay control. You can use {{< shop "Relay Module" >}} or {{< shop "Power Module" >}}. Connect the module to the Core Module. Based on selected module with relay you have to change the topic.
+
+{{< shop "Power Module" >}} has topic `node/{id}/relay/-/state/set`
+
+{{< shop "Relay Module" >}} has topic `node/{id}/relay/0:0/state/set`
+
+Then you send `true` or `false` as a payload.
+
+<img src="power-module-animation.gif" style="width:100%;" />
+
+The {{< shop "Relay Module" >}} has also command to make a single pulse with set duration and relay direction.
+
+Topic is `node/{id}/relay/0:0/pulse/set` and you have to publish this JSON `{ "duration": 500, "direction": true}`. Duration is time in milliseconds.
+
+<img src="relay-pulse-animation.gif" style="width:100%;" />
+
 
 ## Conversion to the battery operated node
 

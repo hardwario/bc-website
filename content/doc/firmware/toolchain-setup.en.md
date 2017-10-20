@@ -180,11 +180,11 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 ## Setup on Linux
 
-If you have other Linux distribution or unsuported Ubuntu version, we recommend to use official *GNU Embedded Toolchain for ARM* from [developer.arm.com](https://developer.arm.com) pages. This package is validated by ARM and tested by us.
+If you have other Linux distribution or unsupported Ubuntu version, we recommend to use official *GNU Embedded Toolchain for ARM* from [developer.arm.com](https://developer.arm.com) pages. This package is validated by ARM and tested by us.
 
 1. Go to [https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads) and download **Linux 64-bit** package.
 
-2. Extract package to filesystem, e.g. into /opt folder (you will need root privileges) or into ~/.local folder
+2. Extract package to filesystem, e.g. into `/opt` folder (*available for all users, you will need root privileges*) or into `~/.local/opt` folder (*available only for you*)
 
     1. **/opt version**
 
@@ -198,7 +198,7 @@ If you have other Linux distribution or unsuported Ubuntu version, we recommend 
     2. **~/.local/opt version**
 
         ```shell
-        mkdir ~/.local/opt  # create folder
+        mkdir -p ~/.local/opt  # create folder
         cd <folder with package> # go to folder with downloaded file
         cp gcc-arm-none-eabi-6-*-update-linux.tar.bz2 ~/.local/opt  # copy to destination folder
         cd ~/.local/opt  # go there
@@ -206,7 +206,10 @@ If you have other Linux distribution or unsuported Ubuntu version, we recommend 
         ```
 3. Create a symbolic link `gcc-arm-none-eabi-6`
 
+
+    ```shell
         sudo ln -s gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2
+    ```
 
 4. Update `PATH` variable so you can use arm-none-eabi-* binaries directly
 
@@ -214,19 +217,27 @@ If you have other Linux distribution or unsuported Ubuntu version, we recommend 
     ```shell
     cd  # go to user home folder
     # use your favorite editor and edit ".profile" file
-    # find line with `PATH` variable. e.g.:
+    # find line with PATH variable. e.g.:
 
-    # export PATH="$PATH:/…"
+        export PATH="$PATH:/…"
 
-    {{% note "warning" %}}Please note that three dots (…) represents some text there{{% /note %}}
+    {{% note "warning" %}}Please note that three dots (…) represents some text there.{{% /note %}}
 
-    # and add to your path to the end:
+    # and add to your path to the end (/opt version):
 
-    export PATH="$PATH:/…:/opt/gcc-arm-none-eabi-6/bin"
+        export PATH="$PATH:/…:/opt/gcc-arm-none-eabi-6/bin"
 
-    # if there is no `PATH` line, add it
+    # or (~/.local/opt version)
 
-    export PATH="$PATH:/opt/gcc-arm-none-eabi-6/bin"
+        export PATH="$PATH:/…:~/.local/opt/gcc-arm-none-eabi-6/bin"
+
+    # if there is no PATH line, add it
+
+        export PATH="$PATH:/opt/gcc-arm-none-eabi-6/bin"
+
+    # or
+
+        export PATH="$PATH:~/.local/opt/gcc-arm-none-eabi-6/bin"
     ```
 
 5. Use your distribution package manager and install
@@ -244,18 +255,24 @@ If you have other Linux distribution or unsuported Ubuntu version, we recommend 
 
     * [**Integration with Visual Studio Code**]({{< relref "#integration-with-visual-studio-code" >}})
 
+    * [**Integration with KDevelop**]({{< relref "#integration-with-kdevelop" >}})
+
 ## Update on Linux
 
 * Update **Toolchain**
-    * Download new package
-    * Extract it into selected folder (`/opt`, `~/.local/opt` or other)
+    * Download updated **Linux 64-bit** package from [https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)
+    * Extract it into proper folder (`/opt`, `~/.local/opt` or other)
     * Update symbolic link
 
-        `sudo ln -sf gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2`
+        ```shell
+        sudo ln -sf gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2
+        ```
 
         or
 
-        `ln -sf gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2`
+        ```shell
+        ln -sf gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2
+        ```
 
 * Update packages
     * Use your distribution package manager
@@ -270,6 +287,10 @@ If you have other Linux distribution or unsuported Ubuntu version, we recommend 
 **TODO**
 
 ## Integration with Visual Studio Code
+
+**TODO**
+
+## Integration with KDevelop
 
 **TODO**
 

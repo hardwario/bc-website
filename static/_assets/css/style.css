@@ -9,6 +9,33 @@ p {
   margin-top: 10px;
 }
 
+ol {
+  counter-reset: li;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 10px;
+}
+
+ol li {
+  position: relative;
+  padding: 5px 0 5px 30px;
+}
+
+ol li:before {
+  content: counter(li);
+  counter-increment: li;
+  height: 30px;
+  width: 30px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  color: red;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
 .semi-transparent {
   opacity: 0.2;
 }

@@ -78,7 +78,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
 7. Install **Node.js** version 6 (required by **Node-RED**).
 
-        brew install node@6
+        brew install node node@6
     \
 
         brew unlink node
@@ -88,8 +88,6 @@ If you already have previously installed playground, you can upgrade it at any t
     \
 
         source ~/.bash_profile
-
-    {{% note "warning" %}}This is a driver for the FT231X USB UART bridge.{{% /note %}}
 
 8. Install **Node-RED**:
 

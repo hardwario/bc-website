@@ -6,13 +6,15 @@ In this document we will install a set of components that are fundamental for th
 
 These fundamental components are:
 
-* MQTT broker **Mosquitto** (with client tools)
+* The MQTT broker **Mosquitto** (with client tools)
 
-* Web-based tool **Node-RED** for automation flows
+* The web-based tool **Node-RED** for automation flows
 
-* BigClown **USB Gateway** for MQTT/hardware bridging
+* The process manager **PM2** to start the components automatically on boot
 
-    {{% note "info" %}}This component works as a bridge between the serial port of the **USB Dongle** or **Core Module** and MQTT broker.{{% /note %}}
+* The Python application **BigClown Gateway** for MQTT/gateway bridging
+
+    {{% note "info" %}}This component works as a bridge between the serial port of **BigClown USB Dongle** or **BigClown Core Module** and an MQTT broker.{{% /note %}}
 
 Once you install this setup, you will be able to start designing your automation flows quickly and easily.
 
@@ -20,7 +22,7 @@ Once you install this setup, you will be able to start designing your automation
 
 * Workstation with **Windows**, **macOS** or **Ubuntu**
 
-* BigClown **USB Dongle**
+* **BigClown USB Dongle**
 
 * One of the **BigClown IoT kits**
 
@@ -52,23 +54,27 @@ If you already have previously installed playground, you can upgrade it at any t
 
 ## Playground Setup on macOS
 
-1. Install FTDI driver:
+1. Install the driver for the **BigClown USB Dongle**:
 
     {{% download "Download from FTDI" "http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_4_2.dmg" %}}
 
+    {{% note "info" %}}This is a driver for the FT231X USB UART bridge.{{% /note %}}
+
 2. Restart your computer.
 
-3. Open the application **Terminal**.
+3. Open the **Terminal** application.
 
 4. Install [**Homebrew**](https://brew.sh) (unless you already have it).
 
-5. Upgrade **Homebrew** packages:
+5. Upgrade the **Homebrew** packages:
 
         brew update && brew upgrade
 
 6. Install **Mosquitto** server and clients:
 
         brew install mosquitto
+
+        brew services start mosquitto
 
 7. Install **Node.js** version 6 (required by **Node-RED**).
 
@@ -83,31 +89,50 @@ If you already have previously installed playground, you can upgrade it at any t
 
         source ~/.bash_profile
 
+    {{% note "warning" %}}This is a driver for the FT231X USB UART bridge.{{% /note %}}
+
 8. Install **Node-RED**:
 
         sudo npm install -g --unsafe-perm node-red
 
-9. Install **Python 3** (required by **BigClown USB Gateway**).
+9. Install **PM2**:
+
+        sudo npm install -g pm2
+
+    {{% note "info" %}}**PM2** is a process manager that will help you to start **Node-RED** and other processes on boot.{{% /note %}}
+
+10. Tell **PM2** to run **Node-RED**:
+
+        pm2 start `which node-red` -- -v
+
+11. Tell **PM2** to run on boot:
+
+        pm2 save
+        pm2 startup
+
+    {{% note "danger" %}}Follow the instructions provided by the command `pm2 startup`.{{% /note %}}
+
+12. Install **Python 3** (required by the **BigClown Gateway**).
 
         brew install python3
 
-10. Install **BigClown Firmware Tool**:
+13. Install the **BigClown Firmware Tool**:
 
         sudo pip3 install --upgrade bcf
 
-11. Install **BigClown USB Gateway**:
+14. Install the **BigClown Gateway**:
 
         sudo pip3 install --upgrade bcg
 
-12. Plug the **USB Dongle** into a USB port.
+15. Plug the **BigClown USB Dongle** into a USB port.
 
-13. List available devices:
+16. List the available devices:
 
         bcf devices
 
     {{% note "warning" %}}You can have multiple devices connected at the same time, but then you must specify which one you want to use. Otherwise the first device in the list is used implicitly.{{% /note %}}
 
-14. Upload the latest firmware into **USB Dongle**:
+17. Upload the latest firmware into the **BigClown USB Dongle**:
 
         bcf update
     \
@@ -116,25 +141,25 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
-15. Start **BigClown USB Gateway** (in the background):
+18. Start the **BigClown Gateway** (in the background):
 
         bcg --device ...
 
     {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-16. Start **Node-RED**:
+19. Start **Node-RED**:
 
         node-red
 
-17. Open your web browser with the URL:
+20. Open your web browser with the URL:
 
     **https://localhost:1880/**
 
-18. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+21. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
 
 ## Playground Upgrade on macOS
 
-1. Upgrade **Homebrew** packages:
+1. Upgrade the **Homebrew** packages:
 
         brew update && brew upgrade
 
@@ -142,17 +167,21 @@ If you already have previously installed playground, you can upgrade it at any t
 
         sudo npm update -g node-red
 
-3. Upgrade **BigClown Firmware Tool**:
+3. Upgrade **PM2**:
+
+        sudo npm update -g pm2
+
+4. Upgrade the **BigClown Firmware Tool**:
 
         sudo pip3 install --upgrade bcf
 
-4. Upgrade **BigClown USB Gateway**:
+5. Upgrade the **BigClown Gateway**:
 
         sudo pip3 install --upgrade bcg
 
 ## Playground Setup on Ubuntu
 
-1. Open the application **Terminal**.
+1. Open the **Terminal** application.
 
 2. Upgrade all packages:
 
@@ -170,27 +199,44 @@ If you already have previously installed playground, you can upgrade it at any t
 
         sudo npm install -g --unsafe-perm node-red
 
-6. Install **Python 3** (required by **BigClown USB Gateway**).
+6. Install **PM2**:
+
+        sudo npm install -g pm2
+
+    {{% note "info" %}}**PM2** is a process manager that will help you to start **Node-RED** and other processes on boot.{{% /note %}}
+
+7. Tell **PM2** to run **Node-RED**:
+
+        pm2 start `which node-red` -- -v
+
+8. Tell **PM2** to run on boot:
+
+        pm2 save
+        pm2 startup systemd
+
+    {{% note "danger" %}}Follow the instructions provided by the command `pm2 startup systemd`.{{% /note %}}
+
+9. Install **Python 3** (required by the **BigClown Gateway**).
 
         sudo apt install python3.5
 
-7. Install **BigClown Firmware Tool**:
+10. Install the **BigClown Firmware Tool**:
 
         sudo pip3 install --upgrade bcf
 
-8. Install **BigClown USB Gateway**:
+11. Install the **BigClown Gateway**:
 
         sudo pip3 install --upgrade bcg
 
-9. Plug the **USB Dongle** into a USB port.
+12. Plug the **BigClown USB Dongle** into a USB port.
 
-10. List available devices:
+13. List the available devices:
 
         bcf devices
 
     {{% note "warning" %}}You can have multiple devices connected at the same time, but then you must specify which one you want to use. Otherwise the first device in the list is used implicitly.{{% /note %}}
 
-11. Upload the latest firmware into **USB Dongle**:
+14. Upload the latest firmware into the **BigClown USB Dongle**:
 
         bcf update
     \
@@ -199,25 +245,25 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
-12. Start **BigClown USB Gateway** (in the background):
+15. Start the **BigClown Gateway** (in the background):
 
         bcg --device ...
 
     {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-13. Start **Node-RED**:
+16. Start **Node-RED**:
 
         node-red
 
-14. Open your web browser with the URL:
+17. Open your web browser with the URL:
 
     **https://localhost:1880/**
 
-15. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+18. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
 
 ## Playground Upgrade on Ubuntu
 
-1. Upgrade all packages:
+1. Upgrade all the packages:
 
         sudo apt update && sudo apt upgrade
 
@@ -225,11 +271,15 @@ If you already have previously installed playground, you can upgrade it at any t
 
         sudo npm update -g node-red
 
-3. Upgrade **BigClown Firmware Tool**:
+3. Upgrade **PM2**:
+
+        sudo npm update -g pm2
+
+4. Upgrade the **BigClown Firmware Tool**:
 
         sudo pip3 install --upgrade bcf
 
-4. Upgrade **BigClown USB Gateway**:
+5. Upgrade the **BigClown Gateway**:
 
         sudo pip3 install --upgrade bcg
 

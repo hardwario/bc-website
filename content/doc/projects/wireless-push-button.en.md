@@ -78,7 +78,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "info" %}}You can find more information about the enclosures in the document  [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}}).{{% /note %}}
 
-## Playground Integration
+## Playground Integration
 
 1. Open the **Terminal** application.
 
@@ -98,9 +98,11 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 6. Insert the following snippet in the flow (using **Menu >> Import**):
 
+{{% syntax line="false" copy="true" %}}
 ```json
 [{"id":"1f72ea23.0cada6","type":"mqtt in","z":"a36dd54f.bb9088","name":"","topic":"#","qos":"2","broker":"ec80d5ef.3f7b48","x":129.5,"y":206,"wires":[["529a17df.d6a6b8"]]},{"id":"529a17df.d6a6b8","type":"debug","z":"a36dd54f.bb9088","name":"","active":true,"console":"false","complete":"false","x":330,"y":160,"wires":[]},{"id":"9673805d.c97a","type":"mqtt in","z":"a36dd54f.bb9088","name":"","topic":"node/push-button/push-button/-/event-count","qos":"2","broker":"ec80d5ef.3f7b48","x":250,"y":280,"wires":[["c1ab91fa.4665e"]]},{"id":"c1ab91fa.4665e","type":"ifttt out","z":"a36dd54f.bb9088","eventName":"button","key":"2fdbd53b.dcf5fa","x":550,"y":340,"wires":[]},{"id":"e1914519.ccf9a8","type":"inject","z":"a36dd54f.bb9088","name":"Get info about all gateways","topic":"gateway/all/info/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":200,"y":380,"wires":[["14b136a6.3d6419"]]},{"id":"14b136a6.3d6419","type":"mqtt out","z":"a36dd54f.bb9088","name":"","topic":"","qos":"","retain":"","broker":"aa1a5e49.66a25","x":550,"y":500,"wires":[]},{"id":"217cc3ca.160a0c","type":"inject","z":"a36dd54f.bb9088","name":"Start node enrollment","topic":"gateway/dongle/enrollment/start","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":180,"y":500,"wires":[["14b136a6.3d6419"]]},{"id":"dcf841d5.4c148","type":"inject","z":"a36dd54f.bb9088","name":"Stop node enrollment","topic":"gateway/dongle/enrollment/stop","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":180,"y":560,"wires":[["14b136a6.3d6419"]]},{"id":"a4f261d0.28e5c","type":"inject","z":"a36dd54f.bb9088","name":"List paired nodes in the dongle","topic":"gateway/dongle/nodes/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":210,"y":440,"wires":[["14b136a6.3d6419"]]},{"id":"cfac07fb.a21b58","type":"inject","z":"a36dd54f.bb9088","name":"Delete all nodes from the dongle","topic":"gateway/dongle/nodes/purge","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":210,"y":620,"wires":[["14b136a6.3d6419"]]},{"id":"ec80d5ef.3f7b48","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"2fdbd53b.dcf5fa","type":"ifttt-key","z":""},{"id":"aa1a5e49.66a25","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
 ```
+{{% /syntax %}}
 
 ## Radio Enrollment
 

@@ -10,30 +10,47 @@ p {
 }
 
 ol {
-  counter-reset: li;
-  list-style-type: none;
-  font-size: 14px;
-  line-height: 18px;
-  padding-left: 10px;
+  counter-reset: li; /* Initiate a counter */
+  margin-left: 0; /* Remove the default left margin */
+  padding-left: 0; /* Remove the default left padding */
 }
 
-ol li {
-  position: relative;
-  padding: 5px 0 5px 30px;
+ol > li {
+  position: relative; /* Create a positioning context */
+  margin: 0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+  padding: 4px 18px; /* Add some spacing around the content */
+  list-style: none; /* Disable the normal item numbering */
+  border-top: 2px solid #600;
 }
 
-ol li:before {
-  content: counter(li);
-  counter-increment: li;
-  height: 30px;
-  width: 30px;
-  border: 1px solid blue;
-  border-radius: 50%;
-  color: red;
-  text-align: center;
+ol > li:before {
+  content: counter(li); /* Use the counter as content */
+  counter-increment: li; /* Increment the counter by 1 */
+  /* Position and style the number */
   position: absolute;
-  left: 0;
-  top: 4px;
+  top: -2px;
+  left: -2em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 2em;
+  /* Some space between the number and the content in browsers that support
+     generated content but not positioning it (Camino 2 is one example) */
+  margin-right: 8px;
+  padding: 4px;
+  border-top: 2px solid #600;
+  color: #fff;
+  background: #600;
+  font-weight: bold;
+  text-align: center;
+}
+
+li ol, li ul {
+  margin-top: 6px;
+}
+
+ol ol li:last-child {
+  margin-bottom: 0;
 }
 
 .semi-transparent {

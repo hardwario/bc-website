@@ -48,7 +48,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 4. Upload the firmware to the **USB Dongle**:
 
-        bcf flash bigclownlabs/bcf-usb-dongle:latest
+        bcf flash bigclownlabs/bcf-usb-dongle:bcf-usb-dongle-v1.5.5.bin:v1.5.5
 
 5. Once finished, remove the **USB Dongle** from the computer.
 
@@ -58,7 +58,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/firmware/toolchain-guide.en.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
 
-        bcf flash --dfu bigclownlabs/bcf-kit-push-button:latest
+        bcf flash --dfu bigclownlabs/bcf-kit-push-button:bcf-kit-push-button-v0.1.0.bin:v0.1.0
 
 8. Remove the Micro USB cable from the **Core Module** and your computer.
 

@@ -67,11 +67,11 @@ If you are not sure how can you help or should you have any other question, plea
 
 4. Install Hugo:
 
-    `wget https://github.com/gohugoio/hugo/releases/download/v0.26/hugo_0.26_Linux-64bit.deb`
+    `wget https://github.com/gohugoio/hugo/releases/download/v0.30.2/hugo_0.30.2_Linux-64bit.deb`
 
-    `sudo dpkg -i hugo_0.26_Linux-64bit.deb`
+    `sudo dpkg -i hugo_0.30.2_Linux-64bit.deb`
 
-    `rm hugo_0.26_Linux-64bit.deb`
+    `rm hugo_0.30.2_Linux-64bit.deb`
 
 5. Install Node.js (for npm):
 

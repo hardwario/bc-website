@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.6em;
   line-height: 1.5em;
   padding-top: 60px;
 }
@@ -18,7 +18,9 @@ ol {
 ol > li {
   position: relative; /* Create a positioning context */
   margin: 0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
-  padding: 4px 18px; /* Add some spacing around the content */
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 18px;
   list-style: none; /* Disable the normal item numbering */
   border-top: 2px solid #600;
 }
@@ -139,16 +141,6 @@ ol ol li:last-child {
   background-color: #f9f9f9;
 }
 
-.page-content code {
-  /*box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);*/
-}
-
-.page-content pre {
-  border: 0;
-  padding: 0;
-}
-
-[data-id="menu"] {
-  max-height: 88vh;
-  overflow: auto;
+.page-content pre code {
+  white-space: pre;
 }

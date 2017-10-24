@@ -3,6 +3,8 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 disableKinds = ["RSS", "sitemap"]
 languageCode = "en"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
 title = "BigClown"
 
 [blackfriday]

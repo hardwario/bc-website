@@ -12,8 +12,11 @@
   <link rel="stylesheet" href="/_assets/css/footer-dark.css">
   <link rel="stylesheet" href="/_assets/css/style.css">
   <link rel="stylesheet" href="/_assets/css/syntax.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#TableOfContents" data-offset="150">
+  <div id="top"></div>
   {{ block "navbar" . }}
   {{ partial "navbar.html" . }}
   {{ end }}
@@ -23,8 +26,6 @@
   {{ block "footer" . }}
   {{ partial "footer.html" . }}
   {{ end }}
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
 {{ printf "<!-- Built with Hugo version %s -->" .Hugo.Version | safeHTML }}

@@ -4,54 +4,31 @@
     <nav class="col-sm-4 col-md-3">
       {{- partial "doc/menu.html" . }}
     </nav>
-    {{- if len .TableOfContents }}
     <div class="col-sm-8 col-md-6">
-    {{- else }}
-      <div class="col-sm-8 col-md-9">
-        {{- end }}
-        <main aria-role="main">
-          <header class="page-header">
-            <h1 id="title">{{ .Title }}</h1>
-          </header>
-          <div class="page-content">
-            {{ .Content }}
-            <hr/>
-            <!-- Make sure author and contact frontmatter are defined -->
-            <p>{{ i18n "help" }}</p>
-            <p>{{ if (isset .Params "author") }}{{ i18n "author" }}:&nbsp;{{ .Params.author }}&nbsp;&lt;<a href="mailto:{{ if (isset .Params "contact") }}{{ .Params.contact }}{{ else }}ask@bigclown.com{{ end }}">{{ if (isset .Params "contact") }}{{ .Params.contact }}{{ else }}ask@bigclown.com{{ end }}</a>&gt;{{ else }}&lt;<a href="mailto:ask@bigclown.com">ask@bigclown.com</a>&gt;{{ end }}</p>
-          </div>
-        </main>
-      </div>
-      <div class="hidden-sm col-md-3">
-        {{- if len .TableOfContents }}
-        <aside class="well" style="background-color: #fff9ed; background-image: none;">
-          {{ .TableOfContents }}
-        </aside>
-        {{- end }}
-        <div>
-          <a class="btn btn-primary" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil"></span> {{ i18n "edit-this-page" | upper }}</a>
+      <main aria-role="main">
+        <header class="page-header">
+          <h1 id="title">{{ .Title }}</h1>
+        </header>
+        <div class="page-content">
+          {{ .Content }}
+          <hr>
+          <p class="hidden-xs hidden-sm">Do you have a question, anything was not clear in this article or did you find a mistake? Please feel free to use our <a href="https://forum.bigclown.com/" target="_blank"><strong>Discourse&nbsp;Forum</strong></a> or <a href="https://github.com/bigclownlabs/bc-website/issues" target="_blank"><strong>GitHub&nbsp;Issues</strong></a> to let us know.</p>
         </div>
-      </div>
+      </main>
+    </div>
+    <div class="hidden-xs hidden-sm col-md-3">
+      <aside id="scrollspy">
+        <p><strong>{{ i18n "chapters-in-this-document" }}:</strong></p>
+        {{ .TableOfContents }}
+        <div style="margin-top: 50px;"><a class="btn btn-danger" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil"></span> {{ i18n "edit-this-page" | upper }}</a></div>
+      </aside>
+      <script>
+        $('#scrollspy > nav > ul > li > ul').addClass('nav nav-pills nav-stacked');
+        $('#scrollspy > nav > ul > li > ul').prepend('<li><a href="#top">Introduction</a></li>');
+        $('#scrollspy > nav > ul > li > ul > li > ul').remove();
+        $('#scrollspy').slideDown(1000);
+      </script>
     </div>
   </div>
-  <script>
-    $(document).ready(() => {
-      //Search for pure pre's
-      $("pre > code").filter((index, item) => {
-        return item.getAttribute("class") == null ? true : false;
-      }).addClass("language-text");
-
-      // Disable or enable line counting
-      $("pre [class*=language]").parent().map((index, item) => {
-        var element = $(item);
-        element.next().attr("data-line") == "true" ? element.addClass("line-numbers") : null;
-      });
-
-      $("pre [class*=language]").parent().map((index, item) => {
-        var element = $(item);
-        element.next().attr("data-copy") == "false" || element.next().attr("data-copy") == null ? element.addClass("disable-copy") : null;
-      });
-    });
-
-  </script>
-  {{ end }}
+</div>
+{{ end }}

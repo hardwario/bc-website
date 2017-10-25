@@ -4,11 +4,8 @@ other = "Language"
 [edit-this-page]
 other = "Edit this page"
 
+[chapters-in-this-document]
+other = "Chapters in this document"
+
 [author]
 other = "Author"
-
-[author-name]
-other = "Unknown author"
-
-[help]
-other = "Do you have a question, anything was not clear in this article or did you find a mistake? Please feel free to use our forum or GitHub Issues to let us know."

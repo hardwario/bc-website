@@ -4,11 +4,8 @@ other = "Jazyk"
 [edit-this-page]
 other = "Upravit tuto stránku"
 
+[chapters-in-this-document]
+other = "Kapitoly v tomto dokumentu"
+
 [author]
 other = "Autor"
-
-[author-name]
-other = "Neznamý autor"
-
-[help]
-other = "Máte dotaz, něco v tomto článku nebylo srozumitelné, nebo jste narazili na problém? Neváhejte nám to napsat do našeho diskuzního fóra nebo GitHub Issues."

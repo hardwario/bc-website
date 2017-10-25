@@ -3,6 +3,8 @@ body {
   font-size: 1.6em;
   line-height: 1.5em;
   padding-top: 60px;
+  position: relative;
+  overflow-y: scroll;
 }
 
 p {
@@ -143,4 +145,23 @@ ol ol li:last-child {
 
 .page-content pre code {
   white-space: pre;
+}
+
+#scrollspy {
+    top: 70px;
+    position: fixed;
+    display: none;
+}
+
+#scrollspy > nav ul {
+   list-style: none;
+   padding-left: 0;
+}
+
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden;
 }

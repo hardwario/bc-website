@@ -23,7 +23,7 @@
             {{- end }}
           {{- end }}
         {{- end }}
-    <div id="collapse-{{ $collapse }}" class="panel-collapse collapse{{- $.Scratch.Get "in" }}">
+    <nav id="collapse-{{ $collapse }}" class="panel-collapse collapse{{- $.Scratch.Get "in" }}">
       <ul class="list-group" style="border-top: none;">
         {{- range . }}
           {{- $title := .title | default "(Untitled)" }}
@@ -35,7 +35,7 @@
             {{- end }}
         {{- end }}
       </ul>
-    </div>
+    </nav>
       {{- end }}
   </div>
     {{- end }}

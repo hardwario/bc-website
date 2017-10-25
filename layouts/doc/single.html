@@ -1,9 +1,9 @@
 {{ define "main" }}
 <div class="container-fluid main">
   <div class="row">
-    <nav class="col-sm-4 col-md-3">
+    <aside class="col-sm-4 col-md-3">
       {{- partial "doc/menu.html" . }}
-    </nav>
+    </aside>
     <div class="col-sm-8 col-md-6">
       <main aria-role="main">
         <header class="page-header">
@@ -21,7 +21,7 @@
         <p><strong>{{ i18n "chapters-in-this-document" }}:</strong></p>
         {{ .TableOfContents }}
         {{- end }}
-        <div style="margin-top: 50px;"><a class="btn btn-danger" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil"></span> {{ i18n "edit-this-page" | upper }}</a></div>
+        <div style="margin-top: 50px;"><a class="btn btn-danger" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil" style="margin-right: 15px;"></span>{{ i18n "edit-this-page" | upper }}</a></div>
       </aside>
       <script>
         $('#scrollspy > nav > ul > li > ul').addClass('nav nav-pills nav-stacked');

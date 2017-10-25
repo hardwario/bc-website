@@ -95,14 +95,14 @@ ol ol li:last-child {
 }
 
 .page-content h1, .page-content h2, .page-content h3 {
-  margin-top: 40px;
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .page-content table {
-  width: 100%;
-  max-width: 100%;
   margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
 }
 
 .page-content table > thead > tr > th,
@@ -111,15 +111,15 @@ ol ol li:last-child {
 .page-content table > thead > tr > td,
 .page-content table > tbody > tr > td,
 .page-content table > tfoot > tr > td {
-  padding: 8px;
-  line-height: 1.42857143;
-  vertical-align: top;
   border-top: 1px solid #ddd;
+  line-height: 1.42857143;
+  padding: 8px;
+  vertical-align: top;
 }
 
 .page-content table > thead > tr > th {
-  vertical-align: bottom;
   border-bottom: 2px solid #ddd;
+  vertical-align: bottom;
 }
 
 .page-content table > caption + thead > tr:first-child > th,
@@ -159,9 +159,9 @@ ol ol li:last-child {
 }
 
 *[id]:before {
-  display: block;
   content: " ";
-  margin-top: -70px;
+  display: block;
   height: 70px;
+  margin-top: -70px;
   visibility: hidden;
 }

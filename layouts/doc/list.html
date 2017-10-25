@@ -4,27 +4,32 @@
     <nav class="col-sm-4 col-md-3">
       {{- partial "doc/menu.html" . }}
     </nav>
-    {{- if len .TableOfContents }}
     <div class="col-sm-8 col-md-6">
-    {{- else }}
-    <div class="col-sm-8 col-md-9">
-    {{- end }}
       <main aria-role="main">
         <header class="page-header">
           <h1 id="title">{{ .Title }}</h1>
         </header>
         <div class="page-content">
           {{ .Content }}
+          <div class="hidden-xs hidden-sm well" style="margin-top: 50px;">Do you have a question, anything was not clear in this article or did you find a mistake? Please feel free to use our <a href="https://forum.bigclown.com/" target="_blank"><strong>Discourse&nbsp;Forum</strong></a> or <a href="https://github.com/bigclownlabs/bc-website/issues" target="_blank"><strong>GitHub&nbsp;Issues</strong></a> to let us know.</div>
         </div>
       </main>
     </div>
-    {{- if len .TableOfContents }}
-    <div class="hidden-sm col-md-3">
-      <aside>
+    <div class="hidden-xs hidden-sm col-md-3">
+      <aside id="scrollspy">
+        {{- if len .TableOfContents }}
+        <p><strong>{{ i18n "chapters-in-this-document" }}:</strong></p>
         {{ .TableOfContents }}
+        {{- end }}
+        <div style="margin-top: 50px;"><a class="btn btn-danger" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil"></span> {{ i18n "edit-this-page" | upper }}</a></div>
       </aside>
+      <script>
+        $('#scrollspy > nav > ul > li > ul').addClass('nav nav-pills nav-stacked');
+        $('#scrollspy > nav > ul > li > ul').prepend('<li><a href="#top">Introduction</a></li>');
+        $('#scrollspy > nav > ul > li > ul > li > ul').remove();
+        $('#scrollspy').slideDown(1000);
+      </script>
     </div>
-    {{- end }}
   </div>
 </div>
 {{ end }}

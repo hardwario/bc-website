@@ -73,6 +73,7 @@ If you already have previously installed playground, you can upgrade it at any t
 6. Install **Mosquitto** server and clients:
 
         brew install mosquitto
+    \
 
         brew services start mosquitto
 
@@ -106,6 +107,8 @@ If you already have previously installed playground, you can upgrade it at any t
 11. Tell **PM2** to run on boot:
 
         pm2 save
+    \
+
         pm2 startup
 
     {{% note "danger" %}}Follow the instructions provided by the command `pm2 startup`.{{% /note %}}
@@ -114,23 +117,27 @@ If you already have previously installed playground, you can upgrade it at any t
 
         brew install python3
 
-13. Install the **BigClown Firmware Tool**:
+13. Upgrade **pip** (Python Package Manager) to the latest version:
 
-        sudo pip3 install --upgrade bcf
+        sudo pip3 install --upgrade --no-cache-dir pip
 
-14. Install the **BigClown Gateway**:
+14. Install the **BigClown Firmware Tool**:
 
-        sudo pip3 install --upgrade bcg
+        sudo pip3 install --upgrade --no-cache-dir bcf
 
-15. Plug the **BigClown USB Dongle** into a USB port.
+15. Install the **BigClown Gateway**:
 
-16. List the available devices:
+        sudo pip3 install --upgrade --no-cache-dir bcg
+
+16. Plug the **BigClown USB Dongle** into a USB port.
+
+17. List the available devices:
 
         bcf devices
 
     {{% note "warning" %}}You can have multiple devices connected at the same time, but then you must specify which one you want to use. Otherwise the first device in the list is used implicitly.{{% /note %}}
 
-17. Upload the latest firmware into the **BigClown USB Dongle**:
+18. Upload the latest firmware into the **BigClown USB Dongle**:
 
         bcf update
     \
@@ -139,21 +146,21 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
-18. Start the **BigClown Gateway** (in the background):
+19. Start the **BigClown Gateway** (in the background):
 
         bcg --device ...
 
     {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-19. Start **Node-RED**:
+20. Start **Node-RED**:
 
         node-red
 
-20. Open your web browser with the URL:
+21. Open your web browser with the URL:
 
     **https://localhost:1880/**
 
-21. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+22. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
 
 ## Playground Upgrade on macOS
 
@@ -171,11 +178,11 @@ If you already have previously installed playground, you can upgrade it at any t
 
 4. Upgrade the **BigClown Firmware Tool**:
 
-        sudo pip3 install --upgrade bcf
+        sudo pip3 install --upgrade --no-cache-dir bcf
 
 5. Upgrade the **BigClown Gateway**:
 
-        sudo pip3 install --upgrade bcg
+        sudo pip3 install --upgrade --no-cache-dir bcg
 
 ## Playground Setup on Ubuntu
 
@@ -214,27 +221,31 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "danger" %}}Follow the instructions provided by the command `pm2 startup systemd`.{{% /note %}}
 
-9. Install **Python 3** (required by the **BigClown Gateway**).
+9. Install **Python 3** (required by the **BigClown Firmware Tool** and **BigClown Gateway**).
 
-        sudo apt install python3.5
+        sudo apt install python3.5 python3-pip
 
-10. Install the **BigClown Firmware Tool**:
+10. Upgrade **pip** (Python Package Manager) to the latest version:
 
-        sudo pip3 install --upgrade bcf
+        sudo pip3 install --upgrade --no-cache-dir pip
 
-11. Install the **BigClown Gateway**:
+11. Install the **BigClown Firmware Tool**:
 
-        sudo pip3 install --upgrade bcg
+        sudo pip3 install --upgrade --no-cache-dir bcf
 
-12. Plug the **BigClown USB Dongle** into a USB port.
+12. Install the **BigClown Gateway**:
 
-13. List the available devices:
+        sudo pip3 install --upgrade --no-cache-dir bcg
+
+13. Plug the **BigClown USB Dongle** into a USB port.
+
+14. List the available devices:
 
         bcf devices
 
     {{% note "warning" %}}You can have multiple devices connected at the same time, but then you must specify which one you want to use. Otherwise the first device in the list is used implicitly.{{% /note %}}
 
-14. Upload the latest firmware into the **BigClown USB Dongle**:
+15. Upload the latest firmware into the **BigClown USB Dongle**:
 
         bcf update
     \
@@ -243,21 +254,21 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
-15. Start the **BigClown Gateway** (in the background):
+16. Start the **BigClown Gateway** (in the background):
 
         bcg --device ...
 
     {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-16. Start **Node-RED**:
+17. Start **Node-RED**:
 
         node-red
 
-17. Open your web browser with the URL:
+18. Open your web browser with the URL:
 
     **https://localhost:1880/**
 
-18. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+19. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
 
 ## Playground Upgrade on Ubuntu
 
@@ -275,11 +286,11 @@ If you already have previously installed playground, you can upgrade it at any t
 
 4. Upgrade the **BigClown Firmware Tool**:
 
-        sudo pip3 install --upgrade bcf
+        sudo pip3 install --upgrade --no-cache-dir bcf
 
 5. Upgrade the **BigClown Gateway**:
 
-        sudo pip3 install --upgrade bcg
+        sudo pip3 install --upgrade --no-cache-dir bcg
 
 ## Related Documents
 

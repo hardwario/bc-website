@@ -176,4 +176,9 @@ ol ol li:last-child {
   .max-print {
     width: 100%
   }
+  body {
+    line-height: normal;
+    font-size: 10pt;
+    padding-top: 0
+  }
 }

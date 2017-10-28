@@ -217,6 +217,8 @@ If you already have previously installed playground, you can upgrade it at any t
 8. Tell **PM2** to run on boot:
 
         pm2 save
+    \
+
         pm2 startup systemd
 
     {{% note "danger" %}}Follow the instructions provided by the command `pm2 startup systemd`.{{% /note %}}

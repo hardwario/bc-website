@@ -164,3 +164,16 @@ ol ol li:last-child {
   margin-top: -70px;
   visibility: hidden;
 }
+
+@media print {
+  /* bootstrap class */
+  .hidden-print {
+    display: none !important;
+  }
+  .no-print, .no-print * {
+    display: none !important;
+  }
+  .max-print {
+    width: 100%
+  }
+}

@@ -1,10 +1,10 @@
 {{ define "main" }}
 <div class="container-fluid main">
   <div class="row">
-    <aside class="col-sm-4 col-md-3">
+    <aside class="col-sm-4 col-md-3 hidden-print">
       {{- partial "doc/menu.html" . }}
     </aside>
-    <div class="col-sm-8 col-md-6">
+    <div class="col-sm-8 col-md-6 max-print">
       <main aria-role="main">
         <header class="page-header">
           <h1 id="title">{{ .Title }}</h1>
@@ -15,7 +15,7 @@
         </div>
       </main>
     </div>
-    <div class="hidden-xs hidden-sm col-md-3">
+    <div class="hidden-xs hidden-sm col-md-3 hidden-print">
       <aside id="scrollspy">
         {{- if len .TableOfContents }}
         <p><strong>{{ i18n "chapters-in-this-document" }}:</strong></p>

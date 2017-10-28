@@ -191,7 +191,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
 4. Install **Node.js** version 6 (required by **Node-RED**).
 
-        sudo apt install nodejs
+        sudo apt install nodejs nodejs-legacy
 
 5. Install **Node-RED**:
 

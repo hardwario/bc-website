@@ -114,7 +114,7 @@ mosquitto_pub -t "node/{id}/led/-/state/set" -m true
 
 Please type the `hub.local:1800` address to your web browser.
 
-<img alt="Node-RED" src="node-red-mqtt.png" style="width:100%;" />
+<img alt="Node-RED" src="node-red-mqtt.png" style="max-width:100%;" />
 
 On the left panel you choose the building blocks which you place by dragging and dropping to the middle to the **flow**. Blocks are divided to several sections, the most important are **input**, **output**, **function** and **dashboard**. After the placement of the blocks you can connect them with wires and create a **flow**.
 
@@ -137,18 +137,18 @@ First we will output all the incoming MQTT messages to the **debug** output. The
 If you would like to create this flow manually, please follow these instructions. From the **input** section drag and drop the **mqtt** block to the empty flow. After that select and place from the **output** section the **debug** block.
 Now you need to connect these blocks by the mouse. This way you have created your first flow.
 
-<img src="mqtt-all-flow.png" style="width:100%" />
+<img src="mqtt-all-flow.png" style="max-width:100%" />
 
 Now it is necessary to configure **mqtt** block. By double clicking on the block open the setting and set these parameters:
 
   * server: localhost:1883
   * topic: #
 
-<img src="mqtt-configure.png" style="width:100%" />
+<img src="mqtt-configure.png" style="max-width:100%" />
 
 After you save the block settings you have to apply the changes by the **deploy** button. After deploying switch to the **debug** tab and after few moments you'll see incoming messages from connected **Core Module**. You can also press `B` button on the **Core Module** and this event will also appear in the **debug** log.
 
-<img src="mqtt-all-debug.png" style="width:100%" />
+<img src="mqtt-all-debug.png" style="max-width:100%" />
 
 ## Displaying the temperature
 
@@ -156,12 +156,12 @@ Now you can see all the incoming messages. In case we would like to receive only
 
 For the graphical representation of received values you can use **Node-RED dasboard**. Please insert the **gauge** block, which is in the left list of the block at the bottom. This block needs to be configured.
 
-<img src="gauge-flow.png" style="width:100%" />
+<img src="gauge-flow.png" style="max-width:100%" />
 
 Double click on the **gauge** block for configuration. First create the new dashboard group by clicking the pencil symbol at the **Add new ui_group** field.
 In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dashboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dasboard.
 
-<img src="temperature-mqtt-dashboard.gif" style="width:100%;" />
+<img src="temperature-mqtt-dashboard.gif" style="max-width:100%;" />
 
 
 {{< note "info" >}}
@@ -170,7 +170,7 @@ For battery saving reasons the temperature is only send when there's a change. F
 
 Dashboard can be opened in the right **dashboard** tab by clicking on the arrow symbol or by typing the `hub.local:1880/ui` address to your browser.
 
-<img src="gauge-dashboard.png" style="width:100%" />
+<img src="gauge-dashboard.png" style="max-width:100%" />
 
 Here's the complete flow in case of any issues.
 
@@ -188,7 +188,7 @@ Here's the complete flow in case of any issues.
 
 Now we try to connect the relative humidity sensor to the **Core Module**. It's possible to connect the {{< shop "Humidity Tag" >}} directly to the **Core Module** as displayed in the picture (**TODO**) or you can use also {{< shop "Tag Module" >}} which can hold many more sensor tags. Also the {{< shop "Battery Module" >}} contains spare connector for sensor tag.
 
-<img src="humidity-added.jpg" style="width:50%;" />
+<img src="humidity-added.jpg" style="max-width:50%;" />
 
 {{< note "info" >}}
 This procedure can be used also for other conencted sensors or {{< shop "Climate Module" >}}. You only need to change **topic** to the MQTT broker you are subscribing to.
@@ -198,7 +198,7 @@ Then you can use debug nodes in **Node-RED** to get the right MQTT topic and cop
 
 The MQTT topic will have the format `node/{id}/hygrometer/0:2/relative-humidity`. Replace the `{id}` with your node's address.
 
-<img src="humidity-tag-node-animation.gif" style="width:100%;" />
+<img src="humidity-tag-node-animation.gif" style="max-width:100%;" />
 
 ## Extending to control the relay
 
@@ -210,13 +210,13 @@ Now let's add the relay control. You can use {{< shop "Relay Module" >}} or {{< 
 
 Then you send `true` or `false` as a payload.
 
-<img src="power-module-animation.gif" style="width:100%;" />
+<img src="power-module-animation.gif" style="max-width:100%;" />
 
 The {{< shop "Relay Module" >}} has also command to make a single pulse with set duration and relay direction.
 
 Topic is `node/{id}/relay/0:0/pulse/set` and you have to publish this JSON `{ "duration": 500, "direction": true}`. Duration is time in milliseconds.
 
-<img src="relay-pulse-animation.gif" style="width:100%;" />
+<img src="relay-pulse-animation.gif" style="max-width:100%;" />
 
 
 ## Conversion to the battery operated node

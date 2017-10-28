@@ -28,6 +28,8 @@ To install, go to one of the supported platforms:
 
 * [**Setup on Ubuntu**]({{< relref "#setup-on-ubuntu" >}})
 
+* [**Setup on Generic Linux**]({{< relref "#setup-on-generic-linux" >}})
+
 To upgrade an existing installation, go to one of the supported platforms:
 
 * [**Update on Windows**]({{< relref "#update-on-windows" >}})
@@ -35,6 +37,8 @@ To upgrade an existing installation, go to one of the supported platforms:
 * [**Update on macOS**]({{< relref "#update-on-macos" >}})
 
 * [**Update on Ubuntu**]({{< relref "#update-on-ubuntu" >}})
+
+* [**Update on Generic Linux**]({{< relref "#update-on-generic-linux" >}})
 
 ## Setup on Windows
 
@@ -86,7 +90,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 {{% note "warning" %}}The following procedure has been tested on **macOS 10.12**.{{% /note %}}
 
-1. Open the application **Terminal**.
+1. Open the **Terminal** application.
 
 2. Install [**Homebrew**](https://brew.sh) (unless you already have it).
 
@@ -100,19 +104,23 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         brew install git
 
-5. Install **Python 3**:
-
-        brew install python3
-
-6. Install **dfu-util**:
+5. Install **dfu-util**:
 
         brew install dfu-util
 
-7. Install **BigClown Firmware Tool**:
+6. Install **Python 3**:
 
-        sudo pip3 install bcf
+        brew install python3
 
-8. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+7. Update **pip** (Python Package Manager) to the latest version:
+
+        sudo pip3 install --upgrade --no-cache-dir pip
+
+8. Install **BigClown Firmware Tool**:
+
+        sudo pip3 install --upgrade --no-cache-dir bcf
+
+9. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -126,13 +134,13 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 * BigClown Firmware tool update:
 
-        sudo pip3 install --upgrade bcf
+        sudo pip3 install --upgrade --no-cache-dir bcf
 
 ## Setup on Ubuntu
 
 {{% note "warning" %}}The following procedure has been tested on **Ubuntu 16.04 LTS**.{{% /note %}}
 
-1. Open the application **Terminal**.
+1. Open the **Terminal** application.
 
 2. Add the following PPA to the list of available repositories:
 
@@ -150,19 +158,23 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         sudo apt install git
 
-6. Install **Python 3**:
-
-        sudo apt install python3
-
-7. Install **dfu-util**:
+6. Install **dfu-util**:
 
         sudo apt install dfu-util
 
-8. Install **BigClown Firmware Tool**:
+7. Install **Python 3** (required by the **BigClown Firmware Tool**):
 
-        sudo pip3 install bcf
+        sudo apt install python3.5 python3-pip
 
-9. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+8. Update **pip** (Python Package Manager) to the latest version:
+
+        sudo pip3 install --upgrade --no-cache-dir pip
+
+9. Install **BigClown Firmware Tool**:
+
+        sudo pip3 install --upgrade --no-cache-dir bcf
+
+10. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -176,9 +188,9 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 * BigClown Firmware tool update:
 
-        sudo pip3 install --upgrade bcf
+        sudo pip3 install --upgrade --no-cache-dir bcf
 
-## Setup on Linux
+## Setup on Generic Linux
 
 If you have other Linux distribution or unsupported Ubuntu version, we recommend to use official *GNU Embedded Toolchain for ARM* from [developer.arm.com](https://developer.arm.com) pages. This package is validated by ARM and tested by us.
 
@@ -204,15 +216,14 @@ If you have other Linux distribution or unsupported Ubuntu version, we recommend
         cd ~/.local/opt  # go there
         tar xjf gcc-arm-none-eabi-6-*-update-linux.tar.bz2  # unpack file
         ```
+
 3. Create a symbolic link `gcc-arm-none-eabi-6`
 
-
     ```shell
-        sudo ln -s gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2
+    sudo ln -s gcc-arm-none-eabi-6-<version>-update gcc-arm-none-eabi-6  # where <version> could be: 2017-q2
     ```
 
 4. Update `PATH` variable so you can use arm-none-eabi-* binaries directly
-
 
     ```shell
     cd  # go to user home folder
@@ -220,34 +231,37 @@ If you have other Linux distribution or unsupported Ubuntu version, we recommend
     # find line with PATH variable. e.g.:
 
         export PATH="$PATH:/…"
+    ```
 
     {{% note "warning" %}}Please note that three dots (…) represents some text there.{{% /note %}}
 
+    ```shell
     # and add to your path to the end (/opt version):
 
-        export PATH="$PATH:/…:/opt/gcc-arm-none-eabi-6/bin"
+    export PATH="$PATH:/…:/opt/gcc-arm-none-eabi-6/bin"
 
     # or (~/.local/opt version)
 
-        export PATH="$PATH:/…:~/.local/opt/gcc-arm-none-eabi-6/bin"
+    export PATH="$PATH:/…:~/.local/opt/gcc-arm-none-eabi-6/bin"
 
     # if there is no PATH line, add it
 
-        export PATH="$PATH:/opt/gcc-arm-none-eabi-6/bin"
+    export PATH="$PATH:/opt/gcc-arm-none-eabi-6/bin"
 
     # or
 
-        export PATH="$PATH:~/.local/opt/gcc-arm-none-eabi-6/bin"
+    export PATH="$PATH:~/.local/opt/gcc-arm-none-eabi-6/bin"
     ```
 
 5. Use your distribution package manager and install
+
     * **Git**
     * **Python 3**
     * **dfu-util**
 
 6. Install **BigClown Firmware Tool**:
 
-        sudo pip3 install bcf
+        sudo pip3 install --upgrade --no-cache-dir bcf
 
 7. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
 
@@ -257,7 +271,7 @@ If you have other Linux distribution or unsupported Ubuntu version, we recommend
 
     * [**Integration with KDevelop**]({{< relref "#integration-with-kdevelop" >}})
 
-## Update on Linux
+## Update on Generic Linux
 
 * Update **Toolchain**
     * Download updated **Linux 64-bit** package from [https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)

@@ -113,11 +113,11 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "danger" %}}Follow the instructions provided by the command `pm2 startup`.{{% /note %}}
 
-12. Install **Python 3** (required by the **BigClown Gateway**).
+12. Install **Python 3** (required by the **BigClown Firmware Tool** and **BigClown Gateway**).
 
         brew install python3
 
-13. Upgrade **pip** (Python Package Manager) to the latest version:
+13. Update **pip** (Python Package Manager) to the latest version:
 
         sudo pip3 install --upgrade --no-cache-dir pip
 
@@ -227,7 +227,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
         sudo apt install python3.5 python3-pip
 
-10. Upgrade **pip** (Python Package Manager) to the latest version:
+10. Update **pip** (Python Package Manager) to the latest version:
 
         sudo pip3 install --upgrade --no-cache-dir pip
 

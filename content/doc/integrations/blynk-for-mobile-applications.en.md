@@ -6,52 +6,25 @@ title: Blynk - Mobile App Builder
 
 > **Note:** Blynk also offers the off-line version of the server called [Local blynk server](http://docs.blynk.cc/#blynk-server) with [Github sources](https://github.com/blynkkk/blynk-server). The off-line here stands for **no-Internet** setup, either intentionaly of by environment. It does not meant that you do not need any connectivity. You still have to have **core module** and **USB dongle** with 868MHz radio **Raspberry Pi** with Wi-Fi or Ethernet plugged into Wi-Fi Access point where your phones get's attached to close the loop.
 
-# Mobile app install
+# Setup Blynk app
 
-1. Install Blynk on your smartphone / tablet.
+The very first step needed is to install and configure the application on your mobile device. In order to interconnect things you would have to create account. The Blynk gives you two options either create account by email or use OAuth2 login of Facebook. Decide yourself which is better for you.
 
-   > **Note** Just use Google Play or App Store.
+> **Note:** If you do not want to share your email, which I would consider quite safe in this case, then just create a testing email account for this purpose.
 
-2. Run Blynk and select **Create new project**.
+1. Install Blynk on your device from [Google Play](https://play.google.com/store/apps/details?id=cc.blynk) or [Apple App Store](https://itunes.apple.com/us/app/blynk-iot-for-arduino-rpi-particle-esp8266/id808760481).
 
-   ![Create project #1 screenshot](blynk-create-project-1.png)
+2. After starting the app you have to create account. No email confirmation is needed, it is up to you to be careful when filling in the email address, typos might lead to unrecoverable account. The email address is used for token distribution, thus pretty important.
 
-3. Give it a name (e.g. “bigclown demo”) and select **Generic Board** as a hardware.
+# Create Blynk project
 
-   ![Create project #2 screenshot](blynk-create-project-2.png)
+In order to create a UI for your application you have to first create a project. The process of UI creation takes time thus we have made a shortcut for you. You can skip this section if you want to expedite the project creation just by scanning the project definition from QR.
 
-4. Write down your Auth Token (or let the application to send it to you by e-mail).
+> **Note:** The Blynk is supported by user contribution, in case of this application it is done by in-app purchase of so called energy units. You are given 1000 (thousand) units of energy. You can freely stread that amount across all your projects. By the way it is pretty small amount for any bigger project. If you want to take the shortcut make sure that you have available at least these 1000 energy units in order to clone our app.
 
-   **TODO** Configure Blynk Auth token via MQTT.
+![QR](blynk-qr.png)
 
-5. Create an Menu element for LED.
-
-   Set output as virtual pin V1 (see below for pin assignment).
-
-   ![](blynk-menu-led-1.png)
-
-6. Create selections “on”, “off”, “1 dot”, “2 dot”, and “3 dot” as menu items.
-
-   ![](blynk-menu-led-2.png)
-
-7. Create relay button on pin V19.
-
-   ![](blynk-button-relay.png)
-
-8. Create widgets for your sensors, i.e. humidity, temperature, lux-meter and barometer.
-
-   ![](blynk-value-humidity.png)
-   ![](blynk-value-temperature.png)
-   ![](blynk-value-lux-meter.png)
-   ![](blynk-value-barometer.png)
-
-7. Now you have a working Blynk dashboard.
-
-   ![](blynk-dashboard.png)
-
-> **Tip** If you will contend with busy state of the virtual pin, then you should simply logout and login to Blynk app again.
-
-# Virtual Pin Assignment for Blynk
+Virtual Pin Assignment for Blynk
 
 | Virtual PIN  | Part of topic           | Payload key       | Unit                         |
 | ------------ | ----------------------- | ----------------- | ---------------------------- |

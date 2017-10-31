@@ -60,6 +60,8 @@ items:
       link: "doc/interfaces/usb-interface.en.md"
   - title: "Integrations"
     items:
+      - title: "MQTT Topics"
+        link: "doc/integrations/mqtt-topics.en.md"
       - title: "Node-RED for Automation"
         link: "doc/integrations/node-red-for-automation.en.md"
       - title: "Grafana for Visualization"

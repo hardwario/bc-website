@@ -2,7 +2,7 @@
 title: "Wireless Push Button"
 ---
 
-This document will guide you through the **Wireless Push Button** project. You will be able to interact with your push button in **Node-RED** and trigger the **IFTTT** push notification service when the button gets pressed.
+This document will guide you through the **Wireless Push Button** project. You will be able to interact with your push button in **Node-RED** and trigger the **IFTTT** push notification service when the button gets pressed. You will see a push notification on your smart phone.
 
 ## Block Concept
 
@@ -48,7 +48,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 4. Upload the firmware to the **USB Dongle**:
 
-        bcf flash bigclownlabs/bcf-usb-dongle:latest
+        bcf flash bigclownlabs/bcf-gateway-usb-dongle:latest
 
 5. Once finished, remove the **USB Dongle** from the computer.
 
@@ -61,6 +61,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
         bcf flash --dfu bigclownlabs/bcf-kit-push-button:latest
 
 8. Remove the Micro USB cable from the **Core Module** and your computer.
+
+    {{% note "success" %}}At this point your firmware is successfully uploaded.{{% /note %}}
 
 ## Hardware Assembling
 
@@ -78,37 +80,63 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "info" %}}You can find more information about the enclosures in the document  [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}}).{{% /note %}}
 
+6. Insert the **USB Dongle** to your computer.
+
+    {{% note "success" %}}At this point your hardware is ready for boostrapping.{{% /note %}}
+
 ## Playground Bootstrap
 
-1. Open the **Terminal** application.
+1. Start the **BigClown Gateway**:
 
-2. Start the **BigClown Gateway** in the background:
+        bcg --device <DEVICE>
 
-        bcg --device /dev/cu.* &
+    {{% note "warning" %}}Replace `DEVICE` with the device in your system, where the **USB Dongle** is connected. It could be `COM1` on Windows, `/dev/ttyUSB0` on Ubuntu or `/dev/cu.*` on macOS.{{% /note %}}
 
-3. Start Node-RED web service:
-
-        node-red
-
-4. Open the web-browser:
+1. Open the web-browser:
 
     **http://localhost:1880/**
 
-5. You should see the empty workspace with **Flow 1**.
+2. You should see the empty workspace with **Flow 1**.
 
-6. Insert the following snippet in the flow (using **Menu >> Import**):
+3. Insert the following snippet in the flow (using **Menu >> Import**):
 
-        [{"id":"1f72ea23.0cada6","type":"mqtt in","z":"a36dd54f.bb9088","name":"","topic":"#","qos":"2","broker":"ec80d5ef.3f7b48","x":129.5,"y":206,"wires":[["529a17df.d6a6b8"]]},{"id":"529a17df.d6a6b8","type":"debug","z":"a36dd54f.bb9088","name":"","active":true,"console":"false","complete":"false","x":330,"y":160,"wires":[]},{"id":"9673805d.c97a","type":"mqtt in","z":"a36dd54f.bb9088","name":"","topic":"node/push-button/push-button/-/event-count","qos":"2","broker":"ec80d5ef.3f7b48","x":250,"y":280,"wires":[["c1ab91fa.4665e"]]},{"id":"c1ab91fa.4665e","type":"ifttt out","z":"a36dd54f.bb9088","eventName":"button","key":"2fdbd53b.dcf5fa","x":550,"y":340,"wires":[]},{"id":"e1914519.ccf9a8","type":"inject","z":"a36dd54f.bb9088","name":"Get info about all gateways","topic":"gateway/all/info/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":200,"y":380,"wires":[["14b136a6.3d6419"]]},{"id":"14b136a6.3d6419","type":"mqtt out","z":"a36dd54f.bb9088","name":"","topic":"","qos":"","retain":"","broker":"aa1a5e49.66a25","x":550,"y":500,"wires":[]},{"id":"217cc3ca.160a0c","type":"inject","z":"a36dd54f.bb9088","name":"Start node enrollment","topic":"gateway/dongle/enrollment/start","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":180,"y":500,"wires":[["14b136a6.3d6419"]]},{"id":"dcf841d5.4c148","type":"inject","z":"a36dd54f.bb9088","name":"Stop node enrollment","topic":"gateway/dongle/enrollment/stop","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":180,"y":560,"wires":[["14b136a6.3d6419"]]},{"id":"a4f261d0.28e5c","type":"inject","z":"a36dd54f.bb9088","name":"List paired nodes in the dongle","topic":"gateway/dongle/nodes/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":210,"y":440,"wires":[["14b136a6.3d6419"]]},{"id":"cfac07fb.a21b58","type":"inject","z":"a36dd54f.bb9088","name":"Delete all nodes from the dongle","topic":"gateway/dongle/nodes/purge","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":210,"y":620,"wires":[["14b136a6.3d6419"]]},{"id":"ec80d5ef.3f7b48","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"2fdbd53b.dcf5fa","type":"ifttt-key","z":""},{"id":"aa1a5e49.66a25","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```json
+    [{"id":"2fc604fc.3b6abc","type":"inject","z":"dfc861b.b2a02a","name":"List all gateways","topic":"gateway/all/info/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":460,"wires":[["a2c10833.24d5d8"]]},{"id":"1e4502b8.2f63fd","type":"inject","z":"dfc861b.b2a02a","name":"Start node pairing","topic":"gateway/usb-dongle/enrollment/start","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":570,"y":580,"wires":[["795ff5a7.8e266c"]]},{"id":"3d844ce2.932864","type":"inject","z":"dfc861b.b2a02a","name":"Stop node pairing","topic":"gateway/usb-dongle/enrollment/stop","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":640,"wires":[["5967c452.c838bc"]]},{"id":"f202b253.2705b","type":"inject","z":"dfc861b.b2a02a","name":"List paired nodes","topic":"gateway/usb-dongle/nodes/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":520,"wires":[["f0aca138.0b2c3"]]},{"id":"349f02fd.890f6e","type":"inject","z":"dfc861b.b2a02a","name":"Unpair all nodes","topic":"gateway/usb-dongle/nodes/purge","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":700,"wires":[["2f1c5bb6.53d6f4"]]},{"id":"cf61d75d.4ad8f8","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"#","qos":"2","broker":"67b8de4a.029d3","x":530,"y":400,"wires":[["a5cb0658.f5d658"]]},{"id":"a5cb0658.f5d658","type":"debug","z":"dfc861b.b2a02a","name":"","active":true,"console":"false","complete":"false","x":790,"y":400,"wires":[]},{"id":"a2c10833.24d5d8","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":460,"wires":[]},{"id":"f0aca138.0b2c3","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":520,"wires":[]},{"id":"795ff5a7.8e266c","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":580,"wires":[]},{"id":"5967c452.c838bc","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":640,"wires":[]},{"id":"2f1c5bb6.53d6f4","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":700,"wires":[]},{"id":"67b8de4a.029d3","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"717f7c18.ba0a24","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```
+
+    It will look like this:
+
+    {{% img src="node-red-gw-controls.png" width="500" %}}
+
+    {{% note "info" %}}This snippet provides control buttons for gateway/radio commands. These commands are sent over the MQTT protocol.{{% /note %}}
+
+4. Open the **debug** tab:
+
+    {{% img src="node-red-gw-debug.png" width="500" %}}
+
+    {{% note "info" %}}In the **debug** tab, you will be able to see all the MQTT messages.{{% /note %}}
+
+5. Click on the **List all gateways** button. You should see a response like this in the **debug** tab:
+
+    {{% img src="node-red-gw-list.png" width="500" %}}
+
+    {{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown USB Dongle** and **BigClown Gateway**.{{% /note %}}
 
 ## Radio Enrollment
 
 Follow these steps in Node-RED:
 
-1. Click on the **Start node enrollment** button.
+1. Click on the **Start node pairing** button.
+
+    {{% img src="node-red-gw-pair-start.png" width="500" %}}
 
 2. Press and hold the push button for about 3 seconds, the pairing request from the node will be sent.
 
-3. Click on the **Stop node enrollment** button.
+3. Click on the **Stop node pairing** button.
+
+    {{% img src="node-red-gw-pair-stop.png" width="500" %}}
+
+    {{% note "success" %}}At this point, you've got established a radio link between the node and the gateway.{{% /note %}}
 
 ## Communication Test
 
@@ -118,7 +146,9 @@ Follow these steps in Node-RED:
 
 2. Press the button and you should see the counting messages.
 
-**TODO**
+    {{% img src="radio-test.png" width="500" %}}
+
+    {{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
 
 ## Integration with IFTTT
 

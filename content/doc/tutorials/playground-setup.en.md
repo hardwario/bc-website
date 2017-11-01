@@ -76,7 +76,7 @@ C:\Users\michal>pm2 list
         bcf update
     \
 
-        bcf flash bigclownlabs/bcf-usb-dongle:latest
+        bcf flash bigclownlabs/bcf-gateway-usb-dongle:latest
 
     {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
@@ -203,7 +203,7 @@ C:\Users\michal>pm2 list
         bcf update
     \
 
-        bcf flash bigclownlabs/bcf-usb-dongle:latest
+        bcf flash bigclownlabs/bcf-gateway-usb-dongle:latest
 
     {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
@@ -313,7 +313,7 @@ C:\Users\michal>pm2 list
         bcf update
     \
 
-        bcf flash bigclownlabs/bcf-usb-dongle:latest
+        bcf flash bigclownlabs/bcf-gateway-usb-dongle:latest
 
     {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 

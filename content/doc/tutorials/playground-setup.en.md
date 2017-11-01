@@ -46,11 +46,72 @@ If you already have previously installed playground, you can upgrade it at any t
 
 ## Playground Setup on Windows
 
-**TODO**
+1. Download and Install [bch-hub-windows](https://github.com/bigclownlabs/bch-hub-windows/releases/) installer.
+
+2. Enable firewall for Mosquitto and Node-RED if required in pop-up dialogue.
+
+3. Open the `cmd.exe` **Terminal** application (or execute BigClown Hub from Start menu).
+
+4. Check services with `pm2 list`, you should get something like:
+```
+C:\Users\michal>pm2 list
+┌───────────┬────┬──────┬───────┬────────┬─────────┬────────┬─────┬───────────┬────────┬──────────┐
+│ App name  │ id │ mode │ pid   │ status │ restart │ uptime │ cpu │ mem       │ user   │ watching │
+├───────────┼────┼──────┼───────┼────────┼─────────┼────────┼─────┼───────────┼────────┼──────────┤
+│ mosquitto │ 0  │ fork │ 9872  │ online │ 0       │ 10m    │ 0%  │ 5.4 MB    │ michal │ disabled │
+│ node-red  │ 1  │ fork │ 11420 │ online │ 0       │ 9m     │ 0%  │ 46.0 MB   │ michal │ disabled │
+└───────────┴────┴──────┴───────┴────────┴─────────┴────────┴─────┴───────────┴────────┴──────────┘
+```
+
+5. Plug the **BigClown USB Dongle** into a USB port.
+
+6. List the available devices:
+
+        bcf devices
+
+    {{% note "warning" %}}You can have multiple devices connected at the same time, but then you must specify which one you want to use. Otherwise the first device in the list is used implicitly.{{% /note %}}
+
+7. Upload the latest firmware into the **BigClown USB Dongle**:
+
+        bcf update
+    \
+
+        bcf flash bigclownlabs/bcf-usb-dongle:latest
+
+    {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
+
+8. Start the **BigClown Gateway** (in the background):
+
+        pm2 start bcg --device ...
+
+    {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+
+9. Tell **PM2** to run on boot:
+
+        pm2 save
+    \
+
+        pm2 startup
+
+    {{% note "danger" %}}Follow the instructions provided by the command `pm2 startup`.{{% /note %}}
+
+10. Open your web browser with the URL:
+
+    **http://localhost:1880/**
+
+11. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+
 
 ## Playground Upgrade on Windows
 
-**TODO**
+1. Open the `cmd.exe` **Terminal** application (or execute BigClown Hub from Start menu).
+
+2. Stop all services:
+
+         pm2 stop all
+
+3. Download and Install [bch-hub-windows](https://github.com/bigclownlabs/bch-hub-windows/releases/) installer.
+
 
 ## Playground Setup on macOS
 
@@ -158,7 +219,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
 21. Open your web browser with the URL:
 
-    **https://localhost:1880/**
+    **http://localhost:1880/**
 
 22. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
 

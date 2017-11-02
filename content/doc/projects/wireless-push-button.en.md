@@ -230,6 +230,8 @@ In this section, we will create an **Applet** in the **IFTTT** service. The **Ap
 
     {{% img src="ifttt-17.png" width="500" %}}
 
+{{% note "success" %}}At this point, you've got working notification **Applet** in the **IFTTT** service.{{% /note %}}
+
 ## Connect IFTTT in Node-RED
 
 In this section, we will create a link between the button event on MQTT and HTTP request to **IFTTT** which will trigger the push notification.

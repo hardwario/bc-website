@@ -50,11 +50,11 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "warning" %}}During installation Python3 and Node.js are uninstalled (in case there was previous installation) and installed again. Python3 and Node.js installers do not handle reinstallation correctly under some circumstances unfortunately.{{% /note %}}
 
-2. Enable firewall for Mosquitto and Node-RED if required in pop-up dialogue.
+    {{% note "info" %}}Windows firewall is configured during installation to allow TCP connections from localhost only for Node.js and Mosquitto.{{% /note %}}
 
-3. Open the **`cmd.exe` Terminal** application (or execute **BigClown Playground** from Start menu).
+2. Open the **`cmd.exe` Terminal** application (or execute **BigClown Playground** from Start menu).
 
-4. Check services with `pm2 list`, you should get something like:
+3. Check services with `pm2 list`, you should get something like:
 ```
 C:\Users\michal>pm2 list
 ┌───────────┬────┬──────┬───────┬────────┬─────────┬────────┬─────┬───────────┬────────┬──────────┐
@@ -65,15 +65,15 @@ C:\Users\michal>pm2 list
 └───────────┴────┴──────┴───────┴────────┴─────────┴────────┴─────┴───────────┴────────┴──────────┘
 ```
 
-5. Plug the **BigClown USB Dongle** into a USB port.
+4. Plug the **BigClown USB Dongle** into a USB port.
 
-6. List the available devices:
+5. List the available devices:
 
         bcf devices
 
     {{% note "warning" %}}You can have multiple devices connected at the same time, but then you must specify which one you want to use. Otherwise the first device in the list is used implicitly.{{% /note %}}
 
-7. Upload the latest firmware into the **BigClown USB Dongle**:
+6. Upload the latest firmware into the **BigClown USB Dongle**:
 
         bcf update
     \
@@ -82,7 +82,7 @@ C:\Users\michal>pm2 list
 
     {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
 
-8. Start the **BigClown Gateway** (in the background):
+7. Start the **BigClown Gateway** (in the background):
 
         pm2 start bcg -- --device ...
     \
@@ -92,7 +92,7 @@ C:\Users\michal>pm2 list
 
     {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-9. Tell **PM2** to run on boot:
+8. Tell **PM2** to run on boot:
 
         pm2 save
     \
@@ -101,11 +101,11 @@ C:\Users\michal>pm2 list
 
     {{% note "danger" %}}Follow the instructions provided by the command `pm2 startup`.{{% /note %}}
 
-10. Open your web browser with the URL:
+9. Open your web browser with the URL:
 
     **http://localhost:1880/**
 
-11. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+10. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
 
 
 ## Playground Upgrade on Windows

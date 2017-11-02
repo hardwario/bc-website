@@ -46,8 +46,6 @@ items:
       link: "doc/tutorials/turris-omnia-installation.en.md"
     - title: "Application on Heroku"
       link: "doc/tutorials/application-on-heroku.en.md"
-    - title: "Firmware upload"
-      link: "doc/tutorials/firmware-upload.en.md"
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"

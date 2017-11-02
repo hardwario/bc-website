@@ -60,7 +60,7 @@ sudo bcf flash --dfu bigclownlabs/bcf-usb-gateway:firmware.bin
 
 After the firmware flashing the **Core Module** will automatically restart and the flashed firmware will be run.
 
-[Detailed firmware flashing instructions]({{< relref "doc/tutorials/firmware-upload.en.md" >}}).
+[Detailed firmware flashing instructions]({{< relref "doc/firmware/toolchain-guide.en.md" >}}).
 
 ## USB-MQTT communication bridge
 
@@ -264,8 +264,7 @@ In case you would power the remote note with a power adapter, you can flash `pow
 
 [List of bcf-generic-node released firmwares](https://github.com/bigclownlabs/bcf-generic-node/releases)
 
-[Detailed flashing instructions]({{< relref "doc/tutorials/firmware-upload.en.md" >}}).
-
+[Detailed flashing instructions]({{< relref "doc/firmware/toolchain-guide.en.md" >}}).
 
 ## Pairing process
 

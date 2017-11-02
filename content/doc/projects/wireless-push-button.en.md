@@ -2,7 +2,7 @@
 title: "Wireless Push Button"
 ---
 
-This document will guide you through the **Wireless Push Button** project. You will be able to interact with your push button in **Node-RED** and trigger the **IFTTT** push notification service when the button gets pressed. You will see a push notification on your smart phone.
+This document will guide you through the **Wireless Push Button** project. You will be able to interact with your push button in **Node-RED** and trigger the **IFTTT** push notification service when the button gets pressed. You will get the push notification on your smart phone.
 
 ## Block Concept
 
@@ -62,7 +62,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 8. Remove the Micro USB cable from the **Core Module** and your computer.
 
-    {{% note "success" %}}At this point your firmware is successfully uploaded.{{% /note %}}
+{{% note "success" %}}At this point your firmware is successfully uploaded.{{% /note %}}
 
 ## Hardware Assembling
 
@@ -82,7 +82,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 6. Insert the **USB Dongle** to your computer.
 
-    {{% note "success" %}}At this point your hardware is ready for boostrapping.{{% /note %}}
+{{% note "success" %}}At this point your hardware is ready for boostrapping.{{% /note %}}
 
 ## Playground Bootstrap
 
@@ -92,7 +92,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "warning" %}}Replace `DEVICE` with the device in your system, where the **USB Dongle** is connected. It could be `COM1` on Windows, `/dev/ttyUSB0` on Ubuntu or `/dev/cu.*` on macOS.{{% /note %}}
 
-1. Open the web-browser:
+1. Open **Node-RED** in your web browser:
 
     **http://localhost:1880/**
 
@@ -101,7 +101,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 3. Insert the following snippet in the flow (using **Menu >> Import**):
 
     ```json
-    [{"id":"2fc604fc.3b6abc","type":"inject","z":"dfc861b.b2a02a","name":"List all gateways","topic":"gateway/all/info/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":460,"wires":[["a2c10833.24d5d8"]]},{"id":"1e4502b8.2f63fd","type":"inject","z":"dfc861b.b2a02a","name":"Start node pairing","topic":"gateway/usb-dongle/enrollment/start","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":570,"y":580,"wires":[["795ff5a7.8e266c"]]},{"id":"3d844ce2.932864","type":"inject","z":"dfc861b.b2a02a","name":"Stop node pairing","topic":"gateway/usb-dongle/enrollment/stop","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":640,"wires":[["5967c452.c838bc"]]},{"id":"f202b253.2705b","type":"inject","z":"dfc861b.b2a02a","name":"List paired nodes","topic":"gateway/usb-dongle/nodes/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":520,"wires":[["f0aca138.0b2c3"]]},{"id":"349f02fd.890f6e","type":"inject","z":"dfc861b.b2a02a","name":"Unpair all nodes","topic":"gateway/usb-dongle/nodes/purge","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":700,"wires":[["2f1c5bb6.53d6f4"]]},{"id":"cf61d75d.4ad8f8","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"#","qos":"2","broker":"67b8de4a.029d3","x":530,"y":400,"wires":[["a5cb0658.f5d658"]]},{"id":"a5cb0658.f5d658","type":"debug","z":"dfc861b.b2a02a","name":"","active":true,"console":"false","complete":"false","x":790,"y":400,"wires":[]},{"id":"a2c10833.24d5d8","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":460,"wires":[]},{"id":"f0aca138.0b2c3","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":520,"wires":[]},{"id":"795ff5a7.8e266c","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":580,"wires":[]},{"id":"5967c452.c838bc","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":640,"wires":[]},{"id":"2f1c5bb6.53d6f4","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":700,"wires":[]},{"id":"67b8de4a.029d3","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"717f7c18.ba0a24","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    [{"id":"2fc604fc.3b6abc","type":"inject","z":"dfc861b.b2a02a","name":"List all gateways","topic":"gateway/all/info/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":460,"wires":[["a2c10833.24d5d8"]]},{"id":"1e4502b8.2f63fd","type":"inject","z":"dfc861b.b2a02a","name":"Start node pairing","topic":"gateway/usb-dongle/pairing-mode/start","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":570,"y":580,"wires":[["795ff5a7.8e266c"]]},{"id":"3d844ce2.932864","type":"inject","z":"dfc861b.b2a02a","name":"Stop node pairing","topic":"gateway/usb-dongle/pairing-mode/stop","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":640,"wires":[["5967c452.c838bc"]]},{"id":"f202b253.2705b","type":"inject","z":"dfc861b.b2a02a","name":"List paired nodes","topic":"gateway/usb-dongle/nodes/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":520,"wires":[["f0aca138.0b2c3"]]},{"id":"349f02fd.890f6e","type":"inject","z":"dfc861b.b2a02a","name":"Unpair all nodes","topic":"gateway/usb-dongle/nodes/purge","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":700,"wires":[["2f1c5bb6.53d6f4"]]},{"id":"cf61d75d.4ad8f8","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"#","qos":"2","broker":"67b8de4a.029d3","x":530,"y":400,"wires":[["a5cb0658.f5d658"]]},{"id":"a5cb0658.f5d658","type":"debug","z":"dfc861b.b2a02a","name":"","active":true,"console":"false","complete":"false","x":790,"y":400,"wires":[]},{"id":"a2c10833.24d5d8","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":460,"wires":[]},{"id":"f0aca138.0b2c3","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":520,"wires":[]},{"id":"795ff5a7.8e266c","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":580,"wires":[]},{"id":"5967c452.c838bc","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":640,"wires":[]},{"id":"2f1c5bb6.53d6f4","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":700,"wires":[]},{"id":"67b8de4a.029d3","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"717f7c18.ba0a24","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
     ```
 
     It will look like this:
@@ -110,21 +110,25 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "info" %}}This snippet provides control buttons for gateway/radio commands. These commands are sent over the MQTT protocol.{{% /note %}}
 
-4. Open the **debug** tab:
+4. Deploy the flow using the **Deploy** button in the top-right corner.
+
+5. Open the **debug** tab:
 
     {{% img src="node-red-gw-debug.png" width="500" %}}
 
     {{% note "info" %}}In the **debug** tab, you will be able to see all the MQTT messages.{{% /note %}}
 
-5. Click on the **List all gateways** button. You should see a response like this in the **debug** tab:
+6. Click on the **List all gateways** button. You should see a response like this in the **debug** tab:
 
     {{% img src="node-red-gw-list.png" width="500" %}}
 
-    {{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown USB Dongle** and **BigClown Gateway**.{{% /note %}}
+{{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown USB Dongle** and **BigClown Gateway**.{{% /note %}}
 
-## Radio Enrollment
+## Radio Pairing
 
-Follow these steps in Node-RED:
+In this section, we will create a radio link between the **USB Dongle** and the **Wireless Push Button**.
+
+Follow these steps in **Node-RED**:
 
 1. Click on the **Start node pairing** button.
 
@@ -136,11 +140,11 @@ Follow these steps in Node-RED:
 
     {{% img src="node-red-gw-pair-stop.png" width="500" %}}
 
-    {{% note "success" %}}At this point, you've got established a radio link between the node and the gateway.{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Push Button**) and the gateway (**USB Dongle**).{{% /note %}}
 
 ## Communication Test
 
-Follow these steps in Node-RED:
+Follow these steps in **Node-RED**:
 
 1. Switch to **debug** tab on the right.
 
@@ -148,9 +152,11 @@ Follow these steps in Node-RED:
 
     {{% img src="radio-test.png" width="500" %}}
 
-    {{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
+{{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
 
 ## Integration with IFTTT
+
+In this section, we will create an **Applet** in the **IFTTT** service. The **Applet** is a sort of event-trigger mechanism.
 
 1. Open the web-browser and go to [**IFTTT**](https://ifttt.com):
 
@@ -223,6 +229,34 @@ Follow these steps in Node-RED:
 19. Copy this URL to the clipboard for later use:
 
     {{% img src="ifttt-17.png" width="500" %}}
+
+## Connect IFTTT in Node-RED
+
+In this section, we will create a link between the button event on MQTT and HTTP request to **IFTTT** which will trigger the push notification.
+
+1. Switch to your **Node-RED** flow.
+
+2. Insert the following snippet in the flow (using **Menu >> Import**):
+
+    ```json
+    [{"id":"e507a379.e9d1d","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"node/kit-push-button:0/push-button/-/event-count","qos":"2","broker":"b9592cd0.2b74f","x":660,"y":760,"wires":[["5d4d5593.80242c"]]},{"id":"62133f2.84223c","type":"http request","z":"dfc861b.b2a02a","name":"","method":"POST","ret":"txt","url":"","tls":"","x":1010,"y":760,"wires":[[]]},{"id":"5d4d5593.80242c","type":"change","z":"dfc861b.b2a02a","name":"","rules":[{"t":"delete","p":"payload","pt":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":890,"y":860,"wires":[["62133f2.84223c"]]},{"id":"b9592cd0.2b74f","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```
+
+    It will look like this:
+
+    {{% img src="node-red-ifttt-snippet.png" width="500" %}}
+
+    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/kit-push-button:0/push-button/-/event-count` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
+
+3. Double click on **http request** node and edit the IFTTT URL obtained in the previous section:
+
+    {{% img src="node-red-ifttt-url.png" width="500" %}}
+
+4. Save the URL by clicking on the **Done** button.
+
+5. Deploy the flow using the **Deploy** button in the top-right corner.
+
+{{% note "success" %}}At this point, you should get a push notification when you press the button.{{% /note %}}
 
 ## Related Documents
 

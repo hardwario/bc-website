@@ -46,11 +46,13 @@ If you already have previously installed playground, you can upgrade it at any t
 
 ## Playground Setup on Windows
 
-1. Download and Install [bch-hub-windows](https://github.com/bigclownlabs/bch-hub-windows/releases/) installer.
+1. Download and Install **[bch-playground-windows](https://github.com/bigclownlabs/bch-playground-windows/releases/)** installer.
+
+    {{% note "warning" %}}During installation Python3 and Node.js are uninstalled (in case there was previous installation) and installed again. Python3 and Node.js installers do not handle reinstallation correctly under some circumstances unfortunately.{{% /note %}}
 
 2. Enable firewall for Mosquitto and Node-RED if required in pop-up dialogue.
 
-3. Open the `cmd.exe` **Terminal** application (or execute BigClown Hub from Start menu).
+3. Open the **`cmd.exe` Terminal** application (or execute **BigClown Playground** from Start menu).
 
 4. Check services with `pm2 list`, you should get something like:
 ```
@@ -82,7 +84,11 @@ C:\Users\michal>pm2 list
 
 8. Start the **BigClown Gateway** (in the background):
 
-        pm2 start bcg --device ...
+        pm2 start bcg -- --device ...
+    \
+
+        Example:
+        pm2 start bcg -- --device com5
 
     {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
@@ -104,13 +110,7 @@ C:\Users\michal>pm2 list
 
 ## Playground Upgrade on Windows
 
-1. Open the `cmd.exe` **Terminal** application (or execute BigClown Hub from Start menu).
-
-2. Stop all services:
-
-         pm2 stop all
-
-3. Download and Install [bch-hub-windows](https://github.com/bigclownlabs/bch-hub-windows/releases/) installer.
+1. Download and Install **[bch-playground-windows](https://github.com/bigclownlabs/bch-playground-windows/releases/)** installer.
 
 
 ## Playground Setup on macOS

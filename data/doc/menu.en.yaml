@@ -1,5 +1,4 @@
 items:
-  - title: "Overview"
   - title: "Basics"
     items:
     - title: "Getting Started"
@@ -20,18 +19,16 @@ items:
     items:
     - title: "Wireless Climate Monitor"
       link: "doc/projects/wireless-climate-monitor.en.md"
-    - title: "Wireless Motion Detector"
-      link: "doc/projects/wireless-motion-detector.en.md"
-    - title: "Wireless LCD Thermostat"
-      link: "doc/projects/wireless-lcd-thermostat.en.md"
-    - title: "Wireless Push Button"
-      link: "doc/projects/wireless-push-button.en.md"
-    - title: "Wireless Flood Detector"
-      link: "doc/projects/wireless-flood-detector.en.md"
     - title: "Wireless CO2 Monitor"
       link: "doc/projects/wireless-co2-monitor.en.md"
-    - title: "Sigfox Motion Detector"
-      link: "doc/projects/sigfox-motion-detector.en.md"
+    - title: "Wireless Flood Detector"
+      link: "doc/projects/wireless-flood-detector.en.md"
+    - title: "Wireless LCD Thermostat"
+      link: "doc/projects/wireless-lcd-thermostat.en.md"
+    - title: "Wireless Motion Detector"
+      link: "doc/projects/wireless-motion-detector.en.md"
+    - title: "Wireless Push Button"
+      link: "doc/projects/wireless-push-button.en.md"
   - title: "Tutorials"
     items:
     - title: "Playground Setup"
@@ -42,10 +39,6 @@ items:
       link: "doc/tutorials/raspberry-pi-installation.en.md"
     - title: "Raspberry Pi Login"
       link: "doc/tutorials/raspberry-pi-login.en.md"
-    - title: "Turris Omnia Installation"
-      link: "doc/tutorials/turris-omnia-installation.en.md"
-    - title: "Application on Heroku"
-      link: "doc/tutorials/application-on-heroku.en.md"
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"

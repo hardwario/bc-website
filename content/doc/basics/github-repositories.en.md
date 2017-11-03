@@ -33,23 +33,29 @@ Repositories with the prefix [**bch**](https://github.com/bigclownlabs?q=bch) co
 
 Repositories with the prefix [**bcf-kit**](https://github.com/bigclownlabs?q=bcf-kit) contain firmware for the specific kit.
 
-| Repository                                                                                                         | Description                          | Releases |
-|--------------------------------------------------------------------------------------------------------------------|--------------------------------------|----------|
-| [**bcf&#8209;kit&#8209;climate&#8209;monitor**](https://github.com/bigclownlabs/bcf-kit-climate-monitor)           | Firmware for the Climate Monitor Kit | Yes      |
-| [**bcf&#8209;kit&#8209;co2&#8209;monitor**](https://github.com/bigclownlabs/bcf-kit-co2-monitor)                   | Firmware for the CO2 Monitor Kit     | Yes      |
-| [**bcf&#8209;kit&#8209;flood&#8209;detector**](https://github.com/bigclownlabs/bcf-kit-flood-detector)             | Firmware for the Flood Detector Kit  | Yes      |
-| [**bcf&#8209;kit&#8209;lcd&#8209;thermostat**](https://github.com/bigclownlabs/bcf-kit-lcd-thermostat)             | Firmware for the LCD Thermostat Kit  | Yes      |
-| [**bcf&#8209;kit&#8209;motion&#8209;detector**](https://github.com/bigclownlabs/bcf-kit-motion-detector)           | Firmware for the Motion Detector Kit | Yes      |
-| [**bcf&#8209;kit&#8209;push&#8209;button**](https://github.com/bigclownlabs/bcf-kit-push-button)                   | Firmware for the Push Button Kit     | Yes      |
-
+| Repository                                                                                                                       | Description                                 | Releases |
+|----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|----------|
+| [**bcf&#8209;kit&#8209;sigfox&#8209;climate&#8209;monitor**](https://github.com/bigclownlabs/bcf-kit-sigfox-climate-monitor)     | Firmware for the Sigfox Climate Monitor Kit | Yes      |
+| [**bcf&#8209;kit&#8209;sigfox&#8209;co2&#8209;monitor**](https://github.com/bigclownlabs/bcf-kit-sigfox-co2-monitor)             | Firmware for the Sigfox CO2 Monitor Kit     | Yes      |
+| [**bcf&#8209;kit&#8209;sigfox&#8209;motion&#8209;detector**](https://github.com/bigclownlabs/bcf-kit-sigfox-motion-detector)     | Firmware for the Sigfox Motion Detector Kit | Yes      |
+| [**bcf&#8209;kit&#8209;sigfox&#8209;pulse&#8209;counter**](https://github.com/bigclownlabs/bcf-kit-sigfox-pulse-counter)         | Firmware for the Sigfox Pulse Counter Kit   | Yes      |
+| [**bcf&#8209;kit&#8209;sigfox&#8209;push&#8209;button**](https://github.com/bigclownlabs/bcf-kit-sigfox-push-button)             | Firmware for the Sigfox Push Button Kit     | Yes      |
+| [**bcf&#8209;kit&#8209;wireless&#8209;climate&#8209;monitor**](https://github.com/bigclownlabs/bcf-kit-wireless-climate-monitor) | Firmware for the Climate Monitor Kit        | Yes      |
+| [**bcf&#8209;kit&#8209;wireless&#8209;co2&#8209;monitor**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor)         | Firmware for the CO2 Monitor Kit            | Yes      |
+| [**bcf&#8209;kit&#8209;wireless&#8209;flood&#8209;detector**](https://github.com/bigclownlabs/bcf-kit-wireless-flood-detector)   | Firmware for the Flood Detector Kit         | Yes      |
+| [**bcf&#8209;kit&#8209;wireless&#8209;lcd&#8209;thermostat**](https://github.com/bigclownlabs/bcf-kit-wireless-lcd-thermostat)   | Firmware for the LCD Thermostat Kit         | Yes      |
+| [**bcf&#8209;kit&#8209;wireless&#8209;motion&#8209;detector**](https://github.com/bigclownlabs/bcf-kit-wireless-motion-detector) | Firmware for the Motion Detector Kit        | Yes      |
+| [**bcf&#8209;kit&#8209;wireless&#8209;push&#8209;button**](https://github.com/bigclownlabs/bcf-kit-wireless-push-button)         | Firmware for the Push Button Kit            | Yes      |
 
 ## Firmware Repositories
 
-Repositories with the prefix [**bcf**](https://github.com/bigclownlabs?q=bcf) contain firmware projects for the USB Dongle, Core Module or Cloony.
+Repositories with the prefix [**bcf**](https://github.com/bigclownlabs?q=bcf) contain firmware projects for the **USB Dongle**, **Core Module** or **Cloony**.
 
-| Repository                                                                                                 | Description                                                              | Releases |
-|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------|
-| [**bcf&#8209;gateway**](https://github.com/bigclownlabs/bcf-gateway)                                       | Firmware gateway for the USB Dongle or Core Module                       | Yes     |
-| [**bcf&#8209;generic&#8209;node**](https://github.com/bigclownlabs/bcf-generic-node)                       | Universal firmware for the wireless nodes                                | Yes     |
-| [**bcf&#8209;sdk**](https://github.com/bigclownlabs/bcf-sdk)                                               | SDK for the firmware development - part of the projects as Git submodule | -       |
-| [**bcf&#8209;skeleton**](https://github.com/bigclownlabs/bcf-skeleton)                                     | Empty firmware skeleton for your new project                             | -       |
+| Repository                                                                           | Description                                                              | Releases |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------|
+| [**bcf&#8209;gateway**](https://github.com/bigclownlabs/bcf-gateway)                 | Firmware gateway for the USB Dongle or Core Module                       | Yes      |
+| [**bcf&#8209;generic&#8209;node**](https://github.com/bigclownlabs/bcf-generic-node) | Universal firmware for the wireless nodes                                | Yes      |
+| [**bcf&#8209;sdk**](https://github.com/bigclownlabs/bcf-sdk)                         | SDK for the firmware development - part of the projects as Git submodule | -        |
+| [**bcf&#8209;skeleton**](https://github.com/bigclownlabs/bcf-skeleton)               | Empty firmware skeleton for your new project                             | -        |
+
+## Other Repositories

@@ -18,27 +18,37 @@ If you are not sure how can you help or should you have any other question, plea
 
 ## Development on Windows
 
-1. Install the [**Chocolatey**](https://chocolatey.org/install) package manager for Windows.
+1. Start PowerShell ([5 Ways to Open Windows PowerShell in Windows 10](https://www.isunshare.com/windows-10/5-ways-to-open-windows-powershell-in-windows-10.html)), options:
 
-2. Open the [**Command Prompt**](https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/) (`cmd.exe`).
+    * Start `cmd.exe` command prompt and then `powershell` or
+
+    * Start `Windows PowerShell` directly (e.g. Win-x i shortcut).
+
+2. Install the [**Scoop**](http://scoop.sh/) a command-line installer for Windows. For details have a look at [Scoop Quick Start](https://github.com/lukesampson/scoop/wiki/Quick-Start).
+
+        set-executionpolicy remotesigned -scope currentuser
+        iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+
+    {{< note "info" "Doesn't require admin rights, no UAC popups/elevation. Installs to ~/scoop/ by default." />}}
 
 3. Install **Git**:
 
-        choco install git
+        scoop install git
+        scoop install openssh
 
 4. Install **Hugo**:
 
-        choco install hugo
+        scoop install hugo
 
 5. Install **Node.js** (for npm):
 
-        choco install nodejs
-
-6. Open `cmd.exe` (without administrative rights) in your user profile directory (or directory where you want to clone the repository).
+        scoop install nodejs
 
 7. Clone this repository:
 
         git clone git@github.com:bigclownlabs/bc-website.git
+
+    {{< note "info" "GitHub supports SSH over 443 TCP port. Add Port 443 for ssh.github.com into ~/.ssh/config and use sh.github.com instead of github.com." />}}
 
 8. Navigate to the project directory:
 

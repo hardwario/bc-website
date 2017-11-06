@@ -1,5 +1,5 @@
 ---
-title: "Module overview"
+title: "Module Overview"
 ---
 
 The basic idea how the things work together.

@@ -1,6 +1,5 @@
 ---
-title: Stará dokumentace
-slug: stara-dokumentace
+title: "Legacy Documentation"
 ---
 
 Zde jsou odkazy na strukturu ve staré dokumentaci:

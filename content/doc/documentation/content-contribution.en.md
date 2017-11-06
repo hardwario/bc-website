@@ -363,3 +363,7 @@ There are 3 types of annotation entries:
     Result:
 
     {{< note "info" "Did you know that..." >}}...tomato is a fruit?{{< /note >}}
+
+## Related Documents
+
+* [**Contribution Setup**]({{< relref "doc/documentation/contribution-setup.en.md" >}})

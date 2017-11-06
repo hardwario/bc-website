@@ -167,8 +167,9 @@ items:
       link: "doc/firmware/how-to-1-wire-interface.en.md"
   - title: "Documentation"
     items:
+    - title: "Contribution Setup"
+      link: "doc/documentation/contribution-setup.en.md"
     - title: "Content Contribution"
       link: "doc/documentation/content-contribution.en.md"
-    - title: "Technologies"
     - title: "Legacy Documentation"
       link: "doc/documentation/legacy-documentation.en.md"

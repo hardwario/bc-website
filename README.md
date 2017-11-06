@@ -27,8 +27,8 @@ To see the rules and available text formatting for writing and/or editing the do
 
 ## License
 
-This project is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/) - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Made with &#x2764;&nbsp; by [BigClown Labs s.r.o.](https://www.bigclown.com) in Czech Republic.
+Made with &#x2764;&nbsp; by [HARDWARIO s.r.o.](https://www.hardwario.com/) in Czech Republic.

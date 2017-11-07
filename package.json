@@ -12,8 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/bigclownlabs/bc-website.git"
   },
-  "author": "BigClown Labs",
-  "license": "ISC",
+  "author": "HARDWARIO",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bigclownlabs/bc-website/issues"
   },

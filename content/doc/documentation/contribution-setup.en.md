@@ -18,11 +18,19 @@ If you are not sure how can you help or should you have any other question, plea
 
 ## Development on Windows
 
-1. Start PowerShell ([5 Ways to Open Windows PowerShell in Windows 10](https://www.isunshare.com/windows-10/5-ways-to-open-windows-powershell-in-windows-10.html)):
+1. Start PowerShell:
 
     * Start `cmd.exe` command prompt and then `powershell` or
 
-    * Start `Windows PowerShell` directly (e.g. Win-x i shortcut)
+    * Start `Windows PowerShell` directly (e.g. `Win-x` `i` shortcut or [5 Ways to Open Windows PowerShell](https://www.isunshare.com/windows-10/5-ways-to-open-windows-powershell-in-windows-10.html))
+
+    {{< note "success" "Prompt should now start with PS" />}}
+
+    {{< note "warn" "Make sure you have PowerShell 3 or later installed. If you're on Windows 10 you should be all set, but Windows 7 might have older versions." />}}
+
+        $psversiontable.psversion.major # should be >= 3
+
+    [Download PowerShell 3](https://www.microsoft.com/en-us/download/details.aspx?id=34595)
 
 2. Install the [**Scoop**](http://scoop.sh/) a command-line installer for Windows. For details have a look at [Scoop Quick Start](https://github.com/lukesampson/scoop/wiki/Quick-Start).
 
@@ -31,38 +39,35 @@ If you are not sure how can you help or should you have any other question, plea
 
     {{< note "info" "Doesn't require admin rights, no UAC popups/elevation. Installs to ~/scoop/ by default." />}}
 
-3. Install **Git**:
+3. Install **Git**, **Hugo**, **Node.js** (for npm):
 
-        scoop install git
-        scoop install openssh
+        scoop install git openssh hugo nodejs
 
-4. Install **Hugo**:
+4. Configure Git to do not handle auto-converting LF to CRLF line endings and vice versa (do not modify text files during clone/pull/push):
 
-        scoop install hugo
+        git config --global core.autocrlf false
 
-5. Install **Node.js** (for npm):
+    {{< note "warning" "Use editors with LF end-of-line support." />}}
 
-        scoop install nodejs
-
-7. Clone this repository:
+5. Clone this repository:
 
         git clone git@github.com:bigclownlabs/bc-website.git
 
     {{< note "info" "GitHub supports SSH over 443 TCP port. Add Port 443 for ssh.github.com into ~/.ssh/config and use ssh.github.com instead of github.com." />}}
 
-8. Navigate to the project directory:
+6. Navigate to the project directory:
 
         cd bc-website
 
-9. Install all dependencies:
+7. Install all dependencies:
 
         npm install
 
-10. Run the local web server:
+8. Run the local web server:
 
         npm start
 
-11. Open the web browser and navigate to:
+9. Open the web browser and navigate to:
 
     **http://localhost:1313/**
 

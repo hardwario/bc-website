@@ -50,7 +50,8 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "warning" %}}During installation Python3 and Node.js are uninstalled (in case there was previous installation) and installed again. Python3 and Node.js installers do not handle reinstallation correctly under some circumstances unfortunately.{{% /note %}}
 
-    {{% note "info" %}}Windows firewall is configured during installation to allow TCP connections from localhost only for Node.js and Mosquitto.{{% /note %}}
+    {{< note "info" "Windows firewall is configured during installation to allow TCP connections from all networks for Node.js and Mosquitto." />}}
+
 
 2. Open the **`cmd.exe` Terminal** application (or execute **BigClown Playground** from Start menu).
 
@@ -75,22 +76,23 @@ C:\Users\michal>pm2 list
 
 6. Upload the latest firmware into the **BigClown USB Dongle**:
 
-        bcf update
-    \
-
         bcf flash bigclownlabs/bcf-gateway-usb-dongle:latest
 
-    {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>`.{{% /note %}}
+    {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>` <br />
+    Example: `bcf flash --device com5`.{{% /note %}}
+
+    {{% note "info" %}}During installation `bcf update` is called to update list of available BigClown firmwares.{{% /note %}}
+
 
 7. Start the **BigClown Gateway** (in the background):
 
         pm2 start bcg -- --device ...
-    \
-
-        Example:
-        pm2 start bcg -- --device com5
 
     {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+
+    Example:
+
+        pm2 start bcg -- --device com5
 
 8. Tell **PM2** to run on boot:
 
@@ -111,6 +113,8 @@ C:\Users\michal>pm2 list
 ## Playground Upgrade on Windows
 
 1. Download and Install **[bch-playground-windows](https://github.com/bigclownlabs/bch-playground-windows/releases/)** installer.
+
+    {{% note "info" %}}Windows firewall is reset during upgrade for Node.js and Mosquitto to allow TCP connections from all networks.{{% /note %}}
 
 
 ## Playground Setup on macOS

@@ -1,5 +1,5 @@
 ---
-title: "TODO"
+title: "How to: LED Control"
 ---
 
 Controlling LED diode integrated with Core module is like printing *Hello world*. In this tutorial, we will go through available functions for controlling LED diode provided by [SDK](http://sdk.bigclown.com).

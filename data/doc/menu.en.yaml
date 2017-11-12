@@ -39,6 +39,8 @@ items:
       link: "doc/tutorials/raspberry-pi-installation.en.md"
     - title: "Raspberry Pi Login"
       link: "doc/tutorials/raspberry-pi-login.en.md"
+    - title: "MySigfox.com service"
+      link: "doc/tutorials/mysigfox-com-service.en.md"
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"

@@ -3,7 +3,7 @@ title: "How to: Battery Module"
 ---
 
 
-[Battery module](https://shop.bigclown.com/products/battery-module) allows you to power your product with four AA batteries. It automatically recognizes if external power is applied (AC module, USB, ...) and disconnects batteries from the circuit. With this module you can check battery voltage (manually or periodically with Scheduler) and schedule appropriate actions for certain voltage levels.
+[Battery module](../../hardware/about-battery-module/) allows you to power your product with four AA batteries. It automatically recognizes if external power is applied (AC module, USB, ...) and disconnects batteries from the circuit. With this module you can check battery voltage (manually or periodically with Scheduler) and schedule appropriate actions for certain voltage levels.
 
 {{< note "info" "As always..." >}}
 ... all available SDK functions for Battery module can be found [here](http://sdk.bigclown.com/group__bc__module__battery.html).{{< /note >}}
@@ -39,7 +39,7 @@ You have to specify which one is in use when initiating the module in your code.
 ## Usage
 Because SDK can inform your application about *low* and *critical* level, you can easily modify it, so it will adapt to the "insufficient power" mode.
 
-Let's say you are building a battery powered climate/weather station with Sigfox connectivity. You know that it won't be possible to change batteries immediately when they will be "soon dead". For that, you can use the *low voltage* trigger. Program your app to send warning message that will alert you about the need to change batteries. The interval for climate data report can also be made higher to further prolong battery life.
+Let's say you are building a battery powered climate/weather station with Sigfox connectivity. You know that it won't be possible to change batteries immediately when they will be "soon dead". For that, you can use the *low voltage* trigger. Program your app to send warning message that will alert you about the need to change batteries. The interval for sending climate data report over Sigfox can also be made higher to prolong battery life.
 
 And when the voltage level goes critical (*critical voltage* trigger), just send warning message that batteries are almost dead and disable other transmissions.
 
@@ -62,23 +62,20 @@ void button_event_handler(bc_button_t *self, bc_button_event_t event, void *even
 
     if (event == BC_BUTTON_EVENT_PRESS)
     {
-        // initiate manual voltage measure
         bc_module_battery_measure();
 
         float voltage = 0.0;
-        // get last measured voltage value and store it in "voltage" variable
         bc_module_battery_get_voltage(&voltage);
         char volt[25];
         sprintf(volt, "Voltage: %.3f", voltage);
 
         int chargePercentage = -1;
-        // get last measured charge level value and store it in "chargePercentage" variable
         bc_module_battery_get_charge_level(&chargePercentage);
         char charge[25];
-        sprintf(charge, "Charge: %d%", chargePercentage);
+        sprintf(charge, "Charge: %d%c", chargePercentage, 37);
 
         bc_module_lcd_draw_string(10, 5, volt, BLACK);
-        bc_module_lcd_draw_line(0, 19, 128, 21, BLACK);
+        bc_module_lcd_draw_line(0, 21, 128, 23, BLACK);
         bc_module_lcd_draw_string(10, 25, charge, BLACK);
 
         bc_module_lcd_update();
@@ -90,7 +87,6 @@ void application_init(void)
     bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
     bc_button_set_event_handler(&button, button_event_handler, NULL);
 
-    // initialize battery module
     bc_module_battery_init(BC_MODULE_BATTERY_FORMAT_STANDARD);
 
     bc_module_lcd_init(&_bc_module_lcd_framebuffer);

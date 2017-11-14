@@ -34,33 +34,27 @@ This document will guide you through the **Wireless Push Button** project. You w
 
     You can find more information in the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.en.md" >}}).
 
+    {{% note "info" %}}`bcf` is part of Windows Playground Setup already.{{% /note %}}
+
 ## Firmware Upload
 
-In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **USB Dongle** and the **Core Module**.
+In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the  **Core Module**.
 
-1. Insert the **USB Dongle** to your computer.
+{{< note "note" "Firmware upload to USB Dongle was done in Playground Setup." />}}
 
-2. Open the **BigClown Toolchain** prompt (Windows) or **Terminal** application (macOS and Ubuntu).
+1. Connect the Micro USB cable to the **Core Module** and your computer.
 
-3. Update the firmware package list:
+2. Upload the firmware to the **Core Module**:
 
-        bcf update
-
-4. Upload the firmware to the **USB Dongle**:
-
-        bcf flash bigclownlabs/bcf-gateway-usb-dongle:latest
-
-5. Once finished, remove the **USB Dongle** from the computer.
-
-6. Connect the Micro USB cable to the **Core Module** and your computer.
-
-7. Upload the firmware to the **Core Module**:
+    {{% note "info" %}}You may want to update available firmwares by `bcf update` if the installation has been prolonged for a longer time after Playground Setup{{% /note %}}
 
     {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/firmware/toolchain-guide.en.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
 
-        bcf flash --dfu bigclownlabs/bcf-kit-push-button:latest
+    {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
 
-8. Remove the Micro USB cable from the **Core Module** and your computer.
+        bcf flash --dfu bigclownlabs/bcf-kit-wireless-push-button:latest
+
+3. Remove the Micro USB cable from the **Core Module** and your computer.
 
 {{% note "success" %}}At this point your firmware is successfully uploaded.{{% /note %}}
 
@@ -80,17 +74,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "info" %}}You can find more information about the enclosures in the document  [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}}).{{% /note %}}
 
-6. Insert the **USB Dongle** to your computer.
-
-{{% note "success" %}}At this point your hardware is ready for boostrapping.{{% /note %}}
 
 ## Playground Bootstrap
-
-1. Start the **BigClown Gateway**:
-
-        bcg --device <DEVICE>
-
-    {{% note "warning" %}}Replace `DEVICE` with the device in your system, where the **USB Dongle** is connected. It could be `COM1` on Windows, `/dev/ttyUSB0` on Ubuntu or `/dev/cu.*` on macOS.{{% /note %}}
 
 1. Open **Node-RED** in your web browser:
 
@@ -98,7 +83,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 2. You should see the empty workspace with **Flow 1**.
 
-3. Insert the following snippet in the flow (using **Menu >> Import**):
+3. Insert the following snippet in the flow (using **Menu >> Import**) and click in **Flow 1** tab:
 
     ```json
     [{"id":"2fc604fc.3b6abc","type":"inject","z":"dfc861b.b2a02a","name":"List all gateways","topic":"gateway/all/info/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":460,"wires":[["a2c10833.24d5d8"]]},{"id":"1e4502b8.2f63fd","type":"inject","z":"dfc861b.b2a02a","name":"Start node pairing","topic":"gateway/usb-dongle/pairing-mode/start","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":570,"y":580,"wires":[["795ff5a7.8e266c"]]},{"id":"3d844ce2.932864","type":"inject","z":"dfc861b.b2a02a","name":"Stop node pairing","topic":"gateway/usb-dongle/pairing-mode/stop","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":640,"wires":[["5967c452.c838bc"]]},{"id":"f202b253.2705b","type":"inject","z":"dfc861b.b2a02a","name":"List paired nodes","topic":"gateway/usb-dongle/nodes/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":520,"wires":[["f0aca138.0b2c3"]]},{"id":"349f02fd.890f6e","type":"inject","z":"dfc861b.b2a02a","name":"Unpair all nodes","topic":"gateway/usb-dongle/nodes/purge","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":700,"wires":[["2f1c5bb6.53d6f4"]]},{"id":"cf61d75d.4ad8f8","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"#","qos":"2","broker":"67b8de4a.029d3","x":530,"y":400,"wires":[["a5cb0658.f5d658"]]},{"id":"a5cb0658.f5d658","type":"debug","z":"dfc861b.b2a02a","name":"","active":true,"console":"false","complete":"false","x":790,"y":400,"wires":[]},{"id":"a2c10833.24d5d8","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":460,"wires":[]},{"id":"f0aca138.0b2c3","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":520,"wires":[]},{"id":"795ff5a7.8e266c","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":580,"wires":[]},{"id":"5967c452.c838bc","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":640,"wires":[]},{"id":"2f1c5bb6.53d6f4","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":700,"wires":[]},{"id":"67b8de4a.029d3","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"717f7c18.ba0a24","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]

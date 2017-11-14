@@ -46,12 +46,13 @@ If you already have previously installed playground, you can upgrade it at any t
 
 ## Playground Setup on Windows
 
-1. Download and Install **[bch-playground-windows](https://github.com/bigclownlabs/bch-playground-windows/releases/)** installer.
+1. Download and Install **[bch-playground-windows](https://github.com/bigclownlabs/bch-playground-windows)** installer.
+
+    {{% download "Download Windows Playground from GitHub" "https://github.com/bigclownlabs/bch-playground-windows/releases/latest" %}}
 
     {{% note "warning" %}}During installation Python3 and Node.js are uninstalled (in case there was previous installation) and installed again. Python3 and Node.js installers do not handle reinstallation correctly under some circumstances unfortunately.{{% /note %}}
 
     {{< note "info" "Windows firewall is configured during installation to allow TCP connections from all networks for Node.js and Mosquitto." />}}
-
 
 2. Open the **`cmd.exe` Terminal** application (or execute **BigClown Playground** from Start menu).
 
@@ -83,36 +84,38 @@ C:\Users\michal>pm2 list
 
     {{% note "info" %}}During installation `bcf update` is called to update list of available BigClown firmwares.{{% /note %}}
 
-
 7. Start the **BigClown Gateway** (in the background):
 
-        pm2 start bcg -- --device ...
+        pm2 start "C:\Program Files (x86)\Python36-32\lib\site-packages\bcg\gateway.py" --name bcg -- --wait --device comXX
 
-    {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+    {{% note "note" %}}Replace `comXX` with the device listed using `bcf devices`, e.g. `com5`{{% /note %}}
 
     Example:
 
-        pm2 start bcg -- --device com5
+        pm2 start "C:\Program Files (x86)\Python36-32\lib\site-packages\bcg\gateway.py" --name bcg -- --wait --device com5
 
-8. Tell **PM2** to run on boot:
+    {{% note "info" %}}You can check bcg by `pm2 logs bcg`. Quit watching logs by `Ctrl-C`{{% /note %}}
+
+8. Tell **PM2** to save state:
 
         pm2 save
-    \
 
-        pm2 startup
-
-    {{% note "danger" %}}Follow the instructions provided by the command `pm2 startup`.{{% /note %}}
+    {{% note "info" %}}You restart all services after reboot or login (user session start) by `pm2 restart all`.{{% /note %}}
 
 9. Open your web browser with the URL:
 
     **http://localhost:1880/**
 
-10. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+10. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}) or with projects:
+
+    * **[Wireless Push Button]({{< relref "doc/projects/wireless-push-button.en.md" >}})**
 
 
 ## Playground Upgrade on Windows
 
-1. Download and Install **[bch-playground-windows](https://github.com/bigclownlabs/bch-playground-windows/releases/)** installer.
+1. Download and Install **[bch-playground-windows](https://github.com/bigclownlabs/bch-playground-windows)** installer.
+
+    {{% download "Download Windows Playground from GitHub" "https://github.com/bigclownlabs/bch-playground-windows/releases/latest" %}}
 
     {{% note "info" %}}Windows firewall is reset during upgrade for Node.js and Mosquitto to allow TCP connections from all networks.{{% /note %}}
 

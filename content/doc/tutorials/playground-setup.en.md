@@ -79,8 +79,8 @@ C:\Users\michal>pm2 list
 
         bcf flash bigclownlabs/bcf-gateway-usb-dongle:latest
 
-    {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device>` <br />
-    Example: `bcf flash --device com5`.{{% /note %}}
+    {{% note "warning" %}}If you have multiple devices, please specify it as `bcf flash --device <device> <firmware>` <br />
+    Example: `bcf flash --device com5 bigclownlabs/bcf-gateway-usb-dongle:latest`{{% /note %}}
 
     {{% note "info" %}}During installation `bcf update` is called to update list of available BigClown firmwares.{{% /note %}}
 
@@ -100,7 +100,7 @@ C:\Users\michal>pm2 list
 
         pm2 save
 
-    {{% note "info" %}}You restart all services after reboot or login (user session start) by `pm2 restart all`.{{% /note %}}
+    {{% note "info" %}}You can restart all services after reboot or login (user session start) by `pm2 restart all`{{% /note %}}
 
 9. Open your web browser with the URL:
 

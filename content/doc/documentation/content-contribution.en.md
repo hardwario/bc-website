@@ -233,6 +233,21 @@ You can optionally set other parameters as well:
 
 {{< note "warning" "It is always a good idea to fill in the alternative text of the image." />}}
 
+## Images with zoom
+
+Place image file in the appropriate directory path like for `image`.
+
+Use the following syntax to insert the image with zoom inside the Markdown document:
+
+```
+{{%/* img-zoom src="screenshot.png" */%}}
+```
+
+Image will shrink to available width and zoom with click. `Ctrl` click will open image in new tab.
+
+{{% note "warning" %}}You should prefere `image-zoom` instead of `image`{{% /note %}}
+
+
 ## Snippets
 
 There are 2 variants how to insert the code snippets into the text:

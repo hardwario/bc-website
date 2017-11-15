@@ -6,7 +6,7 @@ This document will guide you through the **Wireless Push Button** project. You w
 
 ## Block Concept
 
-{{% img src="block-diagram.png" %}}
+{{% img-zoom src="block-diagram.png" %}}
 
 ## Requirements
 
@@ -91,7 +91,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     It will look like this:
 
-    {{% img src="node-red-gw-controls.png" width="500" %}}
+    {{% img-zoom src="node-red-gw-controls.png" %}}
 
     {{% note "info" %}}This snippet provides control buttons for gateway/radio commands. These commands are sent over the MQTT protocol.{{% /note %}}
 
@@ -99,13 +99,13 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 5. Open the **debug** tab:
 
-    {{% img src="node-red-gw-debug.png" width="500" %}}
+    {{% img-zoom src="node-red-gw-debug.png" %}}
 
     {{% note "info" %}}In the **debug** tab, you will be able to see all the MQTT messages.{{% /note %}}
 
 6. Click on the **List all gateways** button. You should see a response like this in the **debug** tab:
 
-    {{% img src="node-red-gw-list.png" width="500" %}}
+    {{% img-zoom src="node-red-gw-list.png" %}}
 
 {{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown USB Dongle** and **BigClown Gateway**.{{% /note %}}
 
@@ -117,13 +117,13 @@ Follow these steps in **Node-RED**:
 
 1. Click on the **Start node pairing** button.
 
-    {{% img src="node-red-gw-pair-start.png" width="500" %}}
+    {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
 2. Press and hold the push button for about 3 seconds, the pairing request from the node will be sent.
 
 3. Click on the **Stop node pairing** button.
 
-    {{% img src="node-red-gw-pair-stop.png" width="500" %}}
+    {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
 {{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Push Button**) and the gateway (**USB Dongle**).{{% /note %}}
 
@@ -135,7 +135,7 @@ Follow these steps in **Node-RED**:
 
 2. Press the button and you should see the counting messages.
 
-    {{% img src="radio-test.png" width="500" %}}
+    {{% img-zoom src="radio-test.png" %}}
 
 {{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
 
@@ -145,75 +145,75 @@ In this section, we will create an **Applet** in the **IFTTT** service. The **Ap
 
 1. Open the web-browser and go to [**IFTTT**](https://ifttt.com):
 
-    {{% img src="ifttt-01.png" width="500" %}}
+    {{% img-zoom src="ifttt-01.png" %}}
 
 2. Log in to IFTTT service. You can sign up using your Google or Facebook identity:
 
-    {{% img src="ifttt-02.png" width="500" %}}
+    {{% img-zoom src="ifttt-02.png" %}}
 
 3. Go to **My Applets** in the menu and click on the **New Applet** button:
 
-    {{% img src="ifttt-03.png" width="500" %}}
+    {{% img-zoom src="ifttt-03.png" %}}
 
 4. Click on **+this** in the `if this then that` sentence:
 
-    {{% img src="ifttt-04.png" width="500" %}}
+    {{% img-zoom src="ifttt-04.png" %}}
 
 5. Find a service with the name **Webhooks** and select it:
 
-    {{% img src="ifttt-05.png" width="500" %}}
+    {{% img-zoom src="ifttt-05.png" %}}
 
 6. Click on **Receive a web request**:
 
-    {{% img src="ifttt-06.png" width="500" %}}
+    {{% img-zoom src="ifttt-06.png" %}}
 
 7. Type `button` in the **Event Name** field and click on **Create Trigger**:
 
-    {{% img src="ifttt-07.png" width="500" %}}
+    {{% img-zoom src="ifttt-07.png" %}}
 
 8. Find action service with the name **Notifications** and select it:
 
-    {{% img src="ifttt-08.png" width="500" %}}
+    {{% img-zoom src="ifttt-08.png" %}}
 
 9. Click on **Send a notification from the IFTTT app**:
 
-    {{% img src="ifttt-09.png" width="500" %}}
+    {{% img-zoom src="ifttt-09.png" %}}
 
 10. Edit the **Notification** field and insert the text `The button has been pressed on {{OccurredAt}}` and push the **Create action** button:
 
-    {{% img src="ifttt-10.png" width="500" %}}
+    {{% img-zoom src="ifttt-10.png" %}}
 
 11. Click on the **Finish** button:
 
-    {{% img src="ifttt-11.png" width="500" %}}
+    {{% img-zoom src="ifttt-11.png" %}}
 
 12. Click on the **Webhooks** button:
 
-    {{% img src="ifttt-12.png" width="500" %}}
+    {{% img-zoom src="ifttt-12.png" %}}
 
 13. Click on the **Documentation** button:
 
-    {{% img src="ifttt-13.png" width="500" %}}
+    {{% img-zoom src="ifttt-13.png" %}}
 
 14. Click on the **event** field:
 
-    {{% img src="ifttt-14.png" width="500" %}}
+    {{% img-zoom src="ifttt-14.png" %}}
 
 15. Insert the name `button` in the **event** field and keep the window open:
 
-    {{% img src="ifttt-15.png" width="500" %}}
+    {{% img-zoom src="ifttt-15.png" %}}
 
 16. Install the **IFTTT** app on your smart phone and sign in using the same account as you just used to create the applet. Allow the app to use the push notifications when asked.
 
 17. Click on the **Test It** button in the web-browser window:
 
-    {{% img src="ifttt-16.png" width="500" %}}
+    {{% img-zoom src="ifttt-16.png" %}}
 
 18. You should receive the push notification on your smart phone within a few seconds:
 
 19. Copy this URL to the clipboard for later use:
 
-    {{% img src="ifttt-17.png" width="500" %}}
+    {{% img-zoom src="ifttt-17.png" %}}
 
 {{% note "success" %}}At this point, you've got working notification **Applet** in the **IFTTT** service.{{% /note %}}
 
@@ -231,13 +231,13 @@ In this section, we will create a link between the button event on MQTT and HTTP
 
     It will look like this:
 
-    {{% img src="node-red-ifttt-snippet.png" width="500" %}}
+    {{% img-zoom src="node-red-ifttt-snippet.png" %}}
 
     {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/kit-push-button:0/push-button/-/event-count` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
 
 3. Double click on **http request** node and edit the IFTTT URL obtained in the previous section:
 
-    {{% img src="node-red-ifttt-url.png" width="500" %}}
+    {{% img-zoom src="node-red-ifttt-url.png" %}}
 
 4. Save the URL by clicking on the **Done** button.
 

@@ -13,23 +13,23 @@ If you want to take a look how TMP112 is connected, please take a look at [schem
 - when measurement happens, event handler can be triggered
 - last measured temperature can be retrieved anytime
 - SDK provides functions to get temperature in:
-  - raw format (*int16_t*)
-  - Celsius degrees (*float*)
-  - Fahrenheit degrees (*float*)
-  - kelvin (*float*)
+  - raw format (`int16_t`)
+  - Celsius degrees (`float`)
+  - Fahrenheit degrees (`float`)
+  - kelvin (`float`)
 
 ### Types of Measurements
 **Manual** - we can make manual measurement whenever we want to. This is achieved by calling the `bc_tmp112_measure(bc_tmp112_t *self)` function from SDK.
 
 **With Scheduler, repeatedly** - thanks to the [Scheduler](../timing-and-scheduler/) you can define, when the periodic measurement should happen. For this, we have the `bc_tmp112_set_update_interval(bc_tmp112_t *self, bc_tick_t interval)` function.
 
-- `*self` is an address to an TMP112 instance 
+- `*self` is an address to an TMP112 instance
 - `interval` is number of milliseconds, defining time between measurements
 
 
 ### Recognizable TMP112 Events
-- *BC_TMP112_EVENT_ERROR* - an error occurred during a measurement 
-- *BC_TMP112_EVENT_UPDATE* - a measurement was completed successfully  
+- `BC_TMP112_EVENT_ERROR` - an error occurred during a measurement
+- `BC_TMP112_EVENT_UPDATE` - a measurement was completed successfully
 
 ## Example
 In this example we make measurement every 5 seconds and send data over USB in format:
@@ -40,7 +40,7 @@ In this example we make measurement every 5 seconds and send data over USB in fo
 
 Place code below in *application.c* file and flash. Use of *application.h* file is not required here.
 
-{{< note "danger" >}}Please note that in this particular example, the microcontroller never goes to sleep, even though the Scheduler is properly used for measurements - this is caused by USB communication running all the time. This cause the chip to heat up a bit which may affect temperature measurements. Therefor using Temperature tag is recommended for these situations. {{< /note >}}
+{{< note "danger" >}}Please note that in this particular example, the microcontroller never goes to sleep, even though the Scheduler is properly used for measurements - this is caused by USB communication running all the time. This cause the chip to heat up a bit which may affect temperature measurements. Therefore using Temperature tag is recommended for these situations. {{< /note >}}
 
 ```
 #include <bcl.h>
@@ -52,7 +52,7 @@ void tmp112_event_handler(bc_tmp112_t *self, bc_tmp112_event_t event, void *even
 {
     (void) self;
     (void) event_param;
-    
+
     if (event == BC_TMP112_EVENT_UPDATE)
     {
         float temperature = 0.0;

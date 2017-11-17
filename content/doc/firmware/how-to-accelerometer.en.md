@@ -10,14 +10,14 @@ Basically you have **two options how to use the accelerometer - continuous measu
 ... all available SDK functions for Accelerometer can be found [here](http://sdk.bigclown.com/group__bc__lis2dh12.html).{{< /note >}}
 
 ## Recognizable Accelerometer Events
-- BC_LIS2DH12_EVENT_ERROR 
-- BC_LIS2DH12_EVENT_UPDATE
-- BC_LIS2DH12_EVENT_ALARM 
+- `BC_LIS2DH12_EVENT_ERROR`
+- `BC_LIS2DH12_EVENT_UPDATE`
+- `BC_LIS2DH12_EVENT_ALARM`
 
 ## Continuous Measurement
-This can be achieved by setting the update interval in your code with function ```bc_lis2dh12_set_update_interval```, which takes pointer to instantiated accelerometer and time before measurements in milliseconds as parameters.
+This can be achieved by setting the update interval in your code with function `bc_lis2dh12_set_update_interval`, which takes pointer to instantiated accelerometer and time before measurements in milliseconds as parameters.
 
-You also have to instantiate a struct ```bc_lis2dh12_result_g_t``` to store results of measurements. Those values can be retrieved by calling ```bc_lis2dh12_get_result_g``` function. In simple example bellow, we measure exact values of acceleration in g every second and send them over USB.
+You also have to instantiate a struct `bc_lis2dh12_result_g_t` to store results of measurements. Those values can be retrieved by calling `bc_lis2dh12_get_result_g` function. In simple example bellow, we measure exact values of acceleration in g every second and send them over USB.
 
 ```
 #include <bcl.h>
@@ -61,11 +61,11 @@ void application_init(void)
 
 
 ## Alarm
-Alarm is a very interesting "feature". This allows you to set up certain conditions when the "alarm" should be triggered (like "wake up, when module is moved in direction of X-axis && acceleration is higher than 1g"). The module uses interrupts to inform the microcontroller, which means that the microcontroller can sleep when it is not being moved and only be awaken when moved. 
+Alarm is a very interesting "feature". This allows you to set up certain conditions when the "alarm" should be triggered (like "wake up, when module is moved in direction of X-axis && acceleration is higher than 1g"). The module uses interrupts to inform the microcontroller, which means that the microcontroller can sleep when it is not being moved and only be awaken when moved.
 
 You can set conditions for the alarm in struct [*bc_lis2dh12_alarm_t*](http://sdk.bigclown.com/structbc__lis2dh12__alarm__t.html).
 
-When the accelerometer checks these settings it uses logical AND operation (so every set condition needs to occur for the alarm to be triggered). 
+When the accelerometer checks these settings it uses logical AND operation (so every set condition needs to occur for the alarm to be triggered).
 
 In example bellow, we set the alarm to be triggered when core module is moved in direction of X-axis with acceleration > 1g. When triggered, integrated red LED will switch on for one second.
 

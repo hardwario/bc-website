@@ -211,6 +211,69 @@ We can do this by following this procedure:
 
 5. Now the Core Module is connected to your computer as a DFU USB device and is ready for programming.
 
+## Troubleshoot Windows DFU Flash
+
+### Wrong DFU Driver
+
+In case you get `Cannot open DFU device 0483:df11` message during **flash**, you have wrong DFU drivers installed.
+
+{{% img-zoom src="windows-dfu-wrong-driver.png" %}}
+
+1. Execute `zadig` from Toolchain or Playground shell (from `cmd.exe` BigClown window):
+
+    {{< note "note" "Keep Core Module connected with DFU mode activated." />}}
+
+2. Allow admin rigths in User Acess Control pop-up.
+
+3. Select Options -> List All Devices
+
+    {{% img-zoom src="windows-zadig-list-all-devices.png" %}}
+
+4. Select `STM32 BOOTLOADER`:
+
+    {{% img-zoom src="windows-zadig-select.png" %}}
+
+5. Select `WinUSB`:
+
+    {{% img-zoom src="windows-zadig-winusb.png" %}}
+
+6. Click `Replace Driver`:
+
+    {{% img-zoom src="windows-zadig-replace.png" %}}
+
+    {{< note "success" "You will get The driver was installed successfully notification" />}}
+
+    {{% img-zoom src="windows-zadig-installed.png" %}}
+
+7. Exit Zadig, return to flashing. DFU Driver repare is done.
+
+8. You can check DFU readiness by `dfu-util -l` from Toolchain or Playground shell (from `cmd.exe` BigClown window):
+
+    {{% img-zoom src="windows-dfu-list.png" %}}
+
+### No DFU device found
+
+There is not `Cannot open DFU device 0483:df11` between:
+
+        A valid DFU suffix will be required in a future dfu-util release!!!
+        No DFU capable USB device available
+
+{{% img-zoom src="windows-dfu-no-device.png" %}}
+
+The reasons can be various:
+
+1. DFU mode is not activated on MCU.
+
+    Follow bcf instructions for Core Module buttons sequence.
+
+2. Defective HW - USB cable, USB HUB, USB port, Core Module
+
+    Try different HW. Try without USB HUB.
+
+3. Connection mismatch - Core Module is connected to other PC then bcf is executed.
+
+    Trace USB cable, keyboard, monitor and reconnect to right PC ;-)
+
 ## Related Documents
 
 * [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.en.md" >}})

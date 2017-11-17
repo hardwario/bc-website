@@ -39,6 +39,8 @@ items:
       link: "doc/tutorials/raspberry-pi-installation.en.md"
     - title: "Raspberry Pi Login"
       link: "doc/tutorials/raspberry-pi-login.en.md"
+    - title: "Turris Omnia & 1.x Setup"
+      link: "doc/tutorials/turris-installation.en.md"
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"
@@ -143,6 +145,8 @@ items:
       link: "doc/firmware/how-to-led-diode.en.md"
     - title: "How to: Push Button"
       link: "doc/firmware/how-to-push-button.en.md"
+    - title: "How to: Battery Module"
+      link: "doc/firmware/how-to-battery-module.en.md"
     - title: "How to: UART Interface"
       link: "doc/firmware/how-to-uart-interface.en.md"
     - title: "How to: I²C Bus"

@@ -80,11 +80,13 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 ## Update on Windows
 
-1. Uninstall the previous version first through **Apps & features**:
+1. Download and install the new version according to the chapter [**Setup on Windows**]({{< relref "#setup-on-windows" >}}).
+
+## Uninstall on Windows
+
+1. Uninstall **Apps & features**:
 
     ![](windows-uninstall.png)
-
-2. Download and install the new version according to the chapter [**Setup on Windows**]({{< relref "#setup-on-windows" >}}).
 
 ## Setup on macOS
 

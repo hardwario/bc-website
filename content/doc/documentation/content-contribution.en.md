@@ -249,6 +249,27 @@ Image will shrink to available width and zoom with click. `Ctrl` click will open
 
 
 ## Snippets
+Use a single back-tick ```` ` ```` if you use snippets in the middle of the text. Like when you explain
+MQTT topic  ```` `node/kitchen/temperature` ````.
+
+Use triple back-tics ```` ``` ```` when you insert a multi-line snippet.
+
+````
+```
+multiple
+line
+snippet
+```
+````
+
+Use snippets for:
+
+  - MQTT topics like `node/kitchen/temperature`
+  - JSON payloads `{ "duration": 500, "direction": true}`
+  - C code functions, structures, defines `BC_LIS2DH12_EVENT_ERROR`
+  - Command-line commands `ssh pi@hub.localhost`
+  - Web address in browsers `hub.local:1800`
+
 
 There are 2 variants how to insert the code snippets into the text:
 

@@ -128,11 +128,9 @@ When you create any change in the flow or configuration, you have to apply the c
 
 First we will output all the incoming MQTT messages to the **debug** output. The following procedure will explain how to create basic flow printing all MQTT messages to the **debug** tab. You can follow this instructions or import the flow below by the **Import** option in the top right menu.
 
-{{% syntax copy="true" %}}
 ```
 [{"id":"2c3b9c0.ff19564","type":"tab","label":"Flow 0","disabled":false,"info":""},{"id":"fda6ba0.64ecb48","type":"mqtt in","z":"2c3b9c0.ff19564","name":"","topic":"#","qos":"2","broker":"ba3b2e25.7c8b7","x":170,"y":100,"wires":[["2dbd1aa6.284476"]]},{"id":"2dbd1aa6.284476","type":"debug","z":"2c3b9c0.ff19564","name":"","active":true,"console":"false","complete":"false","x":390,"y":100,"wires":[]},{"id":"ba3b2e25.7c8b7","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
 ```
-{{% /syntax %}}
 
 If you would like to create this flow manually, please follow these instructions. From the **input** section drag and drop the **mqtt** block to the empty flow. After that select and place from the **output** section the **debug** block.
 Now you need to connect these blocks by the mouse. This way you have created your first flow.
@@ -174,11 +172,9 @@ Dashboard can be opened in the right **dashboard** tab by clicking on the arrow 
 
 Here's the complete flow in case of any issues.
 
-{{% syntax copy="true" %}}
 ```
 [{"id":"2c3b9c0.ff19564","type":"tab","label":"Flow 0","disabled":false,"info":""},{"id":"fda6ba0.64ecb48","type":"mqtt in","z":"2c3b9c0.ff19564","name":"","topic":"node/836d19821664/thermometer/0:1/temperature","qos":"2","broker":"ba3b2e25.7c8b7","x":290,"y":160,"wires":[["2dbd1aa6.284476","5ed6f4cf.a598fc"]]},{"id":"2dbd1aa6.284476","type":"debug","z":"2c3b9c0.ff19564","name":"","active":true,"console":"false","complete":"false","x":630,"y":140,"wires":[]},{"id":"5ed6f4cf.a598fc","type":"ui_gauge","z":"2c3b9c0.ff19564","name":"","group":"6f264394.22341c","order":0,"width":0,"height":0,"gtype":"gage","title":"Gauge","label":"units","format":"{{value}}","min":0,"max":10,"colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":639.1000366210938,"y":229.20001220703125,"wires":[]},{"id":"ba3b2e25.7c8b7","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"6f264394.22341c","type":"ui_group","z":"","name":"Default","tab":"255de32f.157b0c","disp":true,"width":"6"},{"id":"255de32f.157b0c","type":"ui_tab","z":"","name":"Home","icon":"dashboard"}]
 ```
-{{% /syntax %}}
 
 ## Control the LED based on the temperature
 

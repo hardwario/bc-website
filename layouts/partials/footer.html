@@ -3,23 +3,13 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 item">
-          {{- if eq .Page.Lang "cs" }}
-          <h3>Kontakt</h3>
-          <ul>
-            <li>HARDWARIO&nbsp;s.r.o.</li>
-            <li>Mrštíkova&nbsp;399/2a</li>
-            <li>460&nbsp;07&nbsp;Liberec</li>
-            <li>Česká&nbsp;republika</li>
-          </ul>
-          {{- else }}
           <h3>Contact</h3>
           <ul>
             <li>HARDWARIO&nbsp;s.r.o.</li>
             <li>Mrštíkova&nbsp;399/2a</li>
             <li>460&nbsp;07&nbsp;Liberec</li>
-            <li>Czech&nbsp;Republic</li>
+            <li>Czechia</li>
           </ul>
-          {{- end }}
           <br>
           <ul>
             <li><a href="mailto:ask@bigclown.com"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;ask@bigclown.com</a></li>
@@ -27,42 +17,17 @@
           </ul>
         </div>
         <div class="col-sm-3 item">
-          {{- if eq .Page.Lang "cs" }}
-          <h3>Odkazy</h3>
-          <ul>
-            <ul>
-              <li><a href="{{ relref . "www/tos.cs.md" }}">Obchodní&nbsp;podmínky</a></li>
-              <li><a href="{{ relref . "www/cookies.cs.md" }}">Cookies</a></li>
-              <li><a href="https://drive.google.com/drive/folders/0B7mImtQnvdScb0NMMjgwOXRyZDA">Presskit</a></li>
-            </ul>
-          </ul>
-          {{- else }}
           <h3>Links</h3>
           <ul>
             <li><a href="{{ relref . "www/shopping-info.md" }}">Shopping&nbsp;Info</a></li>
             <li><a href="{{ relref . "www/cookies.md" }}">Cookies</a></li>
             <li><a href="https://drive.google.com/drive/folders/0B7mImtQnvdScb0NMMjgwOXRyZDA">Presskit</a></li>
           </ul>
-          {{- end }}
         </div>
         <div class="col-sm-3 item">
-          {{- if eq .Page.Lang "cs" }}
-          <h3>Podpora</h3>
-          <ul>
-            <li><a href="/cs/doc/">Dokumentace</a></li>
-            <li><a href="{{ relref . "www/faq.cs.md" }}">FAQ</a></li>
-            <li><a href="https://forum.bigclown.com/">Fórum</a></li>
-            <li><a href="https://github.com/bigclownlabs">GitHub</a></li>
-          </ul>
-          <br>
-          <ul>
-            <li><a href="mailto:podpora@bigclown.cz"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;podpora@bigclown.cz</a></li>
-          </ul>
-          {{- else }}
           <h3>Support</h3>
           <ul>
-            <li><a href="/en/doc/">Documentation</a></li>
-            <li><a href="{{ relref . "www/faq.md" }}">FAQ</a></li>
+            <li><a href="/doc/">Documentation</a></li>
             <li><a href="https://forum.bigclown.com/">Forum</a></li>
             <li><a href="https://github.com/bigclownlabs">GitHub</a></li>
           </ul>
@@ -70,7 +35,6 @@
           <ul>
             <li><a href="mailto:support@bigclown.com"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;support@bigclown.com</a></li>
           </ul>
-          {{- end }}
         </div>
         <div class="col-sm-3 item">
           <p><img src="/_assets/svg/bigclown-avatar.svg" class="avatar"></p>

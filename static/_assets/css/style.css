@@ -57,10 +57,6 @@ ol ol li:last-child {
   margin-bottom: 0;
 }
 
-.semi-transparent {
-  opacity: 0.2;
-}
-
 .avatar {
   height: 200px;
 }
@@ -183,16 +179,12 @@ ol ol li:last-child {
   }
 }
 
-/* clipboard */
-.clipboardContainer
-{
+.clipboardContainer {
   position: relative;
 }
 
-.clipboardContainer button
-{
+.clipboardContainer button {
   position: absolute;
-
   right: 5px;
   top: 5px;
 }

@@ -16,7 +16,7 @@ The name of the documentation source GitHub repository is [**bc-website**](https
 
 * The root of the file name is always in English, followed by a language extension.
 
-    Example: `tutorial.en.md` / `tutorial.cs.md`
+    Example: `tutorial.md` / `tutorial.cs.md`
 
 * Lines wrap around the paragraphs. It is therefore advisable to use an editor that supports word wrapping - e.g. [**Atom**](https://atom.io/).
 
@@ -194,7 +194,7 @@ Example:
     Example:
 
     ```
-    [Foo]({{</* relref "doc/foo.en.md" */>}})
+    [Foo]({{</* relref "doc/foo.md" */>}})
     ```
 
     {{< note "info" "This feature guarantees the integrity of links in the documentation. If the file did not exist, the documentation could not be assembled." />}}
@@ -204,7 +204,7 @@ Example:
     Example:
 
     ```
-    [Foo]({{</* relref "doc/foo.en.md#bar" */>}})
+    [Foo]({{</* relref "doc/foo.md#bar" */>}})
     ```
 
 4. **Inside the document** - the format used is `[Chapter](#bookmark)`.
@@ -402,4 +402,4 @@ There are 3 types of annotation entries:
 
 ## Related Documents
 
-* [**Contribution Setup**]({{< relref "doc/documentation/contribution-setup.en.md" >}})
+* [**Contribution Setup**]({{< relref "doc/documentation/contribution-setup.md" >}})

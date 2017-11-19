@@ -30,9 +30,9 @@ Optionally for wireless network you need:
 
 ## Raspberry Pi installation
 
-The easiest way to start is to download [pre-configured BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases). This image already has pre-installed [needed services and tools]({{< relref "doc/tutorials/raspberry-pi-installation.en.md#odlišnosti-od-originální-distribuce-raspbian" >}}). It contaions USB gateway, MQTT broker, Node-RED and **bcf** firmware flash utility. The downloaded Raspberry Pi image has to be flashed to the MicroSD card with `dd` command or by **Win32DiskImager** tool. You can also download official Raspbian and install necessary packages by yourself.
+The easiest way to start is to download [pre-configured BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases). This image already has pre-installed [needed services and tools]({{< relref "doc/tutorials/raspberry-pi-installation.md#odlišnosti-od-originální-distribuce-raspbian" >}}). It contaions USB gateway, MQTT broker, Node-RED and **bcf** firmware flash utility. The downloaded Raspberry Pi image has to be flashed to the MicroSD card with `dd` command or by **Win32DiskImager** tool. You can also download official Raspbian and install necessary packages by yourself.
 
-[Detailed Raspberry Pi instructions]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}})
+[Detailed Raspberry Pi instructions]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 
 ## Connecting to the Raspberry Pi
 
@@ -44,7 +44,7 @@ If the Raspberry Pi is not visible on the network, there's something wrong with 
 
 Please log on the Raspberry Pi shell by typing `ssh pi@hub.localhost` command or use the Windows program **putty**.
 
-[Detailed Raspberry Pi login instructions]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}})
+[Detailed Raspberry Pi login instructions]({{< relref "doc/tutorials/raspberry-pi-login.md" >}})
 
 ## Firmware upload
 
@@ -60,7 +60,7 @@ sudo bcf flash --dfu bigclownlabs/bcf-usb-gateway:firmware.bin
 
 After the firmware flashing the **Core Module** will automatically restart and the flashed firmware will be run.
 
-[Detailed firmware flashing instructions]({{< relref "doc/firmware/toolchain-guide.en.md" >}}).
+[Detailed firmware flashing instructions]({{< relref "doc/firmware/toolchain-guide.md" >}}).
 
 ## USB-MQTT communication bridge
 
@@ -264,7 +264,7 @@ In case you would power the remote note with a power adapter, you can flash `pow
 
 [List of bcf-generic-node released firmwares](https://github.com/bigclownlabs/bcf-generic-node/releases)
 
-[Detailed flashing instructions]({{< relref "doc/firmware/toolchain-guide.en.md" >}}).
+[Detailed flashing instructions]({{< relref "doc/firmware/toolchain-guide.md" >}}).
 
 ## Pairing process
 

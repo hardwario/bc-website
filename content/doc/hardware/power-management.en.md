@@ -59,4 +59,4 @@ Whether it is a battery power or a external power source, the two P-channel MOSF
 
 ## Related Documents
 
-* [**Header and Signals**]({{< relref "doc/hardware/headers-and-signals.en.md" >}})
+* [**Header and Signals**]({{< relref "doc/hardware/headers-and-signals.md" >}})

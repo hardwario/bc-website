@@ -2,7 +2,7 @@
 title: Refund Policy
 ---
 
-[< Back to Shopping Info]({{< relref "www/shopping-info.en.md" >}})
+[< Back to Shopping Info]({{< relref "www/shopping-info.md" >}})
 
 # Returns
 

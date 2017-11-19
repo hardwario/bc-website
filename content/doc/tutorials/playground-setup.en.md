@@ -106,9 +106,9 @@ C:\Users\michal>pm2 list
 
     **http://localhost:1880/**
 
-10. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}) or with projects:
+10. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
 
-    * **[Wireless Push Button]({{< relref "doc/projects/wireless-push-button.en.md" >}})**
+    * **[Wireless Push Button]({{< relref "doc/projects/wireless-push-button.md" >}})**
 
 
 ## Playground Upgrade on Windows
@@ -228,7 +228,7 @@ C:\Users\michal>pm2 list
 
     **http://localhost:1880/**
 
-22. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+22. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).
 
 ## Playground Upgrade on macOS
 
@@ -338,7 +338,7 @@ C:\Users\michal>pm2 list
 
     **https://localhost:1880/**
 
-19. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}}).
+19. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).
 
 ## Playground Upgrade on Ubuntu
 
@@ -364,8 +364,8 @@ C:\Users\michal>pm2 list
 
 ## Related Documents
 
-* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}})
+* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.en.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})

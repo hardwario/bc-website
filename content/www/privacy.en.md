@@ -1,7 +1,7 @@
 ---
 title: Privacy Statement
 ---
-[< Back to Shopping Info]({{< relref "www/shopping-info.en.md" >}})
+[< Back to Shopping Info]({{< relref "www/shopping-info.md" >}})
 
 # SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?
 
@@ -27,7 +27,7 @@ If after you opt-in, you change your mind, you may withdraw your consent for us 
 
 # SECTION 3 - DISCLOSURE
 
-We may disclose your personal information if we are required by law to do so or if you violate our [Terms of Service]({{< relref "www/tos.en.md" >}}).
+We may disclose your personal information if we are required by law to do so or if you violate our [Terms of Service]({{< relref "www/tos.md" >}}).
 
 # SECTION 4 - SHOPIFY
 

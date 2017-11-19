@@ -161,4 +161,4 @@ If you are not sure how can you help or should you have any other question, plea
 
 ## Related Documents
 
-* [**Content Contribution**]({{< relref "doc/documentation/content-contribution.en.md" >}})
+* [**Content Contribution**]({{< relref "doc/documentation/content-contribution.md" >}})

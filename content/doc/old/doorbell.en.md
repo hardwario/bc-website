@@ -16,7 +16,7 @@ We will use Node-RED to react on MQTT message, then we send the tweet.
 
 * 1x [Core Module](https://shop.bigclown.com/products/core-module)
 * 1x [Raspberry Pi 3](https://shop.bigclown.com/products/raspberry-pi-3-set)
-* 1x Micro SD card ([download image]({{< relref "doc/old/raspberry-pi-installation.en.md" >}}) or [buy the preloaded card](https://shop.bigclown.com/products/apacer-industrial-microsdhc-card-4gb))
+* 1x Micro SD card ([download image]({{< relref "doc/old/raspberry-pi-installation.md" >}}) or [buy the preloaded card](https://shop.bigclown.com/products/apacer-industrial-microsdhc-card-4gb))
 * 1x [Micro USB cable](https://shop.bigclown.com/products/usb2-0-cable-am-b-micro-0-6m)
 
 # Core Module
@@ -74,7 +74,7 @@ void button_event_handler(bc_button_t *self, bc_button_event_t event)
 ```
 
 Compile the example by `make`.
-Then upload the compiled program by J-link [Ozone debugger]({{< relref "doc/old/core-module-flashing.en.md#using-serial-wire-debug-interface" >}}) by `make ozone` or upload binary over [internal USB DFU bootloader]({{< relref "doc/old/core-module-flashing.en.md#programming-using-usb-dfu-bootloader" >}}).
+Then upload the compiled program by J-link [Ozone debugger]({{< relref "doc/old/core-module-flashing.md#using-serial-wire-debug-interface" >}}) by `make ozone` or upload binary over [internal USB DFU bootloader]({{< relref "doc/old/core-module-flashing.md#programming-using-usb-dfu-bootloader" >}}).
 
 After you upload the code, you can test MQTT messages with Mosquitto.
 Change the `xxx` letters to your Raspberry Pi host address.
@@ -90,12 +90,12 @@ You should see incoming message when you press the button:
 
 ## Installaton and Configuration
 
-To get the Raspberry Pi working please [follow this Raspberry Pi installation tutorial]({{< relref "doc/old/raspberry-pi-installation.en.md" >}}).
+To get the Raspberry Pi working please [follow this Raspberry Pi installation tutorial]({{< relref "doc/old/raspberry-pi-installation.md" >}}).
 Connect to Rpi shell directly or by SSH.
 You need the BigClown Raspberry Pi image because it contains the service to talk to Core module and MQTT.
 
 Then we will need Node-RED to connect MQTT message from the button to the Twitter message.
-Please follow this [tutorial how to install and configure Node RED]({{< relref "doc/old/node-red.en.md" >}})
+Please follow this [tutorial how to install and configure Node RED]({{< relref "doc/old/node-red.md" >}})
 
 # Node RED Configuration
 

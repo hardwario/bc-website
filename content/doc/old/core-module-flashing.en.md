@@ -142,7 +142,7 @@ It is possible to build your own firmware.
 But not until we release the source codes on our [GitHub account](https://github.com/bigclownlabs).
 We still want to polish a few things to provide you with a proper start.
 
-So far you can download two binary files for [Smart LED Strip (Workroom) project]({{< relref "doc/old/smart-led-strip.en.md" >}}):
+So far you can download two binary files for [Smart LED Strip (Workroom) project]({{< relref "doc/old/smart-led-strip.md" >}}):
 
 * [Base unit a Remote unit](https://github.com/bigclownlabs/bcp-wireless-circus/releases/latest)
 
@@ -156,4 +156,4 @@ So far you can download two binary files for [Smart LED Strip (Workroom) project
 
 # Development Setup
 
-Please, click [here]({{< relref "doc/old/core-module-setup.en.md" >}}) for more details about development setup.
+Please, click [here]({{< relref "doc/old/core-module-setup.md" >}}) for more details about development setup.

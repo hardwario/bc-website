@@ -14,7 +14,7 @@ Firmware is implemented in pure **C language**, which is industrially accepted l
 {{% note "info" %}}Effective use of hardware resources is important for developing of low-power devices. This is primary goal of BigClown ecosystem.{{% /note %}}
 
 
-You can choose from wide variety of systems and tools. Windows, macOS a Ubuntu (and other Debian derivatives) are supported. For information how to install required tools, please see [**Toolchain setup**]({{< relref "doc/firmware/toolchain-setup.en.md">}}). You can find more information on how to use them in [**Toolchain guide**]({{< relref "doc/firmware/toolchain-guide.en.md">}}).
+You can choose from wide variety of systems and tools. Windows, macOS a Ubuntu (and other Debian derivatives) are supported. For information how to install required tools, please see [**Toolchain setup**]({{< relref "doc/firmware/toolchain-setup.md">}}). You can find more information on how to use them in [**Toolchain guide**]({{< relref "doc/firmware/toolchain-guide.md">}}).
 
 ## Introducing BigClown SDK
 

@@ -42,9 +42,9 @@ After compiling the firmware. Press `Ctrl + P` in the Visual Studio code. The cu
 <img src="task-dfu.png" alt="Visual studio code" />
 
 This Device Firmware Update utility (`dfu-util`) will allow you to upload compiled binary firmware just with USB.
-Please follow this help [how to setup USB driver and use DFU Util on Windows]({{< relref "doc/old/core-module.en.md#on-windows-10-64-bit-desktop" >}}).
+Please follow this help [how to setup USB driver and use DFU Util on Windows]({{< relref "doc/old/core-module.md#on-windows-10-64-bit-desktop" >}}).
 
-[Do not forget to set the device to the boot mode]({{< relref "doc/old/core-module.en.md#programming-using-usb-dfu-bootloader" >}}).
+[Do not forget to set the device to the boot mode]({{< relref "doc/old/core-module.md#programming-using-usb-dfu-bootloader" >}}).
 
 If you use command line then set the device to DFU mode and flash it by typing `make dfu`.
 

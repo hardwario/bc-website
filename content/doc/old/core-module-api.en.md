@@ -34,9 +34,9 @@ Firmware library can be found in this repository:
 **https://github.com/bigclownlabs/bc-core-module-bcl**
 
 If you want to start your own firmware development, you probably want to clone the project skeleton which uses the **above repository as Git submodule**.
-[Click here]({{< relref "doc/old/core-module-setup.en.md" >}}) for more information about the development setup.
+[Click here]({{< relref "doc/old/core-module-setup.md" >}}) for more information about the development setup.
 
-More information about Core Module basics can be found on [this page]({{< relref "doc/old/core-module.en.md" >}}).
+More information about Core Module basics can be found on [this page]({{< relref "doc/old/core-module.md" >}}).
 
 > **Note** You can use Core Module as a "bare-metal" hardware platform without our firmware library.
 >          But this approach requires some extra expertise and low-level hardware knowledge.

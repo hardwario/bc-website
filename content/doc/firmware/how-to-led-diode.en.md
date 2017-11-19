@@ -27,7 +27,7 @@ Now, we can decide between two options how to control the diode.
 
 
 ### Asynchronous LED blinking
-For this simple task, we do not even have to declare the ```application_task()``` function. More information about where to place your code can be found [here]({{< relref "doc/basics/project-workflow.en.md">}})
+For this simple task, we do not even have to declare the ```application_task()``` function. More information about where to place your code can be found [here]({{< relref "doc/basics/project-workflow.md">}})
 
 1) We need to tell to the SDK, that we are going to use on-board LED
 ```
@@ -37,7 +37,7 @@ bc_led_init(&led, BC_GPIO_LED, false, false);
 
 
 
-2) Now we use function that will tell the [Scheduler]({{< relref "doc/firmware/timing-and-scheduler.en.md">}}) to plan toggling of LED mode periodically.
+2) Now we use function that will tell the [Scheduler]({{< relref "doc/firmware/timing-and-scheduler.md">}}) to plan toggling of LED mode periodically.
 ```
 bc_led_set_mode(&led, BC_LED_MODE_BLINK);
 ```

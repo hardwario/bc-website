@@ -24,15 +24,15 @@ This document will guide you through the **Wireless Push Button** project. You w
 
     * **BigClown Playground** installed
 
-        You can find more information in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.en.md" >}}).
+        You can find more information in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
 
     * **Raspberry Pi** with the **BigClown Raspbian** distribution
 
-        You can find more information in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}}).
+        You can find more information in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).
 
 * **BigClown Firmware Tool** installed
 
-    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.en.md" >}}).
+    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}).
 
     {{% note "info" %}}`bcf` is part of Windows Playground Setup already.{{% /note %}}
 
@@ -48,7 +48,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "info" %}}You may want to update available firmwares by `bcf update` if the installation has been prolonged for a longer time after Playground Setup{{% /note %}}
 
-    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/firmware/toolchain-guide.en.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
+    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/firmware/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
 
     {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
 
@@ -72,7 +72,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 5. Optionally put the assembly into the appropriate enclosure, if you have one.
 
-    {{% note "info" %}}You can find more information about the enclosures in the document  [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}}).{{% /note %}}
+    {{% note "info" %}}You can find more information about the enclosures in the document  [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}}).{{% /note %}}
 
 
 ## Playground Bootstrap
@@ -247,12 +247,12 @@ In this section, we will create a link between the button event on MQTT and HTTP
 
 ## Related Documents
 
-* [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.en.md" >}})
+* [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
 
-* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.en.md" >}})
+* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}})
 
-* [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}})
+* [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.en.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})

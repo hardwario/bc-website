@@ -66,7 +66,7 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
 7. Connect the USB power adapter to the Raspberry Pi.
 
-8. Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}}).
+8. Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}).
 
 ## Instructions for macOS
 
@@ -112,7 +112,7 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
 11. Connect the USB power adapter to the Raspberry Pi.
 
-12. Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}}).
+12. Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}).
 
 ## Instructions for Ubuntu
 
@@ -158,7 +158,7 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
 11. Connect the USB power adapter to the Raspberry Pi.
 
-12. Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}}).
+12. Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}).
 
 ## Differences from the Original Raspbian
 
@@ -206,7 +206,7 @@ This is a brief list of differences:
 
 {{% note "warning" %}}Apply the following procedure only if you are using Raspberry Pi, on which the original Raspbian distribution is running. This is an alternative way of installing the previous procedure.{{% /note %}}
 
-1. Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}}).
+1. Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}).
 
 2. Install these dependencies:
 
@@ -265,4 +265,4 @@ The connection procedure is as following:
 
 ## Related Documents
 
-* [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.en.md" >}})
+* [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}})

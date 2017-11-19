@@ -6,7 +6,7 @@ This document describes how to log in to Raspberry Pi using a remote terminal vi
 
 {{% note "info" %}}The SSH stands for "Secure Shell". In a simple way, this can be seen as a secure connection to the Raspberry Pi command line over the network.{{% /note %}}
 
-If you do not already have Raspberry Pi installed, first go to the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}}).
+If you do not already have Raspberry Pi installed, first go to the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).
 
 You can log in two ways:
 
@@ -70,4 +70,4 @@ For reasons of security and stability, it is important to keep the system up to 
 
 ## Related Documents
 
-* [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.en.md" >}})
+* [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})

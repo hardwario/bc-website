@@ -146,4 +146,4 @@ The following table defines signal assignment on **tag** header:
 
 ## Related Documents
 
-* [**Power Management**]({{< relref "doc/hardware/power-management.en.md" >}})
+* [**Power Management**]({{< relref "doc/hardware/power-management.md" >}})

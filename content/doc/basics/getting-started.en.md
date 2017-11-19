@@ -10,7 +10,7 @@ BigClown offers a unique set of features that makes it different from other plat
 
 ### Feature #1: BigClown is open-source
 
-Open-source is our passion, so we share everything what we do. We have an organization at GitHub. More information can be found in the document [**GitHub Repositories**]({{< relref "doc/basics/github-repositories.en.md" >}}).
+Open-source is our passion, so we share everything what we do. We have an organization at GitHub. More information can be found in the document [**GitHub Repositories**]({{< relref "doc/basics/github-repositories.md" >}}).
 
 In general, we don't like hidden catches nor hiding the implementation under the hood. We work hard every day to earn your trust in our products, so anytime you have a chance to see the amount of care, passion and quality we put into the design and code.
 
@@ -82,18 +82,18 @@ Moreover, tied with Git, MQTT client tools, logging mechanism, etc. you will qui
 
 It is important to start somewhere and our aim is to start with simple things. That's why we have prepared several reference IoT projects. Following them will get you on track quickly. You can always explore the parts you are most interested about, tweak them or write your own firmware applications, automation flows or cloud integrations from scratch.
 
-For the very first time, we recommend to walk through the [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.en.md" >}}).
+For the very first time, we recommend to walk through the [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.md" >}}).
 
 On the other hand, if you want to build something real right away, don't hesitate to start with one of our projects:
 
-* [**Wireless Climate Monitor**]({{< relref "doc/projects/wireless-climate-monitor.en.md" >}})
+* [**Wireless Climate Monitor**]({{< relref "doc/projects/wireless-climate-monitor.md" >}})
 
-* [**Wireless CO2 Monitor**]({{< relref "doc/projects/wireless-co2-monitor.en.md" >}})
+* [**Wireless CO2 Monitor**]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
 
-* [**Wireless Flood Detector**]({{< relref "doc/projects/wireless-flood-detector.en.md" >}})
+* [**Wireless Flood Detector**]({{< relref "doc/projects/wireless-flood-detector.md" >}})
 
-* [**Wireless LCD Thermostat**]({{< relref "doc/projects/wireless-lcd-thermostat.en.md" >}})
+* [**Wireless LCD Thermostat**]({{< relref "doc/projects/wireless-lcd-thermostat.md" >}})
 
-* [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.en.md" >}})
+* [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.md" >}})
 
-* [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.en.md" >}})
+* [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.md" >}})

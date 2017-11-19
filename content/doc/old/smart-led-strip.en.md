@@ -38,10 +38,10 @@ The whole concept is best described by the following diagram:
 # Requirements
 
 All items can be purchased as a [pre-installed set](https://shop.bigclown.com/products/smart-led-strip-set) in our e-shop.
-If you buy core modules as a separate items, you have to program them [using this Core module tutorial]({{< relref "doc/old/core-module-flashing.en.md#using-usb-cable-and-integrated-bootloader" >}}).
-Firmware for Base and Remote younit is [here]({{< relref "doc/old/core-module-flashing.en.md#firmware-files" >}}).
-If you want to use your own Raspberry Pi, see the tutorial [Install BigClown Packages on Existing System]({{< relref "doc/old/raspberry-pi-installation.en.md#install-bigclown-packages-on-existing-system" >}})
-or use [our image]({{< relref "doc/old/raspberry-pi-installation.en.md#prepare-the-microsd-card" >}}) with pre-installed system including BigClown packages.
+If you buy core modules as a separate items, you have to program them [using this Core module tutorial]({{< relref "doc/old/core-module-flashing.md#using-usb-cable-and-integrated-bootloader" >}}).
+Firmware for Base and Remote younit is [here]({{< relref "doc/old/core-module-flashing.md#firmware-files" >}}).
+If you want to use your own Raspberry Pi, see the tutorial [Install BigClown Packages on Existing System]({{< relref "doc/old/raspberry-pi-installation.md#install-bigclown-packages-on-existing-system" >}})
+or use [our image]({{< relref "doc/old/raspberry-pi-installation.md#prepare-the-microsd-card" >}}) with pre-installed system including BigClown packages.
 
 Individual components in the set are:
 
@@ -136,9 +136,9 @@ MQTT broker is the heart of BigClown home automation system.
 
 You can find more about MQTT here:
 
-* [MQTT - Messaging via Broker]({{< relref "doc/old/mqtt.en.md" >}})
+* [MQTT - Messaging via Broker]({{< relref "doc/old/mqtt.md" >}})
 
-* [Mosquitto - MQTT Broker]({{< relref "doc/old/mosquitto.en.md" >}})
+* [Mosquitto - MQTT Broker]({{< relref "doc/old/mosquitto.md" >}})
 
 How-to communicate with MQTT broker:
 

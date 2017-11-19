@@ -72,7 +72,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
     ![](windows-toolchain.png)
 
-6. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+6. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -122,7 +122,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         sudo pip3 install --upgrade --no-cache-dir bcf
 
-9. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+9. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -176,7 +176,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         sudo pip3 install --upgrade --no-cache-dir bcf
 
-10. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+10. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -265,7 +265,7 @@ If you have other Linux distribution or unsupported Ubuntu version, we recommend
 
         sudo pip3 install --upgrade --no-cache-dir bcf
 
-7. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}}). You may also try:
+7. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -312,4 +312,4 @@ If you have other Linux distribution or unsupported Ubuntu version, we recommend
 
 ## Related Documents
 
-* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.en.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})

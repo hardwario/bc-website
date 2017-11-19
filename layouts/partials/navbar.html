@@ -13,7 +13,6 @@
     <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
       <ul class="nav navbar-nav">
         <li{{ if eq .RelPermalink "/" }} class="active"{{ end }}><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-        {{- partial "navbar-item.html" (dict "title" "PROJECTS" "link" "/www/projects/" "page" .) }}
         {{- partial "navbar-item.html" (dict "title" "SHOP" "link" "https://shop.bigclown.com/" "page" .) }}
         {{- partial "navbar-item.html" (dict "title" "DOCUMENTATION" "link" "/doc/" "page" .) }}
       {{- if eq .Section "doc" }}

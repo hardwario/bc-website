@@ -1,4 +1,6 @@
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
   font-size: 1.6em;
   line-height: 1.5em;

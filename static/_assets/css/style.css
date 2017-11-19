@@ -190,3 +190,29 @@ ol ol li:last-child {
   right: 5px;
   top: 5px;
 }
+
+.navbar-header {
+  margin-left: 30px;
+}
+
+.navbar-right > li > a {
+  background: red;
+  color: white !important;
+}
+
+.navbar-right > li > a:hover,
+.navbar-right > li > a:focus {
+   background-color: rgb(180, 0, 0) !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+    margin-right: 50px;
+  }
+
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}

@@ -109,7 +109,7 @@ The following table defines signal assignment on **module** header:
 | 27  | P16/SCL1 | I²C bus 1 - SCL signal           |
 | 28  | P17/SDA1 | I²C bus 1 - SDA signal           |
 
-{{% note "danger" %}}Voltage on the VDD pin must not go above the specified limit.{{% /note %}}
+{{% note "danger" %}}Do not connect anything on the **VDD_OFF** and **BAT_OFF** signals unless you are sure what you are doing.{{% /note %}}
 
 ## Tag Format
 
@@ -130,7 +130,7 @@ Format **tag** defines:
 
 ## Tag Drawing
 
-{{% img src="tag.svg" alt="Tag drawing" %}}
+{{% img src="tag.svg" alt="Tag drawing" width="300" %}}
 
 ## Tag Signals
 

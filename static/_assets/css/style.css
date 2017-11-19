@@ -182,3 +182,17 @@ ol ol li:last-child {
     padding-top: 0
   }
 }
+
+/* clipboard */
+.clipboardContainer
+{
+  position: relative;
+}
+
+.clipboardContainer button
+{
+  position: absolute;
+
+  right: 5px;
+  top: 5px;
+}

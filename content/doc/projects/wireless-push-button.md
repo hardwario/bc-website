@@ -68,13 +68,6 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 3. Plug the **Button Module** on top of the **Core Module**.
 
-4. Insert the batteries and test if the LED on the **Core Module** flashes when the button gets pressed.
-
-5. Optionally put the assembly into the appropriate enclosure, if you have one.
-
-    {{% note "info" %}}You can find more information about the enclosures in the document  [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}}).{{% /note %}}
-
-
 ## Playground Bootstrap
 
 1. Open **Node-RED** in your web browser:
@@ -119,7 +112,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
-2. Press and hold the push button for about 3 seconds, the pairing request from the node will be sent.
+2. Insert the batteries into the **Wireless Push Button** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
 3. Click on the **Stop node pairing** button.
 
@@ -138,6 +131,12 @@ Follow these steps in **Node-RED**:
     {{% img-zoom src="radio-test.png" %}}
 
 {{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
+
+## Enclosure
+
+Optionally put the assembly into the appropriate enclosure, if you have one.
+
+    {{% note "info" %}}You can find more information about the enclosures in the document  [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}}).{{% /note %}}
 
 ## Integration with IFTTT
 

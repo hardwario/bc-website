@@ -54,7 +54,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-climate-monitor:latest
+        bcf flash --dfu bigclownlabs/bcf-kit-wireless-flood-detector:latest
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 

@@ -16,6 +16,7 @@ It may be a bit hard to get used to draw things or show text at the beginning, b
 ### LCD Module Life Cycle
 
 **First step:**  LCD module initialization - happens once, possibly inside ```application_init()```
+
 **Cycle:**
 
 - LCD module On
@@ -26,7 +27,7 @@ It may be a bit hard to get used to draw things or show text at the beginning, b
 ### Remember to Update
 Every change you make - draw a string or a line, rotate the display, etc is done internally and no changes are visible until you call the ```bc_module_lcd_update()``` function.
 
-This has a simple purpose - if every change you make would cause an update it would increase the power consumption rapidly. 
+This has a simple purpose - if every change you make would cause an update, it would increase the power consumption rapidly. 
 
 
 ### LCD Module Power
@@ -113,7 +114,7 @@ Drawing a line is as simple as calling function form [SDK](http://sdk.bigclown.c
 
 **Examples**
 
-```
+```c
 // draws a line from the bottom left to the top right corner
 bc_module_lcd_draw_line(0, 128, 128, 0, true);
 

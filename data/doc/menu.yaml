@@ -147,6 +147,8 @@ items:
       link: "doc/firmware/how-to-push-button.md"
     - title: "How to: Battery Module"
       link: "doc/firmware/how-to-battery-module.md"
+    - title: "How to: LCD module"
+      link: "doc/firmware/how-to-lcd-module.md"
     - title: "How to: UART Interface"
       link: "doc/firmware/how-to-uart-interface.md"
     - title: "How to: I²C Bus"

@@ -2,12 +2,12 @@
 title: "MQTT topics"
 ---
 
-## Generic node firmware topics
+## Generic Node Topics
 
-[Complete list in bcf-gateway repository](https://github.com/bigclownlabs/bcf-gateway)
+Detailed list of topics is in **README** in GitHub repository [**bcf-gateway**](https://github.com/bigclownlabs/bcf-gateway).
 
 | Explanation   | MQTT Topic    |
-| ------------- |:-------------|
+| ------------- |---------------|
 | Firmware info | node/{id}/info |
 |    | `{"firmware": "bcf-generic-node-battery-mini-v1.5.6"}`|
 | **Battery**    |
@@ -41,12 +41,12 @@ title: "MQTT topics"
 | write text | node/{id}/lcd/-/text/set |
 |         | `{"x": 5, "y": 40, "text": "BigClown", "font": 28}`|
 
-## Gateway command topics
+## Gateway Topics
 
-[Detailed actual list on GitHub bch-usb-gateway](https://github.com/bigclownlabs/bch-usb-gateway)
+Detailed list of topics is in **README** in GitHub repository [**bch-gateway**](https://github.com/bigclownlabs/bch-gateway).
 
 | Explanation   | MQTT Topic    |
-| ------------- |:-------------|
+|---------------|---------------|
 | **Pairing** |
-| Start pairing | gateway/{name}/enrollment/start |
-| Stop pairing | gateway/{name}/enrollment/start |
+| Start pairing | gateway/{name}/pairing-mode/start |
+| Stop pairing | gateway/{name}/pairing-mode/stop |

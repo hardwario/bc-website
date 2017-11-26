@@ -1,56 +1,59 @@
 ---
-title: Quick tutorial
-slug: tutorial
+title: "Quick Tutorial"
 ---
 
-This document is a practical guide of using BigClown IoT system. We will guide you how  **Raspberry Pi** can read temperature from **Core Module**, control the LED, measure relative humidity from **Humidity Tag**, control small electronic devices using **Relay Module** or create wireless network using **USB Dongle**. Measurement and control is configurable by user-friendy **Node-RED** web application which is running inside the **Raspberry Pi** and allows an easy task automation in your web browser.
-<!--
-Tento dokument slouží jako praktická ukázka práce s IoT sadou BigClown. Ukážeme si, jak lze v **Raspberry Pi** vyčítat teplotu z **Core Module**, ovládat LED diodu, měřit relativní vlhkost vzduchu z **Humidity Tag**, řídit malý spotřebič pomocí **Relay Module** nebo vytvořit rádiovou síť prostřednictvím **USB Dongle**. Měření i ovládání je demonstrované pomocí nástroje **Node-RED**, který běží v **Raspberry Pi** a umožňuje uživateli snadnou automatizaci úloh přes webové rozhraní.-->
+This document is a practical guide of using the **BigClown IoT Kit**. It will guide you how **Raspberry Pi** can read the temperature from **Core Module**, control the LED, measure the relative air humidity from **Humidity Tag**, control small electronic devices using **Relay Module**.
 
-This tutorial is divided to several chapters. We suggest you to study them one by one. The subsequent chapter builds on the knowledge of the previous chapters. At the end of the every chapter there is a link to more detailed instructions, which can help you in case of confusion.
-<!--
-Tento tutoriál je rozdělený do několika kapitol. Doporučujeme je prostudovat postupně, protože následující kapitoly staví na znalostech z předchozích kapitol. Na konci téměř každé kapitoly je odkaz na detailní postup, který vám pomůže v případě nejasností.
--->
+You will also be able to create a wireless network using **USB Dongle**. Data acqusition and control process is demonstrated using **Node-RED**, a web application that will run inside the **Raspberry Pi**. This application allows intuitive graphical automation flow editing directly in your web browser.
+
+This tutorial is divided into several chapters. We suggest to study them one by one. The subsequent chapter builds on the knowledge from the previous chapters. At the end of each chapter there is a link to more detailed instructions, which can help you in case of confusion.
+
 First we will demonstrate basic functionality without a wireless network. We use just a single **Core Module** connected to the **Raspberry Pi** by a USB cable.
-<!--
-Nejprve si pro jednoduchost předvedeme základní funkčnost bez rádia s jedním Core Module připojeným USB kabelem do Raspberry Pi. Všechny získané znalosti pak lze bez rozdílu použít i u bezdrátové sítě, která je popsána v pozdějších kapitolách tohoto tutoriálu.
--->
 
-What would we need:
+What will we need at minimum:
 
   * {{< shop "Raspberry Pi" >}} + {{< shop "MicroSDHC Memory Card 8GB" >}}
   * {{< shop "Core Module" >}}
 
-Optionally for wireless network you need:
+Optionally for establishing a wireless network, you will need:
 
   * {{< shop "USB Dongle" >}} (or second one {{< shop "Core Module" >}})
   * {{< shop "Mini Battery Module" >}}
   * {{< shop "Humidity Tag" >}}
   * {{< shop "Relay Module" >}}
 
-## Raspberry Pi installation
+## Raspberry Pi Installation
 
-The easiest way to start is to download [pre-configured BigClown Raspbian](https://github.com/bigclownlabs/bc-raspbian/releases). This image already has pre-installed [needed services and tools]({{< relref "doc/tutorials/raspberry-pi-installation.md#odlišnosti-od-originální-distribuce-raspbian" >}}). It contaions USB gateway, MQTT broker, Node-RED and **bcf** firmware flash utility. The downloaded Raspberry Pi image has to be flashed to the MicroSD card with `dd` command or by **Win32DiskImager** tool. You can also download official Raspbian and install necessary packages by yourself.
+{{% note "warning" %}}Detailed instructions can be found in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).{{% /note %}}
 
-[Detailed Raspberry Pi instructions]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
+The easiest way to start is to download the [**BigClown Raspbian**](https://github.com/bigclownlabs/bc-raspbian/releases) image. This image has already pre-installed necessary components. It contains **BigClown Gateway**, **Mosquitto** MQTT broker, **Node-RED** and **BigClown Firmware Tool (bcf)**.
 
-## Connecting to the Raspberry Pi
+The downloaded **Raspberry Pi** image has to be written to a MicroSD card using the `dd` command or using the **Win32DiskImager** tool.
 
-Please insert the flashed MicroSD card to the Raspberry Pi. Then connect the Ethernet cable and the **Core Module** or **USB Dongle**. After the **Raspberry Pi** boots up you should be able to find it at address `hub.local`. You can try the command `ping hub.local`.
+You can also download the official **Raspbian** and install necessary packages yourself.
 
-{{< note "warning" >}}
-If the Raspberry Pi is not visible on the network, there's something wrong with your network or your system don't support **mDNS** and you have to find Raspberry Pi IP address in your router's **DHCP** configuration.
-{{< /note >}}
+## Raspberry Pi Login
 
-Please log on the Raspberry Pi shell by typing `ssh pi@hub.localhost` command or use the Windows program **putty**.
+{{% note "warning" %}}Detailed instructions can be found in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}).{{% /note %}}
 
-[Detailed Raspberry Pi login instructions]({{< relref "doc/tutorials/raspberry-pi-login.md" >}})
+1. Insert the MicroSD card with the **Raspbian**  image to the **Raspberry Pi**.
+2. Connect the Ethernet cable to the **Raspberry Pi**.
+3. Connect the **Core Module** or the **USB Dongle** to the **Raspberry Pi**.
+4. Connect the power adapter to the **Raspberry Pi**.
 
-## Firmware upload
+and the **Core Module** or **USB Dongle**. After the **Raspberry Pi** boots up you should be able to find it at address `hub.local`. You can try the command `ping hub.local` and see the response.
 
-For quick start we've create a Python command-line utility **bcf**, which automatically downloads latest released firmwares from GitHub and will flash the modules. On the Raspberry Pi you need first to update the list of releases by typing `sudo bcf update`. Then by typing `sudo bcf list` you get the list of pre-compiled firmwares.
+{{< note "warning" >}}If the Raspberry Pi is not visible on the network, there's something wrong with your network setup or your system doesn't support **mDNS** and you have to find the IP address of the **Raspberry Pi** in your router's **DHCP** configuration.{{< /note >}}
 
-We'll flash the **bcf-usb-gateway** firmware. This firmware for the gateway contains functions for all BigClown sensors and modules. After the start the **Core Module** automatically detects connected sensors and sends the measured values by USB to the **Raspberry Pi**.
+Please log on the Raspberry Pi shell by typing `ssh pi@hub.localhost` command or use the Windows program **PuTTY**.
+
+## Firmware Upload
+
+{{% note "warning" %}}Detailed instructions can be found in the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}).{{% /note %}}
+
+For quick start we've create a Python command-line utility **bcf**, which automatically downloads latest released firmwares from **GitHub** and will flash the modules. On the Raspberry Pi you need first to update the list of releases by typing `sudo bcf update`. Then by typing `sudo bcf list` you get the list of pre-compiled firmwares.
+
+We'll flash the **bcf-gateway** firmware. This firmware for the gateway contains functions for all BigClown sensors and modules. After the start the **Core Module** automatically detects connected sensors and sends the measured values by USB to the **Raspberry Pi**.
 
 Before flashing is necessary to switch the **Core Module** to the programming **DFU** mode. First connect the **Core Module** to the **Raspberry Pi** by the micro USB cable. Then set the module to the **DFU** mode by pressing and holding `B` boot button, the shortly press the `R` reset button. Then you can release the `B` boot button. Now you can flash the **Core Module** by typing the command below.
 
@@ -272,7 +275,7 @@ In the next commands replace the `{id}` by the IP address of your **Raspberry Pi
 For **USB Dongle** or **Core Module** you need to send MQTT message with console command or by using the flow in the **Node-RED** which sends the pairing start message.
 
 ```
-mosquitto_pub -t 'gateway/{id}/enrollment/start' -n
+mosquitto_pub -t 'gateway/{id}/pairing-mode/start' -n
 ```
 
 After enabling the pairing the red LED on the **USB Dongle**/**Core Module** will start to blink. Now its the time to send pairing command from the **remote node**. This can be done by long press of the `B` button on the **remote node**. If you are subscribed to the `#` topic, you will see a message with new paired address.
@@ -286,7 +289,7 @@ Now it is possible to pair other **remote** nodes, just long press the `B` butto
 After the pairing of the remotes is completed, disable the pairing process on the **gateway** by command:
 
 ```
-mosquitto_pub -t 'gateway/{id}/enrollment/stop' -n
+mosquitto_pub -t 'gateway/{id}/pairing-mode/stop' -n
 ```
 
 ## Measuring and controlling over radio

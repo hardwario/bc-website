@@ -1,213 +1,196 @@
 ---
-title: "Graphana"
+title: "Grafana for Visualization"
 ---
 
-[The Graphana](https://grafana.com/) is an HTML based visualisation option for projects. It let's you create nice looking dashboards quicky providing a graphical interface for your sensors, actuators and any other service. It is an itegration point for your projects.
+[**Grafana**](https://grafana.com/) is the open platform for beautiful analytics and monitoring. It allows you to create nice looking dashboards that will give you quick insights into your sensor data.
 
-## Prerequsites and dependencies
+## Requirements
 
-In order to breathe live into your dashboard you would need some other componets to put everything together:
+You will need these components to make it work:
 
-* **InfluxDB** - a database
-* **Mosquitto** - a MQTT broker
-* **bc-gateway** - an interconnect between the Core module and the MQTT broker 
+* **InfluxDB** - Time-series database
 
-> **Note:** some od the componets are installed in a ```culr | bash``` way which is sometimes considered harmfull. Please consider reading some articles about it before continuing ([curl | sudo bash](https://gist.github.com/btm/6700524), [Secure Curl/Bash](https://medium.com/@esotericmeans/the-truth-about-curl-and-installing-software-securely-on-linux-63cd12e7befd))
+* **Mosquitto** - MQTT broker
 
-Here we are assuming that you have Debian, Raspbian or Ubuntu Xenial. The description below might work also on other distributions and/or different versions but the above mentioned was tested.
+* **BigClown Gateway** - Bridge between the **USB Dongle** or **Core Module** in the gateway role and the MQTT broker
 
-> **Note:** HW and SW combinations tested __Raspbian Jessie @ Raspberry Pi 3__ and __Ubuntu 16.04 Xenial as LXC @ Turris Omnia__
+{{% note "danger" %}}This documents assumes that you are working with either **Debian**, **Raspbian** or **Ubuntu 16.04** distribution. The description below might work also on other Linux distributions and/or different versions but it has not been tested.{{% /note %}}
 
-First you have to install packages that are necessary for later instalations.
+{{% note "warning" %}}It has been tested on **Raspberry Pi 3** + **Raspbian Jessie** and **Turris Omnia** + **Ubuntu 16.04** (via LXC container).{{% /note %}}
 
-```bash
-# install dependencies
+## Installing Utilities
+
+First, you have to install packages that are necessary for later instalation.
+
+```sh
 sudo apt install apt-transport-https curl -y
 ```
 
-### Installing InfluxDB
+## Installing InfluxDB
 
 The database to store collected data.
 
-In order to install InfluxDB and recognize it's signing key as trusted you have to install that key among the trusted keys.
+In order to install **InfluxDB** and recognize its signing key, you have to put it among the trusted keys.
 
-> *ToDo: check PPA option and/or Docker*
-
-```bash
-# one liner curl | sudo ... type
+```sh
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 ```
 
-Add the Influx as a new repository.
+Add the **InfluxDB** as a new repository.
 
-on Debian and/or Raspbian Jessie use:
+* On **Debian** and/or **Raspbian Jessie** use:
 
-```
-echo "deb https://repos.influxdata.com/debian jessie stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
-```
+    ```sh
+    echo "deb https://repos.influxdata.com/debian jessie stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+    ```
 
-on Ubuntu 16.04 Xenial use:
+* On **Ubuntu 16.04** use:
 
-```bash
-echo "deb https://repos.influxdata.com/ubuntu/ xenial stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
-```
+    ```sh
+    echo "deb https://repos.influxdata.com/ubuntu/ xenial stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+    ```
 
-then update packages list and install packages:
+Update the package list and install the packages:
 
-```bash
+```sh
 sudo apt update && sudo apt install influxdb
 ```
 
-when installed, you can start the InfluxDB like:
+Now you can start the **InfluxDB** service:
 
-```bash
+```sh
 sudo systemctl start influxdb
 ```
 
-> **Note:** If you want to controll/configure the InfluxDB via web interface that you have to update **/etc/influxdb/influxdb.conf** and remove ```#``` in front of **enabled** and **bind-address** and set ``enabled = true`` and ```bind-address = ":8083"```. Then you can acces the web on **http://localhost:8083**. Beware that port 8083 has to be available and not used by other application.
+## InfluxDB Web Interface
 
-### Mosquitto
+If you want to control and configure **InfluxDB** using the web interface, then you have to update the `/etc/influxdb/influxdb.conf` file:
 
-The minimalist MQTT broker (see [mosquitto.org](http://mosquitto.org)). The role of this server side piece is to route and distribute messages among the clients (publishers and subscribers). In principle **sensor** tends to be a **publisher** as it is sharing the value of the sensor and **actuator** vice versa serves a role of **subscriber**. Well of course there are **dashboards** and those can be both as they usualy offer way to visualize the value and has button to press to trigger action.
+* Remove `#` in front of `enabled` and `bind-address`.
+
+* Set `enabled = true` and `bind-address = ":8083"`.
+
+Later you will be able to access the web at **http://localhost:8083/**. Of course, the port number 8083 has to be available and not used by any other application.
+
+## Installing Mosquitto
+
+[**Mosquitto**](http://mosquitto.org) is a popular open-source MQTT broker implementation. The role of this service is to route and distribute messages between the clients (**publishers** and **subscribers**).
+
+In principle a **sensor** tends to be a **publisher** as it is sharing its value. On the other hand, an **actuator** normally plays the role of a **subscriber**. Of course, the mix of **publisher** and **subscriber** role for each client is possible. Typically a **dashboard** can visualize data and at the same time it can have some control button, which triggers an action (publishes a message).
 
 Install the server and client tools for testing.
 
-```bash
+```sh
 sudo apt install mosquitto mosquitto-clients -y
 ```
 
-## The Grafana
+## Installing Grafana
 
 First install dependencies:
 
-```bash
+```sh
 sudo apt install adduser libfontconfig -y
 ```
 
-Based on your architecture select the appropriate package.
+Based on your taget platform, select the appropriate procedure:
 
-### For ARM CPU (Raspberry Pi a Omnia LXC)
+* For **Raspberry Pi** and **Omnia LXC**:
 
-Either manualy download latest version from [LatestGraphana @ ARM](https://github.com/fg2it/grafana-on-raspberry/releases/latest)
+    You can manualy download latest version from [**Grafana**](https://github.com/fg2it/grafana-on-raspberry/releases/latest), or you can use the following helper to download it for you:
 
-or with a help of little trick (finding latest version)
-
-```bash
+    ```sh
 wget $(wget "https://api.github.com/repos/fg2it/grafana-on-raspberry/releases/latest" -q -O - | grep browser_download_url | grep armhf.deb | head -n 1 | cut -d '"' -f 4) -O grafana.deb
 ```
 
-Install the deb package.
+    Then install the package:
 
-```bash
-sudo dpkg -i grafana.deb
-```
+    ```sh
+    sudo dpkg -i grafana.deb
+    ```
 
-> *ToDo: check repository/PPA way*
+* For **desktop** (**Ubuntu** and **Debian**):
 
-### On Intel CPU (x86-64/AMD64)
+    Add the key to be trusted:
 
-Add the key as trusted for packages.
+    ```sh
+    curl -sL https://packagecloud.io/gpg.key | sudo apt-key add -
+    ```
 
-```bash
-curl -sL https://packagecloud.io/gpg.key | \
-  sudo apt-key add -
-```
+    Add the repository to the sources:
 
-Add the repository to your Debian or Ubuntu.
+    ```sh
+    echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
+    ```
 
-```bash
-echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | \
-  sudo tee /etc/apt/sources.list.d/grafana.list
-```
+    Then update the package list and install the package:
 
-then update packages list and install packages:
+    ```sh
+    sudo apt update && sudo apt install grafana -y
+    ```
 
-```bash
-sudo apt update && sudo apt install grafana -y
-```
+## Starting Services
 
-## Systen tidying
-
-Reload the systemd configuration.
+Reload the **systemd** configuration:
 
 ```bash
 sudo systemctl daemon-reload
 ```
 
-Enable the Graphana on boot.
+Enable **Grafana** on boot:
 
 ```bash
 sudo systemctl enable grafana-server
 ```
 
-Run the Graphana server now (manualy).
+Start **Grafana** server (manually):
 
 ```bash
 sudo systemctl start grafana-server
 ```
 
-## Wiring it together
+## Installing BigClown Gateway
 
-At this moment you have the Graphana up and running as well as the MQTT broker.
+In order to bridge data from the **USB Dongle** or **Core Module** (in gateway role) to MQTT, you have to install **BigClown Gateway**.
 
-### Connect Core Module and Mosquitto
+Add the **BigClown** repository into the trusted keys:
 
-In order to interconnect your Core module with the MQTT you have to install bc-gateway.
-
-Install dependencies, you might have them from steps above.
-
-```bash
-sudo apt install apt-transport-https curl -y
+```sh
+curl -sL https://repo.bigclown.com/debian/pubkey.gpg | sudo apt-key add -
 ```
 
-Add a key from BigClown into trusted keys for packages.
+Add the **BigClown** repository to the source list:
 
-```bash
-curl -sL https://repo.bigclown.com/debian/pubkey.gpg | \
-  sudo apt-key add -
+```sh
+echo "deb https://repo.bigclown.com/debian jessie main" | sudo tee  etc/apt/sources.list.d/bigclown.list
 ```
 
-Add the repository of BigClown into repositories.
+Update the package list and install the package:
 
-```bash
-echo "deb https://repo.bigclown.com/debian jessie main" | \
-  sudo tee /etc/apt/sources.list.d/bigclown.list
-```
-
-then update packages list and install packages:
-
-```bash
+```sh
 sudo apt update && sudo apt install bc-gateway
 ```
 
-Either start the gateway straight away.
+Start the **BigClown Gateway** service:
 
-```bash
+```sh
 sudo systemctl start bc-gateway.service
 ```
 
-and/or set it to be started on boot and/or USB plug in/out (fancy feature of *SystemD*).
+## Connect Mosquitto and InfluxDB
 
-```bash
-sudo systemctl start bc-gateway.service
+Create a database node in **InfluxDB** using REST interface:
+
+```sh
+curl --data "q=CREATE+DATABASE+%22node%22&db=_internal" http://localhost:8086/query
 ```
 
-### Interconnect Mosquitto and InfluxDB
+Install Python module for **InfluxDB**:
 
-Create the database **node** in **InfluxDB** using REST interface.
-
-```bash
-curl --data "q=CREATE+DATABASE+%22node%22&db=_internal" \
-  http://localhost:8086/query
-```
-
-Install python module for influxdb.
-
-```bash
+```sh
 sudo -H pip3 install influxdb
 ```
 
-Get the python source for the gateway ([mqtt_to_influxdb.py@GitHub](https://github.com/bigclownlabs/bcf-climate-station/blob/master/hub/mqtt_to_influxdb.py)) from MQTT (Mosquitto) to InfluxDB. And make it executable.
+Get the Python source for the gateway ([mqtt_to_influxdb.py@GitHub](https://github.com/bigclownlabs/bcf-climate-station/blob/master/hub/mqtt_to_influxdb.py)) from MQTT (Mosquitto) to InfluxDB. And make it executable.
 
 ```bash
 sudo wget "https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/mqtt_to_influxdb.py" \
@@ -249,7 +232,6 @@ sudo systemctl start mqtt_to_influxdb.service
 
 At first download [grafana-climate-station.json](https://github.com/bigclownlabs/bcf-climate-station/raw/master/hub/grafana-climate-station.json) directly of review it at [GitHub](https://github.com/bigclownlabs/bcf-climate-station/blob/master/hub/grafana-climate-station.json) and get using the [raw](https://github.com/bigclownlabs/bcf-climate-station/raw/master/hub/grafana-climate-station.json) link.
 
-
 You have to configure the Graphana. Open the Graphana web interface at [http://localhost:3000](http://localhost:3000). Initial user name is **admin** and default password also **admin**.
 
 Next you have to create **data source**. Just click on **Add data source** and fill in:
@@ -262,5 +244,3 @@ Next you have to create **data source**. Just click on **Add data source** and f
 Finish by clicking on **Add**. At this moment the Grapahana tries to connect to the **data source** and reports back ```Data source is working```.
 
 Now we have the data but we want to see them. For that you have to click on the top left icon of the Graphana, select **Dashboard** and then **Import**. Then use the option **Upload** give it the file [grafana-climate-station.json](https://github.com/bigclownlabs/bcf-climate-station/raw/master/hub/grafana-climate-station.json) downloaded before. By that you have the dash board, it needs a data source so choose the **data source "node"** you just have created a minute ago. After clicking final **Import** you can enjoy the values from sensors!
-
-![The Graphana Dashboard](https://doc.bigclown.cz/images/climate-station/grafana.png)

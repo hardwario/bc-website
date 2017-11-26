@@ -86,14 +86,14 @@ For the very first time, we recommend to walk through the [**Quick Tutorial**]({
 
 On the other hand, if you want to build something real right away, don't hesitate to start with one of our projects:
 
+* [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.md" >}})
+
 * [**Wireless Climate Monitor**]({{< relref "doc/projects/wireless-climate-monitor.md" >}})
 
-* [**Wireless CO2 Monitor**]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
+* [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.md" >}})
 
 * [**Wireless Flood Detector**]({{< relref "doc/projects/wireless-flood-detector.md" >}})
 
 * [**Wireless LCD Thermostat**]({{< relref "doc/projects/wireless-lcd-thermostat.md" >}})
 
-* [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.md" >}})
-
-* [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.md" >}})
+* [**Wireless CO2 Monitor**]({{< relref "doc/projects/wireless-co2-monitor.md" >}})

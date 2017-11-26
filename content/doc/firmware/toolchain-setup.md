@@ -50,15 +50,15 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 2. Launch the downloaded installer and choose the destination directory:
 
-    ![](windows-location.png)
+    {{% img src="windows-location.png" %}}
 
 3. Now you can adjust the desired **Path** environment variable (we recommend to leave the default settings if in doubt) and proceed with the installation:
 
-    ![](windows-paths.png)
+    {{% img src="windows-paths.png" %}}
 
 4. The FTDI driver setup will launch automatically during the installation - install it:
 
-    ![](windows-ftdi.png)
+    {{% img src="windows-ftdi.png" %}}
 
 5. After finishing the installation, lauch the **BigClown Toolchain** using one these 3 ways:
 
@@ -70,7 +70,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         {{% note "info" %}}The advantage of the context menu is to open the **BigClown Toolchain** directly in the directory location you need to work with.{{% /note %}}
 
-    ![](windows-toolchain.png)
+    {{% img src="windows-toolchain.png" %}}
 
 6. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}). You may also try:
 
@@ -86,7 +86,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 1. Uninstall **Apps & features**:
 
-    ![](windows-uninstall.png)
+    {{% img src="windows-uninstall.png" %}}
 
 ## Setup on macOS
 

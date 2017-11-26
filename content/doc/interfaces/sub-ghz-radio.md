@@ -1,45 +1,112 @@
 ---
-title: "Sub-1GHz Radio"
+title: "Sub-GHz Radio"
 ---
 
+The radio communication technology is the heart of the **BigClown IoT Kit**. This document describes the basic operation of the radio.
 
-## Resources
+With **BigClown**, you can build your own network in the Sub-GHz band.
 
-Today every chip vendor that manufacture also RF frontends has their take on sub gigahertz band.
+The radio frequency **868 MHz** (for Europe) or **915 MHz** (for the U.S.) allows long distance communication and offers low-power operation. Since this frequency band is used for signal messages, you will not encounter interference with streaming protocols like WiFi, Bluetooth, etc.
 
-* [Texas Instrumnets](http://processors.wiki.ti.com/index.php/Category:Sub-1GHz) - with their Launchpad modular solution
-* [Nordic](https://www.nordicsemi.com/eng/Products/Sub-1-GHz-RF) - doing a lot in RF, also known for their excelent developer support. They also have Bluetooth 5 mesh routing avilable on their EVK.
-* [Silicon Labs](https://www.silabs.com/products/wireless/proprietary) - The chip that Telecom Design has based the SigFox modem on [Gecko](https://www.disk91.com/2016/technology/hardware/have-a-good-start-with-telecom-design-efm32-starter-kit/) EVK
-* [ST-Microelectronic](http://www.st.com/en/wireless-connectivity/sub-1ghz-rf.html) and Core module radio [SPIRIT1](http://www.st.com/en/wireless-connectivity/spirit1.html) or [SigFox capable SP2](http://www.st.com/content/st_com/en/products/wireless-connectivity/sub-1ghz-rf/s2-lp.html)
+{{% note "info" %}}BigClown uses **SPIRIT1** radio transceiver from **STMicroelectronics**.{{% /note %}}
 
-## Standards
+## Communication Range
 
-* [ISM](https://en.wikipedia.org/wiki/ISM_band)
-* [IEEE 802.15.4](https://en.wikipedia.org/wiki/IEEE_802.15.4) - Low rate personal area networks
-	* 868.0–868.6 MHz: Europe, allows one communication channel (2003, 2006, 2011[4])
-   * 902–928 MHz: North America, up to ten channels (2003), extended to thirty (2006)
-   * 2400–2483.5 MHz: worldwide use, up to sixteen channels (2003, 2006)
+We have done several radio communication tests. We claim, that from a single point, you are typically able to provide a full-house radio coverage.
 
-* [SRD860](https://en.wikipedia.org/wiki/Short_Range_Devices#SRD860) - limits for that band
-* ZigBee on IEEE 802.15.4 (Mostly 2.4GHz for worldwide compatibility)
-	* garage door control
-	* lightning control
-	* sensors
-* RFID/[NFC](https://en.wikipedia.org/wiki/Near-field_communication) (13.78MHz) - contactless cards and access systems, contactless payment (M/C, Visa, Google Wallet, Apple Pay, Samsung Pay), transport cards (Oyster Card TFL ~ NXP Mifare Desfire EV0, Navigo Card Paris ~ Calypso Intercode [hackable](https://en.fabernovel.com/insights/tech-en/hacking-the-navigo))
+On the other hand, several factors influence the communication distance - the most important is the building material from which you have built your house, obstacles in the path, interference from other appliances, etc.
 
-[Low Power Wide Area Networks](https://en.wikipedia.org/wiki/LPWAN) (LPWAN)
+The only objective radio communication range measurement is a so-called **line-of-sight** distance measured outdoor.
 
-* [SigFox](https://en.wikipedia.org/wiki/Sigfox) - global network
+{{% note "success" %}}We have achieved more than 500 meters line-of-sight communication range between two **Core Module** units.{{% /note %}}
 
-* [LoRa](https://en.wikipedia.org/wiki/LPWAN#LoRa) - many separate network, roaming should be comming
+On the other hand, if the radio communication range is not sufficient, the network can be expanded on IP level thanks to MQTT message replication to a master server.
 
+{{% note "info" %}}You will need to search for `connection`, `address` and `topic` directives in the `mosquitto.conf` configuration file.{{% /note %}}
 
-Whole other topic
+## Radio Topology
 
-* ZWave - 2.4GHz
+**BigClown** supports only **star network topology**. Such configuration offers high reliability, easy troubleshooting and deterministic service time from batteries.
 
-http://www.ti.com/graphics/reserved/eugraphics/TIIC_2016_Website/Brno-Team-Presentation.pdf
+There are two types of devices in the **BigClown** radio network:
 
-http://www.ti.com/graphics/reserved/eugraphics/TIIC_2016_Website/Brno-Team-Project.pdf
+* **Gateway Device**
 
-https://dspace.vutbr.cz/bitstream/handle/11012/31700/Hlavní dokument.pdf
+    There can be only one gateway device per network. The gateway device can be either:
+
+    * BigClown **USB Dongle** (it can handle up to **32 devices**)
+    * BigClown **Core Module** (it can handle up to **16 devices**)
+
+* **Node Device**
+
+    There can be one to several node devices in the network. Every node has to be paired to the gateway. A node device can be some sensor (e.g. temperature, humidity, CO2) or actuator (power relay, LCD display, LED strip controller).
+
+## Radio Pairing
+
+Pairing process is very straightforward procedure:
+
+1. The **gateway device** needs to be in the **pairing mode**.
+
+    {{% note "info" %}}The MQTT command for this operation is described in the document [**MQTT Topics**]({{< relref "doc/integrations/mqtt-topics.md" >}}).{{% /note %}}
+
+2. The **node device** has to transmit the **pairing request**.
+
+    This is done by cycling the power on the **node device**. On battery-operated node, you simple remove the batteries, wait a few seconds (to get the capacitors discharged) and insert the batteries back. The pairing request is sent on the boot.
+
+3. Once all **node devices** are enrolled, you have to exit the **pairing mode**.
+
+    {{% note "info" %}}The MQTT command for this operation is described in the document [**MQTT Topics**]({{< relref "doc/integrations/mqtt-topics.md" >}}).{{% /note %}}
+
+## Radio Parameters
+
+| Parameter                        | Value                      |
+|----------------------------------|----------------------------|
+| Communication frequency (Europe) | 868.0 MHz                  |
+| Communication frequency (U.S.)   | 915.0 MHz                  |
+| Modulation Type                  | GFSK                       |
+| Modulation Rate                  | 19.2 kbps                  |
+| TX Frequency Deviation           | 20 kHz                     |
+| TX Transmit Power                | 11.6 dBm                   |
+| RX Filter Bandwidth              | 100 kHz                    |
+
+## Packet Structure
+
+```
++--------+--------+--------+--------+-------------+--------+
+| PRE(4) | SYN(4) | LEN(1) | DST(1) | DATA(0..60) | CRC(2) |
++--------+--------+--------+--------+-------------+--------+
+```
+
+Explanation of the fields:
+
+* **PRE(4)**
+
+    This part is called **preamble** and consists of alternating sequence of zeroes and ones (32 bits).
+
+* **SYN(4)**
+
+    This part is called **synchronization word** and has a fixed value of `0x88888888`.
+
+* **LEN(1)**
+
+    This part determines the length of the `DATA` plus 1 (`DST` field is also counted).
+
+* **DST(1)**
+
+    This is destination address (for logic network addressing).
+
+* **DATA(0..60)**
+
+    Variable length payload data field.
+
+* **CRC(2)**
+
+    Checksum calculated over all fields excluding `PRE` and `SYN` fields. The polynomial of the CRC engine is `0x1021`.
+
+## Related Documents
+
+* [**SPIRIT1 Resources**](http://www.st.com/en/wireless-connectivity/spirit1.html)
+
+* [**MQTT Protocol**]({{< relref "doc/interfaces/mqtt-protocol.md" >}})
+
+* [**MQTT Topics**]({{< relref "doc/integrations/mqtt-topics.md" >}})

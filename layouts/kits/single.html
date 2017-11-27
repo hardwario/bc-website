@@ -79,7 +79,7 @@
 
                 {{ range sort .Params.modules ".weight"}}
                 <div class="col-12 col-md-6 col-lg-4">
-                  <a href="/modules/{{ .image.small }}" class="modules__photo magnificPopup">
+                  <span href="/modules/{{ .image.small }}" class="modules__photo">
                     <div class="modules__photo__image d-flex justify-content-center align-items-center">
                       <img src="/modules/{{ .image.small }}" alt="{{ .name }}" />
                     </div>
@@ -87,7 +87,17 @@
                     <div class="modules__photo__desc">
                       <h3 class="modules__photo__title">{{ .name }}</h3>
                     </div>
-                  </a>
+                  </span>
+
+                  <!--<a href="/modules/{{ .image.small }}" class="modules__photo magnificPopup">
+                    <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                      <img src="/modules/{{ .image.small }}" alt="{{ .name }}" />
+                    </div>
+
+                    <div class="modules__photo__desc">
+                      <h3 class="modules__photo__title">{{ .name }}</h3>
+                    </div>
+                  </a>-->
                 </div>
                 {{ end }}
 
@@ -98,7 +108,7 @@
             <div class="row">
               {{ range sort .Params.optionalModules ".weight"}}
               <div class="col-12 col-md-6 col-lg-4">
-                <a href="/modules/{{ .image.small }}" class="modules__photo magnificPopup">
+                <span href="/modules/{{ .image.small }}" class="modules__photo">
                   <div class="modules__photo__image d-flex justify-content-center align-items-center">
                     <img src="/modules/{{ .image.small }}" alt="{{ .name }}" />
                   </div>
@@ -106,7 +116,7 @@
                   <div class="modules__photo__desc">
                     <h3 class="modules__photo__title">{{ .name }}</h3>
                   </div>
-                </a>
+                </span>
               </div>
               {{ end }}
             </div>
@@ -217,7 +227,7 @@
           <div class="integration">
             <div class="row">
               <div class="col-12 col-md-6 col-lg-3">
-                <a href="" class="integration__item">
+                <a href="http://www.blynk.cc/" target="_blank" class="integration__item">
                   <div class="integration__image d-flex align-items-center justify-content-center">
                     <img src="/_assets/images/blynk.png" alt="" />
                   </div>
@@ -225,7 +235,7 @@
                 </a>
               </div>
               <div class="col-12 col-md-6 col-lg-3">
-                <a href="" class="integration__item">
+                <a href="https://ifttt.com/" target="_blank" class="integration__item">
                   <div class="integration__image d-flex align-items-center justify-content-center">
                     <img src="/_assets/images/ifthis.jpg" alt="" />
                   </div>
@@ -233,7 +243,7 @@
                 </a>
               </div>
               <div class="col-12 col-md-6 col-lg-3">
-                <a href="" class="integration__item">
+                <a href="https://azure.microsoft.com/cs-cz/" target="_blank" class="integration__item">
                   <div class="integration__image d-flex align-items-center justify-content-center">
                     <img src="/_assets/images/azure.jpg" alt="" />
                   </div>
@@ -241,9 +251,51 @@
                 </a>
               </div>
               <div class="col-12 col-md-6 col-lg-3">
-                <a href="" class="integration__item integration__item--more d-flex align-items-center justify-content-center">
+                <span class="integration__item integration__item--more d-flex align-items-center justify-content-center">
                   and many more ...
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg bg--gray bg--bordered" id="integration">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--3 text-center">Low-Power Networks Integration</h2>
+          <p class="text-center">Extend your kit with our low-power network modules and make it independent of the internet connection and power supply from main.</p>
+          <br>
+          <div class="integration">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <a href="https://www.sigfox.com/en" target="_blank" class="integration__item">
+                  <div class="integration__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/images/sigfox.jpg" alt="" />
+                  </div>
+                  <h3 class="integration__title">SigFox</h3>
                 </a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <a href="https://www.lora-alliance.org" target="_blank" class="integration__item">
+                  <div class="integration__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/images/lora.jpg" alt="" />
+                  </div>
+                  <h3 class="integration__title">LoRa (coming soon)</h3>
+                </a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <span target="_blank" class="integration__item">
+                  <div class="integration__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/images/NB-IoT.jpg" alt="" />
+                  </div>
+                  <h3 class="integration__title">NB-IoT (coming soon)</h3>
+                </span>
               </div>
             </div>
           </div>

@@ -39,7 +39,7 @@ modules:
     name: 3D-printed Enclosure BCE101
     weight: 600
     image:
-      small:
+      small: Enclosure-BCE101-climate.png
       full:
 optionalModules:
   sigfox:

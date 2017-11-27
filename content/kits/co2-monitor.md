@@ -2,9 +2,9 @@
 title: CO2 Monitor Kit
 id: basic
 description: Keep the CO2 concentration under control!
-isBasic: true
-isPremium: true
-isUltimate: true
+isBasic: false
+isPremium: false
+isUltimate: false
 images:
   preview: /kits/co2-monitor/preview.png
   hover: /kits/co2-monitor/hover.png
@@ -63,7 +63,7 @@ modules:
     name: 3D-printed Enclosure BCE201
     weight: 600
     image:
-      small:
+      small: Enclosure-BCE201.png
       full:
 optionalModules:
   sigfox:

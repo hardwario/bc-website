@@ -87,13 +87,13 @@ modules:
     name: 3x 3D-printed Enclosure BCE101
     weight: 600
     image:
-      small:
+      small: Enclosure-BCE101.png
       full:
   enclosures2:
     name: 3D-printed Enclosure BCE501
     weight: 600
     image:
-      small:
+      small: Enclosure-BCE501.png
       full:
   enclosures3:
     name: 3D-printed Enclosure BCE301

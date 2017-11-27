@@ -2,7 +2,7 @@
 title: LCD Thermostat Kit
 id: basic
 description: Control your heating system!
-isBasic: true
+isBasic: false
 isPremium: true
 isUltimate: true
 images:
@@ -45,7 +45,7 @@ modules:
     name: 3D-printed Enclosure BCE101
     weight: 600
     image:
-      small:
+      small: Enclosure-BCE101-thermostat.png
       full:
 optionalModules:
   sigfox:

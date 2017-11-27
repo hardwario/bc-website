@@ -141,13 +141,13 @@ modules:
     name: 4x 3D-printed Enclosure BCE101
     weight: 960
     image:
-      small:
+      small: Enclosure-BCE101.png
       full:
   enclosures2:
     name: 3D-printed Enclosure BCE201
     weight: 980
     image:
-      small:
+      small: Enclosure-BCE201.png
       full:
   enclosures3:
     name: 3D-printed Enclosure BCE301
@@ -159,7 +159,7 @@ modules:
     name: 3D-printed Enclosure BCE501
     weight: 1000
     image:
-      small:
+      small: Enclosure-BCE501.png
       full:
   suitcase:
     name: Clown suitcase

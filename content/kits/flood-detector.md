@@ -2,7 +2,7 @@
 title: Flood Detector Kit
 id: basic
 description: Watch the water leakage!
-isBasic: true
+isBasic: false
 isPremium: true
 isUltimate: true
 images:
@@ -36,10 +36,10 @@ modules:
       small: Modules_382x324_LCD.png
       full:
   enclosures:
-    name: 3D-printed Enclosure BCE101
+    name: 3D-printed Enclosure BCE501
     weight: 600
     image:
-      small:
+      small: Enclosure-BCE501.png
       full:
 optionalModules:
   sigfox:

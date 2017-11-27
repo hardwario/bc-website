@@ -2,8 +2,8 @@
 title: Push Button Kit
 id: basic
 description: Control your space
-isBasic: true
-isPremium: true
+isBasic: false
+isPremium: false
 isUltimate: true
 images:
   preview: /kits/push-button/preview.png
@@ -39,7 +39,7 @@ modules:
     name: 3D-printed Enclosure BCE101
     weight: 600
     image:
-      small:
+      small: Enclosure-BCE101-button.png
       full:
 optionalModules:
   sigfox:

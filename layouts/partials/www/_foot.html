@@ -1,0 +1,38 @@
+<section>
+  <form method="" action="">
+    <div class="bg bg--darkgray">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto">
+            <div class="newsletter__clown"></div>
+          </div>
+          <div class="col">
+            <div class="newsletter__title">Clownsletter</div>
+            <div class="newsletter__text">Sign up to receive the latest news and projects.</div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-auto d-block d-md-flex align-items-sm-center">
+            <input type="email" placeholder="Give me your e-mail" name="email" class="newsletter__input" />
+            <button type="submit" class="button button--red newsletter__button">Get inspiration</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+</main>
+
+{{ block "footer" . }}
+{{ partial "footer-new.html" . }}
+{{ end }}
+<script src="/_assets/js/main.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.10&appId=147151422044678";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>
+{{ printf "<!-- Built with Hugo version %s -->" .Hugo.Version | safeHTML }}

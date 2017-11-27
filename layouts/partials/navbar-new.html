@@ -1,0 +1,42 @@
+<header>
+
+        <div class="header d-flex align-content-stretch">
+            <div class="container-fluid d-flex align-items-center no-gutters">
+                <div class="col d-flex align-items-center justify-content-between">
+
+                    <div class="header__menu d-block d-lg-none"><div></div><div></div><div></div></div>
+
+                    <a href="/" class="logo text-hide">BigClown</a>
+
+                    <ul class="navtop d-none d-lg-flex">
+                        <li class="navtop__item d-block d-lg-flex align-items-center"><a href="/en/" class="navtop__link {{ if eq .RelPermalink "/en/" }} navtop__link--active {{ end }}">Home</a></li>
+
+                        <!--{{- partial "navbar-new-item.html" (dict "title" "Projects" "link" "/en/projects/" "page" .) }}-->
+                        {{- partial "navbar-new-item.html" (dict "title" "Kits" "link" "/en/kits/" "page" .) }}
+                        {{- partial "navbar-new-item.html" (dict "title" "Team" "link" "/en/team/" "page" .) }}
+                        <li class="navtop__item d-block d-lg-flex align-items-center">
+                            <a href="/en/support/" class="navtop__link navtop__link--arrow">Support</a>
+                            <ul class="navtop__submenu">
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
+                                <li><a href="https://doc.bigclown.com" target="_blank">Documentation</a></li>
+                                <li><a href="https://forum.bigclown.com" target="_blank">Forum</a></li>
+                            </ul>
+                        </li>
+                        <!--{{- partial "navbar-new-item.html" (dict "title" "Blog" "link" "/en/blog/" "page" .) }}-->
+                        {{- partial "navbar-new-item.html" (dict "title" "Contact" "link" "/en/contact" "page" .) }}
+                      <li class="navtop__item d-block d-lg-flex align-items-center"><a href="https://shop.bigclown.com" class="navtop__button button button--cart">SHOP NOW</a></li>
+                    </ul>
+
+                    <a href="" class="button button--iconcart d-block d-lg-none text-hide">SHOP NOW</a>
+
+                    <button style = "visibility:hidden" class="d-none d-lg-block button button--lang button--arrow button--lang--en">ENG
+                        <div class="mydropdown">
+                            <a class="button button--lang button--lang--2 button--lang--cz" href="#">CZE</a>
+                            <a class="button button--lang button--lang--2 button--lang--2--active button--lang--en" href="#">ENG</a>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>

@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+  {{ partial "www/heading.html" (dict "heading" "Kits") }}
+
+  {{ partial "www/kits-easy.html" . }}
+
+  {{ partial "www/kits-starter.html" . }}
+
+  {{ partial "www/support.html" (dict "heading" "Find right answers" "subheading" "to your questions about this kit") }}
+
+{{ end }}

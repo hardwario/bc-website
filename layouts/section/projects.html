@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+{{ partial "www/heading.html" (dict "heading" "Projects") }}
+
+<section>
+  <div class="bg bg--gray">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="categories">
+          </div>
+
+          <div class="articles articles--nomargintop">
+            <div class="row">
+              {{ range .Data.Pages }}
+                {{ .Render "grid" }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

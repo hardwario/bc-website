@@ -1,3 +1,58 @@
 {{ define "main" }}
-{{ partial "main.html" . }}
+<section>
+  <div class="intro">
+    <div class="intro__video" id="video" data-property="{videoURL:'https://youtu.be/S-IZY1JqNTQ',containment:'.intro__video',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false}"></div>
+
+    <div class="intro__half"></div>
+
+    <div class="intro__content d-flex align-items-center justify-content-center">
+      <div>
+        <h1 class="intro__title1 align-self-center"><span>Make your own IoT devices with our kit</span></h1>
+        <h2 class="intro__title2 text-uppercase">We are all makers, <em>SO ARE YOU!</em></h2>
+        <a href="http://www.youtube.com/watch?v=S-IZY1JqNTQ?autoplay=1" class="intro__play d-block d-lg-none magnificYoutube"></a>
+        <div class="intro__button d-block d-lg-flex align-items-lg-center flex-lg-column">
+          <a href="#playerArea" class="button button--green">START TODAY</a>
+        </div>
+        <div class="intro__arrow d-none d-lg-inline-block"></div>
+      </div>
+    </div>
+
+    <div class="intro__play intro__play--2 d-none d-lg-block"></div>
+    <div class="intro__close"></div>
+  </div>
+</section>
+
+<section>
+  <div id="playerArea">
+    <div class="bg bg--bubbleswhite">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 ml-auto mr-auto">
+            <h2 class="title text-center">Make something yours <small>it's simple, fun and for everyone</small></h2>
+
+            <div class="threed">
+              <div class="videoWrapper videoWrapper--noTopMargin">
+                <div id="player" data-property="{videoURL:'https://youtu.be/ophRx1tAmfA',containment:'.videoWrapper',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:true}"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "www/kits-easy.html" . }}
+
+{{ partial "www/kits-starter.html" . }}
+
+{{ partial "www/features.html" . }}
+
+{{ partial "www/testimonials.html" . }}
+
+<!--
+{{ partial "www/projects-newest.html" . }}
+-->
+
+
 {{ end }}

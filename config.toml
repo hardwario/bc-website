@@ -19,3 +19,6 @@ countryCode = "gb"
 weight = 2
 languageName = "Čeština"
 countryCode = "cz"
+
+[params]
+menuNames = ["main"]

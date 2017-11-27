@@ -1,0 +1,19 @@
+<section>
+  <div class="bg bg--gray bg--bordered">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--withoutsubtitle text-center">What makers say about us</h2>
+
+          <div class="testimonials">
+            <div class="row d-block d-lg-flex">
+              {{ range sort ($.Site.GetPage "section" "testimonials").Pages ".Weight" }}
+                {{ .Render "grid" }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

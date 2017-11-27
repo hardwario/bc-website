@@ -1,0 +1,13 @@
+<div class="col-12 col-md-6 col-lg-4">
+    <a href="{{ .Permalink }}" class="product">
+        <div class="product__images d-flex align-items-center justify-content-center">
+            <img src="{{ .Params.images.preview }}" alt="{{ .Title }}" />
+            <img src="{{ .Params.images.hover }}" alt="{{ .Title }}" />
+        </div>
+        <h3 class="product__title d-flex align-items-center justify-content-center">{{ .Title }}</h3>
+        <p class="product__text d-flex align-items-center justify-content-center">{{ .Params.description }}</p>
+        <div class="product__button">
+            <span class="button button--gray button--gray--smaller">Learn more</span>
+        </div>
+    </a>
+</div>

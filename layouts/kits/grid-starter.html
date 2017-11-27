@@ -1,0 +1,26 @@
+<div class="col-12 col-md-4">
+  <div class="pricelist__item {{ if .Params.recommended }} pricelist__item--rec {{ end }}">
+    <div class="pricelist__content">
+      {{ if .Params.recommended }} <div class="pricelist__rec">RECOMMENDED</div> {{ end }}
+      <div class="logo logo--2"></div>
+      <h3 class="pricelist__title">{{ .Title }}</h3>
+      <div class="pricelist__title2 text-uppercase">You will be able to make:</div>
+
+      <ul class="pricelist__items">
+        {{ range .Params.included }}
+          <li class="pricelist__items__item">{{ . }}</li>
+        {{ end }}
+        {{ range .Params.notIncluded }}
+          <li class="pricelist__items__item pricelist__items__item--disabled">{{ . }}</li>
+        {{ end }}
+        <li class="pricelist__items__item pricelist__items__item--gifts">
+          <a href="">Clown’s nose</a>
+        </li>
+      </ul>
+
+      <div class="pricelist__button">
+        <a href="{{ .Permalink }}" class="button button--block {{ if .Params.recommended }} button--fullred {{ else }} button--gray {{ end }}">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>

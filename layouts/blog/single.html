@@ -1,3 +1,64 @@
 {{ define "main" }}
-{{ partial "main.html" . }}
+
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10">
+        <div class="article__header">
+          <div class="article__header__button">
+            <a href="" class="button button--tag button--tag--bigger button--tag--blue button--tag--blue--active">INDOOR</a>
+            <div class="article__header__info"><span>30 August</span> <span>5 min read</span></div>
+            <h1 class="article__title">{{ .Title }}</h1>
+            <div class="text text--perex">
+              <p>{{ .Params.description }}</p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <div class="article__author d-flex flex-column justify-content-center">
+                <img src="{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
+                <strong>{{ .Params.author.name }}</strong>
+                <span>{{ .Params.author.post }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="article__image">
+    <img src="{{ .Params.images.main }}" alt="{{ .Title }}" />
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-8">
+        <div class="article__body">
+
+          {{ .Content }}
+
+        </div>
+
+        <div class="article__tags d-flex justify-content-center justify-content-md-start">
+          <a href="" class="button button--tag button--tag--gray">Inteligent</a>
+          <a href="" class="button button--tag button--tag--gray">IOT</a>
+          <a href="" class="button button--tag button--tag--gray">City security</a>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">
+            <div class="article__author article__author--bottom d-flex flex-column justify-content-center">
+              <img src="{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
+              <strong>{{ .Params.author.name }}</strong>
+              <span>{{ .Params.author.post }}</span>
+            </div>
+          </div>
+          <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">
+            <div class="addthis_inline_share_toolbox article__soc"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59c0d0ca2278ef93"></script>
 {{ end }}

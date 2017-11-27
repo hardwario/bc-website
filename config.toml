@@ -20,3 +20,4 @@ countryCode = "cz"
 
 [params]
 menuNames = ["main"]
+productionURL = "https://www.biglcown.com"

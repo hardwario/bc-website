@@ -64,6 +64,8 @@ For most of our projects, we use **Node-RED** application (and web-server) that 
 
 Because there is a set of software components, that repeat over and over again, we put them in the bundle we call the **BigClown Playground** and you can install it on your desktop on **Windows**, **macOS** and **Ubuntu**.
 
+{{% note "warning" %}}Those users who use the **BigClown Raspbian** image on **Raspberry Pi** can skip this part since it comes already pre-installed on the image.{{% /note %}}
+
 This **BigClown Playground** includes:
 
 * **Mosquitto** MQTT broker

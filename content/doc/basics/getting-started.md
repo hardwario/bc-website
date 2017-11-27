@@ -82,7 +82,7 @@ Moreover, tied with Git, MQTT client tools, logging mechanism, etc. you will qui
 
 It is important to start somewhere and our aim is to start with simple things. That's why we have prepared several reference IoT projects. Following them will get you on track quickly. You can always explore the parts you are most interested about, tweak them or write your own firmware applications, automation flows or cloud integrations from scratch.
 
-For the very first time, we recommend to walk through the [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.md" >}}).
+For the very first time, we recommend to walk through the [**Project Workflow**]({{< relref "doc/basics/project-workflow.md" >}}) and [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.md" >}}).
 
 On the other hand, if you want to build something real right away, don't hesitate to start with one of our projects:
 
@@ -97,3 +97,9 @@ On the other hand, if you want to build something real right away, don't hesitat
 * [**Wireless LCD Thermostat**]({{< relref "doc/projects/wireless-lcd-thermostat.md" >}})
 
 * [**Wireless CO2 Monitor**]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
+
+## Related Documents
+
+* [**Project Workflow**]({{< relref "doc/basics/project-workflow.md" >}})
+
+* [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.md" >}})

@@ -13,9 +13,9 @@ isStarter: false
 recommended: false
 included:
 notIncluded:
-weight: 1
-price: 54€
-buyLink: "#"
+weight: 20
+price: €63
+buyLink: "https://shop.bigclown.com/climate-monitor-kit/"
 modules:
   core:
     name: Core Module

@@ -13,9 +13,9 @@ isStarter: false
 recommended: false
 included:
 notIncluded:
-weight: 1
-price: 54€
-buyLink: "#"
+weight: 10
+price: €57
+buyLink: "https://shop.bigclown.com/push-button-kit/"
 modules:
   core:
     name: Core Module

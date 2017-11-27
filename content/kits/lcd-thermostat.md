@@ -13,9 +13,9 @@ isStarter: false
 recommended: false
 included:
 notIncluded:
-weight: 1
-price: 54€
-buyLink: "#"
+weight: 50
+price: €83
+buyLink: "https://shop.bigclown.com/lcd-thermostat-kit/"
 modules:
   core:
     name: Core Module

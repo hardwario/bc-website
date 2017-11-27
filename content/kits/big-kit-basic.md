@@ -14,8 +14,8 @@ recommended: false
 included: ["Motion Detector", "Climate Monitor"]
 notIncluded: ["Flood Detector", "LCD Thermostat", "Controller", "Push Button"]
 weight: 1
-price: 99€
-buyLink: "#"
+price: €149
+buyLink: "https://shop.bigclown.com/big-kits/"
 modules:
   usb_dongle:
     name: USB Dongle

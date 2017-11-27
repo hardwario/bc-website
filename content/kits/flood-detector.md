@@ -13,9 +13,9 @@ isStarter: false
 recommended: false
 included:
 notIncluded:
-weight: 1
-price: 54€
-buyLink: "#"
+weight: 40
+price: €67
+buyLink: "https://shop.bigclown.com/flood-detector-kit/"
 modules:
   core:
     name: Core Module

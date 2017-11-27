@@ -13,9 +13,9 @@ isStarter: false
 recommended: false
 included:
 notIncluded:
-weight: 1
-price: 54€
-buyLink: "#"
+weight: 30
+price: €62
+buyLink: "https://shop.bigclown.com/motion-detector-kit/"
 modules:
   core:
     name: Core Module

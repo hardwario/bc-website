@@ -13,9 +13,9 @@ isStarter: false
 recommended: false
 included:
 notIncluded:
-weight: 1
-price: 54€
-buyLink: "#"
+weight: 60
+price: €169
+buyLink: "https://shop.bigclown.com/co2-monitor-kit/"
 modules:
   core:
     name: Core Module

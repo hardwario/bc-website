@@ -2,7 +2,7 @@
 title: Toolchain Guide
 ---
 
-{{% note "danger" %}}This document assumes that you have necessary tools installed according to the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}).{{% /note %}}
+{{% note "danger" %}}This document assumes that you have necessary tools installed according to the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).{{% /note %}}
 
 {{% note "warning" %}}All of the steps below assume work with **BigClown Toolchain** in Windows or with the **Terminal** application in macOS or Ubuntu.{{% /note %}}
 
@@ -81,12 +81,13 @@ Use this command to list the available firmware packages:
 Example output:
 
     ...
-    bigclownlabs/bcf-ping-pong-table:firmware.bin:v1.0.0
-    bigclownlabs/bcf-sigfox-button:bcf-sigfox-button-v1.0.0.bin:v1.0.0
-    bigclownlabs/bcf-sigfox-climate-monitor:firmware.bin:v1.0.1
-    bigclownlabs/bcf-sigfox-co2-monitor:firmware.bin:v1.0.0
-    bigclownlabs/bcf-sigfox-motion-detector:firmware.bin:v1.0.1
-    bigclownlabs/bcf-sigfox-pulse-counter:firmware.bin:v1.1.0
+    bigclownlabs/bcf-kit-wireless-climate-monitor:v1.1.0
+    bigclownlabs/bcf-kit-wireless-co2-monitor:v1.1.0
+    bigclownlabs/bcf-kit-wireless-controller:v1.1.0
+    bigclownlabs/bcf-kit-wireless-flood-detector:v1.1.0
+    bigclownlabs/bcf-kit-wireless-lcd-thermostat:v1.1.0
+    bigclownlabs/bcf-kit-wireless-motion-detector:v1.1.0
+    bigclownlabs/bcf-kit-wireless-push-button:v1.1.0
     ...
 
 Use this command to list all the versions of the available firmware packages:
@@ -105,29 +106,35 @@ Firmware upload can be done using the `bcf flash` command. The firmware can be o
 
 1. Source **firmware package**, for instance:
 
-        bcf flash bigclownlabs/bcf-sigfox-co2-monitor:latest
+        bcf flash --dfu bigclownlabs/bcf-kit-wireless-push-button:latest
 
 2. Source **local disk file**, for instance:
 
-        bcf flash firmware.bin
+        bcf flash --device ... firmware.bin
+
+    {{% note "warning" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
 3. Source **file from the specified URL**, for instance:
 
-        bcf flash https://github.com/bigclownlabs/bcf-sigfox-co2-monitor/releases/download/v1.0.0/firmware.bin
+        bcf flash --dfu https://github.com/bigclownlabs/bcf-kit-wireless-push-button/releases/download/v1.1.0/bcf-kit-wireless-push-button-v1.1.0.bin
 
-In case you have multiple devices connected to your host, you can list the with the command:
+You can list the devices connected to your host using this command:
 
     bcf devices
 
 ...and then use the device from the list altogether with the `--device` parameter, e.g.:
 
-    bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-sigfox-co2-monitor:latest
+    bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
 
-If you need to download the firmware package and work with it later offline, you can download it using the command `bcf pull`, for instance:
+## Firmware Package Cache
 
-    bcf pull bigclownlabs/bcf-sigfox-co2-monitor:latest
+If the firmware does not exist in the local cache, it is download first with the first `bcf flash` command.
 
-If you want to purge the cache of the downloaded packages, use this command:
+Also, if you need to download the firmware package and work with it later offline, you can download it using the `bcf pull` command, for instance:
+
+    bcf pull bigclownlabs/bcf-gateway-usb-dongle:latest
+
+If you want to clean the cache of the firmware package list and all the downloaded packages, use this command:
 
     bcf clean
 
@@ -193,87 +200,91 @@ You can build the firmware by following these steps:
 
 ## Switching Core Module into DFU Mode
 
-To program the Core Module, we must first enter the DFU mode.
+To program the **Core Module**, we must first enter the DFU mode.
 
 We can do this by following this procedure:
 
-1. Check that the USB cable is plugged into the Core Module and your computer.
+1. Check that the USB cable is plugged into the **Core Module** and your computer.
 
-2. Press and hold the **BOOT** button on the Core Module.
+2. Press and hold the **BOOT** button on the **Core Module**.
 
     {{% note "info" %}}The **BOOT** button is on the right and is marked with a letter `B`.{{% /note %}}
 
-3. Press and release the **RESET** button on the Core Module. At this point, you still have to hold the **BOOT** button.
+3. Press and release the **RESET** button on the **Core Module**. At this point, you still have to hold the **BOOT** button.
 
     {{% note "info" %}}The **RESET** button is on the left and is marked with a letter `R`.{{% /note %}}
 
 4. Release the **BOOT** button.
 
-5. Now the Core Module is connected to your computer as a DFU USB device and is ready for programming.
+{{% note "success" %}}Now the **Core Module** is connected to your computer as a DFU USB device and is ready for programming.{{% /note %}}
 
-## Troubleshoot Windows DFU Flash
+## Windows DFU Driver Troubleshooting
 
-### Wrong DFU Driver
+### Incorrect DFU Driver
 
-In case you get `Cannot open DFU device 0483:df11` message during **flash**, you have wrong DFU drivers installed.
+In case you get `Cannot open DFU device 0483:df11` while running the **bcf flash --dfu** command, you have the incorrect DFU drivers installed.
 
 {{% img-zoom src="windows-dfu-wrong-driver.png" %}}
 
 1. Execute `zadig` from Toolchain or Playground shell (from `cmd.exe` BigClown window):
 
-    {{< note "note" "Keep Core Module connected with DFU mode activated." />}}
+    {{% note "warning" %}}Keep the **Core Module** connected with the DFU mode activated.{{% /note %}}
 
-2. Allow admin rigths in User Acess Control pop-up.
+2. Allow admin rigths in the User Acess Control pop-up.
 
 3. Select Options -> List All Devices
 
     {{% img-zoom src="windows-zadig-list-all-devices.png" %}}
 
-4. Select `STM32 BOOTLOADER`:
+4. Choose **STM32 BOOTLOADER**:
 
     {{% img-zoom src="windows-zadig-select.png" %}}
 
-5. Select `WinUSB`:
+5. Choose **WinUSB**:
 
     {{% img-zoom src="windows-zadig-winusb.png" %}}
 
-6. Click `Replace Driver`:
+6. Click on **Replace Driver**:
 
     {{% img-zoom src="windows-zadig-replace.png" %}}
 
-    {{< note "success" "You will get The driver was installed successfully notification" />}}
+    {{< note "success" "You will get The driver was installed successfully notification." />}}
 
     {{% img-zoom src="windows-zadig-installed.png" %}}
 
-7. Exit Zadig, return to flashing. DFU Driver repare is done.
+7. Exit **Zadig** and get back to firmware flashing. The DFU driver repair procedure is finished.
 
-8. You can check DFU readiness by `dfu-util -l` from Toolchain or Playground shell (from `cmd.exe` BigClown window):
+8. You can check DFU readiness using the `dfu-util -l` command from **BigClown Toolchain Prompt**:
 
     {{% img-zoom src="windows-dfu-list.png" %}}
 
-### No DFU device found
+### No DFU Device Found
 
 There is not `Cannot open DFU device 0483:df11` between:
 
-        A valid DFU suffix will be required in a future dfu-util release!!!
-        No DFU capable USB device available
+    A valid DFU suffix will be required in a future dfu-util release!!!
+    No DFU capable USB device available
 
 {{% img-zoom src="windows-dfu-no-device.png" %}}
 
-The reasons can be various:
+There can be various reasons:
 
-1. DFU mode is not activated on MCU.
+1. DFU mode is not activated on the **Core Module**.
 
-    Follow bcf instructions for Core Module buttons sequence.
+    Follow the instructions in the chapter [**Switching Core Module into DFU Mode**](#switching-core-module-into-dfu-mode).
 
-2. Defective HW - USB cable, USB HUB, USB port, Core Module
+2. Defective USB cable, USB hub, USB port or **Core Module**.
 
-    Try different HW. Try without USB HUB.
+    * Try different hardware.
 
-3. Connection mismatch - Core Module is connected to other PC then bcf is executed.
+    * Try connection without a USB hub.
 
-    Trace USB cable, keyboard, monitor and reconnect to right PC ;-)
+    * Make sure the USB cable used has data wires (some USB cables are for powering only).
+
+3. Connection mismatch - the **Core Module** is connected to different host than where **bcf** is executed.
+
+    * Connect the **Core Module** to the right host.
 
 ## Related Documents
 
-* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})

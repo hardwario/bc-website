@@ -48,7 +48,7 @@ You can start with the existing pre-built firmware image, or just write your own
 
 In terms of firmware image upload, we have tried to make things really simple. That's why we have developed the **BigClown Firmware Tool** that will make the firmware uploads really simple.
 
-{{% note "info" %}}More information about the **BigClown Firmware Tool** can be found in the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}) and [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}).{{% /note %}}
+{{% note "info" %}}More information about the **BigClown Firmware Tool** can be found in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}) and [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}).{{% /note %}}
 
 ### Phase #4: Hardware Assembling
 
@@ -136,9 +136,9 @@ Get social - start with a tweet, screenshot, post to the forum or get to the poi
 
 * [**Getting Started**]({{< relref "doc/basics/getting-started.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}})
 
 * [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
 

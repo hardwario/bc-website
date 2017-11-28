@@ -44,6 +44,6 @@ title: "Wireless CO2 Monitor"
 
 * [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}})

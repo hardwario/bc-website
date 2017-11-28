@@ -78,7 +78,9 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 3. Insert the following snippet in the flow (using **Menu >> Import**) and click in **Flow 1** tab:
 
-    **TODO**
+    ```json
+    [{"id":"2fc604fc.3b6abc","type":"inject","z":"dfc861b.b2a02a","name":"List all gateways","topic":"gateway/all/info/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":460,"wires":[["a2c10833.24d5d8"]]},{"id":"1e4502b8.2f63fd","type":"inject","z":"dfc861b.b2a02a","name":"Start node pairing","topic":"gateway/usb-dongle/pairing-mode/start","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":570,"y":580,"wires":[["795ff5a7.8e266c"]]},{"id":"3d844ce2.932864","type":"inject","z":"dfc861b.b2a02a","name":"Stop node pairing","topic":"gateway/usb-dongle/pairing-mode/stop","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":640,"wires":[["5967c452.c838bc"]]},{"id":"f202b253.2705b","type":"inject","z":"dfc861b.b2a02a","name":"List paired nodes","topic":"gateway/usb-dongle/nodes/get","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":520,"wires":[["f0aca138.0b2c3"]]},{"id":"349f02fd.890f6e","type":"inject","z":"dfc861b.b2a02a","name":"Unpair all nodes","topic":"gateway/usb-dongle/nodes/purge","payload":"","payloadType":"str","repeat":"","crontab":"","once":false,"x":560,"y":700,"wires":[["2f1c5bb6.53d6f4"]]},{"id":"cf61d75d.4ad8f8","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"#","qos":"2","broker":"67b8de4a.029d3","x":530,"y":400,"wires":[["a5cb0658.f5d658"]]},{"id":"a5cb0658.f5d658","type":"debug","z":"dfc861b.b2a02a","name":"","active":true,"console":"false","complete":"false","x":790,"y":400,"wires":[]},{"id":"a2c10833.24d5d8","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":460,"wires":[]},{"id":"f0aca138.0b2c3","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":520,"wires":[]},{"id":"795ff5a7.8e266c","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":580,"wires":[]},{"id":"5967c452.c838bc","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":640,"wires":[]},{"id":"2f1c5bb6.53d6f4","type":"mqtt out","z":"dfc861b.b2a02a","name":"","topic":"","qos":"","retain":"","broker":"717f7c18.ba0a24","x":770,"y":700,"wires":[]},{"id":"67b8de4a.029d3","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"717f7c18.ba0a24","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```
 
     It will look like this:
 
@@ -90,13 +92,13 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 5. Open the **debug** tab:
 
-    **TODO**
+    {{% img-zoom src="node-red-gw-debug.png" %}}
 
     {{% note "info" %}}In the **debug** tab, you will be able to see all the MQTT messages.{{% /note %}}
 
 6. Click on the **List all gateways** button. You should see a response like this in the **debug** tab:
 
-    **TODO**
+    {{% img-zoom src="node-red-gw-list.png" %}}
 
 {{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown USB Dongle** and **BigClown Gateway**.{{% /note %}}
 
@@ -108,13 +110,13 @@ Follow these steps in **Node-RED**:
 
 1. Click on the **Start node pairing** button.
 
-    **TODO**
+    {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
 2. Insert the batteries into the **Wireless Motion Detector** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
 3. Click on the **Stop node pairing** button.
 
-    **TODO**
+    {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
 {{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Motion Detector**) and the gateway (**USB Dongle**).{{% /note %}}
 
@@ -140,7 +142,109 @@ Optionally put the assembly into the appropriate enclosure, if you have one.
 
 ## Integration with IFTTT
 
-**TODO**
+In this section, we will create an **Applet** in the **IFTTT** service. The **Applet** is a sort of event-trigger mechanism.
+
+1. Open the web-browser and go to [**IFTTT**](https://ifttt.com):
+
+    {{% img-zoom src="ifttt-01.png" %}}
+
+2. Log in to IFTTT service. You can sign up using your Google or Facebook identity:
+
+    {{% img-zoom src="ifttt-02.png" %}}
+
+3. Go to **My Applets** in the menu and click on the **New Applet** button:
+
+    {{% img-zoom src="ifttt-03.png" %}}
+
+4. Click on **+this** in the `if this then that` sentence:
+
+    {{% img-zoom src="ifttt-04.png" %}}
+
+5. Find a service with the name **Webhooks** and select it:
+
+    {{% img-zoom src="ifttt-05.png" %}}
+
+6. Click on **Receive a web request**:
+
+    {{% img-zoom src="ifttt-06.png" %}}
+
+7. Type `button` in the **Event Name** field and click on **Create Trigger**:
+
+    {{% img-zoom src="ifttt-07.png" %}}
+
+8. Find action service with the name **Notifications** and select it:
+
+    {{% img-zoom src="ifttt-08.png" %}}
+
+9. Click on **Send a notification from the IFTTT app**:
+
+    {{% img-zoom src="ifttt-09.png" %}}
+
+10. Edit the **Notification** field and insert the text `The button has been pressed on {{OccurredAt}}` and push the **Create action** button:
+
+    {{% img-zoom src="ifttt-10.png" %}}
+
+11. Click on the **Finish** button:
+
+    {{% img-zoom src="ifttt-11.png" %}}
+
+12. Click on the **Webhooks** button:
+
+    {{% img-zoom src="ifttt-12.png" %}}
+
+13. Click on the **Documentation** button:
+
+    {{% img-zoom src="ifttt-13.png" %}}
+
+14. Click on the **event** field:
+
+    {{% img-zoom src="ifttt-14.png" %}}
+
+15. Insert the name `button` in the **event** field and keep the window open:
+
+    {{% img-zoom src="ifttt-15.png" %}}
+
+16. Install the **IFTTT** app on your smart phone and sign in using the same account as you just used to create the applet. Allow the app to use the push notifications when asked.
+
+17. Click on the **Test It** button in the web-browser window:
+
+    {{% img-zoom src="ifttt-16.png" %}}
+
+18. You should receive the push notification on your smart phone within a few seconds:
+
+19. Copy this URL to the clipboard for later use:
+
+    {{% img-zoom src="ifttt-17.png" %}}
+
+{{% note "success" %}}At this point, you've got working notification **Applet** in the **IFTTT** service.{{% /note %}}
+
+## Connect IFTTT in Node-RED
+
+In this section, we will create a link between the button event on MQTT and HTTP request to **IFTTT** which will trigger the push notification.
+
+1. Switch to your **Node-RED** flow.
+
+2. Insert the following snippet in the flow (using **Menu >> Import**):
+
+    ```json
+    [{"id":"aa6e1255.ea79f","type":"mqtt in","z":"1683bd68.e7a7b3","name":"","topic":"node/kit-motion-detector:0/pir/-/event-count","qos":"2","broker":"3db59913.baf0c6","x":580,"y":580,"wires":[["fd3ce751.8e9ba8"]]},{"id":"74e6dfc1.7c1dc","type":"http request","z":"1683bd68.e7a7b3","name":"","method":"POST","ret":"txt","url":"https://maker.ifttt.com/trigger/motion/with/key/bbtA7Dn-3HKPG8OcfZMP7WyvKh6I69iEW9j9OtUBGGB","tls":"","x":910,"y":580,"wires":[[]]},{"id":"fd3ce751.8e9ba8","type":"change","z":"1683bd68.e7a7b3","name":"","rules":[{"t":"delete","p":"payload","pt":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":710,"y":680,"wires":[["42aed05e.e145"]]},{"id":"42aed05e.e145","type":"delay","z":"1683bd68.e7a7b3","name":"","pauseType":"delay","timeout":"30","timeoutUnits":"seconds","rate":"1","nbRateUnits":"1","rateUnits":"second","randomFirst":"1","randomLast":"5","randomUnits":"seconds","drop":false,"x":900,"y":680,"wires":[["74e6dfc1.7c1dc"]]},{"id":"3db59913.baf0c6","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```
+
+    It will look like this:
+
+    {{% img-zoom src="node-red-ifttt-snippet.png" %}}
+
+    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/kit-push-button:0/push-button/-/event-count` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
+
+3. Double click on **http request** node and edit the IFTTT URL obtained in the previous section:
+
+    {{% img-zoom src="node-red-ifttt-url.png" %}}
+
+4. Save the URL by clicking on the **Done** button.
+
+5. Deploy the flow using the **Deploy** button in the top-right corner.
+
+{{% note "success" %}}At this point, you should get a push notification when you press the button.{{% /note %}}
 
 ## Related Documents
 

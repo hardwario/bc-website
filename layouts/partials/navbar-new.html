@@ -1,4 +1,32 @@
 <header>
+  <style>
+    .indiegogo{
+      width: 100%;
+      height: 65px;
+      background: #2a2a2a;
+      position: absolute;
+      z-index: 9999;
+      top: 0;
+      color: white;
+        line-height: 60px;
+    }
+    .header{
+      top: 65px;
+
+    }
+  </style>
+  <section>
+
+    <div class="bg bg--darkgray indiegogo">
+      <div class="align-items-center">
+        <div style = "margin: 0 auto; text-align: center;">
+            <span class="newsletter__title">We're going to <img src = "/_assets/images/indiegogo.png" height = "23px"/>!</span>
+            <span class="newsletter__text" style = "margin: 0 20px;">Why we're doing it?</span>
+            <a href="#" class="button button--redtext" class="display: inline-block; margin: 0!important;">Tell me more</a>
+          </div>
+      </div>
+    </div>
+
   <div class="header d-flex align-content-stretch {{ if and ( eq .Type "kits") ( eq .Kind "page") }} header--withsubmenu {{ end }}">
     <div class="container-fluid d-flex align-items-center no-gutters">
       <div class="col d-flex align-items-center justify-content-between">

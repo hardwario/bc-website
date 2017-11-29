@@ -21,9 +21,9 @@ The website uses the following core technologies:
 
 ## Contributing
 
-Your contribution is welcome and appreciated. For more information, please see the [**Contribution Setup**](https://bigclown.netlify.com/en/doc/documentation/contribution-setup/) document.
+Your contribution is welcome and appreciated. For more information, please see the [**Contribution Setup**](https://bigclown.netlify.com/doc/documentation/contribution-setup/) document.
 
-To see the rules and available text formatting for writing and/or editing the documentation, please see the document [**Content Contribution**](https://bigclown.netlify.com/en/doc/documentation/content-contribution/).
+To see the rules and available text formatting for writing and/or editing the documentation, please see the document [**Content Contribution**](https://bigclown.netlify.com/doc/documentation/content-contribution/).
 
 ## License
 

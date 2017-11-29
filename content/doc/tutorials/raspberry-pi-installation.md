@@ -248,11 +248,27 @@ The connection procedure is as following:
 
         sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
-2. Paste into the file the following template and edit the appropriate items:
+2. Add to end of the file the following template and edit the appropriate items:
 
         network={
             ssid="wifi_network_name"
             psk="wifi_network_password"
+        }
+
+    For example (with multiple WiFi networks):
+
+        country=CZ
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+        update_config=1
+
+        network={
+            ssid="nameofmywifi1"
+            psk="passwordtomywifi1"
+        }
+
+        network={
+            ssid="nameofmywifi2"
+            psk="passwordtomywifi2"
         }
 
 4. Save the file (`Ctrl+X`) and confirm the file name (`y` + `Enter`).

@@ -168,7 +168,7 @@ In this section, we will create an **Applet** in the **IFTTT** service. The **Ap
 
     {{% img-zoom src="ifttt-06.png" %}}
 
-7. Type `button` in the **Event Name** field and click on **Create Trigger**:
+7. Type `motion` in the **Event Name** field and click on **Create Trigger**:
 
     {{% img-zoom src="ifttt-07.png" %}}
 
@@ -184,7 +184,7 @@ In this section, we will create an **Applet** in the **IFTTT** service. The **Ap
 
     {{% img-zoom src="ifttt-10.png" %}}
 
-11. Edit the **Notification** field and insert the text `The button has been pressed on {{OccurredAt}}` and push the **Create action** button:
+11. Edit the **Notification** field and insert the text `The motion detected on {{OccurredAt}}` and push the **Create action** button:
 
     {{% img-zoom src="ifttt-11.png" %}}
 

@@ -244,7 +244,7 @@ In this section, we will create a link between the button event on MQTT and HTTP
 
     {{% img-zoom src="node-red-ifttt-snippet.png" %}}
 
-    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/kit-push-button:0/push-button/-/event-count` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
+    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/kit-flood-detector:0/flood-detector/a/alarm` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
 
 3. Double click on **http request** node and edit the IFTTT URL obtained in the previous section:
 

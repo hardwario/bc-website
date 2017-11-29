@@ -130,7 +130,7 @@ Follow these steps in **Node-RED**:
 
     You should then see similar messages:
 
-    **TODO**
+    {{% img-zoom src="radio-test.png" %}}
 
 {{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
 

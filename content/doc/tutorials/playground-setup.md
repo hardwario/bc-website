@@ -112,6 +112,8 @@ If you already have previously installed playground, you can upgrade it at any t
 10. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
 
     * [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.md" >}})
+    * [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.md" >}})
+    * [**Wireless Flood Detector**]({{< relref "doc/projects/wireless-flood-detector.md" >}})
 
 ## Playground Upgrade on Windows
 

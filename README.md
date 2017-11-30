@@ -4,7 +4,7 @@
 
 This repository covers sources for the BigClown **website**, **documentation** and **blog**
 
-**The site is currently hosted at this URL: https://bigclown.netlify.com**
+**The site is hosted at this URL: https://www.bigclown.com/**
 
 ## Deployment
 
@@ -21,9 +21,9 @@ The website uses the following core technologies:
 
 ## Contributing
 
-Your contribution is welcome and appreciated. For more information, please see the [**Contribution Setup**](https://bigclown.netlify.com/doc/documentation/contribution-setup/) document.
+Your contribution is welcome and appreciated. For more information, please see the [**Contribution Setup**](https://www.bigclown.com/doc/documentation/contribution-setup/) document.
 
-To see the rules and available text formatting for writing and/or editing the documentation, please see the document [**Content Contribution**](https://bigclown.netlify.com/doc/documentation/content-contribution/).
+To see the rules and available text formatting for writing and/or editing the documentation, please see the document [**Content Contribution**](https://www.bigclown.com/doc/documentation/content-contribution/).
 
 ## License
 

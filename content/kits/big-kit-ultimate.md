@@ -131,6 +131,12 @@ modules:
     image:
       small: Modules_382x324_Temperature.png
       full:
+  cover:
+    name: Cover Module
+    weight: 940
+    image:
+      small: Modules_382x324_Cover.png
+      full:
   led:
     name: LED Strip 0.5 m 72 LEDs
     weight: 950
@@ -153,7 +159,7 @@ modules:
     name: 3D-printed Enclosure BCE301
     weight: 990
     image:
-      small:
+      small: Enclosure-BCE301.png
       full:
   enclosures3:
     name: 3D-printed Enclosure BCE501

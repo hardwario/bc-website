@@ -1,4 +1,4 @@
-baseURL = "https://bigclown.com/"
+baseURL = "https://www.bigclown.com/"
 disableKinds = ["RSS", "sitemap"]
 languageCode = "en"
 pygmentsCodeFences = true
@@ -20,4 +20,4 @@ countryCode = "cz"
 
 [params]
 menuNames = ["main"]
-productionURL = "https://biglclown.com"
+productionURL = "https://www.biglclown.com"

@@ -53,6 +53,12 @@ modules:
     image:
       small: Modules_382x324_Temperature.png
       full:
+  cover:
+    name: Cover Module
+    weight: 940
+    image:
+      small: Modules_382x324_Cover.png
+      full:
   enclosures:
     name: 3D-printed Enclosure BCE201
     weight: 990

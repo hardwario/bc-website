@@ -6,7 +6,7 @@ This document will guide you through the **Wireless Climate Monitor** project. Y
 
 ## Block Concept
 
-**TODO**
+{{% img-zoom src="block-diagram.svg" %}}
 
 ## Requirements
 

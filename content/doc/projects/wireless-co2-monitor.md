@@ -6,7 +6,7 @@ title: "Wireless CO2 Monitor"
 
 ## Block Concept
 
-**TODO**
+{{% img-zoom src="block-diagram.svg" %}}
 
 ## Requirements
 

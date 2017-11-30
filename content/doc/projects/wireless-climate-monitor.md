@@ -38,7 +38,7 @@ This document will guide you through the **Wireless Climate Monitor** project. Y
 
 ## Firmware Upload
 
-In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the  **Core Module**.
+In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **Core Module**.
 
 {{< note "note" "Firmware upload to USB Dongle was done in Playground Setup." />}}
 
@@ -138,7 +138,7 @@ Follow these steps in **Node-RED**:
 
 Optionally put the assembly into the appropriate enclosure, if you have one.
 
-{{% note "info" %}}You can find more information about the enclosures in the document  [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}}).{{% /note %}}
+{{% note "info" %}}You can find more information about the enclosures in the document [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}}).{{% /note %}}
 
 ## Integration with Blynk
 

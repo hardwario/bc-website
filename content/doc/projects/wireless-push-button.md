@@ -6,7 +6,7 @@ This document will guide you through the **Wireless Push Button** project. You w
 
 ## Block Concept
 
-{{% img-zoom src="block-diagram.png" %}}
+{{% img-zoom src="block-diagram.svg" %}}
 
 ## Requirements
 

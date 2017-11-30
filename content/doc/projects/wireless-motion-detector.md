@@ -6,7 +6,7 @@ This document will guide you through the **Wireless Motion Detector** project. Y
 
 ## Block Concept
 
-**TODO**
+{{% img-zoom src="block-diagram.svg" %}}
 
 ## Requirements
 

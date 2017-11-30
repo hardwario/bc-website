@@ -48,7 +48,7 @@ modules:
       small: Modules_382x324_PIR.png
       full:
   enclosures:
-    name: 2 x 3D-printed Enclosure BCE101
+    name: 2x 3D-printed Enclosure BCE101
     weight: 600
     image:
       small: Enclosure-BCE101.png

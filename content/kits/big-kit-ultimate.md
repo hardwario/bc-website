@@ -133,31 +133,37 @@ modules:
       full:
   cover:
     name: Cover Module
-    weight: 940
+    weight: 950
     image:
       small: Modules_382x324_Cover.png
       full:
+  cover_mini:
+    name: Mini Cover Module
+    weight: 960
+    image:
+      small: Modules_382x324_MiniCover.png
+      full:
   led:
     name: LED Strip 0.5 m 72 LEDs
-    weight: 950
+    weight: 970
     image:
       small: Modules_382x324_LED Strip.png
       full:
   enclosures:
     name: 4x 3D-printed Enclosure BCE101
-    weight: 960
+    weight: 980
     image:
       small: Enclosure-BCE101.png
       full:
   enclosures2:
     name: 3D-printed Enclosure BCE201
-    weight: 980
+    weight: 990
     image:
       small: Enclosure-BCE201.png
       full:
   enclosures3:
     name: 3D-printed Enclosure BCE301
-    weight: 990
+    weight: 995
     image:
       small: Enclosure-BCE301.png
       full:

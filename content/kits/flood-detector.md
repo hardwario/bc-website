@@ -43,7 +43,7 @@ modules:
       full:
   enclosures:
     name: 3D-printed Enclosure BCE501
-    weight: 600
+    weight: 800
     image:
       small: Enclosure-BCE501.png
       full:

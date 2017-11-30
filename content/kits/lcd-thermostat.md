@@ -30,7 +30,7 @@ modules:
       small: Modules_382x324_MiniBattery.png
       full:lcd:
     name: LCD Module - BG
-    weight: 800
+    weight: 400
     image:
       small: Modules_382x324_LCD.png
       full:

@@ -35,12 +35,6 @@ modules:
     image:
       small: Modules_382x324_MiniBattery.png
       full:
-  battery:
-    name: Battery Module
-    weight: 350
-    image:
-      small: Modules_382x324_Battery.png
-      full:
   climate:
     name: Climate Module
     weight: 400
@@ -77,12 +71,6 @@ modules:
     image:
       small: Modules_382x324_LCD.png
       full:
-  cover:
-    name: Cover Module
-    weight: 500
-    image:
-      small: Modules_382x324_Cover.png
-      full:
   enclosures:
     name: 3x 3D-printed Enclosure BCE101
     weight: 600
@@ -102,7 +90,7 @@ modules:
       small:
       full:
   suitcase:
-    name: Clown suitcase
+    name: Clown Suitcase
     weight: 600
     image:
       small: Modules_382x324_Suitcase.png

@@ -31,7 +31,7 @@ modules:
       full:
   button:
     name: Button Module
-    weight: 280
+    weight: 400
     image:
       small: Modules_382x324_Button.png
       full:

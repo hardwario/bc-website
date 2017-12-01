@@ -142,7 +142,7 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
 7. Write the downloaded image to the MicroSD card (replace `VER` with the actual version of the downloaded image and `X` with the correct disk identifier):
 
-        sudo dd if=bc-raspbian-VER-armhf-rpi.img of=/dev/sdX bs=1M status=progress
+        sudo dd if=bc-raspbian-VER-armhf-rpi.img of=/dev/sdX bs=1M
 
     {{% note "warning" %}}This process may take several minutes.{{% /note %}}
 
@@ -150,7 +150,7 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
 8. Eject the MicroSD card from the operating system (replace `X` with the correct disk identifier):
 
-        eject /dev/sdX
+        sudo eject /dev/sdX
 
 9. Insert the Micro SD card to the Raspberry Pi.
 

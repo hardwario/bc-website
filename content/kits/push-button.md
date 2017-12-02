@@ -1,7 +1,7 @@
 ---
 title: Push Button Kit
 id: basic
-description: Control your space
+description: Control your space!
 isBasic: false
 isPremium: false
 isUltimate: true

@@ -1,5 +1,5 @@
 ---
-title: Big Kit - BASIC
+title: Multi Kit - BASIC
 id: basic
 description: A smooth start to making your IoT devices with BigClown!
 isBasic: false

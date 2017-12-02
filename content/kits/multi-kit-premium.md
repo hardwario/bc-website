@@ -1,5 +1,5 @@
 ---
-title: Big Kit - PREMIUM
+title: Multi Kit - PREMIUM
 id: premium
 description: A perfect start of making your IoT devices with BigClown!
 isBasic: false

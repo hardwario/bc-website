@@ -7,8 +7,8 @@ isPremium: false
 isUltimate: true
 images:
   preview: /kits/push-button/preview.png
-  hover: /kits/push-button//hover.png
-  main: /kits/push-button//main.png
+  hover: /kits/push-button/hover.png
+  main: /kits/push-button/main.png
 isStarter: false
 recommended: false
 included:

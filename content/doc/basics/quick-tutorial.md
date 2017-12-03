@@ -41,7 +41,7 @@ You can also download the official **Raspbian** and install necessary packages y
 3. Connect the **Core Module** or the **USB Dongle** to the **Raspberry Pi**.
 4. Connect the power adapter to the **Raspberry Pi**.
 
-and the **Core Module** or **USB Dongle**. After the **Raspberry Pi** boots up you should be able to find it at address `hub.local`. You can try the command `ping hub.local` and see the response.
+After the **Raspberry Pi** boots up you should be able to find it at address `hub.local`. You can try the command `ping hub.local` and see the response.
 
 {{< note "warning" >}}If the Raspberry Pi is not visible on the network, there's something wrong with your network setup or your system doesn't support **mDNS** and you have to find the IP address of the **Raspberry Pi** in your router's **DHCP** configuration.{{< /note >}}
 
@@ -51,26 +51,23 @@ Please log on the Raspberry Pi shell by typing `ssh pi@hub.localhost` command or
 
 {{% note "warning" %}}Detailed instructions can be found in the document [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}).{{% /note %}}
 
-For quick start we've create a Python command-line utility **bcf**, which automatically downloads latest released firmwares from **GitHub** and will flash the modules. On the Raspberry Pi you need first to update the list of releases by typing `sudo bcf update`. Then by typing `sudo bcf list` you get the list of pre-compiled firmwares.
+For quick start we've create a Python command-line utility **bcf**, which automatically downloads latest released firmwares from **GitHub** and will flash the modules. On the Raspberry Pi you need first to update the list of releases by typing `bcf update`. Then by typing `bcf list` you get the list of pre-compiled firmwares.
 
 We'll flash the **bcf-gateway** firmware. This firmware for the gateway contains functions for all BigClown sensors and modules. After the start the **Core Module** automatically detects connected sensors and sends the measured values by USB to the **Raspberry Pi**.
 
-Before flashing is necessary to switch the **Core Module** to the programming **DFU** mode. First connect the **Core Module** to the **Raspberry Pi** by the micro USB cable. Then set the module to the **DFU** mode by pressing and holding `B` boot button, the shortly press the `R` reset button. Then you can release the `B` boot button. Now you can flash the **Core Module** by typing the command below.
-
+Before flashing is necessary to switch the **Core Module** to the [programming **DFU** mode]({{< relref "doc/tutorials/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).
 ```
-sudo bcf flash --dfu bigclownlabs/bcf-usb-gateway:firmware.bin
+bcf flash --dfu bigclownlabs/bcf-gateway-core-module:latest
 ```
 
 After the firmware flashing the **Core Module** will automatically restart and the flashed firmware will be run.
-
-[Detailed firmware flashing instructions]({{< relref "doc/tutorials/toolchain-guide.md" >}}).
 
 ## USB-MQTT communication bridge
 
 **USB Dongle** or **Core Module** with the **gateway** firmware is using virtual serial port over USB to exchange the data. This communication is then redirected on the **Raspberry Pi** to the **MQTT** messages thanks to the **bch-gateway** service.
 
 All the messages from modules go through the gateway to the MQTT broker. The MQTT is an open standard and also our back-bone system for passing the messages both ways.
-In the middle of this communication system is the MQTT broker. Which is a server that accepts client connections. Between the broker and clients are flowing MQTT messages. Each of them contains **topic** and **payload**. Topic is a text string and has directory-like structure with the `/` delimeter (eg. `gateway/dongle/temperature/get`). Payload isn't defined by a MQTT standard and BigClown is sending these data types: numbers, strings, boolean values and JSONs.
+In the middle of this communication system is the MQTT broker. Which is a server that accepts client connections. Between the broker and clients are flowing MQTT messages. Each of them contains **topic** and **payload**. Topic is a text string and has directory-like structure with the `/` delimeter (eg. `node/core-module:0/thermometer/0:1/temperature`). Payload isn't defined by a MQTT standard and BigClown is sending these data types: numbers, strings, boolean values and JSONs.
 
 Other services can easily connect to the MQTT broker and extend the functionality. Like Node-RED, MQTT-Spy or Android MQTT Dash application.
 
@@ -96,20 +93,22 @@ For battery saving reasons the temperature is only send when there's a change. F
 
 ```
 pi@hub:~ $ mosquitto_sub -t "#" -v
-node/836d19821664/thermometer/0:1/temperature 24.69
-node/836d19821664/thermometer/0:1/temperature 24.94
-node/836d19821664/push-button/-/event-count 5
+node/core-module:0/thermometer/0:1/temperature 24.69
+node/core-module:0/thermometer/0:1/temperature 24.94
+node/core-module:0/push-button/-/event-count 5
 ```
 
 The `-t` parameter if for **topic** which we would like to subscribe. The hash symbol `#` means that we would like to subscribe to all topics. The parameter `-v` displays more verbose output to the console, so we can see not only values but also messages topics.
 
 Another MQTT wildcard symbol is question mark `?`, which has the similar functionality like `#`, but it can be used only in one MQTT topic level (topic to read all thermometers `node/?/thermometer`).
 
-We'll try to turn on an LED on the **Core Module**. In the next command you have to edit `{id}` based on your own module ID. The ID can be obtained from the messages you've received previously.
+We'll try to turn on an LED on the **Core Module**.
 
 ```
-mosquitto_pub -t "node/{id}/led/-/state/set" -m true
+mosquitto_pub -t "node/core-module:0/led/-/state/set" -m true
 ```
+
+Perfect! That was simple, right? Now let's learn the Node-RED.
 
 ## Opening the Node-RED
 
@@ -125,7 +124,7 @@ On the right side of the screen there are tabs **info** and very important tab *
 
 When you create any change in the flow or configuration, you have to apply the changes by pressing the **deploy** button at the top right corner of the screen.
 
-**TODO** link to the article Integration > Node-RED
+More information is in the [Node-RED for Automation]({{< relref "doc/integrations/node-red-for-automation.md" >}}).
 
 ## Subscribing to the MQTT messages in Node-RED
 
@@ -153,7 +152,7 @@ After you save the block settings you have to apply the changes by the **deploy*
 
 ## Displaying the temperature
 
-Now you can see all the incoming messages. In case we would like to receive only temperature from one module, we have to change the topic in the **mqtt** block. We need to change `#` to the `node/836d19821664/thermometer/0:1/temperature`. The address `836d19821664` needs to be replaced by your own **ID** which you can get from the **debug** tab from other messages.
+Now you can see all the incoming messages. In case we would like to receive only temperature from one module, we have to change the topic in the **mqtt** block. We need to change `#` to the `node/core-module:0/thermometer/0:1/temperature`.
 
 For the graphical representation of received values you can use **Node-RED dasboard**. Please insert the **gauge** block, which is in the left list of the block at the bottom. This block needs to be configured.
 
@@ -163,7 +162,6 @@ Double click on the **gauge** block for configuration. First create the new dash
 In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dashboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dasboard.
 
 <img src="temperature-mqtt-dashboard.gif" style="max-width:100%;" />
-
 
 {{< note "info" >}}
 For battery saving reasons the temperature is only send when there's a change. For testing purporses it is appropriate make the temperature sensor cooler or warmer.
@@ -176,7 +174,7 @@ Dashboard can be opened in the right **dashboard** tab by clicking on the arrow 
 Here's the complete flow in case of any issues.
 
 ```
-[{"id":"2c3b9c0.ff19564","type":"tab","label":"Flow 0","disabled":false,"info":""},{"id":"fda6ba0.64ecb48","type":"mqtt in","z":"2c3b9c0.ff19564","name":"","topic":"node/836d19821664/thermometer/0:1/temperature","qos":"2","broker":"ba3b2e25.7c8b7","x":290,"y":160,"wires":[["2dbd1aa6.284476","5ed6f4cf.a598fc"]]},{"id":"2dbd1aa6.284476","type":"debug","z":"2c3b9c0.ff19564","name":"","active":true,"console":"false","complete":"false","x":630,"y":140,"wires":[]},{"id":"5ed6f4cf.a598fc","type":"ui_gauge","z":"2c3b9c0.ff19564","name":"","group":"6f264394.22341c","order":0,"width":0,"height":0,"gtype":"gage","title":"Gauge","label":"units","format":"{{value}}","min":0,"max":10,"colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":639.1000366210938,"y":229.20001220703125,"wires":[]},{"id":"ba3b2e25.7c8b7","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"6f264394.22341c","type":"ui_group","z":"","name":"Default","tab":"255de32f.157b0c","disp":true,"width":"6"},{"id":"255de32f.157b0c","type":"ui_tab","z":"","name":"Home","icon":"dashboard"}]
+[{"id":"3bfb0014.c8ac9","type":"mqtt in","z":"e2a5ec72.0af0b","name":"","topic":"node/core-module:0/thermometer/0:1/temperature","qos":"2","broker":"86ef748c.0f3de8","x":290,"y":160,"wires":[["ba582285.dd04c","17d59ad8.cfa925"]]},{"id":"ba582285.dd04c","type":"debug","z":"e2a5ec72.0af0b","name":"","active":true,"console":"false","complete":"false","x":630,"y":140,"wires":[]},{"id":"17d59ad8.cfa925","type":"ui_gauge","z":"e2a5ec72.0af0b","name":"","group":"761dfbba.bd8604","order":0,"width":0,"height":0,"gtype":"gage","title":"Temperature","label":"°C","format":"{{value}}","min":0,"max":"40","colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":630,"y":220,"wires":[]},{"id":"86ef748c.0f3de8","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"761dfbba.bd8604","type":"ui_group","z":"","name":"Default","tab":"bf26a25d.84e25","disp":true,"width":"6"},{"id":"bf26a25d.84e25","type":"ui_tab","z":"","name":"Home","icon":"dashboard"}]
 ```
 
 ## Control the LED based on the temperature
@@ -195,7 +193,7 @@ This procedure can be used also for other conencted sensors or {{< shop "Climate
 
 Then you can use debug nodes in **Node-RED** to get the right MQTT topic and copy and paste it to your new flow.
 
-The MQTT topic will have the format `node/{id}/hygrometer/0:2/relative-humidity`. Replace the `{id}` with your node's address.
+The MQTT topic will have the format `node/core-module:0/hygrometer/0:2/relative-humidity`.
 
 <img src="humidity-tag-node-animation.gif" style="max-width:100%;" />
 
@@ -203,9 +201,9 @@ The MQTT topic will have the format `node/{id}/hygrometer/0:2/relative-humidity`
 
 Now let's add the relay control. You can use {{< shop "Relay Module" >}} or {{< shop "Power Module" >}}. Connect the module to the Core Module. Based on selected module with relay you have to change the topic.
 
-{{< shop "Power Module" >}} has topic `node/{id}/relay/-/state/set`
+{{< shop "Power Module" >}} has topic `node/core-module:0/relay/-/state/set`
 
-{{< shop "Relay Module" >}} has topic `node/{id}/relay/0:0/state/set`
+{{< shop "Relay Module" >}} has topic `node/core-module:0/relay/0:0/state/set`
 
 Then you send `true` or `false` as a payload.
 
@@ -213,20 +211,13 @@ Then you send `true` or `false` as a payload.
 
 The {{< shop "Relay Module" >}} has also command to make a single pulse with set duration and relay direction.
 
-Topic is `node/{id}/relay/0:0/pulse/set` and you have to publish this JSON `{ "duration": 500, "direction": true}`. Duration is time in milliseconds.
+Topic is `node/core-module:0/relay/0:0/pulse/set` and you have to publish this JSON `{ "duration": 500, "direction": true}`. Duration is time in milliseconds.
+```
+mosquitto_pub -t "node/core-module:0/relay/0:0/pulse/set" -m "{ \"duration\": 500, \"direction\": true}"
+```
 
 <img src="relay-pulse-animation.gif" style="max-width:100%;" />
 
-
-## Conversion to the battery operated node
-
-BigClown building kit is from the ground-up designed for the efficient battery operation. Battery powered module with **bcf-generic-node** firmware will automatically scan connected sensors and modules when powered-up. In the regular intervals the measured values are sent by wireless radio to the gateway.
-
-Place two AAA batteries to the {{< shop "Mini Battery Module" >}} and connect the **Core Module** to it.
-
-{{< note "info" >}}
-**Core Module** contains active control circuit which selects the best power source available. So in case you use the **Battery Module** and at the same time you are flashing/debugging the **Core Module** by USB, then the whole is powered by USB to save the battery power.
-{{< /note >}}
 
 ## Creation of the wireless network
 
@@ -238,16 +229,25 @@ The used radio module **SPIRIT** is comunicating at 868 MHz frequency and with i
 
 ## Flashing gateway firmware
 
+If you don't have {{< shop "USB Dongle" >}} you can use **Core Module** you have already connected to your **Raspberry Pi**. This module with already flashed firmware can act also as a wireless gateway.
+
+If you own the {{< shop "USB Dongle" >}} then disconnect the **Core Module** from **Raspberry Pi** and connect the **USB Dongle**. Then follow next steps to flash the latest firmware.
 Connect the **USB Dongle** to the **Raspberry Pi**. The **USB Dongle** will switch to the programming mode automatically. Just execute the next command:
-```
-sudo bcf bigclownlabs/bcf-usb-dongle:firmware.bin
-```
-
-**In case you would like to use Core Module as a gateway, then you need to flash a different firmware**. Also it is necessary to switch the **Core Module** to the DFU flash mode. First co nnect the **Core Module** to the **Raspberry Pi** by a micro USB cable. Then set the module to the **DFU** mode by pressing and holding `B` boot button, the shortly press the `R` reset button. Then you can release the `B` boot button. Now you can flash the **Core Module** by typing the command below.
 
 ```
-sudo bcf flash --dfu bigclownlabs/bcf-usb-gateway:firmware.bin
+bcf bigclownlabs/bcf-gateway-usb-dongle:latest
 ```
+
+## Conversion to the battery operated node
+
+BigClown building kit is from the ground-up designed for the efficient battery operation. Battery powered module with **bcf-generic-node** firmware will automatically scan connected sensors and modules when powered-up. In the regular intervals the measured values are sent by wireless radio to the gateway.
+
+Place two AAA batteries to the {{< shop "Mini Battery Module" >}} and connect the **Core Module** to it.
+
+{{< note "info" >}}
+**Core Module** contains active control circuit which selects the best power source available. So in case you use the **Battery Module** and at the same time you are flashing/debugging the **Core Module** by USB, then the whole is powered by USB to save the battery power.
+{{< /note >}}
+
 
 ## Flashing the remote node
 
@@ -256,10 +256,10 @@ Upload the `bcf-generic-node` firmware to the remote node unit. This universal f
 Connect the **Core Module** to the **Raspberry Pi** and enable the **DFU** flashing mode as explained in the previous chapter. Upload the `generic-node` with `firmware-battery-mini` option.
 
 ```
-sudo bcf flash --dfu bigclownlabs/bcf-generic-node:firmware-battery-mini.bin
+bcf flash --dfu bigclownlabs/bcf-generic-node-battery-mini:latest
 ```
 
-In case you would power the remote note with a power adapter, you can flash `power module` firmware for a corresponding number of LED diodes (RGB or RGBWhite) `bigclownlabs/bcf-generic-node:firmware-power-module-RGBW-144.bin`. This firmware is also always listening on the radio and can receive commands co control the LED pixels, relay and display the measured data on the connected **LCD Module**. Moreover it is possible to display custom texts on the display with various sized fonts.
+In case you would power the remote note with a power adapter, you can flash `power module` firmware for a corresponding number of LED diodes (RGB or RGBWhite) `bigclownlabs/bcf-generic-node-power-module-rgbw144:latest`. This firmware is also always listening on the radio and can receive commands co control the LED pixels, relay and display the measured data on the connected **LCD Module**. Moreover it is possible to display custom texts on the display with various sized fonts.
 
 [List of bcf-generic-node released firmwares](https://github.com/bigclownlabs/bcf-generic-node/releases)
 
@@ -267,15 +267,17 @@ In case you would power the remote note with a power adapter, you can flash `pow
 
 ## Pairing process
 
-We need to pair the **gateway** with the **node**. In case you are using **Core Module** as a **gateway** you can start the pairing by long press of the `B` button.
+We need to pair the **gateway** with the remote **node**. In case you are using **Core Module** as a **gateway** you can start the pairing by long press of the `B` button. Then the red LED will start blinking.
 
 USB Dongle do not have pairing button and the pairing process needs to be started by a MQTT message. The same works also for the **Core Module** in case you cannot physically press the `B` button.
 
-In the next commands replace the `{id}` by the IP address of your **Raspberry Pi**. The pairing process needs to be started on the **gateway**.
 For **USB Dongle** or **Core Module** you need to send MQTT message with console command or by using the flow in the **Node-RED** which sends the pairing start message.
 
 ```
-mosquitto_pub -t 'gateway/{id}/pairing-mode/start' -n
+For USB Dongle:
+mosquitto_pub -t 'gateway/usb-dongle/pairing-mode/start' -n
+For Core Module:
+mosquitto_pub -t 'gateway/core-module/pairing-mode/start' -n
 ```
 
 After enabling the pairing the red LED on the **USB Dongle**/**Core Module** will start to blink. Now its the time to send pairing command from the **remote node**. This can be done by long press of the `B` button on the **remote node**. If you are subscribed to the `#` topic, you will see a message with new paired address.
@@ -289,12 +291,15 @@ Now it is possible to pair other **remote** nodes, just long press the `B` butto
 After the pairing of the remotes is completed, disable the pairing process on the **gateway** by command:
 
 ```
-mosquitto_pub -t 'gateway/{id}/pairing-mode/stop' -n
+For USB Dongle:
+mosquitto_pub -t 'gateway/usb-dongle/pairing-mode/stop' -n
+For Core Module:
+mosquitto_pub -t 'gateway/core-module/pairing-mode/stop' -n
 ```
 
 ## Measuring and controlling over radio
 
-Remote nodes which has **battery** in the firmware name just transmitts measured data and then they sleep. They cannot receive the commands over the wireless radio while they sleep.
+Remote nodes which has **battery** in the firmware name just transmits measured data and then they sleep. They cannot receive the commands over the wireless radio while they sleep.
 
 Remote nodes which has **power module** in the firmware name are powered by power adapter or USB and can transmit measured data and also receive commands send from the **gateway**. Thanks to this it is possible to control practically all the connected modules over the radio:
 
@@ -303,8 +308,8 @@ Remote nodes which has **power module** in the firmware name are powered by powe
   * LCD Module - display text on the display on any position with different font sizes
   * Control red LED on the **Core Module**
 
-**TODO** Zpátky k Node-RED - s pomocí poznamenaného device ID navádět jak pub/sub do rádiového nodu.
+[List of all MQTT topics]({{< relref "doc/integrations/mqtt-topics.md" >}}).
 
 ## Conclusion and further steps
 
-**TODO** Wrap up of what we've learned. Link to the reference to MQTT topics. Different libraries to connect tot he MQTT broker, Python, C#..
+This tutorial explained how to lean BigClown basics with single a module connected to the Raspberry Pi. The principle is the same with other nodes which you can connect wirelessly. Now you can extend your home automation and create new rules thanks to **Node-RED**.

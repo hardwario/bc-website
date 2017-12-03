@@ -1,73 +1,73 @@
 products:
   - title: Barometer Tag
-    en: https://shop.bigclown.com/products/barometer-tag
-    cs: https://obchod.bigclown.cz/products/barometer-tag
+    en: https://shop.bigclown.com/barometer-tag
+    cs: https://obchod.bigclown.cz/barometer-tag
   - title: Base Module
-    en: https://shop.bigclown.com/products/base-module
-    cs: https://obchod.bigclown.cz/products/base-module
+    en: https://shop.bigclown.com/base-module
+    cs: https://obchod.bigclown.cz/base-module
   - title: Battery Module
-    en: https://shop.bigclown.com/products/battery-module
-    cs: https://obchod.bigclown.cz/products/battery-module
+    en: https://shop.bigclown.com/battery-module
+    cs: https://obchod.bigclown.cz/battery-module
   - title: Breadboard Module
-    en: https://shop.bigclown.com/products/breadboard-module
-    cs: https://obchod.bigclown.cz/products/breadboard-module
+    en: https://shop.bigclown.com/breadboard-module
+    cs: https://obchod.bigclown.cz/breadboard-module
   - title: Climate Module
-    en: https://shop.bigclown.com/products/climate-module
-    cs: https://obchod.bigclown.cz/products/climate-module
+    en: https://shop.bigclown.com/climate-module
+    cs: https://obchod.bigclown.cz/climate-module
   - title: CO2 Module
-    en: https://shop.bigclown.com/products/co2-module
-    cs: https://obchod.bigclown.cz/products/co2-module
+    en: https://shop.bigclown.com/co2-module
+    cs: https://obchod.bigclown.cz/co2-module
   - title: Core Module
-    en: https://shop.bigclown.com/products/core-module
-    cs: https://obchod.bigclown.cz/products/core-module
+    en: https://shop.bigclown.com/core-module
+    cs: https://obchod.bigclown.cz/core-module
   - title: Encoder Module
-    en: https://shop.bigclown.com/products/encoder-module
-    cs: https://obchod.bigclown.cz/products/encoder-module
+    en: https://shop.bigclown.com/encoder-module
+    cs: https://obchod.bigclown.cz/encoder-module
   - title: Humidity Tag
-    en: https://shop.bigclown.com/products/humidity-tag
-    cs: https://obchod.bigclown.cz/products/humidity-tag
+    en: https://shop.bigclown.com/humidity-tag
+    cs: https://obchod.bigclown.cz/humidity-tag
   - title: LCD Module
-    en: https://shop.bigclown.com/products/lcd-module-b
-    cs: https://obchod.bigclown.cz/products/lcd-module-b
+    en: https://shop.bigclown.com/lcd-module-b
+    cs: https://obchod.bigclown.cz/lcd-module-b
   - title: Lux Meter Tag
-    en: https://shop.bigclown.com/products/lux-meter-tag
-    cs: https://obchod.bigclown.cz/products/lux-meter-tag
+    en: https://shop.bigclown.com/lux-meter-tag
+    cs: https://obchod.bigclown.cz/lux-meter-tag
   - title: MicroSDHC Memory Card 8GB
-    en: https://shop.bigclown.com/products/apacer-industrial-microsdhc-card-4gb
-    cs: https://obchod.bigclown.cz/products/apacer-industrial-microsdhc-card-4gb
+    en: https://shop.bigclown.com/microsdhc-card-8gb
+    cs: https://obchod.bigclown.cz/microsdhc-card-8gb
   - title: Mini Battery Module
-    en: https://shop.bigclown.com/products/mini-battery-module
-    cs: https://obchod.bigclown.cz/products/mini-battery-module
+    en: https://shop.bigclown.com/mini-battery-module
+    cs: https://obchod.bigclown.cz/mini-battery-module
   - title: NFC Tag
-    en: https://shop.bigclown.com/products/nfc-tag
-    cs: https://obchod.bigclown.cz/products/nfc-tag
+    en: https://shop.bigclown.com/nfc-tag
+    cs: https://obchod.bigclown.cz/nfc-tag
   - title: PIR Module
-    en: https://shop.bigclown.com/products/pir-module
-    cs: https://obchod.bigclown.cz/products/pir-module
+    en: https://shop.bigclown.com/pir-module
+    cs: https://obchod.bigclown.cz/pir-module
   - title: Power Module
-    en: https://shop.bigclown.com/products/power-module
-    cs: https://obchod.bigclown.cz/products/power-module
+    en: https://shop.bigclown.com/power-module
+    cs: https://obchod.bigclown.cz/power-module
   - title: Probe Module
-    en: https://shop.bigclown.com/products/probe-module
-    cs: https://obchod.bigclown.cz/products/probe-module
+    en: https://shop.bigclown.com/probe-module
+    cs: https://obchod.bigclown.cz/probe-module
   - title: Relay Module
-    en: https://shop.bigclown.com/products/relay-module
-    cs: https://obchod.bigclown.cz/products/relay-module
+    en: https://shop.bigclown.com/relay-module
+    cs: https://obchod.bigclown.cz/relay-module
   - title: Raspberry Pi
-    en: https://shop.bigclown.com/products/raspberry-pi-3-set
-    cs: https://obchod.bigclown.cz/products/raspberry-pi-3-set
+    en: https://shop.bigclown.com/raspberry-pi-3-set
+    cs: https://obchod.bigclown.cz/raspberry-pi-3-set
   - title: Sensor Module
-    en: https://shop.bigclown.com/products/sensor-module
-    cs: https://obchod.bigclown.cz/products/sensor-module
+    en: https://shop.bigclown.com/sensor-module
+    cs: https://obchod.bigclown.cz/sensor-module
   - title: Sigfox Module
-    en: https://shop.bigclown.com/products/sigfox-module
-    cs: https://obchod.bigclown.cz/products/sigfox-module
+    en: https://shop.bigclown.com/sigfox-module
+    cs: https://obchod.bigclown.cz/sigfox-module
   - title: Tag Module
-    en: https://shop.bigclown.com/products/tag-module
-    cs: https://obchod.bigclown.cz/products/tag-module
+    en: https://shop.bigclown.com/tag-module
+    cs: https://obchod.bigclown.cz/tag-module
   - title: Temperature Tag
-    en: https://shop.bigclown.com/products/temperature-tag
-    cs: https://obchod.bigclown.cz/products/temperature-tag
+    en: https://shop.bigclown.com/temperature-tag
+    cs: https://obchod.bigclown.cz/temperature-tag
   - title: USB Dongle
-    en: https://shop.bigclown.com/products/usb-dongle
-    cs: https://obchod.bigclown.cz/products/usb-dongle
+    en: https://shop.bigclown.com/usb-dongle
+    cs: https://obchod.bigclown.cz/usb-dongle

@@ -6,8 +6,8 @@
       <div class="col-12 col-xl-10">
         <div class="article__header">
           <div class="article__header__button">
-            <a href="" class="button button--tag button--tag--bigger button--tag--blue button--tag--blue--active">INDOOR</a>
-            <div class="article__header__info"><span>30 August</span> <span>5 min read</span></div>
+            <!--<a href="" class="button button--tag button--tag--bigger button--tag--blue button--tag--blue--active">Indiegogo</a>-->
+            <div class="article__header__info"><span>{{ .Date.Format "2 January 2006" }}</span> <span>{{ .ReadingTime }} min read</span></div>
             <h1 class="article__title">{{ .Title }}</h1>
             <div class="text text--perex">
               <p>{{ .Params.description }}</p>
@@ -37,11 +37,11 @@
 
         </div>
 
-        <div class="article__tags d-flex justify-content-center justify-content-md-start">
+        <!--<div class="article__tags d-flex justify-content-center justify-content-md-start">
           <a href="" class="button button--tag button--tag--gray">Inteligent</a>
           <a href="" class="button button--tag button--tag--gray">IOT</a>
           <a href="" class="button button--tag button--tag--gray">City security</a>
-        </div>
+        </div>-->
 
         <div class="row">
           <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">

@@ -3,8 +3,10 @@ The **Button Module** is as simple as its name speaks. It has one large button t
 ## Features
 
 * Large and robust button for comfortable pressing
-* Operating temperature range: -20 to 70 °C
+* Lifetime over one million actuations
+* Operating temperature range: -20 to 60 °C
 * Mechanical dimensions: 33 x 55 mm
+* 3-year warranty
 
 ## Resources
 

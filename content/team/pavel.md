@@ -1,7 +1,7 @@
 ---
-title: Pavel Hübner
+title: Pavel Hubner
 position: CTO
-intro: "I am Pavel Hübner"
+intro: "I am Pavel Hubner"
 email: pavel.hubnerk@hardwario.com
 weight: 2
 images:

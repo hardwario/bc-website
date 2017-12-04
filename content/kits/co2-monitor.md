@@ -1,7 +1,7 @@
 ---
 title: CO2 Monitor Kit
 id: basic
-description: Keep the CO2 concentration under control!
+description: Keep the CO2 level under control!
 isBasic: false
 isPremium: false
 isUltimate: false

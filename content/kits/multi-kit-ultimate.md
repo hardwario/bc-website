@@ -1,5 +1,5 @@
 ---
-title: Multi Kit - ULTIMATE
+title: ULTIMATE Multi Kit
 id: ultimate
 description: Become a real BigClown maker!
 isBasic: false

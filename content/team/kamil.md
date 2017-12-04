@@ -1,7 +1,7 @@
 ---
-title: Kamil Polák
+title: Kamil Polak
 position: Hardware Designer
-intro: "I am Kamil Polák"
+intro: "I am Kamil Polak"
 email: kamil.polak@hardwario.com
 weight: 5
 images:

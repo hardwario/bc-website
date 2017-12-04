@@ -46,4 +46,4 @@ You can use the **Climate Module** altogether with the **Mini Battery Module** a
 ## Resources
 
 * [**Documentation**](https://www.bigclown.com/doc/hardware/about-climate-module/)
-* [**Schematic**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-climate-module)
+* [**Schematic**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-climate)

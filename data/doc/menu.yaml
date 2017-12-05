@@ -89,6 +89,8 @@ items:
       link: "doc/hardware/about-button-module.md"
     - title: "About Climate Module"
       link: "doc/hardware/about-climate-module.md"
+    - title: "About Cloony"
+      link: "doc/hardware/about-cloony.md"      
     - title: "About CO2 Module"
       link: "doc/hardware/about-co2-module.md"
     - title: "About Core Module"

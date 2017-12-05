@@ -10,4 +10,4 @@ The **Breadboard Module** offers an easy way to connect any BigClown module to y
 ## Resources
 
 * [**Documentation**](https://www.bigclown.com/doc/hardware/about-breadboard-module/)
-* [**Schematic**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-breadboard)
+* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-breadboard)

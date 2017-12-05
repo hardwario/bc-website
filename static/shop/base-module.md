@@ -14,4 +14,4 @@ This module can be used as a stand on a desk (four rubber feet assure stable pos
 ## Resources
 
 * [**Documentation**](https://www.bigclown.com/doc/hardware/about-base-module/)
-* [**Schematic**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-base)
+* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-base)

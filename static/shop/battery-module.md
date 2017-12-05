@@ -25,4 +25,4 @@ Another useful feature is a prototyping area for soldering your own circuits.
 ## Resources
 
 * [**Documentation**](https://www.bigclown.com/doc/hardware/about-battery-module/)
-* [**Schematic**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-battery)
+* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-battery)

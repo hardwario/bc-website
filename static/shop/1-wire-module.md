@@ -10,4 +10,4 @@ The **1-Wire Module** allow you to connect I²C devices over a distance of sever
 ## Resources
 
 * [**Documentation**](https://www.bigclown.com/doc/hardware/about-1-wire-module/)
-* [**Schematic**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-1-wire)
+* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-1-wire)

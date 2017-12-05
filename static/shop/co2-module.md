@@ -28,4 +28,4 @@ Note 1: Accuracy ±50 ppm is achieved after 24 days of operation and auto calibr
 ## Resources
 
 * [**Documentation**](https://www.bigclown.com/doc/hardware/about-co2-module/)
-* [**Schematic**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-co2)
+* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-co2)

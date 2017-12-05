@@ -21,4 +21,4 @@ This module also features three 5-pin sockets allowing you to connect BigClown 
 ## Resources
 
 * [**Documentation**](https://www.bigclown.com/doc/hardware/about-encoder-module/)
-* [**Schematic**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-encoder)
+* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-encoder)

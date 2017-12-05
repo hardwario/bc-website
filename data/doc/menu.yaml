@@ -165,6 +165,8 @@ items:
       link: "doc/firmware/how-to-da-converter.md"
     - title: "How to: Power Module"
       link: "doc/firmware/how-to-power-module.md"
+    - title: "How to: Relay Module"
+      link: "doc/firmware/how-to-relay-module.md"
     - title: "How to: Temperature Sensor"
       link: "doc/firmware/how-to-temperature-sensor.md"
     - title: "How to: Accelerometer"

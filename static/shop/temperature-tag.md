@@ -2,7 +2,7 @@ The **Temperature Tag** uses a high-accuracy **temperature sensor** TMP112 with 
 
 ## Features
 
-* Integrated temperature sensor TMP112
+* Integrated temperature sensor TMP112 (TI)
 * Communication using I²C bus
 * Temperature accuracy (typical values):
     * ±0.1 °C at 25 °C

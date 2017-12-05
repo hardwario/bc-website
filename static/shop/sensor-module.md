@@ -1,29 +1,30 @@
-Sensor Module delivers two universal inputs on a 4-pin plug-in terminal block. The two inputs are connected via the connectors to the Core Module port P4 and P5, two other inputs are connected to ground. Terminals can be used as analog and digital inputs or outputs.
+The **Sensor Module** features **two universal inputs** on a pluggable terminal block. The terminals can be used as both analog and digital input/output. For example you can connect various external digital, analog or resistive sensors. Also, you can communicate with other devices on a 1-Wire bus.
 
-Sensor Module can serve for many useful functions such as interfacing buttons sensing pickup, voltage measurement, RTD temperature sensors measurement, resistance and communication with digital thermometers and other sensors, or digital peripheral control.
+The two terminal - A on the left, B on the right - are connected to the BigClown header signals P4/A4/DAC0 and P5/A5/DAC1. The other two terminals in the middle are connected to the GND (ground) signal.
 
 ## Features
 
-Two universal configurable inputs:
+Configurable terminal modes:
 
-* Interface for 1-wire bus
-* Analog input / output
-* Logical input / output (log. 1 / log. 0)
-* PWM input/timer input and counter
-* Controllable pull-up resistor 56 ohms or 4.7 kΩ
-* Position for firing the pull-down resistor
+* Analog input or output
+* Digital input or output
+* Pull-up resistor none/4.7 kΩ/56 Ω
 
-Examples of use and connectable peripherals:
+Examples interfaces:
 
-* Resistance temperature sensors (Pt 100, Pt 1000, etc.)
-* Analogue temperature sensors (LM35, TMP37, etc.)
-* NTC temperature sensors
-* Digital Dallas sensors on 1-wire bus
-* Button connection
-* DC voltage measurement
-* DC current measurement (on resistive resistance)
-* Control of digital 1-wire relay
+* Digital temperature sensor on a 1-Wire bus (DS18B20)
+* Resistance temperature sensor (Pt 100, Pt 1000, etc.)
+* Analogue temperature sensor (LM35, TMP37, etc.)
+* NTC temperature sensor
+* Control of digital 1-Wire relay block
+* Button or any type of switch
+* Voltage measurement
 * Plug-in 4-pin screw terminal block
 * Operating voltage range: 1.65 V to 5.5 V
 * Operating temperature range: -20 to 70 °C
 * Dimensions: 33 x 55 mm
+
+## Resources
+
+* [**Documentation**](https://www.bigclown.com/doc/hardware/about-sensor-module/)
+* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-sensor)

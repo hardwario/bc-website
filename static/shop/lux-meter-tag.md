@@ -6,9 +6,8 @@ The spectral response of the sensor tightly matches the photopic response of the
 
 ## Features
 
-* Integrated ambient light sensor OPT3001
+* Digital ambient light sensor OPT3001 (TI)
 * Communication using I²C bus
-* Digital ambient light sensor OPT3001
 * Measures in the range from 0.01 to 83,000 lux
 * 23-bit effective dynamic range
 * Optional interrupt output

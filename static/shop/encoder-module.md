@@ -10,7 +10,7 @@ This module also features three 5-pin sockets allowing you to connect BigClown 
 
 ## Features
 
-* Rotary encoder Bourns PEC12R
+* Rotary encoder PEC12R (Bourns)
 * 12 positions per revolution
 * Integrated push-button switch
 * 3x connector for BigClown Tag

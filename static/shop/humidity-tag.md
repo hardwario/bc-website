@@ -6,7 +6,7 @@ Relative humidity is the essential attribute of the environment we live in. The 
 
 ## Features
 
-* Integrated humidity sensor SHT20
+* Integrated humidity sensor SHT20 (Sensirion)
 * Communication using I²C bus
 * Measurement range: 0 % to 100 %
 * Measurement accuracy: ±2 %

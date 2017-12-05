@@ -1,18 +1,29 @@
-Certified Sigfox Module enables BigClown to communicate with Sigfox wireless network. Signed agreement with your Sigfox network operator is a must.
+The **Sigfox Module** allows you to communicate to the **Sigfox wireless network**, a global network made for the IoT. This technology makes it possible to communicate from a battery-powered device directly to server, even for several years. The **Sigfox Module** uses radio frequency 868 MHz.
 
-Sigfox network works in many other countries in Europe (roaming service works automatically). This technology allows you to communicate from a battery-powered device directly to the server, even for several years. By using the narrow band, the device can communicate with the operator cell over a distance of more than 100 km. The modulation speed is only 100 bps, allowing you to use the very narrow bandwidth and thus communicate over long distances even with very low energy demands.
+**Signed agreement with your Sigfox network operator is a must.**
 
-This network has a wide range of applications. Its use is particularly useful in energy consumption meters (e.g. water meters, gas meters, etc.), environmental sensors (e.g. CO2 monitor), but also in applications for early reports of accidents or defects (e.g. water leak detector).
+Thanks to narrow band transmission, the device can communicate with the operator cell over a distance of more than 100 km.
 
-However, it is important to note the important feature of this network, which concerns the limitation of transmitted data. In the Sigfox network, only 140 messages a day with a maximum data payload of 12 bytes (96 bits) can be transferred from the device. This limitation is based on European legislation for the 868 MHz band, which states that the device may not transmit more than 1% of the time of the last 24-hour period. The Sigfox network does not address the format of the data frame - it only guarantees its transfer to a user-defined destination (usually a server service).
+This network has a wide range of applications. Its use is particularly useful in energy consumption meters (e.g. water meters, gas meters, etc.), environmental sensors (e.g. a CO₂ sensor), but also in applications for early reports of accidents or defects (e.g. water leak detector).
+
+However, there are some limitations on the transmitted data. In the Sigfox network, only **140 messages a day** with the maximum data **payload of 12 bytes** (96 bits) can be transferred from a device.
+
+The Sigfox network is data-agnostic. That means it is up to you to define the structure of the data. On a Sigfox backend, you can specify the so-called callback, the service that will be called when data arrive from a device. For example, you can define a webhook to your server - the HTTP POST call with JSON body.
 
 ## Features
 
-* Official certification from Sigfox
-* Modem Wisol WSSFM10R1AT
-* Communication via UART via AT commands
+* Officialy certified Sigfox module
+* Sigfox module WSSFM10R1AT (Wisol)
+* Sigfox zone RCZ1 (Europe and Middle East)
+* Communication using UART and AT commands
 * SMA antenna ANT-SS900
 * Standby power consumption 2 μA
 * Power consumption of 65 mA for about 6 seconds
+* Operating voltage range: 1.8 to 3.6 V
 * Operating temperature range: -20 to 70 °C
 * Dimensions: 33 x 55 mm
+
+## Resources
+
+* [**Documentation**](https://www.bigclown.com/doc/hardware/about-sigfox-module/)
+* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-sigfox)

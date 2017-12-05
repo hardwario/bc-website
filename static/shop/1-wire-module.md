@@ -2,7 +2,7 @@ The **1-Wire Module** allow you to connect I²C devices over a distance of sever
 
 ## Features
 
-* Integrated 1-Wire to I²C master bridge DS28E17
+* Integrated 1-Wire to I²C master bridge DS28E17 (Maxim)
 * Operating voltage range: 2.5 V to 3.6 V
 * Operating temperature range: -20 to 70 °C
 * Mechanical dimensions: 33 x 55 mm

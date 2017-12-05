@@ -1,4 +1,4 @@
-The **Base Module** works as a mechanical stand for the BigClown units. With the exception of the **Battery Module**, you can plug any other BigClown module into a standardized socket available on the **Base Module**. It also features a prototyping area for soldering your own circuits.
+The **Base Module** works as a mechanical stand for the BigClown units. With the exception of the **Battery Module**, you can plug any other BigClown module into a standardized socket available on the **Base Module**. It also features a **prototyping area** for soldering your own circuits.
 
 This module can be used as a stand on a desk (four rubber feet assure stable position on a surface), mounted on a DIN rail using special plastic clips, or it can be sticked on a wall or other vertical surfaces using a double-sided tape.
 

@@ -4,7 +4,7 @@ You can use the **Climate Module** altogether with the **Mini Battery Module** a
 
 ## Features
 
-**Temperature sensor TMP112**
+**Temperature sensor TMP112 (TI)**
 
 * Measurement accuracy (typical):
     * ± 0.1 °C at 25 °C
@@ -15,13 +15,13 @@ You can use the **Climate Module** altogether with the **Mini Battery Module** a
 * Operating current: 7 μA (4 Hz sampling)
 * Standby current: 2 μA
 
-**Relative humidity sensor SHT20**
+**Relative humidity sensor SHT20 (Sensirion)**
 
 * Measurement range: from 0 % to 100 %
 * Measurement accuracy (typical): ±2 %
 * Operating current: 10 μA
 
-**Atmospheric pressure sensor MPL3115A2**
+**Atmospheric pressure sensor MPL3115A2 (NXP)**
 
 * Measurement range for pressure: 20 kPa to 110 kPa
 * Measurement range for altitude: -698 to 11,775 m
@@ -29,7 +29,7 @@ You can use the **Climate Module** altogether with the **Mini Battery Module** a
 * Operating current: 40 μA (1 Hz period)
 * Standby current: 2 μA
 
-**Light intensity sensor OPT3001**
+**Light intensity sensor OPT3001 (TI)**
 
 * Measurement range: from 0.01 to 83,000 lux
 * 23-bit dynamic range

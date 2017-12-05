@@ -4,11 +4,11 @@ The load disconnect circuit can disconnect the batteries if any other power supp
 
 If the for AAA batteries are not suitable for your application, you can use the **external voltage input**, which can handle up to 10 V. You can find the external input on the two pins in the middle. These pins are compatible with the popular JST connector used for Lithium batteries.
 
-Another useful feature is a prototyping area for soldering your own circuits.
+Another useful feature is a **prototyping area** for soldering your own circuits.
 
 ## Features
 
-* High-efficiency buck converter TPS62745
+* High-efficiency buck converter TPS62745 (TI)
 * Ultra-low quiescent current: 400 nA
 * Recommended battery types:
     * 4x AAA 1.5 V Alkaline or

@@ -1,0 +1,1 @@
+The **Probe Module** allows you to easily hook up an **oscilloscope** or **logic analyzer** on any signal of the BigClown header. Sometimes during the development you need to analyze the signals and see what's going on. And this module makes the task fast and convenient.

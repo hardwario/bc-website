@@ -1,0 +1,1 @@
+The **Breadboard Module** offers an easy way to connect any BigClown module to your breadboard. The narrowed breakout provides more space for wiring and prototyping. The precision pin headers from the bottom side allow smooth insertion to your breadboard and do not stress the breadboard's sockets.

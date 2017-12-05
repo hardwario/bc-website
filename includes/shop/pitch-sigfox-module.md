@@ -1,0 +1,1 @@
+The **Sigfox Module** allows you to communicate to the **Sigfox wireless network**, a global network made for the IoT. This technology makes it possible to communicate from a battery-powered device directly to server, even for several years. The **Sigfox Module** uses radio frequency 868 MHz.

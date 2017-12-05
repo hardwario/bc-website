@@ -1,0 +1,1 @@
+The **CO2 Module** is a gas sensor for measuring the **carbon dioxide (CO₂) concentration**. This module achieves ±50 ppm accuracy. It uses a non-dispersive infrared (NDIR) sensor manufactured in Sweden. Thanks to its **low-power operation** it can be powered from batteries for years.

@@ -133,6 +133,8 @@ items:
       link: "doc/firmware/debugging.md"
     - title: "SDK Framework"
       link: "doc/firmware/sdk-framework.md"
+    - title: "Common Problems"
+      link: "doc/firmware/common-problems.md"
     - title: "Timing and Scheduler"
       link: "doc/firmware/timing-and-scheduler.md"
     - title: "How to: GPIO Pins"

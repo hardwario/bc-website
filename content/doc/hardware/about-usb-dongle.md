@@ -2,17 +2,20 @@
 title: About USB dongle
 ---
 
-{{< hardware_intro "USB Dongle" usb-dongle >}}
-USB Dongle is the central element of our radio network. Its two most important components are the ARM microprocessor and the 868 MHz radio module.
-{{< /hardware_intro >}}
+<style>
+.module-pitch img {
+    margin: 50px;
+}
+.module-pitch p {
+    margin-top: 50px;
+}
+</style>
 
-## Features
+<div class="clearfix module-pitch">
+<img class="pull-left" src="usb-dongle.png" alt="USB Dongle" width="300">
+<p>{{< include "shop/pitch-usb-dongle.md" >}}</p>
+</div>
 
-  * ARM Cortex M0+ 32-bit MCU STM32L083CZ
-  * 192 kB Flash / 20 kB RAM
-  * Radio module (868 MHz) based on SPIRIT1
-  * Security chip ATSHA204A
-  * Operating voltage range: 2.0 V to 3.6 V
-  * Operating temperature range: -20 to 70 °C
+{{< include "shop/body-usb-dongle.md" >}}
 
 {{< hardware "USB Dongle" >}}

@@ -12,9 +12,6 @@ There are two basic difference from the **Core Module**. First, it does not have
 
 ## Features
 
-
-## Features
-
 * ARM Cortex M0+ 32-bit MCU STM32L083CZ (ST)
 * 192 kB Flash / 20 kB RAM
 * Radio module (868/915 MHz) based on SPIRIT1 (ST)

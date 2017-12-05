@@ -37,9 +37,6 @@ bc_module_battery_init(BC_MODULE_BATTERY_FORMAT_STANDARD);
 - `BC_MODULE_BATTERY_EVENT_LEVEL_CRITICAL` - battery crossed "critical voltage threshold"
 - `BC_MODULE_BATTERY_EVENT_UPDATE` - voltage measurement happened
 
-
-{{< note "danger" >}}Do not try to measure voltage when USB cable is connected. Batteries are automatically "cut off", so measurement will give you random values.{{< /note >}}
-
 ## Usage
 Because SDK can inform your application about *low* and *critical* level, you can easily modify it, so it will adapt to the "insufficient power" mode.
 
@@ -50,9 +47,54 @@ And when the voltage level goes critical (*critical voltage* trigger), just send
 You can set [your own threshold levels](http://sdk.bigclown.com/group__bc__module__battery.html#gae316b29ba7391e57703b4e0e01a69f9f), so with a bit of research, you can know that when "critical level warning occurs at *x.y* voltage, there is enough power to make *m* Sigfox transmissions".
 
 ## Example
-For this example, we are going to use LCD module to show voltage level. Place code below in application.c file and flash. Use of application.h file is not required here. Values on your LCD panel will be updated every time you press any of LCD's buttons.
+### USB
+In this example, voltage and charge levels will be sent to your computer over USB every time you press a button.
+
+```c
+#include <bcl.h>
+#include "bc_usb_cdc.h"
+
+bc_button_t button;
+
+void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
+{
+    (void) self;
+    (void) event_param;
+
+    if (event == BC_BUTTON_EVENT_PRESS)
+    {
+        bc_module_battery_measure();
+
+        float voltage = 0.0;
+        bc_module_battery_get_voltage(&voltage);
+        char volt[25];
+        sprintf(volt, "Voltage: %.3f\r\n", voltage);
+
+        int chargePercentage = -1;
+        bc_module_battery_get_charge_level(&chargePercentage);
+        char charge[25];
+        sprintf(charge, "Charge: %d\r\n", chargePercentage);
+
+        bc_usb_cdc_write(volt, strlen(volt));
+        bc_usb_cdc_write(charge, strlen(charge));
+    }
+}
+
+void application_init(void)
+{
+    bc_usb_cdc_init();
+    bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
+    bc_button_set_event_handler(&button, button_event_handler, NULL);
+
+    bc_module_battery_init(BC_MODULE_BATTERY_FORMAT_STANDARD);
+}
 
 ```
+
+### LCD
+For this example, we are going to use LCD module to show voltage level. Place code below in application.c file and flash. Use of application.h file is not required here. Values on your LCD panel will be updated every time you press any of LCD's buttons.
+
+```c
 #include <bcl.h>
 
 #define BLACK true

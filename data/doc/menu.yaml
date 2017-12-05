@@ -163,6 +163,8 @@ items:
       link: "doc/firmware/how-to-ad-converter.md"
     - title: "How to: D/A Converter"
       link: "doc/firmware/how-to-da-converter.md"
+    - title: "How to: PIR Module"
+      link: "doc/firmware/how-to-pir-module.md"
     - title: "How to: Power Module"
       link: "doc/firmware/how-to-power-module.md"
     - title: "How to: Relay Module"

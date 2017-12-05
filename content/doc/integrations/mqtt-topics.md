@@ -43,10 +43,15 @@ Detailed list of topics is in **README** in GitHub repository [**bcf-gateway**](
 
 ## Gateway Topics
 
-Detailed list of topics is in **README** in GitHub repository [**bch-gateway**](https://github.com/bigclownlabs/bch-gateway).
-
 | Explanation   | MQTT Topic    |
 |---------------|---------------|
-| **Pairing** |
-| Start pairing | gateway/{name}/pairing-mode/start |
-| Stop pairing | gateway/{name}/pairing-mode/stop |
+| **Retrieve informations** |
+| Get info about all connected gateways | <pre>`gateway/all/info/get`</pre><bl/>`gateway/pc-gw/info {"id": "836d19839c3b", ...}`|
+| List of paired nodes | gateway/*{name}*/nodes/get<bl/><pre>`gateway/all/nodes/get`</pre><bl/>`gateway/gw-pc/nodes ["study-room", "living-room", "workshop"]`|
+| **Pairing commands** |
+| Start pairing | gateway/*{name}*/pairing-mode/start<bl/><pre>`gateway/all/pairing-mode/start`</pre><bl/>`gateway/pc-gw/pairing-mode "start"` |
+| During pairing - Notification node added | `gateway/pc-gw/attach "836d19839c3a"` |
+| Stop pairing | gateway/*{name}*/pairing-mode/stop<bl/><pre>gateway/all/pairing-mode/stop</pre><bl/>`gateway/pc-gw/pairing-mode "stop"` |
+| Purge all nodes | gateway/*{name}*/nodes/purge<bl/><pre>`gateway/pc-gw/nodes/purge`</pre><bl/>`gateway/pc-gw/nodes []`
+
+For details have a look into implementation in GitHub repository [**bch-gateway**](https://github.com/bigclownlabs/bch-gateway).

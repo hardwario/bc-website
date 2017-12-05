@@ -1,0 +1,1 @@
+The **1-Wire Module** allow you to connect I²C devices over a distance of several meters. The I²C protocol is encapsulated to a 1-Wire protocol. The data are protected using 16-bit CRC. You can use the **Sensor Module** to create a 1-Wire bus master.

@@ -1,0 +1,1 @@
+The **Battery Module** is designed as a power supply source for the battery-operated units. The integrated low-power buck converter provides an excellent efficiency from the **four AAA 1.5 V Alkaline** cells. It also features an extra 5-pin socket where you can connect a BigClown tag.

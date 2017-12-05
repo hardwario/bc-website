@@ -1,0 +1,1 @@
+The **Temperature Tag** uses a high-accuracy **temperature sensor** TMP112 with a typical accuracy of ±0.1 °C at 25 °C. This sensor is digital and calibrated. It communicates using an I²C bus and features a very low power operation and shutdown mode.

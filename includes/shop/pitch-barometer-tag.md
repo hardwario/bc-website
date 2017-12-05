@@ -1,0 +1,1 @@
+The **Barometer Tag** allows you to measure absolute pressure in the range from 20 kPa to 110 kPa, or altitude above the sea level in meters. It uses a low-power I²C sensor MPL3115A2 with an absolute accuracy of ±0.4 kPa. It features a very low active and standby current.

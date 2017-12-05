@@ -1,0 +1,1 @@
+**Cloony** is compact version of the **Core Module**. The size is 23 x 23 mm. It has a **32-bit ARM microcontroller** with 192 kB of flash memory and 20 kB of RAM. Besides the **integrated sub-GHz radio** for the 868/915 MHz band, it also features a digital temperature sensor, and security chip.

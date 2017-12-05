@@ -235,7 +235,7 @@ If you own the {{< shop "USB Dongle" >}} then disconnect the **Core Module** fro
 Connect the **USB Dongle** to the **Raspberry Pi**. The **USB Dongle** will switch to the programming mode automatically. Just execute the next command:
 
 ```
-bcf --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
+bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
 ```
 
 ## Conversion to the battery operated node

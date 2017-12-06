@@ -43,15 +43,54 @@ Detailed list of topics is in **README** in GitHub repository [**bcf-gateway**](
 
 ## Gateway Topics
 
-| Explanation   | MQTT Topic    |
-|---------------|---------------|
-| **Retrieve informations** |
-| Get info about all connected gateways | <pre>`gateway/all/info/get`</pre><bl/>`gateway/pc-gw/info {"id": "836d19839c3b", ...}`|
-| List of paired nodes | gateway/*{name}*/nodes/get<bl/><pre>`gateway/all/nodes/get`</pre><bl/>`gateway/gw-pc/nodes ["study-room", "living-room", "workshop"]`|
-| **Pairing commands** |
-| Start pairing | gateway/*{name}*/pairing-mode/start<bl/><pre>`gateway/all/pairing-mode/start`</pre><bl/>`gateway/pc-gw/pairing-mode "start"` |
-| During pairing - Notification node added | `gateway/pc-gw/attach "836d19839c3a"` |
-| Stop pairing | gateway/*{name}*/pairing-mode/stop<bl/><pre>gateway/all/pairing-mode/stop</pre><bl/>`gateway/pc-gw/pairing-mode "stop"` |
-| Purge all nodes | gateway/*{name}*/nodes/purge<bl/><pre>`gateway/pc-gw/nodes/purge`</pre><bl/>`gateway/pc-gw/nodes []`
+### Radio Pairing
+
+Start/stop radio pairing mode on gateway, get paired nodes, delete all pairing.
+
+**Request**
+
+| MQTT Topic | Explanation |
+|------------|-------------|
+| `gateway/{id or name}/pairing-mode/start` | Start pairing, led starts blinking |
+| `gateway/{id or name}/pairing-mode/stop` | Stop pairing, led stops blinking |
+| `gateway/{id or name}/nodes/get` | List of paired nodes |
+| `gateway/{id or name}/nodes/purge` | Purge all paired nodes |
+
+* `{id or name}` - id or name of gateway, use "all" for request to all gateways
+
+Examples:
+<pre>`mosquitto_pub -t gateway/all/pairing-mode/start -n`</pre>
+<pre>`mosquitto_pub -t gateway/all/pairing-mode/stop -n`</pre>
+<pre>`mosquitto_pub -t gateway/all/nodes/get -n`</pre>
+<pre>`mosquitto_pub -t gateway/all/nodes/purge -n`</pre>
+
+Gateway named *"usb-dongle"*:
+<pre>`mosquitto_pub -t gateway/usb-dongle/pairing-mode/start -n`</pre>
+<pre>`mosquitto_pub -t gateway/usb-dongle/pairing-mode/stop -n`</pre>
+
+Gateway named *"core-module"*:
+<pre>`mosquitto_pub -t gateway/core-module/pairing-mode/start -n`</pre>
+<pre>`mosquitto_pub -t gateway/core-module/pairing-mode/stop -n`</pre>
+
+**Response**
+
+To see responses execute:	
+<pre>`mosquitto_sub -t gateway/#`</pre>
+
+* `gateway/{id or name}/pairing-mode "start"`
+* `gateway/{id or name}/pairing-mode "stop"`
+* `gateway/{id or name}/nodes ["{id-node-0}", "{id-node-id1}", "{id-node-id2}"]`
+* `gateway/{id or name}/nodes []`
+
+**Message notifications**
+
+| MQTT Topic MQTT Payload | Explanation |
+|------------|-------------|
+| `gateway/{gw id or name}/attach "{node id}"` | Notification node {node id} paired |
+
+Example:
+
+* `gateway/pc-gw/attach "836d19839c3a"`
+
 
 For details have a look into implementation in GitHub repository [**bch-gateway**](https://github.com/bigclownlabs/bch-gateway).

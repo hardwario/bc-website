@@ -1,13 +1,10 @@
 ---
-date: "2017-12-05"
+date: 2017-12-05
 title: "Reasons Behind Indiegogo"
 description: "The explanation what makes us to promote BigClown in a crowdfunding campaign"
-meta:
-  title: "Reasons behind Indiegogo"
-  desciption: "The explanation what makes us to promote BigClown in a crowdfunding campaign"
 images:
-  preview: /blog/indiegogo-announce/preview.jpg
-  main: /blog/indiegogo-announce/main.jpg
+  preview: /blog/2017-12-05-reasons-behind-indiegogo/preview.jpg
+  main: /blog/2017-12-05-reasons-behind-indiegogo/main.jpg
 author:
   name: "Alan Fabik"
   post: "CEO & Co-founder"
@@ -21,10 +18,13 @@ from the very first beginning, we knew that we are working on a project on a glo
 
 Our goals are straightforward:
 
-* Get closer to more people.
-* Scale up our production.
-* Find the new BigClown makers.
-* Receive more feedback on our products.
+1. ### Get closer to more people.
+
+2. ### Scale up our production.
+
+3. ### Find the new BigClown makers.
+
+4. ### Receive more feedback on our products.
 
 There are many ways how we could achieve all of these goals, but we have chosen to crowdfund because it can help us with all of them in one package. From the definition, crowdfunding allows projects to raise enough funds by small contributions from the crowd. It is all about community, which is an integral part of the BigClown project, so it fits our mindset even better.
 

@@ -6,7 +6,7 @@ This document will guide you through the **Wireless Push Button** project. You w
 
 ## Block Concept
 
-{{% img-zoom src="block-diagram.png" %}}
+{{% img-zoom src="block-diagram.svg" %}}
 
 ## Requirements
 
@@ -32,13 +32,13 @@ This document will guide you through the **Wireless Push Button** project. You w
 
 * **BigClown Firmware Tool** installed
 
-    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}).
+    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
 
     {{% note "info" %}}`bcf` is part of Windows Playground Setup already.{{% /note %}}
 
 ## Firmware Upload
 
-In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the  **Core Module**.
+In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **Core Module**.
 
 {{< note "note" "Firmware upload to USB Dongle was done in Playground Setup." />}}
 
@@ -48,7 +48,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "info" %}}You may want to update available firmwares by `bcf update` if the installation has been prolonged for a longer time after Playground Setup{{% /note %}}
 
-    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/firmware/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
+    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/tutorials/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
 
     {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
 
@@ -136,7 +136,7 @@ Follow these steps in **Node-RED**:
 
 Optionally put the assembly into the appropriate enclosure, if you have one.
 
-    {{% note "info" %}}You can find more information about the enclosures in the document  [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}}).{{% /note %}}
+{{% note "info" %}}You can find more information about the enclosures in the document [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}}).{{% /note %}}
 
 ## Integration with IFTTT
 
@@ -170,49 +170,53 @@ In this section, we will create an **Applet** in the **IFTTT** service. The **Ap
 
     {{% img-zoom src="ifttt-07.png" %}}
 
-8. Find action service with the name **Notifications** and select it:
+8. Click on **+that** in the `if this then that` sentence:
 
     {{% img-zoom src="ifttt-08.png" %}}
 
-9. Click on **Send a notification from the IFTTT app**:
+9. Find action service with the name **Notifications** and select it:
 
     {{% img-zoom src="ifttt-09.png" %}}
 
-10. Edit the **Notification** field and insert the text `The button has been pressed on {{OccurredAt}}` and push the **Create action** button:
+10. Click on **Send a notification from the IFTTT app**:
 
     {{% img-zoom src="ifttt-10.png" %}}
 
-11. Click on the **Finish** button:
+11. Edit the **Notification** field and insert the text `The button has been pressed on {{OccurredAt}}` and push the **Create action** button:
 
     {{% img-zoom src="ifttt-11.png" %}}
 
-12. Click on the **Webhooks** button:
+12. Click on the **Finish** button:
 
     {{% img-zoom src="ifttt-12.png" %}}
 
-13. Click on the **Documentation** button:
+13. Click on the **Webhooks** button:
 
     {{% img-zoom src="ifttt-13.png" %}}
 
-14. Click on the **event** field:
+14. Click on the **Documentation** button:
 
     {{% img-zoom src="ifttt-14.png" %}}
 
-15. Insert the name `button` in the **event** field and keep the window open:
+15. Click on the **event** field:
 
     {{% img-zoom src="ifttt-15.png" %}}
 
-16. Install the **IFTTT** app on your smart phone and sign in using the same account as you just used to create the applet. Allow the app to use the push notifications when asked.
-
-17. Click on the **Test It** button in the web-browser window:
+16. Insert the name `button` in the **event** field and keep the window open:
 
     {{% img-zoom src="ifttt-16.png" %}}
 
-18. You should receive the push notification on your smart phone within a few seconds:
+17. Install the **IFTTT** app on your smart phone and sign in using the same account as you just used to create the applet. Allow the app to use the push notifications when asked.
 
-19. Copy this URL to the clipboard for later use:
+18. Click on the **Test It** button in the web-browser window:
 
     {{% img-zoom src="ifttt-17.png" %}}
+
+19. You should receive the push notification on your smart phone within a few seconds:
+
+20. Copy this URL to the clipboard for later use:
+
+    {{% img-zoom src="ifttt-18.png" %}}
 
 {{% note "success" %}}At this point, you've got working notification **Applet** in the **IFTTT** service.{{% /note %}}
 
@@ -252,6 +256,6 @@ In this section, we will create a link between the button event on MQTT and HTTP
 
 * [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}})

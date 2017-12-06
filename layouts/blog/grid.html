@@ -12,7 +12,7 @@
     <div class="articles__author d-flex align-items-center">
       <div class="articles__author__image"><img src="{{ .Params.author.image }}" alt="{{ .Params.author.name }}" /></div>
       <div class="articles__author__title">{{ .Params.author.name }}</div>
-      <div class="ml-auto articles__author__time">2 hours ago</div>
+      <div class="ml-auto articles__author__time">{{ .Date.Format "2 January 2006" }}</div>
     </div>
     <!--<div class="button button--tag button--tag--blue button--tag--blue--active articles__button">Indoor</div>-->
   </a>

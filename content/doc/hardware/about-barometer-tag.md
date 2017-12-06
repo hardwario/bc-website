@@ -2,29 +2,20 @@
 title: About Barometer Tag
 ---
 
-{{< hardware_intro "Barometer Tag" barometer-tag >}}
+<style>
+.module-pitch img {
+    margin: 50px;
+}
+.module-pitch p {
+    margin-top: 50px;
+}
+</style>
 
-The Barometer Tag can measure **atmospheric pressure** in the range from 20 kPa to 110 kPa, or **altitude** above the sea level in meters. It uses a low-power sensor **MPL3115A2** with an absolute accuracy of ±0.4 kPa.
+<div class="clearfix module-pitch">
+<img class="pull-left" src="barometer-tag.png" alt="Barometer Tag" width="300">
+<p>{{< include "shop/pitch-barometer-tag.md" >}}</p>
+</div>
 
-Monitoring of absolute pressure is useful for weather forecast and it is also an important parameter in biometeorology because the absolute pressure can affect our health.
-
-This sensor is a digital I2C-only peripheral featuring a very low active and standby current.
-{{< /hardware_intro >}}
-
-## Features
-
-* Absolute pressure sensor MPL3115A2
-* I2C-only peripheral
-* Atm. pressure measurement range: 20 kPa to 110 kPa
-* Atm. pressure measurement accuracy: ± 0.4 kPa
-* Altitude measurement range: –698 to 11,775 m
-* Optional interrupt output
-* Power consumption:
-    * 40 µA average current (1 Hz sample rate)
-    * 2 µA standby current
-* Operation voltage range: 2.0 V to 3.6 V
-* Operating temperature range: -40 to 85 °C
-* Mechanical dimensions: 16 x 16 mm
-* 10-year warranty
+{{< include "shop/body-barometer-tag.md" >}}
 
 {{< hardware "Barometer Tag" >}}

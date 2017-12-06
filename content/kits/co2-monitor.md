@@ -1,7 +1,7 @@
 ---
 title: CO2 Monitor Kit
 id: basic
-description: Keep the CO2 concentration under control!
+description: Keep the CO2 level under control!
 isBasic: false
 isPremium: false
 isUltimate: false
@@ -23,12 +23,6 @@ modules:
     image:
       small: Modules_382x324_Core.png
       full:
-  mini_battery:
-    name: Mini Battery Module
-    weight: 300
-    image:
-      small: Modules_382x324_MiniBattery.png
-      full:
   battery:
     name: Battery Module
     weight: 350
@@ -40,12 +34,6 @@ modules:
     weight: 850
     image:
       small: Modules_382x324_CO2.png
-      full:
-  lux:
-    name: Lux Meter Tag
-    weight: 930
-    image:
-      small: Modules_382x324_Lux.png
       full:
   humidity:
     name: Humidity Tag
@@ -59,9 +47,21 @@ modules:
     image:
       small: Modules_382x324_Barometer.png
       full:
+  temperature:
+    name: Temperature Tag
+    weight: 930
+    image:
+      small: Modules_382x324_Temperature.png
+      full:
+  cover:
+    name: Cover Module
+    weight: 940
+    image:
+      small: Modules_382x324_Cover.png
+      full:
   enclosures:
     name: 3D-printed Enclosure BCE201
-    weight: 600
+    weight: 990
     image:
       small: Enclosure-BCE201.png
       full:

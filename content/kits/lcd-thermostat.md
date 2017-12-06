@@ -28,18 +28,11 @@ modules:
     weight: 300
     image:
       small: Modules_382x324_MiniBattery.png
-      full:
-  sensor:
-    name: Sensor Module
-    weight: 600
+      full:lcd:
+    name: LCD Module
+    weight: 400
     image:
-      small: Modules_382x324_Sensor.png
-      full:
-  flood:
-    name: Flood Detector
-    weight: 700
-    image:
-      small: Modules_382x324_Flood detector.png
+      small: Modules_382x324_LCD.png
       full:
   enclosures:
     name: 3D-printed Enclosure BCE101

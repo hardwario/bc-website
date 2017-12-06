@@ -1,0 +1,1 @@
+The **Core Module - NR** is a lite version of the **Core Module** without the radio module assembled. The rest is fully compatible with its ancestor. It has a **32-bit ARM microcontroller** with 192 kB of flash memory and 20 kB of RAM. Also, it has an integrated digital temperature sensor, 3D accelerometer, and security chip.

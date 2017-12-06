@@ -2,29 +2,18 @@
 title: About LCD Module
 ---
 
-{{< hardware_intro "LCD Module" lcd-module >}}
-The heart of the module is the unique 1.28" Sharp LCD Display with 128 x 128 pixels resolution. The main advantage is ultra low power consumption which guarantees very long battery operation.
+<style>
+.module-pitch img {
+    margin: 50px;
+}
+.module-pitch p {
+    margin-top: 50px;
+}
+</style>
 
-You can use two buttons that are located under the LCD to control your applications, such as navigation in the graphical menu. The module is also equipped with a gesture sensor - Avago APDS-9960. This circuit, composed of an infrared transmitter and four directional photodiodes responding to different wavelengths, can also be used to measure light intensity and color or as a proximity sensor.
+<div class="clearfix module-pitch">
+<img class="pull-left" src="lcd-module.png" alt="LCD Module" width="300">
+<p>{{< include "shop/pitch-lcd-module-bg.md" >}}</p>
+</div>
 
-The LCD Module also includes six high-luminous miniature RGB LEDs that can be used to indicate status or as a light alarm.
-
-A typical example of the use of the LCD Module is a wireless thermostat, or it can directly display values from various sensors located both indoors and outdoors.
-
-The LCD Module can also function as a unique status display for Turris Omnia router.
-{{< /hardware_intro >}}
-
-## Features
-
-  * LCD Sharp LS013B7DH03
-  * Display resolution: 128 x 128 pixels
-  * Two user buttons
-  * Movement gesture and zoom sensor, APDS-9960 light and color intensity sensor
-  * 6 high brightness miniature RGB LEDs
-  * Typical consumption < 16 μA
-  * Operating voltage range: 2.7 V to 3.3 V
-  * Operating temperature range: -20 to 70 ° C
-  * Dimensions: 33 x 55 mm
-  * 10-year warranty
-
-{{< hardware "LCD Module" >}}
+{{< include "shop/body-lcd-module-bg.md" >}}

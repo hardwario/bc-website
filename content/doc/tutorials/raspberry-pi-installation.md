@@ -142,7 +142,7 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
 7. Write the downloaded image to the MicroSD card (replace `VER` with the actual version of the downloaded image and `X` with the correct disk identifier):
 
-        sudo dd if=bc-raspbian-VER-armhf-rpi.img of=/dev/sdX bs=1M status=progress
+        sudo dd if=bc-raspbian-VER-armhf-rpi.img of=/dev/sdX bs=1M
 
     {{% note "warning" %}}This process may take several minutes.{{% /note %}}
 
@@ -150,7 +150,7 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
 8. Eject the MicroSD card from the operating system (replace `X` with the correct disk identifier):
 
-        eject /dev/sdX
+        sudo eject /dev/sdX
 
 9. Insert the Micro SD card to the Raspberry Pi.
 
@@ -248,11 +248,27 @@ The connection procedure is as following:
 
         sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
-2. Paste into the file the following template and edit the appropriate items:
+2. Add to end of the file the following template and edit the appropriate items:
 
         network={
             ssid="wifi_network_name"
             psk="wifi_network_password"
+        }
+
+    For example (with multiple WiFi networks):
+
+        country=CZ
+        ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+        update_config=1
+
+        network={
+            ssid="nameofmywifi1"
+            psk="passwordtomywifi1"
+        }
+
+        network={
+            ssid="nameofmywifi2"
+            psk="passwordtomywifi2"
         }
 
 4. Save the file (`Ctrl+X`) and confirm the file name (`y` + `Enter`).

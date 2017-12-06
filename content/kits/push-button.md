@@ -1,14 +1,14 @@
 ---
 title: Push Button Kit
 id: basic
-description: Control your space
+description: Control your space!
 isBasic: false
 isPremium: false
 isUltimate: true
 images:
   preview: /kits/push-button/preview.png
-  hover: /kits/push-button//hover.png
-  main: /kits/push-button//main.png
+  hover: /kits/push-button/hover.png
+  main: /kits/push-button/main.png
 isStarter: false
 recommended: false
 included:
@@ -31,7 +31,7 @@ modules:
       full:
   button:
     name: Button Module
-    weight: 280
+    weight: 400
     image:
       small: Modules_382x324_Button.png
       full:

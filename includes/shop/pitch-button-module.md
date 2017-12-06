@@ -1,0 +1,1 @@
+The **Button Module** is as simple as its name speaks. It has one large button that feels good to click. You can use it to trigger various actions, e.g. turn on the light, send a push notification, or control an appliance. It is connected to the BOOT signal on the **Core Module**.

@@ -1,0 +1,1 @@
+The **PIR Module** works as a **motion detector** operating on a **passive infrared** (PIR) principle. A typical usage of the **PIR Module** can be a wireless motion detector located on a wall or ceiling. The module is equipped with an **ultra-low-power digital sensor** from Excelitas' the DigiPyro® family.

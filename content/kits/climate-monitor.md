@@ -1,7 +1,7 @@
 ---
 title: Climate Monitor Kit
 id: basic
-description: Monitor your thermal comfort
+description: Monitor your thermal comfort!
 isBasic: true
 isPremium: true
 isUltimate: true

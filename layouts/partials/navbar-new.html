@@ -12,7 +12,57 @@
     }
     .header{
       top: 65px;
+    }
+    .indiegogo .newsletter__text.shorter{
+      display: none;
+    }
+    .indiegogo .button--redtext.tablet{
+      display: none!important;
+    }
+    .indiegogo .button--redtext.mobile{
+      display: none!important;
+    }
+    @media screen and (max-width: 1240px) {
+      .indiegogo .newsletter__text.longer{
+        display: none;
+      }
+      .indiegogo .newsletter__text.shorter{
+        display: inline-block;
+      }
+    }
+    @media screen and (max-width: 960px) {
 
+      .indiegogo .button--redtext.desktop{
+        display: none!important;
+      }
+
+      .indiegogo .button--redtext.tablet{
+        display: inline-block!important;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      .indiegogo{
+        height: 95px;
+      }
+      .header{
+        top: 95px;
+      }
+      .indiegogo .newsletter__text.longer{
+        display: none;
+      }
+      .indiegogo .newsletter__text.shorter{
+        display: none;
+      }
+
+      .indiegogo .button--redtext.desktop{
+        display: none!important;
+      }
+      .indiegogo .button--redtext.tablet{
+        display: none!important;
+      }
+      .indiegogo .button--redtext.mobile{
+        display: inline-block!important;
+      }
     }
   </style>
   <section>
@@ -22,8 +72,11 @@
         <div style = "margin: 0 auto; text-align: center;">
             <!--<span class="newsletter__title">We're going to <img src = "/_assets/images/indiegogo.png" height = "23px" style="margin-top:-5px;"/>!</span>-->
 
-            <span class="newsletter__text" style = "margin: 0 10px;">We are thrilled to announce that we have decided to run a crowdfunding campaign on <img src = "/_assets/images/indiegogo.png" height = "23px" style="margin-top:-5px;"/>. Why are we doing this?</span>
-            <a href="#" class="button button--redtext" style="display: inline-block; margin: -5px 0 0!important; padding: 0;">Find the answers here!</a>
+            <span class="newsletter__text longer" style = "margin: 0 10px;">We are thrilled to announce that we have decided to run a crowdfunding campaign on <img src = "/_assets/images/indiegogo.png" height = "23px" style="margin-top:-5px;"/>. Why are we doing this?</span>
+            <span class="newsletter__text shorter" style = "margin: 0 10px;">Why have we decided to run a crowdfunding campaign on <img src = "/_assets/images/indiegogo.png" height = "23px" style="margin-top:-5px;"/>?</span>
+            <a href="#" class="button button--redtext mobile" style="display: inline-block; margin: -5px 0 0!important; padding: 0;">Read why have we decided to run Indiegogo campaign</a>
+            <a href="#" class="button button--redtext tablet" style="display: inline-block; margin: -5px 0 0!important; padding: 0;">Find the answers!</a>
+            <a href="#" class="button button--redtext desktop" style="display: inline-block; margin: -5px 0 0!important; padding: 0;">Find the answers here!</a>
           </div>
       </div>
     </div>

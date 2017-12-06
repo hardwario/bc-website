@@ -941,7 +941,7 @@ $(function(){
 
 
         $(window).scroll(function () {
-          var top = 65;
+          var top = $('.indiegogo').height();
           var padding = $(window).scrollTop();
 
           if ($(window).scrollTop() < top) {

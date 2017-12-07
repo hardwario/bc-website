@@ -208,35 +208,115 @@ This is a brief list of differences:
 
 1. Log in to the Raspberry Pi using SSH. Detailed procedure is provided in the document [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}).
 
-2. Install these dependencies:
+2. Upgrade all packages:
 
-        sudo apt install apt-transport-https wget
+        sudo apt update && sudo apt upgrade
 
-3. Add the BigClown APT repository to the resource list:
+3. Install **Mosquitto** server and clients:
 
-        sudo sh -c 'echo "deb https://repo.bigclown.com/debian jessie main" > /etc/apt/sources.list.d/bigclown.list'
+        sudo apt install mosquitto mosquitto-clients
 
-4. Add the PGP key of the APT repository:
+4. Install **Node.js** version 6 (required by **Node-RED**).
 
-        wget https://repo.bigclown.com/debian/pubkey.gpg -O - | sudo apt-key add -
+        curl -sL  https://deb.nodesource.com/setup_6.x | sudo -E bash -
+    \
 
-5. Update the package index and upgrade the packages:
+        sudo apt-get install -y nodejs
 
-        sudo apt update && sudo apt upgrade
+5. Install **Node-RED**:
 
-6. Now you can install the individual packages:
+        sudo npm install -g --unsafe-perm node-red
 
-    * Basic package for the Smart LED Strip (Workroom) project:
+6. Install **PM2**:
 
-            sudo apt install bc-workroom-gateway
+        sudo npm install -g pm2
 
-    * LED strip plugin for the Smart LED Strip (Workroom) project:
+    {{% note "info" %}}**PM2** is a process manager that will help you to start **Node-RED** and other processes on boot.{{% /note %}}
 
-            sudo apt install bc-workroom-led-strip
+7. Tell **PM2** to run **Node-RED**:
 
-    * Blynk plugin for the Smart LED Strip (Workroom) project:
+        pm2 start `which node-red` -- -v
 
-            sudo apt install bc-workroom-blynk
+8. Tell **PM2** to run on boot:
+
+        pm2 save
+    \
+
+        sudo -H PM2_HOME=/home/pi pm2 startup systemd -u pi
+
+9. Install **Python 3** (required by the **BigClown Firmware Tool** and **BigClown Gateway**):
+
+        sudo apt install python3 python3-pip
+
+10. Update **pip** (Python Package Manager) to the latest version:
+
+        sudo pip3 install --upgrade --no-cache-dir pip
+
+11. Install the **BigClown Firmware Tool**:
+
+        sudo pip3 install --upgrade --no-cache-dir bcf
+
+12. Install the **BigClown Gateway**:
+
+        sudo pip3 install --upgrade --no-cache-dir bcg
+
+13. Add udev rules
+
+        echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyUSB*", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", ATTRS{serial}=="bc-usb-dongle*", SYMLINK+="bcUD%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcUD%n"'  | sudo tee --append etc/udev/rules.d/58-bigclown-usb-dongle.rules
+
+    \
+
+        echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyACM*", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", SYMLINK+="bcCM%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcCM%n"' | sudo tee --append /etc/udev/rules.d/59-bigclown-core-module.rules
+
+14. Create folder for configuration file
+
+        sudo mkdir -p /etc/bigclown
+
+15. Configuration file for Gateway USB Dongle
+
+    Open file
+
+        nano sudo /etc/bigclown/bcg-ud.yml
+    \
+
+    Insert this
+
+        device: /dev/bcUD0
+        name: "usb-dongle"
+        mqtt:
+            host: localhost
+            port: 1883
+
+16. Run service for Gateway USB Dongle
+
+        pm2 start /usr/bin/python3 --name "bcg-ud" -- /usr/local/bin/bcg -c /etc/bigclown/bcg-ud.yml
+
+    \
+
+        pm2 save
+
+17. Configuration file for Gateway Core module
+
+    Open file
+
+        nano sudo /etc/bigclown/bcg-cm.yml
+    \
+
+    Insert this
+
+        device: /dev/bcCM0
+        name: "core-module"
+        mqtt:
+            host: localhost
+            port: 1883
+
+16. Run service for Gateway Core module
+
+        pm2 start /usr/bin/python3 --name "bcg-cm" -- /usr/local/bin/bcg -c /etc/bigclown/bcg-cm.yml
+
+    \
+
+        pm2 save
 
 ## WiFi Setup on Raspberry Pi 3
 

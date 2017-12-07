@@ -75,11 +75,13 @@ If you are just transmitting data, then replace the `rx_buffer` by `NULL` and vi
 This is non-blocking transfer where the callback function is called when the transfer is completed.
 
 ```c
+// In async transmit the buffers must be global or
+// in the function but defined as a static
+uint8_t tx_buffer[2] = { 0x20, 0x00 };
+uint8_t rx_buffer[2];
+
 void send_data(void)
 {
-    uint8_t tx_buffer[2] = { 0x20, 0x00 };
-    uint8_t rx_buffer[2];
-
     // Check if previous asynchronous transfer is not running
     if (bc_spi_is_ready())
     {

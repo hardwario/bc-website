@@ -18,6 +18,112 @@ With all the respect to computer pioneers and experienced experts, there are sit
 
 The easiest way to debug and also the way how all the things started was just print out what ever you consider important to know. Wait the embedded system does not have any screen or printer connected. Well you are right, but there used to be a serial port. And if it is hopefully free to use and can be connected to real PC then you have your first **poor man's debugger**.
 
+To be able to receive UART data from Core Module you need USB UART and terminal emulator on PC (e.g. [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)) on Microsoft Windows or picocom on Linux)
+
+### Core Module
+
+For example USB UART from SparkFun:
+
+* [FTDI Basic Breakout - 3.3V](https://www.sparkfun.com/products/9873)
+* [Jumper Wires](https://www.sparkfun.com/products/11709)
+
+Or another example USB UART from Mouser:
+
+* [FTDI cable TTL-232R-3V3](https://eu.mouser.com/search/ProductDetail.aspx?qs=Xb8IjHhkxj627GFcejHp0Q%3d%3d)
+* [Jumper Wires](https://eu.mouser.com/search/ProductDetail.aspx?R=0virtualkey0virtualkeyMIKROE-513)
+
+Connect USB UART and Core Module into one PC's USB host sockets and interconnect Core Module with USB UART by single wire USB UART RX (YELLOW wire on cable) and Core Module TXD2 (header pin 22) - have a look at [Core Module Header drawing]({{< relref "doc/hardware/headers-and-signals.md#module-drawing" >}}).
+
+{{< note "danger" "Beware of groud loop and ground voltage difference in case you do not use same PC to power Core Module and to connect USB UART." />}}
+
+You need to add just two function calls into your application:
+
+* `bc_log_init` into `application_init`
+* `bc_log_debug` or `bc_log_info` or `bc_log_warning` or `bc_log_error` into handlers
+
+Have a look into [BigClown SDK bc_log](http://sdk.bigclown.com/group__bc__log.html).
+
+Example of modified `app/application.c` from default project code after `bcf create`:
+```C
+#include <application.h>
+
+// LED instance
+bc_led_t led;
+
+// Button instance
+bc_button_t button;
+
+void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
+{
+    (void) self;
+    (void) event_param;
+
+    if (event == BC_BUTTON_EVENT_PRESS)
+    {
+        bc_led_set_mode(&led, BC_LED_MODE_TOGGLE);
+    }
+    // Logging in action
+    bc_log_info("Button event handler - event: %i", event);
+}
+
+void application_init(void)
+{
+    // Initialize logging
+    bc_log_init(BC_LOG_LEVEL_DEBUG, BC_LOG_TIMESTAMP_ABS);
+
+    // Initialize LED
+    bc_led_init(&led, BC_GPIO_LED, false, false);
+    bc_led_set_mode(&led, BC_LED_MODE_ON);
+
+    // Initialize button
+    bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
+    bc_button_set_event_handler(&button, button_event_handler, NULL);
+}
+```
+
+Example of output:
+```
+# 4.54 <I> Button event handler - event: 0
+# 4.84 <I> Button event handler - event: 1
+# 4.84 <I> Button event handler - event: 2
+# 10.24 <I> Button event handler - event: 0
+# 12.24 <I> Button event handler - event: 3
+# 13.64 <I> Button event handler - event: 1
+```
+
+For mapping number to event type have a look into [BigClown SDK documentation for bc_button](http://sdk.bigclown.com/bc__button_8h_source.html#l00013)
+
+### USB Dongle
+
+There is USB UART FTDI chip on USB Dongle (you do not need any additional HW) but there is not button, so we will use slightly modified example with time as messages trigger:
+```C
+#include <application.h>
+
+void application_init(void)
+{
+    // Initialize logging
+    bc_log_init(BC_LOG_LEVEL_DEBUG, BC_LOG_TIMESTAMP_ABS);
+}
+
+void application_task(void)
+{
+    // Logging in action
+    bc_log_info("In application task");
+    // Shedule this function to be called 2000 ms later
+    // during the 2000 ms the MCU will sleep and conserve power
+    bc_scheduler_plan_current_relative(2000);
+}
+```
+
+Example of output:
+```
+# 0.50 <I> In application task
+# 2.50 <I> In application task
+# 4.50 <I> In application task
+# 6.50 <I> In application task
+# 8.50 <I> In application task
+```
+
 ## Getting more
 
 Sooner or later when you are in troubles you might come to the idea that you **want to look inside** the CPU check the current values of registers or memory areas. Good news, you are not alone! Bad news, it's not that easy as on x86 Borland Pascal compiler with embedded debugger and profiler. Nevertheless there is a standard for that by IEEE IEEE Standard 1149.1-1990 shortly called [JTAG](https://en.wikipedia.org/wiki/JTAG) after the group that made the standard. This standard is intended for those situations when you need to look inside. It is kind of periscope for your desktop PC into the MCU.

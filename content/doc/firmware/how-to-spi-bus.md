@@ -75,7 +75,7 @@ If you are just transmitting data, then replace the `rx_buffer` by `NULL` and vi
 This is non-blocking transfer where the callback function is called when the transfer is completed.
 
 ```c
-void send_data()
+void send_data(void)
 {
     uint8_t tx_buffer[2] = { 0x20, 0x00 };
     uint8_t rx_buffer[2];
@@ -86,7 +86,6 @@ void send_data()
         // Set event handler and optional parameter (NULL for now)
         bc_spi_async_transfer(_bc_module_lcd.framebuffer, NULL, BC_LCD_FRAMEBUFFER_SIZE, _bc_spi_event_handler, NULL)
     }
-
 }
 
 void _bc_spi_event_handler(bc_spi_event_t event, void *event_param)

@@ -81,6 +81,11 @@ void application_init(void)
 }
 ```
 
+After flashing of Core Module (`make dfu`) execute terminal emulator, open serial port with USB UART and set communication parameters:
+
+* speed: 115200 b/s
+* bits, parity: 8N
+
 Example of output:
 ```
 # 4.54 <I> Button event handler - event: 0

@@ -236,13 +236,17 @@ This is a brief list of differences:
 7. Tell **PM2** to run **Node-RED**:
 
         pm2 start `which node-red` -- -v
+    \
+
+        pm2 save
 
 8. Tell **PM2** to run on boot:
 
-        pm2 save
+        sudo -H PM2_HOME=/home/pi/.pm2 pm2 startup systemd -u pi
+
     \
 
-        sudo -H PM2_HOME=/home/pi pm2 startup systemd -u pi
+        sudo chmod 644 /etc/systemd/system/pm2-pi.service
 
 9. Install **Python 3** (required by the **BigClown Firmware Tool** and **BigClown Gateway**):
 
@@ -276,7 +280,7 @@ This is a brief list of differences:
 
     Open file
 
-        nano sudo /etc/bigclown/bcg-ud.yml
+        sudo nano /etc/bigclown/bcg-ud.yml
     \
 
     Insert this
@@ -299,7 +303,7 @@ This is a brief list of differences:
 
     Open file
 
-        nano sudo /etc/bigclown/bcg-cm.yml
+        sudo nano /etc/bigclown/bcg-cm.yml
     \
 
     Insert this

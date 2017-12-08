@@ -122,3 +122,62 @@ bc_module_lcd_draw_line(0, 128, 128, 0, true);
 bc_module_lcd_draw_line(0, 0, 128, 128, true);
 
 ```
+
+## LCD LED diodes
+LCD includes 6 small RGB LEDs. They usually serve as a notifier for some action that happened. There is no way to use them as a backlight for the LCD panel.
+
+You can control them with standard functions from *bc\_led\_\** from [SDK](http://sdk.bigclown.com/group__bc__led.html) right after you get their driver.
+
+To get the driver you have to use function `const bc_led_driver_t* bc_module_lcd_get_led_driver(void)` which returns pointer to the driver. Then you have to init the virtual LED with `void bc_led_init_virtual(bc_led_t *self, int channel, const bc_led_driver_t *driver, int idle_state)`.
+
+The `channel` parameter is equal to LED color: 
+
+- 0 is RED light
+- 1 is GREEN light
+- 2 is BLUE light
+
+The `idle_state` sets the *default on/off* behavior.
+
+- 0 means that LEDs are default on
+- 1 means that LEDs are default off
+
+**Example**
+This example prints out some text and line and, which is the most important - lights up LCD LEDs with **blue color** for 1500 milliseconds after any LCD button is pressed.
+
+```c
+#include <bcl.h>
+#include <bc_led.h>
+
+bc_button_t button;
+bc_led_t lcdLed;
+
+void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
+{
+    (void) self;
+    (void) event_param;
+
+    if (event == BC_BUTTON_EVENT_PRESS)
+    {
+        bc_led_pulse(&lcdLed, 1500);
+
+        char hello[6] = "Hello";
+        bc_module_lcd_draw_string(10, 5, hello, true);
+        bc_module_lcd_draw_line(0, 21, 128, 23, true);
+
+        bc_module_lcd_update();
+    }
+}
+
+void application_init(void)
+{
+    bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
+    bc_button_set_event_handler(&button, button_event_handler, NULL);
+
+    const bc_led_driver_t* driver = bc_module_lcd_get_led_driver();
+    bc_led_init_virtual(&lcdLed, 2, driver, 1);
+
+    bc_module_lcd_init(&_bc_module_lcd_framebuffer);
+    bc_module_lcd_set_font(&bc_font_ubuntu_15);
+}
+
+```

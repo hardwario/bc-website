@@ -231,8 +231,6 @@ This is a brief list of differences:
 
         sudo npm install -g pm2
 
-    {{% note "info" %}}**PM2** is a process manager that will help you to start **Node-RED** and other processes on boot.{{% /note %}}
-
 7. Tell **PM2** to run **Node-RED**:
 
         pm2 start `which node-red` -- -v
@@ -321,6 +319,16 @@ This is a brief list of differences:
     \
 
         pm2 save
+17. Bash autocomplete for bcf
+
+
+        register-python-argcomplete bcf >> .bashrc
+
+    \
+
+        source .bashrc
+
+
 
 ## WiFi Setup on Raspberry Pi 3
 

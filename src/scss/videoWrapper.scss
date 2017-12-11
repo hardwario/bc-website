@@ -1,0 +1,30 @@
+.videoWrapper{
+  position: relative;
+  padding-bottom: 392/540*100%;
+  height: 0;
+  margin-top: 3*$baseline;
+
+  @media(max-width: 991px)
+  {
+    margin-top: 1*$baseline;
+  }
+
+  &--noTopMargin
+  {
+    margin-top: 0;
+    padding-bottom: 9/16*100%;
+
+    @media(max-width: 991px)
+    {
+      margin-top: 0;
+    }
+  }
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

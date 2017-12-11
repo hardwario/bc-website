@@ -1,0 +1,104 @@
+.features
+{
+  padding-top: 0*$baseline;
+  padding-bottom: 2*$baseline;
+
+  &__item
+  {
+    text-align: center;
+    color:#2e343c;
+    padding-top: $baseline;
+    padding-bottom: 2*$baseline;
+  }
+
+  &__firstline
+  {
+    border-bottom: 1px solid #e7eef3;
+
+    @media(max-width:991px)
+    {
+      border-bottom: 0;
+    }
+  }
+
+  .row
+  {
+    >div
+    {
+
+
+      &:nth-child(3n-1)
+      {
+        border-right: 1px solid #e7eef3;
+        border-left: 1px solid #e7eef3;
+
+        @media(max-width:991px)
+        {
+          border: 0;
+        }
+      }
+
+      &:nth-child(2n)
+      {
+        @media(max-width:991px)
+        {
+          border-left: 1px solid #e7eef3;
+        }
+      }
+    }
+  }
+
+  &__title
+  {
+    line-height: 1*$baseline;
+    font-size: em(24);
+    font-weight: 600;
+    margin:0;
+    padding: 0.5*$baseline 0;
+  }
+
+  &__text
+  {
+    line-height: $baseline;
+    font-size: em(18);
+    margin:0;
+    padding:0 30px;
+
+    @media(max-width:1199px)
+    {
+      padding: 0;
+    }
+  }
+
+  &__icon
+  {
+    height: 3*$baseline;
+    background: url("../svg/easy-to-build.svg") no-repeat center center;
+    background-size: 68px 68px;
+
+    &--2
+    {
+      background-image: url("../svg/opensource.svg");
+    }
+
+    &--3
+    {
+      background-image: url("../svg/secure-by-design.svg");
+    }
+
+    &--4
+    {
+      background-image: url("../svg/warranty.svg");
+    }
+
+    &--5
+    {
+      background-image: url("../svg/free-shipping.svg");
+    }
+
+    &--6
+    {
+      background-image: url("../svg/lifetime-support.svg");
+    }
+  }
+}

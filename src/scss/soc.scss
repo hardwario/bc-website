@@ -1,0 +1,120 @@
+.soc
+{
+  padding: $baseline 0;
+
+  &--2
+  {
+    padding-top: $baseline*0.5;
+  }
+
+  &--3
+  {
+    padding-top: $baseline*1.5;
+  }
+
+  a
+  {
+    display: block;
+    margin: 0 15px;
+    height: $baseline;
+    background-size: 100% auto;
+    text-indent: -9999999px;
+
+    @media(max-width:767px)
+    {
+      margin: 0 5px;
+    }
+
+    &:first-child
+    {
+      margin-left: 0;
+    }
+  }
+
+  &__twitter
+  {
+    background: url("../svg/twitter.svg") no-repeat center center;
+    width: 26px;
+  }
+
+  &__youtube
+  {
+    background: url("../svg/youtube.svg") no-repeat center center;
+    width: 29px;
+  }
+
+  &__linked
+  {
+    background: url("../svg/linkedin.svg") no-repeat center center;
+    width: 20px;
+  }
+
+  &__facebook
+  {
+    background: url("../svg/facebook.svg") no-repeat center center;
+    width: 12px;
+  }
+
+  &__github
+  {
+    background: url("../svg/github.svg") no-repeat center center;
+    width: 17px;
+  }
+
+  &__presskit
+  {
+    background: url("../svg/bigclown-icon.svg") no-repeat center center;
+    width: 14px;
+  }
+
+  &--team
+  {
+    padding: 0;
+    padding-top: $baseline;
+
+    a
+    {
+      margin: 0 7px;
+    }
+
+    .soc__facebook
+    {
+      background-image: url("../svg/facebook-gray.svg");
+
+      &:hover
+      {
+        background-image: url("../svg/facebook.svg");
+      }
+    }
+
+    .soc__twitter
+    {
+      background-image: url("../svg/twitter-gray.svg");
+
+      &:hover
+      {
+        background-image: url("../svg/twitter.svg");
+      }
+    }
+
+    .soc__github
+    {
+      background-image: url("../svg/github-gray.svg");
+
+      &:hover
+      {
+        background-image: url("../svg/github.svg");
+      }
+    }
+
+    .soc__linked
+    {
+      background-image: url("../svg/linkedin-gray.svg");
+
+      &:hover
+      {
+        background-image: url("../svg/linkedin.svg");
+      }
+    }
+  }
+}

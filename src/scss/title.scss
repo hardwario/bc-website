@@ -1,0 +1,44 @@
+.title
+{
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: em(40);
+  line-height: 2*$baseline;
+  padding-top: 3*$baseline;
+  padding-bottom: $baseline;
+
+  @media(max-width: 991px)
+  {
+    font-size: em(30);
+    line-height: $baseline*1.25;
+    padding-top: $baseline*2;
+  }
+
+  &--2
+  {
+    padding-top: 0;
+  }
+
+  small
+  {
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+
+    line-height: 1*$baseline;
+    padding: 0.5*$baseline 0;
+  }
+
+  &--withoutsubtitle
+  {
+    padding-top: 3*$baseline;
+    padding-bottom: 2*$baseline;
+
+    @media(max-width: 991px)
+    {
+      padding-top: 2*$baseline;
+      padding-bottom: 1*$baseline;
+    }
+  }
+}

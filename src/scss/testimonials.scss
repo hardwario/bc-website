@@ -1,0 +1,63 @@
+.testimonials
+{
+  padding-top: 0*$baseline;
+  padding-bottom: 3*$baseline;
+
+  &__item
+  {
+    height: 100%;
+    background: white;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 0 40px;
+    padding-bottom: $baseline;
+    margin-bottom: $baseline;
+    border-radius: 7px;
+
+    @media(max-width:1199px)
+    {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__text
+  {
+    margin: 0;
+    padding: 0;
+    padding-bottom: $baseline;
+    font-size: em(18);
+    padding-top: 3*$baseline;
+    background: url("../svg/quote.svg") no-repeat center top 43px;
+    background-size: 28px 20px;
+  }
+
+  &__name
+  {
+    font-size: em(18);
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__pos
+  {
+    font-size: em(16);
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__image
+  {
+    height: 4*$baseline;
+
+    img
+    {
+      max-height: 3*$baseline;
+      max-width: 3*$baseline;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+}

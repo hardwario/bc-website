@@ -1,0 +1,88 @@
+.team
+{
+  &__item
+  {
+    display: block;
+    text-decoration: none!important;
+
+    &:hover
+    {
+      .team__item__image
+      {
+          box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+      }
+
+      .team__item__title a
+      {
+          color:#e41419!important;
+      }
+
+      .team__item__button
+      {
+        opacity: 1;
+      }
+    }
+
+    &__image
+    {
+      padding-bottom: 100%;
+      height:0;
+      overflow: hidden;
+      position: relative;
+      border-radius: 7px;
+      display: block;
+      box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+
+      img
+      {
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:auto;
+        border-radius: 7px;
+      }
+    }
+
+    &__button
+    {
+      position: absolute;
+      bottom: $baseline*1.5;
+      width: 100%;
+      left:0;
+      opacity: 0;
+      transition: all 0.7s ease 0s;
+    }
+
+    &__title
+    {
+      line-height: $baseline;
+      color:#2e343c;
+      font-size: em(24);
+      padding: 0;
+      margin: 0;
+      font-weight: 900;
+      padding-top: 0.5*$baseline;
+      padding-bottom: 1.5*$baseline;
+
+      a
+      {
+        color:#2e343c;
+        text-decoration: none!important;
+
+        small
+        {
+          display: block;
+          color:#9fa3a7;
+          font-size: 18px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  &__items
+  {
+    padding-bottom: 2*$baseline;
+  }
+}

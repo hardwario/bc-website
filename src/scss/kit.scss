@@ -1,0 +1,77 @@
+.kit
+{
+  padding-top: 3*$baseline;
+
+  @media(max-width: 767px)
+  {
+    padding-top: 2*$baseline;
+  }
+
+  &__title
+  {
+    font-weight: 900;
+    font-size: em(40);
+    margin: 0;
+    padding: 0 15px;
+    padding-bottom: 2*$baseline;
+
+    @media(max-width:365px)
+    {
+      font-size: em(30);
+    }
+
+    small
+    {
+      font-weight: normal;
+      line-height: 2*$baseline;
+      display: block;
+      padding-top: $baseline;
+
+      @media(max-width:365px)
+      {
+        line-height: 1.5*$baseline;
+      }
+    }
+  }
+
+  &__or
+  {
+    font-weight: 900;
+    color:#2e343c;
+    padding-top: $baseline;
+    padding-bottom: $baseline;
+
+    @media(max-width: 767px)
+    {
+      padding-top: 0.75*$baseline;
+      padding-bottom: 0.5*$baseline;
+    }
+  }
+
+  &__price
+  {
+    font-weight: 900;
+    color:#2e343c;
+    font-size: em(32);
+    line-height: 2*$baseline;
+    padding-right: 22px;
+  }
+
+  &__mainimg
+  {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+
+    @media(max-width: 767px)
+    {
+      max-width: 75%;
+      margin-bottom: $baseline;
+    }
+  }
+
+  &__buy
+  {
+    line-height: 2*$baseline;
+  }
+}

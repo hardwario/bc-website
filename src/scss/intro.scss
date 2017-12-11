@@ -1,0 +1,326 @@
+.intro
+{
+  height:calc(100vh - #{3*$baseline});
+  position: relative;
+  overflow: hidden;
+  //max-height: 800px;
+  //min-height: 730px;
+
+  @media(max-width:991px)
+  {
+    height:calc(100vh - #{2*$baseline});
+  }
+
+  @media(max-width:991px)
+  {
+    max-height: none;
+    min-height: 0;
+  }
+
+  &__half
+  {
+    height: 100%;
+    width:60vw;
+    background: url("../images/intro_bg.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top:0;
+    left:-10vw;
+    color:white;
+    transform: skew(13deg);
+
+    @media(max-width:1199px)
+    {
+      width:70vw;
+    }
+
+    @media(max-width:1023px)
+    {
+      width:90vw;
+      left:-20vw;
+    }
+
+    @media(max-width:991px)
+    {
+      width: 100%;
+      transform: none;
+      left:0;
+    }
+  }
+
+  &__video
+  {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background: url("../images/poster.jpg") no-repeat center center;
+    background-size: cover;
+
+    @media(max-width:991px)
+    {
+      display: none;
+    }
+  }
+
+  &__title1
+  {
+    font-size: em(24);
+    line-height: 2*$baseline;
+    padding: 0;
+    margin: 0;
+
+    @media(max-width:991px)
+    {
+      text-align: center;
+      padding: 0 15px;
+    }
+
+    span
+    {
+      line-height: 36px;
+      background: #ae0005;
+      display: inline-block;
+      padding:0 14px;
+
+      @media(max-width:991px)
+      {
+        font-size: 16px;
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+
+  &__title2
+  {
+    font-size: em(48);
+    line-height: 2*$baseline;
+    position: relative;
+    margin-bottom: 2*$baseline;
+    padding: 0;
+    font-weight: 900;
+
+    @media(min-width:1600px)
+    {
+      font-size: em(64);
+      line-height: 2.25*$baseline;
+      background-size: 55% auto;
+    }
+
+    @media(max-width:991px)
+    {
+      padding: 0 15px;
+      text-align: center;
+      font-size: em(40);
+      line-height: 1.5*$baseline;
+      padding-top: 0.5*$baseline;
+      margin-bottom: 1.5*$baseline;
+    }
+
+    em
+    {
+      font-weight: 700;
+      display: block;
+    }
+
+    &:after
+    {
+      background: url("../svg/underline.svg") no-repeat left center;
+      width:100%;
+      height:$baseline;
+      content: '';
+      position: absolute;
+      top:100%;
+      left:0;
+
+      @media(max-width:991px)
+      {
+        left:0px;
+        background-position: center center;
+      }
+    }
+  }
+
+  &__content
+  {
+    position: absolute;
+    top:0;
+    left:0;
+    width:50vw;
+    padding: 0;
+    color:white;
+    height:100%;
+
+    @media(max-width:1199px)
+    {
+      width:60vw;
+    }
+
+    @media(max-width:1023px)
+    {
+      width:70vw;
+    }
+
+    @media(max-width:991px)
+    {
+      width: 100%;
+    }
+  }
+
+  &__button
+  {
+    height:3*$baseline;
+    width: 320px;
+
+    @media(max-width:991px)
+    {
+      padding: 0 15px;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__arrow
+  {
+    height:5*$baseline;
+    display: block;
+    background: url("../svg/arrowdown2.svg") no-repeat center bottom;
+    width: 320px;
+  }
+
+  &__play
+  {
+    position: absolute;
+    top:50%;
+    left:50%;
+    background: white url("../svg/play.svg") no-repeat left 29px center;
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    cursor: pointer;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    transition: all 0.7s ease 0s;
+
+    &:hover
+    {
+      transform: scale(1.2);
+    }
+
+    @media(max-width:1199px)
+    {
+      left:60%
+    }
+
+    @media(max-width:1023px)
+    {
+      left:70%
+    }
+
+    @media(max-width:991px)
+    {
+      position: relative;
+      top:auto;
+      left:auto;
+      margin:auto;
+      margin-bottom: 37px;
+    }
+  }
+
+  &__close
+  {
+    position: absolute;
+    top:40px;
+    right:40px;
+    background: white url("../svg/close.svg") no-repeat center center;
+    background-size: 50% 50%;
+    border-radius: 50%;
+    width:75px;
+    height:75px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.7s ease 0s;
+
+    &:hover
+    {
+      transform: scale(1.2);
+    }
+  }
+
+  &---small
+  {
+    max-height: none;
+    min-height: 0;
+    height:270px;
+    width:100%;
+    background: url("../images/intro_bg2.jpg") no-repeat center center;
+    background-size: cover;
+
+    @media(max-width: 767px)
+    {
+      height:auto;
+      padding: $baseline 0;
+    }
+  }
+
+  &---middle
+  {
+    max-height: none;
+    min-height: 0;
+    height:460px;
+    background: black;
+    width:100%;
+    background-size: cover;
+  }
+
+  &--narrow
+  {
+    max-height: none;
+    min-height: 0;
+    height:215px;
+    background: url("../images/intro_bg2.jpg") no-repeat center center;
+    width:100%;
+    background-size: cover;
+  }
+
+  &__title3
+  {
+    color:white;
+    text-transform: uppercase;
+    font-size: em(48);
+    font-weight: 900;
+    line-height: 2*$baseline;
+    padding: 0 15px;
+    text-align: center;
+
+    @media(max-width: 767px)
+    {
+      font-size: em(32);
+      line-height: 1.5*$baseline;
+    }
+
+    &--notupper
+    {
+      text-transform: none;
+    }
+  }
+
+  &__links
+  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2*$baseline;
+    padding-bottom: $baseline;
+
+    >li
+    {
+      margin: 0 10px;
+    }
+  }
+}

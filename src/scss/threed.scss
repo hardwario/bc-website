@@ -1,0 +1,129 @@
+.threed
+{
+  position: relative;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  border: 5px solid #c7d1d6;
+  margin-top: 0;
+  margin-bottom: 4*$baseline;
+
+  @media(max-width: 991px)
+  {
+    margin-bottom: 2*$baseline;
+  }
+
+  .reel-preloader
+  {
+    background: red;
+    height:10px;
+    position: absolute;
+    bottom:0;
+    left:0px;
+  }
+
+  &__slider
+  {
+    position: absolute;
+    bottom:50px;
+    left:10%;
+    width:80%;
+    height:10px;
+    background:#c7d1d6;
+
+    @media(max-width: 991px)
+    {
+      background: none;
+    }
+
+    &__info
+    {
+      background: url("../svg/touch-and-move.svg") no-repeat center center;
+      background-size: auto 30px;
+      height: 30px;
+      position: absolute;
+      width:100%;
+      top:-70px;
+      padding-top: 30px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      color:#2e343c;
+      text-transform: uppercase;
+    }
+
+    &__active
+    {
+      position: absolute;
+      left:0;
+      top:0;
+      height:100%;
+      width: 0;
+      background:#e41419;
+    }
+
+    &__point
+    {
+      position: absolute;
+      top:-5px;
+      left:0px;
+      margin-left: -5px;
+      width:21px;
+      height:21px;
+      border-radius: 50%;
+      background:#c7d1d6;
+      cursor: pointer;
+
+      &--2
+      {
+        left:20%;
+      }
+
+      &--3
+      {
+        left:40%;
+      }
+
+      &--4
+      {
+        left:60%;
+      }
+
+      &--5
+      {
+        left:80%;
+      }
+
+      &--6
+      {
+        left:100%;
+      }
+
+      &--active
+      {
+        background:#e41419;
+      }
+
+      &:hover,
+      &--full
+      {
+        background:#e41419;
+        border: 10px solid #2e343c;
+        width:38px;
+        height:38px;
+        top:-15px;
+        margin-left: -15px;
+      }
+    }
+  }
+}
+
+.reel-indicator
+{
+  background: red;
+  position: absolute;
+  height:10px!important;
+}

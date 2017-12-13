@@ -25,7 +25,7 @@ Writing to EEPROM is very easy. It takes only one call to this function:
 
 **Returned value** indicates whether the write process was successful or not. 
 
-It is completely up to you from what address you start to write. You can start from 0, 42, 46 or 666. Just make sure you won't accidentally overwrite any of yours important data.
+It is completely up to you from what address you start to write. You can start from 0, 42, 666,... all the way up to circa 6000. **Please note that some of our modules (currently `bc_radio_*` module only) use few last dozens of bytes in EEPROM. If you use those modules, remember to use the memory addresses from 0 up to 6000. This makes sure that no data will be overwritten.**
 
 Always make sure that you have correctly chosen the `length` parameter. If you want to write some numeric value, you can use the `sizeof()` function to find out the correct number. Let's say that you have a *float* variable and you want to write this number to address 0:
 ```c

@@ -92,7 +92,7 @@ void application_init(void)
     float toWriteFloat = 3.14159;
     char toWrite[] = "hello world!";
     bc_eeprom_write(0, &toWriteFloat, sizeof(toWriteFloat));
-    bc_eeprom_write(sizeof(toWriteFloat), toWrite, strlen(toWrite));
+    bc_eeprom_write(sizeof(toWriteFloat), toWrite, sizeof(toWrite));
 
     // Initialize button
     bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);

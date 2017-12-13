@@ -27,6 +27,8 @@ items:
       link: "doc/tutorials/raspberry-pi-login.md"
     - title: "Turris Omnia & 1.x Setup"
       link: "doc/tutorials/turris-installation.md"
+    - title: "MySigfox.com service"
+      link: "doc/tutorials/mysigfox-com-service.en.md"
   - title: "Projects"
     items:
     - title: "Wireless Push Button"

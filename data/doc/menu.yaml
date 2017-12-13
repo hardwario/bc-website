@@ -137,6 +137,8 @@ items:
       link: "doc/firmware/common-problems.md"
     - title: "Timing and Scheduler"
       link: "doc/firmware/timing-and-scheduler.md"
+    - title: "How to: EEPROM"
+      link: "doc/firmware/how-to-eeprom.md"
     - title: "How to: GPIO Pins"
       link: "doc/firmware/how-to-gpio-pins.md"
     - title: "How to: LED Diode"

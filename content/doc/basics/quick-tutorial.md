@@ -45,7 +45,7 @@ After the **Raspberry Pi** boots up you should be able to find it at address `hu
 
 {{< note "warning" >}}If the Raspberry Pi is not visible on the network, there's something wrong with your network setup or your system doesn't support **mDNS** and you have to find the IP address of the **Raspberry Pi** in your router's **DHCP** configuration.{{< /note >}}
 
-Please log on the Raspberry Pi shell by typing `ssh pi@hub.localhost` command or use the Windows program **PuTTY**.
+Please log on the Raspberry Pi shell by typing `ssh pi@hub.local` command or use the Windows program **PuTTY**.
 
 ## Firmware Upload
 

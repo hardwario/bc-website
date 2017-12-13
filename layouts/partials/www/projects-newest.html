@@ -1,0 +1,20 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="title title--withoutsubtitle text-center">Learn from other makers and their projects</h2>
+
+        <div class="articles">
+          <div class="row">
+            {{ range first 6 ($.Site.GetPage "section" "projects").Pages }}
+              {{ .Render "grid" }}
+            {{ end }}
+          </div>
+          <div class="text-center">
+            <a href="/en/projects" class="button button--redtext button--redtext--2">Show all projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,1 @@
+The **Climate Module** integrates 4 environmental sensors - **temperature**, **humidity**, **light intensity** and **atmospheric pressure**. All sensors are digital, feature a low-power operating modes and they are connected using the I²C bus. It is a great product for environmental monitoring, weather stations, etc.

@@ -1,0 +1,45 @@
+.integration
+{
+  padding-bottom: 2*$baseline;
+
+  &__item
+  {
+    background: white;
+    display: block;
+    color:#e41419!important;
+    text-decoration: underline;
+    padding-top: $baseline;
+    min-height: 8*$baseline;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: $baseline;
+
+    &:hover
+    {
+      text-decoration: none;
+    }
+
+    &--more
+    {
+      height: 8*$baseline;
+      color:#2e343c!important;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: em(18);
+      padding-top: 0;
+    }
+  }
+
+  &__title
+  {
+    font-size: em(18);
+    font-weight: 900;
+    padding: $baseline 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__image
+  {
+    height:4*$baseline
+  }
+}

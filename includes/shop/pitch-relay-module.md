@@ -1,0 +1,1 @@
+The **Relay Module** is suitable for switching small power appliances - e.g. LED strip, cooling fan, siren, buzzer, garage door opener, etc. It features a **bistable (or latching) relay** and that makes it suitable for battery-operated applications - the relay simply remembers its state.

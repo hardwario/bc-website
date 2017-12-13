@@ -1,0 +1,54 @@
+.mydropdown
+{
+  position: absolute;
+  top:100%;
+  left:0;
+  width: 100px;
+  background: #2e343c;
+  display: none;
+
+  @media(max-width:767px)
+  {
+    top:$baseline*1.5;
+    right: 0;
+    left:auto;
+  }
+
+  &:before
+  {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 9px 9px 9px;
+    border-color: transparent transparent #2e343c transparent;
+
+    content: '';
+    left:50%;
+    top:-9px;
+    margin-left: -9px;
+    z-index: 1;
+    position: absolute;
+  }
+  //&--menu
+  //{
+  //  right:auto;
+  //  left:40px;
+  //  top:55px;
+  //
+  //  &:before
+  //  {
+  //    left:15px;
+  //    margin-left: 0;
+  //  }
+  //}
+
+  &--product
+  {
+    top:auto;
+    bottom:100%;
+    background: white;
+    border: 1px solid #dbdbdb;
+    left:45px;
+    border-radius: 7px;
+  }
+}

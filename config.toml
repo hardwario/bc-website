@@ -1,6 +1,4 @@
-baseURL = "https://bigclown.netlify.com/"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+baseURL = "https://www.bigclown.com/"
 disableKinds = ["RSS", "sitemap"]
 languageCode = "en"
 pygmentsCodeFences = true
@@ -19,3 +17,7 @@ countryCode = "gb"
 weight = 2
 languageName = "Čeština"
 countryCode = "cz"
+
+[params]
+menuNames = ["main"]
+productionURL = "https://www.bigclown.com"

@@ -1,0 +1,44 @@
+.logo
+{
+  display: inline-block;
+  vertical-align: middle;
+  background: url("../svg/logo-new.svg") no-repeat center center;
+  background-size: 100% auto;
+  width:160px;
+  height:3*$baseline;
+  margin-left: 60px;
+  position: relative;
+  top: -5px;
+
+  @media(max-width:1400px)
+  {
+    margin-left: 20px;
+  }
+
+  @media(max-width:991px)
+  {
+    height:2*$baseline;
+    background-size: auto 42px;
+    margin-left: 0;
+    top: 0px;
+  }
+
+  &--2
+  {
+    //width: 130px;
+    margin: 0;
+    //height: $baseline;
+    height: 1*$baseline;
+    background: url("../svg/logo.svg") no-repeat center center;
+    background-size: auto 100%;
+  }
+
+  &--3
+  {
+    height: 2*$baseline;
+    margin-left: 0;
+    width: 130px;
+    background: url("../svg/logo.svg") no-repeat center center;
+    background-size: auto $baseline;
+  }
+}

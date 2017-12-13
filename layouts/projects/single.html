@@ -1,0 +1,68 @@
+
+
+<section>
+  <div style="background-image:url('{{ .Params.images.main }}');" class="intro intro---middle d-flex justify-content-center align-items-center">
+    <div>
+      <nav>
+        <ul class="intro__links d-flex justify-content-center">
+          <li><a href="" class="button button--tag button--tag--white button--tag--white--active">PROJECTS</a></li>
+          <li><a href="" class="button button--tag button--tag--blue button--tag--blue--active">INDOOR</a></li>
+        </ul>
+      </nav>
+      <h1 class="intro__title3 intro__title3--notupper">{{ .Title }}</h1>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="project__header">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-auto col-lg-4 mr-auto">
+          <div class="d-flex justify-content-center">
+            <span class="article__author article__author--project d-flex flex-column justify-content-center">
+              <img src="{{ .Params.author.image }}" alt="" />
+              <strong>{{ .Params.author.name }}</strong>
+              <span>{{ .Params.author.post }}</span>
+            </span>
+          </div>
+        </div>
+        <div class="col-2 col-lg-4">
+          <a href="{{ .Params.author.github.link }}" target = "_blank" class="button button--git">{{ .Params.author.github.name }}</a>
+        </div>
+        <div class="col-2 col-lg-4">
+          <a href="mailto:{{ .Params.author.email }}" class="button button--email">{{ .Params.author.email }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ .Content }}
+
+<section>
+  <div class="bg bg--gray">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="thankyou__title text-hide">Thank you</h1>
+          <div class="thankyou__button">
+            <a href="" class="button button--fullred">Join to BigClown Forum</a>
+          </div>
+
+          <div class="thankyou__share d-flex justify-content-center align-items-center">
+            <span>Give us some</span>
+            <span class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="114" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></span>
+            <span>or share:</span>
+            <a href="" class="thankyou__share__link text-hide">Facebook</a>
+            <a href="" class="thankyou__share__link thankyou__share__link--twitter text-hide">twitter</a>
+            <a href="" class="thankyou__share__link thankyou__share__link--google text-hide">google</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "www/_foot.html" }}

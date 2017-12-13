@@ -1,0 +1,21 @@
+{{ define "main"}}
+
+  {{ partial "www/heading.html" (dict "heading" "Error 404 - Page Not Found") }}
+
+
+  <section>
+    <div class="bg bg--gray bg--borderedTop">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="title text-center">We are sorry but requested page probably juggled out.<small>Please check, if is your URL corrent and try it again later or start on <a href = "/">homepage</a>.</small></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  {{ partial "www/support.html" (dict "heading" "Do you need help?" "subheading" "We can answer your question!") }}
+{{ end }}

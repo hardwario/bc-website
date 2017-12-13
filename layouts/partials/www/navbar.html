@@ -1,0 +1,57 @@
+<header>
+  <section>
+
+    <div class="bg bg--darkgray indiegogo">
+      <div class="align-items-center">
+        <div style = "margin: 0 auto; text-align: center;">
+            <!--<span class="newsletter__title">We're going to <img src = "/_assets/images/indiegogo.png" height = "23px" style="margin-top:-5px;"/>!</span>-->
+
+            <span class="newsletter__text longer" style = "margin: 0 10px;">We are thrilled to announce that we have decided to run a crowdfunding campaign on <img src = "/_assets/images/indiegogo.png" height = "23px" style="margin-top:-5px;"/>. Why are we doing this?</span>
+            <span class="newsletter__text shorter" style = "margin: 0 10px;">Why have we decided to run a crowdfunding campaign on <img src = "/_assets/images/indiegogo.png" height = "23px" style="margin-top:-5px;"/>?</span>
+            <a href="/blog/2017-12-05-reasons-behind-indiegogo/" class="button button--redtext mobile" style="display: inline-block; margin: -5px 0 0!important; padding: 0;">Read why have we decided to run Indiegogo campaign</a>
+            <a href="/blog/2017-12-05-reasons-behind-indiegogo/" class="button button--redtext tablet" style="display: inline-block; margin: -5px 0 0!important; padding: 0;">Find the answers!</a>
+            <a href="/blog/2017-12-05-reasons-behind-indiegogo/" class="button button--redtext desktop" style="display: inline-block; margin: -5px 0 0!important; padding: 0;">Find the answers here!</a>
+          </div>
+      </div>
+    </div>
+
+  <div class="header d-flex align-content-stretch {{ if and ( eq .Type "kits") ( eq .Kind "page") }} header--withsubmenu {{ end }}">
+    <div class="container-fluid d-flex align-items-center no-gutters">
+      <div class="col d-flex align-items-center justify-content-between">
+
+        <div class="header__menu d-block d-lg-none"><div></div><div></div><div></div></div>
+
+        <a href="/" class="logo text-hide">BigClown</a>
+
+        <ul class="navtop d-none d-lg-flex">
+          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="/" class="navtop__link {{ if eq .RelPermalink "/" }} navtop__link--active {{ end }}">Home</a></li>
+
+          <!--{{- partial "www/navbar-item.html" (dict "title" "Projects" "link" "/en/projects/" "page" .) }}-->
+          {{- partial "www/navbar-item.html" (dict "title" "Kits" "link" "/kits/" "page" .) }}
+          {{- partial "www/navbar-item.html" (dict "title" "Team" "link" "/team/" "page" .) }}
+          <li class="navtop__item d-block d-lg-flex align-items-center">
+            <a href="/support/" class="navtop__link navtop__link--arrow">Support</a>
+            <ul class="navtop__submenu">
+              <!--<li><a href="https://intercom.help/bigclown" target="_blank">FAQs</a></li>-->
+              <li><a href="https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
+              <li><a href="/doc/" target="_blank">Documentation</a></li>
+              <li><a href="https://forum.bigclown.com" target="_blank">Forum</a></li>
+            </ul>
+          </li>
+          {{- partial "www/navbar-item.html" (dict "title" "Blog" "link" "/blog/" "page" .) }}
+          {{- partial "www/navbar-item.html" (dict "title" "Contact" "link" "/contact/" "page" .) }}
+          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="https://shop.bigclown.com" target = "_blank" class="navtop__button button button--cart">SHOP NOW</a></li>
+        </ul>
+
+        <a href="https://shop.bigclown.com" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">SHOP NOW</a>
+
+        <button style = "visibility:hidden" class="d-none d-lg-block button button--lang button--arrow button--lang--en">ENG
+          <div class="mydropdown">
+            <a class="button button--lang button--lang--2 button--lang--cz" href="#">CZE</a>
+            <a class="button button--lang button--lang--2 button--lang--2--active button--lang--en" href="#">ENG</a>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

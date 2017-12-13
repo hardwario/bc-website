@@ -1,0 +1,8 @@
+<div class="col-12 col-lg order-lg-{{ .Get "order" }}">
+  <a href="{{ .Get "src-full" }}" title="{{ .Get "title" }}" class="step__image magnificPopup">
+    <img src="{{ .Get "src" }}" alt="{{ .Get "title" }}" />
+    {{ if .Get "zoom" }}
+      <div class="step__image__button button button--red button--zoom">ZOOM IN</div>
+    {{ end }}
+  </a>
+</div>

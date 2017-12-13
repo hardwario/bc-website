@@ -7,6 +7,8 @@ products:
     name: module-battery
   - title: Climate Module
     name: module-climate
+  - title: Cloony
+    name: cloony
   - title: CO2 Module
     name: module-co2
   - title: Core Module

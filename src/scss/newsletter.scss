@@ -1,0 +1,73 @@
+.newsletter
+{
+  &__input
+  {
+    height: 2*$baseline;
+    line-height: 1*$baseline;
+    background: white;
+    width: 370px;
+    padding: 0.5*$baseline 30px;
+    border-radius: 0;
+
+    @media(max-width:1199px)
+    {
+      width: 280px;
+    }
+
+    @media(max-width:991px)
+    {
+      margin-bottom: $baseline;
+      width: 70%;
+    }
+    @media(max-width:767px)
+    {
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__title
+  {
+    font-weight: 900;
+    font-size: em(24);
+    margin: 0;
+    padding: 0;
+    padding-top: $baseline;
+  }
+
+  &__text
+  {
+    font-size: em(18);
+    //padding-bottom: $baseline;
+
+    @media(max-width:767px)
+    {
+      padding-bottom: $baseline;
+    }
+  }
+
+  &__clown
+  {
+    background: url("../svg/bigclown-icon.svg") no-repeat center center;
+    width: 80px;
+    height: 115px;
+    background-size: 100% 100%;
+    position: relative;
+    top:-20px;
+  }
+
+  &__button
+  {
+    @media(max-width:991px)
+    {
+      margin-bottom: $baseline;
+      width: 30%;
+    }
+
+    @media(max-width:767px)
+    {
+      width: 100%;
+    }
+  }
+}

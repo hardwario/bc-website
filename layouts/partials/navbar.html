@@ -1,43 +1,21 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-        aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-      <a class="navbar-brand" href="#">
-            {{- if eq .Page.Lang "cs" }}
-            <a class="navbar-brand" href="/cs/"><img src="/_assets/svg/bigclown-logo.svg" alt="BigClown Logo"></a>      {{- else }}
-      <a class="navbar-brand" href="/en/"><img src="/_assets/svg/bigclown-logo.svg" alt="BigClown Logo"></a> {{- end }}
-      </a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-      <ul class="nav navbar-nav">
-      {{- if eq .Page.Lang "cs" }}
-        <li{{ if eq .RelPermalink "/cs/" }} class="active"{{ end }}><a href="/cs/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-        {{- partial "navbar-item.html" (dict "title" "PROJEKTY" "link" "/cs/www/projekty/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "BLOG" "link" "/cs/blog/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "OBCHOD" "link" "https://shop.bigclown.cz/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "DOKUMENTACE" "link" "/cs/doc/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "PODPORA" "link" "/cs/www/podpora/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "O NÁS" "link" "/cs/www/o-nas/" "page" .) }}
-      {{- else }}
-        <li{{ if eq .RelPermalink "/en/" }} class="active"{{ end }}><a href="/en/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-        {{- partial "navbar-item.html" (dict "title" "PROJECTS" "link" "/en/www/projects/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "BLOG" "link" "/en/blog/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "SHOP" "link" "https://shop.bigclown.com/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "DOCUMENTATION" "link" "/en/doc/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "SUPPORT" "link" "/en/www/support/" "page" .) }}
-        {{- partial "navbar-item.html" (dict "title" "ABOUT US" "link" "/en/www/about-us/" "page" .) }}
-      {{- end }}
-      {{- if eq .Section "doc" }}
-        <li><a href="https://github.com/bigclownlabs/" target="_blank">GITHUB</a></li>
-      {{- end }}
-      </ul>
-      {{- partial "translations.html" . }}
-    </div>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="https://www.bigclown.com/" target="_blank"><img src="/_assets/svg/bigclown-logo.svg" alt="BigClown Logo"></a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-center">
+      <li class="active"><a href="/doc/">DOCUMENTATION</a></li>
+      <li><a href="https://github.com/bigclownlabs/" target="_blank">GITHUB</a></li>
+      <li><a href="https://forum.bigclown.com/" target="_blank">FORUM</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="https://shop.bigclown.com/" target="_blank"><i class="icon ion-ios-cart"></i>&nbsp;&nbsp;&nbsp;SHOP</a></li>
+    </ul>
   </div>
 </nav>

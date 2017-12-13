@@ -1,0 +1,348 @@
+{{ define "main" }}
+
+{{ $title := .Title }}
+{{ partial "www/heading.html" (dict "heading" $title "class" "intro__title3--notupper") }}
+
+{{ $isStarter:= .Params.isStarter }}
+
+<section>
+  <div class="submenu">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="submenu__list d-block d-md-flex">
+            <li class="submenu__item"><a class="submenu__link submenu__link--overview" href="#overview">Overview</a></li>
+            {{ if eq $isStarter true }}<li class="submenu__item"><a class="submenu__link submenu__link--kit" href="#kit">kits</a></li>{{ end }}
+            <li class="submenu__item"><a class="submenu__link submenu__link--integration" href="#integration">integration</a></li>
+            {{ if eq $isStarter false }}<li class="submenu__item"><a class="submenu__link submenu__link--specification" href="#specification">tech specs</a></li>{{ end }}
+            <li class="submenu__item"><a class="submenu__link submenu__link--support" href="#support">support</a></li>
+            <li class="submenu__item ml-auto"><a class="button button--fullredsmall" href="{{ .Params.buyLink }}">buy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div id="overview">
+  <section>
+    <div class="kit">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-12 col-md-6 text-center">
+            <img class="kit__mainimg" src="{{ .Params.images.main }}" alt="{{ .Title }}" />
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <div class="logo logo--3"></div>
+            <h2 class="kit__title">{{ .Params.title }}<small>{{ .Params.description }}</small></h2>
+
+            <a href="#explore-modules" class="button button--bigger">explore modules in the kit</a>
+
+            <div class="kit__or">OR</div>
+
+            <div class="d-flex justify-content-center">
+              <div class="kit__price">{{ .Params.price }}</div>
+              <div class="kit__buy">
+                <a href="{{ .Params.buyLink }}" class="button button--fullredmiddle">BUY IT NOW!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{{ if eq $isStarter false }}
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-8">
+        <div class="contactbox__text text-center">
+          <h2 class="title title--3 text-center">Description</h2>
+          {{ .Content }}
+        </div>
+        </div>
+        </div>
+        </div>
+      </section>
+{{ end }}
+  <section>
+    <div class="modules" id = "explore-modules">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="title title--3 text-center">Modules in the kit</h2>
+
+            <div class="row">
+
+                {{ range sort .Params.modules ".weight"}}
+                <div class="col-12 col-md-6 col-lg-4">
+                  <span href="/modules/{{ .image.small }}" class="modules__photo">
+                    <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                      <img src="/modules/{{ .image.small }}" alt="{{ .name }}" />
+                    </div>
+
+                    <div class="modules__photo__desc">
+                      <h3 class="modules__photo__title">{{ .name }}</h3>
+                    </div>
+                  </span>
+
+                  <!--<a href="/modules/{{ .image.small }}" class="modules__photo magnificPopup">
+                    <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                      <img src="/modules/{{ .image.small }}" alt="{{ .name }}" />
+                    </div>
+
+                    <div class="modules__photo__desc">
+                      <h3 class="modules__photo__title">{{ .name }}</h3>
+                    </div>
+                  </a>-->
+                </div>
+                {{ end }}
+
+            </div>
+
+            <h2 class="title title--3 text-center">Optional modules</h2>
+
+            <div class="row">
+              {{ range sort .Params.optionalModules ".weight"}}
+              <div class="col-12 col-md-6 col-lg-4">
+                <span href="/modules/{{ .image.small }}" class="modules__photo">
+                  <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                    <img src="/modules/{{ .image.small }}" alt="{{ .name }}" />
+                  </div>
+
+                  <div class="modules__photo__desc">
+                    <h3 class="modules__photo__title">{{ .name }}</h3>
+                  </div>
+                </span>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+{{ if eq $isStarter true }}
+<div id="kit">
+  <section>
+    <div class="bg bg--gray bg--bordered">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center title">What you'll be able to separately build</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="slick">
+                {{ $id:= .Params.id }}
+                  {{ if eq $id "basic" }}
+                    {{ range .Site.Pages }}
+                      {{ if eq .Params.isBasic true }}
+                        <div>
+                          <a href="{{ .Permalink }}" class="product product--carousel">
+                            <div class="product__images d-flex align-items-center justify-content-center">
+                              <img src="{{ .Params.images.preview }}" alt="{{ .Title }}" />
+                              <img src="{{ .Params.images.hover }}" alt="{{ .Title }}" />
+                            </div>
+                            <h3 class="product__title d-flex align-items-center justify-content-center">{{ .Title }}</h3>
+                            <p class="product__text d-flex align-items-center justify-content-center">{{ .Params.description }}</p>
+                            <div class="product__button">
+                              <span class="button button--gray button--gray--smaller">Learn more</span>
+                            </div>
+                          </a>
+                        </div>
+                      {{ end }}
+                    {{ end }}
+                  {{ end}}
+
+                  {{ if eq $id "premium" }}
+                    {{ range .Site.Pages }}
+                      {{ if eq .Params.isPremium true }}
+                        <div>
+                          <a href="{{ .Permalink }}" class="product product--carousel">
+                            <div class="product__images d-flex align-items-center justify-content-center">
+                              <img src="{{ .Params.images.preview }}" alt="{{ .Title }}" />
+                              <img src="{{ .Params.images.hover }}" alt="{{ .Title }}" />
+                            </div>
+                            <h3 class="product__title d-flex align-items-center justify-content-center">{{ .Title }}</h3>
+                            <p class="product__text d-flex align-items-center justify-content-center">{{ .Params.description }}</p>
+                            <div class="product__button">
+                              <span class="button button--gray button--gray--smaller">Learn more</span>
+                            </div>
+                          </a>
+                        </div>
+                      {{ end }}
+                    {{ end }}
+                  {{ end}}
+
+                  {{ if eq $id "ultimate" }}
+                    {{ range .Site.Pages }}
+                      {{ if eq .Params.isUltimate true }}
+                        <div>
+                          <a href="{{ .Permalink }}" class="product product--carousel">
+                            <div class="product__images d-flex align-items-center justify-content-center">
+                              <img src="{{ .Params.images.preview }}" alt="{{ .Title }}" />
+                              <img src="{{ .Params.images.hover }}" alt="{{ .Title }}" />
+                            </div>
+                            <h3 class="product__title d-flex align-items-center justify-content-center">{{ .Title }}</h3>
+                            <p class="product__text d-flex align-items-center justify-content-center">{{ .Params.description }}</p>
+                            <div class="product__button">
+                              <span class="button button--gray button--gray--smaller">Learn more</span>
+                            </div>
+                          </a>
+                        </div>
+                      {{ end }}
+                    {{ end }}
+                  {{ end}}
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>
+{{ else }}
+<div id="kit"></div>
+{{ end }}
+
+<section>
+  <div class="bg bg--gray bg--bordered" id="integration">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--3 text-center">It's ready for integration with</h2>
+
+          <div class="integration">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <a href="http://www.blynk.cc/" target="_blank" class="integration__item">
+                  <div class="integration__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/images/blynk.png" alt="" />
+                  </div>
+                  <h3 class="integration__title">Blynk</h3>
+                </a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <a href="https://ifttt.com/" target="_blank" class="integration__item">
+                  <div class="integration__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/images/ifthis.jpg" alt="" />
+                  </div>
+                  <h3 class="integration__title">IFTTT</h3>
+                </a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <a href="https://azure.microsoft.com/cs-cz/" target="_blank" class="integration__item">
+                  <div class="integration__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/images/azure.jpg" alt="" />
+                  </div>
+                  <h3 class="integration__title">Microsoft Azure</h3>
+                </a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <span class="integration__item integration__item--more d-flex align-items-center justify-content-center">
+                  and many more ...
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg bg--gray bg--bordered" id="integration">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--3 text-center">Low-Power Networks Integration</h2>
+          <p class="text-center">Extend your kit with our low-power network modules and make it independent of the internet connection and power supply from main.</p>
+          <br>
+          <div class="integration">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <a href="https://www.sigfox.com/en" target="_blank" class="integration__item">
+                  <div class="integration__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/images/sigfox.jpg" alt="" />
+                  </div>
+                  <h3 class="integration__title">SigFox</h3>
+                </a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <a href="https://www.lora-alliance.org" target="_blank" class="integration__item">
+                  <div class="integration__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/images/lora.jpg" alt="" />
+                  </div>
+                  <h3 class="integration__title">LoRa (coming soon)</h3>
+                </a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <span target="_blank" class="integration__item">
+                  <div class="integration__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/images/NB-IoT.jpg" alt="" />
+                  </div>
+                  <h3 class="integration__title">NB-IoT (coming soon)</h3>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ if eq $isStarter false }}
+<section>
+  <div class="specification" id="specification" style = "background: none">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--3 text-center">Technical specification</h2>
+          <div class="row">
+            <div class="col col-md-6">
+              <table>
+                <tr>
+                  <td><strong>Dimensions (case)</strong></td>
+                  <td>55 x 28 x 35 mm</td>
+                </tr>
+                <tr>
+                  <td><strong>Operating temperature</strong></td>
+                  <td>0°C - 50°C</td>
+                </tr>
+                <tr>
+                  <td><strong>Power supply</strong></td>
+                  <td>2 x AAA Alkaline Cells</td>
+                </tr>
+                <tr>
+                  <td><strong>Battery life-time</strong></td>
+                  <td>2 years for standard use</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ else }}
+<div id="specification"></div>
+{{ end }}
+
+  {{ partial "www/support.html" (dict "heading" "Find right answers" "subheading" "to your questions about this kit") }}
+
+{{ end }}

@@ -1,0 +1,44 @@
+.specification
+{
+  table
+  {
+    font-size: em(18);
+    width: 100%;
+    margin-bottom: 4*$baseline;
+    color:#2e343c;
+
+    tr
+    {
+      td
+      {
+        border-top: 1px solid #e5e5e5;
+        padding-top: $baseline;
+        padding-bottom: $baseline;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  background: url("../images/specification.jpg") no-repeat bottom 3*$baseline right;
+
+  @media(max-width:1199px)
+  {
+    background-position: bottom 81px left 100%;
+    background-size: 50%;;
+  }
+
+  @media(max-width:767px)
+  {
+    padding-bottom: 100px;
+    background: url("../images/specification.jpg") no-repeat right bottom;
+    background-size: auto 130px;
+  }
+
+  strong
+  {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,1 @@
+The **Power Module** allows you to connect a 5 V DC power adapter via a standard 2.1 mm power jack socket. It features a **high-current relay** (230 V AC / 16 A) to control your appliances. Also you can drive a **digital LED strip** with it (compatible with WS2812B).

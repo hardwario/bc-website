@@ -2,11 +2,11 @@
 title: "MySigfox.com Service"
 ---
 
-MySigfox.com is our online service, which acts as a bridge between Sigfox Backend and your server. Customers who buy our [Sigfox module](https://obchod.bigclown.cz/products/sigfox-module-predplatne-na-3-roky) with 3-years connectivity can use this service to get data sent by their modules to Sigfox network. This service is free to use.
+MySigfox.com is our online service, which acts as a bridge between Sigfox Backend and your server. Customers who buy our [Sigfox module](https://shop.bigclown.com/bundle-sigfoxmodule-mysigfoxplatinum3y/) with 3-years connectivity can use this service to get data sent by their modules to Sigfox network. This service is free to use.
 
 
 ## Device Registration
-When you order Sigfox module with connectivity, you will receive it together with device ID and Token. Device ID is unique alfanumeric string identifying your module. Token allows you to use MySigfox.com service.
+When you order Sigfox module with connectivity, you will receive it together with device ID and Token. Device ID is unique alphanumeric string identifying your module. Token allows you to use MySigfox.com service.
 
 To register your device, go to page [https://mysigfox.com/form](https://mysigfox.com/form) and fill in the form:
 

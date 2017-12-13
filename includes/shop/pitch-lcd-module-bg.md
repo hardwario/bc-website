@@ -1,0 +1,1 @@
+The **LCD Module** uses a unique technology - the so-called **memory display** developed by Sharp. It provides a resolution of 128 x 128 pixels in 1.28 inch size. It implements an **ultra-low-power display controller**, so you can have active graphical display with a long service time from batteries.

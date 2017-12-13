@@ -1,0 +1,1 @@
+The **Mini Battery Module** is designed as a power supply source for the battery-operated units. The integrated low-power boost converter provides an excellent efficiency from the **two AAA 1.5 V Alkaline** cells. It features a bottom-entry sockets, so the overall profile of the unit you build remains low.

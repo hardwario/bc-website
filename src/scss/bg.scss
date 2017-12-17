@@ -1,0 +1,41 @@
+.bg
+{
+  &--gray
+  {
+    background:#fcfcfc;
+  }
+
+  &--bubbles
+  {
+    background: #fcfcfc url("../svg/bubbles.svg") no-repeat center center;
+    background-size: auto 100%;
+  }
+
+  &--darkgray
+  {
+    background: #2e343c;
+    color:white;
+  }
+
+  &--bubbleswhite
+  {
+    background: #fff url("../svg/bubbles.svg") no-repeat center center;
+    background-size: auto 100%;
+  }
+
+  &--bordered
+  {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+  }
+
+  &--borderedTop
+  {
+    border-top: 1px solid #dfdfdf;
+  }
+
+  &--borderedBottom
+  {
+    border-bottom: 1px solid #dfdfdf;
+  }
+}

@@ -1,0 +1,172 @@
+.modal {
+  overflow-y: auto;
+}
+
+.modal-open {
+  overflow: hidden!important;
+}
+
+.modal-open[style] {
+  //padding-right: 0px !important;
+}
+
+.modal-open .modal {
+  display: flex!important;
+  align-items: center!important;
+  .modal-dialog {
+    flex-grow: 1;
+  }
+
+  @media(max-width:767px)
+  {
+    display: block!important;
+    align-items: inherit!important;
+  }
+}
+
+.modal-content
+{
+  border-radius: 0;
+  border: 5px solid #e41419;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+
+  @media(max-width:991px)
+  {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.modal-dialog
+{
+  max-width: 1110px;
+
+  @media(max-width:1199px)
+  {
+    max-width: 95vw;
+  }
+}
+
+.modal-close
+{
+  background: url("../svg/close.svg") no-repeat center center;
+  width:54px;
+  height:54px;
+  cursor: pointer;
+  position: absolute;
+  top:20px;
+  right:20px;
+  z-index: 1;
+  border: 0;
+  transform: scale(0.8);
+
+  &:hover
+  {
+    transform: scale(1);
+  }
+}
+
+.modal
+{
+  &__title
+  {
+    font-weight: 900;
+    color:#2e343c;
+    font-size: em(40);
+    line-height: 2*$baseline;
+    padding: 0;
+    margin: 0;
+    padding-bottom: $baseline;
+    padding-right: 60px;
+
+    @media(max-width:991px)
+    {
+      padding-right: 0px;
+    }
+
+    small
+    {
+      display: block;
+      color:#666666;
+      font-size: 24px;
+      line-height: $baseline;
+      font-weight: 300;
+    }
+
+    @media(max-width:767px)
+    {
+      text-align: center;
+      padding-top: $baseline;
+    }
+  }
+
+  &__text
+  {
+    padding-right: 60px;
+
+    @media(max-width:991px)
+    {
+      padding-right: 0px;
+    }
+
+    @media(max-width:767px)
+    {
+      text-align: center;
+    }
+  }
+
+  &__email
+  {
+    margin: 0;
+    color:#2e343c;
+    font-size: em(18);
+    font-weight: 700;
+
+    @media(max-width:991px)
+    {
+      margin-bottom: $baseline;
+    }
+
+    @media(max-width:767px)
+    {
+      text-align: center;
+    }
+
+    a
+    {
+      color:#e41419!important;
+      text-decoration: underline;
+
+      &:hover
+      {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__soc
+  {
+    margin-right: 60px;
+    padding-top: 0;
+
+    @media(max-width:991px)
+    {
+      margin-right: 0px;
+    }
+
+    @media(max-width:767px)
+    {
+      text-align: center;
+      padding-bottom: $baseline;
+      padding-top: $baseline;
+    }
+  }
+
+  &__line
+  {
+    height:1px;
+    background: #dfdfdf;
+    margin-bottom: 1.5*$baseline;
+  }
+}

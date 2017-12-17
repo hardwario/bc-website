@@ -231,18 +231,20 @@ This is a brief list of differences:
 
         sudo npm install -g pm2
 
-    {{% note "info" %}}**PM2** is a process manager that will help you to start **Node-RED** and other processes on boot.{{% /note %}}
-
 7. Tell **PM2** to run **Node-RED**:
 
         pm2 start `which node-red` -- -v
+    \
+
+        pm2 save
 
 8. Tell **PM2** to run on boot:
 
-        pm2 save
+        sudo -H PM2_HOME=/home/pi/.pm2 pm2 startup systemd -u pi
+
     \
 
-        sudo -H PM2_HOME=/home/pi pm2 startup systemd -u pi
+        sudo chmod 644 /etc/systemd/system/pm2-pi.service
 
 9. Install **Python 3** (required by the **BigClown Firmware Tool** and **BigClown Gateway**):
 
@@ -262,7 +264,7 @@ This is a brief list of differences:
 
 13. Add udev rules
 
-        echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyUSB*", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", ATTRS{serial}=="bc-usb-dongle*", SYMLINK+="bcUD%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcUD%n"'  | sudo tee --append etc/udev/rules.d/58-bigclown-usb-dongle.rules
+        echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyUSB*", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", ATTRS{serial}=="bc-usb-dongle*", SYMLINK+="bcUD%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcUD%n"'  | sudo tee --append /etc/udev/rules.d/58-bigclown-usb-dongle.rules
 
     \
 
@@ -276,7 +278,7 @@ This is a brief list of differences:
 
     Open file
 
-        nano sudo /etc/bigclown/bcg-ud.yml
+        sudo nano /etc/bigclown/bcg-ud.yml
     \
 
     Insert this
@@ -299,7 +301,7 @@ This is a brief list of differences:
 
     Open file
 
-        nano sudo /etc/bigclown/bcg-cm.yml
+        sudo nano /etc/bigclown/bcg-cm.yml
     \
 
     Insert this
@@ -317,6 +319,16 @@ This is a brief list of differences:
     \
 
         pm2 save
+17. Bash autocomplete for bcf
+
+
+        register-python-argcomplete bcf >> .bashrc
+
+    \
+
+        source .bashrc
+
+
 
 ## WiFi Setup on Raspberry Pi 3
 

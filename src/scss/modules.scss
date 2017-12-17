@@ -1,0 +1,97 @@
+.modules
+{
+  padding-bottom: 2*$baseline;
+
+  &__photo
+  {
+    display: block;
+    border: 2px solid #dbdbdb;
+    border-radius: 5px;
+    background: #f8fafb;
+    height:10*$baseline;
+    position: relative;
+    margin-bottom: $baseline;
+    padding-top: $baseline;
+    text-decoration: none!important;
+
+    &:hover
+    {
+      border: 2px solid darken(#dbdbdb, 20%);
+    }
+
+    &__desc
+    {
+      position: absolute;
+      bottom:$baseline;
+      left:0;
+      width:100%;
+    }
+
+    &--big
+    {
+      height:21*$baseline;
+      padding-top: $baseline*2;
+
+      @media(max-width: 767px)
+      {
+        height:14*$baseline;
+        padding-top: $baseline;
+      }
+
+      .modules__photo__image
+      {
+        height:14*$baseline;
+
+        @media(max-width: 767px)
+        {
+          height:10*$baseline;
+
+          img
+          {
+            max-width: 75%;
+          }
+        }
+      }
+    }
+
+    &--middle
+    {
+      height:13*$baseline;
+
+      .modules__photo__image
+      {
+        height:7*$baseline;
+      }
+    }
+
+    &__image
+    {
+      height:$baseline*6;
+
+      img
+      {
+        max-width: 100%;
+        max-height:100%;
+      }
+    }
+
+    &__title
+    {
+      text-align: center;
+      color:#2e343c;
+      font-size: em(24);
+      font-weight: 600;
+      line-height: 1*$baseline;
+      margin: 0;
+      padding-top: $baseline;
+    }
+
+    &__text
+    {
+      text-align: center;
+      color:#2e343c;
+      font-size: em(18);
+      padding:0 20px;
+    }
+  }
+}

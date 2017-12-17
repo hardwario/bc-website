@@ -1,0 +1,232 @@
+.pricelist
+{
+  &--bottom-3-5
+  {
+    margin-bottom: 3.5*$baseline;
+
+    @media(max-width:767px)
+    {
+      margin-bottom: 1*$baseline;
+    }
+  }
+
+  &__discount
+  {
+    text-align: center;
+    color:#e41419;
+    font-size: em(18);
+    font-weight: 900;
+  }
+
+  &__price
+  {
+    text-align: center;
+    color:#2e343c;
+    font-size: em(24);
+    font-weight: 900;
+    padding-bottom: $baseline;
+  }
+
+  &__item
+  {
+    margin-top: $baseline*1;
+    color:#2e343c;
+    position: relative;
+
+    @media(max-width:767px)
+    {
+      margin-bottom: $baseline;
+      margin-top: 0;
+    }
+
+    &--rec
+    {
+      @media(max-width:767px)
+      {
+        margin-top: $baseline;
+      }
+
+      .pricelist__content
+      {
+        border-radius: 0;
+      }
+
+      &:after
+      {
+        background: white url("../images/shadow-right.png") no-repeat left center;
+        height: 100%;
+        width: 31px;
+        position: absolute;
+        top:0;
+        right: -29px;
+        content: '';
+        background-size: auto 100%;
+        z-index: 1;
+
+        @media(max-width:767px)
+        {
+          display: none;
+        }
+      }
+
+      &:before
+      {
+        background: white url("../images/shadow-right.png") no-repeat left center;
+        height: 100%;
+        width: 31px;
+        position: absolute;
+        top:0;
+        left: -29px;
+        content: '';
+        background-size: auto 100%;
+        z-index: 1;
+        transform: scaleX(-1);
+
+        @media(max-width:767px)
+        {
+          display: none;
+        }
+      }
+    }
+  }
+  &__title
+  {
+    padding: 0;
+    margin: 0;
+    line-height: 2*$baseline;
+    font-size: em(24);
+    font-weight: 700;
+    margin-bottom: $baseline*0.75;
+    padding-bottom: $baseline*0.25;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+    z-index: 1;
+    margin-top: -0.25*$baseline;
+  }
+
+  &__title2
+  {
+    line-height: $baseline;
+    padding-bottom: $baseline;
+    text-align: left;
+    font-size: em(18);
+    font-weight: 700;
+
+    @media(max-width:991px)
+    {
+      text-align: center;
+    }
+  }
+
+  &__items
+  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: em(18);
+    text-align: left;
+
+    &__item
+    {
+      line-height: $baseline;
+      margin-bottom: $baseline*0.5;
+      padding-left: 33px;
+      display: block;
+      background: url("../svg/check.svg") no-repeat left top 8px;
+
+      &--disabled
+      {
+        color:#9fa3a7;
+        background: none;
+      }
+
+      &--gifts
+      {
+        background: url("../svg/gift.svg") no-repeat top 3px left;
+        background-size: 20px 20px;
+        margin-bottom: $baseline;
+        min-height: 70px;
+
+        @media(max-width:991px)
+        {
+          min-height: 5.25*$baseline;
+        }
+
+        @media(max-width:767px)
+        {
+          min-height: 0;
+        }
+      }
+
+      &--last
+      {
+        padding-bottom: $baseline*0.5;
+      }
+
+      a
+      {
+        display: inline-block;
+        border-bottom: 1px dotted #353535;
+        color:#353535!important;
+        text-decoration: none!important;
+        margin-right: 20px;
+        margin-bottom: $baseline*0.5;
+        position: relative;
+
+        &:nth-child(3n-1)
+        {
+          margin-right: 0;
+        }
+
+        &:last-child
+        {
+          margin-bottom: 0;
+        }
+
+        &:hover
+        {
+          color:#e41419!important;
+          border-color: #e41419;
+        }
+      }
+    }
+  }
+
+  &__button
+  {
+    line-height: $baseline*3;
+  }
+
+  &__rec
+  {
+    background: #e41419;
+    color:white;
+    position: absolute;
+    top:-$baseline;
+    left:0;
+    width: 100%;
+    line-height: $baseline;
+    font-size: em(16);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  &__content
+  {
+    background: white;
+    padding: $baseline 30px;
+    text-align: center;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+
+    &--last
+    {
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 7px;
+      border-top-right-radius: 7px;
+    }
+  }
+}

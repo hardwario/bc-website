@@ -1,0 +1,87 @@
+.step
+{
+  &__item
+  {
+    padding-top: 0;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 3*$baseline;
+
+    @media(max-width: 991px)
+    {
+      padding-bottom: 2*$baseline;
+    }
+
+    &:hover
+    {
+      .step__title
+      {
+        span
+        {
+          color:#e41419;
+        }
+      }
+    }
+  }
+
+  &__image
+  {
+    position: relative;
+    display: block;
+    margin-top: 3*$baseline;
+
+    @media(max-width:991px)
+    {
+      margin-top: $baseline;
+    }
+
+    img
+    {
+      width: 100%;
+      border: 3px solid #f9f9fa;
+    }
+
+    &__button
+    {
+      position: absolute;
+      bottom:0;
+      left:0;
+    }
+  }
+
+  &__title
+  {
+    font-size: em(32);
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5*$baseline;
+    padding-bottom: 0.5*$baseline;
+    padding-right: vw(170px);
+    padding-left: 30px;
+    padding-top: 3*$baseline;
+
+    @media(max-width: 991px)
+    {
+      padding-top: 2*$baseline;
+      font-size: em(30);
+      line-height: $baseline*1.25;
+    }
+
+    span
+    {
+      display: block;
+      font-size: 120px;
+      color:#eeeeee;
+      line-height: 4*$baseline;
+      padding-bottom: 0.5*$baseline;
+
+      @media(max-width:767px)
+      {
+        font-size: 70px;
+        line-height: 50px;
+      }
+    }
+  }
+
+
+}

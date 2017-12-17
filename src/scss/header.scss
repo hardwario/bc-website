@@ -1,0 +1,99 @@
+.header
+{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 3*$baseline;
+  //background: white;
+  z-index: 100;
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+  background: rgba(252,252,252,1);
+  background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,252,252,1)), color-stop(100%, rgba(240,240,240,1)));
+  background: -webkit-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 100%);
+  background: -o-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 100%);
+  background: -ms-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 100%);
+  background: linear-gradient(to bottom, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f0f0f0', GradientType=0 );
+
+  &--withsubmenu
+  {
+    @media(min-width:1200px)
+    {
+      position: absolute;
+    }
+  }
+
+  .container-fluid
+  {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  @media(max-width:991px)
+  {
+    height: 2*$baseline;
+  }
+
+  &__menu
+  {
+    >div
+    {
+      width: 30px;
+      height:3px;
+      margin-bottom: 4px;
+      background: #2e343c;
+      border-radius: 1.5px;
+      transition: all 0.7s ease 0s;
+
+      @media(max-width:767px)
+      {
+        margin-bottom: 2px;
+        width: 20px;
+      }
+
+      &:last-child
+      {
+        margin-bottom: 0;
+      }
+    }
+
+    @media(max-width:991px)
+    {
+      margin-left: 16px;
+    }
+
+    &--active
+    {
+      >div
+      {
+        &:nth-child(1)
+        {
+          transform: rotate(45deg);
+          position: relative;
+          top: 6px;
+
+          @media(max-width:767px)
+          {
+            top: 4px;
+          }
+        }
+
+        &:nth-child(2)
+        {
+          display: none;
+        }
+
+        &:nth-child(3)
+        {
+          transform: rotate(-45deg);
+          position: relative;
+          top: -1px;
+        }
+      }
+    }
+  }
+}

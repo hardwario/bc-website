@@ -1,0 +1,46 @@
+.categories
+{
+  padding-top: 2*$baseline;
+
+  &__title
+  {
+    color:#44484f;
+    font-size: em(18);
+
+    @media(max-width:767px)
+    {
+      text-align: center;
+    }
+  }
+
+  &__filter
+  {
+    padding-bottom: 2*$baseline;
+    line-height: 2*$baseline;
+
+    @media(max-width:767px)
+    {
+      text-align: center;
+    }
+
+    >a
+    {
+      margin: 0 10px;
+
+      @media(max-width:767px)
+      {
+        margin: 0 5px;
+      }
+
+      &:first-child
+      {
+        margin-left: 0;
+      }
+
+      &:last-child
+      {
+        margin-right: 0;
+      }
+    }
+  }
+}

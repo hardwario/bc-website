@@ -183,7 +183,7 @@ Here's the complete flow in case of any issues.
 
 ## Extending to relative humidity measurement
 
-Now we try to connect the relative humidity sensor to the **Core Module**. It's possible to connect the {{< shop "Humidity Tag" >}} directly to the **Core Module** as displayed in the picture (**TODO**) or you can use also {{< shop "Tag Module" >}} which can hold many more sensor tags. Also the {{< shop "Battery Module" >}} contains spare connector for sensor tag.
+Now we try to connect the relative humidity sensor to the **Core Module**. It's possible to connect the {{< shop "Humidity Tag" >}} directly to the **Core Module** as displayed in the picture or you can use also {{< shop "Tag Module" >}} which can hold many more sensor tags. Also the {{< shop "Battery Module" >}} contains spare connector for sensor tag.
 
 <img src="humidity-added.jpg" style="max-width:50%;" />
 

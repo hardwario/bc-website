@@ -304,7 +304,22 @@ If you have other Linux distribution or unsupported Ubuntu version, we recommend
 
 ## Integration with Visual Studio Code
 
-**TODO**
+Every BigClown project contains `.vscode` configuration folder so you just open the project folder in **Visual Studio Code** and you're ready to go.
+
+In file `.vscode/tasks.json` there are some tasks which you can run by pressing `Ctrl+P` and typing `task`.
+
+| Task  | Description |
+| ----- |-------------|
+| build | Build active project |
+| clean | Clean active project |
+| dfu   | Flash compiled firmware with dfu-util to the Core Module |
+| ozone | Run Ozone debugger which can be used with J-Link debugger |
+| update| Update SDK folder/submodule to the latest version |
+
+
+{{< note "info" >}}
+Project make file allows quicker parallel compilation. This can be set in `.vscode/tasks.json` where you set `"args": ["-j4"],` parameter, where the number 4 is the number of your CPU cores.
+{{< /note >}}
 
 ## Integration with KDevelop
 

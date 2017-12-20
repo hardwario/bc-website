@@ -1,0 +1,1 @@
+The **Power Controller Kit** allows you to **control appliances**. You can use it to drive a **digital LED strip** or control an applicance using the integrated **power relay (230V/16A)**. It has two pluggable terminals - one for a digital LED strip, second for an appliance driven by the relay. It communicates wirelessly and operates from a **5V AC/DC power adapter**.

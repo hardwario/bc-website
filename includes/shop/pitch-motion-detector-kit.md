@@ -1,0 +1,1 @@
+The **Motion Detector Kit** makes it possible to detect **human presence**. It communicates wirelessly and operates up to 2 years from the standard Alkaline batteries. Using the digital, low-power, passive infrared technology (PIR), you will be able to build your own **alarm** or turn on the **lighting** automatically.

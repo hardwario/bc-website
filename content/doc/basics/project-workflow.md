@@ -8,7 +8,7 @@ Let's dive a little more into how we envision that each project you start might 
 
 ## Generic Guidelines
 
-Each project is unique, but we still like to provide these generic guidelines that will give you an idea what you
+Each project is unique but we still like to provide these generic guidelines that will give you an idea what you can do.
 
 ### Phase #1: Project Planning
 
@@ -56,7 +56,7 @@ If your project consists of the **BigClown**-only hardware components, this part
 
 However, if you need to hookup and/or solder your own circuitry or any 3rd party breakout board, we did not put any obstacle in your way. For such purposes, you can find the prototyping area on the **Battery Module** or **Base Module**.
 
-{{% note "warning" %}}Simple 2-wire interfaces like thermistors, external inputs or voltage outputs can be connected using **Sensor Module** featuring 2 channels and flexible weak/strong pull-up configuration.{{% /note %}}
+{{% note "warning" %}}Simple 1-Wire interfaces like thermistors, external inputs or voltage outputs can be connected using **Sensor Module** featuring 2 channels and flexible weak/strong pull-up configuration.{{% /note %}}
 
 ### Phase #5: Playground Bootstrap
 
@@ -76,7 +76,7 @@ This **BigClown Playground** includes:
 
 {{% note "info" %}}More information can be found in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) and [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).{{% /note %}}
 
-{{% note "success" %}}If you prefer the more technical approach and want to write things from scratch, there is no problem whatsoever to dive deep to **Python**, **Node.js** or any other environment  you are comfortable with.{{% /note %}}
+{{% note "success" %}}If you prefer the more technical approach and want to write things from scratch, there is no problem whatsoever to dive deep to **Python**, **Node.js** or any other environment you are comfortable with.{{% /note %}}
 
 ### Phase #6: Radio Pairing
 
@@ -120,7 +120,7 @@ The integration guides are discussed in the **Integrations** section of this doc
 
 It is the right approach to have MQTT topics and responses properly described so you can tweak your project, extend it or integrate it easily anytime from any development environment.
 
-Remember, the MQTT asynchronous approach allows you to build the whole architecture of microservices.
+Remember, the MQTT's asynchronous approach allows you to build the whole architecture of microservices.
 
 {{% note "info" %}}More information can be found in the document [**MQTT Protocol**]({{< relref "doc/interfaces/mqtt-protocol.md" >}}).{{% /note %}}
 

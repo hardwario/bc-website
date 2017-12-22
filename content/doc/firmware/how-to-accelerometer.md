@@ -17,7 +17,7 @@ Basically you have **two options how to use the accelerometer - continuous measu
 ## Continuous Measurement
 This can be achieved by setting the update interval in your code with function `bc_lis2dh12_set_update_interval`, which takes pointer to instantiated accelerometer and time before measurements in milliseconds as parameters.
 
-You also have to instantiate a struct `bc_lis2dh12_result_g_t` to store results of measurements. Those values can be retrieved by calling `bc_lis2dh12_get_result_g` function. In simple example bellow, we measure exact values of acceleration in g every second and send them over USB.
+You also have to instantiate a struct `bc_lis2dh12_result_g_t` to store results of measurements. Those values can be retrieved by calling `bc_lis2dh12_get_result_g` function. In simple example below, we measure exact values of acceleration in g every second and send them over USB.
 
 ```
 #include <bcl.h>
@@ -27,12 +27,6 @@ bc_led_t led;
 
 bc_lis2dh12_t a;
 bc_lis2dh12_result_g_t a_result;
-
-void disableLed(void* params)
-{
-    (void) params;
-    bc_led_set_mode(&led, BC_LED_MODE_OFF);
-}
 
 void lis2_event_handler(bc_lis2dh12_t *self, bc_lis2dh12_event_t event, void *event_param)
 {
@@ -67,9 +61,9 @@ You can set conditions for the alarm in struct [*bc_lis2dh12_alarm_t*](http://sd
 
 When the accelerometer checks these settings it uses logical AND operation (so every set condition needs to occur for the alarm to be triggered).
 
-In example bellow, we set the alarm to be triggered when core module is moved in direction of X-axis with acceleration > 1g. When triggered, integrated red LED will switch on for one second.
+In the example below, we set the alarm to be triggered when core module is moved in direction of X-axis with acceleration > 1g. When triggered, integrated red LED will switch on for one second.
 
-After flashing, try to move your Core module very slowly. It will do nothing in any direction. Then try to move it quickly up and down - once again nothing happens, because this movement is in Z-axis. No try to make a quick move in X-axis and the LED should light up.
+After flashing, try to move your Core module very slowly. It will do nothing in any direction. Then try to move it quickly up and down - once again nothing happens, because this movement is in Z-axis. Now try to make a quick move in X-axis and the LED should light up.
 
 
 ```

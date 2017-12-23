@@ -1,4 +1,6 @@
 products:
+  - title: 1-Wire Module
+    name: onewire
   - title: Base Module
     name: module-base
   - title: Barometer Tag

@@ -237,6 +237,9 @@ Connect the **USB Dongle** to the **Raspberry Pi**. The **USB Dongle** will swit
 ```
 bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
 ```
+{{< note "info" >}}
+In case you get `[Errno 11] Resource temporarily unavailable` error, that means that the `bcg` gateway service is running and uses the same virtual serial port. Yo need to stop bcg temporarily by `pm2 stop bcg`, then do the `bcf flash` and start the service again by `pm2 start bcg`.
+{{< /note >}}
 
 ## Conversion to the battery operated node
 

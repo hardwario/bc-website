@@ -15,7 +15,7 @@ included:
 notIncluded:
 weight: 30
 price: €62
-buyLink: "https://shop.bigclown.com/motion-detector-kit/"
+buyLink: "https://shop.bigclown.com/motion-detector-kit/?currency=EUR"
 modules: ["core","mini_battery","pir","enclosures-101"]
 optionalModules: ["sigfox"]
 ---

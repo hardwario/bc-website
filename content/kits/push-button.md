@@ -15,7 +15,7 @@ included:
 notIncluded:
 weight: 10
 price: €57
-buyLink: "https://shop.bigclown.com/push-button-kit/"
+buyLink: "https://shop.bigclown.com/push-button-kit/?currency=EUR"
 modules: ["core","mini_battery","button","enclosures-button"]
 optionalModules: ["sigfox"]
 ---

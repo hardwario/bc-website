@@ -15,7 +15,7 @@ included:
 notIncluded:
 weight: 50
 price: €83
-buyLink: "https://shop.bigclown.com/lcd-thermostat-kit/"
+buyLink: "https://shop.bigclown.com/lcd-thermostat-kit/?currency=EUR"
 modules: ["core","mini_battery","lcd","enclosures-thermostat"]
 optionalModules: ["sigfox"]
 ---

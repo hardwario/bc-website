@@ -1,0 +1,1 @@
+The **CO2 Monitor Kit** allows you to **measure quality of the air**. It communicates wirelessly and operates up to 1 year from the standard Alkaline batteries. You will be able to measure **carbon dioxide (CO₂)**, **temperature**, **humidity**, and **atmospheric pressure**. Keeping the carbon dioxide at optimum level has positive impact on our health.

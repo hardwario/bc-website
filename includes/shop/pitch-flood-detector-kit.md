@@ -1,0 +1,1 @@
+The **Flood Detector Kit** will let you know in case of a **water leak** accident in your bathroom or kitchen. Just place it on the floor in close proximity of a washing machine or dishwasher. It communicates wirelessly and operates up to 2 years from the standard Alkaline batteries. You will receive a **push notification** when the accident happens.

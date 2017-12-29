@@ -41,6 +41,8 @@ items:
       link: "doc/projects/wireless-lcd-thermostat.md"
     - title: "Wireless CO2 Monitor"
       link: "doc/projects/wireless-co2-monitor.md"
+    - title: "Wireless LED Strip"
+      link: "doc/projects/wireless-led-strip.md"
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"
@@ -137,6 +139,8 @@ items:
       link: "doc/firmware/common-problems.md"
     - title: "Timing and Scheduler"
       link: "doc/firmware/timing-and-scheduler.md"
+    - title: "How to: EEPROM"
+      link: "doc/firmware/how-to-eeprom.md"
     - title: "How to: GPIO Pins"
       link: "doc/firmware/how-to-gpio-pins.md"
     - title: "How to: LED Diode"

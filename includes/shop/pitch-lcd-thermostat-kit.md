@@ -1,0 +1,1 @@
+The **LCD Thermostat Kit** allows you to **control your heating** in a really cool way. It communicates wirelessly and operates up to 2 years from the standard Alkaline batteries. You will be able to see the room temperature on a **memory LCD** and adjust the desired temperature (setpoint) with the pair of **buttons**.

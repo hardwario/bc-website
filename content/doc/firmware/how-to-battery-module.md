@@ -2,7 +2,7 @@
 title: "How to: Battery Module"
 ---
 
-[Battery module](../../hardware/about-battery-module/) allows you to power your product with four **AAA** batteries. It automatically recognizes if external power is applied (AC module, USB, ...) and disconnects batteries from the circuit. With this module you can check battery voltage (manually or periodically with Scheduler) and schedule appropriate actions for certain voltage levels.
+[Battery module](../../hardware/about-battery-module/) and [Mini Battery module](../../hardware/about-mini-battery-module/) allows you to power your product with four and two **AAA** batteries, respectively. It automatically recognizes if external power is applied (AC module, USB, ...) and disconnects batteries from the circuit. With this module you can check battery voltage (manually or periodically with Scheduler) and schedule appropriate actions for certain voltage levels.
 
 {{< note "info" "As always..." >}}
 ... all available SDK functions for Battery module can be found [here](http://sdk.bigclown.com/group__bc__module__battery.html).{{< /note >}}
@@ -19,9 +19,9 @@ SDK provides function to
   - define voltage threshold levels
 
 ### Battery Module Types
-  There are two types of modules - [Standard](../../hardware/about-battery-module/) and [Mini](../../hardware/about-mini-battery-module/).
+There are two types of modules - [Standard](../../hardware/about-battery-module/) and [Mini](../../hardware/about-mini-battery-module/).
 
-  You have to specify which one is in use when initiating the module in your code. This is done easily by enum values:
+You have to specify which one is in use when initiating the module in your code. This is done easily by enum values:
 
   - `BC_MODULE_BATTERY_FORMAT_STANDARD`
   - `BC_MODULE_BATTERY_FORMAT_MINI`

@@ -1,0 +1,1 @@
+The **Climate Monitor Kit** allows you to **monitor your environment**. It communicates wirelessly and operates up to 2 years from the standard Alkaline batteries. You will be able to measure **temperature**, **humidity**, **light intensity** and **atmospheric pressure**. All these attributes might be essential for your comfort.

@@ -86,7 +86,7 @@ void send_data(void)
     if (bc_spi_is_ready())
     {
         // Set event handler and optional parameter (NULL for now)
-        bc_spi_async_transfer(_bc_module_lcd.framebuffer, NULL, BC_LCD_FRAMEBUFFER_SIZE, _bc_spi_event_handler, NULL)
+        bc_spi_async_transfer(tx_buffer, rx_buffer, sizeof(tx_buffer), _bc_spi_event_handler, NULL)
     }
 }
 

@@ -148,18 +148,9 @@ If you already have previously installed playground, you can upgrade it at any t
 
         brew services start mosquitto
 
-7. Install **Node.js** version 6 (required by **Node-RED**).
+7. Install **Node.js** (required by **Node-RED**).
 
-        brew install node node@6
-    \
-
-        brew unlink node
-    \
-
-        echo 'export PATH="/usr/local/opt/node@6/bin:$PATH"' >> ~/.bash_profile
-    \
-
-        source ~/.bash_profile
+        brew install node
 
 8. Install **Node-RED**:
 
@@ -173,7 +164,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
 10. Tell **PM2** to run **Node-RED**:
 
-        pm2 start `which node-red` -- -v
+        pm2 start `which node-red`
 
 11. Tell **PM2** to run on boot:
 
@@ -279,7 +270,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
 7. Tell **PM2** to run **Node-RED**:
 
-        pm2 start `which node-red` -- -v
+        pm2 start `which node-red`
 
 8. Tell **PM2** to run on boot:
 

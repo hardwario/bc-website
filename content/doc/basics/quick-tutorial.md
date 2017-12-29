@@ -45,7 +45,7 @@ After the **Raspberry Pi** boots up you should be able to find it at address `hu
 
 {{< note "warning" >}}If the Raspberry Pi is not visible on the network, there's something wrong with your network setup or your system doesn't support **mDNS** and you have to find the IP address of the **Raspberry Pi** in your router's **DHCP** configuration.{{< /note >}}
 
-Please log on the Raspberry Pi shell by typing `ssh pi@hub.localhost` command or use the Windows program **PuTTY**.
+Please log on the Raspberry Pi shell by typing `ssh pi@hub.local` command or use the Windows program **PuTTY**.
 
 ## Firmware Upload
 
@@ -183,7 +183,7 @@ Here's the complete flow in case of any issues.
 
 ## Extending to relative humidity measurement
 
-Now we try to connect the relative humidity sensor to the **Core Module**. It's possible to connect the {{< shop "Humidity Tag" >}} directly to the **Core Module** as displayed in the picture (**TODO**) or you can use also {{< shop "Tag Module" >}} which can hold many more sensor tags. Also the {{< shop "Battery Module" >}} contains spare connector for sensor tag.
+Now we try to connect the relative humidity sensor to the **Core Module**. It's possible to connect the {{< shop "Humidity Tag" >}} directly to the **Core Module** as displayed in the picture or you can use also {{< shop "Tag Module" >}} which can hold many more sensor tags. Also the {{< shop "Battery Module" >}} contains spare connector for sensor tag.
 
 <img src="humidity-added.jpg" style="max-width:50%;" />
 
@@ -237,6 +237,9 @@ Connect the **USB Dongle** to the **Raspberry Pi**. The **USB Dongle** will swit
 ```
 bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
 ```
+{{< note "info" >}}
+In case you get `[Errno 11] Resource temporarily unavailable` error, that means that the `bcg` gateway service is running and uses the same virtual serial port. Yo need to stop bcg temporarily by `pm2 stop bcg`, then do the `bcf flash` and start the service again by `pm2 start bcg`.
+{{< /note >}}
 
 ## Conversion to the battery operated node
 

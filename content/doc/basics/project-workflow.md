@@ -8,11 +8,11 @@ Let's dive a little more into how we envision that each project you start might 
 
 ## Generic Guidelines
 
-Each project is unique, but we still like to provide these generic guidelines that will give you an idea what you
+Each project is unique but we still like to provide these generic guidelines that will give you an idea of what you can do.
 
 ### Phase #1: Project Planning
 
-You can either come up with your completely unique idea, or you may get inspired by our reference projects. In any case, it is worth spending a couple minutes and plan your work.
+You can either come up with your completely unique idea, or you may get inspired by our reference projects. In either case, it is worth spending a couple of minutes to plan your work.
 
 To be more specific, here is the list of basic questions to answer:
 
@@ -32,7 +32,7 @@ To be more specific, here is the list of basic questions to answer:
 
 There is no one-stop-shop for all your needs. The [**BigClown Shop**](https://shop.bigclown.com/) provides a solid starting point for the IoT processor and communication modules, interfaces, sensors, actuators, etc.
 
-On the other hand, the **BigClown IoT Kit** perfectly mates with the 3rd party products, like:
+Additionally, the **BigClown IoT Kit** mates perfectly with 3rd party products:
 
 * [**Sparkfun**](https://www.sparkfun.com/)
 
@@ -44,11 +44,11 @@ On the other hand, the **BigClown IoT Kit** perfectly mates with the 3rd party p
 
 ### Phase #3: Firmware Upload
 
-You can start with the existing pre-built firmware image, or just write your own firmware using our high-level **BigClown Firmware SDK**.
+You can start with our existing pre-built firmware images, or write your own using our high-level **BigClown Firmware SDK**.
 
-In terms of firmware image upload, we have tried to make things really simple. That's why we have developed the **BigClown Firmware Tool** that will make the firmware uploads really simple.
+To make firmware uploads simple, we have developed the **BigClown Firmware Tool** which streamlines the entire flashing process.
 
-{{% note "info" %}}More information about the **BigClown Firmware Tool** can be found in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}) and [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}).{{% /note %}}
+{{% note "info" %}}More information about the **BigClown Firmware Tool** can be found in these documents [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}) and [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}).{{% /note %}}
 
 ### Phase #4: Hardware Assembling
 
@@ -56,13 +56,13 @@ If your project consists of the **BigClown**-only hardware components, this part
 
 However, if you need to hookup and/or solder your own circuitry or any 3rd party breakout board, we did not put any obstacle in your way. For such purposes, you can find the prototyping area on the **Battery Module** or **Base Module**.
 
-{{% note "warning" %}}Simple 2-wire interfaces like thermistors, external inputs or voltage outputs can be connected using **Sensor Module** featuring 2 channels and flexible weak/strong pull-up configuration.{{% /note %}}
+{{% note "warning" %}}Simple 1-Wire interfaces like thermistors, external inputs or voltage outputs can be connected using **Sensor Module** featuring 2 channels and flexible weak/strong pull-up configuration.{{% /note %}}
 
 ### Phase #5: Playground Bootstrap
 
-For most of our projects, we use **Node-RED** application (and web-server) that allows you to create automation flows visually with a drag-and-drop style. This tool perfectly integrates with MQTT protocol, which is the fundamental foundation of the **BigClown IoT Kit**.
+For most of our projects, we use the **Node-RED** client (and web-server) which allows you to create automation flows visually using an intuitive drag-and-drop interface. This tool perfectly integrates with the MQTT protocol, a fundamental to **BigClown IoT Kit** ecosystem.
 
-Because there is a set of software components, that repeat over and over again, we put them in the bundle we call the **BigClown Playground** and you can install it on your desktop on **Windows**, **macOS** and **Ubuntu**.
+We've bundled up all the essential software you need to get a project started in the **BigClown Playground**, compatable with **Windows**, **macOS** and **Ubuntu**.
 
 {{% note "warning" %}}Those users who use the **BigClown Raspbian** image on **Raspberry Pi** can skip this part since it comes already pre-installed on the image.{{% /note %}}
 
@@ -76,7 +76,7 @@ This **BigClown Playground** includes:
 
 {{% note "info" %}}More information can be found in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) and [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).{{% /note %}}
 
-{{% note "success" %}}If you prefer the more technical approach and want to write things from scratch, there is no problem whatsoever to dive deep to **Python**, **Node.js** or any other environment  you are comfortable with.{{% /note %}}
+{{% note "success" %}}If you prefer the more technical approach and want to write things from scratch, there is no problem whatsoever to dive deep to **Python**, **Node.js** or any other environment you are comfortable with.{{% /note %}}
 
 ### Phase #6: Radio Pairing
 
@@ -120,7 +120,7 @@ The integration guides are discussed in the **Integrations** section of this doc
 
 It is the right approach to have MQTT topics and responses properly described so you can tweak your project, extend it or integrate it easily anytime from any development environment.
 
-Remember, the MQTT asynchronous approach allows you to build the whole architecture of microservices.
+Remember, the MQTT's asynchronous approach allows you to build the whole architecture of microservices.
 
 {{% note "info" %}}More information can be found in the document [**MQTT Protocol**]({{< relref "doc/interfaces/mqtt-protocol.md" >}}).{{% /note %}}
 

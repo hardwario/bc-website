@@ -5,7 +5,7 @@ intro: "I am Petr Konvicka"
 email: petr.konvicka@hardwario.com
 weight: 7
 images:
-  preview: /team/preview/petr.jpg
+  preview: petr.jpg
   full: ""
 social:
   github:

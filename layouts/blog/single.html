@@ -15,7 +15,7 @@
 
             <div class="d-flex justify-content-center">
               <div class="article__author d-flex flex-column justify-content-center">
-                <img src="{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
+                <img src="/authors/{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
                 <strong>{{ .Params.author.name }}</strong>
                 <span>{{ .Params.author.post }}</span>
               </div>
@@ -26,7 +26,7 @@
     </div>
   </div>
   <div class="article__image">
-    <img src="{{ .Params.images.main }}" alt="{{ .Title }}" />
+    <img src="{{ .URL }}{{ .Params.images.main }}" alt="{{ .Title }}" />
   </div>
   <div class="container">
     <div class="row justify-content-center">
@@ -46,7 +46,7 @@
         <div class="row">
           <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">
             <div class="article__author article__author--bottom d-flex flex-column justify-content-center">
-              <img src="{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
+              <img src="/authors/{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
               <strong>{{ .Params.author.name }}</strong>
               <span>{{ .Params.author.post }}</span>
             </div>
@@ -59,11 +59,10 @@
     </div>
   </div>
 </section>
-
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59c0d0ca2278ef93"></script>
 {{ end }}
 
 {{ define "additional-scripts" }}
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59c0d0ca2278ef93"></script>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];

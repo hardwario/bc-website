@@ -31,7 +31,7 @@
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-12 col-md-6 text-center">
-            <img class="kit__mainimg" src="{{ .Params.images.main }}" alt="{{ .Title }}" />
+            <img class="kit__mainimg" src="{{ .URL }}{{ .Params.images.main }}" alt="{{ .Title }}" />
           </div>
           <div class="col-12 col-md-6 text-center">
             <div class="logo logo--3"></div>
@@ -77,48 +77,62 @@
 
             <div class="row">
 
-                {{ range sort .Params.modules ".weight"}}
-                <div class="col-12 col-md-6 col-lg-4">
-                  <span href="/modules/{{ .image.small }}" class="modules__photo">
+              {{ range .Params.modules }}
+              <div class="col-12 col-md-6 col-lg-4">
+                {{ $key := . }}
+                {{ $module := index $.Site.Data.modules $key }}
+                  <span href="/modules/{{ $module.image.small }}" class="modules__photo">
                     <div class="modules__photo__image d-flex justify-content-center align-items-center">
-                      <img src="/modules/{{ .image.small }}" alt="{{ .name }}" />
+                      <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
                     </div>
 
                     <div class="modules__photo__desc">
-                      <h3 class="modules__photo__title">{{ .name }}</h3>
+                      <h3 class="modules__photo__title">{{ $module.name }}</h3>
                     </div>
                   </span>
 
-                  <!--<a href="/modules/{{ .image.small }}" class="modules__photo magnificPopup">
+                  <!--<a href="/modules/{{ $module.image.small }}" class="modules__photo magnificPopup">
                     <div class="modules__photo__image d-flex justify-content-center align-items-center">
-                      <img src="/modules/{{ .image.small }}" alt="{{ .name }}" />
+                      <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
                     </div>
 
                     <div class="modules__photo__desc">
-                      <h3 class="modules__photo__title">{{ .name }}</h3>
+                      <h3 class="modules__photo__title">{{ $module.name }}</h3>
                     </div>
                   </a>-->
-                </div>
-                {{ end }}
-
+                  </div>
+              {{ end}}
             </div>
 
             <h2 class="title title--3 text-center">Optional modules</h2>
 
             <div class="row">
-              {{ range sort .Params.optionalModules ".weight"}}
-              <div class="col-12 col-md-6 col-lg-4">
-                <span href="/modules/{{ .image.small }}" class="modules__photo">
-                  <div class="modules__photo__image d-flex justify-content-center align-items-center">
-                    <img src="/modules/{{ .image.small }}" alt="{{ .name }}" />
-                  </div>
 
-                  <div class="modules__photo__desc">
-                    <h3 class="modules__photo__title">{{ .name }}</h3>
+              {{ range .Params.optionalModules }}
+              <div class="col-12 col-md-6 col-lg-4">
+                {{ $key := . }}
+                {{ $module := index $.Site.Data.modules $key }}
+                  <span href="/modules/{{ $module.image.small }}" class="modules__photo">
+                    <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                      <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
+                    </div>
+
+                    <div class="modules__photo__desc">
+                      <h3 class="modules__photo__title">{{ $module.name }}</h3>
+                    </div>
+                  </span>
+
+                  <!--<a href="/modules/{{ $module.image.small }}" class="modules__photo magnificPopup">
+                    <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                      <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
+                    </div>
+
+                    <div class="modules__photo__desc">
+                      <h3 class="modules__photo__title">{{ $module.name }}</h3>
+                    </div>
+                  </a>-->
                   </div>
-                </span>
-              </div>
-              {{ end }}
+              {{ end}}
             </div>
           </div>
         </div>
@@ -145,14 +159,15 @@
           <div class="col">
             <div class="slick">
                 {{ $id:= .Params.id }}
+
                   {{ if eq $id "basic" }}
                     {{ range .Site.Pages }}
                       {{ if eq .Params.isBasic true }}
                         <div>
                           <a href="{{ .Permalink }}" class="product product--carousel">
                             <div class="product__images d-flex align-items-center justify-content-center">
-                              <img src="{{ .Params.images.preview }}" alt="{{ .Title }}" />
-                              <img src="{{ .Params.images.hover }}" alt="{{ .Title }}" />
+                              <img src="{{ .URL }}{{ .Params.images.preview }}" alt="{{ .Title }}" />
+                              <img src="{{ .URL }}{{ .Params.images.hover }}" alt="{{ .Title }}" />
                             </div>
                             <h3 class="product__title d-flex align-items-center justify-content-center">{{ .Title }}</h3>
                             <p class="product__text d-flex align-items-center justify-content-center">{{ .Params.description }}</p>
@@ -171,8 +186,8 @@
                         <div>
                           <a href="{{ .Permalink }}" class="product product--carousel">
                             <div class="product__images d-flex align-items-center justify-content-center">
-                              <img src="{{ .Params.images.preview }}" alt="{{ .Title }}" />
-                              <img src="{{ .Params.images.hover }}" alt="{{ .Title }}" />
+                              <img src="{{ .URL }}{{ .Params.images.preview }}" alt="{{ .Title }}" />
+                              <img src="{{ .URL }}{{ .Params.images.hover }}" alt="{{ .Title }}" />
                             </div>
                             <h3 class="product__title d-flex align-items-center justify-content-center">{{ .Title }}</h3>
                             <p class="product__text d-flex align-items-center justify-content-center">{{ .Params.description }}</p>
@@ -191,8 +206,8 @@
                         <div>
                           <a href="{{ .Permalink }}" class="product product--carousel">
                             <div class="product__images d-flex align-items-center justify-content-center">
-                              <img src="{{ .Params.images.preview }}" alt="{{ .Title }}" />
-                              <img src="{{ .Params.images.hover }}" alt="{{ .Title }}" />
+                              <img src="{{ .URL }}{{ .Params.images.preview }}" alt="{{ .Title }}" />
+                              <img src="{{ .URL }}{{ .Params.images.hover }}" alt="{{ .Title }}" />
                             </div>
                             <h3 class="product__title d-flex align-items-center justify-content-center">{{ .Title }}</h3>
                             <p class="product__text d-flex align-items-center justify-content-center">{{ .Params.description }}</p>

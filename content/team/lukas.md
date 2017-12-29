@@ -5,7 +5,7 @@ intro: "I am Lukas Fabik"
 email: lukas.fabik@hardwario.com
 weight: 12
 images:
-  preview: /team/preview/lukas.jpg
+  preview: lukas.jpg
   full: ""
 social:
   twitter:

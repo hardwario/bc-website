@@ -5,7 +5,7 @@ intro: "I am Alan Fabik"
 email: alan.fabik@hardwario.com
 weight: 1
 images:
-  preview: /team/preview/alan.jpg
+  preview: alan.jpg
   full: ""
 social:
   twitter:

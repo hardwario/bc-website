@@ -3,7 +3,7 @@
             <p class="testimonials__text">{{ .Params.testimonial }}</p>
             <div>
                 <div class="testimonials__image d-flex align-items-center justify-content-center">
-                    <img src="{{ .Params.author.image }}" alt="{{ .Title }}" />
+                    <img src="/testimonials/{{ .Params.author.image }}" alt="{{ .Title }}" />
                 </div>
                 <h3 class="testimonials__name">{{ .Title }},</h3>
                 <div class="testimonials__pos">{{ .Params.author.position}}</div>

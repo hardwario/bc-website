@@ -1,5 +1,6 @@
 products:
   - title: Base Module
+    code: base
     name: module-base
   - title: Barometer Tag
     name: tag-barometer

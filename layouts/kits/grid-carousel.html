@@ -1,8 +1,8 @@
 <div>
     <a href="{{ .Permalink }}" class="product product--carousel">
         <div class="product__images d-flex align-items-center justify-content-center">
-            <img src="{{ .Params.images.preview }}" alt="{{ .Title }}" />
-            <img src="{{ .Params.images.hover }}" alt="{{ .Title }}" />
+            <img src="{{ .Page.URL }}{{ .Params.images.preview }}" alt="{{ .Title }}" />
+            <img src="{{ .Page.URL }}{{ .Params.images.hover }}" alt="{{ .Title }}" />
         </div>
         <h3 class="product__title d-flex align-items-center justify-content-center">{{ .Title }}</h3>
         <p class="product__text d-flex align-items-center justify-content-center">{{ .Params.description }}</p>

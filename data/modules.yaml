@@ -1,0 +1,242 @@
+core:
+  name: Core Module
+  image:
+    small: Modules_382x324_Core.png
+    full:
+mini_battery:
+  name: Mini Battery Module
+  image:
+    small: Modules_382x324_MiniBattery.png
+    full:
+climate:
+  name: Climate Module
+  image:
+    small: Modules_382x324_Climate.png
+    full:
+enclosures_climate:
+  name: 3D-printed Enclosure BCE101
+  image:
+    small: Enclosure-BCE101-climate.png
+    full:
+sigfox:
+  name: Sigfox Module
+  image:
+    small: Modules_382x324_Sigfox.png
+    full:
+battery:
+  name: Battery Module
+  image:
+    small: Modules_382x324_Battery.png
+    full:
+co2:
+  name: CO2 Module
+  image:
+    small: Modules_382x324_CO2.png
+    full:
+humidity:
+  name: Humidity Tag
+  image:
+    small: Modules_382x324_Humidity.png
+    full:
+barometer:
+  name: Barometer Tag
+  image:
+    small: Modules_382x324_Barometer.png
+    full:
+temperature:
+  name: Temperature Tag
+  image:
+    small: Modules_382x324_Temperature.png
+    full:
+cover:
+  name: Cover Module
+  image:
+    small: Modules_382x324_Cover.png
+    full:
+enclosures-201:
+  name: 3D-printed Enclosure BCE201
+  image:
+    small: Enclosure-BCE201.png
+    full:
+sensor:
+  name: Sensor Module
+  image:
+    small: Modules_382x324_Sensor.png
+    full:
+flood:
+  name: Flood Detector
+  image:
+    small: Modules_382x324_Flood detector.png
+    full:
+enclosures-501:
+  name: 3D-printed Enclosure BCE501
+  image:
+    small: Enclosure-BCE501.png
+    full:
+lcd:
+  name: LCD Module
+  image:
+    small: Modules_382x324_LCD.png
+    full:
+enclosures-thermostat:
+  name: 3D-printed Enclosure BCE101
+  image:
+    small: Enclosure-BCE101-thermostat.png
+    full:
+pir:
+  name: PIR Module
+  image:
+    small: Modules_382x324_PIR.png
+    full:
+enclosures-101:
+  name: 3D-printed Enclosure BCE101
+  image:
+    small: Enclosure-BCE101.png
+    full:
+button:
+  name: Button Module
+  image:
+    small: Modules_382x324_Button.png
+    full:
+enclosures-button:
+  name: 3D-printed Enclosure BCE101
+  image:
+    small: Enclosure-BCE101-button.png
+    full:
+usb_dongle:
+  name: USB Dongle
+  image:
+    small: Modules_382x324_USB Dongle.png
+    full:
+core-7:
+  name: 7x Core Module
+  image:
+    small: Modules_382x324_Core.png
+    full:
+mini_battery-4:
+  name: 4x Mini Battery Module
+  image:
+    small: Modules_382x324_MiniBattery.png
+    full:
+battery-2:
+  name: 2x Battery Module
+  image:
+    small: Modules_382x324_Battery.png
+    full:
+power:
+  name: Power Module with AC/DC adapter
+  image:
+    small: Modules_382x324_Power.png
+    full:
+encoder:
+  name: Encoder Module
+  image:
+    small: Modules_382x324_Encoder.png
+    full:
+tag:
+  name: Tag Module
+  image:
+    small: Modules_382x324_Tag.png
+    full:
+nfc:
+  name: NFC Tag
+  image:
+    small: Modules_382x324_NFC.png
+    full:
+lux:
+  name: Lux Meter Tag
+  image:
+    small: Modules_382x324_Lux.png
+    full:
+cover_mini:
+  name: Mini Cover Module
+  image:
+    small: Modules_382x324_MiniCover.png
+    full:
+led:
+  name: LED Strip 0.5 m 72 LEDs
+  image:
+    small: Modules_382x324_LED Strip.png
+    full:
+enclosures-101-4:
+  name: 4x 3D-printed Enclosure BCE101
+  image:
+    small: Enclosure-BCE101.png
+    full:
+enclosures-201:
+  name: 3D-printed Enclosure BCE201
+  image:
+    small: Enclosure-BCE201.png
+    full:
+enclosures-301:
+  name: 3D-printed Enclosure BCE301
+  image:
+    small: Enclosure-BCE301.png
+    full:
+enclosures-501:
+  name: 3D-printed Enclosure BCE501
+  image:
+    small: Enclosure-BCE501.png
+    full:
+suitcase:
+  name: Clown suitcase
+  image:
+    small: Modules_382x324_Suitcase.png
+    full:
+enclosures-101-3:
+  name: 3x 3D-printed Enclosure BCE101
+  image:
+    small: Enclosure-BCE101.png
+    full:
+core-5:
+  name: 5x Core Module
+  weight: 200
+  image:
+    small: Modules_382x324_Core.png
+    full:
+mini_battery-5:
+  name: 5x Mini Battery Module
+  weight: 300
+  image:
+    small: Modules_382x324_MiniBattery.png
+    full:
+core-2:
+  name: 2x Core Module
+  image:
+    small: Modules_382x324_Core.png
+    full:
+mini_battery-2:
+  name: 2x Mini Battery Module
+  image:
+    small: Modules_382x324_MiniBattery.png
+    full:
+enclosures-101-2:
+  name: 2x 3D-printed Enclosure BCE101
+  image:
+    small: Enclosure-BCE101.png
+    full:
+breadboard:
+  name: Breadboard Module
+  image:
+    small: Modules_382x324_Breadboard.png
+    full:
+probe:
+  name: Probe Module
+  image:
+    small: Modules_382x324_Probe.png
+    full:
+relay:
+  name: Relay Module
+  image:
+    small: Modules_382x324_Relay.png
+    full:
+wire:
+  name: 1-Wire Module
+  image:
+    small: Modules_382x324_Wire.png
+    full:
+base:
+  name: Base Module
+  image:
+    small: Modules_382x324_Base.png
+    full:

@@ -39,9 +39,13 @@ reverse insertion
 
 * Radius of rounded corners 3.8 mm
 
-## Module Drawing
+## Module Drawing - Standard
 
 {{% img src="module.svg" alt="Module drawing" width="400" %}}
+
+## Module Drawing - Large
+
+{{% img src="module-large.svg" alt="Module drawing" %}}
 
 ## Module Signals
 

@@ -8,16 +8,6 @@ title = "BigClown"
 [blackfriday]
 smartypants = false
 
-[Languages]
-[Languages.en]
-weight = 1
-languageName = "English"
-countryCode = "gb"
-[Languages.cs]
-weight = 2
-languageName = "Čeština"
-countryCode = "cz"
-
 [params]
 menuNames = ["main"]
 productionURL = "https://www.bigclown.com"

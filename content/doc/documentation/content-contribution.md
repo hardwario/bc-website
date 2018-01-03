@@ -14,9 +14,9 @@ The name of the documentation source GitHub repository is [**bc-website**](https
 
 * All documents are written in the **Markdown** format.
 
-* The root of the file name is always in English, followed by a language extension.
+* The root of the file name is always in English.
 
-    Example: `tutorial.md` / `tutorial.cs.md`
+    Example: `tutorial.md`
 
 * Lines wrap around the paragraphs. It is therefore advisable to use an editor that supports word wrapping - e.g. [**Atom**](https://atom.io/).
 

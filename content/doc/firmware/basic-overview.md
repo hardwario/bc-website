@@ -7,9 +7,9 @@ In this tutorial we will go through basic concepts of firmware for BigClown ecos
 ## Programming language
 Firmware is implemented in pure **C language**, which is industrially accepted language for embedded and low-power devices. There are the main reasons for choosing this technology:
 
-- effective use of hardware resources 
+- effective use of hardware resources
 - stability and long time available development environment
-- simple and understandable syntax 
+- simple and understandable syntax
 
 {{% note "info" %}}Effective use of hardware resources is important for developing of low-power devices. This is primary goal of BigClown ecosystem.{{% /note %}}
 

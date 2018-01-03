@@ -142,7 +142,59 @@ Optionally put the assembly into the appropriate enclosure, if you have one.
 
 ## Integration with Blynk
 
-**TODO**
+Now we have assembled our kit and let's start with some basic integration with blynk.
+We will start without describing what blynk is.
+If you want get some information about what blynk is.
+The best thing you can do is visit their <a href="https://www.blynk.cc">page</a>. In our example we will be showing you how to display graphs from sensor's values in blynk's mobile application.
+
+Firstly we need to configure our NodeRED app.
+
+1. If you are using BigClown raspi version you should be fine, but still check that blynk nodes are installed. (You can view them on the left side menu in NodeRED).
+
+    {{% img src="nodered-screen-3.png" height="200" width="300" %}}
+
+2. Add another flow (you can add them by big plus button next to the flow name).
+
+3. Insert the following snippet in the flow (using Menu >> Import) and click in Flow 3 tab:
+
+    ```json
+    [{"id":"c7e756bb.71c928","type":"blynk-websockets-out-write","z":"b1df9271.05d5","name":"","pin":"0","client":"c8872bd1.636cb8","x":780,"y":220,"wires":[]},{"id":"2f909f2d.48742","type":"blynk-websockets-out-write","z":"b1df9271.05d5","name":"","pin":"1","client":"c8872bd1.636cb8","x":780,"y":280,"wires":[]},{"id":"35bf3efb.8cf392","type":"blynk-websockets-out-write","z":"b1df9271.05d5","name":"","pin":"2","client":"c8872bd1.636cb8","x":780,"y":340,"wires":[]},{"id":"4db9c585.06680c","type":"mqtt in","z":"b1df9271.05d5","name":"","topic":"node/kit-lcd-thermostat:0/lux-meter/0:0/illuminance","qos":"2","broker":"3dded649.aa80aa","x":330,"y":220,"wires":[["c7e756bb.71c928"]]},{"id":"a1a2bff5.c49da","type":"mqtt in","z":"b1df9271.05d5","name":"","topic":"node/kit-lcd-thermostat:0/thermometer/0:0/temperature","qos":"2","broker":"3dded649.aa80aa","x":340,"y":280,"wires":[["2f909f2d.48742"]]},{"id":"cdb820bb.66d9f","type":"mqtt in","z":"b1df9271.05d5","name":"","topic":"node/kit-lcd-thermostat:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"3dded649.aa80aa","x":350,"y":340,"wires":[["35bf3efb.8cf392"]]},{"id":"c8872bd1.636cb8","type":"blynk-websockets-client","z":"","name":"","path":"ws://blynk-cloud.com:8080/websockets","key":"08b1b764cfb04e53ae04a86f96280845"},{"id":"3dded649.aa80aa","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```
+
+    It will look like this:
+
+    {{% img src="nodered-screen-1.png" %}}
+
+    {{% note "info" %}}In case you want use it for another sensors just change MQTT topics.{{% /note %}}
+
+4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure blynk node. Just fill in URL **ws://blynk-cloud.com:8080/websockets**. The secret key we will configure later after obtaining one.
+
+    {{% img src="nodered-screen-2.png" height="400" width="400" %}}
+
+5. Now download blynk app from your app store.
+
+6. After installing, you should create account and you should see something like that:
+
+    {{% img src="blynk-3.PNG" height="500" width="300" %}}
+
+7. Create new blynk project from mobile phone. After creating it will send you email with secret key. Don't forget to fill it in you blynk node in NodeRED.
+
+    {{% img src="email.png" %}}
+
+8. Now add 3 gauges from widget box in blynk.
+
+    {{% img src="blynk-6.PNG" height="500" width="300" %}}
+
+9. Now configure each gauge:
+    - Set them virtual pin from 0 to 2 (each must by unique)
+    - configure range as you wish. In my case it is from 0 to 1000
+    - Don't forget to edit each gauge
+
+    {{% img src="blynk-8.PNG" height="500" width="300" %}}
+
+10. Deploy NodeRED app and run mobile project and you should see results.
+
+    {{% img src="blynk-10.PNG" height="500" width="300" %}}
 
 ## Related Documents
 

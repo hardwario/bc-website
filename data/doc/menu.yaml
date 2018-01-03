@@ -51,8 +51,6 @@ items:
       link: "doc/interfaces/sub-ghz-radio.md"
     - title: "Sigfox Radio"
       link: "doc/interfaces/sigfox-radio.md"
-    - title: "USB Interface"
-      link: "doc/interfaces/usb-interface.md"
   - title: "Integrations"
     items:
       - title: "MQTT Topics"

@@ -233,7 +233,7 @@ This is a brief list of differences:
 
 7. Tell **PM2** to run **Node-RED**:
 
-        pm2 start `which node-red` -- -v
+        pm2 start `which node-red` -- --verbose
     \
 
         pm2 save

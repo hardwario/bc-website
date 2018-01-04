@@ -1,21 +1,16 @@
 ---
-title: About Sigfox Module
+title: "About Sigfox Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="sigfox-module.png" alt="Sigfox Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="sigfox-module.png" alt="Sigfox Module" width="300">
-<p>{{< include "shop/pitch-sigfox-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-sigfox-module.md" >}}
+
+{{< hw-sch "bc-module-sigfox" >}}
+{{< hw-sdk "group__bc__module__sigfox" >}}
+{{< hw-h-file "bc_module_sigfox.h" >}}
+{{< hw-c-file "bc_module_sigfox.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-sigfox-module.md" >}}
-
-{{< hardware "Sigfox Module" >}}

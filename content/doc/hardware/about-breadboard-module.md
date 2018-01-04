@@ -1,19 +1,13 @@
 ---
-title: About Breadboard Module
+title: "About Breadboard Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="breadboard-module.png" alt="Breadboard Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="breadboard-module.png" alt="Breadboard Module" width="300">
-<p>{{< include "shop/pitch-breadboard-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-breadboard-module.md" >}}
+
+{{< hw-sch "bc-module-breadboard" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-breadboard-module.md" >}}

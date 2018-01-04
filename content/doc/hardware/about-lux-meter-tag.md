@@ -1,19 +1,16 @@
 ---
-title: About Lux Meter Tag
+title: "About Lux Meter Tag"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="lux-meter-tag.png" alt="Lux Meter Tag" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="lux-meter-tag.png" alt="Lux Meter Tag" width="300">
-<p>{{< include "shop/pitch-lux-meter-tag.md" >}}</p>
-</div>
+{{< include "shop/pitch-lux-meter-tag.md" >}}
+
+{{< hw-sch "bc-tag-lux-meter" >}}
+{{< hw-sdk "group__bc__tag__lux__meter" >}}
+{{< hw-h-file "bc_tag_lux_meter.h" >}}
+{{< hw-c-file "bc_tag_lux_meter.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-lux-meter-tag.md" >}}

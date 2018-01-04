@@ -1,21 +1,16 @@
 ---
-title: About Encoder Module
+title: "About Encoder Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="encoder-module.png" alt="Encoder Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="encoder-module.png" alt="Encoder Module" width="300">
-<p>{{< include "shop/pitch-encoder-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-encoder-module.md" >}}
+
+{{< hw-sch "bc-module-encoder" >}}
+{{< hw-sdk "group__bc__module__encoder" >}}
+{{< hw-h-file "bc_module_encoder.h" >}}
+{{< hw-c-file "bc_module_encoder.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-encoder-module.md" >}}
-
-{{< hardware "Encoder Module" >}}

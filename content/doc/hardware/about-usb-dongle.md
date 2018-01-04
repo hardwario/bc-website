@@ -1,21 +1,13 @@
 ---
-title: About USB dongle
+title: "About USB Dongle"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="usb-dongle.png" alt="USB Dongle" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="usb-dongle.png" alt="USB Dongle" width="300">
-<p>{{< include "shop/pitch-usb-dongle.md" >}}</p>
-</div>
+{{< include "shop/pitch-usb-dongle.md" >}}
+
+{{< hw-sch "bc-module-core" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-usb-dongle.md" >}}
-
-{{< hardware "USB Dongle" >}}

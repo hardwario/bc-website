@@ -1,5 +1,5 @@
 ---
-title: I²C Address Space
+title: "I²C Address Space"
 ---
 
 The following table lists the I²C addresses used across the BigClown system.

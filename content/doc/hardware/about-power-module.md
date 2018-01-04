@@ -1,21 +1,16 @@
 ---
-title: About Power Module
+title: "About Power Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="power-module.png" alt="Power Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="power-module.png" alt="Power Module" width="300">
-<p>{{< include "shop/pitch-power-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-power-module.md" >}}
+
+{{< hw-sch "bc-module-power" >}}
+{{< hw-sdk "group__bc__module__power" >}}
+{{< hw-h-file "bc_module_power.h" >}}
+{{< hw-c-file "bc_module_power.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-power-module.md" >}}
-
-{{< hardware "Power Module" >}}

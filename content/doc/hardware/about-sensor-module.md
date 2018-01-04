@@ -1,21 +1,16 @@
 ---
-title: About Sensor Module
+title: "About Sensor Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="sensor-module.png" alt="Sensor Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="sensor-module.png" alt="Sensor Module" width="300">
-<p>{{< include "shop/pitch-sensor-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-sensor-module.md" >}}
+
+{{< hw-sch "bc-module-sensor" >}}
+{{< hw-sdk "group__bc__module__sensor" >}}
+{{< hw-h-file "bc_module_sensor.h" >}}
+{{< hw-c-file "bc_module_sensor.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-sensor-module.md" >}}
-
-{{< hardware "Sensor Module" >}}

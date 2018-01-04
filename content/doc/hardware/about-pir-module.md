@@ -1,21 +1,16 @@
 ---
-title: About PIR Module
+title: "About PIR Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="pir-module.png" alt="PIR Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="pir-module.png" alt="PIR Module" width="300">
-<p>{{< include "shop/pitch-pir-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-pir-module.md" >}}
+
+{{< hw-sch "bc-module-pir" >}}
+{{< hw-sdk "group__bc__module__pir" >}}
+{{< hw-h-file "bc_module_pir.h" >}}
+{{< hw-c-file "bc_module_pir.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-pir-module.md" >}}
-
-{{< hardware "PIR Module" >}}

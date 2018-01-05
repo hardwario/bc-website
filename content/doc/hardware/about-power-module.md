@@ -6,6 +6,7 @@ title: "About Power Module"
 
 {{< include "shop/pitch-power-module.md" >}}
 
+{{< hw-shop "power-module" >}}
 {{< hw-sch "bc-module-power" >}}
 {{< hw-sdk "group__bc__module__power" >}}
 {{< hw-h-file "bc_module_power.h" >}}

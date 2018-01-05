@@ -6,6 +6,7 @@ title: "About Base Module"
 
 {{< include "shop/pitch-base-module.md" >}}
 
+{{< hw-shop "base-module" >}}
 {{< hw-sch "bc-module-base" >}}
 
 {{< /img-float >}}

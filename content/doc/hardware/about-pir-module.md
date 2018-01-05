@@ -6,6 +6,7 @@ title: "About PIR Module"
 
 {{< include "shop/pitch-pir-module.md" >}}
 
+{{< hw-shop "pir-module" >}}
 {{< hw-sch "bc-module-pir" >}}
 {{< hw-sdk "group__bc__module__pir" >}}
 {{< hw-h-file "bc_module_pir.h" >}}

@@ -6,6 +6,7 @@ title: "About Lux Meter Tag"
 
 {{< include "shop/pitch-lux-meter-tag.md" >}}
 
+{{< hw-shop "lux-meter-tag" >}}
 {{< hw-sch "bc-tag-lux-meter" >}}
 {{< hw-sdk "group__bc__tag__lux__meter" >}}
 {{< hw-h-file "bc_tag_lux_meter.h" >}}

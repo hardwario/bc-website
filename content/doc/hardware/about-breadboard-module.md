@@ -6,6 +6,7 @@ title: "About Breadboard Module"
 
 {{< include "shop/pitch-breadboard-module.md" >}}
 
+{{< hw-shop "breadboard-module" >}}
 {{< hw-sch "bc-module-breadboard" >}}
 
 {{< /img-float >}}

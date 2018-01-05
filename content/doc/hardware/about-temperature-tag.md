@@ -6,6 +6,7 @@ title: "About Temperature Tag"
 
 {{< include "shop/pitch-temperature-tag.md" >}}
 
+{{< hw-shop "temperature-tag" >}}
 {{< hw-sch "bc-tag-temperature" >}}
 {{< hw-sdk "group__bc__tag__temperature" >}}
 {{< hw-h-file "bc_tag_temperature.h" >}}

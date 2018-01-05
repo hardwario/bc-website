@@ -6,6 +6,7 @@ title: "About Button Module"
 
 {{< include "shop/pitch-button-module.md" >}}
 
+{{< hw-shop "button-module" >}}
 {{< hw-sch "bc-module-button" >}}
 {{< hw-sdk "group__bc__button" >}}
 {{< hw-h-file "bc_button.h" >}}

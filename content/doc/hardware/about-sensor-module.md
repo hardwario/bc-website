@@ -6,6 +6,7 @@ title: "About Sensor Module"
 
 {{< include "shop/pitch-sensor-module.md" >}}
 
+{{< hw-shop "sensor-module" >}}
 {{< hw-sch "bc-module-sensor" >}}
 {{< hw-sdk "group__bc__module__sensor" >}}
 {{< hw-h-file "bc_module_sensor.h" >}}

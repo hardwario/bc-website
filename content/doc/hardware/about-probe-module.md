@@ -6,6 +6,7 @@ title: "About Probe Module"
 
 {{< include "shop/pitch-probe-module.md" >}}
 
+{{< hw-shop "probe-module" >}}
 {{< hw-sch "bc-module-probe" >}}
 
 {{< /img-float >}}

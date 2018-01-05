@@ -6,6 +6,7 @@ title: "About Sigfox Module"
 
 {{< include "shop/pitch-sigfox-module.md" >}}
 
+{{< hw-shop "sigfox-module" >}}
 {{< hw-sch "bc-module-sigfox" >}}
 {{< hw-sdk "group__bc__module__sigfox" >}}
 {{< hw-h-file "bc_module_sigfox.h" >}}

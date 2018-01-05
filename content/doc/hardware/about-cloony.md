@@ -6,6 +6,7 @@ title: "About Cloony"
 
 {{< include "shop/pitch-cloony.md" >}}
 
+{{< hw-shop "cloony" >}}
 {{< hw-sch "bc-cloony" >}}
 
 {{< /img-float >}}

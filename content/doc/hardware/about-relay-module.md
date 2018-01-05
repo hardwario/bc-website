@@ -6,6 +6,7 @@ title: "About Relay Module"
 
 {{< include "shop/pitch-relay-module.md" >}}
 
+{{< hw-shop "relay-module" >}}
 {{< hw-sch "bc-module-relay" >}}
 {{< hw-sdk "group__bc__module__relay" >}}
 {{< hw-h-file "bc_module_relay.h" >}}

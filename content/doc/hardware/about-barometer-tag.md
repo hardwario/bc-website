@@ -6,6 +6,7 @@ title: "About Barometer Tag"
 
 {{< include "shop/pitch-barometer-tag.md" >}}
 
+{{< hw-shop "barometer-tag" >}}
 {{< hw-sch "bc-tag-barometer" >}}
 {{< hw-sdk "group__bc__tag__barometer" >}}
 {{< hw-h-file "bc_tag_barometer.h" >}}

@@ -6,6 +6,7 @@ title: "About LCD Module"
 
 {{< include "shop/pitch-lcd-module-bg.md" >}}
 
+{{< hw-shop "lcd-module-bg" >}}
 {{< hw-sch "bc-module-lcd" >}}
 {{< hw-sdk "group__bc__module__lcd" >}}
 {{< hw-h-file "bc_module_lcd.h" >}}

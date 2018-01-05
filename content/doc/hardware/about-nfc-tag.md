@@ -6,6 +6,7 @@ title: "About NFC Tag"
 
 {{< include "shop/pitch-nfc-tag.md" >}}
 
+{{< hw-shop "nfc-tag" >}}
 {{< hw-sch "bc-tag-nfc" >}}
 
 {{< /img-float >}}

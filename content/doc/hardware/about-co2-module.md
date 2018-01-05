@@ -6,6 +6,7 @@ title: "About CO2 Module"
 
 {{< include "shop/pitch-co2-module.md" >}}
 
+{{< hw-shop "co2-module" >}}
 {{< hw-sch "bc-module-co2" >}}
 {{< hw-sdk "group__bc__module__co2" >}}
 {{< hw-h-file "bc_module_co2.h" >}}

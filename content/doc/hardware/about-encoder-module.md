@@ -6,6 +6,7 @@ title: "About Encoder Module"
 
 {{< include "shop/pitch-encoder-module.md" >}}
 
+{{< hw-shop "encoder-module" >}}
 {{< hw-sch "bc-module-encoder" >}}
 {{< hw-sdk "group__bc__module__encoder" >}}
 {{< hw-h-file "bc_module_encoder.h" >}}

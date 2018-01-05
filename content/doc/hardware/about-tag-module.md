@@ -6,6 +6,7 @@ title: "About Tag Module"
 
 {{< include "shop/pitch-tag-module.md" >}}
 
+{{< hw-shop "tag-module" >}}
 {{< hw-sch "bc-module-tag" >}}
 
 {{< /img-float >}}

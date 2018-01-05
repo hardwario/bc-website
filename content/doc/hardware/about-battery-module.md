@@ -6,6 +6,7 @@ title: "About Battery Module"
 
 {{< include "shop/pitch-battery-module.md" >}}
 
+{{< hw-shop "battery-module" >}}
 {{< hw-sch "bc-module-battery" >}}
 {{< hw-sdk "group__bc__module__battery" >}}
 {{< hw-h-file "bc_module_battery.h" >}}

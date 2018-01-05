@@ -6,6 +6,7 @@ title: "About Humidity Tag"
 
 {{< include "shop/pitch-humidity-tag.md" >}}
 
+{{< hw-shop "humidity-tag" >}}
 {{< hw-sch "bc-tag-humidity" >}}
 {{< hw-sdk "group__bc__tag__humidity" >}}
 {{< hw-h-file "bc_tag_humidity.h" >}}

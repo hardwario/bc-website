@@ -148,7 +148,7 @@ Firstly we need to configure our **Node-RED** app.
 
 1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**).
 
-    {{% img src="nodered-screen-3.png" width="300" %}}
+    {{% img-zoom src="nodered-screen-3.png" width="300" %}}
 
 2. Add another flow (you can add them by big plus button next to the flow name).
 
@@ -160,41 +160,37 @@ Firstly we need to configure our **Node-RED** app.
 
     It will look like this:
 
-    {{% img src="nodered-screen-1.png" %}}
+    {{% img-zoom src="nodered-screen-1.png" %}}
 
     {{% note "info" %}}In case you want use it for another sensors just change MQTT topics.{{% /note %}}
 
 4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com:8080/websockets`. The secret key we will configure later after obtaining one.
 
-    {{% img src="nodered-screen-2.png" height="400" width="400" %}}
+    {{% img-zoom src="nodered-screen-2.png" width="400" %}}
 
 5. Now download the **Blynk** app from [**App Store**](https://itunes.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481?mt=8) or [**Google Play**](https://play.google.com/store/apps/details?id=cc.blynk&hl=en).
 
-6. After installing, you should create account and you should see something like that:
+6. After installing, you should create account, login and you should see something like that:
 
-    {{% img src="blynk-3.png" height="500" width="300" %}}
+    {{% img-zoom src="blynk-3.png" width="300" %}}
 
-7. Create new **Blynk** project from mobile phone. After creating it will send you email with secret key. Don't forget to fill it in you **Blynk** node in **Node-RED**.
+7. Now click a button on the top right to scan QR code.
 
-    {{% img src="email.png" %}}
+    {{% img-zoom src="blynk-copy.png" width="300" %}}
 
-8. Now add 3 gauges from widget box in **Blynk**.
+8. Now you should scan following QR code to get everything preconfigured.
 
-    {{% img src="blynk-6.png" height="500" width="300" %}}
+    {{% img-zoom src="blynk-qr.png" width="400" %}}
 
-9. Now configure each gauge:
+9. You should see something like this:
 
-    - Set them virtual pin from 0 to 2 (each must by unique).
+    {{% img-zoom src="blynk-10.png" width="300" %}}
 
-    - Configure range as you wish. In my case it is from 0 to 1000.
+10. Click the settings wheel and you should see settings for your project. Wee need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
 
-    - Don't forget to edit each gauge.
+    {{% img-zoom src="blynk-auth.png" width="300" %}}
 
-    {{% img src="blynk-8.png" height="500" width="300" %}}
-
-10. Deploy the **Node-RED** app, in the **Blynk** app run the project and you should see this result:
-
-    {{% img src="blynk-10.png" height="500" width="300" %}}
+11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
 
 ## Related Documents
 

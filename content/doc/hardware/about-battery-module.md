@@ -18,7 +18,7 @@ title: "About Battery Module"
 
 ## Firmware Projects
 
-* [**generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
 
     Note: Use firmware for node-battery-standard
 

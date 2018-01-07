@@ -18,5 +18,5 @@ title: "About CO2 Module"
 
 ## Firmware Projects
 
-* [**generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
-* [**bcf-kit-wireless-co2-monitor**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-co2-monitor/)
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Wireless CO2 Monitor**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-co2-monitor/)

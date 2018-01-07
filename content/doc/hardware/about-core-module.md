@@ -13,6 +13,8 @@ title: "About Core Module"
 
 {{< include "shop/body-core-module.md" >}}
 
+## Firmware Projects
+
 * [**generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
 * [**firmware for BigClown gateway**](https://github.com/bigclownlabs/bcf-gateway/releases)
 * [**firmware for Wireless Push Button Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-push-button/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-push-button/)

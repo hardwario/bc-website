@@ -15,3 +15,8 @@ title: "About Battery Module"
 {{< /img-float >}}
 
 {{< include "shop/body-battery-module.md" >}}
+
+## Firmware Projects
+
+* [**generic firmware (1)**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+

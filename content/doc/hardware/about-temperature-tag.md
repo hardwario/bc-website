@@ -15,3 +15,8 @@ title: "About Temperature Tag"
 {{< /img-float >}}
 
 {{< include "shop/body-temperature-tag.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Wireless CO2 Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-co2-monitor/)

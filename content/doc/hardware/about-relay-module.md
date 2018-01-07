@@ -15,3 +15,7 @@ title: "About Relay Module"
 {{< /img-float >}}
 
 {{< include "shop/body-relay-module.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)

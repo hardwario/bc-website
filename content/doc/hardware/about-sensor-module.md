@@ -15,3 +15,7 @@ title: "About Sensor Module"
 {{< /img-float >}}
 
 {{< include "shop/body-sensor-module.md" >}}
+
+## Firmware Projects
+
+* [**Flood Detector Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-flood-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-flood-detector/)

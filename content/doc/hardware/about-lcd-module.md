@@ -15,3 +15,9 @@ title: "About LCD Module"
 {{< /img-float >}}
 
 {{< include "shop/body-lcd-module-bg.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Wireless LCD Thermostat Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-climate-monitor/releases)
+

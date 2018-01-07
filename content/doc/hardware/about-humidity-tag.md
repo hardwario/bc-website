@@ -15,3 +15,10 @@ title: "About Humidity Tag"
 {{< /img-float >}}
 
 {{< include "shop/body-humidity-tag.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**BigClown gateway**](https://github.com/bigclownlabs/bcf-gateway/releases)
+* [**Wireless CO2 Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-co2-monitor/)
+

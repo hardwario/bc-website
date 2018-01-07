@@ -15,3 +15,7 @@ title: "About Lux Meter Tag"
 {{< /img-float >}}
 
 {{< include "shop/body-lux-meter-tag.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)

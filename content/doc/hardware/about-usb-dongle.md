@@ -12,3 +12,7 @@ title: "About USB Dongle"
 {{< /img-float >}}
 
 {{< include "shop/body-usb-dongle.md" >}}
+
+* [**BigClown gateway**](https://github.com/bigclownlabs/bcf-gateway/releases)
+
+    Note: Use firmware bcf-gateway-usb-dongle

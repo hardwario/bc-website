@@ -15,3 +15,9 @@ title: "About Mini Battery Module"
 {{< /img-float >}}
 
 {{< include "shop/body-mini-battery-module.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+
+    Note: Use firmware for node-battery-mini

@@ -15,3 +15,9 @@ title: "About PIR Module"
 {{< /img-float >}}
 
 {{< include "shop/body-pir-module.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Wireless Motion Detector Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-motion-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-motion-detector/)
+

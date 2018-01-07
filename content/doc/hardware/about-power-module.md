@@ -15,3 +15,10 @@ title: "About Power Module"
 {{< /img-float >}}
 
 {{< include "shop/body-power-module.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+
+    Note: Use firmware for node-battery-standard
+* [**Wireless Power Controller Kit and LED strip**](https://github.com/bigclownlabs/bcf-kit-wireless-power-controller/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-led-strip/)

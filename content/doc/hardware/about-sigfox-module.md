@@ -15,3 +15,10 @@ title: "About Sigfox Module"
 {{< /img-float >}}
 
 {{< include "shop/body-sigfox-module.md" >}}
+
+## Firmware Projects
+
+* [**Sigfox Push Button Kit**](https://github.com/bigclownlabs/bcf-kit-sigfox-push-button/releases)
+* [**Sigfox Climate Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-sigfox-climate-monitor/releases)
+* [**Sigfox Motion Detector Kit**](https://github.com/bigclownlabs/bcf-kit-sigfox-motion-detector/releases)
+* [**Sigfox CO2 Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-sigfox-co2-monitor/releases)

@@ -21,6 +21,6 @@ title: "About Core Module"
 * [**Wireless Climate Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-climate-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-climate-monitor/)
 * [**Wireless Motion Detector Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-motion-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-motion-detector/)
 * [**Flood Detector Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-flood-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-flood-detector/)
-* [**Wireless LCD Thermostat Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-climate-monitor/releases)
+* [**Wireless LCD Thermostat Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-lcd-thermostat/releases)
 * [**Wireless CO2 Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-co2-monitor/)
 * [**Wireless Power Controller Kit and LED strip**](https://github.com/bigclownlabs/bcf-kit-wireless-power-controller/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-led-strip/)

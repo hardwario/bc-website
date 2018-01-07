@@ -19,5 +19,5 @@ title: "About LCD Module"
 ## Firmware Projects
 
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
-* [**Wireless LCD Thermostat Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-climate-monitor/releases)
+* [**Wireless LCD Thermostat Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-lcd-thermostat/releases)
 

@@ -15,3 +15,8 @@ title: "About CO2 Module"
 {{< /img-float >}}
 
 {{< include "shop/body-co2-module.md" >}}
+
+## Firmware Projects
+
+* [**generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**bcf-kit-wireless-co2-monitor**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-co2-monitor/)

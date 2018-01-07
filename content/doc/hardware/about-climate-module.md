@@ -15,3 +15,8 @@ title: "About Climate Module"
 {{< /img-float >}}
 
 {{< include "shop/body-climate-module.md" >}}
+
+## Firmware Projects
+
+* [**generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**bcf-kit-wireless-climate-monitor**](https://github.com/bigclownlabs/bcf-kit-wireless-climate-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-climate-monitor/)

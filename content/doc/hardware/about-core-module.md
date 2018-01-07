@@ -16,7 +16,7 @@ title: "About Core Module"
 ## Firmware Projects
 
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
-* [**BigClown gateway**](https://github.com/bigclownlabs/bcf-gateway/releases)
+* [**BigClown gateway**](https://github.com/bigclownlabs/bcf-gateway/releases) [**(readme)**](https://github.com/bigclownlabs/bcf-gateway/blob/master/README.md)
 * [**Wireless Push Button Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-push-button/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-push-button/)
 * [**Wireless Climate Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-climate-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-climate-monitor/)
 * [**Wireless Motion Detector Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-motion-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-motion-detector/)

@@ -20,5 +20,5 @@ title: "About Power Module"
 
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
 
-    Note: Use firmware for node-battery-standard
+    Note: Use firmware for node-power-module and type and length of LED strip (optional)
 * [**Wireless Power Controller Kit and LED strip**](https://github.com/bigclownlabs/bcf-kit-wireless-power-controller/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-led-strip/)

@@ -15,3 +15,7 @@ title: "About Barometer Tag"
 {{< /img-float >}}
 
 {{< include "shop/body-barometer-tag.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)

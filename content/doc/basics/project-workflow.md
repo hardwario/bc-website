@@ -112,7 +112,7 @@ The world of IoT is all about integrations and we partner and integrate with sev
 
 * **Ubidots**
 
-* **WolkAbout**
+* **Blynk**
 
 The integration guides are discussed in the **Integrations** section of this documentation.
 

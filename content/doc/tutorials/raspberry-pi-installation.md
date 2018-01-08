@@ -170,8 +170,6 @@ This is a brief list of differences:
 
 * The following records were added to the repository APT list:
 
-    * **https://repo.bigclown.com**
-
     * **https://apt.dockerproject.org/repo**
 
 * By default, these packages are also installed:

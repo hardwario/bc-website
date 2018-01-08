@@ -297,15 +297,21 @@ If you already have previously installed playground, you can upgrade it at any t
 
         sudo pip3 install --upgrade --no-cache-dir bcg
 
-13. Plug the **BigClown USB Dongle** into a USB port.
+13. Add yourself to the **dialout** user group:
 
-14. List the available devices:
+    {{% note "info" %}}This is needed in order to get privileges to access the serial ports.{{% /note %}}
+
+        sudo usermod $USER -a -G dialout
+
+14. Plug the **BigClown USB Dongle** into a USB port.
+
+15. List the available devices:
 
         bcf devices
 
     {{% note "info" %}}You can use `-v` parameter to see verbose information about the connected devices (possibly helping you to identify them).{{% /note %}}
 
-15. Upload the latest firmware into the **BigClown USB Dongle**:
+16. Upload the latest firmware into the **BigClown USB Dongle**:
 
         bcf update
     \
@@ -314,17 +320,17 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "warning" %}}You have to replace `...` with the device (you can look it up using `bcf devices`.{{% /note %}}
 
-16. Start the **BigClown Gateway** (in the background):
+17. Start the **BigClown Gateway** (in the background):
 
         bcg --device ...
 
     {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-17. Open your web browser with the URL:
+18. Open your web browser with the URL:
 
     **http://localhost:1880/**
 
-18. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).
+19. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).
 
 ## Playground Upgrade on Ubuntu
 

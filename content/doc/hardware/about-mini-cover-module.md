@@ -7,7 +7,7 @@ title: "About Mini Cover Module"
 {{< include "shop/pitch-mini-cover-module.md" >}}
 
 {{< hw-shop "mini-cover-module" >}}
-{{< hw-sch "bc-module-mini-cover" >}}
+{{< hw-sch "bc-module-cover-mini" >}}
 
 {{< /img-float >}}
 

@@ -106,13 +106,13 @@ We have designed these as freely available models, ready to be printed on your 3
 
 The world of IoT is all about integrations and we partner and integrate with several 3rd party platforms. To name a few:
 
-* **Grafana**
+* [**Ubidots**](https://ubidots.com/)
 
-* **Blynk**
+* [**Anemone**](https://www.anemone.cloud/)
 
-* **Ubidots**
+* [**Grafana**](https://grafana.com/)
 
-* **Blynk**
+* [**Blynk**](http://www.blynk.cc/)
 
 The integration guides are discussed in the **Integrations** section of this documentation.
 

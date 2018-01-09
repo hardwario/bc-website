@@ -29,17 +29,10 @@ Best wishes, Pavel.
 ## References
 
 * [**Juicymo Homepage**](https://www.juicymo.cz/)
-
 * [**Anemone Cloud**](https://www.anemone.cloud/)
-
 * [**Anemone Docs**](https://docs.anemone.cloud/)
-
     * [**Anemone BC Base Tentacle**](https://docs.anemone.cloud/devices/bc_base/)
-
     * [**Anemone BC Remote Tentacle**](https://docs.anemone.cloud/devices/bc_remote/)
-
 * [**YouTube BC Base Tentacle**](https://youtu.be/GvNytCctd0o)
-
 * [**YouTube BC Remote Tentacle**](https://youtu.be/x9W_YIcg2OI)
-
 * [**BigClown Thingiverse**](https://www.thingiverse.com/groups/bigclown/things)

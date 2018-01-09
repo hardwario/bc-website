@@ -1,15 +1,15 @@
 ---
-date: 2017-12-05
+date: "2017-12-05"
 title: "Reasons Behind Indiegogo"
 description: "The explanation what makes us to promote BigClown in a crowdfunding campaign"
 images:
-  preview: preview.jpg
-  main: main.jpg
+    preview: "preview.jpg"
+    main: "main.jpg"
 author:
-  name: "Alan Fabik"
-  post: "CEO & Co-founder"
-  email: "alan.fabik@hardwario.com"
-  image: "alan.jpg"
+    name: "Alan Fabik"
+    post: "CEO & Co-Founder"
+    email: "alan.fabik@hardwario.com"
+    image: "alan.jpg"
 ---
 
 Hey guys,

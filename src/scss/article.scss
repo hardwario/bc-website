@@ -204,7 +204,8 @@
 
     li
     {
-      padding-bottom: 2*$baseline;
+      padding-top: 0.25*$baseline;
+      padding-bottom: 0.25*$baseline;
 
       p
       {
@@ -216,6 +217,14 @@
         line-height: 1*$baseline;
         padding: 0.5*$baseline 0;
       }
+    }
+
+    ul {
+      padding-bottom: $baseline;
+    }
+
+    ul > li > ul {
+      padding-bottom: 0;
     }
 
     blockquote
@@ -260,7 +269,7 @@
       padding: 0;
       margin: 0;
       counter-reset: section;
-      margin-top: $baseline;
+      //margin-top: $baseline;
 
       >li
       {

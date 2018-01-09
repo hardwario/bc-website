@@ -9,4 +9,4 @@
 ## Resources
 
 * [**Documentation**](https://www.bigclown.com/doc/hardware/about-button-module/)
-* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-button-module)
+* [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-button)

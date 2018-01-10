@@ -41,8 +41,8 @@ items:
       link: "doc/projects/wireless-lcd-thermostat.md"
     - title: "Wireless CO2 Monitor"
       link: "doc/projects/wireless-co2-monitor.md"
-    - title: "Wireless LED Strip"
-      link: "doc/projects/wireless-led-strip.md"
+    - title: "Wireless Smart LED Strip"
+      link: "doc/projects/wireless-smart-led-strip.md"
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"

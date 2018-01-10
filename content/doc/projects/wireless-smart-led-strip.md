@@ -1,8 +1,8 @@
 ---
-title: "Wireless LED Strip"
+title: "Wireless Smart LED Strip"
 ---
 
-This document will guide you through the **Wireless LED Strip** project. You will be able to interact with your LED strip in **Node-RED** and Blynk.
+This document will guide you through the **Wireless Smart LED Strip** project. You will be able to interact with your LED strip in **Node-RED** and Blynk.
 
 ## Block Concept
 
@@ -52,7 +52,17 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-power-controller:latest
+    If your LED strip is **144 LEDs RGBW**:
+
+        bcf flash --dfu bigclownlabs/bcf-kit-wireless-power-controller-rgbw144:latest
+
+    If your LED strip is **150 LEDs RGB**:
+
+        bcf flash --dfu bigclownlabs/bcf-kit-wireless-power-controller-rgb150:latest
+
+    If your LED strip is **72 LEDs RGBW**:
+
+        bcf flash --dfu bigclownlabs/bcf-kit-wireless-power-controller-rgbw72:latest
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
@@ -64,9 +74,11 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "warning" %}}Make sure the **Power Module** does not have power adapter inserted.{{% /note %}}
 
-2. Plug the **Core Module** on top of the **PowerPower Module**.
+2. Plug the **Core Module** on top of the **Power Module**.
 
 3. Plug the **Cover Module** on top of the **Core Module**.
+
+4. Connect the LED strip to the pluggable socket on the right side.
 
 ## Playground Bootstrap
 
@@ -112,7 +124,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
-2. Insert the batteries into the **Wireless Push Button** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
+2. Connect the power adapter into the **Wireless Power Controller** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
 3. Click on the **Stop node pairing** button.
 
@@ -136,7 +148,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="radio-test.png" %}}
 
-## Integration with ...
+## Integration with Blynk
 
 **TODO**
 

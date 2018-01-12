@@ -224,7 +224,7 @@ We can do this by following this procedure:
 
 In case you get `Cannot open DFU device 0483:df11` while running the **bcf flash --dfu** command, you have the incorrect DFU drivers installed.
 
-{{% img-zoom src="windows-dfu-wrong-driver.png" %}}
+    {{% img src="windows-dfu-wrong-driver.png" %}}
 
 1. Execute `zadig` from Toolchain or Playground shell (from `cmd.exe` BigClown window):
 
@@ -234,23 +234,23 @@ In case you get `Cannot open DFU device 0483:df11` while running the **bcf flash
 
 3. Select Options -> List All Devices
 
-    {{% img-zoom src="windows-zadig-list-all-devices.png" %}}
+    {{% img src="windows-zadig-list-all-devices.png" %}}
 
 4. Choose **STM32 BOOTLOADER**:
 
-    {{% img-zoom src="windows-zadig-select.png" %}}
+    {{% img src="windows-zadig-select.png" %}}
 
 5. Choose **WinUSB**:
 
-    {{% img-zoom src="windows-zadig-winusb.png" %}}
+    {{% img src="windows-zadig-winusb.png" %}}
 
 6. Click on **Replace Driver**:
 
-    {{% img-zoom src="windows-zadig-replace.png" %}}
+    {{% img src="windows-zadig-replace.png" %}}
 
     {{< note "success" "You will get The driver was installed successfully notification." />}}
 
-    {{% img-zoom src="windows-zadig-installed.png" %}}
+    {{% img src="windows-zadig-installed.png" %}}
 
 7. Exit **Zadig** and get back to firmware flashing. The DFU driver repair procedure is finished.
 
@@ -265,7 +265,7 @@ There is not `Cannot open DFU device 0483:df11` between:
     A valid DFU suffix will be required in a future dfu-util release!!!
     No DFU capable USB device available
 
-{{% img-zoom src="windows-dfu-no-device.png" %}}
+{{% img src="windows-dfu-no-device.png" %}}
 
 There can be various reasons:
 

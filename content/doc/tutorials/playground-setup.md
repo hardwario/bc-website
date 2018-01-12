@@ -50,11 +50,13 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% download "Download Windows Playground from GitHub" "https://github.com/bigclownlabs/bch-playground-windows/releases/latest" %}}
 
+    After installation browser is navigated to Node-RED.        
+
     {{% note "warning" %}}During installation **Python3** and **Node.js** are uninstalled (in case there was previous installation) and installed again. **Python3** and **Node.js** installers do not handle reinstallation correctly under some circumstances unfortunately.{{% /note %}}
 
     {{< note "info" "Windows firewall is configured during installation to allow TCP connections from all networks for Node.js and Mosquitto." />}}
 
-2. Open the **Command Prompt** application (or execute **BigClown Playground** from the Start menu).
+2. Execute **BigClown Playground** from the Start menu.
 
 3. Check services with `pm2 list`, you should get something like:
 
@@ -68,48 +70,53 @@ If you already have previously installed playground, you can upgrade it at any t
     └───────────┴────┴──────┴───────┴────────┴─────────┴────────┴─────┴───────────┴────────┴──────────┘
     ```
 
-4. Plug the **BigClown USB Dongle** into a USB port.
+4. Restart PC.
 
-5. List the available devices:
+5. Execute **BigClown Playground** from the Start menu.
+
+6. Plug the **BigClown USB Dongle** into a USB port.
+
+7. List the available devices:
 
         bcf devices
 
     {{% note "info" %}}You can use `-v` parameter to see verbose information about the connected devices (possibly helping you to identify them).{{% /note %}}
 
-6. Upload the latest firmware into the **BigClown USB Dongle**:
-
-        bcf update
-    \
+8. Upload the latest firmware into the **BigClown USB Dongle**:
 
         bcf flash --device ... bigclownlabs/bcf-gateway-usb-dongle:latest
 
     {{% note "warning" %}}You have to replace `...` with the device (you can look it up using `bcf devices`.{{% /note %}}
 
-7. Start the **BigClown Gateway** (in the background):
+    {{% note "info" %}}`bcf update` is executed during installation.{{% /note %}}
 
-        pm2 start "C:\Program Files (x86)\Python36-32\lib\site-packages\bcg\gateway.py" --name bcg -- --wait --device ...
+10. Restart Mosquitto and Node-RED:
+
+        pm2 resurrect
+
+11. Start the **BigClown Gateway** (in the background):
+
+        pm2 start "%BigClownGateway%" --name bcg -- --device ...
 
     {{% note "note" %}}Replace `...` with the device listed using `bcf devices`, e.g. `COM5`{{% /note %}}
 
     Example:
 
-        pm2 start "C:\Program Files (x86)\Python36-32\lib\site-packages\bcg\gateway.py" --name bcg -- --wait --device ...
-
-    {{% note "note" %}}Replace `...` with the device listed using `bcf devices`, e.g. `COM5`{{% /note %}}
+        pm2 start "%BigClownGateway%" --name bcg -- --device com5
 
     {{% note "info" %}}You can see the log outputs from the **bcg** application using the `pm2 logs bcg` command. Quit the log watching using the `Ctrl-C` keyboard shortcut.{{% /note %}}
 
-8. Tell **PM2** to save state:
+12. Tell **PM2** to save state:
 
         pm2 save
 
-    {{% note "info" %}}You can restart all services after reboot or login (user session start) by the command `pm2 restart all`.{{% /note %}}
+    {{% note "info" %}}You can restart all services after reboot or login (user session start) by the command `pm2 resurrect`.{{% /note %}}
 
-9. Open your web browser with the URL:
+13. Open your web browser with the URL:
 
-    **http://localhost:1880/**
+    ** http://localhost:1880/ **
 
-10. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
+14. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
 
     * [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.md" >}})
     * [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.md" >}})

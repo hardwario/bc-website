@@ -80,7 +80,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
         bcf devices
 
-    {{% note "info" %}}You can use `-v` parameter to see verbose information about the connected devices (possibly helping you to identify them).{{% /note %}}
+    {{% note "info" %}}You can use `bcf devices -v` to see verbose information about the connected devices (possibly helping you to identify them).{{% /note %}}
 
 8. Upload the latest firmware into the **BigClown USB Dongle**:
 
@@ -93,6 +93,8 @@ If you already have previously installed playground, you can upgrade it at any t
 10. Restart Mosquitto and Node-RED:
 
         pm2 resurrect
+
+    {{% note "info" %}}You have to do that after any PC restart and logoff.{{% /note %}}        
 
 11. Start the **BigClown Gateway** (in the background):
 
@@ -112,9 +114,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "info" %}}You can restart all services after reboot or login (user session start) by the command `pm2 resurrect`.{{% /note %}}
 
-13. Open your web browser with the URL:
-
-    ** http://localhost:1880/ **
+13. Open your web browser with the URL: **http://localhost:1880/**
 
 14. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
 

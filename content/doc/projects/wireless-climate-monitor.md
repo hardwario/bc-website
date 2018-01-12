@@ -142,7 +142,55 @@ Optionally put the assembly into the appropriate enclosure, if you have one.
 
 ## Integration with Blynk
 
-**TODO**
+Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is visit their [**page**](https://www.blynk.cc/)</a>. In our example we will be showing you how to display graphs from sensor's values in **Blynk**'s mobile application.
+
+Firstly we need to configure our **Node-RED** app.
+
+1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**).
+
+    {{% img-zoom src="nodered-screen-3.png" width="300" %}}
+
+2. Add another flow (you can add them by big plus button next to the flow name).
+
+3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
+
+    ```json
+    [{"id":"c7e756bb.71c928","type":"blynk-websockets-out-write","z":"b1df9271.05d5","name":"","pin":"0","client":"c8872bd1.636cb8","x":780,"y":220,"wires":[]},{"id":"2f909f2d.48742","type":"blynk-websockets-out-write","z":"b1df9271.05d5","name":"","pin":"1","client":"c8872bd1.636cb8","x":780,"y":280,"wires":[]},{"id":"35bf3efb.8cf392","type":"blynk-websockets-out-write","z":"b1df9271.05d5","name":"","pin":"2","client":"c8872bd1.636cb8","x":780,"y":340,"wires":[]},{"id":"4db9c585.06680c","type":"mqtt in","z":"b1df9271.05d5","name":"","topic":"node/kit-lcd-thermostat:0/lux-meter/0:0/illuminance","qos":"2","broker":"3dded649.aa80aa","x":330,"y":220,"wires":[["c7e756bb.71c928"]]},{"id":"a1a2bff5.c49da","type":"mqtt in","z":"b1df9271.05d5","name":"","topic":"node/kit-lcd-thermostat:0/thermometer/0:0/temperature","qos":"2","broker":"3dded649.aa80aa","x":340,"y":280,"wires":[["2f909f2d.48742"]]},{"id":"cdb820bb.66d9f","type":"mqtt in","z":"b1df9271.05d5","name":"","topic":"node/kit-lcd-thermostat:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"3dded649.aa80aa","x":350,"y":340,"wires":[["35bf3efb.8cf392"]]},{"id":"c8872bd1.636cb8","type":"blynk-websockets-client","z":"","name":"","path":"ws://blynk-cloud.com:8080/websockets","key":"08b1b764cfb04e53ae04a86f96280845"},{"id":"3dded649.aa80aa","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```
+
+    It will look like this:
+
+    {{% img-zoom src="nodered-screen-1.png" %}}
+
+    {{% note "info" %}}In case you want use it for another sensors just change MQTT topics.{{% /note %}}
+
+4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com:8080/websockets`. The secret key we will configure later after obtaining one.
+
+    {{% img-zoom src="nodered-screen-2.png" width="400" %}}
+
+5. Now download the **Blynk** app from [**App Store**](https://itunes.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481?mt=8) or [**Google Play**](https://play.google.com/store/apps/details?id=cc.blynk&hl=en).
+
+6. After installing, you should create account, login and you should see something like that:
+
+    {{% img-zoom src="blynk-3.png" width="300" %}}
+
+7. Now click a button on the top right to scan QR code.
+
+    {{% img-zoom src="blynk-copy.png" width="300" %}}
+
+8. Now you should scan following QR code to get everything preconfigured.
+
+    {{% img-zoom src="blynk-qr.png" width="400" %}}
+
+9. You should see something like this:
+
+    {{% img-zoom src="blynk-10.png" width="300" %}}
+
+10. Click the settings wheel and you should see settings for your project. Wee need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
+
+    {{% img-zoom src="blynk-auth.png" width="300" %}}
+
+11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
 
 ## Related Documents
 

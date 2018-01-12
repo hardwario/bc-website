@@ -1,19 +1,23 @@
 ---
-title: About LCD Module
+title: "About LCD Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="lcd-module.png" alt="LCD Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="lcd-module.png" alt="LCD Module" width="300">
-<p>{{< include "shop/pitch-lcd-module-bg.md" >}}</p>
-</div>
+{{< include "shop/pitch-lcd-module-bg.md" >}}
+
+{{< hw-shop "lcd-module-bg" >}}
+{{< hw-sch "bc-module-lcd" >}}
+{{< hw-sdk "group__bc__module__lcd" >}}
+{{< hw-h-file "bc_module_lcd.h" >}}
+{{< hw-c-file "bc_module_lcd.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-lcd-module-bg.md" >}}
+
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Wireless LCD Thermostat Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-lcd-thermostat/releases)
+

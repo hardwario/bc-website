@@ -1,21 +1,22 @@
 ---
-title: About Temperature Tag
+title: "About Temperature Tag"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="temperature-tag.png" alt="Temperature Tag" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="temperature-tag.png" alt="Temperature Tag" width="300">
-<p>{{< include "shop/pitch-temperature-tag.md" >}}</p>
-</div>
+{{< include "shop/pitch-temperature-tag.md" >}}
+
+{{< hw-shop "temperature-tag" >}}
+{{< hw-sch "bc-tag-temperature" >}}
+{{< hw-sdk "group__bc__tag__temperature" >}}
+{{< hw-h-file "bc_tag_temperature.h" >}}
+{{< hw-c-file "bc_tag_temperature.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-temperature-tag.md" >}}
 
-{{< hardware "Temperature Tag" >}}
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Wireless CO2 Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-co2-monitor/)

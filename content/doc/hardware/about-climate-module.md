@@ -1,21 +1,22 @@
 ---
-title: About Climate Module
+title: "About Climate Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="climate-module.png" alt="Climate Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="climate-module.png" alt="Climate Module" width="300">
-<p>{{< include "shop/pitch-climate-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-climate-module.md" >}}
+
+{{< hw-shop "climate-module" >}}
+{{< hw-sch "bc-module-climate" >}}
+{{< hw-sdk "group__bc__module__climate" >}}
+{{< hw-h-file "bc_module_climate.h" >}}
+{{< hw-c-file "bc_module_climate.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-climate-module.md" >}}
 
-{{< hardware "Climate Module" >}}
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Wireless Climate Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-climate-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-climate-monitor/)

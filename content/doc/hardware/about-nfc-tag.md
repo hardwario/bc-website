@@ -1,19 +1,14 @@
 ---
-title: About NFC Tag
+title: "About NFC Tag"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="nfc-tag.png" alt="NFC Tag" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="nfc-tag.png" alt="NFC Tag" width="300">
-<p>{{< include "shop/pitch-nfc-tag.md" >}}</p>
-</div>
+{{< include "shop/pitch-nfc-tag.md" >}}
+
+{{< hw-shop "nfc-tag" >}}
+{{< hw-sch "bc-tag-nfc" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-nfc-tag.md" >}}

@@ -1,21 +1,14 @@
 ---
-title: About Base Module
+title: "About Base Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="base-module.png" alt="Base Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="base-module.png" alt="Base Module" width="300">
-<p>{{< include "shop/pitch-base-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-base-module.md" >}}
+
+{{< hw-shop "base-module" >}}
+{{< hw-sch "bc-module-base" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-base-module.md" >}}
-
-{{< hardware "Base Module" >}}

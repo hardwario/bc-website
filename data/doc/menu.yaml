@@ -41,8 +41,8 @@ items:
       link: "doc/projects/wireless-lcd-thermostat.md"
     - title: "Wireless CO2 Monitor"
       link: "doc/projects/wireless-co2-monitor.md"
-    - title: "Wireless LED Strip"
-      link: "doc/projects/wireless-led-strip.md"
+    - title: "Wireless Smart LED Strip"
+      link: "doc/projects/wireless-smart-led-strip.md"
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"
@@ -51,8 +51,6 @@ items:
       link: "doc/interfaces/sub-ghz-radio.md"
     - title: "Sigfox Radio"
       link: "doc/interfaces/sigfox-radio.md"
-    - title: "USB Interface"
-      link: "doc/interfaces/usb-interface.md"
   - title: "Integrations"
     items:
       - title: "MQTT Topics"
@@ -61,6 +59,8 @@ items:
         link: "doc/integrations/grafana-for-visualization.md"
       - title: "Blynk for Mobile Application"
         link: "doc/integrations/blynk-for-mobile-applications.md"
+      - title: "Anemone Platform"
+        link: "doc/integrations/anemone-platform.md"
   - title: "Hardware"
     items:
     - title: "Basic Principles"

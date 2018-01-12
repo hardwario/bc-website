@@ -1,21 +1,21 @@
 ---
-title: About Relay Module
+title: "About Relay Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="relay-module.png" alt="Relay Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="relay-module.png" alt="Relay Module" width="300">
-<p>{{< include "shop/pitch-relay-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-relay-module.md" >}}
+
+{{< hw-shop "relay-module" >}}
+{{< hw-sch "bc-module-relay" >}}
+{{< hw-sdk "group__bc__module__relay" >}}
+{{< hw-h-file "bc_module_relay.h" >}}
+{{< hw-c-file "bc_module_relay.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-relay-module.md" >}}
 
-{{< hardware "Relay Module" >}}
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)

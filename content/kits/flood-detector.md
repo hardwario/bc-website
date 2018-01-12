@@ -6,54 +6,18 @@ isBasic: false
 isPremium: true
 isUltimate: true
 images:
-  preview: /kits/flood-detector/preview.png
-  hover: /kits/flood-detector/hover.png
-  main: /kits/flood-detector/main.png
+  preview: preview.png
+  hover: hover.png
+  main: main.png
 isStarter: false
 recommended: false
 included:
 notIncluded:
 weight: 40
 price: €67
-buyLink: "https://shop.bigclown.com/flood-detector-kit/"
-modules:
-  core:
-    name: Core Module
-    weight: 200
-    image:
-      small: Modules_382x324_Core.png
-      full:
-  mini_battery:
-    name: Mini Battery Module
-    weight: 300
-    image:
-      small: Modules_382x324_MiniBattery.png
-      full:
-  sensor:
-    name: Sensor Module
-    weight: 600
-    image:
-      small: Modules_382x324_Sensor.png
-      full:
-  flood:
-    name: Flood Detector
-    weight: 700
-    image:
-      small: Modules_382x324_Flood detector.png
-      full:
-  enclosures:
-    name: 3D-printed Enclosure BCE501
-    weight: 800
-    image:
-      small: Enclosure-BCE501.png
-      full:
-optionalModules:
-  sigfox:
-    name: Sigfox Module
-    weight: 100
-    image:
-      small: Modules_382x324_Sigfox.png
-      full:
+buyLink: "https://shop.bigclown.com/flood-detector-kit/?currency=EUR"
+modules: ["core","mini_battery","sensor","flood","enclosures-501"]
+optionalModules: ["sigfox"]
 
 ---
 

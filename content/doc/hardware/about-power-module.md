@@ -1,21 +1,24 @@
 ---
-title: About Power Module
+title: "About Power Module"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="power-module.png" alt="Power Module" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="power-module.png" alt="Power Module" width="300">
-<p>{{< include "shop/pitch-power-module.md" >}}</p>
-</div>
+{{< include "shop/pitch-power-module.md" >}}
+
+{{< hw-shop "power-module" >}}
+{{< hw-sch "bc-module-power" >}}
+{{< hw-sdk "group__bc__module__power" >}}
+{{< hw-h-file "bc_module_power.h" >}}
+{{< hw-c-file "bc_module_power.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-power-module.md" >}}
 
-{{< hardware "Power Module" >}}
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+
+    Note: Use firmware for node-power-module and type and length of LED strip (optional)
+* [**Wireless Power Controller Kit and LED strip**](https://github.com/bigclownlabs/bcf-kit-wireless-power-controller/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-led-strip/)

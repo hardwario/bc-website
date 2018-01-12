@@ -170,8 +170,6 @@ This is a brief list of differences:
 
 * The following records were added to the repository APT list:
 
-    * **https://repo.bigclown.com**
-
     * **https://apt.dockerproject.org/repo**
 
 * By default, these packages are also installed:
@@ -233,7 +231,7 @@ This is a brief list of differences:
 
 7. Tell **PM2** to run **Node-RED**:
 
-        pm2 start `which node-red` -- -v
+        pm2 start `which node-red` -- --verbose
     \
 
         pm2 save

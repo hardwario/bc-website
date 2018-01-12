@@ -5,7 +5,7 @@ intro: "I am Kamil Polak"
 email: kamil.polak@hardwario.com
 weight: 5
 images:
-  preview: /team/preview/kamil.jpg
+  preview: kamil.jpg
   full: ""
 social:
   twitter:

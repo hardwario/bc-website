@@ -2,7 +2,7 @@
   <a href="{{ .Permalink }}" class="articles__item articles__item--2">
 
     <div class="articles__item__image">
-      <img src="{{ .Params.images.preview }}" alt="{{ .Title }}" />
+      <img src="{{ .Page.URL }}{{ .Params.images.preview }}" alt="{{ .Title }}" />
     </div>
 
     <div class="articles__content articles__content--2">
@@ -10,7 +10,7 @@
       <p class="articles__text articles__text--2">{{ .Params.description }}</p>
     </div>
     <div class="articles__author d-flex align-items-center">
-      <div class="articles__author__image"><img src="{{ .Params.author.image }}" alt="{{ .Params.author.name }}" /></div>
+      <div class="articles__author__image"><img src="/authors/{{ .Params.author.image }}" alt="{{ .Params.author.name }}" /></div>
       <div class="articles__author__title">{{ .Params.author.name }}</div>
       <div class="ml-auto articles__author__time">{{ .Date.Format "2 January 2006" }}</div>
     </div>

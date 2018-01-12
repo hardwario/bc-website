@@ -3,9 +3,9 @@ title: Petr Konvicka
 position: Firmware Designer
 intro: "I am Petr Konvicka"
 email: petr.konvicka@hardwario.com
-weight: 7
+weight: 8
 images:
-  preview: /team/preview/petr.jpg
+  preview: petr.jpg
   full: ""
 social:
   github:

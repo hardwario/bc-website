@@ -1,21 +1,22 @@
 ---
-title: About Barometer Tag
+title: "About Barometer Tag"
 ---
 
-<style>
-.module-pitch img {
-    margin: 50px;
-}
-.module-pitch p {
-    margin-top: 50px;
-}
-</style>
+{{< img-float src="barometer-tag.png" alt="Barometer Tag" width="300" >}}
 
-<div class="clearfix module-pitch">
-<img class="pull-left" src="barometer-tag.png" alt="Barometer Tag" width="300">
-<p>{{< include "shop/pitch-barometer-tag.md" >}}</p>
-</div>
+{{< include "shop/pitch-barometer-tag.md" >}}
+
+{{< hw-shop "barometer-tag" >}}
+{{< hw-sch "bc-tag-barometer" >}}
+{{< hw-sdk "group__bc__tag__barometer" >}}
+{{< hw-h-file "bc_tag_barometer.h" >}}
+{{< hw-c-file "bc_tag_barometer.c" >}}
+
+{{< /img-float >}}
 
 {{< include "shop/body-barometer-tag.md" >}}
 
-{{< hardware "Barometer Tag" >}}
+## Firmware Projects
+
+* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Wireless CO2 Monitor Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-co2-monitor/)

@@ -5,7 +5,7 @@ intro: "I am Pavel Hubner"
 email: pavel.hubnerk@hardwario.com
 weight: 2
 images:
-  preview: /team/preview/pavel.jpg
+  preview: pavel.jpg
   full: ""
 social:
   facebook:

@@ -5,7 +5,7 @@ intro: "I am Karel Blavka"
 email: karel.blavka@hardwario.com
 weight: 6
 images:
-  preview: /team/preview/karel.jpg
+  preview: karel.jpg
   full: ""
 social:
   twitter:

@@ -1,0 +1,4 @@
+<div class="clearfix">
+<img class="pull-right" src="{{ .Get "src" }}"{{ with .Get "alt"}}alt="{{ . }}"{{ else }}alt=""{{ end }} width="{{ .Get "width" }}"{{ with .Get "height"}} height="{{ . }}"{{ end }} style="margin-left: 50px;">
+{{- .Inner | markdownify -}}
+</div>

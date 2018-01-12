@@ -5,7 +5,7 @@ intro: "I am Martin Hubacek"
 email: martin.hubacek@hardwario.com
 weight: 7
 images:
-  preview: /team/preview/martin.jpg
+  preview: martin.jpg
   full: ""
 social:
   twitter:

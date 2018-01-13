@@ -116,7 +116,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Wireless Push Button**.
+In this section, we will create a radio link between the **USB Dongle** and the **Wireless Smart LED strip**.
 
 Follow these steps in **Node-RED**:
 
@@ -130,7 +130,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Push Button**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Smart LED Strip**) and the gateway (**USB Dongle**).{{% /note %}}
 
 ## Communication Test
 
@@ -150,7 +150,55 @@ Follow these steps in **Node-RED**:
 
 ## Integration with Blynk
 
-**TODO**
+Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is to visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how to control LED strip colours in **Blynk**'s mobile application.
+
+Firstly we need to configure our **Node-RED** app.
+
+1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`.
+
+    {{% img-zoom src="nodered-1.png" height="300" width="120" %}}
+
+2. Add another flow (you can add them by big plus button next to the flow name).
+
+3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
+
+    ```json
+    [{"id":"b00f8559.697958","type":"function","z":"5fd692ba.a3e13c","name":"Convert to BC format","func":"var finalString = '\"#'\nmsg.arrayOfValues.forEach((color) => {\n    var carry = (parseInt(color)).toString(16)\n    if(carry.length == 1) carry = \"0\" + carry;\n    finalString += carry;\n});\n\nmsg.payload = finalString + '\"';\nreturn msg;\n","outputs":1,"noerr":0,"x":520,"y":1200,"wires":[["1fe255e8.628c5a"]]},{"id":"1fe255e8.628c5a","type":"mqtt out","z":"5fd692ba.a3e13c","name":"","topic":"node/kit-power-controller:0/led-strip/-/color/set","qos":"","retain":"","broker":"8e371e1b.69ef1","x":894,"y":1198,"wires":[]},{"id":"7c02d28e.11b20c","type":"blynk-ws-in-write","z":"5fd692ba.a3e13c","name":"","pin":"1","client":"94c82c06.efc92","x":250,"y":1200,"wires":[["b00f8559.697958"]]},{"id":"8e371e1b.69ef1","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```
+
+    It will look like this:
+
+    {{% img-zoom src="nodered-2.png" %}}
+
+    {{% note "info" %}}In case you want use it for another sensors just change MQTT topics.{{% /note %}}
+
+4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com:8080/websockets`. The secret key we will configure later after obtaining one.
+
+    {{% img-zoom src="nodered-screen-2.png" width="400" %}}
+
+5. Now download the **Blynk** app from [**App Store**](https://itunes.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481?mt=8) or [**Google Play**](https://play.google.com/store/apps/details?id=cc.blynk&hl=en).
+
+6. After installing, you should create account, login and you should see something like that:
+
+    {{% img-zoom src="blynk-1.png" width="300" %}}
+
+7. Now click a button on the top right to scan QR code.
+
+    {{% img-zoom src="blynk-2.png" width="300" %}}
+
+8. Now you should scan following QR code to get everything preconfigured.
+
+    {{% img-zoom src="blynk-qr.png" width="400" %}}
+
+9. You should see something like this:
+
+    {{% img-zoom src="blynk-3.png" width="300" %}}
+
+10. Click the settings wheel and you should see settings for your project. Wee need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
+
+    {{% img-zoom src="blynk-4.png" width="300" %}}
+
+11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
 
 ## Related Documents
 

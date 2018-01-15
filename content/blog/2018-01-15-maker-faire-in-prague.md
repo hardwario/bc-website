@@ -28,7 +28,7 @@ These are the roles we are going to take our part in:
 
 * There will be a live demonstration of two **BigClown integrations**:
 
-    * Secure router **Turris Omnia** (CZ.nic)
+    * Secure router **Turris Omnia** (CZ.NIC)
 
     * Cloud platform **Anemone** (Juicymo)
 

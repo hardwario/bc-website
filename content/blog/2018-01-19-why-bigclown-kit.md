@@ -126,7 +126,11 @@ There is not open, secure (authentication & encryption, automatic encyption key 
 
 There are several levels for extensions, you can:
 
-* Connect simple sensors and actuators through the connector on Sensor Module. Use a breadboard or wires and I/O brought to the [HEADER](https://www.bigclown.com/doc/hardware/headers-and-signals/#module-drawing-standard) with GPIO, I2C, UART, SPI, PWM, ADC, DAC etc ([Beadboard Module](https://www.bigclown.com/doc/hardware/about-breadboard-module/) may help you).
+* Connect simple sensors and actuators through the connector on [Sensor Module](https://www.bigclown.com/doc/hardware/about-sensor-module/).
+
+* Use a breadboard or wires and I/O brought to the [HEADER](https://www.bigclown.com/doc/hardware/headers-and-signals/#module-drawing-standard) with GPIO, I2C, UART, SPI, PWM, ADC, DAC etc ([Beadboard Module](https://www.bigclown.com/doc/hardware/about-breadboard-module/) may help you).
+
+* Use [SMT](https://en.wikipedia.org/wiki/Surface-mount_technology) prototyping area on [Battery Module](https://cdn.myshoptet.com/usr/shop.bigclown.com/user/shop/big/42.png?5a1ae639).
 
 * Design your own Module - just use the Module size and HEADER signals on your PCB.
 

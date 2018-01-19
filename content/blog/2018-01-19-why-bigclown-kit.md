@@ -22,6 +22,8 @@ There are plenty of [STEM](https://en.wikipedia.org/wiki/Science,_technology,_en
 
 Try to find 5 differences - just Google how an [Arduino PIR motion detector](https://www.google.com/search?q=Arduino+PIR&tbm=isch) looks like and compare it with the one made using [BigClown PIR Kit](https://www.google.com/search?q=BigClown+PIR&tbm=isch).
 
+Let me give you some hints: the presence of the enclosure, radio communication and battery operation for years (well, the last one is not really obvious from the picture ;-)
+
 That's right, BigClown PIR motion detector does not have any wires and no soldering is required - we have pluggable modules:
 
 {{< youtube "ophRx1tAmfA" >}}

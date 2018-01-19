@@ -94,7 +94,7 @@ There is not any other kit with all the above defined properties AFAIK.
 
 ### Why BigClown is not Arduino compatible?
 
-* Arduino is great for many purposes and have the biggest maker community, but have some issues also:
+Arduino is great for many purposes and have the biggest maker community, but have some issues also:
 
 * Wireless communication is not natural part of Arduino ecosystem (HW, firmware, IDE, integrations).
 
@@ -104,7 +104,7 @@ There is not any other kit with all the above defined properties AFAIK.
 
 * Arduino lacks the security.
 
-* Arduino lacks the pre-built firmware images and their management
+* Arduino lacks the pre-built firmware images and their management.
 
 * Arduino UNO has a lack of MCU resources (flash and RAM, [TRNG](https://en.wikipedia.org/wiki/Hardware_random_number_generator), [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) hw acceleration).
 

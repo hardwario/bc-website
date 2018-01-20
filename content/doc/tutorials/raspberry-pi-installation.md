@@ -2,7 +2,7 @@
 title: Raspberry Pi Installation
 ---
 
-{{% note "warning" %}}If you already have Raspberry Pi with the original Raspbian distribution, go to the section [**Setup on Original Raspbian**]({{< relref "#setup-on-original-raspbian" >}}).{{% /note %}}
+{{% note "warning" %}}If you already have Raspberry Pi with the original Raspbian distribution, go to the section [**Setup on Original Raspbian**]({{< relref "#setup-on-original-raspbian" >}}). Or if you have OSMC, go to section [**Setup on OSMC**]({{< relref "#setup-on-osmc" >}}){{% /note %}}
 
 This document will guide you through installing Raspberry Pi. The tutorial is tested for Raspberry Pi 3 (Model B) but should also work for older Raspberry Pi 2.
 
@@ -170,35 +170,25 @@ This is a brief list of differences:
 
 * The following records were added to the repository APT list:
 
-    * **https://apt.dockerproject.org/repo**
+    * https://deb.nodesource.com/node_8.x
+    * http://repo.mosquitto.org/debian
 
 * By default, these packages are also installed:
 
     * mosquitto
-
-    * mosquitto-clients
-
-    * docker
-
-    * htop
-
-    * git
-
-    * python3.4
-
-    * python3-paho-mqtt
-
-    * python3-venv
-
-    * python3-pip
-
-    * bc-common
-
-    * bc-gateway
-
-    * bc-workroom-led-strip
-
-    * bc-workroom-blynk
+	* mosquitto-clients
+	* nodejs
+	* python3-pip
+	* python3-venv
+	* dfu-util
+	* git
+	* htop
+	* mc
+	* tmux
+    * npm pm2
+	* npm node-red
+    * pip3 bcf
+    * pip3 bcg
 
 ## Setup on Original Raspbian
 
@@ -238,15 +228,15 @@ This is a brief list of differences:
 
 8. Tell **PM2** to run on boot:
 
-        sudo -H PM2_HOME=/home/pi/.pm2 pm2 startup systemd -u pi
+        sudo -H PM2_HOME=/home/$(whoami)/.pm2 pm2 startup systemd -u $(whoami)
 
     \
 
-        sudo chmod 644 /etc/systemd/system/pm2-pi.service
+        sudo -H chmod 644 /etc/systemd/system/pm2-$(whoami).service
 
 9. Install **Python 3** (required by the **BigClown Firmware Tool** and **BigClown Gateway**):
 
-        sudo apt install python3 python3-pip
+        sudo apt install python3 python3-pip python3-setuptools
 
 10. Update **pip** (Python Package Manager) to the latest version:
 
@@ -267,6 +257,8 @@ This is a brief list of differences:
     \
 
         echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyACM*", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", SYMLINK+="bcCM%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcCM%n"' | sudo tee --append /etc/udev/rules.d/59-bigclown-core-module.rules
+
+    {{% note "warning" %}}Unplug and plug gateway.{{% /note %}}
 
 14. Create folder for configuration file
 
@@ -368,6 +360,24 @@ The connection procedure is as following:
         sudo reboot
 
 6. Log in and verify using the `iwlist` command, that the connection is active.
+
+## Setup on OSMC
+
+1. Log in to the Raspberry Pi using SSH.
+
+    * default login `osmc`
+
+    * default password `osmc`
+
+2. Upgrade all packages:
+
+        sudo apt update && sudo apt full-upgrade
+
+3. Install dependency for node-gyp
+
+        sudo apt install build-essential
+
+4. Continue point 3 in section the section [**Setup on Original Raspbian**]({{< relref "#setup-on-original-raspbian" >}})
 
 ## Related Documents
 

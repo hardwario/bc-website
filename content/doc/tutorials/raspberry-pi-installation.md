@@ -214,9 +214,9 @@ This is a brief list of differences:
 
         sudo apt install mosquitto mosquitto-clients
 
-4. Install **Node.js** version 6 (required by **Node-RED**).
+4. Install **Node.js** version 8 (required by **Node-RED**).
 
-        curl -sL  https://deb.nodesource.com/setup_6.x | sudo -E bash -
+        curl -sL  https://deb.nodesource.com/setup_8.x | sudo -E bash -
     \
 
         sudo apt-get install -y nodejs

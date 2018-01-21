@@ -170,8 +170,6 @@ Firstly we need to configure our **Node-RED** app.
 
     {{% img-zoom src="nodered-2.png" %}}
 
-    {{% note "info" %}}In case you want use it for another sensors just change MQTT topics.{{% /note %}}
-
 4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com:8080/websockets`. The secret key we will configure later after obtaining one.
 
     {{% img-zoom src="nodered-screen-2.png" width="400" %}}

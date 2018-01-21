@@ -29,6 +29,8 @@ items:
       link: "doc/tutorials/turris-installation.md"
     - title: "MySigfox.com service"
       link: "doc/tutorials/mysigfox-com-service.md"
+    - title: "NodeRED Library Installation"
+      link: "doc/tutorials/nodered-library-installation.md"
   - title: "Projects"
     items:
     - title: "Wireless Push Button"

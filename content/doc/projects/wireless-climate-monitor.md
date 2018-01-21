@@ -146,7 +146,7 @@ Now we have assembled our kit and let's start with some basic integration with *
 
 Firstly we need to configure our **Node-RED** app.
 
-1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**).
+1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-websockets`. You can follow [**this**]({{< relref "doc/tutorials/nodered-library-installation.md" >}}) example for installing libraries to **NodeRED**.
 
     {{% img-zoom src="nodered-screen-3.png" width="300" %}}
 

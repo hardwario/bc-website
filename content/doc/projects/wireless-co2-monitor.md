@@ -149,7 +149,55 @@ Follow these steps in **Node-RED**:
 
 ## Integration with Blynk
 
-**TODO**
+Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is to visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how display values from your sensors in **Blynk**'s mobile application.
+
+Firstly we need to configure our **Node-RED** app.
+
+1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`. You can follow [**this**]({{< relref "doc/tutorials/nodered-library-installation.md" >}}) example for installing libraries to **NodeRED**.
+
+    {{% img-zoom src="integration-nodered-1.png" width="120" %}}
+
+2. Add another flow (you can add them by big plus button next to the flow name).
+
+3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
+
+    ```json
+    [{"id":"87ece885.9fd5a8","type":"mqtt in","z":"5b07d857.568098","name":"","topic":"node/kit-co2-monitor:0/thermometer/0:1/temperature","qos":"2","broker":"5945704d.ca505","x":350,"y":240,"wires":[["14b4fce7.bb3503"]]},{"id":"8111c212.33c58","type":"mqtt in","z":"5b07d857.568098","name":"","topic":"node/kit-co2-monitor:0/hygrometer/0:2/relative-humidity","qos":"2","broker":"5945704d.ca505","x":360,"y":300,"wires":[["b3c2fbb.09d9908"]]},{"id":"27bfaba5.da7a54","type":"mqtt in","z":"5b07d857.568098","name":"","topic":"node/kit-co2-monitor:0/barometer/0:0/pressure","qos":"2","broker":"5945704d.ca505","x":330,"y":360,"wires":[["b2987be4.1a1608"]]},{"id":"14b4fce7.bb3503","type":"blynk-ws-out-write","z":"5b07d857.568098","name":"","pin":"0","pinmode":0,"client":"94c82c06.efc92","x":720,"y":240,"wires":[]},{"id":"b45335cc.367e28","type":"mqtt in","z":"5b07d857.568098","name":"","topic":"node/kit-co2-monitor:0/co2-meter/-/concentration","qos":"2","broker":"5945704d.ca505","x":340,"y":420,"wires":[["20a51e7e.f566f2"]]},{"id":"b3c2fbb.09d9908","type":"blynk-ws-out-write","z":"5b07d857.568098","name":"","pin":"1","pinmode":0,"client":"94c82c06.efc92","x":720,"y":300,"wires":[]},{"id":"b2987be4.1a1608","type":"blynk-ws-out-write","z":"5b07d857.568098","name":"","pin":"2","pinmode":0,"client":"94c82c06.efc92","x":720,"y":360,"wires":[]},{"id":"20a51e7e.f566f2","type":"blynk-ws-out-write","z":"5b07d857.568098","name":"","pin":"3","pinmode":0,"client":"94c82c06.efc92","x":720,"y":420,"wires":[]},{"id":"5945704d.ca505","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"94c82c06.efc92","type":"blynk-ws-client","z":"","name":"","path":"ws://blynk-cloud.com:8080/websockets","key":"810308c6d3b54fb0868837a192e5de60","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""}]
+    ```
+
+    It will look like this:
+
+    {{% img-zoom src="integration-nodered-2.png" %}}
+
+4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com:8080/websockets`. The secret key we will configure later after obtaining one.
+
+    {{% img-zoom src="integration-nodered-3.png" width="400" %}}
+
+5. Now download the **Blynk** app from [**App Store**](https://itunes.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481?mt=8) or [**Google Play**](https://play.google.com/store/apps/details?id=cc.blynk&hl=en).
+
+6. After installing, you should create account, login and you should see something like that:
+
+    {{% img-zoom src="integration-blynk-4.png" width="300" %}}
+
+7. Now click a button on the top right to scan QR code.
+
+    {{% img-zoom src="integration-blynk-5.png" width="300" %}}
+
+8. Now you should scan following QR code to get everything preconfigured.
+
+    {{% img-zoom src="integration-blynk-6.png" width="400" %}}
+
+9. You should see something like this:
+
+    {{% img-zoom src="integration-blynk-7.png" width="300" %}}
+
+    {{% note "info" %}}You will see values after you launch your integration project.{{% /note %}}
+
+10. Click the settings wheel and you should see settings for your project. Wee need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
+
+    {{% img-zoom src="integration-blynk-8.png" width="300" %}}
+
+11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
 
 ## Related Documents
 

@@ -49,5 +49,4 @@ This tool allows writing of the custom scripts in the JavaScripts.
 You can automate tasks using scripting.
 {{< /note >}}
 
-
-![MQTT Spy tool](mqtt-spy.png)
+{{% img-zoom src="mqtt-spy.png" %}}

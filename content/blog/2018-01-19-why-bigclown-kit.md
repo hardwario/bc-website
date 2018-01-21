@@ -94,7 +94,7 @@ There is not any other kit with all the above defined properties AFAIK.
 
 ### Why BigClown is not Arduino compatible?
 
-* Arduino is great for many purposes and have the biggest maker community, but have some issues also:
+Arduino is great for many purposes and have the biggest maker community, but have some issues also:
 
 * Wireless communication is not natural part of Arduino ecosystem (HW, firmware, IDE, integrations).
 
@@ -104,7 +104,7 @@ There is not any other kit with all the above defined properties AFAIK.
 
 * Arduino lacks the security.
 
-* Arduino lacks the pre-built firmware images and their management
+* Arduino lacks the pre-built firmware images and their management.
 
 * Arduino UNO has a lack of MCU resources (flash and RAM, [TRNG](https://en.wikipedia.org/wiki/Hardware_random_number_generator), [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) hw acceleration).
 
@@ -126,7 +126,11 @@ There is not open, secure (authentication & encryption, automatic encyption key 
 
 There are several levels for extensions, you can:
 
-* Connect simple sensors and actuators through the connector on Sensor Module. Use a breadboard or wires and I/O brought to the [HEADER](https://www.bigclown.com/doc/hardware/headers-and-signals/#module-drawing-standard) with GPIO, I2C, UART, SPI, PWM, ADC, DAC etc ([Beadboard Module](https://www.bigclown.com/doc/hardware/about-breadboard-module/) may help you).
+* Connect simple sensors and actuators through the connector on [Sensor Module](https://www.bigclown.com/doc/hardware/about-sensor-module/).
+
+* Use a breadboard or wires and I/O brought to the [HEADER](https://www.bigclown.com/doc/hardware/headers-and-signals/#module-drawing-standard) with GPIO, I2C, UART, SPI, PWM, ADC, DAC etc ([Beadboard Module](https://www.bigclown.com/doc/hardware/about-breadboard-module/) may help you).
+
+* Use [SMT](https://en.wikipedia.org/wiki/Surface-mount_technology) prototyping area on [Battery Module](https://cdn.myshoptet.com/usr/shop.bigclown.com/user/shop/big/42.png?5a1ae639).
 
 * Design your own Module - just use the Module size and HEADER signals on your PCB.
 

@@ -10,210 +10,227 @@ You will need these components to make it work:
 
 * **Debian-based Linux**
 
-* **InfluxDB** - Time-series database
-
 * **Mosquitto** - MQTT broker
 
 {{% note "danger" %}}This documents assumes that you are working with either **Debian**, **Raspbian** or **Ubuntu 16.04** distribution. The description below might work also on other Linux distributions and/or different versions but it has not been tested.{{% /note %}}
 
 {{% note "warning" %}}It has been tested on **Raspberry Pi 3** + **Raspbian Jessie** and **Turris Omnia** + **Ubuntu 16.04** (via LXC container).{{% /note %}}
 
-## Installing Utilities
-
-First, you have to install packages that are necessary for later instalation.
-
-```sh
-sudo apt install apt-transport-https curl -y
-```
-
 ## Installing InfluxDB
 
 The database to store collected data.
 
-In order to install **InfluxDB** and recognize its signing key, you have to put it among the trusted keys.
+1. Install dependency packages:
 
-```sh
-curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
-```
+        sudo apt install apt-transport-https curl -y
 
-Add the **InfluxDB** as a new repository.
+2. Add repository key:
 
-* On **Debian** and/or **Raspbian Jessie** use:
+        curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 
-    ```sh
-    echo "deb https://repos.influxdata.com/debian jessie stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
-    ```
+3. Add repository to source list:
 
-* On **Ubuntu 16.04** use:
+    * On **Debian** and/or **Raspbian** use:
 
-    ```sh
-    echo "deb https://repos.influxdata.com/ubuntu/ xenial stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
-    ```
+            echo "deb https://repos.influxdata.com/debian jessie stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 
-Update the package list and install the packages:
+    * On **Ubuntu 16.04** use:
 
-```sh
-sudo apt update && sudo apt install influxdb
-```
+            echo "deb https://repos.influxdata.com/ubuntu/ xenial stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
 
-Now you can start the **InfluxDB** service:
+4. Update the package list and install the packages:
 
-```sh
-sudo systemctl start influxdb
-```
+        sudo apt update && sudo apt install influxdb
 
-## InfluxDB Web Interface
+5. Now you can start the **InfluxDB** service:
 
-If you want to control and configure **InfluxDB** using the web interface, then you have to update the `/etc/influxdb/influxdb.conf` file:
+        sudo systemctl start influxdb
 
-* Remove `#` in front of `enabled` and `bind-address`.
-
-* Set `enabled = true` and `bind-address = ":8083"`.
-
-Later you will be able to access the web at **http://localhost:8083/**. Of course, the port number `8083` has to be available and not in use by any other application.
-
-## Installing Mosquitto
-
-[**Mosquitto**](http://mosquitto.org) is a popular open-source MQTT broker implementation. The role of this service is to route and distribute messages between the clients (**publishers** and **subscribers**).
-
-In principle a **sensor** tends to be a **publisher** as it is sharing its value. On the other hand, an **actuator** normally plays the role of a **subscriber**. Of course, the mix of **publisher** and **subscriber** role for each client is possible. Typically a **dashboard** can visualize data and at the same time it can have some control button, which triggers an action (publishes a message).
-
-Install the server and client tools for testing.
-
-```sh
-sudo apt install mosquitto mosquitto-clients -y
-```
 
 ## Installing Grafana
 
-First install dependencies:
+1. Install dependencies:
 
-```sh
-sudo apt install adduser libfontconfig -y
-```
+        sudo apt install adduser libfontconfig -y
 
-Based on your taget platform, select the appropriate procedure:
 
-* For **Raspberry Pi** and **Omnia LXC**:
+2. Based on your taget platform, select the appropriate procedure:
 
-    You can manualy download latest version from [**Grafana**](https://github.com/fg2it/grafana-on-raspberry/releases/latest), or you can use the following helper to download it for you:
+    * For **Raspberry Pi** and **Omnia LXC**:
 
-    ```sh
-    wget $(wget "https://api.github.com/repos/fg2it/grafana-on-raspberry/releases/latest" -q -O - | grep browser_download_url | grep armhf.deb | head -n 1 | cut -d '"' -f 4) -O grafana.deb
-    ```
+        1. You can manualy download latest version from [**Grafana**](https://github.com/fg2it/grafana-on-raspberry/releases/latest), or you can use the following helper to download it for you:
 
-    Then install the package:
 
-    ```sh
-    sudo dpkg -i grafana.deb
-    ```
+                wget $(wget "https://api.github.com/repos/fg2it/grafana-on-raspberry/releases/latest" -q -O - | grep browser_download_url | grep armhf.deb | head -n 1 | cut -d '"' -f 4) -O grafana.deb
 
-* For **desktop** (**Ubuntu** and **Debian**):
 
-    Add the key to be trusted:
+        2. Then install the package:
 
-    ```sh
-    curl -sL https://packagecloud.io/gpg.key | sudo apt-key add -
-    ```
 
-    Add the repository to the sources:
+                sudo dpkg -i grafana.deb
 
-    ```sh
-    echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
-    ```
 
-    Then update the package list and install the package:
+    * For **desktop** (**Ubuntu** and **Debian**):
 
-    ```sh
-    sudo apt update && sudo apt install grafana -y
-    ```
+        1. Add repository key:
 
-## Starting Services
+                curl -sL https://packagecloud.io/gpg.key | sudo apt-key add -
 
-Reload the **systemd** configuration:
 
-```bash
-sudo systemctl daemon-reload
-```
+        2. Add repository to source list:
 
-Enable **Grafana** on boot:
+                echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
 
-```bash
-sudo systemctl enable grafana-server
-```
 
-Start **Grafana** server (manually):
+        3. Then update the package list and install the package:
 
-```bash
-sudo systemctl start grafana-server
-```
+                sudo apt update && sudo apt install grafana -y
+
+
+3. Reload the **systemd** configuration:
+
+        sudo systemctl daemon-reload
+
+
+4. Enable **Grafana** on boot:
+
+        sudo systemctl enable grafana-server
+
+5. Now you can start the **Grafana** server:
+
+        sudo systemctl start grafana-server
+
 
 ## Connect Mosquitto and InfluxDB
 
-Create a database node in **InfluxDB** using REST interface:
+1. Install the **Mqtt to InfluxDB**:
 
-```sh
-curl --data "q=CREATE+DATABASE+%22node%22&db=_internal" http://localhost:8086/query
-```
+        sudo pip3 install --upgrade --no-cache-dir mqtt2influxdb
 
-Install Python module for **InfluxDB**:
+2. Configuration:
 
-```sh
-sudo -H pip3 install influxdb
-```
+    Open file
 
-Get the Python script [**mqtt_to_influxdb.py**](https://github.com/bigclownlabs/bcf-climate-station/blob/master/hub/mqtt_to_influxdb.py). It converts data from MQTT to InfluxDB. Then make it executable.
+        sudo nano /etc/bigclown/mqtt2influxdb.yml
 
-```bash
-sudo wget "https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/mqtt_to_influxdb.py" \
--O /usr/bin/mqtt_to_influxdb
-sudo chmod +x /usr/bin/mqtt_to_influxdb
-```
+    And paste this:
 
-{{% note "info" %}}`sudo` is required because the target directory `/usr/bin/...` is only writeable by the `root` user.{{% /note %}}
 
-Download and install from BigClown GitHub new **systemd** service describing how to run the MQTT to InfluxDB script.
+        mqtt:
+          host: 127.0.0.1
+          port: 1883
 
-```bash
-sudo sh -c "curl -sL https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/mqtt_to_influxdb.service | \
-  sed -e 's/User=bigclown/User=root/' \
-  > /etc/systemd/system/mqtt_to_influxdb.service"
-```
+        influxdb:
+          host: 127.0.0.1
+          port: 8086
+          database: node
 
-Reload the SystemD in order to load the service `mqtt_to_influxdb.service` you have just created.
+        points:
+          - measurement: temperature
+            topic: node/+/thermometer/+/temperature
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
+              channel: $.topic[3]
 
-```bash
-sudo systemctl daemon-reload
-```
+          - measurement: relative-humidity
+            topic: node/+/hygrometer/0:4/relative-humidity
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
 
-Enable the service `mqtt_to_influxdb.service` on boot.
+          - measurement: illuminance
+            topic: node/+/lux-meter/0:0/illuminance
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
 
-```bash
-sudo systemctl enable mqtt_to_influxdb.service
-```
+          - measurement: pressure
+            topic: node/+/barometer/0:0/pressure
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
 
-Start it straight away.
+          - measurement: co2
+            topic: node/+/co2-meter/-/concentration
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
 
-```bash
-sudo systemctl start mqtt_to_influxdb.service
-```
+{{% note "info" %}}In section **tags** you can use text, for example:
 
-{{% note "warning" %}}The command above expects that InfluxDB is running on the port `8086`. If not, please use your port.{{% /note %}}
+tags:
 
-## Make It Fly
+&nbsp;&nbsp;room: bedroom
+{{% /note %}}
 
-You have to configure the Grafana. Open the Grafana web interface at [**http://localhost:3000/**](http://localhost:3000/). Initial user name is **admin** and default password also **admin**.
+3. Configuration file test:
 
-Next you have to create a **data source**. Just click on **Add data source** and fill in:
+        mqtt2influxdb -c /etc/bigclown/mqtt2influxdb.yml --test
 
-* **Name:** `node`
-* **Type:** `InfluxDB`
-* **URL:** `http://localhost:8086`
-* **Database:** `node`
+4. Run service:
 
-Finish by clicking on the **Add** button. At this moment Grafana tries to connect to the **data source** and reports back the message `Data source is working`.
+        pm2 start /usr/bin/python3 --name "mqtt2influxdb" -- /usr/local/bin/mqtt2influxdb -c /etc/bigclown/mqtt2influxdb.yml
 
-{{% note "Success" %}}Now you have the data and you can start creating the visualization dashboards.{{% /note %}}
+
+{{% note "info" %}}For show temperatures from database in CSV format use this command:
+
+    influx -database node -execute "select * from temperature;" -format csv
+{{% /note %}}
+
+{{% note "info" %}}After change configuration file you must restart service:
+
+    pm2 restart mqtt2influxdb
+{{% /note %}}
+
+
+## Configure the Grafana.
+
+1. Open the Grafana web interface at [**http://localhost:3000/**](http://localhost:3000/) or [**http://hub.local:3000/**](http://hub.local:3000/) or [**http://ip:3000/**](http://ip:3000/) and **Log in**
+
+    * Enter the **User** `admin`
+
+    * Enter the **Password** `admin`
+
+2. Create a **data source**.
+
+    Just click on **Add data source** and:
+
+    * Enter the **Name:** `node`
+
+    * Select the **Type:** `InfluxDB`
+
+    * Enter the **URL:** `http://localhost:8086`
+
+    * Enter the **Database:** `node`
+
+    Finish by clicking on the **Add** button. At this moment Grafana tries to connect to the **data source** and reports back the message `Data source is working`.
+
+    {{% img-zoom src="datasource.png" %}}
+
+3. Download dashboard.json or Copy to clipboard
+
+    <a href="dashboard.json" target="_blank">dashboard.json</a>
+
+4. Import the visualization dashboards, click the **Graphana icon** (at the top left), select **Dashboarts** in the menu, then **Import**
+
+    {{% img-zoom src="menu-import-dashboard.png" %}}
+
+5. Upload .json File or Paste JSON.
+
+6. Select datasourc *node* and click on Import
+
+    {{% img-zoom src="import-dashboard-select-datasource.png" %}}
+
+7. Result for [Wireless Climate Monitor]({{< relref "doc/projects/wireless-climate-monitor.md" >}}) and [Wireless CO2 Monitor]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
+
+    {{% img-zoom src="demo-dashboard.png" %}}
+
 
 ## Related Documents
 

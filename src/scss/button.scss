@@ -17,7 +17,7 @@
 
   &:hover
   {
-    background: #e41419;
+    background-color: #e41419;
     color:white!important;
   }
 
@@ -50,6 +50,12 @@
     {
       background-size: 20px 20px;
       width: 20px;
+    }
+
+    &:hover
+    {
+      background-color: transparent!important;
+      color:red!important;
     }
   }
 
@@ -580,7 +586,7 @@
     background: none;
     color:#2e343c!important;
     margin-top: $baseline;
-    
+
     &:before
     {
       background: #e41419 url("../svg/arrowdownwhite.svg") no-repeat center center;

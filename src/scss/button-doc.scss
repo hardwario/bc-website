@@ -1,3 +1,9 @@
+.header{
+.button
+{
+
+}
+}
 .header, #newsletterSignup, .footer{
 .button
 {
@@ -18,7 +24,7 @@
 
   &:hover
   {
-    background: #e41419;
+    background-color: #e41419;
     color:white!important;
   }
 
@@ -51,7 +57,16 @@
     {
       background-size: 20px 20px;
       width: 20px;
+
+
     }
+
+    &:hover
+    {
+      background-color: transparent!important;
+      color:red!important;
+    }
+
   }
 
   &--cart

@@ -148,23 +148,11 @@ ol ol li:last-child {
 }
 #scrollspy {
     top: 100px;
-    right: 70px;
     position: fixed;
     display: none;
     background: white;
     z-index: 1;
-}
-
-@media screen and (max-width: 1280px) {
-  #scrollspy {
-    right: 70px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #scrollspy {
-    right: 10px;
-  }
+    left: 75%;
 }
 
 #scrollspy > nav ul {

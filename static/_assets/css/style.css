@@ -1,12 +1,11 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.6em;
   line-height: 1.5em;
   padding-top: 60px;
   position: relative;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 p {
@@ -144,10 +143,28 @@ ol ol li:last-child {
   white-space: pre;
 }
 
+.panel-group{
+  margin-top: 20px;
+}
 #scrollspy {
-    top: 70px;
+    top: 100px;
+    right: 70px;
     position: fixed;
     display: none;
+    background: white;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  #scrollspy {
+    right: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #scrollspy {
+    right: 10px;
+  }
 }
 
 #scrollspy > nav ul {
@@ -198,6 +215,9 @@ ol ol li:last-child {
 .navbar-right > li > a {
   background: red;
   color: white !important;
+}
+.nav > li > a {
+    padding: 5px 10px
 }
 
 .navbar-right > li > a:hover,

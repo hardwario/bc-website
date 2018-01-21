@@ -71,4 +71,14 @@
     js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.10&appId=147151422044678";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
+
+  <script type="text/javascript">
+    (function() {
+        $('table').addClass('table table-striped');
+        $('thead').addClass('thead-default');
+        $( ".table" ).wrap( "<div class='table-responsive'></div>" );
+    })();
+  </script>
+
+
 {{ end }}

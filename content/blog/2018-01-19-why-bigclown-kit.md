@@ -40,7 +40,7 @@ The second motivation comes from our need to have a "perfect" kit for our own ho
 
 I am very much biased by collecting and exploring various development boards, kits, hot new parts, etc.. I have a pretty large collection (just a small fraction of it is on photo below), but I always miss some property in every single kit.
 
-    {{% img src="desk.jpg" width="1024" %}}
+{{% b-image src="desk.jpg" alt="1024" %}}
 
 The selection of following properties are based on the "experience" with the other kits. To be more specific, these are the features that are not available "together" (till BigClown ;-):
 
@@ -66,7 +66,7 @@ There is not any other kit with all the above defined properties AFAIK.
 
 * BigClown products are not optimized for low initial hardware purchase price that leads to hardware instability and malfunctions (especially when they are operated outside the work desk) caused by scrap components, cloned chips, low quality designs with obvious flaws, failures to comply with the chip maker recommendations, etc.
 
-* We do provide individual technical support. 
+* We do provide individual technical support.
 
 * We do provide 3 years of warranty on the hardware.
 
@@ -155,7 +155,7 @@ Self motivation based on above mentioned targets provide us passion. Try it your
 ### I would do it in 2 weeks (or 2 months) why I would use BigClown Kit?
 
 We love to see all the new open-source kits with similar features. We will be happy to learn from other designs also. Go on - share your solution with the world, please! Maybe you can even join our team. We did it in 2 years of hard work, we are 12+ people team now and we are committed to&nbsp;continue to develop the BigClown IoT Kit. You can use effort already invested by us and future enhancements from community or us to save your time and resources.
- 
+
 ### Platforms Comparison
 
 |  | [Arduino Uno R3](https://store.arduino.cc/arduino-uno-rev3) | [BigClown Core Module](https://shop.bigclown.com/core-module/) | [WEMOS D1 mini Lite](https://www.aliexpress.com/store/product/WEMOS-D1-mini-Lite-V1-0-0-WIFI-Internet-of-Things-development-board-based-ESP8285-1MB/1331105_32795857574.html) | [Raspberry Pi 3 + MicroSD](http://cpc.farnell.com/mksp2-raspberry-pi3) |
@@ -210,31 +210,3 @@ We love to see all the new open-source kits with similar features. We will be ha
 | \*7) Tutorials how to run ATmega328P in low-power mode with Arduino software platform are available, but default configuration has been considered |
 
 <br>Do not hesitate to comment at https://forum.bigclown.com/ or feel free to send us an email, please.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-

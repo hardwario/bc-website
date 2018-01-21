@@ -296,6 +296,21 @@
         }
       }
     }
+
+    .table-responsive{
+      line-height: em(22);
+
+      @media(min-width:1199px)
+      {
+        display: block;
+        margin: 0 -150px;
+        width: auto;
+      }
+
+      th, td{
+        vertical-align: middle;
+      }
+    }
   }
 
   &__tags

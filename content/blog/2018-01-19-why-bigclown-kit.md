@@ -199,7 +199,7 @@ We love to see all the new open-source kits with similar features. We will be ha
 | Number of SPI channels | 1 | 1 | - | 1 |
 | Number of ADC channels | 6 | 6 | 1 | - |
 | Number of DAC channels | - | 2 | - | - |
-| Support from vendor | No | Yes | No | No |
+| Support from vendor | No | **Yes** | No | No |
 | Dimensions | 53 x 69 mm | 33 x 55 mm | 26 x 34 mm | 56 x 85 mm |
 
 | Notes: |

@@ -185,6 +185,8 @@ items:
       link: "doc/firmware/how-to-smart-led-strip.md"
     - title: "How to: 1-Wire Interface"
       link: "doc/firmware/how-to-1-wire-interface.md"
+    - title: "How to: 1-Wire Relay"
+      link: "doc/firmware/how-to-1-wire-relay.md"
   - title: "Documentation"
     items:
     - title: "Contribution Setup"

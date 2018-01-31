@@ -90,33 +90,44 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "info" %}}`bcf update` is executed during installation.{{% /note %}}
 
-10. Restart Mosquitto and Node-RED:
+9. Restart Mosquitto and Node-RED:
 
         pm2 resurrect
 
     {{% note "info" %}}You have to do that after any PC restart and logoff.{{% /note %}}        
 
-11. Start the **BigClown Gateway** (in the background):
+10. Start the **BigClown Gateway** (in the background):
 
         pm2 start "%BigClownGateway%" --name bcg -- --device ...
 
-    {{% note "note" %}}Replace `...` with the device listed using `bcf devices`, e.g. `COM5`{{% /note %}}
+    {{% note "note" %}}Replace `...` with the device listed using `bcg devices`, e.g. `COM5`{{% /note %}}
 
     Example:
 
         pm2 start "%BigClownGateway%" --name bcg -- --device com5
 
+    {{% note "info" %}}
+In case you have multiple COM ports in your PC, you can find right COM port using following procedure:
+    
+* Insert USB Dongle into PC USB port. 
+* Run `bcg devices`. 
+* Remove USB Dongle from PC USB port. 
+* Run `bcg devices`. 
+
+COM port missing in second list of COM ports is the right one for **bcg** service.
+{{% /note %}}
+
     {{% note "info" %}}You can see the log outputs from the **bcg** application using the `pm2 logs bcg` command. Quit the log watching using the `Ctrl-C` keyboard shortcut.{{% /note %}}
 
-12. Tell **PM2** to save state:
+11. Tell **PM2** to save state:
 
         pm2 save
 
     {{% note "info" %}}You can restart all services after reboot or login (user session start) by the command `pm2 resurrect`.{{% /note %}}
 
-13. Open your web browser with the URL: **http://localhost:1880/**
+12. Open your web browser with the URL: **http://localhost:1880/**
 
-14. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
+13. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
 
     * [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.md" >}})
     * [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.md" >}})

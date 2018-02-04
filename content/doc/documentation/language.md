@@ -14,7 +14,7 @@ We have questions why do we have only english language in the documentation. Thi
 ## Vysvětlení
 
 S novou dokumentací jsme museli zvolit jen jeden jazyk. Nebylo v našich silách udržovat aktuální obě verze a stávalo se, že v češtině něco chybělo, nebo naopak v angličtině nebyla nějaká sekce. Díky této roztříštěnosti se stávalo, že ani jeden jazyk neměl kvalitně a 100% zdokumentované vše. Dokumentovat open-source je poměrně náročné, vše se často mění a vylepšuje. Až se náš tým a zákazníci více rozrostou, rozšíříme dokumentaci opět o češtinu.
-Pokud máte dotazy, klidně nám piště česky na email v patičce webu nebo i na fórum.
+Pokud máte dotazy, klidně nám pište česky na email v patičce webu nebo i na fórum.
 
 ## Explanation
 

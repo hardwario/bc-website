@@ -294,7 +294,7 @@ When the node is booting it sends pairing command. If you are subscribed to the 
 Older firmwares send remote pairing packet by long-press of `B` button. Current firmwares are sending remote pairing packet by **power cycling** or **reseting** the module.
 {{< /note >}}
 
-Now it is possible to pair other **remote** nodes, just long press the `B` button on the other **remote** nodes.
+Now it is possible to pair other **remote** nodes, by power cycling or reset of other **remote** nodes.
 
 After the pairing of the remotes is completed, stop the pairing process on the **gateway** by command:
 

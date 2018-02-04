@@ -80,11 +80,37 @@ If you already have previously installed playground, you can upgrade it at any t
 
         bcf devices
 
+    {{% note "info" %}}
+In case you have multiple COM ports in your PC, you can find right COM port using following procedure:
+    
+* Insert USB Dongle into PC USB port. 
+* Run `bcf devices`. 
+* Remove USB Dongle from PC USB port. 
+* Run `bcf devices`. 
+
+COM port missing in second list of COM ports is the right one for **bcg** service.
+{{% /note %}}
+
+    Example:
+    ```
+    C:\Users\mmu>bcf devices
+    COM3
+    COM9
+    C:\Users\mmu>bcf devices
+    COM9
+    ```
+    USB Dongle have port COM3.
+
     {{% note "info" %}}You can use `bcf devices -v` to see verbose information about the connected devices (possibly helping you to identify them).{{% /note %}}
 
 8. Upload the latest firmware into the **BigClown USB Dongle**:
 
         bcf flash --device ... bigclownlabs/bcf-gateway-usb-dongle:latest
+
+    Example:
+    ```
+    bcf flash --device COM3 bigclownlabs/bcf-gateway-usb-dongle:latest
+    ```
 
     {{% note "warning" %}}You have to replace `...` with the device (you can look it up using `bcf devices`.{{% /note %}}
 
@@ -96,6 +122,22 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "info" %}}You have to do that after any PC restart and logoff.{{% /note %}}        
 
+    {{% note "info" %}}[PM2](http://pm2.keymetrics.io/) is process manager. It keeps services running in background. In BigClown Playground PM2 is used for 3 services:
+
+* Mosquitto MQTT broker
+    
+* Node-RED
+    
+* BigClown Gateway
+    
+Mosquitto and Node-RED start are configured during installation.
+
+BigClown Gateway start has to be configured manually (in next step) because UART port is not known during Playground installation.
+
+You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT messages.
+{{% /note %}}        
+
+
 10. Start the **BigClown Gateway** (in the background):
 
         pm2 start "%BigClownGateway%" --name bcg -- --device ...
@@ -106,24 +148,20 @@ If you already have previously installed playground, you can upgrade it at any t
 
         pm2 start "%BigClownGateway%" --name bcg -- --device com5
 
-    {{% note "info" %}}
-In case you have multiple COM ports in your PC, you can find right COM port using following procedure:
-    
-* Insert USB Dongle into PC USB port. 
-* Run `bcg devices`. 
-* Remove USB Dongle from PC USB port. 
-* Run `bcg devices`. 
-
-COM port missing in second list of COM ports is the right one for **bcg** service.
-{{% /note %}}
-
     {{% note "info" %}}You can see the log outputs from the **bcg** application using the `pm2 logs bcg` command. Quit the log watching using the `Ctrl-C` keyboard shortcut.{{% /note %}}
+
+    {{% note "warning" %}}Never use `pm2 start` to restart service, use `pm2 restart` instead. `pm2 start` is used to configure new service.
+    {{% /note %}}
+
 
 11. Tell **PM2** to save state:
 
         pm2 save
 
     {{% note "info" %}}You can restart all services after reboot or login (user session start) by the command `pm2 resurrect`.{{% /note %}}
+
+    {{% note "info" %}}You want to save start configuration for all 3 Playground services (Mosquitto MQTT broker, Node-RED, BigClown Gateway) to avoid repeating to enter start configuration for services after PC reboot.{{% /note %}}
+
 
 12. Open your web browser with the URL: **http://localhost:1880/**
 

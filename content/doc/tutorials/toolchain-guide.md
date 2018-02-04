@@ -66,6 +66,8 @@ Detailed usage of a given command using e.g. `bcf help flash`:
                             device
       --dfu                 use dfu mode
 
+{{< note "info" >}}[Device Firmware Upgrade](https://en.wikipedia.org/wiki/USB#Device_Firmware_Upgrade) (DFU) is a vendor- and device-independent mechanism for upgrading the firmware of USB devices {{< /note >}}
+
 ## Firmware Package Listing
 
 Use this command to update the list of available firmware packages:
@@ -100,7 +102,13 @@ Use this command to search in the available packages (in their title and descrip
 
 ## Firmware Upload
 
-{{% note "warning" %}}In case you need to upload the firmware into the Core Module, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash --dfu` format.{{% /note %}}
+There are two bootloaders in MCU ROM:
+
+* DFU - in case of USB device in MCU is used (e.g. for Core Module R1.3)
+
+* UART - in case of USB-UART chip device is used (e.g. for USB Dongle or Core Module R2.x)
+
+{{% note "warning" %}}In case you need to upload the firmware into the Core Module R1.3, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash --dfu` format.{{% /note %}}
 
 Firmware upload can be done using the `bcf flash` command. The firmware can be obtained from 3 different sources:
 
@@ -110,15 +118,15 @@ Firmware upload can be done using the `bcf flash` command. The firmware can be o
 
 2. Source **local disk file**, for instance:
 
-        bcf flash --device ... firmware.bin
+        bcf flash --device COM5 firmware.bin
 
-    {{% note "warning" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+    {{% note "warning" %}}Replace `COM5` with the device listed using `bcf devices`.{{% /note %}}
 
 3. Source **file from the specified URL**, for instance:
 
         bcf flash --dfu https://github.com/bigclownlabs/bcf-kit-wireless-push-button/releases/download/v1.1.0/bcf-kit-wireless-push-button-v1.1.0.bin
 
-You can list the devices connected to your host using this command:
+You can list the USB UART devices connected to your host using this command:
 
     bcf devices
 

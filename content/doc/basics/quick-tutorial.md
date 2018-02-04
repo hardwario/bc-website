@@ -22,6 +22,12 @@ Optionally for establishing a wireless network, you will need:
   * {{< shop "Humidity Tag" >}}
   * {{< shop "Relay Module" >}}
 
+## Video tutorial
+
+In case you like video tutorials, you can watch this one. Otherwise please continue to next paragraph. This video is very similar step-by-step guide how to quickly get started with Raspberry Pi, Core Module, USB Dongle and many other BigClown modules.
+
+{{< youtube FRRhleRNstg >}}
+
 ## Raspberry Pi Installation
 
 {{% note "warning" %}}Detailed instructions can be found in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).{{% /note %}}
@@ -176,10 +182,6 @@ Here's the complete flow in case of any issues.
 ```
 [{"id":"3bfb0014.c8ac9","type":"mqtt in","z":"e2a5ec72.0af0b","name":"","topic":"node/core-module:0/thermometer/0:1/temperature","qos":"2","broker":"86ef748c.0f3de8","x":290,"y":160,"wires":[["ba582285.dd04c","17d59ad8.cfa925"]]},{"id":"ba582285.dd04c","type":"debug","z":"e2a5ec72.0af0b","name":"","active":true,"console":"false","complete":"false","x":630,"y":140,"wires":[]},{"id":"17d59ad8.cfa925","type":"ui_gauge","z":"e2a5ec72.0af0b","name":"","group":"761dfbba.bd8604","order":0,"width":0,"height":0,"gtype":"gage","title":"Temperature","label":"°C","format":"{{value}}","min":0,"max":"40","colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":630,"y":220,"wires":[]},{"id":"86ef748c.0f3de8","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"761dfbba.bd8604","type":"ui_group","z":"","name":"Default","tab":"bf26a25d.84e25","disp":true,"width":"6"},{"id":"bf26a25d.84e25","type":"ui_tab","z":"","name":"Home","icon":"dashboard"}]
 ```
-
-## Control the LED based on the temperature
-
-**TODO** Describe creation of the conditions with **if** block. Connecting the subscribe/publish
 
 ## Extending to relative humidity measurement
 

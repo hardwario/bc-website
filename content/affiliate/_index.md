@@ -10,7 +10,7 @@ Do you want to earn some money and be a part of BigClown's community? Sign up to
 
 * Joining our program is totally free.
 * Every user who came from your link to our e-shop will be marked for next 90 days (cookies method).
-* If this user buy any product you earn 3 % of total paid amount (without cost of delivery & payment).
+* If this user buy any product you earn 3% of total paid amount (without cost of delivery & payment).
 
 ## How to start
 

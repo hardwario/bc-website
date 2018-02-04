@@ -274,7 +274,7 @@ We need to pair the **gateway** with the remote **node**. In case you are using 
 
 USB Dongle do not have pairing button and the pairing process needs to be started by a MQTT message. The same works also for the **Core Module** in case you cannot physically press the `B` button.
 
-For **USB Dongle** or **Core Module** you need to send MQTT message with console command or by using the flow in the **Node-RED** which sends the pairing start message.
+For **USB Dongle** or **Core Module** you need to send start pairing MQTT message with console command or by using the flow in the **Node-RED** which sends the pairing start message.
 
 ```
 For USB Dongle:
@@ -283,15 +283,20 @@ For Core Module:
 mosquitto_pub -t 'gateway/core-module/pairing-mode/start' -n
 ```
 
-After enabling the pairing the red LED on the **USB Dongle**/**Core Module** will start to blink. Now its the time to send pairing command from the **remote node**. This can be done by long press of the `B` button on the **remote node**. If you are subscribed to the `#` topic, you will see a message with new paired address.
+After enabling the pairing the red LED on the **USB Dongle**/**Core Module** will start to blink. Now its the time to send pairing command from the **remote node**. This is done by power cycling or reseting the **remote node**.
+
+  * **Power Cycle** - unplug and then plug again the power to the Core Module. USB cable, battery or Battery Module.
+  * **Reset the Core Module** - short press of the `R` Reset button on the Core Module.
+
+When the node is booting it sends pairing command. If you are subscribed to the `#` topic, you will see a message with new paired address.
 
 {{< note "info" >}}
-If you have **LCD Module**, **Button Module** or **Encoder Module** and it is not physically possible to press the `B` button you can long press any button/encoder to send the pairing command. The buttons on these modules are physically connected also to the `B` button on the **Core Module**.
+Older firmwares send remote pairing packet by long-press of `B` button. Current firmwares are sending remote pairing packet by **power cycling** or **reseting** the module.
 {{< /note >}}
 
 Now it is possible to pair other **remote** nodes, just long press the `B` button on the other **remote** nodes.
 
-After the pairing of the remotes is completed, disable the pairing process on the **gateway** by command:
+After the pairing of the remotes is completed, stop the pairing process on the **gateway** by command:
 
 ```
 For USB Dongle:

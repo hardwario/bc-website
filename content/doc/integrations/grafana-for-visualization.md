@@ -92,17 +92,15 @@ The database to store collected data.
 
 ## Connect Mosquitto and InfluxDB
 
-1. Install the **MQTT to InfluxDB**:
+1. Install the **MQTT to InfluxDB** service:
 
         sudo pip3 install --upgrade --no-cache-dir mqtt2influxdb
 
-2. Configuration:
-
-    Open file
+2. Open the configuration file:
 
         sudo nano /etc/bigclown/mqtt2influxdb.yml
 
-    And paste this:
+3. Paste this snippet to the configuration file:
 
         mqtt:
           host: 127.0.0.1
@@ -150,23 +148,23 @@ The database to store collected data.
             tags:
               id: $.topic[1]
 
-{{% note "info" %}}In section **tags** you can use text, for example:
-```
-tags:
+    {{% note "info" %}}In section **tags** you can use text, for example:
+    ```
+    tags:
 
-    room: bedroom
-```
-{{% /note %}}
+        room: bedroom
+    ```
+    {{% /note %}}
 
-3. Configuration file test:
+4. Configuration file test:
 
         mqtt2influxdb -c /etc/bigclown/mqtt2influxdb.yml --test
 
-4. Start the **MQTT to InfluxDB** service:
+5. Start the **MQTT to InfluxDB** service:
 
         pm2 start /usr/bin/python3 --name "mqtt2influxdb" -- /usr/local/bin/mqtt2influxdb -c /etc/bigclown/mqtt2influxdb.yml
 
-5. Save the **PM2 state** (so it will start after reboot):
+6. Save the **PM2 state** (so it will start after reboot):
 
         pm2 save
 
@@ -177,7 +175,9 @@ tags:
 {{% /note %}}
 
 {{% note "info" %}}You must restart the service when you change the configuration file:
+
     pm2 restart mqtt2influxdb
+
 {{% /note %}}
 
 ## Configure the Grafana.
@@ -214,11 +214,11 @@ tags:
 
 5. Upload .json File or Paste JSON.
 
-6. Select datasourc *node* and click on Import
+6. Choose **node** as a data source and click on **Import**:
 
     {{% img-zoom src="import-dashboard-select-datasource.png" %}}
 
-7. Result for [Wireless Climate Monitor]({{< relref "doc/projects/wireless-climate-monitor.md" >}}) and [Wireless CO2 Monitor]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
+7. Result for [**Wireless Climate Monitor**]({{< relref "doc/projects/wireless-climate-monitor.md" >}}) and [**Wireless CO2 Monitor**]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
 
     {{% img-zoom src="demo-dashboard.png" %}}
 

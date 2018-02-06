@@ -162,19 +162,19 @@ tags:
 
         mqtt2influxdb -c /etc/bigclown/mqtt2influxdb.yml --test
 
-4. Run service:
+4. Start the **MQTT to InfluxDB** service:
 
         pm2 start /usr/bin/python3 --name "mqtt2influxdb" -- /usr/local/bin/mqtt2influxdb -c /etc/bigclown/mqtt2influxdb.yml
+
+5. Save the **PM2 state** (so it will start after reboot):
+
+        pm2 save
 
 {{% note "info" %}}If you want to see temperature records from database in CSV format, use this command:
 
     influx -database node -execute "select * from temperature;" -format csv
 
 {{% /note %}}
-
-5. Save PM2 configuration:
-
-        pm2 save
 
 {{% note "info" %}}You must restart the service when you change the configuration file:
     pm2 restart mqtt2influxdb

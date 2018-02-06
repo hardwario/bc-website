@@ -46,13 +46,11 @@ The database to store collected data.
 
         sudo systemctl start influxdb
 
-
 ## Installing Grafana
 
 1. Install dependencies:
 
         sudo apt install adduser libfontconfig -y
-
 
 2. Based on your taget platform, select the appropriate procedure:
 
@@ -60,15 +58,11 @@ The database to store collected data.
 
         1. You can manualy download latest version from [**Grafana**](https://github.com/fg2it/grafana-on-raspberry/releases/latest), or you can use the following helper to download it for you:
 
-
                 wget $(wget "https://api.github.com/repos/fg2it/grafana-on-raspberry/releases/latest" -q -O - | grep browser_download_url | grep armhf.deb | head -n 1 | cut -d '"' -f 4) -O grafana.deb
-
 
         2. Then install the package:
 
-
                 sudo dpkg -i grafana.deb
-
 
     * For **desktop** (**Ubuntu** and **Debian**):
 
@@ -76,21 +70,17 @@ The database to store collected data.
 
                 curl -sL https://packagecloud.io/gpg.key | sudo apt-key add -
 
-
         2. Add repository to source list:
 
                 echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
-
 
         3. Then update the package list and install the package:
 
                 sudo apt update && sudo apt install grafana -y
 
-
 3. Reload the **systemd** configuration:
 
         sudo systemctl daemon-reload
-
 
 4. Enable **Grafana** on boot:
 
@@ -100,10 +90,9 @@ The database to store collected data.
 
         sudo systemctl start grafana-server
 
-
 ## Connect Mosquitto and InfluxDB
 
-1. Install the **Mqtt to InfluxDB**:
+1. Install the **MQTT to InfluxDB**:
 
         sudo pip3 install --upgrade --no-cache-dir mqtt2influxdb
 
@@ -114,7 +103,6 @@ The database to store collected data.
         sudo nano /etc/bigclown/mqtt2influxdb.yml
 
     And paste this:
-
 
         mqtt:
           host: 127.0.0.1
@@ -163,10 +151,11 @@ The database to store collected data.
               id: $.topic[1]
 
 {{% note "info" %}}In section **tags** you can use text, for example:
-
+```
 tags:
 
-&nbsp;&nbsp;room: bedroom
+    room: bedroom
+```
 {{% /note %}}
 
 3. Configuration file test:
@@ -177,17 +166,19 @@ tags:
 
         pm2 start /usr/bin/python3 --name "mqtt2influxdb" -- /usr/local/bin/mqtt2influxdb -c /etc/bigclown/mqtt2influxdb.yml
 
-
-{{% note "info" %}}For show temperatures from database in CSV format use this command:
+{{% note "info" %}}If you want to see temperature records from database in CSV format, use this command:
 
     influx -database node -execute "select * from temperature;" -format csv
+
 {{% /note %}}
 
-{{% note "info" %}}After change configuration file you must restart service:
+5. Save PM2 configuration:
 
+        pm2 save
+
+{{% note "info" %}}You must restart the service when you change the configuration file:
     pm2 restart mqtt2influxdb
 {{% /note %}}
-
 
 ## Configure the Grafana.
 
@@ -230,7 +221,6 @@ tags:
 7. Result for [Wireless Climate Monitor]({{< relref "doc/projects/wireless-climate-monitor.md" >}}) and [Wireless CO2 Monitor]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
 
     {{% img-zoom src="demo-dashboard.png" %}}
-
 
 ## Related Documents
 

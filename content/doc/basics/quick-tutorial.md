@@ -120,7 +120,7 @@ Perfect! That was simple, right? Now let's learn the Node-RED.
 
 **Node-RED** is a web application pre-installed in **BigClown Raspbian** which runs on **Raspberry Pi**. You can run it in your web browser and display, process measured values and then send commands to other modules like **Relay Module**, **Power Module**, **LCD Module**.
 
-Please type the `hub.local:1800` address to your web browser.
+Please type the `hub.local:1880` address to your web browser.
 
 <img alt="Node-RED" src="node-red-mqtt.png" style="max-width:100%;" />
 

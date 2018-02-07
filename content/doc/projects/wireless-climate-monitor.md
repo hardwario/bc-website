@@ -142,7 +142,7 @@ Optionally put the assembly into the appropriate enclosure, if you have one.
 
 ## Integration with Blynk
 
-Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is visit their [**page**](https://www.blynk.cc/)</a>. In our example we will be showing you how to display graphs from sensor's values in **Blynk**'s mobile application.
+Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how to display graphs from sensor's values in **Blynk**'s mobile application.
 
 Firstly we need to configure our **Node-RED** app.
 

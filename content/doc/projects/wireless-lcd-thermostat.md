@@ -3,11 +3,11 @@ title: "Wireless LCD Thermostat"
 ---
 
 This document will guide you through the **Wireless LCD Thermostat** project.
-**TODO**
+With this gadget you will be able to control remotly you temperature.
 
 ## Block Concept
 
-**TODO**
+{{% img-zoom src="block-diagram.svg" %}}
 
 ## Requirements
 
@@ -63,7 +63,13 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 ## Hardware Assembling
 
-**TODO**
+1. Start with the **Mini Battery Module**.
+
+    {{% note "warning" %}}Make sure the **Mini Battery Module** does not have batteries inserted.{{% /note %}}
+
+2. Plug the **Core Module** on top of the **Mini Battery Module**.
+
+3. Plug the **LCD Module** on top of the **Core Module**.
 
 ## Playground Bootstrap
 
@@ -127,8 +133,9 @@ Follow these steps in **Node-RED**:
 
 {{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
 
-## Integration with ...
+## Integration with Blynk
 
+Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how to...
 **TODO**
 
 ## Related Documents

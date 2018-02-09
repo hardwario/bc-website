@@ -1,5 +1,4 @@
 baseURL = "https://www.bigclown.com/"
-disableKinds = ["RSS", "sitemap"]
 languageCode = "en"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
@@ -11,3 +10,8 @@ smartypants = false
 [params]
 menuNames = ["main"]
 productionURL = "https://www.bigclown.com"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"

@@ -1,7 +1,7 @@
-{{ partial "www/_head.html" . }}
+{{ partial "_head.html" . }}
 
 {{ block "navbar" . }}
-  {{ partial "www/navbar.html" . }}
+  {{ partial "navbar.html" . }}
 {{ end }}
 
   <main role="main">
@@ -10,12 +10,12 @@
     {{ end }}
   </main>
 
-{{ partial "www/newsletter.html" }}
+{{ partial "newsletter.html" }}
 {{ partial "footer.html" . }}
-{{ partial "www/_scripts.html" . }}
+{{ partial "_scripts.html" . }}
 
 {{ block "additional-scripts" . }}
 
 {{ end }}
 
-{{ partial "www/_foot.html" }}
+{{ partial "_foot.html" }}

@@ -1,20 +1,20 @@
-{{ partial "doc/_head.html" . }}
+{{ partial "_head.html" . }}
 
   <div id="top"></div>
   {{ block "navbar" . }}
-    {{ partial "doc/navbar.html" . }}
+    {{ partial "navbar.html" . }}
   {{ end }}
   {{ block "main" . }}
   {{ partial "main.html" . }}
   {{ end }}
 
-  {{ partial "www/newsletter.html" }}
-  {{ partial "www/footer.html" . }}
-  {{ partial "www/_scripts.html" . }}
+  {{ partial "newsletter.html" }}
+  {{ partial "footer.html" . }}
+  {{ partial "_scripts.html" . }}
 
   <script> /* clipboard */
       (function(document, Clipboard) {
-  
+
           var $codes = document.querySelectorAll('pre');
           function addCopy(element) {
               var div = document.createElement("div");

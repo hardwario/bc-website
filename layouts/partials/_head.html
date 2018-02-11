@@ -3,13 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ block "title" . }}{{ .Page.Title }} - BigClown{{ end }}</title>
+  <title>{{ block "title" . }}{{ .Page.Title }} | BigClown{{ end }}</title>
   <meta name="description" content="{{ .Page.Summary }}">
 
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i,900" rel="stylesheet">
-
-
-  <!-- doc styles -->
+  {{ if ne .Section "doc" }}
+  <link rel="stylesheet" href="/_assets/css/{{ index .Site.Data.css.hash "main.css" }}" />
+  {{ else }}
   <link rel="stylesheet" href="/_assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="/_assets/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="/_assets/css/ionicons.min.css">
@@ -18,15 +17,16 @@
   <link rel="stylesheet" href="/_assets/css/style.css">
   <link rel="stylesheet" href="/_assets/css/{{ index .Site.Data.css.hash "main-doc.css" }}" />
 
-  {{ partial "favicon.html" . }}
-  {{ partial "metadata.html" . }}
   <script src="/_assets/js/jquery.min.js"></script>
   <script src="/_assets/js/bootstrap.min.js"></script>
 
   <script src="/_assets/js/zoom.js"></script>
   <script src="/_assets/js/transition.js"></script>
   <script async type="text/javascript" src="/_assets/js/clipboard.min.js"></script>
+  {{ end }}
 
+  {{ partial "favicon.html" . }}
+  {{ partial "metadata.html" . }}
   {{ if hasPrefix .Permalink .Site.Params.productionURL }}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -36,11 +36,16 @@
     })(window,document,'script','dataLayer','GTM-KG9F3R');</script>
     <!-- End Google Tag Manager -->
   {{ end }}
+  {{ if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Blog RSS feed" />
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }} Blog RSS feed" />
+  {{ end }}
+
 </head>
-<body data-spy="scroll" data-target="#TableOfContents" data-offset="150">
+<body>
   {{ if hasPrefix .Permalink .Site.Params.productionURL }}
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG9F3R"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    {{ end }}
+  {{ end }}

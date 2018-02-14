@@ -129,14 +129,65 @@ Follow these steps in **Node-RED**:
 
 1. Switch to **debug** tab on the right.
 
-2. **TODO**
+2. Insert the following snippet in the flow (using **Menu >> Import**) and click in **Flow 1** tab:
+
+    ```json
+    [{"id":"12b3deae.bbbdf1","type":"mqtt in","z":"f2f80e07.95983","name":"","topic":"node/kit-lcd-thermostat:0/#","qos":"2","broker":"25b87ea5.743312","x":390,"y":320,"wires":[["7694514b.9b64d"]]},{"id":"7694514b.9b64d","type":"debug","z":"f2f80e07.95983","name":"","active":true,"console":"false","complete":"false","x":630,"y":320,"wires":[]},{"id":"25b87ea5.743312","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```
+
+3. If you see some messages in debug log (like temperature) your kit works correctly.
 
 {{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
 
 ## Integration with Blynk
 
-Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how to...
-**TODO**
+Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how monitor your temperature in time graph.
+
+Firstly we need to configure our **Node-RED** app.
+
+1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`. You can follow [**this**]({{< relref "doc/tutorials/nodered-library-installation.md" >}}) example for installing libraries to **NodeRED**.
+
+    {{% img-zoom src="nodered-1.png" height="300" width="120" %}}
+
+2. Add another flow (you can add them by big plus button next to the flow name).
+
+3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
+
+    ```json
+    [{"id":"4b7b87ba.4d63e8","type":"blynk-ws-out-write","z":"a037b5dc.0a06a8","name":"","pin":"1","pinmode":0,"client":"444c74b2.0e07ac","x":500,"y":380,"wires":[]},{"id":"79791e81.a656f","type":"mqtt in","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-lcd-thermostat:0/thermometer/0:1/temperature","qos":"2","broker":"b8503ac7.122c58","x":220,"y":300,"wires":[["9d2c4798.e734e8"]]},{"id":"9d2c4798.e734e8","type":"function","z":"a037b5dc.0a06a8","name":"Save data","func":"flow.set(\"temp\", parseFloat(msg.payload));\n\nreturn msg;","outputs":1,"noerr":0,"x":520,"y":300,"wires":[[]]},{"id":"ef4f8e35.ba8b8","type":"inject","z":"a037b5dc.0a06a8","name":"","topic":"","payload":"","payloadType":"date","repeat":"1","crontab":"","once":false,"x":110,"y":380,"wires":[["f7be3fcf.757a5"]]},{"id":"f7be3fcf.757a5","type":"function","z":"a037b5dc.0a06a8","name":"Load data","func":"msg.payload = flow.get(\"temp\")||0;\nreturn msg;","outputs":1,"noerr":0,"x":300,"y":380,"wires":[["4b7b87ba.4d63e8"]]},{"id":"444c74b2.0e07ac","type":"blynk-ws-client","z":"","name":"","path":"ws://blynk-cloud.com:8080/websockets","key":"2dc85fe6f8124b589557c53196798bb4","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""},{"id":"b8503ac7.122c58","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    ```
+
+    It will look like this:
+
+    {{% img-zoom src="nodered-2.png" %}}
+
+4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com:8080/websockets`. The secret key we will configure later after obtaining one.
+
+    {{% img-zoom src="nodered-screen-2.png" width="400" %}}
+
+5. Now download the **Blynk** app from [**App Store**](https://itunes.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481?mt=8) or [**Google Play**](https://play.google.com/store/apps/details?id=cc.blynk&hl=en).
+
+6. After installing, you should create account, login and you should see something like that:
+
+    {{% img-zoom src="blynk-1.png" width="300" %}}
+
+7. Now click a button on the top right to scan QR code.
+
+    {{% img-zoom src="blynk-2.png" width="300" %}}
+
+8. Now you should scan following QR code to get everything preconfigured.
+
+    {{% img-zoom src="blynk-qr.png" width="400" %}}
+
+9. You should see something like this:
+
+    {{% img-zoom src="blynk-3.png" width="300" %}}
+
+10. Click the settings wheel and you should see settings for your project. Wee need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
+
+    {{% img-zoom src="blynk-4.png" width="300" %}}
+
+11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
 
 ## Related Documents
 

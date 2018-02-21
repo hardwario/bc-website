@@ -17,6 +17,7 @@ In some projects it is neccesary to use some **NodeRED** libraries wich are not 
     
 ## Library installation using CLI
 If there is no *Manage palette* option in the menu, you can still use CLI to install library. 
+
 1. Run **npm install ...** command to install new library. Replace **...** with the name of your library, you can find libraries **[here](https://flows.nodered.org/ "Node-RED Library")**.
 
 2. When you successfully install your library - you see something like 
@@ -24,11 +25,11 @@ If there is no *Manage palette* option in the menu, you can still use CLI to ins
     `node-red-contrib-blynk-websockets@0.0.3`   
     `added 5 packages in 1.66s`
 
-   as a result, you will need to restart Node-RED for it to pick-up the new nodes.
-   Run   
+    as a result, you will need to restart Node-RED for it to pick-up the new nodes.
+    Run   
    
-   ```pm2 restart node-red```   
+    `pm2 restart node-red`   
    
-   and you'll be fine.
+    and you'll be fine.
 
 3. Now, reload the page with Node-RED in your web browser and you should find new nodes in the palette on the left side of your screen.

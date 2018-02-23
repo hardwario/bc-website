@@ -6,7 +6,7 @@ This document will guide you through the **Wireless Smart LED Strip** project. Y
 
 ## Block Concept
 
-**TODO**
+{{% img-zoom src="block-diagram.svg" %}}
 
 ## Requirements
 

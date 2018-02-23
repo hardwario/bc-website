@@ -2,7 +2,7 @@
 title: "Wireless Smart LED Strip"
 ---
 
-This document will guide you through the **Wireless Smart LED Strip** project. You will be able to interact with your LED strip in **Node-RED** and Blynk.
+This document will guide you through the **Wireless Smart LED Strip** project. You will be able to interact with your LED strip in **Node-RED** and Blynk and control Power appliance using 16A Relay.
 
 ## Block Concept
 
@@ -18,7 +18,15 @@ This document will guide you through the **Wireless Smart LED Strip** project. Y
 
     * 1x **BigClown Power Module**
 
-    * 1x **BigClown USB Dongle**
+    * 1x AC/DC ADAPTER 5V/3A (or higher current rating)
+
+* Other components
+
+    * 1x **BigClown USB Dongle** (not included in the kit)
+
+    * 1x RGB or RGBW Digital LED strip (not included in the kit)
+
+    * Micro USB cable (not included in the kit)
 
 * One of these options:
 

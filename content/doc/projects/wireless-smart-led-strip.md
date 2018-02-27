@@ -72,6 +72,10 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
         bcf flash --dfu bigclownlabs/bcf-kit-wireless-power-controller-rgbw72:latest
 
+    Firmware upload is successfully done when the status reaches 100%:
+
+    {{% img-zoom src="bcf.png" %}}
+
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
 {{% note "success" %}}At this point your firmware is successfully uploaded.{{% /note %}}

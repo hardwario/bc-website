@@ -20,6 +20,8 @@ This document will guide you through the **Wireless Smart LED Strip** project. Y
 
     * 1x AC/DC ADAPTER 5V/3A (or higher current rating)
 
+    * 1x 3D printed enclosure BCE301
+
 * Other components:
 
     * 1x **BigClown USB Dongle** (not included in the kit)
@@ -76,6 +78,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% img-zoom src="bcf.png" %}}
 
+    {{% img-zoom src="node-red-gw-controls.png" %}}
+
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
 {{% note "success" %}}At this point your firmware is successfully uploaded.{{% /note %}}
@@ -90,7 +94,13 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 3. Plug the **Cover Module** on top of the **Core Module**.
 
-4. Connect the LED strip to the pluggable socket on the right side.
+4. Put assembled modules into the enclosure BCE301 and fix it with O-rings.
+
+    {{% img-zoom src="project-thermostat-relay-b.png" %}}
+
+    {{% img-zoom src="project-thermostat-relay-d.png" %}}
+
+5. Connect the LED strip to the pluggable socket on the right side.
 
 ## Playground Bootstrap
 

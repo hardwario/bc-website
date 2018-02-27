@@ -141,7 +141,7 @@ Follow these steps in **Node-RED**:
 
 ## Integration with Blynk
 
-Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how monitor your temperature in time graph.
+Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how monitor your temperature in time graph. As well as switch your relay which depends on pre-set temperature.
 
 Firstly we need to configure our **Node-RED** app.
 
@@ -154,7 +154,7 @@ Firstly we need to configure our **Node-RED** app.
 3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
 
     ```json
-    [{"id":"4b7b87ba.4d63e8","type":"blynk-ws-out-write","z":"a037b5dc.0a06a8","name":"","pin":"1","pinmode":0,"client":"444c74b2.0e07ac","x":500,"y":380,"wires":[]},{"id":"79791e81.a656f","type":"mqtt in","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-lcd-thermostat:0/thermometer/0:1/temperature","qos":"2","broker":"b8503ac7.122c58","x":220,"y":300,"wires":[["9d2c4798.e734e8"]]},{"id":"9d2c4798.e734e8","type":"function","z":"a037b5dc.0a06a8","name":"Save data","func":"flow.set(\"temp\", parseFloat(msg.payload));\n\nreturn msg;","outputs":1,"noerr":0,"x":520,"y":300,"wires":[[]]},{"id":"ef4f8e35.ba8b8","type":"inject","z":"a037b5dc.0a06a8","name":"","topic":"","payload":"","payloadType":"date","repeat":"1","crontab":"","once":false,"x":110,"y":380,"wires":[["f7be3fcf.757a5"]]},{"id":"f7be3fcf.757a5","type":"function","z":"a037b5dc.0a06a8","name":"Load data","func":"msg.payload = flow.get(\"temp\")||0;\nreturn msg;","outputs":1,"noerr":0,"x":300,"y":380,"wires":[["4b7b87ba.4d63e8"]]},{"id":"444c74b2.0e07ac","type":"blynk-ws-client","z":"","name":"","path":"ws://blynk-cloud.com:8080/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""},{"id":"b8503ac7.122c58","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    [{"id":"10207ce8.7828d3","type":"blynk-ws-out-write","z":"a037b5dc.0a06a8","name":"","pin":"1","pinmode":0,"client":"444c74b2.0e07ac","x":580,"y":320,"wires":[]},{"id":"cf5d84d7.428bc8","type":"mqtt in","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-lcd-thermostat:0/thermometer/0:1/temperature","qos":"2","broker":"b8503ac7.122c58","x":300,"y":240,"wires":[["1ab647f.3fd77b8"]]},{"id":"1ab647f.3fd77b8","type":"function","z":"a037b5dc.0a06a8","name":"Save data","func":"flow.set(\"temp\", parseFloat(msg.payload));\n\nreturn msg;","outputs":1,"noerr":0,"x":600,"y":240,"wires":[[]]},{"id":"4813f9d6.053178","type":"inject","z":"a037b5dc.0a06a8","name":"","topic":"","payload":"","payloadType":"date","repeat":"1","crontab":"","once":false,"x":190,"y":320,"wires":[["ec216ad7.59b858"]]},{"id":"ec216ad7.59b858","type":"function","z":"a037b5dc.0a06a8","name":"Load data","func":"msg.payload = flow.get(\"temp\")||0;\nreturn msg;","outputs":1,"noerr":0,"x":380,"y":320,"wires":[["10207ce8.7828d3"]]},{"id":"64ff6663.93a768","type":"mqtt out","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-power-controller/relay/0:0/state/set","qos":"","retain":"","broker":"b8503ac7.122c58","x":870,"y":380,"wires":[]},{"id":"80286a4.d4b1f98","type":"mqtt out","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-power-controller/relay/0:1/state/set","qos":"","retain":"","broker":"b8503ac7.122c58","x":870,"y":420,"wires":[]},{"id":"79351b30.f81bf4","type":"mqtt in","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-lcd-thermostat:0/thermometer/0:1/temperature","qos":"2","broker":"b8503ac7.122c58","x":300,"y":400,"wires":[["9442ee25.eee65"]]},{"id":"9442ee25.eee65","type":"function","z":"a037b5dc.0a06a8","name":"Relay switch","func":"var setTemperature = flow.get(\"temp\")||0;\n\nif(msg.payload > setTemperature) {\n    msg.payload = true;\n}\nelse {\n    msg.payload = false;\n}\n\nreturn msg;","outputs":1,"noerr":0,"x":590,"y":400,"wires":[["64ff6663.93a768","80286a4.d4b1f98"]]},{"id":"444c74b2.0e07ac","type":"blynk-ws-client","z":"","name":"","path":"ws://blynk-cloud.com:8080/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""},{"id":"b8503ac7.122c58","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
     ```
 
     It will look like this:
@@ -188,6 +188,10 @@ Firstly we need to configure our **Node-RED** app.
     {{% img-zoom src="blynk-4.png" width="300" %}}
 
 11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
+
+### Integration workflow
+
+Your LCD Thermostat kit will immedietaly start to send data to your NodeRED. NodeRED will be sending data to the Blynk. NodeRED will control your Power Controller Kit and whenever temperature will raise above set level. It will switch ON the relay. If it drops above set level relay sets OFF.
 
 ## Related Documents
 

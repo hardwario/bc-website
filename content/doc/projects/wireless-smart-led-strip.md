@@ -78,8 +78,6 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% img-zoom src="bcf.png" %}}
 
-    {{% img-zoom src="node-red-gw-controls.png" %}}
-
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
 {{% note "success" %}}At this point your firmware is successfully uploaded.{{% /note %}}

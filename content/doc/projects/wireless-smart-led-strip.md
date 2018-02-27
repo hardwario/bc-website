@@ -100,6 +100,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 5. Connect the LED strip to the pluggable socket on the right side.
 
+6. Connect the 5V DC Power Jack.
+
 ## Playground Bootstrap
 
 1. Open **Node-RED** in your web browser:

@@ -20,7 +20,7 @@ This document will guide you through the **Wireless Smart LED Strip** project. Y
 
     * 1x AC/DC ADAPTER 5V/3A (or higher current rating)
 
-* Other components
+* Other components:
 
     * 1x **BigClown USB Dongle** (not included in the kit)
 

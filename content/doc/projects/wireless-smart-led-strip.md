@@ -136,6 +136,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 {{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown USB Dongle** and **BigClown Gateway**.{{% /note %}}
 
+{{% note "warning" %}}If you can't see connected USB Dongle go again through [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) and check if all mentioned components are running properly. {{% /note %}}
+
 ## Radio Pairing
 
 In this section, we will create a radio link between the **USB Dongle** and the **Wireless Smart LED strip**.

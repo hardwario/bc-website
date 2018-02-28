@@ -153,8 +153,20 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
     {{% note "warning" %}}Never use `pm2 start` to restart service, use `pm2 restart` instead. `pm2 start` is used to configure new service.
     {{% /note %}}
 
+11. Check services with `pm2 list`, now you should see bcg component too:
 
-11. Tell **PM2** to save state:
+    ```
+    C:\Users\michal>pm2 list
+    ┌───────────┬────┬──────┬───────┬────────┬─────────┬────────┬─────┬───────────┬────────┬──────────┐
+    │ App name  │ id │ mode │ pid   │ status │ restart │ uptime │ cpu │ mem       │ user   │ watching │
+    ├───────────┼────┼──────┼───────┼────────┼─────────┼────────┼─────┼───────────┼────────┼──────────┤
+    │ bcg       │ 2  │ fork │ 1728  │ online │ 0       │ 0s     │ 0%  │ 10.2 MB   │ michal │ disabled │
+    │ mosquitto │ 0  │ fork │ 9872  │ online │ 0       │ 10m    │ 0%  │ 5.4 MB    │ michal │ disabled │
+    │ node-red  │ 1  │ fork │ 11420 │ online │ 0       │ 9m     │ 0%  │ 46.0 MB   │ michal │ disabled │
+    └───────────┴────┴──────┴───────┴────────┴─────────┴────────┴─────┴───────────┴────────┴──────────┘
+    ```
+
+12. Tell **PM2** to save state:
 
         pm2 save
 
@@ -162,10 +174,9 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
     {{% note "info" %}}You want to save start configuration for all 3 Playground services (Mosquitto MQTT broker, Node-RED, BigClown Gateway) to avoid repeating to enter start configuration for services after PC reboot.{{% /note %}}
 
+13. Open your web browser with the URL: **http://localhost:1880/**
 
-12. Open your web browser with the URL: **http://localhost:1880/**
-
-13. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
+14. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
 
     * [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.md" >}})
     * [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.md" >}})

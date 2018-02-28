@@ -40,11 +40,9 @@ This document will guide you through the **Wireless Smart LED Strip** project. Y
 
         You can find more information in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).
 
-* **BigClown Firmware Tool** installed
+    * **BigClown Firmware Tool** installed
 
-    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
-
-    {{% note "info" %}}`bcf` is part of Windows Playground Setup already.{{% /note %}}
+        You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
 
 ## Firmware Upload
 
@@ -107,6 +105,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 1. Open **Node-RED** in your web browser:
 
     **http://localhost:1880/**
+
+    If you are using Raspberry PI
 
 2. You should see the empty workspace with **Flow 1**.
 

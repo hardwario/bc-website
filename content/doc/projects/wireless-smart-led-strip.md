@@ -106,7 +106,11 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     **http://localhost:1880/**
 
-    If you are using Raspberry PI
+    If you are using Raspberry PI with connected USB Dongle as a gateway and want to configure it from your desktop, you shoud type IP adress of your Raspberry:
+
+    **http://xxx.xxx.xxx.xxx:1880/**
+
+    To obtain IP adress follow documment [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}).
 
 2. You should see the empty workspace with **Flow 1**.
 

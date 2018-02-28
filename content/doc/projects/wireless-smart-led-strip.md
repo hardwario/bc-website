@@ -96,7 +96,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% img-zoom src="project-thermostat-relay-b.png" %}}
 
-    {{% img-zoom src="project-thermostat-relay-d.png" %}}
+    {{% img-zoom src="project-thermostat-relay-c.png" %}}
 
 5. Connect the LED strip to the pluggable socket on the right side.
 

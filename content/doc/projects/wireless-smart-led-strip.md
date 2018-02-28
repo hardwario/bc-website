@@ -98,6 +98,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% img-zoom src="project-thermostat-relay-c.png" %}}
 
+    {{% img src="project-thermostat-relay-c.png" width="500" %}}
+
 5. Connect the LED strip to the pluggable socket on the right side.
 
 6. Connect the 5V DC Power Jack.

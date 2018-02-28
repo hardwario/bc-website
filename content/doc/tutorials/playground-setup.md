@@ -50,7 +50,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% download "Download Windows Playground from GitHub" "https://github.com/bigclownlabs/bch-playground-windows/releases/latest" %}}
 
-    After installation browser is navigated to Node-RED.        
+    After installation browser is navigated to Node-RED.
 
     {{% note "warning" %}}During installation **Python3** and **Node.js** are uninstalled (in case there was previous installation) and installed again. **Python3** and **Node.js** installers do not handle reinstallation correctly under some circumstances unfortunately.{{% /note %}}
 
@@ -82,11 +82,11 @@ If you already have previously installed playground, you can upgrade it at any t
 
     {{% note "info" %}}
 In case you have multiple COM ports in your PC, you can find right COM port using following procedure:
-    
-* Insert USB Dongle into PC USB port. 
-* Run `bcf devices`. 
-* Remove USB Dongle from PC USB port. 
-* Run `bcf devices`. 
+
+* Insert USB Dongle into PC USB port.
+* Run `bcf devices`.
+* Remove USB Dongle from PC USB port.
+* Run `bcf devices`.
 
 COM port missing in second list of COM ports is the right one for **bcg** service.
 {{% /note %}}
@@ -120,22 +120,22 @@ COM port missing in second list of COM ports is the right one for **bcg** servic
 
         pm2 resurrect
 
-    {{% note "info" %}}You have to do that after any PC restart and logoff.{{% /note %}}        
+    {{% note "info" %}}You have to do that after any PC restart and logoff.{{% /note %}}
 
-    {{% note "info" %}}[PM2](http://pm2.keymetrics.io/) is process manager. It keeps services running in background. In BigClown Playground PM2 is used for 3 services:
+    {{% note "info" %}}[PM2](http://pm2.keymetrics.io/) is process manager, resurrect will take about 20 s. It keeps services running in background. In BigClown Playground PM2 is used for 3 services:
 
 * Mosquitto MQTT broker
-    
+
 * Node-RED
-    
+
 * BigClown Gateway
-    
+
 Mosquitto and Node-RED start are configured during installation.
 
 BigClown Gateway start has to be configured manually (in next step) because UART port is not known during Playground installation.
 
 You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT messages.
-{{% /note %}}        
+{{% /note %}}
 
 
 10. Start the **BigClown Gateway** (in the background):

@@ -102,6 +102,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 ## Playground Bootstrap
 
+{{% note "warning" %}}In Windows: Start BigClown Playground and execute pm2 resurrect to start Node-RED and other required components [more info]({{< relref "doc/tutorials/playground-setup.md" >}}) {{% /note %}}
+
 1. Open **Node-RED** in your web browser:
 
     **http://localhost:1880/**

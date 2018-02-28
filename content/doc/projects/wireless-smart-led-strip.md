@@ -94,9 +94,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 4. Put assembled modules into the enclosure BCE301 and fix it with O-rings.
 
-    {{% img src="project-thermostat-relay-b.png" width="460" %}}
-
-    {{% img src="project-thermostat-relay-c.png" width="460" %}}
+    {{% img-zoom src="project-thermostat-relay-bc.png" %}}
 
 5. Connect the LED strip to the pluggable socket on the right side.
 

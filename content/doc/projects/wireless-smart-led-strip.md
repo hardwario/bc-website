@@ -106,7 +106,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     **http://localhost:1880/**
 
-    {{< note "info" "If you are using Raspberry PI with USB Dongle as a gateway type IP adress of your Raspberry: **http://xxx.xxx.xxx.xxx:1880/**. To obtain IP adress follow documment [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}})." />}}
+    {{% note "info" %}}If you are using Raspberry PI with USB Dongle as a gateway type IP adress of your Raspberry: **http://xxx.xxx.xxx.xxx:1880/** To obtain IP adress follow documment [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}){{% /note %}}
 
 2. You should see the empty workspace with **Flow 1**.
 
@@ -171,6 +171,8 @@ Follow these steps in **Node-RED**:
 3. Press **led-strip set color #ff0000**.
 
     {{% img-zoom src="radio-test.png" %}}
+
+{{< note "info" "If you are using Raspberry PI with USB Dongle as a gateway type IP adress of your Raspberry: **http://xxx.xxx.xxx.xxx:1880/** To obtain IP adress follow documment [**Raspberry Pi Login**]({{< relref \"doc/tutorials/raspberry-pi-login.md\" >}})." />}}
 
 ## Integration with Blynk
 

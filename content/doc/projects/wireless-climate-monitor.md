@@ -30,11 +30,9 @@ This document will guide you through the **Wireless Climate Monitor** project. Y
 
         You can find more information in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).
 
-* **BigClown Firmware Tool** installed
+    * **BigClown Toolchain** installed
 
-    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
-
-    {{% note "info" %}}`bcf` is part of Windows Playground Setup already.{{% /note %}}
+        You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
 
 ## Firmware Upload
 

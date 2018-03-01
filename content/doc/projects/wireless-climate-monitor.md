@@ -146,7 +146,7 @@ Now we have assembled our kit and let's start with some basic integration with *
 
 Firstly we need to configure our **Node-RED** app.
 
-1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-websockets`. You can follow [**this**]({{< relref "doc/tutorials/nodered-library-installation.md" >}}) example for installing libraries to **NodeRED**.
+1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`. You can follow [**this**]({{< relref "doc/tutorials/nodered-library-installation.md" >}}) example for installing libraries to **NodeRED**.
 
     {{% img-zoom src="nodered-screen-3.png" width="300" %}}
 
@@ -155,7 +155,7 @@ Firstly we need to configure our **Node-RED** app.
 3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
 
     ```json
-    [{"id":"c7e756bb.71c928","type":"blynk-websockets-out-write","z":"b1df9271.05d5","name":"","pin":"0","client":"c8872bd1.636cb8","x":780,"y":220,"wires":[]},{"id":"2f909f2d.48742","type":"blynk-websockets-out-write","z":"b1df9271.05d5","name":"","pin":"1","client":"c8872bd1.636cb8","x":780,"y":280,"wires":[]},{"id":"35bf3efb.8cf392","type":"blynk-websockets-out-write","z":"b1df9271.05d5","name":"","pin":"2","client":"c8872bd1.636cb8","x":780,"y":340,"wires":[]},{"id":"4db9c585.06680c","type":"mqtt in","z":"b1df9271.05d5","name":"","topic":"node/kit-lcd-thermostat:0/lux-meter/0:0/illuminance","qos":"2","broker":"3dded649.aa80aa","x":330,"y":220,"wires":[["c7e756bb.71c928"]]},{"id":"a1a2bff5.c49da","type":"mqtt in","z":"b1df9271.05d5","name":"","topic":"node/kit-lcd-thermostat:0/thermometer/0:0/temperature","qos":"2","broker":"3dded649.aa80aa","x":340,"y":280,"wires":[["2f909f2d.48742"]]},{"id":"cdb820bb.66d9f","type":"mqtt in","z":"b1df9271.05d5","name":"","topic":"node/kit-lcd-thermostat:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"3dded649.aa80aa","x":350,"y":340,"wires":[["35bf3efb.8cf392"]]},{"id":"c8872bd1.636cb8","type":"blynk-websockets-client","z":"","name":"","path":"ws://blynk-cloud.com:8080/websockets","key":""},{"id":"3dded649.aa80aa","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    [{"id":"4914605c.76972","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/kit-climate-monitor:0/lux-meter/0:0/illuminance","qos":"2","broker":"58254712.b61068","x":230,"y":520,"wires":[["431157f1.546248"]]},{"id":"dcf5bf8d.a0242","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/kit-climate-monitor:0/thermometer/0:0/temperature","qos":"2","broker":"58254712.b61068","x":240,"y":580,"wires":[["be96b6aa.eed098"]]},{"id":"2ac2eae7.308486","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/kit-climate-monitor:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"58254712.b61068","x":250,"y":640,"wires":[["dbe4b438.be4ef8"]]},{"id":"431157f1.546248","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"Pin V0 - Write","pin":0,"pinmode":0,"client":"1b003066.8ca2c","x":659,"y":520,"wires":[]},{"id":"be96b6aa.eed098","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"1","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":580,"wires":[]},{"id":"dbe4b438.be4ef8","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"2","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":640,"wires":[]},{"id":"58254712.b61068","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"1b003066.8ca2c","type":"blynk-ws-client","z":"","name":"","path":"wss://blynk-cloud.com:9443/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""}]
     ```
 
     It will look like this:
@@ -164,7 +164,7 @@ Firstly we need to configure our **Node-RED** app.
 
     {{% note "info" %}}In case you want use it for another sensors just change MQTT topics.{{% /note %}}
 
-4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com:8080/websockets`. The secret key we will configure later after obtaining one.
+4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `wss://blynk-cloud.com:9443/websockets`. The secret key we will configure later after obtaining one.
 
     {{% img-zoom src="nodered-screen-2.png" width="400" %}}
 

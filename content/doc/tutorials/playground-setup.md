@@ -223,6 +223,11 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
         sudo npm install -g --unsafe-perm node-red
 
+8. Install **node-red-dashboard** for graphs, gauges, buttons
+
+        cd ~/.node-red/
+        npm i node-red-dashboard
+
 9. Install **PM2**:
 
         sudo npm install -g pm2
@@ -328,6 +333,11 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 5. Install **Node-RED**:
 
         sudo npm install -g --unsafe-perm node-red
+
+5. Install **node-red-dashboard** for graphs, gauges, buttons
+
+        cd ~/.node-red/
+        npm i node-red-dashboard
 
 6. Install **PM2**:
 

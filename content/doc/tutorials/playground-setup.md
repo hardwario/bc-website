@@ -280,11 +280,13 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
     {{% note "warning" %}}You have to replace `...` with the device (you can look it up using `bcf devices`.{{% /note %}}
 
-19. Start the **BigClown Gateway** (in the background):
+19. Start the **BigClown Gateway** as **PM2** service:
 
-        bcg --device ...
+        pm2 start /usr/bin/python3 --name "bcg-ud" -- `which bcg` --device ...
 
-    {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+    {{% note "info" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+
+    {{% note "warning" %}}In case of dongle firmware update with `bcf` you have to stop `bcg` service by typing `pm2 stop bcg-ud`. After update you have to restart service by `pm2 restart bcg-ud`{{% /note %}}
 
 20. Open your web browser with the URL:
 
@@ -397,11 +399,13 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
     {{% note "warning" %}}You have to replace `...` with the device (you can look it up using `bcf devices`.{{% /note %}}
 
-17. Start the **BigClown Gateway** (in the background):
+17. Start the **BigClown Gateway** as **PM2** service:
 
-        bcg --device ...
+        pm2 start /usr/bin/python3 --name "bcg-ud" -- `which bcg` --device ...
 
-    {{% note "note" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+    {{% note "info" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
+
+    {{% note "warning" %}}In case of dongle firmware update with `bcf` you have to stop `bcg` service by typing `pm2 stop bcg-ud`. After update you have to restart service by `pm2 restart bcg-ud`{{% /note %}}
 
 18. Open your web browser with the URL:
 

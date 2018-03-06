@@ -4,13 +4,19 @@ title: "Playground Setup"
 
 In this document we will install a set of components that are fundamental for the BigClown projects and will help you to get started quickly on your workstation or laptop.
 
-These fundamental components are:
+This guide is for development environment. For production usage please follow [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) tutorial where is prepared **bc-raspbian** image and instructions for manual installation of the tools on generic embedded Linux machine.
+
+If you would like to develop your **custom gateway and node firmwares** then you need also to follow [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
+
+Playground fundamental components are:
 
 * The MQTT broker **Mosquitto** (with client tools)
 
 * The web-based tool **Node-RED** for automation flows
 
 * The process manager **PM2** to start the components automatically on boot
+
+* The Python application **BigClown Firmware Flashing Tool** `bcf`
 
 * The Python application **BigClown Gateway** for MQTT/gateway bridging
 
@@ -20,7 +26,7 @@ Once you install this setup, you will be able to start designing your automation
 
 ## Requirements
 
-* Workstation with **Windows**, **macOS** or **Ubuntu**
+* Workstation with **Windows**, **macOS**, **Ubuntu**
 
 * **BigClown USB Dongle**
 
@@ -176,11 +182,8 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
 13. Open your web browser with the URL: **http://localhost:1880/**
 
-14. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}) or with projects:
+14. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).
 
-    * [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.md" >}})
-    * [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.md" >}})
-    * [**Wireless Flood Detector**]({{< relref "doc/projects/wireless-flood-detector.md" >}})
 
 ## Playground Upgrade on Windows
 
@@ -293,6 +296,7 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
     **http://localhost:1880/**
 
 21. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).
+
 
 ## Playground Upgrade on macOS
 

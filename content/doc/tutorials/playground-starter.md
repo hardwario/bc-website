@@ -2,26 +2,19 @@
 title: "Playground Starter"
 ---
 
-## TODO
+After going through the [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) or [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) you have installed the main BigClown tools:
 
+  * Node-RED
+    * [Pairing commands for Node-RED](https://github.com/bigclownlabs/bch-gateway/blob/master/README.md#node-red-buttons)
+    * [Opening the Node-RED]({{< relref "doc/basics/quick-tutorial.md#opening-the-node-red" >}})
+  * MQTT broker Mosquitto
+    * [MQTT article]({{< relref "doc/interfaces/mqtt-protocol.md" >}})
+    * [MQTT topics short summary]({{< relref "doc/integrations/mqtt-topics.md" >}})
+    * [All Gateway MQTT topics](https://github.com/bigclownlabs/bch-gateway/blob/master/README.md) (GitHub)
+    * [All Node MQTT topics](https://github.com/bigclownlabs/bcf-generic-node/blob/master/README.md) (GitHub)
+  * [BigClown gateway]({{< relref "doc/tools/bcg.md" >}}) `bcg`
+  * [BigClown firmware flashing tool]({{< relref "doc/tools/bcf.md" >}}) `bcf`
 
+## Projects
 
-## Gateway services
-
-Service bch-gateway
-
-You can name your nodes so you don't need to remember the 8 character node address. Just edit the gateway config file `/etc/bigclown/bc-gateway.yml`. You can edit the [example configuration file](https://github.com/bigclownlabs/bch-usb-gateway/blob/master/config/config.mqtt.ssl.example.yml).
-
-This example file renames the node with address `836d1983631e` to the human-friendly `room` name.
-
-```yml
-device: /dev/ttyACM0
-mqtt:
-  host: localhost
-  port: 8883
-  cafile: /home/karel/clown/tls/ca.crt
-  certfile: /home/karel/clown/tls/client.crt
-  keyfile: /home/karel/clown/tls/client.key
-rename:
-  836d1983631e: room
-```
+Take a look in the **Projects** section in the left menu where you find how to easily create your first IoT projects.

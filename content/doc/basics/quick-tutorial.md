@@ -248,7 +248,7 @@ More radio information is in the [**Sub-GHz Radio**]({{< relref "doc/interfaces/
 {{% /note %}}
 
 
-## Flashing gateway firmware
+## Flashing USB Dongle firmware
 
 If you don't have {{< shop "USB Dongle" >}} you can use **Core Module** you have already connected to your **Raspberry Pi**. This module with already flashed firmware can act also as a wireless gateway.
 
@@ -259,7 +259,7 @@ Connect the **USB Dongle** to the **Raspberry Pi**. The **USB Dongle** will swit
 bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
 ```
 {{< note "info" >}}
-In case you get `[Errno 11] Resource temporarily unavailable` error, that means that the `bcg` gateway service is running and uses the same virtual serial port. Yo need to stop bcg temporarily by `pm2 stop bcg`, then do the `bcf flash` and start the service again by `pm2 start bcg`.
+In case you get `Could not lock device /dev/ttyUSB0` error, that means that the `bcg` gateway service is running and uses the same virtual serial port. Yo need to stop bcg temporarily by `pm2 stop bcg-ud`, then do the `bcf flash` and start the service again by `pm2 restart bcg-ud`.
 {{< /note >}}
 
 

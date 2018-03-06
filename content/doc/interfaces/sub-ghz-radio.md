@@ -18,7 +18,11 @@ On the other hand, several factors influence the communication distance - the mo
 
 The only objective radio communication range measurement is a so-called **line-of-sight** distance measured outdoor.
 
-{{% note "success" %}}We have achieved more than 500 meters line-of-sight communication range between two **Core Module** units.{{% /note %}}
+{{% note "success" %}}
+We've achieved [more than 500 meters line-of-sight](https://youtu.be/6zdQQdwV3GQ) communication range between two **Core Modules**.
+
+Also the single USB Dongle / Core Module is enough to [cover three-story house and whole garden around it](https://youtu.be/JplQxCYSClA).
+{{% /note %}}
 
 On the other hand, if the radio communication range is not sufficient, the network can be expanded on IP level thanks to MQTT message replication to a master server.
 

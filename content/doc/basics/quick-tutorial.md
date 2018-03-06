@@ -2,11 +2,17 @@
 title: "Quick Tutorial"
 ---
 
+{{< note "info" >}}
+You can follow this tutorial even without Raspberry Pi. You just have to install [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) on your desktop. The Raspberry Pi approach is the easiest because you can download bc-rasbian image with pre-installed tools.
+{{< /note >}}
+
 This document is a practical guide of using the **BigClown IoT Kit**. It will guide you how **Raspberry Pi** can read the temperature from **Core Module**, control the LED, measure the relative air humidity from **Humidity Tag**, control small electronic devices using **Relay Module**.
 
 You will also be able to create a wireless network using **USB Dongle**. Data acqusition and control process is demonstrated using **Node-RED**, a web application that will run inside the **Raspberry Pi**. This application allows intuitive graphical automation flow editing directly in your web browser.
 
-This tutorial is divided into several chapters. We suggest to study them one by one. The subsequent chapter builds on the knowledge from the previous chapters. At the end of each chapter there is a link to more detailed instructions, which can help you in case of confusion.
+{{< note "info" >}}
+If you would like to skip basics, you can later skip directly to the [**Creation of the wireless network**]({{< relref "#creation-of-the-wireless-network" >}}) section.
+{{< /note >}}
 
 First we will demonstrate basic functionality without a wireless network. We use just a single **Core Module** connected to the **Raspberry Pi** by a USB cable.
 
@@ -19,7 +25,7 @@ Optionally for establishing a wireless network, you will need:
 
   * {{< shop "USB Dongle" >}} (or second one {{< shop "Core Module" >}})
   * {{< shop "Mini Battery Module" >}}
-  * {{< shop "Humidity Tag" >}}
+  * {{< shop "Humidity Tag" >}} or {{< shop "Climate Module" >}}
   * {{< shop "Relay Module" >}}
 
 ## Video tutorial
@@ -32,7 +38,7 @@ In case you like video tutorials, you can watch this one. Otherwise please conti
 
 {{% note "warning" %}}Detailed instructions can be found in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).{{% /note %}}
 
-The easiest way to start is to download the [**BigClown Raspbian**](https://github.com/bigclownlabs/bc-raspbian/releases) image. This image has already pre-installed necessary components. It contains **BigClown Gateway**, **Mosquitto** MQTT broker, **Node-RED** and **BigClown Firmware Tool (bcf)**.
+The easiest way to start is to download the [**BigClown Raspbian**](https://github.com/bigclownlabs/bc-raspbian/releases) image. This image has already pre-installed necessary components. It contains **BigClown Gateway** `bcg`, **Mosquitto** MQTT broker, **Node-RED** and **BigClown Firmware Tool** `bcf`.
 
 The downloaded **Raspberry Pi** image has to be written to a MicroSD card using the `dd` command or using the **Win32DiskImager** tool.
 
@@ -62,15 +68,19 @@ For quick start we've create a Python command-line utility **bcf**, which automa
 We'll flash the **bcf-gateway** firmware. This firmware for the gateway contains functions for all BigClown sensors and modules. After the start the **Core Module** automatically detects connected sensors and sends the measured values by USB to the **Raspberry Pi**.
 
 Before flashing is necessary to switch the **Core Module** to the [programming **DFU** mode]({{< relref "doc/tutorials/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).
+
 ```
 bcf flash --dfu bigclownlabs/bcf-gateway-core-module:latest
 ```
 
 After the firmware flashing the **Core Module** will automatically restart and the flashed firmware will be run.
 
-## USB-MQTT communication bridge
+{{% note "warning" %}}The USB Dongle flashing is done differently and flashing is completely automatic and you **do not pass the `--dfu`** parameter.{{% /note %}}
 
-**USB Dongle** or **Core Module** with the **gateway** firmware is using virtual serial port over USB to exchange the data. This communication is then redirected on the **Raspberry Pi** to the **MQTT** messages thanks to the **bch-gateway** service.
+
+## USB Dongle to MQTT communication gateway
+
+**USB Dongle** or **Core Module** with the **gateway** firmware is using virtual serial port over USB to exchange the data. This communication is then redirected on the **Raspberry Pi** to the **MQTT** messages thanks to the [**bch-gateway**]({{< relref "doc/tools/bcg.md" >}}) `bcg` service.
 
 All the messages from modules go through the gateway to the MQTT broker. The MQTT is an open standard and also our back-bone system for passing the messages both ways.
 In the middle of this communication system is the MQTT broker. Which is a server that accepts client connections. Between the broker and clients are flowing MQTT messages. Each of them contains **topic** and **payload**. Topic is a text string and has directory-like structure with the `/` delimeter (eg. `node/core-module:0/thermometer/0:1/temperature`). Payload isn't defined by a MQTT standard and BigClown is sending these data types: numbers, strings, boolean values and JSONs.
@@ -78,6 +88,9 @@ In the middle of this communication system is the MQTT broker. Which is a server
 Other services can easily connect to the MQTT broker and extend the functionality. Like Node-RED, MQTT-Spy or Android MQTT Dash application.
 
 Another option is to enaable port-formwarding of the MQTT port (1883) on you NAT/network router. Then you can connect to your broker from anywhere in the world. It is also possible to set-up a **bridge** with other Mosquitto MQTT brokers. All the brokers then share the same messages between each other. Both of these described methods needs proper security settings. For example by TLS connection.
+
+* [MQTT explanation article]({{< relref "doc/interfaces/mqtt-protocol.md" >}})
+* [MQTT topics short summary]({{< relref "doc/integrations/mqtt-topics.md" >}})
 
 ## Subscribing and publishing MQTT messages
 
@@ -199,6 +212,7 @@ The MQTT topic will have the format `node/core-module:0/hygrometer/0:2/relative-
 
 <img src="humidity-tag-node-animation.gif" style="max-width:100%;" />
 
+
 ## Extending to control the relay
 
 Now let's add the relay control. You can use {{< shop "Relay Module" >}} or {{< shop "Power Module" >}}. Connect the module to the Core Module. Based on selected module with relay you have to change the topic.
@@ -229,6 +243,11 @@ All other wireless devices we call as a **node**.
 
 The used radio module **SPIRIT** is comunicating at 868 MHz frequency and with its reach will cover a larger family house and its surroundings.
 
+{{% note "warning" %}}
+More radio information is in the [**Sub-GHz Radio**]({{< relref "doc/interfaces/sub-ghz-radio.md" >}}) article.
+{{% /note %}}
+
+
 ## Flashing gateway firmware
 
 If you don't have {{< shop "USB Dongle" >}} you can use **Core Module** you have already connected to your **Raspberry Pi**. This module with already flashed firmware can act also as a wireless gateway.
@@ -242,6 +261,7 @@ bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
 {{< note "info" >}}
 In case you get `[Errno 11] Resource temporarily unavailable` error, that means that the `bcg` gateway service is running and uses the same virtual serial port. Yo need to stop bcg temporarily by `pm2 stop bcg`, then do the `bcf flash` and start the service again by `pm2 start bcg`.
 {{< /note >}}
+
 
 ## Conversion to the battery operated node
 
@@ -257,6 +277,10 @@ Place two AAA batteries to the {{< shop "Mini Battery Module" >}} and connect th
 ## Flashing the remote node
 
 Upload the `bcf-generic-node` firmware to the remote node unit. This universal firmware contains drivers for all BigClown sensors, tags and modules. After start-up all the connected devices are automatically detected and their values are sent by wireless network to the **gateway**.
+
+{{< note "info" >}}
+For longest **battery life** of remote nodes it is best to use firmwares with the **kit** in the name. They are specially tuned for the longest battery life. You can list them with `bcf list` command.
+{{< /note >}}
 
 Connect the **Core Module** to the **Raspberry Pi** and enable the **DFU** flashing mode as explained in the previous chapter. Upload the `generic-node` with `firmware-battery-mini` option.
 
@@ -277,6 +301,14 @@ We need to pair the **gateway** with the remote **node**. In case you are using 
 USB Dongle do not have pairing button and the pairing process needs to be started by a MQTT message. The same works also for the **Core Module** in case you cannot physically press the `B` button.
 
 For **USB Dongle** or **Core Module** you need to send start pairing MQTT message with console command or by using the flow in the **Node-RED** which sends the pairing start message.
+
+{{< note "info" >}}
+You can [**import Node-RED pairing flows**](https://github.com/bigclownlabs/bch-gateway/blob/master/README.md#node-red-buttons) which send pairing and many more commands just by clicking the mouse.
+
+<img src="node-red-pairing-flow.png" style="max-width:50%;" />
+{{< /note >}}
+
+In command line you enable pairing by commands below.
 
 ```
 For USB Dongle:

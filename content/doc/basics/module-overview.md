@@ -234,3 +234,12 @@ title: "Module Overview"
 </p>
 {{< more-info "doc/hardware/about-usb-dongle.md" >}}
 </div>
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="voc-tag.png" alt="VOC Tag" style="margin: 50px;">
+<h2>VOC Tag</h2>
+<p>
+{{< include "shop/pitch-voc-tag.md" >}}
+</p>
+{{< more-info "doc/hardware/about-voc-tag.md" >}}
+</div>

@@ -19,7 +19,7 @@ products:
     cs: https://obchod.bigclown.cz/climate-module
   - title: Climate Monitor Kit
     en: https://shop.bigclown.com/climate-monitor-kit
-    cs: https://obchod.bigclown.cz/climate-monitor-kit  
+    cs: https://obchod.bigclown.cz/climate-monitor-kit
   - title: Cloony
     en: https://shop.bigclown.com/cloony/
     cs: https://obchod.bigclown.cz/cloony
@@ -80,3 +80,6 @@ products:
   - title: USB Dongle
     en: https://shop.bigclown.com/usb-dongle
     cs: https://obchod.bigclown.cz/usb-dongle
+  - title: VOC Tag
+    en: https://shop.bigclown.com/voc-tag
+    cs: https://obchod.bigclown.cz/voc-tag

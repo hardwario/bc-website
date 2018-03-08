@@ -1,1 +1,1 @@
-The **VOC Tag** is a gas sensor for measuring the **volatile organic compounds (VOC) concentration**. This is useful in indoor air quality monitoring applications. This module uses a metal-oxide multi pixel sensor SGP30 from Sensirion offering total VOC output.
+The **VOC Tag** is a gas sensor for measuring **volatile organic compounds (VOC) concentration**. This is useful for indoor air quality monitoring applications. This module uses a metal-oxide multi pixel sensor SGP30 from Sensirion measuring total VOC level.

@@ -24,7 +24,7 @@ items:
     - title: "Toolchain Setup"
       link: "doc/tutorials/toolchain-setup.md"
     - title: "Toolchain Guide"
-      link: "doc/tutorials/toolchain-guide.md"      
+      link: "doc/tutorials/toolchain-guide.md"
     - title: "Turris Omnia & 1.x Setup"
       link: "doc/tutorials/turris-installation.md"
     - title: "MySigfox.com service"
@@ -131,6 +131,8 @@ items:
       link: "doc/hardware/about-temperature-tag.md"
     - title: "About USB Dongle"
       link: "doc/hardware/about-usb-dongle.md"
+    - title: "About VOC Tag"
+      link: "doc/hardware/about-voc-tag.md"
   - title: Firmware
     items:
     - title: "Basic Overview"

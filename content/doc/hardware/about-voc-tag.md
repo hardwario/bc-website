@@ -2,7 +2,7 @@
 title: "About VOC Tag"
 ---
 
-{{< img-float src="co2-module.png" alt="CO2 Module" width="300" >}}
+{{< img-float src="voc-tag.png" alt="VOC Tag" width="300" >}}
 
 {{< include "shop/pitch-voc-tag.md" >}}
 
@@ -19,4 +19,3 @@ title: "About VOC Tag"
 ## Firmware Projects
 
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
-* [**Wireless CO2 Monitor**](https://github.com/bigclownlabs/bcf-kit-wireless-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-co2-monitor/)

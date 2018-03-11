@@ -240,15 +240,15 @@ This is a brief list of differences:
 
 10. Update **pip** (Python Package Manager) to the latest version:
 
-        sudo pip3 install --upgrade --no-cache-dir pip
+        sudo pip3 install --upgrade pip
 
 11. Install the **BigClown Firmware Tool**:
 
-        sudo pip3 install --upgrade --no-cache-dir bcf
+        sudo pip3 install --upgrade bcf
 
 12. Install the **BigClown Gateway**:
 
-        sudo pip3 install --upgrade --no-cache-dir bcg
+        sudo pip3 install --upgrade bcg
 
 13. Add udev rules
 

@@ -94,7 +94,7 @@ The database to store collected data.
 
 1. Install the **MQTT to InfluxDB** service:
 
-        sudo pip3 install --upgrade --no-cache-dir mqtt2influxdb
+        sudo pip3 install --upgrade mqtt2influxdb
 
 2. Open the configuration file:
 
@@ -148,6 +148,22 @@ The database to store collected data.
             tags:
               id: $.topic[1]
 
+          - measurement: voltage
+            topic: node/+/battery/+/voltage
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
+
+          - measurement: button
+            topic: node/+/push-button/+/event-count
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
+              channel: $.topic[3]
+
+
     {{% note "info" %}}In section **tags** you can use text, for example:
     ```
     tags:
@@ -162,7 +178,7 @@ The database to store collected data.
 
 5. Start the **MQTT to InfluxDB** service:
 
-        pm2 start /usr/bin/python3 --name "mqtt2influxdb" -- /usr/local/bin/mqtt2influxdb -c /etc/bigclown/mqtt2influxdb.yml
+        pm2 start /usr/bin/python3 --name "mqtt2influxdb" -- `which mqtt2influxdb` -c /etc/bigclown/mqtt2influxdb.yml
 
 6. Save the **PM2 state** (so it will start after reboot):
 

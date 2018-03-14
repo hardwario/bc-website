@@ -279,7 +279,7 @@ Place two AAA batteries to the {{< shop "Mini Battery Module" >}} and connect th
 Upload the `bcf-generic-node` firmware to the remote node unit. This universal firmware contains drivers for all BigClown sensors, tags and modules. After start-up all the connected devices are automatically detected and their values are sent by wireless network to the **gateway**.
 
 {{< note "info" >}}
-For longest **battery life** of remote nodes it is best to use firmwares with the **kit** in the name. They are specially tuned for the longest battery life. You can list them with `bcf list` command.
+For longest **battery life** of remote nodes it is best to use firmwares with the **kit** in the name. They are specially tuned for the longest battery life. You can list them with `bcf search kit` command.
 {{< /note >}}
 
 Connect the **Core Module** to the **Raspberry Pi** and enable the **DFU** flashing mode as explained in the previous chapter. Upload the `generic-node` with `firmware-battery-mini` option.

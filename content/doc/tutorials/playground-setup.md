@@ -143,7 +143,6 @@ BigClown Gateway start has to be configured manually (in next step) because UART
 You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT messages.
 {{% /note %}}
 
-
 10. Start the **BigClown Gateway** (in the background):
 
         pm2 start "%BigClownGateway%" --name bcg -- --device ...
@@ -183,7 +182,6 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 13. Open your web browser with the URL: **http://localhost:1880/**
 
 14. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).
-
 
 ## Playground Upgrade on Windows
 
@@ -285,18 +283,17 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
 19. Start the **BigClown Gateway** as **PM2** service:
 
-        pm2 start /usr/bin/python3 --name "bcg-ud" -- `which bcg` --device ...
+        pm2 start `which python3` --name "bcg-ud" -- `which bcg` --device ...
 
     {{% note "info" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-    {{% note "warning" %}}In case of dongle firmware update with `bcf` you have to stop `bcg` service by typing `pm2 stop bcg-ud`. After update you have to restart service by `pm2 restart bcg-ud`{{% /note %}}
+    {{% note "warning" %}}If you want to update firmware in the **USB Dongle**, first you have to stop **bcg** by the command `pm2 stop bcg-ud`. After update, restart the service by the command `pm2 restart bcg-ud`.{{% /note %}}
 
 20. Open your web browser with the URL:
 
     **http://localhost:1880/**
 
 21. Continue in the document [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).
-
 
 ## Playground Upgrade on macOS
 
@@ -405,11 +402,11 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
 17. Start the **BigClown Gateway** as **PM2** service:
 
-        pm2 start /usr/bin/python3 --name "bcg-ud" -- `which bcg` --device ...
+        pm2 start `which python3` --name "bcg-ud" -- `which bcg` --device ...
 
     {{% note "info" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-    {{% note "warning" %}}In case of dongle firmware update with `bcf` you have to stop `bcg` service by typing `pm2 stop bcg-ud`. After update you have to restart service by `pm2 restart bcg-ud`{{% /note %}}
+    {{% note "warning" %}}If you want to update firmware in the **USB Dongle**, first you have to stop **bcg** by the command `pm2 stop bcg-ud`. After update, restart the service by the command `pm2 restart bcg-ud`.{{% /note %}}
 
 18. Open your web browser with the URL:
 

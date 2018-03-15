@@ -2,23 +2,31 @@
 title: "Grafana for Visualization"
 ---
 
-[**Grafana**](https://grafana.com/) is the open platform for beautiful analytics and monitoring. It allows you to create a nice looking dashboards that will give you quick insights into your sensor data.
+[**Grafana**](https://grafana.com/) is an open platform for beautiful analytics and monitoring. It allows you to create a nice looking dashboards that will give you quick insights into your sensor data.
 
 ## Requirements
 
 You will need these components to make it work:
 
-* **Debian-based Linux**
+* **Debian-based Linux** or **macOS**
 
 * **Mosquitto** - MQTT broker
 
 {{% note "danger" %}}This documents assumes that you are working with either **Debian**, **Raspbian** or **Ubuntu 16.04** distribution. The description below might work also on other Linux distributions and/or different versions but it has not been tested.{{% /note %}}
 
-{{% note "warning" %}}It has been tested on **Raspberry Pi 3** + **Raspbian Jessie** and **Turris Omnia** + **Ubuntu 16.04** (via LXC container).{{% /note %}}
+{{% note "warning" %}}
 
-## Installing InfluxDB
+It has been tested on:
 
-The database to store collected data.
+* **Raspberry Pi 3** + **Raspbian Jessie**
+
+* **Turris Omnia** + **Ubuntu 16.04** (via LXC container)
+
+* **macOS 10.13**
+
+{{% /note %}}
+
+## Installing InfluxDB on Linux
 
 1. Install dependency packages:
 
@@ -46,7 +54,7 @@ The database to store collected data.
 
         sudo systemctl start influxdb
 
-## Installing Grafana
+## Installing Grafana on Linux
 
 1. Install dependencies:
 
@@ -90,6 +98,36 @@ The database to store collected data.
 
         sudo systemctl start grafana-server
 
+Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connect-mosquitto-and-influxdb" >}}).
+
+## Installing InfluxDB on macOS
+
+1. Open the **Terminal** application.
+
+2. Make sure you have **Homebrew** installed.
+
+3. Install **InfluxDB**:
+
+        brew install influxdb
+
+4. Enable **InfluxDB** service:
+
+        brew services start influxdb
+
+## Installing Grafana on macOS
+
+1. Open the **Terminal** application.
+
+2. Make sure you have **Homebrew** installed.
+
+3. Install **Grafana**:
+
+        brew install grafana
+
+4. Enable **Grafana** service:
+
+        brew services start grafana
+
 ## Connect Mosquitto and InfluxDB
 
 1. Install the **MQTT to InfluxDB** service:
@@ -102,67 +140,68 @@ The database to store collected data.
 
 3. Paste this snippet to the configuration file:
 
-        mqtt:
-          host: 127.0.0.1
-          port: 1883
+    ```yaml
+    mqtt:
+      host: 127.0.0.1
+      port: 1883
 
-        influxdb:
-          host: 127.0.0.1
-          port: 8086
-          database: node
+    influxdb:
+      host: 127.0.0.1
+      port: 8086
+      database: node
 
-        points:
-          - measurement: temperature
-            topic: node/+/thermometer/+/temperature
-            fields:
-              value: $.payload
-            tags:
-              id: $.topic[1]
-              channel: $.topic[3]
+    points:
+      - measurement: temperature
+        topic: node/+/thermometer/+/temperature
+        fields:
+          value: $.payload
+        tags:
+          id: $.topic[1]
+          channel: $.topic[3]
 
-          - measurement: relative-humidity
-            topic: node/+/hygrometer/0:4/relative-humidity
-            fields:
-              value: $.payload
-            tags:
-              id: $.topic[1]
+      - measurement: relative-humidity
+        topic: node/+/hygrometer/0:4/relative-humidity
+        fields:
+          value: $.payload
+        tags:
+          id: $.topic[1]
 
-          - measurement: illuminance
-            topic: node/+/lux-meter/0:0/illuminance
-            fields:
-              value: $.payload
-            tags:
-              id: $.topic[1]
+      - measurement: illuminance
+        topic: node/+/lux-meter/0:0/illuminance
+        fields:
+          value: $.payload
+        tags:
+          id: $.topic[1]
 
-          - measurement: pressure
-            topic: node/+/barometer/0:0/pressure
-            fields:
-              value: $.payload
-            tags:
-              id: $.topic[1]
+      - measurement: pressure
+        topic: node/+/barometer/0:0/pressure
+        fields:
+          value: $.payload
+        tags:
+          id: $.topic[1]
 
-          - measurement: co2
-            topic: node/+/co2-meter/-/concentration
-            fields:
-              value: $.payload
-            tags:
-              id: $.topic[1]
+      - measurement: co2
+        topic: node/+/co2-meter/-/concentration
+        fields:
+          value: $.payload
+        tags:
+          id: $.topic[1]
 
-          - measurement: voltage
-            topic: node/+/battery/+/voltage
-            fields:
-              value: $.payload
-            tags:
-              id: $.topic[1]
+      - measurement: voltage
+        topic: node/+/battery/+/voltage
+        fields:
+          value: $.payload
+        tags:
+          id: $.topic[1]
 
-          - measurement: button
-            topic: node/+/push-button/+/event-count
-            fields:
-              value: $.payload
-            tags:
-              id: $.topic[1]
-              channel: $.topic[3]
-
+      - measurement: button
+        topic: node/+/push-button/+/event-count
+        fields:
+          value: $.payload
+        tags:
+          id: $.topic[1]
+          channel: $.topic[3]
+    ```
 
     {{% note "info" %}}In section **tags** you can use text, for example:
     ```
@@ -196,7 +235,7 @@ The database to store collected data.
 
 {{% /note %}}
 
-## Configure the Grafana.
+## Configure Grafana
 
 1. Open the Grafana web interface at [**http://localhost:3000/**](http://localhost:3000/) or [**http://hub.local:3000/**](http://hub.local:3000/) or [**http://ip:3000/**](http://ip:3000/) and **Log in**
 
@@ -220,15 +259,15 @@ The database to store collected data.
 
     {{% img-zoom src="datasource.png" %}}
 
-3. Download dashboard.json or Copy to clipboard
+3. Download `dashboard.json` or copy the content of this file to clipboard:
 
     <a href="dashboard.json" target="_blank">dashboard.json</a>
 
-4. Import the visualization dashboards, click the **Graphana icon** (at the top left), select **Dashboarts** in the menu, then **Import**
+4. Import the visualization dashboards, click the **Grafana icon** (top left button), select **Dashboards** in the menu, then choose **Import**:
 
     {{% img-zoom src="menu-import-dashboard.png" %}}
 
-5. Upload .json File or Paste JSON.
+5. Upload the `dashboard.json` file or paste the JSON from clipboard.
 
 6. Choose **node** as a data source and click on **Import**:
 

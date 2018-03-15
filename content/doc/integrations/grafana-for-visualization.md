@@ -8,23 +8,17 @@ title: "Grafana for Visualization"
 
 You will need these components to make it work:
 
-* **Debian-based Linux** or **macOS**
+* **Debian-based Linux**, or **macOS**
 
 * **Mosquitto** - MQTT broker
 
-{{% note "danger" %}}This documents assumes that you are working with either **Debian**, **Raspbian** or **Ubuntu 16.04** distribution. The description below might work also on other Linux distributions and/or different versions but it has not been tested.{{% /note %}}
-
-{{% note "warning" %}}
-
-It has been tested on:
+{{% note "warning" %}}This setup has been tested on:
 
 * **Raspberry Pi 3** + **Raspbian Jessie**
 
 * **Turris Omnia** + **Ubuntu 16.04** (via LXC container)
 
-* **macOS 10.13**
-
-{{% /note %}}
+* **macOS 10.13**{{% /note %}}
 
 ## Installing InfluxDB on Linux
 
@@ -140,68 +134,68 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
 3. Paste this snippet to the configuration file:
 
-    ```yaml
-    mqtt:
-      host: 127.0.0.1
-      port: 1883
+        ```yaml
+        mqtt:
+          host: 127.0.0.1
+          port: 1883
 
-    influxdb:
-      host: 127.0.0.1
-      port: 8086
-      database: node
+        influxdb:
+          host: 127.0.0.1
+          port: 8086
+          database: node
 
-    points:
-      - measurement: temperature
-        topic: node/+/thermometer/+/temperature
-        fields:
-          value: $.payload
-        tags:
-          id: $.topic[1]
-          channel: $.topic[3]
+        points:
+          - measurement: temperature
+            topic: node/+/thermometer/+/temperature
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
+              channel: $.topic[3]
 
-      - measurement: relative-humidity
-        topic: node/+/hygrometer/0:4/relative-humidity
-        fields:
-          value: $.payload
-        tags:
-          id: $.topic[1]
+          - measurement: relative-humidity
+            topic: node/+/hygrometer/0:4/relative-humidity
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
 
-      - measurement: illuminance
-        topic: node/+/lux-meter/0:0/illuminance
-        fields:
-          value: $.payload
-        tags:
-          id: $.topic[1]
+          - measurement: illuminance
+            topic: node/+/lux-meter/0:0/illuminance
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
 
-      - measurement: pressure
-        topic: node/+/barometer/0:0/pressure
-        fields:
-          value: $.payload
-        tags:
-          id: $.topic[1]
+          - measurement: pressure
+            topic: node/+/barometer/0:0/pressure
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
 
-      - measurement: co2
-        topic: node/+/co2-meter/-/concentration
-        fields:
-          value: $.payload
-        tags:
-          id: $.topic[1]
+          - measurement: co2
+            topic: node/+/co2-meter/-/concentration
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
 
-      - measurement: voltage
-        topic: node/+/battery/+/voltage
-        fields:
-          value: $.payload
-        tags:
-          id: $.topic[1]
+          - measurement: voltage
+            topic: node/+/battery/+/voltage
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
 
-      - measurement: button
-        topic: node/+/push-button/+/event-count
-        fields:
-          value: $.payload
-        tags:
-          id: $.topic[1]
-          channel: $.topic[3]
-    ```
+          - measurement: button
+            topic: node/+/push-button/+/event-count
+            fields:
+              value: $.payload
+            tags:
+              id: $.topic[1]
+              channel: $.topic[3]
+        ```
 
     {{% note "info" %}}In section **tags** you can use text, for example:
     ```
@@ -237,7 +231,7 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
 ## Configure Grafana
 
-1. Open the Grafana web interface at [**http://localhost:3000/**](http://localhost:3000/) or [**http://hub.local:3000/**](http://hub.local:3000/) or [**http://ip:3000/**](http://ip:3000/) and **Log in**
+1. Open the Grafana web interface at [**http://localhost:3000/**](http://localhost:3000/) or [**http://hub.local:3000/**](http://hub.local:3000/) or _http://ip:3000/_ and log in:
 
     * Enter the **User** `admin`
 
@@ -245,7 +239,7 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
 2. Create a **data source**.
 
-    Just click on **Add data source** and:
+    Select **Add data source** and then:
 
     * Enter the **Name:** `node`
 
@@ -255,7 +249,7 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
     * Enter the **Database:** `node`
 
-    Finish by clicking on the **Add** button. At this moment Grafana tries to connect to the **data source** and reports back the message `Data source is working`.
+    Finish by clicking on the **Add** button. At this moment **Grafana** will try to connect to the **data source** and replies back with the message **Data source is working**.
 
     {{% img-zoom src="datasource.png" %}}
 

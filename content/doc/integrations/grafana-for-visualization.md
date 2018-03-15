@@ -138,7 +138,6 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
 3. Paste this snippet to the configuration file:
 
-        ```yml
         mqtt:
           host: 127.0.0.1
           port: 1883
@@ -199,7 +198,6 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
             tags:
               id: $.topic[1]
               channel: $.topic[3]
-        ```
 
     {{% note "info" %}}In the section **tags** you can your identifiers, e.g.:
     ```

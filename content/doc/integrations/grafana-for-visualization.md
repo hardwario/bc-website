@@ -98,7 +98,7 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
 1. Open the **Terminal** application.
 
-2. Make sure you have **Homebrew** installed.
+2. Make sure you have [**Homebrew**](https://brew.sh/) installed.
 
 3. Install **InfluxDB**:
 
@@ -112,7 +112,7 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
 1. Open the **Terminal** application.
 
-2. Make sure you have **Homebrew** installed.
+2. Make sure you have [**Homebrew**](https://brew.sh/) installed.
 
 3. Install **Grafana**:
 
@@ -128,13 +128,17 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
         sudo pip3 install --upgrade mqtt2influxdb
 
+2. Create the `/etc/bigclown` directory:
+
+        sudo mkdir /etc/bigclown
+
 2. Open the configuration file:
 
         sudo nano /etc/bigclown/mqtt2influxdb.yml
 
 3. Paste this snippet to the configuration file:
 
-        ```yaml
+        ```yml
         mqtt:
           host: 127.0.0.1
           port: 1883
@@ -197,10 +201,9 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
               channel: $.topic[3]
         ```
 
-    {{% note "info" %}}In section **tags** you can use text, for example:
+    {{% note "info" %}}In the section **tags** you can your identifiers, e.g.:
     ```
     tags:
-
         room: bedroom
     ```
     {{% /note %}}
@@ -211,7 +214,7 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
 5. Start the **MQTT to InfluxDB** service:
 
-        pm2 start /usr/bin/python3 --name "mqtt2influxdb" -- `which mqtt2influxdb` -c /etc/bigclown/mqtt2influxdb.yml
+        pm2 start `which python3` --name "mqtt2influxdb" -- `which mqtt2influxdb` -c /etc/bigclown/mqtt2influxdb.yml
 
 6. Save the **PM2 state** (so it will start after reboot):
 

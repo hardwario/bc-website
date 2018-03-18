@@ -96,7 +96,7 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
         sudo dd if=bc-raspbian-VER-armhf-rpi.img of=/dev/rdiskX bs=1m
 
-    {{% note "info" %}}`sudo` means the process will run with the administrator's rights and may ask for the your password (if you have such privileges).{{% /note %}}
+    {{% note "info" %}}`sudo` means the process will run with the administrator's rights and may ask for the your password (if you have such privileges). The password is the same as for your user account.{{% /note %}}
 
     {{% note "warning" %}}This process may take several minutes.{{% /note %}}
 
@@ -138,7 +138,7 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
         sudo umount /dev/sdX?
 
-    {{% note "info" %}}`sudo` means the process will run with the administrator's rights and may ask for the your password (if you have such privileges).{{% /note %}}
+    {{% note "info" %}}`sudo` means the process will run with the administrator's rights and may ask for the your password (if you have such privileges). The password is the same as for your user account.{{% /note %}}
 
 7. Write the downloaded image to the MicroSD card (replace `VER` with the actual version of the downloaded image and `X` with the correct disk identifier):
 
@@ -317,8 +317,6 @@ This is a brief list of differences:
     \
 
         source .bashrc
-
-
 
 ## WiFi Setup on Raspberry Pi 3
 

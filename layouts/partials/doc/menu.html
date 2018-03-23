@@ -1,16 +1,37 @@
+<style>
+  .cards{
+    margin-top: 20px;
+  }
+  .card-title{
+    margin-bottom: 0;
+    color: inherit;
+  }
+  .card-title a{
+    color: inherit;
+  }
+</style>
+
+<style>
+  header.page-header{
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+  }
+</style>
+
 {{ "" | safeHTML }}
 {{ "" | safeHTML }}
 {{ "<!-- START OF MENU -->" | safeHTML }}
 {{ "" | safeHTML }}
 {{- $page := . }}
-<div class="panel-group" id="accordion">
+<div class="cards" id="accordion">
 {{- range $.Site.Data }}
   {{- range index . "menu" }}
     {{- range . }}
       {{- $collapse := .title | urlize }}
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ $collapse }}">{{ .title }}</a></h4>
+  <div class="card">
+    <div class="card-header">
+      <h6 class="card-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ $collapse }}">{{ .title }}</a></h4>
     </div>
       {{- with .items }}
         {{- $.Scratch.Set "in" "" }}
@@ -22,7 +43,7 @@
             {{- end }}
           {{- end }}
         {{- end }}
-    <nav id="collapse-{{ $collapse }}" class="panel-collapse collapse{{- $.Scratch.Get "in" }}">
+    <nav id="collapse-{{ $collapse }}" class="card-collapse collapse{{- $.Scratch.Get "in" }}">
       <ul class="list-group" style="border-top: none;">
         {{- range . }}
           {{- $title := .title | default "(Untitled)" }}

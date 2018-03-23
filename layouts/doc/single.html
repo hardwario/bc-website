@@ -16,18 +16,27 @@
       </main>
     </div>
     <div class="hidden-xs hidden-sm col-md-3 hidden-print">
-      <aside id="scrollspy">
+
+      <aside>
+
+          <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+
+        <div id="list-example" class="list-group">
         {{- if len .TableOfContents }}
         <p><strong>Chapters in this document:</strong></p>
           {{ .TableOfContents }}
         {{- end }}
+        </div>
         <div style="margin-top: 50px;"><a class="btn btn-danger" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil" style="margin-right: 15px;"></span>EDIT THIS PAGE</a></div>
       </aside>
       <script>
-        $('#scrollspy > nav > ul > li > ul').addClass('nav nav-pills nav-stacked');
-        $('#scrollspy > nav > ul > li > ul').prepend('<li><a href="#top">Introduction</a></li>');
-        $('#scrollspy > nav > ul > li > ul > li > ul').remove();
-        $('#scrollspy').slideDown(1000);
+        $('#list-example > a').addClass('list-group-item list-group-item-action');
+        $('#list-example > a').prepend('<li><a href="#top">Introduction</a></li>');
+        //$('#scrollspy > nav > ul > li > ul > li > ul').remove();
+        //$('#scrollspy').slideDown(1000);
       </script>
     </div>
   </div>

@@ -22,8 +22,13 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.2",
     "gulp-hash": "^4.1.1",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "gulp-purifycss": "^0.2.0"
   }
 }

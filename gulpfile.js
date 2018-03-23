@@ -5,6 +5,8 @@ const child = require('child_process');
 const sass = require("gulp-sass");
 const hash = require("gulp-hash");
 const del = require("del");
+var purify = require('gulp-purifycss');
+let cleanCSS = require('gulp-clean-css');
 
 gulp.task('hugo', () => {
   const hugo = child.spawn('hugo', ['serve']);
@@ -34,6 +36,30 @@ gulp.task("scss", function () {
         .pipe(gulp.dest("data/css"))
 });
 
+gulp.task('purify-css', function() {
+  return gulp.src(['static/_assets/css/main-*.css','static/_assets/css/bootstrap*.css'])
+    .pipe(purify(['static/_assets/js/**/*.js', 'layouts/**/*.html']))
+    .pipe(gulp.dest("test/css"));
+});
+
+gulp.task('minify-css', () => {
+  return gulp.src('static/_assets/css/main-*.css')
+    .pipe(cleanCSS({debug: true}, (details) => {
+      console.log(`${details.name}: ${details.stats.originalSize}`);
+      console.log(`${details.name}: ${details.stats.minifiedSize}`);
+    }))
+  .pipe(gulp.dest('test2'));
+});
+
+gulp.task('minify-css2', () => {
+  return gulp.src('test/css/main-*.css')
+    .pipe(cleanCSS({debug: true}, (details) => {
+      console.log(`${details.name}: ${details.stats.originalSize}`);
+      console.log(`${details.name}: ${details.stats.minifiedSize}`);
+    }))
+  .pipe(gulp.dest('test3'));
+});
+
 // Compile SCSS files to CSS for Documentation
 gulp.task("scss-doc", function () {
     //del(["static/_assets/css/www/**/*"])
@@ -51,16 +77,15 @@ gulp.task("scss-doc", function () {
 // Hash javascript
 gulp.task("js", function () {
     //del(["static/_assets/js/www/**/*"])
-    gulp.src("src/js/**/*")
+    gulp.src(["src/js/**/*", "node_modules/bootstrap/dist/js/bootstrap.min.js"])
         .pipe(hash())
         .pipe(gulp.dest("static/_assets/js"))
         .pipe(hash.manifest("hash.json"))
         .pipe(gulp.dest("data/js"))
 });
 
-
 // Watch asset folder for changes
-gulp.task("watch", ["scss", "scss-doc", "js"], function () {
+gulp.task("watch", ["scss", "scss-doc", "js"/*, "purify-css", "minify-css","minify-css2"*/], function () {
     gulp.watch("src/scss/**/*", ["scss"])
     gulp.watch("src/js/**/*", ["js"])
 });

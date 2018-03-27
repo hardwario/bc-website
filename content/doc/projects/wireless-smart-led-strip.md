@@ -82,7 +82,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 ## Hardware Assembling
 
-You can play short video with kit assembling:
+See short video with easy step by step demonstration:
 
 {{< youtube idxAoc2q6O0 >}}
 

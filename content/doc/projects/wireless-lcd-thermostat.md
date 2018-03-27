@@ -63,6 +63,10 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 ## Hardware Assembling
 
+See short video with easy step by step demonstration:
+
+{{< youtube 5fihG2xp4y8 >}}
+
 1. Start with the **Mini Battery Module**.
 
     {{% note "warning" %}}Make sure the **Mini Battery Module** does not have batteries inserted.{{% /note %}}

@@ -82,6 +82,10 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 ## Hardware Assembling
 
+You can play short video with kit assembling:
+
+{{< youtube idxAoc2q6O0 >}}
+
 1. Start with the **Power Module**.
 
     {{% note "warning" %}}Make sure the **Power Module** does not have power adapter inserted.{{% /note %}}

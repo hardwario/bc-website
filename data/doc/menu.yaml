@@ -201,6 +201,8 @@ items:
       link: "doc/tools/bcg.md"
     - title: "Dashboard"
       link: "doc/tools/dashboard.md"
+    - title: "BigClown GUI Flashing tool"
+      link: "doc/tools/firmware-app.md"
   - title: "Documentation"
     items:
     - title: "Contribution Setup"

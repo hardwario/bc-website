@@ -4,7 +4,7 @@ title: "MQTT topics"
 
 ## Generic Node Topics
 
-Detailed list of topics is in **README** in GitHub repository [**bcf-gateway**](https://github.com/bigclownlabs/bcf-gateway).
+Detailed list of topics is in **README** in GitHub repository [**bcf-generic-node**](https://github.com/bigclownlabs/bcf-generic-node).
 
 | Explanation   | MQTT Topic    |
 | ------------- |---------------|
@@ -61,22 +61,44 @@ Detailed list of topics is in **README** in GitHub repository [**bcf-gateway**](
 
 ## Gateway Topics
 
-### Radio Pairing
+Detailed list of topics is in **README** in GitHub repository [**bch-gateway**](https://github.com/bigclownlabs/bch-gateway)
 
-Start/stop radio pairing mode on gateway, get paired nodes, delete all pairing.
+{{< note "info" >}}
+Replace `{id}` with **id** or **name** of gateway, use "all" for request to all. \\
+Also to see the MQTT responses open the Node-RED debug tab or run this console command `mosquitto_sub -t gateway/#`.
+{{< /note >}}
 
-**Request**
-
-| MQTT Topic | Explanation |
+| Explanation | MQTT Topic |
 |------------|-------------|
-| `gateway/{id or name}/pairing-mode/start` | Start pairing, led starts blinking |
-| `gateway/{id or name}/pairing-mode/stop` | Stop pairing, led stops blinking |
-| `gateway/{id or name}/nodes/get` | List of paired nodes |
-| `gateway/{id or name}/nodes/purge` | Purge all paired nodes |
+| **Pairing** |
+| start | `gateway/{id}/pairing-mode/start` |
+|       | response: `gateway/{id}/pairing-mode "start"` |
+| stop | `gateway/{id}/pairing-mode/stop` |
+|       | response: `gateway/{id}/pairing-mode "stop"` |
+| **Paired nodes** |
+| list | `gateway/{id}/nodes/get`  |
+|       | response: `gateway/{id}/nodes`<br/> `[{"id": "a7c8b05762dd", "alias": "generic-node:0"},` <br/>`{"id": "836d1983718a", "alias": "kit-lcd-thermostat:0"}]` |
+| purge all nodes| `gateway/{id}/nodes/purge`  |
+| | response: `gateway/{id}/nodes []` |
+| **Manual add/remove**|
+| add | `gateway/{id}/nodes/add` <br /> `"{id-node}"` |
+| | response: `gateway/{id}/attach "{id-node}"` |
+| remove | `gateway/{id}/nodes/remove` <br /> `"{id-node}"` |
+| | response: `gateway/{id}/detach "{id-node}"` |
+| **Aliases**|
+| set | `gateway/{id}/alias/set` <br /> `{"id": "id-node", "alias": "new-name"}` |
+| remove | `gateway/{id}/alias/remove` <br /> `"{id-node}"` |
+| remove | `gateway/{id}/alias/set` <br /> `{"id": "id-node", "alias": null}` |
+| **Scan wireless**|
+| start | `gateway/{id}/scan/start` |
+| | response: `gateway/{id}/scan "start"` |
+| | found node: `gateway/{id}/found "{id-node}"` |
+| stop | `gateway/{id}/scan/stop` |
+| | response: `gateway/{id}/scan "stop"` |
 
-* `{id or name}` - id or name of gateway, use "all" for request to all gateways
 
-Examples:
+## Mosquitto command examples
+Send to all connected gateways:
 <pre>`mosquitto_pub -t gateway/all/pairing-mode/start -n`</pre>
 <pre>`mosquitto_pub -t gateway/all/pairing-mode/stop -n`</pre>
 <pre>`mosquitto_pub -t gateway/all/nodes/get -n`</pre>
@@ -89,26 +111,3 @@ Gateway named *"usb-dongle"*:
 Gateway named *"core-module"*:
 <pre>`mosquitto_pub -t gateway/core-module/pairing-mode/start -n`</pre>
 <pre>`mosquitto_pub -t gateway/core-module/pairing-mode/stop -n`</pre>
-
-**Response**
-
-To see responses execute:
-<pre>`mosquitto_sub -t gateway/#`</pre>
-
-* `gateway/{id or name}/pairing-mode "start"`
-* `gateway/{id or name}/pairing-mode "stop"`
-* `gateway/{id or name}/nodes ["{id-node-0}", "{id-node-id1}", "{id-node-id2}"]`
-* `gateway/{id or name}/nodes []`
-
-**Message notifications**
-
-| MQTT Topic MQTT Payload | Explanation |
-|------------|-------------|
-| `gateway/{gw id or name}/attach "{node id}"` | Notification node {node id} paired |
-
-Example:
-
-* `gateway/pc-gw/attach "836d19839c3a"`
-
-
-For details have a look into implementation in GitHub repository [**bch-gateway**](https://github.com/bigclownlabs/bch-gateway).

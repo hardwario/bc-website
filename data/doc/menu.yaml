@@ -59,6 +59,8 @@ items:
     items:
       - title: "MQTT Topics"
         link: "doc/integrations/mqtt-topics.md"
+      - title: "Serial port JSON"
+        link: "doc/integrations/serial-port-json.md"
       - title: "Grafana for Visualization"
         link: "doc/integrations/grafana-for-visualization.md"
       - title: "Blynk for Mobile Application"

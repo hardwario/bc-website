@@ -2,10 +2,10 @@
 title: "How to: LCD Module"
 ---
 
-Our [LCD Module](../../hardware/about-lcd-module/) provides simple way to show needed information without connecting to computer or any network. It is *ultra-low-power device* - its using should not bring you much trouble when powered with batteries. 
+Our [LCD Module](../../hardware/about-lcd-module/) provides simple way to show needed information without connecting to computer or any network. It is *ultra-low-power device* - its using should not bring you much trouble when powered with batteries.
 
 It may be a bit hard to get used to draw things or show text at the beginning, but little bit of training (and reading through this article) should help you.
-**Note:** Printing dots, writing strings and drawing lines - everything means `draw` in SDK.  
+**Note:** Printing dots, writing strings and drawing lines - everything means `draw` in SDK.
 
 
 {{< note "info" "As always..." >}}
@@ -21,13 +21,13 @@ It may be a bit hard to get used to draw things or show text at the beginning, b
 
 - LCD module On
 - drawing, setting font, clearing, rotating
-- LCD module Update - *makes all changes (like drawing) visible on LCD* 
+- LCD module Update - *makes all changes (like drawing) visible on LCD*
 - LCD module Off - *switches off the LCD module for power saving*
 
 ### Remember to Update
 Every change you make - draw a string or a line, rotate the display, etc is done internally and no changes are visible until you call the ```bc_module_lcd_update()``` function.
 
-This has a simple purpose - if every change you make would cause an update, it would increase the power consumption rapidly. 
+This has a simple purpose - if every change you make would cause an update, it would increase the power consumption rapidly.
 
 
 ### LCD Module Power
@@ -37,7 +37,7 @@ It is as simple as calling
 
 `bc_module_lcd_off()`
 
-and 
+and
 
 `bc_module_lcd_on()`
 
@@ -59,7 +59,7 @@ the block containing the "false" string will be black and the text itself will b
 ### Clear the LCD
 You can clear the LCD panel (which means set all pixels to show nothing) by calling the ```bc_module_lcd_update()``` function.
 
-You have to call the update function (```bc_module_lcd_update()```) to make the clear process visible on LCD panel. 
+You have to call the update function (```bc_module_lcd_update()```) to make the clear process visible on LCD panel.
 
 
 ### Rotation
@@ -76,7 +76,7 @@ You can use one of these enums as the parameter:
 
 **Remember that rotating LCD will not clear the display nor update it.** So if you want to create function that will draw string "Hello" rotated for 90 degrees you would create something like this:
 ```c
-void helloDraw() 
+void helloDraw()
 {
     bc_module_lcd_clear();
     bc_module_lcd_draw_string(5, 5, "Hello", false);
@@ -130,7 +130,7 @@ You can control them with standard functions from *bc\_led\_\** from [SDK](http:
 
 To get the driver you have to use function `const bc_led_driver_t* bc_module_lcd_get_led_driver(void)` which returns pointer to the driver. Then you have to init the virtual LED with `void bc_led_init_virtual(bc_led_t *self, int channel, const bc_led_driver_t *driver, int idle_state)`.
 
-The `channel` parameter is equal to LED color: 
+The `channel` parameter is equal to LED color:
 
 - 0 is RED light
 - 1 is GREEN light
@@ -177,7 +177,7 @@ void application_init(void)
     const bc_led_driver_t* driver = bc_module_lcd_get_led_driver();
     bc_led_init_virtual(&lcdLed, 2, driver, 1);
 
-    bc_module_lcd_init(&_bc_module_lcd_framebuffer);
+    bc_module_lcd_init();
     bc_module_lcd_set_font(&bc_font_ubuntu_15);
 }
 
@@ -232,7 +232,7 @@ void application_init(void)
     bc_button_set_event_handler(&button_left, button_event_handler, (int*)0);
     bc_button_set_event_handler(&button_right, button_event_handler, (int*)1);
 
-    bc_module_lcd_init(&_bc_module_lcd_framebuffer);
+    bc_module_lcd_init();
     bc_module_lcd_set_font(&bc_font_ubuntu_15);
 }
 

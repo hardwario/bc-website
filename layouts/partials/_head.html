@@ -9,20 +9,13 @@
   {{ if ne .Section "doc" }}
   <link rel="stylesheet" href="/_assets/css/{{ index .Site.Data.css.hash "main.css" }}" />
   {{ else }}
-  <link rel="stylesheet" href="/_assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/_assets/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="/_assets/css/ionicons.min.css">
-  <link rel="stylesheet" href="/_assets/css/syntax.css">
-  <link rel="stylesheet" href="/_assets/css/zoom.css">
-  <link rel="stylesheet" href="/_assets/css/style.css">
   <link rel="stylesheet" href="/_assets/css/{{ index .Site.Data.css.hash "main-doc.css" }}" />
 
-  <script src="/_assets/js/jquery.min.js"></script>
-  <script src="/_assets/js/bootstrap.min.js"></script>
+  <script src="/_assets/js/{{ index .Site.Data.js.hash "jquery.min.js" }}"></script>
+  <script src="/_assets/js/{{ index .Site.Data.js.hash "bootstrap.min.js" }}"></script>
+  <script src="/_assets/js/{{ index .Site.Data.js.hash "zoom.js" }}"></script>
+  <script src="/_assets/js/{{ index .Site.Data.js.hash "clipboard.min.js" }}"></script>
 
-  <script src="/_assets/js/zoom.js"></script>
-  <script src="/_assets/js/transition.js"></script>
-  <script async type="text/javascript" src="/_assets/js/clipboard.min.js"></script>
   {{ end }}
 
   {{ partial "favicon.html" . }}

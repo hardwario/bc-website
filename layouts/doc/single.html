@@ -1,10 +1,12 @@
 {{ define "main" }}
 <div class="container-fluid main">
   <div class="row">
-    <aside class="col-sm-4 col-md-3 doc-nav hidden-print">
+
+    <div class="col-md-3 col-sm-6 doc-nav hidden-print">
       {{- partial "doc/menu.html" . }}
-    </aside>
-    <div class="col-sm-8 col-md-6 max-print">
+    </div>
+
+    <div class="col-lg-6 col-md-9 pl-4 pl-md-0 max-print">
       <main aria-role="main">
         <header class="page-header">
           <h1 id="title">{{ .Title }}</h1>
@@ -15,19 +17,21 @@
         </div>
       </main>
     </div>
-    <div class="hidden-xs hidden-sm col-md-3 hidden-print">
-      <aside id="scrollspy">
-        {{- if len .TableOfContents }}
-        <p><strong>Chapters in this document:</strong></p>
-          {{ .TableOfContents }}
-        {{- end }}
-        <div style="margin-top: 50px;"><a class="btn btn-danger" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank"><span class="glyphicon glyphicon-pencil" style="margin-right: 15px;"></span>EDIT THIS PAGE</a></div>
-      </aside>
+
+    <div class="col-lg-3 d-none d-lg-block hidden-print chaptersNav">
+      {{- if len .TableOfContents }}
+        <h5>Chapters in this document:</h5>
+        {{ .TableOfContents }}
+      {{- end }}
+        <div style="margin-top: 50px;">
+          <a class="btn btn-danger" href="https://github.com/bigclownlabs/bc-website/edit/master/content/{{ .File.Path }}" target="_blank">
+          <span class="glyphicon glyphicon-pencil" style="margin-right: 15px;"></span><strong>Edit this page</strong></a></div>
+
       <script>
-        $('#scrollspy > nav > ul > li > ul').addClass('nav nav-pills nav-stacked');
-        $('#scrollspy > nav > ul > li > ul').prepend('<li><a href="#top">Introduction</a></li>');
-        $('#scrollspy > nav > ul > li > ul > li > ul').remove();
-        $('#scrollspy').slideDown(1000);
+        $('#TableOfContents').addClass('nav nav-pills flex-column');
+        $('#TableOfContents ul').addClass('nav nav-pills flex-column');
+        $('#TableOfContents a').addClass('nav-link');
+        $('body').scrollspy({ target: '#TableOfContents', offset: 70 });
       </script>
     </div>
   </div>

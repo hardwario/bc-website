@@ -3,26 +3,26 @@
 {{ "<!-- START OF MENU -->" | safeHTML }}
 {{ "" | safeHTML }}
 {{- $page := . }}
-<div class="panel-group" id="accordion">
+<div class="cards" id="accordion">
 {{- range $.Site.Data }}
   {{- range index . "menu" }}
     {{- range . }}
       {{- $collapse := .title | urlize }}
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ $collapse }}">{{ .title }}</a></h4>
+  <div class="card">
+    <div class="card-header">
+      <h6 class="card-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ $collapse }}">{{ .title }}</a></h4>
     </div>
       {{- with .items }}
-        {{- $.Scratch.Set "in" "" }}
+        {{- $.Scratch.Set "status" "" }}
         {{- range . }}
           {{- if .link }}
             {{- $link := string (relref $page .link) }}
             {{- if eq $page.RelPermalink $link }}
-              {{- $.Scratch.Set "in" " in" }}
+              {{- $.Scratch.Set "status" " show" }}
             {{- end }}
           {{- end }}
         {{- end }}
-    <nav id="collapse-{{ $collapse }}" class="panel-collapse collapse{{- $.Scratch.Get "in" }}">
+    <nav id="collapse-{{ $collapse }}" class="card-collapse collapse{{- $.Scratch.Get "status" }}">
       <ul class="list-group" style="border-top: none;">
         {{- range . }}
           {{- $title := .title | default "(Untitled)" }}

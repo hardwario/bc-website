@@ -5,6 +5,8 @@ const child = require('child_process');
 const sass = require("gulp-sass");
 const hash = require("gulp-hash");
 const del = require("del");
+var purify = require('gulp-purifycss');
+let cleanCSS = require('gulp-clean-css');
 
 gulp.task('hugo', () => {
   const hugo = child.spawn('hugo', ['serve']);
@@ -26,6 +28,11 @@ gulp.task("scss", function () {
     gulp.src("src/scss/main.scss")
         .pipe(sass({outputStyle : "compressed"}))
         .pipe(autoprefixer({browsers : ["last 20 versions"]}))
+        .pipe(purify(['static/_assets/js/**/*.js', 'layouts/**/*.html']))
+        .pipe(cleanCSS({debug: true}, (details) => {
+          console.log(`${details.name}: ${details.stats.originalSize}`);
+          console.log(`${details.name}: ${details.stats.minifiedSize}`);
+        }))
         .pipe(hash())
         .pipe(gulp.dest("static/_assets/css"))
         //Create a hash map
@@ -51,16 +58,15 @@ gulp.task("scss-doc", function () {
 // Hash javascript
 gulp.task("js", function () {
     //del(["static/_assets/js/www/**/*"])
-    gulp.src("src/js/**/*")
+    gulp.src(["src/js/**/*", "node_modules/bootstrap/dist/js/bootstrap.min.js"])
         .pipe(hash())
         .pipe(gulp.dest("static/_assets/js"))
         .pipe(hash.manifest("hash.json"))
         .pipe(gulp.dest("data/js"))
 });
 
-
 // Watch asset folder for changes
-gulp.task("watch", ["scss", "scss-doc", "js"], function () {
+gulp.task("watch", ["js","scss", "scss-doc"], function () {
     gulp.watch("src/scss/**/*", ["scss"])
     gulp.watch("src/js/**/*", ["js"])
 });

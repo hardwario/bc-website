@@ -1,10 +1,10 @@
 {{ define "main" }}
 <div class="container-fluid main">
   <div class="row">
-    <aside class="col-sm-4 col-md-3 hidden-print">
+    <div class="col-md-3 col-sm-6 doc-nav hidden-print">
       {{- partial "doc/menu.html" . }}
-    </aside>
-    <div class="col-sm-8 col-md-6 max-print">
+    </div>
+    <div class="col-lg-6 col-md-9 pl-4 pl-md-0 max-print">
       <main aria-role="main">
         <header class="page-header">
           <h1 id="title">{{ .Title }}</h1>

@@ -34,8 +34,8 @@
 @import "../../node_modules/bootstrap/scss/utilities";
 //@import "../../node_modules/bootstrap/scss/print";
 
-@import "../bower_components/magnific-popup/src/css/main";
-@import "../bower_components/slick-carousel/slick/slick";
+@import "../../node_modules/magnific-popup/src/css/main";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
 
 
 
@@ -188,4 +188,5 @@ small {
 @import "collapsor";
 @import "livechat";
 @import "threed";
-@import "indiegogo";
+//@import "indiegogo";
+//@import "doc";

@@ -6,9 +6,9 @@ This article explains communication with USB Dongle or Core Module over USB virt
 
 ## JSON format
 
-Every command over USB is an JSON array of length two. The first item contains **topic**, the second item contains **payload**. The JSON on UART needs to be confirmed by `\r\n` newline.
+Every command over USB is an JSON array of length two. The first item contains **topic**, the second item contains **payload**. The JSON on UART needs to be confirmed by `\n` newline.
 
-`["topic", "payload"]\r\n`
+`["topic", "payload"]\n`
 
 **Topic** is a string. **Payload** has to be **JSON** or `null`.
 

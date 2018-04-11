@@ -173,12 +173,12 @@ After you save the block settings you have to apply the changes by the **deploy*
 
 Now you can see all the incoming messages. In case we would like to receive only temperature from one module, we have to change the topic in the **mqtt** block. We need to change `#` to the `node/core-module:0/thermometer/0:1/temperature`.
 
-For the graphical representation of received values you can use **Node-RED dasboard**. Please insert the **gauge** block, which is in the left list of the block at the bottom. This block needs to be configured.
+For the graphical representation of received values you can use **Node-RED dashboard**. Please insert the **gauge** block, which is in the left list of the block at the bottom. This block needs to be configured.
 
 <img src="gauge-flow.png" style="max-width:100%" />
 
 Double click on the **gauge** block for configuration. First create the new dashboard group by clicking the pencil symbol at the **Add new ui_group** field.
-In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dashboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dasboard.
+In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dashboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dashboard.
 
 <img src="temperature-mqtt-dashboard.gif" style="max-width:100%;" />
 

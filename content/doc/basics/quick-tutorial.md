@@ -90,7 +90,7 @@ Other services can easily connect to the MQTT broker and extend the functionalit
 Another option is to enaable port-formwarding of the MQTT port (1883) on you NAT/network router. Then you can connect to your broker from anywhere in the world. It is also possible to set-up a **bridge** with other Mosquitto MQTT brokers. All the brokers then share the same messages between each other. Both of these described methods needs proper security settings. For example by TLS connection.
 
 * [MQTT explanation article]({{< relref "doc/interfaces/mqtt-protocol.md" >}})
-* [MQTT topics short summary]({{< relref "doc/integrations/mqtt-topics.md" >}})
+* [MQTT topics short summary]({{< relref "doc/interfaces/mqtt-topics.md" >}})
 
 ## Subscribing and publishing MQTT messages
 
@@ -350,7 +350,7 @@ Remote nodes which has **power module** in the firmware name are powered by powe
   * LCD Module - display text on the display on any position with different font sizes
   * Control red LED on the **Core Module**
 
-[List of all MQTT topics]({{< relref "doc/integrations/mqtt-topics.md" >}}).
+[List of all MQTT topics]({{< relref "doc/interfaces/mqtt-topics.md" >}}).
 
 ## Conclusion and further steps
 

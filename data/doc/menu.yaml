@@ -47,6 +47,8 @@ items:
       link: "doc/projects/wireless-co2-monitor.md"
     - title: "Wireless Smart LED Strip"
       link: "doc/projects/wireless-smart-led-strip.md"
+    - title: "Wireless VOC sensor"
+      link: "doc/projects/wireless-voc-sensor.md"      
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"

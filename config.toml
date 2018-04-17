@@ -15,3 +15,8 @@ productionURL = "https://www.bigclown.com"
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]

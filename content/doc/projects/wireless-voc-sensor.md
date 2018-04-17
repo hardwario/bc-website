@@ -32,21 +32,20 @@ This document will guide you through the **Wireless VOC sensor** project. You wi
 
     * 1x **{{< shop "Humidity Tag" >}}**
 
-* One of these options:
+    * One of these options:
 
-    * **BigClown Playground** installed
+        * **BigClown Playground** installed
 
-        You can find more information in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
+            You can find more information in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
 
-    * **Raspberry Pi** with the **BigClown Raspbian** distribution
+        * **Raspberry Pi** with the **BigClown Raspbian** distribution
 
-        You can find more information in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).
+            You can find more information in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).
 
-* **BigClown Firmware Tool** installed
+        * **BigClown Toolchain** installed
 
-    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
+            You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
 
-    {{% note "info" %}}`bcf` is part of Windows Playground Setup already.{{% /note %}}
 
 ## Firmware Upload
 

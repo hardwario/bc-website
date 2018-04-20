@@ -56,9 +56,13 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
 4. Write the downloaded image `bc-raspbian-VER-armhf-rpi.img` to the MicroSD card (replace `VER` with the actual version of the downloaded image).
 
-    {{% note "info" %}}You can use the [**Win32 Disk Imager**](https://sourceforge.net/projects/win32diskimager/files/latest/download) tool for this step.{{% /note %}}
+   You can use simple multi-platform GUI application [Etcher](http://etcher.io) which can write even zipped images, so you can skip unzipping step. IT also verifies written data.
 
-    {{% note "warning" %}}The **Win32 Disk Imager** must run with the operating system administrator rights.{{% /note %}}
+{{% note "info" %}}
+You can use the [**Win32 Disk Imager**](https://sourceforge.net/projects/win32diskimager/files/latest/download) tool for this step.
+{{% /note %}}
+
+{{% note "warning" %}}The **Win32 Disk Imager** must run with the operating system administrator rights.{{% /note %}}
 
 5. Insert the Micro SD card to the Raspberry Pi.
 

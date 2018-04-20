@@ -48,7 +48,7 @@ items:
     - title: "Wireless Smart LED Strip"
       link: "doc/projects/wireless-smart-led-strip.md"
     - title: "Wireless VOC sensor"
-      link: "doc/projects/wireless-voc-sensor.md"      
+      link: "doc/projects/wireless-voc-sensor.md"
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"
@@ -67,6 +67,8 @@ items:
       link: "doc/integrations/grafana-for-visualization.md"
     - title: "Blynk for Mobile Application"
       link: "doc/integrations/blynk-for-mobile-applications.md"
+    - title: "IFTTT If This Then That"
+      link: "doc/integrations/ifttt-if-this-then-that.md"
     - title: "Anemone Platform"
       link: "doc/integrations/anemone-platform.md"
     - title: "Ubidots"

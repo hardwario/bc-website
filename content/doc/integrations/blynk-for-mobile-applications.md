@@ -11,6 +11,9 @@ title: Blynk - Mobile App Builder
   * [Wireless CO2 Monitor]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
   * [Wireless Smart LED Strip]({{< relref "doc/projects/wireless-smart-led-strip.md" >}})
 
+# Blynk app
+
+{{% img-zoom src="blynk.png" %}}
 
 # Setup Blynk app
 

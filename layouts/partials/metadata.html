@@ -1,4 +1,70 @@
+{{ if eq .Section "blog" }}
+
+  {{ if eq .Type "single" }}
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
+  <meta property='og:title' content="{{ .Title }} | Blog BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .URL | absURL }}{{ .Params.images.main }}">
+
+  {{ else }}
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
+  <meta property='og:title' content="{{ .Title }} | BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/blog.jpg">
+  {{ end }}
+
+{{ else if eq .Section "doc" }}
+
+  {{ if eq .Type "single" }}
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
+  <meta property='og:title' content="{{ .Title }} | Learn BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/doc.jpg">
+
+  {{ else }}
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
+  <meta property='og:title' content="{{ .Title }} | BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/doc.jpg">
+  {{ end }}
+
+{{ else if eq .Section "projects" }}
+
+  {{ if eq .Type "single" }}
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
+  <meta property='og:title' content="{{ .Title }} | BigClown Projects">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .URL | absURL }}{{ .Params.images.main }}">
+
+  {{ else }}
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
+  <meta property='og:title' content="{{ .Title }} | BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/projects.jpg">
+  {{ end }}
+
+{{ else if eq .Section "kits" }}
 <meta property="og:url" content="{{ .Site.BaseURL }}" />
 <meta property='og:title' content="{{ .Title }} | BigClown">
 <meta property="og:type" content="website">
-<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta_photo.jpg">
+<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/kits.jpg">
+
+{{ else if eq .Section "support" }}
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+<meta property='og:title' content="{{ .Title }} | BigClown">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/support.jpg">
+
+{{ else if eq .Section "team" }}
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+<meta property='og:title' content="{{ .Title }} | BigClown">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/team.jpg">
+
+{{ else }}
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+<meta property='og:title' content="BigClown - {{ .Title }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/home.jpg">
+
+{{ end }}

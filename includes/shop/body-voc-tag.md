@@ -6,7 +6,7 @@ VOC (Volatile Organic Compounds) sensor is a great technology for indoor air qua
 | 4 - Poor     | 660 - 2200  | Major objections         | Intensified ventilation / airing necessary, search for sources   | < 1 month      |
 | 3 - Moderate | 220 - 660   | Some objections          | Intensified ventilation / airing recommended, search for sources | < 12 months    |
 | 4 - Good     | 65 - 220    | No relevant objections   | Ventilation / airing recommended                                 | no limit       |
-| 5 - Excelent | 0 - 660     | No objections            | Target value                                                     | no limit       |
+| 5 - Excellent | 0 - 65     | No objections            | Target value                                                     | no limit       |
 
 ## Features
 

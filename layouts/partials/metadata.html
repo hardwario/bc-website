@@ -1,6 +1,6 @@
 {{ if eq .Section "blog" }}
 
-  {{ if eq .Type "single" }}
+  {{ if .IsPage }}
   <meta property="og:url" content="{{ .Site.BaseURL }}" />
   <meta property='og:title' content="{{ .Title }} | Blog BigClown">
   <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
 
 {{ else if eq .Section "doc" }}
 
-  {{ if eq .Type "single" }}
+  {{ if .IsPage }}
   <meta property="og:url" content="{{ .Site.BaseURL }}" />
   <meta property='og:title' content="{{ .Title }} | Learn BigClown">
   <meta property="og:type" content="website">
@@ -30,7 +30,7 @@
 
 {{ else if eq .Section "projects" }}
 
-  {{ if eq .Type "single" }}
+  {{ if .IsPage }}
   <meta property="og:url" content="{{ .Site.BaseURL }}" />
   <meta property='og:title' content="{{ .Title }} | BigClown Projects">
   <meta property="og:type" content="website">

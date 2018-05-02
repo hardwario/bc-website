@@ -42,3 +42,24 @@ In order to create a UI for your application you have to first create a project.
 # Node-RED
 
 In node red, install the Blynk package `node-red-contrib-blynk-ws`. You can follow [NodeRED Library Installation]({{< relref "doc/tutorials/nodered-library-installation.md" >}}). Also follow one of the project tutorials above where installation and creating and connecting of nodes is explained.
+
+# ZeRGBA to hex RGB values
+
+Blynk color values needs to be transformed to proper hexadecimal RGB string. You can use **function** block in the **Node-RED** and paste the code below. Remember to configure ZeRGBa to **MERGE mode** and the range of values has to be **set for all three channels to 0 - 255**
+
+```js
+var node = "generic-node:3"
+msg.topic = "node/" + node + "/led-strip/-/color/set";
+
+var r = Number(msg.arrayOfValues[0]).toString(16);
+var g = Number(msg.arrayOfValues[1]).toString(16);
+var b = Number(msg.arrayOfValues[2]).toString(16);
+
+r = (r.length < 2) ? "0" + r : r;
+g = (g.length < 2) ? "0" + g : g;
+b = (b.length < 2) ? "0" + b : b;
+
+msg.payload = "\"#" + r + g + b + "\"";
+
+return msg;
+```

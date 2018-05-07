@@ -61,6 +61,8 @@ items:
       link: "doc/interfaces/sub-ghz-radio.md"
     - title: "Sigfox Radio"
       link: "doc/interfaces/sigfox-radio.md"
+    - title: "LoRa Radio"
+      link: "doc/interfaces/lora-radio.md"
   - title: "Integrations"
     items:
     - title: "Grafana for Visualization"
@@ -113,6 +115,8 @@ items:
       link: "doc/hardware/about-humidity-tag.md"
     - title: "About LCD Module"
       link: "doc/hardware/about-lcd-module.md"
+#    - title: "About LoRa Module"
+#      link: "doc/hardware/about-lora-module.md"
     - title: "About Lux Meter Tag"
       link: "doc/hardware/about-lux-meter-tag.md"
     - title: "About Mini Battery Module"

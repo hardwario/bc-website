@@ -298,13 +298,11 @@ If you have other Linux distribution or unsupported Ubuntu version, we recommend
         sudo pip3 install --upgrade bcf
 
 
-## Integration with Atom
-
-**TODO**
-
 ## Integration with Visual Studio Code
 
 Every BigClown project contains `.vscode` configuration folder so you just open the project folder in **Visual Studio Code** and you're ready to go.
+
+We also suggest to install [C/C++ Intellisense and debug extentsion from Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
 
 In file `.vscode/tasks.json` there are some tasks which you can run by pressing `Ctrl+P` and typing `task`.
 
@@ -316,14 +314,27 @@ In file `.vscode/tasks.json` there are some tasks which you can run by pressing 
 | ozone | Run Ozone debugger which can be used with J-Link debugger |
 | update| Update SDK folder/submodule to the latest version |
 
-
 {{< note "info" >}}
 Project make file allows quicker parallel compilation. This can be set in `.vscode/tasks.json` where you set `"args": ["-j4"],` parameter, where the number 4 is the number of your CPU cores.
 {{< /note >}}
 
-## Integration with KDevelop
+## Integration with J-Link debugger
 
-**TODO**
+To debug the running code on Core Module you can use Ozone debugger with J-Link debug probe. It is also possible to use GDB/OpenOCD with other debug probes but this is not documented yet.
+
+Download the [Ozone debugger](https://www.segger.com/downloads/jlink#Ozone).
+
+{{< note "info" >}}
+**For Windows users:**
+Ozone folder also needs to be set in `PATH` environment variable or you can simply edit `Makefile` and set absolute path to the `Ozone.exe` file.
+It is also possible to open project directly in **Ozone**, please see the options below.
+{{< /note >}}
+
+How to start debugging the project:
+
+* In the **command line** by typing `make ozone`
+* In **Visual Studio Code** by pressing `F5` or `Ctrl+P` and typing `task ozone`
+* In **Ozone** by loading project configuration file `sdk/tools/ozone/ozone.jdebug`.
 
 ## Related Documents
 

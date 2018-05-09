@@ -11,7 +11,7 @@ This document is a practical guide of using the **BigClown IoT Kit**. It will gu
 You will also be able to create a wireless network using **USB Dongle**. Data acqusition and control process is demonstrated using **Node-RED**, a web application that will run inside the **Raspberry Pi**. This application allows intuitive graphical automation flow editing directly in your web browser.
 
 {{< note "info" >}}
-If you would like to skip basics, you can later skip directly to the [**Creation of the wireless network**]({{< relref "#creation-of-the-wireless-network" >}}) section.
+Do you have **USB Dongle** and **wireless kit**? If you would like to start creating you wireless network, you can later jump directly to the [**Creation of the wireless network chapter**]({{< relref "#creation-of-the-wireless-network" >}}) when you get the basic knowledge of **Gateway**, **`bcf` firmware flashing tool** and **Node-RED** in the chapters below.
 {{< /note >}}
 
 First we will demonstrate basic functionality without a wireless network. We use just a single **Core Module** connected to the **Raspberry Pi** by a USB cable.

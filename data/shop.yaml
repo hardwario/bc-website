@@ -38,6 +38,9 @@ products:
   - title: LCD Module
     en: https://shop.bigclown.com/lcd-module-bg
     cs: https://obchod.bigclown.cz/lcd-module-bg
+  - title: LoRa Module
+    en: https://shop.bigclown.com/lora-module
+    cs: https://obchod.bigclown.cz/lora-module
   - title: Lux Meter Tag
     en: https://shop.bigclown.com/lux-meter-tag
     cs: https://obchod.bigclown.cz/lux-meter-tag

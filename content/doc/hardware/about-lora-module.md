@@ -2,9 +2,9 @@
 title: "About LoRa Module"
 ---
 
-{{< img-float src="sigfox-module.png" alt="Sigfox Module" width="300" >}}
+{{< img-float src="lora-module.jpg" alt="LoRa Module" width="300" >}}
 
-{{< include "shop/pitch-sigfox-module.md" >}}
+{{< include "shop/pitch-lora-module.md" >}}
 
 {{< hw-shop "lora-module" >}}
 {{< hw-sch "bc-module-lora" >}}
@@ -14,4 +14,8 @@ title: "About LoRa Module"
 
 {{< /img-float >}}
 
-{{< include "shop/body-sigfox-module.md" >}}
+{{< include "shop/body-lora-module.md" >}}
+
+## Firmware Projects
+
+* [**LoRa pulse counter kit firmware**](https://github.com/bigclownlabs/bcf-kit-lora-pulse-counter/releases)

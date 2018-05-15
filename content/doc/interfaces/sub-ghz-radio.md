@@ -2,6 +2,11 @@
 title: "Sub-GHz Radio"
 ---
 
+<div style="float:right;width:30%;text-align:center;">
+{{% img-zoom src="SPIRIT1.jpg" %}}
+</div>
+
+
 The radio communication technology is the heart of the **BigClown IoT Kit**. This document describes the basic operation of the radio.
 
 With **BigClown**, you can build your own network in the Sub-GHz band.

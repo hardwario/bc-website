@@ -1,6 +1,6 @@
 The **LoRa Module** allows you to communicate to the **LoRaWAN wireless network**, a network made for the IoT. This technology makes it possible to communicate from a battery-powered device directly to server, even for several years. The **LoRa Module** uses radio frequency 868 MHz.
 
-Thanks to narrow band transmission, the device can communicate with the operator cell over a distance of more than 100 km.
+Thanks to specific zig-zag modulation, the LoRa device can communicate with the gateway over a distance of tens kilometers.
 
 This network has a wide range of applications. Its use is particularly useful in energy consumption meters (e.g. water meters, gas meters, etc.), environmental sensors (e.g. a CO₂ sensor), but also in applications for early reports of accidents or defects (e.g. water leak detector).
 

@@ -31,6 +31,8 @@ items:
       link: "doc/tutorials/mysigfox-com-service.md"
     - title: "NodeRED Library Installation"
       link: "doc/tutorials/nodered-library-installation.md"
+    - title: "Synology NAS installation"
+      link: "doc/tutorials/synology-nas-installation.md"
   - title: "Projects"
     items:
     - title: "Wireless Push Button"

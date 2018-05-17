@@ -146,11 +146,13 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 2. Add the following PPA to the list of available repositories:
   * **Ubuntu 16.04 LTS**
-	```
+	    
+        ```
         sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
         ```
 
   * **Ubuntu 18.04 LTS**
+       
         ```
         sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
         ```
@@ -158,7 +160,7 @@ To upgrade an existing installation, go to one of the supported platforms:
         sudo gedit /etc/apt/sources.list.d/team-gcc-arm-embedded-ubuntu-ppa-bionic.list
         ```
         Delete all content and paste text down bellow, than save the document and continue tutorial
-       	```
+        ```
        	deb http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu xenial main
 	    # deb-src http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu xenial main
         ```
@@ -170,9 +172,10 @@ To upgrade an existing installation, go to one of the supported platforms:
 4. Install **GCC ARM Embedded**:
  * **Ubuntu 16.04 LTS**
 		
-		```
+        ```
 	 	sudo apt install gcc-arm-embedded
 	 	```
+        
  * **Ubuntu 18.04 LTS**
 	
 		```
@@ -190,7 +193,6 @@ To upgrade an existing installation, go to one of the supported platforms:
 5. Install **Git**:	
 	
         sudo apt install git
-	
 6. Install **dfu-util**:
 
         sudo apt install dfu-util

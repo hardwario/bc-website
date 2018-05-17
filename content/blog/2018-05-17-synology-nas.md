@@ -1,7 +1,7 @@
 ---
 date: "2018-05-17"
 title: "Synology NAS With BigClown Gateway"
-description: ""
+description: "Another use of your NAS storage in a home network."
 images:
     preview: "preview.jpg"
     main: "main.jpg"

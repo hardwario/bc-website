@@ -177,8 +177,8 @@ To upgrade an existing installation, go to one of the supported platforms:
 	 	```
         
  * **Ubuntu 18.04 LTS**
-	
-		```
+	    
+        ```
 		wget "http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/libmpfr4_3.1.4-1_amd64.deb"
 		```
 		```

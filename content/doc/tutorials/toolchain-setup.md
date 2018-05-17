@@ -177,19 +177,19 @@ To upgrade an existing installation, go to one of the supported platforms:
 	 	```
         
  * **Ubuntu 18.04 LTS**
-	    
+        
         ```
 		wget "http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/libmpfr4_3.1.4-1_amd64.deb"
-		```
+        ```
 		```
 		sudo dpkg -i libmpfr4_3.1.4-1_amd64.deb
 		```
-		```
+        ```
 		sudo rm libmpfr4_3.1.4-1_amd64.deb
-		```
-		```
+        ```
+        ```
 		sudo apt install gcc-arm-embedded
-		```
+        ```
 5. Install **Git**:	
 	
         sudo apt install git

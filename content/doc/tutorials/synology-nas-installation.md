@@ -6,9 +6,15 @@ title: "Synology NAS Installation"
 {{% img-zoom src="synology-bigclown.jpg" %}}
 </div>
 
+You can have BigClown Gateway running on Raspberry Pi, but if you have any kind of NAS already running 24/7 in your newtwork, why not take advantage of it? You will save a tiny bit on electricity bill and also get more durable system.
+
+# About project
+
 Synology NAS is a very versatile device. You can install many services with a single click of your mouse. You can also SSH to the internal Linux OS and change anything you like. If you connect {{< shop "USB Dongle" >}} it appears as `/dev/ttyUSB0` so it's easy to use Synology NAS as a BigClown gateway. You can install `Python`, BigClown gateway `bcg` and `mosquitto` very easily. You can also use **Docker** to run different services separately from the host OS.
 
 This tutorial is going further and is using the **Virtual Machine Manager** to create completely separate virtual Ubuntu 16.04 server. Please see the [list of supported Synology NAS](https://www.synology.com/en-global/dsm/packages/Virtualization).
+
+All the services will be installed inside the virtual machine. The advantage is that this machine can be easily exported and moved to another host. Synology is using QEMU emulator, but exported machines can be run also in Virtualbox without any issue. Other advantage is that you get more robustness of your data in comparison of Raspberry Pi which is using microSD card. Synology can use BTRFS filesystem which is immune to failure of one or many hard drives.
 
 # Installation
 
@@ -49,6 +55,8 @@ This tutorial is going further and is using the **Virtual Machine Manager** to c
 
 7. Now you have Node-RED, Grafana and all the tools running on your Synology NAS.
 
-<div style="width:50%;text-align:center;padding:10px;">
+<div style="width:100%;text-align:center;padding:10px;">
 {{% img-zoom src="grafana.png" %}}
+<br /><br />
+{{% img-zoom src="node-red.png" %}}
 </div>

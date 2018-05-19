@@ -169,6 +169,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 4. Install **GCC ARM Embedded**:
  * **Ubuntu 16.04 LTS**
+
         ```
         sudo apt install gcc-arm-embedded
         ```

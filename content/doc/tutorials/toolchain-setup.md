@@ -146,13 +146,11 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 2. Add the following PPA to the list of available repositories:
   * **Ubuntu 16.04 LTS**
-	    
         ```
         sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
         ```
 
   * **Ubuntu 18.04 LTS**
-       
         ```
         sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
         ```
@@ -161,8 +159,8 @@ To upgrade an existing installation, go to one of the supported platforms:
         ```
         Delete all content and paste text down bellow, than save the document and continue tutorial
         ```
-       	deb http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu xenial main
-	    # deb-src http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu xenial main
+        deb http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu xenial main
+        # deb-src http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu xenial main
         ```
 
 3. Update the index of the available packages:
@@ -171,27 +169,25 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 4. Install **GCC ARM Embedded**:
  * **Ubuntu 16.04 LTS**
-		
         ```
-	 	sudo apt install gcc-arm-embedded
-	 	```
-        
+        sudo apt install gcc-arm-embedded
+        ```
  * **Ubuntu 18.04 LTS**
-        
+
         ```
-		wget "http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/libmpfr4_3.1.4-1_amd64.deb"
-        ```
-		```
-		sudo dpkg -i libmpfr4_3.1.4-1_amd64.deb
-		```
-        ```
-		sudo rm libmpfr4_3.1.4-1_amd64.deb
+        wget "http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/libmpfr4_3.1.4-1_amd64.deb"
         ```
         ```
-		sudo apt install gcc-arm-embedded
+        sudo dpkg -i libmpfr4_3.1.4-1_amd64.deb
         ```
-5. Install **Git**:	
-	
+        ```
+        sudo rm libmpfr4_3.1.4-1_amd64.deb
+        ```
+        ```
+        sudo apt install gcc-arm-embedded
+        ```
+5. Install **Git**:
+
         sudo apt install git
 6. Install **dfu-util**:
 

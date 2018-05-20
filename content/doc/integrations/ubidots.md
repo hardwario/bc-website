@@ -51,4 +51,4 @@ return msg;
 
 ## There's more
 
-In the **Dasboard** tab you can create a preview of all your important values. In the **Event** tab you can set rules so you'll get notified when some value gets out of the limits. The SMS notification is easy to set-up and just works.
+In the **Dashboard** tab you can create a preview of all your important values. In the **Event** tab you can set rules so you'll get notified when some value gets out of the limits. The SMS notification is easy to set-up and just works.

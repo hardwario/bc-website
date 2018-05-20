@@ -10,14 +10,14 @@ Feel free to report all issues on [GitHub](https://github.com/bigclownlabs/bch-f
 
 ## Requirements
 
-- Workstation with Windows, macOS, Ubuntu
-- BigClown USB Dongle or Core Module
-- Python 2.x, git, Node.js, bcf installed (this will not be neccesary in the future)
+- Workstation with Windows, macOS
+- BigClown USB Dongle
 
+{{< note "warning" "Note that GUI firmware flashing tool currently supports only USB Dongle (or Cloony)." />}}
 
 ## GUI flashing app setup
 
-[**Quick tutorial**](https://github.com/bigclownlabs/bch-firmware-app/blob/master/README.md) how to setup GUI flashing app.
+Application can be downloaded from [**GitHub releases**](https://github.com/bigclownlabs/bch-firmware-app/releases).
 
 ## How to use GUI flashing app
 

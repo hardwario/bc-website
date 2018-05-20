@@ -11,7 +11,7 @@ This document is a practical guide of using the **BigClown IoT Kit**. It will gu
 You will also be able to create a wireless network using **USB Dongle**. Data acqusition and control process is demonstrated using **Node-RED**, a web application that will run inside the **Raspberry Pi**. This application allows intuitive graphical automation flow editing directly in your web browser.
 
 {{< note "info" >}}
-If you would like to skip basics, you can later skip directly to the [**Creation of the wireless network**]({{< relref "#creation-of-the-wireless-network" >}}) section.
+Do you have **USB Dongle** and **wireless kit**? If you would like to start creating you wireless network, you can later jump directly to the [**Creation of the wireless network chapter**]({{< relref "#creation-of-the-wireless-network" >}}) when you get the basic knowledge of **Gateway**, **`bcf` firmware flashing tool** and **Node-RED** in the chapters below.
 {{< /note >}}
 
 First we will demonstrate basic functionality without a wireless network. We use just a single **Core Module** connected to the **Raspberry Pi** by a USB cable.
@@ -90,7 +90,7 @@ Other services can easily connect to the MQTT broker and extend the functionalit
 Another option is to enaable port-formwarding of the MQTT port (1883) on you NAT/network router. Then you can connect to your broker from anywhere in the world. It is also possible to set-up a **bridge** with other Mosquitto MQTT brokers. All the brokers then share the same messages between each other. Both of these described methods needs proper security settings. For example by TLS connection.
 
 * [MQTT explanation article]({{< relref "doc/interfaces/mqtt-protocol.md" >}})
-* [MQTT topics short summary]({{< relref "doc/integrations/mqtt-topics.md" >}})
+* [MQTT topics short summary]({{< relref "doc/interfaces/mqtt-topics.md" >}})
 
 ## Subscribing and publishing MQTT messages
 
@@ -173,12 +173,12 @@ After you save the block settings you have to apply the changes by the **deploy*
 
 Now you can see all the incoming messages. In case we would like to receive only temperature from one module, we have to change the topic in the **mqtt** block. We need to change `#` to the `node/core-module:0/thermometer/0:1/temperature`.
 
-For the graphical representation of received values you can use **Node-RED dasboard**. Please insert the **gauge** block, which is in the left list of the block at the bottom. This block needs to be configured.
+For the graphical representation of received values you can use **Node-RED dashboard**. Please insert the **gauge** block, which is in the left list of the block at the bottom. This block needs to be configured.
 
 <img src="gauge-flow.png" style="max-width:100%" />
 
 Double click on the **gauge** block for configuration. First create the new dashboard group by clicking the pencil symbol at the **Add new ui_group** field.
-In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dashboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dasboard.
+In the next opened dialog again click the pencil symbol at the **Add new ui_tab**. Now confirm both opened dialogs and the default dashboard tab and group is created. Before closing the **gauge** settings change the **Range** of the **gauge** to values from **0** to **40** and confirm this last opened dialog. Press the **deploy** to apply the changes and open the dashboard.
 
 <img src="temperature-mqtt-dashboard.gif" style="max-width:100%;" />
 
@@ -350,7 +350,7 @@ Remote nodes which has **power module** in the firmware name are powered by powe
   * LCD Module - display text on the display on any position with different font sizes
   * Control red LED on the **Core Module**
 
-[List of all MQTT topics]({{< relref "doc/integrations/mqtt-topics.md" >}}).
+[List of all MQTT topics]({{< relref "doc/interfaces/mqtt-topics.md" >}}).
 
 ## Conclusion and further steps
 

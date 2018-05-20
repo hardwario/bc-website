@@ -2,6 +2,11 @@
 title: "Sub-GHz Radio"
 ---
 
+<div style="float:right;width:30%;text-align:center;">
+{{% img-zoom src="SPIRIT1.jpg" %}}
+</div>
+
+
 The radio communication technology is the heart of the **BigClown IoT Kit**. This document describes the basic operation of the radio.
 
 With **BigClown**, you can build your own network in the Sub-GHz band.
@@ -51,7 +56,7 @@ Pairing process is very straightforward procedure:
 
 1. The **gateway device** needs to be in the **pairing mode**.
 
-    {{% note "info" %}}The MQTT command for this operation is described in the document [**MQTT Topics**]({{< relref "doc/integrations/mqtt-topics.md" >}}).{{% /note %}}
+    {{% note "info" %}}The MQTT command for this operation is described in the document [**MQTT Topics**]({{< relref "doc/interfaces/mqtt-topics.md" >}}).{{% /note %}}
 
 2. The **node device** has to transmit the **pairing request**.
 
@@ -59,7 +64,7 @@ Pairing process is very straightforward procedure:
 
 3. Once all **node devices** are enrolled, you have to exit the **pairing mode**.
 
-    {{% note "info" %}}The MQTT command for this operation is described in the document [**MQTT Topics**]({{< relref "doc/integrations/mqtt-topics.md" >}}).{{% /note %}}
+    {{% note "info" %}}The MQTT command for this operation is described in the document [**MQTT Topics**]({{< relref "doc/interfaces/mqtt-topics.md" >}}).{{% /note %}}
 
 ## Radio Parameters
 
@@ -113,4 +118,4 @@ Explanation of the fields:
 
 * [**MQTT Protocol**]({{< relref "doc/interfaces/mqtt-protocol.md" >}})
 
-* [**MQTT Topics**]({{< relref "doc/integrations/mqtt-topics.md" >}})
+* [**MQTT Topics**]({{< relref "doc/interfaces/mqtt-topics.md" >}})

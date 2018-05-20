@@ -4,6 +4,8 @@ title: "Turris Omnia & 1.x Setup"
 
 In this document we will install a set of components that are fundamental for the BigClown projects.
 
+You have to follow **Installation** section. Then continue with section based on which hardware you use for **gateway**. Usually it is {{< shop "USB Dongle" >}} but you can use older option of having {{< shop "Core Module" >}} connected to the computer as a gateway.
+
 ## Installation
 
 1. Update the package
@@ -36,7 +38,9 @@ In this document we will install a set of components that are fundamental for th
 
         pip3 install --upgrade --no-cache-dir bcg
 
-## Finishing for USB Dongle
+## Finishing for USB Dongle as a gateway
+
+Follow these steps if you have {{< shop "USB Dongle" >}} as a gateway.
 
 1. Finish [installation](#installation) part
 
@@ -65,7 +69,9 @@ In this document we will install a set of components that are fundamental for th
         /etc/init.d/bc-gateway-usb-dongle start
 
 
-## Finishing for Core module
+## Finishing for Core module as a gateway
+
+Follow these steps if you have {{< shop "Core Module" >}} as a gateway.
 
 1. Finish [installation](#installation) part
 

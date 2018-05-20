@@ -6,9 +6,9 @@ This article explains communication with USB Dongle or Core Module over USB virt
 
 ## JSON format
 
-Every command over USB is an JSON array of length two. The first item contains **topic**, the second item contains **payload**. The JSON on UART needs to be confirmed by `\r\n` newline.
+Every command over USB is an JSON array of length two. The first item contains **topic**, the second item contains **payload**. The JSON on UART needs to be confirmed by `\n` newline.
 
-`["topic", "payload"]\r\n`
+`["topic", "payload"]\n`
 
 **Topic** is a string. **Payload** has to be **JSON** or `null`.
 
@@ -16,7 +16,7 @@ Every command over USB is an JSON array of length two. The first item contains *
 
 BigClown gateway `bcg` can manage multiple gateways. But wht gateway basically does is removing or adding device name prefix to the topic.
 
-This documentation explains basic commands, but you can use all the supported gateway and node commands in [**MQTT Topics**]({{< relref "doc/integrations/mqtt-topics.md" >}}) article. You just have to convert the MQTT topic and payload to the serial port JSON.
+This documentation explains basic commands, but you can use all the supported gateway and node commands in [**MQTT Topics**]({{< relref "doc/interfaces/mqtt-topics.md" >}}) article. You just have to convert the MQTT topic and payload to the serial port JSON.
 
 ### Pairing
 
@@ -40,7 +40,7 @@ And gateway converts this JSON to the MQTT message:
 
 After pairing the incoming data from remote nodes are send over tje serial port.
 
-Here are the values from node with ID `836d1983718a`, but you can set the name alias so the dongle will also do renaming of physical addresses to the human-readable names. Commands for aliases are in [**MQTT Topics**]({{< relref "doc/integrations/mqtt-topics.md" >}}).
+Here are the values from node with ID `836d1983718a`, but you can set the name alias so the dongle will also do renaming of physical addresses to the human-readable names. Commands for aliases are in [**MQTT Topics**]({{< relref "doc/interfaces/mqtt-topics.md" >}}).
 
 ```
 ["836d1983718a/info", {"firmware": "generic-node-battery-standard", "version": "v1.7.4"} ]

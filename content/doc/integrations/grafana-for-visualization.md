@@ -4,6 +4,8 @@ title: "Grafana for Visualization"
 
 [**Grafana**](https://grafana.com/) is an open platform for beautiful analytics and monitoring. It allows you to create a nice looking dashboards that will give you quick insights into your sensor data.
 
+{{% img-zoom src="grafana.png" %}}
+
 ## Requirements
 
 You will need these components to make it work:

@@ -65,6 +65,8 @@ items:
       link: "doc/interfaces/sigfox-radio.md"
     - title: "LoRa Radio"
       link: "doc/interfaces/lora-radio.md"
+    - title: "Firebase"
+      link: "doc/interfaces/firebase.md"
   - title: "Integrations"
     items:
     - title: "Grafana for Visualization"

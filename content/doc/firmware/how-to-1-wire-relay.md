@@ -14,7 +14,7 @@ For this tutorial you need:
 
 ## SDK
 
-Documentation for this SDK module can be found [here](http://sdk.bigclown.com/group__bc__onewire__relay.html).
+Documentation for this SDK module can be found [here](https://sdk.bigclown.com/group__bc__onewire__relay.html).
 
 There is very simple workflow for controlling the relay:
 

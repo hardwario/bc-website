@@ -2,7 +2,7 @@
 title: "How to: LED Control"
 ---
 
-Controlling LED diode integrated with Core module is like printing *Hello world*. In this tutorial, we will go through available functions for controlling LED diode provided by [SDK](http://sdk.bigclown.com).
+Controlling LED diode integrated with Core module is like printing *Hello world*. In this tutorial, we will go through available functions for controlling LED diode provided by [SDK](https://sdk.bigclown.com).
 
 ## Requirements 
 - Core module
@@ -10,7 +10,7 @@ Controlling LED diode integrated with Core module is like printing *Hello world*
 
 
 ## Available functions
-Everything you need to control integrated LED can be found within SDK *bc_led* [module](http://sdk.bigclown.com/group__bc__led.html)
+Everything you need to control integrated LED can be found within SDK *bc_led* [module](https://sdk.bigclown.com/group__bc__led.html)
 
 Let's see it in action.
 

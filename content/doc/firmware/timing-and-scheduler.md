@@ -4,7 +4,7 @@ title: "Timing and Scheduler"
 
 Knowing how to schedule tasks is a key knowledge crucial for developing low-power hardware setup with BigClown.
 
-For this, it is important to be able to do event-driven programming easily. To achieve this, BigClown [SDK](http://sdk.bigclown.com) provides tools for your application to be fully asynchronous. Key component is the *Scheduler*. Simply said, it holds pointers to functions with exact time when they should be run.
+For this, it is important to be able to do event-driven programming easily. To achieve this, BigClown [SDK](https://sdk.bigclown.com) provides tools for your application to be fully asynchronous. Key component is the *Scheduler*. Simply said, it holds pointers to functions with exact time when they should be run.
 
 ## Scheduler
 
@@ -16,7 +16,7 @@ It is important to **not block the task** but do the necessary operation quickly
 Time since program started (timestamp, number of millisecond since start) can be retrieved by using
 `bc_tick_t bc_tick_get()` function.
 
-{{< note "info" "As you can see in SDK" >}}[bc_tick_t](http://sdk.bigclown.com/group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0) is a custom type based on *uint64_t*{{< /note >}}
+{{< note "info" "As you can see in SDK" >}}[bc_tick_t](https://sdk.bigclown.com/group__bc__tick.html#gabd224c28866c49d86f5d33cae606bbe0) is a custom type based on *uint64_t*{{< /note >}}
 
 
 ## Registering a Task
@@ -50,7 +50,7 @@ To run registered task one more time in the future, you have to use one of these
 - `void bc_scheduler_plan_relative`
 - `void bc_scheduler_plan_from_now`
 
-To see full list of available functions, please see [SDK documentation](http://sdk.bigclown.com/group__bc__scheduler.html)
+To see full list of available functions, please see [SDK documentation](https://sdk.bigclown.com/group__bc__scheduler.html)
 
 **Example**
 
@@ -76,4 +76,4 @@ static void disableLCD(void* param) {
 
 
 {{< note "info" "As always..." >}}
-..full list of functions for scheduler can be found in [SDK](http://sdk.bigclown.com/group__bc__scheduler.html){{< /note >}}
+..full list of functions for scheduler can be found in [SDK](https://sdk.bigclown.com/group__bc__scheduler.html){{< /note >}}

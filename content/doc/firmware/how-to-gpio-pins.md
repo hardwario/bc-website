@@ -6,7 +6,7 @@ You can use many GPIOs (General Purpose Input/Output pins) to connect the **Core
 The pins are described in the [Headers and signals page]({{< relref "doc/hardware/headers-and-signals.md" >}}). The pins in SDK has names `BC_GPIO_P0` to `BC_GPIO_P17`. There are also two special pins dedicated to `BC_GPIO_LED` and `BC_GPIO_BUTTON`.
 
 {{< note "info" "As always..." >}}
-... all available functions can be found in [GPIO section in generated SDK documentation](http://sdk.bigclown.com/group__bc__gpio.html).{{< /note >}}
+... all available functions can be found in [GPIO section in generated SDK documentation](https://sdk.bigclown.com/group__bc__gpio.html).{{< /note >}}
 
 
 ## GPIO Configuration ##

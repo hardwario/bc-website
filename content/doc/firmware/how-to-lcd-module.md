@@ -9,7 +9,7 @@ It may be a bit hard to get used to draw things or show text at the beginning, b
 
 
 {{< note "info" "As always..." >}}
-... all available SDK functions for LCD module can be found [here](http://sdk.bigclown.com/group__bc__module__lcd.html).{{< /note >}}
+... all available SDK functions for LCD module can be found [here](https://sdk.bigclown.com/group__bc__module__lcd.html).{{< /note >}}
 
 ## What you need to know
 
@@ -110,7 +110,7 @@ with parameters:
 
 
 ### Draw a Line
-Drawing a line is as simple as calling function form [SDK](http://sdk.bigclown.com/group__bc__module__lcd.html#ga9eb9b7c644a7cdec4be4e97fffb6be2a). **Remember that parameters for this function are not absolute coordinates, but a relative distance from top and left edges.**
+Drawing a line is as simple as calling function form [SDK](https://sdk.bigclown.com/group__bc__module__lcd.html#ga9eb9b7c644a7cdec4be4e97fffb6be2a). **Remember that parameters for this function are not absolute coordinates, but a relative distance from top and left edges.**
 
 **Examples**
 
@@ -126,7 +126,7 @@ bc_module_lcd_draw_line(0, 0, 128, 128, true);
 ## LCD integrated LEDs
 LCD includes 6 small RGB LEDs. They usually serve as a notifier for some action that happened. There is no way to use them as a backlight for the LCD panel.
 
-You can control them with standard functions from *bc\_led\_\** from [SDK](http://sdk.bigclown.com/group__bc__led.html) right after you get their driver.
+You can control them with standard functions from *bc\_led\_\** from [SDK](https://sdk.bigclown.com/group__bc__led.html) right after you get their driver.
 
 To get the driver you have to use function `const bc_led_driver_t* bc_module_lcd_get_led_driver(void)` which returns pointer to the driver. Then you have to init the virtual LED with `void bc_led_init_virtual(bc_led_t *self, int channel, const bc_led_driver_t *driver, int idle_state)`.
 
@@ -184,7 +184,7 @@ void application_init(void)
 ```
 
 ## LCD Buttons
-LCD module gives you two separate buttons you can use for controlling your application. Usage is similar to LED mentioned above: first you need to get a driver and make an initialization of "virtual button". Then you are free to use any *bc\_button\_\** functions from the [SDK](http://sdk.bigclown.com/group__bc__button.html).
+LCD module gives you two separate buttons you can use for controlling your application. Usage is similar to LED mentioned above: first you need to get a driver and make an initialization of "virtual button". Then you are free to use any *bc\_button\_\** functions from the [SDK](https://sdk.bigclown.com/group__bc__button.html).
 
 To get the button driver you can use `const bc_button_driver_t* bc_module_lcd_get_button_driver(void)` which returns pointer to the driver.
 

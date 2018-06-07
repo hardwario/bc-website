@@ -6,7 +6,7 @@ With our Relay module you can easily control high voltage/current circuits. This
 
 
 ## Initialization and Simple Control
-[SDK](http://sdk.bigclown.com/group__bc__module__relay.html) provides simple functions to control your relay.
+[SDK](https://sdk.bigclown.com/group__bc__module__relay.html) provides simple functions to control your relay.
 First you have to instantiate variable typed `bc_module_relay_t` which represents the relay and use the *relay init* function. I2C address of the module is `0x3B`. It is also a good practice to tell the SDK about actual relay state. Inside you *application_init* function you can do something like this to give it OFF state:
 
 ```c

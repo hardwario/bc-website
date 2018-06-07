@@ -5,7 +5,7 @@ title: "How to: Battery Module"
 [Battery module](../../hardware/about-battery-module/) and [Mini Battery module](../../hardware/about-mini-battery-module/) allows you to power your product with four and two **AAA** batteries, respectively. It automatically recognizes if external power is applied (AC module, USB, ...) and disconnects batteries from the circuit. With this module you can check battery voltage (manually or periodically with Scheduler) and schedule appropriate actions for certain voltage levels.
 
 {{< note "info" "As always..." >}}
-... all available SDK functions for Battery module can be found [here](http://sdk.bigclown.com/group__bc__module__battery.html).{{< /note >}}
+... all available SDK functions for Battery module can be found [here](https://sdk.bigclown.com/group__bc__module__battery.html).{{< /note >}}
 
 ## How Does it Work?
 This module uses high efficiency buck converter which provides 3.1 V output voltage. Voltage level is measured on the analog input.
@@ -44,7 +44,7 @@ Let's say you are building a battery powered climate/weather station with Sigfox
 
 And when the voltage level goes critical (*critical voltage* trigger), just send warning message that batteries are almost dead and disable other transmissions.
 
-You can set [your own threshold levels](http://sdk.bigclown.com/group__bc__module__battery.html#gae316b29ba7391e57703b4e0e01a69f9f), so with a bit of research, you can know that when "critical level warning occurs at *x.y* voltage, there is enough power to make *m* Sigfox transmissions".
+You can set [your own threshold levels](https://sdk.bigclown.com/group__bc__module__battery.html#gae316b29ba7391e57703b4e0e01a69f9f), so with a bit of research, you can know that when "critical level warning occurs at *x.y* voltage, there is enough power to make *m* Sigfox transmissions".
 
 ## Example
 ### USB

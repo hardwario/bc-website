@@ -9,5 +9,5 @@ BigClown SDK has clean design and unified access to the hardware, sensors and pe
 # References
 
   - [SDK repository on GitHub](https://github.com/bigclownlabs/bcf-sdk)
-  - [Generated Doxygen documentation](http://sdk.bigclown.com/)
+  - [Generated Doxygen documentation](https://sdk.bigclown.com/)
   - [Examples of using the SDK](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples)

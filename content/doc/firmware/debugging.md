@@ -41,7 +41,7 @@ You need to add just two function calls into your application:
 * `bc_log_init` into `application_init`
 * `bc_log_debug` or `bc_log_info` or `bc_log_warning` or `bc_log_error` into handlers
 
-Have a look into [BigClown SDK bc_log](http://sdk.bigclown.com/group__bc__log.html).
+Have a look into [BigClown SDK bc_log](https://sdk.bigclown.com/group__bc__log.html).
 
 Example of modified `app/application.c` from default project code after `bcf create`:
 ```C
@@ -96,7 +96,7 @@ Example of output:
 # 13.64 <I> Button event handler - event: 1
 ```
 
-For mapping number to event type have a look into [BigClown SDK documentation for bc_button](http://sdk.bigclown.com/bc__button_8h_source.html#l00013)
+For mapping number to event type have a look into [BigClown SDK documentation for bc_button](https://sdk.bigclown.com/bc__button_8h_source.html#l00013)
 
 ### USB Dongle
 

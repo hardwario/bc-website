@@ -6,7 +6,7 @@ Core module comes with integrated temperature sensor TMP112. It is high accuracy
 If you want to take a look how TMP112 is connected, please take a look at [schematic](https://github.com/bigclownlabs/bc-hardware/blob/master/out/bc-module-core/bc-module-core-rev-1-3-sch.pdf).
 
 {{< note "info" "As always..." >}}
-... all available SDK functions for temperature sensor can be found [here](http://sdk.bigclown.com/group__bc__tmp112.html).{{< /note >}}
+... all available SDK functions for temperature sensor can be found [here](https://sdk.bigclown.com/group__bc__tmp112.html).{{< /note >}}
 
 ## How Does it Work?
 - TMP112 is instantiated

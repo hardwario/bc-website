@@ -52,6 +52,8 @@ If you already have previously installed playground, you can upgrade it at any t
 
 ## Playground Setup on Windows
 
+{{% note "danger" %}}Please, make sure the antivirus program is NOT running before the **BigClown Playground** installation.{{% /note %}}
+
 1. Download and Install [**bch-playground-windows**](https://github.com/bigclownlabs/bch-playground-windows) installer.
 
     {{% download "Download Windows Playground from GitHub" "https://github.com/bigclownlabs/bch-playground-windows/releases/latest" %}}

@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-  {{ partial "www/heading.html" (dict "heading" "Kits") }}
+  {{ partial "www/heading.html" (dict "heading" .Params.mainHeading) }}
 
   {{ partial "www/kits-easy.html" . }}
 
   {{ partial "www/kits-starter.html" . }}
 
-  {{ partial "www/support.html" (dict "heading" "Find right answers" "subheading" "to your questions about this kit") }}
+  {{ partial "www/support.html" }}
 
 {{ end }}

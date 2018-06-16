@@ -1,7 +1,6 @@
 ---
 title: Join our Affiliate Program!
 slug: affiliate
-menu: "main"
 ---
 
 Do you want to earn some money and be a part of BigClown's community? Sign up to our Affiliate Program and earn money from all customers who you bring to our e-shop.

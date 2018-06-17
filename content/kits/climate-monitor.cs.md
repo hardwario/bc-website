@@ -1,7 +1,7 @@
 ---
 title: Climate Monitor Kit
 id: basic
-description: Sleduj svůj teplotní komfort
+description: Sleduj svůj teplotní komfort!
 isBasic: true
 isPremium: true
 isUltimate: true

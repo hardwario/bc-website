@@ -1,2 +1,5 @@
 [min_read]
 other = "min read"
+
+[save_rss]
+other = "Save BigClown's RSS feed"

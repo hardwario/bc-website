@@ -1,5 +1,5 @@
 [easy_to_build]
-other = "Easy-to-build"
+other = "Jednoduché sestavení"
 
 [no_wiring]
 other = "Moduly jednoduše spojíš pomocí konektorů. Už žádné pájení."
@@ -32,7 +32,7 @@ other = "Doručíme ti tvůj kit do 7 dnů kdekoli na světě."
 other = "Doživotní podpora"
 
 [use_documentation]
-other = "Může využít naši obsáhlou dokumentaci, fórum nebo live chat."
+other = "Může využít naši dokumentaci, fórum nebo live chat."
 
 [love_features]
 other = "Tyhle vlastnosti budeš milovat"

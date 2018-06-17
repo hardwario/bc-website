@@ -7,7 +7,15 @@
         <div class="article__header">
           <div class="article__header__button">
             <!--<a href="" class="button button--tag button--tag--bigger button--tag--blue button--tag--blue--active">Indiegogo</a>-->
-            <div class="article__header__info"><span>{{ .Date.Format "2 January 2006" }}</span> <span>{{ .ReadingTime }} {{ i18n "min_read" }}</span></div>
+            <div class="article__header__info">
+              <span>
+                {{ if eq .Lang "cs" }}
+                  {{ .Date.Day }}. {{ index $.Site.Data.mesice (printf "%d" .Date.Month) }} {{ .Date.Year }}
+                {{ else }}
+                  {{ .Date.Format "2 January 2006" }}
+                {{ end }}
+              </span>
+              <span>{{ .ReadingTime }} {{ i18n "min_read" }}</span></div>
             <h1 class="article__title">{{ .Title }}</h1>
             <div class="text text--perex">
               <p>{{ .Params.description }}</p>

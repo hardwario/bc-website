@@ -38,7 +38,7 @@
 
         <a href="{{ .Site.Params.shopURL }}" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">{{ i18n "shop_now" }}</a>
 
-        <button class="d-none d-lg-block button button--lang button--arrow button--lang--{{ .Lang }}">{{ .Site.Language.LanguageName }}
+        <button style = "visibility:hidden" class="d-none d-lg-block button button--lang button--arrow button--lang--{{ .Lang }}">{{ .Site.Language.LanguageName }}
           <div class="mydropdown">
             {{ if .IsTranslated }}
               {{ range .Translations }}

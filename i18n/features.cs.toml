@@ -1,0 +1,38 @@
+[easy_to_build]
+other = "Jednoduché sestavení"
+
+[no_wiring]
+other = "Moduly jednoduše spojíš pomocí konektorů. Už žádné pájení."
+
+[open_source]
+other = "Open-source"
+
+[integrate_with_platforms]
+other = "Integruj své IoT zařízení s populárními platformami 3. stran."
+
+[secure_by_design]
+other = "Secure by design"
+
+[encrypt]
+other = "Šifrování přenosu a autentizace zařízení."
+
+[warranty]
+other = "3letá záruka"
+
+[made_in_eu]
+other = "Vše je vyrobeno v EU a pomocí nejnovějších technologií."
+
+[free_shipping]
+other = "Doprava zdarma po celém světě"
+
+[delivery_days]
+other = "Doručíme ti tvůj kit do 7 dnů kdekoli na světě."
+
+[lifetime_support]
+other = "Doživotní podpora"
+
+[use_documentation]
+other = "Může využít naši dokumentaci, fórum nebo live chat."
+
+[love_features]
+other = "Tyhle vlastnosti budeš milovat"

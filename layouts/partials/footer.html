@@ -3,49 +3,48 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-5">
-                    <div class="footer__title">Contact</div>
+                    <div class="footer__title">{{ i18n "Contact" }}</div>
                     <div class="row">
                         <div class="col">
                             <div class="footer__text">
                                 <strong>HARDWARIO s.r.o.</strong><br />
                                 U Jezu 525/4<br />
                                 460 01 Liberec<br />
-                                CZECHIA<br />
+                                {{ i18n "czechia" }}<br />
                             </div>
                         </div>
                         <div class="col">
                             <div class="footer__text">
-                                <strong>Phone</strong><br />
+                                <strong>{{ i18n "phone" }}</strong><br />
                                 +420 725 190 630<br />
-                                <strong>Email</strong><br />
+                                <strong>E-mail</strong><br />
                                 <a href="mailto:ask@bigclown.com">ask@bigclown.com</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="footer__title">Navigation</div>
+                    <div class="footer__title">{{ i18n "navigation" }}</div>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/kits/">Kits</a></li>
-                        <li><a href="/team/">Our team</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/privacy-cookies">Privacy & Cookies</a></li>
+                        {{ range .Site.Menus.footer }}
+                          <li><a href="{{ .URL }}" target = "{{ .Post }}">{{ .Name }}</a></li>
+                        {{ end }}
                     </ul>
                 </div>
                 <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="footer__title">Support</div>
+                    <div class="footer__title">{{ i18n "support" }}</div>
                     <div class="row">
                         <div class="col">
                             <ul>
-                                <li><a href="/doc/" target="_blank">Documentation</a></li>
+                                <li><a href="{{ "doc/" | relLangURL }}" target="_blank">{{ i18n "documentation" }}</a></li>
+                                <li><a href="https://forum.bigclown.com" target="_blank">{{ i18n "forum" }}</a></li>
+                                <li><a href="https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
                                 <!--<li><a href="https://intercom.help/bigclown" target="_blank">FAQ</a></li>-->
                             </ul>
                         </div>
                         <div class="col">
                             <ul>
-                                <li><a href="https://forum.bigclown.com" target="_blank">Forum</a></li>
-                                <li><a href="https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -72,7 +71,7 @@
                     </div>
                 </div>
                 <div class="col-auto">
-                    <div class="button button--arrowtop">Back to Top</div>
+                    <div class="button button--arrowtop">{{ i18n "back_to_top" }}</div>
                 </div>
             </div>
         </div>

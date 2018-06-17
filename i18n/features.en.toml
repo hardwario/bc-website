@@ -1,0 +1,38 @@
+[easy_to_build]
+other = "Easy-to-build"
+
+[no_wiring]
+other = "Assemble modules via connectors. No need for soldering or wiring."
+
+[open_source]
+other = "Open-source"
+
+[integrate_with_platforms]
+other = "Integrate your IoT devices with popular 3rd party platforms."
+
+[secure_by_design]
+other = "Secure by design"
+
+[encrypt]
+other = "Encrypt your transmission and authenticate your devices."
+
+[warranty]
+other = "3-year warranty"
+
+[made_in_eu]
+other = "All parts are made in EU using latest technologies."
+
+[free_shipping]
+other = "Free shipping worldwide"
+
+[delivery_days]
+other = "You’ll get your kits in 7 days anywhere in the world."
+
+[lifetime_support]
+other = "Lifetime support"
+
+[use_documentation]
+other = "Use our large documentation, forum or chat with us."
+
+[love_features]
+other = "You will love these features"

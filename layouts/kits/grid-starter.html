@@ -1,10 +1,10 @@
 <div class="col-12 col-md-4">
   <div class="pricelist__item {{ if .Params.recommended }} pricelist__item--rec {{ end }}">
     <div class="pricelist__content">
-      {{ if .Params.recommended }} <div class="pricelist__rec">RECOMMENDED</div> {{ end }}
+      {{ if .Params.recommended }} <div class="pricelist__rec">{{ i18n "recommended" }}</div> {{ end }}
       <div class="logo logo--2"></div>
       <h3 class="pricelist__title">{{ .Title }}</h3>
-      <div class="pricelist__title2 text-uppercase">You will be able to make:</div>
+      <div class="pricelist__title2 text-uppercase">{{ i18n "able_to_make" }}:</div>
 
       <ul class="pricelist__items">
         {{ range .Params.included }}
@@ -14,12 +14,12 @@
           <li class="pricelist__items__item pricelist__items__item--disabled">{{ . }}</li>
         {{ end }}
         <li class="pricelist__items__item pricelist__items__item--gifts">
-          <span href="#">Clown’s nose</span>
+          <span href="#">{{ i18n "nose" }}</span>
         </li>
       </ul>
 
       <div class="pricelist__button">
-        <a href="{{ .Permalink }}" class="button button--block {{ if .Params.recommended }} button--fullred {{ else }} button--gray {{ end }}">Learn more</a>
+        <a href="{{ .Permalink }}" class="button button--block {{ if .Params.recommended }} button--fullred {{ else }} button--gray {{ end }}">{{ i18n "learn_more" }}</a>
       </div>
     </div>
   </div>

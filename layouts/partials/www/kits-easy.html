@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="title text-center">Start making smoothly<small>with our starter kits and full support</small></h2>
+          <h2 class="title text-center">{{ i18n "start_making" | safeHTML }}</h2>
 
           <div class="row d-none d-lg-flex">
             {{ range sort ($.Site.GetPage "section" "kits").Pages ".Weight" }}
@@ -21,7 +21,7 @@
             {{ end }}
           </div>
 
-          <div class="or d-flex justify-content-center align-items-center">OR</div>
+          <div class="or d-flex justify-content-center align-items-center">{{ i18n "or" }}</div>
         </div>
       </div>
     </div>

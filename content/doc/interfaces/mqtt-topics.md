@@ -45,12 +45,18 @@ Detailed list of topics is in **README** in GitHub repository [**bcf-generic-nod
 | Set color "#250000" or RGBW "#250000(80)"| node/{id}/led-strip/-/color/set |
 | Set compound | node/{id}/led-strip/-/compound/set |
 |             | `[20, "#ff0000", 20, "#00ff00"]` |
-| Set effect | node/{id}/led-strip/-/effect/set' |
+| Set effect | node/{id}/led-strip/-/effect/set |
 |        |  `{"type":"test"}` |
 |        |  `{"type":"rainbow", "wait":50}` |
 |        |  `{"type":"rainbow-cycle", "wait":50}` |
 |        |  `{"type":"theater-chase-rainbow", "wait":50}` |
 |        |  `{"type":"color-wipe", "wait":50, "color":"#800000"}` |
+| Thermometer effect | node/{id}/led-strip/-/thermometer/set |
+|        |  `{"temperature": 22.5, "min":-20, "max": 50}` |
+|        |  turn on "backlight" (0-255) <br />`{"temperature": 22.5, "min":-20, "max": 50, "white-dots": 10}` |
+|        |  display a set point pixel with a selected color <br />`{"temperature": 22.5, "min":-20, "max": 50, "set-point": 30, "color":"#ff0000"}` |
+|        |  `{"temperature": 22.5, "min":-20, "max": 50, "white-dots": 10, "set-point": 30, "color":"#ff0000"}` |
+|        |  display only set-point<br /> `{"temperature": -20, "min":-20, "max": 50, "set-point": 30, "color":"#00ff00"}` |
 | **LCD Module** |
 | left button | node/{id}/push-button/lcd:left/event-count |
 | right button | node/{id}/push-button/lcd:right/event-count |

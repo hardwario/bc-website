@@ -2,7 +2,7 @@
 title: "How to: Battery Module"
 ---
 
-[Battery module](../../hardware/about-battery-module/) and [Mini Battery module](../../hardware/about-mini-battery-module/) allows you to power your product with four and two **AAA** batteries, respectively. It automatically recognizes if external power is applied (AC module, USB, ...) and disconnects batteries from the circuit. With this module you can check battery voltage (manually or periodically with Scheduler) and schedule appropriate actions for certain voltage levels.
+[Battery module](../../hardware/about-battery-module/) and [Mini Battery module](../../hardware/about-mini-battery-module/) allows you to power your product with four or two **AAA** batteries. It automatically recognizes if external power is applied (AC module, USB, ...) and disconnects batteries from the circuit. With this module you can check battery voltage (manually or periodically with Scheduler) and schedule appropriate actions for certain voltage levels.
 
 {{< note "info" "As always..." >}}
 ... all available SDK functions for Battery module can be found [here](https://sdk.bigclown.com/group__bc__module__battery.html).{{< /note >}}
@@ -18,21 +18,16 @@ SDK provides function to
   - create event handler
   - define voltage threshold levels
 
-### Battery Module Types
+## Battery Module Types
 There are two types of modules - [Standard](../../hardware/about-battery-module/) and [Mini](../../hardware/about-mini-battery-module/).
 
-You have to specify which one is in use when initiating the module in your code. This is done easily by enum values:
+The type of the connected module is detected automatically. In your `application_init()` function you have to init the module by calling:
 
-  - `BC_MODULE_BATTERY_FORMAT_STANDARD`
-  - `BC_MODULE_BATTERY_FORMAT_MINI`
-
-Example of Battery Module initialization code:
-
-```
-bc_module_battery_init(BC_MODULE_BATTERY_FORMAT_STANDARD);
+```c
+bc_module_battery_init();
 ```
 
-### Recognizable Battery Module Events
+## Recognizable Battery Module Events
 - `BC_MODULE_BATTERY_EVENT_LEVEL_LOW` - battery crossed "low voltage threshold"
 - `BC_MODULE_BATTERY_EVENT_LEVEL_CRITICAL` - battery crossed "critical voltage threshold"
 - `BC_MODULE_BATTERY_EVENT_UPDATE` - voltage measurement happened
@@ -46,8 +41,7 @@ And when the voltage level goes critical (*critical voltage* trigger), just send
 
 You can set [your own threshold levels](https://sdk.bigclown.com/group__bc__module__battery.html#gae316b29ba7391e57703b4e0e01a69f9f), so with a bit of research, you can know that when "critical level warning occurs at *x.y* voltage, there is enough power to make *m* Sigfox transmissions".
 
-## Example
-### USB
+## Voltage over USB example
 In this example, voltage and charge levels will be sent to your computer over USB every time you press a button.
 
 ```c
@@ -86,12 +80,12 @@ void application_init(void)
     bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
     bc_button_set_event_handler(&button, button_event_handler, NULL);
 
-    bc_module_battery_init(BC_MODULE_BATTERY_FORMAT_STANDARD);
+    bc_module_battery_init();
 }
 
 ```
 
-### LCD
+## Voltage on LCD example
 For this example, we are going to use LCD module to show voltage level. Place code below in application.c file and flash. Use of application.h file is not required here. Values on your LCD panel will be updated every time you press any of LCD's buttons.
 
 ```c
@@ -133,7 +127,7 @@ void application_init(void)
     bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
     bc_button_set_event_handler(&button, button_event_handler, NULL);
 
-    bc_module_battery_init(BC_MODULE_BATTERY_FORMAT_STANDARD);
+    bc_module_battery_init();
 
     bc_module_lcd_init(&_bc_module_lcd_framebuffer);
     bc_module_lcd_set_font(&bc_font_ubuntu_15);

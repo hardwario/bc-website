@@ -27,7 +27,7 @@ techSpecs:
         text: 0°C - 50°C
     power:
         heading: "Zdroj napájení"
-        text: "2 x AAA Alkalinové baterie"
+        text: "2 x AAA Alkalické baterie"
     battery:
         heading: "Výdrž na baterky"
         text: "2 roky při standardním použití"

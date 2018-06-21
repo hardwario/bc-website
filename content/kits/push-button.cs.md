@@ -1,7 +1,7 @@
 ---
 title: Push Button Kit
 id: basic
-description: Kontroluj tvé prostředí!
+description: Kontroluj své prostředí!
 isBasic: false
 isPremium: false
 isUltimate: true
@@ -27,7 +27,7 @@ techSpecs:
         text: 0°C - 50°C
     power:
         heading: "Zdroj napájení"
-        text: "2 x AAA Alkalinové baterie"
+        text: "2 x AAA Alkalické baterie"
     battery:
         heading: "Výdrž na baterky"
         text: "2 roky při standardním použití"

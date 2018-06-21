@@ -53,7 +53,7 @@ other = "Volitelné moduly"
 other = "Co si dokáže samostatně postavit"
 
 [integration_ready]
-other = "Kit je připraven na itegraci s"
+other = "Kit je připraven na integraci s"
 
 [many_more]
 other = "a mnohem více ..."
@@ -68,4 +68,4 @@ other = "Technická specifikace"
 other = "Integrace Low-Power sítí"
 
 [extend_kit]
-other = "Rozšiř svůj kit module pro low-power sítě a udělej jej nezávislým na internetovém připojení a napájení ze zdroje."
+other = "Rozšiř svůj kit modulem pro low-power sítě a udělej jej nezávislým na internetovém připojení a napájení ze zdroje."

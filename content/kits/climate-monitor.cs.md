@@ -33,4 +33,4 @@ techSpecs:
         text: "2 roky při standardním použití"
 ---
 
-Tento kit je náš nejpopulárnější. Umožní ti monitorovat několik důležitých veličin ve tvém okolí - teplotu, vlhkost, atmosférický tlak a intenzitu světla. Na základě naměřených dat může kontrolovat svou teplotní pohodu - subjektivní stav mysli, který vyjadřuje spokojenost s pokojovou teplotou.
+Tento kit je náš nejpopulárnější. Umožní ti monitorovat několik důležitých veličin ve tvém okolí - teplotu, vlhkost, atmosférický tlak a intenzitu světla. Na základě naměřených dat můžeš kontrolovat svou teplotní pohodu - subjektivní stav mysli, který vyjadřuje spokojenost s&nbsp;pokojovou teplotou.

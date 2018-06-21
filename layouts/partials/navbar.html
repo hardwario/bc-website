@@ -33,12 +33,12 @@
                 </li>
             {{ end }}
         {{ end }}
-          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="https://shop.bigclown.com/?currency=EUR" target = "_blank" class="navtop__button button button--cart">{{ i18n "shop_now" }}</a></li>
+          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="{{ .Site.Params.shopURL }}" target = "_blank" class="navtop__button button button--cart">{{ i18n "shop_now" }}</a></li>
         </ul>
 
-        <a href="https://shop.bigclown.com/?currency=EUR" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">{{ i18n "shop_now" }}</a>
+        <a href="{{ .Site.Params.shopURL }}" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">{{ i18n "shop_now" }}</a>
 
-        <button style = "visibility:hidden" class="d-none d-lg-block button button--lang button--arrow button--lang--{{ .Lang }}">{{ .Site.Language.LanguageName }}
+        <button class="d-none d-lg-block button button--lang button--arrow button--lang--{{ .Lang }}">{{ .Site.Language.LanguageName }}
           <div class="mydropdown">
             {{ if .IsTranslated }}
               {{ range .Translations }}

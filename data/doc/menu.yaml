@@ -51,6 +51,8 @@ items:
       link: "doc/projects/wireless-smart-led-strip.md"
     - title: "Wireless VOC sensor"
       link: "doc/projects/wireless-voc-sensor.md"
+    - title: "Wireless Soil Sensor"
+      link: "doc/projects/wireless-soil-sensor.md"
   - title: "Interfaces"
     items:
     - title: "MQTT Protocol"

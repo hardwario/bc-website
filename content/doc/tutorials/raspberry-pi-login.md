@@ -14,7 +14,12 @@ You can log in two ways:
 
     In this case, you need to find out what address the DHCP server assigned to your Raspberry Pi.
 
-    {{% note "info" %}}The client's IP address can usually be found through the configuration interface of your router in the section **DHCP Clients**, eventually **LAN Status**, etc. Or use utility like [**Advanced IP scanner (Windows)**](http://www.advanced-ip-scanner.com/) or [**IP Scaner (Mac)**](https://itunes.apple.com/us/app/ip-scanner/id404167149?mt=12).{{% /note %}}
+    {{% note "info" "Finding Raspberry Pi IP address" %}}
+The client's IP address can usually be found through the configuration interface of your router in the section **DHCP Clients**, eventually **LAN Status**, etc.
+
+On your computer use utility like [**Advanced IP scanner (Windows)**](http://www.advanced-ip-scanner.com/) or [**IP Scaner (Mac)**](https://itunes.apple.com/us/app/ip-scanner/id404167149?mt=12).
+
+On your Android or iOS phone you can use [**Fing**](https://www.fing.io/) utility which can detect **Raspberry Pi** and show an raspberry icon with the device.{{% /note %}}
 
 2. **Using the DNS name**
 

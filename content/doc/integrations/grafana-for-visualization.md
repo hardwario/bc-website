@@ -136,6 +136,9 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
 2. Open the configuration file:
 
+    {{% note "info" %}}For text editing, we use **nano** editor. You can save changes by pressing key combination `Ctrl + O` and exit editor by pressing `Ctrl + X`.
+{{% /note %}}
+
         sudo nano /etc/bigclown/mqtt2influxdb.yml
 
 3. Paste this snippet to the configuration file:

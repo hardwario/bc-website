@@ -8,12 +8,16 @@ pygmentsUseClasses = true
   [languages.en]
     LanguageName = "ENG"
     weight = 1
+    currency = "EUR"
+    baseURL = "/"
     [languages.en.params]
       baseURL = "/"
       shopURL = "https://shop.bigclown.com/?currency=EUR"
   [languages.cs]
     LanguageName = "CZE"
     weight = 2
+    currency = "CZK"
+    baseURL = "/cs/"
     [languages.cs.params]
       baseURL = "/cs/"
       shopURL = "https://shop.bigclown.com/?currency=CZK"

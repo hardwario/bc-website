@@ -18,7 +18,6 @@
                   {{ .Pre }}
                   <a href="{{ .URL }}" target = "{{ .Post }}" class="navtop__link navtop__link--arrow {{ if ($.IsMenuCurrent "main" .) }} navtop__link--active {{ end }}">{{ .Name }}</a>
                     <ul class="navtop__submenu">
-                    <!--<li><a href="https://intercom.help/bigclown" target="_blank">FAQs</a></li>-->
                     {{ range .Children }}
                         <li class="{{ if $currentPage.IsMenuCurrent "main" . }} navtop__link--active {{ end }}">
                           <a href="{{ .URL }}" target = "{{ .Post }}">{{ .Name }}</a>

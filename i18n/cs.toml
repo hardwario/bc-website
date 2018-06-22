@@ -30,3 +30,9 @@ other = "ČESKO"
 
 [shop_now]
 other = "DO OBCHODU"
+
+[shop_url]
+other = "https://shop.bigclown.com/?currency=CZK"
+
+[base_url]
+other = "/cs/"

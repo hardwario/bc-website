@@ -6,7 +6,7 @@
 
         <div class="header__menu d-block d-lg-none"><div></div><div></div><div></div></div>
 
-        <a href="{{ .Site.Language.baseURL }}" class="logo text-hide">BigClown</a>
+        <a href="{{ i18n "base_url" }}" class="logo text-hide">BigClown</a>
 
         <ul class="navtop d-none d-lg-flex">
           {{ $currentPage := . }}
@@ -18,6 +18,7 @@
                   {{ .Pre }}
                   <a href="{{ .URL }}" target = "{{ .Post }}" class="navtop__link navtop__link--arrow {{ if ($.IsMenuCurrent "main" .) }} navtop__link--active {{ end }}">{{ .Name }}</a>
                     <ul class="navtop__submenu">
+                    <!--<li><a href="https://intercom.help/bigclown" target="_blank">FAQs</a></li>-->
                     {{ range .Children }}
                         <li class="{{ if $currentPage.IsMenuCurrent "main" . }} navtop__link--active {{ end }}">
                           <a href="{{ .URL }}" target = "{{ .Post }}">{{ .Name }}</a>
@@ -32,10 +33,10 @@
                 </li>
             {{ end }}
         {{ end }}
-          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="https://shop.bigclown.com/?currency={{ .Site.Language.Currency }}" target = "_blank" class="navtop__button button button--cart">{{ i18n "shop_now" }}</a></li>
+          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="{{ i18n "shop_url" }}" target = "_blank" class="navtop__button button button--cart">{{ i18n "shop_now" }}</a></li>
         </ul>
 
-        <a href="https://shop.bigclown.com/?currency={{ .Site.Language.Currency }}" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">{{ i18n "shop_now" }}</a>
+        <a href="{{ i18n "shop_url" }}" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">{{ i18n "shop_now" }}</a>
 
         <button class="d-none d-lg-block button button--lang button--arrow button--lang--{{ .Lang }}">{{ .Site.Language.LanguageName }}
           <div class="mydropdown">

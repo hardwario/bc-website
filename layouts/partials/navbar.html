@@ -44,6 +44,13 @@
               {{ range .Translations }}
                 <a class="button button--lang button--lang--2 button--lang--{{ .Lang }}" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
               {{ end }}
+            {{ else if eq .Section "doc" }}
+            {{ range .Site.Languages }}
+              {{ if ne .Lang $.Page.Lang }}
+                <a class="button button--lang button--lang--2 button--lang--{{ .Lang }}" href="/{{ .Lang }}/doc/">{{ .Params.LanguageName }}</a>
+              {{ end }}
+
+            {{ end }}
             {{ else }}
 
               {{ range .Site.Languages }}

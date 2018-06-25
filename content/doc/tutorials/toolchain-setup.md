@@ -206,7 +206,19 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         sudo pip3 install --upgrade --no-cache-dir bcf
 
-10. Continue on the document [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}). You may also try:
+10. Add user to **dialout** group
+
+        sudo adduser [user] dialout
+
+    Instead of [user] use your user name. For example my user name is peter:
+
+        sudo adduser peter dialout
+
+    If you don't know your user name. Use following command:
+
+        whoami
+
+11. Continue on the document [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 

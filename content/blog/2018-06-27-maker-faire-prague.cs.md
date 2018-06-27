@@ -1,7 +1,7 @@
 ---
 date: "2018-06-27"
 title: "Maker Faire v Praze je za námi!"
-description: ""
+description: "Víkend 23. a 24. června jsme strávili na výstavišti v Praze. Jaké to bylo?"
 images:
     preview: "preview.jpg"
     main: "main.jpg"

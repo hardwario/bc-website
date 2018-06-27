@@ -1,5 +1,5 @@
 ---
-date: "2018-04-17"
+date: "2018-06-08"
 title: "Jsme Huawei Startup roku!"
 description: "V soutěži Vodafone Nápad roku jsme se umístili na 5. místě a vyhráli v kategorii Startup roku."
 images:

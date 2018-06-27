@@ -60,6 +60,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
 
+    {{% core-module-2 %}}
+
     If your LED strip is **144 LEDs RGBW**:
 
         bcf flash --dfu bigclownlabs/bcf-kit-wireless-power-controller-rgbw144:latest

@@ -53,6 +53,8 @@ Now it's time to write firmware to the **Core Module**.
 
     {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
 
+    {{% core-module-2 %}}
+
     Write this command to the **Raspberry Pi** SSH command line.
 
         bcf flash --dfu bigclownlabs/bcf-wireless-soil-sensor:latest

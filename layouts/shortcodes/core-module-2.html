@@ -5,7 +5,7 @@
 
       The new <strong>Core Module 2</strong> is not using DFU mode anymore. We added new flashing over FTDI chip and virtual serial port over USB. This means that the flash process is the same like with USB Dongle. Instead of <strong>--dfu</strong> parameter use the <strong>--device COMx</strong> parameter.
       <br /><br />
-      This change improved firmware upload speed,
+      This change improved firmware upload speed and no need to press any button.
       <br /><br />
       Also the <strong>UART2</strong> output is connected to this virtual serial port, so you can use <strong>bc_log</strong> functions to debug your code.
 

@@ -4,8 +4,6 @@ title: "Wireless Soil Sensor"
 
 This document will guide you through the **Wireless Soil Sensor** project. You will be able to see, save and analyze moisture level and temperature in **Node-RED** and **Grafana** visualization tool.
 
-{{% img-zoom src="project-image.png" %}}
-
 ## Block Concept
 
 {{% img-zoom src="block-diagram.svg" %}}
@@ -91,10 +89,6 @@ Follow these steps in **Node-RED**:
 
 2. Insert the batteries into the **Wireless Climate Monitor** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
-    In the **Node-RED** debug tab, there is a message about name and firmware version of the new paired module.
-
-    {{% img-zoom src="node-red-gw-pair-paired-mqtt-message.png" %}}
-
 3. Click on the **Stop node pairing** button.
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
@@ -111,6 +105,7 @@ Follow these steps in **Node-RED**:
 
     You should then see similar messages:
 
+TODO
     {{% img-zoom src="radio-test.png" %}}
 
 {{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
@@ -170,25 +165,6 @@ For text editing, we use **nano** editor. You can save changes by pressing key c
 5. Open **Grafana** page which is running on **Raspberry Pi** on port `3000`.
 
     [http://hub.local:3000](http://hub.local:3000)
-
-6. Now you can see temperature and battery voltage on the bottom. We need to add a moisture graph. Because we added `- measurement: moisture` to the config file, we need to duplicate existing graph and change its `measurement` data source to `moisture`.
-
-    <img src="grafana-duplicate.png" />
-
-    Now click on **Edit** in the **duplicated** graph.
-
-    <img src="grafana-edit.png" />
-
-    Now in **Metrics** tab change the **FROM** item from value **temperature** to **moisture**.
-
-    {{% img-zoom src="grafana-from-moisture.png" %}}
-
-7. Now click on the **Save** button in the **Grafana** so all your configuration stays the same next time you open the page.
-
-    {{% img-zoom src="grafana-save.png" %}}
-
-{{% note "success" %}}
-At this point, you should have a temperature and moisture monitoring of your plants int a garden or flowerpot.{{% /note %}}
 
 ## Related Documents
 

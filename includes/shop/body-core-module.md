@@ -4,6 +4,7 @@ You can upload firmware by a Micro USB cable using the **BigClown Firmware Tool*
 
 The **Core Module** can communicate wirelessly with another **Core Module**, or you can create your wireless network using the **USB Dongle**.
 
+
 ## Features
 
 * ARM Cortex M0+ 32-bit MCU STM32L083CZ (ST)

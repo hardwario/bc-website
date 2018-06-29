@@ -2,7 +2,7 @@
 title: "About Core Module"
 ---
 
-{{< img-float src="core-module.png" alt="Core Module" width="300" >}}
+{{< img-float src="core-module-2.png" alt="Core Module" width="300" >}}
 
 {{% core-module-2 %}}
 

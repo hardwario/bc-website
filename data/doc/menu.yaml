@@ -111,6 +111,8 @@ items:
       link: "doc/hardware/about-co2-module.md"
     - title: "About Core Module"
       link: "doc/hardware/about-core-module.md"
+    - title: "Core Module R1 and R2 comparison"
+      link: "doc/hardware/core-module-1-and-2-comparison.md"
     - title: "About Cover Module"
       link: "doc/hardware/about-cover-module.md"
     - title: "About Encoder Module"

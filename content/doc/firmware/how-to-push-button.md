@@ -15,15 +15,15 @@ Core module comes with two buttons - Reset and Boot. You can take a look at [sch
 This tutorial shows how to work with integrated button, but it can be used for your own buttons or switches.
 
 {{< note "info" "As always..." >}}
-... all available SDK functions for buttons can be found [here](http://sdk.bigclown.com/group__bc__button.html).{{< /note >}}
+... all available SDK functions for buttons can be found [here](https://sdk.bigclown.com/group__bc__button.html).{{< /note >}}
 
 
 ## Recognizable Button Events
 *BC_BUTTON_EVENT_PRESS* and *BC_BUTTON_EVENT_RELEASE* are pretty straightforward - the first one stands for pressing the button and the second one for releasing the button.
 
-*BC_BUTTON_EVENT_CLICK* event is recognized, when button is **pressed and held** for period of time **shorter than defined** (can be defined by *[bc_button_set_click_timeout](http://sdk.bigclown.com/group__bc__button.html#ga88fd3c911e2feb4f5ea8e1eb511ad8e5)*)
+*BC_BUTTON_EVENT_CLICK* event is recognized, when button is **pressed and held** for period of time **shorter than defined** (can be defined by *[bc_button_set_click_timeout](https://sdk.bigclown.com/group__bc__button.html#ga88fd3c911e2feb4f5ea8e1eb511ad8e5)*)
 
-*BC_BUTTON_EVENT_HOLD* event is recognized, when button is **pressed and held** for period of time **longer than defined** (can be defined by *[bc_button_set_hold_timeout](http://sdk.bigclown.com/group__bc__button.html#ga3ec362aaaa409c85170310074cc5a320)*)
+*BC_BUTTON_EVENT_HOLD* event is recognized, when button is **pressed and held** for period of time **longer than defined** (can be defined by *[bc_button_set_hold_timeout](https://sdk.bigclown.com/group__bc__button.html#ga3ec362aaaa409c85170310074cc5a320)*)
 
 
 ## Example
@@ -34,7 +34,7 @@ Button is initiated by function
 ```bc_button_init (bc_button_t *self, bc_gpio_channel_t gpio_channel, bc_gpio_pull_t gpio_pull, int idle_state)```
 
 - `*self` is an address to the instantiated button
-- `gpio_channel` is GPIO channel number - defined as *enum*, more in [SDK](http://sdk.bigclown.com/group__bc__gpio.html)
+- `gpio_channel` is GPIO channel number - defined as *enum*, more in [SDK](https://sdk.bigclown.com/group__bc__gpio.html)
 - `gpio_pull` stands for GPIO pull up/down settings
 - `idle_state` - state of a GPIO pin, when button **is not** pressed
 
@@ -50,7 +50,7 @@ bc_button_set_event_handler(&button, button_event_handler, NULL);
 
 In other words: *when button is triggered, call function called 'button_event_handler' with no additional parameters*
 
-In the *button_event_handler* function we mainly compare the *event* parameter with callback events defined in [bc_button_event_t](http://sdk.bigclown.com/group__bc__button.html#ga6584b74ad24dd2ca8048fd72c73426fa).
+In the *button_event_handler* function we mainly compare the *event* parameter with callback events defined in [bc_button_event_t](https://sdk.bigclown.com/group__bc__button.html#ga6584b74ad24dd2ca8048fd72c73426fa).
 
 In this example we will use *_HOLD* and *_PRESS* events for better understanding. Programmed Core module will work by these rules:
 

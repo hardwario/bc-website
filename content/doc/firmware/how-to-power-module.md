@@ -5,7 +5,7 @@ title: "How to: Power Module"
 [Power module](../../hardware/about-power-module/) provides two features - you can control high power device with robust relay (230 V / 16 A) and you can also connect 5V addressable LEDs (*WS2812B*) and control them.
 
 {{< note "info" "As always..." >}}
-... all available SDK functions for Power module can be found [here](http://sdk.bigclown.com/group__bc__module__power.html).{{< /note >}}
+... all available SDK functions for Power module can be found [here](https://sdk.bigclown.com/group__bc__module__power.html).{{< /note >}}
 
 
 ## Relay Control

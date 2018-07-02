@@ -63,6 +63,8 @@ Normally, the development cycle is the repetition of the following 3 steps:
 
 * Run `bcf flash --dfu` to upload the firmware image into the **Core Module** (omit `--dfu` parameter in case of **USB Dongle**).
 
+{{% core-module-2 %}}
+
 {{% note "info" %}}If you need to debug your application, please follow the document [**Debugging**]({{< relref "doc/firmware/debugging.md" >}}).{{% /note %}}
 
 ## How It Works

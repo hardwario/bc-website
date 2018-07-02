@@ -84,7 +84,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="core-module.png" alt="Core Module" style="margin: 50px;">
+<img class="pull-left" src="core-module-2.png" alt="Core Module" style="margin: 50px;">
 <h2>Core Module</h2>
 <p>
 {{< include "shop/pitch-core-module.md" >}}

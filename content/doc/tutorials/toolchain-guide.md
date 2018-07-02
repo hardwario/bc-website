@@ -110,6 +110,8 @@ There are two bootloaders in MCU ROM:
 
 {{% note "warning" %}}In case you need to upload the firmware into the Core Module R1.3, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash --dfu` format.{{% /note %}}
 
+{{% core-module-2 %}}
+
 Firmware upload can be done using the `bcf flash` command. The firmware can be obtained from 3 different sources:
 
 1. Source **firmware package**, for instance:

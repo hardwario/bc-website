@@ -67,6 +67,8 @@ For quick start we've create a Python command-line utility **bcf**, which automa
 
 We'll flash the **bcf-gateway** firmware. This firmware for the gateway contains functions for all BigClown sensors and modules. After the start the **Core Module** automatically detects connected sensors and sends the measured values by USB to the **Raspberry Pi**.
 
+{{% core-module-2 %}}
+
 Before flashing is necessary to switch the **Core Module** to the [programming **DFU** mode]({{< relref "doc/tutorials/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).
 
 ```
@@ -281,6 +283,8 @@ Upload the `bcf-generic-node` firmware to the remote node unit. This universal f
 {{< note "info" >}}
 For longest **battery life** of remote nodes it is best to use firmwares with the **kit** in the name. They are specially tuned for the longest battery life. You can list them with `bcf search kit` command.
 {{< /note >}}
+
+{{% core-module-2 %}}
 
 Connect the **Core Module** to the **Raspberry Pi** and enable the **DFU** flashing mode as explained in the previous chapter. Upload the `generic-node` with `firmware-battery-mini` option.
 

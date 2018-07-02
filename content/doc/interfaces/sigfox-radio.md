@@ -17,4 +17,4 @@ BigClown has certified modem and tutorials to quickly get started.
 * {{<shop "Sigfox Module" >}} in the BigClown shop
 * [HOW-TO: Sigfox Module]({{<relref "doc/firmware/how-to-sigfox-module.md">}})
 * [About Sigfox Module]({{< relref "doc/hardware/about-sigfox-module.md" >}})
-* [Sigfox Module in SDK library](http://sdk.bigclown.com/group__bc__module__sigfox.html)
+* [Sigfox Module in SDK library](https://sdk.bigclown.com/group__bc__module__sigfox.html)

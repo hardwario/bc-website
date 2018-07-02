@@ -6,35 +6,60 @@
 
         <div class="header__menu d-block d-lg-none"><div></div><div></div><div></div></div>
 
-        <a href="/" class="logo text-hide">BigClown</a>
+        <a href="{{ .Site.Params.baseURL }}" class="logo text-hide">BigClown</a>
 
         <ul class="navtop d-none d-lg-flex">
-          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="/" class="navtop__link {{ if eq .RelPermalink "/" }} navtop__link--active {{ end }}">Home</a></li>
+          {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
 
+            {{ if .HasChildren }}
 
-          {{- partial "navbar-item.html" (dict "title" "Kits" "link" "/kits/" "page" .) }}
-          {{- partial "navbar-item.html" (dict "title" "Learn" "link" "/doc/" "page" .) }}
-          {{- partial "navbar-item.html" (dict "title" "Team" "link" "/team/" "page" .) }}
-          <li class="navtop__item d-block d-lg-flex align-items-center">
-            <a href="/support/" class="navtop__link navtop__link--arrow">Support</a>
-            <ul class="navtop__submenu">
-              <!--<li><a href="https://intercom.help/bigclown" target="_blank">FAQs</a></li>-->
-              <li><a href="https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
-              <li><a href="/doc/" target="_blank">Documentation</a></li>
-              <li><a href="https://forum.bigclown.com" target="_blank">Forum</a></li>
-            </ul>
-          </li>
-          {{- partial "navbar-item.html" (dict "title" "Blog" "link" "/blog/" "page" .) }}
-          {{- partial "navbar-item.html" (dict "title" "Contact" "link" "/contact/" "page" .) }}
-          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="https://shop.bigclown.com/?currency=EUR" target = "_blank" class="navtop__button button button--cart">SHOP NOW</a></li>
+                <li class="navtop__item d-block d-lg-flex align-items-center">
+                  {{ .Pre }}
+                  <a href="{{ .URL }}" target = "{{ .Post }}" class="navtop__link navtop__link--arrow {{ if ($.IsMenuCurrent "main" .) }} navtop__link--active {{ end }}">{{ .Name }}</a>
+                    <ul class="navtop__submenu">
+                    <!--<li><a href="https://intercom.help/bigclown" target="_blank">FAQs</a></li>-->
+                    {{ range .Children }}
+                        <li class="{{ if $currentPage.IsMenuCurrent "main" . }} navtop__link--active {{ end }}">
+                          <a href="{{ .URL }}" target = "{{ .Post }}">{{ .Name }}</a>
+                        </li>
+                    {{ end }}
+                  </ul>
+                </li>
+            {{ else }}
+                <li class="navtop__item d-block d-lg-flex align-items-center">
+                  {{ .Pre }}
+                  <a href="{{ .URL }}" target = "{{ .Post }}" class="navtop__link {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} navtop__link--active {{ end }}">{{ .Name }}</a>
+                </li>
+            {{ end }}
+        {{ end }}
+          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="https://shop.bigclown.com/?currency=EUR" target = "_blank" class="navtop__button button button--cart">{{ i18n "shop_now" }}</a></li>
         </ul>
 
-        <a href="https://shop.bigclown.com/?currency=EUR" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">SHOP NOW</a>
+        <a href="https://shop.bigclown.com/?currency=EUR" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">{{ i18n "shop_now" }}</a>
 
-        <button style = "visibility:hidden" class="d-none d-lg-block button button--lang button--arrow button--lang--en">ENG
+        <button class="d-none d-lg-block button button--lang button--arrow button--lang--{{ .Lang }}">{{ .Site.Language.LanguageName }}
           <div class="mydropdown">
-            <a class="button button--lang button--lang--2 button--lang--cz" href="#">CZE</a>
-            <a class="button button--lang button--lang--2 button--lang--2--active button--lang--en" href="#">ENG</a>
+            {{ if .IsTranslated }}
+              {{ range .Translations }}
+                <a class="button button--lang button--lang--2 button--lang--{{ .Lang }}" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+              {{ end }}
+            {{ else if eq .Section "doc" }}
+            {{ range .Site.Languages }}
+              {{ if ne .Lang $.Page.Lang }}
+                <a class="button button--lang button--lang--2 button--lang--{{ .Lang }}" href="/{{ .Lang }}/doc/">{{ .Params.LanguageName }}</a>
+              {{ end }}
+
+            {{ end }}
+            {{ else }}
+
+              {{ range .Site.Languages }}
+                {{ if ne .Lang $.Page.Lang }}
+                  <a class="button button--lang button--lang--2 button--lang--{{ .Lang }}" href="/{{ .Lang }}">{{ .Params.LanguageName }}</a>
+                {{ end }}
+
+              {{ end }}
+            {{ end }}
           </div>
         </button>
       </div>

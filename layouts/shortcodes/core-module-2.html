@@ -1,0 +1,14 @@
+<div class="alert alert-warning note" role="alert">
+  <span class="glyphicon glyphicon-hand-up note-icon"></span>
+  <div class="note-content">
+      <strong>Flashing Core Module 2</strong><br>
+
+      The new <strong>Core Module 2</strong> is not using DFU mode anymore. We added new flashing over FTDI chip and virtual serial port over USB.
+      This means that the flashing procedure is now the same as with the USB Dongle. Please, use the <strong>--device &lt;PORT&gt;</strong> (e.g. COM4) parameters instead of the former <strong>--dfu</strong> parameter.
+      <br /><br />
+      This change improved firmware upload speed and no need to press any button.
+      <br /><br />
+      Also the <strong>UART2</strong> output is connected to this virtual serial port, so you can use <strong>bc_log_*</strong> functions to debug your code.
+
+  </div>
+</div>

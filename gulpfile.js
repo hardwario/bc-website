@@ -26,6 +26,7 @@ gulp.task('hugo', () => {
 gulp.task("scss", function () {
     //del(["static/_assets/css/www/**/*"])
     gulp.src("src/scss/main.scss")
+    //del(["static/_assets/css/*"])
         .pipe(sass({outputStyle : "compressed"}))
         .pipe(autoprefixer({browsers : ["last 20 versions"]}))
         .pipe(purify(['static/_assets/js/**/*.js', 'layouts/**/*.html']))
@@ -43,7 +44,7 @@ gulp.task("scss", function () {
 
 // Compile SCSS files to CSS for Documentation
 gulp.task("scss-doc", function () {
-    //del(["static/_assets/css/www/**/*"])
+    //del(["static/_assets/css/*"])
     gulp.src("src/scss/main-doc.scss")
         .pipe(sass({outputStyle : "compressed"}))
         .pipe(autoprefixer({browsers : ["last 20 versions"]}))

@@ -12,7 +12,13 @@
     <div class="articles__author d-flex align-items-center">
       <div class="articles__author__image"><img src="/authors/{{ .Params.author.image }}" alt="{{ .Params.author.name }}" /></div>
       <div class="articles__author__title">{{ .Params.author.name }}</div>
-      <div class="ml-auto articles__author__time">{{ .Date.Format "2 January 2006" }}</div>
+      <div class="ml-auto articles__author__time">
+        {{ if eq .Lang "cs" }}
+          {{ .Date.Day }}. {{ index $.Site.Data.mesice (printf "%d" .Date.Month) }} {{ .Date.Year }}
+        {{ else }}
+          {{ .Date.Format "2 January 2006" }}
+        {{ end }}
+      </div>
     </div>
     <!--<div class="button button--tag button--tag--blue button--tag--blue--active articles__button">Indoor</div>-->
   </a>

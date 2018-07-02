@@ -18,4 +18,4 @@ BigClown has {{< shop "LoRa Module" >}} which you can use to create battery oper
 
 * {{<shop "LoRa Module" >}} in the BigClown shop
 * [About LoRa Module]({{< relref "doc/hardware/about-lora-module.md" >}})
-* [LoRa Module in SDK library](http://sdk.bigclown.com/group__bc__cmwx1zzabz.html)
+* [LoRa Module in SDK library](https://sdk.bigclown.com/group__bc__cmwx1zzabz.html)

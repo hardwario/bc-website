@@ -8,4 +8,4 @@ It helps the so-called *fintechs* (startups from the financial sector) to come u
 
 You have two options to interact with your flows - either in your web browser in the mobile app (available for both iOS an Android).
 
-For more information, visit the [**Anemone Platform**]({{< relref "blog/2018-01-09-anemone-platform.md" >}}) blog post.
+For more information, visit the [**Anemone Platform**]({{< relref "blog/2018-01-09-anemone-platform.en.md" >}}) blog post.

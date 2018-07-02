@@ -1,15 +1,100 @@
 baseURL = "https://www.bigclown.com/"
-languageCode = "en"
+shopURL = "https://shop.bigclown.com/?currency=EUR"
+DefaultContentLanguage = "en"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-title = "BigClown"
+
+[languages]
+  [languages.en]
+    LanguageName = "ENG"
+    weight = 1
+    [languages.en.params]
+      baseURL = "/"
+      shopURL = "https://shop.bigclown.com/?currency=EUR"
+  [languages.cs]
+    LanguageName = "CZE"
+    weight = 2
+    [languages.cs.params]
+      baseURL = "/cs/"
+      shopURL = "https://shop.bigclown.com/?currency=CZK"
+
+[menu]
+
+  [[languages.en.menu.main]]
+    identifier = "support"
+    name = "Support"
+    pre = ""
+    url = "/support/"
+    weight = 400
+
+  [[languages.en.menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    parent = "support"
+    pre = ""
+    post = "_blank"
+    url = "https://github.com/bigclownlabs"
+    weight = 100
+
+  [[languages.en.menu.main]]
+    identifier = "documentation"
+    name = "Documentation"
+    parent = "support"
+    pre = ""
+    url = "/doc/"
+    weight = 200
+
+  [[languages.en.menu.main]]
+    identifier = "forum"
+    name = "Forum"
+    parent = "support"
+    pre = ""
+    post = "_blank"
+    url = "https://forum.bigclown.com"
+    weight = 300
+
+  [[languages.cs.menu.main]]
+    identifier = "support"
+    name = "Podpora"
+    pre = ""
+    url = "/cs/support/"
+    weight = 400
+
+  [[languages.cs.menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    parent = "support"
+    pre = ""
+    post = "_blank"
+    url = "https://github.com/bigclownlabs"
+    weight = 100
+
+  [[languages.cs.menu.main]]
+    identifier = "documentation"
+    name = "Dokumentace"
+    parent = "support"
+    pre = ""
+    url = "/cs/doc/"
+    weight = 200
+
+  [[languages.cs.menu.main]]
+    identifier = "forum"
+    name = "Fórum"
+    parent = "support"
+    pre = ""
+    post = "_blank"
+    url = "https://forum.bigclown.com"
+    weight = 300
+
+
 
 [blackfriday]
 smartypants = false
 
 [params]
-menuNames = ["main"]
-productionURL = "https://www.bigclown.com"
+  menuNames = ["main"]
+  productionURL = "https://www.bigclown.com"
+
 
 [sitemap]
   changefreq = "monthly"

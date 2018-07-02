@@ -6,7 +6,7 @@ The PIR module is mostly used as motion detector. Thanks to its low power consum
 
 
 ## How It Works
-Thanks to the [SDK](http://sdk.bigclown.com/group__bc__module__pir.html), setting up and using the PIR module is very simple. You have to do only two things:
+Thanks to the [SDK](https://sdk.bigclown.com/group__bc__module__pir.html), setting up and using the PIR module is very simple. You have to do only two things:
 - initialize the PIR module and set its sensitivity
 - program the event handler (what should happen when PIR senses movement)
 

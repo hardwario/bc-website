@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-{{ partial "www/heading.html" (dict "heading" "Support") }}
+{{ partial "www/heading.html" (dict "heading" .Params.mainHeading) }}
 
-{{ partial "www/support.html" (dict "heading" "Any questions about our kits?" "subheading" "Don’t be afraid to ask our makers") }}
+{{ partial "www/support.html" }}
 
 {{ end }}

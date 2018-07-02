@@ -8,7 +8,7 @@ With [CO2 Module](../../hardware/about-co2-module/) you can easily measure the c
 ## How It Works
 Technically it uses infrared light for measurements. More information on [Wikipedia](https://en.wikipedia.org/wiki/Carbon_dioxide_sensor)
 
-And how it works within the SDK? As any other BigClown module. There are init, periodical + manual measurements and calibration functions available in the [SDK](http://sdk.bigclown.com/group__bc__module__co2.html)
+And how it works within the SDK? As any other BigClown module. There are init, periodical + manual measurements and calibration functions available in the [SDK](https://sdk.bigclown.com/group__bc__module__co2.html)
 
 
 ## Recognizable CO2 Module Events

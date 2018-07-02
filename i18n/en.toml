@@ -1,0 +1,38 @@
+[learn_more]
+other = "Learn more"
+
+[or]
+other = "OR"
+
+[makers_say]
+other = "What makers say about us"
+
+[sign_up]
+other = "Sign up to receive the latest news and projects."
+
+[get_inspiration]
+other = "Get inspiration"
+
+[give_me_email]
+other = "Give me your e-mail"
+
+[back_to_top]
+other = "Back to Top"
+
+[navigation]
+other = "Navigation"
+
+[phone]
+other = "Phone"
+
+[czechia]
+other = "CZECHIA"
+
+[shop_now]
+other = "SHOP NOW"
+
+[shop_url]
+other = "https://shop.bigclown.com/?currency=EUR"
+
+[base_url]
+other = "/"

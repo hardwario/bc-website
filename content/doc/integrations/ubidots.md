@@ -52,3 +52,7 @@ return msg;
 ## There's more
 
 In the **Dashboard** tab you can create a preview of all your important values. In the **Event** tab you can set rules so you'll get notified when some value gets out of the limits. The SMS notification is easy to set-up and just works.
+
+# References
+
+* [How to Send Data to Ubidots Using Raspberry Pi and NodeRED](https://www.hackster.io/kierankieran/how-to-send-data-to-ubidots-using-raspberry-pi-and-nodered-128b5c)

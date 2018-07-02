@@ -69,16 +69,12 @@ We'll flash the **bcf-gateway** firmware. This firmware for the gateway contains
 
 {{% core-module-2 %}}
 
-Before flashing is necessary to switch the **Core Module** to the [programming **DFU** mode]({{< relref "doc/tutorials/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).
-
 ```
-bcf flash --dfu bigclownlabs/bcf-gateway-core-module:latest
+{{% bcf-flash firmware="bcf-gateway-core-module" %}}
 ```
-
+{{% note "info" %}}
 After the firmware flashing the **Core Module** will automatically restart and the flashed firmware will be run.
-
-{{% note "warning" %}}The USB Dongle flashing is done differently and flashing is completely automatic and you **do not pass the `--dfu`** parameter.{{% /note %}}
-
+{{% /note %}}
 
 ## USB Dongle to MQTT communication gateway
 
@@ -258,7 +254,7 @@ If you own the {{< shop "USB Dongle" >}} then disconnect the **Core Module** fro
 Connect the **USB Dongle** to the **Raspberry Pi**. The **USB Dongle** will switch to the programming mode automatically. Just execute the next command:
 
 ```
-bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
+{{% bcf-flash firmware="bcf-gateway-usb-dongle" %}}
 ```
 {{< note "info" >}}
 In case you get `Could not lock device /dev/ttyUSB0` error, that means that the `bcg` gateway service is running and uses the same virtual serial port. Yo need to stop bcg temporarily by `pm2 stop bcg-ud`, then do the `bcf flash` and start the service again by `pm2 restart bcg-ud`.
@@ -286,10 +282,10 @@ For longest **battery life** of remote nodes it is best to use firmwares with th
 
 {{% core-module-2 %}}
 
-Connect the **Core Module** to the **Raspberry Pi** and enable the **DFU** flashing mode as explained in the previous chapter. Upload the `generic-node` with `firmware-battery-mini` option.
+Connect the **Core Module** to the **Raspberry Pi**. Upload the `generic-node` with `firmware-battery-mini` option.
 
 ```
-bcf flash --dfu bigclownlabs/bcf-generic-node-battery-mini:latest
+{{% bcf-flash firmware="bcf-generic-node-battery-mini" %}}
 ```
 
 In case you would power the remote note with a power adapter, you can flash `power module` firmware for a corresponding number of LED diodes (RGB or RGBWhite) `bigclownlabs/bcf-generic-node-power-module-rgbw144:latest`. This firmware is also always listening on the radio and can receive commands co control the LED pixels, relay and display the measured data on the connected **LCD Module**. Moreover it is possible to display custom texts on the display with various sized fonts.

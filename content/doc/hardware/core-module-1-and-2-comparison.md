@@ -2,29 +2,40 @@
 title: "Core Module R1 and R2 comparison"
 ---
 
-## Technical differences
+We have released the new Core Module 2. Everything is the same, only the flash process is now easier and faster.
 
-{{< note "info" "Click for zoom on images" >}}{{< /note >}}
+## Technical and visual differences
+
+The most significant change is that R2 has only single button. This is the `B` button. It has moved and you can use it for your program. The `R` reset button is not necessary anymore because communication and firmware flashing is now done automatically over **FTDI** chip.
 
 |   Model  | Core R1  |  Core R2 |
 |----------|----------|----------|
-|   Look   | {{% img-zoom src="core-module-1.png" width="70" height="70" %}} | {{% img-zoom src="core-module-2.png" width="70" height="70" %}} |
+|   Look   | {{% img-zoom src="core-module-1.png" width="220" %}} | {{% img-zoom src="core-module-2.png" width="220" %}} |
 
-## Flashing differences
+The new <strong>Core Module 2</strong> is not using DFU mode anymore. We have added new flashing over FTDI chip and virtual serial port over USB.
+This means that the flashing procedure is now the same as with the USB Dongle. Please, use the <strong>--device &lt;PORT&gt;</strong> (e.g. COM4 or /dev/ttyUSB0) parameters instead of the former <strong>--dfu</strong> or <strong>--device dfu</strong> parameter.
 
-### Core Module R1
+## Improvements
+
+- No need to press any button to start firmware update.
+- Faster firmware uploads over **FTDI** chip
+- Smaller firmwares because USB stack is now handled by **FTDI** chip.
+- Simple debugging over serial port. The UART2 is connected to the FTDI so you can use [**bc\_log\_\***](http://sdk.bigclown.com/group__bc__log.html) functions.
+- No issues with DFU drivers on Windows.
+
+## Flashing Core Module R1
 
 1. Connect the Micro USB cable to the Core Module and your computer.
-2. You have to switch to [Core Module to the DFU mode](https://www.bigclown.com/doc/projects/wireless-motion-detector/).
+2. You have to switch to [Core Module to the DFU mode](https://www.bigclown.com/doc/tutorials/toolchain-guide/#switching-core-module-into-dfu-mode).
 3. Upload firmware with following command
 
-        bcf flash --dfu [firmware]:[version]
+        bcf flash --device dfu [firmware]:[version]
 
-    Example witch flashing wireless-motion-detector firmware from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) project:
+    Example which flashing wireless-motion-detector firmware from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) project:
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-motion-detector:latest
+        bcf flash --device dfu bigclownlabs/bcf-kit-wireless-motion-detector:latest
 
-### Core Module R2
+## Flashing Core Module R2
 
 1. Run following command to see connected devices
 
@@ -54,6 +65,6 @@ title: "Core Module R1 and R2 comparison"
 
         bcf flash --device [device] [firmware]:[version]
 
-    In my situation if I want to flash same firmware as on my Core R1 like in first part. I use following command
+    Example which flashing wireless-motion-detector firmware from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) project:
 
         bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-motion-detector:latest

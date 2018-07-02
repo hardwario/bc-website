@@ -61,7 +61,7 @@ Normally, the development cycle is the repetition of the following 3 steps:
 
 * Run `make` to produce the firmware image `firmware.bin`.
 
-* Run `bcf flash --dfu` to upload the firmware image into the **Core Module** (omit `--dfu` parameter in case of **USB Dongle**).
+* Run `bcf flash --device /dev/ttyUSBx` to upload the firmware image into the **Core Module** or **USB Dongle**.
 
 {{% core-module-2 %}}
 

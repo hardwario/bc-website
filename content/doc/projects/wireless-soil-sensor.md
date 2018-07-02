@@ -10,6 +10,7 @@ This document will guide you through the **Wireless Soil Sensor** project. You w
 
 {{% img-zoom src="block-diagram.svg" %}}
 
+
 ## Requirements
 
 * Either **BigClown Wireless Soil Sensor Kit**, or individual components:
@@ -59,7 +60,7 @@ Now it's time to write firmware to the **Core Module**.
 
     Write this command to the **Raspberry Pi** SSH command line.
 
-        bcf flash --dfu bigclownlabs/bcf-wireless-soil-sensor:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-wireless-soil-sensor:latest
 
 3. Remove the Micro USB cable from the **Core Module** and **Raspberry Pi**.
 

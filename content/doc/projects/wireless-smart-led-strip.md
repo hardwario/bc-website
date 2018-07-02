@@ -64,15 +64,15 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     If your LED strip is **144 LEDs RGBW**:
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-power-controller-rgbw144:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-power-controller-rgbw144:latest
 
     If your LED strip is **150 LEDs RGB**:
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-power-controller-rgb150:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-power-controller-rgb150:latest
 
     If your LED strip is **72 LEDs RGBW**:
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-power-controller-rgbw72:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-power-controller-rgbw72:latest
 
     Firmware upload is successfully done when the status reaches 100%:
 

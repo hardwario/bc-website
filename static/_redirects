@@ -1,9 +1,11 @@
-https://bigclown.cz/* https://www.bigclown.com/:splat 301!
-https://www.bigclown.cz/* https://www.bigclown.com/:splat 301!
+http://bigclown.cz/* https://www.bigclown.com/cs/:splat 301!
+http://www.bigclown.cz/* https://www.bigclown.com/cs/:splat 301!
+https://bigclown.cz/* https://www.bigclown.com/cs/:splat 301!
+https://www.bigclown.cz/* https://www.bigclown.com/cs/:splat 301!
 https://doc.bigclown.com/mqtt https://www.bigclown.com/doc/interfaces/mqtt-topics/ 301!
 https://doc.bigclown.com/topics https://www.bigclown.com/doc/interfaces/mqtt-topics/ 301!
 https://doc.bigclown.com/* https://www.bigclown.com/doc/:splat 301!
-https://doc.bigclown.cz/* https://www.bigclown.com/doc/:splat 301!
+https://doc.bigclown.cz/* https://www.bigclown.com/cs/doc/:splat 301!
 https://shop.bigclown.cz/* https://shop.bigclown.com/:splat 301!
 https://obchod.bigclown.com/* https://shop.bigclown.com/:splat 301!
 https://obchod.bigclown.cz/* https://shop.bigclown.com/:splat 301!

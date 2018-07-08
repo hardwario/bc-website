@@ -56,7 +56,9 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% core-module-2 %}}
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-flood-detector:latest
+```
+{{% bcf-flash firmware="bcf-kit-wireless-flood-detector" %}}
+```
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 

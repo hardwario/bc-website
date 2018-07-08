@@ -89,6 +89,8 @@ items:
       link: "doc/hardware/basic-principles.md"
     - title: "Headers and Signals"
       link: "doc/hardware/headers-and-signals.md"
+    - title: "Core Module R1 and R2 comparison"
+      link: "doc/hardware/core-module-1-and-2-comparison.md"
     - title: "Power Management"
       link: "doc/hardware/power-management.md"
     - title: "I²C Address Space"

@@ -108,7 +108,7 @@ There are two bootloaders in MCU ROM:
 
 * UART - in case of USB-UART chip device is used (e.g. for USB Dongle or Core Module R2.x)
 
-{{% note "warning" %}}In case you need to upload the firmware into the Core Module R1.3, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash --dfu` format.{{% /note %}}
+{{% note "warning" %}}In case you need to upload the firmware into the Core Module R1, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash ----device dfu` format.{{% /note %}}
 
 {{% core-module-2 %}}
 
@@ -116,17 +116,17 @@ Firmware upload can be done using the `bcf flash` command. The firmware can be o
 
 1. Source **firmware package**, for instance:
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-push-button:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-push-button:latest
 
 2. Source **local disk file**, for instance:
 
-        bcf flash --device COM5 firmware.bin
+        bcf flash --device /dev/ttyUSB0 firmware.bin
 
     {{% note "warning" %}}Replace `COM5` with the device listed using `bcf devices`.{{% /note %}}
 
 3. Source **file from the specified URL**, for instance:
 
-        bcf flash --dfu https://github.com/bigclownlabs/bcf-kit-wireless-push-button/releases/download/v1.1.0/bcf-kit-wireless-push-button-v1.1.0.bin
+        bcf flash --device /dev/ttyUSB0 https://github.com/bigclownlabs/bcf-kit-wireless-push-button/releases/download/v1.1.0/bcf-kit-wireless-push-button-v1.1.0.bin
 
 You can list the USB UART devices connected to your host using this command:
 
@@ -232,7 +232,7 @@ We can do this by following this procedure:
 
 ### Incorrect DFU Driver
 
-In case you get `Cannot open DFU device 0483:df11` while running the **bcf flash --dfu** command, you have the incorrect DFU drivers installed.
+In case you get `Cannot open DFU device 0483:df11` while running the **bcf flash --device dfu** command, you have the incorrect DFU drivers installed.
 
     {{% img src="windows-dfu-wrong-driver.png" %}}
 

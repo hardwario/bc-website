@@ -56,7 +56,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% core-module-2 %}}
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-lcd-thermostat:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-lcd-thermostat:latest
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 

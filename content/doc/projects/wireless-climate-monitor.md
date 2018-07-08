@@ -46,13 +46,10 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "info" %}}You may want to update available firmwares by `bcf update` if the installation has been prolonged for a longer time after Playground Setup{{% /note %}}
 
-    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/tutorials/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
-
-    {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
-
     {{% core-module-2 %}}
 
-        bcf flash --dfu bigclownlabs/bcf-kit-wireless-climate-monitor:latest
+        {{% bcf-flash firmware="bcf-kit-wireless-climate-monitor" %}}
+
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 

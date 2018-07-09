@@ -6,9 +6,9 @@
 
         <div class="articles">
           <div class="row">
-            {{ range first 6 ($.Site.GetPage "section" "projects").Pages }}
-              {{ .Render "grid" }}
-            {{ end }}
+            { range first 6 ($.Site.GetPage "section" "projects").Pages }}
+              { .Render "grid" }}
+            { end }}
           </div>
           <div class="text-center">
             <a href="/en/projects" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>

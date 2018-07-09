@@ -15,6 +15,18 @@ You can install tools with `pip3` python tool. Always make sure that you are usi
 
 ## Usage examples
 
+Update and dowload list of all firmwares from GitHub
+
+        bcf update
+
+List all firmwares
+
+        bcf list
+
+Search for firmware
+
+        bcf search button
+
 Flash Core Module **R2** with button kit firmware in **Ubuntu/macOS**
 
         bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-push-button:latest

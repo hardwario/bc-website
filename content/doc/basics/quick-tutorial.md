@@ -38,9 +38,9 @@ In case you like video tutorials, you can watch this one. Otherwise please conti
 
 {{% note "warning" %}}Detailed instructions can be found in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).{{% /note %}}
 
-The easiest way to start is to download the [**BigClown Raspbian**](https://github.com/bigclownlabs/bc-raspbian/releases) image. This image has already pre-installed necessary components. It contains **BigClown Gateway** `bcg`, **Mosquitto** MQTT broker, **Node-RED** and **BigClown Firmware Tool** `bcf`.
+The easiest way to start is to download the [**BigClown Raspbian**](https://github.com/bigclownlabs/bc-raspbian/releases) image. This image has already pre-installed necessary components. It contains [**BigClown Gateway**]({{< relref "doc/tools/bcg.md" >}}) `bcg`, **Mosquitto** MQTT broker, **Node-RED** and [**BigClown Firmware Tool**]({{< relref "doc/tools/bcf.md" >}}) `bcf`.
 
-The downloaded **Raspberry Pi** image has to be written to a MicroSD card using the `dd` command or using the **Win32DiskImager** tool.
+The downloaded **Raspberry Pi** image has to be written to a MicroSD card using the multi-platform **GUI tool** [**Etcher**](https://etcher.io/), [**Win32DiskImager**](https://sourceforge.net/projects/win32diskimager/) or command line `dd` tool.
 
 You can also download the official **Raspbian** and install necessary packages yourself.
 
@@ -55,7 +55,7 @@ You can also download the official **Raspbian** and install necessary packages y
 
 After the **Raspberry Pi** boots up you should be able to find it at address `hub.local`. You can try the command `ping hub.local` and see the response.
 
-{{< note "warning" >}}If the Raspberry Pi is not visible on the network, there's something wrong with your network setup or your system doesn't support **mDNS** and you have to find the IP address of the **Raspberry Pi** in your router's **DHCP** configuration.{{< /note >}}
+{{< note "warning" >}}If the Raspberry Pi is not visible on the network, there's something wrong with your network setup or your system doesn't support **mDNS** and you have to find the IP address of the **Raspberry Pi** in your router's **DHCP** configuration or by using [**Fing**](https://www.fing.io/) which is a simple smartphone application.{{< /note >}}
 
 Please log on the Raspberry Pi shell by typing `ssh pi@hub.local` command or use the Windows program **PuTTY**.
 

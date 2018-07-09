@@ -6,6 +6,32 @@ This multi-platform Python tool can flash {{<shop "USB Dongle">}} and {{<shop "C
 
 The installation and usage instructions are in the [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}), [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.md" >}}) and **Projects** section.
 
+## Install & Upgrade
+
+You can install tools with `pip3` python tool. Always make sure that you are using the latest version.
+
+    sudo pip3 install --upgrade --no-cache-dir bcf
+
+
+## Usage examples
+
+Flash Core Module **R2** with button kit firmware in **Ubuntu/macOS**
+
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-push-button:latest
+
+Flash Core Module **R2** with button kit firmware in **Windows**
+
+        bcf flash --device COM3 bigclownlabs/bcf-kit-wireless-push-button:latest
+
+Flash Core Module **R1** with button kit firmware in **Windows/Ubuntu/macOS**
+
+        bcf flash --device dfu bigclownlabs/bcf-kit-wireless-push-button:latest
+
+Flash **USB Dongle** with latest firmware
+
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
+
+## bcf --help
 
 ```
 hub@hpnix:~$ bcf --help

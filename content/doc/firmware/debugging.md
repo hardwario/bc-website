@@ -32,7 +32,7 @@ Or another example USB UART from Mouser:
 * [FTDI cable TTL-232R-3V3](https://eu.mouser.com/search/ProductDetail.aspx?qs=Xb8IjHhkxj627GFcejHp0Q%3d%3d)
 * [Jumper Wires](https://eu.mouser.com/search/ProductDetail.aspx?R=0virtualkey0virtualkeyMIKROE-513)
 
-Connect USB UART and Core Module into one PC's USB host sockets and interconnect Core Module with USB UART by single wire USB UART RX (YELLOW wire on cable) and Core Module TXD2 (header pin 22) - have a look at [Core Module Header drawing]({{< relref "doc/hardware/headers-and-signals.md#module-drawing" >}}).
+Connect USB UART and Core Module into one PC's USB host sockets and interconnect Core Module with USB UART by single wire USB UART RX (YELLOW wire on cable) and Core Module TXD2 (header pin 22) - have a look at [Core Module Header drawing]({{< relref "doc/hardware/header-pinout.md#module-drawing" >}}).
 
 {{< note "danger" "Beware of groud loop and ground voltage difference in case you do not use same PC to power Core Module and to connect USB UART." />}}
 
@@ -132,10 +132,10 @@ Example of output:
 ## Getting more
 
 Sooner or later when you are in troubles you might come to the idea that you **want to look inside** the CPU check the current values of registers or memory areas. Good news, you are not alone! Bad news, it's not that easy as on x86 Borland Pascal compiler with embedded debugger and profiler. Nevertheless there is a standard for that by IEEE IEEE Standard 1149.1-1990 shortly called [JTAG](https://en.wikipedia.org/wiki/JTAG) after the group that made the standard. This standard is intended for those situations when you need to look inside. It is kind of periscope for your desktop PC into the MCU.
-It builds up on the other standard (fast) bus called SPI it adds some requirements for device (or function block inside device) to comply with. But not to overwhelm you with unnecessary details it gives you exactly that key hole view with capability to stop "time(r)" in order to give you a snapshot of the MCU. Last but not least point to mention, that even JTAG has undergone evolution and ARM architecture has adopted the JTAG in "less wires* option named *Single Wire Debug* (aka 
+It builds up on the other standard (fast) bus called SPI it adds some requirements for device (or function block inside device) to comply with. But not to overwhelm you with unnecessary details it gives you exactly that key hole view with capability to stop "time(r)" in order to give you a snapshot of the MCU. Last but not least point to mention, that even JTAG has undergone evolution and ARM architecture has adopted the JTAG in "less wires* option named *Single Wire Debug* (aka
 [SWD](https://www.pls-mc.com/serial-wire-debug-swd-support/features-a-958.html)) which available in ARM based architectures including ARM Cortex M4 ~ STM32L series of MCUs.
 
-From the developer's point of view you should have working USB adapter that is recognized by your debugger (PC software like OpenOCD/Gdb/DDD or [Segger's Ozone](https://www.segger.com/products/development-tools/ozone-j-link-debugger/)). If I would simplify that even more you can connect any kind of interpret into the debugging abstraction that has capability to map your original C/C++ source code to code and data addresses if the target (MCU) and then on demand read the program counter (PC), stack poiter (SP) and pull the data from target and display them conveniently decoded for your elaboration. 
+From the developer's point of view you should have working USB adapter that is recognized by your debugger (PC software like OpenOCD/Gdb/DDD or [Segger's Ozone](https://www.segger.com/products/development-tools/ozone-j-link-debugger/)). If I would simplify that even more you can connect any kind of interpret into the debugging abstraction that has capability to map your original C/C++ source code to code and data addresses if the target (MCU) and then on demand read the program counter (PC), stack poiter (SP) and pull the data from target and display them conveniently decoded for your elaboration.
 
 Its is worth to note that the debugger is also capable of setting data watch or instruction interrrupt set at particulat address to let you stop your programm and check registers/variables.
 

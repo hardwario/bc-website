@@ -24,4 +24,4 @@ You can view and download ready-to-print models (in STL format) from our GitHub 
 
 ## Related Documents
 
-* [**Headers and Signals**]({{< relref "doc/hardware/headers-and-signals.md" >}})
+* [**Headers and Signals**]({{< relref "doc/hardware/header-pinout.md" >}})

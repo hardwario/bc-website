@@ -2,7 +2,7 @@
 title: "How to: UART interface"
 ---
 
-Core Module has 3 UARTs you can use. The signal for each channel is named TXD**x**, RXD**x** where **x** is **0**, **1** or **2**. Please refer to the [module drawing pinout]({{< relref "doc/hardware/headers-and-signals.md#module-drawing-standard" >}}) where you find the signals positions.
+Core Module has 3 UARTs you can use. The signal for each channel is named TXD**x**, RXD**x** where **x** is **0**, **1** or **2**. Please refer to the [module drawing pinout]({{< relref "doc/hardware/header-pinout.md#module-drawing-standard" >}}) where you find the signals positions.
 
 Also check the [UART API on the SDK site](http://sdk.bigclown.com/group__bc__uart.html).
 
@@ -90,7 +90,7 @@ Note that the last parameter `timeout` is `500` so the function is waiting 500ms
 
 ## Asynchronous reading and writing
 
-This example does asynchronous send and receive of data on `BC_UART_UART1`. 
+This example does asynchronous send and receive of data on `BC_UART_UART1`.
 
 {{< note "info" "Low power UART" >}}
 When you call `bc_uart_async_read_start` then the sheduler stops sleeping the MCU so this function is not low-power friendly. After you call `bc_uart_async_read_stop` the periodic sleeping of MCU is again activated. The only solution to receive over UART in low-power mode is to use `BC_UART_UART1` with `BC_UART_BAUDRATE_9600` which is using `LPUART` (low power UART peripheral). `LPUART` is clocked from the 32 kHz crystal that can run even when the MCU is sleeping so you won't miss a single byte.

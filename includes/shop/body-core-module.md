@@ -27,5 +27,6 @@ The **Core Module** can communicate wirelessly with another **Core Module**, or 
 
 ## Resources
 
+* [**Pinout signals**](https://www.bigclown.com/doc/hardware/headers-signals-and-pinouts)
 * [**Documentation**](https://www.bigclown.com/doc/hardware/about-core-module/)
 * [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-module-core)

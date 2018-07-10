@@ -1,49 +1,14 @@
 ---
-title: "Headers and Signals"
+title: "Headers, Signals and Pinouts"
 ---
 
-This document describes connector system used in BigClown and the signals available on the connectors.
+This document describes connector system used in BigClown and the pinouts available on the connectors.
 
-{{% note "info" %}}This is especially important information when you start extending BigClown with your own components or 3rd party accessories.{{% /note %}}
-
-The **BigClown IoT Kit** emphasizes hardware modularity and reusability. In order to achieve such goal, the proper interconnection system has to be used. BigClown sticks to a well-known and widely accepted standard - the so-called **headers** with a 2.54 mm (0.1 inch) pitch.
-
-The BigClown header system consists of two types of components - **pins** and **sockets**.
-
----
-
-**TODO** Photo of a module with legend to pins and sockets.
-
----
-
-To keep compatibility between various hardware components, the  two BigClown electro-mechanical formats have been defined - **module** and **tag**.
-
-## Module Format
-
-Format **Module** defines:
-
-* Spacing and signals between two rows of 14-pin **headers** (see table below)
-
-* Four mounting hole positions and their diameter
-
-* Position of mechanical key (filled hole in header) preventing
-reverse insertion
-
-* Position of **sockets** from top view
-
-* Position of **pins** from the bottom view
-
-* Recommended PCB height 55 mm
-
-* Recommended PCB thickness 1.5 mm
-
-* Radius of rounded corners 3.8 mm
-
-## Module Drawing - Standard
+## Module Drawing & Pinouts - Standard
 
 {{% img src="module.svg" alt="Module drawing" width="400" %}}
 
-## Module Drawing - Large
+## Module Drawing & Pinouts - Large
 
 {{% img src="module-large.svg" alt="Module drawing" %}}
 
@@ -115,6 +80,27 @@ The following table defines signal assignment on **module** header:
 
 {{% note "danger" %}}Do not connect anything on the **VDD_OFF** and **BAT_OFF** signals unless you are sure what you are doing.{{% /note %}}
 
+## Module Format
+
+Format **Module** defines:
+
+* Spacing and signals between two rows of 14-pin **headers** (see table below)
+
+* Four mounting hole positions and their diameter
+
+* Position of mechanical key (filled hole in header) preventing
+reverse insertion
+
+* Position of **sockets** from top view
+
+* Position of **pins** from the bottom view
+
+* Recommended PCB height 55 mm
+
+* Recommended PCB thickness 1.5 mm
+
+* Radius of rounded corners 3.8 mm
+
 ## Tag Format
 
 The primary purpose of **tag** format is to provide signal break-out for I²C peripheral in a compact form-factor.
@@ -132,7 +118,7 @@ Format **tag** defines:
 
 * Radius of rounded corners 3.8 mm
 
-## Tag Drawing
+## Tag Drawing & Pinouts
 
 {{% img src="tag.svg" alt="Tag drawing" width="300" %}}
 

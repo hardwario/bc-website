@@ -87,8 +87,8 @@ items:
     items:
     - title: "Basic Principles"
       link: "doc/hardware/basic-principles.md"
-    - title: "Headers and Signals"
-      link: "doc/hardware/headers-and-signals.md"
+    - title: "Header Pinout"
+      link: "doc/hardware/header-pinout.md"
     - title: "Core Module R1 and R2 comparison"
       link: "doc/hardware/core-module-1-and-2-comparison.md"
     - title: "Power Management"

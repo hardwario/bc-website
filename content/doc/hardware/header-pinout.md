@@ -1,14 +1,14 @@
 ---
-title: "Headers, Signals and Pinouts"
+title: "Header Pinout"
 ---
 
-This document describes connector system used in BigClown and the pinouts available on the connectors.
+This document describes connector system used in BigClown and the pinout available on the connectors.
 
-## Module Drawing & Pinouts - Standard
+## Module Drawing & Pinout - Standard
 
 {{% img src="module.svg" alt="Module drawing" width="400" %}}
 
-## Module Drawing & Pinouts - Large
+## Module Drawing & Pinout - Large
 
 {{% img src="module-large.svg" alt="Module drawing" %}}
 
@@ -118,7 +118,7 @@ Format **tag** defines:
 
 * Radius of rounded corners 3.8 mm
 
-## Tag Drawing & Pinouts
+## Tag Drawing & Pinout
 
 {{% img src="tag.svg" alt="Tag drawing" width="300" %}}
 

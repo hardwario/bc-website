@@ -2,8 +2,10 @@
 title: "Module Overview"
 ---
 
+Here is a list of modules and tags in alphabetical order.
+
 <div class="clearfix module-pitch">
-<img class="pull-left" src="1-wire-module.png" alt="1-Wire Module" style="margin: 50px;">
+<img class="pull-left" src="1-wire-module.png" alt="1-Wire Module" style="margin: 50px;" align="left">
 <h2>1-Wire Module</h2>
 <p>
 {{< include "shop/pitch-1-wire-module.md" >}}
@@ -12,7 +14,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="barometer-tag.png" alt="Barometer Tag" style="margin: 50px;">
+<img class="pull-left" src="barometer-tag.png" alt="Barometer Tag" style="margin: 50px;" align="left">
 <h2>Barometer Tag</h2>
 <p>
 {{< include "shop/pitch-barometer-tag.md" >}}
@@ -21,7 +23,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="base-module.png" alt="Base Module" style="margin: 50px;">
+<img class="pull-left" src="base-module.png" alt="Base Module" style="margin: 50px;" align="left">
 <h2>Base Module</h2>
 <p>
 {{< include "shop/pitch-base-module.md" >}}
@@ -30,7 +32,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="battery-module.png" alt="Battery Module" style="margin: 50px;">
+<img class="pull-left" src="battery-module.png" alt="Battery Module" style="margin: 50px;" align="left">
 <h2>Battery Module</h2>
 <p>
 {{< include "shop/pitch-battery-module.md" >}}
@@ -39,7 +41,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="breadboard-module.png" alt="Breadboard Module" style="margin: 50px;">
+<img class="pull-left" src="breadboard-module.png" alt="Breadboard Module" style="margin: 50px;" align="left">
 <h2>Breadboard Module</h2>
 <p>
 {{< include "shop/pitch-breadboard-module.md" >}}
@@ -48,7 +50,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="button-module.png" alt="Button Module" style="margin: 50px;">
+<img class="pull-left" src="button-module.png" alt="Button Module" style="margin: 50px;" align="left">
 <h2>Button Module</h2>
 <p>
 {{< include "shop/pitch-button-module.md" >}}
@@ -57,7 +59,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="climate-module.png" alt="Climate Module" style="margin: 50px;">
+<img class="pull-left" src="climate-module.png" alt="Climate Module" style="margin: 50px;" align="left">
 <h2>Climate Module</h2>
 <p>
 {{< include "shop/pitch-climate-module.md" >}}
@@ -66,7 +68,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="cloony.png" alt="Cloony" style="margin: 50px;">
+<img class="pull-left" src="cloony.png" alt="Cloony" style="margin: 50px;" align="left">
 <h2>Cloony</h2>
 <p>
 {{< include "shop/pitch-cloony.md" >}}
@@ -75,7 +77,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="co2-module.png" alt="CO2 Module" style="margin: 50px;">
+<img class="pull-left" src="co2-module.png" alt="CO2 Module" style="margin: 50px;" align="left">
 <h2>CO2 Module</h2>
 <p>
 {{< include "shop/pitch-co2-module.md" >}}
@@ -84,7 +86,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="core-module-2.png" alt="Core Module" style="margin: 50px;">
+<img class="pull-left" src="core-module-2.png" alt="Core Module" style="margin: 50px;" align="left">
 <h2>Core Module</h2>
 <p>
 {{< include "shop/pitch-core-module.md" >}}
@@ -93,7 +95,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="cover-module.png" alt="Cover Module" style="margin: 50px;">
+<img class="pull-left" src="cover-module.png" alt="Cover Module" style="margin: 50px;" align="left">
 <h2>Cover Module</h2>
 <p>
 {{< include "shop/pitch-cover-module.md" >}}
@@ -102,7 +104,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="encoder-module.png" alt="Encoder Module" style="margin: 50px;">
+<img class="pull-left" src="encoder-module.png" alt="Encoder Module" style="margin: 50px;" align="left">
 <h2>Encoder Module</h2>
 <p>
 {{< include "shop/pitch-encoder-module.md" >}}
@@ -111,7 +113,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="humidity-tag.png" alt="Humidity Tag" style="margin: 50px;">
+<img class="pull-left" src="humidity-tag.png" alt="Humidity Tag" style="margin: 50px;" align="left">
 <h2>Humidity Tag</h2>
 <p>
 {{< include "shop/pitch-humidity-tag.md" >}}
@@ -120,7 +122,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="lcd-module.png" alt="LCD Module" style="margin: 50px;">
+<img class="pull-left" src="lcd-module.png" alt="LCD Module" style="margin: 50px;" align="left">
 <h2>LCD Module</h2>
 <p>
 {{< include "shop/pitch-lcd-module-bg.md" >}}
@@ -129,7 +131,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="lux-meter-tag.png" alt="Lux Meter Tag" style="margin: 50px;">
+<img class="pull-left" src="lux-meter-tag.png" alt="Lux Meter Tag" style="margin: 50px;" align="left">
 <h2>Lux Meter Tag</h2>
 <p>
 {{< include "shop/pitch-lux-meter-tag.md" >}}
@@ -138,7 +140,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="mini-battery-module.png" alt="Mini Battery Module" style="margin: 50px;">
+<img class="pull-left" src="mini-battery-module.png" alt="Mini Battery Module" style="margin: 50px;" align="left">
 <h2>Mini Battery Module</h2>
 <p>
 {{< include "shop/pitch-mini-battery-module.md" >}}
@@ -147,7 +149,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="nfc-tag.png" alt="NFC Tag" style="margin: 50px;">
+<img class="pull-left" src="nfc-tag.png" alt="NFC Tag" style="margin: 50px;" align="left">
 <h2>NFC Tag</h2>
 <p>
 {{< include "shop/pitch-nfc-tag.md" >}}
@@ -156,7 +158,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="pir-module.png" alt="PIR Module" style="margin: 50px;">
+<img class="pull-left" src="pir-module.png" alt="PIR Module" style="margin: 50px;" align="left">
 <h2>PIR Module</h2>
 <p>
 {{< include "shop/pitch-pir-module.md" >}}
@@ -165,7 +167,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="power-module.png" alt="Power Module" style="margin: 50px;">
+<img class="pull-left" src="power-module.png" alt="Power Module" style="margin: 50px;" align="left">
 <h2>Power Module</h2>
 <p>
 {{< include "shop/pitch-power-module.md" >}}
@@ -174,7 +176,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="probe-module.png" alt="Probe Module" style="margin: 50px;">
+<img class="pull-left" src="probe-module.png" alt="Probe Module" style="margin: 50px;" align="left">
 <h2>Probe Module</h2>
 <p>
 {{< include "shop/pitch-probe-module.md" >}}
@@ -183,7 +185,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="relay-module.png" alt="Relay Module" style="margin: 50px;">
+<img class="pull-left" src="relay-module.png" alt="Relay Module" style="margin: 50px;" align="left">
 <h2>Relay Module</h2>
 <p>{{< include "shop/pitch-relay-module.md" >}}
 </p>
@@ -191,7 +193,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="sensor-module.png" alt="Sensor Module" style="margin: 50px;">
+<img class="pull-left" src="sensor-module.png" alt="Sensor Module" style="margin: 50px;" align="left">
 <h2>Sensor Module</h2>
 <p>
 {{< include "shop/pitch-sensor-module.md" >}}
@@ -200,7 +202,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="sigfox-module.png" alt="Sigfox Module" style="margin: 50px;">
+<img class="pull-left" src="sigfox-module.png" alt="Sigfox Module" style="margin: 50px;" align="left">
 <h2>Sigfox Module</h2>
 <p>
 {{< include "shop/pitch-sigfox-module.md" >}}
@@ -209,7 +211,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="tag-module.png" alt="Tag Module" style="margin: 50px;">
+<img class="pull-left" src="tag-module.png" alt="Tag Module" style="margin: 50px;" align="left">
 <h2>Tag Module</h2>
 <p>
 {{< include "shop/pitch-tag-module.md" >}}
@@ -218,7 +220,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="temperature-tag.png" alt="Temperature Tag" style="margin: 50px;">
+<img class="pull-left" src="temperature-tag.png" alt="Temperature Tag" style="margin: 50px;" align="left">
 <h2>Temperature Tag</h2>
 <p>
 {{< include "shop/pitch-temperature-tag.md" >}}
@@ -227,7 +229,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="usb-dongle.png" alt="USB Dongle" style="margin: 50px;">
+<img class="pull-left" src="usb-dongle.png" alt="USB Dongle" style="margin: 50px;" align="left">
 <h2>USB Dongle</h2>
 <p>
 {{< include "shop/pitch-usb-dongle.md" >}}
@@ -236,7 +238,7 @@ title: "Module Overview"
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="voc-tag.png" alt="VOC Tag" style="margin: 50px;">
+<img class="pull-left" src="voc-tag.png" alt="VOC Tag" style="margin: 50px;" align="left">
 <h2>VOC Tag</h2>
 <p>
 {{< include "shop/pitch-voc-tag.md" >}}

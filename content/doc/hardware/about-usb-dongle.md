@@ -7,7 +7,7 @@ title: "About USB Dongle"
 {{< include "shop/pitch-usb-dongle.md" >}}
 
 {{< hw-shop "usb-dongle" >}}
-{{< hw-sch "bc-module-core" >}}
+{{< hw-sch "bc-usb-dongle" >}}
 
 {{< /img-float >}}
 

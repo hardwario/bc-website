@@ -11,7 +11,12 @@ title: "About Core Module"
 {{< hw-shop "core-module" >}}
 {{< hw-sch "bc-module-core" >}}
 
+{{% img-zoom src="core-module-2-pinout.png" width="400" %}}
+
+
 {{< /img-float >}}
+
+
 
 {{< include "shop/body-core-module.md" >}}
 

@@ -46,8 +46,6 @@ This means that the flashing procedure is now the same as with the USB Dongle. P
 
      `/dev/ttyS4` \
      `/dev/ttyACM2` \
-     `/dev/ttyACM1` \
-     `/dev/ttyACM1` \
 
 2. Connect the Micro USB cable to the Core Module and your computer
 
@@ -56,8 +54,6 @@ This means that the flashing procedure is now the same as with the USB Dongle. P
      `/dev/ttyS4` \
      `/dev/ttyUSB0` \
      `/dev/ttyACM2` \
-     `/dev/ttyACM1` \
-     `/dev/ttyACM1` \
 
      It is the `/dev/ttyUSB0`
 
@@ -68,3 +64,16 @@ This means that the flashing procedure is now the same as with the USB Dongle. P
     Example which flashing wireless-motion-detector firmware from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) project:
 
         bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-motion-detector:latest
+
+4. Print bc_log debug messages over UART2 serial to your computer with `bcf`
+
+        bcf log --device [device]
+
+    Flash firmware and immediatelly start logging after upload
+
+        bcf flash --device [device] [firmware]:[version] --log
+
+## References
+
+  * [**`bcf` tool**]({{< relref "doc/tools/bcf.md" >}})
+  * [**About Core Module**]({{< relref "doc/hardware/about-core-module.md" >}})

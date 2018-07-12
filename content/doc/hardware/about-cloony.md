@@ -9,6 +9,8 @@ title: "About Cloony"
 {{< hw-shop "cloony" >}}
 {{< hw-sch "bc-cloony" >}}
 
+{{% img-zoom src="cloony-pinout.png" width="400" %}}
+
 {{< /img-float >}}
 
 {{< include "shop/body-cloony.md" >}}

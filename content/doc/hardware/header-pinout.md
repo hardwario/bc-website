@@ -4,6 +4,13 @@ title: "Header Pinout"
 
 This document describes connector system used in BigClown and the pinout available on the connectors.
 
+## Core Module pinout
+
+{{% img-zoom src="core-module-2-pinout.png" alt="Module drawing" width="400" %}}
+
+## Cloony pinout
+{{% img-zoom src="cloony-pinout.png" alt="Module drawing" width="400" %}}
+
 ## Module Drawing & Pinout - Standard
 
 {{% img src="module.svg" alt="Module drawing" width="400" %}}

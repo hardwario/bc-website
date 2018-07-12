@@ -6,10 +6,15 @@ products:
     name: module-base
   - title: Barometer Tag
     name: tag-barometer
+  - title: Mini Battery Module
+    name: module-battery-mini
+    gpio: ["P0", "P1"]
   - title: Battery Module
     name: module-battery
+    gpio: ["P0", "P1"]
   - title: Climate Module
     name: module-climate
+    address: ["0x40", "0x44", "0x48", "0x60"]
   - title: Cloony
     name: cloony
   - title: CO2 Module

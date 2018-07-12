@@ -43,7 +43,21 @@ Flash **USB Dongle** with latest firmware
 
         bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
 
-## bcf --help
+## `bcf` logging
+
+It is possible to use `bcf` as a serial console to see log messages which are printed with `bc_log_` APIs. It is using serial port in the parameter and 115200 baud speed with 8N1 uart format.
+
+    bcf log --device [device]
+
+Flash firmware and immediatelly start logging after upload
+
+    bcf flash --device [device] [firmware]:[version] --log
+
+Reset Core Module and immediatelly start logging after upload
+
+    bcf reset --device [device] --log
+
+## `bcf --help`
 
 ```
 hub@hpnix:~$ bcf --help

@@ -22,15 +22,18 @@ All addresses are provided in a 7-bit format.
 | 0x45    | OPT3001      | {{% shop "Lux Meter Tag" %}}                                             | Alternate address                       |
 | 0x48    | TMP112       | {{% shop "Temperature Tag" %}}, {{% shop "Climate Module" %}}            | Default address                         |
 | 0x49    | TMP112       | {{% shop "Temperature Tag" %}}                                           | Alternate address                       |
-| 0x49    | TMP112       | {{% shop "Core Module" %}}                                               | Channel I2C0                            |
-| 0x58    | SGP30        | {{% shop "VOC Tag" %}}                                                   | Channel I2C0                            |
+| 0x49    | TMP112       | {{% shop "Core Module" %}}, {{% shop "Cloony" %}}                        | Channel I2C0                            |
+| 0x58    | SGP30        | {{% shop "VOC Tag" %}}                                                   | Default address                         |
 | 0x5F    | HTS221       | {{% shop "Humidity Tag" %}} (R1.x)                                       |                                         |
 | 0x60    | MPL3115A2    | {{% shop "Barometer Tag" %}}, {{% shop "Climate Module" %}}              |                                         |
-| 0x64    | ATSHA204A    | {{% shop "Core Module" %}}, {{% shop "USB Dongle" %}}                    | Channel I2C0                            |
+| 0x64    | ATSHA204A    | {{% shop "Core Module" %}}, {{% shop "USB Dongle" %}}, {{% shop "Cloony" %}}| Channel I2C0                         |
 | 0x64    | ATSHA204A    | {{% shop "USB Dongle" %}}                                                | Channel I2C1                            |
 | 0x9A    | SC16IS740    | {{% shop "CO2 Module" %}} I2C to UART bridge                             | Channel I2C0                            |
 
-Addresses 0x00-0x07 and 0x78-0x7F are I2C reserved addresses and cannot be used
+{{< note "info" >}}
+Addresses 0x00-0x07 and 0x78-0x7F are I2C reserved addresses and cannot be used.
+{{< /note >}}
+
 
 ## References
 

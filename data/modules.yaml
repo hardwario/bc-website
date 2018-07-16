@@ -23,6 +23,11 @@ sigfox:
   image:
     small: Modules_382x324_Sigfox.png
     full:
+lora:
+  name: LoRa Module
+  image:
+    small: Modules_382x324_LoRa.png
+    full:
 battery:
   name: Battery Module
   image:

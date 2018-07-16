@@ -17,5 +17,5 @@ weight: 1
 price: 9 334 Kč
 buyLink: "https://shop.bigclown.com/big-kit-premium/?currency=CZK"
 modules: ["usb_dongle","core-5","mini_battery-4","climate","pir","sensor","flood","power","lcd","enclosures-101-3","enclosures-301","enclosures-501","suitcase"]
-optionalModules: ["sigfox"]
+optionalModules: ["sigfox","lora"]
 ---

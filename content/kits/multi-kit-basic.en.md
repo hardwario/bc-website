@@ -17,5 +17,5 @@ weight: 1
 price: €149
 buyLink: "https://shop.bigclown.com/big-kits/?currency=EUR"
 modules: ["usb_dongle","core-2","mini_battery-2","climate","pir","enclosures-101-2"]
-optionalModules: ["sigfox"]
+optionalModules: ["sigfox","lora"]
 ---

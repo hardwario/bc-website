@@ -17,7 +17,7 @@ weight: 60
 price: 4 264 Kč
 buyLink: "https://shop.bigclown.com/co2-monitor-kit/?currency=CZK"
 modules: ["core","battery","co2","humidity","barometer","temperature","cover","enclosures-201"]
-optionalModules: ["sigfox"]
+optionalModules: ["sigfox","lora"]
 techSpecs:
     dimensions:
         heading: "Rozměry (krabička)"

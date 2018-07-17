@@ -1,5 +1,7 @@
 ---
 title: "GitHub Repositories"
+menu: "doc"
+parent: "basics"
 ---
 
 The BigClown system is open-source and is developed through the **GitHub** platform, where you can find source data in individual repositories or download the pre-compiled packages from the section **Releases**.

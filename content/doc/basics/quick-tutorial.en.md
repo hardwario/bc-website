@@ -1,5 +1,7 @@
 ---
 title: "Quick Tutorial"
+menu: "doc"
+parent: "basics"
 ---
 
 {{< note "info" >}}

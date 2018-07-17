@@ -1,5 +1,7 @@
 ---
 title: "Getting Started"
+menu: "doc"
+parent: "basics"
 ---
 
 BigClown is a device platform, specifically designed for the Internet-of-Things. With BigClown, you can quickly build your own electronics devices. Thanks to its open approach, you will have a total control about your devices, the way they communicate or integrate with 3rd party components. That will give you a freedom for the future customization and extensibility. With BigClown, you will not encounter things like black box magic or vendor lock-in.
@@ -10,7 +12,7 @@ BigClown offers a unique set of features that makes it different from other plat
 
 ### Feature #1: BigClown is open-source
 
-Open-source is our passion, so we share everything what we do. We have an organization at GitHub. More information can be found in the document [**GitHub Repositories**]({{< relref "doc/basics/github-repositories.md" >}}).
+Open-source is our passion, so we share everything what we do. We have an organization at GitHub. More information can be found in the document [**GitHub Repositories**]({{< relref "doc/basics/github-repositories.en.md" >}}).
 
 In general, we don't like hidden catches nor hiding the implementation under the hood. We work hard every day to earn your trust in our products, so anytime you have a chance to see the amount of care, passion and quality we put into the design and code.
 
@@ -82,7 +84,7 @@ Moreover, tied with Git, MQTT client tools, logging mechanism, etc. you will qui
 
 It is important to start somewhere and our aim is to start with simple things. That's why we have prepared several reference IoT projects. Following them will get you on track quickly. You can always explore the parts you are most interested about, tweak them or write your own firmware applications, automation flows or cloud integrations from scratch.
 
-For the very first time, we recommend to walk through the [**Project Workflow**]({{< relref "doc/basics/project-workflow.md" >}}) and [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.md" >}}).
+For the very first time, we recommend to walk through the [**Project Workflow**]({{< relref "doc/basics/project-workflow.en.md" >}}) and [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.en.md" >}}).
 
 On the other hand, if you want to build something real right away, don't hesitate to start with one of our projects:
 
@@ -100,6 +102,6 @@ On the other hand, if you want to build something real right away, don't hesitat
 
 ## Related Documents
 
-* [**Project Workflow**]({{< relref "doc/basics/project-workflow.md" >}})
+* [**Project Workflow**]({{< relref "doc/basics/project-workflow.en.md" >}})
 
-* [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.md" >}})
+* [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.en.md" >}})

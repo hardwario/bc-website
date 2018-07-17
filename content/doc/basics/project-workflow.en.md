@@ -1,10 +1,12 @@
 ---
 title: "Project Workflow"
+menu: "doc"
+parent: "basics"
 ---
 
 Let's dive a little more into how we envision that each project you start might be done.
 
-{{% note "warning" %}}This document assumes you are already familiar with the basic concepts from the document [**Getting Started**]({{< relref "doc/basics/getting-started.md" >}}).{{% /note %}}
+{{% note "warning" %}}This document assumes you are already familiar with the basic concepts from the document [**Getting Started**]({{< relref "doc/basics/getting-started.en.md" >}}).{{% /note %}}
 
 ## Generic Guidelines
 
@@ -100,7 +102,7 @@ Well, having the working prototypes on the table is just as beautiful as it can 
 
 We have designed these as freely available models, ready to be printed on your 3D printer.
 
-{{% note "info" %}}More information can be found in the document [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}}).{{% /note %}}
+{{% note "info" %}}More information can be found in the document [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}}).{{% /note %}}
 
 ### Phase #9: Services Integration
 
@@ -134,7 +136,7 @@ Get social - start with a tweet, screenshot, post to the forum or get to the poi
 
 ## Related Documents
 
-* [**Getting Started**]({{< relref "doc/basics/getting-started.md" >}})
+* [**Getting Started**]({{< relref "doc/basics/getting-started.en.md" >}})
 
 * [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
 
@@ -146,6 +148,6 @@ Get social - start with a tweet, screenshot, post to the forum or get to the poi
 
 * [**Sub-GHz Radio**]({{< relref "doc/interfaces/sub-ghz-radio.md" >}})
 
-* [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}})
+* [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}})
 
 * [**MQTT Protocol**]({{< relref "doc/interfaces/mqtt-protocol.md" >}})

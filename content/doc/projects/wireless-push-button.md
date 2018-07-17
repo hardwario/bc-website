@@ -140,7 +140,7 @@ Follow these steps in **Node-RED**:
 
 Optionally put the assembly into the appropriate enclosure, if you have one.
 
-{{% note "info" %}}You can find more information about the enclosures in the document [**Enclosures**]({{< relref "doc/basics/enclosures.md" >}}).{{% /note %}}
+{{% note "info" %}}You can find more information about the enclosures in the document [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}}).{{% /note %}}
 
 ## Integration with IFTTT
 

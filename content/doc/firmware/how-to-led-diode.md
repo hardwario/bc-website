@@ -4,7 +4,7 @@ title: "How to: LED Control"
 
 Controlling LED diode integrated with Core module is like printing *Hello world*. In this tutorial, we will go through available functions for controlling LED diode provided by [SDK](https://sdk.bigclown.com).
 
-## Requirements 
+## Requirements
 - Core module
 - USB cable
 
@@ -19,7 +19,7 @@ First, an instance of led is needed. You can achieve this by adding this line:
 ```
 bc_led_t led;
 ```
-Now, we can decide between two options how to control the diode. 
+Now, we can decide between two options how to control the diode.
 
 1) synchronous way: "*LED ON -> wait -> LED OFF -> REPEAT*". This way is similar to using ```delay()``` functions with Arduino.
 
@@ -27,7 +27,7 @@ Now, we can decide between two options how to control the diode.
 
 
 ### Asynchronous LED blinking
-For this simple task, we do not even have to declare the ```application_task()``` function. More information about where to place your code can be found [here]({{< relref "doc/basics/project-workflow.md">}})
+For this simple task, we do not even have to declare the ```application_task()``` function. More information about where to place your code can be found [here]({{< relref "doc/basics/project-workflow.en.md">}})
 
 1) We need to tell to the SDK, that we are going to use on-board LED
 ```
@@ -64,7 +64,7 @@ Four blinking patterns are available in SDK. Ordered from slowest to fastest.
 BC_LED_MODE_BLINK_SLOW
 BC_LED_MODE_BLINK_SLOW
 BC_LED_MODE_BLINK_FAST
-BC_LED_MODE_FLASH 
+BC_LED_MODE_FLASH
 ```
 
 ### Custom blinking pattern

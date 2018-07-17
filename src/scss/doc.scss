@@ -243,6 +243,27 @@ header.page-header{
     color: inherit;
   }
 }
+
+h6.card-title span, h6.card-title a{
+  color: #007bff!important;
+}
+h6.card-title a.collapser.collapsed::after {
+  content:"\00a0";
+  background: url("/_assets/svg/plus.svg")!important;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  display: inline-block;
+}
+h6.card-title a.collapser::after {
+  content:"\00a0";
+  background: url("/_assets/svg/minus.svg")!important;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
 .chaptersNav{
   position: fixed; right: 0; padding-top: 25px;
   background: white;

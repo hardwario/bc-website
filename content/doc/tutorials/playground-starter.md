@@ -6,7 +6,7 @@ After going through the [**Playground Setup**]({{< relref "doc/tutorials/playgro
 
   * Node-RED
     * [Pairing commands for Node-RED](https://github.com/bigclownlabs/bch-gateway/blob/master/README.md#node-red-buttons)
-    * [Opening the Node-RED]({{< relref "doc/basics/quick-tutorial.md#opening-the-node-red" >}})
+    * [Opening the Node-RED]({{< relref "doc/basics/quick-tutorial.en.md#opening-the-node-red" >}})
   * MQTT broker Mosquitto
     * [MQTT article]({{< relref "doc/interfaces/mqtt-protocol.md" >}})
     * [MQTT topics short summary]({{< relref "doc/interfaces/mqtt-topics.md" >}})

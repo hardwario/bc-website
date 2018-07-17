@@ -3,14 +3,58 @@
 {{ "<!-- START OF MENU -->" | safeHTML }}
 {{ "" | safeHTML }}
 {{- $page := . }}
+
 <div class="cards" id="accordion">
+  {{ if eq .Section "doc" }}
+    {{ if .IsPage }}
+    <div class="card">
+      <nav class="card-collapse">
+        <ul class="list-group" style="border-top: none;">
+          <li class="list-group-item "><a href="/doc/">Intro</a></li>
+        </ul>
+      </nav>
+    </div>
+    {{ else }}
+    <div class="card list-group-item-success">
+      <nav class="card-collapse">
+        <ul class="list-group" style="border-top: none;">
+          <li class="list-group-item list-group-item-success">Intro</li>
+        </ul>
+      </nav>
+    </div>
+    {{ end }}
+  {{ end }}
 {{- range $.Site.Data }}
   {{- range index . "menu" }}
     {{- range . }}
       {{- $collapse := .title | urlize }}
   <div class="card">
     <div class="card-header">
-      <h6 class="card-title"><a data-toggle="collapse" data-target="#collapse-{{ $collapse }}" aria-expanded="true" aria-controls="collapse-{{ $collapse }}" href="javascript:void(0);">{{ .title }}</a></h4>
+      <h6 class="card-title">
+
+        {{- with .items }}
+          {{- $.Scratch.Set "collapser" " collapsed" }}
+          {{- range . }}
+            {{- if .link }}
+              {{- $link := string (relref $page .link) }}
+              {{- if eq $page.RelPermalink $link }}
+                {{- $.Scratch.Set "collapser" " " }}
+              {{- end }}
+            {{- end }}
+          {{- end }}
+
+        <a data-toggle="collapse" data-target="#collapse-{{ $collapse }}" aria-expanded="true" aria-controls="collapse-{{ $collapse }}" href="javascript:void(0);" class="collapser{{- $.Scratch.Get "collapser" }}">
+          <!-- -->
+        </a>
+
+        {{ end }}
+        {{- if .link }}
+          {{- $link := string (relref $page .link) }}
+          <a href = "{{ $link }}">{{ .title }}</a>
+        {{- else }}
+          <span>{{ .title }}</span>
+        {{- end }}
+      </h6>
     </div>
       {{- with .items }}
         {{- $.Scratch.Set "status" "" }}

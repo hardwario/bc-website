@@ -1,5 +1,7 @@
 ---
 title: "Module Overview"
+menu: "doc"
+parent: "basics"
 ---
 
 Here is a list of modules and tags in alphabetical order.

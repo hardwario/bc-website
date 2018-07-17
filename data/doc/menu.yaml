@@ -1,17 +1,19 @@
 items:
   - title: "Basics"
+    link: "doc/basics/getting-started.en.md"
     items:
     - title: "Getting Started"
-      link: "doc/basics/getting-started.md"
+      link: "doc/basics/getting-started.en.md"
     - title: "Project Workflow"
-      link: "doc/basics/project-workflow.md"
+      link: "doc/basics/project-workflow.en.md"
     - title: "Quick Tutorial"
-      link: "doc/basics/quick-tutorial.md"
+      link: "doc/basics/quick-tutorial.en.md"
     - title: "Module Overview"
-      link: "doc/basics/module-overview.md"
+      link: "doc/basics/module-overview.en.md"
     - title: "GitHub Repositories"
-      link: "doc/basics/github-repositories.md"
+      link: "doc/basics/github-repositories.en.md"
   - title: "Tutorials"
+    link: "doc/tutorials/playground-setup.md"
     items:
     - title: "Playground Setup"
       link: "doc/tutorials/playground-setup.md"
@@ -34,6 +36,7 @@ items:
     - title: "Synology NAS installation"
       link: "doc/tutorials/synology-nas-installation.md"
   - title: "Projects"
+    link: "doc/projects/wireless-push-button.md"
     items:
     - title: "Wireless Push Button"
       link: "doc/projects/wireless-push-button.md"
@@ -54,6 +57,7 @@ items:
     - title: "Wireless Soil Sensor"
       link: "doc/projects/wireless-soil-sensor.md"
   - title: "Interfaces"
+    link: "doc/interfaces/mqtt-protocol.md"
     items:
     - title: "MQTT Protocol"
       link: "doc/interfaces/mqtt-protocol.md"
@@ -70,6 +74,7 @@ items:
     - title: "Firebase"
       link: "doc/interfaces/firebase.md"
   - title: "Integrations"
+    link: "doc/integrations/grafana-for-visualization.md"
     items:
     - title: "Grafana for Visualization"
       link: "doc/integrations/grafana-for-visualization.md"
@@ -84,6 +89,7 @@ items:
     - title: "Firebase"
       link: "doc/integrations/firebase.md"
   - title: "Hardware"
+    link: "doc/hardware/basic-principles.md"
     items:
     - title: "Basic Principles"
       link: "doc/hardware/basic-principles.md"
@@ -154,6 +160,7 @@ items:
     - title: "About VOC Tag"
       link: "doc/hardware/about-voc-tag.md"
   - title: Firmware
+    link: "doc/firmware/basic-overview.md"
     items:
     - title: "Basic Overview"
       link: "doc/firmware/basic-overview.md"
@@ -216,6 +223,7 @@ items:
     - title: "How to: 1-Wire Relay"
       link: "doc/firmware/how-to-1-wire-relay.md"
   - title: "Tools"
+    link: "doc/tools/bcf.md"
     items:
     - title: "BigClown Flashing tool `bcf`"
       link: "doc/tools/bcf.md"
@@ -226,6 +234,7 @@ items:
     - title: "BigClown GUI Flashing tool"
       link: "doc/tools/firmware-app.md"
   - title: "Documentation"
+    link: "doc/documentation/contribution-setup.md"
     items:
     - title: "Contribution Setup"
       link: "doc/documentation/contribution-setup.md"

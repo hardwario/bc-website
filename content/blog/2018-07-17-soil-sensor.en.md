@@ -25,10 +25,7 @@ I was thinking it is worth spending a couple of words about the sensor element i
 
 Of course, when you are starting something new, you want to start easy. And there are a lot of soil moisture sensors for the DIY market, Arduino, ESP, etc. that are as simple as this:
 
-<p>
-<img src="sparkfun-sensor.jpg" style="width:400px;margin:0" />
-<small style="font-size:60%">Source: <a href="https://www.sparkfun.com/products/13637">Sparkfun</a></small>
-</p>
+<img src="resistive-sensor.jpg" style="width:400px;margin:0" />
 
 Such sensor operates on a trivial principle: They measure the **conductivity** between the two electrodes. If the soil is wet, you get higher conductivity (lower resistance) and vice versa. The electrodes are therefore plated across the large area to increase the contact surface.
 

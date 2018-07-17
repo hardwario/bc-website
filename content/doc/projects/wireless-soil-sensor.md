@@ -6,10 +6,13 @@ This document will guide you through the **Wireless Soil Sensor** project. You w
 
 {{% img-zoom src="project-image.png" %}}
 
+## Video tutorial
+
+{{<youtube "6kU-_ldaGOw">}}
+
 ## Block Concept
 
 {{% img-zoom src="block-diagram.svg" %}}
-
 
 ## Requirements
 

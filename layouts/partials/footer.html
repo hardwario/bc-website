@@ -31,7 +31,7 @@
                         {{ end }}
                     </ul>
                 </div>
-                <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-2">
                     <div class="footer__title">{{ i18n "support" }}</div>
                     <div class="row">
                         <div class="col">
@@ -42,16 +42,21 @@
                                 <!--<li><a href="https://intercom.help/bigclown" target="_blank">FAQ</a></li>-->
                             </ul>
                         </div>
-                        <div class="col">
-                            <ul>
-
-                            </ul>
-                        </div>
                     </div>
                     <div class="footer__text">
                         <a href="mailto:support@bigclown.com">support@bigclown.com</a>
                     </div>
                 </div>
+                {{ if eq .Lang "cs" }}
+                <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-2">
+                    <div class="footer__title"></div>
+                    <div class="row">
+                        <div class="col">
+                          <a href = "https://napadroku.cz/soutez/r2018/vysledky-2018/#winners" target="_blank"><img src = "/_assets/images/huawei_pecet.jpg" alt = "BigClown - Huawei Startup roku 2018" class="img-responsive"/></a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
             </div>
             <div class="row">
                 <div class="col-12">

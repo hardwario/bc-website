@@ -51,6 +51,10 @@ Detailed list of topics is in **README** in GitHub repository [**bcf-generic-nod
 |        |  `{"type":"rainbow-cycle", "wait":50}` |
 |        |  `{"type":"theater-chase-rainbow", "wait":50}` |
 |        |  `{"type":"color-wipe", "wait":50, "color":"#800000"}` |
+|        |  `{"type":"theater-chase", "wait":50, "color":"#008000"}` |
+|        |  `{"type":"stroboscope", "wait":50, "color":"#0000ff"}` |
+|        |  `{"type":"icicle", "wait":50, "color":"#ff0000"}` |
+|        |  `{"type":"pulse-color", "wait":200, "color":"#ff0000"}` |
 | Thermometer effect | node/{id}/led-strip/-/thermometer/set |
 |        |  `{"temperature": 22.5, "min":-20, "max": 50}` |
 |        |  turn on "backlight" (0-255) <br />`{"temperature": 22.5, "min":-20, "max": 50, "white-dots": 10}` |

@@ -86,8 +86,6 @@ items:
       link: "doc/integrations/anemone-platform.md"
     - title: "Ubidots"
       link: "doc/integrations/ubidots.md"
-    - title: "Firebase"
-      link: "doc/integrations/firebase.md"
   - title: "Hardware"
     link: "doc/hardware/basic-principles.md"
     items:

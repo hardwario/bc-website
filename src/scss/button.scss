@@ -451,6 +451,7 @@
     &:hover
     {
       background: darken(#1875f0, 20%);
+      cursor: default;
     }
 
     &--green
@@ -706,6 +707,29 @@
     height: 40px;
     padding: 0 21px;
     font-size: em(18);
+    text-transform: uppercase;
+    color:white!important;
+    border-radius: 20px;
+
+    &--noupper
+    {
+      text-transform: none;
+    }
+
+    &:hover
+    {
+      background: darken(#e41419,20%);
+    }
+  }
+
+  &--fullredbig
+  {
+    background: #e41419;
+    border: 0;
+    line-height: 60px;
+    height: 60px;
+    padding: 0 31px;
+    font-size: em(22);
     text-transform: uppercase;
     color:white!important;
     border-radius: 20px;

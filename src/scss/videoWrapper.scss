@@ -19,6 +19,21 @@
       margin-top: 0;
     }
   }
+
+  &--noTopMargin-noPadding
+  {
+    margin-top: 0;
+    padding-bottom: 0;
+
+    @media(max-width: 991px)
+    {
+      margin-top: 0;
+    }
+
+    iframe{
+      width: 100%;
+    }
+  }
 }
 
 .videoWrapper iframe {

@@ -5,8 +5,8 @@ meta:
   title: Soil Moisture Monitoring
   desciption: ""
 images:
-  preview: /projects/wireless-climate-monitor/preview.jpg
-  main: /projects/wireless-climate-monitor/main.jpg
+  preview: /projects/measure-soil-moinster-and-temperature/preview.jpg
+  main:
 button:
     text: Get everything you need
     link: https://shop.bigclown.com/soil-moisture-sensor-kit/

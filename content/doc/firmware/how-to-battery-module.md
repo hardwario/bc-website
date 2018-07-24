@@ -89,47 +89,42 @@ void application_init(void)
 For this example, we are going to use LCD module to show voltage level. Place code below in application.c file and flash. Use of application.h file is not required here. Values on your LCD panel will be updated every time you press any of LCD's buttons.
 
 ```c
-#include <bcl.h>
-
-#define BLACK true
-
-bc_button_t button;
-
-void button_event_handler(bc_button_t *self, bc_button_event_t event, void *event_param)
-{
-    (void) self;
-    (void) event_param;
-
-    if (event == BC_BUTTON_EVENT_PRESS)
-    {
-        bc_module_battery_measure();
-
-        float voltage = 0.0;
-        bc_module_battery_get_voltage(&voltage);
-        char volt[25];
-        sprintf(volt, "Voltage: %.3f", voltage);
-
-        int chargePercentage = -1;
-        bc_module_battery_get_charge_level(&chargePercentage);
-        char charge[25];
-        sprintf(charge, "Charge: %d%c", chargePercentage, 37);
-
-        bc_module_lcd_draw_string(10, 5, volt, BLACK);
-        bc_module_lcd_draw_line(0, 21, 128, 23, BLACK);
-        bc_module_lcd_draw_string(10, 25, charge, BLACK);
-
-        bc_module_lcd_update();
-    }
-}
+#include <application.h>
 
 void application_init(void)
 {
-    bc_button_init(&button, BC_GPIO_BUTTON, BC_GPIO_PULL_DOWN, false);
-    bc_button_set_event_handler(&button, button_event_handler, NULL);
-
     bc_module_battery_init();
-
-    bc_module_lcd_init(&_bc_module_lcd_framebuffer);
-    bc_module_lcd_set_font(&bc_font_ubuntu_15);
+    bc_module_lcd_init();
 }
+
+void application_task()
+{
+    bc_module_battery_measure();
+
+    bc_module_lcd_clear();
+    bc_module_lcd_set_font(&bc_font_ubuntu_15);
+
+    float voltage = 0.0;
+    bc_module_battery_get_voltage(&voltage);
+    static char volt[25];
+    sprintf(volt, "Voltage: %.3f", voltage);
+
+    int charge_percentage = -1;
+    bc_module_battery_get_charge_level(&charge_percentage);
+    static char charge[25];
+    sprintf(charge, "Charge: %d%c", charge_percentage, 37);
+
+    static char format[50];
+    static const char* battery_format_text[] = {"unknown", "standard", "mini"};
+    sprintf(format, "Format: %s", battery_format_text[bc_module_battery_get_format()]);
+
+    bc_module_lcd_draw_string(10, 5, volt, true);
+    bc_module_lcd_draw_string(10, 25, charge, true);
+    bc_module_lcd_draw_string(10, 45, format, true);
+
+    bc_module_lcd_update();
+
+    bc_scheduler_plan_current_relative(500);
+}
+
 ```

@@ -25,7 +25,7 @@ There's even a another **virtual** I2C bus ` BC_I2C_I2C_1W` which is encapsulate
 
 ## Init I²C
 
-By default the I²C buses **are not initialized** to save the power. Hovewer when you initialize at least sensor in the SDK, the bus is initialized with the first sensor in their respective `bc_xxx_init` function.
+By default the I²C buses **are not initialized** to save the power. Hovewer when you initialize at least one sensor in the SDK, the bus is initialized with the first sensor in their respective `bc_xxx_init` function.
 If you use only your sensor in the project, you have to initialize the I²C bus.
 
 ```

@@ -1,19 +1,4 @@
-
-
-<section>
-  <div style="background-image:url('{{ .Params.images.main }}');" class="intro intro---middle d-flex justify-content-center align-items-center">
-    <div>
-      <nav>
-        <ul class="intro__links d-flex justify-content-center">
-          <li><a href="" class="button button--tag button--tag--white button--tag--white--active">PROJECTS</a></li>
-          <li><a href="" class="button button--tag button--tag--blue button--tag--blue--active">INDOOR</a></li>
-        </ul>
-      </nav>
-      <h1 class="intro__title3 intro__title3--notupper">{{ .Title }}</h1>
-    </div>
-  </div>
-</section>
-
+{{ define "main" }}
 <section>
   <div class="project__header">
     <div class="container">
@@ -38,7 +23,6 @@
   </div>
 </section>
 
-
 {{ .Content }}
 
 <section>
@@ -46,18 +30,16 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1 class="thankyou__title text-hide">Thank you</h1>
           <div class="thankyou__button">
-            <a href="" class="button button--fullred">Join to BigClown Forum</a>
+            <a href="{{ .Params.button.link }}" class="button button--fullred button--fullredbig">{{ .Params.button.text }}</a>
           </div>
 
+          <h1 class="thankyou__title text-hide">Thank you</h1>
           <div class="thankyou__share d-flex justify-content-center align-items-center">
-            <span>Give us some</span>
-            <span class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="114" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false"></span>
-            <span>or share:</span>
-            <a href="" class="thankyou__share__link text-hide">Facebook</a>
-            <a href="" class="thankyou__share__link thankyou__share__link--twitter text-hide">twitter</a>
-            <a href="" class="thankyou__share__link thankyou__share__link--google text-hide">google</a>
+            <span>Share my project:</span>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.bigclown.com/projects/measure-soil-moinster-and-temperature/" target="_blank" class="thankyou__share__link text-hide">Facebook</a>
+            <a href="https://twitter.com/home?status=BigClown%20Introduces%20Soil%20Moisture%20Sensor%20DIY%20Project%20https%3A//www.bigclown.com/projects/measure-soil-moinster-and-temperature/" target="_blank" class="thankyou__share__link thankyou__share__link--twitter text-hide">twitter</a>
+            <a href="https://plus.google.com/share?url=https%3A//www.bigclown.com/projects/measure-soil-moinster-and-temperature/" target="_blank" class="thankyou__share__link thankyou__share__link--google text-hide">google</a>
           </div>
         </div>
       </div>
@@ -65,4 +47,8 @@
   </div>
 </section>
 
-{{ partial "_foot.html" }}
+{{ end }}
+
+{{ define "additional-scripts" }}
+
+{{ end }}

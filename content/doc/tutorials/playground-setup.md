@@ -113,6 +113,12 @@ COM port missing in second list of COM ports is the right one for **bcg** servic
 
 8. Upload the latest firmware into the **BigClown USB Dongle**:
 
+    First you need to update list of firmwares from GitHub by typing
+
+        bcf update
+
+    Then flash the firmware
+
         bcf flash --device ... bigclownlabs/bcf-gateway-usb-dongle:latest
 
     Example:

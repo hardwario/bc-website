@@ -23,6 +23,26 @@
   </div>
 </section>
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 ml-auto mr-auto">
+        <h1 class="intro__title4 intro__title3--notupper">{{ .Title }}</h1>
+
+          <nav>
+
+            <ul class="intro__links d-flex justify-content-center">
+              {{ range .Params.tags }}
+                <li><span href="" class="button button--tag button--tag--blue button--tag--blue--active">{{ . }}</span></li>
+              {{ end }}
+              <!--<li><span href="" class="button button--tag button--tag--red button--tag--white--active">60 minutes</span></li>
+              <li><span href="" class="button button--tag button--tag--blue button--tag--blue--active">Indoor</span></li>
+              <li><span href="" class="button button--tag button--tag--orange button--tag--orange--active">Outdoor</span></li>
+              <li><span href="" class="button button--tag button--tag--red button--tag--red--active">NO-SOLDERING</span></li>
+              <li><span href="" class="button button--tag button--tag--green button--tag--green--active">NO-PROGRAMMING</span></li>-->
+            </ul>
+          </nav>
+
 {{ .Content }}
 
 <section>

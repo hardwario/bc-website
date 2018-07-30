@@ -1,6 +1,7 @@
 ---
 title: Soil Moisture Monitoring
 description: ""
+tags: ["60 min project", "Indoor", "Outdoor", "No-Soldering", "No-Programming"]
 meta:
   title: Soil Moisture Monitoring
   desciption: ""
@@ -21,7 +22,7 @@ author:
 
 ---
 
-{{% p-intro title = "Soil Moisture Monitoring" %}}
+{{% p-intro %}}
 For those who just love their garden or flowers (and all the legal stuff ;))
 
 Watch the video to learn more about this project.  It uses the brand new capacitive sensor, which is fully digital, measuring soil moisture, temperature, and is totally reliable (the electronics is fully sealed).{{% /p-intro %}}

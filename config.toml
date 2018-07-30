@@ -1,5 +1,3 @@
-baseURL = "https://www.bigclown.com/"
-shopURL = "https://shop.bigclown.com/?currency=EUR"
 DefaultContentLanguage = "en"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
@@ -7,6 +5,8 @@ pygmentsUseClasses = true
 [params]
   menuNames = ["main"]
   productionURL = "https://www.bigclown.com"
+  baseURL = "https://www.bigclown.com/"
+  shopURL = "https://shop.bigclown.com/?currency=EUR"
 
 [languages]
   [languages.en]

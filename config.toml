@@ -21,6 +21,7 @@ pygmentsUseClasses = true
     [languages.cs.params]
       baseURL = "/cs/"
       shopURL = "https://shop.bigclown.com/?currency=CZK"
+      productionURL = "https://www.bigclown.com/cs/"
 
 [menu]
 

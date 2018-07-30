@@ -5,6 +5,8 @@ pygmentsUseClasses = true
 [params]
 baseURL = "https://www.bigclown.com/"
 shopURL = "https://shop.bigclown.com/?currency=EUR"
+menuNames = ["main"]
+productionURL = "https://www.bigclown.com"
 
 [languages]
   [languages.en]
@@ -88,15 +90,8 @@ shopURL = "https://shop.bigclown.com/?currency=EUR"
     url = "https://forum.bigclown.com"
     weight = 300
 
-
-
 [blackfriday]
 smartypants = false
-
-[params]
-  menuNames = ["main"]
-  productionURL = "https://www.bigclown.com"
-
 
 [sitemap]
   changefreq = "monthly"

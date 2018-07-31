@@ -7,7 +7,7 @@ meta:
   desciption: ""
 images:
   preview: /projects/measure-soil-moinster-and-temperature/preview.jpg
-  main:
+  main: projects/measure-soil-moinster-and-temperature/main.jpg
 button:
     text: Získej vše potřebné
     link: https://shop.bigclown.com/soil-moisture-sensor-kit/

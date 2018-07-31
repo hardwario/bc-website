@@ -44,7 +44,7 @@
   <meta property="og:url" content="{{ .Site.BaseURL }}" />
   <meta property='og:title' content="{{ .Title }} | BigClown Projects">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ .URL | absURL }}{{ .Params.images.main }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.images.main }}">
 
   {{ else }}
   <title>{{ .Page.Title }} | BigClown</title>

@@ -3,3 +3,9 @@ other = "Show all projects"
 
 [learn_from_other]
 other = "Learn from other makers and their projects"
+
+[share_my_project]
+other = "Share my project"
+
+[thank_you]
+other = "Thank you!"

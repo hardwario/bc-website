@@ -32,14 +32,15 @@
           <nav>
 
             <ul class="intro__links d-flex justify-content-center">
+
               {{ range .Params.tags }}
-                <li><span href="" class="button button--tag button--tag--blue button--tag--blue--active">{{ . }}</span></li>
+
+                {{ $this_tag:= . | urlize}}
+
+
+
+                <li><span href="" class="button button--tag {{ index $.Site.Data.tags ($this_tag) }}">{{ $this_tag }}</span></li>
               {{ end }}
-              <!--<li><span href="" class="button button--tag button--tag--red button--tag--white--active">60 minutes</span></li>
-              <li><span href="" class="button button--tag button--tag--blue button--tag--blue--active">Indoor</span></li>
-              <li><span href="" class="button button--tag button--tag--orange button--tag--orange--active">Outdoor</span></li>
-              <li><span href="" class="button button--tag button--tag--red button--tag--red--active">NO-SOLDERING</span></li>
-              <li><span href="" class="button button--tag button--tag--green button--tag--green--active">NO-PROGRAMMING</span></li>-->
             </ul>
           </nav>
 
@@ -54,12 +55,12 @@
             <a href="{{ .Params.button.link }}" class="button button--fullred button--fullredbig">{{ .Params.button.text }}</a>
           </div>
 
-          <h1 class="thankyou__title text-hide">Thank you</h1>
+          <h1 class="thankyou__title text-hide">{{ i18n "thank_you" }}</h1>
           <div class="thankyou__share d-flex justify-content-center align-items-center">
-            <span>Share my project:</span>
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link text-hide">Facebook</a>
-            <a href="https://twitter.com/home?status={{ .Title | htmlEscape }}%20{{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link thankyou__share__link--twitter text-hide">twitter</a>
-            <a href="https://plus.google.com/share?url={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link thankyou__share__link--google text-hide">google</a>
+            <span>{{ i18n "share_my_project" }}:</span>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link text-hide" onclick="ga('gtm2.send', 'event', 'share-project', 'facebook', '{{ .Permalink }}');">Facebook</a>
+            <a href="https://twitter.com/home?status={{ .Title | htmlEscape }}%20{{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link thankyou__share__link--twitter text-hide" onclick="ga('gtm2.send', 'event', 'share-project', 'twitter', '{{ .Permalink }}');">twitter</a>
+            <a href="https://plus.google.com/share?url={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link thankyou__share__link--google text-hide" onclick="ga('gtm2.send', 'event', 'share-project', 'google', '{{ .Permalink }}');">google</a>
           </div>
         </div>
       </div>

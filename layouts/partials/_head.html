@@ -6,6 +6,7 @@
 
   {{ if ne .Section "doc" }}
   <link rel="stylesheet" href="/_assets/css/{{ index .Site.Data.css.hash "main.css" }}" />
+  <script src="/_assets/js/{{ index .Site.Data.js.hash "bioep.js" }}"></script>
   {{ else }}
   <link rel="stylesheet" href="/_assets/css/{{ index .Site.Data.css.hash "main-doc.css" }}" />
 
@@ -13,6 +14,7 @@
   <script src="/_assets/js/{{ index .Site.Data.js.hash "bootstrap.min.js" }}"></script>
   <script src="/_assets/js/{{ index .Site.Data.js.hash "zoom.js" }}"></script>
   <script src="/_assets/js/{{ index .Site.Data.js.hash "clipboard.min.js" }}"></script>
+  <script src="/_assets/js/{{ index .Site.Data.js.hash "bioep.js" }}"></script>
 
   {{ end }}
 

@@ -36,3 +36,9 @@ other = "https://shop.bigclown.com/?currency=EUR"
 
 [base_url]
 other = "/"
+
+[we_will_inspire_you]
+other = "We will inpire you!"
+
+[regularly_clownsletter]
+other = "You will get regularly our Clownsletter with real projects from other Makers. Do not miss it!"

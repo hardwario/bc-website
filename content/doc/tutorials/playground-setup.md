@@ -153,13 +153,13 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
 10. Start the **BigClown Gateway** (in the background):
 
-        pm2 start "%BigClownGateway%" --name bcg -- --device ...
+        pm2 start bcg --name bcg -- --device ...
 
     {{% note "note" %}}Replace `...` with the device listed using `bcg devices`, e.g. `COM5`{{% /note %}}
 
     Example:
 
-        pm2 start "%BigClownGateway%" --name bcg -- --device com5
+        pm2 start bcg --name bcg -- --device com5
 
     {{% note "info" %}}You can see the log outputs from the **bcg** application using the `pm2 logs bcg` command. Quit the log watching using the `Ctrl-C` keyboard shortcut.{{% /note %}}
 

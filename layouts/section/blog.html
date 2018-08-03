@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col">
           <div class="text-center">
-              <a href="{{ .RSSLink }}" target="_blank" class="button button--redtext">{{ i18n "save_rss" }}</a>
+              <a href="{{ .RSSLink }}" target="_blank" class="button button--redtext" onclick="ga('gtm2.send', 'event', 'rss', 'click');">{{ i18n "save_rss" }}</a>
           </div>
         </div>
       </div>

@@ -78,6 +78,18 @@ Pairing process is very straightforward procedure:
 | TX Transmit Power                | 11.6 dBm                   |
 | RX Filter Bandwidth              | 100 kHz                    |
 
+## Using 915 MHz for US, Canada & others
+
+For parts of the world where the ISM band is 915 MHz, you cannot use default 868 MHz communication frequency.
+During the code compilation you have to pass `BAND` parameter to the `make` like this:
+
+```
+make BAND=915
+```
+
+Right now it is not possible to use `bcf` tool because all the firmwares are pre-compiled with 868 MHz band.
+Make sure you also compile **USB Dongle** firmware with this parameter.
+
 ## Packet Structure
 
 ```

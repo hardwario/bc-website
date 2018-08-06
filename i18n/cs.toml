@@ -36,3 +36,12 @@ other = "https://shop.bigclown.com/?currency=CZK"
 
 [base_url]
 other = "/cs/"
+
+[we_will_inspire_you]
+other = "Budeme tě inspirovat!"
+
+[regularly_clownsletter]
+other = "Pravidelně ti v našem Clownsletteru pošleme reálné projekty, které připravili ostatní mejkři. Nenech si to ujít!"
+
+[how_to_inspire_others]
+other = "Přihlášením se dozvíš, jak i ty můžeš inspirovat a získat slevový kupón v hodnotě 2.500 Kč"

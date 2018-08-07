@@ -19,5 +19,5 @@ title: "About PIR Module"
 ## Firmware Projects
 
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
-* [**Wireless Motion Detector Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-motion-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-motion-detector/)
+* [**Radio Motion Detector**](https://github.com/bigclownlabs/bcf-radio-motion-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-motion-detector/)
 

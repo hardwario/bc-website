@@ -81,7 +81,7 @@
               <div class="col-12 col-md-6 col-lg-4">
                 {{ $key := . }}
                 {{ $module := index $.Site.Data.modules $key }}
-                  <span href="/modules/{{ $module.image.small }}" class="modules__photo">
+                  <a href="{{ $module.link }}" class="modules__photo" target="_blank" onclick="ga('gtm2.send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
                     <div class="modules__photo__image d-flex justify-content-center align-items-center">
                       <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
                     </div>
@@ -89,7 +89,7 @@
                     <div class="modules__photo__desc">
                       <h3 class="modules__photo__title">{{ $module.name }}</h3>
                     </div>
-                  </span>
+                  </a>
 
                   <!--<a href="/modules/{{ $module.image.small }}" class="modules__photo magnificPopup">
                     <div class="modules__photo__image d-flex justify-content-center align-items-center">
@@ -112,7 +112,7 @@
               <div class="col-12 col-md-6 col-lg-4">
                 {{ $key := . }}
                 {{ $module := index $.Site.Data.modules $key }}
-                  <span href="/modules/{{ $module.image.small }}" class="modules__photo">
+                  <a href="{{ $module.link }}" class="modules__photo" target="_blank" onclick="ga('gtm2.send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
                     <div class="modules__photo__image d-flex justify-content-center align-items-center">
                       <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
                     </div>
@@ -120,7 +120,7 @@
                     <div class="modules__photo__desc">
                       <h3 class="modules__photo__title">{{ $module.name }}</h3>
                     </div>
-                  </span>
+                  </a>
 
                   <!--<a href="/modules/{{ $module.image.small }}" class="modules__photo magnificPopup">
                     <div class="modules__photo__image d-flex justify-content-center align-items-center">

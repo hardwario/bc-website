@@ -11,7 +11,7 @@ images:
   main: main.png
 isStarter: true
 recommended: false
-included: ["Motion Detector", "Climate Monitor"]
+included: ["USB Dongle","Motion Detector", "Climate Monitor"]
 notIncluded: ["Flood Detector", "LCD Thermostat", "Controller", "Push Button", "CO2 Module"]
 weight: 1
 price: 3 874 Kč

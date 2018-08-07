@@ -17,7 +17,7 @@ weight: 10
 price: 1 482 Kč
 buyLink: "https://shop.bigclown.com/push-button-kit/?currency=CZK"
 modules: ["core","mini_battery","button","enclosures-button"]
-optionalModules: ["sigfox","lora"]
+optionalModules: ["usb_dongle","sigfox","lora"]
 techSpecs:
     dimensions:
         heading: "Rozměry (krabička)"

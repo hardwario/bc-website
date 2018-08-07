@@ -17,7 +17,7 @@ weight: 50
 price: 2 158 Kč
 buyLink: "https://shop.bigclown.com/lcd-thermostat-kit/?currency=CZK"
 modules: ["core","mini_battery","lcd","enclosures-thermostat"]
-optionalModules: ["sigfox","lora"]
+optionalModules: ["usb_dongle","sigfox","lora"]
 techSpecs:
     dimensions:
         heading: "Rozměry (krabička)"

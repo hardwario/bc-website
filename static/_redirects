@@ -79,3 +79,12 @@ https://www.bigclown.com/kits/big-kit-premium/* https://www.bigclown.com/kits/mu
 https://www.bigclown.com/obchodni-podminky/* https://shop.bigclown.com/terms-of-service/:splat 301!
 https://www.bigclown.com/doc/core-module-setup-macos.html* https://www.bigclown.com/doc/hardware/about-core-module/:splat 301!
 https://www.bigclown.com/doc/bcp-wireless-lcd-thermostat.html* https://www.bigclown.com/doc/projects/wireless-lcd-thermostat/:splat 301!
+https://www.bigclown.com/doc/projects/wireless-push-button/* https://www.bigclown.com/doc/radio-push-button/:splat 301!
+https://www.bigclown.com/doc/projects/wireless-climate-monitor/* https://www.bigclown.com/doc/projects/radio-climate-monitor/:splat 301!
+https://www.bigclown.com/doc/projects/wireless-motion-detector/* https://www.bigclown.com/doc/projects/radio-motion-detector/:splat 301!
+https://www.bigclown.com/doc/projects/wireless-flood-detector/* https://www.bigclown.com/doc/projects/radio-flood-detector/:splat 301!
+https://www.bigclown.com/doc/projects/wireless-flood-detector/ https://www.bigclown.com/doc/projects/radio-flood-detector:splat 301!
+https://www.bigclown.com/doc/projects/wireless-co2-monitor/* https://www.bigclown.com/doc/projects/radio-co2-monitor/:splat 301!
+https://www.bigclown.com/doc/projects/wireless-smart-led-strip/* https://www.bigclown.com/doc/projects/radio-smart-led-strip/:splat 301!
+https://www.bigclown.com/doc/projects/wireless-voc-sensor/* https://www.bigclown.com/doc/projects/radio-voc-sensor/:splat 301!
+https://www.bigclown.com/doc/projects/wireless-soil-sensor/* https://www.bigclown.com/doc/projects/radio-soil-sensor/:splat 301!

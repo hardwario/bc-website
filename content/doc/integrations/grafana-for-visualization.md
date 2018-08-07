@@ -273,7 +273,7 @@ Continue in the section [**Connect Mosquitto and InfluxDB**]({{< relref "#connec
 
     {{% img-zoom src="import-dashboard-select-datasource.png" %}}
 
-7. Result for [**Wireless Climate Monitor**]({{< relref "doc/projects/wireless-climate-monitor.md" >}}) and [**Wireless CO2 Monitor**]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
+7. Result for [**Wireless Climate Monitor**]({{< relref "doc/projects/radio-climate-monitor.md" >}}) and [**Wireless CO2 Monitor**]({{< relref "doc/projects/radio-co2-monitor.md" >}})
 
     {{% img-zoom src="demo-dashboard.png" %}}
 

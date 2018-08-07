@@ -1,24 +1,27 @@
 ---
-title: "Wireless Flood Detector"
+title: "Radio CO2 Monitor"
 ---
 
-This document will guide you through the **Wireless Flood Detector** project. You will be able to interact with your flood detector in **Node-RED** and trigger the **IFTTT** push notification service when the water leakage gets detected. You will get the push notification on your smart phone.
-
+This document will guide you through the **Radio CO2 Monitor** project. You will be able to see dashboard with CO2, temperature, humidity, ambient light and atmospheric pressure in **Node-RED** and view the data on your smart phone using the **Blynk** cloud and mobile app.
 ## Block Concept
 
 {{% img-zoom src="block-diagram.svg" %}}
 
 ## Requirements
 
-* Either **BigClown Wireless Flood Detector Kit**, or individual components:
-
-    * 1x **BigClown LD-81**
-
-    * 1x **BigClown Sensor Module**
+* Either **BigClown Radio CO2 Monitor Kit**, or individual components:
 
     * 1x **BigClown Core Module**
 
-    * 1x **BigClown Mini Battery Module**
+    * 1x **BigClown Temperature Tag**
+
+    * 1x **BigClown Humidity Tag**
+
+    * 1x **BigClown Barometer Tag**
+
+    * 1x **BigClown CO2 Module**
+
+    * 1x **BigClown Battery Module**
 
     * 1x **BigClown USB Dongle**
 
@@ -56,9 +59,8 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% core-module-2 %}}
 
-```
-{{% bcf-flash firmware="bcf-kit-wireless-flood-detector" %}}
-```
+        {{% bcf-flash firmware="bcf-radio-co2-monitor" %}}
+
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
@@ -68,19 +70,23 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 See short video with easy step by step demonstration:
 
-{{< youtube pLUBDdo_niE >}}
+{{< youtube jGxjl5v7kqE >}}
 
-1. Start with the **Mini Battery Module**.
+1. Start with the **Battery Module**.
 
-    {{% note "warning" %}}Make sure the **Mini Battery Module** does not have batteries inserted.{{% /note %}}
+    {{% note "warning" %}}Make sure the **Battery Module** does not have batteries inserted.{{% /note %}}
 
-2. Plug the **Core Module** on top of the **Mini Battery Module**.
+2. Plug the **CO2 Module** on top of the **Battery Module**.
 
-3. Plug the **Sensor Module** on top of the **Core Module**.
+3. Plug the **Core Module** on top of the **CO2 Module**.
 
-4. Connect the red wire of **LD-81** to the **Channel A** of the **Sensor Module**.
+4. Plug the **Temperature Tag** into a socket on the **CO2 Module**.
 
-5. Connect the black wire of **LD-81** to the **Sensor Module**.
+5. Plug the **Humidity Tag** into a socket on the **CO2 Module**.
+
+6. Plug the **Barometer Tag** into a socket on the **CO2 Module**.
+
+7. Plug the **Cover Module** on top of the **Core Module**.
 
 ## Playground Bootstrap
 
@@ -118,7 +124,7 @@ See short video with easy step by step demonstration:
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Wireless Flood Detector**.
+In this section, we will create a radio link between the **USB Dongle** and the **Radio CO2 Monitor**.
 
 Follow these steps in **Node-RED**:
 
@@ -126,13 +132,13 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
-2. Insert the batteries into the **Wireless Flood Detector** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
+2. Insert the batteries into the **Radio CO2 Monitor** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
 3. Click on the **Stop node pairing** button.
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Flood Detector**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Motion Detector**) and the gateway (**USB Dongle**).{{% /note %}}
 
 ## Communication Test
 
@@ -140,7 +146,7 @@ Follow these steps in **Node-RED**:
 
 1. Switch to **debug** tab on the right.
 
-2. Put the **LD-81** water leakage sensor into the glass of water to trigger a radio transmission.
+2. Start breathing on the temperature sensor on the **Temperature Tag** to invoke a change of temperature and hence trigger a radio transmission.
 
     You should then see similar messages:
 
@@ -148,121 +154,57 @@ Follow these steps in **Node-RED**:
 
 {{% note "success" %}}At this point, you've got verified radio communication.{{% /note %}}
 
-## Enclosure
+## Integration with Blynk
 
-Optionally put the assembly into the appropriate enclosure, if you have one.
+Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is to visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how display values from your sensors in **Blynk**'s mobile application.
 
-{{% note "info" %}}You can find more information about the enclosures in the document [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}}).{{% /note %}}
+Firstly we need to configure our **Node-RED** app.
 
-## Integration with IFTTT
+1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`. You can follow [**this**]({{< relref "doc/tutorials/nodered-library-installation.md" >}}) example for installing libraries to **NodeRED**.
 
-In this section, we will create an **Applet** in the **IFTTT** service. The **Applet** is a sort of event-trigger mechanism.
+    {{% img-zoom src="integration-nodered-1.png" width="120" %}}
 
-1. Open the web-browser and go to [**IFTTT**](https://ifttt.com):
+2. Add another flow (you can add them by big plus button next to the flow name).
 
-    {{% img-zoom src="ifttt-01.png" %}}
-
-2. Log in to IFTTT service. You can sign up using your Google or Facebook identity:
-
-    {{% img-zoom src="ifttt-02.png" %}}
-
-3. Go to **My Applets** in the menu and click on the **New Applet** button:
-
-    {{% img-zoom src="ifttt-03.png" %}}
-
-4. Click on **+this** in the `if this then that` sentence:
-
-    {{% img-zoom src="ifttt-04.png" %}}
-
-5. Find a service with the name **Webhooks** and select it:
-
-    {{% img-zoom src="ifttt-05.png" %}}
-
-6. Click on **Receive a web request**:
-
-    {{% img-zoom src="ifttt-06.png" %}}
-
-7. Type `flood` in the **Event Name** field and click on **Create Trigger**:
-
-    {{% img-zoom src="ifttt-07.png" %}}
-
-8. Click on **+that** in the `if this then that` sentence:
-
-    {{% img-zoom src="ifttt-08.png" %}}
-
-9. Find action service with the name **Notifications** and select it:
-
-    {{% img-zoom src="ifttt-09.png" %}}
-
-10. Click on **Send a notification from the IFTTT app**:
-
-    {{% img-zoom src="ifttt-10.png" %}}
-
-11. Edit the **Notification** field and insert the text `The flood detector has been flooded on {{OccurredAt}}` and push the **Create action** button:
-
-    {{% img-zoom src="ifttt-11.png" %}}
-
-12. Click on the **Finish** button:
-
-    {{% img-zoom src="ifttt-12.png" %}}
-
-13. Click on the **Webhooks** button:
-
-    {{% img-zoom src="ifttt-13.png" %}}
-
-14. Click on the **Documentation** button:
-
-    {{% img-zoom src="ifttt-14.png" %}}
-
-15. Click on the **event** field:
-
-    {{% img-zoom src="ifttt-15.png" %}}
-
-16. Insert the name `flood` in the **event** field and keep the window open:
-
-    {{% img-zoom src="ifttt-16.png" %}}
-
-17. Install the **IFTTT** app on your smart phone and sign in using the same account as you just used to create the applet. Allow the app to use the push notifications when asked.
-
-18. Click on the **Test It** button in the web-browser window:
-
-    {{% img-zoom src="ifttt-17.png" %}}
-
-19. You should receive the push notification on your smart phone within a few seconds:
-
-20. Copy this URL to the clipboard for later use:
-
-    {{% img-zoom src="ifttt-18.png" %}}
-
-{{% note "success" %}}At this point, you've got working notification **Applet** in the **IFTTT** service.{{% /note %}}
-
-## Connect IFTTT in Node-RED
-
-In this section, we will create a link between the button event on MQTT and HTTP request to **IFTTT** which will trigger the push notification.
-
-1. Switch to your **Node-RED** flow.
-
-2. Insert the following snippet in the flow (using **Menu >> Import**):
+3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
 
     ```json
-    [{"id":"e507a379.e9d1d","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"node/kit-flood-detector:0/push-button/-/event-count","qos":"2","broker":"b9592cd0.2b74f","x":660,"y":760,"wires":[["5d4d5593.80242c"]]},{"id":"62133f2.84223c","type":"http request","z":"dfc861b.b2a02a","name":"","method":"POST","ret":"txt","url":"","tls":"","x":1010,"y":760,"wires":[[]]},{"id":"5d4d5593.80242c","type":"change","z":"dfc861b.b2a02a","name":"","rules":[{"t":"delete","p":"payload","pt":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":890,"y":860,"wires":[["62133f2.84223c"]]},{"id":"b9592cd0.2b74f","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    [{"id":"31ab8ee9.420bb2","type":"mqtt in","z":"2c41a2bd.aa36ae","name":"","topic":"node/co2-monitor:0/thermometer/0:0/temperature","qos":"2","broker":"1292d7bf.db35a8","x":316,"y":483,"wires":[["cb15bc57.2b0a5"]]},{"id":"fa8f9692.6cb388","type":"mqtt in","z":"2c41a2bd.aa36ae","name":"","topic":"node/co2-monitor:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"1292d7bf.db35a8","x":326,"y":543,"wires":[["dcea0ae2.3287b8"]]},{"id":"d9edba1c.71f348","type":"mqtt in","z":"2c41a2bd.aa36ae","name":"","topic":"node/co2-monitor:0/barometer/0:0/pressure","qos":"2","broker":"1292d7bf.db35a8","x":290,"y":600,"wires":[["31270a41.f16076"]]},{"id":"cb15bc57.2b0a5","type":"blynk-ws-out-write","z":"2c41a2bd.aa36ae","name":"","pin":"0","pinmode":0,"client":"90573d3c.a1cca","x":686,"y":483,"wires":[]},{"id":"f7853a1c.8891e8","type":"mqtt in","z":"2c41a2bd.aa36ae","name":"","topic":"node/co2-monitor:0/co2-meter/-/concentration","qos":"2","broker":"1292d7bf.db35a8","x":300,"y":660,"wires":[["39fede01.e9a5f2"]]},{"id":"dcea0ae2.3287b8","type":"blynk-ws-out-write","z":"2c41a2bd.aa36ae","name":"","pin":"1","pinmode":0,"client":"90573d3c.a1cca","x":686,"y":543,"wires":[]},{"id":"1b9b2c91.106d63","type":"blynk-ws-out-write","z":"2c41a2bd.aa36ae","name":"","pin":"2","pinmode":0,"client":"90573d3c.a1cca","x":680,"y":600,"wires":[]},{"id":"39fede01.e9a5f2","type":"blynk-ws-out-write","z":"2c41a2bd.aa36ae","name":"","pin":"3","pinmode":0,"client":"90573d3c.a1cca","x":680,"y":660,"wires":[]},{"id":"31270a41.f16076","type":"function","z":"2c41a2bd.aa36ae","name":"/ 1000","func":"msg.payload = msg.payload / 1000.0;\nreturn msg;","outputs":1,"noerr":0,"x":530,"y":600,"wires":[["1b9b2c91.106d63"]]},{"id":"1292d7bf.db35a8","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"90573d3c.a1cca","type":"blynk-ws-client","z":"","name":"","path":"wss://blynk-cloud.com/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""}]
     ```
 
     It will look like this:
 
-    {{% img-zoom src="node-red-ifttt-snippet.png" %}}
+    {{% img-zoom src="integration-nodered-2.png" %}}
 
-    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/kit-flood-detector:0/flood-detector/a/alarm` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
+4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com:8080/websockets`. The secret key we will configure later after obtaining one.
 
-3. Double click on **http request** node and edit the IFTTT URL obtained in the previous section:
+    {{% img-zoom src="integration-nodered-3.png" width="400" %}}
 
-    {{% img-zoom src="node-red-ifttt-url.png" %}}
+5. Now download the **Blynk** app from [**App Store**](https://itunes.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481?mt=8) or [**Google Play**](https://play.google.com/store/apps/details?id=cc.blynk&hl=en).
 
-4. Save the URL by clicking on the **Done** button.
+6. After installing, you should create account, login and you should see something like that:
 
-5. Deploy the flow using the **Deploy** button in the top-right corner.
+    {{% img-zoom src="integration-blynk-4.png" width="300" %}}
 
-{{% note "success" %}}At this point, you should get a push notification when you press the button.{{% /note %}}
+7. Now click a button on the top right to scan QR code.
+
+    {{% img-zoom src="integration-blynk-5.png" width="300" %}}
+
+8. Now you should scan following QR code to get everything preconfigured.
+
+    {{% img-zoom src="integration-blynk-6.png" width="400" %}}
+
+9. You should see something like this:
+
+    {{% img-zoom src="integration-blynk-7.png" width="300" %}}
+
+    {{% note "info" %}}You will see values after you launch your integration project.{{% /note %}}
+
+10. Click the settings wheel and you should see settings for your project. Wee need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
+
+    {{% img-zoom src="integration-blynk-8.png" width="300" %}}
+
+11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
 
 ## Related Documents
 

@@ -88,17 +88,17 @@ For the very first time, we recommend to walk through the [**Project Workflow**]
 
 On the other hand, if you want to build something real right away, don't hesitate to start with one of our projects:
 
-* [**Wireless Push Button**]({{< relref "doc/projects/wireless-push-button.md" >}})
+* [**Wireless Push Button**]({{< relref "doc/projects/radio-push-button.md" >}})
 
-* [**Wireless Climate Monitor**]({{< relref "doc/projects/wireless-climate-monitor.md" >}})
+* [**Wireless Climate Monitor**]({{< relref "doc/projects/radio-climate-monitor.md" >}})
 
-* [**Wireless Motion Detector**]({{< relref "doc/projects/wireless-motion-detector.md" >}})
+* [**Wireless Motion Detector**]({{< relref "doc/projects/radio-motion-detector.md" >}})
 
-* [**Wireless Flood Detector**]({{< relref "doc/projects/wireless-flood-detector.md" >}})
+* [**Wireless Flood Detector**]({{< relref "doc/projects/radio-flood-detector.md" >}})
 
-* [**Wireless LCD Thermostat**]({{< relref "doc/projects/wireless-lcd-thermostat.md" >}})
+* [**Wireless LCD Thermostat**]({{< relref "doc/projects/radio-lcd-thermostat.md" >}})
 
-* [**Wireless CO2 Monitor**]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
+* [**Wireless CO2 Monitor**]({{< relref "doc/projects/radio-co2-monitor.md" >}})
 
 ## Related Documents
 

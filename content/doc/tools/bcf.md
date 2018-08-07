@@ -29,15 +29,15 @@ Search for firmware
 
 Flash Core Module **R2** with button kit firmware in **Ubuntu/macOS**
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-push-button:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-push-button:latest
 
 Flash Core Module **R2** with button kit firmware in **Windows**
 
-        bcf flash --device COM3 bigclownlabs/bcf-kit-wireless-push-button:latest
+        bcf flash --device COM3 bigclownlabs/bcf-radio-push-button:latest
 
 Flash Core Module **R1** with button kit firmware in **Windows/Ubuntu/macOS**
 
-        bcf flash --device dfu bigclownlabs/bcf-kit-wireless-push-button:latest
+        bcf flash --device dfu bigclownlabs/bcf-radio-push-button:latest
 
 Flash **USB Dongle** with latest firmware
 

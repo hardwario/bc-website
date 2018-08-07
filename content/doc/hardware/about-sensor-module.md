@@ -18,4 +18,4 @@ title: "About Sensor Module"
 
 ## Firmware Projects
 
-* [**Flood Detector Kit**](https://github.com/bigclownlabs/bcf-kit-wireless-flood-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-flood-detector/)
+* [**Radio Flood Detector**](https://github.com/bigclownlabs/bcf-radio-flood-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/radio-flood-detector/)

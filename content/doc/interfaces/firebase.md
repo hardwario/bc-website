@@ -59,9 +59,9 @@ Dependencies:
 ## 5. Sends data from motion sensor to Firebase.
 Dependencies:
 
-* Had working [Wireless Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) (not IFTTT part)
+* Had working [Wireless Motion Detector](https://www.bigclown.com/doc/projects/radio-motion-detector/) (not IFTTT part)
 
-1. Had flow from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) and check if it sends data.
+1. Had flow from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/radio-motion-detector/) and check if it sends data.
 {{% img-zoom src="11.PNG" %}}
 2. Add mqtt in function that will take data from Motion sensor and sets there same Topic, which we can see in debug mode. This will return json information and we need to convert it.
 {{% img-zoom src="12.PNG" %}}

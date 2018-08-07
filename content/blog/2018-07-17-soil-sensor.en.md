@@ -15,9 +15,9 @@ author:
 
 Hi guys,
 
-recently we have lauched the new [**Wireless Soil Sensor**]({{<relref "doc/projects/wireless-soil-sensor.md">}}) project. You can use it for well-being monitoring of your flowers, vegetables and other stuff (obviously all legal).
+recently we have lauched the new [**Wireless Soil Sensor**]({{<relref "doc/projects/radio-soil-sensor.md">}}) project. You can use it for well-being monitoring of your flowers, vegetables and other stuff (obviously all legal).
 
-The **{{< shop "Soil Sensor" >}}** is **fully sealed** in silicone, comes with the **3 meter cable** you can hook it up with **{{< shop "Sensor Module" >}}**. Together with the out-of-the-box firmware, you can be set and read the moisture data in minutes. Do not hesitate to read more details in the [**project description**]({{<relref "doc/projects/wireless-soil-sensor.md">}}) and step-by-step <a href="https://youtu.be/6kU-_ldaGOw">**video tutorial**</a> created by Martin
+The **{{< shop "Soil Sensor" >}}** is **fully sealed** in silicone, comes with the **3 meter cable** you can hook it up with **{{< shop "Sensor Module" >}}**. Together with the out-of-the-box firmware, you can be set and read the moisture data in minutes. Do not hesitate to read more details in the [**project description**]({{<relref "doc/projects/radio-soil-sensor.md">}}) and step-by-step <a href="https://youtu.be/6kU-_ldaGOw">**video tutorial**</a> created by Martin
 
 I was thinking it is worth spending a couple of words about the sensor element itself.
 
@@ -31,7 +31,7 @@ Such sensor operates on a trivial principle: They measure the **conductivity** b
 
 But wait - I smell something fishy in the air!
 
-You are putting a coated piece of the PCB into the soil. And you are energizing the electrodes (you bet there must be some current flow if you want to measure conductivity). So what about the long-term reliability? How about **oxidizing effect** on the electrodes? What did my chemistry teacher taught me about that? And if the PCB is naked and I will be pouring water on my lovely flowers and all around, can it be realiable and practical at the same time? I doubt about it. All I can think of now is my wife totally focused to not to spill a single drop of water on my beautiful electronics! These are the correct concerns you should have been raising. And these are the concerns which have brought us to look for a better way for the [**Wireless Soil Sensor**]({{<relref "doc/projects/wireless-soil-sensor.md">}}) project.
+You are putting a coated piece of the PCB into the soil. And you are energizing the electrodes (you bet there must be some current flow if you want to measure conductivity). So what about the long-term reliability? How about **oxidizing effect** on the electrodes? What did my chemistry teacher taught me about that? And if the PCB is naked and I will be pouring water on my lovely flowers and all around, can it be realiable and practical at the same time? I doubt about it. All I can think of now is my wife totally focused to not to spill a single drop of water on my beautiful electronics! These are the correct concerns you should have been raising. And these are the concerns which have brought us to look for a better way for the [**Wireless Soil Sensor**]({{<relref "doc/projects/radio-soil-sensor.md">}}) project.
 
 So let's start with the assumption, we want to make a sensor that is reliable, durable, and water-resistant. It has to be completely sealed. Honestly I do not see any other way around if you want to create things that last for years, not weeks or months. So how do we measure soil moisture when you seal the whole thing?
 
@@ -63,5 +63,5 @@ Cheers, Pavel.
 # References
 
 * **{{< shop "Soil Sensor" >}}**
-* [**Wireless Soil Sensor**]({{<relref "doc/projects/wireless-soil-sensor.md">}})
+* [**Wireless Soil Sensor**]({{<relref "doc/projects/radio-soil-sensor.md">}})
 * **BigClown {{< shop "Sensor Module" >}}**

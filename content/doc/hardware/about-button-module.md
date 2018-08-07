@@ -19,4 +19,4 @@ title: "About Button Module"
 ## Firmware Projects
 
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
-* [**Wireless Push Button**](https://github.com/bigclownlabs/bcf-kit-wireless-push-button/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-push-button/)
+* [**Radio Push Button**](https://github.com/bigclownlabs/bcf-radio-push-button/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/radio-push-button/)

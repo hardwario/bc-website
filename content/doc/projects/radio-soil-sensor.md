@@ -1,8 +1,8 @@
 ---
-title: "Wireless Soil Sensor"
+title: "Radio Soil Sensor"
 ---
 
-This document will guide you through the **Wireless Soil Sensor** project. You will be able to see, save and analyze moisture level and temperature in **Node-RED** and **Grafana** visualization tool.
+This document will guide you through the **Radio Soil Sensor** project. You will be able to see, save and analyze moisture level and temperature in **Node-RED** and **Grafana** visualization tool.
 
 {{% img-zoom src="project-image.png" %}}
 
@@ -16,7 +16,7 @@ This document will guide you through the **Wireless Soil Sensor** project. You w
 
 ## Requirements
 
-* Either **BigClown Wireless Soil Sensor Kit**, or individual components:
+* Either **BigClown Radio Soil Sensor Kit**, or individual components:
 
     * 1x **BigClown {{% shop "Soil Sensor" %}}**
 
@@ -63,7 +63,7 @@ Now it's time to write firmware to the **Core Module**.
 
     Write this command to the **Raspberry Pi** SSH command line.
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-wireless-soil-sensor:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-soil-sensor:latest
 
 3. Remove the Micro USB cable from the **Core Module** and **Raspberry Pi**.
 
@@ -83,7 +83,7 @@ Now it's time to write firmware to the **Core Module**.
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Wireless Climate Monitor**.
+In this section, we will create a radio link between the **USB Dongle** and the **Radio Climate Monitor**.
 
 Follow these steps in **Node-RED**:
 
@@ -93,7 +93,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
-2. Insert the batteries into the **Wireless Climate Monitor** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
+2. Insert the batteries into the **Radio Climate Monitor** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
     In the **Node-RED** debug tab, there is a message about name and firmware version of the new paired module.
 
@@ -103,7 +103,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Moisture Sensor**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Moisture Sensor**) and the gateway (**USB Dongle**).{{% /note %}}
 
 ## Communication Test
 

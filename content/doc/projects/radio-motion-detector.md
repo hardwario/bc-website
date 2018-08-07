@@ -1,8 +1,8 @@
 ---
-title: "Wireless Push Button"
+title: "Radio Motion Detector"
 ---
 
-This document will guide you through the **Wireless Push Button** project. You will be able to interact with your push button in **Node-RED** and trigger the **IFTTT** push notification service when the button gets pressed. You will get the push notification on your smart phone.
+This document will guide you through the **Radio Motion Detector** project. You will be able to interact with your motion detector in **Node-RED** and trigger the **IFTTT** push notification service when the movement gets detected. You will get the push notification on your smart phone.
 
 ## Block Concept
 
@@ -10,9 +10,9 @@ This document will guide you through the **Wireless Push Button** project. You w
 
 ## Requirements
 
-* Either **BigClown Wireless Push Button Kit**, or individual components:
+* Either **BigClown Radio Motion Detector Kit**, or individual components:
 
-    * 1x **BigClown Button Module**
+    * 1x **BigClown Climate Module**
 
     * 1x **BigClown Core Module**
 
@@ -30,9 +30,11 @@ This document will guide you through the **Wireless Push Button** project. You w
 
         You can find more information in the document [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}).
 
-    * **BigClown Toolchain** installed
+* **BigClown Firmware Tool** installed
 
-        You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
+    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
+
+    {{% note "info" %}}`bcf` is part of Windows Playground Setup already.{{% /note %}}
 
 ## Firmware Upload
 
@@ -52,7 +54,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% core-module-2 %}}
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-push-button:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-motion-detector:latest
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
@@ -62,7 +64,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 See short video with easy step by step demonstration:
 
-{{< youtube OCPPKXzCBg0 >}}
+{{< youtube U8i0Afk3XOI >}}
 
 1. Start with the **Mini Battery Module**.
 
@@ -70,7 +72,7 @@ See short video with easy step by step demonstration:
 
 2. Plug the **Core Module** on top of the **Mini Battery Module**.
 
-3. Plug the **Button Module** on top of the **Core Module**.
+3. Plug the **PIR Module** on top of the **Core Module**.
 
 ## Playground Bootstrap
 
@@ -108,7 +110,7 @@ See short video with easy step by step demonstration:
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Wireless Push Button**.
+In this section, we will create a radio link between the **USB Dongle** and the **Radio Motion Detector**.
 
 Follow these steps in **Node-RED**:
 
@@ -116,13 +118,13 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
-2. Insert the batteries into the **Wireless Push Button** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
+2. Insert the batteries into the **Radio Motion Detector** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
 3. Click on the **Stop node pairing** button.
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Push Button**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Motion Detector**) and the gateway (**USB Dongle**).{{% /note %}}
 
 ## Communication Test
 
@@ -130,7 +132,9 @@ Follow these steps in **Node-RED**:
 
 1. Switch to **debug** tab on the right.
 
-2. Press the button and you should see the counting messages.
+2. Start waving your hand in front of the **PIR Module** to trigger a radio transmission.
+
+    You should then see similar messages:
 
     {{% img-zoom src="radio-test.png" %}}
 
@@ -170,7 +174,7 @@ In this section, we will create an **Applet** in the **IFTTT** service. The **Ap
 
     {{% img-zoom src="ifttt-06.png" %}}
 
-7. Type `button` in the **Event Name** field and click on **Create Trigger**:
+7. Type `motion` in the **Event Name** field and click on **Create Trigger**:
 
     {{% img-zoom src="ifttt-07.png" %}}
 
@@ -186,7 +190,7 @@ In this section, we will create an **Applet** in the **IFTTT** service. The **Ap
 
     {{% img-zoom src="ifttt-10.png" %}}
 
-11. Edit the **Notification** field and insert the text `The button has been pressed on {{OccurredAt}}` and push the **Create action** button:
+11. Edit the **Notification** field and insert the text `The motion detected on {{OccurredAt}}` and push the **Create action** button:
 
     {{% img-zoom src="ifttt-11.png" %}}
 
@@ -233,14 +237,14 @@ In this section, we will create a link between the button event on MQTT and HTTP
 2. Insert the following snippet in the flow (using **Menu >> Import**):
 
     ```json
-    [{"id":"e507a379.e9d1d","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"node/kit-push-button:0/push-button/-/event-count","qos":"2","broker":"b9592cd0.2b74f","x":660,"y":760,"wires":[["5d4d5593.80242c"]]},{"id":"62133f2.84223c","type":"http request","z":"dfc861b.b2a02a","name":"","method":"POST","ret":"txt","url":"","tls":"","x":1010,"y":760,"wires":[[]]},{"id":"5d4d5593.80242c","type":"change","z":"dfc861b.b2a02a","name":"","rules":[{"t":"delete","p":"payload","pt":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":890,"y":860,"wires":[["62133f2.84223c"]]},{"id":"b9592cd0.2b74f","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    [{"id":"aa6e1255.ea79f","type":"mqtt in","z":"1683bd68.e7a7b3","name":"","topic":"node/motion-detector:0/pir/-/event-count","qos":"2","broker":"3db59913.baf0c6","x":580,"y":580,"wires":[["fd3ce751.8e9ba8"]]},{"id":"74e6dfc1.7c1dc","type":"http request","z":"1683bd68.e7a7b3","name":"","method":"POST","ret":"txt","url":"https://maker.ifttt.com/trigger/motion/with/key/bbtA7Dn-3HKPG8OcfZMP7WyvKh6I69iEW9j9OtUBGGB","tls":"","x":910,"y":580,"wires":[[]]},{"id":"fd3ce751.8e9ba8","type":"change","z":"1683bd68.e7a7b3","name":"","rules":[{"t":"delete","p":"payload","pt":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":710,"y":680,"wires":[["42aed05e.e145"]]},{"id":"42aed05e.e145","type":"delay","z":"1683bd68.e7a7b3","name":"","pauseType":"delay","timeout":"30","timeoutUnits":"seconds","rate":"1","nbRateUnits":"1","rateUnits":"second","randomFirst":"1","randomLast":"5","randomUnits":"seconds","drop":false,"x":900,"y":680,"wires":[["74e6dfc1.7c1dc"]]},{"id":"3db59913.baf0c6","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
     ```
 
     It will look like this:
 
     {{% img-zoom src="node-red-ifttt-snippet.png" %}}
 
-    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/kit-push-button:0/push-button/-/event-count` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
+    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/motion-detector:0/pir/-/event-count` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
 
 3. Double click on **http request** node and edit the IFTTT URL obtained in the previous section:
 

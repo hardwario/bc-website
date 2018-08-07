@@ -6,9 +6,9 @@ title: "IFTTT If This Then That"
 
 # IFTTT example projects with BigClown
 
-  * [Wireless Push Button]({{< relref "doc/projects/wireless-push-button.md" >}})
-  * [Wireless Motion Detector]({{< relref "doc/projects/wireless-motion-detector.md" >}})
-  * [Wireless Flood Detector]({{< relref "doc/projects/wireless-flood-detector.md" >}})
+  * [Wireless Push Button]({{< relref "doc/projects/radio-push-button.md" >}})
+  * [Wireless Motion Detector]({{< relref "doc/projects/radio-motion-detector.md" >}})
+  * [Wireless Flood Detector]({{< relref "doc/projects/radio-flood-detector.md" >}})
 
 # Mobile App
 

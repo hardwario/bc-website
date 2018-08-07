@@ -1,8 +1,8 @@
 ---
-title: "Wireless Climate Monitor"
+title: "Radio Push Button"
 ---
 
-This document will guide you through the **Wireless Climate Monitor** project. You will be able to see dashboard with temperature, humidity, ambient light and atmospheric pressure in **Node-RED** and view the data on your smart phone using the **Blynk** cloud and mobile app.
+This document will guide you through the **Radio Push Button** project. You will be able to interact with your push button in **Node-RED** and trigger the **IFTTT** push notification service when the button gets pressed. You will get the push notification on your smart phone.
 
 ## Block Concept
 
@@ -10,9 +10,9 @@ This document will guide you through the **Wireless Climate Monitor** project. Y
 
 ## Requirements
 
-* Either **BigClown Wireless Climate Monitor Kit**, or individual components:
+* Either **BigClown Radio Push Button Kit**, or individual components:
 
-    * 1x **BigClown Climate Module**
+    * 1x **BigClown Button Module**
 
     * 1x **BigClown Core Module**
 
@@ -46,10 +46,13 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "info" %}}You may want to update available firmwares by `bcf update` if the installation has been prolonged for a longer time after Playground Setup{{% /note %}}
 
+    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/tutorials/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
+
+    {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
+
     {{% core-module-2 %}}
 
-        {{% bcf-flash firmware="bcf-kit-wireless-climate-monitor" %}}
-
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-push-button:latest
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
@@ -59,7 +62,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
 See short video with easy step by step demonstration:
 
-{{< youtube tyyjO0GoyNA >}}
+{{< youtube OCPPKXzCBg0 >}}
 
 1. Start with the **Mini Battery Module**.
 
@@ -67,7 +70,7 @@ See short video with easy step by step demonstration:
 
 2. Plug the **Core Module** on top of the **Mini Battery Module**.
 
-3. Plug the **Climate Module** on top of the **Core Module**.
+3. Plug the **Button Module** on top of the **Core Module**.
 
 ## Playground Bootstrap
 
@@ -105,7 +108,7 @@ See short video with easy step by step demonstration:
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Wireless Climate Monitor**.
+In this section, we will create a radio link between the **USB Dongle** and the **Radio Push Button**.
 
 Follow these steps in **Node-RED**:
 
@@ -113,13 +116,13 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
-2. Insert the batteries into the **Wireless Climate Monitor** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
+2. Insert the batteries into the **Radio Push Button** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
 3. Click on the **Stop node pairing** button.
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Climate Monitor**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Push Button**) and the gateway (**USB Dongle**).{{% /note %}}
 
 ## Communication Test
 
@@ -127,9 +130,7 @@ Follow these steps in **Node-RED**:
 
 1. Switch to **debug** tab on the right.
 
-2. Start breathing on the temperature sensor on the **Climate Module** to invoke a change of temperature and hence trigger a radio transmission.
-
-    You should then see similar messages:
+2. Press the button and you should see the counting messages.
 
     {{% img-zoom src="radio-test.png" %}}
 
@@ -141,57 +142,115 @@ Optionally put the assembly into the appropriate enclosure, if you have one.
 
 {{% note "info" %}}You can find more information about the enclosures in the document [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}}).{{% /note %}}
 
-## Integration with Blynk
+## Integration with IFTTT
 
-Now we have assembled our kit and let's start with some basic integration with **Blynk**. We will start without describing what **Blynk** is. If you want get some information about what **Blynk** is. The best thing you can do is visit their [**page**](https://www.blynk.cc/). In our example we will be showing you how to display graphs from sensor's values in **Blynk**'s mobile application.
+In this section, we will create an **Applet** in the **IFTTT** service. The **Applet** is a sort of event-trigger mechanism.
 
-Firstly we need to configure our **Node-RED** app.
+1. Open the web-browser and go to [**IFTTT**](https://ifttt.com):
 
-1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`. You can follow [**this**]({{< relref "doc/tutorials/nodered-library-installation.md" >}}) example for installing libraries to **NodeRED**.
+    {{% img-zoom src="ifttt-01.png" %}}
 
-    {{% img-zoom src="nodered-screen-3.png" width="300" %}}
+2. Log in to IFTTT service. You can sign up using your Google or Facebook identity:
 
-2. Add another flow (you can add them by big plus button next to the flow name).
+    {{% img-zoom src="ifttt-02.png" %}}
 
-3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
+3. Go to **My Applets** in the menu and click on the **New Applet** button:
+
+    {{% img-zoom src="ifttt-03.png" %}}
+
+4. Click on **+this** in the `if this then that` sentence:
+
+    {{% img-zoom src="ifttt-04.png" %}}
+
+5. Find a service with the name **Webhooks** and select it:
+
+    {{% img-zoom src="ifttt-05.png" %}}
+
+6. Click on **Receive a web request**:
+
+    {{% img-zoom src="ifttt-06.png" %}}
+
+7. Type `button` in the **Event Name** field and click on **Create Trigger**:
+
+    {{% img-zoom src="ifttt-07.png" %}}
+
+8. Click on **+that** in the `if this then that` sentence:
+
+    {{% img-zoom src="ifttt-08.png" %}}
+
+9. Find action service with the name **Notifications** and select it:
+
+    {{% img-zoom src="ifttt-09.png" %}}
+
+10. Click on **Send a notification from the IFTTT app**:
+
+    {{% img-zoom src="ifttt-10.png" %}}
+
+11. Edit the **Notification** field and insert the text `The button has been pressed on {{OccurredAt}}` and push the **Create action** button:
+
+    {{% img-zoom src="ifttt-11.png" %}}
+
+12. Click on the **Finish** button:
+
+    {{% img-zoom src="ifttt-12.png" %}}
+
+13. Click on the **Webhooks** button:
+
+    {{% img-zoom src="ifttt-13.png" %}}
+
+14. Click on the **Documentation** button:
+
+    {{% img-zoom src="ifttt-14.png" %}}
+
+15. Click on the **event** field:
+
+    {{% img-zoom src="ifttt-15.png" %}}
+
+16. Insert the name `button` in the **event** field and keep the window open:
+
+    {{% img-zoom src="ifttt-16.png" %}}
+
+17. Install the **IFTTT** app on your smart phone and sign in using the same account as you just used to create the applet. Allow the app to use the push notifications when asked.
+
+18. Click on the **Test It** button in the web-browser window:
+
+    {{% img-zoom src="ifttt-17.png" %}}
+
+19. You should receive the push notification on your smart phone within a few seconds:
+
+20. Copy this URL to the clipboard for later use:
+
+    {{% img-zoom src="ifttt-18.png" %}}
+
+{{% note "success" %}}At this point, you've got working notification **Applet** in the **IFTTT** service.{{% /note %}}
+
+## Connect IFTTT in Node-RED
+
+In this section, we will create a link between the button event on MQTT and HTTP request to **IFTTT** which will trigger the push notification.
+
+1. Switch to your **Node-RED** flow.
+
+2. Insert the following snippet in the flow (using **Menu >> Import**):
 
     ```json
-    [{"id":"4914605c.76972","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/kit-climate-monitor:0/lux-meter/0:0/illuminance","qos":"2","broker":"58254712.b61068","x":230,"y":520,"wires":[["431157f1.546248"]]},{"id":"dcf5bf8d.a0242","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/kit-climate-monitor:0/thermometer/0:0/temperature","qos":"2","broker":"58254712.b61068","x":240,"y":580,"wires":[["be96b6aa.eed098"]]},{"id":"2ac2eae7.308486","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/kit-climate-monitor:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"58254712.b61068","x":250,"y":640,"wires":[["dbe4b438.be4ef8"]]},{"id":"431157f1.546248","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"Pin V0 - Write","pin":0,"pinmode":0,"client":"1b003066.8ca2c","x":659,"y":520,"wires":[]},{"id":"be96b6aa.eed098","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"1","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":580,"wires":[]},{"id":"dbe4b438.be4ef8","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"2","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":640,"wires":[]},{"id":"58254712.b61068","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"1b003066.8ca2c","type":"blynk-ws-client","z":"","name":"","path":"wss://blynk-cloud.com:9443/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""}]
+    [{"id":"e507a379.e9d1d","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"node/push-button:0/push-button/-/event-count","qos":"2","broker":"b9592cd0.2b74f","x":660,"y":760,"wires":[["5d4d5593.80242c"]]},{"id":"62133f2.84223c","type":"http request","z":"dfc861b.b2a02a","name":"","method":"POST","ret":"txt","url":"","tls":"","x":1010,"y":760,"wires":[[]]},{"id":"5d4d5593.80242c","type":"change","z":"dfc861b.b2a02a","name":"","rules":[{"t":"delete","p":"payload","pt":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":890,"y":860,"wires":[["62133f2.84223c"]]},{"id":"b9592cd0.2b74f","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
     ```
 
     It will look like this:
 
-    {{% img-zoom src="nodered-screen-1.png" %}}
+    {{% img-zoom src="node-red-ifttt-snippet.png" %}}
 
-    {{% note "info" %}}In case you want use it for another sensors just change MQTT topics.{{% /note %}}
+    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/push-button:0/push-button/-/event-count` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
 
-4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `wss://blynk-cloud.com:9443/websockets`. The secret key we will configure later after obtaining one.
+3. Double click on **http request** node and edit the IFTTT URL obtained in the previous section:
 
-    {{% img-zoom src="nodered-screen-2.png" width="400" %}}
+    {{% img-zoom src="node-red-ifttt-url.png" %}}
 
-5. Now download the **Blynk** app from [**App Store**](https://itunes.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481?mt=8) or [**Google Play**](https://play.google.com/store/apps/details?id=cc.blynk&hl=en).
+4. Save the URL by clicking on the **Done** button.
 
-6. After installing, you should create account, login and you should see something like that:
+5. Deploy the flow using the **Deploy** button in the top-right corner.
 
-    {{% img-zoom src="blynk-3.png" width="300" %}}
-
-7. Now click a button on the top right to scan QR code.
-
-    {{% img-zoom src="blynk-copy.png" width="300" %}}
-
-8. Now you should scan following QR code to get everything preconfigured.
-
-    {{% img-zoom src="blynk-qr.png" width="400" %}}
-
-9. You should see something like this:
-
-    {{% img-zoom src="blynk-10.png" width="300" %}}
-
-10. Click the settings wheel and you should see settings for your project. Wee need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
-
-    {{% img-zoom src="blynk-auth.png" width="300" %}}
-
-11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
+{{% note "success" %}}At this point, you should get a push notification when you press the button.{{% /note %}}
 
 ## Related Documents
 

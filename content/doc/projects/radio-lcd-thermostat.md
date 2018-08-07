@@ -1,8 +1,8 @@
 ---
-title: "Wireless LCD Thermostat"
+title: "Radio LCD Thermostat"
 ---
 
-This document will guide you through the **Wireless LCD Thermostat** project.
+This document will guide you through the **Radio LCD Thermostat** project.
 With this gadget you will be able to control remotly you temperature.
 
 ## Block Concept
@@ -11,7 +11,7 @@ With this gadget you will be able to control remotly you temperature.
 
 ## Requirements
 
-* Either **BigClown Wireless LCD Thermostat Kit**, or individual components:
+* Either **BigClown Radio LCD Thermostat Kit**, or individual components:
 
     * 1x **BigClown LCD Module**
 
@@ -56,7 +56,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% core-module-2 %}}
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-lcd-thermostat:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-lcd-thermostat:latest
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
@@ -113,7 +113,7 @@ See short video with easy step by step demonstration:
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Wireless LCD Thermostat**.
+In this section, we will create a radio link between the **USB Dongle** and the **Radio LCD Thermostat**.
 
 Follow these steps in **Node-RED**:
 
@@ -121,13 +121,13 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
-2. Insert the batteries into the **Wireless LCD Thermostat** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
+2. Insert the batteries into the **Radio LCD Thermostat** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
 3. Click on the **Stop node pairing** button.
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless LCD Thermostat** and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio LCD Thermostat** and the gateway (**USB Dongle**).{{% /note %}}
 
 ## Communication Test
 
@@ -138,7 +138,7 @@ Follow these steps in **Node-RED**:
 2. Insert the following snippet in the flow (using **Menu >> Import**) and click in **Flow 1** tab:
 
     ```json
-    [{"id":"12b3deae.bbbdf1","type":"mqtt in","z":"f2f80e07.95983","name":"","topic":"node/kit-lcd-thermostat:0/#","qos":"2","broker":"25b87ea5.743312","x":390,"y":320,"wires":[["7694514b.9b64d"]]},{"id":"7694514b.9b64d","type":"debug","z":"f2f80e07.95983","name":"","active":true,"console":"false","complete":"false","x":630,"y":320,"wires":[]},{"id":"25b87ea5.743312","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    [{"id":"12b3deae.bbbdf1","type":"mqtt in","z":"f2f80e07.95983","name":"","topic":"node/lcd-thermostat:0/#","qos":"2","broker":"25b87ea5.743312","x":390,"y":320,"wires":[["7694514b.9b64d"]]},{"id":"7694514b.9b64d","type":"debug","z":"f2f80e07.95983","name":"","active":true,"console":"false","complete":"false","x":630,"y":320,"wires":[]},{"id":"25b87ea5.743312","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
     ```
 
 3. If you see some messages in debug log (like temperature) your kit works correctly.
@@ -160,7 +160,7 @@ Firstly we need to configure our **Node-RED** app.
 3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
 
     ```json
-    [{"id":"10207ce8.7828d3","type":"blynk-ws-out-write","z":"a037b5dc.0a06a8","name":"","pin":"1","pinmode":0,"client":"444c74b2.0e07ac","x":580,"y":320,"wires":[]},{"id":"cf5d84d7.428bc8","type":"mqtt in","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-lcd-thermostat:0/thermometer/0:1/temperature","qos":"2","broker":"b8503ac7.122c58","x":300,"y":240,"wires":[["1ab647f.3fd77b8"]]},{"id":"1ab647f.3fd77b8","type":"function","z":"a037b5dc.0a06a8","name":"Save data","func":"flow.set(\"temp\", parseFloat(msg.payload));\n\nreturn msg;","outputs":1,"noerr":0,"x":600,"y":240,"wires":[[]]},{"id":"4813f9d6.053178","type":"inject","z":"a037b5dc.0a06a8","name":"","topic":"","payload":"","payloadType":"date","repeat":"1","crontab":"","once":false,"x":190,"y":320,"wires":[["ec216ad7.59b858"]]},{"id":"ec216ad7.59b858","type":"function","z":"a037b5dc.0a06a8","name":"Load data","func":"msg.payload = flow.get(\"temp\")||0;\nreturn msg;","outputs":1,"noerr":0,"x":380,"y":320,"wires":[["10207ce8.7828d3"]]},{"id":"64ff6663.93a768","type":"mqtt out","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-power-controller/relay/0:0/state/set","qos":"","retain":"","broker":"b8503ac7.122c58","x":870,"y":380,"wires":[]},{"id":"80286a4.d4b1f98","type":"mqtt out","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-power-controller/relay/0:1/state/set","qos":"","retain":"","broker":"b8503ac7.122c58","x":870,"y":420,"wires":[]},{"id":"79351b30.f81bf4","type":"mqtt in","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-lcd-thermostat:0/thermometer/0:1/temperature","qos":"2","broker":"b8503ac7.122c58","x":300,"y":400,"wires":[["9442ee25.eee65"]]},{"id":"9442ee25.eee65","type":"function","z":"a037b5dc.0a06a8","name":"Relay switch","func":"var setTemperature = flow.get(\"temp\")||0;\n\nif(msg.payload > setTemperature) {\n    msg.payload = true;\n}\nelse {\n    msg.payload = false;\n}\n\nreturn msg;","outputs":1,"noerr":0,"x":590,"y":400,"wires":[["64ff6663.93a768","80286a4.d4b1f98"]]},{"id":"444c74b2.0e07ac","type":"blynk-ws-client","z":"","name":"","path":"ws://blynk-cloud.com:8080/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""},{"id":"b8503ac7.122c58","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    [{"id":"10207ce8.7828d3","type":"blynk-ws-out-write","z":"a037b5dc.0a06a8","name":"","pin":"1","pinmode":0,"client":"444c74b2.0e07ac","x":580,"y":320,"wires":[]},{"id":"cf5d84d7.428bc8","type":"mqtt in","z":"a037b5dc.0a06a8","name":"","topic":"node/lcd-thermostat:0/thermometer/0:1/temperature","qos":"2","broker":"b8503ac7.122c58","x":300,"y":240,"wires":[["1ab647f.3fd77b8"]]},{"id":"1ab647f.3fd77b8","type":"function","z":"a037b5dc.0a06a8","name":"Save data","func":"flow.set(\"temp\", parseFloat(msg.payload));\n\nreturn msg;","outputs":1,"noerr":0,"x":600,"y":240,"wires":[[]]},{"id":"4813f9d6.053178","type":"inject","z":"a037b5dc.0a06a8","name":"","topic":"","payload":"","payloadType":"date","repeat":"1","crontab":"","once":false,"x":190,"y":320,"wires":[["ec216ad7.59b858"]]},{"id":"ec216ad7.59b858","type":"function","z":"a037b5dc.0a06a8","name":"Load data","func":"msg.payload = flow.get(\"temp\")||0;\nreturn msg;","outputs":1,"noerr":0,"x":380,"y":320,"wires":[["10207ce8.7828d3"]]},{"id":"64ff6663.93a768","type":"mqtt out","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-power-controller/relay/0:0/state/set","qos":"","retain":"","broker":"b8503ac7.122c58","x":870,"y":380,"wires":[]},{"id":"80286a4.d4b1f98","type":"mqtt out","z":"a037b5dc.0a06a8","name":"","topic":"node/kit-power-controller/relay/0:1/state/set","qos":"","retain":"","broker":"b8503ac7.122c58","x":870,"y":420,"wires":[]},{"id":"79351b30.f81bf4","type":"mqtt in","z":"a037b5dc.0a06a8","name":"","topic":"node/lcd-thermostat:0/thermometer/0:1/temperature","qos":"2","broker":"b8503ac7.122c58","x":300,"y":400,"wires":[["9442ee25.eee65"]]},{"id":"9442ee25.eee65","type":"function","z":"a037b5dc.0a06a8","name":"Relay switch","func":"var setTemperature = flow.get(\"temp\")||0;\n\nif(msg.payload > setTemperature) {\n    msg.payload = true;\n}\nelse {\n    msg.payload = false;\n}\n\nreturn msg;","outputs":1,"noerr":0,"x":590,"y":400,"wires":[["64ff6663.93a768","80286a4.d4b1f98"]]},{"id":"444c74b2.0e07ac","type":"blynk-ws-client","z":"","name":"","path":"ws://blynk-cloud.com:8080/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""},{"id":"b8503ac7.122c58","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
     ```
 
     It will look like this:

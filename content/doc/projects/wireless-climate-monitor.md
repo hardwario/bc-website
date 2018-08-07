@@ -1,8 +1,8 @@
 ---
-title: "Wireless Climate Monitor"
+title: "Radio Climate Monitor"
 ---
 
-This document will guide you through the **Wireless Climate Monitor** project. You will be able to see dashboard with temperature, humidity, ambient light and atmospheric pressure in **Node-RED** and view the data on your smart phone using the **Blynk** cloud and mobile app.
+This document will guide you through the **Radio Climate Monitor** project. You will be able to see dashboard with temperature, humidity, ambient light and atmospheric pressure in **Node-RED** and view the data on your smart phone using the **Blynk** cloud and mobile app.
 
 ## Block Concept
 
@@ -10,7 +10,7 @@ This document will guide you through the **Wireless Climate Monitor** project. Y
 
 ## Requirements
 
-* Either **BigClown Wireless Climate Monitor Kit**, or individual components:
+* Either **BigClown Radio Climate Monitor Kit**, or individual components:
 
     * 1x **BigClown Climate Module**
 
@@ -48,7 +48,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% core-module-2 %}}
 
-        {{% bcf-flash firmware="bcf-kit-wireless-climate-monitor" %}}
+        {{% bcf-flash firmware="bcf-radio-climate-monitor" %}}
 
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
@@ -105,7 +105,7 @@ See short video with easy step by step demonstration:
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Wireless Climate Monitor**.
+In this section, we will create a radio link between the **USB Dongle** and the **Radio Climate Monitor**.
 
 Follow these steps in **Node-RED**:
 
@@ -113,13 +113,13 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
-2. Insert the batteries into the **Wireless Climate Monitor** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
+2. Insert the batteries into the **Radio Climate Monitor** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds).
 
 3. Click on the **Stop node pairing** button.
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Climate Monitor**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Climate Monitor**) and the gateway (**USB Dongle**).{{% /note %}}
 
 ## Communication Test
 
@@ -156,7 +156,7 @@ Firstly we need to configure our **Node-RED** app.
 3. Insert the following snippet in the flow (using **Menu >> Import**) and click in Flow 3 tab:
 
     ```json
-    [{"id":"4914605c.76972","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/kit-climate-monitor:0/lux-meter/0:0/illuminance","qos":"2","broker":"58254712.b61068","x":230,"y":520,"wires":[["431157f1.546248"]]},{"id":"dcf5bf8d.a0242","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/kit-climate-monitor:0/thermometer/0:0/temperature","qos":"2","broker":"58254712.b61068","x":240,"y":580,"wires":[["be96b6aa.eed098"]]},{"id":"2ac2eae7.308486","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/kit-climate-monitor:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"58254712.b61068","x":250,"y":640,"wires":[["dbe4b438.be4ef8"]]},{"id":"431157f1.546248","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"Pin V0 - Write","pin":0,"pinmode":0,"client":"1b003066.8ca2c","x":659,"y":520,"wires":[]},{"id":"be96b6aa.eed098","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"1","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":580,"wires":[]},{"id":"dbe4b438.be4ef8","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"2","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":640,"wires":[]},{"id":"58254712.b61068","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"1b003066.8ca2c","type":"blynk-ws-client","z":"","name":"","path":"wss://blynk-cloud.com:9443/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""}]
+    [{"id":"4914605c.76972","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/climate-monitor:0/lux-meter/0:0/illuminance","qos":"2","broker":"58254712.b61068","x":230,"y":520,"wires":[["431157f1.546248"]]},{"id":"dcf5bf8d.a0242","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/climate-monitor:0/thermometer/0:0/temperature","qos":"2","broker":"58254712.b61068","x":240,"y":580,"wires":[["be96b6aa.eed098"]]},{"id":"2ac2eae7.308486","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/climate-monitor:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"58254712.b61068","x":250,"y":640,"wires":[["dbe4b438.be4ef8"]]},{"id":"431157f1.546248","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"Pin V0 - Write","pin":0,"pinmode":0,"client":"1b003066.8ca2c","x":659,"y":520,"wires":[]},{"id":"be96b6aa.eed098","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"1","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":580,"wires":[]},{"id":"dbe4b438.be4ef8","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"2","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":640,"wires":[]},{"id":"58254712.b61068","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"1b003066.8ca2c","type":"blynk-ws-client","z":"","name":"","path":"wss://blynk-cloud.com:9443/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""}]
     ```
 
     It will look like this:

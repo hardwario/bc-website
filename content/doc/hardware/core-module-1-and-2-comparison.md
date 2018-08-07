@@ -31,7 +31,7 @@ This means that the flashing procedure is now the same as with the USB Dongle. P
 
         bcf flash --device dfu [firmware]:[version]
 
-    Example which flashing wireless-motion-detector firmware from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) project:
+    Example which flashing wireless-motion-detector firmware from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/radio-motion-detector/) project:
 
         bcf flash --device dfu bigclownlabs/bcf-radio-motion-detector:latest
 
@@ -61,7 +61,7 @@ This means that the flashing procedure is now the same as with the USB Dongle. P
 
         bcf flash --device [device] [firmware]:[version]
 
-    Example which flashing wireless-motion-detector firmware from [Radio Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) project:
+    Example which flashing wireless-motion-detector firmware from [Radio Motion Detector](https://www.bigclown.com/doc/projects/radio-motion-detector/) project:
 
         bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-motion-detector:latest
 

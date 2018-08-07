@@ -1,8 +1,8 @@
 ---
-title: "Wireless VOC sensor"
+title: "Radio VOC sensor"
 ---
 
-This document will guide you through the **Wireless VOC sensor** project. You will be able to see dashboard with TVOC, temperature and humidity in **Node-RED**.
+This document will guide you through the **Radio VOC sensor** project. You will be able to see dashboard with TVOC, temperature and humidity in **Node-RED**.
 
 {{% img-zoom src="project-image.png" %}}
 
@@ -65,7 +65,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% core-module-2 %}}
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-wireless-voc-sensor:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-voc-sensor:latest
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
@@ -90,7 +90,7 @@ Here is the minimal assembly for VOC sensor.
 ### Full hardware
 
 The firmware also supports **{{< shop "LCD Module" >}}**, **{{< shop "Tag Module" >}}**, **{{< shop "Temperature Tag" >}}** and **{{< shop "Humidity Tag" >}}**.
- All values are displayed with nice graph on the display and are also send over BigClown wireless network to the **{{< shop "USB Dongle" >}}**.
+ All values are displayed with nice graph on the display and are also send over BigClown radio network to the **{{< shop "USB Dongle" >}}**.
 
 {{% img-zoom src="voc-full.jpg" %}}
 
@@ -144,7 +144,7 @@ The firmware also supports **{{< shop "LCD Module" >}}**, **{{< shop "Tag Module
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Wireless VOC sensor**.
+In this section, we will create a radio link between the **USB Dongle** and the **Radio VOC sensor**.
 
 Follow these steps in **Node-RED**:
 
@@ -152,7 +152,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
-2. Insert the batteries into the **Wireless VOC sensor** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds). If you switch Node-RED to the **debug** tab on the right, you will see similar pairing response:
+2. Insert the batteries into the **Radio VOC sensor** to send the pairing request (you should also see the red LED on the **Core Module** to be on for about 2 seconds). If you switch Node-RED to the **debug** tab on the right, you will see similar pairing response:
 
     {{% img-zoom src="voc-sensor-paired.png" %}}
 
@@ -160,7 +160,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Wireless Motion Detector**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Motion Detector**) and the gateway (**USB Dongle**).{{% /note %}}
 
 ## Communication Test
 
@@ -180,7 +180,7 @@ Follow these steps in **Node-RED**:
 
 Let's create a Dashboard in Node-RED that will show three gauges with values from the sensors.
 
-You can insert the following snippet in the flow (using **Menu >> Import**) instead of steps below. However you have to change the MQTT topic based on your wireless node address.
+You can insert the following snippet in the flow (using **Menu >> Import**) instead of steps below. However you have to change the MQTT topic based on your radio node address.
 
 ```json
 [{"id":"7018e288.6b887c","type":"ui_gauge","z":"ddfb24d2.43ab28","name":"","group":"d493d306.06098","order":0,"width":0,"height":0,"gtype":"gage","title":"Gauge","label":"units","format":"{{value}}","min":0,"max":"200","colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":610,"y":300,"wires":[]},{"id":"c6695f10.80722","type":"ui_gauge","z":"ddfb24d2.43ab28","name":"","group":"d493d306.06098","order":0,"width":0,"height":0,"gtype":"gage","title":"Gauge","label":"units","format":"{{value}}","min":"10","max":"30","colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":610,"y":360,"wires":[]},{"id":"70a87b55.8df274","type":"ui_gauge","z":"ddfb24d2.43ab28","name":"","group":"d493d306.06098","order":0,"width":0,"height":0,"gtype":"gage","title":"Gauge","label":"units","format":"{{value}}","min":0,"max":"100","colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":610,"y":420,"wires":[]},{"id":"fbc3fd9a.b2e59","type":"mqtt in","z":"ddfb24d2.43ab28","name":"","topic":"node/836d1983a754/voc-sensor/0:0/tvoc","qos":"2","broker":"83f37d33.4979e","x":220,"y":300,"wires":[["7018e288.6b887c"]]},{"id":"4745398e.bacaf8","type":"mqtt in","z":"ddfb24d2.43ab28","name":"","topic":"node/836d1983a754/hygrometer/0:4/relative-humidity","qos":"2","broker":"83f37d33.4979e","x":260,"y":420,"wires":[["70a87b55.8df274"]]},{"id":"92e3a555.616f58","type":"mqtt in","z":"ddfb24d2.43ab28","name":"","topic":"node/836d1983a754/thermometer/0:0/temperature","qos":"2","broker":"83f37d33.4979e","x":250,"y":360,"wires":[["c6695f10.80722"]]},{"id":"d493d306.06098","type":"ui_group","z":"","name":"Default","tab":"afe7e4c8.941208","disp":true,"width":"6","collapse":false},{"id":"83f37d33.4979e","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"afe7e4c8.941208","type":"ui_tab","z":"","name":"Home","icon":"dashboard"}]
@@ -202,7 +202,7 @@ You can insert the following snippet in the flow (using **Menu >> Import**) ins
 
 ## Dashboard
 
-You will see this dashboard with values from the Wireless VOC sensor.
+You will see this dashboard with values from the Radio VOC sensor.
 
 {{% img-zoom src="node-red-dashboard.png" %}}
 

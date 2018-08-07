@@ -6,10 +6,10 @@ title: Blynk - Mobile App Builder
 
 # Blynk example projects with BigClown
 
-  * [Wireless Climate Monitor]({{< relref "doc/projects/wireless-climate-monitor.md" >}})
-  * [Wireless LCD Thermostat]({{< relref "doc/projects/wireless-lcd-thermostat.md" >}})
-  * [Wireless CO2 Monitor]({{< relref "doc/projects/wireless-co2-monitor.md" >}})
-  * [Wireless Smart LED Strip]({{< relref "doc/projects/wireless-smart-led-strip.md" >}})
+  * [Wireless Climate Monitor]({{< relref "doc/projects/radio-climate-monitor.md" >}})
+  * [Wireless LCD Thermostat]({{< relref "doc/projects/radio-lcd-thermostat.md" >}})
+  * [Wireless CO2 Monitor]({{< relref "doc/projects/radio-co2-monitor.md" >}})
+  * [Wireless Smart LED Strip]({{< relref "doc/projects/radio-smart-led-strip.md" >}})
 
 # Blynk app
 

@@ -19,4 +19,4 @@ title: "About Climate Module"
 ## Firmware Projects
 
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
-* [**Radio Climate Monitor**](https://github.com/bigclownlabs/bcf-radio-climate-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/wireless-climate-monitor/)
+* [**Radio Climate Monitor**](https://github.com/bigclownlabs/bcf-radio-climate-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/radio-climate-monitor/)

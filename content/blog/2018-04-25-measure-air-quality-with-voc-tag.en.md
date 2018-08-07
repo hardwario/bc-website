@@ -17,7 +17,7 @@ The **{{< shop "VOC Tag" >}}** is a gas sensor for measuring volatile organic co
 
 VOC (Volatile Organic Compounds) sensor is a great technology for indoor air quality measurement applications. Elevated VOC levels can have a negative impact on well being, comfort, and cognitive abilities.
 
-With [**Wireless VOC sensor project**]({{< relref "doc/projects/wireless-voc-sensor.md" >}}) we are also releasing GFX graphic library, which can now render text and graphics not only on LCD Module, but on any display you connect to the Core Module. You can simply use WS2812B. You just need to write your initialization and write pixel functions and GFX library does the rest. The project also display chart of measured values on the display.
+With [**Wireless VOC sensor project**]({{< relref "doc/projects/radio-voc-sensor.md" >}}) we are also releasing GFX graphic library, which can now render text and graphics not only on LCD Module, but on any display you connect to the Core Module. You can simply use WS2812B. You just need to write your initialization and write pixel functions and GFX library does the rest. The project also display chart of measured values on the display.
 
 <div>
 <img src="voc-lcd.jpg" align="center" style="margin:0 0 20px 0;"/>
@@ -25,7 +25,7 @@ With [**Wireless VOC sensor project**]({{< relref "doc/projects/wireless-voc-sen
 
 # References
 
-  * [**Wireless VOC sensor project**]({{< relref "doc/projects/wireless-voc-sensor.md" >}})
+  * [**Wireless VOC sensor project**]({{< relref "doc/projects/radio-voc-sensor.md" >}})
   * [**VOC Tag in Hardware documentation**]({{< relref "doc/hardware/about-voc-tag.md" >}})
   * [**Source code for VOC project**](https://github.com/bigclownlabs/bcf-wireless-voc-sensor)
   * [**GFX library**](https://sdk.bigclown.com/group__bc__gfx.html)

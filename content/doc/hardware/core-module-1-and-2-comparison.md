@@ -33,7 +33,7 @@ This means that the flashing procedure is now the same as with the USB Dongle. P
 
     Example which flashing wireless-motion-detector firmware from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) project:
 
-        bcf flash --device dfu bigclownlabs/bcf-kit-wireless-motion-detector:latest
+        bcf flash --device dfu bigclownlabs/bcf-radio-motion-detector:latest
 
 ## Flashing Core Module R2
 
@@ -61,9 +61,9 @@ This means that the flashing procedure is now the same as with the USB Dongle. P
 
         bcf flash --device [device] [firmware]:[version]
 
-    Example which flashing wireless-motion-detector firmware from [Wireless Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) project:
+    Example which flashing wireless-motion-detector firmware from [Radio Motion Detector](https://www.bigclown.com/doc/projects/wireless-motion-detector/) project:
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-motion-detector:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-motion-detector:latest
 
 4. Print bc_log debug messages over UART2 serial to your computer with `bcf`
 

@@ -83,13 +83,13 @@ Use this command to list the available firmware packages:
 Example output:
 
     ...
-    bigclownlabs/bcf-kit-wireless-climate-monitor:v1.1.0
-    bigclownlabs/bcf-kit-wireless-co2-monitor:v1.1.0
+    bigclownlabs/bcf-radio-climate-monitor:v1.1.0
+    bigclownlabs/bcf-radio-co2-monitor:v1.1.0
     bigclownlabs/bcf-kit-wireless-controller:v1.1.0
-    bigclownlabs/bcf-kit-wireless-flood-detector:v1.1.0
-    bigclownlabs/bcf-kit-wireless-lcd-thermostat:v1.1.0
-    bigclownlabs/bcf-kit-wireless-motion-detector:v1.1.0
-    bigclownlabs/bcf-kit-wireless-push-button:v1.1.0
+    bigclownlabs/bcf-radio-flood-detector:v1.1.0
+    bigclownlabs/bcf-radio-lcd-thermostat:v1.1.0
+    bigclownlabs/bcf-radio-motion-detector:v1.1.0
+    bigclownlabs/bcf-radio-push-button:v1.1.0
     ...
 
 Use this command to list all the versions of the available firmware packages:
@@ -116,7 +116,7 @@ Firmware upload can be done using the `bcf flash` command. The firmware can be o
 
 1. Source **firmware package**, for instance:
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-kit-wireless-push-button:latest
+        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-push-button:latest
 
 2. Source **local disk file**, for instance:
 
@@ -126,7 +126,7 @@ Firmware upload can be done using the `bcf flash` command. The firmware can be o
 
 3. Source **file from the specified URL**, for instance:
 
-        bcf flash --device /dev/ttyUSB0 https://github.com/bigclownlabs/bcf-kit-wireless-push-button/releases/download/v1.1.0/bcf-kit-wireless-push-button-v1.1.0.bin
+        bcf flash --device /dev/ttyUSB0 https://github.com/bigclownlabs/bcf-radio-push-button/releases/download/v1.1.0/bcf-radio-push-button-v1.1.0.bin
 
 You can list the USB UART devices connected to your host using this command:
 

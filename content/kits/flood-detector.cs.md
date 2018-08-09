@@ -17,7 +17,7 @@ weight: 40
 price: 1 742 Kč
 buyLink: "https://shop.bigclown.com/flood-detector-kit/?currency=CZK"
 modules: ["core","mini_battery","sensor","flood","enclosures-501"]
-optionalModules: ["sigfox","lora"]
+optionalModules: ["usb_dongle","sigfox","lora"]
 techSpecs:
     dimensions:
         heading: "Rozměry (krabička)"

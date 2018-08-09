@@ -27,5 +27,5 @@ With [**Wireless VOC sensor project**]({{< relref "doc/projects/radio-voc-sensor
 
   * [**Wireless VOC sensor project**]({{< relref "doc/projects/radio-voc-sensor.md" >}})
   * [**VOC Tag in Hardware documentation**]({{< relref "doc/hardware/about-voc-tag.md" >}})
-  * [**Source code for VOC project**](https://github.com/bigclownlabs/bcf-wireless-voc-sensor)
+  * [**Source code for Radio VOC sensor**](https://github.com/bigclownlabs/bcf-radio-voc-sensor)
   * [**GFX library**](https://sdk.bigclown.com/group__bc__gfx.html)

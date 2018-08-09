@@ -67,3 +67,79 @@ optional arguments:
   -v, --version         show program's version number and exit
 
 ```
+
+## Udev rules
+
+If you would like permanent alias in `/dev/`, then apply these rules.
+
+For USB Dongle
+
+    echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyUSB*", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", ATTRS{serial}=="bc-usb-dongle*", SYMLINK+="bcUD%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcUD%n"'  | sudo tee --append /etc/udev/rules.d/58-bigclown-usb-dongle.rules
+
+For Gateway with Core Module
+
+        echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyACM*", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", SYMLINK+="bcCM%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcCM%n"' | sudo tee --append /etc/udev/rules.d/59-bigclown-core-module.rules
+
+
+## Config files
+
+In case you would like have configuration of `bcg` separate and not permanent in the `pm2`, create a config file and pass the file with `-c` parameter to `bcg`.
+
+1. Create folder for configuration file
+
+        sudo mkdir -p /etc/bigclown
+
+2. Configuration file for Gateway USB Dongle
+
+    Open file
+
+        sudo nano /etc/bigclown/bcg-ud.yml
+    \
+
+    Insert this
+
+        device: /dev/bcUD0
+        name: "usb-dongle"
+        mqtt:
+            host: localhost
+            port: 1883
+
+3. Run service for Gateway USB Dongle
+
+        pm2 start /usr/bin/python3 --name "bcg-ud" -- /usr/local/bin/bcg -c /etc/bigclown/bcg-ud.yml
+
+    \
+
+        pm2 save
+
+4. Configuration file for Gateway Core module
+
+    Open file
+
+        sudo nano /etc/bigclown/bcg-cm.yml
+    \
+
+    Insert this
+
+        device: /dev/bcCM0
+        name: "core-module"
+        mqtt:
+            host: localhost
+            port: 1883
+
+5. Run service for Gateway Core module
+
+        pm2 start /usr/bin/python3 --name "bcg-cm" -- /usr/local/bin/bcg -c /etc/bigclown/bcg-cm.yml
+
+    \
+
+        pm2 save
+
+6. Bash autocomplete for bcf
+
+
+        register-python-argcomplete bcf >> ~/.bashrc
+
+    \
+
+        source ~/.bashrc

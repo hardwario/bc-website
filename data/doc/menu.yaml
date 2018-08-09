@@ -227,6 +227,8 @@ items:
       link: "doc/tools/bcf.md"
     - title: "BigClown gateway `bcg`"
       link: "doc/tools/bcg.md"
+    - title: "BigClown Host Tool `bch`"
+      link: "doc/tools/bch.md"
     - title: "Dashboard"
       link: "doc/tools/dashboard.md"
     - title: "BigClown GUI Flashing tool"

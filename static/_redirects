@@ -1,19 +1,54 @@
+# CZ domain
 http://bigclown.cz/* https://www.bigclown.com/cs/:splat 301!
 http://www.bigclown.cz/* https://www.bigclown.com/cs/:splat 301!
 https://bigclown.cz/* https://www.bigclown.com/cs/:splat 301!
 https://www.bigclown.cz/* https://www.bigclown.com/cs/:splat 301!
-https://doc.bigclown.com/mqtt https://www.bigclown.com/doc/interfaces/mqtt-topics/ 301!
-https://doc.bigclown.com/topics https://www.bigclown.com/doc/interfaces/mqtt-topics/ 301!
+
+# Documentation
 https://doc.bigclown.com/* https://www.bigclown.com/doc/:splat 301!
 https://doc.bigclown.cz/* https://www.bigclown.com/cs/doc/:splat 301!
+https://docs.bigclown.com/* https://www.bigclown.com/doc/:splat 301!
+https://docs.bigclown.cz/* https://www.bigclown.com/cs/doc/:splat 301!
+https://learn.bigclown.com/* https://www.bigclown.com/doc/:splat 301!
+https://learn.bigclown.cz/* https://www.bigclown.com/cs/doc/:splat 301!
+
+# Blog
+https://blog.bigclown.com/* https://www.bigclown.com/blog/:splat 301!
+https://blog.bigclown.cz/* https://www.bigclown.com/cs/blog/:splat 301!
+
+# E-shop
 https://shop.bigclown.cz/* https://shop.bigclown.com/:splat 301!
 https://obchod.bigclown.com/* https://shop.bigclown.com/:splat 301!
 https://obchod.bigclown.cz/* https://shop.bigclown.com/:splat 301!
+
+# Social media
+https://facebook.bigclown.com/* https://www.facebook.com/bigclownlabs/ 301!
+https://facebook.bigclown.cz/* https://www.facebook.com/bigclownlabs/ 301!
+https://twitter.bigclown.com/* https://twitter.com/BigClownLabs/ 301!
+https://twitter.bigclown.cz/* https://twitter.com/BigClownLabs/ 301!
+https://instagram.bigclown.com/* https://www.instagram.com/bigclownlabs/ 301!
+https://instagram.bigclown.cz/* https://www.instagram.com/bigclownlabs/ 301!
+https://linkedin.bigclown.com/* https://www.linkedin.com/company/bigclown-labs-s.r.o./ 301!
+https://linkedin.bigclown.cz/* https://www.linkedin.com/company/bigclown-labs-s.r.o./ 301!
+https://youtube.bigclown.com/* https://www.youtube.com/channel/UCf1CdGt1XBwAAT_Qh__bEhQ 301!
+https://youtube.bigclown.cz/* https://www.youtube.com/channel/UCf1CdGt1XBwAAT_Qh__bEhQ 301!
+
+# GitHub
+https://github.bigclown.com/* https://github.com/bigclownlabs/ 301!
+https://github.bigclown.cz/* https://github.com/bigclownlabs/ 301!
+
+# Indiegogo
 https://lp.bigclown.com/* https://www.indiegogo.com/projects/bigclown-the-iot-kit-for-makers-for-you-diy#/ 301!
 https://soon.bigclown.com/* https://www.indiegogo.com/projects/bigclown-the-iot-kit-for-makers-for-you-diy#/ 301!
-https://www.bigclown.com/big-kit-basic/* https://www.bigclown.com/multi-kit-basic/:splat 301!
+
+# Shortcuts
+https://doc.bigclown.com/mqtt https://www.bigclown.com/doc/interfaces/mqtt-topics/ 301!
+https://doc.bigclown.com/topics https://www.bigclown.com/doc/interfaces/mqtt-topics/ 301!
 https://www.bigclown.com/cz/* https://www.bigclown.com/cs/:splat 301!
-https://www.bigclown.com/info* https://www.bigclown.com/about/:splat 301!
+https://www.bigclown.com/info/* https://www.bigclown.com/about/ 301!
+
+# Compatibility
+https://www.bigclown.com/big-kit-basic/* https://www.bigclown.com/multi-kit-basic/:splat 301!
 https://www.bigclown.com/doc/hardware/headers-and-signals/* https://www.bigclown.com/doc/basics/getting-started/:splat 301!
 https://www.bigclown.com/doc/projects/wireless-led-strip/* https://www.bigclown.com/doc/projects/wireless-smart-led-strip/:splat 301!
 https://www.bigclown.com/kits/big-kit-basic/* https://www.bigclown.com/kits/multi-kit-basic/:splat 301!

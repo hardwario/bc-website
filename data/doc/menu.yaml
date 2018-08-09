@@ -56,6 +56,8 @@ items:
       link: "doc/projects/radio-voc-sensor.md"
     - title: "Radio Soil Sensor"
       link: "doc/projects/radio-soil-sensor.md"
+    - title: "Radio Door Sensor"
+      link: "doc/projects/radio-door-sensor.md"
   - title: "Interfaces"
     link: "doc/interfaces/mqtt-protocol.md"
     items:

@@ -41,6 +41,14 @@ Rename node
         bch node rename generic-node:0 kitchen
         bch node rename 836d19831c4a garden
 
+List paired nodes
+
+        bch node list
+
+Remove node. By name or ID
+
+        bch node remove garden
+        bch node remove 836d19831c4a
 
 ## bch --help
 

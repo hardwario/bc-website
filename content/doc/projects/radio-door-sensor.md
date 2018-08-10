@@ -130,7 +130,7 @@ In this section, we will create an **Applet** in the **IFTTT** service. The **Ap
 
 7. Type `door` in the **Event Name** field and click on **Create Trigger**:
 
-    {{% img-zoom src="ifttt-07.png" width="50%"  %}}
+    {{% svg-zoom src="ifttt-07.svg" width="50%"  %}}
 
 8. Click on **+that** in the `if this then that` sentence:
 

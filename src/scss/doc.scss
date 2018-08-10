@@ -24,7 +24,7 @@ ol > li {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 18px;
-  list-style: none; /* Disable the normal item numbering  */
+  list-style: none; /* Disable the normal item numbering */
 }
 
 ol > li:before {
@@ -32,7 +32,7 @@ ol > li:before {
   counter-increment: li; /* Increment the counter by 1 */
   /* Position and style the number */
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: -2em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -42,7 +42,7 @@ ol > li:before {
      generated content but not positioning it (Camino 2 is one example) */
   margin-right: 8px;
   padding: 4px;
-  border-top: 2px solid #F3CB1D;
+  /*border-top: 2px solid #F3CB1D;*/
   color: #fff;
   background: #F3CB1D;
   font-weight: bold;

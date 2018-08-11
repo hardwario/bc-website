@@ -52,11 +52,11 @@ In the following steps, we will prepare a MicroSD card for Raspberry Pi. Go to o
 
 3. Unzip the downloaded image.
 
+    {{% note "info" %}}You can use simple multi-platform GUI application [Etcher](http://etcher.io) which can write even zipped images, so you can skip unzipping step. It also verifies written data.{{% /note %}}
+
     {{% note "info" %}}You can use the [**7-Zip**](http://www.7-zip.org) tool for this step.{{% /note %}}
 
 4. Write the downloaded image `bc-raspbian-VER-armhf-rpi.img` to the MicroSD card (replace `VER` with the actual version of the downloaded image).
-
-   You can use simple multi-platform GUI application [Etcher](http://etcher.io) which can write even zipped images, so you can skip unzipping step. IT also verifies written data.
 
 {{% note "info" %}}
 You can use the [**Win32 Disk Imager**](https://sourceforge.net/projects/win32diskimager/files/latest/download) tool for this step.
@@ -225,6 +225,8 @@ This is a brief list of differences:
 
 7. Tell **PM2** to run **Node-RED**:
 
+    Make sure you copy next command exactly with the back-tick symbol `.
+
         pm2 start `which node-red` -- --verbose
     \
 
@@ -246,81 +248,35 @@ This is a brief list of differences:
 
         sudo pip3 install --upgrade pip
 
-11. Install the **BigClown Firmware Tool**:
+11. Install the **BigClown Firmware Tools**.
 
-        sudo pip3 install --upgrade bcf
+    BigClown Firmware Tool `bcf`, BigClown Gateway `bcg` and BigClown Host Tool `bch`.
 
-12. Install the **BigClown Gateway**:
+        sudo pip3 install --upgrade bcf bcg bch
 
-        sudo pip3 install --upgrade bcg
-
-13. Add udev rules
+12. Add udev rules
 
         echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyUSB*", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", ATTRS{serial}=="bc-usb-dongle*", SYMLINK+="bcUD%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcUD%n"'  | sudo tee --append /etc/udev/rules.d/58-bigclown-usb-dongle.rules
 
-    \
-
-        echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyACM*", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="5740", SYMLINK+="bcCM%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcCM%n"' | sudo tee --append /etc/udev/rules.d/59-bigclown-core-module.rules
-
     {{% note "warning" %}}Unplug and plug gateway.{{% /note %}}
 
-14. Create folder for configuration file
 
-        sudo mkdir -p /etc/bigclown
+13. Run service for Gateway USB Dongle
 
-15. Configuration file for Gateway USB Dongle
-
-    Open file
-
-        sudo nano /etc/bigclown/bcg-ud.yml
-    \
-
-    Insert this
-
-        device: /dev/bcUD0
-        name: "usb-dongle"
-        mqtt:
-            host: localhost
-            port: 1883
-
-16. Run service for Gateway USB Dongle
-
-        pm2 start /usr/bin/python3 --name "bcg-ud" -- /usr/local/bin/bcg -c /etc/bigclown/bcg-ud.yml
+        pm2 start /usr/bin/python3 --name "bcg-ud" -- /usr/local/bin/bcg --device /dev/bcUD0
 
     \
 
         pm2 save
 
-17. Configuration file for Gateway Core module
+14. Bash autocomplete for bcf
 
-    Open file
 
-        sudo nano /etc/bigclown/bcg-cm.yml
-    \
-
-    Insert this
-
-        device: /dev/bcCM0
-        name: "core-module"
-        mqtt:
-            host: localhost
-            port: 1883
-
-16. Run service for Gateway Core module
-
-        pm2 start /usr/bin/python3 --name "bcg-cm" -- /usr/local/bin/bcg -c /etc/bigclown/bcg-cm.yml
+        register-python-argcomplete bcf >> ~/.bashrc
 
     \
 
-        pm2 save
-17. Bash autocomplete for bcf
-
-
-        register-python-argcomplete bcf >> .bashrc
-
-    \
-
-        source .bashrc
+        source ~/.bashrc
 
 ## WiFi Setup on Raspberry Pi 3
 

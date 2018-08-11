@@ -312,10 +312,13 @@ You can [**import Node-RED pairing flows**](https://github.com/bigclownlabs/bch-
 
 In command line you enable pairing by commands below.
 
+Command for pairing when you have USB Dongle as a radio gateway.
 ```
-For USB Dongle:
 mosquitto_pub -t 'gateway/usb-dongle/pairing-mode/start' -n
-For Core Module:
+```
+
+Command for pairing when you have Core Module as a radio gateway.
+```
 mosquitto_pub -t 'gateway/core-module/pairing-mode/start' -n
 ```
 

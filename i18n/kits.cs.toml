@@ -13,6 +13,9 @@ other = "Můžeš si postavit"
 [nose]
 other = "Klaunský nos"
 
+[price]
+other = "Cena"
+
 [recommended]
 other = "DOPORUČUJEME"
 

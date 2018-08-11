@@ -13,6 +13,7 @@ isStarter: true
 recommended: false
 included: ["USB Dongle", Motion Detector", "Climate Monitor"]
 notIncluded: ["Flood Detector", "LCD Thermostat", "Controller", "Push Button", "CO2 Module"]
+gifts: ["Clown's nose"]
 weight: 1
 price: €149
 buyLink: "https://shop.bigclown.com/big-kits/?currency=EUR"

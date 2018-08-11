@@ -13,6 +13,9 @@ other = "You will be able to make"
 [nose]
 other = "Clown's nose"
 
+[price]
+other = "Price"
+
 [recommended]
 other = "RECOMMENDED"
 

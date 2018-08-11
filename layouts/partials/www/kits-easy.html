@@ -4,11 +4,14 @@
       <div class="row">
         <div class="col">
           <h2 class="title text-center">{{ i18n "start_making" | safeHTML }}</h2>
-
           <div class="row d-none d-lg-flex">
             {{ range sort ($.Site.GetPage "section" "kits").Pages ".Weight" }}
               {{ if not .Params.isStarter }}
-                {{ .Render "grid" }}
+                {{ if eq $.Section "kits" }}
+                  {{ .Render "grid-withprice" }}
+                {{ else}}
+                  {{ .Render "grid" }}
+                {{ end }}
               {{ end }}
             {{ end }}
           </div>

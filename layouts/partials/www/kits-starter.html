@@ -9,7 +9,11 @@
             <div class="row no-gutters">
               {{ range sort ($.Site.GetPage "section" "kits").Pages ".Weight" }}
                 {{ if .Params.isStarter }}
-                  {{ .Render "grid-starter" }}
+                  {{ if eq $.Section "kits" }}
+                    {{ .Render "grid-starter-withprice" }}
+                  {{ else}}
+                    {{ .Render "grid-starter" }}
+                  {{ end }}
                 {{ end }}
               {{ end }}
             </div>

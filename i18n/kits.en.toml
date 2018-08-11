@@ -16,6 +16,9 @@ other = "Clown's nose"
 [price]
 other = "Price"
 
+[save]
+other = "Save"
+
 [recommended]
 other = "RECOMMENDED"
 

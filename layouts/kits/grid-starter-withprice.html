@@ -31,7 +31,7 @@
           </li>
       </ul>
       {{ if .Params.save }}
-        <div class="pricelist__discount">Save {{ .Params.save }}</div>
+        <div class="pricelist__discount">{{ i18n "save" }} {{ .Params.save }}</div>
       {{ else }}
         <div class="pricelist__discount">&nbsp;</div>
       {{ end }}

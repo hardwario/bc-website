@@ -38,6 +38,10 @@ items:
   - title: "Projects"
     link: "doc/projects/radio-push-button.md"
     items:
+    - title: "Radio Door Sensor"
+      link: "doc/projects/radio-door-sensor.md"
+    - title: "Radio Soil Sensor"
+      link: "doc/projects/radio-soil-sensor.md"
     - title: "Radio Push Button"
       link: "doc/projects/radio-push-button.md"
     - title: "Radio Climate Monitor"
@@ -54,10 +58,6 @@ items:
       link: "doc/projects/radio-smart-led-strip.md"
     - title: "Radio VOC sensor"
       link: "doc/projects/radio-voc-sensor.md"
-    - title: "Radio Soil Sensor"
-      link: "doc/projects/radio-soil-sensor.md"
-    - title: "Radio Door Sensor"
-      link: "doc/projects/radio-door-sensor.md"
   - title: "Interfaces"
     link: "doc/interfaces/mqtt-protocol.md"
     items:

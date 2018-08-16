@@ -26,16 +26,26 @@ author:
 I would like to show, how easy is set up your home climate station which measures humidity, temperature, pressure and illuminance and connect it with Apple HomeKit to use Siri to communicate measured values! This project don't required programming or electronics skill, let's have fun!{{% /p-intro %}}
 
 {{< p-step-center >}}
- {{< p-step-video order = "2" id = "s-t_sYSo-aQ" >}}
+ {{< p-step-video-large order = "2" id = "s-t_sYSo-aQ" >}}
 {{< /p-step-center >}}
 
 {{< p-steps title = "I'll show you how to make it" >}}
 
 {{< p-step >}}
  {{% p-step-content order = "2" step = "Prepare" title = "Get Ready" %}}
- As first step you have to prepare all necessary components. You will need [BigClown Climate Monitor Kit](https://shop.bigclown.com/climate-monitor-kit/) and if you don't have it - buy also our BigClown hub which contains Raspberry Pi and USB Dongle.{{% /p-step-content %}}
+ You have to prepare all necessary components: [BigClown Climate Monitor Kit](https://shop.bigclown.com/climate-monitor-kit/) and (if you don't have it) BigClown Hub.
+ {{% /p-step-content %}}
  {{< p-step-video order = "1" id = "s-t_sYSo-aQ" >}}
+
+ <div style="clear:both; width:100%; margin-top:30px" class="order-lg-3">
+  <div class="thankyou__button">
+  <a href="https://shop.bigclown.com/climate-monitor-kit/" class="button button--fullred button--fullredbig">Buy all you need for 99€</a>
+  </div>
+ </div>
+
 {{< /p-step >}}
+
+
 
 {{< p-step >}}
  {{% p-step-content order = "1" step = "Build" title = "Assemble your Kit" %}}
@@ -58,6 +68,7 @@ Your hardware part is ready and its time to set it and start communication betwe
 
 {{< p-step >}}
  {{% p-step-content order = "2" step = "Share" title = "You can make it too" %}}
-Do you like my project? Have you made it? Tell about it to your friend!{{%/p-step-content %}}
+Do you like my project? Have you made it? Tell about it to your friend!
+{{%/p-step-content %}}
  {{< p-step-video order = "1" id = "s-t_sYSo-aQ" >}}
 {{< /p-step >}}

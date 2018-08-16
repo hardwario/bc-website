@@ -29,5 +29,5 @@ Podívejte se na video o čem tento projekt vlastně je.
 Používáme v něm úplně nový kapacitní senzor, který je plně digitální, měří půdní vlhkost a teplotu a je velmi spolehlivý (elektronika je zalitá)..{{% /p-intro %}}
 
 {{< p-step-center >}}
- {{< p-step-video order = "2" id = "s-t_sYSo-aQ" >}}
+ {{< p-step-video-large order = "2" id = "s-t_sYSo-aQ" >}}
 {{< /p-step-center >}}

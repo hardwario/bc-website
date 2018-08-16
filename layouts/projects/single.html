@@ -47,15 +47,9 @@
 {{ .Content }}
 
 <section>
-  <div class="bg bg--gray">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="thankyou__button">
-            <a href="{{ .Params.button.link }}" class="button button--fullred button--fullredbig">{{ .Params.button.text }}</a>
-          </div>
-
-          <h1 class="thankyou__title text-hide">{{ i18n "thank_you" }}</h1>
           <div class="thankyou__share d-flex justify-content-center align-items-center">
             <span>{{ i18n "share_my_project" }}:</span>
             <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link text-hide" onclick="ga('gtm2.send', 'event', 'share-project', 'facebook', '{{ .Permalink }}');">Facebook</a>
@@ -65,7 +59,6 @@
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 {{ end }}

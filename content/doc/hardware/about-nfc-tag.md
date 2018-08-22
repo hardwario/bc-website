@@ -8,6 +8,9 @@ title: "About NFC Tag"
 
 {{< hw-shop "nfc-tag" >}}
 {{< hw-sch "bc-tag-nfc" >}}
+{{< hw-sdk "group__bc__tag__nfc" >}}
+{{< hw-h-file "bc_tag_nfc.h" >}}
+{{< hw-c-file "bc_tag_nfc.c" >}}
 
 {{< /img-float >}}
 

@@ -8,9 +8,9 @@ title: "About VOC Tag"
 
 {{< hw-shop "voc-tag" >}}
 {{< hw-sch "bc-tag-voc" >}}
-{{< hw-sdk "group__bc__tag__voc" >}}
-{{< hw-h-file "bc_tag_voc.h" >}}
-{{< hw-c-file "bc_tag_voc.c" >}}
+{{< hw-sdk "group__bc__sgp30" >}}
+{{< hw-h-file "bc_sgp30.h" >}}
+{{< hw-c-file "bc_sgp30.c" >}}
 
 {{< /img-float >}}
 

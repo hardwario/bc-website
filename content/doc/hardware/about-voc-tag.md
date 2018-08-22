@@ -18,4 +18,4 @@ title: "About VOC Tag"
 
 ## Firmware Projects
 
-* [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
+* [**Radio VOC sensor**](https://github.com/bigclownlabs/bcf-radio-voc-sensor)

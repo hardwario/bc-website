@@ -196,7 +196,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 7. Install **Python 3** (required by the **BigClown Firmware Tool**):
 
-        sudo apt install python3.5 python3-pip
+        sudo apt install python3.5 python3-pip python3-setuptools
 
 8. Update **pip** (Python Package Manager) to the latest version:
 

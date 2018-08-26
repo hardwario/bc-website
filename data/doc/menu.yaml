@@ -36,7 +36,7 @@ items:
     - title: "Synology NAS installation"
       link: "doc/tutorials/synology-nas-installation.md"
   - title: "Projects"
-    link: "doc/projects/radio-push-button.md"
+    link: "doc/projects/radio-door-sensor.md"
     items:
     - title: "Radio Door Sensor"
       link: "doc/projects/radio-door-sensor.md"

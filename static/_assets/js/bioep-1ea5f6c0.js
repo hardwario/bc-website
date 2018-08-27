@@ -95,19 +95,19 @@ window.bioEp = {
       "#bio_ep {display: none; position: fixed; width: " + this.width + "px; height: " + this.height + "px; font-size: 16px; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); background-color: #fff; box-shadow: 0px 1px 4px 0 rgba(0,0,0,0.5); z-index: 10002;}" +
 			"#bio_ep .row {height:420px; padding: 40px 20px; }" +
       "#bio_ep h2.title {padding-top: 0px; }" +
-			"#bio_ep_close {position: absolute; left: 100%; margin: -37.5px 0 0 -37.5px; background: white url('../_assets/svg/close.svg') no-repeat center center; background-size: 50% 50%; border-radius: 50%; width:75px; height:75px; color: #fff; cursor: pointer; transition: all 0.7s ease 0s;box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);}" +
+			"#bio_ep_close {position: absolute; left: 100%; margin: -37.5px 0 0 -37.5px; background: white url('/_assets/svg/close.svg') no-repeat center center; background-size: 50% 50%; border-radius: 50%; width:75px; height:75px; color: #fff; cursor: pointer; transition: all 0.7s ease 0s;box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);}" +
       "#bio_ep_close:hover {transform: scale(1.2);}" +
 			this.css
 		);
 
 		// Create the style element
-		var style = document.createElement("style");
+		var style = document.createElement("xstyle");
 		style.type = "text/css";
 		style.appendChild(css);
 
 		// Insert it before other existing style
 		// elements so user CSS isn't overwritten
-		document.head.insertBefore(style, document.getElementsByTagName("style")[0]);
+		document.head.insertBefore(style, document.getElementsByTagName("xstyle")[0]);
 	},
 
 	// Add the popup to the page

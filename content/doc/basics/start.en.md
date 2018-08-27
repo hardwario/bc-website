@@ -4,7 +4,7 @@ menu: "doc"
 parent: "basics"
 ---
 
-## Indiegogo & Starter Kit guide
+## Starter Kit quick guide
 
 1.  **Download the latest BigClown Playground**
 
@@ -20,11 +20,12 @@ parent: "basics"
 
     {{% img-zoom src="playground-devices-connect.png"  %}}
 
-4. The **radio nodes** from your kit should be already paired with your **USB Dongle**, please check that out.
-
-    In case you need to pair new nodes, please follow these [**radio pairing instructions**]({{< relref "doc/projects/radio-door-sensor.md#pair-the-radio-door-sensor" >}})
+4. The **radio nodes** from your kit should be already programmed and paired with your **USB Dongle**, please check that out in the image below.
 
     {{% img-zoom src="playground-devices-connected.png"  %}}
+
+    In case you need to pair new nodes, please follow these [**radio pairing instructions**]({{< relref "doc/projects/radio-door-sensor.md#pair-the-radio-door-sensor" >}}).
+    If you would like to flash other firmware to the Core Module, follow this [**firmware flash chapter**]({{<relref "doc/projects/radio-door-sensor.md#flash-door-sensor-firmware">}}).
 
 5. Switch to the **Messages** tab and put batteries to your kit, you should see incoming messages.
 
@@ -43,7 +44,7 @@ parent: "basics"
 
 ## Next steps
 
-* Check out other BigClown [**projects**](../../projects)
+* Check out other BigClown [**projects**]({{< relref "doc/projects/radio-door-sensor.md" >}})
 * Use your [**Raspberry PI**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) or other [**single board computer (SBC)**]({{< relref "doc/tutorials/raspberry-pi-installation.md#setup-on-original-raspbian">}}) as a server.
 * Learn about [**MQTT**]({{<relref "doc/interfaces/mqtt-protocol.md">}}) and [**BigClown MQTT topics**]({{<relref "doc/interfaces/mqtt-topics.md">}})
 * Try other [**integrations**]({{<relref "doc/integrations/grafana-for-visualization.md" >}}) with **Grafana**, **Blynk**, **IFTTT**, **Ubidots** and others.

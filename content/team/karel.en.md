@@ -1,6 +1,6 @@
 ---
 title: Karel Blavka
-position: Firmware Designer
+position: Full Stack Developer
 intro: "I am Karel Blavka"
 email: karel.blavka@hardwario.com
 weight: 6

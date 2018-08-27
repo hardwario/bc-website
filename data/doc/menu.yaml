@@ -38,10 +38,8 @@ items:
     - title: "Synology NAS installation"
       link: "doc/tutorials/synology-nas-installation.md"
   - title: "Projects"
-    link: "doc/projects/_index.md"
+    link: "doc/projects/radio-door-sensor.md"
     items:
-    - title: "Projects"
-      link: "doc/projects/_index.md"
     - title: "Radio Door Sensor"
       link: "doc/projects/radio-door-sensor.md"
     - title: "Radio Soil Sensor"

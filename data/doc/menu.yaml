@@ -1,7 +1,9 @@
 items:
   - title: "Basics"
-    link: "doc/basics/getting-started.en.md"
+    link: "doc/basics/start.en.md"
     items:
+    - title: "Start"
+      link: "doc/basics/start.en.md"
     - title: "Getting Started"
       link: "doc/basics/getting-started.en.md"
     - title: "Project Workflow"
@@ -36,8 +38,10 @@ items:
     - title: "Synology NAS installation"
       link: "doc/tutorials/synology-nas-installation.md"
   - title: "Projects"
-    link: "doc/projects/radio-door-sensor.md"
+    link: "doc/projects/_index.md"
     items:
+    - title: "Projects"
+      link: "doc/projects/_index.md"
     - title: "Radio Door Sensor"
       link: "doc/projects/radio-door-sensor.md"
     - title: "Radio Soil Sensor"

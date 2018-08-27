@@ -1,7 +1,7 @@
 ---
-title: Domů
+title: Představení
 url: /
-menu: ["main", "footer"]
+menu: ["footer"]
 weight: 1
 meta:
     title: IoT Kit pro Mejkry

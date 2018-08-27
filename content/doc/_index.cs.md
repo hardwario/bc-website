@@ -1,6 +1,5 @@
 ---
 title: "Nauč se"
-menu: "main"
 weight: 200
 ---
 

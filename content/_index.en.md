@@ -1,7 +1,7 @@
 ---
-title: Home
+title: Tour
 url: /
-menu: ["main", "footer"]
+menu: ["footer"]
 weight: 1
 meta:
     title: IoT Kit for Makers

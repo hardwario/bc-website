@@ -10,6 +10,12 @@
 
         <ul class="navtop d-none d-lg-flex">
           {{ $currentPage := . }}
+
+          <li class="navtop__item d-block d-lg-flex align-items-center">
+            <a href="{{ .Site.Params.homeURL }}#tour" class="navtop__link">Tour</a>
+          </li>
+
+
         {{ range .Site.Menus.main }}
 
             {{ if .HasChildren }}

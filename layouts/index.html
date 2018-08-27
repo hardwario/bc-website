@@ -11,7 +11,7 @@
         <h2 class="intro__title2 text-uppercase">{{ i18n "we_are_makers" | safeHTML }}</h2>
         <a href="http://www.youtube.com/watch?v=S-IZY1JqNTQ?autoplay=1" class="intro__play d-block d-lg-none magnificYoutube"></a>
         <div class="intro__button d-block d-lg-flex align-items-lg-center flex-lg-column">
-          <a href="#playerArea" class="button button--green">{{ i18n "start_today" }}</a>
+          <a href="#tour" class="button button--green">{{ i18n "start_today" }}</a>
         </div>
         <div class="intro__arrow d-none d-lg-inline-block"></div>
       </div>
@@ -21,6 +21,7 @@
   </div>
 </section>
 
+<!--
 <section>
   <div id="playerArea">
     <div class="bg bg--bubbleswhite">
@@ -40,6 +41,103 @@
     </div>
   </div>
 </section>
+-->
+<section>
+    <div class="container" id = "tour">
+      <div class="row">
+        <div class="col">
+          <h2 class="title text-center">{{ i18n "make_something_yours" | safeHTML }}</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section>
+  <div class="step__item">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-lg order-lg-1">
+          <a href="/_assets/images/poster.jpg" title="title" class="step__image magnificPopup">
+            <img src="/_assets/images/poster.jpg" alt="title" />
+
+          </a>
+        </div>
+
+        <div class="col-12 col-lg order-lg-2">
+          <div class="step__content">
+            <h3 class="step__title"><span>Step&nbsp;1</span>Build BigClown Hub</h3>
+            <div class="text text--step">
+              Just one-time set-up for you home, office or any place you choose. You will need computer (Raspberry Pi) and our USB Dongle.
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="step__item">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-lg order-lg-2">
+          <a href="/_assets/images/poster.jpg" title="title" class="step__image magnificPopup">
+            <img src="/_assets/images/poster.jpg" alt="title" />
+
+          </a>
+        </div>
+
+        <div class="col-12 col-lg order-lg-1">
+          <div class="step__content">
+            <h3 class="step__title"><span>Step&nbsp;2</span>Compose your device</h3>
+            <div class="text text--step">
+              Make decision what to build, get modules and assemble your device without soldering thank to Plug'n'Play system.
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="step__item">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-lg order-lg-1">
+          <a href="/_assets/images/poster.jpg" title="title" class="step__image magnificPopup">
+            <img src="/_assets/images/poster.jpg" alt="title" />
+
+          </a>
+        </div>
+
+        <div class="col-12 col-lg order-lg-2">
+          <div class="step__content">
+            <h3 class="step__title"><span>Step&nbsp;3</span>Connect it</h3>
+            <div class="text text--step">
+              Connect your device with BigClown Hub and bring it to life - connect mobile app, voice assistant (Alexa, Google Home, Siri) without programming.
+
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
 {{ partial "www/kits-easy.html" . }}
 

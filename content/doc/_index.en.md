@@ -1,6 +1,5 @@
 ---
 title: "Learn"
-menu: "main"
 weight: 200
 ---
 

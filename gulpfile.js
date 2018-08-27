@@ -5,6 +5,7 @@ const child = require('child_process');
 const sass = require("gulp-sass");
 const hash = require("gulp-hash");
 const del = require("del");
+const hugo = child.spawn('hugo', ['serve', '--bind=0.0.0.0']);
 var purify = require('gulp-purifycss');
 let cleanCSS = require('gulp-clean-css');
 

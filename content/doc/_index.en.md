@@ -10,16 +10,16 @@ Choose any **[Starter kit](../kits)** and use the **{{% shop "USB Dongle" %}}** 
 <img src="doc-title-page.png" usemap="#image-map" style="width:100%">
 
 <map name="image-map">
-    <area target="" alt="" title="" href="https://www.bigclown.com/kits/climate-monitor/" coords="63,86,119,169" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/kits/climate-monitor/" coords="119,113,233,138" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/kits/motion-detector/" coords="121,176,231,199" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/kits/motion-detector/" coords="232,152,290,226" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/kits/lcd-thermostat/" coords="115,289,56,213" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/kits/lcd-thermostat/" coords="116,237,228,264" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/kits/" coords="119,309,227,342" shape="rect">
+    <area target="" alt="" title="" href="../kits/climate-monitor/" coords="63,86,119,169" shape="rect">
+    <area target="" alt="" title="" href="../kits/climate-monitor/" coords="119,113,233,138" shape="rect">
+    <area target="" alt="" title="" href="../kits/motion-detector/" coords="121,176,231,199" shape="rect">
+    <area target="" alt="" title="" href="../kits/motion-detector/" coords="232,152,290,226" shape="rect">
+    <area target="" alt="" title="" href="../kits/lcd-thermostat/" coords="115,289,56,213" shape="rect">
+    <area target="" alt="" title="" href="../kits/lcd-thermostat/" coords="116,237,228,264" shape="rect">
+    <area target="" alt="" title="" href="../kits/" coords="119,309,227,342" shape="rect">
     <area target="" alt="" title="" href="https://shop.bigclown.com/modules-tags/" coords="47,375,287,527" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/doc/interfaces/sub-ghz-radio/" coords="336,148,408,249" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/doc/tutorials/raspberry-pi-installation/" coords="429,28,761,171" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/doc/tutorials/playground-setup/" coords="429,193,763,357" shape="rect">
-    <area target="" alt="" title="" href="https://www.bigclown.com/doc/tutorials/raspberry-pi-installation/#differences-from-the-original-raspbian" coords="447,378,744,523" shape="rect">
+    <area target="" alt="" title="" href="interfaces/sub-ghz-radio/" coords="336,148,408,249" shape="rect">
+    <area target="" alt="" title="" href="tutorials/raspberry-pi-installation/" coords="429,28,761,171" shape="rect">
+    <area target="" alt="" title="" href="basics/start/" coords="429,193,763,357" shape="rect">
+    <area target="" alt="" title="" href="tutorials/raspberry-pi-installation/#differences-from-the-original-raspbian" coords="447,378,744,523" shape="rect">
 </map>

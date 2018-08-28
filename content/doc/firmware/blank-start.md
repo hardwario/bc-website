@@ -57,11 +57,11 @@ Therefore your first step most likely will be to open the `app/application.c` fi
 
 Normally, the development cycle is the repetition of the following 3 steps:
 
-* Edit the file `application.c`.
+* Edit the file `app/application.c`.
 
 * Run `make` to produce the firmware image `firmware.bin`.
 
-* Run `bcf flash --device /dev/ttyUSBx` to upload the firmware image into the **Core Module** or **USB Dongle**.
+* Run `bcf flash --device /dev/ttyUSBx` to upload the firmware image into the **Core Module** or **USB Dongle**. On Windows use `COMx` device names.
 
 {{% core-module-2 %}}
 

@@ -4,7 +4,20 @@ menu: "doc"
 parent: "basics"
 ---
 
-## Starter Kit quick guide
+When you open the BigClown package, you'll see that we've prepared each kit to be assembled in the separate bag. Please open each bag and build the kit with the modules. Each bag of **Core Module** is also labeled with firmware name and version.
+
+## Build the kits
+
+Check the [**video guides**](https://www.youtube.com/playlist?list=PLfRfhTxkuiVyc9P1TWw_DnAeh2INXwpFK) how to put kits together.
+
+Do not put batteries to the Battery Module yet. We will do that later in the next chapter.
+
+Be careful how to connect **{{<shop "Mini Battery Module">}}**.
+<div style="width:40%">
+{{% img-zoom src="mini-battery-module-orientation.png"  %}}
+</div>
+
+## Software guide
 
 1.  **Download the latest BigClown Playground**
 
@@ -44,7 +57,13 @@ parent: "basics"
 
 ## Next steps
 
-* Check out other BigClown [**projects**]({{< relref "doc/projects/radio-door-sensor.md" >}})
-* Use your [**Raspberry PI**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) or other [**single board computer (SBC)**]({{< relref "doc/tutorials/raspberry-pi-installation.md#setup-on-original-raspbian">}}) as a server.
-* Learn about [**MQTT**]({{<relref "doc/interfaces/mqtt-protocol.md">}}) and [**BigClown MQTT topics**]({{<relref "doc/interfaces/mqtt-topics.md">}})
+The goal of this page is to show the basics in a few simple steps. Now you can learn more by browsing the documentation or by visiting the links below.
+
+* Check out other BigClown [**projects**]({{< relref "doc/projects/radio-door-sensor.md" >}}).
+* Take a look at the [**Module Overview**]({{< relref "doc/basics/module-overview.en.md" >}}).
+* Learn about [**MQTT**]({{<relref "doc/interfaces/mqtt-protocol.md">}}) and [**BigClown MQTT topics**]({{<relref "doc/interfaces/mqtt-topics.md">}}) to control LEDs and relays.
 * Try other [**integrations**]({{<relref "doc/integrations/grafana-for-visualization.md" >}}) with **Grafana**, **Blynk**, **IFTTT**, **Ubidots** and others.
+* Use your [**Raspberry PI**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) or other [**single board computer (SBC)**]({{< relref "doc/tutorials/raspberry-pi-installation.md#setup-on-original-raspbian">}}) as a server.
+* [**Flash other firmware**]({{<relref "doc/projects/radio-door-sensor.md#flash-door-sensor-firmware">}}) or [**write your own firmware**]({{<relref "doc/firmware/basic-overview.md">}}) for the **Core Module**.
+* Check the [**Core Module pinouts**]({{<relref "doc/hardware/header-pinout.md">}}) and add your own buttons, relays and sensors.
+

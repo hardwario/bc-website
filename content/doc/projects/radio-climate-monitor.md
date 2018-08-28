@@ -32,7 +32,7 @@ This document will guide you through the **Radio Climate Monitor** project. You 
 
     * **BigClown Toolchain** installed
 
-        You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
+        You can find more information in the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}).
 
 ## Firmware Upload
 
@@ -201,6 +201,6 @@ Firstly we need to configure our **Node-RED** app.
 
 * [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})

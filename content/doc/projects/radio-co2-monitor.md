@@ -37,7 +37,7 @@ This document will guide you through the **Radio CO2 Monitor** project. You will
 
 * **BigClown Firmware Tool** installed
 
-    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).
+    You can find more information in the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}).
 
     {{% note "info" %}}`bcf` is part of Windows Playground Setup already.{{% /note %}}
 
@@ -53,7 +53,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 
     {{% note "info" %}}You may want to update available firmwares by `bcf update` if the installation has been prolonged for a longer time after Playground Setup{{% /note %}}
 
-    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/tutorials/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
+    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "doc/firmware/toolchain-guide.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
 
     {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
 
@@ -214,6 +214,6 @@ Firstly we need to configure our **Node-RED** app.
 
 * [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})

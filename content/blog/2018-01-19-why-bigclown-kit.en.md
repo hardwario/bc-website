@@ -140,7 +140,7 @@ Or you can discover other ways unintended by us, we will be really excited! Ther
 
 ### How can I extend integration or add software features ?
 
-On firmware level you can implement your application or features in ANSI C with help of BigClown SDK (have a look at [SDK examples](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples)) and pre-prepared [BigClown Toolchain](https://www.bigclown.com/doc/tutorials/toolchain-guide/).
+On firmware level you can implement your application or features in ANSI C with help of BigClown SDK (have a look at [SDK examples](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples)) and pre-prepared [BigClown Toolchain](https://www.bigclown.com/doc/firmware/toolchain-guide/).
 
 On PC/Server/Cloud interoperability have several levels:
 

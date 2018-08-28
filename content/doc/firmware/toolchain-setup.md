@@ -72,7 +72,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
     {{% img src="windows-toolchain.png" %}}
 
-6. Continue on the document [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}). You may also try:
+6. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -122,7 +122,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         sudo pip3 install --upgrade --no-cache-dir bcf
 
-9. Continue on the document [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}). You may also try:
+9. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -218,7 +218,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
         whoami
 
-11. Continue on the document [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}). You may also try:
+11. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -307,7 +307,7 @@ If you have other Linux distribution or unsupported Ubuntu version, we recommend
 
         sudo pip3 install --upgrade --no-cache-dir bcf
 
-7. Continue on the document [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}). You may also try:
+7. Continue on the document [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}). You may also try:
 
     * [**Integration with Atom**]({{< relref "#integration-with-atom" >}}) or
 
@@ -380,4 +380,4 @@ How to start debugging the project:
 
 ## Related Documents
 
-* [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})

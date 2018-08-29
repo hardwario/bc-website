@@ -2,7 +2,7 @@
 title: Toolchain Guide
 ---
 
-{{% note "danger" %}}This document assumes that you have necessary tools installed according to the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).{{% /note %}}
+{{% note "danger" %}}This document assumes that you have necessary tools installed according to the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}).{{% /note %}}
 
 {{% note "warning" %}}All of the steps below assume work with **BigClown Toolchain** in Windows or with the **Terminal** application in macOS or Ubuntu.{{% /note %}}
 
@@ -297,4 +297,4 @@ There can be various reasons:
 
 ## Related Documents
 
-* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})

@@ -4,7 +4,7 @@ title: "Blank Start"
 
 This document will guide you through a blank firmware creation, explains the structure of the created project and the typical development cycle.
 
-{{% note "danger" %}}This document assumes that you have necessary tools installed according to the document [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}).{{% /note %}}
+{{% note "danger" %}}This document assumes that you have necessary tools installed according to the document [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}).{{% /note %}}
 
 ## Hello World
 
@@ -57,11 +57,11 @@ Therefore your first step most likely will be to open the `app/application.c` fi
 
 Normally, the development cycle is the repetition of the following 3 steps:
 
-* Edit the file `application.c`.
+* Edit the file `app/application.c`.
 
 * Run `make` to produce the firmware image `firmware.bin`.
 
-* Run `bcf flash --device /dev/ttyUSBx` to upload the firmware image into the **Core Module** or **USB Dongle**.
+* Run `bcf flash --device /dev/ttyUSBx` to upload the firmware image into the **Core Module** or **USB Dongle**. On Windows use `COMx` device names.
 
 {{% core-module-2 %}}
 
@@ -107,8 +107,8 @@ make update
 
 ## Related Documents
 
-* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})
 
 * [**Debugging**]({{< relref "doc/firmware/debugging.md" >}})

@@ -2,7 +2,20 @@
 title: "Basic Overview"
 ---
 
-In this tutorial we will go through basic concepts of firmware for BigClown ecosystem. We are going to learn how to install and to work with tools which allow us to work with the firmware. With the help of practical examples we will take a look at how to make various peripherals to work together with API from the [**BigClown SDK**](https://sdk.bigclown.com/) - further refrerred as **SDK** only.
+You can compile and flash your own code to the Core Module. To do that you need to install [**BigClown toolchain**]({{<relref "doc/firmware/toolchain-setup.md" >}}) to your computer, or you can compile code also on **Raspberry Pi** with our [**bc-raspbian**]({{<relref "doc/tutorials/raspberry-pi-installation.md">}}) image and installing the [**GCC package**](https://forum.bigclown.com/t/how-to-compile-bigclown-firmware-on-raspberry-pi/271/10?u=hub.martin)
+
+Toolchain comes with many useful tools, please see the **Tools** section in the menu where tools like [**bcf**]({{< relref "doc/tools/bcf.md" >}}) are explained.
+
+Every BigClown Module has its own library in the [**BigClown SDK**](https://sdk.bigclown.com/). So you just call **init** function and set the **callback** function.
+
+In this section you will find code examples for **Core Module** and all the other **BigClown Modules**. More example code can be found in the GitHub [**sdk/_examples**](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples) folder.
+
+## Firmware flashing
+
+With these tools you can flash new firmware. Tools can automatically download pre-compiled firmwares from GitHub and you can also choose your own `*.bin` file to flash.
+
+* [**BigClown Playground**]({{< relref "doc/projects/radio-door-sensor.md#flash-door-sensor-firmware" >}}) is a GUI multi-platform tool.
+* [**BigClown Flasher**]({{< relref "doc/tools/bcf.md" >}}) (`bcf`) command line tool.
 
 ## Example Code
 
@@ -47,7 +60,7 @@ Firmware is implemented in pure **C language**, which is industrially accepted l
 
 {{% note "info" %}}Effective use of hardware resources is important for developing of low-power devices. This is primary goal of BigClown ecosystem.{{% /note %}}
 
-You can choose from wide variety of systems and tools. Windows, macOS a Ubuntu (and other Debian derivatives) are supported. For information how to install required tools, please see [**Toolchain setup**]({{< relref "doc/tutorials/toolchain-setup.md">}}). You can find more information on how to use them in [**Toolchain guide**]({{< relref "doc/tutorials/toolchain-guide.md">}}).
+You can choose from wide variety of systems and tools. Windows, macOS a Ubuntu (and other Debian derivatives) are supported. For information how to install required tools, please see [**Toolchain setup**]({{< relref "doc/firmware/toolchain-setup.md">}}). You can find more information on how to use them in [**Toolchain guide**]({{< relref "doc/firmware/toolchain-guide.md">}}).
 
 ## Diving Deep to SDK
 

@@ -129,6 +129,64 @@ Example of output:
 # 8.50 <I> In application task
 ```
 
+## Read log
+
+Read log with connected device and following command:
+```
+bcf log --device [device]
+```
+
+[device] port can be founded by command:
+```
+bcf log devices
+```
+Example of outuput:
+```
+# 0.50 <I> In application task
+# 2.50 <I> In application task
+# 4.50 <I> In application task
+# 6.50 <I> In application task
+# 8.50 <I> In application task
+```
+
+## Colored logs
+
+You can colorized your log output to highlight errors or warnings as you can see below:
+
+{{% img-zoom src="debugging_colored_terminal.PNG" %}}
+
+As you did debugging in previous chapter by command
+
+```
+bc_log_info("Log");
+```
+
+You can colorized logs to 4 different colors as following commands down below. All colors you can see on screenshot in the beginning of this chapter.
+
+**Debug**
+
+```
+bc_log_debug("Log");
+```
+
+**Info**
+
+```
+bc_log_info("Log");
+```
+
+**Warning**
+
+```
+bc_log_warning("Log");
+```
+
+**Error**
+
+```
+bc_log_error("Log");
+```
+
 ## Getting more
 
 Sooner or later when you are in troubles you might come to the idea that you **want to look inside** the CPU check the current values of registers or memory areas. Good news, you are not alone! Bad news, it's not that easy as on x86 Borland Pascal compiler with embedded debugger and profiler. Nevertheless there is a standard for that by IEEE IEEE Standard 1149.1-1990 shortly called [JTAG](https://en.wikipedia.org/wiki/JTAG) after the group that made the standard. This standard is intended for those situations when you need to look inside. It is kind of periscope for your desktop PC into the MCU.

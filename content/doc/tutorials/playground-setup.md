@@ -6,7 +6,7 @@ In this document we will install a set of components that are fundamental for th
 
 This guide is for development environment. For production usage please follow [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) tutorial where is prepared **bc-raspbian** image and instructions for manual installation of the tools on generic embedded Linux machine.
 
-If you would like to develop your **custom gateway and node firmwares** then you need also to follow [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
+If you would like to develop your **custom gateway and node firmwares** then you need also to follow [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
 
 Playground fundamental components are:
 
@@ -448,6 +448,6 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
 * [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})

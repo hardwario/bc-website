@@ -50,7 +50,7 @@ You can start with our existing pre-built firmware images, or write your own usi
 
 To make firmware uploads simple, we have developed the **BigClown Firmware Tool** which streamlines the entire flashing process.
 
-{{% note "info" %}}More information about the **BigClown Firmware Tool** can be found in these documents [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}}) and [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}}).{{% /note %}}
+{{% note "info" %}}More information about the **BigClown Firmware Tool** can be found in these documents [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}) and [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}).{{% /note %}}
 
 ### Phase #4: Hardware Assembling
 
@@ -138,9 +138,9 @@ Get social - start with a tweet, screenshot, post to the forum or get to the poi
 
 * [**Getting Started**]({{< relref "doc/basics/getting-started.en.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/tutorials/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/tutorials/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})
 
 * [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
 

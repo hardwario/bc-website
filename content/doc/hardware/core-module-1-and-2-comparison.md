@@ -26,7 +26,7 @@ This means that the flashing procedure is now the same as with the USB Dongle. P
 ## Flashing Core Module R1
 
 1. Connect the Micro USB cable to the Core Module and your computer.
-2. You have to switch to [Core Module to the DFU mode](https://www.bigclown.com/doc/tutorials/toolchain-guide/#switching-core-module-into-dfu-mode).
+2. You have to switch to [Core Module to the DFU mode](https://www.bigclown.com/doc/firmware/toolchain-guide/#switching-core-module-into-dfu-mode).
 3. Upload firmware with following command
 
         bcf flash --device dfu [firmware]:[version]

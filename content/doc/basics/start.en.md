@@ -4,9 +4,34 @@ menu: "doc"
 parent: "basics"
 ---
 
-When you open the BigClown package, you'll see that we've prepared each kit to be assembled in the separate bag. Please open each bag and build the kit with the modules. Each bag of **Core Module** is also labeled with firmware name and version.
+Thank you for choosing **BigClown IoT kit for makers**. This page will help you with the first steps. Starter kits are pre-programmed and already paired with the **{{<shop "Radio Dongle" >}}** for the easiest start. In this guide you use your computer to get BigClown up and running. Later you can
 
-## Build the kits
+## Support
+
+With BigClown IoT kit you also get the technical support. In case you run into the trouble or something is not clear for you, let us know. We are here to help you. You have many options to contact us:
+
+- Use the online chat icon in the bottom right corner
+- Write us an email to **<a href="mailto:support@bigclown.com">support@bigclown.com</a>**
+- Use Forum **<a href="https://forum.bigclown.com/">https://forum.bigclown.com/</a>**
+
+## Get Ready
+
+When you open the BigClown package, you see that we've prepared each kit to be assembled in the separate bag. Please open each bag and build the kit with the modules. In the each bag the **Core Module** is also pre-programmed.
+
+<div class="row">
+    <div class="col-sm-4">
+        {{% img-zoom src="starter-kit-box.jpg"  %}}
+    </div>
+    <div class="col-sm-4">
+        {{% img-zoom src="kit-bag.jpg"  %}}
+    </div>
+    <div class="col-sm-4">
+        {{% img-zoom src="module-bag.jpg"  %}}
+    </div>
+</div>
+
+
+## Build devices
 
 Check the [**video guides**](https://www.youtube.com/playlist?list=PLfRfhTxkuiVyc9P1TWw_DnAeh2INXwpFK) how to put kits together.
 
@@ -23,17 +48,17 @@ Be careful how to connect **{{<shop "Mini Battery Module">}}**.
 
     [**BigClown Playground**](https://github.com/bigclownlabs/bch-playground/releases/latest)
 
-2. Connect the {{% shop "USB Dongle" %}} to your computer
+2. Connect the **{{% shop "Radio Dongle" %}}** to your computer
 
     The drivers will install automatically (FTDI drivers).
 
 3. Run the **BigClown Playground**, go to the **Device** tab.
 
-    Choose the **USB Dongle** serial port and click **Connect**
+    Choose the **{{% shop "Radio Dongle" %}}** serial port and click **Connect**
 
     {{% img-zoom src="playground-devices-connect.png"  %}}
 
-4. The **radio nodes** from your kit should be already programmed and paired with your **USB Dongle**, please check that out in the image below.
+4. The **radio nodes** from your kit should be already programmed and paired with your **{{% shop "Radio Dongle" %}}**, please check that out in the image below.
 
     {{% img-zoom src="playground-devices-connected.png"  %}}
 

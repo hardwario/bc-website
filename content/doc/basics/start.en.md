@@ -4,7 +4,7 @@ menu: "doc"
 parent: "basics"
 ---
 
-Thank you for choosing **BigClown IoT kit for makers**. This page will help you with the first steps. Starter kits are pre-programmed and already paired with the **{{<shop "Radio Dongle" >}}** for the easiest start. In this guide you use your computer to get BigClown up and running. Later you can
+Thank you for choosing **BigClown IoT kit for makers**. This page will help you with the first steps. Starter kits are pre-programmed and already paired with the **{{<shop "Radio Dongle" >}}** for the easiest start. In this guide you use your computer to get BigClown up and running. Later you can connect the **{{<shop "Radio Dongle" >}}** to the **{{<shop "BigClown HUB" >}}** or any server and run the Playground permanently.
 
 ## Support
 

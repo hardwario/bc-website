@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "About BigClown IoT kit for makers"
 menu: "doc"
 parent: "basics"
 ---

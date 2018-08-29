@@ -4,10 +4,10 @@ items:
     items:
     - title: "Start"
       link: "doc/basics/start.en.md"
-    - title: "Getting Started"
+    - title: "About BigClown IoT kit for makers"
       link: "doc/basics/getting-started.en.md"
-    - title: "Project Workflow"
-      link: "doc/basics/project-workflow.en.md"
+    #- title: "Project Workflow"
+    #  link: "doc/basics/project-workflow.en.md"
     - title: "Quick Tutorial"
       link: "doc/basics/quick-tutorial.en.md"
     - title: "Module Overview"

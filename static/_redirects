@@ -46,6 +46,8 @@ https://doc.bigclown.com/mqtt https://www.bigclown.com/doc/interfaces/mqtt-topic
 https://doc.bigclown.com/topics https://www.bigclown.com/doc/interfaces/mqtt-topics/ 301!
 https://www.bigclown.com/cz/* https://www.bigclown.com/cs/:splat 301!
 https://www.bigclown.com/info/* https://www.bigclown.com/about/ 301!
+https://start.bigclown.com/* https://www.bigclown.com/doc/basics/start/ 301!
+https://start.bigclown.cz/* https://www.bigclown.com/doc/basics/start/ 301!
 
 # Compatibility
 https://www.bigclown.com/big-kit-basic/* https://www.bigclown.com/multi-kit-basic/:splat 301!

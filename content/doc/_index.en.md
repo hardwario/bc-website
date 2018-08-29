@@ -6,14 +6,6 @@ weight: 200
 
 <script src="image-map.min.js"></script>
 
-<style>
-    .my-img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-</style>
-
 Choose any **[Starter kit](../kits)** and use the **{{% shop "USB Dongle" %}}** with **BigClown Playground** app to start in a few minutes. It's that easy!
 
 Continue to the [**Start page**]({{<relref "doc/basics/start.en.md">}}) where you will learn the basics.

@@ -1,10 +1,10 @@
 items:
   - title: "Basics"
-    link: "doc/basics/start.en.md"
+    link: "doc/basics/quick-start-guide.en.md"
     items:
-    - title: "Start"
-      link: "doc/basics/start.en.md"
-    - title: "About BigClown IoT kit for makers"
+    - title: "Quick Start Guide"
+      link: "doc/basics/quick-start-guide.en.md"
+    - title: "About BigClown IoT Kit For Makers"
       link: "doc/basics/getting-started.en.md"
     #- title: "Project Workflow"
     #  link: "doc/basics/project-workflow.en.md"

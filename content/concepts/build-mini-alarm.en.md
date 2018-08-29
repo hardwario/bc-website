@@ -43,7 +43,7 @@ You can you use it in your cottage or you can take your mini alarm on a vacation
  {{% p-step-content order = "2" step = "3" title = "Connect your device" %}}
  Open your web browser and register in [IoT Manager](https://iot-manager.cz). Full link you will find in package also with full instructions how to connect devices. No advantages skills needed.{{% /p-step-content %}}
  {{< p-step-gallery order = "1" >}}
-  {{< p-step-gallery-image src = "/projects/wireless-climate-monitor/3a.jpg" src-full = "/projects/wireless-climate-monitor/3a.jpg" title = "USB Dongle" >}}
+  {{< p-step-gallery-image src = "/projects/wireless-climate-monitor/3a.jpg" src-full = "/projects/wireless-climate-monitor/3a.jpg" title = "Radio Dongle" >}}
   {{< p-step-gallery-image src = "/projects/wireless-climate-monitor/3b.jpg" src-full = "/projects/wireless-climate-monitor/3b.jpg" title = "Raspberry Pi" zoom = "true" >}}
  {{< /p-step-gallery >}}
 {{< /p-step >}}

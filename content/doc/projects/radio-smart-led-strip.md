@@ -24,7 +24,7 @@ This document will guide you through the **Radio Smart LED Strip** project. You 
 
 * Other components:
 
-    * 1x **BigClown USB Dongle** (not included in the kit)
+    * 1x **BigClown Radio Dongle** (not included in the kit)
 
     * 1x RGB or RGBW Digital LED strip (not included in the kit)
 
@@ -48,7 +48,7 @@ This document will guide you through the **Radio Smart LED Strip** project. You 
 
 In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **Core Module**.
 
-{{< note "note" "Firmware upload to USB Dongle was done in Playground Setup." />}}
+{{< note "note" "Firmware upload to Radio Dongle was done in Playground Setup." />}}
 
 1. Connect the Micro USB cable to the **Core Module** and your computer.
 
@@ -112,7 +112,7 @@ See short video with easy step by step demonstration:
 
     **http://localhost:1880/**
 
-    {{% note "info" %}}If you are using Raspberry PI with USB Dongle as a gateway type IP adress of your Raspberry: **http://xxx.xxx.xxx.xxx:1880/** To obtain IP adress follow documment [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}){{% /note %}}
+    {{% note "info" %}}If you are using Raspberry PI with Radio Dongle as a gateway type IP adress of your Raspberry: **http://xxx.xxx.xxx.xxx:1880/** To obtain IP adress follow documment [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-pi-login.md" >}}){{% /note %}}
 
 2. You should see the empty workspace with **Flow 1**.
 
@@ -140,13 +140,13 @@ See short video with easy step by step demonstration:
 
     {{% img-zoom src="node-red-gw-list.png" %}}
 
-{{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown USB Dongle** and **BigClown Gateway**.{{% /note %}}
+{{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown Radio Dongle** and **BigClown Gateway**.{{% /note %}}
 
-{{% note "warning" %}}If you can't see connected USB Dongle go again through [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) and check if all mentioned components are running properly. {{% /note %}}
+{{% note "warning" %}}If you can't see connected Radio Dongle go again through [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) and check if all mentioned components are running properly. {{% /note %}}
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Radio Smart LED strip**.
+In this section, we will create a radio link between the **Radio Dongle** and the **Radio Smart LED strip**.
 
 Follow these steps in **Node-RED**:
 
@@ -160,7 +160,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Smart LED Strip**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Smart LED Strip**) and the gateway (**Radio Dongle**).{{% /note %}}
 
 ## Communication Test
 
@@ -178,7 +178,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="radio-test.png" %}}
 
-{{< note "info" "If you are using Raspberry PI with USB Dongle as a gateway type IP adress of your Raspberry: **http://xxx.xxx.xxx.xxx:1880/** To obtain IP adress follow documment [**Raspberry Pi Login**]({{< relref \"doc/tutorials/raspberry-pi-login.md\" >}})." />}}
+{{< note "info" "If you are using Raspberry PI with Radio Dongle as a gateway type IP adress of your Raspberry: **http://xxx.xxx.xxx.xxx:1880/** To obtain IP adress follow documment [**Raspberry Pi Login**]({{< relref \"doc/tutorials/raspberry-pi-login.md\" >}})." />}}
 
 ## Integration with Blynk
 

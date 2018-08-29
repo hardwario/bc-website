@@ -36,8 +36,8 @@ All addresses are provided in a 7-bit format.
 | 0x58    | SGP30        | {{% shop "VOC Tag" %}}                                                   | Default address                         |
 | 0x5f    | HTS221       | {{% shop "Humidity Tag" %}} (R1.x)                                       |                                         |
 | 0x60    | MPL3115A2    | {{% shop "Barometer Tag" %}}, {{% shop "Climate Module" %}}              |                                         |
-| 0x64    | ATSHA204A    | {{% shop "Core Module" %}}, {{% shop "USB Dongle" %}}, {{% shop "Cloony" %}}| Channel I2C0                         |
-| 0x64    | ATSHA204A    | {{% shop "USB Dongle" %}}                                                | Channel I2C1                            |
+| 0x64    | ATSHA204A    | {{% shop "Core Module" %}}, {{% shop "Radio Dongle" %}}, {{% shop "Cloony" %}}| Channel I2C0                         |
+| 0x64    | ATSHA204A    | {{% shop "Radio Dongle" %}}                                                | Channel I2C1                            |
 
 {{< note "info" >}}
 Addresses 0x00-0x07 and 0x78-0x7F are I2C reserved addresses and cannot be used.

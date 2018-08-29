@@ -109,10 +109,10 @@ enclosures-button:
     small: Enclosure-BCE101-button.png
   link: https://shop.bigclown.com/3d-printed-enclosure-101/
 usb_dongle:
-  name: USB Dongle
+  name: Radio Dongle
   image:
     small: Modules_382x324_USB Dongle.png
-  link: https://shop.bigclown.com/usb-dongle/
+  link: https://shop.bigclown.com/radio-dongle/
 core-7:
   name: 7x Core Module
   image:

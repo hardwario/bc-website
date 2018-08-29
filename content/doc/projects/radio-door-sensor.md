@@ -33,7 +33,7 @@ It can be equiped with magnet for easy attach enclosure and works for many years
 -->
 ## Requirements
 
-* **{{% shop "USB Dongle" %}}**
+* **{{% shop "Radio Dongle" %}}**
 * **{{% shop "Core Module" %}}**
 * **{{% shop "Battery Module" %}}**
 * **{{% shop "Sensor Module" %}}**
@@ -42,7 +42,7 @@ It can be equiped with magnet for easy attach enclosure and works for many years
 * You will need **Windows**, **Linux** or **macOS** computer.
 
 {{< note "info">}}
-You can also connect USB Dongle to the Raspberry Pi or other single board computer. Please see [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) document.
+You can also connect Radio Dongle to the Raspberry Pi or other single board computer. Please see [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) document.
 {{< /note  >}}
 
 ## Download BigClown Playground
@@ -53,7 +53,7 @@ After download run the Playground application.
 
 {{% img-zoom src="playground-run.jpg" width="100%" %}}
 
-Now we need to make sure that modules use the latest firmware. You need to flash your **{{% shop "USB Dongle" %}}** and the remote node **{{% shop "Core Module" %}}**.
+Now we need to make sure that modules use the latest firmware. You need to flash your **{{% shop "Radio Dongle" %}}** and the remote node **{{% shop "Core Module" %}}**.
 
 
 ## Flash Door Sensor firmware
@@ -68,15 +68,15 @@ Now we need to make sure that modules use the latest firmware. You need to flash
 
 
 
-## Flash USB Dongle firmware
+## Flash Radio Dongle firmware
 
-1. Connect **just** the {{% shop "USB Dongle" %}} to the USB of your computer.
+1. Connect **just** the {{% shop "Radio Dongle" %}} to the USB of your computer.
 
 2. In Playground go to **Firmware tab**, select the firmware `bigclownlabs/bcf-gateway-usb-dongle`, choose the device's serial port in **Device** and click **FLASH FIRMWARE**.
 
     {{% img-zoom src="playground-flash-dongle.jpg" width="100%" %}}
 
-3. Keep **{{% shop "USB Dongle" %}}** connected to your computer
+3. Keep **{{% shop "Radio Dongle" %}}** connected to your computer
 
 ## Start the gateway
 

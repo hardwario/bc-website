@@ -72,7 +72,7 @@ optional arguments:
 
 If you would like permanent alias in `/dev/`, then apply these rules.
 
-For USB Dongle
+For Radio Dongle
 
     echo 'SUBSYSTEMS=="usb", ACTION=="add", KERNEL=="ttyUSB*", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6015", ATTRS{serial}=="bc-usb-dongle*", SYMLINK+="bcUD%n", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/bcUD%n"'  | sudo tee --append /etc/udev/rules.d/58-bigclown-usb-dongle.rules
 
@@ -89,7 +89,7 @@ In case you would like have configuration of `bcg` separate and not permanent in
 
         sudo mkdir -p /etc/bigclown
 
-2. Configuration file for Gateway USB Dongle
+2. Configuration file for Gateway Radio Dongle
 
     Open file
 
@@ -104,7 +104,7 @@ In case you would like have configuration of `bcg` separate and not permanent in
             host: localhost
             port: 1883
 
-3. Run service for Gateway USB Dongle
+3. Run service for Gateway Radio Dongle
 
         pm2 start /usr/bin/python3 --name "bcg-ud" -- /usr/local/bin/bcg -c /etc/bigclown/bcg-ud.yml
 

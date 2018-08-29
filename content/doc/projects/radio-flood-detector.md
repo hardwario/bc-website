@@ -20,7 +20,7 @@ This document will guide you through the **Radio Flood Detector** project. You w
 
     * 1x **BigClown Mini Battery Module**
 
-    * 1x **BigClown USB Dongle**
+    * 1x **BigClown Radio Dongle**
 
 * One of these options:
 
@@ -42,7 +42,7 @@ This document will guide you through the **Radio Flood Detector** project. You w
 
 In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **Core Module**.
 
-{{< note "note" "Firmware upload to USB Dongle was done in Playground Setup." />}}
+{{< note "note" "Firmware upload to Radio Dongle was done in Playground Setup." />}}
 
 1. Connect the Micro USB cable to the **Core Module** and your computer.
 
@@ -114,11 +114,11 @@ See short video with easy step by step demonstration:
 
     {{% img-zoom src="node-red-gw-list.png" %}}
 
-{{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown USB Dongle** and **BigClown Gateway**.{{% /note %}}
+{{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown Radio Dongle** and **BigClown Gateway**.{{% /note %}}
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Radio Flood Detector**.
+In this section, we will create a radio link between the **Radio Dongle** and the **Radio Flood Detector**.
 
 Follow these steps in **Node-RED**:
 
@@ -132,7 +132,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Flood Detector**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Flood Detector**) and the gateway (**Radio Dongle**).{{% /note %}}
 
 ## Communication Test
 

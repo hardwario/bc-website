@@ -12,7 +12,7 @@ Feel free to report all issues on [GitHub](https://github.com/bigclownlabs/bch-d
 ## Requirements
 
 - Workstation with Windows, macOS, Ubuntu
-- BigClown USB Dongle
+- BigClown Radio Dongle
 - One of the BigClown IoT kits
 - Raspberry Pi 3 or above
 

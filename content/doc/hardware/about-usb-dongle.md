@@ -1,8 +1,8 @@
 ---
-title: "About USB Dongle"
+title: "About Radio Dongle"
 ---
 
-{{< img-float src="usb-dongle.png" alt="USB Dongle" width="300" >}}
+{{< img-float src="usb-dongle.png" alt="Radio Dongle" width="300" >}}
 
 {{< include "shop/pitch-usb-dongle.md" >}}
 

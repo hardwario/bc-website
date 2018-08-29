@@ -98,9 +98,9 @@ Example of output:
 
 For mapping number to event type have a look into [BigClown SDK documentation for bc_button](https://sdk.bigclown.com/bc__button_8h_source.html#l00013)
 
-### USB Dongle
+### Radio Dongle
 
-There is USB UART FTDI chip on USB Dongle (you do not need any additional HW) but there is not button, so we will use slightly modified example with time as messages trigger:
+There is USB UART FTDI chip on Radio Dongle (you do not need any additional HW) but there is not button, so we will use slightly modified example with time as messages trigger:
 ```C
 #include <application.h>
 

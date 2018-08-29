@@ -301,7 +301,7 @@
           <xhtml:div
              style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 68px; white-space: nowrap; word-wrap: normal; text-align: center;">
             <xhtml:div
-               style="display:inline-block;text-align:inherit;text-decoration:inherit;">USB Dongle</xhtml:div>
+               style="display:inline-block;text-align:inherit;text-decoration:inherit;">Radio Dongle</xhtml:div>
           </xhtml:div>
         </foreignObject>
         <text
@@ -311,7 +311,7 @@
            text-anchor="middle"
            font-size="12px"
            font-family="Helvetica"
-           id="text72">USB Dongle</text>
+           id="text72">Radio Dongle</text>
       </switch>
     </g>
     <path

@@ -11,9 +11,9 @@ Feel free to report all issues on [GitHub](https://github.com/bigclownlabs/bch-f
 ## Requirements
 
 - Workstation with Windows, macOS
-- BigClown USB Dongle
+- BigClown Radio Dongle
 
-{{< note "warning" "Note that GUI firmware flashing tool currently supports only USB Dongle (or Cloony)." />}}
+{{< note "warning" "Note that GUI firmware flashing tool currently supports only Radio Dongle (or Cloony)." />}}
 
 ## GUI flashing app setup
 

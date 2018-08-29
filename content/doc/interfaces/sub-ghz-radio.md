@@ -26,7 +26,7 @@ The only objective radio communication range measurement is a so-called **line-o
 {{% note "success" %}}
 We've achieved [more than 500 meters line-of-sight](https://youtu.be/6zdQQdwV3GQ) communication range between two **Core Modules**.
 
-Also the single USB Dongle / Core Module is enough to [cover three-story house and whole garden around it](https://youtu.be/JplQxCYSClA).
+Also the single Radio Dongle / Core Module is enough to [cover three-story house and whole garden around it](https://youtu.be/JplQxCYSClA).
 {{% /note %}}
 
 On the other hand, if the radio communication range is not sufficient, the network can be expanded on IP level thanks to MQTT message replication to a master server.
@@ -43,7 +43,7 @@ There are two types of devices in the **BigClown** radio network:
 
     There can be only one gateway device per network. The gateway device can be either:
 
-    * BigClown **USB Dongle** (it can handle up to **32 devices**)
+    * BigClown **Radio Dongle** (it can handle up to **32 devices**)
     * BigClown **Core Module** (it can handle up to **16 devices**)
 
 * **Node Device**
@@ -88,7 +88,7 @@ make BAND=915
 ```
 
 Right now it is not possible to use `bcf` tool because all the firmwares are pre-compiled with 868 MHz band.
-Make sure you also compile **USB Dongle** firmware with this parameter.
+Make sure you also compile **Radio Dongle** firmware with this parameter.
 
 ## Packet Structure
 

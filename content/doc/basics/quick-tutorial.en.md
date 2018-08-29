@@ -10,10 +10,10 @@ You can follow this tutorial even without Raspberry Pi. You just have to install
 
 This document is a practical guide of using the **BigClown IoT Kit**. It will guide you how **Raspberry Pi** can read the temperature from **Core Module**, control the LED, measure the relative air humidity from **Humidity Tag**, control small electronic devices using **Relay Module**.
 
-You will also be able to create a wireless network using **USB Dongle**. Data acqusition and control process is demonstrated using **Node-RED**, a web application that will run inside the **Raspberry Pi**. This application allows intuitive graphical automation flow editing directly in your web browser.
+You will also be able to create a wireless network using **Radio Dongle**. Data acqusition and control process is demonstrated using **Node-RED**, a web application that will run inside the **Raspberry Pi**. This application allows intuitive graphical automation flow editing directly in your web browser.
 
 {{< note "info" >}}
-Do you have **USB Dongle** and **wireless kit**? If you would like to start creating you wireless network, you can later jump directly to the [**Creation of the wireless network chapter**]({{< relref "#creation-of-the-wireless-network" >}}) when you get the basic knowledge of **Gateway**, **`bcf` firmware flashing tool** and **Node-RED** in the chapters below.
+Do you have **Radio Dongle** and **wireless kit**? If you would like to start creating you wireless network, you can later jump directly to the [**Creation of the wireless network chapter**]({{< relref "#creation-of-the-wireless-network" >}}) when you get the basic knowledge of **Gateway**, **`bcf` firmware flashing tool** and **Node-RED** in the chapters below.
 {{< /note >}}
 
 First we will demonstrate basic functionality without a wireless network. We use just a single **Core Module** connected to the **Raspberry Pi** by a USB cable.
@@ -25,14 +25,14 @@ What will we need at minimum:
 
 Optionally for establishing a wireless network, you will need:
 
-  * {{< shop "USB Dongle" >}} (or second one {{< shop "Core Module" >}})
+  * {{< shop "Radio Dongle" >}} (or second one {{< shop "Core Module" >}})
   * {{< shop "Mini Battery Module" >}}
   * {{< shop "Humidity Tag" >}} or {{< shop "Climate Module" >}}
   * {{< shop "Relay Module" >}}
 
 ## Video tutorial
 
-In case you like video tutorials, you can watch this one. Otherwise please continue to next paragraph. This video is very similar step-by-step guide how to quickly get started with Raspberry Pi, Core Module, USB Dongle and many other BigClown modules.
+In case you like video tutorials, you can watch this one. Otherwise please continue to next paragraph. This video is very similar step-by-step guide how to quickly get started with Raspberry Pi, Core Module, Radio Dongle and many other BigClown modules.
 
 {{< youtube FRRhleRNstg >}}
 
@@ -52,7 +52,7 @@ You can also download the official **Raspbian** and install necessary packages y
 
 1. Insert the MicroSD card with the **Raspbian**  image to the **Raspberry Pi**.
 2. Connect the Ethernet cable to the **Raspberry Pi**.
-3. Connect the **Core Module** or the **USB Dongle** to the **Raspberry Pi**.
+3. Connect the **Core Module** or the **Radio Dongle** to the **Raspberry Pi**.
 4. Connect the power adapter to the **Raspberry Pi**.
 
 After the **Raspberry Pi** boots up you should be able to find it at address `hub.local`. You can try the command `ping hub.local` and see the response.
@@ -78,9 +78,9 @@ We'll flash the **bcf-gateway** firmware. This firmware for the gateway contains
 After the firmware flashing the **Core Module** will automatically restart and the flashed firmware will be run.
 {{% /note %}}
 
-## USB Dongle to MQTT communication gateway
+## Radio Dongle to MQTT communication gateway
 
-**USB Dongle** or **Core Module** with the **gateway** firmware is using virtual serial port over USB to exchange the data. This communication is then redirected on the **Raspberry Pi** to the **MQTT** messages thanks to the [**bch-gateway**]({{< relref "doc/tools/bcg.md" >}}) `bcg` service.
+**Radio Dongle** or **Core Module** with the **gateway** firmware is using virtual serial port over USB to exchange the data. This communication is then redirected on the **Raspberry Pi** to the **MQTT** messages thanks to the [**bch-gateway**]({{< relref "doc/tools/bcg.md" >}}) `bcg` service.
 
 All the messages from modules go through the gateway to the MQTT broker. The MQTT is an open standard and also our back-bone system for passing the messages both ways.
 In the middle of this communication system is the MQTT broker. Which is a server that accepts client connections. Between the broker and clients are flowing MQTT messages. Each of them contains **topic** and **payload**. Topic is a text string and has directory-like structure with the `/` delimeter (eg. `node/core-module:0/thermometer/0:1/temperature`). Payload isn't defined by a MQTT standard and BigClown is sending these data types: numbers, strings, boolean values and JSONs.
@@ -237,7 +237,7 @@ mosquitto_pub -t "node/core-module:0/relay/0:0/pulse/set" -m "{ \"duration\": 50
 
 ## Creation of the wireless network
 
-Currently it is possible to create a wireless network with a star topology. The middle of the star is the device called the **gateway** which handles communication to all wireless nodes. Gateway can be **Core Module** or **USB Dongle**.
+Currently it is possible to create a wireless network with a star topology. The middle of the star is the device called the **gateway** which handles communication to all wireless nodes. Gateway can be **Core Module** or **Radio Dongle**.
 
 All other wireless devices we call as a **node**.
 
@@ -248,12 +248,12 @@ More radio information is in the [**Sub-GHz Radio**]({{< relref "doc/interfaces/
 {{% /note %}}
 
 
-## Flashing USB Dongle firmware
+## Flashing Radio Dongle firmware
 
-If you don't have {{< shop "USB Dongle" >}} you can use **Core Module** you have already connected to your **Raspberry Pi**. This module with already flashed firmware can act also as a wireless gateway.
+If you don't have {{< shop "Radio Dongle" >}} you can use **Core Module** you have already connected to your **Raspberry Pi**. This module with already flashed firmware can act also as a wireless gateway.
 
-If you own the {{< shop "USB Dongle" >}} then disconnect the **Core Module** from **Raspberry Pi** and connect the **USB Dongle**. Then follow next steps to flash the latest firmware.
-Connect the **USB Dongle** to the **Raspberry Pi**. The **USB Dongle** will switch to the programming mode automatically. Just execute the next command:
+If you own the {{< shop "Radio Dongle" >}} then disconnect the **Core Module** from **Raspberry Pi** and connect the **Radio Dongle**. Then follow next steps to flash the latest firmware.
+Connect the **Radio Dongle** to the **Raspberry Pi**. The **Radio Dongle** will switch to the programming mode automatically. Just execute the next command:
 
 ```
 {{% bcf-flash firmware="bcf-gateway-usb-dongle" %}}
@@ -300,9 +300,9 @@ In case you would power the remote note with a power adapter, you can flash `pow
 
 We need to pair the **gateway** with the remote **node**. In case you are using **Core Module** as a **gateway** you can start the pairing by long press of the `B` button. Then the red LED will start blinking.
 
-USB Dongle do not have pairing button and the pairing process needs to be started by a MQTT message. The same works also for the **Core Module** in case you cannot physically press the `B` button.
+Radio Dongle do not have pairing button and the pairing process needs to be started by a MQTT message. The same works also for the **Core Module** in case you cannot physically press the `B` button.
 
-For **USB Dongle** or **Core Module** you need to send start pairing MQTT message with console command or by using the flow in the **Node-RED** which sends the pairing start message.
+For **Radio Dongle** or **Core Module** you need to send start pairing MQTT message with console command or by using the flow in the **Node-RED** which sends the pairing start message.
 
 {{< note "info" >}}
 You can [**import Node-RED pairing flows**](https://github.com/bigclownlabs/bch-gateway/blob/master/README.md#node-red-buttons) which send pairing and many more commands just by clicking the mouse.
@@ -312,7 +312,7 @@ You can [**import Node-RED pairing flows**](https://github.com/bigclownlabs/bch-
 
 In command line you enable pairing by commands below.
 
-Command for pairing when you have USB Dongle as a radio gateway.
+Command for pairing when you have Radio Dongle as a radio gateway.
 ```
 mosquitto_pub -t 'gateway/usb-dongle/pairing-mode/start' -n
 ```
@@ -322,7 +322,7 @@ Command for pairing when you have Core Module as a radio gateway.
 mosquitto_pub -t 'gateway/core-module/pairing-mode/start' -n
 ```
 
-After enabling the pairing the red LED on the **USB Dongle**/**Core Module** will start to blink. Now its the time to send pairing command from the **remote node**. This is done by power cycling or reseting the **remote node**.
+After enabling the pairing the red LED on the **Radio Dongle**/**Core Module** will start to blink. Now its the time to send pairing command from the **remote node**. This is done by power cycling or reseting the **remote node**.
 
   * **Power Cycle** - unplug and then plug again the power to the Core Module. USB cable, battery or Battery Module.
   * **Reset the Core Module** - short press of the `R` Reset button on the Core Module.
@@ -338,7 +338,7 @@ Now it is possible to pair other **remote** nodes, by power cycling or reset of 
 After the pairing of the remotes is completed, stop the pairing process on the **gateway** by command:
 
 ```
-For USB Dongle:
+For Radio Dongle:
 mosquitto_pub -t 'gateway/usb-dongle/pairing-mode/stop' -n
 For Core Module:
 mosquitto_pub -t 'gateway/core-module/pairing-mode/stop' -n

@@ -26,7 +26,7 @@ This document will guide you through the **Radio Soil Sensor** project. You will
 
     * 1x **BigClown {{% shop "Battery Module" %}}**
 
-    * 1x **BigClown {{% shop "USB Dongle" %}}**
+    * 1x **BigClown {{% shop "Radio Dongle" %}}**
 
 * You will need **Raspberry Pi** with the **BigClown Raspbian** distribution installed. Please see [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) document.
 
@@ -44,7 +44,7 @@ In this procedure we will use the **BigClown Firmware Tool** to upload firmware 
 You will connect and flash firmware with **Raspberry Pi**
 
 {{< note "info">}}
-Firmware upload to USB Dongle was done in [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
+Firmware upload to Radio Dongle was done in [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
 {{< /note  >}}
 
 Now it's time to write firmware to the **Core Module**.
@@ -83,13 +83,13 @@ Now it's time to write firmware to the **Core Module**.
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Radio Climate Monitor**.
+In this section, we will create a radio link between the **Radio Dongle** and the **Radio Climate Monitor**.
 
 Follow these steps in **Node-RED**:
 
 1. Click on the **Start node pairing** button.
 
-    {{% note "warning" %}}Make sure, that after pressing the **Start node pairing** button in the right **debug** tab you have two messages. One is command and the second one with **""start""** is the response from **USB Dongle**.{{% /note %}}
+    {{% note "warning" %}}Make sure, that after pressing the **Start node pairing** button in the right **debug** tab you have two messages. One is command and the second one with **""start""** is the response from **Radio Dongle**.{{% /note %}}
 
     {{% img-zoom src="node-red-gw-pair-start.png" %}}
 
@@ -103,7 +103,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Moisture Sensor**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Moisture Sensor**) and the gateway (**Radio Dongle**).{{% /note %}}
 
 ## Communication Test
 

@@ -2,7 +2,7 @@ Core Module **R2** is the new revision. It has added **FTDI FT231XQ** chip which
 
 You can upload firmware by a Micro USB cable using the **BigClown Firmware Tool** (works on Windows, macOS, and Linux). It is easy to start development on this platform using the **BigClown Firmware SDK** (Software Development Kit). The SDK offers clean and consistent APIs which allow event-driven programming. These APIs are designed for **low-power and battery-operated applications**. If you need to debug your application and the logging API is not sufficient, you can use an SWD debugger and the onboard 10-pin connector.
 
-The **Core Module** can communicate wirelessly with another **Core Module**, or you can create your wireless network using the **USB Dongle**.
+The **Core Module** can communicate wirelessly with another **Core Module**, or you can create your wireless network using the **Radio Dongle**.
 
 
 ## Features

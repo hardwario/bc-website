@@ -40,9 +40,9 @@ Measuring temperature, humidity, lumidity and atmospheric pressure is great star
 
 {{< p-step >}}
  {{% p-step-content order = "2" step = "3" title = "Connect Kit with your Hub" %}}
-Your Kit is ready. As next step you can connect it to your hub (Raspberry PI, Turris Omnia or any Raspbian computer) throw BigClown USB Dongle or USB Cable.{{% /p-step-content %}}
+Your Kit is ready. As next step you can connect it to your hub (Raspberry PI, Turris Omnia or any Raspbian computer) throw BigClown Radio Dongle or USB Cable.{{% /p-step-content %}}
  {{< p-step-gallery order = "1" >}}
-  {{< p-step-gallery-image src = "/projects/wireless-climate-monitor/3a.jpg" src-full = "/projects/wireless-climate-monitor/3a.jpg" title = "USB Dongle" >}}
+  {{< p-step-gallery-image src = "/projects/wireless-climate-monitor/3a.jpg" src-full = "/projects/wireless-climate-monitor/3a.jpg" title = "Radio Dongle" >}}
   {{< p-step-gallery-image src = "/projects/wireless-climate-monitor/3b.jpg" src-full = "/projects/wireless-climate-monitor/3b.jpg" title = "Raspberry Pi" zoom = "true" >}}
  {{< /p-step-gallery >}}
 {{< /p-step >}}

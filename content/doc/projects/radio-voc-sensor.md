@@ -20,7 +20,7 @@ This document will guide you through the **Radio VOC sensor** project. You will 
 
     * 1x **{{< shop "Battery Module" >}}**
 
-    * 1x **{{< shop "USB Dongle" >}}**
+    * 1x **{{< shop "Radio Dongle" >}}**
 
 * Optional components
 
@@ -51,7 +51,7 @@ This document will guide you through the **Radio VOC sensor** project. You will 
 
 In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **Core Module**.
 
-{{< note "note" "Firmware upload to USB Dongle was done in Playground Setup." />}}
+{{< note "note" "Firmware upload to Radio Dongle was done in Playground Setup." />}}
 
 1. Connect the Micro USB cable to the **Core Module** and your computer.
 
@@ -90,7 +90,7 @@ Here is the minimal assembly for VOC sensor.
 ### Full hardware
 
 The firmware also supports **{{< shop "LCD Module" >}}**, **{{< shop "Tag Module" >}}**, **{{< shop "Temperature Tag" >}}** and **{{< shop "Humidity Tag" >}}**.
- All values are displayed with nice graph on the display and are also send over BigClown radio network to the **{{< shop "USB Dongle" >}}**.
+ All values are displayed with nice graph on the display and are also send over BigClown radio network to the **{{< shop "Radio Dongle" >}}**.
 
 {{% img-zoom src="voc-full.jpg" %}}
 
@@ -140,11 +140,11 @@ The firmware also supports **{{< shop "LCD Module" >}}**, **{{< shop "Tag Module
 
     {{% img-zoom src="node-red-gw-list.png" %}}
 
-{{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown USB Dongle** and **BigClown Gateway**.{{% /note %}}
+{{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown Radio Dongle** and **BigClown Gateway**.{{% /note %}}
 
 ## Radio Pairing
 
-In this section, we will create a radio link between the **USB Dongle** and the **Radio VOC sensor**.
+In this section, we will create a radio link between the **Radio Dongle** and the **Radio VOC sensor**.
 
 Follow these steps in **Node-RED**:
 
@@ -160,7 +160,7 @@ Follow these steps in **Node-RED**:
 
     {{% img-zoom src="node-red-gw-pair-stop.png" %}}
 
-{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Motion Detector**) and the gateway (**USB Dongle**).{{% /note %}}
+{{% note "success" %}}At this point, you've got established a radio link between the node (**Radio Motion Detector**) and the gateway (**Radio Dongle**).{{% /note %}}
 
 ## Communication Test
 

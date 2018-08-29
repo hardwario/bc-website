@@ -20,7 +20,7 @@ Playground fundamental components are:
 
 * The Python application **BigClown Gateway** for MQTT/gateway bridging
 
-    {{% note "info" %}}This component works as a bridge between the serial port of **BigClown USB Dongle** or **BigClown Core Module** and an MQTT broker.{{% /note %}}
+    {{% note "info" %}}This component works as a bridge between the serial port of **BigClown Radio Dongle** or **BigClown Core Module** and an MQTT broker.{{% /note %}}
 
 Once you install this setup, you will be able to start designing your automation flows quickly and easily.
 
@@ -28,7 +28,7 @@ Once you install this setup, you will be able to start designing your automation
 
 * Workstation with **Windows**, **macOS**, **Ubuntu**
 
-* **BigClown USB Dongle**
+* **BigClown Radio Dongle**
 
 * One of the **BigClown IoT kits**
 
@@ -82,7 +82,7 @@ If you already have previously installed playground, you can upgrade it at any t
 
 5. Execute **BigClown Playground** from the Start menu.
 
-6. Plug the **BigClown USB Dongle** into a USB port.
+6. Plug the **BigClown Radio Dongle** into a USB port.
 
 7. List the available devices:
 
@@ -91,9 +91,9 @@ If you already have previously installed playground, you can upgrade it at any t
     {{% note "info" %}}
 In case you have multiple COM ports in your PC, you can find right COM port using following procedure:
 
-* Insert USB Dongle into PC USB port.
+* Insert Radio Dongle into PC USB port.
 * Run `bcf devices`.
-* Remove USB Dongle from PC USB port.
+* Remove Radio Dongle from PC USB port.
 * Run `bcf devices`.
 
 COM port missing in second list of COM ports is the right one for **bcg** service.
@@ -107,11 +107,11 @@ COM port missing in second list of COM ports is the right one for **bcg** servic
     C:\Users\mmu>bcf devices
     COM9
     ```
-    USB Dongle have port COM3.
+    Radio Dongle have port COM3.
 
     {{% note "info" %}}You can use `bcf devices -v` to see verbose information about the connected devices (possibly helping you to identify them).{{% /note %}}
 
-8. Upload the latest firmware into the **BigClown USB Dongle**:
+8. Upload the latest firmware into the **BigClown Radio Dongle**:
 
     First you need to update list of firmwares from GitHub by typing
 
@@ -201,7 +201,7 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
 ## Playground Setup on macOS
 
-1. Install the driver for the **BigClown USB Dongle**:
+1. Install the driver for the **BigClown Radio Dongle**:
 
     {{% download "Download drivers from FTDI" "http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_4_2.dmg" %}}
 
@@ -272,7 +272,7 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
         sudo pip3 install --upgrade --no-cache-dir bcg
 
-16. Plug the **BigClown USB Dongle** into a USB port.
+16. Plug the **BigClown Radio Dongle** into a USB port.
 
 17. List the available devices:
 
@@ -280,7 +280,7 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
     {{% note "info" %}}You can use `-v` parameter to see verbose information about the connected devices (possibly helping you to identify them).{{% /note %}}
 
-18. Upload the latest firmware into the **BigClown USB Dongle**:
+18. Upload the latest firmware into the **BigClown Radio Dongle**:
 
         bcf update
     \
@@ -295,7 +295,7 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
     {{% note "info" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-    {{% note "warning" %}}If you want to update firmware in the **USB Dongle**, first you have to stop **bcg** by the command `pm2 stop bcg-ud`. After update, restart the service by the command `pm2 restart bcg-ud`.{{% /note %}}
+    {{% note "warning" %}}If you want to update firmware in the **Radio Dongle**, first you have to stop **bcg** by the command `pm2 stop bcg-ud`. After update, restart the service by the command `pm2 restart bcg-ud`.{{% /note %}}
 
 20. Open your web browser with the URL:
 
@@ -391,7 +391,7 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
         sudo usermod $USER -a -G dialout
 
-14. Plug the **BigClown USB Dongle** into a USB port.
+14. Plug the **BigClown Radio Dongle** into a USB port.
 
 15. List the available devices:
 
@@ -399,7 +399,7 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
     {{% note "info" %}}You can use `-v` parameter to see verbose information about the connected devices (possibly helping you to identify them).{{% /note %}}
 
-16. Upload the latest firmware into the **BigClown USB Dongle**:
+16. Upload the latest firmware into the **BigClown Radio Dongle**:
 
         bcf update
     \
@@ -414,7 +414,7 @@ You can use PM2 to run your own services, e.g. Python scripts who reacts to MQTT
 
     {{% note "info" %}}Replace `...` with the device listed using `bcf devices`.{{% /note %}}
 
-    {{% note "warning" %}}If you want to update firmware in the **USB Dongle**, first you have to stop **bcg** by the command `pm2 stop bcg-ud`. After update, restart the service by the command `pm2 restart bcg-ud`.{{% /note %}}
+    {{% note "warning" %}}If you want to update firmware in the **Radio Dongle**, first you have to stop **bcg** by the command `pm2 stop bcg-ud`. After update, restart the service by the command `pm2 restart bcg-ud`.{{% /note %}}
 
 18. Open your web browser with the URL:
 

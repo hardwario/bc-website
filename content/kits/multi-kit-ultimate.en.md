@@ -11,7 +11,7 @@ images:
   main: main.png
 isStarter: true
 recommended: false
-included: ["USB Dongle","Motion Detector", "Climate Monitor", "Flood Detector", "LCD Thermostat", "Controller", "Push Button", "CO2 Module"]
+included: ["Radio Dongle","Motion Detector", "Climate Monitor", "Flood Detector", "LCD Thermostat", "Controller", "Push Button", "CO2 Module"]
 notIncluded: []
 gifts: ["Clown's nose","Clown's suitcase"]
 weight: 1

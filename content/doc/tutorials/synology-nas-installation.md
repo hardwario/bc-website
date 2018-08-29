@@ -10,7 +10,7 @@ You can have BigClown Gateway running on Raspberry Pi, but if you have any kind 
 
 # About project
 
-Synology NAS is a very versatile device. You can install many services with a single click of your mouse. You can also SSH to the internal Linux OS and change anything you like. If you connect {{< shop "USB Dongle" >}} it appears as `/dev/ttyUSB0` so it's easy to use Synology NAS as a BigClown gateway. You can install `Python`, BigClown gateway `bcg` and `mosquitto` very easily. You can also use **Docker** to run different services separately from the host OS.
+Synology NAS is a very versatile device. You can install many services with a single click of your mouse. You can also SSH to the internal Linux OS and change anything you like. If you connect {{< shop "Radio Dongle" >}} it appears as `/dev/ttyUSB0` so it's easy to use Synology NAS as a BigClown gateway. You can install `Python`, BigClown gateway `bcg` and `mosquitto` very easily. You can also use **Docker** to run different services separately from the host OS.
 
 This tutorial is going further and is using the **Virtual Machine Manager** to create completely separate virtual Ubuntu 16.04 server. Please see the [list of supported Synology NAS](https://www.synology.com/en-global/dsm/packages/Virtualization).
 
@@ -38,13 +38,13 @@ All the services will be installed inside the virtual machine. The advantage is 
 
   * **Other** tab
       * **Virtual USB driver** - USB 2.0 or 3.0 (**you can change this only when a virtual machine is turned off**)
-      * **USB Device** - select the USB Dongle which is connected to you Synology NAS now, or later after you install virtual machine.
+      * **USB Device** - select the Radio Dongle which is connected to you Synology NAS now, or later after you install virtual machine.
 
 4. Confirm virtual machine creation, turn on the virtual machine and press **Connect** so noVNC virtual console is opened in your browser, follow the installation steps to install the Ubuntu.
 
-5. If you did not already inserted {{% shop "USB Dongle" %}}, do it now. Open virtual machine configuration on the **Other** tab and in the **USB device** list select **Future Technology Devices International**.
+5. If you did not already inserted {{% shop "Radio Dongle" %}}, do it now. Open virtual machine configuration on the **Other** tab and in the **USB device** list select **Future Technology Devices International**.
 
-    {{< note "warning" >}}If you disconnect **USB Dongle** from the USB then this **USB device** configuration **must be set again!**
+    {{< note "warning" >}}If you disconnect **Radio Dongle** from the USB then this **USB device** configuration **must be set again!**
     {{< /note >}}
 
     <div style="width:50%;text-align:center;padding:10px">

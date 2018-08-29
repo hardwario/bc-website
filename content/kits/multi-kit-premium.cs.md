@@ -11,7 +11,7 @@ images:
   main: main.png
 isStarter: true
 recommended: true
-included: ["USB Dongle","Motion Detector", "Climate Monitor", "Flood Detector", "LCD Thermostat", "Controller"]
+included: ["Radio Dongle","Motion Detector", "Climate Monitor", "Flood Detector", "LCD Thermostat", "Controller"]
 notIncluded: ["Push Button", "CO2 Module"]
 gifts: ["Klaunský nos", "Klaunský kufr"]
 weight: 1

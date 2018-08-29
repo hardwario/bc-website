@@ -106,7 +106,7 @@ There are two bootloaders in MCU ROM:
 
 * DFU - in case of USB device in MCU is used (e.g. for Core Module R1.3)
 
-* UART - in case of USB-UART chip device is used (e.g. for USB Dongle or Core Module R2.x)
+* UART - in case of USB-UART chip device is used (e.g. for Radio Dongle or Core Module R2.x)
 
 {{% note "warning" %}}In case you need to upload the firmware into the Core Module R1, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash ----device dfu` format.{{% /note %}}
 

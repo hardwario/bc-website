@@ -2,7 +2,7 @@
 title: "BigClown firmware flashing tool"
 ---
 
-This multi-platform Python tool can flash {{<shop "USB Dongle">}} and {{<shop "Core Module">}} with local binary or latest released firmwares from GitHub.
+This multi-platform Python tool can flash {{<shop "Radio Dongle">}} and {{<shop "Core Module">}} with local binary or latest released firmwares from GitHub.
 
 The installation and usage instructions are in the [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}), [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.en.md" >}}) and **Projects** section.
 
@@ -39,7 +39,7 @@ Flash Core Module **R1** with button kit firmware in **Windows/Ubuntu/macOS**
 
         bcf flash --device dfu bigclownlabs/bcf-radio-push-button:latest
 
-Flash **USB Dongle** with latest firmware
+Flash **Radio Dongle** with latest firmware
 
         bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
 

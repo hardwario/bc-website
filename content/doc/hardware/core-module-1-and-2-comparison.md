@@ -13,7 +13,7 @@ The most significant change is that R2 has only single button. This is the `B` b
 |   Look   | {{% img-zoom src="core-module-1.png" width="220" %}} | {{% img-zoom src="core-module-2.png" width="220" %}} |
 
 The new <strong>Core Module 2</strong> is not using DFU mode anymore. We have added new flashing over FTDI chip and virtual serial port over USB.
-This means that the flashing procedure is now the same as with the USB Dongle. Please, use the <strong>--device &lt;PORT&gt;</strong> (e.g. COM4 or /dev/ttyUSB0) parameters instead of the former <strong>--dfu</strong> or <strong>--device dfu</strong> parameter.
+This means that the flashing procedure is now the same as with the Radio Dongle. Please, use the <strong>--device &lt;PORT&gt;</strong> (e.g. COM4 or /dev/ttyUSB0) parameters instead of the former <strong>--dfu</strong> or <strong>--device dfu</strong> parameter.
 
 ## Improvements
 

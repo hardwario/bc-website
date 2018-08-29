@@ -261,7 +261,7 @@ This is a brief list of differences:
     {{% note "warning" %}}Unplug and plug gateway.{{% /note %}}
 
 
-13. Run service for Gateway USB Dongle
+13. Run service for Gateway Radio Dongle
 
         pm2 start /usr/bin/python3 --name "bcg-ud" -- /usr/local/bin/bcg --device /dev/bcUD0
 

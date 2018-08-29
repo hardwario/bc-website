@@ -153,7 +153,7 @@ items:
       link: "doc/hardware/about-tag-module.md"
     - title: "About Temperature Tag"
       link: "doc/hardware/about-temperature-tag.md"
-    - title: "About USB Dongle"
+    - title: "About Radio Dongle"
       link: "doc/hardware/about-usb-dongle.md"
     - title: "About VOC Tag"
       link: "doc/hardware/about-voc-tag.md"

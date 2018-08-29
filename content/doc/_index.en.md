@@ -6,7 +6,7 @@ weight: 200
 
 <script src="image-map.min.js"></script>
 
-Choose any **[Starter kit](../kits)** and use the **{{% shop "USB Dongle" %}}** with **BigClown Playground** app to start in a few minutes. It's that easy!
+Choose any **[Starter kit](../kits)** and use the **{{% shop "Radio Dongle" %}}** with **BigClown Playground** app to start in a few minutes. It's that easy!
 
 Continue to the [**Start page**]({{<relref "doc/basics/start.en.md">}}) where you will learn the basics.
 

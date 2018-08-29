@@ -21,7 +21,7 @@ The symbol `#` can be used only at the end of the topic name.
 
 BigClown is using open-source [Mosquitto](https://mosquitto.org) MQTT broker. All messages are routed through MQTT broker. This allows further expansion of BigClown system.
 
-When you connect the Core Module or USB Dongle with connected remote node, you can display all incoming messages using `mosquitto-cli` package by typing:
+When you connect the Core Module or Radio Dongle with connected remote node, you can display all incoming messages using `mosquitto-cli` package by typing:
 
 ```
 pi@hub:~ $ mosquitto_sub -t "#" -v

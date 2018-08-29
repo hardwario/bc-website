@@ -49,7 +49,7 @@ This is the file structure of your `hello-world` project. It is a Git-initialize
     └── application.h
 ```
 
-This project can be imediately compiled and flashed to the **Core Module**, **USB Dongle** or **Cloony**. The place where you should edit your code is in the `app` directory. Usually you will not need to modify other files than those in there.
+This project can be imediately compiled and flashed to the **Core Module**, **Radio Dongle** or **Cloony**. The place where you should edit your code is in the `app` directory. Usually you will not need to modify other files than those in there.
 
 Therefore your first step most likely will be to open the `app/application.c` file in your favourite editor - for instance **Atom**, **Visual Studio Code**, **Sublime Text**, etc.
 
@@ -61,7 +61,7 @@ Normally, the development cycle is the repetition of the following 3 steps:
 
 * Run `make` to produce the firmware image `firmware.bin`.
 
-* Run `bcf flash --device /dev/ttyUSBx` to upload the firmware image into the **Core Module** or **USB Dongle**. On Windows use `COMx` device names.
+* Run `bcf flash --device /dev/ttyUSBx` to upload the firmware image into the **Core Module** or **Radio Dongle**. On Windows use `COMx` device names.
 
 {{% core-module-2 %}}
 

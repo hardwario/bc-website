@@ -15,5 +15,5 @@ For differences of flashing older **Core Module 1** and newer **Core Module 2** 
 
 
 {{< note "info" >}}
-Do you have **USB Dongle** and **wireless kit**? If you would like to start creating you wireless network, you can later jump directly to the [**Creation of the wireless network chapter**]({{< relref "#creation-of-the-wireless-network" >}}) when you get the basic knowledge of **Gateway**, **`bcf` firmware flashing tool** and **Node-RED** in the chapters below.
+Do you have **Radio Dongle** and **wireless kit**? If you would like to start creating you wireless network, you can later jump directly to the [**Creation of the wireless network chapter**]({{< relref "#creation-of-the-wireless-network" >}}) when you get the basic knowledge of **Gateway**, **`bcf` firmware flashing tool** and **Node-RED** in the chapters below.
 {{< /note >}}

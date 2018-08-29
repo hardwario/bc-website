@@ -231,8 +231,8 @@ Here is a list of modules and tags in alphabetical order.
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="usb-dongle.png" alt="USB Dongle" style="margin: 50px;" align="left">
-<h2>USB Dongle</h2>
+<img class="pull-left" src="usb-dongle.png" alt="Radio Dongle" style="margin: 50px;" align="left">
+<h2>Radio Dongle</h2>
 <p>
 {{< include "shop/pitch-usb-dongle.md" >}}
 </p>

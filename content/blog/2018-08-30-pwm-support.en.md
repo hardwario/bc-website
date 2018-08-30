@@ -18,6 +18,6 @@ Pulse Width Modulation (PWM) is a method to create analog-like signal from the m
 
 This PWM signal can be used to set brightness when connected to some low power LED. With a proper power driver you can drive lots of power LEDs and LED strips. You can have up to 9 separate PWM channels.
 
-By using `bc_servo` library you can connect a servo to the digital output and set the servo motor angle.
+By using `bc_servo` library you can connect a servo to the digital output and set the servo motor angle. You can use up to 9 servo motors.
 
 For more information please see the [**How to: PWM**]({{<relref "doc/firmware/how-to-pwm.md">}}) and [**How to: Servo motor**]({{<relref "doc/firmware/how-to-servo-motor.md">}}) articles in the Learn section.

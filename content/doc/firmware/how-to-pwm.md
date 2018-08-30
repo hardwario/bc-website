@@ -4,8 +4,6 @@ title: "How to: PWM"
 
 Pulse Width Modulation (PWM) is a method to create analog-like signal from the microcontroller digital output. It will achieve that by fast toggling of the pin with different ration of logic **HIGH** and **LOW**. This ratio is called **duty cycle**.
 
-You can control not only LEDs but with reconfiguration you can control up to 9 servo motors.
-
 Please check the [**Core Module pinout**]({{<relref "doc/hardware/header-pinout.md">}}) to see which pins allows PWM.
 
 ## SDK PWM functions
@@ -34,7 +32,7 @@ BC_PWM_P14
 
 The `value` is a number between `0` and `255`. I choosed this to be the same like in Arduino `analogWrite()` function. But by calling `bc_pwm_tim_configure()` function you can simply change period of the PWM.
 
-## Example
+## Example code
 
 Enable PWM signal on P6, P7 and P8 outputs. Every output has different duty cycle: 180, 210 and 255 (which is permanent **HIGH**).
 
@@ -57,7 +55,7 @@ void application_init()
 
 ```
 
-## Servo signal
+## Example project
 
-You can reconfigure the PWM and connect servo motor to the **Power Module** or use all 9 PWM signals to control up to 9 servos. You can try [this example code](https://github.com/hubmartin/bcf-pwm-servo/blob/master/app/application.c).
+- [bc_pwm](https://github.com/hubmartin/bcf-pwm-servo/blob/master/app/application.c)
 

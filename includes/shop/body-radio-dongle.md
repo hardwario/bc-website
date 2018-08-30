@@ -18,5 +18,5 @@ You can upload firmware into it over USB using the **BigClown Firmware Tool** (w
 
 ## Resources
 
-* [**Documentation**](https://www.bigclown.com/doc/hardware/about-usb-dongle/)
+* [**Documentation**](https://www.bigclown.com/doc/hardware/about-radio-dongle/)
 * [**Schematic drawing**](https://github.com/bigclownlabs/bc-hardware/tree/master/out/bc-usb-dongle)

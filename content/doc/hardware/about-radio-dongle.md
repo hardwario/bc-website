@@ -4,14 +4,14 @@ title: "About Radio Dongle"
 
 {{< img-float src="usb-dongle.png" alt="Radio Dongle" width="300" >}}
 
-{{< include "shop/pitch-usb-dongle.md" >}}
+{{< include "shop/pitch-radio-dongle.md" >}}
 
-{{< hw-shop "usb-dongle" >}}
+{{< hw-shop "radio-dongle" >}}
 {{< hw-sch "bc-usb-dongle" >}}
 
 {{< /img-float >}}
 
-{{< include "shop/body-usb-dongle.md" >}}
+{{< include "shop/body-radio-dongle.md" >}}
 
 ## Firmware Projects
 

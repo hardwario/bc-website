@@ -1,5 +1,5 @@
 ---
-title: "About BigClown IoT kit for makers"
+title: "About BigClown"
 menu: "doc"
 parent: "basics"
 ---
@@ -84,7 +84,7 @@ Moreover, tied with Git, MQTT client tools, logging mechanism, etc. you will qui
 
 It is important to start somewhere and our aim is to start with simple things. That's why we have prepared several reference IoT projects. Following them will get you on track quickly. You can always explore the parts you are most interested about, tweak them or write your own firmware applications, automation flows or cloud integrations from scratch.
 
-For the very first time, we recommend to walk through the [**Project Workflow**]({{< relref "doc/basics/project-workflow.en.md" >}}) and [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.en.md" >}}).
+For the very first time, we recommend to walk through the [**Project Workflow**]({{< relref "doc/basics/project-workflow.en.md" >}}) and [**Quick Tutorial**]({{< relref "doc/tutorials/raspberry-pi-tutorial.md" >}}).
 
 On the other hand, if you want to build something real right away, don't hesitate to start with one of our projects:
 
@@ -104,4 +104,4 @@ On the other hand, if you want to build something real right away, don't hesitat
 
 * [**Project Workflow**]({{< relref "doc/basics/project-workflow.en.md" >}})
 
-* [**Quick Tutorial**]({{< relref "doc/basics/quick-tutorial.en.md" >}})
+* [**Quick Tutorial**]({{< relref "doc/tutorials/raspberry-pi-tutorial.md" >}})

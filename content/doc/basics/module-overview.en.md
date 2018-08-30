@@ -4,87 +4,16 @@ menu: "doc"
 parent: "basics"
 ---
 
-Here is a list of modules and tags in alphabetical order.
+Here is a list of modules and tags.
+
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="1-wire-module.png" alt="1-Wire Module" style="margin: 50px;" align="left">
-<h2>1-Wire Module</h2>
+<img class="pull-left" src="usb-dongle.png" alt="Radio Dongle" style="margin: 50px;" align="left">
+<h2>Radio Dongle</h2>
 <p>
-{{< include "shop/pitch-1-wire-module.md" >}}
+{{< include "shop/pitch-radio-dongle.md" >}}
 </p>
-{{< more-info "doc/hardware/about-1-wire-module.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="barometer-tag.png" alt="Barometer Tag" style="margin: 50px;" align="left">
-<h2>Barometer Tag</h2>
-<p>
-{{< include "shop/pitch-barometer-tag.md" >}}
-</p>
-{{< more-info "doc/hardware/about-barometer-tag.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="base-module.png" alt="Base Module" style="margin: 50px;" align="left">
-<h2>Base Module</h2>
-<p>
-{{< include "shop/pitch-base-module.md" >}}
-</p>
-{{< more-info "doc/hardware/about-base-module.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="battery-module.png" alt="Battery Module" style="margin: 50px;" align="left">
-<h2>Battery Module</h2>
-<p>
-{{< include "shop/pitch-battery-module.md" >}}
-</p>
-{{< more-info "doc/hardware/about-battery-module.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="breadboard-module.png" alt="Breadboard Module" style="margin: 50px;" align="left">
-<h2>Breadboard Module</h2>
-<p>
-{{< include "shop/pitch-breadboard-module.md" >}}
-</p>
-{{< more-info "doc/hardware/about-breadboard-module.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="button-module.png" alt="Button Module" style="margin: 50px;" align="left">
-<h2>Button Module</h2>
-<p>
-{{< include "shop/pitch-button-module.md" >}}
-</p>
-{{< more-info "doc/hardware/about-button-module.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="climate-module.png" alt="Climate Module" style="margin: 50px;" align="left">
-<h2>Climate Module</h2>
-<p>
-{{< include "shop/pitch-climate-module.md" >}}
-</p>
-{{< more-info "doc/hardware/about-climate-module.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="cloony.png" alt="Cloony" style="margin: 50px;" align="left">
-<h2>Cloony</h2>
-<p>
-{{< include "shop/pitch-cloony.md" >}}
-</p>
-{{< more-info "doc/hardware/about-cloony.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="co2-module.png" alt="CO2 Module" style="margin: 50px;" align="left">
-<h2>CO2 Module</h2>
-<p>
-{{< include "shop/pitch-co2-module.md" >}}
-</p>
-{{< more-info "doc/hardware/about-co2-module.md" >}}
+{{< more-info "doc/hardware/about-radio-dongle.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -97,48 +26,12 @@ Here is a list of modules and tags in alphabetical order.
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="cover-module.png" alt="Cover Module" style="margin: 50px;" align="left">
-<h2>Cover Module</h2>
+<img class="pull-left" src="cloony.png" alt="Cloony" style="margin: 50px;" align="left">
+<h2>Cloony</h2>
 <p>
-{{< include "shop/pitch-cover-module.md" >}}
+{{< include "shop/pitch-cloony.md" >}}
 </p>
-{{< more-info "doc/hardware/about-cover-module.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="encoder-module.png" alt="Encoder Module" style="margin: 50px;" align="left">
-<h2>Encoder Module</h2>
-<p>
-{{< include "shop/pitch-encoder-module.md" >}}
-</p>
-{{< more-info "doc/hardware/about-encoder-module.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="humidity-tag.png" alt="Humidity Tag" style="margin: 50px;" align="left">
-<h2>Humidity Tag</h2>
-<p>
-{{< include "shop/pitch-humidity-tag.md" >}}
-</p>
-{{< more-info "doc/hardware/about-humidity-tag.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="lcd-module.png" alt="LCD Module" style="margin: 50px;" align="left">
-<h2>LCD Module</h2>
-<p>
-{{< include "shop/pitch-lcd-module-bg.md" >}}
-</p>
-{{< more-info "doc/hardware/about-lcd-module.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="lux-meter-tag.png" alt="Lux Meter Tag" style="margin: 50px;" align="left">
-<h2>Lux Meter Tag</h2>
-<p>
-{{< include "shop/pitch-lux-meter-tag.md" >}}
-</p>
-{{< more-info "doc/hardware/about-lux-meter-tag.md" >}}
+{{< more-info "doc/hardware/about-cloony.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -151,21 +44,12 @@ Here is a list of modules and tags in alphabetical order.
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="nfc-tag.png" alt="NFC Tag" style="margin: 50px;" align="left">
-<h2>NFC Tag</h2>
+<img class="pull-left" src="battery-module.png" alt="Battery Module" style="margin: 50px;" align="left">
+<h2>Battery Module</h2>
 <p>
-{{< include "shop/pitch-nfc-tag.md" >}}
+{{< include "shop/pitch-battery-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-nfc-tag.md" >}}
-</div>
-
-<div class="clearfix module-pitch">
-<img class="pull-left" src="pir-module.png" alt="PIR Module" style="margin: 50px;" align="left">
-<h2>PIR Module</h2>
-<p>
-{{< include "shop/pitch-pir-module.md" >}}
-</p>
-{{< more-info "doc/hardware/about-pir-module.md" >}}
+{{< more-info "doc/hardware/about-battery-module.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -178,12 +62,58 @@ Here is a list of modules and tags in alphabetical order.
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="probe-module.png" alt="Probe Module" style="margin: 50px;" align="left">
-<h2>Probe Module</h2>
+<img class="pull-left" src="pir-module.png" alt="PIR Module" style="margin: 50px;" align="left">
+<h2>PIR Module</h2>
 <p>
-{{< include "shop/pitch-probe-module.md" >}}
+{{< include "shop/pitch-pir-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-probe-module.md" >}}
+{{< more-info "doc/hardware/about-pir-module.md" >}}
+</div>
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="climate-module.png" alt="Climate Module" style="margin: 50px;" align="left">
+<h2>Climate Module</h2>
+<p>
+{{< include "shop/pitch-climate-module.md" >}}
+</p>
+{{< more-info "doc/hardware/about-climate-module.md" >}}
+</div>
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="lcd-module.png" alt="LCD Module" style="margin: 50px;" align="left">
+<h2>LCD Module</h2>
+<p>
+{{< include "shop/pitch-lcd-module-bg.md" >}}
+</p>
+{{< more-info "doc/hardware/about-lcd-module.md" >}}
+</div>
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="button-module.png" alt="Button Module" style="margin: 50px;" align="left">
+<h2>Button Module</h2>
+<p>
+{{< include "shop/pitch-button-module.md" >}}
+</p>
+{{< more-info "doc/hardware/about-button-module.md" >}}
+</div>
+
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="encoder-module.png" alt="Encoder Module" style="margin: 50px;" align="left">
+<h2>Encoder Module</h2>
+<p>
+{{< include "shop/pitch-encoder-module.md" >}}
+</p>
+{{< more-info "doc/hardware/about-encoder-module.md" >}}
+</div>
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="co2-module.png" alt="CO2 Module" style="margin: 50px;" align="left">
+<h2>CO2 Module</h2>
+<p>
+{{< include "shop/pitch-co2-module.md" >}}
+</p>
+{{< more-info "doc/hardware/about-co2-module.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -213,6 +143,25 @@ Here is a list of modules and tags in alphabetical order.
 </div>
 
 <div class="clearfix module-pitch">
+<img class="pull-left" src="1-wire-module.png" alt="1-Wire Module" style="margin: 50px;" align="left">
+<h2>1-Wire Module</h2>
+<p>
+{{< include "shop/pitch-1-wire-module.md" >}}
+</p>
+{{< more-info "doc/hardware/about-1-wire-module.md" >}}
+</div>
+
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="cover-module.png" alt="Cover Module" style="margin: 50px;" align="left">
+<h2>Cover Module</h2>
+<p>
+{{< include "shop/pitch-cover-module.md" >}}
+</p>
+{{< more-info "doc/hardware/about-cover-module.md" >}}
+</div>
+
+<div class="clearfix module-pitch">
 <img class="pull-left" src="tag-module.png" alt="Tag Module" style="margin: 50px;" align="left">
 <h2>Tag Module</h2>
 <p>
@@ -231,13 +180,33 @@ Here is a list of modules and tags in alphabetical order.
 </div>
 
 <div class="clearfix module-pitch">
-<img class="pull-left" src="usb-dongle.png" alt="Radio Dongle" style="margin: 50px;" align="left">
-<h2>Radio Dongle</h2>
+<img class="pull-left" src="humidity-tag.png" alt="Humidity Tag" style="margin: 50px;" align="left">
+<h2>Humidity Tag</h2>
 <p>
-{{< include "shop/pitch-usb-dongle.md" >}}
+{{< include "shop/pitch-humidity-tag.md" >}}
 </p>
-{{< more-info "doc/hardware/about-usb-dongle.md" >}}
+{{< more-info "doc/hardware/about-humidity-tag.md" >}}
 </div>
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="lux-meter-tag.png" alt="Lux Meter Tag" style="margin: 50px;" align="left">
+<h2>Lux Meter Tag</h2>
+<p>
+{{< include "shop/pitch-lux-meter-tag.md" >}}
+</p>
+{{< more-info "doc/hardware/about-lux-meter-tag.md" >}}
+</div>
+
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="barometer-tag.png" alt="Barometer Tag" style="margin: 50px;" align="left">
+<h2>Barometer Tag</h2>
+<p>
+{{< include "shop/pitch-barometer-tag.md" >}}
+</p>
+{{< more-info "doc/hardware/about-barometer-tag.md" >}}
+</div>
+
 
 <div class="clearfix module-pitch">
 <img class="pull-left" src="voc-tag.png" alt="VOC Tag" style="margin: 50px;" align="left">
@@ -247,3 +216,41 @@ Here is a list of modules and tags in alphabetical order.
 </p>
 {{< more-info "doc/hardware/about-voc-tag.md" >}}
 </div>
+
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="nfc-tag.png" alt="NFC Tag" style="margin: 50px;" align="left">
+<h2>NFC Tag</h2>
+<p>
+{{< include "shop/pitch-nfc-tag.md" >}}
+</p>
+{{< more-info "doc/hardware/about-nfc-tag.md" >}}
+</div>
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="base-module.png" alt="Base Module" style="margin: 50px;" align="left">
+<h2>Base Module</h2>
+<p>
+{{< include "shop/pitch-base-module.md" >}}
+</p>
+{{< more-info "doc/hardware/about-base-module.md" >}}
+</div>
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="breadboard-module.png" alt="Breadboard Module" style="margin: 50px;" align="left">
+<h2>Breadboard Module</h2>
+<p>
+{{< include "shop/pitch-breadboard-module.md" >}}
+</p>
+{{< more-info "doc/hardware/about-breadboard-module.md" >}}
+</div>
+
+<div class="clearfix module-pitch">
+<img class="pull-left" src="probe-module.png" alt="Probe Module" style="margin: 50px;" align="left">
+<h2>Probe Module</h2>
+<p>
+{{< include "shop/pitch-probe-module.md" >}}
+</p>
+{{< more-info "doc/hardware/about-probe-module.md" >}}
+</div>
+

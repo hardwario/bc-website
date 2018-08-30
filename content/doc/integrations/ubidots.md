@@ -4,7 +4,14 @@ title: "Ubidots"
 
 With [Ubidots](https://ubidots.com) you can monitor your values remotely and get notifications when they go over set thresholds.
 
-You get 5000 free credits with new account. You can send notifications over e-mail, Telegram or by webhooks which costs you 1 credit or SMS notification with 20 credits.
+## How to use Indiegogo Ubidots Coupons
+
+1. Indiegogo Ubidots coupons are applicable for Education platform and each coupon code provided can be used only once
+2. Details to how a coupon code can be applied to any Ubidots for Education account can be found [here](http://help.ubidots.com/user-guides/promo-codes)
+3. Ubidots for Education and additional details to this DIY platform can be found [here](https://ubidots.com/education/)
+4. New Ubidots for Education Accounts can be created using the following [link](https://app.ubidots.com/accounts/signup/)
+
+Any users looking for additional cloud and IoT Application development tools are encouraged to take Ubidots free 30-day trial using this [link](https://industrial.ubidots.com/accounts/signup_industrial/)
 
 {{% img-zoom src="ubidots-website.png" %}}
 

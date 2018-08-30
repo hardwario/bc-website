@@ -4,6 +4,16 @@ title: Blynk - Mobile App Builder
 
 [The Blynk](http://www.blynk.cc/) is a mobile front end builder and signaling relay (MQTT). This let's you quicky create control and display for your IoT things. Here we will guide you the process of putting together the hardware and connecting it to the cloud. The cloud in turn gets interconnected with the project on your phone withing the Blynk app. The local side of the project is hosted on the BigClown Raspian which has all the necessary components prepared for interconnection. When everything will be finished then you would have an ability to turn on and off the relay, switch the LED strip on and off, change the light intensity using slider and also you would be able to watch the temperature (and other values collected) acompanied by graphs.
 
+# Using Indiegogo QR Code to add Blynk Energy
+
+1. Open the Blynk App and sing in to your account
+2. Go to the main PROJECT DASHBOARD. If you are inside of one project tap on DASHBOARD icon.
+3. Tap on QR code icon and scan your QR code 
+4. You should get Thanks! window
+5. Tap to CLAIM REWARD
+
+You are done and you can start integrations with Blynk.
+
 # Blynk example projects with BigClown
 
   * [Wireless Climate Monitor]({{< relref "doc/projects/radio-climate-monitor.md" >}})

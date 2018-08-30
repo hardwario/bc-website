@@ -4,17 +4,11 @@ menu: "doc"
 parent: "basics"
 ---
 
-### Thank you, dear maker!
+### Thank You, Dear Maker!
 
-If you are reading this **QUICK START GUIDE** you have probably purchased our BigClown IoT Kit. If not, go to our [**e-shop**](https://shop.bigclown.com) to do so :)
+If you are reading this **QUICK START GUIDE** you have probably purchased our BigClown IoT Kit. If not, go  [**shopping**](https://shop.bigclown.com) to do so :)
 
-Once again THANK YOU for being our supporter, we really appreciate this. BigClown is not just about the hardware, our kits come with the **technical support**. So don't hesitate to use one of the offered channels In case you run into the trouble or something is not clear for you:
-
-- Use the online chat icon in the bottom right corner
-- Write us an email to **<a href="mailto:support@bigclown.com">support@bigclown.com</a>**
-- Use Forum **<a href="https://forum.bigclown.com/">https://forum.bigclown.com/</a>**
-
-<div class="row">
+<div class="row" style="padding:20px 0 30px 0;">
     <div class="col-sm-4">
         {{% img-zoom src="starter-kit-box.jpg"  %}}
     </div>
@@ -26,28 +20,31 @@ Once again THANK YOU for being our supporter, we really appreciate this. BigClow
     </div>
 </div>
 
+Once again **THANK YOU** for being our supporter, we really appreciate this.
+
+BigClown is not just about the hardware but it comes with full documentation, tutorials, software tools and most importantly - it comes with the extensive **technical support**. So don't hesitate to use one of these channels In case you run in troubles or if anything is not clear to you:
+
+- Use the online chat icon in the bottom right corner
+- Write us an email to **<a href="mailto:support@bigclown.com">support@bigclown.com</a>**
+- Use forum at **<a href="https://forum.bigclown.com/">https://forum.bigclown.com/</a>**
+
 ## Be Inspired
 
-It's always hard to build something without an inspiration. We motivate our makers to share their work with others and you can get ideas for your projects by **subscribing to our Clownsletter**. The e-mail form is in the footer of this page.
+It's always hard to build something without an inspiration. We motivate our makers to share their work with others and you can get ideas for your projects by [**subscribing to our Clownsletter**](http://eepurl.com/drGLGf).
 
 ## Get Ready
 
-In our world it means to prepare a **Hub** - a center of your system. You can use ready-made **BigClown Hub** or just plug our **{{% shop "Radio Dongle" %}}** to any computer or server (e.g. Raspberry Pi).
+In our world it means to prepare a center of your IoT system - the **Hub**.
 
-**QUICK START GUIDE** shows the shortest way to a very special feeling "I've&nbsp;made&nbsp;it!".
+In **QUICK START GUIDE** we will use your computer as a Hub.
 
 Just follow these steps:
 
 1. In delivered box or suitcase find a **{{% shop "Radio Dongle" %}}** and plug it to any USB port of your notebook or PC.
 
-
 2.  Download the latest [**BigClown Playground**](https://github.com/bigclownlabs/bch-playground/releases/latest)
 
-
-
-3. Run the **BigClown Playground**, go to the **Device** tab.
-
-    Choose the **{{% shop "Radio Dongle" %}}** serial port and click **Connect**
+3. Run the **BigClown Playground**, go to the **Device** tab, choose the **Radio Dongle** serial port and click **Connect**
 
     {{% img-zoom src="playground-devices-connect.png"  %}}
 
@@ -55,22 +52,26 @@ Just follow these steps:
 
     {{% img-zoom src="playground-devices-connected.png"  %}}
 
+{{< note "info" >}}
+In the future we recommend to use as a Hub our ready-to-use {{< shop "BigClown Hub" >}} or just plug our Radio Dongle to [Raspberry Pi]({{<relref "doc/tutorials/raspberry-pi-installation.md">}}) or [any server]({{<relref "doc/tutorials/raspberry-pi-installation.md#setup-on-original-raspbian">}}).
+{{< /note >}}
+
 ## Build devices
 
-By building devices we mean putting modules and enclosure together, optionally flashing a firmware and pairing devices with a Radio Dongle.
+By building devices we mean putting modules and enclosure together, optionally flashing a new firmware and pairing devices with a Radio Dongle.
 
 **QUICK START GUIDE** recommends to follow this steps:
 
-1. Build delivered kits or build devices from modules (check the [**video guides**](https://www.youtube.com/playlist?list=PLfRfhTxkuiVyc9P1TWw_DnAeh2INXwpFK) how to do so). Do not put batteries to the battery modules yet and be careful how to connect **{{<shop "Mini Battery Module">}}**.
+1. Build delivered kits or build devices from modules (check the [**video guides**](https://www.youtube.com/playlist?list=PLfRfhTxkuiVyc9P1TWw_DnAeh2INXwpFK) how to do so). Do not put batteries to the battery modules yet and be careful how to connect **{{<shop "Mini Battery Module">}}** from the right side.
 
     <div style="width:50%">
     {{% img-zoom src="mini-battery-module-orientation.png"  %}}
     </div>
 
-2. As mentioned, delivered kits are already programmed with a right firmware. If you would like to flash other firmware to the Core Module, please follow this [**firmware flash chapter**]({{<relref "doc/projects/radio-door-sensor.md#flash-door-sensor-firmware">}}).
+2. As mentioned, delivered kits are already programmed with a right firmware. If you would like to change it to another firmware in the Core Module, please follow this [**firmware flash chapter**]({{<relref "doc/projects/radio-door-sensor.md#flash-door-sensor-firmware">}}).
 
 
-3. As mentioned, kits delivered together with Radio Dongle are already paired and should be visible in Playground's Device tab. In case you need to pair new devices, please follow these [**radio pairing instructions**]({{< relref "doc/projects/radio-door-sensor.md#pair-the-radio-door-sensor" >}}).
+3. As mentioned, kits delivered together with Radio Dongle are already paired and should be visible in Playground's **Device** tab. In case you need to pair new devices, please follow these [**radio pairing instructions**]({{< relref "doc/projects/radio-door-sensor.md#pair-the-radio-door-sensor" >}}).
 
 4. Switch to Playground's **Messages** tab and put batteries to your kit, you should see incoming messages. Every kit sends different messages. Here the **Button kit** sends `temperature`, `voltage`, `event-count` (everytime you press the button) and other messages.
 
@@ -120,7 +121,9 @@ Or just put the red nose on, make a selfie and share it on Facebook or Twitter w
 The goal of this **QUICK START GUIDE** is to show the basics in a few simple steps. Now you can learn more by browsing the **documentation** or by visiting the **links below**.
 
 * Check out other BigClown [**projects**]({{< relref "doc/projects/radio-door-sensor.md" >}}).
+
 * Take a look at the [**Module Overview**]({{< relref "doc/basics/module-overview.en.md" >}}).
+
 * Learn about [**MQTT**]({{<relref "doc/interfaces/mqtt-protocol.md">}}) and [**BigClown MQTT topics**]({{<relref "doc/interfaces/mqtt-topics.md">}}) to control LEDs and relays.
 * Try other [**integrations**]({{<relref "doc/integrations/grafana-for-visualization.md" >}}) with **Grafana**, **Blynk**, **IFTTT**, **Ubidots** and others.
 * Use your [**Raspberry PI**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) or other [**single board computer (SBC)**]({{< relref "doc/tutorials/raspberry-pi-installation.md#setup-on-original-raspbian">}}) as a server.

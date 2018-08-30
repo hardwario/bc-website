@@ -24,7 +24,7 @@ Continue to the [**Quick Start Guide**]({{<relref "doc/basics/quick-start-guide.
     <area target="" alt="" title="" href="https://shop.bigclown.com/modules-tags/" coords="47,375,287,527" shape="rect">
     <area target="" alt="" title="" href="interfaces/sub-ghz-radio/" coords="336,148,408,249" shape="rect">
     <area target="" alt="" title="" href="tutorials/raspberry-pi-installation/" coords="429,28,761,171" shape="rect">
-    <area target="" alt="" title="" href="basics/start/" coords="429,193,763,357" shape="rect">
+    <area target="" alt="" title="" href="basics/quick-start-guide/" coords="429,193,763,357" shape="rect">
     <area target="" alt="" title="" href="tutorials/raspberry-pi-installation/#differences-from-the-original-raspbian" coords="447,378,744,523" shape="rect">
 </map>
 

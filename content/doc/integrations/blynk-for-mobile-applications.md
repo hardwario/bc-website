@@ -9,9 +9,6 @@ title: Blynk - Mobile App Builder
 1. Open the Blynk App and sing in to your account
 2. Go to the main PROJECT DASHBOARD. If you are inside of one project tap on DASHBOARD icon.
 3. Tap on QR code icon and scan your QR code 
-
-{{% img-zoom src="blynk_QRcode.png" %}}
-
 4. You should get Thanks! window
 5. Tap to CLAIM REWARD
 

@@ -2,6 +2,8 @@
 title: "Playground Setup"
 ---
 
+{{% note "danger" %}}This is the **OLD PLAYGROUND** that is installed to your system as a separate services which can have issues on some versions of operating system. We suggest to start with the [**New Playground**]({{< relref "doc/basics/quick-start-guide.en.md" >}}) which is a more advanced single application. However you can still follow this tutorial if you would like to run gateway, mosquitto and node-red as a services on Windows, Linux or macOS.{{% /note %}}
+
 In this document we will install a set of components that are fundamental for the BigClown projects and will help you to get started quickly on your workstation or laptop.
 
 This guide is for development environment. For production usage please follow [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) tutorial where is prepared **bc-raspbian** image and instructions for manual installation of the tools on generic embedded Linux machine.

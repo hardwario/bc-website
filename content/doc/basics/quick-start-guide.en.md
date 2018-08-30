@@ -32,6 +32,7 @@ BigClown is not just about the hardware but it comes with full documentation, tu
 
 It's always hard to build something without an inspiration. We motivate our makers to share their work with others and you can get ideas for your projects by [**subscribing to our Clownsletter**](http://eepurl.com/drGLGf).
 
+
 ## Get Ready
 
 In our world it means to prepare a center of your IoT system - the **Hub**.
@@ -56,6 +57,7 @@ Just follow these steps:
 In the future we recommend to use as a Hub our ready-to-use {{< shop "BigClown Hub" >}} or just plug our Radio Dongle to [Raspberry Pi]({{<relref "doc/tutorials/raspberry-pi-installation.md">}}) or [any server]({{<relref "doc/tutorials/raspberry-pi-installation.md#setup-on-original-raspbian">}}).
 {{< /note >}}
 
+
 ## Build devices
 
 By building devices we mean putting modules and enclosure together, optionally flashing a new firmware and pairing devices with a Radio Dongle.
@@ -69,7 +71,6 @@ By building devices we mean putting modules and enclosure together, optionally f
     </div>
 
 2. As mentioned, delivered kits are already programmed with a right firmware. If you would like to change it to another firmware in the Core Module, please follow this [**firmware flash chapter**]({{<relref "doc/projects/radio-door-sensor.md#flash-door-sensor-firmware">}}).
-
 
 3. As mentioned, kits delivered together with Radio Dongle are already paired and should be visible in Playground's **Device** tab. In case you need to pair new devices, please follow these [**radio pairing instructions**]({{< relref "doc/projects/radio-door-sensor.md#pair-the-radio-door-sensor" >}}).
 
@@ -90,7 +91,7 @@ In **QUICK START GUIDE** we will create a simple dashboard with a temperature ga
 
     {{% img-zoom src="playground-topic-copy.png"  %}}
 
-2. Switch to the **Function** tab and from the color blocks on the left side drag and drop **mqtt** block and **gauge** block to the **flow** in the middle of the screen. The color blocks are called **nodes**. You can use the `filter nodes` text box to find the right block. Connect the two created nodes together by the mouse.
+2. Switch to the **Function** tab and from the color blocks on the left side drag and drop **mqtt** block and **gauge** block to the **flow** in the middle of the screen. The color blocks are called **nodes**. You can use the `filter nodes` text box to find the right block. Connect the two created nodes together.
 
     <div class="row">
         <div class="col-sm-6">
@@ -101,11 +102,16 @@ In **QUICK START GUIDE** we will create a simple dashboard with a temperature ga
         </div>
     </div>
 
-3. Double click on the **mqtt** node and paste the previously copied topic from the clipboard. Make sure there are not any spaces before and after the copied text. Then click **Done** and **Deploy** button. You have to click on the **Deploy** everytime you make changes in your flow.
+3. Double click on the **gauge** node. Change **Label**, **Units** and **Range** to your needs. Then click **Done**.
+
+    {{% img-zoom src="playground-gauge.png"  %}}
+
+
+4. Double click on the **mqtt** node and paste the previously copied topic from the clipboard. Make sure there are not any spaces before and after the copied text. Then click **Done** and **Deploy** button. You have to click on the **Deploy** everytime you make changes in your flow.
 
     {{% img-zoom src="playground-topic.png"  %}}
 
-4. Go to Playground's **Dashboard** tab and you should see a gauge with the temperature of the selected device. The temperature can take a while to appear. You can breathe on the module or reconnect batteries for immediate update.
+5. Go to Playground's **Dashboard** tab and you should see a gauge with the temperature of the selected device. The temperature can take a while to appear. You can breathe on the module or reconnect batteries for immediate update.
 
 {{% img-zoom src="playground-dashboard.png"  %}}
 

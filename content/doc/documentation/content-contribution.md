@@ -64,6 +64,9 @@ Example:
 
 Each heading generates a bookmark name that can be used in the links within the document, or between the documents. The bookmark name is derived from the heading title - for example `Heading Level 2` will have a bookmark name `#heading-level-2`.
 
+We use this [Rules for Capitalization in Titles of Articles
+](http://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html) in our titles.
+
 ## Typography
 
 * The text can be **highlighted** by closing it between `**`.

@@ -1,5 +1,5 @@
 ---
-title: "Synology NAS Installation"
+title: "Custom Setup on Synology"
 ---
 
 <div style="float:right;width:50%;text-align:center;padding-left:10px">
@@ -7,6 +7,15 @@ title: "Synology NAS Installation"
 </div>
 
 You can have BigClown Gateway running on Raspberry Pi, but if you have any kind of NAS already running 24/7 in your newtwork, why not take advantage of it? You will save a tiny bit on electricity bill and also get more durable system.
+
+If you need more permanent solution than **BigClown Playground** you can install all the services yourself in your system. This guide will help you to install and configure these services:
+
+* BigClown Gateway `bcg`
+* BigClown Firmware Tool `bcf`
+* BigClown Host Tool `bch`
+* Mosquitto MQTT broker
+* Node-RED
+* The process manager `pm2`
 
 # About project
 
@@ -51,7 +60,7 @@ All the services will be installed inside the virtual machine. The advantage is 
     {{% img-zoom src="vmm-usb.png" %}}
     </div>
 
-6. Follow steps [Playground Setup on Ubuntu]({{<relref "doc/tutorials/playground-setup.md#playground-setup-on-ubuntu">}}) to install all the tools and services.
+6. Follow steps [**Custom Setup on Ubuntu]({{<relref "doc/tutorials/custom-setup-on-ubuntu.md">}}) to install all the tools and services.
 
 7. Now you have Node-RED, Grafana and all the tools running on your Synology NAS.
 

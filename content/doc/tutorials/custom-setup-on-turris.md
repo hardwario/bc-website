@@ -1,10 +1,15 @@
 ---
-title: "Turris Omnia & 1.x Setup"
+title: "Custom Setup on Turris"
 ---
 
-In this document we will install a set of components that are fundamental for the BigClown projects.
+If you need more permanent solution than **BigClown Playground** you can install all the services yourself in your system. This guide will help you to install and configure these services:
 
-You have to follow **Installation** section. Then continue with section based on which hardware you use for **gateway**. Usually it is {{< shop "Radio Dongle" >}} but you can use older option of having {{< shop "Core Module" >}} connected to the computer as a gateway.
+* BigClown Gateway `bcg`
+* BigClown Firmware Tool `bcf`
+* BigClown Host Tool `bch`
+* Mosquitto MQTT broker
+* Node-RED
+* The process manager `pm2`
 
 ## Installation
 
@@ -67,34 +72,3 @@ Follow these steps if you have {{< shop "Radio Dongle" >}} as a gateway.
 8. Start service
 
         /etc/init.d/bc-gateway-usb-dongle start
-
-
-## Finishing for Core module as a gateway
-
-Follow these steps if you have {{< shop "Core Module" >}} as a gateway.
-
-1. Finish [installation](#installation) part
-
-2. Download configuration
-
-        wget "https://raw.githubusercontent.com/bigclownlabs/bch-gateway/master/turris/etc/config/bc-gateway-core-module" -O /etc/config/bc-gateway-core-modul
-
-3. Make sure the configuration works
-
-        uci show bc-gateway-core-modul
-
-4. Download Init Script
-
-        wget "https://raw.githubusercontent.com/bigclownlabs/bch-gateway/master/turris/etc/init.d/bc-gateway-core-module" -O /etc/init.d/bc-gateway-core-module
-
-5. Add execute permission
-
-        chmod u+x /etc/init.d/bc-gateway-core-module
-
-7. Enable service for gateway
-
-        /etc/init.d/bc-gateway-core-module enable
-
-8. Start service
-
-        /etc/init.d/bc-gateway-core-module start

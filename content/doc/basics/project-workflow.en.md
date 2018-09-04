@@ -76,10 +76,6 @@ This **BigClown Playground** includes:
 
 * **BigClown Gateway**
 
-{{% note "info" %}}More information can be found in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) and [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}}).{{% /note %}}
-
-{{% note "success" %}}If you prefer the more technical approach and want to write things from scratch, there is no problem whatsoever to dive deep to **Python**, **Node.js** or any other environment you are comfortable with.{{% /note %}}
-
 ### Phase #6: Radio Pairing
 
 Most of our projects, and probably yours, will be wireless. And there is a need to pair the items to form the network. We use star-network topology and pairing is pretty simple. Just bring the gateway to the pairing mode and let the node transmit the pairing request.
@@ -141,10 +137,6 @@ Get social - start with a tweet, screenshot, post to the forum or get to the poi
 * [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
 
 * [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})
-
-* [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
-
-* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}})
 
 * [**Sub-GHz Radio**]({{< relref "doc/interfaces/sub-ghz-radio.md" >}})
 

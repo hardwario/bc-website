@@ -9,7 +9,7 @@ In our integration with BigClown we will be using Realtime Database and sends da
 
 Dependencies:
 
-* Installed Playground or our Raspbian (tutorials: [Playground](https://www.bigclown.com/doc/tutorials/playground-setup/), [Raspbian](https://www.bigclown.com/doc/tutorials/raspberry-pi-installation/))
+* Installed Playground or our Raspbian ([Raspbian](https://www.bigclown.com/doc/tutorials/raspberry-pi-installation/))
 * Installed nodejs (on our Raspbian preinstalled, other operating systems [download website](https://nodejs.org/en/download/))
 
 ## 1. Install firebase plugin
@@ -44,7 +44,7 @@ Dependencies:
 	{{% img-zoom src="6.PNG" %}}
 7. Now you must see database itself. Click on “dismiss” on red bar. Point on name of database and then click on plus symbol right next to name of your database. In field bellow fill Name with test, value with 0 and again click “Add” bellow. That’s all for Firebase part but keep it open. Link of your database you will need later, you can find it on top of Database card. Mine is https://bigclowndemo-932c9.firebaseio.com/.
 	{{% img-zoom src="8.PNG" %}}
-	
+
 ## 4. Connect Node-RED to our Firebase project
 1. Open our Node-RED, click on “Hamburger menu” next to Deploy button > Import > Clipboard. Past text bellow.
 ```

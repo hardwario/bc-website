@@ -24,7 +24,7 @@ This document will guide you through the **Radio Push Button** project. You will
 
     * **BigClown Playground** installed
 
-        You can find more information in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
+        You can find more information in the [**Quick Start Guide**]({{< relref "doc/basics/quick-start-guide.en.md" >}}) document.
 
     * **Raspberry Pi** with the **BigClown Raspbian** distribution
 
@@ -253,10 +253,6 @@ In this section, we will create a link between the button event on MQTT and HTTP
 {{% note "success" %}}At this point, you should get a push notification when you press the button.{{% /note %}}
 
 ## Related Documents
-
-* [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
-
-* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}})
 
 * [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 

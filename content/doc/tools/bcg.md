@@ -6,15 +6,13 @@ This multi-platform Python tool connects USB gateway to the MQTT. USB gateway is
 
 Gateway can be run in command line or by `pm2` service manager.
 
-The installation and start-up instructions are in the [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
-
 ## Install & Upgrade
 
     sudo pip3 install --upgrade --no-cache-dir bcg
 
 ## Usage examples
 
-Usually the `bcg` is run with `pm2` process manager, please see the [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}). This direct command line command is more for testing purporses if the service does not run correctly.
+Usually the `bcg` is run with `pm2` process manager. This direct command line command is more for testing purporses if the service does not run correctly.
 
 Start
 

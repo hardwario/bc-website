@@ -30,7 +30,7 @@ This document will guide you through the **Radio Soil Sensor** project. You will
 
 * You will need **Raspberry Pi** with the **BigClown Raspbian** distribution installed. Please see [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) document.
 
-Measured data will be saved and visualized in Grafana on **{{% shop "Raspberry Pi" %}}**. It is also possible to use your computer. Just follow [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) document.
+Measured data will be saved and visualized in Grafana on **{{% shop "Raspberry Pi" %}}**. It is also possible to use your computer. Just follow [**Quick Start Guide**]({{< relref "doc/basics/quick-start-guide.en.md" >}}) document.
 
 ## Connecting to Raspberry Pi
 
@@ -42,10 +42,6 @@ Please follow the [**Raspberry Pi Login**]({{< relref "doc/tutorials/raspberry-p
 
 In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **Core Module**.
 You will connect and flash firmware with **Raspberry Pi**
-
-{{< note "info">}}
-Firmware upload to Radio Dongle was done in [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
-{{< /note  >}}
 
 Now it's time to write firmware to the **Core Module**.
 
@@ -196,9 +192,6 @@ At this point, you should have a temperature and moisture monitoring of your pla
 
 ## Related Documents
 
-* [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
-
-* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}})
 
 * [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 

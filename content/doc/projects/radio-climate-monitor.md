@@ -24,7 +24,7 @@ This document will guide you through the **Radio Climate Monitor** project. You 
 
     * **BigClown Playground** installed
 
-        You can find more information in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
+        You can find more information in the [**Quick Start Guide**]({{< relref "doc/basics/quick-start-guide.en.md" >}}) document.
 
     * **Raspberry Pi** with the **BigClown Raspbian** distribution
 
@@ -147,7 +147,7 @@ Now we have assembled our kit and let's start with some basic integration with *
 
 Firstly we need to configure our **Node-RED** app.
 
-1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`. You can follow [**this**]({{< relref "doc/tutorials/nodered-library-installation.md" >}}) example for installing libraries to **NodeRED**.
+1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`.
 
     {{% img-zoom src="nodered-screen-3.png" width="300" %}}
 
@@ -194,10 +194,6 @@ Firstly we need to configure our **Node-RED** app.
 11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
 
 ## Related Documents
-
-* [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
-
-* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}})
 
 * [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 

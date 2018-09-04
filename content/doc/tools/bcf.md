@@ -4,7 +4,7 @@ title: "BigClown firmware flashing tool"
 
 This multi-platform Python tool can flash {{<shop "Radio Dongle">}} and {{<shop "Core Module">}} with local binary or latest released firmwares from GitHub.
 
-The installation and usage instructions are in the [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}), [**Quick Tutorial**]({{< relref "doc/tutorials/raspberry-pi-tutorial.md" >}}) and **Projects** section.
+The installation and usage instructions are in the [**Quick Tutorial**]({{< relref "doc/tutorials/raspberry-pi-tutorial.md" >}}) and **Projects** section.
 
 ## Install & Upgrade
 

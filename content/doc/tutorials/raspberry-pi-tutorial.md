@@ -5,7 +5,7 @@ parent: "basics"
 ---
 
 {{< note "info" >}}
-You can follow this tutorial even without Raspberry Pi. You just have to install [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) on your desktop. The Raspberry Pi approach is the easiest because you can download bc-rasbian image with pre-installed tools.
+You can follow this tutorial even without Raspberry Pi. You just have to install [**BigClown Playground**]({{< relref "doc/basics/quick-start-guide.en.md" >}}) on your desktop. The Raspberry Pi approach is the easiest because you can download bc-rasbian image with pre-installed tools.
 {{< /note >}}
 
 This document is a practical guide of using the **BigClown IoT Kit**. It will guide you how **Raspberry Pi** can read the temperature from **Core Module**, control the LED, measure the relative air humidity from **Humidity Tag**, control small electronic devices using **Relay Module**.

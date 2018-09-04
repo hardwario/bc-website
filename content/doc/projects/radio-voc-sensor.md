@@ -36,7 +36,7 @@ This document will guide you through the **Radio VOC sensor** project. You will 
 
         * **BigClown Playground** installed
 
-            You can find more information in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
+        You can find more information in the [**Quick Start Guide**]({{< relref "doc/basics/quick-start-guide.en.md" >}}) document.
 
         * **Raspberry Pi** with the **BigClown Raspbian** distribution
 
@@ -209,10 +209,6 @@ You will see this dashboard with values from the Radio VOC sensor.
 Your project is finished, congratulation!
 
 ## Related Documents
-
-* [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
-
-* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}})
 
 * [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 

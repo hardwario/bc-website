@@ -8,7 +8,7 @@ title: Blynk - Mobile App Builder
 
 1. Open the Blynk App and sing in to your account
 2. Go to the main PROJECT DASHBOARD. If you are inside of one project tap on DASHBOARD icon.
-3. Tap on QR code icon and scan your QR code 
+3. Tap on QR code icon and scan your QR code
 4. You should get Thanks! window
 5. Tap to CLAIM REWARD
 
@@ -51,7 +51,7 @@ In order to create a UI for your application you have to first create a project.
 
 # Node-RED
 
-In node red, install the Blynk package `node-red-contrib-blynk-ws`. You can follow [NodeRED Library Installation]({{< relref "doc/tutorials/nodered-library-installation.md" >}}). Also follow one of the project tutorials above where installation and creating and connecting of nodes is explained.
+In node red, install the Blynk package `node-red-contrib-blynk-ws` if you cannot see **Blynk** nodes. Also follow one of the project tutorials above where installation and creating and connecting of nodes is explained.
 
 # ZeRGBA to hex RGB values
 

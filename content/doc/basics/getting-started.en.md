@@ -12,7 +12,7 @@ BigClown offers a unique set of features that makes it different from other plat
 
 ### Feature #1: BigClown is open-source
 
-Open-source is our passion, so we share everything what we do. We have an organization at GitHub. More information can be found in the document [**GitHub Repositories**]({{< relref "doc/basics/github-repositories.en.md" >}}).
+Open-source is our passion, so we share everything what we do. We have an organization at GitHub. More information can be found in the document [**GitHub Repositories**]({{< relref "doc/tutorials/github-repositories.md" >}}).
 
 In general, we don't like hidden catches nor hiding the implementation under the hood. We work hard every day to earn your trust in our products, so anytime you have a chance to see the amount of care, passion and quality we put into the design and code.
 

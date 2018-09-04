@@ -34,7 +34,7 @@ This document will guide you through the **Radio Smart LED Strip** project. You 
 
     * **BigClown Playground** installed
 
-        You can find more information in the document [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}).
+        You can find more information in the [**Quick Start Guide**]({{< relref "doc/basics/quick-start-guide.en.md" >}}) document.
 
     * **Raspberry Pi** with the **BigClown Raspbian** distribution
 
@@ -106,8 +106,6 @@ See short video with easy step by step demonstration:
 
 ## Playground Bootstrap
 
-{{% note "warning" %}}In Windows: Start BigClown Playground and execute pm2 resurrect to start Node-RED and other required components. For more information see [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}). {{% /note %}}
-
 1. Open **Node-RED** in your web browser:
 
     **http://localhost:1880/**
@@ -141,8 +139,6 @@ See short video with easy step by step demonstration:
     {{% img-zoom src="node-red-gw-list.png" %}}
 
 {{% note "success" %}}At this point, you've got working **Node-RED**, **MQTT**, **BigClown Radio Dongle** and **BigClown Gateway**.{{% /note %}}
-
-{{% note "warning" %}}If you can't see connected Radio Dongle go again through [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}}) and check if all mentioned components are running properly. {{% /note %}}
 
 ## Radio Pairing
 
@@ -186,7 +182,7 @@ Now we have assembled our Radio Power Controller and let's start with some basic
 
 Firstly we need to configure our **Node-RED** app.
 
-1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`. You can follow [**this**]({{< relref "doc/tutorials/nodered-library-installation.md" >}}) example for installing libraries to **NodeRED**.
+1. If you are using BigClown raspi version you should be fine, but still check that **Blynk** nodes are installed. (You can view them on the left side menu in **Node-RED**). Otherwise you will need to install **Node-RED** package `node-red-contrib-blynk-ws`.
 
     {{% img-zoom src="nodered-1.png" height="300" width="120" %}}
 
@@ -231,10 +227,6 @@ Firstly we need to configure our **Node-RED** app.
 11. Now deploy your **Node-RED** app and hit play button in your **Blynk** project and you should be done!
 
 ## Related Documents
-
-* [**Playground Setup**]({{< relref "doc/tutorials/playground-setup.md" >}})
-
-* [**Playground Starter**]({{< relref "doc/tutorials/playground-starter.md" >}})
 
 * [**Raspberry Pi Installation**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}})
 

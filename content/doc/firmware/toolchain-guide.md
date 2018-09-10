@@ -83,13 +83,19 @@ Use this command to list the available firmware packages:
 Example output:
 
     ...
-    bigclownlabs/bcf-radio-climate-monitor:v1.1.0
-    bigclownlabs/bcf-radio-co2-monitor:v1.1.0
-    bigclownlabs/bcf-kit-wireless-controller:v1.1.0
-    bigclownlabs/bcf-radio-flood-detector:v1.1.0
-    bigclownlabs/bcf-radio-lcd-thermostat:v1.1.0
-    bigclownlabs/bcf-radio-motion-detector:v1.1.0
-    bigclownlabs/bcf-radio-push-button:v1.1.0
+    bigclownlabs/bcf-gateway-usb-dongle:v1.10.0
+    bigclownlabs/bcf-radio-climate-monitor:v1.3.0
+    bigclownlabs/bcf-radio-co2-monitor:v1.4.0
+    bigclownlabs/bcf-radio-door-sensor:v0.2.0
+    bigclownlabs/bcf-radio-flood-detector:v1.3.0
+    bigclownlabs/bcf-radio-lcd-thermostat:v1.4.0
+    bigclownlabs/bcf-radio-motion-detector:v1.3.0
+    bigclownlabs/bcf-radio-power-controller-rgb150:v1.4.1
+    bigclownlabs/bcf-radio-power-controller-rgbw144:v1.4.1
+    bigclownlabs/bcf-radio-power-controller-rgbw36:v1.4.1
+    bigclownlabs/bcf-radio-power-controller-rgbw72:v1.4.1
+    bigclownlabs/bcf-radio-push-button:v1.3.0
+    bigclownlabs/bcf-radio-voc-sensor:v1.0.0
     ...
 
 Use this command to list all the versions of the available firmware packages:

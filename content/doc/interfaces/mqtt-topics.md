@@ -9,7 +9,7 @@ Detailed list of topics is in **README** in GitHub repository [**bcf-generic-nod
 | Explanation   | MQTT Topic    |
 | ------------- |---------------|
 | Firmware info | node/{id}/info |
-|    | `{"firmware": "kit-motion-detector", "version": "v1.3.0"}`|
+|    | `{"firmware": "motion-detector", "version": "v1.3.0"}`|
 | **Battery**    |
 | Battery Module voltage | node/{id}/battery/standard/voltage |
 |           | `3.12` |
@@ -87,7 +87,7 @@ Also to see the MQTT responses open the Node-RED debug tab or run this console c
 |       | response: `gateway/{id}/pairing-mode "stop"` |
 | **Paired nodes** |
 | list | `gateway/{id}/nodes/get`  |
-|       | response: `gateway/{id}/nodes`<br/> `[{"id": "a7c8b05762dd", "alias": "generic-node:0"},` <br/>`{"id": "836d1983718a", "alias": "kit-lcd-thermostat:0"}]` |
+|       | response: `gateway/{id}/nodes`<br/> `[{"id": "a7c8b05762dd", "alias": "generic-node:0"},` <br/>`{"id": "836d1983718a", "alias": "lcd-thermostat:0"}]` |
 | purge all nodes| `gateway/{id}/nodes/purge`  |
 | | response: `gateway/{id}/nodes []` |
 | **Manual add/remove**|

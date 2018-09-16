@@ -254,6 +254,7 @@
       width:auto;
       margin-top: 2*$baseline;
       border-radius: 7px;
+      max-width: calc(100% + 200px);
 
       @media(max-width:1199px)
       {

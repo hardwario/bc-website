@@ -135,4 +135,3 @@ The goal of this **QUICK START GUIDE** is to show the basics in a few simple ste
 * Use your [**Raspberry PI**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) or other [**single board computer (SBC)**]({{< relref "doc/tutorials/raspberry-pi-installation.md#setup-on-original-raspbian">}}) as a server.
 * [**Flash other firmware**]({{<relref "doc/projects/radio-door-sensor.md#flash-door-sensor-firmware">}}) or [**write your own firmware**]({{<relref "doc/firmware/basic-overview.md">}}) for the **Core Module**.
 * Check the [**Core Module pinouts**]({{<relref "doc/hardware/header-pinout.md">}}) and add your own buttons, relays and sensors.
-

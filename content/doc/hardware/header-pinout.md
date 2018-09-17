@@ -5,11 +5,13 @@ title: "Header Pinout"
 The **BigClown IoT Kit** emphasizes hardware modularity and reusability. In order to achieve such goal, the proper interconnection system has to be used. BigClown sticks to a well-known and widely accepted standard - the so-called **headers** with a 2.54 mm (0.1 inch) pitch.
 
 ## Core Module pinout
-
 {{% img-zoom src="core-module-2-pinout.png" alt="Module drawing" width="400" %}}
 
 ## Cloony pinout
 {{% img-zoom src="cloony-pinout.png" alt="Module drawing" width="400" %}}
+
+## Eagle footprint libary
+You can download [BigClown library for Eagle EDA](https://github.com/bigclownlabs/bc-hardware/tree/master/lbr) software which contains **Standard Module** and **Cloony** format.
 
 ## Module Drawing & Pinout - Standard
 

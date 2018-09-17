@@ -2,7 +2,7 @@
 title: "Header Pinout"
 ---
 
-This document describes connector system used in BigClown and the pinout available on the connectors.
+The **BigClown IoT Kit** emphasizes hardware modularity and reusability. In order to achieve such goal, the proper interconnection system has to be used. BigClown sticks to a well-known and widely accepted standard - the so-called **headers** with a 2.54 mm (0.1 inch) pitch.
 
 ## Core Module pinout
 

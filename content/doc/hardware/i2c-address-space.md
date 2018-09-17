@@ -18,10 +18,12 @@ All addresses are provided in a 7-bit format.
 | 0x25    | TCA9534      |                                                                          | Reserved                                |
 | 0x26    | TCA9534      |                                                                          | Reserved                                |
 | 0x27    | TCA9534      |                                                                          | Reserved                                |
-| 0x28    | TCA9534      |                                                                          | Reserved                                |
 | 0x38    | TCA9534A     | {{% shop "CO2 Module" %}}                                                |                                         |
+| 0x39    | TCA9534A     |                                                                          | Reserved                                |
+| 0x3a    | TCA9534A     |                                                                          | Reserved                                |
 | 0x3b    | TCA9534A     | {{% shop "Relay Module" %}}                                              | Default address                         |
 | 0x3c    | TCA9534A     | {{% shop "LCD Module" %}}                                                |                                         |
+| 0x3d    | TCA9534A     |                                                                          | Reserved                                |
 | 0x3e    | TCA9534A     | {{% shop "Sensor Module" %}}                                             | Default address                         |
 | 0x3f    | TCA9534A     | {{% shop "Relay Module" %}}                                              | Alternate address                       |
 | 0x40    | SHT20        | {{% shop "Humidity Tag" %}} (R3.x+), {{% shop "Climate Module" %}}       |                                         |

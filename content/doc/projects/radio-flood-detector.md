@@ -230,7 +230,7 @@ In this section, we will create an **Applet** in the **IFTTT** service. The **Ap
 
 19. You should receive the push notification on your smart phone within a few seconds:
 
-20. Copy this URL to the clipboard for later use:
+20. Copy this key to the clipboard for later use:
 
     {{% img-zoom src="ifttt-18.png" %}}
 
@@ -245,24 +245,24 @@ In this section, we will create a link between the button event on MQTT and HTTP
 2. Insert the following snippet in the flow (using **Menu >> Import**):
 
     ```json
-    [{"id":"e507a379.e9d1d","type":"mqtt in","z":"dfc861b.b2a02a","name":"","topic":"node/flood-detector:0/flood-detector/a/alarm","qos":"2","broker":"b9592cd0.2b74f","x":660,"y":760,"wires":[["5d4d5593.80242c"]]},{"id":"62133f2.84223c","type":"http request","z":"dfc861b.b2a02a","name":"","method":"POST","ret":"txt","url":"","tls":"","x":1010,"y":760,"wires":[[]]},{"id":"5d4d5593.80242c","type":"change","z":"dfc861b.b2a02a","name":"","rules":[{"t":"delete","p":"payload","pt":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":890,"y":860,"wires":[["62133f2.84223c"]]},{"id":"b9592cd0.2b74f","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+    [{"id":"c6ce743.f65db88","type":"mqtt in","z":"d5a82106.8d3fa","name":"","topic":"node/flood-detector:0/flood-detector/a/alarm","qos":"2","broker":"29fba84a.b2af58","x":240,"y":140,"wires":[["7d9c308c.edf04"]]},{"id":"7d9c308c.edf04","type":"switch","z":"d5a82106.8d3fa","name":"","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"true","vt":"str"}],"checkall":"true","repair":false,"outputs":1,"x":510,"y":140,"wires":[["e2287fd0.90124"]]},{"id":"e2287fd0.90124","type":"ifttt out","z":"d5a82106.8d3fa","eventName":"flood","key":"40c1e6be.8cb228","x":670,"y":140,"wires":[]},{"id":"29fba84a.b2af58","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","willTopic":"","willQos":"0","willPayload":""},{"id":"40c1e6be.8cb228","type":"ifttt-key","z":""}]
     ```
 
     It will look like this:
 
     {{% img-zoom src="node-red-ifttt-snippet.png" %}}
 
-    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/flood-detector:0/flood-detector/a/alarm` and an HTTP request. Before passing the message to the HTTP request, we remove the `payload` parameter since it would be used in the HTTP request body.{{% /note %}}
+    {{% note "info" %}}This snippet creates a connection between the MQTT topic `node/flood-detector:0/flood-detector/a/alarm` and and IFTTT service. Before passing the message to the IFTTT we have to filter only `true` events.{{% /note %}}
 
-3. Double click on **http request** node and edit the IFTTT URL obtained in the previous section:
+3. Double click on **IFTTT node** node and edit the IFTTT key obtained in the previous section:
 
-    {{% img-zoom src="node-red-ifttt-url.png" %}}
+    {{% img-zoom src="node-red-ifttt-key.png" %}}
 
-4. Save the URL by clicking on the **Done** button.
+4. Save the settings by clicking on the **Done** button.
 
 5. Deploy the flow using the **Deploy** button in the top-right corner.
 
-{{% note "success" %}}At this point, you should get a push notification when you press the button.{{% /note %}}
+{{% note "success" %}}At this point, you should get a push notification when you connect flood sensor with moist fingers or put flood sensor contacts to the water.{{% /note %}}
 
 ## Related Documents
 basics

@@ -37,7 +37,7 @@ It can be equiped with magnet for easy attach enclosure and works for many years
 * **{{% shop "Core Module" %}}**
 * **{{% shop "Battery Module" %}}**
 * **{{% shop "Sensor Module" %}}**
-* **{{% shop "Magnetic Switch" %}}**
+* **{{% shop "Magnetic Switch" %}}** (for screw SA-201A, self-adhesive SA-203A)
 
 * You will need **Windows**, **Linux** or **macOS** computer.
 

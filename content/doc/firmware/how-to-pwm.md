@@ -18,17 +18,17 @@ void bc_pwm_set(bc_pwm_channel_t channel, uint16_t pwm_value);
 
 The `channel` parameter can be one of the output pins.
 
-```c
-BC_PWM_P0
-BC_PWM_P1
-BC_PWM_P2
-BC_PWM_P3
-BC_PWM_P6
-BC_PWM_P7
-BC_PWM_P8
-BC_PWM_P12
-BC_PWM_P14
-```
+
+    BC_PWM_P0
+    BC_PWM_P1
+    BC_PWM_P2
+    BC_PWM_P3
+    BC_PWM_P6
+    BC_PWM_P7
+    BC_PWM_P8
+    BC_PWM_P12
+    BC_PWM_P14
+
 
 The `value` is a number between `0` and `255`. I choosed this to be the same like in Arduino `analogWrite()` function. But by calling `bc_pwm_tim_configure()` function you can simply change period of the PWM.
 

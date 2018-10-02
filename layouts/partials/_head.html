@@ -17,6 +17,8 @@
   <script src="/_assets/js/{{ index .Site.Data.js.hash "zoom.js" }}"></script>
   <script src="/_assets/js/{{ index .Site.Data.js.hash "clipboard.min.js" }}"></script>
   <script src="/_assets/js/{{ index .Site.Data.js.hash "bioep.min.js" }}"></script>
+  <script src="/_assets/js/{{ index .Site.Data.js.hash "highlight.pack.js" }}"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   {{ end }}
 
   {{ partial "favicon.html" . }}

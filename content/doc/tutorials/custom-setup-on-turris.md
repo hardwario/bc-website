@@ -39,9 +39,11 @@ If you need more permanent solution than **BigClown Playground** you can install
 
         opkg install python3 python3-pip
 
-7. Install the **BigClown Gateway**:
+7. Install the **BigClown Gateway**, **BigClown Flash Tool** and **BigClown Host Tool**:
 
         pip3 install --upgrade --no-cache-dir bcg
+        pip3 install --upgrade --no-cache-dir bcf
+        pip3 install --upgrade --no-cache-dir bch
 
 ## Finishing for Radio Dongle as a gateway
 

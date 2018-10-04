@@ -15,46 +15,55 @@ Any users looking for additional cloud and IoT Application development tools are
 
 {{% img-zoom src="ubidots-website.png" %}}
 
-## Create Ubidots device and variable
+## Sign up to Ubidots and get an API Token
 
-  * After you create your account on [Ubidots](https://ubidots.com), go to the **Devices** page
-  * Create a new device and open it
-  * Set the **API Label** of newly created device to some URL-friendly name, which we later use in HTTP API ("bc" for BigClown in this example)
-  * Create a new variable and again, set **API Label** to some URL-friendly name, which we later use in HTTP API ("temperature" in this example)
-  * Click on your name in the right-top and select **API Credentials**, copy **Default token** to the script below
+  * Create an Ubidots account [here](https://ubidots.com).
+  * Click on the profile icon in the top-right corner and select **API Credentials**, then copy your **Default Token** 
 
 ## Node-RED flow
 
-Here is the complete flow which you can import to **Node-RED**. Just change the incoming MQTT topic and the token variable in the function block.
+Here is the complete flow which you can import to **Node-RED**:
 
 ```
-[{"id":"b2631b08.d79dc8","type":"inject","z":"a387667a.a475f8","name":"Test value 40","topic":"","payload":"40","payloadType":"num","repeat":"","crontab":"","once":false,"x":150,"y":200,"wires":[["e066c88d.34a6a8"]]},{"id":"e066c88d.34a6a8","type":"function","z":"a387667a.a475f8","name":"Ubidots temperature","func":"\n// Ubidots HTTP request\n\nvar token = \"<your token>\";\nvar device_api_label = \"bc\";\nvar variable_api_label = \"temperature\";\n\nmsg.url = \"http://things.ubidots.com/api/v1.6/devices/\" + device_api_label + \"/\" + variable_api_label + \"/values?token=\" + token;\nmsg.method = \"POST\";\n\nvar value = msg.payload;\n\nmsg.payload= {\"value\": value};\nreturn msg;","outputs":1,"noerr":0,"x":420,"y":200,"wires":[["297a3ffc.56488","205bacd5.8879d4"]]},{"id":"297a3ffc.56488","type":"http request","z":"a387667a.a475f8","name":"","method":"use","ret":"txt","url":"","tls":"","x":650,"y":160,"wires":[["205bacd5.8879d4"]]},{"id":"205bacd5.8879d4","type":"debug","z":"a387667a.a475f8","name":"","active":true,"console":"false","complete":"false","x":830,"y":200,"wires":[]},{"id":"7c568c97.13fe44","type":"mqtt in","z":"a387667a.a475f8","name":"","topic":"node/generic-node:0/thermometer/0:1/temperature","qos":"2","broker":"29fba84a.b2af58","x":250,"y":120,"wires":[["e066c88d.34a6a8"]]},{"id":"29fba84a.b2af58","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""}]
+[{"id":"6c6622f5.06be2c","type":"mqtt in","z":"2c41a2bd.aa36ae","name":"","topic":"node/#","qos":"2","broker":"29fba84a.b2af58","x":70,"y":40,"wires":[["f3036e8f.15107"]]},{"id":"f3036e8f.15107","type":"function","z":"2c41a2bd.aa36ae","name":"Ubidots Decode","func":"// Declare variables\nvar ubi_payload = {}\nvar ubi_msg = {};\nvar topic = msg.topic.split(\"/\");\n\n// Get device label, variable name and value from BigClown message\nvar device_label = topic[1];\nvar variable = topic[4];\nvar value = msg.payload;\n\n// Build Ubidots MQTT payload\nubi_msg['device_label'] = device_label;\nubi_payload[variable] = value;\nubi_msg['payload'] = ubi_payload;\nreturn ubi_msg;","outputs":1,"noerr":0,"x":280,"y":40,"wires":[["3ae188a9.accc48"]]},{"id":"3ae188a9.accc48","type":"ubidots_out","z":"2c41a2bd.aa36ae","name":"","token":"YOUR-TOKEN-HERE","label_device":"","device_label":"","tier":"educational","x":530,"y":40,"wires":[]},{"id":"29fba84a.b2af58","type":"mqtt-broker","z":"","broker":"localhost","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","willTopic":"","willQos":"0","willPayload":""}]
 ```
-
 
 {{% img-zoom src="ubidots-flow.png" %}}
 
-## Node-RED function for Ubidots
+To send your data to your Ubidots account just double click on the **Ubidots out** node and enter your **Ubidots TOKEN**.
 
-This section just explains the function which is already included in the Node-RED flow above.
-Here is the complete function for **Node-RED** which translates incoming values (for example from MQTT) to HTTP request which sends data to Ubidots.
+## The Ubidots Node
 
-```javascript
-// Ubidots HTTP request
-
-var token = "<your token here>";
-var device_api_label = "bc";
-var variable_api_label = "temperature";
-
-msg.url = "http://things.ubidots.com/api/v1.6/devices/" + device_api_label + "/" + variable_api_label + "/values?token=" + token;
-msg.method = "POST";
-
-var value = msg.payload;
-
-msg.payload= {"value": value};
-return msg;
+BigClown utilizes Ubidots official Node-RED node, which connects to Ubidots' MQTT broker and expects a Node-RED message with the following format:
 
 ```
+{
+    "device_label": YOUR_DEVICE_NAME,
+    "payload": {"SENSOR_VARIABLE_NAME": "SENSOR_VARIABLE_VALUE"}
+}
+```
+To aggregate BigClown's messages into the expected Ubidots format, a function called **Ubidots Decode** is used (this function is already included in the Node-RED flow above):
+
+```javascript
+// Declare variables
+var ubi_payload = {}
+var ubi_msg = {};
+var topic = msg.topic.split("/");
+
+// Get device label, variable name and value from BigClown message
+var device_label = topic[1];
+var variable = topic[4];
+var value = msg.payload;
+
+// Build Ubidots MQTT payload
+ubi_msg['device_label'] = device_label;
+ubi_payload[variable] = value;
+ubi_msg['payload'] = ubi_payload;
+return ubi_msg;
+```
+## Results
+
+This simple setup will automatically create a new Ubidots device for every new BigClown module detected by your BigClown gateway.
 
 ## There's more
 

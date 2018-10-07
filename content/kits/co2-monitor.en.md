@@ -21,13 +21,13 @@ optionalModules: ["usb_dongle","sigfox","lora"]
 techSpecs:
     dimensions:
         heading: "Dimensions (case)"
-        text: "55 x 28 x 35 mm"
+        text: "92 x 60 x 53 mm"
     temperature:
         heading: "Operating temperature"
         text: 0°C - 50°C
     power:
         heading: "Power supply"
-        text: "2 x AAA Alkaline Cells"
+        text: "4 x AAA Alkaline Cells"
     battery:
         heading: "Battery life-time"
         text: "2 years for standard use"

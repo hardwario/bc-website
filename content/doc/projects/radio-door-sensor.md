@@ -26,11 +26,11 @@ It can be equiped with magnet for easy attach enclosure and works for many years
 
 </div>
 
-<!--
-## Video tutorial
-#F3CB1D
-{{<youtube "_6kU-_ldaGOw">}}
--->
+
+## Project Intro Video
+
+{{<youtube "cvO_tXcAvZ8">}}
+
 ## Requirements
 
 * **{{% shop "Radio Dongle" %}}**

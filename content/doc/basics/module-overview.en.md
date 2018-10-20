@@ -13,7 +13,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-radio-dongle.md" >}}
 </p>
-{{< more-info "doc/hardware/about-radio-dongle.md" >}}
+{{< more-info "/doc/hardware/about-radio-dongle.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -22,7 +22,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-core-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-core-module.md" >}}
+{{< more-info "/doc/hardware/about-core-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -31,7 +31,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-cloony.md" >}}
 </p>
-{{< more-info "doc/hardware/about-cloony.md" >}}
+{{< more-info "/doc/hardware/about-cloony.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -40,7 +40,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-mini-battery-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-mini-battery-module.md" >}}
+{{< more-info "/doc/hardware/about-mini-battery-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -49,7 +49,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-battery-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-battery-module.md" >}}
+{{< more-info "/doc/hardware/about-battery-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -58,7 +58,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-power-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-power-module.md" >}}
+{{< more-info "/doc/hardware/about-power-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -67,7 +67,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-pir-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-pir-module.md" >}}
+{{< more-info "/doc/hardware/about-pir-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -76,7 +76,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-climate-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-climate-module.md" >}}
+{{< more-info "/doc/hardware/about-climate-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -85,7 +85,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-lcd-module-bg.md" >}}
 </p>
-{{< more-info "doc/hardware/about-lcd-module.md" >}}
+{{< more-info "/doc/hardware/about-lcd-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -94,7 +94,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-button-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-button-module.md" >}}
+{{< more-info "/doc/hardware/about-button-module.en.md" >}}
 </div>
 
 
@@ -104,7 +104,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-encoder-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-encoder-module.md" >}}
+{{< more-info "/doc/hardware/about-encoder-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -113,7 +113,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-co2-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-co2-module.md" >}}
+{{< more-info "/doc/hardware/about-co2-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -121,7 +121,7 @@ Here is a list of modules and tags.
 <h2>Relay Module</h2>
 <p>{{< include "shop/pitch-relay-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-relay-module.md" >}}
+{{< more-info "/doc/hardware/about-relay-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -130,7 +130,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-sensor-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-sensor-module.md" >}}
+{{< more-info "/doc/hardware/about-sensor-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -139,7 +139,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-sigfox-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-sigfox-module.md" >}}
+{{< more-info "/doc/hardware/about-sigfox-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -148,7 +148,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-1-wire-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-1-wire-module.md" >}}
+{{< more-info "/doc/hardware/about-1-wire-module.en.md" >}}
 </div>
 
 
@@ -158,7 +158,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-cover-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-cover-module.md" >}}
+{{< more-info "/doc/hardware/about-cover-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -167,7 +167,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-tag-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-tag-module.md" >}}
+{{< more-info "/doc/hardware/about-tag-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -176,7 +176,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-temperature-tag.md" >}}
 </p>
-{{< more-info "doc/hardware/about-temperature-tag.md" >}}
+{{< more-info "/doc/hardware/about-temperature-tag.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -185,7 +185,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-humidity-tag.md" >}}
 </p>
-{{< more-info "doc/hardware/about-humidity-tag.md" >}}
+{{< more-info "/doc/hardware/about-humidity-tag.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -194,7 +194,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-lux-meter-tag.md" >}}
 </p>
-{{< more-info "doc/hardware/about-lux-meter-tag.md" >}}
+{{< more-info "/doc/hardware/about-lux-meter-tag.en.md" >}}
 </div>
 
 
@@ -204,7 +204,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-barometer-tag.md" >}}
 </p>
-{{< more-info "doc/hardware/about-barometer-tag.md" >}}
+{{< more-info "/doc/hardware/about-barometer-tag.en.md" >}}
 </div>
 
 
@@ -214,7 +214,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-voc-tag.md" >}}
 </p>
-{{< more-info "doc/hardware/about-voc-tag.md" >}}
+{{< more-info "/doc/hardware/about-voc-tag.en.md" >}}
 </div>
 
 
@@ -224,7 +224,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-nfc-tag.md" >}}
 </p>
-{{< more-info "doc/hardware/about-nfc-tag.md" >}}
+{{< more-info "/doc/hardware/about-nfc-tag.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -233,7 +233,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-base-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-base-module.md" >}}
+{{< more-info "/doc/hardware/about-base-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -242,7 +242,7 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-breadboard-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-breadboard-module.md" >}}
+{{< more-info "/doc/hardware/about-breadboard-module.en.md" >}}
 </div>
 
 <div class="clearfix module-pitch">
@@ -251,6 +251,5 @@ Here is a list of modules and tags.
 <p>
 {{< include "shop/pitch-probe-module.md" >}}
 </p>
-{{< more-info "doc/hardware/about-probe-module.md" >}}
+{{< more-info "/doc/hardware/about-probe-module.en.md" >}}
 </div>
-

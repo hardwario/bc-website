@@ -20,4 +20,4 @@ This PWM signal can be used to set brightness when connected to some low power L
 
 By using `bc_servo` library you can connect a servo to the digital output and set the servo motor angle. You can use up to 9 servo motors.
 
-For more information please see the [**How to: PWM**]({{<relref "doc/firmware/how-to-pwm.md">}}) and [**How to: Servo motor**]({{<relref "doc/firmware/how-to-servo-motor.md">}}) articles in the Learn section.
+For more information please see the [**How to: PWM**]({{< relref "/doc/firmware/how-to-pwm.en.md">}}) and [**How to: Servo motor**]({{<relref "/doc/firmware/how-to-servo-motor.en.md">}}) articles in the Learn section.

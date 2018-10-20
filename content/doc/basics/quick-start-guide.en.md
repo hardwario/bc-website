@@ -54,7 +54,7 @@ Just follow these steps:
     {{% img-zoom src="playground-devices-connected.png"  %}}
 
 {{< note "info" >}}
-In the future we recommend to use as a Hub our ready-to-use {{< shop "BigClown Hub" >}} or just plug our Radio Dongle to [Raspberry Pi]({{<relref "doc/tutorials/raspberry-pi-installation.md">}}) or [any server]({{<relref "doc/tutorials/raspberry-pi-installation.md#setup-on-original-raspbian">}}).
+In the future we recommend to use as a Hub our ready-to-use {{< shop "BigClown Hub" >}} or just plug our Radio Dongle to [Raspberry Pi]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md">}}) or [any server]({{<relref "/doc/tutorials/raspberry-pi-installation.en.md#setup-on-original-raspbian">}}).
 {{< /note >}}
 
 
@@ -70,9 +70,9 @@ By building devices we mean putting modules and enclosure together, optionally f
     {{% img-zoom src="mini-battery-module-orientation.png"  %}}
     </div>
 
-2. As mentioned, delivered kits are already programmed with a right firmware. If you would like to change it to another firmware in the Core Module, please follow this [**firmware flash chapter**]({{<relref "doc/projects/radio-door-sensor.md#flash-door-sensor-firmware">}}).
+2. As mentioned, delivered kits are already programmed with a right firmware. If you would like to change it to another firmware in the Core Module, please follow this [**firmware flash chapter**]({{< relref "/doc/projects/radio-door-sensor.en.md#flash-door-sensor-firmware">}}).
 
-3. As mentioned, kits delivered together with Radio Dongle are already paired and should be visible in Playground's **Device** tab. In case you need to pair new devices, please follow these [**radio pairing instructions**]({{< relref "doc/projects/radio-door-sensor.md#pair-the-radio-door-sensor" >}}).
+3. As mentioned, kits delivered together with Radio Dongle are already paired and should be visible in Playground's **Device** tab. In case you need to pair new devices, please follow these [**radio pairing instructions**]({{< relref "/doc/projects/radio-door-sensor.en.md#pair-the-radio-door-sensor" >}}).
 
 4. Switch to Playground's **Messages** tab and put batteries to your kit, you should see incoming messages. Every kit sends different messages. Here the **Button kit** sends `temperature`, `voltage`, `event-count` (everytime you press the button) and other messages.
 
@@ -87,7 +87,7 @@ Now it's time to give your system a logic and connect it with desired platforms.
 
 In **QUICK START GUIDE** we will create a simple dashboard with a temperature gauge. Again, just follow these steps:
 
-1. Switch to the **Messages**, you should see incoming messages from the previous step. Copy the **bold** text (called **topic**) that ends with `temperature` **to the clipboard**. Make sure you copy just text and no space before or after the text. Your **topic** could be different based on your kit name. You can also copy any other topic that your module supports from the [**MQTT topics list**]({{<relref "doc/interfaces/mqtt-topics.md">}}).
+1. Switch to the **Messages**, you should see incoming messages from the previous step. Copy the **bold** text (called **topic**) that ends with `temperature` **to the clipboard**. Make sure you copy just text and no space before or after the text. Your **topic** could be different based on your kit name. You can also copy any other topic that your module supports from the [**MQTT topics list**]({{< relref "/doc/interfaces/mqtt-topics.en.md">}}).
 
     {{% img-zoom src="playground-topic-copy.png"  %}}
 
@@ -126,12 +126,12 @@ Or just put the red nose on, make a selfie and share it on Facebook or Twitter w
 
 The goal of this **QUICK START GUIDE** is to show the basics in a few simple steps. Now you can learn more by browsing the **documentation** or by visiting the **links below**.
 
-* Check out other BigClown [**projects**]({{< relref "doc/projects/radio-door-sensor.md" >}}).
+* Check out other BigClown [**projects**]({{< relref "/doc/projects/radio-door-sensor.en.md" >}}).
 
-* Take a look at the [**Module Overview**]({{< relref "doc/basics/module-overview.en.md" >}}).
+* Take a look at the [**Module Overview**]({{< relref "/doc/basics/module-overview.en.md" >}}).
 
-* Learn about [**MQTT**]({{<relref "doc/interfaces/mqtt-protocol.md">}}) and [**BigClown MQTT topics**]({{<relref "doc/interfaces/mqtt-topics.md">}}) to control LEDs and relays.
-* Try other [**integrations**]({{<relref "doc/integrations/grafana-for-visualization.md" >}}) with **Grafana**, **Blynk**, **IFTTT**, **Ubidots** and others.
-* Use your [**Raspberry PI**]({{< relref "doc/tutorials/raspberry-pi-installation.md" >}}) or other [**single board computer (SBC)**]({{< relref "doc/tutorials/raspberry-pi-installation.md#setup-on-original-raspbian">}}) as a server.
-* [**Flash other firmware**]({{<relref "doc/projects/radio-door-sensor.md#flash-door-sensor-firmware">}}) or [**write your own firmware**]({{<relref "doc/firmware/basic-overview.md">}}) for the **Core Module**.
-* Check the [**Core Module pinouts**]({{<relref "doc/hardware/header-pinout.md">}}) and add your own buttons, relays and sensors.
+* Learn about [**MQTT**]({{< relref "/doc/interfaces/mqtt-protocol.en.md">}}) and [**BigClown MQTT topics**]({{<relref "/doc/interfaces/mqtt-topics.en.md">}}) to control LEDs and relays.
+* Try other [**integrations**]({{< relref "/doc/integrations/grafana-for-visualization.en.md" >}}) with **Grafana**, **Blynk**, **IFTTT**, **Ubidots** and others.
+* Use your [**Raspberry PI**]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md" >}}) or other [**single board computer (SBC)**]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md#setup-on-original-raspbian.en.md">}}) as a server.
+* [**Flash other firmware**]({{< relref "/doc/projects/radio-door-sensor.en.md#flash-door-sensor-firmware.en.md">}}) or [**write your own firmware**]({{<relref "/doc/firmware/basic-overview.en.md">}}) for the **Core Module**.
+* Check the [**Core Module pinouts**]({{< relref "/doc/hardware/header-pinout.en.md">}}) and add your own buttons, relays and sensors.

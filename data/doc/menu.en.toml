@@ -1,0 +1,467 @@
+[[items]]
+title = "Basics"
+link = "/doc/basics/quick-start-guide.en.md"
+
+  [[items.items]]
+  title = "Quick Start Guide"
+  link = "/doc/basics/quick-start-guide.en.md"
+
+  [[items.items]]
+  title = "About BigClown"
+  link = "/doc/basics/getting-started.en.md"
+
+  [[items.items]]
+  title = "Module Overview"
+  link = "/doc/basics/module-overview.en.md"
+
+[[items]]
+title = "Tutorials"
+link = "/doc/tutorials/raspberry-pi-tutorial.en.md"
+
+  [[items.items]]
+  title = "Raspberry Pi Tutorial"
+  link = "/doc/tutorials/raspberry-pi-tutorial.en.md"
+
+  [[items.items]]
+  title = "Raspberry Pi Installation"
+  link = "/doc/tutorials/raspberry-pi-installation.en.md"
+
+  [[items.items]]
+  title = "Raspberry Pi Login"
+  link = "/doc/tutorials/raspberry-pi-login.en.md"
+
+  [[items.items]]
+  title = "Custom Setup on Ubuntu"
+  link = "/doc/tutorials/custom-setup-on-ubuntu.en.md"
+
+  [[items.items]]
+  title = "Custom Setup on macOS"
+  link = "/doc/tutorials/custom-setup-on-macos.en.md"
+
+  [[items.items]]
+  title = "Custom Setup on Raspberry Pi"
+  link = "/doc/tutorials/custom-setup-on-raspberry-pi.en.md"
+
+  [[items.items]]
+  title = "Custom Setup on Synology"
+  link = "/doc/tutorials/custom-setup-on-synology.en.md"
+
+  [[items.items]]
+  title = "Custom Setup on Turris"
+  link = "/doc/tutorials/custom-setup-on-turris.en.md"
+
+  [[items.items]]
+  title = "MySigfox.com service"
+  link = "/doc/tutorials/mysigfox-com-service.en.md"
+
+  [[items.items]]
+  title = "GitHub Repositories"
+  link = "/doc/tutorials/github-repositories.en.md"
+
+[[items]]
+title = "Projects"
+link = "/doc/projects/radio-door-sensor.en.md"
+
+  [[items.items]]
+  title = "Radio Door Sensor"
+  link = "/doc/projects/radio-door-sensor.en.md"
+
+  [[items.items]]
+  title = "Radio Soil Sensor"
+  link = "/doc/projects/radio-soil-sensor.en.md"
+
+  [[items.items]]
+  title = "Radio Push Button"
+  link = "/doc/projects/radio-push-button.en.md"
+
+  [[items.items]]
+  title = "Radio Climate Monitor"
+  link = "/doc/projects/radio-climate-monitor.en.md"
+
+  [[items.items]]
+  title = "Radio Motion Detector"
+  link = "/doc/projects/radio-motion-detector.en.md"
+
+  [[items.items]]
+  title = "Radio Flood Detector"
+  link = "/doc/projects/radio-flood-detector.en.md"
+
+  [[items.items]]
+  title = "Radio LCD Thermostat"
+  link = "/doc/projects/radio-lcd-thermostat.en.md"
+
+  [[items.items]]
+  title = "Radio CO2 Monitor"
+  link = "/doc/projects/radio-co2-monitor.en.md"
+
+  [[items.items]]
+  title = "Radio Smart LED Strip"
+  link = "/doc/projects/radio-smart-led-strip.en.md"
+
+  [[items.items]]
+  title = "Radio VOC sensor"
+  link = "/doc/projects/radio-voc-sensor.en.md"
+
+[[items]]
+title = "Interfaces"
+link = "/doc/interfaces/mqtt-protocol.en.md"
+
+  [[items.items]]
+  title = "MQTT Protocol"
+  link = "/doc/interfaces/mqtt-protocol.en.md"
+
+  [[items.items]]
+  title = "MQTT Topics"
+  link = "/doc/interfaces/mqtt-topics.en.md"
+
+  [[items.items]]
+  title = "Serial port JSON"
+  link = "/doc/interfaces/serial-port-json.en.md"
+
+  [[items.items]]
+  title = "Sub-GHz Radio"
+  link = "/doc/interfaces/sub-ghz-radio.en.md"
+
+  [[items.items]]
+  title = "Sigfox Radio"
+  link = "/doc/interfaces/sigfox-radio.en.md"
+
+  [[items.items]]
+  title = "LoRa Radio"
+  link = "/doc/interfaces/lora-radio.en.md"
+
+  [[items.items]]
+  title = "Firebase"
+  link = "/doc/interfaces/firebase.en.md"
+
+[[items]]
+title = "Integrations"
+link = "/doc/integrations/grafana-for-visualization.en.md"
+
+  [[items.items]]
+  title = "Grafana for Visualization"
+  link = "/doc/integrations/grafana-for-visualization.en.md"
+
+  [[items.items]]
+  title = "Blynk for Mobile Application"
+  link = "/doc/integrations/blynk-for-mobile-applications.en.md"
+
+  [[items.items]]
+  title = "IFTTT If This Then That"
+  link = "/doc/integrations/ifttt-if-this-then-that.en.md"
+
+  [[items.items]]
+  title = "Anemone Platform"
+  link = "/doc/integrations/anemone-platform.en.md"
+
+  [[items.items]]
+  title = "Ubidots"
+  link = "/doc/integrations/ubidots.en.md"
+
+  [[items.items]]
+  title = "HomeKit and Siri"
+  link = "/doc/integrations/homekit-and-siri.en.md"
+
+[[items]]
+title = "Hardware"
+link = "/doc/hardware/basic-principles.en.md"
+
+  [[items.items]]
+  title = "Basic Principles"
+  link = "/doc/hardware/basic-principles.en.md"
+
+  [[items.items]]
+  title = "Header Pinout"
+  link = "/doc/hardware/header-pinout.en.md"
+
+  [[items.items]]
+  title = "Core Module R1 and R2 comparison"
+  link = "/doc/hardware/core-module-1-and-2-comparison.en.md"
+
+  [[items.items]]
+  title = "Power Management"
+  link = "/doc/hardware/power-management.en.md"
+
+  [[items.items]]
+  title = "I²C Address Space"
+  link = "/doc/hardware/i2c-address-space.en.md"
+
+  [[items.items]]
+  title = "About 1-Wire Module"
+  link = "/doc/hardware/about-1-wire-module.en.md"
+
+  [[items.items]]
+  title = "About Barometer Tag"
+  link = "/doc/hardware/about-barometer-tag.en.md"
+
+  [[items.items]]
+  title = "About Base Module"
+  link = "/doc/hardware/about-base-module.en.md"
+
+  [[items.items]]
+  title = "About Battery Module"
+  link = "/doc/hardware/about-battery-module.en.md"
+
+  [[items.items]]
+  title = "About Breadboard Module"
+  link = "/doc/hardware/about-breadboard-module.en.md"
+
+  [[items.items]]
+  title = "About Button Module"
+  link = "/doc/hardware/about-button-module.en.md"
+
+  [[items.items]]
+  title = "About Climate Module"
+  link = "/doc/hardware/about-climate-module.en.md"
+
+  [[items.items]]
+  title = "About Cloony"
+  link = "/doc/hardware/about-cloony.en.md"
+
+  [[items.items]]
+  title = "About CO2 Module"
+  link = "/doc/hardware/about-co2-module.en.md"
+
+  [[items.items]]
+  title = "About Core Module"
+  link = "/doc/hardware/about-core-module.en.md"
+
+  [[items.items]]
+  title = "About Cover Module"
+  link = "/doc/hardware/about-cover-module.en.md"
+
+  [[items.items]]
+  title = "About Encoder Module"
+  link = "/doc/hardware/about-encoder-module.en.md"
+
+  [[items.items]]
+  title = "About Humidity Tag"
+  link = "/doc/hardware/about-humidity-tag.en.md"
+
+  [[items.items]]
+  title = "About LCD Module"
+  link = "/doc/hardware/about-lcd-module.en.md"
+
+  [[items.items]]
+  title = "About LoRa Module"
+  link = "/doc/hardware/about-lora-module.en.md"
+
+  [[items.items]]
+  title = "About Lux Meter Tag"
+  link = "/doc/hardware/about-lux-meter-tag.en.md"
+
+  [[items.items]]
+  title = "About Mini Battery Module"
+  link = "/doc/hardware/about-mini-battery-module.en.md"
+
+  [[items.items]]
+  title = "About Mini Cover Module"
+  link = "/doc/hardware/about-mini-cover-module.en.md"
+
+  [[items.items]]
+  title = "About NFC Tag"
+  link = "/doc/hardware/about-nfc-tag.en.md"
+
+  [[items.items]]
+  title = "About PIR Module"
+  link = "/doc/hardware/about-pir-module.en.md"
+
+  [[items.items]]
+  title = "About Power Module"
+  link = "/doc/hardware/about-power-module.en.md"
+
+  [[items.items]]
+  title = "About Probe Module"
+  link = "/doc/hardware/about-probe-module.en.md"
+
+  [[items.items]]
+  title = "About Relay Module"
+  link = "/doc/hardware/about-relay-module.en.md"
+
+  [[items.items]]
+  title = "About Sensor Module"
+  link = "/doc/hardware/about-sensor-module.en.md"
+
+  [[items.items]]
+  title = "About Sigfox Module"
+  link = "/doc/hardware/about-sigfox-module.en.md"
+
+  [[items.items]]
+  title = "About Tag Module"
+  link = "/doc/hardware/about-tag-module.en.md"
+
+  [[items.items]]
+  title = "About Temperature Tag"
+  link = "/doc/hardware/about-temperature-tag.en.md"
+
+  [[items.items]]
+  title = "About Radio Dongle"
+  link = "/doc/hardware/about-radio-dongle.en.md"
+
+  [[items.items]]
+  title = "About VOC Tag"
+  link = "/doc/hardware/about-voc-tag.en.md"
+
+[[items]]
+title = "Firmware"
+link = "/doc/firmware/basic-overview.en.md"
+
+  [[items.items]]
+  title = "Basic Overview"
+  link = "/doc/firmware/basic-overview.en.md"
+
+  [[items.items]]
+  title = "Toolchain Setup"
+  link = "/doc/firmware/toolchain-setup.en.md"
+
+  [[items.items]]
+  title = "Toolchain Guide"
+  link = "/doc/firmware/toolchain-guide.en.md"
+
+  [[items.items]]
+  title = "Blank Start"
+  link = "/doc/firmware/blank-start.en.md"
+
+  [[items.items]]
+  title = "Debugging"
+  link = "/doc/firmware/debugging.en.md"
+
+  [[items.items]]
+  title = "SDK Framework"
+  link = "/doc/firmware/sdk-framework.en.md"
+
+  [[items.items]]
+  title = "Common Problems"
+  link = "/doc/firmware/common-problems.en.md"
+
+  [[items.items]]
+  title = "Timing and Scheduler"
+  link = "/doc/firmware/timing-and-scheduler.en.md"
+
+  [[items.items]]
+  title = "How to: EEPROM"
+  link = "/doc/firmware/how-to-eeprom.en.md"
+
+  [[items.items]]
+  title = "How to: GPIO Pins"
+  link = "/doc/firmware/how-to-gpio-pins.en.md"
+
+  [[items.items]]
+  title = "How to: LED Diode"
+  link = "/doc/firmware/how-to-led-diode.en.md"
+
+  [[items.items]]
+  title = "How to: LoRa Module"
+  link = "/doc/firmware/how-to-lora-module.en.md"
+
+  [[items.items]]
+  title = "How to: Push Button"
+  link = "/doc/firmware/how-to-push-button.en.md"
+
+  [[items.items]]
+  title = "How to: PWM"
+  link = "/doc/firmware/how-to-pwm.en.md"
+
+  [[items.items]]
+  title = "How to: Servo motor"
+  link = "/doc/firmware/how-to-servo-motor.en.md"
+
+  [[items.items]]
+  title = "How to: Battery Module"
+  link = "/doc/firmware/how-to-battery-module.en.md"
+
+  [[items.items]]
+  title = "How to: CO2 Module"
+  link = "/doc/firmware/how-to-co2-module.en.md"
+
+  [[items.items]]
+  title = "How to: LCD Module"
+  link = "/doc/firmware/how-to-lcd-module.en.md"
+
+  [[items.items]]
+  title = "How to: Sigfox Module"
+  link = "/doc/firmware/how-to-sigfox-module.en.md"
+
+  [[items.items]]
+  title = "How to: UART Interface"
+  link = "/doc/firmware/how-to-uart-interface.en.md"
+
+  [[items.items]]
+  title = "How to: I²C Bus"
+  link = "/doc/firmware/how-to-i2c-bus.en.md"
+
+  [[items.items]]
+  title = "How to: SPI Bus"
+  link = "/doc/firmware/how-to-spi-bus.en.md"
+
+  [[items.items]]
+  title = "How to: A/D Converter"
+  link = "/doc/firmware/how-to-ad-converter.en.md"
+
+  [[items.items]]
+  title = "How to: D/A Converter"
+  link = "/doc/firmware/how-to-da-converter.en.md"
+
+  [[items.items]]
+  title = "How to: PIR Module"
+  link = "/doc/firmware/how-to-pir-module.en.md"
+
+  [[items.items]]
+  title = "How to: Power Module"
+  link = "/doc/firmware/how-to-power-module.en.md"
+
+  [[items.items]]
+  title = "How to: Relay Module"
+  link = "/doc/firmware/how-to-relay-module.en.md"
+
+  [[items.items]]
+  title = "How to: Temperature Sensor"
+  link = "/doc/firmware/how-to-temperature-sensor.en.md"
+
+  [[items.items]]
+  title = "How to: Accelerometer"
+  link = "/doc/firmware/how-to-accelerometer.en.md"
+
+  [[items.items]]
+  title = "How to: USB Console"
+  link = "/doc/firmware/how-to-usb-console.en.md"
+
+  [[items.items]]
+  title = "How to: Smart LED Strip"
+  link = "/doc/firmware/how-to-smart-led-strip.en.md"
+
+  [[items.items]]
+  title = "How to: 1-Wire Relay"
+  link = "/doc/firmware/how-to-1-wire-relay.en.md"
+
+[[items]]
+title = "Tools"
+link = "/doc/tools/bcf.en.md"
+
+  [[items.items]]
+  title = "BigClown Flashing tool `bcf`"
+  link = "/doc/tools/bcf.en.md"
+
+  [[items.items]]
+  title = "BigClown gateway `bcg`"
+  link = "/doc/tools/bcg.en.md"
+
+  [[items.items]]
+  title = "BigClown Host Tool `bch`"
+  link = "/doc/tools/bch.en.md"
+
+[[items]]
+title = "Documentation"
+link = "/doc/documentation/contribution-setup.en.md"
+
+  [[items.items]]
+  title = "Contribution Setup"
+  link = "/doc/documentation/contribution-setup.en.md"
+
+  [[items.items]]
+  title = "Content Contribution"
+  link = "/doc/documentation/content-contribution.en.md"
+
+  [[items.items]]
+  title = "Language"
+  link = "/doc/documentation/language.en.md"

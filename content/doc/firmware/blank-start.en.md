@@ -1,5 +1,12 @@
 ---
 title: "Blank Start"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 13
+  doc:
+    parent: 'firmware'
+    weight: 13
 ---
 
 This document will guide you through a blank firmware creation, explains the structure of the created project and the typical development cycle.

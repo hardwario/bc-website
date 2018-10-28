@@ -1,5 +1,12 @@
 ---
 title: "I²C Address Space"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 14
+  doc:
+    parent: 'hardware'
+    weight: 14
 ---
 
 The following table lists the I²C addresses used across the BigClown system.

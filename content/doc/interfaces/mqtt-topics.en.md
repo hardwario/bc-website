@@ -1,5 +1,12 @@
 ---
 title: "MQTT topics"
+menu:
+  main:
+    parent: 'interfaces'
+    weight: 20
+  doc:
+    parent: 'interfaces'
+    weight: 20
 ---
 
 ## Generic Node Topics

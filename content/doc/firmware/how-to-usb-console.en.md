@@ -1,11 +1,18 @@
 ---
 title: "How to: USB Console"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 [Core module](../../hardware/about-core-module/) can handle two-way communication with USB-connected device (computer, router, ...).
 
 ## Prerequisites
-First you have to include the USB CDC library 
+First you have to include the USB CDC library
 ```c
 #include <bc_usb_cdc.h>
 ```

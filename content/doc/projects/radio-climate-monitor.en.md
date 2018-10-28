@@ -1,5 +1,12 @@
 ---
 title: "Radio Climate Monitor"
+menu:
+  main:
+    parent: 'projects'
+    weight: 20
+  doc:
+    parent: 'projects'
+    weight: 20
 ---
 
 This document will guide you through the **Radio Climate Monitor** project. You will be able to see dashboard with temperature, humidity, ambient light and atmospheric pressure in **Node-RED** and view the data on your smart phone using the **Blynk** cloud and mobile app.

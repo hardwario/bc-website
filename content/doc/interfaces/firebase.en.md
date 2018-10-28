@@ -1,6 +1,13 @@
 ---
 title: "Firebase"
 slug: "firebase"
+menu:
+  main:
+    parent: 'interfaces'
+    weight: 70
+  doc:
+    parent: 'interfaces'
+    weight: 70
 ---
 
 {{% note "info" %}}Firebase is online platform by Google, that has lots of useful functions such as Realtime Database, Cloud Messaging, Cloud Storage and many other. It hosts Google on his own servers. You can access services right from web, mobile apps or many other ways.{{% /note %}}

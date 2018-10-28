@@ -1,7 +1,5 @@
 ---
 title: "Project Workflow"
-menu: "doc"
-parent: "basics"
 ---
 
 Let's dive a little more into how we envision that each project you start might be done.

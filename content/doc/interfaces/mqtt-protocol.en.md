@@ -1,5 +1,12 @@
 ---
 title: "MQTT Protocol"
+menu:
+  main:
+    parent: 'interfaces'
+    weight: 10
+  doc:
+    parent: 'interfaces'
+    weight: 10
 ---
 * MQTT is open, simple and low overhead communication protocol for sending messages between many clients which are connected to the central MQTT broker.
 * Every **message** contains two parts - **topic** and **payload**.

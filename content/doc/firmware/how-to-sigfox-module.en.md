@@ -1,5 +1,12 @@
 ---
 title: "How to: Sigfox module"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Sigfox module provides a simple way how to connect your kit to the Sigfox network. As any other BigClown module, Sigfox module can be controlled with the [SDK](https://sdk.bigclown.com/group__bc__module__sigfox.html). Please note that if you bought this module WITH connectivity from our e-shop, you will have to use MySigfox.com service to get messages from Sigfox Backend to your server.

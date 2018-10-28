@@ -1,5 +1,12 @@
 ---
 title: "Anemone Platform"
+menu:
+  main:
+    parent: 'integrations'
+    weight: 40
+  doc:
+    parent: 'integrations'
+    weight: 40
 ---
 
 **Anemone** is the ecosystem of cloud, web and mobile app, hardware devices, 3D-printed enclosures, documentation, support, etc.

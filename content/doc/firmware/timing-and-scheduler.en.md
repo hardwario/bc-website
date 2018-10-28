@@ -1,5 +1,12 @@
 ---
 title: "Timing and Scheduler"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 17
+  doc:
+    parent: 'firmware'
+    weight: 17
 ---
 
 Knowing how to schedule tasks is a key knowledge crucial for developing low-power hardware setup with BigClown.

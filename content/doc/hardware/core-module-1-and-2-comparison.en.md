@@ -1,5 +1,12 @@
 ---
 title: "Core Module R1 and R2 comparison"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 12
+  doc:
+    parent: 'hardware'
+    weight: 12
 ---
 
 We have released the new Core Module 2. Everything is the same, only the flash process is now easier and faster.

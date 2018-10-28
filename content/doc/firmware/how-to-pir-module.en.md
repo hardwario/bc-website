@@ -1,5 +1,12 @@
 ---
 title: "How to: PIR Module"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 The PIR module is mostly used as motion detector. Thanks to its low power consumption it can safely be used with batteries acting as the only power source.

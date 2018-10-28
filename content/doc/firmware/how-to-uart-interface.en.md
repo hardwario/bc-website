@@ -1,5 +1,12 @@
 ---
 title: "How to: UART interface"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Core Module has 3 UARTs you can use. The signal for each channel is named TXD**x**, RXD**x** where **x** is **0**, **1** or **2**. Please refer to the [module drawing pinout]({{< relref "/doc/hardware/header-pinout.en.md#module-drawing-standard" >}}) where you find the signals positions.

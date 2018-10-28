@@ -1,5 +1,12 @@
 ---
 title: "How to: CO2 Module"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 With [CO2 Module](../../hardware/about-co2-module/) you can easily measure the concentration of carbon dioxide. It is low power device which can be used with battery power. Remember that the device can require calibration and **to get best results it has to be in active state for few days**.

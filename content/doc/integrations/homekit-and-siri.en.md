@@ -1,5 +1,12 @@
 ---
 title: "HomeKit and Siri"
+menu:
+  main:
+    parent: 'integrations'
+    weight: 60
+  doc:
+    parent: 'integrations'
+    weight: 60
 ---
 
 With HomeKit integration you will be able to controll your IoT projects from your iOS or macOS device. After you have your device in your Home app, you can control it using Siri. In the end of arcticle you will ask Siri on temperature in your bedroom and she will tell you back temperature from your BigClown temperature sensor!

@@ -1,5 +1,12 @@
 ---
 title: "Basic Overview"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 10
+  doc:
+    parent: 'firmware'
+    weight: 10
 ---
 
 You can compile and flash your own code to the Core Module. To do that you need to install [**BigClown toolchain**]({{< relref "/doc/firmware/toolchain-setup.en.md" >}}) to your computer, or you can compile code also on **Raspberry Pi** with our [**bc-raspbian**]({{<relref "/doc/tutorials/raspberry-pi-installation.en.md">}}) image and installing the [**GCC package**](https://forum.bigclown.com/t/how-to-compile-bigclown-firmware-on-raspberry-pi/271/10?u=hub.martin)

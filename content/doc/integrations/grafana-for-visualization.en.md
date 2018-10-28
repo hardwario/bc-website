@@ -1,5 +1,12 @@
 ---
 title: "Grafana for Visualization"
+menu:
+  main:
+    parent: 'integrations'
+    weight: 10
+  doc:
+    parent: 'integrations'
+    weight: 10
 ---
 
 [**Grafana**](https://grafana.com/) is an open platform for beautiful analytics and monitoring. It allows you to create a nice looking dashboards that will give you quick insights into your sensor data.

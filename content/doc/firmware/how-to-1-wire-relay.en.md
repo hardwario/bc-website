@@ -1,5 +1,12 @@
 ---
 title: "How to: 1-Wire Relay"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 To make it easier to work with certain 1-Wire devices we implemented module called *bc_onewire_relay* which allows you to control relay modules connected via 1-Wire bus, for example the Relay module developed by Denkovi.
@@ -19,7 +26,7 @@ Documentation for this SDK module can be found [here](https://sdk.bigclown.com/g
 There is very simple workflow for controlling the relay:
 
 - you have to instantiate a variable representing the relay ```bc_onewire_relay_t relay;```
-- relay connection has to be initiated in *application_init()* function by calling 
+- relay connection has to be initiated in *application_init()* function by calling
 ```bc_onewire_relay_init(&relay, BC_GPIO_P4, 0x00);```
 
  - the second parameter represents ports **A** and **B** on the Sensor module. Use _P4 for A and _P5 for B.

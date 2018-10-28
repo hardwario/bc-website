@@ -1,5 +1,12 @@
 ---
 title: "About CO2 Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="co2-module.png" alt="CO2 Module" width="300" >}}

@@ -1,5 +1,12 @@
 ---
 title: "MySigfox.com Service"
+menu:
+  main:
+    parent: 'tutorials'
+    weight: 90
+  doc:
+    parent: 'tutorials'
+    weight: 90
 ---
 
 MySigfox.com is our online service, which acts as a bridge between Sigfox Backend and your server. Customers who buy our [Sigfox module](https://shop.bigclown.com/bundle-sigfoxmodule-mysigfoxplatinum3y/) with 3-years connectivity can use this service to get data sent by their modules to Sigfox network. This service is free to use.
@@ -29,7 +36,7 @@ Currently we do not allow to use your own POST parameters to be added to request
 
 1) you can use *device* field from message body, which is available in every message sent to your server
 
-2) or you can add custom query string to the Webhook URL. For example, if your Webhook look like ```https://example.cz/endpoint```, you can change it to ```https://example.cz/endpoint?foo=bar```. This should deliver your messages without any problem (but adding your data in the process).  
+2) or you can add custom query string to the Webhook URL. For example, if your Webhook look like ```https://example.cz/endpoint```, you can change it to ```https://example.cz/endpoint?foo=bar```. This should deliver your messages without any problem (but adding your data in the process).
 
 ## POST Request (message) Content
 Every request we send to your server is JSON encoded message with Content-Type set to ```application/json```.
@@ -40,7 +47,7 @@ Body of request contains specific fields:
 - *device* - Device ID
 - *rssi* - [Received Signal Strength Indication](https://ask.sigfox.com/questions/2017/snr-rssi.html)
 - *time* - time when the message was received by Sigfox network (in UNIX timestamp format)
-- *data* - data sent by your device 
+- *data* - data sent by your device
 
 ## Testing MySigfox.com
 To test if everything works as designed, you can use service called [requestb.in](https://requestb.in) to create temporary storage for http requests.

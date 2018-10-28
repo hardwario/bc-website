@@ -1,5 +1,12 @@
 ---
 title: "How to: Relay Module"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 With our Relay module you can easily control high voltage/current circuits. This module is specially designed to consume low levels of power. The relay also consumes power when changing state only.

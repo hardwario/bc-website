@@ -1,5 +1,12 @@
 ---
 title: "About Mini Battery Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="mini-battery-module.png" alt="Mini Battery Module" width="300" >}}

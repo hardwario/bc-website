@@ -1,5 +1,12 @@
 ---
 title: "About LCD Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="lcd-module.png" alt="LCD Module" width="300" >}}
@@ -20,4 +27,3 @@ title: "About LCD Module"
 
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
 * [**Radio LCD Thermostat**](https://github.com/bigclownlabs/bcf-radio-lcd-thermostat/releases)
-

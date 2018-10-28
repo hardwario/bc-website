@@ -1,5 +1,12 @@
 ---
 title: "About Barometer Tag"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="barometer-tag.png" alt="Barometer Tag" width="300" >}}

@@ -1,5 +1,9 @@
 ---
 title: "About Tag Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="tag-module.png" alt="Tag Module" width="300" >}}

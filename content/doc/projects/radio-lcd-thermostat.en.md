@@ -1,5 +1,12 @@
 ---
 title: "Radio LCD Thermostat"
+menu:
+  main:
+    parent: 'projects'
+    weight: 20
+  doc:
+    parent: 'projects'
+    weight: 20
 ---
 
 This document will guide you through the **Radio LCD Thermostat** project.

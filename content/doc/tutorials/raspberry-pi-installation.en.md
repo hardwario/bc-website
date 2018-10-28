@@ -1,5 +1,12 @@
 ---
 title: Raspberry Pi Installation
+menu:
+  main:
+    parent: 'tutorials'
+    weight: 20
+  doc:
+    parent: 'tutorials'
+    weight: 20
 ---
 
 {{% note "warning" %}}If you already have Raspberry Pi with the original Raspbian distribution, go to the section [**Setup on Original Raspbian**]({{< relref "#setup-on-original-raspbian" >}}). Or if you have OSMC, go to section [**Setup on OSMC**]({{< relref "#setup-on-osmc" >}}){{% /note %}}

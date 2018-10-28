@@ -1,5 +1,12 @@
 ---
 title: "BigClown firmware flashing tool"
+menu:
+  main:
+    parent: 'tools'
+    weight: 10
+  doc:
+    parent: 'tools'
+    weight: 10
 ---
 
 This multi-platform Python tool can flash {{<shop "Radio Dongle">}} and {{<shop "Core Module">}} with local binary or latest released firmwares from GitHub.

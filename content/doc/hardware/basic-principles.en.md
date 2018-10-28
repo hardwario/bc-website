@@ -1,5 +1,12 @@
 ---
 title: "Basic Principles"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 10
+  doc:
+    parent: 'hardware'
+    weight: 10
 ---
 
 **Modular hardware** is the essence of the **BigClown IoT Kit**. We put a lot of efforts into the quality of our products. That's why we source all the components from the official distributors and manufacture all our products locally, in Europe.

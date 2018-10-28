@@ -1,5 +1,12 @@
 ---
 title: "How to: PWM"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Pulse Width Modulation (PWM) is a method to create analog-like signal from the microcontroller digital output. It will achieve that by fast toggling of the pin with different ration of logic **HIGH** and **LOW**. This ratio is called **duty cycle**.
@@ -58,4 +65,3 @@ void application_init()
 ## Example project
 
 - [bc_pwm](https://github.com/hubmartin/bcf-pwm-servo/blob/master/app/application.c)
-

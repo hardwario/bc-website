@@ -1,5 +1,12 @@
 ---
 title: "Ubidots"
+menu:
+  main:
+    parent: 'integrations'
+    weight: 50
+  doc:
+    parent: 'integrations'
+    weight: 50
 ---
 
 With [Ubidots](https://ubidots.com) you can monitor your values remotely and get notifications when they go over set thresholds.
@@ -18,7 +25,7 @@ Any users looking for additional cloud and IoT Application development tools are
 ## Sign up to Ubidots and get an API Token
 
   * Create an Ubidots account [here](https://ubidots.com).
-  * Click on the profile icon in the top-right corner and select **API Credentials**, then copy your **Default Token** 
+  * Click on the profile icon in the top-right corner and select **API Credentials**, then copy your **Default Token**
 
 ## Node-RED flow
 

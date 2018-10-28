@@ -1,5 +1,12 @@
 ---
 title: "SigFox IoT radio"
+menu:
+  main:
+    parent: 'interfaces'
+    weight: 50
+  doc:
+    parent: 'interfaces'
+    weight: 50
 ---
 
 <div style="float:right;width:30%;text-align:center;">

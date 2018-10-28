@@ -1,5 +1,12 @@
 ---
 title: Raspberry Pi Login
+menu:
+  main:
+    parent: 'tutorials'
+    weight: 30
+  doc:
+    parent: 'tutorials'
+    weight: 30
 ---
 
 This document describes how to log in to Raspberry Pi using a remote terminal via SSH protocol.

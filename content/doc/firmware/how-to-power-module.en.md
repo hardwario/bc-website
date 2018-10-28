@@ -1,5 +1,12 @@
 ---
 title: "How to: Power Module"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 [Power module](../../hardware/about-power-module/) provides two features - you can control high power device with robust relay (230 V / 16 A) and you can also connect 5V addressable LEDs (*WS2812B*) and control them.

@@ -1,5 +1,12 @@
 ---
 title: "Radio Soil Sensor"
+menu:
+  main:
+    parent: 'projects'
+    weight: 20
+  doc:
+    parent: 'projects'
+    weight: 20
 ---
 
 This document will guide you through the **Radio Soil Sensor** project. You will be able to see, save and analyze moisture level and temperature in **Node-RED** and **Grafana** visualization tool.
@@ -196,4 +203,3 @@ At this point, you should have a temperature and moisture monitoring of your pla
 * [**Raspberry Pi Installation**]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md" >}})
 
 * [**Raspberry Pi Login**]({{< relref "/doc/tutorials/raspberry-pi-login.en.md" >}})
-

@@ -1,5 +1,12 @@
 ---
 title: Blynk - Mobile App Builder
+menu:
+  main:
+    parent: 'integrations'
+    weight: 20
+  doc:
+    parent: 'integrations'
+    weight: 20
 ---
 
 [The Blynk](http://www.blynk.cc/) is a mobile front end builder and signaling relay (MQTT). This let's you quicky create control and display for your IoT things. Here we will guide you the process of putting together the hardware and connecting it to the cloud. The cloud in turn gets interconnected with the project on your phone withing the Blynk app. The local side of the project is hosted on the BigClown Raspian which has all the necessary components prepared for interconnection. When everything will be finished then you would have an ability to turn on and off the relay, switch the LED strip on and off, change the light intensity using slider and also you would be able to watch the temperature (and other values collected) acompanied by graphs.

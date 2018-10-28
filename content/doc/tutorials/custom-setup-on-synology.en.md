@@ -1,5 +1,12 @@
 ---
 title: "Custom Setup on Synology"
+menu:
+  main:
+    parent: 'tutorials'
+    weight: 70
+  doc:
+    parent: 'tutorials'
+    weight: 70
 ---
 
 <div style="float:right;width:50%;text-align:center;padding-left:10px">

@@ -1,7 +1,12 @@
 ---
 title: "Quick Start Guide"
-menu: "doc"
-parent: "basics"
+menu:
+  main:
+    parent: 'basics'
+    weight: 10
+  doc:
+    parent: 'basics'
+    weight: 10
 ---
 
 ### Thank You, Dear Maker!

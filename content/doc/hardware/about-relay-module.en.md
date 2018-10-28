@@ -1,5 +1,12 @@
 ---
 title: "About Relay Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="relay-module.png" alt="Relay Module" width="300" >}}

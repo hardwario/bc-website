@@ -1,5 +1,12 @@
 ---
 title: "How to: D/A Converter"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Core Module contains two analog outputs: `DAC0` and `DAC1`. These are real analog outputs, not just PWM outputs.

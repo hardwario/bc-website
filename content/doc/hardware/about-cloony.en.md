@@ -1,5 +1,12 @@
 ---
 title: "About Cloony"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="cloony.png" alt="Cloony" width="300" >}}

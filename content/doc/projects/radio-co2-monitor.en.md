@@ -1,5 +1,12 @@
 ---
 title: "Radio CO2 Monitor"
+menu:
+  main:
+    parent: 'projects'
+    weight: 20
+  doc:
+    parent: 'projects'
+    weight: 20
 ---
 
 This document will guide you through the **Radio CO2 Monitor** project. You will be able to see dashboard with CO2, temperature, humidity, ambient light and atmospheric pressure in **Node-RED** and view the data on your smart phone using the **Blynk** cloud and mobile app.

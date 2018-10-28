@@ -1,5 +1,12 @@
 ---
 title: "About Button Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="button-module.png" alt="Button Module" width="300" >}}

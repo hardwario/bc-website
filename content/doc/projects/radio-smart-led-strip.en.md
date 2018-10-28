@@ -1,5 +1,12 @@
 ---
 title: "Radio Smart LED Strip"
+menu:
+  main:
+    parent: 'projects'
+    weight: 20
+  doc:
+    parent: 'projects'
+    weight: 20
 ---
 
 This document will guide you through the **Radio Smart LED Strip** project. You will be able to interact with your LED strip in **Node-RED** and Blynk and control Power appliance using 16A Relay.

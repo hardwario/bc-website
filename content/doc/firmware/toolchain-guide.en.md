@@ -1,5 +1,12 @@
 ---
 title: Toolchain Guide
+menu:
+  main:
+    parent: 'firmware'
+    weight: 12
+  doc:
+    parent: 'firmware'
+    weight: 12
 ---
 
 {{% note "danger" %}}This document assumes that you have necessary tools installed according to the document [**Toolchain Setup**]({{< relref "/doc/firmware/toolchain-setup.en.md" >}}).{{% /note %}}

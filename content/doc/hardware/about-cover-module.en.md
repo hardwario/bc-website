@@ -1,5 +1,12 @@
 ---
 title: "About Cover Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="cover-module.png" alt="Cover Module" width="300" >}}

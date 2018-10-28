@@ -1,5 +1,12 @@
 ---
 title: "About Lux Meter Tag"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="lux-meter-tag.png" alt="Lux Meter Tag" width="300" >}}

@@ -1,5 +1,12 @@
 ---
 title: "How to: Servo motor"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Please see the `bc_servo` functions in the [**BigClown SDK**](http://sdk.bigclown.com/group__bc__servo.html).

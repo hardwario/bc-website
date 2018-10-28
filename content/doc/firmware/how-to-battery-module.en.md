@@ -1,5 +1,12 @@
 ---
 title: "How to: Battery Module"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 [Battery module](../../hardware/about-battery-module/) and [Mini Battery module](../../hardware/about-mini-battery-module/) allows you to power your product with four or two **AAA** batteries. It automatically recognizes if external power is applied (AC module, USB, ...) and disconnects batteries from the circuit. With this module you can check battery voltage (manually or periodically with Scheduler) and schedule appropriate actions for certain voltage levels.

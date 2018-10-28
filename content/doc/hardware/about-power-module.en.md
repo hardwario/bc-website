@@ -1,5 +1,12 @@
 ---
 title: "About Power Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="power-module.png" alt="Power Module" width="300" >}}

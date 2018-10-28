@@ -1,7 +1,12 @@
 ---
 title: "Quick Tutorial"
-menu: "doc"
-parent: "basics"
+menu:
+  main:
+    parent: 'tutorials'
+    weight: 10
+  doc:
+    parent: 'tutorials'
+    weight: 10
 ---
 
 {{< note "info" >}}

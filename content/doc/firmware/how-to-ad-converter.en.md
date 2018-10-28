@@ -1,5 +1,12 @@
 ---
 title: "How to: A/D Converter"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Analog to digital converter can measure the voltage on the one of the six inputs `A0` to `A5` and return measured value. The result can be 16 bit value or `float` number in volts.

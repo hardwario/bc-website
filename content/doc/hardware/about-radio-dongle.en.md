@@ -1,5 +1,12 @@
 ---
 title: "About Radio Dongle"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="usb-dongle.png" alt="Radio Dongle" width="300" >}}

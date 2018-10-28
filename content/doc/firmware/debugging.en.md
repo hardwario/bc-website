@@ -1,5 +1,12 @@
 ---
 title: "Debugging"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 14
+  doc:
+    parent: 'firmware'
+    weight: 14
 ---
 
 The debugging of embedded system has been a headache for many insomnia nights of many generations of developers. There are many funny stories about debugging and how to do things right. Here we share some ideas how we have tackled this topic and it is up to you to decide your own approach. This is alway learning the hard way.

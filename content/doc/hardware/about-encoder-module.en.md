@@ -1,5 +1,12 @@
 ---
 title: "About Encoder Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="encoder-module.png" alt="Encoder Module" width="300" >}}

@@ -1,5 +1,12 @@
 ---
 title: Toolchain Setup
+menu:
+  main:
+    parent: 'firmware'
+    weight: 11
+  doc:
+    parent: 'firmware'
+    weight: 11
 ---
 
 In this document we will describe the installation of tools for working with firmware - the firmware toolchain. The toolchain is designed to allow the firmware operations on all the supported operating systems using a command line in a **uniform manner**.

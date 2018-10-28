@@ -1,5 +1,12 @@
 ---
 title: "About Climate Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="climate-module.png" alt="Climate Module" width="300" >}}

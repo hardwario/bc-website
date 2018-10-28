@@ -1,5 +1,12 @@
 ---
 title: "Contribution Setup"
+menu:
+  main:
+    parent: 'documentation'
+    weight: 10
+  doc:
+    parent: 'documentation'
+    weight: 10
 ---
 
 We stick to commonly used contribution process. To add or edit any page, please do following:

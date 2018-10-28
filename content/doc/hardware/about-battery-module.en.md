@@ -1,5 +1,12 @@
 ---
 title: "About Battery Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="battery-module.png" alt="Battery Module" width="300" >}}
@@ -21,5 +28,3 @@ title: "About Battery Module"
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
 
     Note: Use firmware for node-battery-standard
-
-

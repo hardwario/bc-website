@@ -1,0 +1,34 @@
+<div class="cards" id="accordion">
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.doc }}
+  {{- $page := . }}
+  {{ if .HasChildren }}
+  {{ $collapse := .Name | urlize }}
+  <div class="card">
+      <div class="card-header">
+        <h6 class="card-title">
+          <a data-toggle="collapse" data-target="#collapse-{{ $collapse }}" aria-expanded="true" aria-controls="collapse-{{ $collapse }}" href="javascript:void(0);" class="collapser{{- $.Scratch.Get "collapser" }} {{if or ($currentPage.IsMenuCurrent "doc" .) ($currentPage.HasMenuCurrent "doc" .) }} none {{else}}collapsed{{end}}"></a>
+          <a href="{{ .URL }}" target = "{{ .Post }}" class="{{ if ($.IsMenuCurrent "main" .) }} {{ end }}">{{ .Name }}</a>
+        </h6>
+      </div>
+      <nav id="collapse-{{ $collapse }}" class="card-collapse collapse {{if or ($currentPage.IsMenuCurrent "doc" .) ($currentPage.HasMenuCurrent "doc" .) }} show {{else}} none {{end}}" style="">
+        <ul class="list-group" style="border-top: none;">
+          {{ range .Children }}
+          <li class="list-group-item {{ if eq $.Page.URL .URL }} list-group-item-success {{ end }}">
+            <a href="{{ .URL }}" target = "{{ .Post }}" class="">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  {{ else }}
+    <div class="card {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} list-group-item-success {{ end }}">
+      <nav class="card-collapse">
+        <ul class="list-group" style="border-top: none;">
+          <li class="list-group-item {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} list-group-item-success {{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
+        </ul>
+      </nav>
+    </div>
+  {{ end }}
+{{ end }}
+</div>

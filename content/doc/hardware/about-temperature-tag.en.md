@@ -1,5 +1,12 @@
 ---
 title: "About Temperature Tag"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="temperature-tag.png" alt="Temperature Tag" width="300" >}}

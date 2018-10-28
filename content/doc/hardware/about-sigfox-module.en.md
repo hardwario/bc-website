@@ -1,5 +1,12 @@
 ---
 title: "About Sigfox Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="sigfox-module.png" alt="Sigfox Module" width="300" >}}

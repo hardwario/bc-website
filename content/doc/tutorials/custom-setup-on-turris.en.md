@@ -1,5 +1,12 @@
 ---
 title: "Custom Setup on Turris"
+menu:
+  main:
+    parent: 'tutorials'
+    weight: 80
+  doc:
+    parent: 'tutorials'
+    weight: 80
 ---
 
 If you need more permanent solution than **BigClown Playground** you can install all the services yourself in your system. This guide will help you to install and configure these services:

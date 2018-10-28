@@ -1,5 +1,12 @@
 ---
 title: "How to: Accelerometer"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Core module comes with three-axis ultra-low-power linear accelerometer connected via [I2C bus](../../hardware/i2c-address-space/). It is capable of motion detection and a free-fall based on interrupts.

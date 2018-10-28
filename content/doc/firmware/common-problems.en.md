@@ -1,5 +1,12 @@
 ---
 title: "Common Problems"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 16
+  doc:
+    parent: 'firmware'
+    weight: 16
 ---
 
 On this page you can find common problems that you can encounter and its solutions. To suggest new problem to be added, please use [Github Issues](https://github.com/bigclownlabs/bc-website/issues)

@@ -1,5 +1,12 @@
 ---
 title: "How to: I²C Bus"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 This is the main bus BigClown uses to communicate with the most of the sensors and modules. All sensors and modules have their own addres in the [**BigClown I²C address space**]({{< relref "/doc/hardware/i2c-address-space.en.md" >}}).

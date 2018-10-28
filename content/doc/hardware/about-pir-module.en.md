@@ -1,5 +1,12 @@
 ---
 title: "About PIR Module"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="pir-module.png" alt="PIR Module" width="300" >}}
@@ -20,4 +27,3 @@ title: "About PIR Module"
 
 * [**Generic firmware**](https://github.com/bigclownlabs/bcf-generic-node/releases)
 * [**Radio Motion Detector**](https://github.com/bigclownlabs/bcf-radio-motion-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/radio-motion-detector/)
-

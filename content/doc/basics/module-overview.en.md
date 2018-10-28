@@ -1,7 +1,12 @@
 ---
 title: "Module Overview"
-menu: "doc"
-parent: "basics"
+menu:
+  main:
+    parent: 'basics'
+    weight: 30
+  doc:
+    parent: 'basics'
+    weight: 30
 ---
 
 Here is a list of modules and tags.

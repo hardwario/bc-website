@@ -1,5 +1,12 @@
 ---
 title: "Radio Door Sensor"
+menu:
+  main:
+    parent: 'projects'
+    weight: 10
+  doc:
+    parent: 'projects'
+    weight: 10
 ---
 
 **Radio Door Sensor** will notify you to your phone anytime someone opens the door, window or cookie jar! It is also usable as a notification when you forget to close garage or gate in the evening.

@@ -1,5 +1,12 @@
 ---
 title: "Custom Setup on Ubuntu"
+menu:
+  main:
+    parent: 'tutorials'
+    weight: 40
+  doc:
+    parent: 'tutorials'
+    weight: 40
 ---
 
 If you need more permanent solution than **BigClown Playground** you can install all the services yourself in your system. This guide will help you to install and configure these services:

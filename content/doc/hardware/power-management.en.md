@@ -1,5 +1,12 @@
 ---
 title: "Power Management"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 13
+  doc:
+    parent: 'hardware'
+    weight: 13
 ---
 
 {{% note "danger" %}}This document goes deep into technical details and explains the BigClown power management on the hardware level.{{% /note %}}

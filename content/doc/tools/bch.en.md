@@ -1,5 +1,12 @@
 ---
 title: "BigClown Host Tool"
+menu:
+  main:
+    parent: 'tools'
+    weight: 30
+  doc:
+    parent: 'tools'
+    weight: 30
 ---
 
 This multi-platform Python tool is a "Swiss knife" to control the radio and nodes.

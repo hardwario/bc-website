@@ -1,5 +1,12 @@
 ---
 title: "SDK Framework"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 15
+  doc:
+    parent: 'firmware'
+    weight: 15
 ---
 
 Software Development Kit or **SDK** is a package of software libraries that simplifies programming of BigClown hardware. This libraries contains functions to easily create your application skeleton and for easy communication with the hardware.

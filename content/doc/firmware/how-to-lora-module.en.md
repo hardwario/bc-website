@@ -1,5 +1,12 @@
 ---
 title: "How to: LoRa module"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 {{< shop "LoRa Module" >}} provides a simple way how to connect your kit to the LoRA network. You can use commercial, community or your own LoRa gateway to receive messages from your device.

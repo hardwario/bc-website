@@ -4,7 +4,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  menuNames = ["main"]
+  menuNames = ["main","doc"]
   homeURL = "/"
   shopURL = "https://shop.bigclown.com/?currency=EUR"
   productionURL = "https://www.bigclown.com"
@@ -26,6 +26,137 @@ pygmentsUseClasses = true
 
 [menu]
 
+[[languages.en.menu.doc]]
+  identifier = "intro"
+  name = "Intro"
+  url = "/doc/"
+  weight = 1
+
+[[languages.en.menu.doc]]
+  identifier = "basics"
+  name = "Basics"
+  url = "/doc/basics/quick-start-guide/"
+  weight = 10
+
+[[languages.en.menu.doc]]
+  identifier = "tutorials"
+  name = "Tutorials"
+  url = "/doc/tutorials/raspberry-pi-tutorial/"
+  weight = 20
+
+[[languages.en.menu.doc]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/doc/projects/radio-door-sensor/"
+  weight = 30
+
+[[languages.en.menu.doc]]
+  identifier = "interfaces"
+  name = "Interfaces"
+  url = "/doc/interfaces/mqtt-protocol/"
+  weight = 40
+
+[[languages.en.menu.doc]]
+  identifier = "integrations"
+  name = "Integrations"
+  url = "/doc/integrations/grafana-for-visualization/"
+  weight = 50
+
+[[languages.en.menu.doc]]
+  identifier = "hardware"
+  name = "Hardware"
+  url = "/doc/hardware/basic-principles/"
+  weight = 60
+
+[[languages.en.menu.doc]]
+  identifier = "firmware"
+  name = "Firmware"
+  url = "/doc/firmware/basic-overview/"
+  weight = 70
+
+[[languages.en.menu.doc]]
+  identifier = "tools"
+  name = "Tools"
+  url = "/doc/tools/bcf/"
+  weight = 80
+
+[[languages.en.menu.doc]]
+  identifier = "documentation"
+  name = "Documentation"
+  url = "/doc/documentation/contribution-setup/"
+  weight = 90
+
+
+  [[languages.en.menu.main]]
+    identifier = "intro"
+    name = "Intro"
+    url = "/doc/"
+    weight = 1
+    parent = "learn"
+
+  [[languages.en.menu.main]]
+    identifier = "basics"
+    name = "Basics"
+    url = "/doc/basics/quick-start-guide/"
+    weight = 10
+    parent = "learn"
+
+  [[languages.en.menu.main]]
+    identifier = "tutorials"
+    name = "Tutorials"
+    url = "/doc/tutorials/raspberry-pi-tutorial/"
+    weight = 20
+    parent = "learn"
+
+  [[languages.en.menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/doc/projects/radio-door-sensor/"
+    weight = 30
+    parent = "learn"
+
+  [[languages.en.menu.main]]
+    identifier = "interfaces"
+    name = "Interfaces"
+    url = "/doc/interfaces/mqtt-protocol/"
+    weight = 40
+    parent = "learn"
+
+  [[languages.en.menu.main]]
+    identifier = "integrations"
+    name = "Integrations"
+    url = "/doc/integrations/grafana-for-visualization/"
+    weight = 50
+    parent = "learn"
+
+  [[languages.en.menu.main]]
+    identifier = "hardware"
+    name = "Hardware"
+    url = "/doc/hardware/basic-principles/"
+    weight = 60
+    parent = "learn"
+
+  [[languages.en.menu.main]]
+    identifier = "firmware"
+    name = "Firmware"
+    url = "/doc/firmware/basic-overview/"
+    weight = 70
+    parent = "learn"
+
+  [[languages.en.menu.main]]
+    identifier = "tools"
+    name = "Tools"
+    url = "/doc/tools/bcf/"
+    weight = 80
+    parent = "learn"
+
+  [[languages.en.menu.main]]
+    identifier = "documentation"
+    name = "Documentation"
+    url = "/doc/documentation/contribution-setup/"
+    weight = 90
+    parent = "learn"
+
   [[languages.en.menu.main]]
     identifier = "support"
     name = "Support"
@@ -41,14 +172,6 @@ pygmentsUseClasses = true
     post = "_blank"
     url = "https://github.com/bigclownlabs"
     weight = 100
-
-  [[languages.en.menu.main]]
-    identifier = "documentation"
-    name = "Documentation"
-    parent = "support"
-    pre = ""
-    url = "/doc/"
-    weight = 200
 
   [[languages.en.menu.main]]
     identifier = "forum"
@@ -74,14 +197,6 @@ pygmentsUseClasses = true
     post = "_blank"
     url = "https://github.com/bigclownlabs"
     weight = 100
-
-  [[languages.cs.menu.main]]
-    identifier = "documentation"
-    name = "Dokumentace"
-    parent = "support"
-    pre = ""
-    url = "/cs/doc/"
-    weight = 200
 
   [[languages.cs.menu.main]]
     identifier = "forum"

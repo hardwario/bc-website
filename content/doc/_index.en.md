@@ -1,7 +1,9 @@
 ---
 title: "Learn"
-menu: "main"
-weight: 200
+menu:
+    main:
+        identifier: "learn"
+        weight: 200
 ---
 
 <script src="image-map.min.js"></script>

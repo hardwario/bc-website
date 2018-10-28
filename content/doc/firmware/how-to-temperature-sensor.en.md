@@ -1,5 +1,12 @@
 ---
 title: "How to: Temperature sensor"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Core module comes with integrated temperature sensor TMP112. It is high accuracy and low power sensor connected via I2C bus (see [address space](../../hardware/i2c-address-space/)).

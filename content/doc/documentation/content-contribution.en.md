@@ -1,5 +1,12 @@
 ---
 title: "Content Contribution"
+menu:
+  main:
+    parent: 'documentation'
+    weight: 20
+  doc:
+    parent: 'documentation'
+    weight: 20
 ---
 
 You can freely contribute into the documentation using GitHub pull requests. Alternatively, for minor changes like typos, you can use the **EDIT THIS PAGE** button in the header of each document.

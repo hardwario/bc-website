@@ -1,5 +1,12 @@
 ---
 title: "How to: LCD Module"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Our [LCD Module](../../hardware/about-lcd-module/) provides simple way to show needed information without connecting to computer or any network. It is *ultra-low-power device* - its using should not bring you much trouble when powered with batteries.

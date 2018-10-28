@@ -1,10 +1,17 @@
 ---
 title: "How to: Push Button"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 You can control your device in many ways - you can add switches, sensors, Wi-Fi connection, etc. But the most simple way is to use button(s) integrated in Core module.
 
-## Requirements 
+## Requirements
 - Core module
 - USB cable
 - [Example code](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples/button)
@@ -75,5 +82,4 @@ void button_event_handler(bc_button_t *self, bc_button_event_t event, void *even
     }
 }
 ```
-Full *ready-to-flash* code for this example can be found at [Github](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples/button). 
-
+Full *ready-to-flash* code for this example can be found at [Github](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples/button).

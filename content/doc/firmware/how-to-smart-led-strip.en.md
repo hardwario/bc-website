@@ -1,10 +1,17 @@
 ---
 title: "How to: Smart LED Strip"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 Our [Smart LED Strips](https://shop.bigclown.com/collections/led-strips) provides you easy way to show values like temperature as a color range, blinking etc.
 
-You need to use a [Power Module](../../hardware/about-power-module/) which takes care of power and communication between Core module and the LED strip. 
+You need to use a [Power Module](../../hardware/about-power-module/) which takes care of power and communication between Core module and the LED strip.
 
 {{< note "info" "If you need cool white light only" >}}...you can use standard 5V white LED strip connected to the relay on the Power Module.{{< /note >}}
 
@@ -18,13 +25,13 @@ There are some functions available in SDK which can "do things" with your LED st
 
 ## Basic Usage
 ### Available colors
-LEDs featured on our [strip](https://shop.bigclown.com/led-strip-rgbw-1m-144-leds/) are **RGBW**. Which means they include separate light source for Red, Green, Blue and White (warm white) colors. 
+LEDs featured on our [strip](https://shop.bigclown.com/led-strip-rgbw-1m-144-leds/) are **RGBW**. Which means they include separate light source for Red, Green, Blue and White (warm white) colors.
 
 *TIP*: To get *almost* cool white light, you have to set every single color to the same value as the other ones.
 
 ### Initialization
 
-First you have to instantiate a variables with type `bc_led_strip_t` and `bc_led_strip_buffer_t` somewhere in your code. 
+First you have to instantiate a variables with type `bc_led_strip_t` and `bc_led_strip_buffer_t` somewhere in your code.
 
 The buffer is de facto a place where you tell the SDK how your LED strip looks like. This is an example for our 144 LEDs strip:
 
@@ -136,7 +143,7 @@ LED strip will light up in color of a rainbow and will fluently change these col
 bc_led_strip_effect_rainbow_cycle(&led_strip, 100);
 ```
 
-The second parameter represents speed of changes. Lower number = quicker changes 
+The second parameter represents speed of changes. Lower number = quicker changes
 
 There is also a function `bc_led_strip_effect_rainbow` which acts almost the same, but it takes a while before color appears on one end of a strip after disappearing from another.
 
@@ -200,7 +207,7 @@ void application_init(void)
 {
     bc_module_power_init();
     bc_led_strip_init(&led_strip, bc_module_power_get_led_strip_driver(), &_led_strip_buffer);
-    
+
     bc_led_strip_effect_theater_chase_rainbow(&led_strip, 100);
     bc_scheduler_register(stopEffect, NULL, bc_tick_get() + 3000);
 }

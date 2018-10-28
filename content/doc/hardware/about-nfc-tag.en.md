@@ -1,5 +1,12 @@
 ---
 title: "About NFC Tag"
+menu:
+  main:
+    parent: 'hardware'
+    weight: 20
+  doc:
+    parent: 'hardware'
+    weight: 20
 ---
 
 {{< img-float src="nfc-tag.png" alt="NFC Tag" width="300" >}}

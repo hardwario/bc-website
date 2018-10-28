@@ -1,5 +1,12 @@
 ---
 title: "How to: EEPROM"
+menu:
+  main:
+    parent: 'firmware'
+    weight: 20
+  doc:
+    parent: 'firmware'
+    weight: 20
 ---
 
 EEPROM is a special kind of memory. It is small (**6 KB on Core module chip**) memory with limited number of write/erase cycles. It is non-volatile memory - which means that it does not require power to retain stored information. **Which means that bytes written/stored inside the EEPROM will stay there until erased/rewritten.**
@@ -23,7 +30,7 @@ Writing to EEPROM is very easy. It takes only one call to this function:
 - `buffer` - pointer to source buffer, from which data will be red (can be any type - int, char, float, ...)
 - `length` - number of bytes to by written
 
-**Returned value** indicates whether the write process was successful or not. 
+**Returned value** indicates whether the write process was successful or not.
 
 It is completely up to you from what address you start to write. You can start from 0, 42, 666,... all the way up to circa 6000. **Please note that some of our modules (currently `bc_radio_*` module only) use few last dozens of bytes in EEPROM. If you use those modules, remember to use the memory addresses from 0 up to 6000. This makes sure that no data will be overwritten.**
 

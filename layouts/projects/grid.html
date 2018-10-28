@@ -10,6 +10,10 @@
         <h3 class="articles__title">{{ .Title }}</h3>
         <p class="articles__text">{{ .Params.description }}</p>
       </div>
+      {{ range .Params.tags }}
+        {{ $this_tag:= . | urlize}}
+        <div class="button button--tag {{ index $.Site.Data.tags ($this_tag) }} articles__button">{{ $this_tag }}</div>
+      {{ end }}
     </a>
   </article>
 </div>

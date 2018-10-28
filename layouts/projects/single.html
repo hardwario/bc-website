@@ -1,61 +1,77 @@
 {{ define "main" }}
 <section>
   <div class="project__header">
-    <div class="container">
-      <div class="row no-gutters">
-        <div class="col-auto col-lg-4 mr-auto">
-          <div class="d-flex justify-content-center">
-            <span class="article__author article__author--project d-flex flex-column justify-content-center">
-              <img src="{{ .Params.author.image }}" alt="" />
-              <strong>{{ .Params.author.name }}</strong>
-              <span>{{ .Params.author.post }}</span>
-            </span>
+
+  </div>
+</section>
+<section>
+    <div style="background-image:url('{{ .Params.images.main }}');" class="intro intro---middle d-flex justify-content-center align-items-center">
+        <div>
+            <nav>
+                <ul class="intro__links d-flex justify-content-center">
+                  {{ range .Params.tags }}
+                    {{ $this_tag:= . | urlize}}
+                    <li><span href="" class="button button--tag {{ index $.Site.Data.tags ($this_tag) }}">{{ $this_tag }}</span></li>
+                  {{ end }}
+                </ul>
+            </nav>
+           <h1 class="intro__title3 intro__title3--notupper">{{ .Title }}</h1>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="project__header">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-auto col-lg-4 mr-auto">
+            <div class="d-flex justify-content-center">
+              <span class="article__author article__author--project d-flex flex-column justify-content-center">
+                <img src="{{ .Params.author.image }}" alt="" />
+                <strong>{{ .Params.author.name }}</strong>
+                <span>{{ .Params.author.post }}</span>
+              </span>
+            </div>
+          </div>
+          <div class="col-2 col-lg-4">
+            <a href="{{ .Params.author.github.link }}" target = "_blank" class="button button--git">{{ .Params.author.github.name }}</a>
+          </div>
+          <div class="col-2 col-lg-4">
+            <a href="mailto:{{ .Params.author.email }}" class="button button--email">{{ .Params.author.email }}</a>
           </div>
         </div>
-        <div class="col-2 col-lg-4">
-          <a href="{{ .Params.author.github.link }}" target = "_blank" class="button button--git">{{ .Params.author.github.name }}</a>
         </div>
-        <div class="col-2 col-lg-4">
-          <a href="mailto:{{ .Params.author.email }}" class="button button--email">{{ .Params.author.email }}</a>
-        </div>
+    </div>
+</section>
+
+
+
+<section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-8">
+            <div class="article__body">
+
+              {{ .Content }}
+
+            </div>
+
+            <!--<div class="article__tags d-flex justify-content-center justify-content-md-start">
+              <a href="" class="button button--tag button--tag--gray">Inteligent</a>
+              <a href="" class="button button--tag button--tag--gray">IOT</a>
+              <a href="" class="button button--tag button--tag--gray">City security</a>
+            </div>-->
+
       </div>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 ml-auto mr-auto">
-        <h1 class="intro__title4 intro__title3--notupper">{{ .Title }}</h1>
-
-          <nav>
-
-            <ul class="intro__links d-flex justify-content-center">
-
-              {{ range .Params.tags }}
-
-                {{ $this_tag:= . | urlize}}
-
-
-
-                <li><span href="" class="button button--tag {{ index $.Site.Data.tags ($this_tag) }}">{{ $this_tag }}</span></li>
-              {{ end }}
-            </ul>
-          </nav>
-
-{{ .Content }}
-
-<section>
   <div class="bg bg--gray">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="thankyou__button">
-            <a href="{{ .Params.button.link }}" class="button button--fullred button--fullredbig">{{ .Params.button.text }}</a>
-          </div>
-
-          <h1 class="thankyou__title text-hide">{{ i18n "thank_you" }}</h1>
           <div class="thankyou__share d-flex justify-content-center align-items-center">
             <span>{{ i18n "share_my_project" }}:</span>
             <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link text-hide" onclick="ga('gtm2.send', 'event', 'share-project', 'facebook', '{{ .Permalink }}');">Facebook</a>
@@ -66,6 +82,7 @@
       </div>
     </div>
   </div>
+
 </section>
 
 {{ end }}

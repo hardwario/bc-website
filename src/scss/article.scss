@@ -264,6 +264,25 @@
       }
     }
 
+    .video-container{
+      display: block;
+      margin:0 -100px 27px;
+      width:auto;
+      margin-top: 2*$baseline;
+      border-radius: 7px;
+      max-width: calc(100% + 200px);
+      height: 550px;
+      overflow: hidden;
+
+      iframe{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+    }
+
     .img-container{
       width: calc(100% + 200px);
     }

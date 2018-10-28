@@ -1,12 +1,10 @@
 ---
 title: "Project Workflow"
-menu: "doc"
-parent: "basics"
 ---
 
 Let's dive a little more into how we envision that each project you start might be done.
 
-{{% note "warning" %}}This document assumes you are already familiar with the basic concepts from the document [**Getting Started**]({{< relref "doc/basics/getting-started.en.md" >}}).{{% /note %}}
+{{% note "warning" %}}This document assumes you are already familiar with the basic concepts from the document [**Getting Started**]({{< relref "/doc/basics/getting-started.en.md" >}}).{{% /note %}}
 
 ## Generic Guidelines
 
@@ -50,7 +48,7 @@ You can start with our existing pre-built firmware images, or write your own usi
 
 To make firmware uploads simple, we have developed the **BigClown Firmware Tool** which streamlines the entire flashing process.
 
-{{% note "info" %}}More information about the **BigClown Firmware Tool** can be found in these documents [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}}) and [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}}).{{% /note %}}
+{{% note "info" %}}More information about the **BigClown Firmware Tool** can be found in these documents [**Toolchain Setup**]({{< relref "/doc/firmware/toolchain-setup.en.md" >}}) and [**Toolchain Guide**]({{< relref "/doc/firmware/toolchain-guide.en.md" >}}).{{% /note %}}
 
 ### Phase #4: Hardware Assembling
 
@@ -80,7 +78,7 @@ This **BigClown Playground** includes:
 
 Most of our projects, and probably yours, will be wireless. And there is a need to pair the items to form the network. We use star-network topology and pairing is pretty simple. Just bring the gateway to the pairing mode and let the node transmit the pairing request.
 
-{{% note "info" %}}More information about the radio communication and network can be found in the document [**Sub-GHz Radio**]({{< relref "doc/interfaces/sub-ghz-radio.md" >}}).{{% /note %}}
+{{% note "info" %}}More information about the radio communication and network can be found in the document [**Sub-GHz Radio**]({{< relref "/doc/interfaces/sub-ghz-radio.en.md" >}}).{{% /note %}}
 
 ### Phase #7: Communication Test
 
@@ -98,7 +96,7 @@ Well, having the working prototypes on the table is just as beautiful as it can 
 
 We have designed these as freely available models, ready to be printed on your 3D printer.
 
-{{% note "info" %}}More information can be found in the document [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}}).{{% /note %}}
+{{% note "info" %}}More information can be found in the document [**Enclosures**]({{< relref "/doc/basics/enclosures.en.md" >}}).{{% /note %}}
 
 ### Phase #9: Services Integration
 
@@ -120,7 +118,7 @@ It is the right approach to have MQTT topics and responses properly described so
 
 Remember, the MQTT's asynchronous approach allows you to build the whole architecture of microservices.
 
-{{% note "info" %}}More information can be found in the document [**MQTT Protocol**]({{< relref "doc/interfaces/mqtt-protocol.md" >}}).{{% /note %}}
+{{% note "info" %}}More information can be found in the document [**MQTT Protocol**]({{< relref "/doc/interfaces/mqtt-protocol.en.md" >}}).{{% /note %}}
 
 ## Share Your Work
 
@@ -132,14 +130,14 @@ Get social - start with a tweet, screenshot, post to the forum or get to the poi
 
 ## Related Documents
 
-* [**Getting Started**]({{< relref "doc/basics/getting-started.en.md" >}})
+* [**Getting Started**]({{< relref "/doc/basics/getting-started.en.md" >}})
 
-* [**Toolchain Setup**]({{< relref "doc/firmware/toolchain-setup.md" >}})
+* [**Toolchain Setup**]({{< relref "/doc/firmware/toolchain-setup.en.md" >}})
 
-* [**Toolchain Guide**]({{< relref "doc/firmware/toolchain-guide.md" >}})
+* [**Toolchain Guide**]({{< relref "/doc/firmware/toolchain-guide.en.md" >}})
 
-* [**Sub-GHz Radio**]({{< relref "doc/interfaces/sub-ghz-radio.md" >}})
+* [**Sub-GHz Radio**]({{< relref "/doc/interfaces/sub-ghz-radio.en.md" >}})
 
-* [**Enclosures**]({{< relref "doc/basics/enclosures.en.md" >}})
+* [**Enclosures**]({{< relref "/doc/basics/enclosures.en.md" >}})
 
-* [**MQTT Protocol**]({{< relref "doc/interfaces/mqtt-protocol.md" >}})
+* [**MQTT Protocol**]({{< relref "/doc/interfaces/mqtt-protocol.en.md" >}})

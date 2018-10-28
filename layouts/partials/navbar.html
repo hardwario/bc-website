@@ -16,7 +16,7 @@
 
                 <li class="navtop__item d-block d-lg-flex align-items-center">
                   {{ .Pre }}
-                  <a href="{{ .URL }}" target = "{{ .Post }}" class="navtop__link navtop__link--arrow {{ if ($.IsMenuCurrent "main" .) }} navtop__link--active {{ end }}">{{ .Name }}</a>
+                  <a href="{{ .URL }}" target = "{{ .Post }}" class="navtop__link navtop__link--arrow {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} navtop__link--active {{ end }}">{{ .Name }}</a>
                     <ul class="navtop__submenu">
                     {{ range .Children }}
                         <li>
@@ -28,7 +28,9 @@
             {{ else }}
                 <li class="navtop__item d-block d-lg-flex align-items-center">
                   {{ .Pre }}
-                  <a href="{{ .URL }}" target = "{{ .Post }}" class="navtop__link {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} navtop__link--active {{ end }}">{{ .Name }}</a>
+                  <a href="{{ .URL }}" target = "{{ .Post }}" class="navtop__link {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} navtop__link--active {{ end }}">
+                    {{ .Name }}
+                  </a>
                 </li>
             {{ end }}
         {{ end }}

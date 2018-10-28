@@ -37,4 +37,4 @@ menu:
 * [**Radio Flood Detector**](https://github.com/bigclownlabs/bcf-radio-flood-detector/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/radio-flood-detector/)
 * [**Radio LCD Thermostat**](https://github.com/bigclownlabs/bcf-radio-lcd-thermostat/releases)
 * [**Radio CO2 Monitor**](https://github.com/bigclownlabs/bcf-radio-co2-monitor/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/radio-co2-monitor/)
-* [**Radio Power Controller and LED strip**](https://github.com/bigclownlabs/bcf-radio-power-controller/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/radio-led-strip/)
+* [**Radio Power Controller and LED strip**](https://github.com/bigclownlabs/bcf-radio-power-controller/releases) [**(documentation)**](https://www.bigclown.com/doc/projects/radio-smart-led-strip/)

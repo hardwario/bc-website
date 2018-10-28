@@ -9,7 +9,7 @@ menu:
     weight: 20
 ---
 
-Our [Smart LED Strips](https://shop.bigclown.com/collections/led-strips) provides you easy way to show values like temperature as a color range, blinking etc.
+Our [Smart LED Strips](https://shop.bigclown.com/search/?string=strips) provides you easy way to show values like temperature as a color range, blinking etc.
 
 You need to use a [Power Module](../../hardware/about-power-module/) which takes care of power and communication between Core module and the LED strip.
 

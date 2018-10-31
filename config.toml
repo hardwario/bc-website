@@ -196,7 +196,7 @@ pygmentsUseClasses = true
     pre = ""
     post = "_blank"
     url = "https://github.com/bigclownlabs"
-    weight = 100
+    weight = 300
 
   [[languages.cs.menu.main]]
     identifier = "forum"
@@ -205,7 +205,7 @@ pygmentsUseClasses = true
     pre = ""
     post = "_blank"
     url = "https://forum.bigclown.com"
-    weight = 300
+    weight = 100
 
 [blackfriday]
 smartypants = false

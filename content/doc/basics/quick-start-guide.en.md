@@ -44,6 +44,7 @@ In our world it means to prepare a center of your IoT system - the **Hub**.
 
 In **QUICK START GUIDE** we will use your computer as a Hub.
 
+
 Just follow these steps:
 
 1. In delivered box or suitcase find a **{{% shop "Radio Dongle" %}}** and plug it to any USB port of your notebook or PC.
@@ -53,6 +54,8 @@ Just follow these steps:
 3. Run the **BigClown Playground**, go to the **Device** tab, choose the **Radio Dongle** serial port and click **Connect**
 
     {{% img-zoom src="playground-devices-connect.png"  %}}
+
+    {{% note "info" %}}If you cannot see Radio Dongle in the devices, please see the <a href="#troubleshooting">Troubleshooting</a> chapter.{{% /note %}}
 
 4. Radio kits delivered together with your **{{% shop "Radio Dongle" %}}** are already programmed and paired, please check that out in the image below.
 
@@ -140,3 +143,11 @@ The goal of this **QUICK START GUIDE** is to show the basics in a few simple ste
 * Use your [**Raspberry PI**]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md" >}}) or other [**single board computer (SBC)**]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md#setup-on-original-raspbian.en.md">}}) as a server.
 * [**Flash other firmware**]({{< relref "/doc/projects/radio-door-sensor.en.md#flash-door-sensor-firmware.en.md">}}) or [**write your own firmware**]({{<relref "/doc/firmware/basic-overview.en.md">}}) for the **Core Module**.
 * Check the [**Core Module pinouts**]({{< relref "/doc/hardware/header-pinout.en.md">}}) and add your own buttons, relays and sensors.
+
+## Troubleshooting
+
+Cannot find the Radio Dongle or Core Module in the device list
+
+- On Windows 7 and macOS please install the [FTDI VCP drivers](https://www.ftdichip.com/Drivers/VCP.htm)
+- On Ubuntu you need to be in `dialout` user group. Please use command `sudo usermod -a -G dialout $USER` and restart computer
+- BigClown Playground cannot flash older Core Module Revision 1. Please use the `bcf` tool. See [version comparison]({{<relref "/doc/hardware/core-module-1-and-2-comparison.en.md">}})

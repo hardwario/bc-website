@@ -11,6 +11,8 @@ menu:
 
 We have released the new Core Module 2. Everything is the same, only the flash process is now easier and faster.
 
+With Core R2 you can use the [**BigClown Playground**]({{< relref "/doc/basics/quick-start-guide.en.md" >}}) GUI tool to program nodes, manage radio network and create rules in Node-RED.
+
 ## Technical and visual differences
 
 The most significant change is that R2 has only single button. This is the `B` button. It has moved and you can use it for your program. The `R` reset button is not necessary anymore because communication and firmware flashing is now done automatically over **FTDI** chip.
@@ -43,6 +45,8 @@ This means that the flashing procedure is now the same as with the Radio Dongle.
         bcf flash --device dfu bigclownlabs/bcf-radio-motion-detector:latest
 
 ## Flashing Core Module R2
+
+With Core R2 you can also use the [**BigClown Playground**]({{< relref "/doc/basics/quick-start-guide.en.md" >}}) GUI tool to program nodes, manage radio network and create rules in Node-RED.
 
 1. Run following command to see connected devices
 

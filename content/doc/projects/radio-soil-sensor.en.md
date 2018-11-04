@@ -60,8 +60,6 @@ Now it's time to write firmware to the **Core Module**.
 
     {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "/doc/firmware/toolchain-guide.en.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
 
-    {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
-
     {{% core-module-2 %}}
 
     Write this command to the **Raspberry Pi** SSH command line.

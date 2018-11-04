@@ -29,7 +29,7 @@ This document will guide you through the **Radio Climate Monitor** project. You 
 
 * One of these options:
 
-    * **BigClown Playground** installed
+    * **BigClown Playground** installed (recommended)
 
         You can find more information in the [**Quick Start Guide**]({{< relref "/doc/basics/quick-start-guide.en.md" >}}) document.
 
@@ -43,20 +43,13 @@ This document will guide you through the **Radio Climate Monitor** project. You 
 
 ## Firmware Upload
 
-In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **Core Module**.
-
-{{< note "note" "Firmware upload to Radio Dongle was done in Playground Setup." />}}
+In this procedure we will use the **BigClown Playground** to upload firmware to the **Core Module**.
 
 1. Connect the Micro USB cable to the **Core Module** and your computer.
 
-2. Upload the firmware to the **Core Module**:
-
-    {{% note "info" %}}You may want to update available firmwares by `bcf update` if the installation has been prolonged for a longer time after Playground Setup{{% /note %}}
+2. Run the BigClown Playground. In the Firmware tab choose and upload the `bcf-radio-climate-monitor` firmware to the **Core Module**:
 
     {{% core-module-2 %}}
-
-        {{% bcf-flash firmware="bcf-radio-climate-monitor" %}}
-
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
@@ -77,6 +70,8 @@ See short video with easy step by step demonstration:
 3. Plug the **Climate Module** on top of the **Core Module**.
 
 ## Playground Bootstrap
+
+{{% note "danger" %}}If you are using the new **BigClown Playground**, then use the **Functions** tab instead of using **http://localhost:1880/**. Also the pairing process is now done in **Devices** tab. For communication test use the **Messages** tab.{{% /note %}}
 
 1. Open **Node-RED** in your web browser:
 

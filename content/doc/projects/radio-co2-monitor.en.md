@@ -34,7 +34,7 @@ This document will guide you through the **Radio CO2 Monitor** project. You will
 
 * One of these options:
 
-    * **BigClown Playground** installed
+    * **BigClown Playground** installed (recommended)
 
         You can find more information in the [**Quick Start Guide**]({{< relref "/doc/basics/quick-start-guide.en.md" >}}) document.
 
@@ -42,32 +42,19 @@ This document will guide you through the **Radio CO2 Monitor** project. You will
 
         You can find more information in the document [**Raspberry Pi Installation**]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md" >}}).
 
-* **BigClown Firmware Tool** installed
+    * **BigClown Firmware Tool** installed
 
-    You can find more information in the document [**Toolchain Setup**]({{< relref "/doc/firmware/toolchain-setup.en.md" >}}).
-
-    {{% note "info" %}}`bcf` is part of Windows Playground Setup already.{{% /note %}}
+        You can find more information in the document [**Toolchain Setup**]({{< relref "/doc/firmware/toolchain-setup.en.md" >}}).
 
 ## Firmware Upload
 
-In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **Core Module**.
-
-{{< note "note" "Firmware upload to Radio Dongle was done in Playground Setup." />}}
+In this procedure we will use the **BigClown Playground** to upload firmware to the **Core Module**.
 
 1. Connect the Micro USB cable to the **Core Module** and your computer.
 
-2. Upload the firmware to the **Core Module**:
-
-    {{% note "info" %}}You may want to update available firmwares by `bcf update` if the installation has been prolonged for a longer time after Playground Setup{{% /note %}}
-
-    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "/doc/firmware/toolchain-guide.en.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
-
-    {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
+2. Run the BigClown Playground. In the Firmware tab choose and upload the `bcf-radio-co2-monitor` firmware to the **Core Module**:
 
     {{% core-module-2 %}}
-
-        {{% bcf-flash firmware="bcf-radio-co2-monitor" %}}
-
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
@@ -96,6 +83,8 @@ See short video with easy step by step demonstration:
 7. Plug the **Cover Module** on top of the **Core Module**.
 
 ## Playground Bootstrap
+
+{{% note "danger" %}}If you are using the new **BigClown Playground**, then use the **Functions** tab instead of using **http://localhost:1880/**. Also the pairing process is now done in **Devices** tab. For communication test use the **Messages** tab.{{% /note %}}
 
 1. Open **Node-RED** in your web browser:
 

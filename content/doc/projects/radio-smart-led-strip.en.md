@@ -39,7 +39,7 @@ This document will guide you through the **Radio Smart LED Strip** project. You 
 
 * One of these options:
 
-    * **BigClown Playground** installed
+    * **BigClown Playground** installed (recommended)
 
         You can find more information in the [**Quick Start Guide**]({{< relref "/doc/basics/quick-start-guide.en.md" >}}) document.
 
@@ -53,37 +53,25 @@ This document will guide you through the **Radio Smart LED Strip** project. You 
 
 ## Firmware Upload
 
-In this procedure we will use the **BigClown Firmware Tool** to upload firmware to the **Core Module**.
-
-{{< note "note" "Firmware upload to Radio Dongle was done in Playground Setup." />}}
+In this procedure we will use the **BigClown Playground** to upload firmware to the **Core Module**.
 
 1. Connect the Micro USB cable to the **Core Module** and your computer.
 
-2. Upload the firmware to the **Core Module**:
-
-    {{% note "info" %}}You may want to update available firmwares by `bcf update` if the installation has been prolonged for a longer time after Playground Setup{{% /note %}}
-
-    {{% note "warning" %}}You must first [**switch the Core Module to the DFU mode**]({{< relref "/doc/firmware/toolchain-guide.en.md#switching-core-module-into-dfu-mode" >}}).{{% /note %}}
-
-    {{< note "info" "In case of assembled Button stack without batteris inserted, you can press and hold Button, then connect the USB cable into PC and release Button." />}}
-
-    {{% core-module-2 %}}
+2. Run the BigClown Playground. In the Firmware tab choose and upload the right firmware based on your LED strip type to the **Core Module**:
 
     If your LED strip is **144 LEDs RGBW**:
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-power-controller-rgbw144:latest
+        bcf-radio-power-controller-rgbw144
 
     If your LED strip is **150 LEDs RGB**:
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-power-controller-rgb150:latest
+        bcf-radio-power-controller-rgb150
 
     If your LED strip is **72 LEDs RGBW**:
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-power-controller-rgbw72:latest
+        bcf-radio-power-controller-rgbw72
 
-    Firmware upload is successfully done when the status reaches 100%:
-
-    {{% img-zoom src="bcf.png" %}}
+     {{% core-module-2 %}}
 
 3. Remove the Micro USB cable from the **Core Module** and your computer.
 
@@ -113,11 +101,11 @@ See short video with easy step by step demonstration:
 
 ## Playground Bootstrap
 
+{{% note "danger" %}}If you are using the new **BigClown Playground**, then use the **Functions** tab instead of using **http://localhost:1880/**. Also the pairing process is now done in **Devices** tab. For communication test use the **Messages** tab.{{% /note %}}
+
 1. Open **Node-RED** in your web browser:
 
     **http://localhost:1880/**
-
-    {{% note "info" %}}If you are using Raspberry PI with Radio Dongle as a gateway type IP adress of your Raspberry: **http://xxx.xxx.xxx.xxx:1880/** To obtain IP adress follow documment [**Raspberry Pi Login**]({{< relref "/doc/tutorials/raspberry-pi-login.en.md" >}}){{% /note %}}
 
 2. You should see the empty workspace with **Flow 1**.
 

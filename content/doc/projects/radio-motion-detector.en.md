@@ -74,6 +74,8 @@ See short video with easy step by step demonstration:
 
 ## Playground Bootstrap
 
+{{% note "danger" %}}If you are using the new **BigClown Playground**, then use the **Functions** tab instead of using **http://localhost:1880/**. Also the pairing process is now done in **Devices** tab. For communication test use the **Messages** tab.{{% /note %}}
+
 1. Open **Node-RED** in your web browser:
 
     **http://localhost:1880/**

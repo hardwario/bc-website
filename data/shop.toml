@@ -114,6 +114,11 @@ en = "https://shop.bigclown.com/probe-module"
 cs = "https://obchod.bigclown.cz/probe-module"
 
 [[products]]
+title = "Push Button Kit"
+en = "https://shop.bigclown.com/push-button-kit"
+cs = "https://obchod.bigclown.cz/push-button-kit"
+
+[[products]]
 title = "Relay Module"
 en = "https://shop.bigclown.com/relay-module"
 cs = "https://obchod.bigclown.cz/relay-module"

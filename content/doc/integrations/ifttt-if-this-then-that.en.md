@@ -13,9 +13,9 @@ menu:
 
 # IFTTT example projects with BigClown
 
-  * [Wireless Push Button]({{< relref "/doc/projects/radio-push-button.en.md" >}})
-  * [Wireless Motion Detector]({{< relref "/doc/projects/radio-motion-detector.en.md" >}})
-  * [Wireless Flood Detector]({{< relref "/doc/projects/radio-flood-detector.en.md" >}})
+  * [Radio Push Button]({{< relref "/doc/projects/radio-push-button.en.md" >}})
+  * [Radio Motion Detector]({{< relref "/doc/projects/radio-motion-detector.en.md" >}})
+  * [Radio Flood Detector]({{< relref "/doc/projects/radio-flood-detector.en.md" >}})
 
 # Mobile App
 

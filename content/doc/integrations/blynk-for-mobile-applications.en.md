@@ -23,10 +23,10 @@ You are done and you can start integrations with Blynk.
 
 # Blynk example projects with BigClown
 
-  * [Wireless Climate Monitor]({{< relref "/doc/projects/radio-climate-monitor.en.md" >}})
-  * [Wireless LCD Thermostat]({{< relref "/doc/projects/radio-lcd-thermostat.en.md" >}})
-  * [Wireless CO2 Monitor]({{< relref "/doc/projects/radio-co2-monitor.en.md" >}})
-  * [Wireless Smart LED Strip]({{< relref "/doc/projects/radio-smart-led-strip.en.md" >}})
+  * [Radio Climate Monitor]({{< relref "/doc/projects/radio-climate-monitor.en.md" >}})
+  * [Radio LCD Thermostat]({{< relref "/doc/projects/radio-lcd-thermostat.en.md" >}})
+  * [Radio CO2 Monitor]({{< relref "/doc/projects/radio-co2-monitor.en.md" >}})
+  * [Radio Smart LED Strip]({{< relref "/doc/projects/radio-smart-led-strip.en.md" >}})
 
 # Blynk app
 

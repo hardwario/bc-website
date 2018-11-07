@@ -5,7 +5,7 @@ other = "Company ID"
 other = "VAT ID"
 
 [company_registration]
-other = "The company is registered in the Commercial Register, maintained by the Regional Court in Usti nad Labem, <strong>Section C, File 37399.</strong>"
+other = "HARDWARIO s.r.o. is registered in the Commercial Register, maintained by the Regional Court in Usti nad Labem, <strong>Section C, File 37399.</strong>"
 
 [social_links]
 other = "We are also here"

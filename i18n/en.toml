@@ -4,6 +4,12 @@ other = "Learn more"
 [or]
 other = "OR"
 
+[and]
+other = "AND"
+
+[save]
+other = "Save"
+
 [makers_say]
 other = "What makers say about us"
 

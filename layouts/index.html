@@ -1,5 +1,108 @@
 {{ define "main" }}
+
 <section>
+  <div class = "homepageHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 heading">
+        <h1>
+          <svg
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="626px" height="135px" viewBox="0 0 626 134">
+          <path fill-rule="evenodd"  fill="rgb(229, 27, 32)"
+           d="M7.909,6.947 L593.438,-0.012 L600.999,66.000 L0.000,66.000 L7.909,6.947 Z"/>
+          <path fill-rule="evenodd"  fill="rgb(227, 7, 17)"
+           d="M20.398,17.000 L618.218,60.396 L625.993,134.862 L20.398,129.660 L20.398,17.000 Z"/>
+          </svg>
+          <div>
+          Learn <strong>Digital Making</strong> By<br />
+          <span>&nbsp;&nbsp;Doing <strong>Real IoT Projects</strong></span></div>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="getStarterKit bg bg--bubbleswhite">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 ml-auto mr-auto">
+          <h2 class="title text-center">{{ i18n "start_digital_making" | safeHTML }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-xl-3 hidden-sm-down notes">
+          <div class="col-8 col-md-12 col-xl-8 ml-auto mr-auto note">
+            <img src="/_assets/svg/easytobuild.svg" onerror="this.src='your.png'">
+          </div>
+          <div class="col-11 col-md-12 col-xl-11 ml-auto mr-auto note note__bottom">
+            <img src="/_assets/svg/firstproject.svg" onerror="this.src='your.png'">
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lf-8 col-xl-6 ml-auto mr-auto text-center">
+          <div class = "videoContainer">
+              <img src="/_assets/images/play.png" data-video="http://www.youtube.com/embed/OCPPKXzCBg0?autoplay=1&cc_load_policy=1&fs=0&loop=1&playlist=OCPPKXzCBg0&modestbranding=1&playsinline=1&color=white&iv_load_policy=3" class = "videoPlaceholder">
+
+              <script>
+                $('img.videoPlaceholder').click(function(){
+                  var video = '<iframe id="ytplayer" type="text/html" src="'+ $(this).attr('data-video') +'" frameborder="0" class = "videoPlayer"></iframe>';
+                  $(this).replaceWith(video);
+                });
+              </script>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xl-3 hidden-sm-down notes">
+          <div class="col-9 col-md-12 col-xl-9 ml-auto mr-auto note">
+            <img src="/_assets/svg/personalsupport.svg" onerror="this.src='your.png'">
+          </div>
+          <div class="col-12 col-md-12 ml-auto mr-auto note note__bottom">
+            <img src="/_assets/svg/inspiration.svg" onerror="this.src='your.png'">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-10 col-md-4 ml-auto mr-auto text-center buyStarterKit">
+          <img src = "/_assets/images/starterKit.png" />
+          <div class = "starterPrice">
+            <span class="previousPrice"><strike>80 EUR</strike></span>&nbsp;&nbsp;<span class="currentPrice">49 EUR</span><br />
+            <span class="youSave">{{ i18n "save" }} 30%</span>
+          </div>
+          <a href="https://www.bigclown.com/kits/multi-kit-premium/" class="button button--block  button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          <div class="or d-flex justify-content-center align-items-center">{{ i18n "and" }}</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="title title--smallerPadding text-center">{{ i18n "able_build" | safeHTML }}</h2>
+        <div class="articles">
+          <div class="row">
+            {{ range first 6 ($.Site.GetPage "section" "projects").Pages }}
+              {{ .Render "grid" }}
+            {{ end }}
+          </div>
+          <div class="text-center">
+            <a href="{{ "projects/" | absLangURL }}" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--<section>
   <div class="intro">
     <div class="intro__video" id="video" data-property="{videoURL:'https://youtu.be/S-IZY1JqNTQ',containment:'.intro__video',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false}"></div>
 
@@ -19,9 +122,9 @@
     <div class="intro__play intro__play--2 d-none d-lg-block" onclick="ga('gtm2.send', 'event', 'main_video', 'play');"></div>
     <div class="intro__close"></div>
   </div>
-</section>
+</section>-->
 
-
+<!--
 <section>
   <div id="playerArea">
     <div class="bg bg--bubbleswhite">
@@ -32,7 +135,7 @@
 
             <div class="threed">
               <div class="videoWrapper videoWrapper--noTopMargin">
-                <div id="player" data-property="{videoURL:'https://youtu.be/ophRx1tAmfA',containment:'.videoWrapper',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:true}"></div>
+                <div id="player" data-property="{videoURL:'https://youtu.be/ophRx1tAmfA',containment:'.videoWrapper',autoPlay:false, mute:true, startAt:0, opacity:1, showControls:false}"></div>
               </div>
             </div>
           </div>
@@ -40,11 +143,8 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
-{{ partial "www/kits-easy.html" . }}
-
-{{ partial "www/kits-starter.html" . }}
 
 {{ partial "www/features.html" . }}
 

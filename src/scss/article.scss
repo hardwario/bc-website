@@ -33,6 +33,9 @@
       padding-top: 1.5*$baseline;
     }
 
+    &--smallerPadding{
+      padding-top: 0.5*$baseline;
+    }
     &__button
     {
       line-height: 2*$baseline;

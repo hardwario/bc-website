@@ -4,6 +4,12 @@ other = "Zjisti více"
 [or]
 other = "NEBO"
 
+[and]
+other = "A"
+
+[save]
+other = "Ušetři"
+
 [makers_say]
 other = "Co o nás říkají mejkři"
 

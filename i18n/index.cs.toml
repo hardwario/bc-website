@@ -9,3 +9,12 @@ other = "ZAČNI JEŠTĚ DNES"
 
 [make_something_yours]
 other = "Postav něco svého <small>je to snadné, zábavné a pro každého</small>"
+
+[start_digital_making]
+other = "Start Your Digital Making <small>with the BigClown \"Starter Kit\"</small>"
+
+[able_build]
+other = "You'll be able to build several<br /> amazing projects with this kit"
+
+[buy_starter_kit]
+other = "Buy \"BigClown Starter Kit\""

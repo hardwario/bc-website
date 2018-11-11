@@ -1,0 +1,180 @@
+{{ define "main" }}
+
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 ml-auto mr-auto text-center pt-5">
+        <img src = "/_assets/images/starterKit.png" />
+      </div>
+      <div class="col-12 col-xl-10">
+        <div class="article__header--smallerPadding">
+          <div class="article__header__button">
+            <h1 class="article__title">{{ .Params.mainHeading }}</h1>
+            <div class="text text--perex">
+              <p>Starter Kit is your gate the BigClown's world. You will learn, how to set up Kit, connect it with computer and send notifications to you mobile devices with pushing button on kit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div class="step__item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg order-lg-2">
+                    <div class="step__content">
+                        <h3 class="step__title"><span>1</span>Build Hardware</h3>
+                        <div class="text text--step">
+                            <p>Put all three modules together to build the Push Button. Note the orientation of the Mini Battery Module and put the batteries in.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg order-lg-1">
+                  <div>
+                      <div class="videoWrapper">
+                          <iframe width="854" height="480" src="https://www.youtube.com/embed/OCPPKXzCBg0" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="step__item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <div class="step__content">
+                        <h3 class="step__title"><span>2</span>Set-Up Playground</h3>
+                        <div class="text text--step">
+                          <p>For managin devices, functions we will use BigClown playground. It helps you connect everything together.</p>
+                            <ol>
+                              <li>Download and Install BigClown Playground application</li>
+                              <li>Plug Radio Dongle to your computer</li>
+                              <li>Open BigClown Playground and open "Devices" tab</li>
+                              <li>Click on "Connect" button</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg">
+                  <div>
+                      <div class="videoWrapper">
+                          <iframe width="854" height="480" src="https://www.youtube.com/embed/OCPPKXzCBg0" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="step__item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg order-lg-2">
+                    <div class="step__content">
+                        <h3 class="step__title"><span>3</span>Set-Up Blynk App</h3>
+                        <div class="text text--step">
+                            <p>For receiving notification on mobile device we will use Blynk Application.</p>
+                            <ol>
+                              <li>Download the Blynk app from App Store or Google Play. Create an account and log-in.</li>
+                              <li>Click on "QR code" icon in right corner and scan our QR Code</li>
+                              <li>Scan QR Code</li>
+                              <li>Send Auth Token to your e-mail</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg order-lg-1">
+                  <div>
+                      <div class="videoWrapper">
+                          <iframe width="854" height="480" src="https://www.youtube.com/embed/OCPPKXzCBg0" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="step__item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <div class="step__content">
+                        <h3 class="step__title"><span>4</span>Connect BigClown and Blynk</h3>
+                        <div class="text text--step">
+                            <p>The final step is to connect Node-RED and Blynk together, so you can get the notifications.</p>
+                            <ol>
+                              <li>Open "Functions" tab in BigClown Playground</li>
+                              <li>Double click on Blynk notification node</li>
+                              <li>Click on "Pencil" icon and paste Auth Token from Blynk</li>
+                              <li>Save changes by clicking "Done"</li>
+                              <li>Click on "Deploy" button</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg">
+                  <div>
+                      <div class="videoWrapper">
+                          <iframe width="854" height="480" src="https://www.youtube.com/embed/OCPPKXzCBg0" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="step__item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg order-lg-2">
+                    <div class="step__content">
+                        <h3 class="step__title"><span>5</span>Thats all!</h3>
+                        <div class="text text--step">
+                            <p>Your project is done, you can Push the Button!</p>
+                            <p>Do you have an idea what can you build with this Kit? Let's go for it!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg order-lg-1">
+                  <div>
+                      <div class="videoWrapper">
+                          <iframe width="854" height="480" src="https://www.youtube.com/embed/OCPPKXzCBg0" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="title title--withoutsubtitle text-center">{{ i18n "projects_to_build" | safeHTML }}</h2>
+        <div class="articles">
+          <div class="row">
+            {{ range first 6 ($.Site.GetPage "section" "projects").Pages }}
+              {{ .Render "grid" }}
+            {{ end }}
+          </div>
+          <div class="text-center">
+            <a href="{{ "projects/" | absLangURL }}" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

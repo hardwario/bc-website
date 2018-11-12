@@ -2,14 +2,11 @@
 
 <section>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 ml-auto mr-auto text-center pt-5">
-        <img src = "/_assets/images/starterKit.png" />
-      </div>
+    <div class="row justify-content-center pt-5">
       <div class="col-12 col-xl-10">
         <div class="article__header--smallerPadding">
           <div class="article__header__button">
-            <h1 class="article__title">{{ .Params.mainHeading }}</h1>
+            <h1 class="article__title">{{ .Params.mainHeading | safeHTML}}</h1>
             <div class="text text--perex">
               <p>Starter Kit is your gate the BigClown's world. You will learn, how to set up Kit, connect it with computer and send notifications to you mobile devices with pushing button on kit.</p>
             </div>
@@ -98,8 +95,8 @@
                             </div>
                         </div>
                         <div>
-                            <a href="images/project1.jpg" title="Lorem ipsum dolor sit amet natur dylir" class="step__image magnificPopup">
-                                <img src="/_assets/images/start/blynk-qr-code-push.button-kit.png" alt="" />
+                            <a href="/_assets/images/start/blynk-qr-code-push.button-kit.jpg" title="Blynk App QR Code" class="step__image magnificPopup">
+                                <img src="/_assets/images/start/blynk-qr-code-push.button-kit.jpg" alt="" />
                             </a>
                         </div>
                     </div>
@@ -165,6 +162,26 @@
 </section>
 
 <section>
+            <div class="livechat">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 col-md-2">
+                            <div class="livechat__icon"></div>
+                        </div>
+                        <div class="col-8 col-md-6">
+                            <h2 class="livechat__title">Need help?</h2>
+                            <p class="livechat__text">Don’t worry, our BigClown’s support team will help you</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="livechat__button d-flex align-items-center">
+                                <a href="#" onclick="Intercom('showNewMessage');" class="button button--block button--fullred">Get In Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--<section>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -182,6 +199,6 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 {{ end }}

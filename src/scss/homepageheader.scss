@@ -19,7 +19,7 @@
     min-height: 0;
   }
   .heading{
-    margin-top:calc(34vh - #{3*$baseline});
+    margin-top:calc(38vh - #{2*$baseline});
 
     @media(max-width:991px)
     {
@@ -135,7 +135,7 @@
     .videoPlaceholder{
       width: 100%;
       height: calc(100% - 30px);
-      cursor: pointer;
+      //cursor: pointer;
 
       @media(max-width:521px)
       {

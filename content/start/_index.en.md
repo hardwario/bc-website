@@ -1,6 +1,6 @@
 ---
 title: Start
-mainHeading: 5 easy steps to start learning of&nbsp;digital skills
+mainHeading: 5 Easy Steps to Get Started Learning Digital Skills
 slug: start
 menu: "main"
 weight: 50

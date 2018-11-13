@@ -35,4 +35,13 @@ other = "Doživotní podpora"
 other = "Můžeš využít naši dokumentaci, fórum nebo live chat."
 
 [love_features]
-other = "BigClown je Digital Making Kit pro studenty a mejkry"
+other = "BigClown je Digital Maker Kit <small>Spojujeme hardware, software, 3D tisk a výukové materiály, aby byl...</small>"
+
+[affordable]
+other = "Cenově dostupný"
+
+[simple]
+other = "Jednoduchý"
+
+[engaging]
+other = "Podmanivý"

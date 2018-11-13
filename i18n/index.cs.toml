@@ -11,10 +11,34 @@ other = "ZAČNI JEŠTĚ DNES"
 other = "Postav něco svého <small>je to snadné, zábavné a pro každého</small>"
 
 [start_digital_making]
-other = "Start Your Digital Making <small>with the BigClown \"Starter Kit\"</small>"
+other = "Začni se učit digi znalosti <small>s <strong>BigClown Starter Kitem</strong></small>"
 
 [able_build]
-other = "You'll be able to build several<br /> amazing projects with this kit"
+other = "Podívej se na projekty se Starter Kitem"
 
 [buy_starter_kit]
-other = "Buy \"BigClown Starter Kit\""
+other = "Získej \"BigClown Starter Kit\""
+
+[learn_digital_skills]
+other = "Nauč se <strong>digi znalosti</strong><br /><span>&nbsp;&nbsp;s <strong>reálnými projekty</strong></span>"
+
+[easy_to_build]
+other = "Sestavení je hračka"
+
+[first_project_30]
+other = "První projekt za 30 minut"
+
+[personal_support]
+other = "Osobní podpora"
+
+[inpiration_tutorials]
+other = "Inpirace a návody"
+
+[standard_price]
+other = "2 101 Kč"
+
+[final_price]
+other = "1 530 Kč"
+
+[you_save]
+other = "27 %"

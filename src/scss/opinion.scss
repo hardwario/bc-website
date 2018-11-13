@@ -11,6 +11,10 @@
 
   &__link:hover{
       text-decoration: none;
+
+      .opinion__text{
+        color: #e30711;
+      }
   }
   &__item
   {

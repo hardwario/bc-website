@@ -1,0 +1,87 @@
+.opinion
+{
+  padding-top: 0*$baseline;
+  padding-bottom: 3*$baseline;
+
+  &--2
+  {
+    padding-top: 2*$baseline;
+    padding-bottom: 2*$baseline;
+  }
+
+  &__link:hover{
+      text-decoration: none;
+  }
+  &__item
+  {
+    height: 100%;
+    background: white;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 0;
+    padding-bottom: $baseline;
+    margin-bottom: $baseline;
+    border-radius: 7px;
+    overflow: hidden;
+
+    &__image
+    {
+      overflow: hidden;
+      height: 0;
+      overflow:hidden;
+      padding-bottom: 246/375*100%;
+
+      &__play
+      {
+        position: relative;
+        top: -35px;
+      }
+    }
+
+  }
+
+  &__text
+  {
+    margin: 0;
+    padding: 0 40px;
+    font-size: em(24);
+    color: #212529;
+
+    @media(max-width:1199px)
+    {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__name
+  {
+    font-size: em(18);
+    font-weight: 600;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__pos
+  {
+    font-size: em(16);
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    color: #212529;
+  }
+
+  &__image
+  {
+    height: 4*$baseline;
+
+    img
+    {
+      max-height: 3*$baseline;
+      max-width: 3*$baseline;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div class="col-12 col-lg-4">
+  <a href = "#" class="opinion__link">
+        <div class="opinion__item d-flex justify-content-between flex-column">
+          <div class="opinion__item__image">
+            <img src="/opinion/{{ .Params.image }}" alt="{{ .Title }}" />
+            <img src = "/_assets/svg/play-circle.svg" class = "opinion__item__image__play" />
+          </div>
+            <h3 class="opinion__text">{{ .Title }}</h3>
+            <div>
+                <div class="opinion__image d-flex align-items-center justify-content-center">
+                    <img src="/_assets/svg/review.svg" alt="{{ .Title }}" />
+                </div>
+                <h3 class="opinion__name">{{ .Params.author.name }}</h3>
+                <div class="opinion__pos">{{ .Params.author.position}}</div>
+            </div>
+        </div>
+        </a>
+    </div>

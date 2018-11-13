@@ -17,7 +17,7 @@
           </svg>
           <div>
           Learn <strong>Digital Skills</strong> By<br />
-          <span>&nbsp;&nbsp;Doing <strong>Real Projects</strong></span></div>
+          <span>&nbsp;&nbsp;Making <strong>Real Projects</strong></span></div>
         </h1>
       </div>
     </div>
@@ -78,13 +78,21 @@
       </div>
       <div class="row">
         <div class="col-10 col-md-4 ml-auto mr-auto text-center buyStarterKit">
-          <img src = "/_assets/images/starterKit.png" />
+          <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
           <div class = "starterPrice">
             <span class="previousPrice"><strike>80 EUR</strike></span>&nbsp;&nbsp;<span class="currentPrice">49 EUR</span><br />
             <span class="youSave">{{ i18n "save" }} 31 EUR</span>
           </div>
           <a href="https://www.bigclown.com/kits/multi-kit-premium/" class="button button--block  button--fullred ">{{ i18n "buy_starter_kit" }}</a>
           <!--<div class="or d-flex justify-content-center align-items-center">{{ i18n "and" }}</div>-->
+
+          <script>
+            $('.starterKitImage').hover(function(){
+              $(this).attr('src','/_assets/images/starterKit-hover.png');
+            },function(){
+              $(this).attr('src','/_assets/images/starterKit.png');
+            })
+          </script>
         </div>
       </div>
 

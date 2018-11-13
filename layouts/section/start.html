@@ -1,6 +1,7 @@
 {{ define "main" }}
 
 <section>
+  <div class="getStarterKit bg bg--bubbleswhite">
   <div class="container">
     <div class="row justify-content-center pt-5">
       <div class="col-12 col-xl-10">
@@ -8,12 +9,33 @@
           <div class="article__header__button">
             <h1 class="article__title">{{ .Params.mainHeading | safeHTML}}</h1>
             <div class="text text--perex">
-              <p><a href = "/">Starter Kit</a> is your gate the BigClown's world. You will learn, how to set up Kit, connect it with computer and send notifications to you mobile devices with pushing button on kit.</p>
+              <p>Follow these 5 easy steps and you will learn how to build the hardware, connect it wirelessly to your computer and set up notifications for the smartphone.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-10 col-md-4 ml-auto mr-auto text-center buyStarterKit">
+        <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
+        <div class = "starterPrice">
+          <span class="previousPrice"><strike>80 EUR</strike></span>&nbsp;&nbsp;<span class="currentPrice">49 EUR</span><br />
+          <span class="youSave">{{ i18n "save" }} 31 EUR</span>
+        </div>
+        <a href="https://www.bigclown.com/kits/multi-kit-premium/" class="button button--block  button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+        <!--<div class="or d-flex justify-content-center align-items-center">{{ i18n "and" }}</div>-->
+
+        <script>
+          $('.starterKitImage').hover(function(){
+            $(this).attr('src','/_assets/images/starterKit-hover.png');
+          },function(){
+            $(this).attr('src','/_assets/images/starterKit.png');
+          })
+        </script>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
 

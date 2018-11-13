@@ -11,10 +11,10 @@ other = "START TODAY"
 other = "Make something yours <small>it's simple, fun and for everyone</small>"
 
 [start_digital_making]
-other = "Start Learning Digital Skills <small>with the BigClown \"Starter Kit\"</small>"
+other = "Start Learning Digital Skills <small>with the <strong>BigClown Starter Kit</strong></small>"
 
 [able_build]
 other = "Check projects using Starter Kit"
 
 [buy_starter_kit]
-other = "Buy \"BigClown Starter Kit\""
+other = "Get \"BigClown Starter Kit\""

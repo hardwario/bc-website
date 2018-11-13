@@ -19,7 +19,7 @@
     min-height: 0;
   }
   .heading{
-    margin-top:calc(38vh - #{2*$baseline});
+    margin-top:calc(38vh);
 
     @media(max-width:991px)
     {

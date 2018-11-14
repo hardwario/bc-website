@@ -1,2 +1,11 @@
 [projects_to_build]
 other = "Let's continue with this amazin projects"
+
+[need_help]
+other = "Need help?"
+
+[dont_worry]
+other = "Don’t worry, our BigClown’s support team will help you"
+
+[get_in_touch]
+other = "Get In Touch"

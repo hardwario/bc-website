@@ -3,6 +3,7 @@ title: Start
 meta:
     title: 5 Easy Steps to Get Started Learning Digital Skills
 mainHeading: 5 Easy Steps to Get Started&nbsp;Learning Digital Skills
+mainParagraph: You will learn how to build the hardware, connect it wirelessly to your computer and set up notifications for the smartphone.
 slug: start
 menu: "main"
 weight: 50
@@ -33,7 +34,7 @@ Plug all three modules together to build the kit. Note the orientation of the Mi
 {{% p-step-content order = "2" step = "3" title = "Set Up Smartphone App" %}}
 * Download the Blynk app from [App Store](https://itunes.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481?mt=8) or [Google Play](https://play.google.com/store/apps/details?id=cc.blynk&hl=en). Create an account and log-in.
 * Click on "QR code" icon in the right corner
-* Scan QR Code on the left
+* Scan QR Code from this page. You find it on the left
 * Send Auth Token to your e-mail
 {{% /p-step-content %}}
 {{% p-step-gallery order = "1" %}}

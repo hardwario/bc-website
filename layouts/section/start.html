@@ -9,7 +9,7 @@
           <div class="article__header__button">
             <h1 class="article__title">{{ .Params.mainHeading | safeHTML}}</h1>
             <div class="text text--perex">
-              <p>{{ i18n "you_will_learn" }}</p>
+              <p>{{ .Params.mainParagraph | safeHTML }}</p>
             </div>
           </div>
         </div>

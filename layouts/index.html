@@ -69,7 +69,7 @@
               <li class="pricelist__items__item">{{ i18n "easy_to_build" }}</li>
               <li class="pricelist__items__item">{{ i18n "first_project_30" }}</li>
               <li class="pricelist__items__item">{{ i18n "personal_support" }}</li>
-              <li class="pricelist__items__item">{{ i18n "Inspiration and tutorials" }}</li>
+              <li class="pricelist__items__item">{{ i18n "Inspiration_tutorials" }}</li>
             </ul>
           </div>
         </div>
@@ -97,71 +97,6 @@
     </div>
   </div>
 </section>
-<!--<section>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h2 class="title title--smallerPadding text-center">{{ i18n "able_build" | safeHTML }}</h2>
-        <div class="articles">
-          <div class="row">
-            {{ range first 6 ($.Site.GetPage "section" "projects").Pages }}
-              {{ .Render "grid" }}
-            {{ end }}
-          </div>
-          <div class="text-center">
-            <a href="{{ "projects/" | absLangURL }}" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>-->
-
-
-<!--<section>
-  <div class="intro">
-    <div class="intro__video" id="video" data-property="{videoURL:'https://youtu.be/S-IZY1JqNTQ',containment:'.intro__video',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false}"></div>
-
-    <div class="intro__half"></div>
-
-    <div class="intro__content d-flex align-items-center justify-content-center">
-      <div>
-        <h1 class="intro__title1 align-self-center"><span>{{ i18n "make_your" }}</span></h1>
-        <h2 class="intro__title2 text-uppercase">{{ i18n "we_are_makers" | safeHTML }}</h2>
-        <a href="http://www.youtube.com/watch?v=S-IZY1JqNTQ?autoplay=1" class="intro__play d-block d-lg-none magnificYoutube"></a>
-        <div class="intro__button d-block d-lg-flex align-items-lg-center flex-lg-column">
-          <a href="#playerArea" class="button button--green">{{ i18n "start_today" }}</a>
-        </div>
-        <div class="intro__arrow d-none d-lg-inline-block"></div>
-      </div>
-    </div>
-    <div class="intro__play intro__play--2 d-none d-lg-block" onclick="ga('gtm2.send', 'event', 'main_video', 'play');"></div>
-    <div class="intro__close"></div>
-  </div>
-</section>-->
-
-<!--
-<section>
-  <div id="playerArea">
-    <div class="bg bg--bubbleswhite">
-      <div class="container">
-        <div class="row">
-          <div class="col-10 ml-auto mr-auto">
-            <h2 class="title text-center">{{ i18n "make_something_yours" | safeHTML }}</h2>
-
-            <div class="threed">
-              <div class="videoWrapper videoWrapper--noTopMargin">
-                <div id="player" data-property="{videoURL:'https://youtu.be/ophRx1tAmfA',containment:'.videoWrapper',autoPlay:false, mute:true, startAt:0, opacity:1, showControls:false}"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>-->
-
-
 {{ partial "www/features.html" . }}
 
 {{ partial "www/opinion.html" . }}

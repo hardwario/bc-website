@@ -9,7 +9,7 @@
           <div class="article__header__button">
             <h1 class="article__title">{{ .Params.mainHeading | safeHTML}}</h1>
             <div class="text text--perex">
-              <p>You will learn how to build the hardware, connect it wirelessly to your computer and set up notifications for the smartphone.</p>
+              <p>{{ i18n "you_will_learn" }}</p>
             </div>
           </div>
         </div>
@@ -20,8 +20,8 @@
       <div class="col-10 col-md-4 ml-auto mr-auto text-center buyStarterKit">
         <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
         <div class = "starterPrice">
-          <span class="previousPrice"><strike>81 EUR</strike></span>&nbsp;&nbsp;<span class="currentPrice">59 EUR</span><br />
-          <span class="youSave">{{ i18n "save" }} 27%</span>
+          <span class="previousPrice"><strike>{{ i18n "standard_price" }}</strike></span>&nbsp;&nbsp;<span class="currentPrice">{{ i18n "final_price" }}</span><br />
+          <span class="youSave">{{ i18n "save" }} {{ i18n "you_save" }}</span>
         </div>
         <a href="https://shop.bigclown.com/starter-kit/" class="button button--block  button--fullred ">{{ i18n "buy_starter_kit" }}</a>
         <!--<div class="or d-flex justify-content-center align-items-center">{{ i18n "and" }}</div>-->
@@ -40,150 +40,7 @@
 </section>
 
 <section>
-    <div class="step__item">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg order-lg-2">
-                    <div class="step__content">
-                        <h3 class="step__title"><span>1</span>Build Hardware</h3>
-                        <div class="text text--step">
-                            <p>Plug all three modules together to build the kit. Note the orientation of the Mini Battery Module.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg order-lg-1">
-                  <div>
-                      <div class="videoWrapper">
-                          <iframe width="854" height="480" src="https://www.youtube.com/embed/OCPPKXzCBg0?rel=0" frameborder="0" allowfullscreen></iframe>
-                      </div>
-                  </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="step__item">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg">
-                    <div class="step__content">
-                        <h3 class="step__title"><span>2</span>Set Up Wireless Communication</h3>
-                        <div class="text text--step">
-                            <ul>
-                              <li>Download and Install <a href = "https://github.com/bigclownlabs/bch-playground/releases/latest">BigClown Playground</a> application</li>
-                              <li>Plug Radio Dongle to your computer</li>
-                              <li>Open BigClown Playground and open "Devices" tab</li>
-                              <li>Click on "Connect" button</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 order-lg-1">
-                    <div class="slick slick--2">
-                        <div>
-                          <div class="videoWrapper">
-                              <iframe width="854" height="480" src="https://www.youtube.com/embed/-ndjehUElWE?rel=0" frameborder="0" allowfullscreen></iframe>
-                          </div>
-                        </div>
-                        <div>
-                          <a href="/_assets/images/start/connect-usb-dongle.jpg" title="Plug Radio Dongle to Computer" class="step__image magnificPopup">
-                              <img src="/_assets/images/start/connect-usb-dongle.jpg" alt="Plug Radio Dongle to Computer" />
-                          </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="step__item">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg order-lg-2">
-                    <div class="step__content">
-                        <h3 class="step__title"><span>3</span>Set Up Smartphone App</h3>
-                        <div class="text text--step">
-                            <ul>
-                              <li>Download the Blynk app from <a href = "https://itunes.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481?mt=8">App Store</a> or <a href = "https://play.google.com/store/apps/details?id=cc.blynk&hl=en">Google Play</a>. Create an account and log-in.</li>
-                              <li>Click on "QR code" icon in the right corner</li>
-                              <li>Scan QR Code on the left</li>
-                              <li>Send Auth Token to your e-mail</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 order-lg-1">
-                    <div class="slick slick--2">
-                        <div>
-                            <div class="videoWrapper">
-                                <iframe width="854" height="480" src="https://www.youtube.com/embed/dPPVQDQ3nY8?rel=0" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="/_assets/images/start/blynk-qr-code-push.button-kit.jpg" title="Blynk App QR Code" class="step__image magnificPopup">
-                                <img src="/_assets/images/start/blynk-qr-code-push.button-kit.jpg" alt="Blynk App QR Code" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="step__item">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg">
-                    <div class="step__content">
-                        <h3 class="step__title"><span>4</span>Connect Starter Kit with Smartphone App To Get Notifications</h3>
-                        <div class="text text--step">
-                            <ul>
-                              <li>Open "Functions" tab in BigClown Playground app</li>
-                              <li>Double click on Blynk notification node</li>
-                              <li>Click on "Pencil" icon and paste Auth Token from Blynk</li>
-                              <li>Save changes by clicking "Done"</li>
-                              <li>Click on "Deploy" button</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg">
-                  <div>
-                      <div class="videoWrapper">
-                          <iframe width="854" height="480" src="https://www.youtube.com/embed/F_3t0XPnTFA?rel=0" frameborder="0" allowfullscreen></iframe>
-                      </div>
-                  </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="step__item">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg order-lg-2">
-                    <div class="step__content">
-                        <h3 class="step__title"><span>5</span>Push The Button!</h3>
-                        <div class="text text--step">
-                            <p>And you should get the notification on your smartphone</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg order-lg-1">
-                  <div>
-                      <a href="/_assets/images/start/button-pressed.jpg" title="BigClown Button Pressed" class="step__image magnificPopup">
-                          <img src="/_assets/images/start/button-pressed.jpg" alt="BigClown Button Pressed" />
-                      </a>
-                  </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+  {{ .Content }}
 </section>
 
 <section>

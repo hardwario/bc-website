@@ -1,0 +1,11 @@
+[projects_to_build]
+other = "Let`s continue with this amazin projects"
+
+[need_help]
+other = "Potřebuje pomoc?"
+
+[dont_worry]
+other = "Neboj se, náš tým klaunů se o to postará!"
+
+[get_in_touch]
+other = "Dej nám vědět"

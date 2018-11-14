@@ -1,5 +1,7 @@
-<div class="col-10 col-lg order-lg-{{ .Get "order" }}">
-  <div class="videoWrapper--noTopMargin-noPadding" >
-    <iframe width="854" height="570" src="https://www.youtube.com/embed/{{ .Get "id" }}?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="col-12 col-lg order-lg-{{ .Get "order" }}">
+  <div>
+    <div class="videoWrapper" >
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/{{ .Get "id" }}?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 </div>

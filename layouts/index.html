@@ -1,54 +1,105 @@
 {{ define "main" }}
+
 <section>
-  <div class="intro">
-    <div class="intro__video" id="video" data-property="{videoURL:'https://youtu.be/S-IZY1JqNTQ',containment:'.intro__video',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false}"></div>
-
-    <div class="intro__half"></div>
-
-    <div class="intro__content d-flex align-items-center justify-content-center">
-      <div>
-        <h1 class="intro__title1 align-self-center"><span>{{ i18n "make_your" }}</span></h1>
-        <h2 class="intro__title2 text-uppercase">{{ i18n "we_are_makers" | safeHTML }}</h2>
-        <a href="http://www.youtube.com/watch?v=S-IZY1JqNTQ?autoplay=1" class="intro__play d-block d-lg-none magnificYoutube"></a>
-        <div class="intro__button d-block d-lg-flex align-items-lg-center flex-lg-column">
-          <a href="#playerArea" class="button button--green">{{ i18n "start_today" }}</a>
-        </div>
-        <div class="intro__arrow d-none d-lg-inline-block"></div>
+  <div class = "homepageHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 heading">
+        <h1>
+          <svg
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="626px" height="135px" viewBox="0 0 626 134">
+          <path fill-rule="evenodd"  fill="rgb(229, 27, 32)"
+           d="M7.909,6.947 L593.438,-0.012 L600.999,66.000 L0.000,66.000 L7.909,6.947 Z"/>
+          <path fill-rule="evenodd"  fill="rgb(227, 7, 17)"
+           d="M20.398,17.000 L618.218,60.396 L625.993,134.862 L20.398,129.660 L20.398,17.000 Z"/>
+          </svg>
+          <div>{{ i18n "learn_digital_skills" | safeHTML }}</div>
+        </h1>
       </div>
     </div>
-    <div class="intro__play intro__play--2 d-none d-lg-block" onclick="ga('gtm2.send', 'event', 'main_video', 'play');"></div>
-    <div class="intro__close"></div>
   </div>
 </section>
 
-
 <section>
-  <div id="playerArea">
-    <div class="bg bg--bubbleswhite">
-      <div class="container">
-        <div class="row">
-          <div class="col-10 ml-auto mr-auto">
-            <h2 class="title text-center">{{ i18n "make_something_yours" | safeHTML }}</h2>
+  <div class="getStarterKit bg bg--bubbleswhite">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 ml-auto mr-auto">
+          <h2 class="title text-center">{{ i18n "start_digital_making" | safeHTML }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-xl-3 hidden-sm-down notes">
+          <div class="col-8 col-md-12 col-xl-8 ml-auto mr-auto note">
+            <img src="/_assets/svg/easytobuild.svg" onerror="this.src='your.png'">
+          </div>
+          <div class="col-11 col-md-12 col-xl-11 ml-auto mr-auto note note__bottom">
+            <img src="/_assets/svg/firstproject.svg" onerror="this.src='your.png'">
+          </div>
+        </div>
 
-            <div class="threed">
-              <div class="videoWrapper videoWrapper--noTopMargin">
-                <div id="player" data-property="{videoURL:'https://youtu.be/ophRx1tAmfA',containment:'.videoWrapper',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:true}"></div>
-              </div>
-            </div>
+        <div class="col-12 col-sm-12 col-md-8 col-lf-8 col-xl-6 ml-auto mr-auto text-center">
+          <div class = "videoContainer">
+              <img src="/_assets/images/starterkit-placeholder.jpg" data-video="https://www.youtube.com/embed/OCPPKXzCBg0?autoplay=1&cc_load_policy=1&fs=0&loop=1&playlist=OCPPKXzCBg0&modestbranding=1&playsinline=1&color=white&iv_load_policy=3" class = "videoPlaceholder">
+
+              <!--<script>
+                $('img.videoPlaceholder').click(function(){
+                  var video = '<iframe id="ytplayer" type="text/html" src="'+ $(this).attr('data-video') +'" frameborder="0" class = "videoPlayer"></iframe>';
+                  $(this).replaceWith(video);
+                });
+              </script>-->
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xl-3 hidden-sm-down notes">
+          <div class="col-9 col-md-12 col-xl-9 ml-auto mr-auto note">
+            <img src="/_assets/svg/personalsupport.svg" onerror="this.src='your.png'">
+          </div>
+          <div class="col-12 col-md-12 ml-auto mr-auto note note__bottom">
+            <img src="/_assets/svg/inspiration.svg" onerror="this.src='your.png'">
           </div>
         </div>
       </div>
+      <div class = "row mt-5 pt-2 md-block d-sm-none">
+        <div class = "container">
+          <div class="col-8 ml-auto mr-auto">
+            <ul class="pricelist__items">
+              <li class="pricelist__items__item">{{ i18n "easy_to_build" }}</li>
+              <li class="pricelist__items__item">{{ i18n "first_project_30" }}</li>
+              <li class="pricelist__items__item">{{ i18n "personal_support" }}</li>
+              <li class="pricelist__items__item">{{ i18n "Inspiration_tutorials" }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 col-md-4 ml-auto mr-auto text-center buyStarterKit">
+          <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
+          <div class = "starterPrice">
+            <span class="previousPrice"><strike>{{ i18n "standard_price" }}</strike></span>&nbsp;&nbsp;<span class="currentPrice">{{ i18n "final_price" }}</span><br />
+            <span class="youSave">{{ i18n "save" }} {{ i18n "you_save" }}</span>
+          </div>
+          <a href="https://shop.bigclown.com/starter-kit/" class="button button--block  button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          <!--<div class="or d-flex justify-content-center align-items-center">{{ i18n "and" }}</div>-->
+
+          <script>
+            $('.starterKitImage').hover(function(){
+              $(this).attr('src','/_assets/images/starterKit-hover.png');
+            },function(){
+              $(this).attr('src','/_assets/images/starterKit.png');
+            })
+          </script>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-
-{{ partial "www/kits-easy.html" . }}
-
-{{ partial "www/kits-starter.html" . }}
-
 {{ partial "www/features.html" . }}
 
-{{ partial "www/testimonials.html" . }}
+{{ partial "www/opinion.html" . }}
 
 <!-- partial "www/projects-newest.html" . -->
 

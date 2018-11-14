@@ -1,8 +1,8 @@
 <div class="col-12 col-lg order-lg-{{ .Get "order" }}">
-  <div class="step__content">
-    <h3 class="step__title"><span>{{ .Get "step" }}</span>{{ .Get "title" }}</h3>
-    <div class="text text--step">
-      {{ .Inner }}
+      <div class="step__content">
+        <h3 class="step__title"><span>{{ .Get "step" }}</span>{{ .Get "title" | safeHTML }}</h3>
+        <div class="text text--step">
+          {{ .Inner }}
+          </div>
       </div>
-    </div>
   </div>

@@ -1,0 +1,183 @@
+.homepageHeader
+{
+  height:calc(68vh - #{3*$baseline});
+  position: relative;
+  overflow: hidden;
+  background: url("../images/homepageheader_bg.jpg") no-repeat top center;
+  background-size: cover;
+  //max-height: 800px;
+  //min-height: 730px;
+
+  @media(max-width:991px)
+  {
+    height:calc(40vh - #{3*$baseline});
+  }
+
+  @media(max-width:991px)
+  {
+    max-height: none;
+    min-height: 0;
+  }
+  .heading{
+    margin-top:calc(38vh);
+
+    @media(max-width:991px)
+    {
+      margin-top:calc(26vh - #{3*$baseline});
+    }
+
+  }
+
+  h1{
+    background: url("../svg/tagline.svg") no-repeat top center;
+    overflow: hidden;
+    position: relative;
+    font-size: em(48);
+    line-height: em(18);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @media(max-width:991px)
+    {
+      font-size: em(24);
+      line-height: em(16);
+    }
+
+    @media(max-width:321px)
+    {
+      font-size: em(18);
+      line-height: em(16);
+    }
+
+    svg{
+      width: 626px;
+      height: 135px;
+      display: inline-block;
+
+      @media(max-width:991px)
+      {
+        width: 313px;
+        height: 67.5px;
+      }
+
+      @media(max-width:321px)
+      {
+        width: 235px;
+        height: 51.5px;
+      }
+    }
+    div{
+      position: absolute;
+      top: 10px;
+      left: 20px;
+
+      @media(max-width:991px)
+      {
+        top: 10px;
+        left: 10px;
+      }
+
+      @media(max-width:321px)
+      {
+        top: 8px;
+        left: 8px;
+      }
+
+    }
+
+
+
+  }
+}
+
+.getStarterKit{
+  .notes{
+    position: relative;
+
+    @media(max-width:991px)
+    {
+      display: none;
+    }
+
+    .note{
+
+      &__bottom{
+        position: absolute;
+        bottom: 0;
+      }
+
+    }
+  }
+  .videoContainer{
+    background: url("../svg/video.svg");
+    width: 588px;
+    height: 368px;
+    margin-left: -20px;
+    padding: 24px 40px 30px 36px;
+
+    @media(max-width:521px)
+    {
+      margin: 0;
+      margin-left: -10px;
+      padding: 12px 10px 15px 30px;
+      width: 100%;
+      height: 110%;
+    }
+    @media(min-width:522px) and (max-width:768px)
+    {
+      margin: 0 auto 0 auto;
+    }
+    @media(min-width:769px) and (max-width:1140px)
+    {
+      margin: 0 auto 0 auto;
+    }
+    .videoPlaceholder{
+      width: 100%;
+      height: calc(100% - 30px);
+      //cursor: pointer;
+
+      @media(max-width:521px)
+      {
+        height: 100%;
+      }
+    }
+    .videoPlayer{
+      width: 100%;
+      height: calc(100% - 30px);
+
+      @media(max-width:521px)
+      {
+        height: 100%;
+      }
+    }
+  }
+
+  .buyStarterKit{
+    margin-top: 3*$baseline;
+  }
+  .starterPrice{
+    text-transform: uppercase;
+    margin-top: 0.5*$baseline;
+    margin-bottom: 0.5*$baseline;
+
+    .previousPrice{
+      font-size: em(20);
+      font-weight: 800;
+      line-height: em(22);
+    }
+    .currentPrice{
+      font-size: em(24);
+      font-weight: 800;
+      line-height: em(22);
+      color: #e41419;
+    }
+    .youSave{
+      font-size: em(16);
+      line-height: em(12);
+      font-weight: 600;
+      color: #719f33;
+    }
+  }
+
+}

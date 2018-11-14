@@ -3,6 +3,7 @@ title: "Learn"
 menu:
     main:
         identifier: "learn"
+        parent: "support"
         weight: 200
 ---
 

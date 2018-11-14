@@ -108,6 +108,19 @@
       color:#393e45;
       padding-bottom: 0;
     }
+
+    ol,ul
+    {
+      padding: 5px 0 5px 30px;
+      margin: 0;
+
+      li{
+      font-size: em(18);
+      line-height: 1*$baseline;
+      color:#393e45;
+      }
+
+    }
   }
 
   &--team

@@ -70,9 +70,9 @@
     span
     {
       display: block;
-      font-size: 120px;
+      font-size: 60px;
       color:#eeeeee;
-      line-height: 4*$baseline;
+      line-height: 2*$baseline;
       padding-bottom: 0.5*$baseline;
 
       @media(max-width:767px)

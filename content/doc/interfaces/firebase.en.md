@@ -22,10 +22,10 @@ Dependencies:
 ## 1. Install firebase plugin
 1. Open command line
 	* Windows – cmd, Linux and macOS – Terminal, on our Raspbian login with user pi and password raspberry ([more about logging on our Raspbian](https://www.bigclown.com/doc/tutorials/raspberry-pi-login/))
-2. Install firebase plugin using npm command.
-	```
-	npm install -g node-red-contrib-firebase
-	```
+2. In case you are using **BigClown Playground**, then install Firebase plugin in Node-RED **Menu > Manage palette** and search for `node-red-contrib-firebase`.
+
+    In command line on your Raspberry Pi can use `npm install -g node-red-contrib-firebase`.
+
 3. Reboot your system, on our Rasobian use command.
 	```
 	sudo reboot

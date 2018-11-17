@@ -3,17 +3,17 @@ title: "LoRa Climate Monitor"
 menu:
   main:
     parent: 'projects'
-    weight: 10
+    weight: 30
   doc:
     parent: 'projects'
-    weight: 10
+    weight: 30
 ---
 
 With this kit, you can measure **temperature**, **humidity**, **luminosity** and **pressure**. Then the values are sent wirelessly to the LoRa gateway.
 
 You can use community The Things Network to receive the data.
 
-## What You Will Need   
+## What You Will Need
 
 - {{< shop "Core Module" >}}
 - {{< shop "LoRa Module" >}}

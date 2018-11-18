@@ -2,14 +2,52 @@
 
 {{ partial "www/heading.html" (dict "heading" "Projects") }}
 
+<script>
+  var projects = [{"categories":["Indoor"],"tags":["Indoor"],"title":"IKEA světla s detekcí pohybu a HomeKitem","uri":"http://localhost:1313/projects/toilete-night-light-with-ikea-and-apple/"},{"categories":null,"tags":null,"title":"Projects","uri":"http://localhost:1313/projects/"},{"categories":["Indoor","Outdoor"],"tags":["Indoor","Outdoor"],"title":"Soil Moisture Monitoring","uri":"http://localhost:1313/projects/measure-soil-moinster-and-temperature/"}];
+</script>
+
 <section>
   <div class="bg bg--gray">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="categories">
+            <ul id="all-tags">
+                {{ range $name, $taxonomy := .Site.Taxonomies.levels }}
+                    {{ with $.Site.GetPage (printf "/levels/%s" $name) }}
+                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+            <ul id="all-tags">
+                {{ range $name, $taxonomy := .Site.Taxonomies.places }}
+                    {{ with $.Site.GetPage (printf "/places/%s" $name) }}
+                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+            <ul id="all-tags">
+                {{ range $name, $taxonomy := .Site.Taxonomies.environments }}
+                    {{ with $.Site.GetPage (printf "/environments/%s" $name) }}
+                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+            <ul id="all-tags">
+                {{ range $name, $taxonomy := .Site.Taxonomies.devices }}
+                    {{ with $.Site.GetPage (printf "/devices/%s" $name) }}
+                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+            <ul id="all-tags">
+                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
           </div>
-
           <div class="articles articles--nomargintop">
             <div class="row">
               {{ range .Data.Pages }}

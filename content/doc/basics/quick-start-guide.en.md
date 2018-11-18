@@ -49,7 +49,8 @@ Just follow these steps:
 
 1. In delivered box or suitcase find a **{{% shop "Radio Dongle" %}}** and plug it to any USB port of your notebook or PC.
 
-2.  Download the latest [**BigClown Playground**](https://github.com/bigclownlabs/bch-playground/releases/latest)
+2.  Download the latest Playground:
+{{< playground >}}
 
 3. Run the **BigClown Playground**, go to the **Device** tab, choose the **Radio Dongle** serial port and click **Connect**
 

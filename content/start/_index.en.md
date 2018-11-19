@@ -36,6 +36,7 @@ Plug all three modules together to build the kit. Note the orientation of the Mi
 * Click on "QR code" icon in the right corner
 * Scan QR Code from this page. You find it on the left
 * Send Auth Token to your e-mail
+* Click on the play &#9654; to start the project
 {{% /p-step-content %}}
 {{% p-step-gallery order = "1" %}}
 {{< p-step-gallery-video id = "dPPVQDQ3nY8" >}}

@@ -36,6 +36,7 @@ Sestav Kit složením všech tří modudů dohromady. Dej pozor, abys měl sprá
 * Klikni na ikonku "QR code" v pravém horním rohu
 * Naskenuj QR kód z této stránky, najdeš jej nalevo
 * Přepošli si Auth Code na tvůj e-mail
+* Klikni na ikonu play &#9654; pro spuštění projektu
 {{% /p-step-content %}}
 {{% p-step-gallery order = "1" %}}
 {{< p-step-gallery-video id = "dPPVQDQ3nY8" >}}

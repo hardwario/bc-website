@@ -17,7 +17,7 @@ if (this.readyState == 4 && this.status == 200) {
     a.href = el.browser_download_url;
 
 
-    if(el.name.indexOf("win") != -1 && navigator.platform.indexOf("Windows") != -1)
+    if(el.name.indexOf("win") != -1 && navigator.platform.indexOf("Win") != -1)
     {
       if(el.name.indexOf("32bit") != -1 && (navigator.userAgent.indexOf("WOW32") != -1 || navigator.userAgent.indexOf("Win32") != -1 ))
       {

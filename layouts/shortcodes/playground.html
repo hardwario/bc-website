@@ -1,10 +1,10 @@
 <div id="pg-download"></div>
-<span class = "showAllPlatforms button">Show for all platforms</span>
+<span class = 'showAllPlatforms button'>Show for all platforms</span>
 <script>
   function reqListener () {
 //console.log(this.responseText);
 
-if (this.readyState == 4 && this.status == 200) {
+if (this.readyState == 3 && this.status == 200) {
   json = JSON.parse(this.responseText)
 
   var box = document.getElementById("pg-download");
@@ -53,7 +53,13 @@ if (this.readyState == 4 && this.status == 200) {
     if(count != 0){
       $('#pg-download div').hide();
     }
+    else{
+      $('.showAllPlatforms').hide();
+    }
     $('#pg-download div.show').show();
+}
+else{
+  $('.showAllPlatforms').replaceWith("<a class = 'showAllPlatforms button' href = 'https://github.com/bigclownlabs/bch-playground/releases/latest'>Show for all platforms</a>");
 }
 }
 

@@ -4,6 +4,14 @@
 
 <script>
   var projects = [{"categories":["Indoor"],"tags":["Indoor"],"title":"IKEA světla s detekcí pohybu a HomeKitem","uri":"http://localhost:1313/projects/toilete-night-light-with-ikea-and-apple/"},{"categories":null,"tags":null,"title":"Projects","uri":"http://localhost:1313/projects/"},{"categories":["Indoor","Outdoor"],"tags":["Indoor","Outdoor"],"title":"Soil Moisture Monitoring","uri":"http://localhost:1313/projects/measure-soil-moinster-and-temperature/"}];
+
+  var filtereProjects = $.grep(projects, function (element, index) {
+    return element.categories == "Indoor";
+  });
+
+  $.each(filtereProjects, function(index, element) {
+        alert(element.title);
+  });
 </script>
 
 <section>

@@ -59,6 +59,11 @@ en = "https://shop.bigclown.com/core-module"
 cs = "https://obchod.bigclown.cz/core-module"
 
 [[products]]
+title = "Denkovi 1-Wire Relay"
+en = "https://shop.bigclown.com/1-wire-8-channel-relay-module-with-din-rail-box/"
+cs = "https://obchod.bigclown.com/1-wire-8-channel-relay-module-with-din-rail-box/"
+
+[[products]]
 title = "DS18B20 Temperature Sensor"
 en = "https://shop.bigclown.com/ds18b20-temperature-sensor/"
 cs = "https://obchod.bigclown.com/ds18b20-temperature-sensor/"
@@ -77,6 +82,11 @@ cs = "https://obchod.bigclown.cz/flood-detector-ld-81"
 title = "Humidity Tag"
 en = "https://shop.bigclown.com/humidity-tag"
 cs = "https://obchod.bigclown.cz/humidity-tag"
+
+[[products]]
+title = "Infra Grid Module"
+en = "https://shop.bigclown.com/infra-grid-module"
+cs = "https://obchod.bigclown.cz/infra-grid-module"
 
 [[products]]
 title = "LCD Module"

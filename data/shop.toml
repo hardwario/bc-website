@@ -59,9 +59,19 @@ en = "https://shop.bigclown.com/core-module"
 cs = "https://obchod.bigclown.cz/core-module"
 
 [[products]]
+title = "DS18B20 Temperature Sensor"
+en = "https://shop.bigclown.com/ds18b20-temperature-sensor/"
+cs = "https://obchod.bigclown.com/ds18b20-temperature-sensor/"
+
+[[products]]
 title = "Encoder Module"
 en = "https://shop.bigclown.com/encoder-module"
 cs = "https://obchod.bigclown.cz/encoder-module"
+
+[[products]]
+title = "Flood Detector LD-81"
+en = "https://shop.bigclown.com/flood-detector-ld-81"
+cs = "https://obchod.bigclown.cz/flood-detector-ld-81"
 
 [[products]]
 title = "Humidity Tag"

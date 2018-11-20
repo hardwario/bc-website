@@ -22,7 +22,7 @@ author:
 
 ---
 
-Místo digitálních LED pásků je možné na stejný konektor zapojit i servo motor. Další motory je možné zapojit jejich signály na GPIO piny Core Module. Celkem je možné hardwarově generovat signál až pro 9 motorů. PWM výstupy lze najít v [popisu pinů]({{< relref "/doc/hardware/header-pinout.en.md" >}}).
+Místo digitálních LED pásků je možné na stejný konektor zapojit i servo motor. Další motory je možné zapojit jejich signály na GPIO piny Core Module. Celkem je možné hardwarově generovat signál až pro 9 motorů. PWM výstupy lze najít v [popisu pinů](/doc/hardware/header-pinout/).
 
 ### Co budeš potřebovat
 

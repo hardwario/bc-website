@@ -1,5 +1,12 @@
 ---
-title: "Alexa"
+title: "Amazon Alexa"
+menu:
+  main:
+    parent: 'integrations'
+    weight: 70
+  doc:
+    parent: 'integrations'
+    weight: 70
 ---
 
 In the end of Alexa integration you will be able to control your BigClown projects using Alexa. Result of this article will be controlling [LED strip](https://shop.bigclown.com/led-strip-rgbw-1m-144-leds/).

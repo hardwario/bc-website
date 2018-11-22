@@ -3,10 +3,10 @@ title: "Firebase"
 slug: "firebase"
 menu:
   main:
-    parent: 'interfaces'
+    parent: 'integrations'
     weight: 70
   doc:
-    parent: 'interfaces'
+    parent: 'integrations'
     weight: 70
 ---
 

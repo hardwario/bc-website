@@ -466,6 +466,12 @@
         background: #6baf47;
         color:white!important;
       }
+
+      &.active
+      {
+        background: #6baf47;
+        color:white!important;
+      }
     }
 
     &--blue
@@ -480,6 +486,12 @@
         background: #1875f0;
         color:white!important;
       }
+
+      &.active
+      {
+        background: #1875f0;
+        color:white!important;
+      }
     }
 
     &--white
@@ -489,6 +501,12 @@
 
       &:hover,
       &--active
+      {
+        background: #fff;
+        color:#e30711!important;
+      }
+
+      &.active
       {
         background: #fff;
         color:#e30711!important;
@@ -507,6 +525,12 @@
         background: #e41419;
         color:white!important;
       }
+
+      &.active
+      {
+        background: #e41419;
+        color:white!important;
+      }
     }
 
     &--orange
@@ -517,6 +541,12 @@
 
         &--active,
         &:hover
+        {
+          background: #b38f22;
+          color:white!important;
+        }
+
+        &.active
         {
           background: #b38f22;
           color:white!important;
@@ -535,6 +565,12 @@
         background: #2baa9a;
         color:white!important;
       }
+
+      &.active
+      {
+        background: #2baa9a;
+        color:white!important;
+      }
     }
 
     &--gray
@@ -545,6 +581,12 @@
 
       &:hover,
       &--active
+      {
+        background: darken(#f2f2f2, 20%);
+        color:#000000!important;
+      }
+
+      &.active
       {
         background: darken(#f2f2f2, 20%);
         color:#000000!important;

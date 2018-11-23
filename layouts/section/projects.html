@@ -2,65 +2,60 @@
 
 {{ partial "www/heading.html" (dict "heading" "Projects") }}
 
-<script>
-  var projects = [{"categories":["Indoor"],"tags":["Indoor"],"title":"IKEA světla s detekcí pohybu a HomeKitem","uri":"http://localhost:1313/projects/toilete-night-light-with-ikea-and-apple/"},{"categories":null,"tags":null,"title":"Projects","uri":"http://localhost:1313/projects/"},{"categories":["Indoor","Outdoor"],"tags":["Indoor","Outdoor"],"title":"Soil Moisture Monitoring","uri":"http://localhost:1313/projects/measure-soil-moinster-and-temperature/"}];
-
-  var filtereProjects = $.grep(projects, function (element, index) {
-    return element.categories == "Indoor";
-  });
-
-  $.each(filtereProjects, function(index, element) {
-        alert(element.title);
-  });
-</script>
-
 <section>
   <div class="bg bg--gray">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="categories">
-            <ul id="all-tags">
-                {{ range $name, $taxonomy := .Site.Taxonomies.levels }}
-                    {{ with $.Site.GetPage (printf "/levels/%s" $name) }}
-                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
-                    {{ end }}
+            {{ range .Data.Pages }}
+
+            {{ end }}
+
+
+            {{ $pages := .Data.Pages }}
+
+            {{ $tags := $.Site.Taxonomies.tags.ByCount }}
+
+            {{ $.Scratch.Set "untagged" 0 }}
+            {{ range $pages }}
+              {{ with .Params.tags }}{{ else }}{{ $.Scratch.Add "untagged" 1 }}{{ end }}
+            {{ end }}
+            <div class="categories__title">Choose tags:</div>
+            <div class="categories__filter">
+              <span class="button button--tag button--tag--blue button--tag--blue" id="selectAllTags" onclick="htf.showAll('tags')">
+                All Tags
+              </span>
+              {{ range $tags }}
+                {{ if .Term }}
+                  <span class="tag-button button button--tag button--tag--blue button--tag--blue" id="tag-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'tag-')">
+                    {{.Term | humanize | title }}
+                    <span id="stags-{{ .Term | urlize }}"> -count-</span> | <span id="ctags-{{ .Term | urlize }}"> -count-</span>
+                  </span>
                 {{ end }}
-            </ul>
-            <ul id="all-tags">
-                {{ range $name, $taxonomy := .Site.Taxonomies.places }}
-                    {{ with $.Site.GetPage (printf "/places/%s" $name) }}
-                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
-                    {{ end }}
-                {{ end }}
-            </ul>
-            <ul id="all-tags">
-                {{ range $name, $taxonomy := .Site.Taxonomies.environments }}
-                    {{ with $.Site.GetPage (printf "/environments/%s" $name) }}
-                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
-                    {{ end }}
-                {{ end }}
-            </ul>
-            <ul id="all-tags">
-                {{ range $name, $taxonomy := .Site.Taxonomies.devices }}
-                    {{ with $.Site.GetPage (printf "/devices/%s" $name) }}
-                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
-                    {{ end }}
-                {{ end }}
-            </ul>
-            <ul id="all-tags">
-                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-                        <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
-                    {{ end }}
-                {{ end }}
-            </ul>
+              {{ end }}
+              {{ if gt ( $.Scratch.Get "untagged") 0 }}
+              <span class="tag-button button button--tag button--tag--blue button--tag--blue" id="tag-tfuntagged" onclick="htf.checkFilter('tfuntagged', 'tag-')">
+                Untagged
+                <span id="stags-tfuntagged"> -count-</span> | <span id="ctags-tfuntagged"> -count-</span>
+              </span>
+              {{ end }}
+            </div>
+
+
           </div>
           <div class="articles articles--nomargintop">
             <div class="row">
-              {{ range .Data.Pages }}
-                {{ .Render "grid" }}
+
+
+
+              {{ range $pages.ByPublishDate.Reverse }}
+                <div  class="col-12 col-md-6 col-lg-4 tf-filter-item tf-item" data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}">
+                  {{ .Render "grid" }}
+                </div>
               {{ end }}
+
+
             </div>
           </div>
         </div>
@@ -68,5 +63,38 @@
     </div>
   </div>
 </section>
+<script>
+var htfConfig = {
+  filters: [
+    {
+      name: 'tags',
+      prefix: 'tag-',
+      buttonClass: 'tag-button',
+      allSelector: '#selectAllTags',
+      attrName: 'data-tags',
+      selectedPrefix: 'stags-',
+      countPrefix: 'ctags-'
+    }
+  ],
+  showItemClass: "show-item",
+  filterItemClass: "tf-filter-item",
+  activeButtonClass: "active",
+  counterSelector: "selectedItemCount",
+  populateCount: true,
+  setDisabledButtonClass: "disable-button"
+}
+var htf = new HugoTagsFilter(htfConfig);
+</script>
+<script>
+function toggleAcc(el) {
+  el.classList.toggle("active")
+  var panel = el.nextElementSibling;
+  if (panel.style.maxHeight){
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+}
+</script>
 
 {{ end }}

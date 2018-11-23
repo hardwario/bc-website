@@ -7,10 +7,17 @@
                     <div class="row">
                         <div class="col">
                             <div class="footer__text">
+                              {{ if eq .Site.Language.Lang "cs" }}
                                 <strong>HARDWARIO s.r.o.</strong><br />
                                 U Jezu 525/4<br />
                                 460 01 Liberec<br />
                                 {{ i18n "czechia" }}<br />
+                              {{ else }}
+                                <strong>HARDWARIO LTD</strong><br />
+                                34b York Way, King’s Cross<br />
+                                London, N1 9AB<br />
+                                United Kingdom<br />
+                              {{ end }}
                             </div>
                         </div>
                         <div class="col">

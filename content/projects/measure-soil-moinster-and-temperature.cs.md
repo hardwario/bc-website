@@ -8,12 +8,8 @@ meta:
 images:
   preview: /projects/measure-soil-moinster-and-temperature/preview.jpg
   main: /projects/measure-soil-moinster-and-temperature/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
 author:
   name: Martin Hubáček
-  post:
   email: martin.hubacek@hardwario.com
   image: /authors/martin.jpg
   github:

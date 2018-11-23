@@ -1,19 +1,19 @@
 ---
 title: Soil Moisture Monitoring
 description: "For those who just love their garden"
-tags: [Indoor", "Outdoor"]
+tags: ["Indoor", "Outdoor"]
+levels: ["Advanced"]
+places: ["Home","Garden"]
+environments: ["Indoor", "Outdoor"]
+devices: ["Soil Moisture Kit"]
 meta:
   title: Soil Moisture Monitoring
   desciption: ""
 images:
   preview: /projects/measure-soil-moinster-and-temperature/preview.jpg
   main: /projects/measure-soil-moinster-and-temperature/main.jpg
-button:
-    text: Get everything you need
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
 author:
   name: Martin Hubacek
-  post:
   email: martin.hubacek@hardwario.com
   image: /authors/martin.jpg
   github:

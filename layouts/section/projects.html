@@ -8,13 +8,54 @@
       <div class="row">
         <div class="col">
           <div class="categories">
-          </div>
+            {{ range .Data.Pages }}
 
+            {{ end }}
+
+
+            {{ $pages := .Data.Pages }}
+
+            {{ $tags := $.Site.Taxonomies.tags.ByCount }}
+
+            {{ $.Scratch.Set "untagged" 0 }}
+            {{ range $pages }}
+              {{ with .Params.tags }}{{ else }}{{ $.Scratch.Add "untagged" 1 }}{{ end }}
+            {{ end }}
+            <div class="categories__title">Choose tags:</div>
+            <div class="categories__filter">
+              <span class="button button--tag button--tag--blue button--tag--blue" id="selectAllTags" onclick="htf.showAll('tags')">
+                All Tags
+              </span>
+              {{ range $tags }}
+                {{ if .Term }}
+                  <span class="tag-button button button--tag button--tag--blue button--tag--blue" id="tag-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'tag-')">
+                    {{.Term | humanize | title }}
+                    <span id="stags-{{ .Term | urlize }}"> -count-</span> | <span id="ctags-{{ .Term | urlize }}"> -count-</span>
+                  </span>
+                {{ end }}
+              {{ end }}
+              {{ if gt ( $.Scratch.Get "untagged") 0 }}
+              <span class="tag-button button button--tag button--tag--blue button--tag--blue" id="tag-tfuntagged" onclick="htf.checkFilter('tfuntagged', 'tag-')">
+                Untagged
+                <span id="stags-tfuntagged"> -count-</span> | <span id="ctags-tfuntagged"> -count-</span>
+              </span>
+              {{ end }}
+            </div>
+
+
+          </div>
           <div class="articles articles--nomargintop">
             <div class="row">
-              {{ range .Data.Pages }}
-                {{ .Render "grid" }}
+
+
+
+              {{ range $pages.ByPublishDate.Reverse }}
+                <div  class="col-12 col-md-6 col-lg-4 tf-filter-item tf-item" data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}">
+                  {{ .Render "grid" }}
+                </div>
               {{ end }}
+
+
             </div>
           </div>
         </div>
@@ -22,5 +63,38 @@
     </div>
   </div>
 </section>
+<script>
+var htfConfig = {
+  filters: [
+    {
+      name: 'tags',
+      prefix: 'tag-',
+      buttonClass: 'tag-button',
+      allSelector: '#selectAllTags',
+      attrName: 'data-tags',
+      selectedPrefix: 'stags-',
+      countPrefix: 'ctags-'
+    }
+  ],
+  showItemClass: "show-item",
+  filterItemClass: "tf-filter-item",
+  activeButtonClass: "active",
+  counterSelector: "selectedItemCount",
+  populateCount: true,
+  setDisabledButtonClass: "disable-button"
+}
+var htf = new HugoTagsFilter(htfConfig);
+</script>
+<script>
+function toggleAcc(el) {
+  el.classList.toggle("active")
+  var panel = el.nextElementSibling;
+  if (panel.style.maxHeight){
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+}
+</script>
 
 {{ end }}

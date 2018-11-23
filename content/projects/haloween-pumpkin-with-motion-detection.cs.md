@@ -8,12 +8,8 @@ meta:
 images:
   preview: /projects/haloween-pumpkin-with-motion-detection/preview.jpg
   main: /projects/haloween-pumpkin-with-motion-detection/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
 author:
   name: Martin Hubáček
-  post:
   email: martin.hubacek@hardwario.com
   image: /authors/martin.jpg
   github:

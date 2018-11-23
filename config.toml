@@ -215,5 +215,13 @@ smartypants = false
   priority = 0.5
   filename = "sitemap.xml"
 
-  [taxonomies]
-    tag = "tags"
+[taxonomies]
+  tag = "tags"
+  level = "levels"
+  place = "places"
+  environment = "environmets"
+  device = "devices"
+
+[outputs]
+        home = [ "HTML", "JSON"]
+        page = [ "HTML"]

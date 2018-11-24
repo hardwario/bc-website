@@ -15,26 +15,6 @@
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-10 col-md-4 ml-auto mr-auto text-center buyStarterKit">
-        <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
-        <div class = "starterPrice">
-          <span class="previousPrice"><strike>{{ i18n "standard_price" }}</strike></span>&nbsp;&nbsp;<span class="currentPrice">{{ i18n "final_price" }}</span><br />
-          <span class="youSave">{{ i18n "save" }} {{ i18n "you_save" }}</span>
-        </div>
-        <a href="https://shop.bigclown.com/starter-kit/" class="button button--block  button--fullred ">{{ i18n "buy_starter_kit" }}</a>
-        <!--<div class="or d-flex justify-content-center align-items-center">{{ i18n "and" }}</div>-->
-
-        <script>
-          $('.starterKitImage').hover(function(){
-            $(this).attr('src','/_assets/images/starterKit-hover.png');
-          },function(){
-            $(this).attr('src','/_assets/images/starterKit.png');
-          })
-        </script>
-      </div>
-    </div>
   </div>
   </div>
 </section>
@@ -43,6 +23,29 @@
   {{ .Content }}
 </section>
 
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-4 ml-auto mr-auto text-center buyStarterKit">
+          <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
+          <div class = "starterPrice">
+            <span class="previousPrice"><strike>{{ i18n "standard_price" }}</strike></span>&nbsp;&nbsp;<span class="currentPrice">{{ i18n "final_price" }}</span><br />
+            <span class="youSave">{{ i18n "save" }} {{ i18n "you_save" }}</span>
+          </div>
+          <a href="https://shop.bigclown.com/starter-kit/" class="button button--block  button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          <!--<div class="or d-flex justify-content-center align-items-center">{{ i18n "and" }}</div>-->
+
+          <script>
+            $('.starterKitImage').hover(function(){
+              $(this).attr('src','/_assets/images/starterKit-hover.png');
+            },function(){
+              $(this).attr('src','/_assets/images/starterKit.png');
+            })
+          </script>
+        </div>
+      </div>
+    </div>
+</section>
 <section>
             <div class="livechat">
                 <div class="container">

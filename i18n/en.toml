@@ -14,13 +14,13 @@ other = "Save"
 other = "What influencers say about us"
 
 [sign_up]
-other = "Sign up to receive the latest news and projects."
+other = "Sign up to receive our latest news and offers"
 
 [get_inspiration]
 other = "Get inspiration"
 
 [give_me_email]
-other = "Give me your e-mail"
+other = "Add your email address..."
 
 [back_to_top]
 other = "Back to Top"

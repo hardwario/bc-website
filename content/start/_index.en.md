@@ -1,9 +1,9 @@
 ---
-title: Start
+title: How to learn
 meta:
-    title: 5 Easy Steps to Get Started Learning Digital Skills
-mainHeading: 5 Easy Steps to Get Started&nbsp;Learning Digital Skills
-mainParagraph: You will learn how to build the hardware, connect it wirelessly to your computer and set up notifications for the smartphone.
+    title: 5 Easy Steps to learn digital skills
+mainHeading: 5 Easy Steps to learn digital&nbsp;skills
+mainParagraph: Build hardware, connect it wirelessly to your computer and set up notifications for the smartphone. Let’s go...
 slug: start
 menu: "main"
 weight: 50

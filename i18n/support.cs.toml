@@ -18,3 +18,21 @@ other = "Fórum"
 
 [forum_desc]
 other = "Popovídej si s ostatními mejkry, ukaž své projekty a sdílej své výsledky."
+
+[online_chat]
+other = "Online Chat"
+
+[online_chat_desc]
+other = "Neváhej využít naši online podporu, pomůžeme ti s tvým nápadem i projektem."
+
+[github]
+other = "GitHub"
+
+[github_desc]
+other = "Na GitHubu sdílíme všechny naše zdrojové kódy. Však víš, jsme open-source projekt."
+
+[hackster]
+other = "Hackster.io"
+
+[hackster_desc]
+other = "Hledáš doslovené tutoriály pro tvůj další projekt nebo inspiraci? Na Hackster.io publikujeme naše úplné krok za krokem tutoriály."

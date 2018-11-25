@@ -157,56 +157,6 @@ pygmentsUseClasses = true
     weight = 90
     parent = "learn"
 
-  [[languages.en.menu.main]]
-    identifier = "support"
-    name = "Support"
-    pre = ""
-    url = "/support/"
-    weight = 400
-
-  [[languages.en.menu.main]]
-    identifier = "github"
-    name = "GitHub"
-    parent = "support"
-    pre = ""
-    post = "_blank"
-    url = "https://github.com/bigclownlabs"
-    weight = 300
-
-  [[languages.en.menu.main]]
-    identifier = "forum"
-    name = "Forum"
-    parent = "support"
-    pre = ""
-    post = "_blank"
-    url = "https://forum.bigclown.com"
-    weight = 100
-
-  [[languages.cs.menu.main]]
-    identifier = "support"
-    name = "Podpora"
-    pre = ""
-    url = "/cs/support/"
-    weight = 400
-
-  [[languages.cs.menu.main]]
-    identifier = "github"
-    name = "GitHub"
-    parent = "support"
-    pre = ""
-    post = "_blank"
-    url = "https://github.com/bigclownlabs"
-    weight = 300
-
-  [[languages.cs.menu.main]]
-    identifier = "forum"
-    name = "Fórum"
-    parent = "support"
-    pre = ""
-    post = "_blank"
-    url = "https://forum.bigclown.com"
-    weight = 100
-
 [blackfriday]
 smartypants = false
 

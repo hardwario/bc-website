@@ -1,10 +1,6 @@
 ---
 title: "Documentation"
 menu:
-    main:
-        identifier: "learn"
-        parent: "support"
-        weight: 50
 ---
 
 <script src="image-map.min.js"></script>

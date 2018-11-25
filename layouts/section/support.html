@@ -2,6 +2,65 @@
 
 {{ partial "www/heading.html" (dict "heading" .Params.mainHeading) }}
 
-{{ partial "www/support.html" }}
+<section>
+  <div class="container" id = "support">
+    <div class="row">
+      <div class="col">
+        <h2 class="title text-center">{{ i18n "support_heading" }}<small>{{ i18n "support_subheading" }}</small></h2>
+
+        <div class="contactbox">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <a href="{{ "doc/" | relLangURL }}" class="contactbox__item">
+                <div class="contactbox__icon"></div>
+                <div class="text-center"><h3 class="contactbox__title">{{ i18n "documentation" }}</h3></div>
+                <p class="contactbox__text">{{ i18n "documentation_desc" }}</p>
+              </a>
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="https://forum.bigclown.com" target="_blank" class="contactbox__item contactbox__item">
+                <div class="contactbox__icon contactbox__icon--forum"></div>
+                <div class="text-center"><h3 class="contactbox__title">{{ i18n "forum" }}</h3></div>
+                <p class="contactbox__text">{{ i18n "forum_desc" }}</p>
+              </a>
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:support@bigclown.com" class="contactbox__item contactbox__item--noborder">
+                <div class="contactbox__icon contactbox__icon--mail"></div>
+                <div class="text-center"><h3 class="contactbox__title">support@bigclown.com</h3></div>
+                <p class="contactbox__text">{{ i18n "support_text" }}</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <span onclick="Intercom('showNewMessage');" class="contactbox__item">
+                <div class="contactbox__icon contactbox__icon--livechat"></div>
+                <div class="text-center"><h3 class="contactbox__title">{{ i18n "online_chat" }}</h3></div>
+                <p class="contactbox__text">{{ i18n "online_chat_desc" }}</p>
+              </span>
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="https://github.com/bigclownlabs" target="_blank" class="contactbox__item contactbox__item">
+                <div class="contactbox__icon contactbox__icon--github"></div>
+                <div class="text-center"><h3 class="contactbox__title">{{ i18n "github" }}</h3></div>
+                <p class="contactbox__text">{{ i18n "github_desc" }}</p>
+              </a>
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="https://www.hackster.io/bigclown/projects" target="_blank" class="contactbox__item contactbox__item--noborder">
+                <div class="contactbox__icon contactbox__icon--hackster"></div>
+                <div class="text-center"><h3 class="contactbox__title">{{ i18n "hackster" }}</h3></div>
+                <p class="contactbox__text">{{ i18n "hackster_desc" }}</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 {{ end }}

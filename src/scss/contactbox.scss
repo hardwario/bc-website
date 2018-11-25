@@ -12,6 +12,7 @@
     position: relative;
     text-decoration: none!important;
     display: block;
+    cursor: pointer;
 
     @media(max-width:991px)
     {
@@ -103,7 +104,7 @@
     background: url("../svg/faq.svg") no-repeat center center;
     //margin-top: 3*$baseline;
     background-size: 70px 70px;
-    
+
     &--livechat
     {
       background-image: url("../svg/livechat.svg");
@@ -131,6 +132,18 @@
     &--forum
     {
       background-image: url("../svg/forum.svg");
+      background-size: 105px 70px;
+    }
+
+    &--github
+    {
+      background-image: url("../svg/github.svg");
+      background-size: 105px 70px;
+    }
+
+    &--hackster
+    {
+      background-image: url("../svg/hackster.svg");
       background-size: 105px 70px;
     }
   }

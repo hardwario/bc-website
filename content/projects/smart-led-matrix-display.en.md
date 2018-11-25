@@ -1,6 +1,6 @@
 ---
-title: Maticový displej z chytrých LED
-description: Zobraz text nebo vizualizace na maticovém displeji
+title: Matrix display from smart LEDs
+description: Show text or visualization on the matrix display
 tags: ["Indoor"]
 levels: ["Beginner"]
 places: ["Home", "Office", "School"]

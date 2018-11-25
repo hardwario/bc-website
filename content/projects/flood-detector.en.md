@@ -1,6 +1,6 @@
 ---
-title: Detektor zaplavení bytu
-description: "Získej varování, pokud v koupelně přetéká voda"
+title: Flat flood detector
+description: "Get a warning if there is water in the bathroom."
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "School"]

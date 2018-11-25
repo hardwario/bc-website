@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "www/heading.html" (dict "heading" "Projects") }}
+{{ partial "www/heading.html" (dict "heading" .Params.mainHeading) }}
 
 
 {{ range .Data.Pages }}
@@ -36,42 +36,40 @@
   {{ with .Params.devices }}{{ else }}{{ $.Scratch.Add "undeviced" 1 }}{{ end }}
 {{ end }}
 
-
 <section>
   <div class = "projectsFilter">
     <div class ="container">
       <div class = "row">
         <div class = "col">
-          <div class="dropdown">
-            <span><strong>Find the right project for you:&nbsp;&nbsp;&nbsp;</strong></span>
-            <div class = "btn-group" id = "levels">
+          <div class="dropdown row">
+            <div class = "btn-group col" id = "levels">
               <a class="btn btn-secondary dropdown-toggle knowledge" href="#" role="button" id="dropdownMenuLink-levels" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Knowledge <span class="count"></span>
+                <em data-default = "Any Knowledge">Any Knowledge</em>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <span class="dropdown-item active" id="selectAllLevels" onclick="htf.showAll('levels')">
-                  Any Knowledge
+                  <em>Any Knowledge</em>
                 </span>
                 {{ range $levels }}
                   {{ if .Term }}
                     <span class="level-button dropdown-item" id="level-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'level-')">
-                      {{.Term | humanize | title }}
-                      <span id="slevels-{{ .Term | urlize }}"> -count-</span> | <span id="clevels-{{ .Term | urlize }}"> -count-</span>
+                      <em>{{.Term | humanize | title }}</em>
+                      <span id="slevels-{{ .Term | urlize }}"> -count- </span> <span id="clevels-{{ .Term | urlize }}"> -count-</span>
                     </span>
                   {{ end }}
                 {{ end }}
                 {{ if gt ( $.Scratch.Get "unleveled") 0 }}
                 <span class="level-button dropdown-item" id="level-tfunleveled" onclick="htf.checkFilter('tfunleveled', 'level-')">
                   Unleveled
-                  <span id="stags-tfunleveled"> -count-</span> | <span id="ctags-tfunleveled"> -count-</span>
+                  <span id="stags-tfunleveled"> -count- </span> <span id="ctags-tfunleveled"> -count-</span>
                 </span>
                 {{ end }}
               </div>
             </div>
 
-            <div class = "btn-group" id = "environments">
+            <div class = "btn-group col" id = "environments">
               <a class="btn btn-secondary dropdown-toggle environment" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Environments <span class="count"></span>
+                <em data-default = "Any Environment">Any Environment</em>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <span class="dropdown-item active" id="selectAllTags" onclick="htf.showAll('tags')">
@@ -80,48 +78,48 @@
                 {{ range $tags }}
                   {{ if .Term }}
                     <span class="tag-button dropdown-item" id="tag-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'tag-')">
-                      {{.Term | humanize | title }}
-                      <span id="stags-{{ .Term | urlize }}"> -count-</span> | <span id="ctags-{{ .Term | urlize }}"> -count-</span>
+                      <em>{{.Term | humanize | title }}</em>
+                      <span id="stags-{{ .Term | urlize }}"> -count- </span> <span id="ctags-{{ .Term | urlize }}"> -count-</span>
                     </span>
                   {{ end }}
                 {{ end }}
                 {{ if gt ( $.Scratch.Get "untagged") 0 }}
                 <span class="tag-button dropdown-item" id="tag-tfuntagged" onclick="htf.checkFilter('tfuntagged', 'tag-')">
                   Untagged
-                  <span id="stags-tfuntagged"> -count-</span> | <span id="ctags-tfuntagged"> -count-</span>
+                  <span id="stags-tfuntagged"> -count- </span> <span id="ctags-tfuntagged"> -count-</span>
                 </span>
                 {{ end }}
               </div>
             </div>
 
-            <div class = "btn-group" id = "places">
+            <div class = "btn-group col" id = "places">
               <a class="btn btn-secondary dropdown-toggle place" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Places <span class="count"></span>
+                <em data-default = "Any Place">Any Place</em>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <span class="dropdown-item active" id="selectAllPlaces" onclick="htf.showAll('places')">
-                  Any Place
+                  <em>Any Place</em>
                 </span>
                 {{ range $places }}
                   {{ if .Term }}
                     <span class="place-button dropdown-item" id="place-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'place-')">
-                      {{.Term | humanize | title }}
-                      <span id="splaces-{{ .Term | urlize }}"> -count-</span> | <span id="cplaces-{{ .Term | urlize }}"> -count-</span>
+                      <em>{{.Term | humanize | title }}</em>
+                      <span id="splaces-{{ .Term | urlize }}"> -count- </span> <span id="cplaces-{{ .Term | urlize }}"> -count-</span>
                     </span>
                   {{ end }}
                 {{ end }}
                 {{ if gt ( $.Scratch.Get "unplaced") 0 }}
                 <span class="place-button dropdown-item" id="place-tunplaced" onclick="htf.checkFilter('tfunplaced', 'place-')">
                   Without Place
-                  <span id="splaces-tfunplaced"> -count-</span> | <span id="cplaces-tfunplaced"> -count-</span>
+                  <span id="splaces-tfunplaced"> -count- </span> <span id="cplaces-tfunplaced"> -count-</span>
                 </span>
                 {{ end }}
               </div>
             </div>
 
-            <div class = "btn-group" id = "devices">
+            <div class = "btn-group col" id = "devices">
               <a class="btn btn-secondary dropdown-toggle device" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Kits <span class="count"></span>
+                <em data-default = "Any Kit">Any Kit</em>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <span class="dropdown-item active" id="selectAllDevices" onclick="htf.showAll('devices')">
@@ -130,15 +128,15 @@
                 {{ range $devices }}
                   {{ if .Term }}
                     <span class="device-button dropdown-item" id="device-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'device-')">
-                      {{.Term | humanize | title }}
-                      <span id="sdevices-{{ .Term | urlize }}"> -count-</span> | <span id="cdevices-{{ .Term | urlize }}"> -count-</span>
+                      <em>{{.Term | humanize | title }}</em>
+                      <span id="sdevices-{{ .Term | urlize }}"> -count- </span> <span id="cdevices-{{ .Term | urlize }}"> -count-</span>
                     </span>
                   {{ end }}
                 {{ end }}
                 {{ if gt ( $.Scratch.Get "undeviced") 0 }}
                 <span class="device-button dropdown-item" id="device-tfundeviced" onclick="htf.checkFilter('tfundeviced', 'device-')">
                   Undeviced
-                  <span id="sdevices-tfundeviced"> -count-</span> | <span id="cdevices-tfundeviced"> -count-</span>
+                  <span id="sdevices-tfundeviced"> -count- </span> <span id="cdevices-tfundeviced"> -count-</span>
                 </span>
                 {{ end }}
               </div>
@@ -239,9 +237,22 @@ function toggleAcc(el) {
 
 $('.btn-group').on('hide.bs.dropdown', function () {
   var id = $(this).attr('id');
-  var elements = $("#" + id + " .dropdown-item").length;
-  var active = $("#" + id + " .active").length;
-  $("#" + id + " .count").html(active + "|" + elements);
+  var elements = $("#" + id + " .dropdown-item.active em");
+  var selected = "";
+  $(elements).each(function(index){
+    if(index == 0){
+      selected = $.trim($( this ).text());
+    }
+    else{
+      selected = selected + ", " + $.trim($( this ).text());
+    }
+  })
+  if(selected.length == 0)
+  {
+    selected = $("#" + id + " .btn em").attr("data-default");
+  }
+  console.log(selected);
+  $("#" + id + " .btn em").html(selected);
 })
 </script>
 

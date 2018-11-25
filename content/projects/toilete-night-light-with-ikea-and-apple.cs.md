@@ -4,7 +4,7 @@ description: "Posviť si v noci automaticky se světly IKEA a Apple HomeKit!"
 tags: ["Indoor"]
 levels: ["Beginner"]
 places: ["Home", "Office", "School"]
-devices: ["Motion Detector Kit"]
+devices: ["Motion Kit"]
 meta:
   title: Monitoring vlhkosti půdy
   desciption: ""

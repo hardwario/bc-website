@@ -2,6 +2,9 @@
 title: Chytré falešné vejce
 description: "Falešný podkladek pro monitorování teploty vejce"
 tags: ["Outdoor"]
+levels: ["Beginner"]
+places: ["Home","Garden","School"]
+devices: ["Custom Kit"]
 meta:
   title: Chytré falešné vejce
   desciption: ""
@@ -28,4 +31,3 @@ Falešné vejce, které monitoruje a zaznamenává údaje o teplotě a s pomocí
 
 * {{< shop "Core Module" >}}
 * {{< shop "Mini Battery Module" >}}
-

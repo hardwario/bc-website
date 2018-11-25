@@ -1,7 +1,10 @@
 ---
 title: Detektor zaplavení bytu
 description: "Získej varování, pokud v koupelně přetéká voda"
-tags: ["Home", "School"]
+tags: ["Indoor"]
+levels: ["Advanced"]
+places: ["Home", "School"]
+devices: ["Flood Detector Kit"]
 meta:
   title: Detektor zaplavení bytu
   desciption: ""

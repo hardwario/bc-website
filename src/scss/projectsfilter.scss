@@ -1,0 +1,29 @@
+.projectsFilter{
+  background: #f2f2f2;
+  padding-top: 2*$baseline;
+  padding-bottom: $baseline;
+
+  .btn-group{
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+
+    .knowledge{
+      background: #fdc700;
+      border-color: #fdc700;
+
+    }
+    .environment{
+      background: #0e788a;
+      border-color: #0e788a;
+    }
+    .device{
+
+    }
+    .place{
+      background: #e40328;
+      border-color: #e40328;
+
+    }
+  }
+}

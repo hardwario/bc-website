@@ -1,7 +1,10 @@
 ---
 title: Kočičí fontána
 description: "Pohybový senzor spustí fontánu jen když je kočka nablízku."
-tags: ["Home"]
+tags: ["Indoor"]
+levels: ["Advanced"]
+places: ["Home"]
+devices: ["Custom Kit"]
 meta:
   title: Bazénový teplotní senzor
   desciption: ""

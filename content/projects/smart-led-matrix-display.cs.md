@@ -2,6 +2,9 @@
 title: Maticový displej z chytrých LED
 description: Zobraz text nebo vizualizace na maticovém displeji
 tags: ["Indoor"]
+levels: ["Beginner"]
+places: ["Home", "Office", "School"]
+devices: ["Power Controller Kit"]
 meta:
   title: Maticový displej z chytrých LED
   desciption: ""

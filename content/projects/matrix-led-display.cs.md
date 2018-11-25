@@ -1,7 +1,10 @@
 ---
 title: Maticový LED displej
 description: "Zobrazuj hodnoty, texty, notifikace."
-tags: ["Home"]
+tags: ["Indoor"]
+levels: ["Advanced"]
+places: ["Home","School"]
+devices: ["Custom Kit"]
 meta:
   title: Bazénový teplotní senzor
   desciption: ""

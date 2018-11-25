@@ -2,6 +2,9 @@
 title: Chytrá poštovní schránka
 description: "Ve zlomku vteřiny se dozvíš, že přišla pošta."
 tags: ["Outdoor"]
+levels: ["Advanced"]
+places: ["Home"]
+devices: ["Custom Kit"]
 meta:
   title: Chytrá poštovní schránka
   desciption: ""

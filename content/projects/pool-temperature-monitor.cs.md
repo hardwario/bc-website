@@ -2,6 +2,9 @@
 title: Bazénový teplotní senzor
 description: "Sleduj teplotu v bazénu i jeho okolí."
 tags: ["Outdoor"]
+levels: ["Advanced"]
+places: ["Home"]
+devices: ["Custom Kit"]
 meta:
   title: Bazénový teplotní senzor
   desciption: ""

@@ -2,6 +2,9 @@
 title: Haloweenská dýně s detekcí pohybu
 description: "Postav si svoji IoT dýni!"
 tags: ["Indoor"]
+levels: ["Advanced"]
+places: ["Home"]
+devices: ["Motion Detector Kit"]
 meta:
   title: Monitoring vlhkosti půdy
   desciption: ""

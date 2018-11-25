@@ -2,6 +2,9 @@
 title: LoRa tester
 description: Otestuj dosah LoRa gateway
 tags: ["Indoor"]
+levels: ["Advanced"]
+places: ["Home", "Office"]
+devices: ["Custom Kit"]
 meta:
   title: LoRa tester
   desciption: ""

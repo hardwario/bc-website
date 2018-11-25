@@ -44,9 +44,9 @@
         <div class = "col">
           <div class="dropdown">
             <span><strong>Find the right project for you:&nbsp;&nbsp;&nbsp;</strong></span>
-            <div class = "btn-group">
-              <a class="btn btn-secondary dropdown-toggle knowledge" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Knowledge
+            <div class = "btn-group" id = "levels">
+              <a class="btn btn-secondary dropdown-toggle knowledge" href="#" role="button" id="dropdownMenuLink-levels" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Knowledge <span class="count"></span>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <span class="dropdown-item active" id="selectAllLevels" onclick="htf.showAll('levels')">
@@ -69,9 +69,9 @@
               </div>
             </div>
 
-            <div class = "btn-group">
+            <div class = "btn-group" id = "environments">
               <a class="btn btn-secondary dropdown-toggle environment" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Environment
+                Environments <span class="count"></span>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <span class="dropdown-item active" id="selectAllTags" onclick="htf.showAll('tags')">
@@ -94,9 +94,9 @@
               </div>
             </div>
 
-            <div class = "btn-group">
+            <div class = "btn-group" id = "places">
               <a class="btn btn-secondary dropdown-toggle place" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Place
+                Places <span class="count"></span>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <span class="dropdown-item active" id="selectAllPlaces" onclick="htf.showAll('places')">
@@ -119,9 +119,9 @@
               </div>
             </div>
 
-            <div class = "btn-group">
+            <div class = "btn-group" id = "devices">
               <a class="btn btn-secondary dropdown-toggle device" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Kits
+                Kits <span class="count"></span>
               </a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <span class="dropdown-item active" id="selectAllDevices" onclick="htf.showAll('devices')">
@@ -235,6 +235,14 @@ function toggleAcc(el) {
     panel.style.maxHeight = panel.scrollHeight + "px";
   }
 }
+
+
+$('.btn-group').on('hide.bs.dropdown', function () {
+  var id = $(this).attr('id');
+  var elements = $("#" + id + " .dropdown-item").length;
+  var active = $("#" + id + " .active").length;
+  $("#" + id + " .count").html(active + "|" + elements);
+})
 </script>
 
 {{ end }}

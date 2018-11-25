@@ -32,18 +32,20 @@
               {{ .Content }}
             </div>
             <div class="article__tags d-flex justify-content-center justify-content-md-start">
-              {{ range .Params.levels }}
-                <a class="button button--tag button--tag--yellow">{{ . }}</a>
-              {{ end }}
-              {{ range .Params.tags }}
-                <a class="button button--tag button--tag--custom">{{ . }}</a>
-              {{ end }}
-              {{ range .Params.places }}
-                <a class="button button--tag button--tag--red">{{ . }}</a>
-              {{ end }}
-              {{ range .Params.devices }}
-                <a class="button button--tag button--tag--gray">{{ . }}</a>
-              {{ end }}
+              <ul>
+                  {{ range .Params.levels }}
+                    <li><a class="button button--tag button--tag--yellow">{{ . }}</a></li>
+                  {{ end }}
+                  {{ range .Params.tags }}
+                    <li><a class="button button--tag button--tag--custom">{{ . }}</a></li>
+                  {{ end }}
+                  {{ range .Params.places }}
+                    <li><a class="button button--tag button--tag--red">{{ . }}</a></li>
+                  {{ end }}
+                  {{ range .Params.devices }}
+                    <li><a class="button button--tag button--tag--gray">{{ . }}</a></li>
+                  {{ end }}
+              </ul>
             </div>
             <div class="row">
               <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">

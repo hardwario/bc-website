@@ -10,14 +10,17 @@
 
     .btn{
       width: 100%;
+      overflow-x: hidden;
 
       em{
         font-style: normal;
+        font-size: 1.1rem;
       }
     }
     .knowledge{
       background: #fdc700;
       border-color: #fdc700;
+      color: #000000;
 
     }
     .environment{

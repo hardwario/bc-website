@@ -1,56 +1,167 @@
 {{ define "main" }}
 
-{{ partial "www/heading.html" (dict "heading" "Projects") }}
+{{ partial "www/heading.html" (dict "heading" .Params.mainHeading) }}
+
+
+{{ range .Data.Pages }}
+
+{{ end }}
+
+
+{{ $pages := .Data.Pages }}
+
+{{ $tags := $.Site.Taxonomies.tags.ByCount }}
+{{ $levels := $.Site.Taxonomies.levels.ByCount }}
+{{ $devices := $.Site.Taxonomies.devices.ByCount }}
+{{ $places := $.Site.Taxonomies.places.ByCount }}
+
+
+{{ $.Scratch.Set "untagged" 0 }}
+{{ range $pages }}
+  {{ with .Params.tags }}{{ else }}{{ $.Scratch.Add "untagged" 1 }}{{ end }}
+{{ end }}
+
+{{ $.Scratch.Set "unplaced" 0 }}
+{{ range $pages }}
+  {{ with .Params.places }}{{ else }}{{ $.Scratch.Add "unplaced" 1 }}{{ end }}
+{{ end }}
+
+{{ $.Scratch.Set "unleveled" 0 }}
+{{ range $pages }}
+  {{ with .Params.levels }}{{ else }}{{ $.Scratch.Add "unleveled" 1 }}{{ end }}
+{{ end }}
+
+{{ $.Scratch.Set "undeviced" 0 }}
+{{ range $pages }}
+  {{ with .Params.devices }}{{ else }}{{ $.Scratch.Add "undeviced" 1 }}{{ end }}
+{{ end }}
 
 <section>
+  <div class = "projectsFilter">
+    <div class ="container">
+      <div class = "row">
+        <div class = "col">
+          <div class="dropdown row">
+            <div class = "btn-group col" id = "levels">
+              <a class="btn btn-secondary dropdown-toggle knowledge" href="#" role="button" id="dropdownMenuLink-levels" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <em data-default = "Any Knowledge">Any Knowledge</em>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <span class="dropdown-item active" id="selectAllLevels" onclick="htf.showAll('levels')">
+                  <em>Any Knowledge</em>
+                </span>
+                {{ range $levels }}
+                  {{ if .Term }}
+                    <span class="level-button dropdown-item" id="level-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'level-')">
+                      <em>{{.Term | humanize | title }}</em>
+                      <span id="slevels-{{ .Term | urlize }}"> -count- </span> <span id="clevels-{{ .Term | urlize }}"> -count-</span>
+                    </span>
+                  {{ end }}
+                {{ end }}
+                {{ if gt ( $.Scratch.Get "unleveled") 0 }}
+                <span class="level-button dropdown-item" id="level-tfunleveled" onclick="htf.checkFilter('tfunleveled', 'level-')">
+                  Unleveled
+                  <span id="stags-tfunleveled"> -count- </span> <span id="ctags-tfunleveled"> -count-</span>
+                </span>
+                {{ end }}
+              </div>
+            </div>
+
+            <div class = "btn-group col" id = "environments">
+              <a class="btn btn-secondary dropdown-toggle environment" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <em data-default = "Any Environment">Any Environment</em>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <span class="dropdown-item active" id="selectAllTags" onclick="htf.showAll('tags')">
+                  Any Environment
+                </span>
+                {{ range $tags }}
+                  {{ if .Term }}
+                    <span class="tag-button dropdown-item" id="tag-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'tag-')">
+                      <em>{{.Term | humanize | title }}</em>
+                      <span id="stags-{{ .Term | urlize }}"> -count- </span> <span id="ctags-{{ .Term | urlize }}"> -count-</span>
+                    </span>
+                  {{ end }}
+                {{ end }}
+                {{ if gt ( $.Scratch.Get "untagged") 0 }}
+                <span class="tag-button dropdown-item" id="tag-tfuntagged" onclick="htf.checkFilter('tfuntagged', 'tag-')">
+                  Untagged
+                  <span id="stags-tfuntagged"> -count- </span> <span id="ctags-tfuntagged"> -count-</span>
+                </span>
+                {{ end }}
+              </div>
+            </div>
+
+            <div class = "btn-group col" id = "places">
+              <a class="btn btn-secondary dropdown-toggle place" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <em data-default = "Any Place">Any Place</em>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <span class="dropdown-item active" id="selectAllPlaces" onclick="htf.showAll('places')">
+                  <em>Any Place</em>
+                </span>
+                {{ range $places }}
+                  {{ if .Term }}
+                    <span class="place-button dropdown-item" id="place-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'place-')">
+                      <em>{{.Term | humanize | title }}</em>
+                      <span id="splaces-{{ .Term | urlize }}"> -count- </span> <span id="cplaces-{{ .Term | urlize }}"> -count-</span>
+                    </span>
+                  {{ end }}
+                {{ end }}
+                {{ if gt ( $.Scratch.Get "unplaced") 0 }}
+                <span class="place-button dropdown-item" id="place-tunplaced" onclick="htf.checkFilter('tfunplaced', 'place-')">
+                  Without Place
+                  <span id="splaces-tfunplaced"> -count- </span> <span id="cplaces-tfunplaced"> -count-</span>
+                </span>
+                {{ end }}
+              </div>
+            </div>
+
+            <div class = "btn-group col" id = "devices">
+              <a class="btn btn-secondary dropdown-toggle device" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <em data-default = "Any Kit">Any Kit</em>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <span class="dropdown-item active" id="selectAllDevices" onclick="htf.showAll('devices')">
+                  Any Kit
+                </span>
+                {{ range $devices }}
+                  {{ if .Term }}
+                    <span class="device-button dropdown-item" id="device-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'device-')">
+                      <em>{{.Term | humanize | title }}</em>
+                      <span id="sdevices-{{ .Term | urlize }}"> -count- </span> <span id="cdevices-{{ .Term | urlize }}"> -count-</span>
+                    </span>
+                  {{ end }}
+                {{ end }}
+                {{ if gt ( $.Scratch.Get "undeviced") 0 }}
+                <span class="device-button dropdown-item" id="device-tfundeviced" onclick="htf.checkFilter('tfundeviced', 'device-')">
+                  Undeviced
+                  <span id="sdevices-tfundeviced"> -count- </span> <span id="cdevices-tfundeviced"> -count-</span>
+                </span>
+                {{ end }}
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      <div>
+    </div>
+  </div>
+</section>
   <div class="bg bg--gray">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="categories">
-            {{ range .Data.Pages }}
-
-            {{ end }}
-
-
-            {{ $pages := .Data.Pages }}
-
-            {{ $tags := $.Site.Taxonomies.tags.ByCount }}
-
-            {{ $.Scratch.Set "untagged" 0 }}
-            {{ range $pages }}
-              {{ with .Params.tags }}{{ else }}{{ $.Scratch.Add "untagged" 1 }}{{ end }}
-            {{ end }}
-            <div class="categories__title">Choose tags:</div>
-            <div class="categories__filter">
-              <span class="button button--tag button--tag--blue button--tag--blue" id="selectAllTags" onclick="htf.showAll('tags')">
-                All Tags
-              </span>
-              {{ range $tags }}
-                {{ if .Term }}
-                  <span class="tag-button button button--tag button--tag--blue button--tag--blue" id="tag-{{ .Term | replaceRE "[.]" "_" | urlize }}" onclick="htf.checkFilter('{{ .Term | replaceRE "[.]" "_" | urlize }}', 'tag-')">
-                    {{.Term | humanize | title }}
-                    <span id="stags-{{ .Term | urlize }}"> -count-</span> | <span id="ctags-{{ .Term | urlize }}"> -count-</span>
-                  </span>
-                {{ end }}
-              {{ end }}
-              {{ if gt ( $.Scratch.Get "untagged") 0 }}
-              <span class="tag-button button button--tag button--tag--blue button--tag--blue" id="tag-tfuntagged" onclick="htf.checkFilter('tfuntagged', 'tag-')">
-                Untagged
-                <span id="stags-tfuntagged"> -count-</span> | <span id="ctags-tfuntagged"> -count-</span>
-              </span>
-              {{ end }}
-            </div>
-
-
-          </div>
-          <div class="articles articles--nomargintop">
+          <div class="articles articles--2">
             <div class="row">
-
-
-
               {{ range $pages.ByPublishDate.Reverse }}
-                <div  class="col-12 col-md-6 col-lg-4 tf-filter-item tf-item" data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}">
+                <div  class="col-12 col-md-6 col-lg-4 tf-filter-item tf-item"
+                      data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}"
+                      data-devices="{{ with .Params.devices }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfundeviced{{ end }}"
+                      data-places="{{ with .Params.places }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfunplaced{{ end }}"
+                      data-levels="{{ with .Params.levels }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tunleveled{{ end }}">
                   {{ .Render "grid" }}
                 </div>
               {{ end }}
@@ -74,6 +185,33 @@ var htfConfig = {
       attrName: 'data-tags',
       selectedPrefix: 'stags-',
       countPrefix: 'ctags-'
+    },
+    {
+      name: 'places',
+      prefix: 'place-',
+      buttonClass: 'place-button',
+      allSelector: '#selectAllPlaces',
+      attrName: 'data-places',
+      selectedPrefix: 'splaces-',
+      countPrefix: 'cplaces-'
+    },
+    {
+      name: 'levels',
+      prefix: 'level-',
+      buttonClass: 'level-button',
+      allSelector: '#selectAllLevels',
+      attrName: 'data-levels',
+      selectedPrefix: 'slevels-',
+      countPrefix: 'clevels-'
+    },
+    {
+      name: 'devices',
+      prefix: 'device-',
+      buttonClass: 'device-button',
+      allSelector: '#selectAllDevices',
+      attrName: 'data-devices',
+      selectedPrefix: 'sdevices-',
+      countPrefix: 'cdevices-'
     }
   ],
   showItemClass: "show-item",
@@ -95,6 +233,27 @@ function toggleAcc(el) {
     panel.style.maxHeight = panel.scrollHeight + "px";
   }
 }
+
+
+$('.btn-group').on('hide.bs.dropdown', function () {
+  var id = $(this).attr('id');
+  var elements = $("#" + id + " .dropdown-item.active em");
+  var selected = "";
+  $(elements).each(function(index){
+    if(index == 0){
+      selected = $.trim($( this ).text());
+    }
+    else{
+      selected = selected + ", " + $.trim($( this ).text());
+    }
+  })
+  if(selected.length == 0)
+  {
+    selected = $("#" + id + " .btn em").attr("data-default");
+  }
+  console.log(selected);
+  $("#" + id + " .btn em").html(selected);
+})
 </script>
 
 {{ end }}

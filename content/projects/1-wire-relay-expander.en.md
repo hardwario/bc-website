@@ -1,6 +1,6 @@
 ---
-title: Expandér s osmi relé
-description: Ovládej až 8 zařízení přes 1-Wire sběrnici
+title: Expander with eight relays
+description: Control up to 8 devices via the 1-Wire bus
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Office"]

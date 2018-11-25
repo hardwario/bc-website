@@ -1,6 +1,6 @@
 ---
-title: Bazénový teplotní senzor
-description: "Sleduj teplotu v bazénu i jeho okolí."
+title: Pool temperature sensor
+description: "Watch the temperature in the pool and its surroundings."
 tags: ["Outdoor"]
 levels: ["Advanced"]
 places: ["Home"]

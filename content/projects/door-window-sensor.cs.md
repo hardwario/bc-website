@@ -1,7 +1,10 @@
 ---
 title: Senzor otevřeného okna a dveří
 description: "Detekuj dlouho otevřené okna nebo dveře"
-tags: ["Home", "Office", "School"]
+tags: ["Indoor"]
+levels: ["Advanced"]
+places: ["Home", "Office", "School"]
+devices: ["Custom Kit"]
 meta:
   title: Bazénový teplotní senzor
   desciption: ""

@@ -1,16 +1,16 @@
 ---
-title: Chytrá poštovní schránka
-description: "Ve zlomku vteřiny se dozvíš, že přišla pošta."
-tags: ["Outdoor"]
+title: Sensor of open window and door
+description: "Detect long-time open windows or doors"
+tags: ["Indoor"]
 levels: ["Advanced"]
-places: ["Home"]
+places: ["Home", "Office", "School"]
 devices: ["Custom Kit"]
 meta:
-  title: Chytrá poštovní schránka
+  title: Bazénový teplotní senzor
   desciption: ""
 images:
-  preview: /projects/smart-mailbox/preview.jpg
-  main: /projects/smart-mailbox/main.jpg
+  preview: /projects/door-window-sensor/preview.jpg
+  main: /projects/door-window-sensor/main.jpg
 button:
     text: Získej vše potřebné
     link: https://shop.bigclown.com/soil-moisture-sensor-kit/
@@ -25,14 +25,14 @@ author:
 
 ---
 
-Získej notifikaci, když pošťák otevře schránku a vloží dopis. S pomocí Blynku je to snadné. Navíc můžeš použít i druhý vstup Sensor Module a zapojit jej na boční dvířka pro vybrání schránky. Pak je možné monitorovat i kdy byla naposledy dopisy ze schránky vybrány.
+Například pro vypnutí vytápění, nebo varování, že jsou dveře otevřené dlouhou dobu, nebo pozdě večer.
 
 ### Co budeš potřebovat
 
 * {{< shop "Core Module" >}}
 * {{< shop "Mini Battery Module" >}}
 * {{< shop "Sensor Module" >}}
-* Mechanický mikrospínač NO nebo NC
+* Magnetický senzor NO nebo NC, mechanický spínač. Například na šrubování SA-201A nebo lepení SA-203A
 
 ### Firmware
 

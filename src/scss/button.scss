@@ -573,6 +573,46 @@
       }
     }
 
+    &--yellow
+    {
+      background: #ffffff;
+      color:#000000!important;
+      border: 2px solid #fdc700;
+
+      &:hover,
+      &--active
+      {
+        background: #fdc700;
+        color:#000000!important;
+      }
+
+      &.active
+      {
+        background: #fdc700;
+        color:#000000!important;
+      }
+    }
+
+    &--custom
+    {
+      background: #ffffff;
+      color:#000000!important;
+      border: 2px solid #0e788a;
+
+      &:hover,
+      &--active
+      {
+        background: #0e788a;
+        color:#ffffff!important;
+      }
+
+      &.active
+      {
+        background: #0e788a;
+        color:#ffffff!important;
+      }
+    }
+
     &--gray
     {
       background: #f2f2f2;

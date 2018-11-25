@@ -1,6 +1,6 @@
 ---
-title: Kočičí fontána
-description: "Pohybový senzor spustí fontánu jen když je kočka nablízku."
+title: Cat Fountain
+description: "The motion sensor only starts the fountain when the cat is near."
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home"]

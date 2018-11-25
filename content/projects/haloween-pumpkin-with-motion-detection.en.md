@@ -1,6 +1,6 @@
 ---
-title: Haloweenská dýně s detekcí pohybu
-description: "Postav si svoji IoT dýni!"
+title: Halloween pumpkin with motion detection
+description: "Build your IoT Pumpkin!"
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home"]

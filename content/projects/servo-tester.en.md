@@ -1,6 +1,6 @@
 ---
 title: Servo tester
-description: Vyzkoušej funkčnost servo motorků s pomocí Core a Power Module
+description: Test the servo motors with Core and Power Module
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "School"]

@@ -1,10 +1,9 @@
 ---
-title: IKEA světla s detekcí pohybu a HomeKitem
-description: "Posviť si v noci automaticky se světly IKEA a Apple HomeKit!"
+title: IKEA light with Motion Detection and HomeKit
+description: "Turn on the lights in the night automatically with IKEA and Apple HomeKit!"
 tags: ["Indoor"]
 levels: ["Beginner"]
-places: ["Home","Office"]
-environments: ["Indoor"]
+places: ["Home", "Office", "School"]
 devices: ["Motion Kit"]
 meta:
   title: Monitoring vlhkosti půdy

@@ -1,7 +1,10 @@
 ---
 title: Infra Grid kamera
 description: Snímej a vyhodnoť infračervený tepelný obraz
-tags: ["Indoor" ,"Industrial"]
+tags: ["Indoor"]
+levels: ["Advanced"]
+places: ["Home", "Office"]
+devices: ["Custom Kit"]
 meta:
   title: Infra Grid kamera
   desciption: ""

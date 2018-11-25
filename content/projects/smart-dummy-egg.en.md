@@ -1,6 +1,6 @@
 ---
-title: Chytré falešné vejce
-description: "Falešný podkladek pro monitorování teploty vejce"
+title: Smart dummy egg
+description: "Dummy tray for egg temperature monitoring."
 tags: ["Outdoor"]
 levels: ["Beginner"]
 places: ["Home","Garden","School"]

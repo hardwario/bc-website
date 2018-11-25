@@ -1,6 +1,6 @@
 ---
-title: Maticový LED displej
-description: "Zobrazuj hodnoty, texty, notifikace."
+title: Matrix LED display
+description: "Show values, texts, notifications."
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home","School"]

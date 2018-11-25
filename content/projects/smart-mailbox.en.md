@@ -1,6 +1,6 @@
 ---
-title: Chytrá poštovní schránka
-description: "Ve zlomku vteřiny se dozvíš, že přišla pošta."
+title: Smart mailbox
+description: "In a fraction of a second you will find out that the post office has arrived."
 tags: ["Outdoor"]
 levels: ["Advanced"]
 places: ["Home"]

@@ -1,16 +1,16 @@
 ---
-title: Expandér s osmi relé
-description: Ovládej až 8 zařízení přes 1-Wire sběrnici
+title: Infra Grid Camera
+description: Scan and evaluate the infrared thermal image
 tags: ["Indoor"]
 levels: ["Advanced"]
-places: ["Office"]
+places: ["Home", "Office"]
 devices: ["Custom Kit"]
 meta:
-  title: Ovládej až 8 zařízení přes 1-Wire sběrnici
+  title: Infra Grid kamera
   desciption: ""
 images:
-  preview: /projects/1-wire-relay-expander/preview.jpg
-  main: /projects/1-wire-relay-expander/main.jpg
+  preview: /projects/infra-grid-module-themometer/preview.jpg
+  main: /projects/infra-grid-module-themometer/main.jpg
 button:
     text: Získej vše potřebné
     link: https://shop.bigclown.com/soil-moisture-sensor-kit/
@@ -25,14 +25,13 @@ author:
 
 ---
 
-Připojením modulu Denkovi "1-Wire 8 Relay Module" je možné ovládat silové spotřebiče. Příkaz pro sepnutí a rozepnutí relé se potom do Core Module posílá skrz MQTT bezdrátově.
+Infra Grid Module obsahuje 8x8 pixelů infrakameru, která umožňuje bezkontaktní snímání teploty v rozsahu 0 - 85 °C.
 
 ### Co budeš potřebovat
 
 * {{< shop "Core Module" >}}
-* {{< shop "Sensor Module" >}}
-* {{< shop "Denkovi 1-Wire Relay" >}}
-
+* {{< shop "Infra Grid Module" >}}
+* {{< shop "LCD Module" >}} nebo libovolný displej
 
 ### Reference
 

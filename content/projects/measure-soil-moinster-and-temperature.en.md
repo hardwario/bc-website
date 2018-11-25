@@ -5,7 +5,7 @@ tags: ["Indoor", "Outdoor"]
 levels: ["Advanced"]
 places: ["Home","Garden"]
 environments: ["Indoor", "Outdoor"]
-devices: ["Soil Moisture Kit"]
+devices: ["Soil Kit"]
 meta:
   title: Soil Moisture Monitoring
   desciption: ""

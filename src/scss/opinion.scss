@@ -27,6 +27,7 @@
     margin-bottom: $baseline;
     border-radius: 7px;
     overflow: hidden;
+    cursor: pointer;
 
     &__image
     {
@@ -37,8 +38,10 @@
 
       &__play
       {
-        position: relative;
-        top: -35px;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        margin-left: -41px;
       }
     }
 

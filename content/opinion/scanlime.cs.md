@@ -5,5 +5,5 @@ author:
     name: Scanlime
 image: scanlime.png
 logo: scanlime.jpg
-video: https://www.youtube.com/watch?v=qgWLZlsHSJo
+video: qgWLZlsHSJo
 ---

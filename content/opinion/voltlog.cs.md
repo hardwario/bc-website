@@ -5,5 +5,5 @@ author:
     name: Voltlog
 image: voltlog.png
 logo: voltlog.jpg
-video: https://www.youtube.com/watch?v=U9KgWIXIDJE
+video: U9KgWIXIDJE
 ---

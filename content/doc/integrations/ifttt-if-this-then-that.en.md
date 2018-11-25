@@ -1,9 +1,6 @@
 ---
 title: "IFTTT If This Then That"
 menu:
-  main:
-    parent: 'integrations'
-    weight: 30
   doc:
     parent: 'integrations'
     weight: 30

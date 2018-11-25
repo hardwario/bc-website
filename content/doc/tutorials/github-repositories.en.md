@@ -1,9 +1,6 @@
 ---
 title: "GitHub Repositories"
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 100
   doc:
     parent: 'tutorials'
     weight: 100

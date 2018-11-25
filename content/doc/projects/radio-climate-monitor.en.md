@@ -1,9 +1,6 @@
 ---
 title: "Radio Climate Monitor"
 menu:
-  main:
-    parent: 'projects'
-    weight: 20
   doc:
     parent: 'projects'
     weight: 20

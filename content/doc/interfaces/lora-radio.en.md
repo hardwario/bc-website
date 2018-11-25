@@ -1,9 +1,6 @@
 ---
 title: "LoRa IoT radio"
 menu:
-  main:
-    parent: 'interfaces'
-    weight: 60
   doc:
     parent: 'interfaces'
     weight: 60

@@ -1,9 +1,6 @@
 ---
 title: "LoRa Climate Monitor"
 menu:
-  main:
-    parent: 'projects'
-    weight: 30
   doc:
     parent: 'projects'
     weight: 30
@@ -97,4 +94,3 @@ The data are encoded in the LoRa message. You need to extract the right bits to 
 You can pass the received HEX string as a parameter for the `decode.py`:
 
 `python3 decode.py 011b0100f5600024c313`
-

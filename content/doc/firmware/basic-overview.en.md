@@ -1,9 +1,6 @@
 ---
 title: "Basic Overview"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 10
   doc:
     parent: 'firmware'
     weight: 10

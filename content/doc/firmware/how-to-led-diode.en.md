@@ -1,9 +1,6 @@
 ---
 title: "How to: LED Control"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 20
   doc:
     parent: 'firmware'
     weight: 20

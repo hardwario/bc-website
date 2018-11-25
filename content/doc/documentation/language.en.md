@@ -1,9 +1,6 @@
 ---
 title: "Documentation language / Jazyk dokumentace"
 menu:
-  main:
-    parent: 'documentation'
-    weight: 30
   doc:
     parent: 'documentation'
     weight: 30

@@ -1,9 +1,6 @@
 ---
 title: Raspberry Pi Installation
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 20
   doc:
     parent: 'tutorials'
     weight: 20

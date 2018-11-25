@@ -1,9 +1,6 @@
 ---
 title: "MySigfox.com Service"
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 90
   doc:
     parent: 'tutorials'
     weight: 90

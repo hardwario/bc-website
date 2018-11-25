@@ -1,9 +1,6 @@
 ---
 title: Blynk - Mobile App Builder
 menu:
-  main:
-    parent: 'integrations'
-    weight: 20
   doc:
     parent: 'integrations'
     weight: 20

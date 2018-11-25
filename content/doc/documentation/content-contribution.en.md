@@ -1,9 +1,6 @@
 ---
 title: "Content Contribution"
 menu:
-  main:
-    parent: 'documentation'
-    weight: 20
   doc:
     parent: 'documentation'
     weight: 20

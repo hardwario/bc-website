@@ -1,9 +1,6 @@
 ---
 title: "Amazon Alexa"
 menu:
-  main:
-    parent: 'integrations'
-    weight: 70
   doc:
     parent: 'integrations'
     weight: 70

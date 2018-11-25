@@ -1,9 +1,6 @@
 ---
 title: "Blank Start"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 13
   doc:
     parent: 'firmware'
     weight: 13

@@ -1,9 +1,6 @@
 ---
 title: "How to: Sigfox module"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 20
   doc:
     parent: 'firmware'
     weight: 20

@@ -1,9 +1,6 @@
 ---
 title: "Custom Setup on macOS"
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 50
   doc:
     parent: 'tutorials'
     weight: 50

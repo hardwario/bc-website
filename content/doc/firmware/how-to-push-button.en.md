@@ -1,9 +1,6 @@
 ---
 title: "How to: Push Button"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 20
   doc:
     parent: 'firmware'
     weight: 20

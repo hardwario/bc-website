@@ -1,9 +1,6 @@
 ---
 title: "SDK Framework"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 15
   doc:
     parent: 'firmware'
     weight: 15

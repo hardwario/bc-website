@@ -1,9 +1,6 @@
 ---
 title: "Custom Setup on Ubuntu"
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 40
   doc:
     parent: 'tutorials'
     weight: 40

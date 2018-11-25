@@ -1,9 +1,6 @@
 ---
 title: "BigClown Host Tool"
 menu:
-  main:
-    parent: 'tools'
-    weight: 30
   doc:
     parent: 'tools'
     weight: 30

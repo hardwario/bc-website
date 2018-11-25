@@ -1,9 +1,6 @@
 ---
 title: "Custom Setup on Synology"
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 70
   doc:
     parent: 'tutorials'
     weight: 70

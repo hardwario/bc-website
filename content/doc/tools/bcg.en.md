@@ -1,9 +1,6 @@
 ---
 title: "BigClown gateway"
 menu:
-  main:
-    parent: 'tools'
-    weight: 20
   doc:
     parent: 'tools'
     weight: 20

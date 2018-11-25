@@ -2,9 +2,6 @@
 title: "Firebase"
 slug: "firebase"
 menu:
-  main:
-    parent: 'integrations'
-    weight: 70
   doc:
     parent: 'integrations'
     weight: 70

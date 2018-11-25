@@ -1,9 +1,6 @@
 ---
 title: "Quick Tutorial"
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 10
   doc:
     parent: 'tutorials'
     weight: 10

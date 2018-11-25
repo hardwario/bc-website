@@ -1,9 +1,6 @@
 ---
 title: "How to: CO2 Module"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 20
   doc:
     parent: 'firmware'
     weight: 20

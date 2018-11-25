@@ -1,9 +1,6 @@
 ---
 title: "Sub-GHz Radio"
 menu:
-  main:
-    parent: 'interfaces'
-    weight: 40
   doc:
     parent: 'interfaces'
     weight: 40

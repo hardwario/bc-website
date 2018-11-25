@@ -1,9 +1,6 @@
 ---
 title: "Header Pinout"
 menu:
-  main:
-    parent: 'hardware'
-    weight: 11
   doc:
     parent: 'hardware'
     weight: 11

@@ -1,9 +1,6 @@
 ---
 title: "How to: Smart LED Strip"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 20
   doc:
     parent: 'firmware'
     weight: 20

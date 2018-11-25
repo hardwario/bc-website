@@ -1,9 +1,6 @@
 ---
 title: "Custom Setup on Turris"
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 80
   doc:
     parent: 'tutorials'
     weight: 80

@@ -1,9 +1,6 @@
 ---
 title: "Radio Push Button"
 menu:
-  main:
-    parent: 'projects'
-    weight: 20
   doc:
     parent: 'projects'
     weight: 20

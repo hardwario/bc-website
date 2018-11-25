@@ -1,9 +1,6 @@
 ---
 title: "Radio Motion Detector"
 menu:
-  main:
-    parent: 'projects'
-    weight: 20
   doc:
     parent: 'projects'
     weight: 20

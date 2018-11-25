@@ -1,9 +1,6 @@
 ---
 title: "MQTT Protocol"
 menu:
-  main:
-    parent: 'interfaces'
-    weight: 10
   doc:
     parent: 'interfaces'
     weight: 10

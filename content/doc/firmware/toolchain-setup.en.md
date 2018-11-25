@@ -1,9 +1,6 @@
 ---
 title: Toolchain Setup
 menu:
-  main:
-    parent: 'firmware'
-    weight: 11
   doc:
     parent: 'firmware'
     weight: 11

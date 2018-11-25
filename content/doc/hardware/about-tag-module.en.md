@@ -1,7 +1,7 @@
 ---
 title: "About Tag Module"
 menu:
-  main:
+  doc:
     parent: 'hardware'
     weight: 20
 ---

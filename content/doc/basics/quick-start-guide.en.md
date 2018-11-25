@@ -1,9 +1,6 @@
 ---
 title: "Quick Start Guide"
 menu:
-  main:
-    parent: 'basics'
-    weight: 10
   doc:
     parent: 'basics'
     weight: 10

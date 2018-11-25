@@ -1,9 +1,6 @@
 ---
 title: "BigClown firmware flashing tool"
 menu:
-  main:
-    parent: 'tools'
-    weight: 10
   doc:
     parent: 'tools'
     weight: 10

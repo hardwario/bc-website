@@ -1,9 +1,6 @@
 ---
 title: "Radio Door Sensor"
 menu:
-  main:
-    parent: 'projects'
-    weight: 10
   doc:
     parent: 'projects'
     weight: 10

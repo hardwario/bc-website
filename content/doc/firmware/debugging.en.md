@@ -1,9 +1,6 @@
 ---
 title: "Debugging"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 14
   doc:
     parent: 'firmware'
     weight: 14

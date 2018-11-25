@@ -1,9 +1,6 @@
 ---
 title: "HomeKit and Siri"
 menu:
-  main:
-    parent: 'integrations'
-    weight: 60
   doc:
     parent: 'integrations'
     weight: 60

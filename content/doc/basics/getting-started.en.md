@@ -1,9 +1,6 @@
 ---
 title: "About BigClown"
 menu:
-  main:
-    parent: 'basics'
-    weight: 20
   doc:
     parent: 'basics'
     weight: 20

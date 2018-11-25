@@ -1,9 +1,6 @@
 ---
 title: "Serial port JSON"
 menu:
-  main:
-    parent: 'interfaces'
-    weight: 30
   doc:
     parent: 'interfaces'
     weight: 30

@@ -1,9 +1,6 @@
 ---
 title: "Core Module R1 and R2 comparison"
 menu:
-  main:
-    parent: 'hardware'
-    weight: 12
   doc:
     parent: 'hardware'
     weight: 12

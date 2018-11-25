@@ -1,9 +1,6 @@
 ---
 title: Raspberry Pi Login
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 30
   doc:
     parent: 'tutorials'
     weight: 30

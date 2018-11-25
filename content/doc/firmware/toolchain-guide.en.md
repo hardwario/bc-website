@@ -1,9 +1,6 @@
 ---
 title: Toolchain Guide
 menu:
-  main:
-    parent: 'firmware'
-    weight: 12
   doc:
     parent: 'firmware'
     weight: 12

@@ -1,9 +1,6 @@
 ---
 title: "Custom Setup on Raspberry Pi"
 menu:
-  main:
-    parent: 'tutorials'
-    weight: 60
   doc:
     parent: 'tutorials'
     weight: 60

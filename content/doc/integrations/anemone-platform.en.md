@@ -1,9 +1,6 @@
 ---
 title: "Anemone Platform"
 menu:
-  main:
-    parent: 'integrations'
-    weight: 40
   doc:
     parent: 'integrations'
     weight: 40

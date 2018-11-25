@@ -1,9 +1,6 @@
 ---
 title: "Module Overview"
 menu:
-  main:
-    parent: 'basics'
-    weight: 30
   doc:
     parent: 'basics'
     weight: 30

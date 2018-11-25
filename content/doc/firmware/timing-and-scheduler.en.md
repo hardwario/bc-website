@@ -1,9 +1,6 @@
 ---
 title: "Timing and Scheduler"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 17
   doc:
     parent: 'firmware'
     weight: 17

@@ -1,9 +1,6 @@
 ---
 title: "Basic Principles"
 menu:
-  main:
-    parent: 'hardware'
-    weight: 10
   doc:
     parent: 'hardware'
     weight: 10

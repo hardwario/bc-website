@@ -1,9 +1,6 @@
 ---
 title: "SigFox IoT radio"
 menu:
-  main:
-    parent: 'interfaces'
-    weight: 50
   doc:
     parent: 'interfaces'
     weight: 50

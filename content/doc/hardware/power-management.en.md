@@ -1,9 +1,6 @@
 ---
 title: "Power Management"
 menu:
-  main:
-    parent: 'hardware'
-    weight: 13
   doc:
     parent: 'hardware'
     weight: 13

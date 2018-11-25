@@ -1,9 +1,6 @@
 ---
 title: "Ubidots"
 menu:
-  main:
-    parent: 'integrations'
-    weight: 50
   doc:
     parent: 'integrations'
     weight: 50

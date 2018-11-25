@@ -1,9 +1,6 @@
 ---
 title: "About CO2 Module"
 menu:
-  main:
-    parent: 'hardware'
-    weight: 20
   doc:
     parent: 'hardware'
     weight: 20

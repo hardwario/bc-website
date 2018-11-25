@@ -1,9 +1,6 @@
 ---
 title: "Contribution Setup"
 menu:
-  main:
-    parent: 'documentation'
-    weight: 10
   doc:
     parent: 'documentation'
     weight: 10

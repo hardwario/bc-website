@@ -1,9 +1,6 @@
 ---
 title: "Grafana for Visualization"
 menu:
-  main:
-    parent: 'integrations'
-    weight: 10
   doc:
     parent: 'integrations'
     weight: 10

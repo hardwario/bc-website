@@ -1,9 +1,6 @@
 ---
 title: "Push The Button"
 menu:
-  main:
-    parent: 'projects'
-    weight: 10
   doc:
     parent: 'projects'
     weight: 10

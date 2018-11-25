@@ -1,9 +1,6 @@
 ---
 title: "Common Problems"
 menu:
-  main:
-    parent: 'firmware'
-    weight: 16
   doc:
     parent: 'firmware'
     weight: 16

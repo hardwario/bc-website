@@ -1,5 +1,5 @@
 ---
-title: How to learn
+title: How to Start
 meta:
     title: 5 Easy Steps to Learn Digital Skills
 mainHeading: 5 Easy Steps to Learn Digital&nbsp;Skills

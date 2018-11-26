@@ -2,7 +2,7 @@
 title: Jak začít
 meta:
     title: 5 Jednoduchých kroků, jak se začít učit digitální dovednosti
-mainHeading: 5 Jednoduchých kroků, jak se začít&nbsp;učit&nbsp;digitální dovednosti
+mainHeading: 5 Jednoduchých kroků,<br /> jak se začít&nbsp;učit&nbsp;digitální dovednosti
 mainParagraph: Naučíš se jak sestavit hardware, připojit jej bezdrátově k tvému počítači a nastavit notifikace pro tvůj chytrý telefon.
 slug: start
 menu: "main"

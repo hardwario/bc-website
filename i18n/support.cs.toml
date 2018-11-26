@@ -1,8 +1,8 @@
 [support_heading]
-other = "Najdi správnou odpověď"
+other = "Jak ti můžeme pomoct?"
 
 [support_subheading]
-other = "na tvé dotazy o BigClown"
+other = ""
 
 [documentation]
 other = "Dokumentace"
@@ -35,4 +35,4 @@ other = "Na GitHubu sdílíme všechny naše zdrojové kódy. Však víš, jsme 
 other = "Hackster.io"
 
 [hackster_desc]
-other = "Hledáš doslovené tutoriály pro tvůj další projekt nebo inspiraci? Na Hackster.io publikujeme naše úplné krok za krokem tutoriály."
+other = "Hledáš doslovené tutoriály pro tvůj další projekt nebo inspiraci? Na Hackster.io publikujeme naše úplné tutoriály \"krok za krokem\"."

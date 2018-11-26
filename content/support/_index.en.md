@@ -1,7 +1,7 @@
 ---
 title: Support
 slug: support
-mainHeading: Support
+mainHeading: Find right answers
 menu:
     main:
         weight: 400

@@ -3,7 +3,7 @@ title: How to Start
 meta:
     title: 5 Easy Steps to Learn Digital Skills
 mainHeading: 5 Easy Steps to Learn Digital&nbsp;Skills
-mainParagraph: Build hardware, connect it wirelessly to your computer and set up notifications for the smartphone. Let’s go...
+mainParagraph: Build hardware, connect it wirelessly to your computer<br />and set up notifications for&nbsp;the&nbsp;smartphone.<br /><strong>Let's go...</strong>
 slug: start
 menu: "main"
 weight: 50

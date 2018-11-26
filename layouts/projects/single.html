@@ -5,47 +5,47 @@
       <div class="col-12 col-xl-10">
         <div class="article__header">
           <div class="article__header__button">
+
             <h1 class="article__title">{{ .Title }}</h1>
             <div class="text text--perex">
               <p>{{ .Params.description }}</p>
             </div>
 
-            <div class="d-flex justify-content-center">
-              <div class="article__author d-flex flex-column justify-content-center">
-                <img src="{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
-                <strong>{{ .Params.author.name }}</strong>
-                <span>{{ .Params.author.post }}</span>
-              </div>
-            </div>
+            <nav>
+                <ul class="intro__links d-flex justify-content-center">
+                    {{ range .Params.levels }}
+                      <li><a class="button button--tag button--tag--yellow">{{ . }}</a></li>
+                    {{ end }}
+                    {{ range .Params.tags }}
+                      <li><a class="button button--tag button--tag--custom">{{ . }}</a></li>
+                    {{ end }}
+                    {{ range .Params.places }}
+                      <li><a class="button button--tag button--tag--red">{{ . }}</a></li>
+                    {{ end }}
+                    {{ range .Params.devices }}
+                      <li><a class="button button--tag button--tag--gray">{{ . }}</a></li>
+                    {{ end }}
+                </ul>
+            </nav>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="article__image">
-    <img src="{{ .Params.images.main }}" alt="{{ .Title }}" />
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="article__image">
+          <img src="{{ .Params.images.main }}" alt="{{ .Title }}" />
+        </div>
+      </div>
+    </div>
   </div>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-xl-8">
         <div class="article__body">
               {{ .Content }}
-            </div>
-            <div class="article__tags d-flex justify-content-center justify-content-md-start">
-              <ul>
-                  {{ range .Params.levels }}
-                    <li><a class="button button--tag button--tag--yellow">{{ . }}</a></li>
-                  {{ end }}
-                  {{ range .Params.tags }}
-                    <li><a class="button button--tag button--tag--custom">{{ . }}</a></li>
-                  {{ end }}
-                  {{ range .Params.places }}
-                    <li><a class="button button--tag button--tag--red">{{ . }}</a></li>
-                  {{ end }}
-                  {{ range .Params.devices }}
-                    <li><a class="button button--tag button--tag--gray">{{ . }}</a></li>
-                  {{ end }}
-              </ul>
             </div>
               {{ if ne .Params.idea true }}
             <div class="row">

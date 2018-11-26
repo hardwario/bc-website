@@ -1,8 +1,11 @@
 [support_heading]
-other = "How Can We Help You?"
+other = "How can we help you?"
+
+[support_snippet_heading]
+other = "Find right answers"
 
 [support_subheading]
-other = ""
+other = "to your questions about BigClown"
 
 [documentation]
 other = "Documentation"

@@ -1,6 +1,7 @@
 ---
 title: Smart dummy egg
 description: "Dummy tray for egg temperature monitoring."
+idea: false
 tags: ["Outdoor"]
 levels: ["Beginner"]
 places: ["Home","Garden","School"]

@@ -1,6 +1,7 @@
 ---
 title: Flat flood detector
 description: "Get a warning if there is water in the bathroom."
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "School"]

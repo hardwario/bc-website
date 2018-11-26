@@ -1,6 +1,7 @@
 ---
 title: Matrix LED display
 description: "Show values, texts, notifications."
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home","School"]

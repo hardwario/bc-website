@@ -1,6 +1,7 @@
 ---
 title: Pool temperature sensor
 description: "Watch the temperature in the pool and its surroundings."
+idea: true
 tags: ["Outdoor"]
 levels: ["Advanced"]
 places: ["Home"]

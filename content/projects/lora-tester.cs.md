@@ -1,6 +1,7 @@
 ---
 title: LoRa tester
 description: Otestuj dosah LoRa gateway
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "Office"]

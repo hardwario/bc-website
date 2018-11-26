@@ -1,6 +1,7 @@
 ---
 title: Bazénový teplotní senzor
 description: "Sleduj teplotu v bazénu i jeho okolí."
+idea: true
 tags: ["Outdoor"]
 levels: ["Advanced"]
 places: ["Home"]

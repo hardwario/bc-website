@@ -9,3 +9,12 @@ other = "Share my project"
 
 [thank_you]
 other = "Thank you!"
+
+[get_100]
+other = "Get € 100 by completing this project!"
+
+[complete_project]
+other = "Complete project, make step-by-step tutorial and get €&nbsp;100."
+
+[make_a_deal]
+other = "Contact Us to Make a Deal"

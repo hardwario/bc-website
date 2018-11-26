@@ -1,6 +1,7 @@
 ---
 title: Soil Moisture Monitoring
 description: "For those who just love their garden"
+idea: false
 tags: ["Indoor", "Outdoor"]
 levels: ["Advanced"]
 places: ["Home","Garden"]

@@ -1,6 +1,7 @@
 ---
 title: Sensor of open window and door
 description: "Detect long-time open windows or doors"
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "Office", "School"]

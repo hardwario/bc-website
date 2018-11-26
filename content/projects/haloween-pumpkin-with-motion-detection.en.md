@@ -1,6 +1,7 @@
 ---
 title: Halloween pumpkin with motion detection
 description: "Build your IoT Pumpkin!"
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home"]

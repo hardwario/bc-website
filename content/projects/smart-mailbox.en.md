@@ -1,6 +1,7 @@
 ---
 title: Smart mailbox
 description: "In a fraction of a second you will find out that the post office has arrived."
+idea: false
 tags: ["Outdoor"]
 levels: ["Advanced"]
 places: ["Home"]

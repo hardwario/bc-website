@@ -1,6 +1,7 @@
 ---
 title: Kočičí fontána
 description: "Pohybový senzor spustí fontánu jen když je kočka nablízku."
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home"]

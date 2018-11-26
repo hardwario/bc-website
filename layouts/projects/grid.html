@@ -1,7 +1,9 @@
 
   <article>
     <a href="{{.Permalink}}" class="articles__item">
-
+      {{ if eq .Params.idea true }}
+      <span class = "articles__item__idea"></span>
+      {{ end }}
       <div class="articles__item__image">
         <img src="{{ .Params.images.preview }} " alt="" />
       </div>

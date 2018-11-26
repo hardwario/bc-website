@@ -1,6 +1,7 @@
 ---
 title: Matrix display from smart LEDs
 description: Show text or visualization on the matrix display
+idea: false
 tags: ["Indoor"]
 levels: ["Beginner"]
 places: ["Home", "Office", "School"]

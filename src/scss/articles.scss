@@ -34,6 +34,19 @@
       padding-bottom: 246/375*100%;
     }
 
+    &__idea
+    {
+      position: absolute;
+      top: 0.4*$baseline;
+      right: 0.2*$baseline;
+      z-index: 10;
+      background: url("../svg/light-bulb.svg") no-repeat center center;
+      background-size: contain;
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
+
     &:hover
     {
       .articles__item__image img

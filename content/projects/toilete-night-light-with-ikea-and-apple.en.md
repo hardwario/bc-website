@@ -1,6 +1,7 @@
 ---
 title: IKEA light with Motion Detection and HomeKit
 description: "Turn on the lights in the night automatically with IKEA and Apple HomeKit!"
+idea: false
 tags: ["Indoor"]
 levels: ["Beginner"]
 places: ["Home", "Office", "School"]

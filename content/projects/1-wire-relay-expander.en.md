@@ -1,6 +1,7 @@
 ---
 title: Expander with eight relays
 description: Control up to 8 devices via the 1-Wire bus
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Office"]

@@ -1,6 +1,7 @@
 ---
 title: LoRa tester
 description: Test the LoRa gateway
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "Office"]

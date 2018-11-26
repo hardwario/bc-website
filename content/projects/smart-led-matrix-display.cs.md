@@ -1,6 +1,7 @@
 ---
 title: Maticový displej z chytrých LED
 description: Zobraz text nebo vizualizace na maticovém displeji
+idea: false
 tags: ["Indoor"]
 levels: ["Beginner"]
 places: ["Home", "Office", "School"]

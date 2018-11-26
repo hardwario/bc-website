@@ -1,6 +1,7 @@
 ---
 title: Detektor zaplavení bytu
 description: "Získej varování, pokud v koupelně přetéká voda"
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "School"]

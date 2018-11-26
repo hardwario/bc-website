@@ -1,6 +1,7 @@
 ---
 title: Senzor otevřeného okna a dveří
 description: "Detekuj dlouho otevřené okna nebo dveře"
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "Office", "School"]

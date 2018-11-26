@@ -1,6 +1,7 @@
 ---
 title: IKEA světla s detekcí pohybu a HomeKitem
 description: "Posviť si v noci automaticky se světly IKEA a Apple HomeKit!"
+idea: false
 tags: ["Indoor"]
 levels: ["Beginner"]
 places: ["Home", "Office", "School"]

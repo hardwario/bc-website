@@ -1,6 +1,7 @@
 ---
 title: Monitoring vlhkosti půdy
 description: "Pro milovníky zahrad, květin a všech legálních bylinek"
+idea: false
 tags: [Indoor", "Outdoor"]
 levels: ["Advanced"]
 places: ["Home", "Garden"]

@@ -1,6 +1,7 @@
 ---
 title: Infra Grid Camera
 description: Scan and evaluate the infrared thermal image
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "Office"]

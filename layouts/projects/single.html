@@ -47,6 +47,7 @@
                   {{ end }}
               </ul>
             </div>
+              {{ if ne .Params.idea true }}
             <div class="row">
               <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">
                 <div class="article__author article__author--bottom d-flex flex-column justify-content-center">
@@ -59,11 +60,34 @@
                 <div class="addthis_inline_share_toolbox article__soc"></div>
               </div>
             </div>
+            {{ end }}
       </div>
     </div>
   </div>
 </section>
+<section>
 
+  {{ if eq .Params.idea true }}
+            <div class="livechat">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 col-md-2">
+                            <div class="livechat__icon livechat__icon__2"></div>
+                        </div>
+                        <div class="col-8 col-md-6">
+                            <h2 class="livechat__title">{{ i18n "get_100" | safeHTML }}</h2>
+                            <p class="livechat__text">{{ i18n "complete_project" | safeHTML }}</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="livechat__button d-flex align-items-center">
+                                <a href="#" onclick="Intercom('showNewMessage');" class="button button--block button--fullred">{{ i18n "make_a_deal" }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{ end }}
 <!--<section>
   <div class="bg bg--gray">
     <div class="container">

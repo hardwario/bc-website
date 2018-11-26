@@ -1,6 +1,7 @@
 ---
 title: Chytré falešné vejce
 description: "Falešný podkladek pro monitorování teploty vejce"
+idea: false
 tags: ["Outdoor"]
 levels: ["Beginner"]
 places: ["Home","Garden","School"]

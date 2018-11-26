@@ -1,6 +1,7 @@
 ---
 title: Haloweenská dýně s detekcí pohybu
 description: "Postav si svoji IoT dýni!"
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home"]

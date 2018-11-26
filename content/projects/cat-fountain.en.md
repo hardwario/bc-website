@@ -1,6 +1,7 @@
 ---
 title: Cat Fountain
 description: "The motion sensor only starts the fountain when the cat is near."
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home"]

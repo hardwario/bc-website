@@ -1,6 +1,7 @@
 ---
 title: Title of project
 description: Description of project
+idea: true
 tags: ["Indoor","Outdoor"]
 levels: ["Beginner","Advanced"]
 places: ["Home","Office","Garden"]

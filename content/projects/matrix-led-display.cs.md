@@ -1,6 +1,7 @@
 ---
 title: Maticový LED displej
 description: "Zobrazuj hodnoty, texty, notifikace."
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home","School"]

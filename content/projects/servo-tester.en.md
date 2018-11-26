@@ -1,6 +1,7 @@
 ---
 title: Servo tester
 description: Test the servo motors with Core and Power Module
+idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "School"]

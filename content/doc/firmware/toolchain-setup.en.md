@@ -144,53 +144,22 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 ## Setup on Ubuntu
 
-{{% note "warning" %}}The following procedure has been tested on **Ubuntu 16.04 LTS** and **Ubuntu 18.04 LTS**.{{% /note %}}
+{{% note "warning" %}}The following procedure has been tested on **Ubuntu 18.04.1 LTS**.{{% /note %}}
 
 1. Open the **Terminal** application.
 
 2. Add the following PPA to the list of available repositories:
-  * **Ubuntu 16.04 LTS**
-        ```
-        sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
-        ```
 
-  * **Ubuntu 18.04 LTS**
-        ```
         sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
-        ```
-        ```
-        sudo gedit /etc/apt/sources.list.d/team-gcc-arm-embedded-ubuntu-ppa-bionic.list
-        ```
-        Delete all content and paste text down bellow, than save the document and continue tutorial
-        ```
-        deb http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu xenial main
-        # deb-src http://ppa.launchpad.net/team-gcc-arm-embedded/ppa/ubuntu xenial main
-        ```
 
 3. Update the index of the available packages:
 
         sudo apt update
 
 4. Install **GCC ARM Embedded**:
- * **Ubuntu 16.04 LTS**
 
-        ```
         sudo apt install gcc-arm-embedded
-        ```
- * **Ubuntu 18.04 LTS**
 
-        ```
-        wget "http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/libmpfr4_3.1.4-1_amd64.deb"
-        ```
-        ```
-        sudo dpkg -i libmpfr4_3.1.4-1_amd64.deb
-        ```
-        ```
-        sudo rm libmpfr4_3.1.4-1_amd64.deb
-        ```
-        ```
-        sudo apt install gcc-arm-embedded
-        ```
 5. Install **Git**:
 
         sudo apt install git

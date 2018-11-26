@@ -10,23 +10,22 @@
             <div class="text text--perex">
               <p>{{ .Params.description }}</p>
             </div>
-
-            <nav>
-                <ul class="intro__links d-flex justify-content-center">
-                    {{ range .Params.levels }}
-                      <li><a class="button button--tag button--tag--yellow">{{ . }}</a></li>
-                    {{ end }}
-                    {{ range .Params.tags }}
-                      <li><a class="button button--tag button--tag--custom">{{ . }}</a></li>
-                    {{ end }}
-                    {{ range .Params.places }}
-                      <li><a class="button button--tag button--tag--red">{{ . }}</a></li>
-                    {{ end }}
-                    {{ range .Params.devices }}
-                      <li><a class="button button--tag button--tag--gray">{{ . }}</a></li>
-                    {{ end }}
-                </ul>
-            </nav>
+            <div class="article__tags d-flex justify-content-center">
+              <ul>
+                  {{ range .Params.levels }}
+                    <li><a class="button button--tag button--tag--yellow">{{ . }}</a></li>
+                  {{ end }}
+                  {{ range .Params.tags }}
+                    <li><a class="button button--tag button--tag--custom">{{ . }}</a></li>
+                  {{ end }}
+                  {{ range .Params.places }}
+                    <li><a class="button button--tag button--tag--red">{{ . }}</a></li>
+                  {{ end }}
+                  {{ range .Params.devices }}
+                    <li><a class="button button--tag button--tag--gray">{{ . }}</a></li>
+                  {{ end }}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

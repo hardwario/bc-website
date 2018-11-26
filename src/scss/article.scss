@@ -343,9 +343,9 @@
   &__tags
   {
     line-height: 2*$baseline;
-    padding-top: $baseline;
-    padding-bottom: 2*$baseline;
-    border-bottom: 1px solid #dfdfdf;
+    padding-top: 0;
+    padding-bottom: $baseline;
+    //border-bottom: 1px solid #dfdfdf;
     //margin-bottom: 2*$baseline;
     margin-left: -5px;
     margin-bottom: 1*$baseline;

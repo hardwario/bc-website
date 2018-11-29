@@ -1,5 +1,5 @@
 ---
-title: Expander with eight relays
+title: Expander with 8 Relays
 description: Control up to 8 devices via the 1-Wire bus
 idea: false
 tags: ["Indoor"]
@@ -7,7 +7,7 @@ levels: ["Advanced"]
 places: ["Office"]
 devices: ["Custom Kit"]
 meta:
-  title: Ovládej až 8 zařízení přes 1-Wire sběrnici
+  title: Control up to 8 devices via the 1-Wire bus
   desciption: ""
 images:
   preview: /projects/1-wire-relay-expander/preview.jpg
@@ -26,16 +26,16 @@ author:
 
 ---
 
-Připojením modulu Denkovi "1-Wire 8 Relay Module" je možné ovládat silové spotřebiče. Příkaz pro sepnutí a rozepnutí relé se potom do Core Module posílá skrz MQTT bezdrátově.
+By connecting the Denkovi **1-Wire 8 Relay Module** expander it is now possible to control power devices. The commands for turning the relays off or on is sent wirelessly by sending **MQTT message**.
 
-### Co budeš potřebovat
+### What you need
 
 * {{< shop "Core Module" >}}
 * {{< shop "Sensor Module" >}}
 * {{< shop "Denkovi 1-Wire Relay" >}}
 
 
-### Reference
+### References
 
-* [Zdrojový kód](https://github.com/blavka/bcf-denkovi-1wire-relay)
-* [Ukázka komunikace](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples/onewire-relay)
+* [Source code](https://github.com/blavka/bcf-denkovi-1wire-relay)
+* [Communication example](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples/onewire-relay)

@@ -27,7 +27,7 @@ For those who just love their garden or flowers (and all the legal stuff ;))
 
 Watch the video to learn more about this project.  It uses the brand new capacitive sensor, which is fully digital, measuring soil moisture, temperature, and is totally reliable (the electronics is fully sealed).
 
-### Co budeš potřebovat
+### What you need
 
 * [Soil Moisture Sensor](https://shop.bigclown.com/soil-moisture-sensor/)
 * [Core Module](https://shop.bigclown.com/core-module/)

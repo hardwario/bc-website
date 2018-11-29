@@ -26,9 +26,9 @@ author:
 
 ---
 
-Pohybový senzor spustí fontánu jen když je kočka nablízku.
+Motion sensor turns on the **cat fountain** only when the cas is nearby.
 
-### Co budeš potřebovat
+### What you need
 
 * 2 x {{< shop "Core Module" >}}
 * {{< shop "PIR Module" >}}
@@ -36,6 +36,6 @@ Pohybový senzor spustí fontánu jen když je kočka nablízku.
 * {{< shop "Power Module" >}}
 * {{< shop "Radio Dongle" >}}
 
-## Reference
+## References
 
 * [Twitter post](https://twitter.com/vladimirmach/status/1044607821684379648)

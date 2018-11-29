@@ -26,15 +26,15 @@ author:
 
 ---
 
-Infra Grid Module obsahuje 8x8 pixelů infrakameru, která umožňuje bezkontaktní snímání teploty v rozsahu 0 - 85 °C.
+Infragrid Module is a 8x8 pixels thermal camera. It allows contactless temperature measurement in the range 0 - 85 °C.
 
-### Co budeš potřebovat
+### What you need
 
 * {{< shop "Core Module" >}}
 * {{< shop "Infra Grid Module" >}}
-* {{< shop "LCD Module" >}} nebo libovolný displej
+* {{< shop "Split Module" >}}
+* {{< shop "LCD Module" >}} or any display
 
-### Reference
+### References
 
-* [Zdrojový kód](https://github.com/blavka/bcf-denkovi-1wire-relay)
-* [Ukázka komunikace](https://github.com/bigclownlabs/bcf-sdk/tree/master/_examples/onewire-relay)
+* [Example sourcecode](https://github.com/hubmartin/bcf-infra-grid-lcd-mirror)

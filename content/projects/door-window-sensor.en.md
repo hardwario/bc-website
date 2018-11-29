@@ -1,5 +1,5 @@
 ---
-title: Sensor of open window and door
+title: Sensor of Opened Doors and Windows
 description: "Detect long-time open windows or doors"
 idea: false
 tags: ["Indoor"]
@@ -7,7 +7,7 @@ levels: ["Advanced"]
 places: ["Home", "Office", "School"]
 devices: ["Custom Kit"]
 meta:
-  title: Bazénový teplotní senzor
+  title: Sensor of open window and door
   desciption: ""
 images:
   preview: /projects/door-window-sensor/preview.jpg
@@ -26,20 +26,20 @@ author:
 
 ---
 
-Například pro vypnutí vytápění, nebo varování, že jsou dveře otevřené dlouhou dobu, nebo pozdě večer.
+With this sensor you can detect oepend doors, windows and cookie drawers! It is perfect to get notification for example the garage doors are opened for a long time in the night.
 
-### Co budeš potřebovat
+### What You Need
 
 * {{< shop "Core Module" >}}
 * {{< shop "Mini Battery Module" >}}
 * {{< shop "Sensor Module" >}}
-* Magnetický senzor NO nebo NC, mechanický spínač. Například na šrubování SA-201A nebo lepení SA-203A
+* Magnetic sensor NO (normally opened) or NC (normally closed) or any mechanical switch. Magnetic contact with screws SA-201A or adhesive tape SA-203A
 
 ### Firmware
 
-Lze použít již hotový firmware `bcf-radio-door-sensor`.
+You can use firmware `bcf-radio-door-sensor`. Flash the Core Module with BigClown Playground application.
 
-### Reference
+### References
 
-* [Projekt](https://www.bigclown.com/doc/projects/radio-door-sensor/)
-* [Zdrojový kód](https://github.com/bigclownlabs/bcf-radio-door-sensor)
+* [Project](https://www.bigclown.com/doc/projects/radio-door-sensor/)
+* [Source code](https://github.com/bigclownlabs/bcf-radio-door-sensor)

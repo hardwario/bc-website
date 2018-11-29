@@ -26,14 +26,16 @@ author:
 
 ---
 
-### Co budeš potřebovat
+Get a notification when your place gets wet. You can also get a complete {{< shop "Flood Detector Kit" >}}.
+
+### What you need
 
 * {{< shop "Core Module" >}}
 * {{< shop "Mini Battery Module" >}}
 * {{< shop "Sensor Module" >}}
 * {{< shop "Flood Detector LD-81" >}}
-* [Krabičku 502](https://shop.bigclown.com/3d-printed-enclosure-502/)
+* [Enclosure 502](https://shop.bigclown.com/3d-printed-enclosure-502/)
 
-### Reference
+### References
 
-* [Projekt](https://www.bigclown.com/doc/projects/radio-flood-detector/)
+* [Project](https://www.bigclown.com/doc/projects/radio-flood-detector/)

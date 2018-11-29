@@ -26,12 +26,16 @@ author:
 
 ---
 
-Bezdrátový senzor který měří teplotu vody v bazénu s pomocí DS18B20 teplotního čidla. Zároveň z Climate Module posílá data o teplotě vzduchu, vlhkosti, světle a tlaku.
+Wireless sensor measures pool water temperature using DS18B20 digital temperature sensor. Also thanks to the attached Climate Module you also measure air temperature, humidity, illumannce and pressure.
 
-### Co budeš potřebovat
+### What you need
 
 * {{< shop "Core Module" >}}
 * {{< shop "Climate Module" >}}
 * {{< shop "Mini Battery Module" >}}
 * {{< shop "Sensor Module" >}}
 * {{< shop "DS18B20 Temperature Sensor" >}}
+
+### References
+
+* [Example sourcecode](https://github.com/hubmartin/bcf-kit-wireless-pool-sensor)

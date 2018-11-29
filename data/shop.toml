@@ -54,6 +54,11 @@ en = "https://shop.bigclown.com/co2-module"
 cs = "https://obchod.bigclown.cz/co2-module"
 
 [[products]]
+title = "Compact Split Module"
+en = "https://shop.bigclown.com/compact-split-module"
+cs = "https://obchod.bigclown.cz/compact-split-module"
+
+[[products]]
 title = "Core Module"
 en = "https://shop.bigclown.com/core-module"
 cs = "https://obchod.bigclown.cz/core-module"
@@ -74,6 +79,11 @@ en = "https://shop.bigclown.com/encoder-module"
 cs = "https://obchod.bigclown.cz/encoder-module"
 
 [[products]]
+title = "Flood Detector Kit"
+en = "https://shop.bigclown.com/flood-detector-kit"
+cs = "https://obchod.bigclown.cz/flood-detector-kit"
+
+[[products]]
 title = "Flood Detector LD-81"
 en = "https://shop.bigclown.com/flood-detector-ld-81"
 cs = "https://obchod.bigclown.cz/flood-detector-ld-81"
@@ -92,6 +102,16 @@ cs = "https://obchod.bigclown.cz/infra-grid-module"
 title = "LCD Module"
 en = "https://shop.bigclown.com/lcd-module-bg"
 cs = "https://obchod.bigclown.cz/lcd-module-bg"
+
+[[products]]
+title = "LCD Module"
+en = "https://shop.bigclown.com/lcd-module-bg"
+cs = "https://obchod.bigclown.cz/lcd-module-bg"
+
+[[products]]
+title = "LED Strip RGBW 1m 144 LEDs"
+en = "https://shop.bigclown.com/led-strip-rgbw-1m-144-leds"
+cs = "https://obchod.bigclown.cz/led-strip-rgbw-1m-144-leds"
 
 [[products]]
 title = "LoRa Module"
@@ -157,6 +177,16 @@ cs = "https://obchod.bigclown.cz/sensor-module"
 title = "Sigfox Module"
 en = "https://shop.bigclown.com/sigfox-module"
 cs = "https://obchod.bigclown.cz/sigfox-module"
+
+[[products]]
+title = "Soil Sensor"
+en = "https://shop.bigclown.com/soil-sensor"
+cs = "https://obchod.bigclown.cz/soil-sensor"
+
+[[products]]
+title = "Split Module"
+en = "https://shop.bigclown.com/split-module"
+cs = "https://obchod.bigclown.cz/split-module"
 
 [[products]]
 title = "Soil Sensor"

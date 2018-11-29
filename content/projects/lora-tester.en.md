@@ -26,15 +26,15 @@ author:
 
 ---
 
-LoRa Module spolu s LCD Module umožňuje vyrobit jednoduchý a kompaktní tester pro otestování gateway.
+LoRa Module together with LCD Module allows you to build simple and very compact LoRa gateway tester.
 
-### Co budeš potřebovat
+### What you need
 
 * {{< shop "Core Module" >}}
 * {{< shop "LoRa Module" >}}
 * {{< shop "LCD Module" >}}
 * {{< shop "Mini Battery Module" >}}
 
-### Reference
+### References
 
-* [Zdrojový kód](https://github.com/hubmartin/bcf-lora-tester)
+* [Example sourcecode](https://github.com/hubmartin/bcf-lora-tester)

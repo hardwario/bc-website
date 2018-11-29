@@ -1,6 +1,6 @@
 ---
 title: Matrix LED display
-description: "Show values, texts, notifications."
+description: "Show values, text, notification"
 idea: false
 tags: ["Indoor"]
 levels: ["Advanced"]
@@ -26,15 +26,15 @@ author:
 
 ---
 
-Bezdrátový displej, který zobrazí text, čas nebo naměřené hodnoty. Snadno jde možné jej prodloužit dalšími moduly a vytvořit tak delší, nebo i vyšší displej.
+Wireless LED display that can show any text, time or measured values from your home. It is easily scalable so you can build longer or higher display if you like. Display is connected over fast SPI interface.
 
-### Co budeš potřebovat
+### What you need
 
 * {{< shop "Core Module" >}}
-* Maticový displej "Matrix Grid LED Display Module 8x32" s obvodem max7219
-* Drátky s dutinkami a kolíčky
-* MicroUSB kabel nebo napájecí adaptér
+* Matrix LED display "Matrix Grid LED Display Module 8x32" with max7219 chip
+* Dupont wires
+* MicroUSB cable or microUSB power adapter
 
-## Reference
+## References
 
-* [Zdrojový kód](https://github.com/hubmartin/bcf-led-matrix-max7219)
+* [Example sourcecode](https://github.com/hubmartin/bcf-led-matrix-max7219)

@@ -22,19 +22,18 @@ author:
 
 ---
 
-Noční příchody domů i cestu na toaletu si můžeš zjednodušit automatickým rozsvícením světel. Doma využítám světla IKEA a tak jsem se rozhodl využít svůj Motion Detector Kit, který používám jako alarm.
+When you get home at dark, your light can automatically turn on. Thanks to IKEA lights and Motion Detector Kit you can set the rules to control the lights.
 
-### Použil jsem tyto věci:
+
+### What you need
 
 * [Motion Detector Kit](https://shop.bigclown.com/motion-detector-kit/)
-* Chytré osvětlení [IKEA TRÅDFRI](https://www.ikea.com/cz/cs/catalog/categories/departments/lighting/smart_lighting/)
-* a samozřejmě [Radio Dongle](https://shop.bigclown.com/radio-dongle/), pokud ještě žádný nemáš
+* Smart Lights [IKEA TRÅDFRI](https://www.ikea.com/cz/cs/catalog/categories/departments/lighting/smart_lighting/)
+* [Radio Dongle](https://shop.bigclown.com/radio-dongle/)
 
-### Realizace projektu pak byla jednoduchá:
+### Set-up
 
-* Motion Detector jsem spároval se svým BigClown Hubem.
-* Pomocí Node-Red jsem vytvořil propojení s Apple Homekit.
-* K Apple HomeKit jsem připojil světla IKEA.
-* Vytvořil jsem automatizaci pro rozsvícení při detekování pohybu.
-
-Chceš zrealizovat stejný projekt a nevíš jak? Napiš nám, rádi ti se vším pomůžeme!
+* Motion Detector is paired with my BigClown Hub
+* In the Node-RED I set-up connection to my Apple HomeKit
+* I've connected the IKEA light to my Apple HomeKit
+* I've added event that turns on the light when the motion is detected

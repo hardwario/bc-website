@@ -26,20 +26,20 @@ author:
 
 ---
 
-Získej notifikaci, když pošťák otevře schránku a vloží dopis. S pomocí Blynku je to snadné. Navíc můžeš použít i druhý vstup Sensor Module a zapojit jej na boční dvířka pro vybrání schránky. Pak je možné monitorovat i kdy byla naposledy dopisy ze schránky vybrány.
+Get a notification in a moment, when the postman opens your mailbox and puts a letter inside. You can also use the second mechanical switch to detect when you open the side-doors to clear the state that the mailbox is full.
 
-### Co budeš potřebovat
+### What you need
 
 * {{< shop "Core Module" >}}
 * {{< shop "Mini Battery Module" >}}
 * {{< shop "Sensor Module" >}}
-* Mechanický mikrospínač NO nebo NC
+* Magnetic or mechanical swithc NO or NC (normally opened/closed)
 
 ### Firmware
 
-Lze použít již hotový firmware `bcf-radio-door-sensor`.
+You can use already prepared firmware `bcf-radio-door-sensor`.
 
-### Reference
+### References
 
-* [Projekt](https://www.bigclown.com/doc/projects/radio-door-sensor/)
-* [Zdrojový kód](https://github.com/bigclownlabs/bcf-radio-door-sensor)
+* [Project](https://www.bigclown.com/doc/projects/radio-door-sensor/)
+* [Sourcecode](https://github.com/bigclownlabs/bcf-radio-door-sensor)

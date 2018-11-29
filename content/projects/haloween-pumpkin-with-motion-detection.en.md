@@ -22,10 +22,17 @@ author:
 
 ---
 
-### Co budeš potřebovat
+Create a pumpkin that definitely can scare you neighbors. With a **motion sensor**, **digital RGBW LED** strip and **servo motor** that will open the top lid.
 
-* Dýni
-* [Core Module](https://shop.bigclown.com/core-module/)
-* [PIR Module](https://shop.bigclown.com/sensor-module/) pro detekci pohybu
-* [Mini Battery module](https://shop.bigclown.com/min-battery-module/)
-* a samozřejmě [Radio Dongle](https://shop.bigclown.com/radio-dongle/), pokud ještě žádný nemáš
+### What you need
+
+* Pumpkin
+* {{< shop "Core Module" >}}
+* {{< shop "Power Module" >}}
+* {{< shop "LED Strip RGBW 1m 144 LEDs" >}}
+* {{< shop "PIR Module" >}}
+* {{< shop "Radio Dongle" >}}
+
+### References
+
+* [Step-by-step instructions how to build the pumpkin](https://www.hackster.io/bigclown/scary-iot-pumpkin-with-motion-triggered-servo-dbdce5)

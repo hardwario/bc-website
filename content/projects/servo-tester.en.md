@@ -26,16 +26,16 @@ author:
 
 ---
 
-Místo digitálních LED pásků je možné na stejný konektor zapojit i servo motor. Další motory je možné zapojit jejich signály na GPIO piny Core Module. Celkem je možné hardwarově generovat signál až pro 9 motorů. PWM výstupy lze najít v [popisu pinů](/doc/hardware/header-pinout/).
+You can connect regular servo motor instead of smart digital LED strip to the Power Module. More motors can be connected to other PWM GPIO pins on the Core Module. You can control up to 9 servo motors thanks to hardware PWM. Please see [pin description](/doc/hardware/header-pinout/).
 
-### Co budeš potřebovat
+### What you need
 
 * {{< shop "Core Module" >}}
 * {{< shop "Power Module" >}}
-* Libovolný servo motor
+* Any servo motor
 
 
-### Reference
+### References
 
-* [Zdrojový kód](https://github.com/blavka/bcf-test-servo)
-* [Jak na servo motor](https://www.bigclown.com/doc/firmware/how-to-servo-motor/)
+* [Example sourcecode](https://github.com/blavka/bcf-test-servo)
+* [How To: Servo motor](https://www.bigclown.com/doc/firmware/how-to-servo-motor/)

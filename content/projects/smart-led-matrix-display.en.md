@@ -26,18 +26,18 @@ author:
 
 ---
 
-S použitím GFX grafické knihovny lze použít grafické funkce na jakýkoliv displej nebo zobrazovaní prvek.
+With GFX grafical library you can use graphical drawing functions for any display.
 
 <div style="width:50%">
 {{< img src="/projects/smart-led-matrix-display/123.jpg" >}}
 </div>
 
-### Co budeš potřebovat
+### What you need
 
 * {{< shop "Core Module" >}}
 * {{< shop "Power Module" >}}
-* Maticový displej s WS2812B kompatibilních LED
+* Matrix lcd with WS2812B compatible LED
 
-### Reference
+### References
 
-* [Zdrojový kód](https://github.com/hubmartin/bcf-grid-eye-display)
+* [Example sourcecode](https://github.com/hubmartin/bcf-grid-eye-display)

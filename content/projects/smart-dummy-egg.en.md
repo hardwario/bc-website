@@ -26,9 +26,14 @@ author:
 
 ---
 
-Falešné vejce, které monitoruje a zaznamenává údaje o teplotě a s pomocí akcelerometru na Core Module i jeho orientaci. Data se ukládají do databáze Influx, kde se později vyhodnocují nástrojem Grafana
+Dummy egg that monitors and saves measured temperature and orientation with an accelerometer. Data are saved to the InfluxDB and are then displayed with Grafana.
+
 
 ### Co budeš potřebovat
 
 * {{< shop "Core Module" >}}
 * {{< shop "Mini Battery Module" >}}
+
+### References
+
+* Grafana integration in documentation

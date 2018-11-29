@@ -2,14 +2,12 @@
 date: "2018-08-30"
 title: "Servo Motor and PWM Library"
 description: "Control servo motors and LED brightness with pulse width modulation."
-images:
-    preview: "preview.png"
-    main: "main.png"
-author:
-    name: "Martin Hubáček"
-    post: "Firmware Designer"
-    email: "martin.hubacek@hardwario.com"
-    image: "martin.jpg"
+image_preview: "preview.png"
+image_main: "main.png"
+author_name: "Martin Hubáček"
+author_post: "Firmware Designer"
+author_email: "martin.hubacek@hardwario.com"
+author_image: "martin.jpg"
 ---
 
 Hello, we have published [**PWM library**](http://sdk.bigclown.com/group__bc__pwm.html) and [**servo motor library**](http://sdk.bigclown.com/group__bc__servo.html) in the latest **BigClown SDK**.

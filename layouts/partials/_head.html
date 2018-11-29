@@ -38,7 +38,7 @@
     <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Blog RSS feed" />
     <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }} Blog RSS feed" />
   {{ end }}
-
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   {{ if hasPrefix .Permalink .Site.Params.productionURL }}

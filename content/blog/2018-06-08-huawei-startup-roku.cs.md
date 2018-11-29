@@ -2,14 +2,12 @@
 date: "2018-06-08"
 title: "Jsme Huawei Startup roku!"
 description: "V soutěži Vodafone Nápad roku jsme se umístili na 5. místě a vyhráli v kategorii Startup roku."
-images:
-    preview: "preview.jpg"
-    main: "main.jpg"
-author:
-    name: "Lukáš Fabik"
-    post: "Digital Clown"
-    email: "lukas.fabikk@hardwario.com"
-    image: "lukas.jpg"
+image_preview: "preview.jpg"
+image_main: "main.jpg"
+author_name: "Lukáš Fabik"
+author_post: "Digital Clown"
+author_email: "lukas.fabikk@hardwario.com"
+author_image: "lukas.jpg"
 ---
 
 V letošním roce 2018 jsme se rozhodli zúčastnit soutěže **Vodafone Nápad roku** a v konkurenci 192 přihlášených projektů jsme probojovali až mezi finálních 12 nápadů a celkově jsme obsadili **skvělé 5. místo**.

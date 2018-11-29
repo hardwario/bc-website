@@ -2,14 +2,12 @@
 date: "2018-06-27"
 title: "Maker Faire v Praze je za námi!"
 description: "Víkend 23. a 24. června jsme strávili na výstavišti v Praze. Jaké to bylo?"
-images:
-    preview: "preview.jpg"
-    main: "main.jpg"
-author:
-    name: "Lukáš Fabik"
-    post: "Digital Clown"
-    email: "lukas.fabikk@hardwario.com"
-    image: "lukas.jpg"
+image_preview: "preview.jpg"
+image_main: "main.jpg"
+author_name: "Lukáš Fabik"
+author_post: "Digital Clown"
+author_email: "lukas.fabikk@hardwario.com"
+author_image: "lukas.jpg"
 ---
 
 O víkendu 23. a 24. června proběhl v Praze na výstavišti v Holešovicích historicky první Maker Faire v České republice. Po zkušenostech z Berlínského Maker Fairu 2017 a 2018 jsme byli zvědaví, jaký bude ten český. A byl ultra grandiózně skvělý!

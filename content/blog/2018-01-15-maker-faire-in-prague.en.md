@@ -2,14 +2,12 @@
 date: "2018-01-15"
 title: "Maker Faire in Prague"
 description: "For the first time in the history, experience the epic Maker Faire in Prague"
-images:
-    preview: "preview.jpg"
-    main: "main.jpg"
-author:
-    name: "Pavel Hübner"
-    post: "CTO & Co-Founder"
-    email: "pavel.hubner@hardwario.com"
-    image: "pavel.jpg"
+image_preview: "preview.jpg"
+image_main: "main.jpg"
+author_name: "Pavel Hübner"
+author_post: "CTO & Co-Founder"
+author_email: "pavel.hubner@hardwario.com"
+author_image: "pavel.jpg"
 ---
 
 Hi guys,

@@ -2,14 +2,12 @@
 date: "2018-03-05"
 title: "BigClown video review by VoltLog"
 description: "Video series of unboxing and first project."
-images:
-    preview: "preview.jpg"
-    main: "main.jpg"
-author:
-    name: "Martin Hubáček"
-    post: "Firmware Designer"
-    email: "martin.hubacek@hardwario.com"
-    image: "martin.jpg"
+image_preview: "preview.jpg"
+image_main: "main.jpg"
+author_name: "Martin Hubáček"
+author_post: "Firmware Designer"
+author_email: "martin.hubacek@hardwario.com"
+author_image: "martin.jpg"
 ---
 
 We have sent BigClown demo suitcase to Florin who does nice electronics videos on his YouTube channel [VolLog](https://www.youtube.com/channel/UCdXHgsCiql_78oT5ydXWvzA).

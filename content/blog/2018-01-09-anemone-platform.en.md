@@ -2,14 +2,12 @@
 date: "2018-01-09"
 title: "Anemone Platform"
 description: "The new platform and ecosystem targeting not only the fintech startups"
-images:
-    preview: "preview.png"
-    main: "main.png"
-author:
-    name: "Pavel Hübner"
-    post: "CTO & Co-Founder"
-    email: "pavel.hubner@hardwario.com"
-    image: "pavel.jpg"
+image_preview: "preview.png"
+image_main: "main.png"
+author_name: "Pavel Hübner"
+author_post: "CTO & Co-Founder"
+author_email: "pavel.hubner@hardwario.com"
+author_image: "pavel.jpg"
 ---
 
 Dear friends,

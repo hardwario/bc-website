@@ -2,14 +2,12 @@
 date: "2018-04-17"
 title: "BigClown Took First Place In LoRa Hackathon"
 description: "BigClown team quickly created interesting solution usign the new LoRa Module."
-images:
-    preview: "preview.jpg"
-    main: "main.jpg"
-author:
-    name: "Martin Hubáček"
-    post: "Firmware Designer"
-    email: "martin.hubacek@hardwario.com"
-    image: "martin.jpg"
+image_preview: "preview.jpg"
+image_main: "main.jpg"
+author_name: "Martin Hubáček"
+author_post: "Firmware Designer"
+author_email: "martin.hubacek@hardwario.com"
+author_image: "martin.jpg"
 ---
 
 BigClown team took part in the LoRaWAN hackaton organized by [České Radiokomunikace](https://www.cra.cz/). The story behind the presented project was not so simple. First we had plans to use the new {{< shop "VOC Tag">}} to measure the smell the quality of air in the room. We could simply re-use all the code in already done [Wireless VOC sensor project]({{< relref "/doc/projects/radio-voc-sensor.en.md" >}}).

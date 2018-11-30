@@ -6,23 +6,12 @@ tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "Office", "School"]
 devices: ["Custom Kit"]
-meta:
-  title: Sensor of open window and door
-  desciption: ""
-images:
-  preview: /projects/door-window-sensor/preview.jpg
-  main: /projects/door-window-sensor/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/door-window-sensor/preview.jpg
+image_main: /projects/door-window-sensor/main.jpg
+author_name: Martin Hubáček
+author_post:
+author_email: martin.hubacek@hardwario.com
+author_image: /authors/martin.jpg
 
 ---
 

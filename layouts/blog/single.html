@@ -23,9 +23,10 @@
 
             <div class="d-flex justify-content-center">
               <div class="article__author d-flex flex-column justify-content-center">
-                <img src="/authors/{{ .Params.author_image }}" alt="{{ .Params.author_name }}" />
-                <strong>{{ .Params.author_name }}</strong>
-                <span>{{ .Params.author_post }}</span>
+                {{ $author := index $.Site.Data.authors .Params.author }}
+                <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
+                <strong>{{ $author.name }}</strong>
+                <span>{{ $author.post }}</span>
               </div>
             </div>
           </div>
@@ -54,9 +55,9 @@
         <div class="row">
           <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">
             <div class="article__author article__author--bottom d-flex flex-column justify-content-center">
-              <img src="/authors/{{ .Params.author_image }}" alt="{{ .Params.author_name }}" />
-              <strong>{{ .Params.author_name }}</strong>
-              <span>{{ .Params.author_post }}</span>
+              <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
+              <strong>{{ $author.name }}</strong>
+              <span>{{ $author.post }}</span>
             </div>
           </div>
           <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">

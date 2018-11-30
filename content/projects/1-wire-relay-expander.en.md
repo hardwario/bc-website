@@ -6,23 +6,12 @@ tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Office"]
 devices: ["Custom Kit"]
-meta:
-  title: Control up to 8 devices via the 1-Wire bus
-  desciption: ""
-images:
-  preview: /projects/1-wire-relay-expander/preview.jpg
-  main: /projects/1-wire-relay-expander/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/1-wire-relay-expander/preview.jpg
+image_main: /projects/1-wire-relay-expander/main.jpg
+author_name: Martin Hubáček
+author_post:
+author_email: martin.hubacek@hardwario.com
+author_image: /authors/martin.jpg
 
 ---
 

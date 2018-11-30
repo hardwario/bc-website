@@ -4,10 +4,7 @@ title: "Soil Sensor"
 description: "New modern sensor to monitor soil moisture and temperature in your garden and flowerpots."
 image_preview: "preview.png"
 image_main: "main.jpg"
-author_name: "Pavel Hübner"
-author_post: "CTO & Co-Founder"
-author_email: "pavel.hubner@hardwario.com"
-author_image: "pavel.jpg"
+author: "pavel_hubner"
 ---
 
 

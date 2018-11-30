@@ -4,10 +4,7 @@ title: "Maker Faire in Prague"
 description: "For the first time in the history, experience the epic Maker Faire in Prague"
 image_preview: "preview.jpg"
 image_main: "main.jpg"
-author_name: "Pavel Hübner"
-author_post: "CTO & Co-Founder"
-author_email: "pavel.hubner@hardwario.com"
-author_image: "pavel.jpg"
+author: "pavel_hubner"
 ---
 
 Hi guys,

@@ -4,10 +4,7 @@ title: "Grand Video Tutorial"
 description: "This video will demonstrate Node-RED, smart LED strip control and much more..."
 image_preview: "preview.jpg"
 image_main: "main.jpg"
-author_name: "Pavel Hübner"
-author_post: "CTO & Co-Founder"
-author_email: "pavel.hubner@hardwario.com"
-author_image: "pavel.jpg"
+author: "pavel_hubner"
 ---
 
 Hey guys,

@@ -6,24 +6,12 @@ tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home"]
 devices: ["Custom Kit"]
-meta:
-  title: Bazénový teplotní senzor
-  desciption: ""
-images:
-  preview: /projects/cat-fountain/preview.jpg
-  main: /projects/cat-fountain/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
-
+image_preview: /projects/cat-fountain/preview.jpg
+image_main: /projects/cat-fountain/main.jpg
+author_name: Martin Hubáček
+author_post:
+author_email: martin.hubacek@hardwario.com
+author_image: /authors/martin.jpg
 ---
 
 Motion sensor turns on the **cat fountain** only when the cas is nearby.

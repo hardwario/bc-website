@@ -6,24 +6,12 @@ tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Office"]
 devices: ["Custom Kit"]
-meta:
-  title: Ovládej až 8 zařízení přes 1-Wire sběrnici
-  desciption: ""
-images:
-  preview: /projects/1-wire-relay-expander/preview.jpg
-  main: /projects/1-wire-relay-expander/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
-
+images_preview: /projects/1-wire-relay-expander/preview.jpg
+images_main: /projects/1-wire-relay-expander/main.jpg
+author_name: Martin Hubáček
+author_post:
+author_email: martin.hubacek@hardwario.com
+author_image: /authors/martin.jpg
 ---
 
 Připojením modulu Denkovi "1-Wire 8 Relay Module" je možné ovládat silové spotřebiče. Příkaz pro sepnutí a rozepnutí relé se potom do Core Module posílá skrz MQTT bezdrátově.

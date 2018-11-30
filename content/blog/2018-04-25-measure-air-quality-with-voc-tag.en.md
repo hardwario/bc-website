@@ -4,10 +4,7 @@ title: "Measure Air Quality With VOC Tag"
 description: "VOC multi pixel gas sensor SGP30 from Sensirion"
 image_preview: "preview.jpg"
 image_main: "main.jpg"
-author_name: "Martin Hubáček"
-author_post: "Firmware Designer"
-author_email: "martin.hubacek@hardwario.com"
-author_image: "martin.jpg"
+author: "martin_hubacek"
 ---
 
 

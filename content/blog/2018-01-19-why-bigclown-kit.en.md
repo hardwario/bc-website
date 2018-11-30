@@ -4,10 +4,7 @@ title: "Why BigClown Kit"
 description: "Why Did We Create BigClown?"
 image_preview: "preview.jpg"
 image_main: "main.jpg"
-author_name: "Michal Mühlpachr"
-author_post: "System Architect"
-author_email: "michal.muhlpachr@hardwario.com"
-author_image: "michal.jpg"
+author: "michal_muhlpachr"
 ---
 
 Reading some discussions under the articles about the BigClown IoT Kit inspired me to write about reasons why we started and keep developing the BigClown IoT Kit. I would like to use this article for future references  to avoid repeating myself. Just as many others - this contribution is driven by a laziness ;-)

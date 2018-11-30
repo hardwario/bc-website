@@ -4,10 +4,7 @@ title: "BigClown Playground"
 description: "The new multi-platform graphical application to manage all BigClown devices."
 image_preview: "preview.png"
 image_main: "main.png"
-author_name: "Martin Hubáček"
-author_post: "Firmware Designer"
-author_email: "martin.hubacek@hardwario.com"
-author_image: "martin.jpg"
+author: "martin_hubacek"
 ---
 
 We have released a new graphical application [**BigClown Playground**](https://github.com/bigclownlabs/bch-playground/releases) which contains everything you need in a one package. Create rules and flows in the Node-RED, upload new firmware to the **Core Module 2**, manage the radio paired nodes.

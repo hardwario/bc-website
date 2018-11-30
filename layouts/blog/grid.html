@@ -10,8 +10,9 @@
       <p class="articles__text articles__text--2">{{ .Params.description }}</p>
     </div>
     <div class="articles__author d-flex align-items-center">
-      <div class="articles__author__image"><img src="/authors/{{ .Params.author_image }}" alt="{{ .Params.author_name }}" /></div>
-      <div class="articles__author__title">{{ .Params.author_name }}</div>
+      {{ $author := index $.Site.Data.authors .Params.author }}
+      <div class="articles__author__image"><img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" /></div>
+      <div class="articles__author__title">{{ $author.name }}</div>
       <div class="ml-auto articles__author__time">
         {{ if eq .Lang "cs" }}
           {{ .Date.Day }}. {{ index $.Site.Data.mesice (printf "%d" .Date.Month) }} {{ .Date.Year }}

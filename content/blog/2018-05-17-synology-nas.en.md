@@ -4,10 +4,7 @@ title: "Synology NAS With BigClown Gateway"
 description: "Another use of your NAS storage in a home network."
 image_preview: "preview.jpg"
 image_main: "main.jpg"
-author_name: "Martin Hubáček"
-author_post: "Firmware Designer"
-author_email: "martin.hubacek@hardwario.com"
-author_image: "martin.jpg"
+author: "martin_hubacek"
 ---
 
 Because I continue to improve my home with BigClown and I need more permanent solution to save and visualize measured data. I have Synology NAS running 24/7 so I've explored possibilities of running **BigClown Gateway** with **Grafana** and **Node-RED**.

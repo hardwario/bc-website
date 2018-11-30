@@ -4,10 +4,7 @@ title: "Reasons Behind Indiegogo"
 description: "The explanation what makes us to promote BigClown in a crowdfunding campaign"
 image_preview: "preview.jpg"
 image_main: "main.jpg"
-author_name: "Alan Fabik"
-author_post: "CEO & Co-Founder"
-author_email: "alan.fabik@hardwario.com"
-author_image: "alan.jpg"
+author: "alan_fabik"
 ---
 
 Hey guys,

@@ -2,8 +2,8 @@
 date: "2018-05-17"
 title: "Synology NAS With BigClown Gateway"
 description: "Another use of your NAS storage in a home network."
-image_preview: "preview.jpg"
-image_main: "main.jpg"
+image_preview: "/blog/2018-05-17-synology-nas/preview.jpg"
+image_main: "/blog/2018-05-17-synology-nas/main.jpg"
 author: "martin_hubacek"
 ---
 

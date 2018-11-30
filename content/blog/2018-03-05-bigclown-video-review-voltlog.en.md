@@ -2,8 +2,8 @@
 date: "2018-03-05"
 title: "BigClown video review by VoltLog"
 description: "Video series of unboxing and first project."
-image_preview: "preview.jpg"
-image_main: "main.jpg"
+image_preview: "/blog/2018-03-05-bigclown-video-review-voltlog/preview.jpg"
+image_main: "/blog/2018-03-05-bigclown-video-review-voltlog/main.jpg"
 author: "martin_hubacek"
 ---
 

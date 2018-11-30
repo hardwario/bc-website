@@ -2,8 +2,8 @@
 date: "2017-12-05"
 title: "Reasons Behind Indiegogo"
 description: "The explanation what makes us to promote BigClown in a crowdfunding campaign"
-image_preview: "preview.jpg"
-image_main: "main.jpg"
+image_preview: "/blog/2017-12-05-reasons-behind-indiegogo/preview.jpg"
+image_main: "/blog/2017-12-05-reasons-behind-indiegogo/main.jpg"
 author: "alan_fabik"
 ---
 

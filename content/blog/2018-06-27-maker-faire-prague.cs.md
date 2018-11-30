@@ -2,8 +2,8 @@
 date: "2018-06-27"
 title: "Maker Faire v Praze je za námi!"
 description: "Víkend 23. a 24. června jsme strávili na výstavišti v Praze. Jaké to bylo?"
-image_preview: "preview.jpg"
-image_main: "main.jpg"
+image_preview: "/blog/2018-06-27-maker-faire-prague/preview.jpg"
+image_main: "/blog/2018-06-27-maker-faire-prague/main.jpg"
 author: "lukas_fabik"
 ---
 

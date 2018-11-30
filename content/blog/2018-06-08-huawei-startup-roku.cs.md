@@ -2,8 +2,8 @@
 date: "2018-06-08"
 title: "Jsme Huawei Startup roku!"
 description: "V soutěži Vodafone Nápad roku jsme se umístili na 5. místě a vyhráli v kategorii Startup roku."
-image_preview: "preview.jpg"
-image_main: "main.jpg"
+image_preview: "/blog/2018-06-08-huawei-startup-roku/preview.jpg"
+image_main: "/blog/2018-06-08-huawei-startup-roku/main.jpg"
 author: "lukas_fabik"
 ---
 

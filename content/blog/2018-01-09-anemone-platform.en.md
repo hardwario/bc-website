@@ -2,8 +2,8 @@
 date: "2018-01-09"
 title: "Anemone Platform"
 description: "The new platform and ecosystem targeting not only the fintech startups"
-image_preview: "preview.png"
-image_main: "main.png"
+image_preview: "/blog/2018-01-09-anemone-platform/preview.png"
+image_main: "/blog/2018-01-09-anemone-platform/main.png"
 author: "pavel_hubner"
 ---
 

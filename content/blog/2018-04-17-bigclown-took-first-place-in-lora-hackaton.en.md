@@ -2,8 +2,8 @@
 date: "2018-04-17"
 title: "BigClown Took First Place In LoRa Hackathon"
 description: "BigClown team quickly created interesting solution usign the new LoRa Module."
-image_preview: "preview.jpg"
-image_main: "main.jpg"
+image_preview: "/blog/2018-04-17-bigclown-took-first-place-in-lora-hackaton/preview.jpg"
+image_main: "/blog/2018-04-17-bigclown-took-first-place-in-lora-hackaton/main.jpg"
 author: "martin_hubacek"
 ---
 

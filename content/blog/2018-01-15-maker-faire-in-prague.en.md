@@ -2,8 +2,8 @@
 date: "2018-01-15"
 title: "Maker Faire in Prague"
 description: "For the first time in the history, experience the epic Maker Faire in Prague"
-image_preview: "preview.jpg"
-image_main: "main.jpg"
+image_preview: "/blog/2018-01-15-maker-faire-in-prague/preview.jpg"
+image_main: "/blog/2018-01-15-maker-faire-in-prague/main.jpg"
 author: "pavel_hubner"
 ---
 

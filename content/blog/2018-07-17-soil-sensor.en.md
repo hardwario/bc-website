@@ -2,8 +2,8 @@
 date: "2018-07-17"
 title: "Soil Sensor"
 description: "New modern sensor to monitor soil moisture and temperature in your garden and flowerpots."
-image_preview: "preview.png"
-image_main: "main.jpg"
+image_preview: "/blog/2018-07-17-soil-sensor/preview.png"
+image_main: "/blog/2018-07-17-soil-sensor/main.jpg"
 author: "pavel_hubner"
 ---
 

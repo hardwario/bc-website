@@ -2,8 +2,8 @@
 date: "2018-01-19"
 title: "Why BigClown Kit"
 description: "Why Did We Create BigClown?"
-image_preview: "preview.jpg"
-image_main: "main.jpg"
+image_preview: "/blog/2018-01-19-why-bigclown-kit/preview.jpg"
+image_main: "/blog/2018-01-19-why-bigclown-kit/main.jpg"
 author: "michal_muhlpachr"
 ---
 

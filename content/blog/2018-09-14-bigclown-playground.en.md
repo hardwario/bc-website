@@ -2,8 +2,8 @@
 date: "2018-09-14"
 title: "BigClown Playground"
 description: "The new multi-platform graphical application to manage all BigClown devices."
-image_preview: "preview.png"
-image_main: "main.png"
+image_preview: "/blog/2018-09-14-bigclown-playground/preview.png"
+image_main: "/blog/2018-09-14-bigclown-playground/main.png"
 author: "martin_hubacek"
 ---
 

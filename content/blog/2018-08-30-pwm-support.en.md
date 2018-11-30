@@ -2,8 +2,8 @@
 date: "2018-08-30"
 title: "Servo Motor and PWM Library"
 description: "Control servo motors and LED brightness with pulse width modulation."
-image_preview: "preview.png"
-image_main: "main.png"
+image_preview: "/blog/2018-08-30-pwm-support/preview.png"
+image_main: "/blog/2018-08-30-pwm-support/main.png"
 author: "martin_hubacek"
 ---
 

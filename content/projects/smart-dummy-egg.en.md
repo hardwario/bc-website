@@ -23,7 +23,7 @@ author:
   github:
     name: hubmartin
     link: https://github.com/hubmartin
-
+partner: zoo.jpg
 ---
 
 Dummy egg that monitors and saves measured temperature and orientation with an accelerometer. Data are saved to the InfluxDB and are then displayed with Grafana.

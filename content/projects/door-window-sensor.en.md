@@ -12,6 +12,7 @@ author_name: Martin Hubáček
 author_post:
 author_email: martin.hubacek@hardwario.com
 author_image: /authors/martin.jpg
+partner: cez.png
 
 ---
 

@@ -23,6 +23,7 @@ author:
   github:
     name: hubmartin
     link: https://github.com/hubmartin
+partner: cez.png
 
 ---
 

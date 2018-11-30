@@ -1,3 +1,4 @@
+
 .articles
 {
   //padding-top: 2*$baseline;
@@ -53,31 +54,78 @@
     &__supported
     {
       position: absolute;
-      bottom: 27px;
-      right: 60px;
+      bottom: 5px;
+      right: 5px;
       z-index: 10;
-      height: 26px;
-      background-color: #f2f2f2;
-      width: auto;
-      padding: 0 20px 0 10px;
+      height: 60px;
+      width: 60px;
+      background-color: #fff;
       background-size: contain;
       display: block;
       text-align: center;
       color: black;
       font-weight: 600;
-      border-top-left-radius: 6px;
-      border-bottom-left-radius: 6px;
+      border-radius: 50%;
+      transform: rotate(-140deg);
+
+      span{
+        font-size: 8px;
+        line-height: 12px;
+        height: 30px;
+        position: absolute;
+        width: 10px;
+        left: 50%;
+        top: 0;
+        transform-origin: bottom left;
+      }
+      .char1 {
+        transform: rotate(20deg);
+      }
+      .char2 {
+        transform: rotate(40deg);
+      }
+      .char3 {
+        transform: rotate(60deg);
+      }
+      .char4 {
+        transform: rotate(80deg);
+      }
+      .char5 {
+        transform: rotate(100deg);
+      }
+      .char6 {
+        transform: rotate(120deg);
+      }
+      .char7 {
+        transform: rotate(140deg);
+      }
+      .char8 {
+        transform: rotate(160deg);
+      }
+      .char9 {
+        transform: rotate(180deg);
+      }
+      .char10 {
+        transform: rotate(200deg);
+      }
+      .char11 {
+        transform: rotate(220deg);
+      }
+      .char12 {
+        transform: rotate(240deg);
+      }
+
     }
     &__logo
     {
       position: absolute;
-      bottom: 10px;
-      right: 10px;
+      bottom: 17.5px;
+      right: 17.5px;
       z-index: 10;
       height: $baseline;
-      background-color: #f2f2f2;
-      width: 60px;
-      height: 60px;
+      background-color: white;
+      width: 35px;
+      height: 35px;
       border-radius: 50%;
       background-size: contain;
       display: block;
@@ -91,9 +139,9 @@
       img{
         border-radius: 0!important;
         width: auto;
-        max-width: 90%!important;
-        max-height: 90%!important;
-        margin: 5% auto;
+        max-width: 100%!important;
+        max-height: 100%!important;
+        margin: 0 auto;
       }
     }
     &:hover

@@ -48,10 +48,10 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Environment", name: "tags", widget: "select", options: ["Indoor", "Outdoor"], multiple: true}
-      - {label: "Knowledge", name: "levels", widget: "select", options: ["Beginner","Advanced"], multiple: true}
-      - {label: "Place", name: "places", widget: "select", options: ["Home","Garden","Office"], multiple: true}
-      - {label: "Device", name: "devices", widget: "select", options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"], multiple: true}
+      - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}
+      - {label: "Knowledge", name: "levels", widget: "select", multiple: true, options: ["Beginner","Advanced"]}
+      - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}
+      - {label: "Device", name: "devices", widget: "select", multiple: true, options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"]}
       - {label: "Idea", name: "idea", widget: "boolean"}
       - {label: "Preview Image", name: "image_preview", widget: "image"}
       - {label: "Main Image", name: "image_main", widget: "image"}
@@ -69,10 +69,10 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Environment", name: "tags", widget: "select", options: ["Indoor", "Outdoor"], multiple: true}
-      - {label: "Knowledge", name: "levels", widget: "select", options: ["Beginner","Advanced"], multiple: true}
-      - {label: "Place", name: "places", widget: "select", options: ["Home","Garden","Office"], multiple: true}
-      - {label: "Device", name: "devices", widget: "select", options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"], multiple: true}
+      - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}
+      - {label: "Knowledge", name: "levels", widget: "select", multiple: true, options: ["Beginner","Advanced"]}
+      - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}
+      - {label: "Device", name: "devices", widget: "select", options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"]}
       - {label: "Idea", name: "idea", widget: "boolean"}
       - {label: "Preview Image", name: "image_preview", widget: "image"}
       - {label: "Main Image", name: "image_main", widget: "image"}

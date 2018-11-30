@@ -100,8 +100,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "doc--firmware-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Firmware " # Used in the UI
+  - name: "doc-firmware-en" # Used in routes, e.g., /admin/collections/blog
+    label: "Documentation - Firmware" # Used in the UI
     folder: "content/doc" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -112,7 +112,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-hardware-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Hardware " # Used in the UI
+    label: "Documentation - Hardware" # Used in the UI
     folder: "content/doc" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -123,7 +123,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-integrations-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Integrations " # Used in the UI
+    label: "Documentation - Integrations" # Used in the UI
     folder: "content/doc" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -134,7 +134,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-interfaces-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Intefaces " # Used in the UI
+    label: "Documentation - Intefaces" # Used in the UI
     folder: "content/doc" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md

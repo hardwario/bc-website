@@ -8,10 +8,7 @@ places: ["Home", "Office", "School"]
 devices: ["Custom Kit"]
 image_preview: /projects/door-window-sensor/preview.jpg
 image_main: /projects/door-window-sensor/main.jpg
-author_name: Martin Hubáček
-author_post:
-author_email: martin.hubacek@hardwario.com
-author_image: /authors/martin.jpg
+author: "martin_hubacek"
 
 ---
 

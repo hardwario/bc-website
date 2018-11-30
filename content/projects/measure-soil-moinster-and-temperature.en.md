@@ -7,19 +7,9 @@ levels: ["Advanced"]
 places: ["Home","Garden"]
 environments: ["Indoor", "Outdoor"]
 devices: ["Soil Kit"]
-meta:
-  title: Soil Moisture Monitoring
-  desciption: ""
-images:
-  preview: /projects/measure-soil-moinster-and-temperature/preview.jpg
-  main: /projects/measure-soil-moinster-and-temperature/main.jpg
-author:
-  name: Martin Hubacek
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/measure-soil-moinster-and-temperature/preview.jpg
+image_main: /projects/measure-soil-moinster-and-temperature/main.jpg
+author: "martin_hubacek"
 
 ---
 

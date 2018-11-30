@@ -6,23 +6,9 @@ tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "School"]
 devices: ["Custom Kit"]
-meta:
-  title: Servo tester
-  desciption: ""
-images:
-  preview: /projects/servo-tester/preview.jpg
-  main: /projects/servo-tester/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/servo-tester/preview.jpg
+image_main: /projects/servo-tester/main.jpg
+author: "martin_hubacek"
 
 ---
 

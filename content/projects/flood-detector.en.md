@@ -6,23 +6,9 @@ tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home", "School"]
 devices: ["Flood Kit"]
-meta:
-  title: Detektor zaplavení bytu
-  desciption: ""
-images:
-  preview: /projects/flood-detector/preview.jpg
-  main: /projects/flood-detector/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/flood-detector/preview.jpg
+image_main: /projects/flood-detector/main.jpg
+author: "martin_hubacek"
 
 ---
 

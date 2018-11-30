@@ -35,7 +35,7 @@
     <div class="row justify-content-center">
       <div class="col-12">
         <div class="article__image">
-          <img src="{{ .Params.images.main }}" alt="{{ .Title }}" />
+          <img src="{{ .Params.image_main }}" alt="{{ .Title }}" />
         </div>
       </div>
     </div>
@@ -50,9 +50,10 @@
             <div class="row">
               <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">
                 <div class="article__author article__author--bottom d-flex flex-column justify-content-center">
-                  <img src="{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
-                  <strong>{{ .Params.author.name }}</strong>
-                  <span>{{ .Params.author.email }}</span>
+                  {{ $author := index $.Site.Data.authors .Params.author }}
+                  <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
+                  <strong>{{ $author.name }}</strong>
+                  <span>{{ $author.email }}</span>
                 </div>
               </div>
               <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">

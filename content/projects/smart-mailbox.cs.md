@@ -6,23 +6,9 @@ tags: ["Outdoor"]
 levels: ["Advanced"]
 places: ["Home"]
 devices: ["Custom Kit"]
-meta:
-  title: Chytrá poštovní schránka
-  desciption: ""
-images:
-  preview: /projects/smart-mailbox/preview.jpg
-  main: /projects/smart-mailbox/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/smart-mailbox/preview.jpg
+image_main: /projects/smart-mailbox/main.jpg
+author: "martin_hubacek"
 
 ---
 

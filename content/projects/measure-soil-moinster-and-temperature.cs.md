@@ -6,19 +6,9 @@ tags: [Indoor", "Outdoor"]
 levels: ["Advanced"]
 places: ["Home", "Garden"]
 devices: ["Custom Kit"]
-meta:
-  title: Monitoring vlhkosti půdy
-  desciption: ""
-images:
-  preview: /projects/measure-soil-moinster-and-temperature/preview.jpg
-  main: /projects/measure-soil-moinster-and-temperature/main.jpg
-author:
-  name: Martin Hubáček
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/measure-soil-moinster-and-temperature/preview.jpg
+image_main: /projects/measure-soil-moinster-and-temperature/main.jpg
+author: "martin_hubacek"
 
 ---
 

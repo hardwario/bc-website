@@ -8,10 +8,7 @@ places: ["Office"]
 devices: ["Custom Kit"]
 images_preview: /projects/1-wire-relay-expander/preview.jpg
 images_main: /projects/1-wire-relay-expander/main.jpg
-author_name: Martin Hubáček
-author_post:
-author_email: martin.hubacek@hardwario.com
-author_image: /authors/martin.jpg
+author: "martin_hubacek"
 ---
 
 Připojením modulu Denkovi "1-Wire 8 Relay Module" je možné ovládat silové spotřebiče. Příkaz pro sepnutí a rozepnutí relé se potom do Core Module posílá skrz MQTT bezdrátově.

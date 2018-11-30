@@ -6,19 +6,9 @@ tags: ["Indoor"]
 levels: ["Beginner"]
 places: ["Home", "Office", "School"]
 devices: ["Motion Kit"]
-meta:
-  title: Monitoring vlhkosti půdy
-  desciption: ""
-images:
-  preview: /projects/toilete-night-light-with-ikea-and-apple/preview.jpg
-  main: /projects/toilete-night-light-with-ikea-and-apple/main.jpg
-author:
-  name: Lukáš Fabik
-  email: lukas.fabik@hardwario.com
-  image: /authors/lukas.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/toilete-night-light-with-ikea-and-apple/preview.jpg
+image_main: /projects/toilete-night-light-with-ikea-and-apple/main.jpg
+author: "lukas_fabik"
 
 ---
 

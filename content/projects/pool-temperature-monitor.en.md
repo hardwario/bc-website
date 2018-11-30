@@ -6,23 +6,9 @@ tags: ["Outdoor"]
 levels: ["Advanced"]
 places: ["Home"]
 devices: ["Custom Kit"]
-meta:
-  title: Bazénový teplotní senzor
-  desciption: ""
-images:
-  preview: /projects/pool-temperature-monitor/preview.jpg
-  main: /projects/pool-temperature-monitor/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/pool-temperature-monitor/preview.jpg
+image_main: /projects/pool-temperature-monitor/main.jpg
+author: "martin_hubacek"
 
 ---
 

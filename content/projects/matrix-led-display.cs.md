@@ -6,23 +6,10 @@ tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home","School"]
 devices: ["Custom Kit"]
-meta:
-  title: Bazénový teplotní senzor
-  desciption: ""
-images:
-  preview: /projects/matrix-led-display/preview.jpg
-  main: /projects/matrix-led-display/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/matrix-led-display/preview.jpg
+image_main: /projects/matrix-led-display/main.jpg
+author: "martin_hubacek"
+
 
 ---
 

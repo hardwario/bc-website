@@ -8,10 +8,7 @@ places: ["Home"]
 devices: ["Custom Kit"]
 image_preview: /projects/cat-fountain/preview.jpg
 image_main: /projects/cat-fountain/main.jpg
-author_name: Martin Hubáček
-author_post:
-author_email: martin.hubacek@hardwario.com
-author_image: /authors/martin.jpg
+author: "martin_hubacek"
 
 ---
 

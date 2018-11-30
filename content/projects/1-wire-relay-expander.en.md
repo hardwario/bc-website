@@ -8,10 +8,7 @@ places: ["Office"]
 devices: ["Custom Kit"]
 image_preview: /projects/1-wire-relay-expander/preview.jpg
 image_main: /projects/1-wire-relay-expander/main.jpg
-author_name: Martin Hubáček
-author_post:
-author_email: martin.hubacek@hardwario.com
-author_image: /authors/martin.jpg
+author: "martin_hubacek"
 
 ---
 

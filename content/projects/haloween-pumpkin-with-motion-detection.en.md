@@ -6,19 +6,9 @@ tags: ["Indoor"]
 levels: ["Advanced"]
 places: ["Home"]
 devices: ["Motion Kit"]
-meta:
-  title: Monitoring vlhkosti půdy
-  desciption: ""
-images:
-  preview: /projects/haloween-pumpkin-with-motion-detection/preview.jpg
-  main: /projects/haloween-pumpkin-with-motion-detection/main.jpg
-author:
-  name: Martin Hubáček
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/haloween-pumpkin-with-motion-detection/preview.jpg
+image_main: /projects/haloween-pumpkin-with-motion-detection/main.jpg
+author: "martin_hubacek"
 
 ---
 

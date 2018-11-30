@@ -6,23 +6,9 @@ tags: ["Indoor"]
 levels: ["Beginner"]
 places: ["Home", "Office", "School"]
 devices: ["Power Kit"]
-meta:
-  title: Maticový displej z chytrých LED
-  desciption: ""
-images:
-  preview: /projects/smart-led-matrix-display/preview.jpg
-  main: /projects/smart-led-matrix-display/main.jpg
-button:
-    text: Získej vše potřebné
-    link: https://shop.bigclown.com/soil-moisture-sensor-kit/
-author:
-  name: Martin Hubáček
-  post:
-  email: martin.hubacek@hardwario.com
-  image: /authors/martin.jpg
-  github:
-    name: hubmartin
-    link: https://github.com/hubmartin
+image_preview: /projects/smart-led-matrix-display/preview.jpg
+image_main: /projects/smart-led-matrix-display/main.jpg
+author: "martin_hubacek"
 
 ---
 

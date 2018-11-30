@@ -14,6 +14,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Tags", name: "tags", widget: "select". multiple: true, options: ["Design", "UX", "Dev"]}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Preview Image", name: "image_preview", widget: "image"}
@@ -88,3 +89,4 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Body", name: "body", widget: "markdown"}

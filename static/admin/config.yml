@@ -79,7 +79,7 @@ collections:
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-basics-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Basics" # Used in the UI
+    label: "Doc - Basics" # Used in the UI
     folder: "content/doc/basics" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -90,7 +90,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-documentation-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Documentation" # Used in the UI
+    label: "Doc - Documentation" # Used in the UI
     folder: "content/doc/documentation" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -101,7 +101,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-firmware-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Firmware" # Used in the UI
+    label: "Doc - Firmware" # Used in the UI
     folder: "content/doc/firmware" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -112,7 +112,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-hardware-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Hardware" # Used in the UI
+    label: "Doc - Hardware" # Used in the UI
     folder: "content/doc/hardware" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -123,7 +123,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-integrations-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Integrations" # Used in the UI
+    label: "Doc - Integrations" # Used in the UI
     folder: "content/doc/integrations" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -134,7 +134,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-interfaces-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Intefaces" # Used in the UI
+    label: "Doc - Intefaces" # Used in the UI
     folder: "content/doc/interfaces" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -145,7 +145,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-projects-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Projects" # Used in the UI
+    label: "Doc - Projects" # Used in the UI
     folder: "content/doc/projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -156,7 +156,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-tools-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Tools" # Used in the UI
+    label: "Doc - Tools" # Used in the UI
     folder: "content/doc/tools" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -167,7 +167,7 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-tutorials-en" # Used in routes, e.g., /admin/collections/blog
-    label: "Documentation - Tutorials" # Used in the UI
+    label: "Doc - Tutorials" # Used in the UI
     folder: "content/doc/tutorials" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md

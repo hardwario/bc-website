@@ -16,8 +16,8 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Preview Image", name: "image_preview", widget: "image"}
-      - {label: "Main Image", name: "image_main", widget: "image"}
+      - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
+      - {label: "Main Image [cca 1400x510]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "blog-cs" # Used in routes, e.g., /admin/collections/blog
@@ -32,14 +32,14 @@ collections:
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string"}
-      - {label: "Preview Image", name: "image_preview", widget: "image"}
-      - {label: "Main Image", name: "image_main", widget: "image"}
+      - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
+      - {label: "Main Image [cca 1400x510]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "projects-en" # Used in routes, e.g., /admin/collections/blog
     label: "Projects EN" # Used in the UI
     folder: "content/projects" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
+    create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     extension: "en.md"
     format: 'frontmatter'
@@ -53,14 +53,14 @@ collections:
       - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}
       - {label: "Device", name: "devices", widget: "select", multiple: true, options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"]}
       - {label: "Idea", name: "idea", widget: "boolean"}
-      - {label: "Preview Image", name: "image_preview", widget: "image"}
-      - {label: "Main Image", name: "image_main", widget: "image"}
+      - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
+      - {label: "Main Image [1400x460]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "projects-cs" # Used in routes, e.g., /admin/collections/blog
     label: "Projects CS" # Used in the UI
     folder: "content/projects" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
+    create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     extension: "cs.md"
     format: 'frontmatter'
@@ -74,8 +74,8 @@ collections:
       - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}
       - {label: "Device", name: "devices", widget: "select", options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"]}
       - {label: "Idea", name: "idea", widget: "boolean"}
-      - {label: "Preview Image", name: "image_preview", widget: "image"}
-      - {label: "Main Image", name: "image_main", widget: "image"}
+      - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
+      - {label: "Main Image [1400x460]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-basics-en" # Used in routes, e.g., /admin/collections/blog

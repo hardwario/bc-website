@@ -145,8 +145,8 @@
   &__content
   {
     position: absolute;
-    top: 2*$baseline;
-    left:0;
+    bottom: $baseline;
+    left: 0;
     width: 100%;
     padding: 0 30px;
     z-index: 1;

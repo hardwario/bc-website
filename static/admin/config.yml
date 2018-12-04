@@ -56,6 +56,8 @@ collections:
       - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
       - {label: "Main Image [1400x460]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
+      - {label: "Partner", name: "partner", widget: "string", required: false}
+      - {label: "Partner Image [1400x460]", name: "partner_image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "projects-cs" # Used in routes, e.g., /admin/collections/blog
     label: "Projects CS" # Used in the UI
@@ -77,6 +79,8 @@ collections:
       - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
       - {label: "Main Image [1400x460]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
+      - {label: "Partner", name: "partner", widget: "string", required: false}
+      - {label: "Partner Image [1400x460]", name: "partner_image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "doc-basics-en" # Used in routes, e.g., /admin/collections/blog
     label: "Doc - Basics" # Used in the UI

@@ -9,7 +9,8 @@ devices: ["Custom Kit"]
 image_preview: /projects/smart-dummy-egg/preview.jpg
 image_main: /projects/smart-dummy-egg/main.jpg
 author: "martin_hubacek"
-
+partner: ZOO Liberec
+partner_image: /partners/zoo_liberec.jpg
 ---
 
 Falešné vejce, které monitoruje a zaznamenává údaje o teplotě a s pomocí akcelerometru na Core Module i jeho orientaci. Data se ukládají do databáze Influx, kde se později vyhodnocují nástrojem Grafana

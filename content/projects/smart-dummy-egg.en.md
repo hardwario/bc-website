@@ -9,6 +9,8 @@ devices: ["Custom Kit"]
 image_preview: /projects/smart-dummy-egg/preview.jpg
 image_main: /projects/smart-dummy-egg/main.jpg
 author: "martin_hubacek"
+partner: ZOO Liberec
+partner_image: /partners/zoo_liberec.jpg
 
 ---
 

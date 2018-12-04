@@ -12,11 +12,18 @@
         <p class="articles__text articles__text--2">{{ .Params.description }}</p>
       </div>
       <div class="articles__author d-flex align-items-center">
+        {{ if isset .Params "partner" }}
+        <div class="articles__author__image"><img src="{{ .Params.partner_image }}" alt="{{ .Params.partner }}" class="partner" /></div>
+        <div class="articles__author__title">Supported by {{ .Params.partner }}</div>
+        <div class="ml-auto articles__author__time">
+        </div>
+        {{ else }}
         {{ $author := index $.Site.Data.authors .Params.author }}
         <div class="articles__author__image"><img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" /></div>
         <div class="articles__author__title">{{ $author.name }}</div>
         <div class="ml-auto articles__author__time">
-
         </div>
+        {{ end }}
+
       </div>
     </a>

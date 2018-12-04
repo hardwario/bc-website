@@ -186,7 +186,7 @@ Firstly we need to configure our **Node-RED** app.
 
     {{% img-zoom src="blynk-10.png" width="300" %}}
 
-10. Click the settings wheel and you should see settings for your project. We need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
+10. Click the settings wheel and you should see settings for your project. We need to get `Auth Token` which you have to copy to our **Node-RED** in **Blynk** node configuration.
 
     {{% img-zoom src="blynk-auth.png" width="300" %}}
 

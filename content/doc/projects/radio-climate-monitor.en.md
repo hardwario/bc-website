@@ -155,7 +155,7 @@ Firstly we need to configure our **Node-RED** app.
 3. Insert the following snippet in the newly created **Flow 2** (using **Menu >> Import**):
 
     ```json
-    [{"id":"4914605c.76972","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/climate-monitor:0/lux-meter/0:0/illuminance","qos":"2","broker":"58254712.b61068","x":230,"y":520,"wires":[["431157f1.546248"]]},{"id":"dcf5bf8d.a0242","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/climate-monitor:0/thermometer/0:0/temperature","qos":"2","broker":"58254712.b61068","x":240,"y":580,"wires":[["be96b6aa.eed098"]]},{"id":"2ac2eae7.308486","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/climate-monitor:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"58254712.b61068","x":250,"y":640,"wires":[["dbe4b438.be4ef8"]]},{"id":"431157f1.546248","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"Pin V0 - Write","pin":0,"pinmode":0,"client":"1b003066.8ca2c","x":659,"y":520,"wires":[]},{"id":"be96b6aa.eed098","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"1","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":580,"wires":[]},{"id":"dbe4b438.be4ef8","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"2","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":640,"wires":[]},{"id":"58254712.b61068","type":"mqtt-broker","z":"","broker":"127.0.0.1","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"1b003066.8ca2c","type":"blynk-ws-client","z":"","name":"","path":"ws://blynk-cloud.com:9443/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""}]
+    [{"id":"4914605c.76972","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/climate-monitor:0/lux-meter/0:0/illuminance","qos":"2","broker":"58254712.b61068","x":230,"y":520,"wires":[["431157f1.546248"]]},{"id":"dcf5bf8d.a0242","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/climate-monitor:0/thermometer/0:0/temperature","qos":"2","broker":"58254712.b61068","x":240,"y":580,"wires":[["be96b6aa.eed098"]]},{"id":"2ac2eae7.308486","type":"mqtt in","z":"28050251.59dc0e","name":"","topic":"node/climate-monitor:0/hygrometer/0:4/relative-humidity","qos":"2","broker":"58254712.b61068","x":250,"y":640,"wires":[["dbe4b438.be4ef8"]]},{"id":"431157f1.546248","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"Pin V0 - Write","pin":0,"pinmode":0,"client":"1b003066.8ca2c","x":659,"y":520,"wires":[]},{"id":"be96b6aa.eed098","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"1","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":580,"wires":[]},{"id":"dbe4b438.be4ef8","type":"blynk-ws-out-write","z":"28050251.59dc0e","name":"","pin":"2","pinmode":0,"client":"1b003066.8ca2c","x":659,"y":640,"wires":[]},{"id":"58254712.b61068","type":"mqtt-broker","z":"","broker":"127.0.0.1","port":"1883","clientid":"","usetls":false,"compatmode":true,"keepalive":"60","cleansession":true,"willTopic":"","willQos":"0","willPayload":"","birthTopic":"","birthQos":"0","birthPayload":""},{"id":"1b003066.8ca2c","type":"blynk-ws-client","z":"","name":"","path":"ws://blynk-cloud.com/websockets","key":"","dbg_all":false,"dbg_read":false,"dbg_write":false,"dbg_notify":false,"dbg_mail":false,"dbg_prop":false,"dbg_low":false,"dbg_pins":""}]
     ```
 
     It will look like this:
@@ -164,7 +164,7 @@ Firstly we need to configure our **Node-RED** app.
 
     {{% note "info" %}}In case you want use it for another sensors just change MQTT topics.{{% /note %}}
 
-4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com:9443/websockets`. The secret key we will configure later after obtaining one.
+4. Configure MQTT node to connect it on you broker. It will propably connect on localhost if you are using Raspberry Pi. After that you will need to configure **Blynk** node. Just fill in URL `ws://blynk-cloud.com/websockets`. The `Auth Token` we will configure later after obtaining one from Blynk over e-mail.
 
     {{% img-zoom src="nodered-screen-2.png" width="400" %}}
 
@@ -186,7 +186,7 @@ Firstly we need to configure our **Node-RED** app.
 
     {{% img-zoom src="blynk-10.png" width="300" %}}
 
-10. Click the settings wheel and you should see settings for your project. Wee need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
+10. Click the settings wheel and you should see settings for your project. We need to get *auth-token* which we will copy to our **Node-RED** in **Blynk** node configuration.
 
     {{% img-zoom src="blynk-auth.png" width="300" %}}
 

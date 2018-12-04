@@ -1,6 +1,5 @@
 
-  <article>
-    <a href="{{.Permalink}}" class="articles__item">
+    <a href="{{ .Permalink }}" class="articles__item articles__item--2">
       {{ if eq .Params.idea true }}
       <span class = "articles__item__idea">Complete and Get 100 EUR</span>
       {{ end }}
@@ -8,9 +7,16 @@
         <img src="{{ .Params.image_preview }}" alt="{{ .Title }}" />
       </div>
 
-      <div class="articles__content">
-        <h3 class="articles__title">{{ .Title }}</h3>
-        <p class="articles__text">{{ .Params.description }}</p>
+      <div class="articles__content articles__content--2">
+        <h3 class="articles__title articles__title--2">{{ .Title }}</h3>
+        <p class="articles__text articles__text--2">{{ .Params.description }}</p>
+      </div>
+      <div class="articles__author d-flex align-items-center">
+        {{ $author := index $.Site.Data.authors .Params.author }}
+        <div class="articles__author__image"><img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" /></div>
+        <div class="articles__author__title">{{ $author.name }}</div>
+        <div class="ml-auto articles__author__time">
+
+        </div>
       </div>
     </a>
-  </article>

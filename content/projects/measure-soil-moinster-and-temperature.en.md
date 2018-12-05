@@ -1,6 +1,6 @@
 ---
 title: Soil Moisture Monitoring
-description: "For those who just love their garden"
+description: "Monitor how your plants are doing, create auto irrigation system or event to notify you when the soil is too dry"
 idea: false
 tags: ["Indoor", "Outdoor"]
 levels: ["Advanced"]

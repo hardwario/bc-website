@@ -104,11 +104,6 @@ en = "https://shop.bigclown.com/lcd-module-bg"
 cs = "https://obchod.bigclown.cz/lcd-module-bg"
 
 [[products]]
-title = "LCD Module"
-en = "https://shop.bigclown.com/lcd-module-bg"
-cs = "https://obchod.bigclown.cz/lcd-module-bg"
-
-[[products]]
 title = "LED Strip RGBW 1m 144 LEDs"
 en = "https://shop.bigclown.com/led-strip-rgbw-1m-144-leds"
 cs = "https://obchod.bigclown.cz/led-strip-rgbw-1m-144-leds"
@@ -132,6 +127,11 @@ cs = "https://obchod.bigclown.cz/microsdhc-card-8gb"
 title = "Mini Battery Module"
 en = "https://shop.bigclown.com/mini-battery-module"
 cs = "https://obchod.bigclown.cz/mini-battery-module"
+
+[[products]]
+title = "Motion Detector Kit"
+en = "https://shop.bigclown.com/motion-detector-kit"
+cs = "https://obchod.bigclown.cz/motion-detector-kit"
 
 [[products]]
 title = "NFC Tag"
@@ -177,6 +177,11 @@ cs = "https://obchod.bigclown.cz/sensor-module"
 title = "Sigfox Module"
 en = "https://shop.bigclown.com/sigfox-module"
 cs = "https://obchod.bigclown.cz/sigfox-module"
+
+[[products]]
+title = "Sigfox Module with Subscription of MySigfox Platinum Service for 3 Years"
+en = "https://shop.bigclown.com/bundle-sigfoxmodule-mysigfoxplatinum3y"
+cs = "https://obchod.bigclown.cz/bundle-sigfoxmodule-mysigfoxplatinum3y"
 
 [[products]]
 title = "Soil Sensor"

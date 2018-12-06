@@ -83,7 +83,6 @@
     text-align: left;
     position: relative;
     padding-left: 90px;
-    height:4*$baseline;
     margin-bottom: 1.5*$baseline;
     text-decoration: none;
 
@@ -110,7 +109,14 @@
       border-radius: 50%;
       box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
       top:50%;
-      margin-top: -35px;
+      margin-top: -40px;
+
+      &.partner{
+        height: 80px;
+        width: auto;
+        box-shadow: none;
+        border-radius: 0;
+      }
     }
 
     strong

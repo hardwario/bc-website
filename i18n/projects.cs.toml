@@ -18,3 +18,9 @@ other = "Postav projekt, vytvoř tutoriál a&nbsp;získáš 100&nbsp;€."
 
 [make_a_deal]
 other = "Napiš nám a domluvíme se"
+
+[supported]
+other = "Podporováno"
+
+[supported_extended]
+other = "Tento projekt je podporován"

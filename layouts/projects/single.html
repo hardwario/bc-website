@@ -30,7 +30,7 @@
             <div class="d-flex justify-content-center">
               <div class="article__author d-flex flex-column justify-content-center">
                 <img src="{{ .Params.partner_image }}" alt="{{ .Params.partner }}" class = "partner" />
-                <strong>This project is supported by {{ .Params.partner }}</strong>
+                <strong>{{ i18n "supported_extended" }} {{ .Params.partner }}</strong>
               </div>
             </div>
             {{ end }}

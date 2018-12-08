@@ -8,7 +8,7 @@ description: >-
 tags:
   - Indoor
 levels:
-  - Basic
+  - Beginner
 places:
   - Home
 devices:

@@ -1,6 +1,6 @@
 ---
 title: Burglar Alarm Confirmation System
-draft: true
+draft: false
 date: 2018-12-08T07:40:08.515Z
 description: >-
   Extend or improve your current alarm and get a confirmation that something is

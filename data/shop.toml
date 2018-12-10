@@ -89,6 +89,11 @@ en = "https://shop.bigclown.com/flood-detector-ld-81"
 cs = "https://obchod.bigclown.cz/flood-detector-ld-81"
 
 [[products]]
+title = "GPS Module"
+en = "https://shop.bigclown.com/gps-module"
+cs = "https://obchod.bigclown.cz/gps-module"
+
+[[products]]
 title = "Humidity Tag"
 en = "https://shop.bigclown.com/humidity-tag"
 cs = "https://obchod.bigclown.cz/humidity-tag"

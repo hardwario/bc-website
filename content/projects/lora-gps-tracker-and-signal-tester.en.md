@@ -14,8 +14,8 @@ places:
 devices:
   - Custom Kit
 idea: true
-image_preview: /static/uploads/gps-module.png
-image_main: /static/uploads/gps-module.png
+image_preview: /projects/lora-gps-tracker-and-signal-tester/preview.jpg
+image_main: /projects/lora-gps-tracker-and-signal-tester/main.jpg
 author: martin_hubacek
 ---
 You can track your goods on the road. Thanks to temperature sensor or Climate Module you can measure all environment variables and send them in real-time. This device can be also used for The Thing Network TTN mapper to map LoRa coverage.

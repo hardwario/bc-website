@@ -5,7 +5,7 @@ date: 2018-12-10T12:10:34.786Z
 description: >-
   Open the door by entering the key. You can also send the open command wirelessly over the network or with MQTT command.
 tags:
-  - Outdoor
+  - Indoor
 levels:
   - Basic
 places:
@@ -13,8 +13,8 @@ places:
 devices:
   - Custom Kit
 idea: true
-image_preview: /projects/key-code-door.-entry-system/preview.jpg
-image_main: /projects/key-code-door.-entry-system/main.jpg
+image_preview: /projects/key-code-door-entry-system/preview.jpg
+image_main: /projects/key-code-door-entry-system/main.jpg
 author: martin_hubacek
 ---
 

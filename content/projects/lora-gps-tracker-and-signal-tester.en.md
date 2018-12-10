@@ -1,6 +1,6 @@
 ---
 title: LoRa GPS Tracker and Signal Tester
-draft: true
+draft: false
 date: 2018-12-10T12:06:34.786Z
 description: >-
   Thanks to this tracker you can track your goods. So you know when it arrives

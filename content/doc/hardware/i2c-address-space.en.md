@@ -18,7 +18,7 @@ All addresses are provided in a 7-bit format.
 | 0x21    | TCA9534      | GPS Module                                                               | Reserved                                |
 | 0x22    | TCA9534      | RS485 Module                                                             | Reserved                                |
 | 0x23    | TCA9534      | RS232 Module                                                             | Reserved                                |
-| 0x24    | TCA9534      |                                                                          | Reserved                                |
+| 0x24    | TCA9534      | Ethernet Module                                                          | Reserved                                |
 | 0x25    | TCA9534      |                                                                          | Reserved                                |
 | 0x26    | TCA9534      |                                                                          | Reserved                                |
 | 0x27    | TCA9534      |                                                                          | Reserved                                |

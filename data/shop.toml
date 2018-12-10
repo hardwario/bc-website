@@ -149,6 +149,11 @@ en = "https://shop.bigclown.com/pir-module"
 cs = "https://obchod.bigclown.cz/pir-module"
 
 [[products]]
+title = "Power Controller Kit"
+en = "https://shop.bigclown.com/power-controller-kit"
+cs = "https://obchod.bigclown.cz/power-controller-kit"
+
+[[products]]
 title = "Power Module"
 en = "https://shop.bigclown.com/power-module"
 cs = "https://obchod.bigclown.cz/power-module"

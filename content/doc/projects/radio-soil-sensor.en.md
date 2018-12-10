@@ -22,7 +22,7 @@ This document will guide you through the **Radio Soil Sensor** project. You will
 
 * Either **BigClown Radio Soil Sensor Kit**, or individual components:
 
-    * 1x **BigClown {{% shop "Soil Sensor" %}}**
+    * 1x **BigClown {{% shop "Soil Moisture Sensor" %}}**
 
     * 1x **BigClown {{% shop "Sensor Module" %}}**
 
@@ -77,7 +77,7 @@ Now it's time to write firmware to the **Core Module**.
 
 3. Plug the **{{< shop "Sensor Module" >}}** on top of the **{{< shop "Core Module" >}}**.
 
-3. Plug the **{{< shop "Soil Sensor" >}}** connector to the **{{< shop "Sensor Module" >}}**.
+3. Plug the **{{< shop "Soil Moisture Sensor" >}}** connector to the **{{< shop "Sensor Module" >}}**.
 
 ## Radio Pairing
 

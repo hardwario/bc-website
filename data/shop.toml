@@ -194,19 +194,14 @@ en = "https://shop.bigclown.com/bundle-sigfoxmodule-mysigfoxplatinum3y"
 cs = "https://obchod.bigclown.cz/bundle-sigfoxmodule-mysigfoxplatinum3y"
 
 [[products]]
-title = "Soil Sensor"
-en = "https://shop.bigclown.com/soil-sensor"
-cs = "https://obchod.bigclown.cz/soil-sensor"
+title = "Soil Moisture Sensor"
+en = "https://shop.bigclown.com/soil-moisture-sensor"
+cs = "https://obchod.bigclown.cz/soil-moisture-sensor"
 
 [[products]]
 title = "Split Module"
 en = "https://shop.bigclown.com/split-module"
 cs = "https://obchod.bigclown.cz/split-module"
-
-[[products]]
-title = "Soil Sensor"
-en = "https://shop.bigclown.com/soil-sensor"
-cs = "https://obchod.bigclown.cz/soil-sensor"
 
 [[products]]
 title = "Tag Module"

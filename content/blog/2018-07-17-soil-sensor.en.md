@@ -12,7 +12,7 @@ Hi guys,
 
 recently we have lauched the new [**Wireless Soil Sensor**]({{< relref "/doc/projects/radio-soil-sensor.en.md">}}) project. You can use it for well-being monitoring of your flowers, vegetables and other stuff (obviously all legal).
 
-The **{{< shop "Soil Sensor" >}}** is **fully sealed** in silicone, comes with the **3 meter cable** you can hook it up with **{{< shop "Sensor Module" >}}**. Together with the out-of-the-box firmware, you can be set and read the moisture data in minutes. Do not hesitate to read more details in the [**project description**]({{< relref "/doc/projects/radio-soil-sensor.en.md">}}) and step-by-step <a href="https://youtu.be/6kU-_ldaGOw">**video tutorial**</a> created by Martin
+The **{{< shop "Soil Moisture Sensor" >}}** is **fully sealed** in silicone, comes with the **3 meter cable** you can hook it up with **{{< shop "Sensor Module" >}}**. Together with the out-of-the-box firmware, you can be set and read the moisture data in minutes. Do not hesitate to read more details in the [**project description**]({{< relref "/doc/projects/radio-soil-sensor.en.md">}}) and step-by-step <a href="https://youtu.be/6kU-_ldaGOw">**video tutorial**</a> created by Martin
 
 I was thinking it is worth spending a couple of words about the sensor element itself.
 
@@ -36,9 +36,9 @@ The answer is simple: Use the **capacitive method**. It is a similiar principle 
 
 Until this point, there are no new discoveries. We have been using the same principles for years. And there are lots for capacitance soil sensors we have been using for years too! So why shouldn't we integrate the existing solution? It was tempting, but we actually could not find anything that would fit our price expectations, mechanical design and/or output interface. Regarding the last point - the vast majority of the sensors come with analog output. So you need a positive rail, ground and the signal wire. That is fine if you have just one sensor. But what about if you want to have **multiple** of these? Where will you connect all these analog channels? And what about if you want to get more than just moisture, but the e.g. the never boring temperature?
 
-Welcome to the world of the **BigClown {{< shop "Soil Sensor" >}}**. It is a fully digital sensor with a wide power supply range from 2.8 V to 5.5 V (yes, it is Arduino-compatible). It uses industry-standard **1-Wire** bus and it allows to connect multiple sensors in parallel (number of sensors are virtually unlimited). Not only **capacitance** (well, moisture), it also reports **temperature** from the on-board digital temperature sensor. And it is **fully sealed** in silicone and can be immersed in the water, of course.
+Welcome to the world of the **BigClown {{< shop "Soil Moisture Sensor" >}}**. It is a fully digital sensor with a wide power supply range from 2.8 V to 5.5 V (yes, it is Arduino-compatible). It uses industry-standard **1-Wire** bus and it allows to connect multiple sensors in parallel (number of sensors are virtually unlimited). Not only **capacitance** (well, moisture), it also reports **temperature** from the on-board digital temperature sensor. And it is **fully sealed** in silicone and can be immersed in the water, of course.
 
-There are a few key components the **BigClown {{< shop "Soil Sensor" >}}** integrates:
+There are a few key components the **BigClown {{< shop "Soil Moisture Sensor" >}}** integrates:
 
 * 1-Wire to I2C bridge DS28E17
 * Low quiescent current LDO TLV73330
@@ -57,6 +57,6 @@ This item is already available for pre-order (see the links below) and we are ea
 Cheers, Pavel.
 # References
 
-* **{{< shop "Soil Sensor" >}}**
+* **{{< shop "Soil Moisture Sensor" >}}**
 * [**Wireless Soil Sensor**]({{< relref "/doc/projects/radio-soil-sensor.en.md">}})
 * **BigClown {{< shop "Sensor Module" >}}**

@@ -109,6 +109,11 @@ en = "https://shop.bigclown.com/lcd-module-bg"
 cs = "https://obchod.bigclown.cz/lcd-module-bg"
 
 [[products]]
+title = "LCD Thermostat Kit"
+en = "https://shop.bigclown.com/lcd-thermostat-kit"
+cs = "https://obchod.bigclown.cz/lcd-thermostat-kit"
+
+[[products]]
 title = "LED Strip RGBW 1m 144 LEDs"
 en = "https://shop.bigclown.com/led-strip-rgbw-1m-144-leds"
 cs = "https://obchod.bigclown.cz/led-strip-rgbw-1m-144-leds"

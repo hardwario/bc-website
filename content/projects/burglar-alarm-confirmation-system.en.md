@@ -1,15 +1,22 @@
 ---
 title: Burglar Alarm Confirmation System
-description: "Extend or improve your current alarm and get a confirmation that something is not right in your home."
+draft: false
+date: 2018-12-08T07:40:08.515Z
+description: >-
+  Extend or improve your current alarm and get a confirmation that something is
+  not right in your home.
+tags:
+  - Indoor
+levels:
+  - Beginner
+places:
+  - Home
+devices:
+  - Motion Kit
 idea: false
-tags: ["Indoor"]
-levels: ["Basic"]
-places: ["Home"]
-devices: ["Custom Kit"]
 image_preview: /projects/burglar-alarm-confirmation-system/preview.png
 image_main: /projects/burglar-alarm-confirmation-system/main.png
-author: "martin_hubacek"
-
+author: alan_fabik
 ---
 
 If your current burglar alarm is not reliable, or you would like to improve it then use Motion Detector Kit. You can easily place multiple of them in your home. It can do more, for example turn your smart light on in the evening if you are in the room.

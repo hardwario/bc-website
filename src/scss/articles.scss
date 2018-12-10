@@ -204,7 +204,10 @@
 
         &.partner{
           width: auto;
-          border-radius: 9px;
+          border-radius: 0;
+          box-shadow: none;
+          border: none;
+          background: transparent;
         }
       }
     }

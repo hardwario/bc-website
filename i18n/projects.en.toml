@@ -18,3 +18,9 @@ other = "Complete project, make step-by-step tutorial and get €&nbsp;100."
 
 [make_a_deal]
 other = "Contact Us to Make a Deal"
+
+[supported]
+other = "Supported by"
+
+[supported_extended]
+other = "This project is supported by"

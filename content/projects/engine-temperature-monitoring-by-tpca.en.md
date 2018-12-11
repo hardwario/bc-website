@@ -1,6 +1,6 @@
 ---
 title: Engine Temperature Monitoring
-draft: true
+draft: false
 date: 2018-12-11T14:33:40.204Z
 description: >-
   Predictive Maintenance can be made very simply. Prevent unplanned downtimes

@@ -18,7 +18,7 @@ image_preview: /projects/engine-temperature-monitoring-by-tpca/preview.png
 image_main: /projects/engine-temperature-monitoring-by-tpca/main.png
 author: martin_hubacek
 partner: TPCA
-partner_image: /static/uploads/tpca-logo2.png
+partner_image: ''
 ---
 
 With long-term monitoring of temperature, vibration and other variables you can predict the service of the machine. This can save money because of unplanned downtimes of your machines. Connect any digital or analog sensor (DS18B20, PT100, PT1000). Measured values are sned wirelessly for further processing.

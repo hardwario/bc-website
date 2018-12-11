@@ -1,9 +1,8 @@
 ---
-title: Restroom Monitoring by ADASTRA
+title: Restroom Monitoring
 draft: false
 date: 2018-12-10T12:09:34.786Z
-description: >-
-  Analyze how much the restrooms are busy and when they are free.
+description: Analyze how much the restrooms are busy and when they are free.
 tags:
   - Outdoor
 levels:
@@ -16,6 +15,8 @@ idea: true
 image_preview: /projects/restroom-monitoring-by-adastra/preview.jpg
 image_main: /projects/restroom-monitoring-by-adastra/main.jpg
 author: martin_hubacek
+partner: ADASTRA
+partner_image: /static/uploads/adastra-logo.png
 ---
 
 Analyze if your restrooms are mostly empty or crowded. You can also uset this information to notifiy the offices or open-space that the restroom are empty.

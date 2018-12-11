@@ -18,7 +18,7 @@ image_preview: /projects/independend-system-of-calling-help-by-skoda/preview.jpg
 image_main: /projects/independend-system-of-calling-help-by-skoda/main.jpg
 author: martin_hubacek
 partner: SKODA
-partner_image: /static/uploads/škoda-auto-logo.png
+partner_image: ''
 ---
 
 When all the systems fail, you need independent and reliable system to call for a help. The LoRa technology is ideal for this factory use-case. Installing a wiring is not an option, it takes weeks and and working force is expensive. Skoda Auto is using it's own LoRa factory network where all the notifications are send.

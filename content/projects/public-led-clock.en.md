@@ -1,7 +1,7 @@
 ---
 title: Public LED Clock
 draft: false
-date: 2018-12-10T12:06:34.786Z
+date: 2018-12-11T08:06:34.786Z
 description: >-
   Create giant LED displays for public to display clock, temperature or any text. Change colour and make a cool effects.
 tags:

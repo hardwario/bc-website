@@ -45,14 +45,14 @@ collections:
     format: 'frontmatter'
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string", pattern: [".{,35}", "Must have max. 35 characters"]}
-      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Draft", name: "draft", widget: "boolean", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string", pattern: [".{,120}", "Must have max. 120 characters"]}
       - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}
       - {label: "Knowledge", name: "levels", widget: "select", multiple: true, options: ["Beginner","Advanced"]}
       - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}
       - {label: "Device", name: "devices", widget: "select", multiple: true, options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"]}
-      - {label: "Idea", name: "idea", widget: "boolean"}
+      - {label: "Idea", name: "idea", widget: "boolean", required: false}
       - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
       - {label: "Main Image [1400x460]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
@@ -68,14 +68,14 @@ collections:
     format: 'frontmatter'
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string", pattern: [".{,35}", "Must have max. 35 characters"]}
-      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Draft", name: "draft", widget: "boolean", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string", pattern: [".{,120}", "Must have max. 120 characters"]}
       - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}
       - {label: "Knowledge", name: "levels", widget: "select", multiple: true, options: ["Beginner","Advanced"]}
       - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}
       - {label: "Device", name: "devices", widget: "select", options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"]}
-      - {label: "Idea", name: "idea", widget: "boolean"}
+      - {label: "Idea", name: "idea", widget: "boolean", required: false}
       - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
       - {label: "Main Image [1400x460]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}

@@ -321,7 +321,7 @@
 
 {{ if eq $isStarter false }}
 <section>
-  <div class="specification" id="specification" style = "background: none">
+  <div class="specification {{ if ne $isStarter false }}suitcase{{ end }}" id="specification">
     <div class="container">
       <div class="row">
         <div class="col">

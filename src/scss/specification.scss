@@ -21,7 +21,7 @@
 
     border-bottom: 1px solid #e5e5e5;
   }
-  
+
   background: url("../images/specification.jpg") no-repeat bottom 3*$baseline right;
 
   @media(max-width:1199px)
@@ -40,5 +40,15 @@
   strong
   {
     font-weight: 600;
+  }
+
+  &.suitcase{
+    background: url("../images/specification-suitcase.jpg") no-repeat bottom 3*$baseline right;
+
+    @media(max-width:767px)
+    {
+      background: url("../images/specification-suitcase.jpg") no-repeat right bottom;
+    }
+
   }
 }

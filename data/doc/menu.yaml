@@ -73,6 +73,8 @@ items:
       link: "doc/integrations/ubidots.md"
     - title: "Firebase"
       link: "doc/integrations/firebase.md"
+    - title: "Google Assistant"
+      link: "doc/integrations/google-assistant.en.md"
   - title: "Hardware"
     items:
     - title: "Basic Principles"

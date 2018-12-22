@@ -18,7 +18,7 @@ collections:
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
       - {label: "Main Image [cca 1400x510]", name: "image_main", widget: "image"}
-      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
+      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "blog-cs" # Used in routes, e.g., /admin/collections/blog
     label: "Blog CS" # Used in the UI
@@ -34,7 +34,7 @@ collections:
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
       - {label: "Main Image [cca 1400x510]", name: "image_main", widget: "image"}
-      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
+      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "projects-en" # Used in routes, e.g., /admin/collections/blog
     label: "Projects EN" # Used in the UI
@@ -55,7 +55,7 @@ collections:
       - {label: "Idea", name: "idea", widget: "boolean", required: false}
       - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
       - {label: "Main Image [1400x460]", name: "image_main", widget: "image"}
-      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
+      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Partner", name: "partner", widget: "string", required: false}
       - {label: "Partner Image [140x14O, 90x140, 140x90]", name: "partner_image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -78,7 +78,7 @@ collections:
       - {label: "Idea", name: "idea", widget: "boolean", required: false}
       - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
       - {label: "Main Image [1400x460]", name: "image_main", widget: "image"}
-      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
+      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Partner", name: "partner", widget: "string", required: false}
       - {label: "Partner Image [140x14O, 90x140, 140x90]", name: "partner_image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}

@@ -16,7 +16,7 @@ image_preview: /projects/restroom-monitoring-by-adastra/preview.jpg
 image_main: /projects/restroom-monitoring-by-adastra/main.jpg
 author: martin_hubacek
 partner: ADASTRA
-partner_image: /static/uploads/adastra-logo.png
+partner_image: /upload/adastra-logo.png
 ---
 
 Analyze if your restrooms are mostly empty or crowded. You can also uset this information to notifiy the offices or open-space that the restroom are empty.

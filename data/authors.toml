@@ -27,3 +27,9 @@ name = "Lukas Fabik"
 post = "Digital Clown"
 email = "lukas.fabik@hardwario.com"
 image = "lukas.jpg"
+
+[karel_blavka]
+name = "Karel Blavka"
+post = "Full Stack Developer"
+email = "karel.blavka@hardwario.com"
+image = "karel.jpg"

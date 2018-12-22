@@ -44,10 +44,10 @@ collections:
     extension: "en.md"
     format: 'frontmatter'
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string", pattern: [".{,35}", "Must have max. 35 characters"]}
+      - {label: "Title", name: "title", widget: "string", pattern: [".{0,35}", "Must have max. 35 characters"]}
       - {label: "Draft", name: "draft", widget: "boolean", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "string", pattern: [".{,120}", "Must have max. 120 characters"]}
+      - {label: "Description", name: "description", widget: "string", pattern: [".{0,120}", "Must have max. 120 characters"]}
       - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}
       - {label: "Knowledge", name: "levels", widget: "select", multiple: true, options: ["Beginner","Advanced"]}
       - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}
@@ -67,10 +67,10 @@ collections:
     extension: "cs.md"
     format: 'frontmatter'
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string", pattern: [".{,35}", "Must have max. 35 characters"]}
+      - {label: "Title", name: "title", widget: "string", pattern: [".{0,35}", "Must have max. 35 characters"]}
       - {label: "Draft", name: "draft", widget: "boolean", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "string", pattern: [".{,120}", "Must have max. 120 characters"]}
+      - {label: "Description", name: "description", widget: "string", pattern: [".{0,120}", "Must have max. 120 characters"]}
       - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}
       - {label: "Knowledge", name: "levels", widget: "select", multiple: true, options: ["Beginner","Advanced"]}
       - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}

@@ -6,7 +6,7 @@ menu:
     weight: 20
 ---
 
-{{% note "warning" %}}If you already have Raspberry Pi with the original Raspbian distribution, go to the section [**Setup on Original Raspbian**]({{< relref "#setup-on-original-raspbian" >}}). Or if you have OSMC, go to section [**Setup on OSMC**]({{< relref "#setup-on-osmc" >}}){{% /note %}}
+{{% note "warning" %}}If you already have Raspberry Pi with the original Raspbian distribution, go to the section [**Setup on Original Raspbian**]({{< relref "/doc/tutorials/custom-setup-on-raspberry-pi.en.md#setup-on-original-raspbian" >}}). Or if you have OSMC, go to section [**Setup on OSMC**]({{< relref "#setup-on-osmc" >}}){{% /note %}}
 
 This document will guide you through installing Raspberry Pi. The tutorial is tested for Raspberry Pi 3 (Model B) but should also work for older Raspberry Pi 2.
 
@@ -225,7 +225,7 @@ The connection procedure is as following:
 
         sudo apt install build-essential
 
-4. Continue point 3 in section the section [**Setup on Original Raspbian**]({{< relref "#setup-on-original-raspbian" >}})
+4. Continue point 3 in section the section [**Setup on Original Raspbian**]({{< relref "/doc/tutorials/custom-setup-on-raspberry-pi.en.md#setup-on-original-raspbian" >}})
 
 ## Related Documents
 

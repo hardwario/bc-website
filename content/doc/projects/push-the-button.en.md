@@ -135,7 +135,7 @@ The goal of this **Push Button Project** is to show the basics in a few simple s
 * Take a look at the [**Module Overview**]({{< relref "/doc/basics/module-overview.en.md" >}}).
 * Learn about [**MQTT**]({{< relref "/doc/interfaces/mqtt-protocol.en.md">}}) and [**BigClown MQTT topics**]({{<relref "/doc/interfaces/mqtt-topics.en.md">}}) to control LEDs and relays.
 * Try other [**integrations**]({{< relref "/doc/integrations/grafana-for-visualization.en.md" >}}) with **Grafana**, **Blynk**, **IFTTT**, **Ubidots** and others.
-* Use your [**Raspberry PI**]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md" >}}) or other [**single board computer (SBC)**]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md#setup-on-original-raspbian.en.md">}}) as a server.
+* Use your [**Raspberry PI**]({{< relref "/doc/tutorials/raspberry-pi-installation.en.md" >}}) or other [**single board computer (SBC)**]({{< relref "/doc/tutorials/custom-setup-on-raspberry-pi.en.md#setup-on-original-raspbian">}}) as a server.
 * [**Flash other firmware**]({{< relref "/doc/projects/radio-door-sensor.en.md#flash-door-sensor-firmware.en.md">}}) or [**write your own firmware**]({{<relref "/doc/firmware/basic-overview.en.md">}}) for the **Core Module**.
 * Check the [**Core Module pinouts**]({{< relref "/doc/hardware/header-pinout.en.md">}}) and add your own buttons, relays and sensors.
 

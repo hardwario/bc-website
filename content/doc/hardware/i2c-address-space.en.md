@@ -16,8 +16,8 @@ All addresses are provided in a 7-bit format.
 | 0x19    | LIS2DH12     | {{% shop "Core Module" %}}                                               | Channel I2C0                            |
 | 0x20    | TCA9534      | IQRF Module                                                              |                                         |
 | 0x21    | TCA9534      | GPS Module                                                               | Reserved                                |
-| 0x22    | TCA9534      | RS485 Module                                                             | Reserved                                |
-| 0x23    | TCA9534      | RS232 Module                                                             | Reserved                                |
+| 0x22    | TCA9534      |                                                                          | Reserved                                |
+| 0x23    | TCA9534      |                                                                          | Reserved                                |
 | 0x24    | TCA9534      | Ethernet Module                                                          | Reserved                                |
 | 0x25    | TCA9534      |                                                                          | Reserved                                |
 | 0x26    | TCA9534      |                                                                          | Reserved                                |
@@ -39,6 +39,8 @@ All addresses are provided in a 7-bit format.
 | 0x49    | TMP112       | {{% shop "Temperature Tag" %}}                                           | Alternate address                       |
 | 0x49    | TMP112       | {{% shop "Core Module" %}}, {{% shop "Cloony" %}}                        | Channel I2C0                            |
 | 0x4d    | SC16IS740    | {{% shop "CO2 Module" %}} I2C to UART bridge                             | Channel I2C0                            |
+| 0x4e    | SC16IS750    | {{% shop "RS-485 Module" %}} I2C to UART bridge                          | Channel I2C0                            |
+| 0x4f    | SC16IS750    | {{% shop "RS-232 Module" %}} I2C to UART bridge                          | Channel I2C0                            |
 | 0x58    | SGP30        | {{% shop "VOC Tag" %}}                                                   | Default address                         |
 | 0x5f    | HTS221       | {{% shop "Humidity Tag" %}} (R1.x)                                       |                                         |
 | 0x60    | MPL3115A2    | {{% shop "Barometer Tag" %}}, {{% shop "Climate Module" %}}              |                                         |

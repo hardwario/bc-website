@@ -6,7 +6,9 @@ menu:
     weight: 20
 ---
 
-[Core module](../../hardware/about-core-module/) can handle two-way communication with USB-connected device (computer, router, ...).
+{{% note "danger" %}}For Core Module R2 with FTDI chip please follow **How to: UART interface** tutorial and use UART2 for communication over FTDI to your computer. USB CDC console works only on older Core Module R1 where chip talks directly to the computer.{{% /note %}}
+
+{{% shop "Core Module" %}} **REV 1** can handle two-way communication with USB-connected device (computer, router, ...) over Virtual Com Port VCP.
 
 ## Prerequisites
 First you have to include the USB CDC library

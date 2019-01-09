@@ -6,25 +6,16 @@ menu:
     weight: 14
 ---
 
-The debugging of embedded system has been a headache for many insomnia nights of many generations of developers. There are many funny stories about debugging and how to do things right. Here we share some ideas how we have tackled this topic and it is up to you to decide your own approach. This is alway learning the hard way.
-
-> **Note:** Physics tends to show the bad side here in hardware. And remember there is no garbage collector watching your wild dreams spawn hundreds of threads or allocating gigs of RAM. Good luck anyway, citing the flattened battery statement :-)
-
-## Zero approach
-
-Welcome all prodigi programmers be sure that you are not alone in [not using debugger](https://lemire.me/blog/2016/06/21/i-do-not-use-a-debugger/). This is a way of being wholly emerged in the system and thus you do not need a debuger. The debugger is replaced by your own imaginaniton and external manifestations of the system you developing.
-
-With all the respect to computer pioneers and experienced experts, there are situations when some help or tool might come handy.
-
-> *It is said that [Saymour Cray](https://en.wikipedia.org/wiki/Seymour_Cray) was able to program his computer from scratch using just a front pannel in machine code ~ no compiler.*
-
 ## Starting simple
 
 The easiest way to debug and also the way how all the things started was just print out what ever you consider important to know. Wait the embedded system does not have any screen or printer connected. Well you are right, but there used to be a serial port. And if it is hopefully free to use and can be connected to real PC then you have your first **poor man's debugger**.
 
 To be able to receive UART data from Core Module you need USB UART and terminal emulator on PC (e.g. [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)) on Microsoft Windows or picocom on Linux)
 
-### Core Module
+### Core Module Rev 1
+
+Core Module revision 1 does not have FTDI serial to USB converter. You need to connect your own converter to the UART2 to the pins TX2 and RXD2.
+**You can skip to the next chapter if you have newer Core Module Rev 2 with FTDI.**
 
 For example USB UART from SparkFun:
 
@@ -39,6 +30,10 @@ Or another example USB UART from Mouser:
 Connect USB UART and Core Module into one PC's USB host sockets and interconnect Core Module with USB UART by single wire USB UART RX (YELLOW wire on cable) and Core Module TXD2 (header pin 22) - have a look at [Core Module Header drawing]({{< relref "/doc/hardware/header-pinout.en.md#module-drawing" >}}).
 
 {{< note "danger" "Beware of groud loop and ground voltage difference in case you do not use same PC to power Core Module and to connect USB UART." />}}
+
+## Core Module Rev 2
+
+Core Module Rev 2 have integrated FTDI chip connected to the UART2. You do not need to use separate serial converter, just connect USB cable to your computer.
 
 You need to add just two function calls into your application:
 

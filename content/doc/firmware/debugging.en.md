@@ -12,7 +12,7 @@ The easiest way to debug and also the way how all the things started was just pr
 
 To be able to receive UART data from Core Module you need USB UART and terminal emulator on PC (e.g. [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)) on Microsoft Windows or picocom on Linux)
 
-### Core Module Rev 1
+## Core Module Rev 1
 
 Core Module revision 1 does not have FTDI serial to USB converter. You need to connect your own converter to the UART2 to the pins TX2 and RXD2.
 **You can skip to the next chapter if you have newer Core Module Rev 2 with FTDI.**
@@ -34,6 +34,8 @@ Connect USB UART and Core Module into one PC's USB host sockets and interconnect
 ## Core Module Rev 2
 
 Core Module Rev 2 have integrated FTDI chip connected to the UART2. You do not need to use separate serial converter, just connect USB cable to your computer.
+
+## Example code
 
 You need to add just two function calls into your application:
 
@@ -80,10 +82,10 @@ void application_init(void)
 }
 ```
 
-After flashing of Core Module (`make dfu`) execute terminal emulator, open serial port with USB UART and set communication parameters:
+After flashing of Core Module execute terminal emulator, open serial port with USB UART and set communication parameters:
 
-* speed: 115200 b/s
-* bits, parity: 8N
+* speed: 115 200 baud
+* 8 bits, no parity (8N)
 
 Example of output:
 ```
@@ -97,38 +99,7 @@ Example of output:
 
 For mapping number to event type have a look into [BigClown SDK documentation for bc_button](https://sdk.bigclown.com/bc__button_8h_source.html#l00013)
 
-### Radio Dongle
-
-There is USB UART FTDI chip on Radio Dongle (you do not need any additional HW) but there is not button, so we will use slightly modified example with time as messages trigger:
-```C
-#include <application.h>
-
-void application_init(void)
-{
-    // Initialize logging
-    bc_log_init(BC_LOG_LEVEL_DEBUG, BC_LOG_TIMESTAMP_ABS);
-}
-
-void application_task(void)
-{
-    // Logging in action
-    bc_log_info("In application task");
-    // Shedule this function to be called 2000 ms later
-    // during the 2000 ms the MCU will sleep and conserve power
-    bc_scheduler_plan_current_relative(2000);
-}
-```
-
-Example of output:
-```
-# 0.50 <I> In application task
-# 2.50 <I> In application task
-# 4.50 <I> In application task
-# 6.50 <I> In application task
-# 8.50 <I> In application task
-```
-
-## Read log
+## Read logs with `bcf`
 
 Read log with connected device and following command:
 ```
@@ -146,6 +117,14 @@ Example of outuput:
 # 4.50 <I> In application task
 # 6.50 <I> In application task
 # 8.50 <I> In application task
+```
+
+## Flash and immediately start logging
+
+You can force `bcf` tool to start logging right after the code is uploaded. This way you do not miss a single debug output and you do not need any other application or terminal.
+
+```
+bcf flash firmware.bin --device [device] --log
 ```
 
 ## Colored logs

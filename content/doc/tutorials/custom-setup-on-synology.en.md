@@ -25,7 +25,11 @@ If you need more permanent solution than **BigClown Playground** you can install
 
 Synology NAS is a very versatile device. You can install many services with a single click of your mouse. You can also SSH to the internal Linux OS and change anything you like. If you connect {{< shop "Radio Dongle" >}} it appears as `/dev/ttyUSB0` so it's easy to use Synology NAS as a BigClown gateway. You can install `Python`, BigClown gateway `bcg` and `mosquitto` very easily. You can also use **Docker** to run different services separately from the host OS.
 
-This tutorial is going further and is using the **Virtual Machine Manager** to create completely separate virtual Ubuntu 16.04 server. Please see the [list of supported Synology NAS](https://www.synology.com/en-global/dsm/packages/Virtualization).
+{{% note "info" %}}
+**Virtalization which is used in this tutorial is not necessary**. You can install MQTT broker, Python 3 and `bcg` gateway directly on Linux which already runs on your NAS of any brand. The virtualization step is optional and it was choosed because my NAS supported it and has plenty of resources. On Synology just SSH to the NAS IP and use your name and password which you use to login to the web management.
+{{% /note %}}
+
+This tutorial is **going further** and is using the **Virtual Machine Manager** to create completely separate virtual Ubuntu 16.04 server. Please see the [list of supported Synology NAS](https://www.synology.com/en-global/dsm/packages/Virtualization).
 
 All the services will be installed inside the virtual machine. The advantage is that this machine can be easily exported and moved to another host. Synology is using QEMU emulator, but exported machines can be run also in Virtualbox without any issue. Other advantage is that you get more robustness of your data in comparison of Raspberry Pi which is using microSD card. Synology can use BTRFS filesystem which is immune to failure of one or many hard drives.
 

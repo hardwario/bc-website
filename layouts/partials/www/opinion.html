@@ -1,0 +1,31 @@
+<section>
+  <div class="bg bg--gray bg--bordered">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--withoutsubtitle text-center">{{ i18n "makers_say"}}</h2>
+
+          <div class="opinion">
+            <div class="row d-block d-lg-flex">
+              {{ range sort ($.Site.GetPage "section" "opinion").Pages ".Weight" }}
+                {{ .Render "grid" }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(function(){
+    $('.modal').modal({
+        show: false
+    }).on('hidden.bs.modal', function(){
+        $(this).find('iframe').each(function(){
+          this.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+        });
+    });
+});
+</script>

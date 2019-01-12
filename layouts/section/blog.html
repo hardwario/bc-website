@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "www/heading.html" (dict "heading" "Blog") }}
+{{ partial "www/heading.html" (dict "heading" .Params.mainHeading) }}
 
 <section>
   <div class="bg bg--gray">
@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col">
           <div class="text-center">
-              <a href="{{ .RSSLink }}" target="_blank" class="button button--redtext">Save BigClown's RSS feed</a>
+              <a href="{{ .RSSLink }}" target="_blank" class="button button--redtext" onclick="ga('gtm2.send', 'event', 'rss', 'click');">{{ i18n "save_rss" }}</a>
           </div>
         </div>
       </div>

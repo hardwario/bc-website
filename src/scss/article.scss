@@ -33,6 +33,9 @@
       padding-top: 1.5*$baseline;
     }
 
+    &--smallerPadding{
+      padding-top: 0.5*$baseline;
+    }
     &__button
     {
       line-height: 2*$baseline;
@@ -80,7 +83,6 @@
     text-align: left;
     position: relative;
     padding-left: 90px;
-    height:4*$baseline;
     margin-bottom: 1.5*$baseline;
     text-decoration: none;
 
@@ -107,7 +109,14 @@
       border-radius: 50%;
       box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
       top:50%;
-      margin-top: -35px;
+      margin-top: -40px;
+
+      &.partner{
+        height: 80px;
+        width: auto;
+        box-shadow: none;
+        border-radius: 0;
+      }
     }
 
     strong
@@ -254,6 +263,7 @@
       width:auto;
       margin-top: 2*$baseline;
       border-radius: 7px;
+      max-width: calc(100% + 200px);
 
       @media(max-width:1199px)
       {
@@ -261,6 +271,29 @@
         margin-right: 0;
         width:100%;
       }
+    }
+
+    .video-container{
+      display: block;
+      margin:0 -100px 27px;
+      width:auto;
+      margin-top: 2*$baseline;
+      border-radius: 7px;
+      max-width: calc(100% + 200px);
+      height: 550px;
+      overflow: hidden;
+
+      iframe{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    .img-container{
+      width: calc(100% + 200px);
     }
 
     ol
@@ -316,16 +349,31 @@
   &__tags
   {
     line-height: 2*$baseline;
-    padding-top: $baseline;
-    padding-bottom: 2*$baseline;
-    border-bottom: 1px solid #dfdfdf;
+    padding-top: 0;
+    padding-bottom: $baseline;
+    //border-bottom: 1px solid #dfdfdf;
     //margin-bottom: 2*$baseline;
     margin-left: -5px;
     margin-bottom: 1*$baseline;
 
+    ul{
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+
+      li{
+        display: inline-block;
+      }
+    }
     a
     {
       margin: 0 10px;
+
+      @media(max-width:767px)
+      {
+      }
+
     }
   }
 

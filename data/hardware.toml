@@ -1,0 +1,106 @@
+[[products]]
+title = "1-Wire Module"
+name = "onewire"
+
+[[products]]
+title = "Base Module"
+code = "base"
+name = "module-base"
+
+[[products]]
+title = "Barometer Tag"
+name = "tag-barometer"
+
+[[products]]
+title = "Mini Battery Module"
+name = "module-battery-mini"
+gpio = [
+  "P0",
+  "P1"
+]
+
+[[products]]
+title = "Battery Module"
+name = "module-battery"
+gpio = [
+  "P0",
+  "P1"
+]
+
+[[products]]
+title = "Climate Module"
+name = "module-climate"
+address = [
+  "0x40",
+  "0x44",
+  "0x48",
+  "0x60"
+]
+
+[[products]]
+title = "Cloony"
+name = "cloony"
+
+[[products]]
+title = "CO2 Module"
+name = "module-co2"
+
+[[products]]
+title = "Core Module"
+name = "module-core"
+
+[[products]]
+title = "Encoder Module"
+name = "module-encoder"
+
+[[products]]
+title = "Humidity Tag"
+name = "tag-humidity"
+
+[[products]]
+title = "LCD Module"
+name = "module-lcd"
+
+[[products]]
+title = "Lux Meter Tag"
+name = "tag-lux-meter"
+
+[[products]]
+title = "Mini Battery Module"
+name = "module-battery-mini"
+
+[[products]]
+title = "NFC Tag"
+name = "tag-nfc"
+
+[[products]]
+title = "PIR Module"
+name = "module-pir"
+
+[[products]]
+title = "Power Module"
+name = "module-power"
+
+[[products]]
+title = "Probe Module"
+name = "module-probe"
+
+[[products]]
+title = "Relay Module"
+name = "module-relay"
+
+[[products]]
+title = "Sensor Module"
+name = "module-sensor"
+
+[[products]]
+title = "Sigfox Module"
+name = "module-sigfox"
+
+[[products]]
+title = "Tag Module"
+name = "module-tag"
+
+[[products]]
+title = "Temperature Tag"
+name = "tag-temperature"

@@ -1,0 +1,143 @@
+---
+title: "Project Workflow"
+---
+
+Let's dive a little more into how we envision that each project you start might be done.
+
+{{% note "warning" %}}This document assumes you are already familiar with the basic concepts from the document [**Getting Started**]({{< relref "/doc/basics/getting-started.en.md" >}}).{{% /note %}}
+
+## Generic Guidelines
+
+Each project is unique but we still like to provide these generic guidelines that will give you an idea of what you can do.
+
+### Phase #1: Project Planning
+
+You can either come up with your completely unique idea, or you may get inspired by our reference projects. In either case, it is worth spending a couple of minutes to plan your work.
+
+To be more specific, here is the list of basic questions to answer:
+
+* **What are the tools required?**
+
+* **Which hardware components will I need to build the project?**
+
+* **How will the hardware components interact with me?**
+
+* **How will the hardware components communicate with each other?**
+
+* **How will the system integrate with cloud services (if any)?**
+
+* **How is the system open for any future tweaking and extensibility?**
+
+### Phase #2: Getting Stuff
+
+There is no one-stop-shop for all your needs. The [**BigClown Shop**](https://shop.bigclown.com/) provides a solid starting point for the IoT processor and communication modules, interfaces, sensors, actuators, etc.
+
+Additionally, the **BigClown IoT Kit** mates perfectly with 3rd party products:
+
+* [**Sparkfun**](https://www.sparkfun.com/)
+
+* [**Adafruit**](https://www.adafruit.com/)
+
+* [**Seeed Studio**](https://www.seeedstudio.com/)
+
+* ...and others
+
+### Phase #3: Firmware Upload
+
+You can start with our existing pre-built firmware images, or write your own using our high-level **BigClown Firmware SDK**.
+
+To make firmware uploads simple, we have developed the **BigClown Firmware Tool** which streamlines the entire flashing process.
+
+{{% note "info" %}}More information about the **BigClown Firmware Tool** can be found in these documents [**Toolchain Setup**]({{< relref "/doc/firmware/toolchain-setup.en.md" >}}) and [**Toolchain Guide**]({{< relref "/doc/firmware/toolchain-guide.en.md" >}}).{{% /note %}}
+
+### Phase #4: Hardware Assembling
+
+If your project consists of the **BigClown**-only hardware components, this part is a real fun. Using our **Plug'n'Make** system of compatible modules and tags, you can do so without wiring or soldering.
+
+However, if you need to hookup and/or solder your own circuitry or any 3rd party breakout board, we did not put any obstacle in your way. For such purposes, you can find the prototyping area on the **Battery Module** or **Base Module**.
+
+{{% note "warning" %}}Simple 1-Wire interfaces like thermistors, external inputs or voltage outputs can be connected using **Sensor Module** featuring 2 channels and flexible weak/strong pull-up configuration.{{% /note %}}
+
+### Phase #5: Playground Bootstrap
+
+For most of our projects, we use the **Node-RED** client (and web-server) which allows you to create automation flows visually using an intuitive drag-and-drop interface. This tool perfectly integrates with the MQTT protocol, a fundamental to **BigClown IoT Kit** ecosystem.
+
+We've bundled up all the essential software you need to get a project started in the **BigClown Playground**, compatable with **Windows**, **macOS** and **Ubuntu**.
+
+{{% note "warning" %}}Those users who use the **BigClown Raspbian** image on **Raspberry Pi** can skip this part since it comes already pre-installed on the image.{{% /note %}}
+
+This **BigClown Playground** includes:
+
+* **Mosquitto** MQTT broker
+
+* **Node-RED** application
+
+* **BigClown Gateway**
+
+### Phase #6: Radio Pairing
+
+Most of our projects, and probably yours, will be wireless. And there is a need to pair the items to form the network. We use star-network topology and pairing is pretty simple. Just bring the gateway to the pairing mode and let the node transmit the pairing request.
+
+{{% note "info" %}}More information about the radio communication and network can be found in the document [**Sub-GHz Radio**]({{< relref "/doc/interfaces/sub-ghz-radio.en.md" >}}).{{% /note %}}
+
+### Phase #7: Communication Test
+
+Getting the radio link working is half the victory. Normally it is as simple as observing the MQTT messages either in your prompt or using **Node-RED** debug window. Simply activate the sensor, push the button or inject the MQTT message to control the actuator to see whether the link is working.
+
+This is how you can start observing MQTT messages from your prompt:
+
+```sh
+mosquitto_sub -t '#' -v
+```
+
+### Phase #8: Enclosure Wrapping
+
+Well, having the working prototypes on the table is just as beautiful as it can be. These gadgets can get even more beautiful when they get wrapped in the **BigClown** colorful enclosures.
+
+We have designed these as freely available models, ready to be printed on your 3D printer.
+
+{{% note "info" %}}More information can be found in the document [**Enclosures**]({{< relref "/doc/basics/enclosures.en.md" >}}).{{% /note %}}
+
+### Phase #9: Services Integration
+
+The world of IoT is all about integrations and we partner and integrate with several 3rd party platforms. To name a few:
+
+* [**Ubidots**](https://ubidots.com/)
+
+* [**Anemone**](https://www.anemone.cloud/)
+
+* [**Grafana**](https://grafana.com/)
+
+* [**Blynk**](http://www.blynk.cc/)
+
+The integration guides are discussed in the **Integrations** section of this documentation.
+
+### Phase #10: MQTT Tweaking
+
+It is the right approach to have MQTT topics and responses properly described so you can tweak your project, extend it or integrate it easily anytime from any development environment.
+
+Remember, the MQTT's asynchronous approach allows you to build the whole architecture of microservices.
+
+{{% note "info" %}}More information can be found in the document [**MQTT Protocol**]({{< relref "/doc/interfaces/mqtt-protocol.en.md" >}}).{{% /note %}}
+
+## Share Your Work
+
+It is always a great feeling when you finish something. Honestly, we know these feelings are even stronger when you share what you have achieved with other people.
+
+Get social - start with a tweet, screenshot, post to the forum or get to the point when you will write down a cookbook of your project, so anybody can build it and use it.
+
+**Moreover, this documentation is open-source project and anybody can contribute with a project or a small improvement. So why shouldn't you?**
+
+## Related Documents
+
+* [**Getting Started**]({{< relref "/doc/basics/getting-started.en.md" >}})
+
+* [**Toolchain Setup**]({{< relref "/doc/firmware/toolchain-setup.en.md" >}})
+
+* [**Toolchain Guide**]({{< relref "/doc/firmware/toolchain-guide.en.md" >}})
+
+* [**Sub-GHz Radio**]({{< relref "/doc/interfaces/sub-ghz-radio.en.md" >}})
+
+* [**Enclosures**]({{< relref "/doc/basics/enclosures.en.md" >}})
+
+* [**MQTT Protocol**]({{< relref "/doc/interfaces/mqtt-protocol.en.md" >}})

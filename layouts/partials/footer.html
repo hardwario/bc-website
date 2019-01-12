@@ -2,78 +2,117 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-5">
-                    <div class="footer__title">Contact</div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="footer__text">
-                                <strong>HARDWARIO s.r.o.</strong><br />
-                                Mrštíkova 399/2a<br />
-                                46007 Liberec<br />
-                                CZECHIA
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="footer__text">
-                                <strong>Phone</strong><br />
-                                +420 725 190 630<br />
-                                <strong>Email</strong><br />
-                                <a href="mailto:ask@bigclown.com">ask@bigclown.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="footer__title">Navigation</div>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/kits/">Kits</a></li>
-                        <li><a href="/team/">Our team</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                    <div class="footer__title">Support</div>
-                    <div class="row">
-                        <div class="col">
-                            <ul>
-                                <li><a href="/doc/" target="_blank">Documentation</a></li>
-                                <!--<li><a href="https://intercom.help/bigclown" target="_blank">FAQ</a></li>-->
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li><a href="https://forum.bigclown.com" target="_blank">Forum</a></li>
-                                <li><a href="https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <div class="footer__title">Headquarters</div>
                     <div class="footer__text">
+                        <strong>HARDWARIO LTD</strong><br />
+                        34b York Way, King’s Cross<br />
+                        London, N1 9AB<br />
+                        UNITED KINGDOM<br />
+                        <a href="mailto:ask@bigclown.com">ask@bigclown.com</a><br />
+                    </div>
+                </div>
+
+                <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer__title">Development</div>
+                    <div class="footer__text">
+                        <strong>HARDWARIO s.r.o.</strong><br />
+                        U Jezu 525/4<br />
+                        460 01 Liberec<br />
+                        {{ i18n "czechia" }}<br />
+                    </div>
+                </div>
+
+                <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <div class="footer__title">{{ i18n "navigation" }}</div>
+                    <div class="footer__text">
+                    <ul>
+                        {{ range .Site.Menus.footer }}
+                          <li><a href="{{ .URL }}" target = "{{ .Post }}">{{ .Name }}</a></li>
+                        {{ end }}
+                    </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-2">
+                    <div class="footer__title">{{ i18n "support" }}</div>
+                    <div class="footer__text">
+                      <ul>
+                        <li><a href="{{ "doc/" | relLangURL }}" target="_blank">{{ i18n "documentation" }}</a></li>
+                        <li><a href="https://forum.bigclown.com" target="_blank">{{ i18n "forum" }}</a></li>
+                        <li><a href="https://github.com/bigclownlabs" target="_blank">GitHub</a></li>
+                        <!--<li><a href="https://intercom.help/bigclown" target="_blank">FAQ</a></li>-->
+                      </ul>
                         <a href="mailto:support@bigclown.com">support@bigclown.com</a>
+                      </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer__line"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="soc d-flex">
-                        <a href="https://www.facebook.com/bigclownlabs/" target="_blank" class="soc__facebook text-hide">facebook</a>
-                        <a href="https://twitter.com/BigClownLabs/" target="_blank" class="soc__twitter text-hide">twitter</a>
-                        <a href="https://www.instagram.com/bigclownlabs/" target="_blank" class="soc__instagram text-hide">instagram</a>
-                        <a href="https://www.youtube.com/channel/UCf1CdGt1XBwAAT_Qh__bEhQ" target="_blank" class="soc__youtube text-hide">youtube</a>
-                        <a href="https://www.linkedin.com/company/13187032/" target="_blank" class="soc__linked text-hide">linkedin</a>
-                        <a href="https://github.com/bigclownlabs" target="_blank" class="soc__github text-hide">github</a>
-                        <!--<a href="" class="soc__presskit text-hide">presskit</a>-->
+                {{ if eq .Lang "cs" }}
+                <div class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-2">
+                    <div class="footer__title"></div>
+                    <div class="row">
+                        <div class="col">
+                          <a href = "https://napadroku.cz/soutez/r2018/vysledky-2018/#winners" target="_blank"><img src = "/_assets/images/huawei_pecet.jpg" alt = "BigClown - Huawei Startup roku 2018" class="img-responsive"/></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-auto">
-                    <div class="button button--arrowtop">Back to Top</div>
+                {{ end }}
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer__line"></div>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="soc d-flex">
+                            <a href="https://www.facebook.com/bigclownlabs/" target="_blank" class="soc__facebook text-hide">facebook</a>
+                            <a href="https://twitter.com/BigClownLabs/" target="_blank" class="soc__twitter text-hide">twitter</a>
+                            <a href="https://www.instagram.com/bigclownlabs/" target="_blank" class="soc__instagram text-hide">instagram</a>
+                            <a href="https://www.youtube.com/channel/UCf1CdGt1XBwAAT_Qh__bEhQ" target="_blank" class="soc__youtube text-hide">youtube</a>
+                            <a href="https://www.linkedin.com/company/13187032/" target="_blank" class="soc__linked text-hide">linkedin</a>
+                            <a href="https://github.com/bigclownlabs" target="_blank" class="soc__github text-hide">github</a>
+                            <!--<a href="" class="soc__presskit text-hide">presskit</a>-->
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="button button--arrowtop">{{ i18n "back_to_top" }}</div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </footer>
+
+
+<!-- OuiBounce Modal -->
+<div id="bio_ep">
+    <form method="" action="" id="newsletterPopupSignup">
+      <div class="bg bg--darkgray">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="intro__title2 text-uppercase"><em>{{ i18n "we_will_inspire_you" }}</em></h2>
+              <h2 class="title"><small>{{ i18n "regularly_clownsletter" }}</small></h2>
+              <input type="email" placeholder="{{ i18n "give_me_email" }}" name="email" id="mc-email" class="newsletter__input" />
+              <button type="submit" class="button button--red newsletter__button">{{ i18n "get_inspiration" }}</button>
+              <label for="mc-email" style = "color: #53a327"></label>
+              <p class="pt-2">{{ i18n "how_to_inspire_others" }}</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </form>
+</div>
+
+<script>
+bioEp.init({
+  delay: 15,
+  showOnDelay: false,
+  cookieExp: 10,
+  width: 800,
+  height: 420
+});
+</script>

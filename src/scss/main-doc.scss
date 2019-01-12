@@ -154,7 +154,7 @@ small {
 @import "header";
 @import "logo";
 @import "navtop";
-//@import "button";
+@import "button";
 @import "button-doc";
 @import "mydropdown";
 //@import "intro";
@@ -186,7 +186,7 @@ small {
 //@import "videoWrapper";
 //@import "thankyou";
 //@import "team";
-//@import "modal";
+@import "modal";
 //@import "collapsor";
 //@import "livechat";
 //@import "threed";
@@ -195,3 +195,5 @@ small {
 //@import "syntax";
 @import "zoom";
 @import "_glyphicons";
+@import "guidepost";
+@import "highlight/default";

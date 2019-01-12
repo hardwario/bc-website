@@ -1,0 +1,1 @@
+The **LoRa Module** allows you to communicate to the **LoRaWAN wireless network**, a network made for the IoT. This technology makes it possible to communicate from a battery-powered device directly to server, even for several years. The **LoRa Module** uses radio frequency 868 MHz.

@@ -1,4 +1,90 @@
-<meta property="og:url" content="{{ .Site.BaseURL }}" />
+{{ if eq .Section "blog" }}
+
+  {{ if .IsPage }}
+  <title>{{ .Page.Title }} | BigClown</title>
+  <meta name="description" content="{{ .Page.Summary }}">
+  <meta property="og:url" content="{{ .URL | absURL }}" />
+  <meta property='og:title' content="{{ .Title }} | Blog BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .URL | absURL }}{{ .Params.images.main }}">
+
+  {{ else }}
+  <title>{{ .Page.Title }} | BigClown</title>
+  <meta name="description" content="{{ .Page.Summary }}">
+  <meta property="og:url" content="{{ .URL | absURL }}" />
+  <meta property='og:title' content="{{ .Title }} | BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/blog.jpg">
+  {{ end }}
+
+{{ else if eq .Section "doc" }}
+
+  {{ if .IsPage }}
+  <title>{{ .Page.Title }} | BigClown</title>
+  <meta name="description" content="{{ .Page.Summary }}">
+  <meta property="og:url" content="{{ .URL | absURL }}" />
+  <meta property='og:title' content="{{ .Title }} | Learn BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/doc.jpg">
+
+  {{ else }}
+  <title>{{ .Page.Title }} | BigClown</title>
+  <meta name="description" content="{{ .Page.Summary }}">
+  <meta property="og:url" content="{{ .URL | absURL }}" />
+  <meta property='og:title' content="{{ .Title }} | BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/doc.jpg">
+  {{ end }}
+
+{{ else if eq .Section "projects" }}
+
+  {{ if .IsPage }}
+  <title>{{ .Page.Title }} | BigClown</title>
+  <meta name="description" content="{{ .Page.Summary }}">
+  <meta property="og:url" content="{{ .URL | absURL }}" />
+  <meta property='og:title' content="{{ .Title }} | BigClown Projects">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.images.main }}">
+
+  {{ else }}
+  <title>{{ .Page.Title }} | BigClown</title>
+  <meta name="description" content="{{ .Page.Summary }}">
+  <meta property="og:url" content="{{ .URL | absURL }}" />
+  <meta property='og:title' content="{{ .Title }} | BigClown">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/projects.jpg">
+  {{ end }}
+
+{{ else if eq .Section "kits" }}
+<title>{{ .Page.Title }} | BigClown</title>
+<meta name="description" content="{{ .Page.Summary }}">
+<meta property="og:url" content="{{ .URL | absURL }}" />
 <meta property='og:title' content="{{ .Title }} | BigClown">
 <meta property="og:type" content="website">
-<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta_photo.jpg">
+<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/kits.jpg">
+
+{{ else if eq .Section "support" }}
+<title>{{ .Page.Title }} | BigClown</title>
+<meta name="description" content="{{ .Page.Summary }}">
+<meta property="og:url" content="{{ .URL | absURL }}" />
+<meta property='og:title' content="{{ .Title }} | BigClown">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/support.jpg">
+
+{{ else if eq .Section "team" }}
+<title>{{ .Page.Title }} | BigClown</title>
+<meta name="description" content="{{ .Page.Summary }}">
+<meta property="og:url" content="{{ .URL | absURL }}" />
+<meta property='og:title' content="{{ .Title }} | BigClown">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/team.jpg">
+
+{{ else }}
+<title>BigClown: {{ .Params.Meta.Title }}</title>
+<meta name="description" content="{{ .Page.Summary }}">
+<meta property="og:url" content="{{ .URL | absURL }}" />
+<meta property='og:title' content="BigClown: {{ .Params.meta.title }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/home.jpg">
+
+{{ end }}

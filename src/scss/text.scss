@@ -40,6 +40,7 @@
     background-size: 48px 70px;
     padding-bottom: 5*$baseline;
     margin-top: 0;
+    width: 100%;
 
     @media(max-width:991px)
     {
@@ -76,7 +77,7 @@
   &--project
   {
     text-align: center;
-    padding-bottom: 2*$baseline;
+    padding-bottom: 1*$baseline;
     padding-top: 0;
 
     p
@@ -107,6 +108,19 @@
       line-height: 1*$baseline;
       color:#393e45;
       padding-bottom: 0;
+    }
+
+    ol,ul
+    {
+      padding: 5px 0 5px 30px;
+      margin: 0;
+
+      li{
+      font-size: em(18);
+      line-height: 1*$baseline;
+      color:#393e45;
+      }
+
     }
   }
 

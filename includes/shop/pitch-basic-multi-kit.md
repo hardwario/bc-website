@@ -1,1 +1,1 @@
-An easy start to making your IoT devices. With this kit, you'll be able to build the **Motion Detector** and **Climate Monitor** projects. The kit also includes the **USB Dongle** that will create a gateway for the devices you build.
+An easy start to making your IoT devices. With this kit, you'll be able to build the **Motion Detector** and **Climate Monitor** projects. The kit also includes the **Radio Dongle** that will create a gateway for the devices you build.

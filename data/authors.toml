@@ -1,0 +1,35 @@
+[martin_hubacek]
+name = "Martin Hubáček"
+post = ""
+email = "martin.hubacek@hardwario.com"
+image = "martin.jpg"
+
+[pavel_hubner]
+name = "Pavel Hübner"
+post = "CTO & Co-Founder"
+email = "pavel.hubner@hardwario.com"
+image = "pavel.jpg"
+
+[alan_fabik]
+name = "Alan Fabik"
+post = "CEO & Co-Founder"
+email = "alan.fabik@hardwario.com"
+image = "alan.jpg"
+
+[michal_muhlpachr]
+name = "Michal Mühlpachr"
+post = "System Architect"
+email = "michal.muhlpachr@hardwario.com"
+image = "michal.jpg"
+
+[lukas_fabik]
+name = "Lukas Fabik"
+post = "Digital Clown"
+email = "lukas.fabik@hardwario.com"
+image = "lukas.jpg"
+
+[karel_blavka]
+name = "Karel Blavka"
+post = "Full Stack Developer"
+email = "karel.blavka@hardwario.com"
+image = "karel.jpg"

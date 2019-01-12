@@ -1,17 +1,106 @@
 baseURL = "https://www.bigclown.com/"
-languageCode = "en"
+DefaultContentLanguage = "en"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-title = "BigClown"
+
+[params]
+  menuNames = ["main","doc"]
+  homeURL = "/"
+  shopURL = "https://shop.bigclown.com/?currency=EUR"
+  productionURL = "https://www.bigclown.com"
+
+[languages]
+  [languages.en]
+    LanguageName = "ENG"
+    weight = 1
+    [languages.en.params]
+      baseURL = "/"
+      shopURL = "https://shop.bigclown.com/?currency=EUR"
+  [languages.cs]
+    LanguageName = "CZE"
+    weight = 2
+    [languages.cs.params]
+      baseURL = "/cs/"
+      shopURL = "https://shop.bigclown.com/?currency=CZK"
+      homeURL = "/cs/"
+
+[menu]
+
+[[languages.en.menu.doc]]
+  identifier = "intro"
+  name = "Intro"
+  url = "/doc/"
+  weight = 1
+
+[[languages.en.menu.doc]]
+  identifier = "basics"
+  name = "Basics"
+  url = "/doc/basics/quick-start-guide/"
+  weight = 10
+
+[[languages.en.menu.doc]]
+  identifier = "tutorials"
+  name = "Tutorials"
+  url = "/doc/tutorials/raspberry-pi-tutorial/"
+  weight = 20
+
+[[languages.en.menu.doc]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/doc/projects/push-the-button/"
+  weight = 30
+
+[[languages.en.menu.doc]]
+  identifier = "interfaces"
+  name = "Interfaces"
+  url = "/doc/interfaces/mqtt-protocol/"
+  weight = 40
+
+[[languages.en.menu.doc]]
+  identifier = "integrations"
+  name = "Integrations"
+  url = "/doc/integrations/grafana-for-visualization/"
+  weight = 50
+
+[[languages.en.menu.doc]]
+  identifier = "hardware"
+  name = "Hardware"
+  url = "/doc/hardware/basic-principles/"
+  weight = 60
+
+[[languages.en.menu.doc]]
+  identifier = "firmware"
+  name = "Firmware"
+  url = "/doc/firmware/basic-overview/"
+  weight = 70
+
+[[languages.en.menu.doc]]
+  identifier = "tools"
+  name = "Tools"
+  url = "/doc/tools/bcf/"
+  weight = 80
+
+[[languages.en.menu.doc]]
+  identifier = "documentation"
+  name = "Documentation"
+  url = "/doc/documentation/contribution-setup/"
+  weight = 90
 
 [blackfriday]
 smartypants = false
-
-[params]
-menuNames = ["main"]
-productionURL = "https://www.bigclown.com"
 
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
+
+[taxonomies]
+  tag = "tags"
+  level = "levels"
+  place = "places"
+  environment = "environmets"
+  device = "devices"
+
+[outputs]
+        home = [ "HTML", "JSON"]
+        page = [ "HTML"]

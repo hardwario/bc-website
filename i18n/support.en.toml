@@ -1,0 +1,41 @@
+[support_heading]
+other = "How can we help you?"
+
+[support_snippet_heading]
+other = "Find right answers"
+
+[support_subheading]
+other = "to your questions about BigClown"
+
+[documentation]
+other = "Documentation"
+
+[documentation_desc]
+other = "Find step by step instructions here, including kit assembling and the cloud services integration."
+
+[support_text]
+other = "Do not be afraid to ask us anything; we will be happy to help you! You can use our live chat too."
+
+[forum]
+other = "Forum"
+
+[forum_desc]
+other = "Chat with other makers, discuss your projects, share your progress and finished tasks."
+
+[online_chat]
+other = "Online Chat"
+
+[online_chat_desc]
+other = "Don't hesitate to contact our live support and discuss your idea or project."
+
+[github]
+other = "GitHub"
+
+[github_desc]
+other = "On GitHub you can find all source codes. Don't remember, we're open-source project."
+
+[hackster]
+other = "Hackster.io"
+
+[hackster_desc]
+other = "Looking for exact tutorials to your next project or inspiration? On Hackster we publish full step-by-step tutorials."

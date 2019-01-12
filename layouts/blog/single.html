@@ -7,7 +7,15 @@
         <div class="article__header">
           <div class="article__header__button">
             <!--<a href="" class="button button--tag button--tag--bigger button--tag--blue button--tag--blue--active">Indiegogo</a>-->
-            <div class="article__header__info"><span>{{ .Date.Format "2 January 2006" }}</span> <span>{{ .ReadingTime }} min read</span></div>
+            <div class="article__header__info">
+              <span>
+                {{ if eq .Lang "cs" }}
+                  {{ .Date.Day }}. {{ index $.Site.Data.mesice (printf "%d" .Date.Month) }} {{ .Date.Year }}
+                {{ else }}
+                  {{ .Date.Format "2 January 2006" }}
+                {{ end }}
+              </span>
+              <span>{{ .ReadingTime }} {{ i18n "min_read" }}</span></div>
             <h1 class="article__title">{{ .Title }}</h1>
             <div class="text text--perex">
               <p>{{ .Params.description }}</p>
@@ -15,9 +23,10 @@
 
             <div class="d-flex justify-content-center">
               <div class="article__author d-flex flex-column justify-content-center">
-                <img src="/authors/{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
-                <strong>{{ .Params.author.name }}</strong>
-                <span>{{ .Params.author.post }}</span>
+                {{ $author := index $.Site.Data.authors .Params.author }}
+                <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
+                <strong>{{ $author.name }}</strong>
+                <span>{{ $author.post }}</span>
               </div>
             </div>
           </div>
@@ -26,7 +35,7 @@
     </div>
   </div>
   <div class="article__image">
-    <img src="{{ .URL }}{{ .Params.images.main }}" alt="{{ .Title }}" />
+    <img src="{{ .Params.image_main }}" alt="{{ .Title }}" />
   </div>
   <div class="container">
     <div class="row justify-content-center">
@@ -46,9 +55,9 @@
         <div class="row">
           <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">
             <div class="article__author article__author--bottom d-flex flex-column justify-content-center">
-              <img src="/authors/{{ .Params.author.image }}" alt="{{ .Params.author.name }}" />
-              <strong>{{ .Params.author.name }}</strong>
-              <span>{{ .Params.author.post }}</span>
+              <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
+              <strong>{{ $author.name }}</strong>
+              <span>{{ $author.post }}</span>
             </div>
           </div>
           <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">

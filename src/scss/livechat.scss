@@ -12,6 +12,11 @@
     min-height: 68px;
     background-size: 100% auto;
     max-width: 137px;
+
+    &__2{
+      background: url("../svg/light-bulb-red.svg") no-repeat center center;
+      background-size: contain;
+    }
   }
 
   &__title

@@ -1,0 +1,77 @@
+[start_making]
+other = "Udělej první krok <small>se single kity a naší plnou podporou</small>"
+
+[get_more]
+other = "Postav mnohem více<small>s našimi Multi Kity</small>"
+
+[show_all_kits]
+other = "Ukaž všechny kity"
+
+[able_to_make]
+other = "Můžeš si postavit"
+
+[nose]
+other = "Klaunský nos"
+
+[price]
+other = "Cena"
+
+[save]
+other = "Ušetři"
+
+[recommended]
+other = "DOPORUČUJEME"
+
+[overview]
+other = "Přehled"
+
+[kits]
+other = "Kity"
+
+[integration]
+other = "integrace"
+
+[tech_specs]
+other = "tech. specifikace"
+
+[support]
+other = "Podpora"
+
+[buy]
+other = "koupit"
+
+[explore_modules]
+other = "prohlédni si moduly v kitu"
+
+[buy_it_now]
+other = "KUP TEĎ!"
+
+[description]
+other = "Popis"
+
+[modules_in_kit]
+other = "Moduly v kitu"
+
+[optional_modules]
+other = "Volitelné moduly"
+
+[able_to_build]
+other = "Co si dokáže samostatně postavit"
+
+[integration_ready]
+other = "Kit je připraven na integraci s"
+
+[many_more]
+other = "a mnohem více ..."
+
+[coming_soon]
+other = "už brzy"
+
+[technical_specification]
+other = "Technická specifikace"
+
+[low_power_networks_integration]
+other = "Integrace Low-Power sítí"
+
+[extend_kit]
+other = "Rozšiř svůj kit modulem pro low-power sítě a udělej jej nezávislým na internetovém připojení a napájení ze zdroje."

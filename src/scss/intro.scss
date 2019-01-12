@@ -256,7 +256,7 @@
   {
     max-height: none;
     min-height: 0;
-    height:270px;
+    height:170px;
     width:100%;
     background: url("../images/intro_bg2.jpg") no-repeat center center;
     background-size: cover;
@@ -298,6 +298,26 @@
     padding: 0 15px;
     text-align: center;
 
+    @media(max-width: 767px)
+    {
+      font-size: em(32);
+      line-height: 1.5*$baseline;
+    }
+
+    &--notupper
+    {
+      text-transform: none;
+    }
+  }
+
+  &__title4
+  {
+    font-size: em(48);
+    font-weight: 900;
+    line-height: 2*$baseline;
+    padding: 0 15px;
+    text-align: center;
+    padding-top: 81px;
     @media(max-width: 767px)
     {
       font-size: em(32);

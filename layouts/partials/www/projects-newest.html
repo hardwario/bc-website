@@ -2,16 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h2 class="title title--withoutsubtitle text-center">Learn from other makers and their projects</h2>
+        <h2 class="title title--withoutsubtitle text-center">{{ i18n "learn_from_other" }}</h2>
 
         <div class="articles">
           <div class="row">
             {{ range first 6 ($.Site.GetPage "section" "projects").Pages }}
+              <div  class="col-12 col-md-6 col-lg-4">
               {{ .Render "grid" }}
+              </div>
             {{ end }}
           </div>
           <div class="text-center">
-            <a href="/en/projects" class="button button--redtext button--redtext--2">Show all projects</a>
+            <a href="{{ "projects/" | absLangURL }}" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>
           </div>
         </div>
       </div>

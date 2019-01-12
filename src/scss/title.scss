@@ -41,4 +41,15 @@
       padding-bottom: 1*$baseline;
     }
   }
+  &--smallerPadding
+  {
+    padding-top: 0;
+    padding-bottom: 1.5*$baseline;
+
+    @media(max-width: 991px)
+    {
+      padding-top: 0*$baseline;
+      padding-bottom: 1.5*$baseline;
+    }
+  }
 }

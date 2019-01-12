@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "www/heading.html" (dict "heading" "Contact") }}
+{{ partial "www/heading.html" (dict "heading" .Params.mainHeading) }}
 
 <section>
   <div class="bg bg--bordered">
@@ -10,16 +10,39 @@
           <div class="row d-flex">
             <div class="col-12 col-md-6 d-flex">
               <div class="text text--contact">
+
                 <p>
-                  <span class="text text--red">HARDWARIO s.r.o.</span><br />
-                  Mrštíkova 399/2a<br />
-                  46007 Liberec<br />
-                  CZECHIA<br /><br />
-                  <strong>Company ID:</strong> 049985117&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>VAT ID:</strong> CZ04998511<br /><br />
-                  The company is registered in the Commercial Register, maintained by the Regional Court in Usti nad Labem, <strong>Section C, File 37399.</strong><br />
+                  <div class="row">
+                    <div class = "col-6 col-md--6">
+                      <span class="text text--red">HARDWARIO LTD</span><br />
+                      <strong>Headquarters & Sales</strong><br />
+                      34b York Way, King’s Cross<br />
+                      London, N1 9AB<br />
+                      UNITED KINGDOM<br /><br />
+                    </div>
+                    <div class = "col-6 col-md-6">
+                      <span class="text text--red">HARDWARIO s.r.o.</span><br />
+                      <strong>Development & Distribution</strong><br />
+                      U Jezu 525/4<br />
+                      460 01 Liberec<br />
+                      CZECHIA<br /><br />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class = "col-6 col-md-6">
+                      <strong>{{ i18n "company_id" }}:</strong> 11642323<br />
+                      <!--<strong>{{ i18n "vat_id" }}:</strong> CZ04998511<br /><br />-->
+                    </div>
+                    <div class = "col-6 col-md-6">
+                      <strong>{{ i18n "company_id" }}:</strong> 049985117<br />
+                      <strong>{{ i18n "vat_id" }}:</strong> CZ04998511<br /><br />
+                    </div>
+                  </div>
+                  {{ i18n "company_registration" | safeHTML }}
+                  <br />
                 </p>
                 <h2 class=""><a href = "mailto:ask@bigclown.com">ask@bigclown.com</a></h2>
-                <h2 class="">We are also here</h2>
+                <h2 class="">{{ i18n "social_links" }}</h2>
                 <div class="soc soc--2 d-flex justify-content-center justify-content-md-start">
                   <a href="https://www.facebook.com/bigclownlabs/" target="_blank" class="soc__facebook">facebook</a>
                   <a href="https://twitter.com/BigClownLabs/" target="_blank" class="soc__twitter">twitter</a>
@@ -28,13 +51,13 @@
                   <a href="https://github.com/bigclownlabs" target="_blank" class="soc__github">github</a>
                 </div>
 
-                <h2>For media:</h2>
-                <a href="https://drive.google.com/drive/u/1/folders/0B7mImtQnvdScb0NMMjgwOXRyZDA" target="_blank">Get the Bigclown presskit</a>
+                <h2>{{ i18n "for_media" }}:</h2>
+                <a href="https://drive.google.com/drive/u/1/folders/0B7mImtQnvdScb0NMMjgwOXRyZDA" target="_blank">{{ i18n "presskit" }}</a>
               </div>
 
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-              <img src="/_assets/images/map.jpg" class="img-fluid" alt="bigclown - our birthplace" />
+              <img src="/_assets/images/map.png" class="img-fluid" alt="bigclown - our birthplace" />
             </div>
           </div>
 

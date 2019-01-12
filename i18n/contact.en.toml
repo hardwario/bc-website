@@ -1,0 +1,17 @@
+[company_id]
+other = "Company ID"
+
+[vat_id]
+other = "VAT ID"
+
+[company_registration]
+other = "&nbsp;"
+
+[social_links]
+other = "We are also here"
+
+[for_media]
+other = "For media"
+
+[presskit]
+other = "Get the Bigclown presskit"

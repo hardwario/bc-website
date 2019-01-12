@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+<section>
+  <div class="getStarterKit bg bg--bubbleswhite">
+  <div class="container">
+    <div class="row justify-content-center pt-5">
+      <div class="col-12 col-xl-10">
+        <div class="article__header--smallerPadding">
+          <div class="article__header__button">
+            <h1 class="article__title">{{ .Params.mainHeading | safeHTML}}</h1>
+            <div class="text text--perex">
+              <p>{{ .Params.mainParagraph | safeHTML }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section>
+  {{ .Content }}
+</section>
+
+<section>
+            <div class="livechat">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 col-md-2">
+                            <div class="livechat__icon"></div>
+                        </div>
+                        <div class="col-8 col-md-6">
+                            <h2 class="livechat__title">{{ i18n "need_help" }}</h2>
+                            <p class="livechat__text">{{ i18n "dont_worry" }}</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="livechat__button d-flex align-items-center">
+                                <a href="#" onclick="Intercom('showNewMessage');" class="button button--block button--fullred">{{ i18n "get_in_touch" }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="title title--withoutsubtitle text-center">{{ i18n "projects_to_build" | safeHTML }}</h2>
+        <div class="articles">
+          <div class="row">
+            {{ range first 6 ($.Site.GetPage "section" "projects").Pages }}
+              {{ .Render "grid" }}
+            {{ end }}
+          </div>
+          <div class="text-center">
+            <a href="{{ "projects/" | absLangURL }}" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+{{ end }}

@@ -1,0 +1,77 @@
+[start_making]
+other = "Start making smoothly<small>with our single kits and full support</small>"
+
+[get_more]
+other = "Get even more<small>with our Multi Kits</small>"
+
+[show_all_kits]
+other = "Show all kits"
+
+[able_to_make]
+other = "You will be able to make"
+
+[nose]
+other = "Clown's nose"
+
+[price]
+other = "Price"
+
+[save]
+other = "Save"
+
+[recommended]
+other = "RECOMMENDED"
+
+[overview]
+other = "Overview"
+
+[kits]
+other = "Kits"
+
+[integration]
+other = "integration"
+
+[tech_specs]
+other = "tech specs"
+
+[support]
+other = "Support"
+
+[buy]
+other = "buy"
+
+[explore_modules]
+other = "explore modules in the kit"
+
+[buy_it_now]
+other = "BUY IT NOW!"
+
+[description]
+other = "Description"
+
+[modules_in_kit]
+other = "Modules in the kit"
+
+[optional_modules]
+other = "Optional modules"
+
+[able_to_build]
+other = "What you'll be able to separately build"
+
+[integration_ready]
+other = "It's ready for integration with"
+
+[many_more]
+other = "and many more ..."
+
+[coming_soon]
+other = "coming soon"
+
+[technical_specification]
+other = "Technical specification"
+
+[low_power_networks_integration]
+other = "Low-Power Networks Integration"
+
+[extend_kit]
+other = "Extend your kit with our low-power network modules and make it independent of the internet connection and power supply from main."

@@ -1,0 +1,26 @@
+<div class="col-12 col-lg-4">
+  <span href = "{{ .Params.video }}" class="opinion__link" data-toggle="modal" data-target=".modal-{{ .Params.video }}">
+        <div class="opinion__item d-flex justify-content-between flex-column">
+          <div class="opinion__item__image">
+            <img src="/opinion/{{ .Params.image }}" alt="{{ .Title }}" class = "opinion__item__image__main"/>
+            <img src = "/_assets/images/play-circle.png" class = "opinion__item__image__play" />
+          </div>
+            <h3 class="opinion__text">{{ .Title }}</h3>
+            <div>
+                <div class="opinion__image d-flex align-items-center justify-content-center">
+                    <img src="/opinion/{{ .Params.logo }}" alt="{{ .Title }}" />
+                </div>
+                <h3 class="opinion__name">{{ .Params.author.name }}</h3>
+                <div class="opinion__pos">{{ .Params.author.position}}</div>
+            </div>
+        </div>
+        </span>
+    </div>
+
+    <div class="modal fade modal-{{ .Params.video }}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <iframe width="100%" height="550px" src="https://www.youtube.com/embed/{{ .Params.video }}?rel=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>

@@ -54,6 +54,11 @@ en = "https://shop.bigclown.com/co2-module"
 cs = "https://obchod.bigclown.cz/co2-module"
 
 [[products]]
+title = "CO2 Monitor Kit"
+en = "https://shop.bigclown.com/co2-monitor-kit"
+cs = "https://obchod.bigclown.cz/co2-monitor-kit"
+
+[[products]]
 title = "Compact Split Module"
 en = "https://shop.bigclown.com/compact-split-module"
 cs = "https://obchod.bigclown.cz/compact-split-module"

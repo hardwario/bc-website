@@ -4,7 +4,7 @@ slug: "firebase"
 menu:
   doc:
     parent: 'integrations'
-    weight: 70
+    weight: 80
 ---
 
 {{% note "info" %}}Firebase is online platform by Google, that has lots of useful functions such as Realtime Database, Cloud Messaging, Cloud Storage and many other. It hosts Google on his own servers. You can access services right from web, mobile apps or many other ways.{{% /note %}}

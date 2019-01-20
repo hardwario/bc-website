@@ -9,7 +9,7 @@
 
 
   &--homepage{
-    background: url("../images/homepageheader_bg.jpg") no-repeat -20% center;
+    background: url("../images/homepageheader_bg.jpg") no-repeat top center;
     background-size: cover;
   }
 
@@ -166,6 +166,11 @@
 
   .buyStarterKit{
     margin-top: 3*$baseline;
+
+    @media(max-width:768px)
+    {
+      margin-top: 0*$baseline;
+    }
 
     img{
       max-width: 100%;

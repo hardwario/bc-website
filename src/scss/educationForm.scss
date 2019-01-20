@@ -4,6 +4,11 @@
     width: 70%;
     margin: 0 auto;
     padding-bottom: 1.5*$baseline;
+
+    @media(max-width:768px)
+    {
+      width: 95%;
+    }
   }
 
   &__label{

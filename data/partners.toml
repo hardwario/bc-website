@@ -1,0 +1,19 @@
+[blynk]
+name = "Blynk"
+image = "blynk.png"
+weight = 3
+
+[iftt]
+name = "IFTTT"
+image = "ifthis.jpg"
+weight = 4
+
+[nodered]
+name = "Node-RED"
+image = "node-red.png"
+weight = 2
+
+[raspberry]
+name = "Raspberry Pi"
+image = "raspberry.jpg"
+weight = 1

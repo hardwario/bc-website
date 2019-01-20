@@ -1,0 +1,44 @@
+.industry{
+  padding-top: 0*$baseline;
+  padding-bottom: 1*$baseline;
+
+  &__bg{
+
+    img{
+      width: 110%;
+      margin-left: -5%;
+    }
+    margin-bottom: -17%;
+  }
+  &__items{
+  }
+  &__item{
+    background: white;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    height: 100%;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 1.5*$baseline;
+    padding-bottom: 1.5*$baseline;
+
+    h3{
+      font-size: em(24);
+    }
+    p{
+      font-size: em(18);
+    }
+  }
+
+  &__icon
+  {
+    height: 3*$baseline;
+    background: url("../svg/education.svg") no-repeat center center;
+    background-size: 68px 68px;
+
+    &--2
+    {
+      background-image: url("../svg/industry.svg");
+    }
+  }
+}

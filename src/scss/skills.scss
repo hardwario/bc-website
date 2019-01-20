@@ -1,0 +1,26 @@
+.skills{
+  padding-bottom: 2*$baseline;
+  margin-top: 2*$baseline;
+  &__item{
+    width: 100%;
+    border: dashed 2px #f7c845;
+    border-radius: 50%;
+    background: white;
+    padding: 0 30px 0;
+    position: relative;
+
+    .features__icon{
+    }
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 40%;
+    }
+    h2{
+      font-size: em(27);
+    }
+    p{
+      font-size: em(20);
+    }
+ }
+}

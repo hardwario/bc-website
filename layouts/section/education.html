@@ -1,0 +1,178 @@
+{{ define "main" }}
+
+<section>
+  <div class = "imageHeader imageHeader--education">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 heading">
+        <h1>
+          <svg
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="626px" height="135px" viewBox="0 0 626 134">
+          <path fill-rule="evenodd"  fill="rgb(229, 27, 32)"
+           d="M7.909,6.947 L593.438,-0.012 L600.999,66.000 L0.000,66.000 L7.909,6.947 Z"/>
+          <path fill-rule="evenodd"  fill="rgb(227, 7, 17)"
+           d="M20.398,17.000 L618.218,60.396 L625.993,134.862 L20.398,129.660 L20.398,17.000 Z"/>
+          </svg>
+          <div>{{ i18n "changing_the_way" | safeHTML }}</div>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg">
+    <div class="container education">
+      <div class="row">
+        <div class="col-7">
+          <h2>Join our community</h2>
+          <p>Sign up and get support and resources</p>
+          <form method="" action="" id="educationSignup">
+            <input type = "email" name = "email" placeholder="Add your e-mail address" id="email" class="education__input" />
+            <button type="submit" class="button button--green education__button">Join Community</button>
+            <p class = "education__validation"></p>
+          </form>
+
+        </div>
+        <div class = "col-4">
+          <h3>You will get:</h3>
+          <ul class="pricelist__items">
+            <li class="pricelist__items__item">Access to Training Courses and Webinars</li>
+            <li class="pricelist__items__item">Advice and Guidance on Financing</li>
+            <li class="pricelist__items__item">Projects with Step-by-Step Tutorials</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+
+</script>
+
+<div class="modal fade modal-education educationForm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <form method="" action="" id="educationSignupStep2">
+        <div class = "container educationForm__container">
+          <h2 class="title text-center">Just one more step <small>We need additional info about you for tailor-made materials</small></h2>
+          <div class = "row text-center">
+            <div class = "col-12">
+              <label class = "educationForm__label" id="label-mc-email">Your e-mail:</label>
+            </div>
+            <div class = "col-12">
+              <input type = "email" placeholder="Add your e-mail address" name = "EMAIL" id="mc-email" class = "educationForm__input educationForm__input--center" required />
+            </div>
+
+          </div>
+          <hr/>
+          <div class = "row">
+            <div class = "col-12">
+              <label for = "mc-name" class = "educationForm__label" id="label-mc-name">Hi! My name is..</label>
+            </div>
+            <div class = "col-12">
+              <input type = "text" placeholder="Jon Doe" name = "FULLNAME" id="mc-name" class = "educationForm__input" required />
+            </div>
+          </div>
+
+          <div class = "row">
+            <div class = "col">
+              <label for = "mc-company" class = "educationForm__label" id="label-mc-company">I am working at..</label>
+            </div>
+            <div class = "col-12">
+              <input type = "text" placeholder="Name of school, company or institution" name = "COMPANY" id="mc-company" class = "educationForm__input" required />
+            </div>
+          </div>
+
+          <div class = "row">
+            <div class = "col">
+              <label for = "mc-city" class = "educationForm__label" id="label-mc-city">..in the city</label>
+            </div>
+            <div class = "col-12">
+              <input type = "text" placeholder="School address (city and state)" name = "CITY" id="mc-city" class = "educationForm__input" required />
+            </div>
+          </div>
+
+          <div class = "row">
+            <div class = "col">
+              <label for = "mc-post" class = "educationForm__label" id="label-mc-post">and..</label>
+            </div>
+            <div class = "col-12">
+              <!--<input type = "text" placeholder="Jon Doe" id="mc-post" class = "educationForm__input" required />-->
+
+              <select id="mc-post" class = "educationForm__input" required>
+                <option>I'm teacher</option>
+                <option>I'm principal</option>
+                <option>I work in other position</option>
+              </select>
+            </div>
+          </div>
+
+          <div class = "row text-center">
+            <div class = "col">
+              <label for="mc-email" style = "color: #53a327"></label>
+              <button type="submit" class="button button--bigger button--fullred" id = "educationSubmit">I want to CTA</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<section>
+  <div class="bg bg--gray bg--innerShadow">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+        <h2 class="title title--3 text-center">We combine digital learning with real world<br/> projects for more engaging ideas…</h2>
+        </div>
+      </div>
+      <div class = "industry">
+        <div class="row d-none d-lg-flex">
+          <div class = "col-12 industry__bg">
+            <img src = "/_assets/images/industry_bg.jpg" />
+          </div>
+        </div>
+        <div class="row d-none d-lg-flex industry__items">
+          <div class="col-6 text-center">
+            <div class="industry__item">
+              <div class="features__icon industry__icon"></div>
+              <h3>Education</h3>
+              <p>The next generation are our future and they are ready to learn.</p>
+            </div>
+          </div>
+          <div class="col-6 text-center">
+            <div class="industry__item">
+              <div class="features__icon industry__icon--2"></div>
+              <h3>Industry</h3>
+              <p>Corporate organisations can be difficult to connect with, but when you do, great things can happen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "www/testimonial.html" . }}
+
+{{ partial "www/partners.html" . }}
+
+<section>
+  <div class="bg bg--gray">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class = "slogan">
+            <h3>{{ i18n "inspiring_the_inventors" | safeHTML }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,67 @@
+.educationForm{
+
+  &__container{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 1.5*$baseline;
+  }
+
+  &__label{
+    font-size: em(18);
+    font-weight: 900;
+    color: #2e343c;
+    line-height: $baseline;
+
+    &--errorMessage{
+      color: #e41419;
+    }
+  }
+
+  &__input
+  {
+    height: 2*$baseline;
+    line-height: 1*$baseline;
+    background: #f8fafb;
+    width: 100%;
+    padding: 0.5*$baseline 30px;
+    border-radius: 5px;
+    color: #acafb1;
+    border: solid 1px #dbdbdb;
+    font-size: em(18);
+    font-weight: 900;
+    margin-bottom: $baseline;
+    color: #2e343c;
+
+    @media(max-width:1199px)
+    {
+      //width: 60%;
+    }
+
+    @media(max-width:991px)
+    {
+      margin-bottom: $baseline;
+      //width: 60%;
+    }
+    @media(max-width:767px)
+    {
+      //width: 100%;
+      margin-bottom: 0;
+    }
+
+    &--center{
+      text-align: center;
+    }
+
+    &--error{
+      border-color: #e41419;
+    }
+  }
+
+  hr{
+    border: solid 1px #d1d6df;
+    border-top: none;
+    padding: 0;
+    margin: 0.25*$baseline 0 $baseline;
+  }
+
+}

@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <section>
-  <div class = "homepageHeader">
+  <div class = "imageHeader imageHeader--homepage">
     <div class="container">
       <div class="row">
         <div class="col-12 heading">
@@ -31,59 +31,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 col-xl-3 hidden-sm-down notes">
-          <div class="col-8 col-md-12 col-xl-8 ml-auto mr-auto note">
-            <img src="/_assets/svg/easytobuild.svg" onerror="this.src='your.png'">
-          </div>
-          <div class="col-11 col-md-12 col-xl-11 ml-auto mr-auto note note__bottom">
-            <img src="/_assets/svg/firstproject.svg" onerror="this.src='your.png'">
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-12 col-md-8 col-lf-8 col-xl-6 ml-auto mr-auto text-center">
-          <div class = "videoContainer">
-              <img src="/_assets/images/starterkit-placeholder.jpg" data-video="https://www.youtube.com/embed/OCPPKXzCBg0?autoplay=1&cc_load_policy=1&fs=0&loop=1&playlist=OCPPKXzCBg0&modestbranding=1&playsinline=1&color=white&iv_load_policy=3" class = "videoPlaceholder">
-
-              <!--<script>
-                $('img.videoPlaceholder').click(function(){
-                  var video = '<iframe id="ytplayer" type="text/html" src="'+ $(this).attr('data-video') +'" frameborder="0" class = "videoPlayer"></iframe>';
-                  $(this).replaceWith(video);
-                });
-              </script>-->
-          </div>
-        </div>
-
-        <div class="col-md-2 col-xl-3 hidden-sm-down notes">
-          <div class="col-9 col-md-12 col-xl-9 ml-auto mr-auto note">
-            <img src="/_assets/svg/personalsupport.svg" onerror="this.src='your.png'">
-          </div>
-          <div class="col-12 col-md-12 ml-auto mr-auto note note__bottom">
-            <img src="/_assets/svg/inspiration.svg" onerror="this.src='your.png'">
-          </div>
-        </div>
-      </div>
-      <div class = "row mt-5 pt-2 md-block d-sm-none">
-        <div class = "container">
-          <div class="col-8 ml-auto mr-auto">
-            <ul class="pricelist__items">
-              <li class="pricelist__items__item">{{ i18n "easy_to_build" }}</li>
-              <li class="pricelist__items__item">{{ i18n "first_project_30" }}</li>
-              <li class="pricelist__items__item">{{ i18n "personal_support" }}</li>
-              <li class="pricelist__items__item">{{ i18n "Inspiration_tutorials" }}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-10 col-md-4 ml-auto mr-auto text-center buyStarterKit">
+        <div class="col-10 col-md-8 ml-auto mr-auto text-center buyStarterKit">
           <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
           <div class = "starterPrice">
             <span class="previousPrice"><strike>{{ i18n "standard_price" }}</strike></span>&nbsp;&nbsp;<span class="currentPrice">{{ i18n "final_price" }}</span><br />
             <span class="youSave">{{ i18n "save" }} {{ i18n "you_save" }}</span>
           </div>
-          <a href="https://shop.bigclown.com/starter-kit/" class="button button--block  button--fullred ">{{ i18n "buy_starter_kit" }}</a>
-          <!--<div class="or d-flex justify-content-center align-items-center">{{ i18n "and" }}</div>-->
-
+          <a href="https://shop.bigclown.com/starter-kit/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          <div class = "text">
+          <a href = "/start">learn how it works</a>
+          </div>
           <script>
             $('.starterKitImage').hover(function(){
               $(this).attr('src','/_assets/images/starterKit-hover.png');
@@ -97,9 +54,68 @@
     </div>
   </div>
 </section>
+
+<section>
+  <div class="bg bg--gray bg--bordered skills">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-10 ml-auto mr-auto">
+          <h2 class="title text-center">Skills you will learn</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class = "col-10">
+          <div class="row justify-content-center">
+            <div class="col-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--10"></div>
+                <h2>Electronics</h2>
+                <p>No soldering or wiring, just&nbsp;plug&nbsp;&&nbsp;make</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--11"></div>
+                <h2>Programming</h2>
+                <p>Flows and firmware visual programming</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--12"></div>
+                <h2>3D-Printing</h2>
+                <p>Ready to 3D-print models of eclosure</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--13"></div>
+                <h2>IoT</h2>
+                <p>IoT connectivity with LPWAN support</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--14"></div>
+                <h2>BigData</h2>
+                <p>Ready to integrate with popular platforms</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 {{ partial "www/features.html" . }}
 
-{{ partial "www/opinion.html" . }}
+{{ partial "www/testimonial.html" . }}
+
+{{ partial "www/partners.html" . }}
+
+<!-- partial "www/testimonials.html" .  -->
 
 <!-- partial "www/projects-newest.html" . -->
 

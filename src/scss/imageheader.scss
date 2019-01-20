@@ -1,6 +1,6 @@
 .imageHeader
 {
-  height:calc(68vh - #{3*$baseline});
+  height:calc(72vh - #{3*$baseline});
   position: relative;
   overflow: hidden;
   background: #2e343c;
@@ -9,7 +9,7 @@
 
 
   &--homepage{
-    background: url("../images/homepageheader_bg.jpg") no-repeat top center;
+    background: url("../images/homepageheader_bg.jpg") no-repeat -20% center;
     background-size: cover;
   }
 
@@ -30,7 +30,7 @@
     min-height: 0;
   }
   .heading{
-    margin-top:calc(38vh);
+    margin-top:calc(42vh);
 
     @media(max-width:991px)
     {

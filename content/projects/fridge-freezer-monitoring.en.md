@@ -13,9 +13,10 @@ places:
 devices:
   - Custom Kit
 idea: true
-image_preview: /projects/fridge-freezer-monitoring/preview.png
-image_main: /projects/fridge-freezer-monitoring/main.png
+image_preview: /projects/fridge-freezer-monitoring/preview.jpg
+image_main: /projects/fridge-freezer-monitoring/preview.jpg
 author: martin_hubacek
+featured: true
 ---
 
 Set ideal tepmperature in your fridge or freezer. Freezing too much is unnecessarily and costs you more money. You can also monitor how often and for how long the doors are opened thanks to integrated luxmeter. You can detect when the doors are not correctly closed

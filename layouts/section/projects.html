@@ -156,7 +156,17 @@
         <div class="col">
           <div class="articles articles--2">
             <div class="row">
-              {{ range $pages.ByPublishDate.Reverse }}
+              {{ range where $pages.ByPublishDate.Reverse ".Params.featured" true }}
+                <div  class="col-12 col-md-6 col-lg-4 tf-filter-item tf-item"
+                      data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}"
+                      data-devices="{{ with .Params.devices }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfundeviced{{ end }}"
+                      data-places="{{ with .Params.places }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfunplaced{{ end }}"
+                      data-levels="{{ with .Params.levels }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tunleveled{{ end }}">
+                  {{ .Render "grid" }}
+                </div>
+              {{ end }}
+
+              {{ range where $pages.ByPublishDate.Reverse ".Params.featured" "!=" true }}
                 <div  class="col-12 col-md-6 col-lg-4 tf-filter-item tf-item"
                       data-tags="{{ with .Params.tags }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfuntagged{{ end }}"
                       data-devices="{{ with .Params.devices }}{{ range . }}{{ . | replaceRE "[.]" "_" | urlize }} {{ end }}{{ else }} tfundeviced{{ end }}"

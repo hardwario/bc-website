@@ -7,8 +7,9 @@ levels: ["Advanced"]
 places: ["Home", "School"]
 devices: ["Flood Kit"]
 image_preview: /projects/flood-detector/preview.jpg
-image_main: /projects/flood-detector/main.jpg
+image_main: /projects/flood-detector/preview.jpg
 author: "martin_hubacek"
+featured: true
 
 ---
 

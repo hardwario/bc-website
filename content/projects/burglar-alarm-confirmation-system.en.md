@@ -14,9 +14,10 @@ places:
 devices:
   - Motion Kit
 idea: false
-image_preview: /projects/burglar-alarm-confirmation-system/preview.png
-image_main: /projects/burglar-alarm-confirmation-system/main.png
+image_preview: /projects/burglar-alarm-confirmation-system/preview.jpg
+image_main: /projects/burglar-alarm-confirmation-system/preview.jpg
 author: alan_fabik
+featured: true
 ---
 
 If your current burglar alarm is not reliable, or you would like to improve it then use Motion Detector Kit. You can easily place multiple of them in your home. It can do more, for example turn your smart light on in the evening if you are in the room.

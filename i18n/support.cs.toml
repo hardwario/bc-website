@@ -20,19 +20,19 @@ other = "Nebojte se nás zeptat na cokoli, rádi ti pomůžeme! Můžeš nám ta
 other = "Fórum"
 
 [forum_desc]
-other = "Popovídejte si s ostatními mejkry, ukaž své projekty a sdílej své výsledky."
+other = "Popovídejte si s ostatními mejkry, ukažte své projekty a sdílejte své výsledky."
 
 [online_chat]
 other = "Online Chat"
 
 [online_chat_desc]
-other = "Neváhejte využít naši online podporu, pomůžeme ti s tvým nápadem i projektem."
+other = "Neváhejte využít naši online podporu, pomůžeme vám s nápadem i projektem."
 
 [github]
 other = "GitHub"
 
 [github_desc]
-other = "Na GitHubu sdílíme všechny naše zdrojové kódy. Však víš, jsme open-source projekt."
+other = "Na GitHubu sdílíme všechny naše zdrojové kódy. Však víte, jsme open-source projekt."
 
 [hackster]
 other = "Hackster.io"

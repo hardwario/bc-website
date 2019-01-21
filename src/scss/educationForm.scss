@@ -5,6 +5,15 @@
     margin: 0 auto;
     padding-bottom: 1.5*$baseline;
 
+    @media(max-width:1199px)
+    {
+      width: 80%;
+    }
+
+    @media(max-width:967px)
+    {
+      width: 95%;
+    }
     @media(max-width:768px)
     {
       width: 95%;
@@ -69,4 +78,18 @@
     margin: 0.25*$baseline 0 $baseline;
   }
 
+  .button{
+    @media(max-width:767px)
+    {
+      margin-top: 30px;
+    }
+  }
+
+  &__validation{
+    color: #0f7b8d;
+    padding: 10px 0 0;
+    font-weight: 900;
+    display: block;
+    font-size: em(22);
+  }
 }

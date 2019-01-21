@@ -11,8 +11,15 @@
     font-size: em(40);
     line-height: 2*$baseline;
 
+    @media(max-width: 1199px)
+    {
+      font-size: em(34);
+    }
+
     @media(max-width: 991px)
     {
+      padding-left: 1px;
+      padding-right: 10px;
       font-size: em(30);
       line-height: $baseline*1.25;
     }

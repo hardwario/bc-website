@@ -30,8 +30,8 @@
           <h2>Join our community</h2>
           <p>Sign up and get support and resources</p>
           <form method="" action="" id="educationSignup">
-            <input type = "email" name = "email" placeholder="Add your e-mail address" id="email" class="education__input" />
-            <button type="submit" class="button button--green education__button">Join Community</button>
+            <input type = "email" name = "email" placeholder="Add your e-mail address" name = "EMAIL" id="mc-email" class="education__input" />
+            <button type="submit" class="button button--green education__button" id = "educationSubmit_first">Join Community</button>
             <p class = "education__validation"></p>
           </form>
 
@@ -79,7 +79,7 @@
               <label for = "mc-company" class = "educationForm__label" id="label-mc-company">I am working at..</label>
             </div>
             <div class = "col-12">
-              <input type = "text" placeholder="Name of school, company or institution" name = "COMPANY" id="mc-company" class = "educationForm__input" required />
+              <input type = "text" placeholder="Name of school, company or institution" name = "SCHOOL" id="mc-company" class = "educationForm__input" required />
             </div>
           </div>
 
@@ -99,17 +99,17 @@
             <div class = "col-12">
               <!--<input type = "text" placeholder="Jon Doe" id="mc-post" class = "educationForm__input" required />-->
 
-              <select id="mc-post" class = "educationForm__input" required>
-                <option>I'm teacher</option>
-                <option>I'm principal</option>
-                <option>I work in other position</option>
+              <select id="mc-post" class = "educationForm__input" name = "POST" required>
+                <option value = "teacher">I'm teacher</option>
+                <option value = "principal">I'm principal</option>
+                <option value = "other">I work in other position</option>
               </select>
             </div>
           </div>
 
           <div class = "row text-center">
             <div class = "col">
-              <label for="mc-email" style = "color: #53a327"></label>
+              <label for="mc-email" class = "educationForm__validation"></label>
               <button type="submit" class="button button--bigger button--fullred" id = "educationSubmit">I want to CTA</button>
             </div>
           </div>

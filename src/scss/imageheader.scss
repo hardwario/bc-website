@@ -16,6 +16,23 @@
   &--education{
     background: url("../images/educationheader_bg.jpg") no-repeat top center;
     background-size: cover;
+
+    .heading h1 svg{
+      width: 636px;
+      height: 135px;
+
+      @media(max-width:991px)
+      {
+        width: 313px;
+        height: 67.5px;
+      }
+
+      @media(max-width:321px)
+      {
+        width: 235px;
+        height: 51.5px;
+      }
+    }
   }
 
 
@@ -165,7 +182,7 @@
   }
 
   .buyStarterKit{
-    margin-top: 3*$baseline;
+    margin-top: 0*$baseline;
 
     @media(max-width:768px)
     {
@@ -174,6 +191,10 @@
 
     img{
       max-width: 100%;
+    }
+
+    .text{
+      padding-top: 10px;
     }
   }
   .starterPrice{

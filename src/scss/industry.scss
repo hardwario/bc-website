@@ -22,9 +22,8 @@
     padding-top: 1.5*$baseline;
     padding-bottom: 1.5*$baseline;
 
-    @media(max-width:768px)
+    @media(max-width:767px)
     {
-      margin-top: 1*$baseline;
       padding-top: 1*$baseline;
       padding-bottom: 0*$baseline;
     }

@@ -11,6 +11,37 @@
   &--homepage{
     background: url("../images/homepageheader_bg.jpg") no-repeat top center;
     background-size: cover;
+
+    .heading h1.cs{
+      font-size: em(40);
+      line-height: em(18);
+
+      div{
+        top: 20px;
+
+        @media(max-width:991px)
+        {
+          top: 10px;
+        }
+
+        @media(max-width:321px)
+        {
+          top: 8px;
+        }
+      }
+
+      @media(max-width:991px)
+      {
+        font-size: em(20);
+        line-height: em(18);
+      }
+
+      @media(max-width:321px)
+      {
+        font-size: em(16);
+        line-height: em(16);
+      }
+    }
   }
 
   &--education{

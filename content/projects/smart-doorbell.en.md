@@ -6,9 +6,10 @@ tags: ["Outdoor"]
 levels: ["Advanced"]
 places: ["Home"]
 devices: ["Custom Kit"]
-image_preview: /projects/smart-doorbell/preview.png
-image_main: /projects/smart-doorbell/main.png
+image_preview: /projects/smart-doorbell/preview.jpg
+image_main: /projects/smart-doorbell/preview.jpg
 author: "martin_hubacek"
+featured: true
 
 ---
 

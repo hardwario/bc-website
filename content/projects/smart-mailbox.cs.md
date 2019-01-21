@@ -7,8 +7,9 @@ levels: ["Advanced"]
 places: ["Home"]
 devices: ["Custom Kit"]
 image_preview: /projects/smart-mailbox/preview.jpg
-image_main: /projects/smart-mailbox/main.jpg
+image_main: /projects/smart-mailbox/preview.jpg
 author: "martin_hubacek"
+featured: true
 
 ---
 

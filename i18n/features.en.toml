@@ -35,7 +35,7 @@ other = "Lifetime support"
 other = "Use our large documentation, forum or chat with us."
 
 [love_features]
-other = "BigClown is Digital Maker&nbsp;Kit <small>We combine hardware, software, 3D-printing and learning resources to make it...</small>"
+other = "BigClown is Plug&nbsp;&&nbsp;Make IoT&nbsp;Kit <small>for teachers and students to build real products for the real world.</small>"
 
 [affordable]
 other = "Affordable"
@@ -45,3 +45,12 @@ other = "Simple"
 
 [engaging]
 other = "Engaging"
+
+[affordable_text]
+other = "Hardware, software and open-source ecosystem is modular, cost effective and allows anyone to build low-power, battery-operated devices on a budget."
+
+[simple_text]
+other = "User-friendly IoT kits enable you to create internet connected electronics projects without wiring or soldering."
+
+[engaging_text]
+other = "We believe in learning by making and helping everyone develop their own problem-solving skills. Let’s experiment, learn and create."

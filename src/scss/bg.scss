@@ -38,4 +38,9 @@
   {
     border-bottom: 1px solid #dfdfdf;
   }
+
+  &--innerShadow
+  {
+    box-shadow: inset 0px 80px 59px -77px rgba(0,0,0,0.25);
+  }
 }

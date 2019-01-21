@@ -18,6 +18,11 @@
       text-decoration: none;
     }
 
+    &--without-link
+    {
+      text-decoration: none;
+      color: #212529;
+    }
     &--more
     {
       height: 8*$baseline;
@@ -36,6 +41,12 @@
     padding: $baseline 0;
     text-align: center;
     margin: 0;
+
+    &--without-link
+    {
+      text-decoration: none;
+      color: #212529;
+    }
   }
 
   &__image

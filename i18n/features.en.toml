@@ -45,3 +45,12 @@ other = "Simple"
 
 [engaging]
 other = "Engaging"
+
+[affordable_text]
+other = "Hardware, software and open-source ecosystem is modular, cost effective and allows anyone to build low-power, battery-operated devices on a budget."
+
+[simple_text]
+other = "User-friendly IoT kits enable you to create internet connected electronics projects without wiring or soldering."
+
+[engaging_text]
+other = "We believe in learning by making and helping everyone develop their own problem-solving skills. Let’s experiment, learn and create."

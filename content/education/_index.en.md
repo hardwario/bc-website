@@ -8,5 +8,3 @@ slug: education
 menu: "main"
 weight: 110
 ---
-
-test

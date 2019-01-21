@@ -11,16 +11,16 @@ other = "ZAČNI JEŠTĚ DNES"
 other = "Postav něco svého <small>je to snadné, zábavné a pro každého</small>"
 
 [start_digital_making]
-other = "Začni se učit<small>s <strong>BigClown Starter Kitem</strong></small>"
+other = "Začněte se učit<small>s <strong>BigClown Starter Kitem</strong></small>"
 
 [able_build]
-other = "Podívej se na projekty se Starter Kitem"
+other = "Podívejte se na projekty se Starter Kitem"
 
 [buy_starter_kit]
-other = "Získej \"BigClown Starter Kit\""
+other = "Získejte \"BigClown Starter Kit\""
 
 [learn_digital_skills]
-other = "Nauč se <strong>digi dovednosti</strong><br /><span>&nbsp;&nbsp;na <strong>reálných projektech</strong></span>"
+other = "Učte se <strong>digitální dovednosti</strong><br /><span>&nbsp;&nbsp;na <strong>reálných projektech</strong></span>"
 
 [easy_to_build]
 other = "Sestavení je hračka"

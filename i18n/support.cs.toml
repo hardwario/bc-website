@@ -1,32 +1,32 @@
 [support_heading]
-other = "Jak ti můžeme pomoct?"
+other = "Jak vám můžeme pomoct?"
 
 [support_snippet_heading]
-other = "Najdi správnou odpověď"
+other = "Najděte správnou odpověď"
 
 [support_subheading]
-other = "na tvé dotazy o BigClown"
+other = "na vaše dotazy o BigClown"
 
 [documentation]
 other = "Dokumentace"
 
 [documentation_desc]
-other = "Zde najdeš v angličtině návody krok za krokem, včetně sestavení kitů a integrací s cloudovými službami. "
+other = "Zde najdete v angličtině návody krok za krokem, včetně sestavení kitů a integrací s cloudovými službami. "
 
 [support_text]
-other = "Neboj se nás zeptat na cokoli, rádi ti pomůžeme! Můžeš nám taky napsat přes live chat."
+other = "Nebojte se nás zeptat na cokoli, rádi ti pomůžeme! Můžeš nám taky napsat přes live chat."
 
 [forum]
 other = "Fórum"
 
 [forum_desc]
-other = "Popovídej si s ostatními mejkry, ukaž své projekty a sdílej své výsledky."
+other = "Popovídejte si s ostatními mejkry, ukaž své projekty a sdílej své výsledky."
 
 [online_chat]
 other = "Online Chat"
 
 [online_chat_desc]
-other = "Neváhej využít naši online podporu, pomůžeme ti s tvým nápadem i projektem."
+other = "Neváhejte využít naši online podporu, pomůžeme ti s tvým nápadem i projektem."
 
 [github]
 other = "GitHub"
@@ -38,4 +38,4 @@ other = "Na GitHubu sdílíme všechny naše zdrojové kódy. Však víš, jsme 
 other = "Hackster.io"
 
 [hackster_desc]
-other = "Hledáš doslovené tutoriály pro tvůj další projekt nebo inspiraci? Na Hackster.io publikujeme naše úplné tutoriály \"krok za krokem\"."
+other = "Hledáte doslovené tutoriály pro tvůj další projekt nebo inspiraci? Na Hackster.io publikujeme naše úplné tutoriály \"krok za krokem\"."

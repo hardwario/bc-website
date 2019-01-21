@@ -1,7 +1,7 @@
 ---
 title: Podpora
 slug: support
-mainHeading: Najdi správnou odpověď
+mainHeading: Najděte správnou odpověď
 menu:
     main:
         weight: 400

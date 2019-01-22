@@ -118,7 +118,7 @@ There are two bootloaders in MCU ROM:
 
 * UART - in case of USB-UART chip device is used (e.g. for Radio Dongle or Core Module R2.x)
 
-{{% note "warning" %}}In case you need to upload the firmware into the Core Module R1, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash ----device dfu` format.{{% /note %}}
+{{% note "warning" %}}In case you need to upload the firmware into the Core Module R1, you must first [**put it in the DFU mode**]({{< relref "#switching-core-module-into-dfu-mode" >}}). Moreover, the flash command must be in the `bcf flash --device dfu` format.{{% /note %}}
 
 {{% core-module-2 %}}
 
@@ -126,17 +126,15 @@ Firmware upload can be done using the `bcf flash` command. The firmware can be o
 
 1. Source **firmware package**, for instance:
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-push-button:latest
+        bcf flash bigclownlabs/bcf-radio-push-button:latest
 
 2. Source **local disk file**, for instance:
 
-        bcf flash --device /dev/ttyUSB0 firmware.bin
-
-    {{% note "warning" %}}Replace `COM5` with the device listed using `bcf devices`.{{% /note %}}
+        bcf flash firmware.bin
 
 3. Source **file from the specified URL**, for instance:
 
-        bcf flash --device /dev/ttyUSB0 https://github.com/bigclownlabs/bcf-radio-push-button/releases/download/v1.1.0/bcf-radio-push-button-v1.1.0.bin
+        bcf flash https://github.com/bigclownlabs/bcf-radio-push-button/releases/download/v1.1.0/bcf-radio-push-button-v1.1.0.bin
 
 You can list the USB UART devices connected to your host using this command:
 
@@ -145,6 +143,8 @@ You can list the USB UART devices connected to your host using this command:
 ...and then use the device from the list altogether with the `--device` parameter, e.g.:
 
     bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-gateway-usb-dongle:latest
+
+this way the `bcf` will not ask you which serial port to use every time.
 
 ## Firmware Package Cache
 

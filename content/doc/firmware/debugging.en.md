@@ -108,15 +108,11 @@ bcf log --device [device]
 
 [device] port can be founded by command:
 ```
-bcf log devices
+bcf devices
 ```
 Example of outuput:
 ```
-# 0.50 <I> In application task
-# 2.50 <I> In application task
-# 4.50 <I> In application task
-# 6.50 <I> In application task
-# 8.50 <I> In application task
+/dev/ttyUSB0
 ```
 
 ## Flash and immediately start logging

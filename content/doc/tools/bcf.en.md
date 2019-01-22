@@ -31,15 +31,13 @@ Search for firmware
 
         bcf search button
 
-Flash Core Module **R2** with button kit firmware in **Ubuntu/macOS**
+Flash Core Module **R2**
 
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-push-button:latest
+        bcf flash bigclownlabs/bcf-radio-push-button:latest
 
-Flash Core Module **R2** with button kit firmware in **Windows**
+{{% note "info" %}}You can use optional `--device` parameter to choose the right serial port. This way the `bcf` won't ask you every time.{{% /note %}}
 
-        bcf flash --device COM3 bigclownlabs/bcf-radio-push-button:latest
-
-Flash Core Module **R1** with button kit firmware in **Windows/Ubuntu/macOS**
+Flash Core Module **R1**
 
         bcf flash --device dfu bigclownlabs/bcf-radio-push-button:latest
 

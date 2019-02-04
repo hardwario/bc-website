@@ -1,4 +1,8 @@
-The two terminal - A on the left, B on the right - are connected to the BigClown header signals P4/A4/DAC0 and P5/A5/DAC1. The other two terminals in the middle are connected to the GND (ground) signal.
+The two terminals - A on the left, B on the right - are connected to the BigClown header signals P4/A4/DAC0 and P5/A5/DAC1.
+
+The C pin is in default configuration connected also to the ground GND. It is possible to remove zero-ohm resistor R20 and solder it to the place R21. This way the C signal is directly connected to P7 and can be used as extra input.
+
+The VCC middle pin is possible to control by software. You can enable 3 V on this pin.
 
 ## Features
 

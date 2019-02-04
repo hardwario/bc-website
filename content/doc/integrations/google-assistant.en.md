@@ -1,5 +1,6 @@
 ---
 title: "Google Assistant"
+draft: true
 menu:
   doc:
     parent: 'integrations'

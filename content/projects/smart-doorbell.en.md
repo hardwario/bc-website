@@ -13,23 +13,25 @@ featured: true
 
 ---
 
-Get a notification in a moment, when your visitors press the doorbell button. You will also know when someone visits you and you are not at home. You can connect this system to your security camera and get also the picture of the person visiting you.
+## Introduction
 
-### Overview
+Get a notification in a moment, when your visitors press the doorbell button. You will also know when someone visits you and you are not at home. You can connect this system to your security camera and get also the picture of the person visiting you.
 
 The wireless Push Button Kit will be located at your main door. The button press information is send wirelessly to the Radio Dongle in Raspberry Pi which will notify you over Blynk.
 
-#### Hardware
+## What you will need
+
+### Hardware
 
 * {{< shop "Push Button Kit" >}}
 * {{< shop "BigClown Hub" >}}
 
-#### Software
+### Software
 
 * BigClown Hub on the Raspberry Pi
 * Node-RED with Blynk node
 * Blynk app on your phone
 
-### References
+## References
 
 * [Project](https://www.bigclown.com/doc/projects/push-the-button/)

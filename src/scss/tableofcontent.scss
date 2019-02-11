@@ -1,0 +1,42 @@
+.tableofcontent{
+
+  .fixed{
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+  }
+  ul{
+    padding-top: 3*$baseline;
+    padding-left: 15px;
+    list-style: none;
+
+    li{
+      color: #0f7b8d;
+
+      a{
+        color: #0f7b8d;
+        font-size: em(18);
+        padding-left: 0px;
+        padding: 3px 5px;
+        margin-left: 0;
+        border-radius: 7px;
+
+        &.active{
+          color: white;
+          background: #0f7b8d;
+        }
+      }
+
+      ul{
+        padding: 0;
+        ul{
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media(max-width:991px){
+    display: none;
+  }
+}

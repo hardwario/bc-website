@@ -44,20 +44,19 @@ We will use the [CO2 Monitor Kit](https://www.bigclown.com/kits/co2-monitor/) as
     sheet.appendRow([e.parameter.val, new Date()]);
   }
   ```
-5. Name the project and confirm. 
-   {{% img-zoom src="project-name.PNG" %}} 
-6. Press **Publish** and then **Deploy as web app** 
+5. Name the project and confirm. </br>
+   {{% img-zoom src="project-name.PNG" %}}
+6. Press **Publish** and then **Deploy as web app**  </br>
   {{% img-zoom src="deploy-web-app.PNG" %}}
-7. Dialog will pop up, change the **Who has access to the app** parameter to *Anyone, even anonymous*, to easily access the sheets from NodeRED
+7. Dialog will pop up, change the **Who has access to the app** parameter to *Anyone, even anonymous*, to easily access the sheets from Node-RED </br>
   {{% img-zoom src="deploy-web-app-dialog.jpg" width="70%" height="70%" %}}
-8. Press **Deploy** to confirm and now we need to authorise the script, press **Review Permissions**, then pick the account connected with the Sheet
+8. Press **Deploy** to confirm and now we need to authorise the script, press **Review Permissions**, then pick the account connected with the Sheets </br>
   {{% img-zoom src="authorisation.PNG" width="70%" height="70%" %}}
-9. Press **Advanced**
+9. Press **Advanced** </br>
     {{% img-zoom src="warning.PNG" width="80%" height="80%" %}}
-
-10. Press **Go to (Your project name)**
+10. Press **Go to (Your project name)** </br>
   {{% img-zoom src="go-to.PNG" width="70%" height="70%" %}}
-11. Grant access to neccessary APIs with **Allow**
+11. Grant access to neccessary APIs with **Allow** </br>
   {{% img-zoom src="grant-access.PNG" width="70%" height="70%" %}}
 12. Finally, copy the URL
   {{% img-zoom src="deploy-url.PNG" %}}

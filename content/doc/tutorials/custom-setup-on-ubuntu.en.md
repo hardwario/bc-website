@@ -94,9 +94,7 @@ If you need more permanent solution than **BigClown Playground** you can install
         bcf update
     \
 
-        bcf flash --device ... bigclownlabs/bcf-gateway-usb-dongle:latest
-
-    {{% note "warning" %}}You have to replace `...` with the device (you can look it up using `bcf devices`.{{% /note %}}
+        bcf flash bigclownlabs/bcf-gateway-usb-dongle:latest
 
 17. Start the **BigClown Gateway** as **PM2** service:
 

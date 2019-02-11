@@ -19,7 +19,10 @@
   {
     padding-top: 0;
   }
-
+  &--3
+  {
+    padding-bottom: 2*$baseline;
+  }
   small
   {
     display: block;

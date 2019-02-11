@@ -3,48 +3,21 @@
   padding-top: 0*$baseline;
   padding-bottom: 2*$baseline;
 
+  @media(max-width:767px)
+  {
+    padding-bottom: 1*$baseline;
+  }
+
   &__item
   {
     text-align: center;
     color:#2e343c;
     padding-top: $baseline;
     padding-bottom: 2*$baseline;
-  }
 
-  &__firstline
-  {
-    border-bottom: 1px solid #e7eef3;
-
-    @media(max-width:991px)
+    @media(max-width:767px)
     {
-      border-bottom: 0;
-    }
-  }
-
-  .row
-  {
-    >div
-    {
-
-
-      &:nth-child(3n-1)
-      {
-        border-right: 1px solid #e7eef3;
-        border-left: 1px solid #e7eef3;
-
-        @media(max-width:991px)
-        {
-          border: 0;
-        }
-      }
-
-      &:nth-child(2n)
-      {
-        @media(max-width:991px)
-        {
-          border-left: 1px solid #e7eef3;
-        }
-      }
+      padding-bottom: 1*$baseline;
     }
   }
 
@@ -114,6 +87,31 @@
     &--9
     {
       background-image: url("../svg/engaging.svg");
+    }
+
+    &--10
+    {
+      background-image: url("../svg/electronics.svg");
+    }
+
+    &--11
+    {
+      background-image: url("../svg/programming.svg");
+    }
+
+    &--12
+    {
+      background-image: url("../svg/3dprinting.svg");
+    }
+
+    &--13
+    {
+      background-image: url("../svg/iot.svg");
+    }
+
+    &--14
+    {
+      background-image: url("../svg/bigdata.svg");
     }
   }
 }

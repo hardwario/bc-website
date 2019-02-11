@@ -3,7 +3,7 @@ title: "Serial port JSON"
 menu:
   doc:
     parent: 'interfaces'
-    weight: 30
+    weight: 300
 ---
 
 This article explains communication with Radio Dongle or Core Module over USB virtual serial port. This JSON messages are passed between microcontroller and `bcg` gateway. The `bcg` is passing these messages between MQTT broker and connected microcontroller. These informations are necessary in case you create your own gateway or integrate bigclown hardware to some other systems without the MQTT broker as a message bus.

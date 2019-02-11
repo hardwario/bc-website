@@ -1,0 +1,32 @@
+[skills]
+other = "Dovednosti, které se naučíte"
+
+[electronics]
+other = "Elektronika"
+
+[electronics_text]
+other = "Žádné pájení, prostě zapoj a&nbsp;tvoř"
+
+[programming]
+other = "Programování"
+
+[programming_text]
+other = "Vizuální a&nbsp;přívětivé programování"
+
+[3dprinting]
+other = "3D tisk"
+
+[3dprinting_text]
+other = "Dostupné modely pro&nbsp;reálné projekty"
+
+[iot]
+other = "IoT"
+
+[iot_text]
+other = "Beztrátové připojení s&nbsp;podporou LPWAN sítí"
+
+[bigdata]
+other = "Big Data"
+
+[bigdata_text]
+other = "Konektory pro&nbsp;populární cloudové platformy"

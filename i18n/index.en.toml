@@ -11,7 +11,7 @@ other = "START TODAY"
 other = "Make something yours <small>it's simple, fun and for everyone</small>"
 
 [start_digital_making]
-other = "Get started <small>with the <strong>BigClown Starter Kit</strong></small>"
+other = "Start learning<small>with the <strong>BigClown Starter Kit</strong></small>"
 
 [able_build]
 other = "Check projects using Starter Kit"
@@ -35,10 +35,13 @@ other = "Personal support"
 other = "Inspiration and tutorials"
 
 [standard_price]
-other = "81 EUR"
+other = "136 EUR"
 
 [final_price]
-other = "59 EUR"
+other = "99 EUR"
 
 [you_save]
 other = "27%"
+
+[how_it_works]
+other = "Learn how it works"

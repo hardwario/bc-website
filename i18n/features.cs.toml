@@ -45,3 +45,12 @@ other = "Jednoduchý"
 
 [engaging]
 other = "Podmanivý"
+
+[affordable_text]
+other = "Modulární open-source hardware i&nbsp;software umožňuje všem si postavit bateriově napájená zařízení s&nbsp;nízkým odběrem energie za rozumnou cenu."
+
+[simple_text]
+other = "Uživatelsky přívětivé IoT kity vám umožní tvořit projekty s&nbsp;elektronikou připojenou k internetu bez potřeby drátovat a&nbsp;pájet"
+
+[engaging_text]
+other = "Věříme, že&nbsp;se nejvíce naučíme tvořením. Proto pomáháme všem rozvíjet digitální dovednosti při řešení reálných problémů. Pojďme experimentovat, učit se a&nbsp;tvořit."

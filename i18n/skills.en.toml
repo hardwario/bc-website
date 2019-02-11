@@ -1,0 +1,32 @@
+[skills]
+other = "Skills you will learn"
+
+[electronics]
+other = "Electronics"
+
+[electronics_text]
+other = "No soldering, just quickly plug & make"
+
+[programming]
+other = "Programming"
+
+[programming_text]
+other = "Visual flows and friendly programming"
+
+[3dprinting]
+other = "3D Printing"
+
+[3dprinting_text]
+other = "Available models for real projects"
+
+[iot]
+other = "IoT"
+
+[iot_text]
+other = "Wireless connectivity with LPWAN support"
+
+[bigdata]
+other = "Big Data"
+
+[bigdata_text]
+other = "Connectors for popular cloud platforms"

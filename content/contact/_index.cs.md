@@ -1,6 +1,6 @@
 ---
 title: Kontakt
-mainHeading: Neváhej nás kontaktovat
+mainHeading: Neváhejte nás kontaktovat
 slug: contact
 menu: "main"
 weight: 600

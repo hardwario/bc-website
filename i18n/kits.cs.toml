@@ -1,14 +1,14 @@
 [start_making]
-other = "Udělej první krok <small>se single kity a naší plnou podporou</small>"
+other = "Udělejte první krok <small>se single kity a naší plnou podporou</small>"
 
 [get_more]
-other = "Postav mnohem více<small>s našimi Multi Kity</small>"
+other = "Postavte mnohem více<small>s našimi Multi Kity</small>"
 
 [show_all_kits]
-other = "Ukaž všechny kity"
+other = "Ukažte všechny kity"
 
 [able_to_make]
-other = "Můžeš si postavit"
+other = "Můžete si postavit"
 
 [nose]
 other = "Klaunský nos"
@@ -17,7 +17,7 @@ other = "Klaunský nos"
 other = "Cena"
 
 [save]
-other = "Ušetři"
+other = "Ušetřete"
 
 [recommended]
 other = "DOPORUČUJEME"
@@ -41,7 +41,7 @@ other = "Podpora"
 other = "koupit"
 
 [explore_modules]
-other = "prohlédni si moduly v kitu"
+other = "prohlédněte si moduly v kitu"
 
 [buy_it_now]
 other = "KUP TEĎ!"
@@ -56,7 +56,7 @@ other = "Moduly v kitu"
 other = "Volitelné moduly"
 
 [able_to_build]
-other = "Co si dokáže samostatně postavit"
+other = "Co si dokážete samostatně postavit"
 
 [integration_ready]
 other = "Kit je připraven na integraci s"
@@ -74,4 +74,4 @@ other = "Technická specifikace"
 other = "Integrace Low-Power sítí"
 
 [extend_kit]
-other = "Rozšiř svůj kit modulem pro low-power sítě a udělej jej nezávislým na internetovém připojení a napájení ze zdroje."
+other = "Rozšiřte svůj kit modulem pro low-power sítě a udělej jej nezávislým na internetovém připojení a napájení ze zdroje."

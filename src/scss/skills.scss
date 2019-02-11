@@ -1,0 +1,42 @@
+.skills{
+  padding-bottom: 2*$baseline;
+  margin-top: 2*$baseline;
+
+  &__item{
+    width: 300px;
+    height: 300px;
+    border: dashed 2px #0f7b8d;
+    border-radius: 50%;
+    background: white;
+    padding: 50px 30px 30px;
+    position: relative;
+
+    @media(max-width:1199px)
+    {
+      border: none;
+      padding: 30px 30px 0;
+      height: auto;
+      width: auto;
+      background: transparent;
+    }
+
+    @media(max-width: 991px)
+    {
+      //padding: 0 30px 0;
+    }
+
+    @media(max-width:767px)
+    {
+      padding: 0 30px 0;
+    }
+
+    .features__icon{
+    }
+    h2{
+      font-size: em(27);
+    }
+    p{
+      font-size: em(20);
+    }
+ }
+}

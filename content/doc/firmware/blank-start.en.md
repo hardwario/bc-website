@@ -65,7 +65,7 @@ Normally, the development cycle is the repetition of the following 3 steps:
 
 * Run `make` to produce the firmware image `firmware.bin`.
 
-* Run `bcf flash --device /dev/ttyUSBx` to upload the firmware image into the **Core Module** or **Radio Dongle**. On Windows use `COMx` device names.
+* Run `bcf flash` to upload the firmware image into the **Core Module** or **Radio Dongle**.
 
 {{% core-module-2 %}}
 

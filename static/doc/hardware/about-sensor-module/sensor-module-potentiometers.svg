@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="53.358665mm"
+   height="89.963882mm"
+   viewBox="0 0 189.06614 318.76966"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="sensor-module-potentiometers.svg"
+   inkscape:export-filename="./sensor-module-leds-output.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="95.366426"
+     inkscape:cy="61.525144"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:window-width="1873"
+     inkscape:window-height="1056"
+     inkscape:window-x="1967"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-265.46695,-128.75774)">
+    <image
+       sodipodi:absref="/home/hub/Desktop/Bigclown/bc-website/static/doc/hardware/about-sensor-module/sensor-module-leds.png"
+       xlink:href="sensor-module-leds.png"
+       y="164.19081"
+       x="300.90002"
+       id="image4144"
+       preserveAspectRatio="none"
+       height="199.2"
+       width="118.2" />
+    <g
+       id="g4169"
+       transform="matrix(0,1.9058832,-1.9058831,0,347.36483,392.70598)">
+      <g
+         id="g4149"
+         style="fill:none;stroke:#000000;stroke-width:0.34999999">
+        <rect
+           id="rect4151"
+           height="4"
+           width="10"
+           y="-2"
+           x="-5" />
+        <line
+           id="line4153"
+           y2="0"
+           x2="-5"
+           y1="0"
+           x1="-10" />
+        <line
+           id="line4155"
+           y2="0"
+           x2="10"
+           y1="0"
+           x1="5" />
+        <line
+           id="line4157"
+           y2="-3.5599999"
+           x2="3.5599999"
+           y1="5"
+           x1="-5" />
+      </g>
+      <g
+         id="g4159"
+         style="fill:#000000;stroke:none">
+        <path
+           id="path4161"
+           d="m 6,-6 -2.94,1.94 1,1 z"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g4169-3"
+       transform="matrix(0,-1.9058832,1.9058831,0,373.98055,393.2417)">
+      <g
+         id="g4149-6"
+         style="fill:none;stroke:#000000;stroke-width:0.34999999">
+        <rect
+           id="rect4151-7"
+           height="4"
+           width="10"
+           y="-2"
+           x="-5" />
+        <line
+           id="line4153-5"
+           y2="0"
+           x2="-5"
+           y1="0"
+           x1="-10" />
+        <line
+           id="line4155-3"
+           y2="0"
+           x2="10"
+           y1="0"
+           x1="5" />
+        <line
+           id="line4157-5"
+           y2="-3.5599999"
+           x2="3.5599999"
+           y1="5"
+           x1="-5" />
+      </g>
+      <g
+         id="g4159-6"
+         style="fill:#000000;stroke:none">
+        <path
+           id="path4161-2"
+           d="m 6,-6 -2.94,1.94 1,1 z"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 347.34195,373.86667 0,-11.42857"
+       id="path4214"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 374.03838,374.40238 0,-11.96428"
+       id="path4218"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 360.19909,362.25952 0,49.82236"
+       id="path4220"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 347.02628,412.01334 27.0121,0"
+       id="path4222"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 334.57409,362.52738 0,17.38839 3.39286,3.37054"
+       id="path4224"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 385.82409,362.52738 0,40.18973 -2.5558,-0.0112"
+       id="path4226"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <circle
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.60000002;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4228"
+       cx="360.10983"
+       cy="412.17023"
+       r="1.3392857" />
+  </g>
+</svg>

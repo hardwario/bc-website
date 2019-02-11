@@ -1,0 +1,29 @@
+<section>
+  <div class="bg bg--gray" id="tech-partners">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--3 text-center">{{ i18n "partners" | safeHTML }}</h2>
+
+          <div class="integration">
+            <div class="row">
+
+              {{ range sort $.Site.Data.partners "weight" }}
+                {{ $partner := . }}
+
+                <div class="col-12 col-md-6 col-lg-3">
+                  <span class="integration__item integration__item--without-link">
+                    <div class="integration__image d-flex align-items-center justify-content-center">
+                      <img src="/_assets/images/{{ $partner.image }}" alt="{{ $partner.name }}" />
+                    </div>
+                    <h3 class="integration__title integration__title--without-link">{{ $partner.name }}</h3>
+                  </span>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

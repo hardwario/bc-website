@@ -45,6 +45,26 @@ This means that the flashing procedure is now the same as with the Radio Dongle.
 
 With Core R2 you can also use the [**BigClown Playground**]({{< relref "/doc/basics/quick-start-guide.en.md" >}}) GUI tool to program nodes, manage radio network and create rules in Node-RED.
 
+1. Flash firmware with following command
+
+        bcf flash [firmware]:[version]
+
+    Example which flashing wireless-motion-detector firmware from [Radio Motion Detector](https://www.bigclown.com/doc/projects/radio-motion-detector/) project:
+
+        bcf flash bigclownlabs/bcf-radio-motion-detector:latest
+
+2. Print bc_log debug messages over UART2 serial to your computer with `bcf`
+
+        bcf log
+
+    Flash firmware and immediatelly start logging after upload
+
+        bcf flash [firmware]:[version] --log
+
+## List of connected devices
+
+You can also add the `--device` parameter to the `bcf` so you don't have to choose the serial port every time.
+
 1. Run following command to see connected devices
 
     ```
@@ -63,23 +83,13 @@ With Core R2 you can also use the [**BigClown Playground**]({{< relref "/doc/bas
      `/dev/ttyUSB0` \
      `/dev/ttyACM2` \
 
-     It is the `/dev/ttyUSB0`
+     Newly connected module is the `/dev/ttyUSB0`
 
-3. Flash firmware with following command
+     Now you can force to use that serial port during flashing:
 
-        bcf flash --device [device] [firmware]:[version]
-
-    Example which flashing wireless-motion-detector firmware from [Radio Motion Detector](https://www.bigclown.com/doc/projects/radio-motion-detector/) project:
-
-        bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-motion-detector:latest
-
-4. Print bc_log debug messages over UART2 serial to your computer with `bcf`
-
-        bcf log --device [device]
-
-    Flash firmware and immediatelly start logging after upload
-
-        bcf flash --device [device] [firmware]:[version] --log
+     ```
+     bcf flash --device /dev/ttyUSB0 bigclownlabs/bcf-radio-motion-detector:latest
+     ```
 
 ## References
 

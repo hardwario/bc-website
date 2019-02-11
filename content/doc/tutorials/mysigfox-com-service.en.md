@@ -49,6 +49,8 @@ Body of request contains specific fields:
 ## Testing MySigfox.com
 To test if everything works as designed, you can use service called [requestb.in](https://requestb.in) to create temporary storage for http requests.
 
+**Request bin is not wokring right now, but try to google "request bin" and you'll find many similar services like [mockbin.org](http://mockbin.org/) or [postb.in](https://postb.in/).**
+
 **HOWTO**
 
 1) Go to [https://requestb.in](https://requestb.in) and press *Create a RequestBin* button

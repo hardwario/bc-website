@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="20mm" height="11mm" viewBox="-10 -6 20 10">
+  <desc>Variable resistor as rheostat symbol according to GOST 2.728-74.</desc>
+  <g fill="none" stroke="black" stroke-width="0.35" >
+    <rect x="-5" y="-2" width="10" height="4" />
+    <line x1="-10" y1="0" x2="-5" y2="0" />
+    <line x1="5" y1="0" x2="10" y2="0" />
+    <line x1="-5" y1="5" x2="3.56" y2="-3.56" />
+  </g>
+  <g fill="black" stroke="none">
+    <path d="M 6 -6 L 3.06 -4.06 L 4.06 -3.06 z" />
+  </g>
+</svg>

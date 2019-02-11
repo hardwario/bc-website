@@ -1,5 +1,5 @@
 ---
 title: Projects
-mainHeading: Najdi správný projekt pro tebe
+mainHeading: Najděte ten správný projekt
 slug: projects
 ---

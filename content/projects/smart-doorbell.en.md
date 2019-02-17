@@ -21,17 +21,17 @@ The wireless Push Button Kit will be located at your main door. The button press
 
 ## What you will need
 
-### Hardware
+* Core Module
+* Button Module
+* Mini Battery Module
+* Enclosure 101
+* or you can buy Push Button Kit
+* BigClown Hub
 
-* {{< shop "Push Button Kit" >}}
-* {{< shop "BigClown Hub" >}}
+## Setting up BigClown martin_hubacek
 
-### Software
+At first, if you haven't done it yet, you will need to setup your BigClown Hub.
 
-* BigClown Hub on the Raspberry Pi
-* Node-RED with Blynk node
-* Blynk app on your phone
+## Build a Doorbell
 
-## References
-
-* [Project](https://www.bigclown.com/doc/projects/push-the-button/)
+Plug all modules together and pack it to enclosure.

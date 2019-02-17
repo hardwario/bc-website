@@ -3,6 +3,11 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 # This line should *not* be indented
 media_folder: "upload" # Media files will be stored in the repo under images/uploads
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: lukasfabik
+    api_key: 818759917278117
 collections:
   - name: "blog-en" # Used in routes, e.g., /admin/collections/blog
     label: "Blog EN" # Used in the UI

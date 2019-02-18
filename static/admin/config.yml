@@ -17,11 +17,11 @@ collections:
     extension: "en.md"
     format: 'frontmatter'
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title [max 35 char.]", name: "title", widget: "string", pattern: [".{0,35}", "Must have max 35 characters"]}
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
+      - {label: "Description [max 120 char.]", name: "description", widget: "string", widget: "string", pattern: [".{0,120}", "Must have max 120 characters"]}
+      - {label: "Preview Image [700x580]", name: "image_preview", widget: "image"}
       - {label: "Main Image [1400x510]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -33,11 +33,11 @@ collections:
     extension: "cs.md"
     format: 'frontmatter'
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title [max 35 char.]", name: "title", widget: "string", pattern: [".{0,35}", "Must have max 35 characters"]}
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
+      - {label: "Description [max 120 char.]", name: "description", widget: "string", widget: "string", pattern: [".{0,120}", "Must have max 120 characters"]}
+      - {label: "Preview Image [700x580]", name: "image_preview", widget: "image"}
       - {label: "Main Image [1400x510]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -49,16 +49,16 @@ collections:
     extension: "en.md"
     format: 'frontmatter'
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string", pattern: [".{12,}", "Must have at least 12 characters"]}
+      - {label: "Title [max 35 char.]", name: "title", widget: "string", pattern: [".{0,35}", "Must have max 35 characters"]}
       - {label: "Draft", name: "draft", widget: "boolean", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "string", pattern: ["a{0,120}", "Must have max. 120 characters"]}
+      - {label: "Description [max 120 char.]", name: "description", widget: "string", pattern: [".{0,120}", "Must have max 120 characters"]}
       - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}
       - {label: "Knowledge", name: "levels", widget: "select", multiple: true, options: ["Beginner","Advanced"]}
       - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}
       - {label: "Device", name: "devices", widget: "select", multiple: true, options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"]}
       - {label: "Idea", name: "idea", widget: "boolean", required: false}
-      - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
+      - {label: "Preview Image [700x580]", name: "image_preview", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Partner", name: "partner", widget: "string", required: false}
       - {label: "Partner Image [140x14O, 90x140, 140x90]", name: "partner_image", widget: "image", required: false}
@@ -71,16 +71,16 @@ collections:
     extension: "cs.md"
     format: 'frontmatter'
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string", pattern: ["a{3,35}", "Must have min 3 & max. 35 characters"]}
+      - {label: "Title [max 35 char.]", name: "title", widget: "string", pattern: [".{0,35}", "Must have max 35 characters"]}
       - {label: "Draft", name: "draft", widget: "boolean", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "string", pattern: ["a{0,120}", "Must have max. 120 characters"]}
+      - {label: "Description [max 120 char.]", name: "description", widget: "string", pattern: [".{0,120}", "Must have max 120 characters"]}
       - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}
       - {label: "Knowledge", name: "levels", widget: "select", multiple: true, options: ["Beginner","Advanced"]}
       - {label: "Place", name: "places", widget: "select", multiple: true, options: ["Home","Garden","Office"]}
       - {label: "Device", name: "devices", widget: "select", options: ["Custom Kit", "Motion Kit", "Flood Kit", "Power Kit"]}
       - {label: "Idea", name: "idea", widget: "boolean", required: false}
-      - {label: "Preview Image [788x544]", name: "image_preview", widget: "image"}
+      - {label: "Preview Image [700x580]", name: "image_preview", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Partner", name: "partner", widget: "string", required: false}
       - {label: "Partner Image [140x14O, 90x140, 140x90]", name: "partner_image", widget: "image", required: false}

@@ -1,4 +1,5 @@
 .tableofcontent{
+  position: relative;
 
   .fixed{
     position: fixed;
@@ -12,6 +13,9 @@
 
     li{
       color: #0f7b8d;
+      margin-bottom: 3px;
+      display: block;
+      overflow: hidden;
 
       a{
         color: #0f7b8d;
@@ -20,6 +24,9 @@
         padding: 3px 5px;
         margin-left: 0;
         border-radius: 7px;
+        display: block;
+        float: left;
+        clear: both;
 
         &.active{
           color: white;

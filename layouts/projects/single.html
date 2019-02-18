@@ -124,6 +124,10 @@
 {{ define "additional-scripts" }}
 
 <script>
+  $(document).ready(function(){
+    var width = $('#TableOfContents').width();
+    $('#TableOfContents').width(width);
+  });
   $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     var offset = $('.article__body').offset();

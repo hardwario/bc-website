@@ -163,6 +163,7 @@
         margin-top: -27px;
       }
 
+
       strong,span
       {
         line-height: 0.75*$baseline;
@@ -193,9 +194,9 @@
 
     h1,h2
     {
-      line-height: 2*$baseline;
+      line-height: 1.8*$baseline;
       margin: 0;
-      padding-bottom: $baseline;
+      padding-bottom: 0.5*$baseline;
       font-size: em(40);
 
       @media(max-width: 991px)
@@ -222,7 +223,7 @@
       margin: 0;
     }
 
-    p
+    p, ul
     {
       font-size: em(18);
       padding-bottom: $baseline;

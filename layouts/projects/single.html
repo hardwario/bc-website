@@ -10,13 +10,19 @@
 
 <section>
 <div class="bg bg--gray">
-  <div class="container">
+  <span class = "tableofcontent__toggle"><span class="glyphicon glyphicon-menu-hamburger"></span> Table of Contents</span>
+  <div class="container container-nopadding">
     <div class="row justify-content-center">
       <div class = "col-12 col-xl-4 tableofcontent">
         {{- if len .TableOfContents }}
           {{ .TableOfContents }}
         {{- end }}
 
+        <script>
+          $('.tableofcontent__toggle').click(function(){
+            $('#TableOfContents ul').slideToggle();
+          });
+        </script>
         {{ if ne .Params.idea true }}
         <div class="row">
           <div class="col-12 justify-content-center">

@@ -9,6 +9,7 @@ devices: ["Motion Kit"]
 image_preview: /projects/toilet-night-lamp/preview.jpg
 image_main: /projects/toilet-night-lamp/preview.jpg
 author: "lukas_fabik"
+modules: ["core","mini_battery","pir","enclosures-101"]
 
 ---
 
@@ -21,10 +22,7 @@ author: "lukas_fabik"
 ## What you need
 For this project you should have prepared BigClown Hub and also IKEA TRÅDFRI gateway connected with you Apple device with at least one bulb. To build your motion detector you will need this modules:
 
-* PIR Module for motion Detection
-* Core Module
-* Mini Battery Module
-* Enclosure (optional)
+{{< modules >}}
 
 ## Step 1: Build device and connect it to Hub
 At first it is important to plug all modules together. If you are building your first device it is good to see introduction [How to correctly plug BigClown modules](#).

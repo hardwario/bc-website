@@ -1,6 +1,5 @@
 .tableofcontent{
   position: relative;
-
   .fixed{
     position: fixed;
     z-index: 1;
@@ -43,7 +42,59 @@
     }
   }
 
-  @media(max-width:991px){
+  &__toggle{
+    width: 100%;
+    height: 2*$baseline;
+    line-height: 2*$baseline;
+    color: white;
+    background: #0f7b8d;
+    font-size: em(18);
+    font-weight: 900;
+    padding-left: 10px;
     display: none;
+    cursor: pointer;
+
+    @media(max-width:991px){
+      display: block;
+    }
+
+    span{
+      top: 8px;
+      font-size: em(24);
+      margin-right: 10px;
+    }
+  }
+
+
+  @media(max-width:991px){
+    //display: none;
+    padding: 0 0;
+
+    .container-nopadding{
+      padding: 0;
+    }
+    .fixed{
+      position: static;
+    }
+    ul{
+      display: none;
+      padding-top: 0*$baseline;
+      padding-left: 0;
+
+      li{
+        padding: 0;
+        margin: 0;
+
+        a{
+          padding: 12px 20px;
+          float: none;
+          border-radius: 0px;
+          color: white;
+          background: #0f7b8d;
+          border-bottom: solid 1px #1399af;
+        }
+      }
+    }
+
   }
 }

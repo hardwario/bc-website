@@ -417,6 +417,13 @@
     }
   }
 
+  &__modules{
+    padding-bottom: 1*$baseline;
+
+    h3{
+      line-height: 1*$baseline;
+    }
+  }
   &__tags
   {
     line-height: 2*$baseline;

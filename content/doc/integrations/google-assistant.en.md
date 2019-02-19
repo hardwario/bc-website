@@ -1,6 +1,6 @@
 ---
 title: "Google Assistant"
-draft: true
+draft: false
 menu:
   doc:
     parent: 'integrations'
@@ -23,7 +23,7 @@ Google Assistant is voice assistant, made by Google. Avaliable on bilions of dev
 
 ## Setup
 
-Setup will be containing two steps:
+Setup will be containing three steps:
 
 1. Setup of the kit and Blynk mobile app
 
@@ -56,8 +56,11 @@ Here is [list of projects with Blynk integrations]({{< relref "doc/integrations/
 
     {{% note "info" %}}This snippet prepares Node-RED to fulfill commands from Google Assistant{{% /note %}}
 
-4. Configure **all 5 Blynk nodes** with correct Blynk token.
-   {{% img-zoom src="node-red-pick-config.PNG" %}}
+4. Configure **all 5 Blynk nodes** with correct Blynk token. You've received the token in your email when you've created new project in the Blynk app. Use the pencil icon on the right to create a new connection with your token.
+
+    Use `ws://blynk-cloud.com/websockets` URL in the configuration.
+
+    {{% img-zoom src="node-red-pick-config.PNG" %}}
 
 6. Deploy the flow using the **Deploy** button in the top-right corner.
 
@@ -74,19 +77,23 @@ To complete Google Assistant setup, **you need a mobile device**.
 Also make sure that your language is supported. Meaning that you can do voice search does not mean you have **Google Assistant**. If you are not sure, switch your phone language to **English** language.
 
 1. Launch BigClown action by saying (or typing) *Talk to BigClown*</br>
-    {{% img-zoom src="ga-talk-to-bigclown.jpg" width="40%" height="40%" %}}
+    {{% img-zoom src="reg1.jpg" width="40%" height="40%" %}}
 
-2. Confirm that you want to start the setup by saying *yes*</br>
-{{% img-zoom src="ga-setup-key.jpg" width="40%" height="40%" %}}
+2. Confirm account creation by saying *yes*. Account is needed because of Google Assistant guidelines for storing information like Blynk secret.</br>
+    {{% img-zoom src="reg2.jpg" width="40%" height="40%" %}}
+3. Confirm ToS and Privacy policy to finish the registration.</br>
+    {{% img-zoom src="reg3.jpg" width="40%" height="40%" %}}
+4. Confirm that you want to start the setup by saying *yes*</br>
+{{% img-zoom src="reg4.jpg" width="40%" height="40%" %}}
 
-3. If you had already completed the Node-RED setup above, you don't need to open the instructions, otherwise, complete the Node-RED setup first and come back when you are finished.
+1. If you had already completed the Node-RED setup above, you don't need to open the instructions, otherwise, complete the Node-RED setup first and come back when you are finished.
 
     Reply with **just the Blynk secret key** you used to configure Blynk nodes in Node-RED.
 
     Blynk secret key has this format `ed058033163b4f4b977e6e1d60c725d4` and you can find it in the Node-RED Blynk configuration or in your email which was send to you when you created Blynk dashboard in your phone.</br>
     {{% img-zoom src="ga-instructions.jpg" width="40%" height="40%" %}}
 
-4. Confirm that you want to use this key</br>
+2. Confirm that you want to use this key</br>
 {{% img-zoom src="ga-confirmation.jpg" width="40%" height="40%" %}}
 
 5. If everything worked well, your modules will show up now. Pick the module to send commands to it.</br>
@@ -104,3 +111,12 @@ Say **Talk to BigClown** to start the Action again.</br>
 In case you have more nodes that does not have standard MQTT topics, you add them here and connect them to the **Save data** node.
 
 {{% img-zoom src="node-red-data-nodes.PNG" %}}
+
+## Example Conversation
+
+You can also tell command in a single sentence. This way you switch the **context** to the new device.
+
+- What's the humidity (pressure, altitude, temperature, illuminance) on the Climate Monitor?
+- Set color to orange on Power Controller.
+- Turn the relay on. (You can use it only when the **context** was switched for example by previous command to Power Controller)
+- Set brightness to 30% on Power Controller.

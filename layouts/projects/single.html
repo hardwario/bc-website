@@ -14,18 +14,20 @@
   <div class="container container-nopadding">
     <div class="row justify-content-center">
       <div class = "col-12 col-xl-4 tableofcontent">
+
+        <div class = "col-12 nopadding">
         {{- if len .TableOfContents }}
           {{ .TableOfContents }}
         {{- end }}
 
         <script>
           $('.tableofcontent__toggle').click(function(){
-            $('#TableOfContents ul').slideToggle();
+            $('#TableOfContents ul li ul').slideToggle();
           });
         </script>
         {{ if ne .Params.idea true }}
-        <div class="row">
-          <div class="col-12 justify-content-center">
+        </div>
+          <div class="col-12 justify-content-center d-none d-sm-block">
             <div class="article__author article__author--project d-flex flex-column justify-content-center">
               {{ $author := index $.Site.Data.authors .Params.author }}
               <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
@@ -33,10 +35,9 @@
               <span>{{ $author.email }}</span>
             </div>
           </div>
-          <div class="col-12 justify-content-center">
+          <div class="col-12 justify-content-center d-none d-sm-block">
             <div class="addthis_inline_share_toolbox article__soc article__soc--project"></div>
           </div>
-        </div>
         {{ end }}
 
       </div>

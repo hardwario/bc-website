@@ -70,13 +70,15 @@
     //display: none;
     padding: 0 0;
 
-    .container-nopadding{
-      padding: 0;
+    .nopadding{
+      padding: 0!important;
     }
     .fixed{
       position: static;
     }
-    ul{
+    ul {
+      padding: 0;
+      li ul{
       display: none;
       padding-top: 0*$baseline;
       padding-left: 0;
@@ -94,6 +96,7 @@
           border-bottom: solid 1px #1399af;
         }
       }
+    }
     }
 
   }

@@ -36,7 +36,7 @@ collections:
       - {label: "Title [max 35 char.]", name: "title", widget: "string", pattern: [".{0,35}", "Must have max 35 characters"]}
       - {label: "Draft", name: "draft", widget: "boolean"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description [max 120 char.]", name: "description", widget: "string", widget: "string", pattern: [".{0,120}", "Must have max 120 characters"]}
+      - {label: "Description [max 120 char.]", name: "description", widget: "string", pattern: [".{0,120}", "Must have max 120 characters"]}
       - {label: "Preview Image [700x580]", name: "image_preview", widget: "image"}
       - {label: "Main Image [1400x510]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}

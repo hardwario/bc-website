@@ -47,7 +47,7 @@ pygmentsUseClasses = true
 [[languages.en.menu.doc]]
   identifier = "projects"
   name = "Projects"
-  url = "/doc/projects/push-the-button/"
+  url = "/doc/projects/"
   weight = 30
 
 [[languages.en.menu.doc]]

@@ -14,7 +14,7 @@ recommended: false
 included:
 notIncluded:
 weight: 20
-price: 1 638 Kč
+price: €59
 buyLink: "https://shop.bigclown.com/climate-monitor-kit/?currency=CZK"
 modules: ["core","mini_battery","climate","enclosures_climate"]
 optionalModules: ["usb_dongle","sigfox","lora"]

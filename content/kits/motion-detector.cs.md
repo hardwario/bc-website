@@ -14,7 +14,7 @@ recommended: false
 included:
 notIncluded:
 weight: 30
-price: 1 612 Kč
+price: €59
 buyLink: "https://shop.bigclown.com/motion-detector-kit/?currency=CZK"
 modules: ["core","mini_battery","pir","enclosures-101"]
 optionalModules: ["usb_dongle","sigfox","lora"]

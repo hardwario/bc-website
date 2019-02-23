@@ -15,7 +15,7 @@ included: ["Radio Dongle","Motion Detector", "Climate Monitor"]
 notIncluded: ["Flood Detector", "LCD Thermostat", "Controller", "Push Button", "CO2 Module"]
 gifts: ["Klaunský nos"]
 weight: 1
-price: 3 874 Kč
+price: €149
 buyLink: "https://shop.bigclown.com/big-kits/?currency=CZK"
 modules: ["usb_dongle","core-2","mini_battery-2","climate","pir","enclosures-101-2"]
 optionalModules: ["sigfox","lora"]

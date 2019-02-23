@@ -14,7 +14,7 @@ recommended: false
 included:
 notIncluded:
 weight: 20
-price: €63
+price: €59
 buyLink: "https://shop.bigclown.com/climate-monitor-kit/?currency=EUR"
 modules: ["core","mini_battery","climate","enclosures_climate"]
 optionalModules: ["usb_dongle","sigfox","lora"]

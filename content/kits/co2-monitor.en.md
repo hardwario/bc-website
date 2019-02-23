@@ -14,7 +14,7 @@ recommended: false
 included:
 notIncluded:
 weight: 60
-price: €164
+price: €159
 buyLink: "https://shop.bigclown.com/co2-monitor-kit/?currency=EUR"
 modules: ["core","battery","co2","humidity","barometer","temperature","cover","enclosures-201"]
 optionalModules: ["usb_dongle","sigfox","lora"]

@@ -104,7 +104,7 @@ To upgrade an existing installation, go to one of the supported platforms:
 
 3. Install **GCC ARM Embedded**:
 
-        brew install caskroom/cask/gcc-arm-embedded
+        brew cask install gcc-arm-embedded
 
 4. Install **Git**:
 

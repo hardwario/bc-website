@@ -15,10 +15,10 @@ All addresses are provided in a 7-bit format.
 | 0x08    | NT3H2011     | {{% shop "NFC Tag" %}}                                                   | Changed from default to avoid collision |
 | 0x19    | LIS2DH12     | {{% shop "Core Module" %}}                                               | Channel I2C0                            |
 | 0x20    | TCA9534      | IQRF Module                                                              |                                         |
-| 0x21    | TCA9534      | GPS Module                                                               | Reserved                                |
-| 0x22    | TCA9534      | RFID Module                                                              | Reserved                                |
-| 0x23    | TCA9534      |                                                                          | Reserved                                |
-| 0x24    | TCA9534      | Ethernet Module                                                          | Reserved                                |
+| 0x21    | TCA9534      | GPS Module                                                               |                                         |
+| 0x22    | TCA9534      | RFID Module                                                              |                                         |
+| 0x23    | TCA9534      | Infragrid Module                                                         |                                         |
+| 0x24    | TCA9534      | Ethernet Module                                                          |                                         |
 | 0x25    | TCA9534      |                                                                          | Reserved                                |
 | 0x26    | TCA9534      |                                                                          | Reserved                                |
 | 0x27    | TCA9534      |                                                                          | Reserved                                |

@@ -7,7 +7,14 @@
   //max-height: 800px;
   //min-height: 730px;
 
+  .container{
+    height: 100%;
 
+    .row{
+      height: 100%;
+    }
+
+  }
   &--homepage{
     background: url("../images/homepageheader_bg.jpg") no-repeat top center;
     background-size: cover;
@@ -78,12 +85,12 @@
     min-height: 0;
   }
   .heading{
-    margin-top:calc(42vh);
+    /*margin-top:calc(42vh);
 
     @media(max-width:991px)
     {
       margin-top:calc(26vh - #{3*$baseline});
-    }
+    }*/
 
   }
 

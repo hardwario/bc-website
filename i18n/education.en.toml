@@ -2,16 +2,91 @@
 other = "We are <strong>changing</strong> the way<br /><span>&nbsp;&nbsp;<strong>Digital Skills</strong> Are Learnt</strong></span>"
 
 [partners]
-other = "Technological Partners"
+other = "Technologičtí partneři"
 
 [inspiring_the_inventors]
 other = "\"Inspiring the&nbsp;inventors of&nbsp;tomorrow, today, together\""
 
 [testimonial_heading]
-other = "The Best IoT Kit to teach & learn digital skills"
+other = "Nejlepší IoT kit pro výuku a učení digitálních dovedností"
 
 [testimonial_text]
-other = "The BigClown Educational Kit is a perfect tool to teach new technologies, especially in IoT area."
+other = "BigClown Educational Kit je perfektní nástroj pro výuku nových technologíí, především oblasti IoT."
 
 [testimonial_author]
-other = "<span>Marek Beranek</span> - Director at Unicorn College"
+other = "<span>Marek Beranek</span> - ředitel Unicorn College"
+
+[join_our_community]
+other = "Join our community"
+
+[sign_up_to_get]
+other = "Sign up and get support and resources"
+
+[join_community]
+other = "Join Community"
+
+[you_will_get]
+other = "You will get"
+
+[access_to_courses]
+other = "Access to Training Courses and Webinars"
+
+[advice_and_guidance]
+other = "Advice and Guidance on Financing"
+
+[projects_with_tutorials]
+other = "Projects with Step-by-Step Tutorials"
+
+[one_more_step]
+other = "Just one more step <small>Please share with us a little bit more  about you, so&nbsp;we can prepare a tailor-made offer for&nbsp;you</small>"
+
+[your_email]
+other = "Your e-mail"
+
+[your_email_label]
+other = "Add your e-mail address"
+
+[my_name_is]
+other = "Hi! My name is..."
+
+[my_name_is_label]
+other = "Jon Doe"
+
+[working_at]
+other = "I am working at..."
+
+[working_at_label]
+other = "Name of school, company or institution"
+
+[city_is]
+other = "... in the city"
+
+[city_is_label]
+other = "School address (city and state)"
+
+[iam_teacher]
+other = "I'm teacher"
+
+[iam_principal]
+other = "I'm principal"
+
+[iam_other]
+other = "I work in other position"
+
+[i_want_to]
+other = "I want to join the Community"
+
+[we_combine]
+other = "We combine digital learning with real world<br/> projects for more engaging ideas…"
+
+[education]
+other = "Education"
+
+[education_description]
+other = "The next generation are our future and they are ready to learn."
+
+[industry]
+other = "Industry"
+
+[industry_description]
+other = "Corporate organisations can be difficult to connect with, but when you do, great things can happen."

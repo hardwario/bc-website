@@ -1,17 +1,92 @@
 [changing_the_way]
-other = "<strong>Měníme</strong> způsob<br /><span>&nbsp;&nbsp;jak se učí<strong>Digitální dovednosti</strong></span>"
+other = "<strong>Měníme</strong> způsob výuky<br /><span>&nbsp;&nbsp;<strong>Digitálních dovedností</strong></span>"
 
 [partners]
 other = "Technologičtí partneři"
 
 [inspiring_the_inventors]
-other = "\"Inspiring the&nbsp;inventors of&nbsp;tomorrow, today, together\""
+other = "\"Inspirujme&nbsp;vynálezce&nbsp;zítřka, dnes, společně\""
 
 [testimonial_heading]
 other = "Nejlepší IoT kit pro učení digitálních dovedností"
 
 [testimonial_text]
-other = "BigClown Educational Kit je perfektní nástroj pro učení nových technologií, především v oblasti IoT."
+other = "BigClown Educational Kit je perfektní nástroj pro učení nových technologií, především z oblasti internetu věcí."
 
 [testimonial_author]
 other = "<span>Marek Beránek</span> - Ředitel Unicorn College"
+
+[join_our_community]
+other = "Přidejte se k nám"
+
+[sign_up_to_get]
+other = "Příhlaste se a získáte výukové materiály a naši podporu"
+
+[join_community]
+other = "Přidejte se"
+
+[you_will_get]
+other = "Přihlášením získáte"
+
+[access_to_courses]
+other = "Přístup k výukovým kurzům a seminářům"
+
+[advice_and_guidance]
+other = "Rady, doporučení a postup, jak zajistit financování"
+
+[projects_with_tutorials]
+other = "Projekty s návody krok za krokem"
+
+[one_more_step]
+other = "Ještě jeden krok <small>Prosím, řekněte nám o sobě ještě trochu více informací, ať&nbsp;můžeme připravit nabídku na&nbsp;míru</small>"
+
+[your_email]
+other = "Váš e-mail"
+
+[your_email_label]
+other = "Zadejte vaši e-mailovou adresu"
+
+[my_name_is]
+other = "Zdravím! Moje jméno je..."
+
+[my_name_is_label]
+other = "Jana Nováková"
+
+[working_at]
+other = "Pracuju v..."
+
+[working_at_label]
+other = "Název školy, společnosti nebo institutu"
+
+[city_is]
+other = "... ve městě"
+
+[city_is_label]
+other = "Město, ve kterém se škola nebo firma nachází"
+
+[iam_teacher]
+other = "Jsem učitel, nebo učitelka"
+
+[iam_principal]
+other = "Jsem ředitel, nebo ředitelka"
+
+[iam_other]
+other = "Pracuji na jiné pozici"
+
+[i_want_to]
+other = "Chci se přidat"
+
+[we_combine]
+other = "Propojujeme digitální vzdělávání s projekty reálného světa, aby vznikaly ty nejzajímavější nápady…"
+
+[education]
+other = "Vzdělávání"
+
+[education_description]
+other = "Příští generace je naší budoucností a je připravena se vzdělávat."
+
+[industry]
+other = "Průmysl"
+
+[industry_description]
+other = "Není snadné začít spolupracovat s velkými společnostmi, ale ve chvíli kdy to dokážete, začnou se dít skvělé věci."

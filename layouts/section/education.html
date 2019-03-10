@@ -28,21 +28,21 @@
     <div class="container education">
       <div class="row">
         <div class="col-12 col-md-7">
-          <h2>Join our community</h2>
-          <p>Sign up and get support and resources</p>
+          <h2>{{ i18n "join_our_community" }}</h2>
+          <p>{{ i18n "sign_up_to_get" }}</p>
           <form method="" action="" id="educationSignup">
-            <input type = "email" name = "email" placeholder="Add your e-mail address" name = "EMAIL" id="mc-email" class="education__input" />
-            <button type="submit" class="button button--green education__button" id = "educationSubmit_first">Join Community</button>
+            <input type = "email" name = "email" placeholder="{{ i18n "your_email_label" }}" name = "EMAIL" id="mc-email" class="education__input" />
+            <button type="submit" class="button button--green education__button" id = "educationSubmit_first">{{ i18n "join_community" }}</button>
             <p class = "education__validation"></p>
           </form>
 
         </div>
         <div class = "col-12 col-md-5">
-          <h3>You will get:</h3>
+          <h3>{{ i18n "you_will_get"}}:</h3>
           <ul class="pricelist__items">
-            <li class="pricelist__items__item">Access to Training Courses and Webinars</li>
-            <li class="pricelist__items__item">Advice and Guidance on Financing</li>
-            <li class="pricelist__items__item">Projects with Step-by-Step Tutorials</li>
+            <li class="pricelist__items__item">{{ i18n "access_to_courses" }}</li>
+            <li class="pricelist__items__item">{{ i18n "advice_and_guidance" }}</li>
+            <li class="pricelist__items__item">{{ i18n "projects_with_tutorials" }}</li>
           </ul>
         </div>
       </div>
@@ -55,55 +55,55 @@
     <div class="modal-content">
       <form method="" action="" id="educationSignupStep2">
         <div class = "container educationForm__container">
-          <h2 class="title text-center">Just one more step <small>Please share with us a little bit more  about you, so&nbsp;we can prepare a tailor-made offer for&nbsp;you</small></h2>
+          <h2 class="title text-center">{{ i18n "one_more_step" | safeHTML }}</h2>
           <div class = "row text-center">
             <div class = "col-12">
-              <label class = "educationForm__label" id="label-mc-email">Your e-mail:</label>
+              <label class = "educationForm__label" id="label-mc-email">{{ i18n "your_email" }}:</label>
             </div>
             <div class = "col-12">
-              <input type = "email" placeholder="Add your e-mail address" name = "EMAIL" id="mc-email" class = "educationForm__input educationForm__input--center" required />
+              <input type = "email" placeholder="{{ i18n "your_email_label" }}" name = "EMAIL" id="mc-email" class = "educationForm__input educationForm__input--center" required />
             </div>
 
           </div>
           <hr/>
           <div class = "row">
             <div class = "col-12">
-              <label for = "mc-name" class = "educationForm__label" id="label-mc-name">Hi! My name is...</label>
+              <label for = "mc-name" class = "educationForm__label" id="label-mc-name">{{ i18n "my_name_is" }}</label>
             </div>
             <div class = "col-12">
-              <input type = "text" placeholder="Jon Doe" name = "FULLNAME" id="mc-name" class = "educationForm__input" required />
+              <input type = "text" placeholder="{{ i18n "my_name_is_label" }}" name = "FULLNAME" id="mc-name" class = "educationForm__input" required />
             </div>
           </div>
 
           <div class = "row">
             <div class = "col">
-              <label for = "mc-company" class = "educationForm__label" id="label-mc-company">I am working at...</label>
+              <label for = "mc-company" class = "educationForm__label" id="label-mc-company">{{ i18n "working_at" }}</label>
             </div>
             <div class = "col-12">
-              <input type = "text" placeholder="Name of school, company or institution" name = "SCHOOL" id="mc-company" class = "educationForm__input" required />
+              <input type = "text" placeholder="{{ i18n "working_at_label" }}" name = "SCHOOL" id="mc-company" class = "educationForm__input" required />
             </div>
           </div>
 
           <div class = "row">
             <div class = "col">
-              <label for = "mc-city" class = "educationForm__label" id="label-mc-city">... in the city</label>
+              <label for = "mc-city" class = "educationForm__label" id="label-mc-city">{{ i18n "city_is" }}</label>
             </div>
             <div class = "col-12">
-              <input type = "text" placeholder="School address (city and state)" name = "CITY" id="mc-city" class = "educationForm__input" required />
+              <input type = "text" placeholder="{{ i18n "city_is_label" }}" name = "CITY" id="mc-city" class = "educationForm__input" required />
             </div>
           </div>
 
           <div class = "row">
             <div class = "col">
-              <label for = "mc-post" class = "educationForm__label" id="label-mc-post">and...</label>
+              <label for = "mc-post" class = "educationForm__label" id="label-mc-post">{{ i18n "and" }}...</label>
             </div>
             <div class = "col-12">
               <!--<input type = "text" placeholder="Jon Doe" id="mc-post" class = "educationForm__input" required />-->
 
               <select id="mc-post" class = "educationForm__input" name = "POST" required>
-                <option value = "teacher">I'm teacher</option>
-                <option value = "principal">I'm principal</option>
-                <option value = "other">I work in other position</option>
+                <option value = "teacher">{{ i18n "iam_teacher" }}</option>
+                <option value = "principal">{{ i18n "iam_principal" }}</option>
+                <option value = "other">{{ i18n "iam_other" }}</option>
               </select>
             </div>
           </div>
@@ -111,7 +111,7 @@
           <div class = "row text-center">
             <div class = "col">
               <label for="mc-email" class = "educationForm__validation"></label>
-              <button type="submit" class="button button--bigger button--fullred" id = "educationSubmit">I want to join the Community</button>
+              <button type="submit" class="button button--bigger button--fullred" id = "educationSubmit">{{ i18n "i_want_to" }}</button>
             </div>
           </div>
 
@@ -125,7 +125,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-        <h2 class="title title--3 text-center">We combine digital learning with real world<br/> projects for more engaging ideas…</h2>
+        <h2 class="title title--3 text-center">{{ i18n "we_combine" | safeHTML }}</h2>
         </div>
       </div>
       <div class = "industry">
@@ -138,15 +138,15 @@
           <div class="col-12 col-md-6 text-center">
             <div class="industry__item">
               <div class="features__icon industry__icon"></div>
-              <h3>Education</h3>
-              <p>The next generation are our future and they are ready to learn.</p>
+              <h3>{{ i18n "education" }}</h3>
+              <p>{{ i18n "education_description" }}</p>
             </div>
           </div>
           <div class="col-12 col-md-6 text-center">
             <div class="industry__item">
               <div class="features__icon industry__icon--2"></div>
-              <h3>Industry</h3>
-              <p>Corporate organisations can be difficult to connect with, but when you do, great things can happen.</p>
+              <h3>{{ i18n "industry" }}</h3>
+              <p>{{ i18n "industry_description" }}</p>
             </div>
           </div>
         </div>

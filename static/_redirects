@@ -131,3 +131,131 @@ https://www.bigclown.com/doc/projects/wireless-co2-monitor/* https://www.bigclow
 https://www.bigclown.com/doc/projects/wireless-smart-led-strip/* https://www.bigclown.com/doc/projects/radio-smart-led-strip/:splat 301!
 https://www.bigclown.com/doc/projects/wireless-voc-sensor/* https://www.bigclown.com/doc/projects/radio-voc-sensor/:splat 301!
 https://www.bigclown.com/doc/projects/wireless-soil-sensor/* https://www.bigclown.com/doc/projects/radio-soil-sensor/:splat 301!
+
+# Doc to Developers redirects
+
+https://www.bigclown.com/doc/* https://developers.bigclown.com/:splat 301!
+
+https://www.bigclown.com/doc/basics/quick-start-guide/* https://developers.bigclown.com/basics/quick-start-guide:splat 301!
+https://www.bigclown.com/doc/basics/getting-started/* https://developers.bigclown.com/basics/about-bigclown:splat 301!
+https://www.bigclown.com/doc/basics/module-overview/* https://developers.bigclown.com/basics/module-overview:splat 301!
+https://www.bigclown.com/doc/basics/enclosures/* https://developers.bigclown.com/basics/enclosures:splat 301!
+
+https://www.bigclown.com/doc/tutorials/raspberry-pi-tutorial/* https://developers.bigclown.com/tutorials/quick-tutorial:splat 301!
+https://www.bigclown.com/doc/tutorials/raspberry-pi-installation/* https://developers.bigclown.com/tutorials/raspberry-pi-installation:splat 301!
+https://www.bigclown.com/doc/tutorials/raspberry-pi-login/* https://developers.bigclown.com/tutorials/raspberry-pi-login:splat 301!
+https://www.bigclown.com/doc/tutorials/custom-setup-on-ubuntu/* https://developers.bigclown.com/tutorials/custom-setup-on-ubuntu:splat 301!
+https://www.bigclown.com/doc/tutorials/custom-setup-on-macos/* https://developers.bigclown.com/tutorials/custom-setup-on-macos:splat 301!
+https://www.bigclown.com/doc/tutorials/custom-setup-on-raspberry-pi/* https://developers.bigclown.com/tutorials/custom-setup-on-raspberry-pi:splat 301!
+https://www.bigclown.com/doc/tutorials/custom-setup-on-synology/* https://developers.bigclown.com/tutorials/custom-setup-on-synology:splat 301!
+https://www.bigclown.com/doc/tutorials/custom-setup-on-turris/* https://developers.bigclown.com/tutorials/custom-setup-on-turris:splat 301!
+https://www.bigclown.com/doc/tutorials/mysigfox-com-service/* https://developers.bigclown.com/tutorials/mysigfox.com-service:splat 301!
+https://www.bigclown.com/doc/tutorials/lora-at-commands-configuration/* https://developers.bigclown.com/tutorials/lora-at-commands-configuration:splat 301!
+https://www.bigclown.com/doc/tutorials/github-repositories/* https://developers.bigclown.com/tutorials/github-repositories:splat 301!
+
+https://www.bigclown.com/doc/projects/* https://developers.bigclown.com/projects/projects-overview:splat 301!
+https://www.bigclown.com/doc/projects/push-the-button/* https://developers.bigclown.com/projects/push-the-button:splat 301!
+https://www.bigclown.com/doc/projects/radio-door-sensor/* https://developers.bigclown.com/projects/radio-door-sensor:splat 301!
+https://www.bigclown.com/doc/projects/radio-co2-monitor/* https://developers.bigclown.com/projects/radio-co2-monitor:splat 301!
+https://www.bigclown.com/doc/projects/radio-climate-monitor/* https://developers.bigclown.com/projects/radio-climate-monitor:splat 301!
+https://www.bigclown.com/doc/projects/radio-flood-detector/* https://developers.bigclown.com/projects/radio-flood-detector:splat 301!
+https://www.bigclown.com/doc/projects/radio-lcd-thermostat/* https://developers.bigclown.com/projects/radio-lcd-thermostat:splat 301!
+https://www.bigclown.com/doc/projects/radio-motion-detector/* https://developers.bigclown.com/projects/radio-motion-detector:splat 301!
+# Projects not finished in developers yet:
+#https://www.bigclown.com/doc/projects/radio-push-button/*
+#https://www.bigclown.com/doc/projects/radio-smart-led-strip/*
+#https://www.bigclown.com/doc/projects/radio-soil-sensor/*
+#https://www.bigclown.com/doc/projects/radio-voc-sensor/*
+#https://www.bigclown.com/doc/projects/lora-climate-monitor/*
+#https://www.bigclown.com/doc/projects/lora-1wire-thermometer/*
+
+https://www.bigclown.com/doc/interfaces/mqtt-protocol/* https://developers.bigclown.com/interfaces/mqtt-protocol:splat 301!
+https://www.bigclown.com/doc/interfaces/mqtt-topics/* https://developers.bigclown.com/interfaces/mqtt-topics:splat 301!
+https://www.bigclown.com/doc/interfaces/wireless-network-overview/* https://developers.bigclown.com/interfaces/wireless-network-overview:splat 301!
+https://www.bigclown.com/doc/interfaces/sub-ghz-radio/* https://developers.bigclown.com/interfaces/sub-ghz-radio:splat 301!
+https://www.bigclown.com/doc/interfaces/sigfox-radio/* https://developers.bigclown.com/interfaces/sigfox-iot-radio:splat 301!
+https://www.bigclown.com/doc/interfaces/lora-radio/* https://developers.bigclown.com/interfaces/lora-iot-radio:splat 301!
+https://www.bigclown.com/doc/interfaces/serial-port-json/* https://developers.bigclown.com/interfaces/serial-port-json:splat 301!
+
+https://www.bigclown.com/doc/integrations/grafana-for-visualization/* https://developers.bigclown.com/integrations/grafana-for-visualization:splat 301!
+https://www.bigclown.com/doc/integrations/blynk-for-mobile-applications/* https://developers.bigclown.com/integrations/blynk-mobile-app-builder:splat 301!
+https://www.bigclown.com/doc/integrations/ifttt-if-this-then-that/* https://developers.bigclown.com/integrations/ifttt-if-this-then-that:splat 301!
+https://www.bigclown.com/doc/integrations/anemone-platform/* https://developers.bigclown.com/integrations/anemone-platform:splat 301!
+https://www.bigclown.com/doc/integrations/ubidots/* https://developers.bigclown.com/integrations/ubidots:splat 301!
+https://www.bigclown.com/doc/integrations/homekit-and-siri/* https://developers.bigclown.com/integrations/homekit-and-siri:splat 301!
+https://www.bigclown.com/doc/integrations/alexa/* https://developers.bigclown.com/integrations/amazon-alexa:splat 301!
+https://www.bigclown.com/doc/integrations/google-assistant/* https://developers.bigclown.com/integrations/google-assistant:splat 301!
+https://www.bigclown.com/doc/integrations/firebase/* https://developers.bigclown.com/integrations/firebase:splat 301!
+https://www.bigclown.com/doc/integrations/google-sheets/* https://developers.bigclown.com/integrations/google-sheets:splat 301!
+
+https://www.bigclown.com/doc/hardware/basic-principles/* https://developers.bigclown.com/hardware/basic-principles:splat 301!
+https://www.bigclown.com/doc/hardware/header-pinout/* https://developers.bigclown.com/hardware/header-pinout:splat 301!
+https://www.bigclown.com/doc/hardware/core-module-1-and-2-comparison/* https://developers.bigclown.com/hardware/core-module-r1-and-r2-comparison:splat 301!
+https://www.bigclown.com/doc/hardware/power-management/* https://developers.bigclown.com/hardware/power-management:splat 301!
+https://www.bigclown.com/doc/hardware/i2c-address-space/* https://developers.bigclown.com/hardware/i-c-address-space:splat 301!
+https://www.bigclown.com/doc/hardware/about-1-wire-module/* https://developers.bigclown.com/hardware/about-1-wire-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-barometer-tag/* https://developers.bigclown.com/hardware/about-barometer-tag:splat 301!
+https://www.bigclown.com/doc/hardware/about-base-module/* https://developers.bigclown.com/hardware/about-base-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-battery-module/* https://developers.bigclown.com/hardware/about-battery-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-breadboard-module/* https://developers.bigclown.com/hardware/about-breadboard-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-button-module/* https://developers.bigclown.com/hardware/about-button-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-co2-module/* https://developers.bigclown.com/hardware/about-co2-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-climate-module/* https://developers.bigclown.com/hardware/about-climate-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-cloony/* https://developers.bigclown.com/hardware/about-cloony:splat 301!
+https://www.bigclown.com/doc/hardware/about-core-module/* https://developers.bigclown.com/hardware/about-core-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-cover-module/* https://developers.bigclown.com/hardware/about-cover-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-encoder-module/* https://developers.bigclown.com/hardware/about-encoder-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-humidity-tag/* https://developers.bigclown.com/hardware/about-humidity-tag:splat 301!
+https://www.bigclown.com/doc/hardware/about-lcd-module/* https://developers.bigclown.com/hardware/about-lcd-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-lora-module/* https://developers.bigclown.com/hardware/about-lora-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-lux-meter-tag/* https://developers.bigclown.com/hardware/about-lux-meter-tag:splat 301!
+https://www.bigclown.com/doc/hardware/about-mini-battery-module/* https://developers.bigclown.com/hardware/about-mini-battery-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-mini-cover-module/* https://developers.bigclown.com/hardware/about-mini-cover-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-nfc-tag/* https://developers.bigclown.com/hardware/about-nfc-tag:splat 301!
+https://www.bigclown.com/doc/hardware/about-pir-module/* https://developers.bigclown.com/hardware/about-pir-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-power-module/* https://developers.bigclown.com/hardware/about-power-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-probe-module/* https://developers.bigclown.com/hardware/about-probe-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-radio-dongle/* https://developers.bigclown.com/hardware/about-radio-dongle:splat 301!
+https://www.bigclown.com/doc/hardware/about-relay-module/* https://developers.bigclown.com/hardware/about-relay-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-sensor-module/* https://developers.bigclown.com/hardware/about-sensor-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-sigfox-module/* https://developers.bigclown.com/hardware/about-sigfox-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-tag-module/* https://developers.bigclown.com/hardware/about-tag-module:splat 301!
+https://www.bigclown.com/doc/hardware/about-temperature-tag/* https://developers.bigclown.com/hardware/about-temperature-tag:splat 301!
+https://www.bigclown.com/doc/hardware/about-voc-tag/* https://developers.bigclown.com/hardware/about-voc-tag:splat 301!
+
+https://www.bigclown.com/doc/firmware/basic-overview/* https://developers.bigclown.com/firmware/basic-overview:splat 301!
+https://www.bigclown.com/doc/firmware/toolchain-setup/* https://developers.bigclown.com/firmware/toolchain-setup:splat 301!
+https://www.bigclown.com/doc/firmware/toolchain-guide/* https://developers.bigclown.com/firmware/toolchain-guide:splat 301!
+https://www.bigclown.com/doc/firmware/blank-start/* https://developers.bigclown.com/firmware/blank-start:splat 301!
+https://www.bigclown.com/doc/firmware/debugging/* https://developers.bigclown.com/firmware/debugging:splat 301!
+https://www.bigclown.com/doc/firmware/low-power-measurements-and-radio/* https://developers.bigclown.com/firmware/low-power-measurements-and-radio:splat 301!
+https://www.bigclown.com/doc/firmware/sdk-framework/* https://developers.bigclown.com/firmware/sdk-framework:splat 301!
+https://www.bigclown.com/doc/firmware/common-problems/* https://developers.bigclown.com/firmware/common-problems:splat 301!
+https://www.bigclown.com/doc/firmware/timing-and-scheduler/* https://developers.bigclown.com/firmware/timing-and-scheduler:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-1-wire-relay/* https://developers.bigclown.com/firmware/how-to-1-wire-relay:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-ad-converter/* https://developers.bigclown.com/firmware/how-to-a-d-converter:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-accelerometer/* https://developers.bigclown.com/firmware/how-to-accelerometer:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-battery-module/* https://developers.bigclown.com/firmware/how-to-battery-module:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-da-converter/* https://developers.bigclown.com/firmware/how-to-d-a-converter:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-eeprom/* https://developers.bigclown.com/firmware/how-to-eeprom:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-gpio-pins/* https://developers.bigclown.com/firmware/how-to-gpio-pins:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-i2c-bus/* https://developers.bigclown.com/firmware/how-to-i-c-bus:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-lcd-module/* https://developers.bigclown.com/firmware/how-to-lcd-module:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-led-diode/* https://developers.bigclown.com/firmware/how-to-led-control:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-lora-module/* https://developers.bigclown.com/firmware/how-to-lora-module:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-pir-module/* https://developers.bigclown.com/firmware/how-to-pir-module:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-pwm/* https://developers.bigclown.com/firmware/how-to-pwm:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-power-module/* https://developers.bigclown.com/firmware/how-to-power-module:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-push-button/* https://developers.bigclown.com/firmware/how-to-push-button:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-relay-module/* https://developers.bigclown.com/firmware/how-to-relay-module:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-spi-bus/* https://developers.bigclown.com/firmware/how-to-spi-bus:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-servo-motor/* https://developers.bigclown.com/firmware/how-to-servo-motor:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-sigfox-module/* https://developers.bigclown.com/firmware/how-to-sigfox-module:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-smart-led-strip/* https://developers.bigclown.com/firmware/how-to-smart-led-strip:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-temperature-sensor/* https://developers.bigclown.com/firmware/how-to-temperature-sensor:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-uart-interface/* https://developers.bigclown.com/firmware/how-to-uart-interface:splat 301!
+https://www.bigclown.com/doc/firmware/how-to-usb-console/* https://developers.bigclown.com/firmware/how-to-usb-console:splat 301!
+
+https://www.bigclown.com/doc/tools/bcf/* https://developers.bigclown.com/tools/bigclown-firmware-flashing-tool:splat 301!
+https://www.bigclown.com/doc/tools/bcg/* https://developers.bigclown.com/tools/bigclown-gateway:splat 301!
+https://www.bigclown.com/doc/tools/bch/* https://developers.bigclown.com/tools/bigclown-host-tool:splat 301!

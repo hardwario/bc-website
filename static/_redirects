@@ -161,13 +161,12 @@ https://www.bigclown.com/doc/projects/radio-climate-monitor/* https://developers
 https://www.bigclown.com/doc/projects/radio-flood-detector/* https://developers.bigclown.com/projects/radio-flood-detector:splat 301!
 https://www.bigclown.com/doc/projects/radio-lcd-thermostat/* https://developers.bigclown.com/projects/radio-lcd-thermostat:splat 301!
 https://www.bigclown.com/doc/projects/radio-motion-detector/* https://developers.bigclown.com/projects/radio-motion-detector:splat 301!
-# Projects not finished in developers yet:
-#https://www.bigclown.com/doc/projects/radio-push-button/*
-#https://www.bigclown.com/doc/projects/radio-smart-led-strip/*
-#https://www.bigclown.com/doc/projects/radio-soil-sensor/*
-#https://www.bigclown.com/doc/projects/radio-voc-sensor/*
-#https://www.bigclown.com/doc/projects/lora-climate-monitor/*
-#https://www.bigclown.com/doc/projects/lora-1wire-thermometer/*
+https://www.bigclown.com/doc/projects/radio-push-button/* https://developers.bigclown.com/projects/radio-push-button:splat 301!
+https://www.bigclown.com/doc/projects/radio-smart-led-strip/* https://developers.bigclown.com/projects/radio-smart-led-strip:splat 301!
+https://www.bigclown.com/doc/projects/radio-soil-sensor/* https://developers.bigclown.com/projects/radio-soil-sensor:splat 301!
+https://www.bigclown.com/doc/projects/radio-voc-sensor/* https://developers.bigclown.com/projects/radio-voc-sensor:splat 301!
+https://www.bigclown.com/doc/projects/lora-climate-monitor/* https://developers.bigclown.com/projects/lora-climate-monitor:splat 301!
+https://www.bigclown.com/doc/projects/lora-1wire-thermometer/* https://developers.bigclown.com/projects/lora-1-wire-thermometer:splat 301!
 
 https://www.bigclown.com/doc/interfaces/mqtt-protocol/* https://developers.bigclown.com/interfaces/mqtt-protocol:splat 301!
 https://www.bigclown.com/doc/interfaces/mqtt-topics/* https://developers.bigclown.com/interfaces/mqtt-topics:splat 301!

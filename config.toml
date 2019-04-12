@@ -24,68 +24,6 @@ pygmentsUseClasses = true
       shopURL = "https://shop.bigclown.com/?currency=CZK"
       homeURL = "/cs/"
 
-[menu]
-
-[[languages.en.menu.doc]]
-  identifier = "intro"
-  name = "Intro"
-  url = "/doc/"
-  weight = 1
-
-[[languages.en.menu.doc]]
-  identifier = "basics"
-  name = "Basics"
-  url = "/doc/basics/quick-start-guide/"
-  weight = 10
-
-[[languages.en.menu.doc]]
-  identifier = "tutorials"
-  name = "Tutorials"
-  url = "/doc/tutorials/raspberry-pi-tutorial/"
-  weight = 20
-
-[[languages.en.menu.doc]]
-  identifier = "projects"
-  name = "Projects"
-  url = "/doc/projects/"
-  weight = 30
-
-[[languages.en.menu.doc]]
-  identifier = "interfaces"
-  name = "Interfaces"
-  url = "/doc/interfaces/mqtt-protocol/"
-  weight = 40
-
-[[languages.en.menu.doc]]
-  identifier = "integrations"
-  name = "Integrations"
-  url = "/doc/integrations/grafana-for-visualization/"
-  weight = 50
-
-[[languages.en.menu.doc]]
-  identifier = "hardware"
-  name = "Hardware"
-  url = "/doc/hardware/basic-principles/"
-  weight = 60
-
-[[languages.en.menu.doc]]
-  identifier = "firmware"
-  name = "Firmware"
-  url = "/doc/firmware/basic-overview/"
-  weight = 70
-
-[[languages.en.menu.doc]]
-  identifier = "tools"
-  name = "Tools"
-  url = "/doc/tools/bcf/"
-  weight = 80
-
-[[languages.en.menu.doc]]
-  identifier = "documentation"
-  name = "Documentation"
-  url = "/doc/documentation/contribution-setup/"
-  weight = 90
-
 [blackfriday]
 smartypants = false
 

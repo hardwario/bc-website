@@ -260,4 +260,4 @@ https://www.bigclown.com/doc/tools/bcg/* https://developers.bigclown.com/tools/b
 https://www.bigclown.com/doc/tools/bch/* https://developers.bigclown.com/tools/bigclown-host-tool:splat 301!
 
 
-https://www.bigclown.com/doc/* https://developers.bigclown.com/:splat 301!
+https://www.bigclown.com/doc/ https://developers.bigclown.com/:splat 301!

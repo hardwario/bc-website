@@ -7,7 +7,7 @@ image_main: "/blog/2018-04-17-bigclown-took-first-place-in-lora-hackaton/main.jp
 author: "martin_hubacek"
 ---
 
-BigClown team took part in the LoRaWAN hackaton organized by [České Radiokomunikace](https://www.cra.cz/). The story behind the presented project was not so simple. First we had plans to use the new {{< shop "VOC Tag">}} to measure the smell the quality of air in the room. We could simply re-use all the code in already done [Wireless VOC sensor project]({{< relref "/doc/projects/radio-voc-sensor.en.md" >}}).
+BigClown team took part in the LoRaWAN hackaton organized by [České Radiokomunikace](https://www.cra.cz/). The story behind the presented project was not so simple. First we had plans to use the new {{< shop "VOC Tag">}} to measure the smell the quality of air in the room. We could simply re-use all the code in already done [Wireless VOC sensor project](https://developers.bigclown.com/projects/radio-voc-sensor).
 
 However during the presentation of LoRa technology there was a statement that this network is not suitable to transfer sound or picture. That reminded me one [article examining options of LoRa image transmission](http://cpham.perso.univ-pau.fr/WSN-MODEL/tool-html/imagesensor.html). So we accepted this challenge and used Panasonic infrared Grid-EYE sensor to transmit 8x8 pixel heatmap.
 

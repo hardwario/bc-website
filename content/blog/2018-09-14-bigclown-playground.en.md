@@ -9,9 +9,9 @@ author: "martin_hubacek"
 
 We have released a new graphical application [**BigClown Playground**](https://github.com/bigclownlabs/bch-playground/releases) which contains everything you need in a one package. Create rules and flows in the Node-RED, upload new firmware to the **Core Module 2**, manage the radio paired nodes.
 
-[**Download**](https://github.com/bigclownlabs/bch-playground/releases) and try out [**BigClown Playground**](https://github.com/bigclownlabs/bch-playground/releases) now. It's multi-platform and runs on Windows, Linux and macOS. You can have your radio network with nodes up and running in a minutes. Take a look at the [**Quick Start Guide**]({{< relref "/doc/basics/quick-start-guide.en.md">}}) where the basics are explained.
+[**Download**](https://github.com/bigclownlabs/bch-playground/releases) and try out [**BigClown Playground**](https://github.com/bigclownlabs/bch-playground/releases) now. It's multi-platform and runs on Windows, Linux and macOS. You can have your radio network with nodes up and running in a minutes. Take a look at the [**Quick Start Guide**](https://developers.bigclown.com/basics/quick-start-guide) where the basics are explained.
 
-Later, for a more permanent solution, you can use the **{{<shop "BigClown Hub">}}** that is pre-programmed and comes also with {{<shop "Radio Dongle">}}. Or you can flash our [**bc-raspbian**]({{< relref "/doc/tutorials/custom-setup-on-raspberry-pi.en.md">}}) to your Raspberry Pi 3 computer.
+Later, for a more permanent solution, you can use the **{{<shop "BigClown Hub">}}** that is pre-programmed and comes also with {{<shop "Radio Dongle">}}. Or you can flash our [**bc-raspbian**](https://developers.bigclown.com/tutorials/custom-setup-on-raspberry-pi) to your Raspberry Pi 3 computer.
 
 ### Playground contains:
 

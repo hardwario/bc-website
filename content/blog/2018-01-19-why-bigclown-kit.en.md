@@ -25,7 +25,7 @@ That's right, BigClown PIR motion detector does not have any wires and no solder
 
 You do not need to write the code or copy/paste the examples and compile the firmware. We maintain the pre-prepared firmware images who can be programmed to BigClown products directly from GitHub repositories using the BigClown Firmware Tool.
 
-For quick start at client/user interface side we provide either various local (offline) integrations as well as those connected to cloud solutions - just look into the [BigClown documentation](https://www.bigclown.com/doc/).
+For quick start at client/user interface side we provide either various local (offline) integrations as well as those connected to cloud solutions - just look into the [BigClown documentation](https://developers.bigclown.com).
 
 We also want to allow the maker to dig as deep as he/she wants to and discover how the hardware and software works under the hood. That's why BigClown hardware and software is open, coming with documentation, tutorials and personal support (and you bet we are really good at this).
 

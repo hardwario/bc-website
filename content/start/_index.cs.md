@@ -18,7 +18,7 @@ Sestavte Kit složením všech tří modudů dohromady. Dejte pozor, aby byl spr
 
 
 {{< p-step >}}
-{{% p-step-content order = "1" step = "2" title = "Vytvořte beztrátové připojení" %}}
+{{% p-step-content order = "1" step = "2" title = "Vytvořte bezdrátové připojení" %}}
 * Stáhněte si a nainstalujte aplikaci [BigClown Playground](https://github.com/bigclownlabs/bch-playground/releases/latest)
 * Připojte Radio Dongle k svému počítači
 * Spusťte BigClown Playground a otevřete záložku "Devices"

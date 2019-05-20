@@ -10,6 +10,7 @@ image_preview: /projects/smart-mailbox/preview.jpg
 image_main: /projects/smart-mailbox/preview.jpg
 author: "martin_hubacek"
 featured: true
+modules: ["core","mini_battery","sensor"]
 
 ---
 
@@ -24,10 +25,9 @@ When the state of any of the switches change, the radio message is send from the
 
 ### What you need
 
-* {{< shop "Core Module" >}}
-* {{< shop "Mini Battery Module" >}}
-* {{< shop "Sensor Module" >}}
-* Magnetic or mechanical swithc NO or NC (normally opened/closed)
+{{< modules >}}
+
+And magnetic or mechanical switch NO or NC (normally opened/closed)
 
 ## Step 1: Prepare Mailbox
 You can use any mechanical or magnetic reed switch. It does not even matter if it is normally opened (NO) or normally closed (NC) switch, we can manage that later in the configuration.

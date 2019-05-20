@@ -9,6 +9,7 @@ devices: ["Motion Kit"]
 image_preview: /projects/haloween-pumpkin-with-motion-detection/preview.jpg
 image_main: /projects/haloween-pumpkin-with-motion-detection/main.jpg
 author: "martin_hubacek"
+modules: ["core","power","led","pir"]
 
 ---
 
@@ -20,12 +21,10 @@ I have decided to use BigClown because a lot of things are already pre-programme
 
 ### What you need
 
-* Pumpkin, you can also [print one](https://www.thingiverse.com/thing:31395)
-* {{< shop "Core Module" >}}
-* {{< shop "Power Module" >}}
-* {{< shop "LED Strip RGBW 1m 144 LEDs" >}}
-* {{< shop "PIR Module" >}}
-* {{< shop "Radio Dongle" >}}
+{{< modules >}}
+
+And pumpkin, you can also [print one](https://www.thingiverse.com/thing:31395).
+
 
 ## Step 1: Prepare Pumpkin
 Make top cover big enough, so you can later easily put and connect all things together. The nose round hole could be used for PIR Module sensor. Also make a hole in the back of the pumpkin for the 5V Power Adapter cable.

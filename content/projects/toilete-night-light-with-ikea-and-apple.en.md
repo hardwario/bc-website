@@ -6,8 +6,8 @@ tags: ["Indoor"]
 levels: ["Beginner"]
 places: ["Home"]
 devices: ["Motion Kit"]
-image_preview: /projects/toilet-night-lamp/preview.jpg
-image_main: /projects/toilet-night-lamp/preview.jpg
+image_preview: /projects/toilete-night-light-with-ikea-and-apple/preview.jpg
+image_main: /projects/toilete-night-light-with-ikea-and-apple/preview.jpg
 author: "lukas_fabik"
 modules: ["core","mini_battery","pir","enclosures-101"]
 

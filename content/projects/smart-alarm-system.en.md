@@ -12,13 +12,9 @@ places:
   - Home
 devices:
   - Custom Kit
-idea: true
-image_preview: /projects/smart-alarm-system/preview.jpg
-image_main: /projects/smart-alarm-system/preview.jpg
-author: martin_hubacek
-featured: true
 idea: false
-modules: ["core","mini_battery","pir"]
+image_preview: /projects/smart-alarm-system/preview.jpg
+author: martin_hubacek
 ---
 
 ## Introduction

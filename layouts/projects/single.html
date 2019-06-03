@@ -1,75 +1,86 @@
 {{ define "main" }}
-<section>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-xl-10">
-        <div class="article__header">
-          <div class="article__header__button">
 
-            <h1 class="article__title">{{ .Title }}</h1>
-            <div class="text text--perex">
-              <p>{{ .Params.description }}</p>
-            </div>
-            <div class="article__tags d-flex justify-content-center">
-              <ul>
-                  {{ range .Params.levels }}
-                    <li><a class="button button--tag button--tag--yellow">{{ . }}</a></li>
-                  {{ end }}
-                  {{ range .Params.tags }}
-                    <li><a class="button button--tag button--tag--custom">{{ . }}</a></li>
-                  {{ end }}
-                  {{ range .Params.places }}
-                    <li><a class="button button--tag button--tag--red">{{ . }}</a></li>
-                  {{ end }}
-                  {{ range .Params.devices }}
-                    <li><a class="button button--tag button--tag--gray">{{ . }}</a></li>
-                  {{ end }}
-              </ul>
-            </div>
-            {{ if isset .Params "partner" }}
-            <div class="d-flex justify-content-center">
-              <div class="article__author d-flex flex-column justify-content-center">
-                <img src="{{ .Params.partner_image }}" alt="{{ .Params.partner }}" class = "partner" />
-                <strong>{{ i18n "supported_extended" }} {{ .Params.partner }}</strong>
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-      </div>
+<section>
+  <div class="intro intro---project d-flex justify-content-center align-items-center">
+    <div class = "container">
+    <h1 class="intro__title5">{{ .Title }}</h1>
     </div>
   </div>
-  <!--<div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <div class="article__image">
-          <img src="{{ .Params.image_main }}" alt="{{ .Title }}" />
-        </div>
-      </div>
-    </div>
-  </div>-->
+</section>
+
+<section>
+<div class="bg bg--gray">
+  <span class = "tableofcontent__toggle"><span class="glyphicon glyphicon-menu-hamburger"></span> Table of Contents</span>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-xl-8">
-        <div class="article__body">
-              {{ .Content }}
+      <div class = "col-12 col-xl-4 tableofcontent">
+
+        <div class = "col-12 nopadding">
+        {{- if len .TableOfContents }}
+          {{ .TableOfContents }}
+        {{- end }}
+
+        <script>
+          $('.tableofcontent__toggle').click(function(){
+            $('#TableOfContents ul li ul').slideToggle();
+          });
+        </script>
+        {{ if ne .Params.idea true }}
+        </div>
+          <div class="col-12 justify-content-center d-none d-xl-block">
+            <div class="article__author article__author--project d-flex flex-column justify-content-center">
+              {{ $author := index $.Site.Data.authors .Params.author }}
+              <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
+              <strong>{{ $author.name }}</strong>
+              <span>{{ $author.email }}</span>
             </div>
-              {{ if ne .Params.idea true }}
-            <div class="row">
-              <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">
-                <div class="article__author article__author--bottom d-flex flex-column justify-content-center">
-                  {{ $author := index $.Site.Data.authors .Params.author }}
-                  <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
-                  <strong>{{ $author.name }}</strong>
-                  <span>{{ $author.email }}</span>
-                </div>
-              </div>
-              <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">
-                <div class="addthis_inline_share_toolbox article__soc"></div>
-              </div>
-            </div>
-            {{ end }}
+          </div>
+          <div class="col-12 justify-content-center d-none d-xl-block">
+            <div class="addthis_inline_share_toolbox article__soc article__soc--project"></div>
+          </div>
+        {{ end }}
+
       </div>
+      <script>
+        $('#TableOfContents').addClass('nav nav-pills');
+        $('#TableOfContents ul').addClass('nav nav-pills');
+        $('#TableOfContents a').addClass('nav-link');
+        $('body').scrollspy({ target: '#TableOfContents', offset: 120 });
+        $('#TableOfContents ul:first-child li:first-child ul:first-child li:first-child a:first-child').addClass('active');
+      </script>
+      <div class="col-12 col-xl-8">
+        <div class="article__body article__body--project">
+          <!--
+          <div class="article__tags d-flex justify-content-center">
+            <ul>
+                {{ range .Params.levels }}
+                  <li><a class="button button--tag button--tag--yellow">{{ . }}</a></li>
+                {{ end }}
+                {{ range .Params.tags }}
+                  <li><a class="button button--tag button--tag--custom">{{ . }}</a></li>
+                {{ end }}
+                {{ range .Params.places }}
+                  <li><a class="button button--tag button--tag--red">{{ . }}</a></li>
+                {{ end }}
+                {{ range .Params.devices }}
+                  <li><a class="button button--tag button--tag--gray">{{ . }}</a></li>
+                {{ end }}
+            </ul>
+          </div>
+
+          {{ if isset .Params "partner" }}
+          <div class="d-flex justify-content-center">
+            <div class="article__author d-flex flex-column justify-content-center">
+              <img src="{{ .Params.partner_image }}" alt="{{ .Params.partner }}" class = "partner" />
+              <strong>{{ i18n "supported_extended" }} {{ .Params.partner }}</strong>
+            </div>
+          </div>
+          {{ end }}
+          -->
+              {{ .Content }}
+        </div>
+        </div>
+        </div>
     </div>
   </div>
 </section>
@@ -118,6 +129,27 @@
 {{ end }}
 
 {{ define "additional-scripts" }}
+
+<script>
+  $(document).ready(function(){
+    var width = $('#TableOfContents').width();
+    $('#TableOfContents').width(width);
+  });
+  $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    var offset = $('.article__body').offset();
+    var height = $('.article__body').height();
+    var max = offset.top + height - 400;
+
+    if(scroll > 300 && scroll < max){
+      $('#TableOfContents').addClass('fixed');
+    }
+    else{
+      $('#TableOfContents').removeClass('fixed');
+    }
+});
+</script>
+
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ce11373d4525996"></script>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {

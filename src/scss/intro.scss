@@ -268,6 +268,16 @@
     }
   }
 
+  &---project
+  {
+    max-height: none;
+    min-height: 0;
+    height:250px;
+    width:100%;
+    background: url("../images/intro_bg2.jpg") no-repeat center center;
+    background-size: cover;
+  }
+
   &---middle
   {
     max-height: none;
@@ -328,6 +338,37 @@
     {
       text-transform: none;
     }
+  }
+
+  &__title5
+  {
+    color:white;
+    text-transform: uppercase;
+    font-size: em(48);
+    font-weight: 900;
+    line-height: 2*$baseline;
+    padding: 0 15px;
+    text-align: left;
+
+    @media(max-width: 767px)
+    {
+      font-size: em(32);
+      line-height: 1.5*$baseline;
+    }
+
+    &--notupper
+    {
+      text-transform: none;
+    }
+  }
+
+  &__image
+  {
+    height: 100%;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   &__links

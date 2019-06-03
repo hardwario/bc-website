@@ -16,6 +16,7 @@ devices:
 idea: false
 image_preview: /projects/toilet-night-lamp/preview.jpg
 author: martin_hubacek
+modules: ["core","mini_battery","pir","enclosures-101"]
 ---
 ## Introduction
 

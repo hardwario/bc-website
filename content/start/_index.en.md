@@ -46,7 +46,7 @@ Plug all three modules together to build the kit. Note the orientation of the Mi
 
 {{< p-step >}}
 {{% p-step-content order = "1" step = "4" title = "Connect Starter Kit with Smartphone App To Get Notifications" %}}
-* Open "Functions" tab in BigClown Playground app
+* Open "Functions" tab in BigClown Playground app and [import the Blynk flow](https://developers.bigclown.com/projects/push-the-button#step-5-switch-to-the-functions-tab-and-make-sure-you-see-the-flow-on-the-image-below)
 * Double click on Blynk notification node
 * Click on "Pencil" icon and paste Auth Token from Blynk
 * Save changes by clicking "Done"
@@ -58,6 +58,8 @@ Plug all three modules together to build the kit. Note the orientation of the Mi
 {{< p-step >}}
 {{% p-step-content order = "2" step = "5" title = "Push The Button!" %}}
 And you should get the notification on your smartphone
+<br /><br />
+[Detailed tutorial](https://developers.bigclown.com/projects/push-the-button)
 {{% /p-step-content %}}
 {{< p-step-image order = "1" src = "/_assets/images/start/button-pressed.jpg" src-full = "/_assets/images/start/button-pressed.jpg" title = "BigClown Button Pressed">}}
 {{< /p-step >}}

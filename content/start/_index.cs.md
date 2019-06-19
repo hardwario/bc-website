@@ -46,7 +46,7 @@ Sestavte Kit složením všech tří modudů dohromady. Dejte pozor, aby byl spr
 
 {{< p-step >}}
 {{% p-step-content order = "1" step = "4" title = "Propojte Starter Kit s&nbsp;mobilní aplikací pro notifikace" %}}
-* Otevřete v BigClown Playground záložku "Functions"
+* Otevřete v BigClown Playground záložku "Functions" a [importujte Blynk flow](https://developers.bigclown.com/projects/push-the-button#step-5-switch-to-the-functions-tab-and-make-sure-you-see-the-flow-on-the-image-below)
 * Dvakrát klikněte na zelený uzel "Blynk notification"
 * Klikněte na ikonku tužky a vložte Auth Token z aplikace Blynk, který najdete v e-mailu
 * Uložte změny kliknutím na "Done"
@@ -58,6 +58,8 @@ Sestavte Kit složením všech tří modudů dohromady. Dejte pozor, aby byl spr
 {{< p-step >}}
 {{% p-step-content order = "2" step = "5" title = "Stiskněte tlačítko!" %}}
 A hned uvidíte notifikaci na svém telefonu
+<br /><br />
+[Detailní tutoriál](https://developers.bigclown.com/projects/push-the-button)
 {{% /p-step-content %}}
 {{< p-step-image order = "1" src = "/_assets/images/start/button-pressed.jpg" src-full = "/_assets/images/start/button-pressed.jpg" title = "BigClown Button Pressed">}}
 {{< /p-step >}}

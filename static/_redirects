@@ -2,7 +2,8 @@
 https://bigclown.netlify.com/* https://www.bigclown.com/:splat 301!
 
 # Print Ads
-https://www.bigclown.com/ronny* https://www.bigclown.com/robot?utm_source=banner&utm_medium=print&utm_campaign=maker_faire_magazine:splat 301!
+https://www.bigclown.com/ronny* https://www.bigclown.com/cs/robot/?utm_source=banner&utm_medium=print&utm_campaign=maker_faire_magazine:splat 301!
+https://www.bigclown.com/robot-ronny* https://www.bigclown.com/cs/robot/?utm_source=banner&utm_medium=print&utm_campaign=maker_faire_magazine:splat 301!
 
 # CZ domain
 http://bigclown.cz/* https://www.bigclown.com/cs/:splat 301!

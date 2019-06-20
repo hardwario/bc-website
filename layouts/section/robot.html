@@ -1,0 +1,106 @@
+{{ define "main" }}
+
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10">
+        <div class="article__header">
+          <div class="article__header__button">
+            <div class="d-flex justify-content-center">
+            </div>
+            <h1 class="article__title">Ahoj! Já jsem Ronny!</h1>
+            <div class="text text--perex">
+              <p>Ronnyho tvoříme společně, abychom pomáhali učit digitální dovednosti. Na každé akci se může kdokoli přidat, navrhnout a nebo sám naučit robota nové kousky. Už nyní umí pohybovat, mrkat, ovládáme ho hlasem a další kousky. Co jej přijdeš naučit ty?</p>
+
+              <h2><strong>Kde se potkáme příště?</strong></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg">
+    <div class="container">
+      <div class = "industry">
+        <div class="row">
+          <div class = "col-12 industry__bg">
+            <img src = "/_assets/images/robot_bg.jpg" />
+          </div>
+        </div>
+        <div class="row industry__items">
+          <div class="col-12 col-md-6 text-center">
+            <div class="industry__item">
+              <h3>22. - 23. června</h3>
+              <h2><strong>Maker Faire Prague</strong></h2>
+              <p>Festival novodobých kutilů a fanoušků, kteří si rádi vyrobí věci sami a společně. Přijďte se podívat a něco naučit Ronnyho na stánek BigClown.</p>
+              <div class="text">
+              <a href = "https://prague.makerfaire.com" target ="_blank">Web akce + vstupenky</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <div class="industry__item">
+              <h3>září 2019</h3>
+              <h2><strong>PiJam vol.6: Berlín</strong></h2>
+              <p>BigClown akce, kde společně s účastníky probíráme jednotlivé digitální dovednosti a&nbsp;ihned je aplikujeme při učení Ronnyho.</p>
+              <div class="text">
+                <a href = "https://www.pijam.org" target="_blank">Web akce + vstupenky</a>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <div class="col-10 col-md-8 ml-auto mr-auto mt-4 text-center">
+            <a href="mailto:ask@bigclown.com?subject=Chceme+Ronnyho+u+nás" class="button button--fullred ">Pozvěte Ronnyho na vaši akci</a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg bg--gray">
+    <div class="container">
+      <div class="row">
+        <div class="col ">
+          <div class = "testimonial">
+            <div class="testimonial__item justify-content-between ">
+              <div class="row">
+              <div class = "col-12 col-sm-5 col-md-4 testimonial__image-container">
+                <img class = "testimonial__image" src = "/_assets/images/valasek_testimonial.jpg" />
+                <div class = "testimonial__image-shadow"><!-- --></div>
+              </div>
+              <div class = "col-12 col-sm-7 col-md-8 testimonial__content">
+                <h2 class = "testimonial__heading">S Ronnym je spousta zábavy!</h2>
+                <p class = "testimonial__text">Při práci s Ronnym si užíváme spoustu legrace. V Londýně jsme udělali spoustu vylepšení na tělě i v mozku!</p>
+                <h3 class="testimonial__name"><span>Denis Valášek</span> - student, maker</h3>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg bg--gray">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class = "slogan">
+            <h3>{{ i18n "inspiring_the_inventors" | safeHTML }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

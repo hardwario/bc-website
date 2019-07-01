@@ -80,7 +80,7 @@
               <div class="col-12 col-md-6 col-lg-4">
                 {{ $key := . }}
                 {{ $module := index $.Site.Data.modules $key }}
-                  <a href="{{ $module.link }}" class="modules__photo" target="_blank" onclick="ga('gtm2.send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
+                  <a href="{{ $module.link }}" class="modules__photo" target="_blank" onclick="ga('send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
                     <div class="modules__photo__image d-flex justify-content-center align-items-center">
                       <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
                     </div>
@@ -111,7 +111,7 @@
               <div class="col-12 col-md-6 col-lg-4">
                 {{ $key := . }}
                 {{ $module := index $.Site.Data.modules $key }}
-                  <a href="{{ $module.link }}" class="modules__photo" target="_blank" onclick="ga('gtm2.send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
+                  <a href="{{ $module.link }}" class="modules__photo" target="_blank" onclick="ga('send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
                     <div class="modules__photo__image d-flex justify-content-center align-items-center">
                       <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
                     </div>

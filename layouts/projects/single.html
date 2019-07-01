@@ -114,9 +114,9 @@
         <div class="col">
           <div class="thankyou__share d-flex justify-content-center align-items-center">
             <span>{{ i18n "share_my_project" }}:</span>
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link text-hide" onclick="ga('gtm2.send', 'event', 'share-project', 'facebook', '{{ .Permalink }}');">Facebook</a>
-            <a href="https://twitter.com/home?status={{ .Title | htmlEscape }}%20{{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link thankyou__share__link--twitter text-hide" onclick="ga('gtm2.send', 'event', 'share-project', 'twitter', '{{ .Permalink }}');">twitter</a>
-            <a href="https://plus.google.com/share?url={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link thankyou__share__link--google text-hide" onclick="ga('gtm2.send', 'event', 'share-project', 'google', '{{ .Permalink }}');">google</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link text-hide" onclick="ga('send', 'event', 'share-project', 'facebook', '{{ .Permalink }}');">Facebook</a>
+            <a href="https://twitter.com/home?status={{ .Title | htmlEscape }}%20{{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link thankyou__share__link--twitter text-hide" onclick="ga('send', 'event', 'share-project', 'twitter', '{{ .Permalink }}');">twitter</a>
+            <a href="https://plus.google.com/share?url={{ .Permalink | htmlEscape }}" target="_blank" class="thankyou__share__link thankyou__share__link--google text-hide" onclick="ga('send', 'event', 'share-project', 'google', '{{ .Permalink }}');">google</a>
           </div>
         </div>
       </div>

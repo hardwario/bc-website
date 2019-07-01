@@ -7,7 +7,7 @@
   });
   function mailchimpSent (resp) {
     if (resp.result === 'success') {
-        ga('gtm2.send', 'event', 'Newsletter', 'signup','footer');
+        ga('send', 'event', 'Newsletter', 'signup','footer');
     }
   }
 </script>
@@ -19,7 +19,7 @@
   });
   function mailchimpSent (resp) {
     if (resp.result === 'success') {
-        ga('gtm2.send', 'event', 'Newsletter', 'signup', 'popup');
+        ga('send', 'event', 'Newsletter', 'signup', 'popup');
     }
   }
 </script>
@@ -46,7 +46,7 @@
 
   function mailchimpSentEducation1 (resp) {
     if (resp.result === 'success') {
-        ga('gtm2.send', 'event', 'Education', 'signup', 'step1');
+        ga('send', 'event', 'Education', 'signup', 'step1');
     }
     else{
       console.log(resp);
@@ -84,7 +84,7 @@
     if (resp.result === 'success') {
       $(".educationForm__input" ).val("");
       $(".education__input" ).val("");
-      ga('gtm2.send', 'event', 'Education', 'signup', 'step2');
+      ga('send', 'event', 'Education', 'signup', 'step2');
     }
   }
 

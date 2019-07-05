@@ -26,9 +26,8 @@ https://blog.bigclown.com/* https://www.bigclown.com/blog/:splat 301!
 https://blog.bigclown.cz/* https://www.bigclown.com/cs/blog/:splat 301!
 
 # E-shop
-https://shop.bigclown.cz/* https://shop.bigclown.com/:splat 301!
+https://shop.bigclown.cz/* https://obchod.bigclown.cz/:splat 301!
 https://obchod.bigclown.com/* https://shop.bigclown.com/:splat 301!
-https://obchod.bigclown.cz/* https://shop.bigclown.com/:splat 301!
 
 # Social media
 https://facebook.bigclown.com/* https://www.facebook.com/bigclownlabs/ 301!

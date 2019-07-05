@@ -4,7 +4,7 @@ menu: ["footer"]
 mainHeading: Soukromí a cookies
 ---
 
-Provozovatelem těchto webových stránek je společnost SANTAL spol. s r. o. se sídlem Jiráskova 738, Třeboň II, 379 01 Třeboň, IČ: 42408121 zapsaná v obchodním rejstříku vedeném Krajským soudem v Českých Budějovicích, oddíl C, vložka 482. Dále jen „provozovatel“ nebo „my“, z hlediska zpracování osobních údajů rovněž „správce“.
+Provozovatelem těchto webových stránek je společnost Hardwario s.r.o. se sídlem Mrštíkova 399/2a, 46007 Liberec zapsaná v obchodním rejstříku vedeném KS v Ústí nad Labem, oddíl C, vložka 37399. Dále jen „provozovatel“ nebo „my“, z hlediska zpracování osobních údajů rovněž „správce“.
 
 Odesláním kontaktních či poptávkových formulářů berete na vědomí, že v nich vyplněné údaje budeme zpracovávat za účelem vyřízení dotazu či jednání o smlouvě dle čl. 6 odst. 1 písm. b) nařízení Evropského parlamentu a Rady (EU) 2016/679.
 
@@ -60,7 +60,7 @@ Všechny cookies, které už na vašem počítači jsou, můžete vymazat. Vět�
 * [Opera](https://www.google.com/url?q=http://help.opera.com/Windows/9.64/cs/cookies.html&sa=D&ust=1481454929811000&usg=AFQjCNH3AqJuZ96IvwluKbVXO-FoaI2vAg)
 * [Android](https://www.google.com/url?q=https://support.google.com/xoom/answer/169022?rd%3D1&sa=D&ust=1481454929812000&usg=AFQjCNHMGByj1rF-dvGZzg7MMbzEyD3_MQ)
 
-For details visit [AboutCookies.org](https://www.google.com/url?q=http://www.aboutcookies.org/&sa=D&ust=1481454929813000&usg=AFQjCNGqytVUo_coIkz7Iq-QZXSpA6TiIA).
+Pro bližší informace navštivte [AboutCookies.org](https://www.google.com/url?q=http://www.aboutcookies.org/&sa=D&ust=1481454929813000&usg=AFQjCNGqytVUo_coIkz7Iq-QZXSpA6TiIA).
 
 ### Využití Google Analytics
 

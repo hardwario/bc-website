@@ -1,244 +1,279 @@
 [core]
 name = "Core Module"
-link = "https://shop.bigclown.com/core-module/"
+en_link = "https://shop.bigclown.com/core-module/"
+cs_link = "https://obchod.bigclown.cz/core-module/"
 
   [core.image]
   small = "Modules_382x324_Core.png"
 
 [mini_battery]
 name = "Mini Battery Module"
-link = "https://shop.bigclown.com/mini-battery-module/"
+en_link = "https://shop.bigclown.com/mini-battery-module/"
+cs_link = "https://obchod.bigclown.cz/mini-battery-module/"
 
   [mini_battery.image]
   small = "Modules_382x324_MiniBattery.png"
 
 [climate]
 name = "Climate Module"
-link = "https://shop.bigclown.com/climate-module/"
+en_link = "https://shop.bigclown.com/climate-module/"
+cs_link = "https://obchod.bigclown.cz/climate-module/"
 
   [climate.image]
   small = "Modules_382x324_Climate.png"
 
 [enclosures_climate]
 name = "3D-printed Enclosure BCE101"
-link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-101/"
 
   [enclosures_climate.image]
   small = "Enclosure-BCE101-climate.png"
 
 [sigfox]
 name = "Sigfox Module"
-link = "https://shop.bigclown.com/bundle-sigfoxmodule-mysigfoxplatinum3y/"
+en_link = "https://shop.bigclown.com/bundle-sigfoxmodule-mysigfoxplatinum3y/"
+cs_link = "https://obchod.bigclown.cz/bundle-sigfoxmodule-mysigfoxplatinum3y/"
 
   [sigfox.image]
   small = "Modules_382x324_Sigfox.png"
 
 [lora]
 name = "LoRa Module"
-link = "https://shop.bigclown.com/lora-module/"
+en_link = "https://shop.bigclown.com/lora-module/"
+cs_link = "https://obchod.bigclown.cz/lora-module/"
 
   [lora.image]
   small = "Modules_382x324_LoRa.png"
 
 [battery]
 name = "Battery Module"
-link = "https://shop.bigclown.com/battery-module/"
+en_link = "https://shop.bigclown.com/battery-module/"
+cs_link = "https://obchod.bigclown.cz/battery-module/"
 
   [battery.image]
   small = "Modules_382x324_Battery.png"
 
 [co2]
 name = "CO2 Module"
-link = "https://shop.bigclown.com/co2-module/"
+en_link = "https://shop.bigclown.com/co2-module/"
+cs_link = "https://obchod.bigclown.cz/co2-module/"
 
   [co2.image]
   small = "Modules_382x324_CO2.png"
 
 [humidity]
 name = "Humidity Tag"
-link = "https://shop.bigclown.com/humidity-tag/"
+en_link = "https://shop.bigclown.com/humidity-tag/"
+cs_link = "https://obchod.bigclown.cz/humidity-tag/"
 
   [humidity.image]
   small = "Modules_382x324_Humidity.png"
 
 [barometer]
 name = "Barometer Tag"
-link = "https://shop.bigclown.com/barometer-tag/"
+en_link = "https://shop.bigclown.com/barometer-tag/"
+cs_link = "https://obchod.bigclown.cz/barometer-tag/"
 
   [barometer.image]
   small = "Modules_382x324_Barometer.png"
 
 [temperature]
 name = "Temperature Tag"
-link = "https://shop.bigclown.com/temperature-tag/"
+en_link = "https://shop.bigclown.com/temperature-tag/"
+cs_link = "https://obchod.bigclown.cz/temperature-tag/"
 
   [temperature.image]
   small = "Modules_382x324_Temperature.png"
 
 [cover]
 name = "Cover Module"
-link = "https://shop.bigclown.com/cover-module/"
+en_link = "https://shop.bigclown.com/cover-module/"
+cs_link = "https://obchod.bigclown.cz/cover-module/"
 
   [cover.image]
   small = "Modules_382x324_Cover.png"
 
 [sensor]
 name = "Sensor Module"
-link = "https://shop.bigclown.com/sensor-module/"
+en_link = "https://shop.bigclown.com/sensor-module/"
+cs_link = "https://obchod.bigclown.cz/sensor-module/"
 
   [sensor.image]
   small = "Modules_382x324_Sensor.png"
 
 [flood]
 name = "Flood Detector"
-link = "https://shop.bigclown.com/flood-detector-ld-81/"
+en_link = "https://shop.bigclown.com/flood-detector-ld-81/"
+cs_link = "https://obchod.bigclown.cz/flood-detector-ld-81/"
 
   [flood.image]
   small = "Modules_382x324_Flood detector.png"
 
 [enclosures-501]
 name = "3D-printed Enclosure BCE501"
-link = "https://shop.bigclown.com/3d-printed-enclosure-501/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-501/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-501/"
 
   [enclosures-501.image]
   small = "Enclosure-BCE501.png"
 
 [lcd]
 name = "LCD Module"
-link = "https://shop.bigclown.com/lcd-module-bg/"
+en_link = "https://shop.bigclown.com/lcd-module-bg/"
+cs_link = "https://obchod.bigclown.cz/lcd-module-bg/"
 
   [lcd.image]
   small = "Modules_382x324_LCD.png"
 
 [enclosures-thermostat]
 name = "3D-printed Enclosure BCE101"
-link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-101/"
 
   [enclosures-thermostat.image]
   small = "Enclosure-BCE101-thermostat.png"
 
 [pir]
 name = "PIR Module"
-link = "https://shop.bigclown.com/pir-module/"
+en_link = "https://shop.bigclown.com/pir-module/"
+cs_link = "https://obchod.bigclown.cz/pir-module/"
 
   [pir.image]
   small = "Modules_382x324_PIR.png"
 
 [enclosures-101]
 name = "3D-printed Enclosure BCE101"
-link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-101/"
 
   [enclosures-101.image]
   small = "Enclosure-BCE101.png"
 
 [button]
 name = "Button Module"
-link = "https://shop.bigclown.com/button-module/"
+en_link = "https://shop.bigclown.com/button-module/"
+cs_link = "https://obchod.bigclown.cz/button-module/"
 
   [button.image]
   small = "Modules_382x324_Button.png"
 
 [enclosures-button]
 name = "3D-printed Enclosure BCE101"
-link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-101/"
 
   [enclosures-button.image]
   small = "Enclosure-BCE101-button.png"
 
 [usb_dongle]
 name = "Radio Dongle"
-link = "https://shop.bigclown.com/radio-dongle/"
+en_link = "https://shop.bigclown.com/radio-dongle/"
+cs_link = "https://obchod.bigclown.cz/radio-dongle/"
 
   [usb_dongle.image]
   small = "Modules_382x324_USB Dongle.png"
 
 [core-7]
 name = "7x Core Module"
-link = "https://shop.bigclown.com/core-module/"
+en_link = "https://shop.bigclown.com/core-module/"
+cs_link = "https://obchod.bigclown.cz/core-module/"
 
   [core-7.image]
   small = "Modules_382x324_Core.png"
 
 [mini_battery-4]
 name = "4x Mini Battery Module"
-link = "https://shop.bigclown.com/mini-battery-module/"
+en_link = "https://shop.bigclown.com/mini-battery-module/"
+cs_link = "https://obchod.bigclown.cz/mini-battery-module/"
 
   [mini_battery-4.image]
   small = "Modules_382x324_MiniBattery.png"
 
 [battery-2]
 name = "2x Battery Module"
-link = "https://shop.bigclown.com/battery-module/"
+en_link = "https://shop.bigclown.com/battery-module/"
+cs_link = "https://obchod.bigclown.cz/battery-module/"
 
   [battery-2.image]
   small = "Modules_382x324_Battery.png"
 
 [power]
 name = "Power Module with AC/DC adapter"
-link = "https://shop.bigclown.com/power-module/"
+en_link = "https://shop.bigclown.com/power-module/"
+cs_link = "https://obchod.bigclown.cz/power-module/"
 
   [power.image]
   small = "Modules_382x324_Power.png"
 
 [encoder]
 name = "Encoder Module"
-link = "https://shop.bigclown.com/encoder-module/"
+en_link = "https://shop.bigclown.com/encoder-module/"
+cs_link = "https://obchod.bigclown.cz/encoder-module/"
 
   [encoder.image]
   small = "Modules_382x324_Encoder.png"
 
 [tag]
 name = "Tag Module"
-link = "https://shop.bigclown.com/tag-module/"
+en_link = "https://shop.bigclown.com/tag-module/"
+cs_link = "https://obchod.bigclown.cz/tag-module/"
 
   [tag.image]
   small = "Modules_382x324_Tag.png"
 
 [nfc]
 name = "NFC Tag"
-link = "https://shop.bigclown.com/nfc-tag/"
+en_link = "https://shop.bigclown.com/nfc-tag/"
+cs_link = "https://obchod.bigclown.cz/nfc-tag/"
 
   [nfc.image]
   small = "Modules_382x324_NFC.png"
 
 [lux]
 name = "Lux Meter Tag"
-link = "https://shop.bigclown.com/lux-meter-tag/"
+en_link = "https://shop.bigclown.com/lux-meter-tag/"
+cs_link = "https://obchod.bigclown.cz/lux-meter-tag/"
 
   [lux.image]
   small = "Modules_382x324_Lux.png"
 
 [cover_mini]
 name = "Mini Cover Module"
-link = "https://shop.bigclown.com/mini-cover-module/"
+en_link = "https://shop.bigclown.com/mini-cover-module/"
+cs_link = "https://obchod.bigclown.cz/mini-cover-module/"
 
   [cover_mini.image]
   small = "Modules_382x324_MiniCover.png"
 
 [led]
 name = "LED Strip 0.5 m 72 LEDs"
-link = "https://shop.bigclown.com/led-thermometer-rgbw-0-5m-72-leds/"
+en_link = "https://shop.bigclown.com/led-thermometer-rgbw-0-5m-72-leds/"
+cs_link = "https://obchod.bigclown.cz/led-thermometer-rgbw-0-5m-72-leds/"
 
   [led.image]
   small = "Modules_382x324_LED Strip.png"
 
 [enclosures-101-4]
 name = "4x 3D-printed Enclosure BCE101"
-link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-101/"
 
   [enclosures-101-4.image]
   small = "Enclosure-BCE101.png"
 
 [enclosures-201]
 name = "3D-printed Enclosure BCE201"
-link = "https://shop.bigclown.com/3d-printed-enclosure-201/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-201/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-201/"
 
   [enclosures-201.image]
   small = "Enclosure-BCE201.png"
 
 [enclosures-301]
 name = "3D-printed Enclosure BCE301"
-link = "https://shop.bigclown.com/3d-printed-enclosure-301/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-301/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-301/"
 
   [enclosures-301.image]
   small = "Enclosure-BCE301.png"
@@ -251,7 +286,8 @@ name = "Clown suitcase"
 
 [enclosures-101-3]
 name = "3x 3D-printed Enclosure BCE101"
-link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-101/"
 
   [enclosures-101-3.image]
   small = "Enclosure-BCE101.png"
@@ -259,7 +295,8 @@ link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
 [core-5]
 name = "5x Core Module"
 weight = 200.0
-link = "https://shop.bigclown.com/core-module/"
+en_link = "https://shop.bigclown.com/core-module/"
+cs_link = "https://obchod.bigclown.cz/core-module/"
 
   [core-5.image]
   small = "Modules_382x324_Core.png"
@@ -267,63 +304,72 @@ link = "https://shop.bigclown.com/core-module/"
 [mini_battery-5]
 name = "5x Mini Battery Module"
 weight = 300.0
-link = "https://shop.bigclown.com/mini-battery-module/"
+en_link = "https://shop.bigclown.com/mini-battery-module/"
+cs_link = "https://obchod.bigclown.cz/mini-battery-module/"
 
   [mini_battery-5.image]
   small = "Modules_382x324_MiniBattery.png"
 
 [core-2]
 name = "2x Core Module"
-link = "https://shop.bigclown.com/core-module/"
+en_link = "https://shop.bigclown.com/core-module/"
+cs_link = "https://obchod.bigclown.cz/core-module/"
 
   [core-2.image]
   small = "Modules_382x324_Core.png"
 
 [mini_battery-2]
 name = "2x Mini Battery Module"
-link = "https://shop.bigclown.com/mini-battery-module/"
+en_link = "https://shop.bigclown.com/mini-battery-module/"
+cs_link = "https://obchod.bigclown.cz/mini-battery-module/"
 
   [mini_battery-2.image]
   small = "Modules_382x324_MiniBattery.png"
 
 [enclosures-101-2]
 name = "2x 3D-printed Enclosure BCE101"
-link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+en_link = "https://shop.bigclown.com/3d-printed-enclosure-101/"
+cs_link = "https://obchod.bigclown.cz/3d-printed-enclosure-101/"
 
   [enclosures-101-2.image]
   small = "Enclosure-BCE101.png"
 
 [breadboard]
 name = "Breadboard Module"
-link = "https://shop.bigclown.com/breadboard-module/"
+en_link = "https://shop.bigclown.com/breadboard-module/"
+cs_link = "https://obchod.bigclown.cz/breadboard-module/"
 
   [breadboard.image]
   small = "Modules_382x324_Breadboard.png"
 
 [probe]
 name = "Probe Module"
-link = "https://shop.bigclown.com/probe-module/"
+en_link = "https://shop.bigclown.com/probe-module/"
+cs_link = "https://obchod.bigclown.cz/probe-module/"
 
   [probe.image]
   small = "Modules_382x324_Probe.png"
 
 [relay]
 name = "Relay Module"
-link = "https://shop.bigclown.com/relay-module/"
+en_link = "https://shop.bigclown.com/relay-module/"
+cs_link = "https://obchod.bigclown.cz/relay-module/"
 
   [relay.image]
   small = "Modules_382x324_Relay.png"
 
 [wire]
 name = "1-Wire Module"
-link = "https://shop.bigclown.com/1-wire-module/"
+en_link = "https://shop.bigclown.com/1-wire-module/"
+cs_link = "https://obchod.bigclown.cz/1-wire-module/"
 
   [wire.image]
   small = "Modules_382x324_Wire.png"
 
 [base]
 name = "Base Module"
-link = "https://shop.bigclown.com/base-module/"
+en_link = "https://shop.bigclown.com/base-module/"
+cs_link = "https://obchod.bigclown.cz/base-module/"
 
   [base.image]
   small = "Modules_382x324_Base.png"

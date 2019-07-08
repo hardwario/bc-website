@@ -21,7 +21,7 @@ pygmentsUseClasses = true
     weight = 2
     [languages.cs.params]
       baseURL = "/cs/"
-      shopURL = "https://shop.bigclown.com/?currency=CZK"
+      shopURL = "https://obchod.bigclown.cz"
       homeURL = "/cs/"
 
 [blackfriday]

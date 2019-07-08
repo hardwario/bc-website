@@ -16,7 +16,7 @@ notIncluded: ["Flood Detector", "LCD Thermostat", "Controller", "Push Button", "
 gifts: ["Klaunský nos"]
 weight: 1
 price: €149
-buyLink: "https://shop.bigclown.com/big-kits/?currency=CZK"
+buyLink: "https://obchod.bigclown.cz/big-kits/"
 modules: ["usb_dongle","core-2","mini_battery-2","climate","pir","enclosures-101-2"]
 optionalModules: ["sigfox","lora"]
 ---

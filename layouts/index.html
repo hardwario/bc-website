@@ -38,7 +38,15 @@
             <span class="previousPrice"><strike>{{ i18n "standard_price" }}</strike></span>&nbsp;&nbsp;<span class="currentPrice">{{ i18n "final_price" }}</span><br />
             <span class="youSave">{{ i18n "save" }} {{ i18n "you_save" }}</span>
           </div>
-          <a href="https://shop.bigclown.com/starter-kit-with-raspberry-pi/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+
+
+          {{ if eq $.Site.Language.Lang "en"}}
+            <a href="https://shop.bigclown.com/starter-kit-with-raspberry-pi/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          {{ else }}
+            <a href="https://obchod.bigclown.cz/starter-kit-with-raspberry-pi/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          {{ end }}
+
+
           <div class = "text">
             <a href = "{{ .URL }}start">{{ i18n "how_it_works" }}</a>
           </div>

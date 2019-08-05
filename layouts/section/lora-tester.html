@@ -1,0 +1,256 @@
+{{ define "main" }}
+
+{{ $title := .Title }}
+{{ partial "www/heading.html" (dict "heading" $title "class" "intro__title3--notupper") }}
+
+<section>
+  <div class="submenu">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="submenu__list d-block d-md-flex">
+            <li class="submenu__item"><a class="submenu__link submenu__link--overview" href="#overview">{{ i18n "overview" }}</a></li>
+            <li class="submenu__item"><a class="submenu__link submenu__link--benefits" href="#benefits">Benefits</a></li>
+            <li class="submenu__item"><a class="submenu__link submenu__link--inside" href="#inside">What is inside</a></li>
+            <li class="submenu__item"><a class="submenu__link submenu__link--faq" href="#faq">FAQ</a></li>
+            <li class="submenu__item"><a class="submenu__link submenu__link--extend" href="#extend">Extend with GPS</a></li>
+            <li class="submenu__item ml-auto"><a class="button button--fullredsmall" href="{{ .Params.buyLink }}">{{ i18n "buy" }}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="overview">
+  <section>
+    <div class="kit">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-12 col-md-6 text-center">
+            <img class="kit__mainimg" src="{{ .URL }}{{ .Params.image }}" alt="{{ .Title }}" />
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <h2 class="kit__title kit__title--description">{{ .Params.meta.title }}<small>Test your private or public LoRa network</small></h2>
+            <p>{{ .Params.description }}</p>
+
+            <div class="d-flex justify-content-center">
+              <div class="kit__price">{{ .Params.price }}</div>
+              <div class="kit__buy">
+                <a href="{{ .Params.buyLink }}" class="button button--fullredmiddle">{{ i18n "buy_it_now" }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="benefits">
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <div class="col-12">
+        <div class="features">
+          <div class="row justify-content-center">
+            <div class="col-8 col-md-6 col-lg-4 features__firstline">
+              <div class="features__item">
+                <div class="features__icon"></div>
+                <h3 class="features__title">Easy to Setup</h3>
+                <p class="features__text">No-soldering, no-wiring. Just plug modules together, insert batteries and setup connection trough USB cable.</p>
+              </div>
+            </div>
+            <div class="col-8 col-md-6 col-lg-4 features__firstline">
+              <div class="features__item">
+                <div class="features__icon features__icon--2"></div>
+                <h3 class="features__title">Open-Source</h3>
+                <p class="features__text">All BigClown's kits and modules are open-source. You can customize it as you wish.</p>
+              </div>
+            </div>
+            <div class="col-8 col-md-6 col-lg-4 features__firstline">
+              <div class="features__item">
+                <div class="features__icon features__icon--15"></div>
+                <h3 class="features__title">Fully Configurable</h3>
+                <p class="features__text">You can easily configure frequency, region (868/915 MHz), ABP/OTTA, Class A, Class C other attributes.</p>
+              </div>
+            </div>
+            <div class="col-8 col-md-6 col-lg-4 features__firstline">
+              <div class="features__item">
+                <div class="features__icon features__icon--16"></div>
+                <h3 class="features__title">Long-life battery</h3>
+                <p class="features__text">Thanks to low-power design of BigClown IoT kit, device can works from batteries for years.</p>
+              </div>
+            </div>
+            <div class="col-8 col-md-6 col-lg-4 features__firstline">
+              <div class="features__item">
+                <div class="features__icon features__icon--17"></div>
+                <h3 class="features__title">LCD Memory Display</h3>
+                <p class="features__text">Ultra-low-power display with a long service time. You can controll it with two buttons and gesture sensor. </p>
+              </div>
+            </div>
+            <div class="col-8 col-md-6 col-lg-4 features__firstline">
+              <div class="features__item">
+                <div class="features__icon features__icon--17"></div>
+                <h3 class="features__title">Documented</h3>
+                <p class="features__text">You will get documentation, <a href = "https://www.hackster.io/hubmartin/lora-tester-with-lcd-gps-open-configurable-low-power-4a5b61" target = "_blank">tutorial and example projects</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div id="inside">
+<section>
+  <div class="modules" id = "explore-modules">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--3 text-center">{{ i18n "modules_in_kit" }}</h2>
+
+          <div class="row">
+
+            {{ range .Params.modules }}
+            <div class="col-12 col-md-6 col-lg-4">
+              {{ $key := . }}
+              {{ $module := index $.Site.Data.modules $key }}
+                <a href="{{ $module.link }}" class="modules__photo" target="_blank" onclick="ga('send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
+                  <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                    <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
+                  </div>
+
+                  <div class="modules__photo__desc">
+                    <h3 class="modules__photo__title">{{ $module.name }}</h3>
+                  </div>
+                </a>
+
+                <!--<a href="/modules/{{ $module.image.small }}" class="modules__photo magnificPopup">
+                  <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                    <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
+                  </div>
+
+                  <div class="modules__photo__desc">
+                    <h3 class="modules__photo__title">{{ $module.name }}</h3>
+                  </div>
+                </a>-->
+                </div>
+            {{ end}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div id="extend">
+<section>
+  <div class="bg bg--gray bg--borderedTop">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title text-center">Wanna also track GPS position?<small>Extend the device with GPS Module!</h2>
+          <div class="row d-none d-lg-flex">
+            <div class="col-12 col-md-6 col-xl-4 ml-auto mr-auto">
+
+                <a href="{{ .Params.buyLink_gps }}" class="product">
+                    <div class="product__images d-flex align-items-center justify-content-center">
+                        <img src="{{ .URL }}{{ .Params.image_gps }}" alt="{{ .Title }}" />
+                        <img src="{{ .URL }}{{ .Params.image_gps }}" alt="{{ .Title }}" />
+                    </div>
+                    <h3 class="product__title d-flex align-items-center justify-content-center">LoRa Tester with GPS</h3>
+                    <p class="product__text d-flex align-items-center justify-content-center">Track automatically position and signal strength to map by adding GPS Module</p>
+                      <div class="pricelist__price">129€</div>
+                    <div class="product__button">
+                        <span class="button button--gray button--gray--smaller">Buy Now</span>
+                    </div>
+                </a>
+            </div>
+          </div>
+
+          <div class="slick d-block d-lg-none">
+            <div>
+                <a href="#" class="product product--carousel">
+                    <div class="product__images d-flex align-items-center justify-content-center">
+                        <img src="{{ .URL }}{{ .Params.imagegps }}" alt="{{ .Title }}" />
+                        <img src="{{ .URL }}{{ .Params.imagegps }}" alt="{{ .Title }}" />
+                    </div>
+                    <h3 class="product__title d-flex align-items-center justify-content-center">LoRa Tester with GPS</h3>
+                    <p class="product__text d-flex align-items-center justify-content-center">Buy it with GPS</p>
+                    <div class="product__button">
+                        <span class="button button--gray button--gray--smaller">Buy Now</span>
+                    </div>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section>
+    <div class="bg bg--gray" id = "faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="collapsor">
+                      <h2 class="title title--3 text-center">FAQ</h2>
+                        <div class="collapsor__item">
+                            <h3 class="collapsor__header collapsor__header--active">What is in the package?</h3>
+                            <div class="collapsor__body collapsor__body--active">
+                                <p>You will get Core Module, Mini Battery Module, LoRa Module, LCD Module and Enclosure. If you order GPS version you will also get GPS Module, Split Module and bigger enclosure.</p>
+                            </div>
+                        </div>
+                        <div class="collapsor__item">
+                            <h3 class="collapsor__header">Is it one-case solution?</h3>
+                            <div class="collapsor__body">
+                                <p>No. You can completely change behaviour of this kit. For example, it can measure temperature and light intensity and send it trough LoRa Network or you can extend it with one of many BigClown IoT Kit modules.</p>
+                            </div>
+                        </div>
+                        <div class="collapsor__item">
+                            <h3 class="collapsor__header">What is BigClown IoT Kit?</h3>
+                            <div class="collapsor__body">
+                                <p>It is kit for students, teachers and makers. BigClown is a modular system that makes building IoT solutions simple, linking theory and practice. It comes with practical components for educators and learners to experiment and share specialist technical know-how without fuss. We believe IoT should be accessible, engaging and fun, so we can innovate and inspire the inventors of tomorrow, today, together.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="specification " id="specification">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--3 text-center">{{ i18n "technical_specification" }}</h2>
+          <div class="row">
+            <div class="col col-md-6">
+              <table>
+                {{ range .Params.techSpecs }}
+                <a href="{{ .url }}" class="soc__{{ .name }} text-hide"></a>
+                <tr>
+                  <td><strong>{{ .heading }}</strong></td>
+                  <td>{{ .text }}</td>
+                </tr>
+                {{ end }}
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

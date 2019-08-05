@@ -1,6 +1,6 @@
 <header>
   <section>
-  <div class="header d-flex align-content-stretch {{ if and ( eq .Type "kits") ( eq .Kind "page") }} header--withsubmenu {{ end }}">
+  <div class="header d-flex align-content-stretch {{ if and ( eq .Type "kits") ( eq .Kind "page") }} header--withsubmenu {{ end }} {{ if ( eq .Type "lora-tester") }} header--withsubmenu {{ end }}">
     <div class="container-fluid d-flex align-items-center no-gutters">
       <div class="col d-flex align-items-center justify-content-between">
 

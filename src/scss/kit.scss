@@ -32,6 +32,10 @@
         line-height: 1.5*$baseline;
       }
     }
+
+    &--description{
+      padding-bottom: $baseline;
+    }
   }
 
   &__or

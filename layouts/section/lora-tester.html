@@ -11,9 +11,9 @@
           <ul class="submenu__list d-block d-md-flex">
             <li class="submenu__item"><a class="submenu__link submenu__link--overview" href="#overview">{{ i18n "overview" }}</a></li>
             <li class="submenu__item"><a class="submenu__link submenu__link--benefits" href="#benefits">Benefits</a></li>
-            <li class="submenu__item"><a class="submenu__link submenu__link--inside" href="#inside">What is inside</a></li>
-            <li class="submenu__item"><a class="submenu__link submenu__link--faq" href="#faq">FAQ</a></li>
+            <li class="submenu__item"><a class="submenu__link submenu__link--modules" href="#modules">What is inside</a></li>
             <li class="submenu__item"><a class="submenu__link submenu__link--extend" href="#extend">Extend with GPS</a></li>
+            <li class="submenu__item"><a class="submenu__link submenu__link--faq" href="#faq">FAQ</a></li>
             <li class="submenu__item ml-auto"><a class="button button--fullredsmall" href="{{ .Params.buyLink }}">{{ i18n "buy" }}</a></li>
           </ul>
         </div>
@@ -22,9 +22,8 @@
   </div>
 </section>
 
-<div id="overview">
   <section>
-    <div class="kit">
+    <div class="kit overview" id="overview">
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center">
           <div class="col-12 col-md-6 text-center">
@@ -45,11 +44,10 @@
       </div>
     </div>
   </section>
-</div>
 
-<div id="benefits">
 <section>
-  <div class="container">
+  <div id="benefits">
+  <div class="container pt-4 mt-4">
     <div class="row justify-content-center">
 
       <div class="col-12">
@@ -72,8 +70,8 @@
             <div class="col-8 col-md-6 col-lg-4 features__firstline">
               <div class="features__item">
                 <div class="features__icon features__icon--15"></div>
-                <h3 class="features__title">Fully Configurable</h3>
-                <p class="features__text">You can easily configure frequency, region (868/915 MHz), ABP/OTTA, Class A, Class C other attributes.</p>
+                <h3 class="features__title">Configurable and extensible</h3>
+                <p class="features__text">You can easily configure frequency, region (868/915 MHz), ABP/OTTA, Class A, Class C and other attributes. Kit is extensible with other BigClown modules.</p>
               </div>
             </div>
             <div class="col-8 col-md-6 col-lg-4 features__firstline">
@@ -93,7 +91,7 @@
             <div class="col-8 col-md-6 col-lg-4 features__firstline">
               <div class="features__item">
                 <div class="features__icon features__icon--17"></div>
-                <h3 class="features__title">Documented</h3>
+                <h3 class="features__title">Well documented</h3>
                 <p class="features__text">You will get documentation, <a href = "https://www.hackster.io/hubmartin/lora-tester-with-lcd-gps-open-configurable-low-power-4a5b61" target = "_blank">tutorial and example projects</a>.</p>
               </div>
             </div>
@@ -102,12 +100,11 @@
       </div>
     </div>
   </div>
+  </div>
 </section>
-</div>
 
-<div id="inside">
 <section>
-  <div class="modules" id = "explore-modules">
+  <div class="bg--borderedTop" id = "modules">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -146,11 +143,9 @@
     </div>
   </div>
 </section>
-</div>
 
-<div id="extend">
 <section>
-  <div class="bg bg--gray bg--borderedTop">
+  <div class="bg bg--gray bg--borderedTop" id="extend">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -193,15 +188,13 @@
     </div>
   </div>
 </section>
-</div>
 
 <section>
     <div class="bg bg--gray" id = "faq">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-
-                    <div class="collapsor">
+                    <div >
                       <h2 class="title title--3 text-center">FAQ</h2>
                         <div class="collapsor__item">
                             <h3 class="collapsor__header collapsor__header--active">What is in the package?</h3>
@@ -229,7 +222,7 @@
 </section>
 
 <section>
-  <div class="specification " id="specification">
+  <div class="specification mt-4 pt-4" id="specification">
     <div class="container">
       <div class="row">
         <div class="col">

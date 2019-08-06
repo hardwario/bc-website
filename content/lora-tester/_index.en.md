@@ -1,12 +1,13 @@
 ---
 title: Test LoRa Network with this Kit!
 meta:
-    title: LoRa Tester
-mainHeading: LoRa Tester
+    title: LoRa tester - test you public or private LoRa Network | The Things Network | TTNMapper
+    description: Looking for the best solution to test your public or private Lora Network? With this open-source, fully-customisable and low-power device it's peace of cake! LoRa tester is ready to work with The Things Network or track GPS position with TTNMapper.
+mainHeading: Configurable LoRa tester
 mainParagraph: ..
 slug: lora
 weight: 50
-description: With fully-customisable, low-power and open-source LoRa Tester without soldering and wiring and with step-by-step tutorial.
+description: Fully-customisable, low-power and open-source LoRa Tester without soldering and wiring. Works with The Things Network (TTN) and other public or private networks.
 price: 99€
 image: lora.jpg
 image_gps: lora-gps.png

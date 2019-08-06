@@ -6,6 +6,14 @@ cs_link = "https://obchod.bigclown.cz/core-module/"
   [core.image]
   small = "Modules_382x324_Core.png"
 
+[core_nr]
+name = "Core Module NR"
+en_link = "https://shop.bigclown.com/core-module-nr/"
+cs_link = "https://obchod.bigclown.cz/core-module-nr/"
+
+  [core_nr.image]
+  small = "Modules_382x324_Core-nr.png"
+
 [mini_battery]
 name = "Mini Battery Module"
 en_link = "https://shop.bigclown.com/mini-battery-module/"

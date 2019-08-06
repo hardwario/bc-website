@@ -11,7 +11,7 @@ description: Fully-customisable, low-power and open-source LoRa Tester without s
 price: 99€
 image: lora.jpg
 image_gps: lora-gps.png
-modules: ["core","mini_battery","lcd","lora"]
+modules: ["core_nr","mini_battery","lcd","lora"]
 buyLink: https://shop.bigclown.com/lora-tester-basic-kit/
 buyLink_gps: https://shop.bigclown.com/lora-tester-gps-kit/
 techSpecs:

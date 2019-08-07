@@ -116,7 +116,8 @@
             <div class="col-12 col-md-6 col-lg-4">
               {{ $key := . }}
               {{ $module := index $.Site.Data.modules $key }}
-                <a href="{{ $module.link }}" class="modules__photo" target="_blank" onclick="ga('send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
+
+                <a href="{{ $module.en_link }}" class="modules__photo" target="_blank" onclick="ga('send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
                   <div class="modules__photo__image d-flex justify-content-center align-items-center">
                     <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
                   </div>
@@ -170,7 +171,7 @@
 
           <div class="slick d-block d-lg-none">
             <div>
-                <a href="#" class="product product--carousel">
+                <a href="{{ .Params.buyLink_gps }}" class="product product--carousel">
                     <div class="product__images d-flex align-items-center justify-content-center">
                         <img src="{{ .URL }}{{ .Params.imagegps }}" alt="{{ .Title }}" />
                         <img src="{{ .URL }}{{ .Params.imagegps }}" alt="{{ .Title }}" />

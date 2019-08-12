@@ -1,0 +1,309 @@
+{{ define "main" }}
+
+<section>
+  <div class="getStarterKit bg bg--bubbleswhite">
+  <div class="container">
+    <div class="row justify-content-center pt-5">
+      <div class="col-12 col-xl-10">
+        <div class="article__header--smallerPadding">
+          <div class="article__header__button">
+            <h1 class="article__title">{{ .Params.mainHeading | safeHTML}}</h1>
+            <div class="text text--perex">
+              <p>{{ .Params.mainParagraph | safeHTML }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="collapsor">
+                                <div class="collapsor__item">
+                                    <div class="collapsor__header collapsor__header--active">
+                                      <div class="row">
+                                        <div class = "col-7 align-self-center">
+                                          <h3>Ovládni svět okolo sebe s mega chytrou krabičkou, kterou si sám sestavíš</h3>
+                                        </div>
+                                      <div class = "col-5">
+                                        <img src="/_assets/images/starter-kit/1-ilustrace-rostak-drzici-KIT-se-zari.png" alt="BigClown Playground" style = "max-width:100%">
+                                      </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="collapsor__body collapsor__body--active">
+                                      <div class="row">
+                                      <div class = "col-7 align-self-center">
+                                        <p>Získej náskok před ostatními. BigClown je zábavný nástroj, se kterým pochopíš a navrhneš internet věcí (IoT). To znamená, že ze všeho, třeba i ze svojí židle, vytvoříš chytré zařízení a propojíš ho se svým počítačem nebo mobilem. Díky tomu začneš digitálně vylepšovat svůj domov, třídu a klidně i celé město a svět.</p>
+                                        <p>Základní sadou pro začátek je Starter Kit, ale časem ho můžeš vylepšit o rozšiřující kity. Podívej se, jak postavíš své první chytré zařízení a jak vytvoříš projekty, kterými ohromíš kámoše, rodinu i nás. 👌</p>
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="collapsor__item">
+                                    <div class="collapsor__header">
+                                      <div class="row">
+                                      <div class = "col-7 align-self-center">
+                                        <h3>Nejdřív to dej dohromady</h3>
+                                      </div>
+                                      <div class = "col-5">
+                                        <img src="/_assets/images/starter-kit/2-ilustrace-devce-sestavuje-KIT-korektura.png" alt="BigClown Playground" style = "max-width:100%">
+                                      </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="collapsor__body">
+                                      <div class="row">
+                                      <div class = "col-7 align-self-center">
+                                        <p>Seznam se. 👋 Tohle jsou jednotlivé díly, které obsahuje tvůj Starter Kit.</p>
+                                        <p>Dílům se hromadně říká hardware, což je označení pro pevnou část jakéhokoliv zařízení.</p>
+                                        <p>Těchhle pár věcí ti zároveň vystačí na spoustu projektů.</p>
+                                        <p><small>Věděl jsi? Hardware znamená v angličtině „nářadí”.</small></p>
+                                      </div>
+                                      <div class = "col-5 align-self-center">
+                                        <img src="/_assets/images/starter-kit/3-infografika-dily-kitu.png" alt="BigClown Playground" style = "max-width:100%">
+                                      </div>
+                                      </div>
+
+                                      <div class="row">
+                                      <div class = "col-7 align-self-center">
+                                        <h3>Co s tím? Slož hardware do sebe, stačí ti k tomu 4 kroky.</h3>
+                                        <ol>
+                                          <li>Napoj Button Module na Core Module. Buď opatrný, ať se jehličky nezlomí. Možná sis všiml, že jedna chybí, ale nemůžeš za to ty. Je to pro lepší orientaci. 👍</li>
+                                          <li>Do Battery Modulu vlož baterky a to celé napoj na druhou stranu Core Module.</li>
+                                          <li>Všechno uzavři do obalu a zajisti gumičkami.</li>
+                                          <li>Už ti zbývá jenom složit USB Dongle. Čip uzavři do černé krabičky, aby z ní vykukoval stříbrný konektor.</li>
+                                        </ol>
+
+                                        <h3>🙌 Máš to dobře, když:</h3>
+                                        <ul>
+                                        <li>baterky směřují dolů, ne nahoru,</li>
+                                        <li>dírkou v obalu na straně vidíš microUSB.</li>
+                                        </ul>
+                                      </div>
+                                      <div class = "col-5 align-self-center">
+                                        <img src="/_assets/images/starter-kit/skladacka.gif" alt="BigClown Playground" style = "max-width:100%">
+                                      </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="collapsor__item">
+                                    <div class="collapsor__header">
+                                      <div class="row">
+                                      <div class = "col-7 align-self-center">
+                                        <h3>Připrav si počítač</h3>
+                                      </div>
+                                      <div class = "col-5">
+                                        <img src="/_assets/images/starter-kit/4-ilustrace-kluk-u-PC-s-KITem.png" alt="BigClown Playground" style = "max-width:100%">
+                                      </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="collapsor__body">
+                                      <div class="row">
+                                      <div class = "col-7 align-self-center">
+                                        <p>Pro ovládání Kitu potřebuješ software. Narozdíl od hardwaru si na software nemůžeš sáhnout, ale dá se s ním pracovat ve virtuálním prostředí. 🤖</p>
+                                        <p>Stáhni si do počítače aplikaci Playground. Vyber si z nabídky podle svého systému.</p>
+                                        <p>Aplikaci spusť. 🚀</p>
+                                      </div>
+                                      <div class = "col-5 align-self-center">
+
+                                      </div>
+                                      </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="collapsor__item">
+                                    <div class="collapsor__header">
+                                      <div class="row">
+                                      <div class = "col-7 align-self-center">
+                                        <h3>Propoj aplikaci s krabičkou</h3>
+                                      </div>
+                                      <div class = "col-5">
+                                        <img src="/_assets/images/starter-kit/5-ilustrace-kluk-zapojuje-Dongle.png" alt="BigClown Playground" style = "max-width:100%">
+                                      </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="collapsor__body">
+                                      <div class="row">
+                                        <div class = "col-7 align-self-center">
+                                          <p>Teď přijde to nejzábavnější. Hardware propojíš se softwarem, aneb krabičku začneš ovládat z počítače. 🤘</p>
+                                          <p>Bacha: Před propojením vyndej z krabičky baterky. Kdyby tam byly ještě před tím, ke spojení by nedošlo.</p>
+                                        </div>
+                                        <div class = "col-5 align-self-center">
+
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class = "col-7 ">
+                                          <ol>
+                                            <li>Nejdřív použij USB Dongle. Vlož ho do počítače.</li>
+                                            <li>V aplikaci Playground klikni na záložku Devices.</li>
+                                            <li>Klikni na tlačítko Connect. Aplikace se připojí ke tvému USB Dongle.</li>
+                                            <li>Klikni na tlačítko Start pairing.</li>
+                                            <li>Teď vlož do krabičky baterky. Zažehneš tím signál pro USB Dongle. Světýlko na Core Modulu červeně blikne, ale neboj, znamená to, že je všechno ok.</li>
+                                            <li>Načetlo se ti ID krabičky? Gratulujeme, jsi propojen! 👏</li>
+                                            <li>Po úspěšném propojení klikni na Stop pairing, aby počítač nezachytil zařízení někoho jiného.</li>
+                                          </ol>
+                                        </div>
+                                        <div class = "col-5">
+                                           <img src="/_assets/images/starter-kit/connect-gif.gif" alt="BigClown Playground" style = "max-width:100%">
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="collapsor__item">
+                                    <div class="collapsor__header">
+                                      <div class="row">
+                                      <div class = "col-7 align-self-center">
+                                        <h3>3 miniprojekty na rozjezd</h3>
+                                      </div>
+                                      <div class = "col-5">
+                                        <img src="/_assets/images/starter-kit/6-ilustrace-devce-meri-teplotu.png" alt="BigClown Playground" style = "max-width:100%">
+                                      </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="collapsor__body">
+                                      <div class="row">
+                                        <div class = "col-7 align-self-center">
+                                          <p>Máme pro tebe nápady na první jednoduché projekty. Pojď machrovat! 🕶️</p>
+                                        </div>
+                                        <div class = "col-5 align-self-center">
+
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class = "col-7 ">
+                                          <h3>1. Změř teplotu u sebe v pokoji</h3>
+                                          <p>Se Starter Kitem změříš okolní teplotu.🌡To využiješ třeba při měření teploty u sebe v pokoji nebo jako preventivní hlásič požáru v kuchyni.</p>
+
+                                          <ol>
+                                            <li>Propoj USB Dongle s krabičkou a s počítačem podle návodu výš.</li>
+                                            <li>Otevři v aplikaci záložku Messages. Automaticky uvidíš, jak se mění teplota v místnosti. K měření dochází jednou za čas nebo při velké změně. Pro urychlení můžeš krabičku chytit do dlaní a fouknout na ni.</li>
+                                          </ol>
+                                          <p>Náš tip: Vlož krabičku na chvíli do lednice a sleduj, jak se mění teplota.</p>
+
+                                        </div>
+                                        <div class = "col-5">
+                                           <img src="/_assets/images/starter-kit/mereni-dechu.png" alt="BigClown Playground" style = "max-width:100%">
+                                        </div>
+                                      </div>
+
+                                      <div class="row">
+                                        <div class = "col-7 ">
+                                          <h3>2. Checkuj polohu krabičky</h3>
+                                          <p>Starter Kit umí snímat polohu. Zaznamená, kdykoli ho obrátíš. To využiješ třeba jako hlásič, že něco spadlo nebo že někdo vstal z postele. 🖖</p>
+
+                                          <ol>
+                                            <li>Propoj USB Dongle s krabičkou a s počítačem podle návodu výš.</li>
+                                            <li>Otevři v aplikaci Playground záložku Messages.</li>
+                                            <li>Otoč krabičkou. Na obrazovce uvidíš, že došlo ke změně polohy. </li>
+                                            <li>Každá poloha má svůj číselný kód. Zjisti, jaký kód znamená jakou polohu.</li>
+                                          </ol>
+                                          <p>Náš tip: Čte ti sourozenec deníček? Nalep krabičku na spodní stranu deníčku. Jakékoli naklonění se ti zobrazí v aplikaci a budeš mít důkaz!</p>
+
+                                        </div>
+                                        <div class = "col-5">
+                                           <img src="/_assets/images/starter-kit/zmena-polohy.png" alt="BigClown Playground" style = "max-width:100%">
+                                        </div>
+                                      </div>
+
+                                      <div class="row">
+                                        <div class = "col-7 ">
+                                          <h3>3. Zmáčkni to!</h3>
+                                          <p>Teď konečně zjistíš, k čemu je to velké tlačítko. 🤔 Využiješ ho třeba pro počítání.</p>
+
+                                          <ol>
+                                            <li>Propoj USB Dongle s krabičkou a s počítačem podle návodu výš.</li>
+                                            <li>Otevři v aplikaci Playground záložku Messages.</li>
+                                            <li>Zmáčkni tlačítko na krabičce. V aplikaci se ti zmáčknutí zobrazí. </li>
+                                            <li>Tlačítko počítá, kolikrát jsi ho zmáčkl.</li>
+                                          </ol>
+                                          <p>Náš tip: V pokročilejších projektech se naučíš ještě zajímavější funkce. Třeba jak z tlačítka udělat domovní zvonek, který ti zprávy o zazvonění pošle do mobilu. 👌</p>
+
+                                        </div>
+                                        <div class = "col-5">
+                                           <img src="/_assets/images/starter-kit/pocitani-akce.png" alt="BigClown Playground" style = "max-width:100%">
+                                        </div>
+                                      </div>
+
+                                      <div class="row">
+                                        <div class = "col-7 ">
+                                          <img src="/_assets/images/starter-kit/9-komiks.png" alt="BigClown Playground" style = "max-width:100%">
+                                        </div>
+                                        <div class = "col-5">
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                <div class="collapsor__item">
+                                    <div class="collapsor__header">
+                                      <div class="row">
+                                      <div class = "col-7 align-self-center">
+                                        <h3>Pokročilejší projekty aneb Vylepši cokoli</h3>
+                                      </div>
+                                      <div class = "col-5">
+                                        <img src="/_assets/images/starter-kit/7-ilustrace-kluk-sestavuje-zvonek.png" alt="BigClown Playground" style = "max-width:100%">
+                                      </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="collapsor__body">
+                                      <div class="row">
+                                        <div class = "col-7 align-self-center">
+                                          <p>Už to ovládáš? Gratulace! 👏 Nauč se ještě víc s pokročilejšími projekty složenými ze Starter kitu, se kterými vylepšíš své okolí. Pomoct druhým a přitom se ukázat, tomu říkáme super kombo.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+<section>
+  {{ .Content }}
+</section>
+
+
+<!--<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="title title--withoutsubtitle text-center">{{ i18n "projects_to_build" | safeHTML }}</h2>
+        <div class="articles">
+          <div class="row">
+            {{ range first 6 ($.Site.GetPage "section" "projects").Pages }}
+              {{ .Render "grid" }}
+            {{ end }}
+          </div>
+          <div class="text-center">
+            <a href="{{ "projects/" | absLangURL }}" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+{{ end }}

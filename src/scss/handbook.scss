@@ -1,0 +1,61 @@
+.handbook{
+
+  &.collapsor{
+    padding-top: 0;
+  }
+
+  &__title{
+    font-size: em(32);
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5*$baseline;
+    padding-bottom: 1*$baseline;
+    padding-top: 2*$baseline;
+    //text-align: center;
+    padding-left: 0;
+
+    @media(max-width: 991px)
+    {
+      padding-top: 2*$baseline;
+      font-size: em(30);
+      line-height: $baseline*1.25;
+    }
+  }
+
+  p,ul,ol
+  {
+    font-size: em(18);
+    padding-bottom: $baseline;
+    margin: 0;
+
+    li{
+      padding-bottom: 0.5*$baseline;
+    }
+  }
+
+  &__perex
+  {
+    padding-top: 1*$baseline;
+    //padding-bottom: $baseline;
+
+    p
+    {
+      color:#2e343c;
+      font-size: em(20);
+      line-height: 1.2*$baseline;
+
+      @media(max-width: 991px)
+      {
+        //padding-bottom: 0;
+        font-size: em(22);
+        line-height: 1.25*$baseline;
+      }
+    }
+  }
+
+  h3{
+    padding-top: 0.5*$baseline;
+  }
+
+}

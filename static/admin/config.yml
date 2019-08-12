@@ -41,6 +41,38 @@ collections:
       - {label: "Main Image [1400x510]", name: "image_main", widget: "image"}
       - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "academy-en" # Used in routes, e.g., /admin/collections/blog
+    label: "Academy EN" # Used in the UI
+    folder: "content/academy" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "en.md"
+    format: 'frontmatter'
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title [max 35 char.]", name: "title", widget: "string", pattern: [".{0,35}", "Must have max 35 characters"]}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description [max 120 char.]", name: "description", widget: "string", pattern: [".{0,120}", "Must have max 120 characters"]}
+      - {label: "Preview Image [700x580]", name: "image_preview", widget: "image"}
+      - {label: "Main Image [1400x510]", name: "image_main", widget: "image"}
+      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "academy-cs" # Used in routes, e.g., /admin/collections/blog
+    label: "Academy CS" # Used in the UI
+    folder: "content/academy" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "cs.md"
+    format: 'frontmatter'
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title [max 35 char.]", name: "title", widget: "string", pattern: [".{0,35}", "Must have max 35 characters"]}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description [max 120 char.]", name: "description", widget: "string", pattern: [".{0,120}", "Must have max 120 characters"]}
+      - {label: "Preview Image [700x580]", name: "image_preview", widget: "image"}
+      - {label: "Main Image [1400x510]", name: "image_main", widget: "image"}
+      - {label: "Author", name: "author", widget: "select", options: ["martin_hubacek","karel_blavka","pavel_hubner","michal_muhlpachr","alan_fabik","lukas_fabik"]}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "projects-en" # Used in routes, e.g., /admin/collections/blog
     label: "Projects EN" # Used in the UI
     folder: "content/projects" # The path to the folder where the documents are stored

@@ -2,6 +2,6 @@
 title: Blog
 mainHeading: Read Our Latest News
 slug: blog
-menu: ["main", "footer"]
+menu: ["footer"]
 weight: 500
 ---

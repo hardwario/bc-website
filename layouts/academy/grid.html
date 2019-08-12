@@ -1,0 +1,27 @@
+
+    <div class="col-12 col-md-6 col-lg-4 d-flex">
+      <a href="{{ .Permalink }}" class="articles__item articles__item--2">
+
+        <div class="articles__item__image">
+          <img src="{{ .Params.image_preview }}" alt="{{ .Title }}" />
+        </div>
+
+        <div class="articles__content articles__content--2">
+          <h3 class="articles__title articles__title--2">{{ .Title }}</h3>
+          <p class="articles__text articles__text--2">{{ .Params.description }}</p>
+        </div>
+        <div class="articles__author d-flex align-items-center">
+          {{ $author := index $.Site.Data.authors .Params.author }}
+          <div class="articles__author__image"><img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" /></div>
+          <div class="articles__author__title">{{ $author.name }}</div>
+          <div class="ml-auto articles__author__time">
+            {{ if eq .Lang "cs" }}
+              {{ .Date.Day }}. {{ index $.Site.Data.mesice (printf "%d" .Date.Month) }} {{ .Date.Year }}
+            {{ else }}
+              {{ .Date.Format "2 January 2006" }}
+            {{ end }}
+          </div>
+        </div>
+        <!--<div class="button button--tag button--tag--blue button--tag--blue--active articles__button">Indoor</div>-->
+      </a>
+    </div>

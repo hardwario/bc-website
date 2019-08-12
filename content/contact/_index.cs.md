@@ -2,7 +2,7 @@
 title: Kontakt
 mainHeading: Neváhejte nás kontaktovat
 slug: contact
-menu: "main"
+menu: "footer"
 weight: 600
 meta:
     title: Kontakt

@@ -1,0 +1,72 @@
+{{ define "main" }}
+<section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10">
+        <div class="article__header">
+          <div class="article__header__button">
+
+            <h1 class="article__title">{{ .Title }}</h1>
+            <div class="text text--perex">
+              <p>{{ .Params.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="article__image">
+          <img src="{{ .Params.image_main }}" alt="{{ .Title }}" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-8">
+        <div class="article__body">
+              {{ .Content }}
+            </div>
+            <div class="row">
+              <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">
+                <div class="article__author article__author--bottom d-flex flex-column justify-content-center">
+                  {{ $author := index $.Site.Data.authors .Params.author }}
+                  <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
+                  <strong>{{ $author.name }}</strong>
+                  <span>{{ $author.email }}</span>
+                </div>
+              </div>
+              <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">
+                <div class="addthis_inline_share_toolbox article__soc"></div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "additional-scripts" }}
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59c0d0ca2278ef93"></script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.10&appId=147151422044678";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <script type="text/javascript">
+    (function() {
+        $('table').addClass('table table-striped');
+        $('thead').addClass('thead-default');
+        $( ".table" ).wrap( "<div class='table-responsive'></div>" );
+    })();
+  </script>
+
+
+{{ end }}

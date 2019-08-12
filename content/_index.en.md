@@ -1,7 +1,7 @@
 ---
 title: Home
 url: /
-menu: ["main", "footer"]
+menu: ["main"]
 weight: 1
 meta:
     title: Learn Digital Skills By Making Real Projects

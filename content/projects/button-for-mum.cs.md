@@ -83,8 +83,9 @@ Potvrď tlačítkem **Done**.
 1. Tvoje krabička s tlačítkem se propojí se smartphonem díky appce Blynk. A to je cool. 😎 Stáhni si na mobil **appku Blynk** z App Store, nebo Google Play. Přihlas se do ní, nebo si vytvoř účet.
 2. Vytvoř v appce nový projekt: klikni na **New project**.
 3. Pod “Choose device” vyber hardware **BigClown IoT Kit**.
-4. Potvrď kliknutím na tlačítko Create. Teď se ti na mail odeslal **token** (neboli elektronický klíč) k projektu, pomocí kterého se pak k mobilu připojíš z počítače. Prozatím ještě ale zůstaň v appce. 📱
+4. Potvrď kliknutím na tlačítko Create. Teď se ti na mail odeslal **token** (neboli elektronický klíč) k projektu, pomocí kterého se pak k mobilu připojíš z počítače. Prozatím ještě ale zůstaň v appce. 📱<br/><br/>
 ❓ **Co když mi token nepřišel?** Zkontroluj si složku se spamem. E-mail není ani tu? Pošli si ho znovu. V Blynku na záložce Project settings uvidíš svůj auth token, pod ním je tlačítko **E-Mail**. Klikni na něj a checkni svou schránku ještě jednou. 👋
+
 5. **Klikni** na černou plochu v novém projektu. Tam nastavíš, co se má na mobilu po kliknutí stát.
 6. Z nabídky zvol **Notification**. Upozornění se ti přidá na plochu.
 
@@ -97,7 +98,11 @@ Potvrď tlačítkem **Done**.
 
 1. Vrať se k počítači. Na ploše Node-RED přidej za oba nody **tmavě zelený nod Notify**. Najdeš ho v levé části pod sekcí Blynk ws.
 2. Nod otevři dvojklikem. Vpravo uvidíš **malou tužku**. Klikni na ni a otevře se ti nové okno.
-3. Do pole **URL** zkopíruj Blynk Cloud Server ze spodního okna, tedy ```ws://blynk-cloud.com/websockets```
+3. Do pole **URL** zkopíruj Blynk Cloud Server ze spodního okna, tedy:<br/>
+```
+ws://blynk-cloud.com/websockets
+```
+
 4. Do pole **Auth Token** zkopíruj token, který sis poslal na e-mail.
 
 ![Node-RED Blynk](https://res.cloudinary.com/lukasfabik/image/upload/v1565632592/projects/button-for-mum/image2.png "Node-RED Blynk")

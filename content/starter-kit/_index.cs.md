@@ -6,4 +6,5 @@ meta:
 mainHeading: Příručka k BigClown kitu
 mainParagraph: Krabička, se kterou ovládneš svět
 slug: start
+kit: ["starter-kit"]
 ---

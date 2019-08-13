@@ -14,13 +14,7 @@
           {{ $author := index $.Site.Data.authors .Params.author }}
           <div class="articles__author__image"><img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" /></div>
           <div class="articles__author__title">{{ $author.name }}</div>
-          <div class="ml-auto articles__author__time">
-            {{ if eq .Lang "cs" }}
-              {{ .Date.Day }}. {{ index $.Site.Data.mesice (printf "%d" .Date.Month) }} {{ .Date.Year }}
-            {{ else }}
-              {{ .Date.Format "2 January 2006" }}
-            {{ end }}
-          </div>
+
         </div>
         <!--<div class="button button--tag button--tag--blue button--tag--blue--active articles__button">Indoor</div>-->
       </a>

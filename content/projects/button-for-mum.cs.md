@@ -38,7 +38,7 @@ Budeš potřebovat krabičku s **tlačítkem** a **USB dongle**. Proto si vysta�
 
 1. Starter Kit sestav a spáruj. Na Core module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, zjistíš to tady.
 2. V Playgroundu klikni na **záložku Functions**. Tady najdeš programovací plochu [Node-RED]({{< ref "what-is-node-red.cs.md" >}}). Na ní si přednastavíš krabičku, aby dělala všechno, co chceš.
-3. Jde se programovat. 🤞 Na plochu Node-RED postav světle fialovou bublinu, neboli nod. Najdeš ho vlevo jako **Input MQTT**.
+3. Jde se programovat. 🤞 Na plochu Node-RED postav světle fialovou bublinu, neboli nod. Najdeš ho vlevo jako **MQTT** v sekci **Input**.
 
 ![Rozjeď to v Node-RED](https://res.cloudinary.com/lukasfabik/image/upload/v1565632592/projects/button-for-mum/image3.png "Rozjeď to v Node-RED")
 

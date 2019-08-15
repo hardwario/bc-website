@@ -1,0 +1,20 @@
+[for_all_os]
+other = "Versions for all operating systems"
+
+[os]
+other = "Operating system"
+
+[file]
+other = "File"
+
+[download]
+other = "Download"
+
+[download_for_macos]
+other = "Download Playground for MacOS"
+
+[install]
+other = "install"
+
+[no_install]
+other = "without install"

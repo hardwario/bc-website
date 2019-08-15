@@ -1,0 +1,11 @@
+---
+title: Ke stažení
+mainHeading: Ke stažení
+slug: ke-stazeni
+menu: "footer"
+weight: 600
+meta:
+    title: Stáhni si BigClown Playground nebo jiné užitečnosti
+---
+
+**BigClown Playground** je nástroj, díky kterému tě tvoje krabička bude poslouchat na slovo. Na této stránce si můžeš stáhnout vždy aktuální verzi plagroundu pro tvůj počítač s operačním systémem Windows, Linux, Ubuntu nebo Apple MacOS.

@@ -9,6 +9,12 @@
 
     h2{
       counter-reset: project;
+      padding-top: $baseline;
+    }
+
+    .perex{
+      font-size: em(20);
+      line-height: em(24);
     }
 
     ol

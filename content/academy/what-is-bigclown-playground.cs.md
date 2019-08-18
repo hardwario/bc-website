@@ -6,8 +6,8 @@ meta:
     title: Co je to BigClown Playground a kde ho stáhneš
     description: Tvá BigClown krabička dokáže úžasné věci, ale musíš jí povědět, co má dělat. A právě k tomu slouží software BigClown Playground. Mrkni na něj.
 description: Tvá BigClown krabička dokáže úžasné věci, ale musíš jí povědět, co má dělat. A právě k tomu slouží software BigClown Playground. Mrkni na něj.
-image_preview: "/academy/blynk.jpg"
-image_main: "/academy/blynk.jpg"
+image_preview: /upload/what-is-playground.jpg
+image_main: /upload/what-is-playground.jpg
 author: "lukas_fabik"
 ---
 
@@ -22,6 +22,8 @@ Aby tě složená BigClown krabička poslouchala na slovo, musíš si do počít
 * nebo sledovat, co tvá krabička dělá v přehledných grafech a vizualizacích.
 
 ## Takhle to v něm vypadá:
+{{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160726/academy/what-is-playground/image1.png" alt = "BigClown Playground" >}}
+
 A k čemu je těch **šest záložek** vlevo? Pojďme se na ně postupně mrknout.
 
 

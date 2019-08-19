@@ -90,3 +90,12 @@ other = "Industry"
 
 [industry_description]
 other = "Corporate organisations can be difficult to connect with, but when you do, great things can happen."
+
+[promo_heading]
+other = "How to engage kids to learn tech?"
+
+[promo_text]
+other = "Find out how to motivate kids to learn digital skills and how to successfuly implement STEM education."
+
+[promo_button]
+other = "Learn more"

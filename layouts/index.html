@@ -22,7 +22,7 @@
     </div>
   </div>
 </section>
-
+<!--
 <section>
   <div class="kit">
     <div class="container">
@@ -108,12 +108,61 @@
   },function(){
     $(this).attr('src','/_assets/images/starterKit.png');
   })
-</script>
+</script>-->
 
+<section>
+  <div class="getStarterKit bg bg--bubbleswhite">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 ml-auto mr-auto">
+          <h2 class="title text-center">{{ i18n "start_digital_making" | safeHTML }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 col-md-8 ml-auto mr-auto text-center buyStarterKit">
+          <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
+          <div class = "starterPrice">
+            <span class="previousPrice"><strike>{{ i18n "standard_price" }}</strike></span>&nbsp;&nbsp;<span class="currentPrice">{{ i18n "final_price" }}</span><br />
+            <span class="youSave">{{ i18n "save" }} {{ i18n "you_save" }}</span>
+          </div>
+
+
+          {{ if eq $.Site.Language.Lang "en"}}
+            <a href="https://shop.bigclown.com/starter-kit-with-raspberry-pi/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          {{ else }}
+            <a href="https://obchod.bigclown.cz/starter-kit-with-raspberry-pi/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          {{ end }}
+
+
+          <div class = "text">
+
+            {{ if eq $.Site.Language.Lang "en"}}
+                <a href = "{{ .URL }}start">{{ i18n "how_it_works" }}</a>
+            {{ else }}
+                <a href = "{{ .URL }}starter-kit">{{ i18n "how_it_works" }}</a>
+            {{ end }}
+
+
+          </div>
+          <script>
+            $('.starterKitImage').hover(function(){
+              $(this).attr('src','/_assets/images/starterKit-hover.png');
+            },function(){
+              $(this).attr('src','/_assets/images/starterKit.png');
+            })
+          </script>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{{ partial "www/features.html" . }}
 
 {{ partial "education_promo.html" . }}
 
-<section>
+<!--<section>
   <div class="bg bg--gray bg--borderedTop">
     <div class="container">
       <div class="row">
@@ -140,49 +189,7 @@
       </div>
     </div>
   </div>
-</section>
-
-
-<!--<section>
-  <div class="getStarterKit bg bg--bubbleswhite">
-    <div class="container">
-      <div class="row">
-        <div class="col-10 ml-auto mr-auto">
-          <h2 class="title text-center">{{ i18n "start_digital_making" | safeHTML }}</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-10 col-md-8 ml-auto mr-auto text-center buyStarterKit">
-          <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
-          <div class = "starterPrice">
-            <span class="previousPrice"><strike>{{ i18n "standard_price" }}</strike></span>&nbsp;&nbsp;<span class="currentPrice">{{ i18n "final_price" }}</span><br />
-            <span class="youSave">{{ i18n "save" }} {{ i18n "you_save" }}</span>
-          </div>
-
-
-          {{ if eq $.Site.Language.Lang "en"}}
-            <a href="https://shop.bigclown.com/starter-kit-with-raspberry-pi/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
-          {{ else }}
-            <a href="https://obchod.bigclown.cz/starter-kit-with-raspberry-pi/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
-          {{ end }}
-
-
-          <div class = "text">
-            <a href = "{{ .URL }}start">{{ i18n "how_it_works" }}</a>
-          </div>
-          <script>
-            $('.starterKitImage').hover(function(){
-              $(this).attr('src','/_assets/images/starterKit-hover.png');
-            },function(){
-              $(this).attr('src','/_assets/images/starterKit.png');
-            })
-          </script>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>-->
+</section> -->
 
 <!--<section>
   <div class="bg bg--gray bg--bordered skills">
@@ -238,13 +245,11 @@
 </section>-->
 
 
-<!--{{ partial "www/features.html" . }}-->
-
 
 <!--{{ partial "www/partners.html" . }}-->
 
 <!-- partial "www/testimonials.html" .  -->
 
-<!-- partial "www/projects-newest.html" . -->
+{{ partial "www/projects-newest.html" . }}
 
 {{ end }}

@@ -37,7 +37,7 @@ Jak krabičku propojit s Blynkem ti ukážeme na nodu **Notify**, ale neboj, pos
 {{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159867/academy/how-to-connect-blynk/image1.png" alt = "Node-RED setup Blynk" >}}
 
 ## Propoj mobil s krabičkou
-1. Vrať se k počítači. Tmavě zelený nod ve svém programu si rozklikni dvojklikem.
+1. Vrať se k počítači. Tmavě zelený node ve svém programu si rozklikni dvojklikem.
 2. Vpravo uvidíš **malou tužku**. Ťukni na ni a otevře se ti nové okno. Do pole **Auth Token** zkopíruj token, který sis poslal na e-mail. Do pole **URL** zkopíruj Blynk Cloud Server ze spodního okna, tedy
 
 ```

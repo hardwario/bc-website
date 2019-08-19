@@ -45,7 +45,7 @@ A teď ti ukážeme **tři chytré nody**, kterými si dashboard vytuníš:
         {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image8.png" alt = "Node-RED Dashboard chart" >}}
     </div>
     <div class = "col-md-8">
-        <p>Připoj do svého programu nod <strong>Chart</strong> a tvůj dashboard navštíví barevný graf, ve kterém uvidíš postupný vývoj naměřené hodnoty.</p>
+        <p>Připoj do svého programu node <strong>Chart</strong> a tvůj dashboard navštíví barevný graf, ve kterém uvidíš postupný vývoj naměřené hodnoty.</p>
         <p>Určíš si, jak dlouhý časový úsek má graf zobrazovat, a pak už jen měříš teplotu nebo mačkáš tlačítko. Graf ti rád zobrazí hromadu různých statistik – záleží jen na tom, jak si ho nastavíš. 📈</p>
     </div>
 </div>

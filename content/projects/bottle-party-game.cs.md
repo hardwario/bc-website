@@ -116,7 +116,7 @@ Potvrď tlačítkem **Done**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149306/projects/bottle-party-game/image19.png" alt = "BigClown Playground function" >}}
 
-6. Dvojklikem na nod otevřeš jeho nastavení. Do řádku **Label** vyplň jméno nodu a do pole **Function** zkopíruj tenhle kód:
+6. Dvojklikem na node otevřeš jeho nastavení. Do řádku **Label** vyplň jméno nodu a do pole **Function** zkopíruj tenhle kód:
 
 ```
 var contestants = flow.get("numberOfContestants") || 0;

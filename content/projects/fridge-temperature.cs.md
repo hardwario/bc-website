@@ -46,9 +46,9 @@ S tímhle projektem se naučíš **měřit teplotu s IoT**. Postačí ti základ
 
 1. Abys viděl změny teploty, vytvoř si vlastní graf, a to pomocí bublin v Node-RED. Nejdřív v Playgroundu klikni na záložku **Functions**.
 
-2. Na čistou plochu přetáhni světle fialový nod (bublinu) s názvem MQTT. Najdeš ho v sekci Input.
+2. Na čistou plochu přetáhni světle fialový node (bublinu) s názvem MQTT. Najdeš ho v sekci Input.
 
-3. Nod rozklikni dvojklikem. V řádku **Topic** určíš, co chceš, aby barevný ukazatel zobrazoval. Teď to bude teplota. Proto do řádku zkopíruj zprávu s teplotou ze záložky Messages (bez čísla). Nebo klidně použij tuhle:
+3. Node rozklikni dvojklikem. V řádku **Topic** určíš, co chceš, aby barevný ukazatel zobrazoval. Teď to bude teplota. Proto do řádku zkopíruj zprávu s teplotou ze záložky Messages (bez čísla). Nebo klidně použij tuhle:
 
 ```
 node/push-button:0/thermometer/0:1/temperature
@@ -62,7 +62,7 @@ Potvrď tlačítkem **Done**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566155066/projects/fridge-monitoring/image5.png" alt = "Node-RED chart settings in BigClown Playground" >}}
 
-5. Na nod Chart dvakrát klikni. V řádku **X-axis** nastavíš, za jakou dobu data v grafu uvidíš. Napiš sem, kolik potřebuješ, třeba délku celého vyučování.
+5. Na node Chart dvakrát klikni. V řádku **X-axis** nastavíš, za jakou dobu data v grafu uvidíš. Napiš sem, kolik potřebuješ, třeba délku celého vyučování.
 V řádku Label svůj graf libovolně pojmenuj.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566155066/projects/fridge-monitoring/image1.png" alt = "Chart in BigClown Playground" >}}

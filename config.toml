@@ -6,7 +6,7 @@ pygmentsUseClasses = true
 [params]
   menuNames = ["main","doc"]
   homeURL = "/"
-  shopURL = "https://shop.bigclown.com/?currency=EUR"
+  shopURL = "https://shop.bigclown.com/"
   productionURL = "https://www.bigclown.com"
 
 [languages]
@@ -15,7 +15,7 @@ pygmentsUseClasses = true
     weight = 1
     [languages.en.params]
       baseURL = "/"
-      shopURL = "https://shop.bigclown.com/?currency=EUR"
+      shopURL = "https://shop.bigclown.com/"
   [languages.cs]
     LanguageName = "CZE"
     weight = 2

@@ -46,7 +46,7 @@ Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Vystačíš
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566155396/projects/im-ok-button/image4.png" alt = "MQTT input node" >}}
 
-4. Uvnitř nodu nastavíš klíčovou funkci – a tou je stisknutí tlačítka. Na nod dvakrát klikni a **do pole Topic zkopíruj tenhle řádek**:
+4. Uvnitř nodu nastavíš klíčovou funkci – a tou je stisknutí tlačítka. Na node dvakrát klikni a **do pole Topic zkopíruj tenhle řádek**:
 
 ```
 node/push-button:0/push-button/-/event-count
@@ -61,11 +61,11 @@ Potvrď pomocí tlačítka **Done**.
 
 ## Nastav svoji zprávu
 
-1. Zprávu si nastavíš taky tady v Node-RED. Kamkoli vedle světle fialového inputu MQTT přetáhni **žlutý nod ze sekce Functions s názvem Change**.
+1. Zprávu si nastavíš taky tady v Node-RED. Kamkoli vedle světle fialového inputu MQTT přetáhni **žlutý node ze sekce Functions s názvem Change**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566155397/projects/im-ok-button/image7.png" alt = "Change Node BigClown Playground" >}}
 
-2. Na nod dvakrát klikni a do pole **Rules** (pravidla) napiš svou zprávu pro rodiče. Jenom pozor, na Blynku se nezobrazují háčky a čárky. Malá inspirace:
+2. Na node dvakrát klikni a do pole **Rules** (pravidla) napiš svou zprávu pro rodiče. Jenom pozor, na Blynku se nezobrazují háčky a čárky. Malá inspirace:
 	- *Klidek. Jsem doma a v bezpeci.*
 	- *Mame doma celebritu… Delam si srandu. To jsem ja.*
 	- *Pokousali me psi, uneslo me UFO, ale uz jsem doma.*
@@ -90,9 +90,9 @@ Potvrď tlačítkem **Done** a oba nody propoj táhnutím myší od jedné bubli
 
 ## Propoj mobil s krabičkou
 
-1. Vrať se k počítači. Na ploše Node-RED přidej za oba nody **tmavě zelený nod Notify**. Najdeš ho v levé části v sekci Blynk ws.
+1. Vrať se k počítači. Na ploše Node-RED přidej za oba nody **tmavě zelený node Notify**. Najdeš ho v levé části v sekci Blynk ws.
 
-2. Nod otevři dvojklikem. Vpravo uvidíš **malou tužku**. Klikni na ni a otevře se ti nové okno. Do pole **Auth Token** zkopíruj token, který sis poslal na e-mail. Do pole **URL** zkopíruj Blynk Cloud Server ze spodního okna, tedy ```ws://blynk-cloud.com/websockets```
+2. Node otevři dvojklikem. Vpravo uvidíš **malou tužku**. Klikni na ni a otevře se ti nové okno. Do pole **Auth Token** zkopíruj token, který sis poslal na e-mail. Do pole **URL** zkopíruj Blynk Cloud Server ze spodního okna, tedy ```ws://blynk-cloud.com/websockets```
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566155397/projects/im-ok-button/image3.png" alt = "Blynk Settings" >}}
 

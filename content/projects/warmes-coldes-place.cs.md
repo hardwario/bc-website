@@ -48,7 +48,7 @@ Tahle hra je o vítězství. Kdo najde nejchladnější nebo nejteplejší míst
 
 1. Pro záznam nejnižší nebo nejvyšší teploty si nastav vlastní ukazatel. Začni v počítači s pomocí bublin v Node-RED. Nejdřív v Playgroundu klikni na záložku **Functions**.
 
-2. Na čistou plochu polož světle fialový nod (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
+2. Na čistou plochu polož světle fialový node (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
 
 3. Node rozklikni dvojklikem. V řádku **Topic** určíš, co chceš, aby barevný ukazatel zobrazoval. Teď to bude teplota. Proto do řádku zkopíruj zprávu s teplotou ze záložky Messages (bez čísla). Nebo klidně použij tuhle:
 
@@ -100,7 +100,7 @@ Do řádku níž napiš vedle textu **/pin/** jednotku, která se ti po naměře
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566156993/projects/wormest-coldest-place/image5.png" alt = "Node-RED Blynk write" >}}
 
-2. Nod otevři dvojklikem. Vpravo uvidíš **malou tužku**. Klikni na ni a otevře se ti nové okno. Do pole **Auth Token**** zkopíruj token, který sis poslal na e-mail. Do pole **URL** zkopíruj Blynk Cloud Server ze spodního okna, tedy ```ws://blynk-cloud.com/websockets```
+2. Node otevři dvojklikem. Vpravo uvidíš **malou tužku**. Klikni na ni a otevře se ti nové okno. Do pole **Auth Token**** zkopíruj token, který sis poslal na e-mail. Do pole **URL** zkopíruj Blynk Cloud Server ze spodního okna, tedy ```ws://blynk-cloud.com/websockets```
 
 Nastavení potvrď tlačítem **Add**. Z nodu ale ještě neodcházej. 👈
 

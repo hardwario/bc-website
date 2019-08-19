@@ -46,9 +46,9 @@ S tímhle projektem se naučíš **měřit teplotu s IoT**. Postačí ti základ
 
 1. Messages jsou pro tebe možná málo. ✌️ Nastav si rovnou svůj vlastní barevný ukazatel teploty, a to pomocí bublin v Node-RED. Nejdřív v Playgroundu klikni na záložku **Functions**.
 
-2. Na čistou plochu polož světle fialový nod (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
+2. Na čistou plochu polož světle fialový node (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
 
-3. Nod rozklikni dvojklikem. V řádku **Topic** určíš, co chceš, aby barevný ukazatel zobrazoval. Teď to bude teplota. Proto do řádku zkopíruj zprávu s teplotou ze záložky Messages (bez čísla). Nebo klidně použij tuhle:
+3. Node rozklikni dvojklikem. V řádku **Topic** určíš, co chceš, aby barevný ukazatel zobrazoval. Teď to bude teplota. Proto do řádku zkopíruj zprávu s teplotou ze záložky Messages (bez čísla). Nebo klidně použij tuhle:
 ```
 node/push-button:0/thermometer/0:1/temperature
 ```
@@ -61,7 +61,7 @@ Potvrď tlačítkem **Done**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566154530/projects/dragon-fire/image1.png" alt = "Dashboard Gauge chart" >}}
 
-5. Na nod Gauge dvakrát klikni. V řádku **Type** si nastavíš, jak se bude graf zobrazovat (nejlepší bude Gauge). V řádku **Range** upravíš minimální a maximální hodnotu ukazatele (zkus 0 a 50).
+5. Na node Gauge dvakrát klikni. V řádku **Type** si nastavíš, jak se bude graf zobrazovat (nejlepší bude Gauge). V řádku **Range** upravíš minimální a maximální hodnotu ukazatele (zkus 0 a 50).
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566154530/projects/dragon-fire/image2.png" alt = "Gauge range settings Node-RED" >}}
 

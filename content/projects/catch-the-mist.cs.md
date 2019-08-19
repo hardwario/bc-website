@@ -65,7 +65,7 @@ Potvrď tlačítkem **Done**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566154098/projects/catch-the-mist/image7.png" alt = "Node-RED function" >}}
 
-4. ...a pak na tenhle nod dvakrát ťukni. **Do pole Function zkopíruj tenhle kód**, který bude počítat, kolikrát se lednice otevřela:
+4. ...a pak na tenhle node dvakrát ťukni. **Do pole Function zkopíruj tenhle kód**, který bude počítat, kolikrát se lednice otevřela:
 ```
 var count = flow.get("count") || 0;
 count++;

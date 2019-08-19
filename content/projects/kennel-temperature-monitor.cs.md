@@ -46,9 +46,9 @@ S tímhle projektem se naučíš **měřit teplotu s IoT a zobrazit ji na grafu*
 
 1. Programování začni v Node-RED. Nejdřív v Playgroundu klikni na záložku **Functions**.
 
-2. Na čistou plochu přetáhni světle fialový nod (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
+2. Na čistou plochu přetáhni světle fialový node (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
 
-3. Nod rozklikni dvojklikem. V řádku **Topic** určíš, co chceš, aby barevný ukazatel zobrazoval. Teď to bude teplota. Proto do řádku zkopíruj zprávu s teplotou ze záložky Messages (bez čísla). Nebo klidně použij tuhle:
+3. Node rozklikni dvojklikem. V řádku **Topic** určíš, co chceš, aby barevný ukazatel zobrazoval. Teď to bude teplota. Proto do řádku zkopíruj zprávu s teplotou ze záložky Messages (bez čísla). Nebo klidně použij tuhle:
 
 ```
 node/push-button:0/thermometer/0:1/temperature
@@ -62,7 +62,7 @@ Potvrď tlačítkem **Done**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566156149/projects/kennel-temperature-monitor/image4.png" alt = "Node-RED dashboard chart" >}}
 
-5. Na nod Chart dvakrát klikni. V řádku **X-axis** si nastavíš, za jak dlouhou dobu bude graf teplotu ukazovat. Nastav, kolik potřebuješ.
+5. Na node Chart dvakrát klikni. V řádku **X-axis** si nastavíš, za jak dlouhou dobu bude graf teplotu ukazovat. Nastav, kolik potřebuješ.
 Na řádku **Label** si graf libovolně přejmenuj.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566156149/projects/kennel-temperature-monitor/image3.png" alt = "Chart settings" >}}

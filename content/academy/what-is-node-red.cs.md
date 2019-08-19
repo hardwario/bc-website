@@ -34,13 +34,52 @@ A to je vše, co k programování v Node-RED potřebuješ vědět. Být program�
 
 ### Nody, které pro svůj vynález stopro využiješ
 
-|        |        |
-| ------------- |-------------|
-| {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image7.png" alt = "MQTT node - Node-RED" >}}    | MQTT je startovní čára každého programu. Nastavíš si, na co má reagovat (stisknutí tlačítka na krabičce, změnu teploty nebo otočení krabičky), a až k tomu dojde, aktivují se všechny nody, které jsou na MQTT napojené. |
-| {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image3.png" alt = "Change node - Node-RED" >}}      | Change si zkus představit jako šatnu. Program přes něj projde a převleče se do něčeho jiného. Například do textové hlášky. Tu potom odešle do dalších nodů, které na něj navazují a dál ho zpracují, třeba ho pošlou na mobil nebo nahlas přečtou.     |
-| {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159446/academy/what-is-node-red/image2.png" alt = "Notify Blynk node - Node-RED" >}} | Node Notify má jasnou misi – odeslat notifikaci do mobilu. Ta se ti zobrazí v aplikaci Blynk. |
-| {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image1.png" alt = "Chart node - Node-RED" >}} | Když do svého programu napojíš node Chart, uvidíš v záložce Dashboard krásně přehledné grafy různých funkcích krabičky – třeba o tom, jak se měnila okolní teplota nebo kolikrát jsi stiskl tlačítko. |
-| {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image6.png" alt = "Audio Out node - Node-RED" >}} | S nodem Audio out si užiješ spoustu srandy – přikazuje totiž, že má tvůj počítač vydat nějaký zvuk. Například když ho napojíš na node change, do kterého napíšeš nějakou zprávu, tvůj počítač ji nahlas přečte. Ale žádné sprosťárny! 😎 |
+<div class = "row align-items-start">
+    <div class = "col-md-4">
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image7.png" alt = "MQTT node - Node-RED" >}}
+    </div>
+    <div class = "col-md-8">
+        <p>MQTT je startovní čára každého programu. Nastavíš si, na co má reagovat (stisknutí tlačítka na krabičce, změnu teploty nebo otočení krabičky), a až k tomu dojde, aktivují se všechny nody, které jsou na MQTT napojené.</p>
+    </div>
+</div>
+
+<div class = "row align-items-start">
+    <div class = "col-md-4">
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image3.png" alt = "Change node - Node-RED" >}}
+    </div>
+    <div class = "col-md-8">
+        <p>Change si zkus představit jako šatnu. Program přes něj projde a převleče se do něčeho jiného. Například do textové hlášky. Tu potom odešle do dalších nodů, které na něj navazují a dál ho zpracují, třeba ho pošlou na mobil nebo nahlas přečtou.</p>
+    </div>
+</div>
+
+<div class = "row align-items-start">
+    <div class = "col-md-4">
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159446/academy/what-is-node-red/image2.png" alt = "Notify Blynk node - Node-RED" >}}
+    </div>
+    <div class = "col-md-8">
+        <p>Node Notify má jasnou misi – odeslat notifikaci do mobilu. Ta se ti zobrazí v aplikaci Blynk.</p>
+    </div>
+</div>
+
+<div class = "row align-items-start">
+    <div class = "col-md-4">
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image1.png" alt = "Chart node - Node-RED" >}}
+    </div>
+    <div class = "col-md-8">
+        <p>Když do svého programu napojíš node Chart, uvidíš v záložce Dashboard krásně přehledné grafy různých funkcích krabičky – třeba o tom, jak se měnila okolní teplota nebo kolikrát jsi stiskl tlačítko.</p>
+    </div>
+</div>
+
+<div class = "row align-items-start">
+    <div class = "col-md-4">
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image6.png" alt = "Audio Out node - Node-RED" >}}
+    </div>
+    <div class = "col-md-8">
+        <p>S nodem Audio out si užiješ spoustu srandy – přikazuje totiž, že má tvůj počítač vydat nějaký zvuk. Například když ho napojíš na node change, do kterého napíšeš nějakou zprávu, tvůj počítač ji nahlas přečte. Ale žádné sprosťárny! 😎</p>
+    </div>
+</div>
+
+
 
 A když už teď víš, o co go, naprogramuj si svůj vlastní projekt! Připravili jsme ti ranec mazaných vynálezů pro inspiraci.
 Koukni na ně

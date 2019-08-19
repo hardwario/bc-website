@@ -2,8 +2,7 @@
 title: Ke stažení
 mainHeading: Ke stažení
 slug: ke-stazeni
-menu: "footer"
-weight: 600
+menu: "support"
 meta:
     title: Stáhni si BigClown Playground nebo jiné užitečnosti
 ---

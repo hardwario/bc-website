@@ -5,7 +5,7 @@ meta:
     description: Návod na to, jak si ze Starter Kitu od BigClown vytvoříš IoT tlačítko, se kterým tě rodiče zavolají k večeři, když zrovna paříš.
 slug: tlacitko-pro-rodice
 draft: false
-date: 2019-08-12
+date: 2019-08-19
 description: Návod na to, jak si ze Starter Kitu od BigClown vytvoříš IoT tlačítko, se kterým tě rodiče zavolají k večeři, když zrovna paříš.
 tags:
   - Starter Project

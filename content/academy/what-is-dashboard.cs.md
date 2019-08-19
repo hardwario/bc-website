@@ -25,10 +25,10 @@ Podobu dashboardu ovlivníš pomocí nodů, které najdeš v levém menu v zálo
 
 A teď ti ukážeme **tři chytré nody**, kterými si dashboard vytuníš:
 
-<div class = "row">
+<div class = "row align-items-start">
     <div class = "col-md-4">
-        {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image2.png" alt = "Node-RED Dashboard gauge" >}}
-        {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image4.png" alt = "Node-RED Dashboard gauge" >}}
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image2.png" alt = "Node-RED Dashboard gauge" >}}
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image4.png" alt = "Node-RED Dashboard gauge" >}}
     </div>
     <div class = "col-md-8">
         <p>Díky nodu <strong>Gauge</strong> se ti v dashboardu objeví „budík” podobný tomu, který najdeš třeba v autě pro měření rychlosti. 🏎️</p>
@@ -37,12 +37,10 @@ A teď ti ukážeme **tři chytré nody**, kterými si dashboard vytuníš:
     </div>
 </div>
 
-<hr/>
-
-<div class = "row">
+<div class = "row content-justify-center">
     <div class = "col-md-4">
-        {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image5.png" alt = "Node-RED Dashboard chart" >}}
-        {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image8.png" alt = "Node-RED Dashboard chart" >}}
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image5.png" alt = "Node-RED Dashboard chart" >}}
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image8.png" alt = "Node-RED Dashboard chart" >}}
     </div>
     <div class = "col-md-8">
         <p>Připoj do svého programu node <strong>Chart</strong> a tvůj dashboard navštíví barevný graf, ve kterém uvidíš postupný vývoj naměřené hodnoty.</p>
@@ -50,12 +48,10 @@ A teď ti ukážeme **tři chytré nody**, kterými si dashboard vytuníš:
     </div>
 </div>
 
-<hr/>
-
 <div class = "row">
     <div class = "col-md-4">
-        {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image7.png" alt = "Node-RED Dashboard notification" >}}
-        {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image3.png" alt = "Node-RED Dashboard notification" >}}
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image7.png" alt = "Node-RED Dashboard notification" >}}
+        {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image3.png" alt = "Node-RED Dashboard notification" >}}
     </div>
     <div class = "col-md-8">
         <p>Do dashboardu ti můžou chodit také různá upozornění. Když svůj projekt propojíš s nodem <strong>Notification</strong>, uvidíš žhavé novinky ohledně dění ve tvé krabičce.</p>

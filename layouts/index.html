@@ -250,6 +250,13 @@
 
 <!-- partial "www/testimonials.html" .  -->
 
-{{ partial "www/projects-newest.html" . }}
+{{ if eq $.Site.Language.Lang "en"}}
+    {{ partial "www/projects-newest.html" . }}
+{{ else }}
+    {{ partial "www/projects-starter.html" . }}
+{{ end }}
+
+
+
 
 {{ end }}

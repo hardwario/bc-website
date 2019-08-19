@@ -2,8 +2,7 @@
 title: Download
 mainHeading: Download
 slug: download
-menu: "footer"
-weight: 700
+menu: "support"
 meta:
     title: Download BigClown Playground
 ---

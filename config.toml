@@ -4,7 +4,7 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  menuNames = ["main","doc"]
+  menuNames = ["main","doc","support"]
   homeURL = "/"
   shopURL = "https://shop.bigclown.com/"
   productionURL = "https://www.bigclown.com"

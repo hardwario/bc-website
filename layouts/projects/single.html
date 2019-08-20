@@ -45,7 +45,7 @@
         $('#TableOfContents').addClass('nav nav-pills');
         $('#TableOfContents ul').addClass('nav nav-pills');
         $('#TableOfContents a').addClass('nav-link');
-        $('body').scrollspy({ target: '#TableOfContents', offset: 120 });
+        $('body').scrollspy({ target: '#TableOfContents', offset: 200 });
         $('#TableOfContents ul:first-child li:first-child ul:first-child li:first-child a:first-child').addClass('active');
       </script>
       <div class="col-12 col-xl-8">
@@ -129,6 +129,32 @@
 {{ end }}
 
 {{ define "additional-scripts" }}
+
+<script>
+
+  var nodiac = { 'á': 'a', 'č': 'c', 'ď': 'd', 'é': 'e', 'ě': 'e', 'í': 'i', 'ň': 'n', 'ó': 'o', 'ř': 'r', 'š': 's', 'ť': 't', 'ú': 'u', 'ů': 'u', 'ý': 'y', 'ž': 'z' };
+
+  function make_url(s) {
+      s = s.toLowerCase();
+      var s2 = '';
+      for (var i=0; i < s.length; i++) {
+          s2 += (typeof nodiac[s.charAt(i)] != 'undefined' ? nodiac[s.charAt(i)] : s.charAt(i));
+      }
+      return s2.replace(/[^a-z0-9_]+/g, '-').replace(/^-|-$/g, '');
+  }
+
+  $(document).ready(function(){
+    $('#TableOfContents li a').each(function(){
+      var href = make_url($(this).attr("href"));
+      $(this).attr("href","#" + href);
+    });
+
+    $('.project__detail h2').each(function(){
+      var id = make_url($(this).attr("id"));
+      $(this).attr("id",id);
+    });
+  });
+</script>
 
 <script>
   $(document).ready(function(){

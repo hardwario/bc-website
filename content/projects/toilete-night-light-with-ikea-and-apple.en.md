@@ -10,14 +10,8 @@ image_preview: /projects/toilete-night-light-with-ikea-and-apple/preview.jpg
 image_main: /projects/toilete-night-light-with-ikea-and-apple/preview.jpg
 author: "lukas_fabik"
 modules: ["core","mini_battery","pir","enclosures-101"]
-
+draft: true
 ---
-
-## Introduction
-- co je cílem
-- co se naučíme
-- co předpokládáme, že máte (bigclown hub = návod, jak udělat hub, připojený homekity = návod jak připojit homekit s hubem)
-- pokud nemáš homekit, tady je návod, jak to udělat s Blynkem...
 
 ## What you need
 For this project you should have prepared BigClown Hub and also IKEA TRÅDFRI gateway connected with you Apple device with at least one bulb. To build your motion detector you will need this modules:

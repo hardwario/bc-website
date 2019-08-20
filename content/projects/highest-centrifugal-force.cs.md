@@ -14,6 +14,9 @@ devices:
 idea: false
 image_preview: /upload/project_placeholder.jpg
 author: lukas_fabik
+modules: ["core","button","mini_battery","usb_dongle"]
+handbook:
+
 ---
 ## Úvod
 

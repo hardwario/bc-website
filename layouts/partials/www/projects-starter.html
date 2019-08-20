@@ -1,0 +1,21 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="title title--withoutsubtitle text-center">{{ i18n "starter_projects" }}</h2>
+        <div class="articles">
+                            <div class="row">
+                              {{ range where .Site.Pages ".Params.handbook" "starter-kit" }}
+                                <div  class="col-12 col-md-6 col-lg-4">
+                                    {{ .Render "grid" }}
+                                </div>
+                                {{ end }}
+                            </div>
+                            <div class="text-center">
+                                <a href="{{ "projects/" | absLangURL }}" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>
+                            </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -24,3 +24,6 @@ other = "Podporováno"
 
 [supported_extended]
 other = "Tento projekt je podporován"
+
+[starter_projects]
+other = "Začít můžeš s těmito projekty"

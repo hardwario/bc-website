@@ -5,8 +5,6 @@ meta:
 mainHeading: 5 Jednoduchých kroků,<br /> jak se začít&nbsp;učit&nbsp;digitální dovednosti
 mainParagraph: Naučíte se jak sestavit hardware, připojit jej bezdrátově k svému počítači a nastavit notifikace pro chytrý telefon.
 slug: start
-menu: "main"
-weight: 50
 ---
 
 {{< p-step >}}

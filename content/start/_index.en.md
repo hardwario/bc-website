@@ -5,8 +5,6 @@ meta:
 mainHeading: 5 Steps to Start Learning Digital&nbsp;Skills
 mainParagraph: Build hardware, connect it wirelessly to your computer<br />and set up notifications for&nbsp;the&nbsp;smartphone.<br /><strong>Let's go...</strong>
 slug: start
-menu: "main"
-weight: 50
 ---
 
 {{< p-step >}}

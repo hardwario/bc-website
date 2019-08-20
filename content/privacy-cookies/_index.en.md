@@ -1,6 +1,7 @@
 ---
 title: Cookies & Privacy
 menu: ["footer"]
+mainHeading: Cookies & Privacy
 ---
 
 The webmaster of this web site is Hardwario s.r.o. The company is registered in the Commercial Register, maintained by the Regional Court in Usti nad Labem, Section C, File 37399. Furthermore, the "operator" or "we" "administrator".

@@ -1,0 +1,20 @@
+[for_all_os]
+other = "Verze pro všechny operační systémy"
+
+[os]
+other = "Operační systém"
+
+[file]
+other = "Soubor"
+
+[download]
+other = "Stáhnout"
+
+[download_for_macos]
+other = "Stáhnout Playground pro MacOS"
+
+[install]
+other = "s instalací"
+
+[no_install]
+other = "bez instalace"

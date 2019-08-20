@@ -1,7 +1,7 @@
 ---
 title: Domů
 url: /
-menu: ["main", "footer"]
+menu: ["main"]
 weight: 1
 meta:
     title: Nauč se digitální dovednosti na reálných projektech

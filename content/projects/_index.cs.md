@@ -1,5 +1,7 @@
 ---
-title: Projects
-mainHeading: Najděte ten správný projekt
+title: Projekty
+mainHeading: Najdi ten správný projekt
 slug: projects
+menu: ["main","footer"]
+weight: 20
 ---

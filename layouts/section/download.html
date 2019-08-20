@@ -1,0 +1,119 @@
+{{ define "main" }}
+
+{{ partial "www/heading.html" (dict "heading" .Params.mainHeading) }}
+
+<section>
+  <div class="bg bg--bordered">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="row justify-content-center pb-5 mb-5">
+            <div class="col-12 col-md-8">
+              <div class="text text--perex text-center">
+                {{ .Content }}
+              </div>
+            </div>
+            <div class="col-12 col-md-8 text-center">
+              {{ partial "playground.html" }}
+              <div class = "text">
+                <a class = "show-all" href = "#">{{ i18n "for_all_os" }}</a>
+              </div>
+                <table id = "pg-download-table" class="table text-left align-middle mt-4">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>{{ i18n "os" }}</th>
+                      <th>{{ i18n "file" }}</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+
+                </table>
+
+
+                <script>
+                function reqListener () {
+                //console.log(this.responseText);
+
+                if (this.readyState == 4 && this.status == 200) {
+                  json = JSON.parse(this.responseText)
+
+                  var box = document.getElementById("pg-download-table");
+                  var count = 0;
+                  json.assets.forEach(el => {
+                    var tr = document.createElement("tr");
+                    var desc = document.createElement("td");
+                    var name = document.createElement("td");
+                    name.style.fontWeight = "bold";
+                    var link = document.createElement("td");
+                    var a = document.createElement("a");
+                    a.classList.add("button");
+                    a.classList.add("button--gray");
+                    a.classList.add("button--gray--smaller");
+
+                    desc.innerText = el.name;
+                    a.href = el.browser_download_url;
+                    a.innerText = {{ i18n "download" }};
+
+                    if(el.name.indexOf("win") != -1)
+                    {
+                      if(el.name.indexOf("64bit") != -1 )
+                      {
+                        name.innerText = "Windows 64bit";
+                      }
+                      else if(el.name.indexOf("32bit") != -1)
+                      {
+                        name.innerText = "Windows 32bit";
+                      }
+                    }
+
+                    if(el.name.indexOf("linux") != -1)
+                    {
+                      name.innerText = "Linux";
+                    }
+
+                    if(el.name.indexOf("ubuntu") != -1)
+                    {
+                      name.innerText = "Ubuntu";
+                    }
+
+                    if(el.name.indexOf("mac") != -1)
+                    {
+                      name.innerText = "Apple MacOS";
+                    }
+
+                    link.appendChild(a);
+                    tr.appendChild(name);
+                    tr.appendChild(desc);
+                    tr.appendChild(link);
+                    box.appendChild(tr);
+                  });
+
+                }
+                }
+
+                var oReq = new XMLHttpRequest();
+                oReq.addEventListener("load", reqListener);
+                oReq.open("GET", "https://api.github.com/repos/bigclownlabs/bch-playground/releases/latest", true);
+                oReq.send();
+
+                $(document).ready(function(){
+                  $('#pg-download-table').hide();
+                });
+                $('.show-all').click(function(){
+                  $('#pg-download-table').show();
+                  $(this).hide();
+                });
+
+                </script>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

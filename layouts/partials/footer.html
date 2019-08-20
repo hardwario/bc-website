@@ -38,6 +38,9 @@
                     <div class="footer__title">{{ i18n "support" }}</div>
                     <div class="footer__text">
                       <ul>
+                        {{ range .Site.Menus.support }}
+                          <li><a href="{{ .URL }}" target = "{{ .Post }}">{{ .Name }}</a></li>
+                        {{ end }}
                         <li><a href="https://developers.bigclown.com" target="_blank">{{ i18n "documentation" }}</a></li>
                         <li><a href="https://forum.bigclown.com" target="_blank">{{ i18n "forum" }}</a></li>
                         <li><a href="https://github.com/bigclownlabs" target="_blank">GitHub</a></li>

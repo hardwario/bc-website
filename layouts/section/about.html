@@ -1,0 +1,105 @@
+{{ define "main" }}
+
+{{ partial "www/heading.html" (dict "heading" .Params.mainHeading) }}
+
+<section>
+  <div class="getStarterKit bg bg--bubbleswhite">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 ml-auto mr-auto">
+          <h2 class="title text-center">{{ i18n "start_digital_making" | safeHTML }}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 col-md-8 ml-auto mr-auto text-center buyStarterKit">
+          <img src = "/_assets/images/starterKit.png" class = "starterKitImage" />
+          <div class = "starterPrice">
+            <span class="previousPrice"><strike>{{ i18n "standard_price" }}</strike></span>&nbsp;&nbsp;<span class="currentPrice">{{ i18n "final_price" }}</span><br />
+            <span class="youSave">{{ i18n "save" }} {{ i18n "you_save" }}</span>
+          </div>
+
+
+          {{ if eq $.Site.Language.Lang "en"}}
+            <a href="https://shop.bigclown.com/starter-kit-with-raspberry-pi/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          {{ else }}
+            <a href="https://obchod.bigclown.cz/starter-kit-with-raspberry-pi/" class="button button--fullred ">{{ i18n "buy_starter_kit" }}</a>
+          {{ end }}
+
+
+          <div class = "text">
+            <a href = "{{ .URL }}start">{{ i18n "how_it_works" }}</a>
+          </div>
+          <script>
+            $('.starterKitImage').hover(function(){
+              $(this).attr('src','/_assets/images/starterKit-hover.png');
+            },function(){
+              $(this).attr('src','/_assets/images/starterKit.png');
+            })
+          </script>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg bg--gray bg--bordered skills">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-10 ml-auto mr-auto">
+          <h2 class="title text-center">{{ i18n "skills" | safeHTML }}</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class = "col-12 col-lg-10">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--10"></div>
+                <h2>{{ i18n "electronics" }}</h2>
+                <p>{{ i18n "electronics_text" | safeHTML }}</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--11"></div>
+                <h2>{{ i18n "programming" }}</h2>
+                <p>{{ i18n "programming_text" | safeHTML }}</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--12"></div>
+                <h2>{{ i18n "3dprinting" }}</h2>
+                <p>{{ i18n "3dprinting_text" | safeHTML }}</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--13"></div>
+                <h2>{{ i18n "iot" }}</h2>
+                <p>{{ i18n "iot_text" | safeHTML }}</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class = "skills__item ">
+                <div class="features__icon features__icon--14"></div>
+                <h2>{{ i18n "bigdata" }}</h2>
+                <p>{{ i18n "bigdata_text" | safeHTML }}</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "www/features.html" . }}
+
+{{ partial "www/testimonial.html" . }}
+
+{{ partial "www/partners.html" . }}
+
+{{ end }}

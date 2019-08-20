@@ -1,5 +1,5 @@
 [show_all_projects]
-other = "Ukažte všechny projekty"
+other = "Ukažte další projekty"
 
 [learn_from_other]
 other = "Inspirujte se od ostatních mejkrů a jejich projektů"
@@ -27,3 +27,6 @@ other = "Tento projekt je podporován"
 
 [starter_projects]
 other = "Začít můžeš s těmito projekty"
+
+[table_of_contents]
+other = "Obsah"

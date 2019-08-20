@@ -1,7 +1,7 @@
 ---
 title: Push Button Kit
 id: basic
-description: Kontrolujte své prostředí!
+description: Kontroluj své prostředí!
 isBasic: false
 isPremium: false
 isUltimate: true
@@ -33,4 +33,4 @@ techSpecs:
         text: "2 roky při standardním použití"
 ---
 
-Co je tak skvělého na Push Button Kitu? Tlačítko. Je to jednoduché zařízení, ale má nekonečně mnoho využití. Můžete na dálku ovládat jakékoli domácí zařízení, aktivovat módy nastavení domácnosti nebo ovládat garážová vrata.
+Co je tak skvělého na Push Button Kitu? Tlačítko. Je to jednoduché zařízení, ale má nekonečně mnoho využití. Můžeš na dálku ovládat jakékoli domácí zařízení, aktivovat módy nastavení domácnosti nebo ovládat garážová vrata.

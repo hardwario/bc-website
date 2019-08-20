@@ -1,7 +1,7 @@
 ---
 title: Climate Monitor Kit
 id: basic
-description: Sledujte svůj teplotní komfort!
+description: Sleduj svůj teplotní komfort!
 isBasic: true
 isPremium: true
 isUltimate: true
@@ -33,4 +33,4 @@ techSpecs:
         text: "2 roky při standardním použití"
 ---
 
-Tento kit je náš nejpopulárnější. Umožní vám monitorovat několik důležitých veličin v okolí - teplotu, vlhkost, atmosférický tlak a intenzitu světla. Na základě naměřených dat můžete kontrolovat svou teplotní pohodu - subjektivní stav mysli, který vyjadřuje spokojenost s&nbsp;pokojovou teplotou.
+Tento kit je náš nejpopulárnější. Umožní ti monitorovat několik důležitých veličin v okolí - teplotu, vlhkost, atmosférický tlak a intenzitu světla. Na základě naměřených dat můžeš kontrolovat svou teplotní pohodu - subjektivní stav mysli, který vyjadřuje spokojenost s&nbsp;pokojovou teplotou.

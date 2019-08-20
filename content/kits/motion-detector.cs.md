@@ -33,4 +33,4 @@ techSpecs:
         text: "2 roky při standardním použití"
 ---
 
-Míváte sen o svém vlastním poplachovém alarmu? S tímto kitem se vám sen splní. Motion Detector Kit obsahuje PIR Module, který díky čtyřem senzorům citlivým na IR záření a použití všesměrové optiky spolehlivě pokryje i větší pokoj u vás doma.
+Míváš sen o svém vlastním poplachovém alarmu? S tímto kitem se ti sen splní. Motion Detector Kit obsahuje PIR Module, který díky čtyřem senzorům citlivým na IR záření a použití všesměrové optiky spolehlivě pokryje i větší pokoj u tebe doma.

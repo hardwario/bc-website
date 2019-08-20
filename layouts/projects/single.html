@@ -10,7 +10,7 @@
 
 <section>
 <div class="bg bg--gray">
-  <span class = "tableofcontent__toggle"><span class="glyphicon glyphicon-menu-hamburger"></span> Table of Contents</span>
+  <span class = "tableofcontent__toggle"><span class="glyphicon glyphicon-menu-hamburger"></span> {{ i18n "table_of_contents" }}</span>
   <div class="container">
     <div class="row justify-content-center">
       <div class = "col-12 col-xl-4 tableofcontent">
@@ -27,14 +27,14 @@
         </script>
         {{ if ne .Params.idea true }}
         </div>
-          <div class="col-12 justify-content-center d-none d-xl-block">
+          <!--<div class="col-12 justify-content-center d-none d-xl-block">
             <div class="article__author article__author--project d-flex flex-column justify-content-center">
               {{ $author := index $.Site.Data.authors .Params.author }}
               <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
               <strong>{{ $author.name }}</strong>
               <span>{{ $author.email }}</span>
             </div>
-          </div>
+          </div>-->
           <div class="col-12 justify-content-center d-none d-xl-block">
             <div class="addthis_inline_share_toolbox article__soc article__soc--project"></div>
           </div>

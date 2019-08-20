@@ -1,7 +1,7 @@
 ---
 title: Flood Detector Kit
 id: basic
-description: Dejte si pozor na zaplavení vodou!
+description: Dej si pozor na zaplavení vodou!
 isBasic: false
 isPremium: true
 isUltimate: true
@@ -34,4 +34,4 @@ techSpecs:
 
 ---
 
-Stalo se to už skoro každému - vytopená koupelna nebo kuchyň. Někdy vaší vinou, někdy technickým problémem. Ale pokaždé je to trabl. Nyní díky našemu záplaváku máte šanci dozvědět se o vytopení ještě ve chvíli, kdy je čas to zachránit.
+Stalo se to už skoro každému - vytopená koupelna nebo kuchyň. Někdy tvoji vinou, někdy technickým problémem. Ale pokaždé je to trabl. Nyní díky našemu záplaváku máš šanci dozvědět se o vytopení ještě ve chvíli, kdy je čas to zachránit.

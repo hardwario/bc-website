@@ -24,3 +24,6 @@ other = "Inspired by"
 
 [supported_extended]
 other = "This project is supported by"
+
+[table_of_contents]
+other = "Table of Contents"

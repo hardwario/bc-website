@@ -6,7 +6,7 @@
         <div class="articles">
                             <div class="row">
                               {{ range where .Site.Pages ".Params.handbook" "starter-kit" }}
-                                <div  class="col-12 col-md-6 col-lg-4">
+                                <div  class="col-12 col-md-6 col-lg-4 show-item">
                                     {{ .Render "grid" }}
                                 </div>
                                 {{ end }}

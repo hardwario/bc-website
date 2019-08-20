@@ -1,7 +1,7 @@
 ---
 title: CO2 Monitor Kit
 id: basic
-description: Udržte hladinu CO2 pod kontrolou!
+description: Udrž hladinu CO2 pod kontrolou!
 isBasic: false
 isPremium: false
 isUltimate: false
@@ -33,4 +33,4 @@ techSpecs:
         text: "2 roky při standardním použití"
 ---
 
-Oxid uhličitý (CO2) je bezbarvý plyn bez zápachu, který je důležitý pro život na Zemi. Jeho normální koncetrace je okolo 400 ppm (0.04 %). Vysoký obsah CO2 vede k nezdravému prostředí a různým zdravotním potížím. Proto je velmi důležité kontrolovat koncetraci CO2, a to především v místech, kde trávíte většinu svého času - v obýváku, ložnici, kanceláři, ve třídě. A navíc s našim CO2 Monitor Kitem budete měřit nejen hodnotu CO2, ale také teplotu, vlhkost a atmosférický tlak.
+Oxid uhličitý (CO2) je bezbarvý plyn bez zápachu, který je důležitý pro život na Zemi. Jeho normální koncetrace je okolo 400 ppm (0.04 %). Vysoký obsah CO2 vede k nezdravému prostředí a různým zdravotním potížím. Proto je velmi důležité kontrolovat koncetraci CO2, a to především v místech, kde trávíme většinu svého času - v obýváku, ložnici, kanceláři, ve třídě. A navíc s našim CO2 Monitor Kitem budeš měřit nejen hodnotu CO2, ale také teplotu, vlhkost a atmosférický tlak.

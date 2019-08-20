@@ -1,7 +1,7 @@
 ---
 title: LCD Thermostat Kit
 id: basic
-description: Kontrolujte své topení!
+description: Kontroluj své topení!
 isBasic: false
 isPremium: true
 isUltimate: true
@@ -33,4 +33,4 @@ techSpecs:
         text: "2 roky při standardním použití"
 ---
 
-Tento kit je pravděpodobně tím nejžádanějším chytrým zařízením - kontrola topení na dálku. Je to pochopitelné, protože automatické vytápění, regulaci a možnost kontrolovat vytápění na dálku chce skoro každý. A teď si takové zařízení můžete postavit svépomocí!
+Tento kit je pravděpodobně tím nejžádanějším chytrým zařízením - kontrola topení na dálku. Je to pochopitelné, protože automatické vytápění, regulaci a možnost kontrolovat vytápění na dálku chce skoro každý. A teď si takové zařízení můžeš postavit svépomocí!

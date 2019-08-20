@@ -225,7 +225,7 @@
       margin: 0;
     }
 
-    p, ul
+    p
     {
       font-size: em(18);
       padding-bottom: $baseline;
@@ -242,12 +242,14 @@
 
     li
     {
+      font-size: em(18);
       padding-top: 0.1*$baseline;
       padding-bottom: 0.1*$baseline;
 
       p
       {
         padding-bottom: 0;
+        font-size: em(16);
       }
 
       h3

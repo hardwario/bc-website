@@ -7,7 +7,7 @@
         <div class="articles">
           <div class="row">
             {{ range first 3 ($.Site.GetPage "section" "projects").Pages }}
-              <div  class="col-12 col-md-6 col-lg-4">
+              <div  class="col-12 col-md-6 col-lg-4 show-item">
               {{ .Render "grid" }}
               </div>
             {{ end }}

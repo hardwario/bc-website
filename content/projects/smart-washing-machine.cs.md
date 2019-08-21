@@ -41,6 +41,7 @@ Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Proto si vy
 1. Pokud to ještě nemáš, Starter Kit sestav.
 
 2. Na Core Module nahraj nový firmware, a to **bcf-radio-washing-machine-monitor** (najdeš ho mezi ostatním firmwarem v Playgroundu). Díky tomuhle firmwaru bude krabička citlivěji vnímat otřesy pračky. 🔃
+
 **Náš tip:** Nevíš, jak si firmware stáhnout nebo co to je? Zjistíš to tady.
 
 3. Core Module spáruj s USB Donglem. Hned po spárování uvidíš, že tvůj Core Module změnil Alias na **washing-machine-detector**. 👌

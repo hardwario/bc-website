@@ -16,6 +16,7 @@ Bájné místo, kde vznikají nové vynálezy – legendy praví, že se mu ří
 Aby tě složená BigClown krabička poslouchala na slovo, musíš si do počítače nainstalovat program BigClown Playground. V něm si nastavíš, jak má krabička reagovat na stisknutí tlačítka nebo třeba na otočení vzhůru nohama.
 
 **BigClown Playground** je software, se kterým můžeš:
+
 * připojit svou krabičku k počítači,
 * upravovat a nastavovat funkce své krabičky,
 * nahrávat do krabičky firmware (pokud nevíš, co to je, mrkni [sem]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}))
@@ -45,4 +46,4 @@ A k čemu je těch **šest záložek** vlevo? Pojďme se na ně postupně mrknou
 3. Program spusť a… **to je všechno!** 🎉 Teď už jen tvoř zázraky.
 
 Hledáš inspiraci pro tvorbu svých prvních vynálezů?
-[Inspiruj se těmito projekty!](({{< ref "/projects/_index.cs.md" >}}))
+[Inspiruj se těmito projekty!]({{< ref "/projects/_index.cs.md" >}})

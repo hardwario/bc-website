@@ -44,7 +44,7 @@
   <meta property="og:url" content="{{ .URL | absURL }}" />
   <meta property='og:title' content="{{ .Title }} | BigClown Projects">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.images.main }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image_main }}">
 
   {{ else }}
   <title>{{ .Page.Title }} | BigClown</title>
@@ -54,6 +54,25 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/projects.jpg">
   {{ end }}
+
+{{ else if eq .Section "academy" }}
+
+    {{ if .IsPage }}
+    <title>{{ .Page.Title }} | BigClown</title>
+    <meta name="description" content="{{ .Page.Summary }}">
+    <meta property="og:url" content="{{ .URL | absURL }}" />
+    <meta property='og:title' content="{{ .Title }} | BigClown Projects">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image_main }}">
+
+    {{ else }}
+    <title>{{ .Page.Title }} | BigClown</title>
+    <meta name="description" content="{{ .Page.Summary }}">
+    <meta property="og:url" content="{{ .URL | absURL }}" />
+    <meta property='og:title' content="{{ .Title }} | BigClown">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ .Site.BaseURL }}_assets/images/meta/projects.jpg">
+{{ end }}
 
 {{ else if eq .Section "kits" }}
 <title>{{ .Page.Title }} | BigClown</title>

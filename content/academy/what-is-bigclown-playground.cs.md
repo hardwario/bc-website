@@ -9,6 +9,7 @@ description: Tvá BigClown krabička dokáže úžasné věci, ale musíš jí p
 image_preview: /upload/what-is-playground.jpg
 image_main: /upload/what-is-playground.jpg
 author: "lukas_fabik"
+weight: 10
 ---
 
 Bájné místo, kde vznikají nové vynálezy – legendy praví, že se mu říká BigClown Playground. 🏯 V tomhle šikovném programu řekneš své krabičce, jak má pracovat.

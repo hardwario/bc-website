@@ -9,6 +9,7 @@ description: Bez firmware ti IoT krabička nebude fungovat správně. Díky tomu
 image_preview: /upload/project_placeholder.jpg
 image_main: /upload/project_placeholder.jpg
 author: "lukas_fabik"
+weight: 30
 ---
 
 Bez firmware ti krabička nebude fungovat správně. Na různé projekty přitom potřebuješ různý firmware. Podívej se, jak si krabičku správně nastavíš.

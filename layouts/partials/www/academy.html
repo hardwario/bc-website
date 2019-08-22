@@ -1,0 +1,22 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="title title--withoutsubtitle text-center">{{ i18n "learn_even_more" }}</h2>
+
+        <div class="articles">
+          <div class="row">
+            {{ range first 3 ($.Site.GetPage "section" "academy").Pages }}
+              <div  class="col-12 col-md-6 col-lg-4 show-item">
+              {{ .Render "grid" }}
+              </div>
+            {{ end }}
+          </div>
+          <div class="text-center">
+            <a href="{{ "academy/" | absLangURL }}" class="button button--redtext button--redtext--2">{{ i18n "show_all_lessons"}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -9,6 +9,7 @@ description: Chceš vidět data ze své BigClown krabičky v barevných grafech 
 image_preview: /upload/dashboard.jpg
 image_main: /upload/dashboard.jpg
 author: "lukas_fabik"
+weight: 50
 ---
 
 ## Co je to dashboard?

@@ -9,6 +9,7 @@ description: Aby si USB Dongle rozuměl s Core modulem, musíš Dongle s krabič
 image_preview: /upload/setup-kit.jpg
 image_main: /upload/setup-kit.jpg
 author: "lukas_fabik"
+weight: 20
 ---
 
 Aby si USB Dongle rozuměl s Core modulem, musíš Dongle s krabičkou spárovat. Ti to pak spolu rozjedou. 💘

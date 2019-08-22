@@ -28,25 +28,14 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-8">
         <div class="article__body project__detail">
-              {{ .Content }}
-            </div>
-            <div class="row">
-              <div class="col-12 col-md d-flex justify-content-center justify-content-md-start">
-                <div class="article__author article__author--bottom d-flex flex-column justify-content-center">
-                  {{ $author := index $.Site.Data.authors .Params.author }}
-                  <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
-                  <strong>{{ $author.name }}</strong>
-                  <span>{{ $author.email }}</span>
-                </div>
-              </div>
-              <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">
-                <div class="addthis_inline_share_toolbox article__soc"></div>
-              </div>
-            </div>
+          {{ .Content }}
+        </div>
       </div>
     </div>
   </div>
-</section>
+</section>¨
+{{ partial "www/academy.html" . }}
+
 {{ end }}
 
 {{ define "additional-scripts" }}

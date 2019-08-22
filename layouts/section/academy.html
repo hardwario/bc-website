@@ -10,8 +10,10 @@
           <div class="articles articles--2">
             <div class="row d-flex align-content-stretch">
 
-              {{ range .Data.Pages }}
+              {{ range .Data.Pages.ByWeight }}
+              <div class="col-12 col-md-6 col-lg-4 d-flex">
               {{ .Render "grid" }}
+              </div>
               {{ end }}
 
             </div>

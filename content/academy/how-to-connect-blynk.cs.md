@@ -9,6 +9,7 @@ description: Aby ti tvůj IoT vynález od BigClowna posílal notifikace na mobil
 image_preview: /upload/mobile-phone.jpg
 image_main: /upload/mobile-phone.jpg
 author: "lukas_fabik"
+weight: 60
 ---
 
 Tvá chytrá IoT krabička se kromě počítače ráda kámoší i se smartphonem. 🤝 Po spárování do něj posílá notifikace nebo v něm třeba zobrazuje grafy s teplotou ve tvém pokoji. Propojíš je pomocí aplikace Blynk a v tomhle článku ti ukážeme, jak na to.

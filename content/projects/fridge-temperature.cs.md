@@ -30,13 +30,13 @@ handbook:
 Myslíš si, že je v celé lednici stejná zima? A jak je na tom mrazák, mrazí dobře? Odhal to s IoT projektem pro Starter Kit – teplotu uvidíš přímo ve svém mobilu. ❄
 {{< /perex >}}
 
-S tímhle projektem se naučíš **měřit teplotu s IoT**. Postačí ti základní BigClown sada, tedy **Starter Kit**.
+S tímhle projektem se naučíš **měřit teplotu s IoT**. Postačí ti základní BigClown sada, tedy [**Starter Kit**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
 ## Připrav si krabičku
 
-1. Starter Kit sestav a spáruj: jestli to děláš poprvé, připravili jsme k tomu jednoduchou příručku. Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, zjistíš to tady.
+1. Starter Kit sestav a spáruj: jestli to děláš poprvé, [připravili jsme k tomu jednoduchou příručku]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 
 2. Změny teploty uvidíš v Playgroundu v záložce **Messages**.
 

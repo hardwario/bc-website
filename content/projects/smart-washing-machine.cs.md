@@ -32,25 +32,25 @@ Zvedni rodinné pračce IQ. 🤖 Naprogramuj pomocí krabičky IoT upozornění,
 
 V tomhle projektu se naučíš **nastavit krabičku tak, že pozná, až pračka dopere**, a pošle o tom **upozornění na mobil**.📱 👈
 
-Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou – **Starter Kitem**.
+Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou – [**Starter Kitem**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
 ## Stáhni si nový firmware
 
-1. Pokud to ještě nemáš, Starter Kit sestav.
+1. Pokud to ještě nemáš, Starter Kit [sestav]({{< ref "/handbook/_index.cs.md" >}}).
 
 2. Na Core Module nahraj nový firmware, a to **bcf-radio-washing-machine-monitor** (najdeš ho mezi ostatním firmwarem v Playgroundu). Díky tomuhle firmwaru bude krabička citlivěji vnímat otřesy pračky. 🔃
 
-**Náš tip:** Nevíš, jak si firmware stáhnout nebo co to je? Zjistíš to tady.
+**Náš tip:** Nevíš, jak si firmware stáhnout nebo co to je? [Zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 
-3. Core Module spáruj s USB Donglem. Hned po spárování uvidíš, že tvůj Core Module změnil Alias na **washing-machine-detector**. 👌
+3. [Core Module spáruj s USB Donglem]({{< ref "/academy/how-to-pair-kit.cs.md" >}}). Hned po spárování uvidíš, že tvůj Core Module změnil Alias na **washing-machine-detector**. 👌
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566368246/projects/smart-washing-machine/image4.png" alt = "BigClown Playground devices list" >}}
 
 ## Rozjeď to v Node-RED
 
-1. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha Node-RED. 🤖
+1. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha [Node-RED]({{< ref "/academy/what-is-node-red.cs.md" >}}). 🤖
 
 2. Začni jako vždycky: na plochu nejdřív umísti **MQTT node** ze sekce Input.
 Dvakrát na něj klikni a do řádku zkopíruj **Topic**, se kterým krabička změří, kdy se pračka přestane otřásat:
@@ -79,7 +79,7 @@ Potvrď tlačítkem **Done**.
 
 ## Nastav si mobil
 
-1. Čas ukrást mámě nebo tátovi mobil a nastavit jim jejich vlastní Blynk. Pokud s Blynkem neumíš, podívej se na návod.
+1. Čas ukrást mámě nebo tátovi mobil a nastavit jim jejich vlastní Blynk. Pokud s Blynkem neumíš, [**podívej se na návod**]({{< ref "/academy/how-to-connect-blynk.cs.md" >}}).
 
 2. V Blynku vytvoř **nový projekt**. Teď se ti na e-mail poslal token, který ale ještě nechej chvíli v klidu.
 
@@ -101,17 +101,15 @@ Potvrď tlačítkem **Done**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566368247/projects/smart-washing-machine/image9.png" alt = "Add Blynk Notify node" >}}
 
-2. Dvakrát na node klikni. V řádku Connection uvidíš, že se ti do roletky automaticky přidal projekt **Washing machine monitor**. Vyber ho.
-
-{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566368247/projects/smart-washing-machine/image10.png" alt = "Set Blynk Notify node and connection" >}}
-
-3. Pak klikni na **tužku** vedle tohohle řádku. ✏
+2. Dvakrát na node klikni. Pak klikni na **tužku**. ✏
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566368245/projects/smart-washing-machine/image1.png" alt = "Blynk Connection settings" >}}
 
-Tady nastav **URL** a **Token projektu**. URL zkopíruješ jako vždycky ze spodní sekce obrazu a token projektu jsi dostal na e-mail po vytvoření nového projektu v Blynku.
+3. Otevřelo se ti okno pro párování s Blynkem. Tady nastav **URL** a **Token** projektu. URL zkopíruješ jako vždycky ze spodní sekce obrazu a token projektu jsi dostal na e-mail po vytvoření nového projektu v Blynku.
 
-{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566368247/projects/smart-washing-machine/image7.png" alt = "Set URL and token of Blynk app" >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566368245/projects/smart-washing-machine/image8_new.png" alt = "Blynk Connection settings" >}}
+
+**Náš tip:** V řádku **Name **nastav jméno projektu, abys ho lépe poznal.
 
 Všechno postupně potvrď tlačítky **Add** a **Done**.
 

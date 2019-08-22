@@ -30,15 +30,17 @@ handbook:
 Tenhle projekt odhalí všechna tajemství tvojí školy, ať už někdo loví duchy nebo chce najít žhavé místo pro svoje příští rande. Změř se svojí třídou teplotu v různých koutech školy a zkus být ten, kdo objeví ten největší extrém. 😱
 {{< /perex >}}
 
-Hru navrhni učiteli fyziky jako super zpestření hodiny, nebo ji s kamarády podnikni jenom tak, po škole.
+S tímhle projektem se naučíš měřit teplotu s IoT a zobrazit ji na svém mobilu. Postačí ti základní BigClown sada, tedy [**Starter Kit**](https://shop.bigclown.com/starter-kit/).
 
-Tahle hra je o vítězství. Kdo najde nejchladnější nebo nejteplejší místo ve škole, je king! 👑 Pokud máš ve třídě krabiček několik, pracujte buď samostatně, nebo v malých skupinkách. A pokud máte jenom jednu, postupně se střídejte.
+Hru **navrhni učiteli fyziky** jako super zpestření hodiny, nebo ji s kamarády podnikni jenom tak, po škole.
+
+**Tahle hra je o vítězství**. Kdo najde nejchladnější nebo nejteplejší místo ve škole, je **king**! 👑 Pokud máš ve třídě krabiček několik, pracujte buď samostatně, nebo v malých skupinkách. A pokud máte jenom jednu, postupně se střídejte.
 
 {{< modules >}}
 
 ## Připrav si krabičku
 
-1. Starter Kit sestav a spáruj: jestli to děláš poprvé, připravili jsme k tomu jednoduchou příručku. Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, zjistíš to tady.
+1. Starter Kit sestav a spáruj: jestli to děláš poprvé, [připravili jsme k tomu jednoduchou příručku]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 
 2. Změny teploty uvidíš v Playgroundu v záložce **Messages**.
 
@@ -46,7 +48,7 @@ Tahle hra je o vítězství. Kdo najde nejchladnější nebo nejteplejší míst
 
 ## Nastav si Node-RED
 
-1. Pro záznam nejnižší nebo nejvyšší teploty si nastav vlastní ukazatel. Začni v počítači s pomocí bublin v Node-RED. Nejdřív v Playgroundu klikni na záložku **Functions**.
+1. Pro záznam nejnižší nebo nejvyšší teploty si nastav vlastní ukazatel. Začni v počítači s pomocí bublin v [Node-RED]({{< ref "/academy/what-is-node-red.cs.md" >}}). Nejdřív v Playgroundu klikni na záložku **Functions**.
 
 2. Na čistou plochu polož světle fialový node (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
 
@@ -62,7 +64,7 @@ Potvrď tlačítkem **Done**.
 
 ## Rozjeď appku na mobilu
 
-1. Krabička se propojí se smartphonem díky **appce Blynk**. 📱 Zjisti, jak na Blynk.
+1. Krabička se propojí se smartphonem díky **appce Blynk**. 📱 [**Zjisti, jak na Blynk**]({{< ref "/academy/how-to-connect-blynk.cs.md" >}}).
 
 2. Z nabídky zvol **Gauge** (ukazatel). Zatím to vypadá takhle:
 

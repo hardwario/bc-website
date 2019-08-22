@@ -32,15 +32,15 @@ Rodiče ti každý den volají, jestli jsi ze školy dorazil domů? Je to sice o
 
 V tomhle projektu se naučíš, **jak tlačítkem poslat zprávu do mobilu svých rodičů**. 👩👱
 
-Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Vystačíš si se základní BigClown sadou, tedy **Starter Kitem**.
+Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Vystačíš si se základní BigClown sadou, tedy [**Starter Kitem**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
 ## Rozjeď to v Node-RED
 
-1. Starter Kit sestav a spáruj: jestli to děláš poprvé, připravili jsme k tomu jednoduchou příručku. Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, zjistíš to tady.
+1. Starter Kit sestav a spáruj: jestli to děláš poprvé, [připravili jsme k tomu jednoduchou příručku]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 
-2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha Node-RED.
+2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha [Node-RED]({{< ref "/academy/what-is-node-red.cs.md" >}}).
 
 3. Na plochu Node-RED postav světle fialovou bublinu, neboli nod. Najdeš ho vlevo jako **MQTT** v sekci Inputs.
 
@@ -77,7 +77,7 @@ Potvrď tlačítkem **Done** a oba nody propoj táhnutím myší od jedné bubli
 
 ## Nastav si appku na mobilu
 
-1. Půjč si od mámy nebo od táty jejich smartphone a ještě trochu jim ho nachytři. 🤓 Aby se jim tvoje zpráva zobrazila, musí mít na mobilu **appku Blynk**.
+1. Půjč si od mámy nebo od táty jejich smartphone a ještě trochu jim ho nachytři. 🤓 Aby se jim tvoje zpráva zobrazila, musí mít na mobilu [**appku Blynk**]({{< ref "/academy/how-to-connect-blynk.cs.md" >}}).
 
 2. Na novém projektu zvol **Notification**. Upozornění se ti přidá na plochu.
 

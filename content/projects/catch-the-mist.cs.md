@@ -32,27 +32,25 @@ Určitě to znáš. V lednici si necháváš poslední kousek dortu ze svojí os
 
 V tomhle projektu se naučíš vytvořit **detektor otevírání ledničky**. 👈
 
-Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou – **Starter Kitem**.
-
+Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou – [**Starter Kitem**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
-
-
 ## Stáhni si nový firmware
 
-1. Pokud to ještě nemáš, Starter Kit sestav.
+1. Pokud to ještě nemáš, Starter Kit [sestavj]({{< ref "/handbook/_index.cs.md" >}}).
 2. Na Core Module nahraj speciální firmware, a to **bcf-radio-x-axis-detector** (najdeš ho mezi ostatním firmwarem v Playgroundu). Díky tomuhle firmwaru bude krabička citlivější na pohyb. 👌
-**Náš tip:** Nevíš, jak si firmware stáhnout nebo co to je? Zjistíš to tady.
-3. Core Module spáruj s USB Donglem. Hned po spárování uvidíš, že tvůj Core Module změnil Alias na **x-axis-detector**.
+**Náš tip:** Nevíš, jak si firmware stáhnout nebo co to je? [Zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
+3. [Core Module spáruj s USB Donglem]({{< ref "/academy/how-to-pair-kit.cs.md" >}}). Hned po spárování uvidíš, že tvůj Core Module změnil Alias na **x-axis-detector**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566154098/projects/catch-the-mist/image8.png" alt = "BigClown Playground - devices" >}}
 
 ## Rozjeď to v Node-RED
 
-1. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha Node-RED.
+1. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha [Node-RED]({{< ref "/academy/what-is-node-red.cs.md" >}}).
 2. Začni jako vždycky: na plochu nejdřív umísti **MQTT node** ze sekce Input.
 Dvakrát na něj klikni a do řádku zkopíruj **Topic**, se kterým krabička odhalí změnu pohybu:
+
 ```
 node/x-axis-detector:0/accelerometer/-/event-count
 ```
@@ -66,6 +64,7 @@ Potvrď tlačítkem **Done**.
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566154098/projects/catch-the-mist/image7.png" alt = "Node-RED function" >}}
 
 4. ...a pak na tenhle node dvakrát ťukni. **Do pole Function zkopíruj tenhle kód**, který bude počítat, kolikrát se lednice otevřela:
+
 ```
 var count = flow.get("count") || 0;
 count++;
@@ -73,6 +72,7 @@ flow.set("count", count);
 msg.payload = count;
 return msg;
 ```
+
 Node si ještě pojmenuj v řádku Label, třeba na **Počítadlo**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566154097/projects/catch-the-mist/image6.png" alt = "Node-RED counter" >}}

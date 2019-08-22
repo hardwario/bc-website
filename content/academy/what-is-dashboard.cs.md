@@ -60,4 +60,4 @@ A teď ti ukážeme **tři chytré nody**, kterými si dashboard vytuníš:
 </div>
 
 
-Už se ti honí hlavou, co všechno s dashboardem vymyslíš? Mrkni na naše projekty a inspiruj se!
+Už se ti honí hlavou, co všechno s dashboardem vymyslíš? [Mrkni na naše projekty a inspiruj se!]({{< ref "/projects/_index.cs.md" >}})

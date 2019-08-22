@@ -32,14 +32,14 @@ Znáš to? Paříš jak drak nebo posloucháš hudbu na plné pecky, a když tě
 
 V tomhle projektu se naučíš, **jak tlačítkem poslat zprávu do mobilu** odkudkoli v domě. 👌
 
-Budeš potřebovat krabičku s **tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou, tedy **Starter Kitem**. Pokud máš v ruce krabičku Starter Kit poprvé, [nejdřív se s ní dobře seznam](/cs/starter-kit/).
+Budeš potřebovat krabičku s **tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou, tedy [**Starter Kitem**](https://shop.bigclown.com/starter-kit/). Pokud máš v ruce krabičku Starter Kit poprvé, [nejdřív se s ní dobře seznam]({{< ref "/handbook/_index.cs.md" >}}).
 
 {{< modules >}}
 
 ## Rozjeď to v Node-RED
 
-1. Starter Kit sestav a spáruj. Na Core module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, zjistíš to tady.
-2. V Playgroundu klikni na **záložku Functions**. Tady najdeš programovací plochu [Node-RED]({{< ref "what-is-node-red.cs.md" >}}). Na ní si přednastavíš krabičku, aby dělala všechno, co chceš.
+1. Starter Kit sestav a spáruj. Na Core module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
+2. V Playgroundu klikni na **záložku Functions**. Tady najdeš programovací plochu [Node-RED]({{< ref "/academy/what-is-node-red.cs.md" >}}). Na ní si přednastavíš krabičku, aby dělala všechno, co chceš.
 3. Jde se programovat. 🤞 Na plochu Node-RED postav světle fialovou bublinu, neboli nod. Najdeš ho vlevo jako **MQTT** v sekci **Input**.
 
 ![Rozjeď to v Node-RED](https://res.cloudinary.com/lukasfabik/image/upload/v1565632592/projects/button-for-mum/image3.png "Rozjeď to v Node-RED")
@@ -56,7 +56,11 @@ node/push-button:0/push-button/-/event-count
 
 Potvrď pomocí tlačítka **Done**.
 
-**Tip:** Místo kopírování řádku odsud můžeš příště jednoduše zkopírovat řádek, který se ti po kliknutí tlačítka ukáže **na záložce Messages**.
+**Tip:** Vidíš v Playgroundu záložku **Messages**? Tady se zobrazují všechny akce, řádek po řádku. Klikni na krabičce – a tadá, zobrazilo se ti to stejné:
+```
+node/push-button:0/push-button/-/event-count
+```
+Co to znamená? Že můžeš příště do pole Topic kopírovat řádky ze záložky Messages.
 
 ## Hoď tam vlastní zprávu
 
@@ -76,13 +80,14 @@ Uděláš to tak, že na node dvakrát klikneš a v poli **Rules** (pravidla) zp
 
 Potvrď tlačítkem **Done**.
 
-3. **Oba nody propoj** táhnutím myší od jedné bubliny k druhé. Easy peasy. 🙆
+3. Na kraji každého nodu uvidíš malou šedou kuličku. Když na ni klikneš, klik podržíš a myš zatáhneš do strany, vytáhneš z nodu provázek. Tím se nody propojují.
+Zkus si to. **Oba nody propoj** táhnutím myší od jedné bubliny k druhé. Easy peasy. 🙆
 
 ![Node-RED](https://res.cloudinary.com/lukasfabik/image/upload/v1565632593/projects/button-for-mum/image6.png "Node-RED")
 
 ## Nastav si appku na mobilu
 
-1. Tvoje krabička s tlačítkem se propojí se smartphonem díky appce Blynk. A to je cool. 😎 Stáhni si na mobil **appku Blynk** z App Store, nebo Google Play. Přihlas se do ní, nebo si vytvoř účet.
+1. Tvoje krabička s tlačítkem se propojí se smartphonem díky appce Blynk. A to je cool. 😎 Stáhni si na mobil **appku Blynk** z [App Store](https://apps.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481), nebo [Google Play](https://play.google.com/store/apps/details?id=cc.blynk&hl=en). Přihlas se do ní, nebo si vytvoř účet.
 2. Vytvoř v appce nový projekt: klikni na **New project**.
 3. Pod “Choose device” vyber hardware **BigClown IoT Kit**.
 4. Potvrď kliknutím na tlačítko Create. Teď se ti na mail odeslal **token** (neboli elektronický klíč) k projektu, pomocí kterého se pak k mobilu připojíš z počítače. Prozatím ještě ale zůstaň v appce. 📱<br/><br/>

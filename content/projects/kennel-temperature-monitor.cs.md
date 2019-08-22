@@ -30,13 +30,13 @@ handbook:
 Zima, že bys ani psa nevyhnal? Hlídej teplotní komfort svého nejlepšího kámoše a sleduj teplotu v jeho boudě. 🐶
 {{< /perex >}}
 
-S tímhle projektem se naučíš **měřit teplotu s IoT a zobrazit ji na grafu**. Postačí ti základní BigClown sada, tedy **Starter Kit**. Uvidíš, že ti hafan poděkuje. Třeba míň bobky. Nebo tak něco. 🐩
+S tímhle projektem se naučíš **měřit teplotu s IoT a zobrazit ji na grafu**. Postačí ti základní BigClown sada, tedy [**Starter Kit**](https://shop.bigclown.com/starter-kit/). Uvidíš, že ti hafan poděkuje. Třeba míň bobky. Nebo tak něco. 🐩
 
 {{< modules >}}
 
 ## Připrav si krabičku
 
-1. Starter Kit sestav a spáruj: jestli to děláš poprvé, připravili jsme k tomu jednoduchou příručku. Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, zjistíš to tady.
+1. Starter Kit sestav a spáruj: jestli to děláš poprvé, [připravili jsme k tomu jednoduchou příručku]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 
 2. Změny teploty uvidíš v Playgroundu v záložce **Messages**.
 
@@ -44,7 +44,7 @@ S tímhle projektem se naučíš **měřit teplotu s IoT a zobrazit ji na grafu*
 
 ## Nastav si Node-RED
 
-1. Programování začni v Node-RED. Nejdřív v Playgroundu klikni na záložku **Functions**.
+1. Programování začni v [Node-RED]({{< ref "/academy/what-is-node-red.cs.md" >}}). Nejdřív v Playgroundu klikni na záložku **Functions**.
 
 2. Na čistou plochu přetáhni světle fialový node (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
 

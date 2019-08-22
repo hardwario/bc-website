@@ -25,7 +25,7 @@ Jak krabičku propojit s Blynkem ti ukážeme na nodu **Notify**, ale neboj, pos
 
 ## Nastav si appku na mobilu
 
-1. **Appku Blynk** si na mobil stáhneš z App store, nebo Google Play. Přihlas se do ní, nebo si vytvoř účet. Je to stejné, jako když se třeba registruješ do on-line hry.
+1. **Appku Blynk** si na mobil stáhneš z [App store](https://apps.apple.com/us/app/blynk-iot-for-arduino-esp32/id808760481), nebo [Google Play](https://play.google.com/store/apps/details?id=cc.blynk&hl=en). Přihlas se do ní, nebo si vytvoř účet. Je to stejné, jako když se třeba registruješ do on-line hry.
 2. Vytvoř v appce nový projekt: klikni na **New project**.
 3. Pod Choose device vyber hardware **BigClown IoT Kit**.
 4. Potvrď kliknutím na tlačítko **Create**. Teď se ti na mail odeslal token (neboli elektronický klíč) k projektu, pomocí kterého se pak k mobilu připojíš z počítače. Prozatím ještě ale zůstaň v appce. 📱
@@ -51,4 +51,4 @@ ws://blynk-cloud.com/websockets
 <br/>
 Nastavení potvrď postupně tlačítky **Add** a **Done**. A máš propojeno! 🎉
 
-Už tě svědí prsty, až si propojení s Blynkem vyzkoušíš? Kašli na teorii. Skoč šipku do konkrétního projektu, inspiruj se a tvoř!
+Už tě svědí prsty, až si propojení s Blynkem vyzkoušíš? Kašli na teorii. [Skoč šipku do konkrétního projektu, inspiruj se a tvoř!]({{< ref "/projects/_index.cs.md" >}})

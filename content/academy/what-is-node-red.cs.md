@@ -17,7 +17,7 @@ Aby krabička poslouchala tvoje příkazy, musíš mluvit jejím jazykem. A krab
 ## Co je to Node-RED?
 Node-RED je jednoduchý programovací nástroj, ve kterém své krabičce řekneš, co a kdy má dělat. Funguje na flow-based principu – flow v angličtině znamená tok, takže všechny tvé příkazy přes Node-RED postupně tečou jako řeka. 🌊
 
-Ve svém Playgroundu najdeš Node-RED v záložce Functions. Když na ni klikneš, uvidíš vlevo seznam takzvaných nodů (uzlů). Nody představují jednotlivé akce, které se odehrávají v tvém programu. Třeba stisknutí tlačítka, odeslání zprávy na mobil nebo zobrazení grafu s okolní teplotou.
+Ve svém [Playgroundu]({{< ref "/academy/what-is-bigclown-playground.cs.md" >}}) najdeš Node-RED v záložce Functions. Když na ni klikneš, uvidíš vlevo seznam takzvaných nodů (uzlů). Nody představují jednotlivé akce, které se odehrávají v tvém programu. Třeba stisknutí tlačítka, odeslání zprávy na mobil nebo zobrazení grafu s okolní teplotou.
 {{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159446/academy/what-is-node-red/image4.png" alt = "Node-RED flow" >}}
 
 Nody postupně přetahuješ z nabídky vlevo na volnou plochu uprostřed okna a spojuješ je – tímto jednoduchým způsobem vytvoříš celý svůj program. Klikneš na puntík v pravé nebo levé části nodu a přetáhneš ho k jinému nodu, jako bys je spojoval provázkem.
@@ -57,7 +57,7 @@ A to je vše, co k programování v Node-RED potřebuješ vědět. Být program�
         {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159446/academy/what-is-node-red/image2.png" alt = "Notify Blynk node - Node-RED" >}}
     </div>
     <div class = "col-md-8">
-        <p>Node Notify má jasnou misi – odeslat notifikaci do mobilu. Ta se ti zobrazí v aplikaci Blynk.</p>
+        <p>Node Notify má jasnou misi – odeslat notifikaci do mobilu. Ta se ti zobrazí v aplikaci [Blynk]({{< ref "/academy/how-to-connect-blynk.cs.md" >}}).</p>
     </div>
 </div>
 
@@ -82,4 +82,4 @@ A to je vše, co k programování v Node-RED potřebuješ vědět. Být program�
 
 
 A když už teď víš, o co go, naprogramuj si svůj vlastní projekt! Připravili jsme ti ranec mazaných vynálezů pro inspiraci.
-Koukni na ně
+[Koukni na ně]({{< ref "/projects/_index.cs.md" >}})

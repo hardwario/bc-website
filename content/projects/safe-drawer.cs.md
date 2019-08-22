@@ -32,22 +32,24 @@ Máš v šuplíku deníček, básničky nebo tajný vládní dokument? Pokud je 
 
 V tomhle projektu se naučíš vytvořit **detektor otevírání šuplíku, který ti pošle upozornění na mobil**. 👈
 
-Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou – **Starter Kitem**.
+Budeš potřebovat jen **krabičku s tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou – [**Starter Kitem**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
 ## Stáhni si nový firmware
 
-1. Pokud to ještě nemáš, Starter Kit sestav.
+1. Pokud to ještě nemáš, Starter Kit [sestav]({{< ref "/handbook/_index.cs.md" >}}).
 2. Na Core Module nahraj speciální firmware, a to **bcf-radio-x-axis-detector** (najdeš ho mezi ostatním firmwarem v Playgroundu). Díky tomuhle firmwaru bude krabička citlivější na pohyb. 👌
-**Náš tip:** Nevíš, jak si firmware stáhnout nebo co to je? Zjistíš to tady.
-3. Core Module spáruj s USB Donglem. Hned po spárování uvidíš, že tvůj Core Module změnil Alias na **x-axis-detector**.
+
+**Náš tip:** Nevíš, jak si firmware stáhnout nebo co to je? [Zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
+
+3. [Core Module spáruj s USB Donglem]({{< ref "/academy/how-to-pair-kit.cs.md" >}}). Hned po spárování uvidíš, že tvůj Core Module změnil Alias na **x-axis-detector**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566364970/projects/safe-drawer/image26.png" alt = "BigClown Playground - devices" >}}
 
 ## Rozjeď appku na mobilu
 
-1. **Pokračuj na svém mobilu**. Krabička se propojí se smartphonem díky **appce Blynk**. 📱 Zjisti, jak na Blynk.
+1. **Pokračuj na svém mobilu**. Krabička se propojí se smartphonem díky **appce Blynk**. 📱 [**Zjisti, jak na Blynk**]({{< ref "/academy/how-to-connect-blynk.cs.md" >}}).
 
 2. Z nabídky zvol **Styled button** (vyšperkované tlačítko). 🚨 Tlačítko se ti umístí na plochu projektu.
 
@@ -83,7 +85,7 @@ A dál už jsou jenom takové ty **dyzajnové blbůstky**. 💄 Můžeš si navo
 
 Až všechno budeš mít, **vrať se na plochu** skrz šipku vlevo nahoře.
 
-4. Vidíš nahoře tlačítko plus v kolečku? Tak si přidej další prvek na plochu. Hoď sem notifikaci.
+4. Klepni na plochu, abys přidal další prvek na plochu. Bude to notifikace.
 
 {{< middle >}}
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566364964/projects/safe-drawer/image1.png" alt = "Add Blynk Notification node" >}}
@@ -104,7 +106,7 @@ Až všechno budeš mít, **vrať se na plochu** skrz šipku vlevo nahoře.
 
 ## Nastav v Node-RED zprávu
 
-1. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha Node-RED.
+1. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha [Node-RED]({{< ref "/academy/what-is-node-red.cs.md" >}}).
 
 2. Začni jako vždycky: na plochu nejdřív umísti **MQTT node** ze sekce Input.
 

@@ -30,13 +30,13 @@ handbook: "starter-kit"
 Bav se s kámoši díky IoT. Kdo z vás bude mít nejžhavější, nebo nejchladnější dech? Je na tobě, čím si k vítězství pomůžeš. Smí se všechno. 😱
 {{< /perex >}}
 
-S tímhle projektem se naučíš **měřit teplotu s IoT**. Postačí ti základní BigClown sada, tedy **Starter Kit**.
+S tímhle projektem se naučíš **měřit teplotu s IoT**. Postačí ti základní BigClown sada, tedy [**Starter Kit**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
 ## Připrav si krabičku
 
-1. Starter Kit sestav a spáruj: jestli to děláš poprvé, připravili jsme k tomu jednoduchou příručku. Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, zjistíš to tady.
+1. Starter Kit sestav a spáruj: jestli to děláš poprvé, [připravili jsme k tomu jednoduchou příručku]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 
 2. Otevři v Playgroundu záložku **Messages**. Tady uvidíš změny teploty. Teplota se měří automaticky, a to buď pravidelně po 15 sekundách, nebo když dojde k větší změně. A právě toho využijeme.
 
@@ -44,7 +44,7 @@ S tímhle projektem se naučíš **měřit teplotu s IoT**. Postačí ti základ
 
 ## Nastav si Node-RED
 
-1. Messages jsou pro tebe možná málo. ✌️ Nastav si rovnou svůj vlastní barevný ukazatel teploty, a to pomocí bublin v Node-RED. Nejdřív v Playgroundu klikni na záložku **Functions**.
+1. Messages jsou pro tebe možná málo. ✌️ Nastav si rovnou svůj vlastní barevný ukazatel teploty, a to pomocí bublin v [Node-RED]({{< ref "/academy/what-is-node-red.cs.md" >}}). Nejdřív v Playgroundu klikni na záložku **Functions**.
 
 2. Na čistou plochu polož světle fialový node (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
 

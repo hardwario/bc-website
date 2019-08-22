@@ -16,7 +16,8 @@ Aby si USB Dongle rozuměl s Core modulem, musíš Dongle s krabičkou spárovat
 Párování je důležité proto, aby Dongle komunikoval **jenom s tvojí krabičkou** a s žádnou jinou. Pokud tedy máte ve třídě nebo s kamarády víc zařízení, které si mezi sebou půjčujete, páruj Dongle s krabičkou **pokaždé znovu**.
 
 ## Spáruj Dongle s Core modulem
-1. Jestli jsi ještě nesložil svůj kit, vrhni se na to. Pokud máš Starter Kit, návod na složení Starter Kitu najdeš tady. Hotový USB Dongle připoj k počítači.
+1. Jestli jsi ještě nesložil svůj kit, vrhni se na to. Pokud máš Starter Kit, [návod na složení Starter Kitu najdeš tady]({{< ref "/handbook/_index.cs.md" >}}). Hotový USB Dongle připoj k počítači.
+
 2. V Playgroundu si otevři záložku **Devices**. V liště zvol **USB dongle**.
 {{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160873/academy/how-to-pair-kit/image1.png" alt = "BigClown Playground USB dongle" >}}
 

@@ -18,14 +18,14 @@ Bez firmware ti krabička nebude fungovat správně. Na různé projekty přitom
 
 Firmware si představ jako **„mozek” věcí**. 🤖 Je to program, který zařízení řídí. Najdeš ho ve všech chytrých zařízeních, a to i v těch úplně nejjednodušších, třeba v semaforu. Svůj firmware mají i sedadla v autě, aby se dala vyhřívat. Firmwarem je i legendární BIOS, který ti zapíná a vypíná počítač. Hodně pokročilý firmware máš i na svém smartphonu v podobě operačního systému. Ať už je to Android, iOS nebo jakýkoli jiný. 👌
 
-Programátor může firmware **nastavit podle své potřeby**. Třeba může změnit rychlost, s jakou na přechodu blikne zelená. K práci a nastavení firmware slouží počítačový program (software). U našich kitů je to program Playground. 🤡
+Programátor může firmware **nastavit podle své potřeby**. Třeba může změnit rychlost, s jakou na přechodu blikne zelená. K práci a nastavení firmware slouží počítačový program (software). U našich kitů je to program [Playground]({{< ref "/download/_index.cs.md" >}}). 🤡
 
-Na Core module ze svého kitu máš **předinstalovaný firmware**, ať už používáš Starter Kit, Climate Monitor Kit, Motion Detector Kit nebo další kity. Díky firmware krabička ví, jestli má měřit teplotu, monitorovat polohu nebo cokoliv dalšího.
+Na Core module ze svého kitu máš **předinstalovaný firmware**, ať už používáš [Starter Kit]({{< ref "/kits/push-button.cs.md" >}}), [Climate Monitor Kit]({{< ref "/kits/climate-monitor.cs.md" >}}), [Motion Detector Kit]({{< ref "/kits/motion-detector.cs.md" >}}) nebo [další kity]({{< ref "/kits/_index.cs.md" >}}). Díky firmware krabička ví, jestli má měřit teplotu, monitorovat polohu nebo cokoliv dalšího.
 👉 **Na každý typ projektu proto potřebuješ jiný firmware.** 👈
 
 **Firmware vždy potřebuje svůj hardware**. Nemůžeš čekat, že zařízení začne měřit polohu, když nemáš GPS module. To prostě nejde. Krabičce totiž chybí nástroj, se kterým by mohla polohu měřit. 🤷
 
-**Jaký firmware potřebuješ, najdeš napsané vždycky u konkrétního projektu.** 🤙
+**Jaký firmware potřebuješ, najdeš napsané vždycky u** [**konkrétního projektu**]({{< ref "/projects/_index.cs.md" >}}). 🤙
 
 
 ## Updatuj / nastav si správný firmware
@@ -72,4 +72,4 @@ Stáhni si firmware na USB Dongle
 * Po celou dobu je v záložce Devices odpojený **USB dongle** a není připojené ani nic jiného (svítí zelené tlačítko Connect, které ale nemačkáš).
 * Když ke kitu připojíš baterky, **Led dioda** na Core modulu krátce červeně blikne. (Pokud máš na Core module napojeno více desek, třeba tlačítko, musíš se podívat ze strany.) To znamená, že všechno funguje správně. ️🎉
 
-A teď ti už jen zbývá spárovat Dongle s Core modulem, jako obvykle.
+A teď ti už jen zbývá [spárovat Dongle s Core modulem]({{< ref "/academy/how-to-pair-kit.cs.md" >}}), jako obvykle.

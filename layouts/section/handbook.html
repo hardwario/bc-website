@@ -318,13 +318,13 @@
                                       <div class="articles">
                                                           <div class="row">
                                                             {{ range where .Site.Pages ".Params.handbook" "starter-kit" }}
-                                                              <div  class="col-12 col-md-6 col-lg-4">
+                                                              <div  class="col-12 col-md-6 col-lg-4 show-item">
                                                                   {{ .Render "grid" }}
                                                               </div>
                                                               {{ end }}
                                                           </div>
                                                           <div class="text-center">
-                                                              <a href="" class="button button--redtext button--redtext--2">Show more projects</a>
+                                                              <a href="" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>
                                                           </div>
                                     </div>
                                     </div>

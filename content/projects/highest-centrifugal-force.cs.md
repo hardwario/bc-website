@@ -12,7 +12,8 @@ places:
 devices:
   - Starter Kit
 idea: false
-image_preview: /upload/project_placeholder.jpg
+image_preview: /upload/ilustrace-hra-s-kamarady-o-nejvetsi-odstredivou-silu.png
+image_main: /upload/ilustrace-hra-s-kamarady-o-nejvetsi-odstredivou-silu.png
 author: lukas_fabik
 modules: ["core","button","mini_battery","usb_dongle"]
 handbook:

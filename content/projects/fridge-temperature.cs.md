@@ -16,8 +16,8 @@ places:
 devices:
   - Starter Kit
 idea: false
-image_preview: /upload/fridge-monitoring.jpg
-image_main: /upload/fridge-monitoring.jpg
+image_preview: /upload/ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
+image_main: /upload/ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
 author: lukas_fabik
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]

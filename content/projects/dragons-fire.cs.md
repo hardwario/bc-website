@@ -16,8 +16,8 @@ places:
 devices:
   - Starter Kit
 idea: false
-image_preview: /upload/project_placeholder.jpg
-image_main:
+image_preview: /upload/soutez-s-kamarady-o-nejteplejsi-vydech.png
+image_main: /upload/soutez-s-kamarady-o-nejteplejsi-vydech.png
 author: lukas_fabik
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]

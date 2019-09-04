@@ -120,6 +120,10 @@
     </div>
   </div>
 </div>
+
+{{ partial "www/opinion.html" . }}
+
+<!--
 <section>
   <div class="bg bg--gray bg--innerShadow">
     <div class="container">
@@ -153,11 +157,37 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 {{ partial "www/testimonial.html" . }}
 
-{{ partial "www/partners.html" . }}
+<section>
+  <div class="bg bg--gray bg--bubbles bg--borderedBottom">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="title title--2 text-center">{{ i18n "get_more" | safeHTML }}</h2>
+
+          <div class="pricelist">
+            <div class="row no-gutters">
+              {{ range sort ($.Site.GetPage "section" "kits").Pages ".Weight" }}
+                {{ if .Params.isEdu }}
+                    {{ .Render "grid-edu" }}
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+
+          {{ if ne .Section "kits" }}
+            <div class="text-center">
+              <a href="{{ "kits/" | absLangURL }}" class="button button--redtext">{{ i18n "show_all_kits" }}</a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="bg bg--gray">
@@ -172,5 +202,11 @@
     </div>
   </div>
 </section>
+
+
+
+
+
+
 
 {{ end }}

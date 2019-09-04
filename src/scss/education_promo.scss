@@ -40,8 +40,10 @@
   }
 
   &__heading{
-    font-size: em(32);
+    font-size: em(36);
+    line-height: em(18);
     font-weight: 900;
+    margin-bottom: 0;
     padding-bottom: $baseline;
 
     @media(max-width:991px)

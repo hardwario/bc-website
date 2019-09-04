@@ -1,115 +1,109 @@
 {{ define "main" }}
 
+{{ partial "www/intro.html" . }}
+
+
+
 <section>
-  <div class = "imageHeader imageHeader--homepage">
+  <div class="getStarterKit">
     <div class="container">
-      <div class="row align-items-end">
-        <div class="col-12 heading">
-          <h1 class = "{{ .Lang }}">
-            <svg
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             width="626px" height="135px" viewBox="0 0 626 134">
-            <path fill-rule="evenodd"  fill="rgb(229, 27, 32)"
-             d="M7.909,6.947 L593.438,-0.012 L600.999,66.000 L0.000,66.000 L7.909,6.947 Z"/>
-            <path fill-rule="evenodd"  fill="rgb(227, 7, 17)"
-             d="M20.398,17.000 L618.218,60.396 L625.993,134.862 L20.398,129.660 L20.398,17.000 Z"/>
-            </svg>
-            <div>{{ i18n "learn_digital_skills" | safeHTML }}</div>
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--
-<section>
-  <div class="kit">
-    <div class="container">
+      <h2 class="title text-center">BigClown je zábavný nástroj<small> se kterým pochopíš a navrhneš internet věcí</small></h2>
       <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-12 col-md-4 text-center">
-          <img class="kit__mainimg starterKitImage" src="/_assets/images/starterKit.png" alt="Starter Kit" />
+        <div class="col-12 col-md-6 text-center">
+          <img class="kit__mainimg starterKitImage" src="/_assets/images/starter-kit.png" alt="Starter Kit" />
         </div>
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-6">
           <div class="text text--perex">
-            <h2>Ehm... BigClown???</h2>
-            <p>Now you can also flash pre-compiled firmware from any Android device with OTG USB support.</p>
+           <p>Ze všeho, třeba i ze svojí židle, <strong>vytvoříš chytré zařízení</strong> a&nbsp;propojíš ho se svým počítačem nebo mobilem. Díky tomu začneš digitálně vylepšovat svůj domov, třídu a klidně i celé město a svět.</p>
+            <p>Začni se <strong>Starter Kitem</strong>, který si časem můžeš vylepšit o rozšiřující moduly.</p>
           </div>
           <div>
-            <a href="https://shop.bigclown.com/starter-kit-with-raspberry-pi/" class="button button--fullred ">More about Starter Kit</a>
+            <a href="https://obchod.bigclown.cz/starter-kit/" class="button button--fullred button--bigger" style = "font-size: 1.4rem">Kup si Starter Kit za 1490 Kč</a>
+          <br/>
+          <div class = "benefits row align-items-center justify-content-center">
+            <div class = "col-12 benefits__item">
+              <div class="benefits__icon"></div>
+              <p><strong>Žádnej risk!</strong> Pokud se do 100 dnů do BigClowna nezamiluješ, vrátíme ti bez debat peníze zpět.</p>
             </div>
+            <div class = "col-12 benefits__item">
+              <div class="benefits__icon benefits__icon--2"></div>
+              <p><strong>Doprava ZDARMA</strong><br/> Je to tak, tvůj Starter Kit ti doručíme zadarmo.</p>
+            </div>
+            <div class = "col-12 benefits__item">
+              <div class="benefits__icon benefits__icon--3"></div>
+              <p><strong>Ušetříš 290 Kč</strong><br/> oproti ceně za samostatné moduly.</p>
+            </div>
+            <div class = "col-12 benefits__item">
+              <div class="benefits__icon benefits__icon--4"></div>
+              <p><strong>Na startu ti pomůže naše <a href = "#">příručka</a></strong> a taky spousta projektů s manuály.</p>
+            </div>
+           </div>
+
+
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <h2 class="title title--withoutsubtitle text-center">Projects you can build</h2>
-        <div class="articles">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <article>
-                                        <a href="" class="articles__item">
-
-                                            <div class="articles__item__image">
-                                                <img src="images/article.jpg" alt="">
-                                            </div>
-
-                                            <div class="articles__content">
-                                                <h3 class="articles__title">Parking garage sensor</h3>
-                                                <p class="articles__text">Podívej se, jak jednoduše si s námi můžeš psát firmware pro ARM Cortex M0+</p>
-                                            </div>
-                                            <div class="button button--tag button--tag--blue button--tag--blue--active articles__button">Indoor</div>
-                                        </a>
-                                    </article>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <article>
-                                        <a href="" class="articles__item">
-
-                                            <div class="articles__item__image">
-                                                <img src="images/article.jpg" alt="">
-                                            </div>
-
-                                            <div class="articles__content">
-                                                <h3 class="articles__title">Parking garage sensor</h3>
-                                                <p class="articles__text">Podívej se, jak jednoduše si s námi můžeš psát firmware pro ARM Cortex M0+</p>
-                                            </div>
-                                            <div class="button button--tag button--tag--blue button--tag--blue--active articles__button">Indoor</div>
-                                        </a>
-                                    </article>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <article>
-                                        <a href="" class="articles__item">
-
-                                            <div class="articles__item__image">
-                                                <img src="images/article.jpg" alt="">
-                                            </div>
-
-                                            <div class="articles__content">
-                                                <h3 class="articles__title">Parking garage sensor </h3>
-                                                <p class="articles__text">Podívej se, jak jednoduše si s námi můžeš psát firmware pro ARM Cortex M0+</p>
-                                            </div>
-                                            <div class="button button--tag button--tag--blue button--tag--blue--active articles__button">Indoor</div>
-                                        </a>
-                                    </article>
-                                </div>
-
-                            </div>
-                            <div class="text-center">
-                                <a href="" class="button button--redtext button--redtext--2">Show more projects</a>
-                            </div>
-                        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!--
+<section>
+  <div class="getStarterKit bg bg--borderedTop">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-md-10 ml-auto mr-auto text-center buyStarterKit">
+          <div class = "text">
+
+            {{ if eq $.Site.Language.Lang "en"}}
+                <a href = "{{ .URL }}start">{{ i18n "how_it_works" }}</a>
+            {{ else }}
+                <a href = "{{ .URL }}handbook">{{ i18n "how_it_works" }}</a>
+            {{ end }}
+
+
+          </div>
+
+          <div class = "row mt-6 pt-6">
+            <div class = "col">
+              <h3>60 dní na vyzkoušenou</h3>
+              <p>Pokud se ti to nebude líbit, můžeš nám kit kdykoli běhěm 60 dní poslat a my ti vrátíme peníze.</p>
+            </div>
+            <div class = "col">
+              <h3>60 dní na vyzkoušenou</h3>
+              <p>Pokud se ti to nebude líbit, můžeš nám kit kdykoli vrátit do 60 dní</p>
+            </div>
+            <div class = "col">
+              <h3>60 dní na vyzkoušenou</h3>
+              <p>Pokud se ti to nebude líbit, můžeš nám kit kdykoli vrátit do 60 dní</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+-->
+
+
+<!--{{ partial "www/opinion.html" .  }} -->
+
+{{ if eq $.Site.Language.Lang "en"}}
+    {{ partial "www/projects-newest.html" . }}
+{{ else }}
+    {{ partial "www/projects-starter.html" . }}
+{{ end }}
+
 <script>
-  $('.starterKitImage').hover(function(){
+  /*$('.starterKitImage').hover(function(){
     $(this).attr('src','/_assets/images/starterKit-hover.png');
   },function(){
     $(this).attr('src','/_assets/images/starterKit.png');
-  })
-</script>-->
-
+  })*/
+</script>
+<!--
 <section>
   <div class="getStarterKit bg bg--bubbleswhite">
     <div class="container">
@@ -158,16 +152,16 @@
   </div>
 </section>
 
-{{ partial "www/features.html" . }}
+{{ partial "www/features.html" . }}-->
 
-{{ partial "education_promo.html" . }}
+<!--{{ partial "education_promo.html" . }}
 
-<!--<section>
-  <div class="bg bg--gray bg--borderedTop">
+<section>
+  <div class="bg bg--gray">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="title text-center">We have everything you need<small>get started today with our full support</small></h2>
+          <h2 class="title text-center">Inspirujme společně vynálezce zítřka <small>Najděte nápady na našem blogu</small></h2>
           <div class="articles">
             <div class="row d-flex align-content-stretch">
 
@@ -189,7 +183,7 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <!--<section>
   <div class="bg bg--gray bg--bordered skills">
@@ -247,16 +241,5 @@
 
 
 <!--{{ partial "www/partners.html" . }}-->
-
-<!-- partial "www/testimonials.html" .  -->
-
-{{ if eq $.Site.Language.Lang "en"}}
-    {{ partial "www/projects-newest.html" . }}
-{{ else }}
-    {{ partial "www/projects-starter.html" . }}
-{{ end }}
-
-
-
 
 {{ end }}

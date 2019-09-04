@@ -1,5 +1,5 @@
 <section>
-  <div class="bg bg--gray">
+  <div class="bg bg--gray bg--borderedTop">
     <div class="container">
       <div class="row">
         <div class="col ">
@@ -8,8 +8,8 @@
               <div class="row">
 
               <div class = "col-12 col-sm-6 col-md-7 education-promo__content">
-                <h2 class = "education-promo__heading">{{ i18n "promo_heading"}}</h2>
-                <p class = "education-promo__text">{{ i18n "promo_text"}}</p>
+                <h2 class = "education-promo__heading">{{ i18n "promo_heading" | safeHTML }}</h2>
+                <p class = "education-promo__text">{{ i18n "promo_text" | safeHTML }}</p>
                 <a href="{{ .URL }}education" class="button button--fullred ">{{ i18n "promo_button"}}</a>
               </div>
               <div class = "col-12 col-sm-6 col-md-5 education-promo__image-container">

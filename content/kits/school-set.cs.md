@@ -1,5 +1,5 @@
 ---
-title: Push Button Kit
+title: Školní sada
 id: basic
 description: Kontroluj své prostředí!
 isBasic: false
@@ -10,15 +10,16 @@ images:
   hover: hover.png
   main: main.png
 isStarter: false
-isEdu: false
-recommended: false
+isEdu: true
+recommended: true
 included:
 notIncluded:
 weight: 10
-price: €49
+price: 14 900 Kč
 buyLink: "https://obchod.bigclown.cz/push-button-kit/"
 modules: ["core","mini_battery","button","enclosures-button"]
 optionalModules: ["usb_dongle","sigfox","lora"]
+contains: []
 techSpecs:
     dimensions:
         heading: "Rozměry (krabička)"

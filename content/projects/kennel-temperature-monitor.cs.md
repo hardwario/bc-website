@@ -16,8 +16,8 @@ places:
 devices:
   - Starter Kit
 idea: false
-image_preview: /upload/project_placeholder.jpg
-image_main:
+image_preview: /upload/ilustrace-ma-pes-v-boude-dostatek-tepla.png
+image_main: /upload/ilustrace-ma-pes-v-boude-dostatek-tepla.png
 author: lukas_fabik
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]

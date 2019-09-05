@@ -6,7 +6,7 @@ meta:
 slug: hlidac-teploty-psi-boudy
 draft: false
 date: 2019-08-12
-description: Vytvoř si ze Starter Kitu od BigClown IoT detektor změny pohybu s tímhle jednoduchým návodem. A nezapomeň ho s kámoši otestovat v cool hře.
+description: Jeden z IoT projektů na rozšíření digitálních dovedností. Sestav se Starter Kitem od BigClownu zařízení, se kterým uvidíš, jakou má tvůj pes v boudě teplotu.
 tags:
   - Starter Project
 levels:

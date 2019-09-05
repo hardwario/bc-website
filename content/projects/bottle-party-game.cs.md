@@ -6,7 +6,7 @@ meta:
 slug: party-hra-flaska
 draft: false
 date: 2019-08-12
-description: Vytvoř si ze Starter Kitu od BigClown IoT hlídač svého jídla v lednici. Připravili jsme pro tebe jednoduchý návod.
+description: Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ náhodného člena vaší party.
 tags:
   - Starter Project
 levels:

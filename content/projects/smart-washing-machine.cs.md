@@ -6,7 +6,7 @@ meta:
 slug: chytra-pracka
 draft: false
 date: 2019-08-12
-description: Nauč se jeden z IoT projektů na rozšíření digitálních dovedností. Sestav se Starter Kitem od BigClownu zařízení, se kterým změříš, jak moc je u vás v mrazáku zima.
+description: Nechej rodiče žasnout. Postav ze Starter Kitu od BigClown IoT detektor, který upozorní, až pračka dopere.
 tags:
   - Starter Project
 levels:

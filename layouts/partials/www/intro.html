@@ -5,7 +5,7 @@
                 <div class="container">
                   <div class="row align-items-end">
                     <div class="col-12 heading">
-                      <h1 class = "{{ .Lang }}">
+                      <h1 class = "cs">
                         <svg
                          xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -16,7 +16,7 @@
                          d="M20.398,17.000 L618.218,60.396 L625.993,134.862 L20.398,129.660 L20.398,17.000 Z"/>
                         </svg>
                         <!--<div>{{ i18n "learn_digital_skills" | safeHTML }}</div>-->
-                        <div><strong>Ovládni svět</strong> okolo sebe<br/><span>&nbsp;&nbsp;s mega <strong>chytrými krabičkami</strong></span></div>
+                        <div>{{ .Params.mainTitle | safeHTML }}</div>
                       </h1>
                     </div>
                   </div>

@@ -2,7 +2,7 @@
 other = "We are <strong>changing</strong> the way<br /><span>&nbsp;&nbsp;<strong>Digital Skills</strong> Are Learnt</strong></span>"
 
 [partners]
-other = "Technological Partners"
+other = "We cooperate with this schools and organizations"
 
 [inspiring_the_inventors]
 other = "\"Inspiring the&nbsp;inventors of&nbsp;tomorrow, today, together\""
@@ -35,7 +35,7 @@ other = "Access to Training Courses and Webinars"
 other = "Advice and Guidance on Financing"
 
 [projects_with_tutorials]
-other = "Projects with Step-by-Step Tutorials"
+other = "Example lassons and projects with Step-by-Step Tutorials"
 
 [one_more_step]
 other = "Just one more step <small>Please share with us a little bit more  about you, so&nbsp;we can prepare a tailor-made offer for&nbsp;you</small>"
@@ -99,3 +99,6 @@ other = "Find out how to motivate kids to learn digital skills and how to succes
 
 [promo_button]
 other = "Learn more"
+
+[kits_for_schools]
+other = "Kits fitted for schools"

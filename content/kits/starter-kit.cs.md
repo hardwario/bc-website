@@ -1,7 +1,8 @@
 ---
 title: Starter Kit
 id: basic
-description: Kontroluj své prostředí!
+kit: starter-kit
+description: Perfektvní začátek se stavebnicí BigClown!
 isBasic: false
 isPremium: false
 isUltimate: true
@@ -14,11 +15,11 @@ isEdu: true
 recommended: false
 included:
 notIncluded:
-weight: 10
-price: 1490 Kč
-buyLink: "https://obchod.bigclown.cz/push-button-kit/"
-modules: ["core","mini_battery","button","enclosures-button"]
-optionalModules: ["usb_dongle","sigfox","lora"]
+weight: 0
+price: 1 490 Kč
+buyLink: https://obchod.bigclown.cz/starter-kit/
+modules: ["core","mini_battery","button","usb_dongle"]
+optionalModules: ["sigfox","lora"]
 techSpecs:
     dimensions:
         heading: "Rozměry (krabička)"
@@ -32,6 +33,8 @@ techSpecs:
     battery:
         heading: "Výdrž na baterky"
         text: "2 roky při standardním použití"
+eduText: Starter Kit vám pomůže seznámit se se stavebnicí
+eduBenefits: ["Obsahuje Push Button Kit", "Obsahuje Radio Dongle","Skvělý začátek pro seznámení se stavebnicí","100 dní na vyzkoušení"]
 ---
 
-Co je tak skvělého na Push Button Kitu? Tlačítko. Je to jednoduché zařízení, ale má nekonečně mnoho využití. Můžeš na dálku ovládat jakékoli domácí zařízení, aktivovat módy nastavení domácnosti nebo ovládat garážová vrata.
+Základní sadou pro začátek s BigClownem je Starter Kit, ale časem ho můžeš vylepšit o rozšiřující moduly. Postav své první chytré zařízení a vytvoř projekty, kterými ohromíš kámoše, rodinu i nás.👌 Kit ti umožní měřit teplotu, pracovat s akcelometrem nebo ovládat cokoli stisknutím tlačítka.

@@ -7,37 +7,36 @@
 <section>
   <div class="getStarterKit">
     <div class="container">
-      <h2 class="title text-center">BigClown je zábavný nástroj<small> se kterým pochopíš a navrhneš internet věcí</small></h2>
+      <h2 class="title text-center">{{ .Params.mainHeading | safeHTML }}</h2>
       <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-12 col-md-6 text-center">
+        <div class="col-12 col-md-6 text-center pr-5">
           <img class="kit__mainimg starterKitImage" src="/_assets/images/starter-kit.png" alt="Starter Kit" />
         </div>
         <div class="col-12 col-md-6">
           <div class="text text--perex">
-           <p>Ze všeho, třeba i ze svojí židle, <strong>vytvoříš chytré zařízení</strong> a&nbsp;propojíš ho se svým počítačem nebo mobilem. Díky tomu začneš digitálně vylepšovat svůj domov, třídu a klidně i celé město a svět.</p>
-            <p>Začni se <strong>Starter Kitem</strong>, který si časem můžeš vylepšit o rozšiřující moduly.</p>
+           {{ .Content }}
           </div>
           <div>
-            <a href="https://obchod.bigclown.cz/starter-kit/" class="button button--fullred button--bigger" style = "font-size: 1.4rem">Kup si Starter Kit za 1490 Kč</a>
+            <a href="{{ .Params.button_link }}" class="button button--fullred button--bigger" style = "font-size: 1.4rem">{{ .Params.button | safeHTML }}</a>
           <br/>
           <div class = "benefits row align-items-center justify-content-center">
             <div class = "col-12 benefits__item">
               <div class="benefits__icon"></div>
-              <p><strong>Žádnej risk!</strong> Pokud se do 100 dnů do BigClowna nezamiluješ, vrátíme ti bez debat peníze zpět.</p>
+              <p>{{ i18n "no_risk" | safeHTML }}</p>
             </div>
             <div class = "col-12 benefits__item">
               <div class="benefits__icon benefits__icon--2"></div>
-              <p><strong>Doprava ZDARMA</strong><br/> Je to tak, tvůj Starter Kit ti doručíme zadarmo.</p>
+              <p>{{ i18n "free_shipping" | safeHTML }}</p>
             </div>
             <div class = "col-12 benefits__item">
               <div class="benefits__icon benefits__icon--3"></div>
-              <p><strong>Ušetříš 290 Kč</strong><br/> oproti ceně za samostatné moduly.</p>
+              <p>{{ i18n "you_save" | safeHTML }}</p>
             </div>
             <div class = "col-12 benefits__item">
               <div class="benefits__icon benefits__icon--4"></div>
-              <p><strong>Na startu ti pomůže naše <a href = "#">příručka</a></strong> a taky spousta projektů s manuály.</p>
+              <p>{{ i18n "handbook_included" | safeHTML }}</p>
             </div>
-           </div>
+          </div>
 
 
           </div>

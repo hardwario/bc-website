@@ -7,7 +7,7 @@
 
           <div class="pricelist">
             <div class="row no-gutters">
-              {{ range sort ($.Site.GetPage "section" "kits").Pages ".Weight" }}
+              {{ range first 3 ($.Site.GetPage "section" "kits").Pages }}
                 {{ if .Params.isStarter }}
                   {{ if eq $.Section "kits" }}
                     {{ .Render "grid-starter-withprice" }}

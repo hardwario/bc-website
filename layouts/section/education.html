@@ -159,14 +159,16 @@
   </div>
 </section>-->
 
+{{ partial "www/partners.html" . }}
+
 {{ partial "www/testimonial.html" . }}
 
 <section>
-  <div class="bg bg--gray bg--bubbles bg--borderedBottom">
+  <div class="bg bg--gray bg--bubbles pt-5 mt-5">
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="title title--2 text-center">{{ i18n "get_more" | safeHTML }}</h2>
+          <h2 class="title title--2 text-center">{{ i18n "kits_for_schools" }}</h2>
 
           <div class="pricelist">
             <div class="row no-gutters">
@@ -178,11 +180,9 @@
             </div>
           </div>
 
-          {{ if ne .Section "kits" }}
             <div class="text-center">
-              <a href="{{ "kits/" | absLangURL }}" class="button button--redtext">{{ i18n "show_all_kits" }}</a>
+              <br/>
             </div>
-          {{ end }}
         </div>
       </div>
     </div>

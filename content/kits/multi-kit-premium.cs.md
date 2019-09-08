@@ -15,8 +15,8 @@ included: ["Radio Dongle","Motion Detector", "Climate Monitor", "Flood Detector"
 notIncluded: ["Push Button", "CO2 Module"]
 gifts: ["Klaunský nos", "Klaunský kufr"]
 weight: 1
-price: €359
-save: €34
+price: 9 190 Kč
+save: 850 Kč
 buyLink: "https://obchod.bigclown.cz/big-kit-premium/"
 modules: ["usb_dongle","core-5","mini_battery-4","climate","pir","sensor","flood","power","lcd","enclosures-101-3","enclosures-301","enclosures-501","suitcase"]
 optionalModules: ["sigfox","lora"]

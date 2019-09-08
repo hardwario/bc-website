@@ -11,12 +11,13 @@
       </div>
 
 
-      <!--<div class="pricelist__title2 text-uppercase">{{ i18n "able_to_make" }}:</div>-->
+      <div class="pricelist__title2 text-uppercase">{{ .Params.eduText }}</div>
 
       <ul class="pricelist__items">
-        <li class="pricelist__items__item">Obsahuje Push Button Kit</li>
-        <li class="pricelist__items__item">Obsahuje Radio Dongle</li>
-        <li class="pricelist__items__item">Skvělý začátek pro seznámení se stavebnicí</li>
+        {{ range .Params.eduBenefits }}
+
+        <li class="pricelist__items__item">{{ . }}</li>
+        {{ end}}
       </ul>
       {{ if .Params.save }}
         <div class="pricelist__discount">{{ i18n "save" }} {{ .Params.save }}</div>

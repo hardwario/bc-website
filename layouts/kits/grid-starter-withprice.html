@@ -14,7 +14,7 @@
           <li class="pricelist__items__item pricelist__items__item--disabled">{{ . }}</li>
         {{ end }}
           <li class="pricelist__items__item pricelist__items__item--gifts">
-            {{ range $index, $element:= .Params.gifts }}
+            {{ range  $index, $element:= .Params.gifts }}
               <a href="#">{{ . }}
                 {{ if (eq $index 0) }}
                   <div class="mydropdown mydropdown--product" style="display: none;">

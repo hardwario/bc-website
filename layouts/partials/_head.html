@@ -34,6 +34,11 @@
   {{ end }}
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
+<style>
+  body{
+    padding-right: 0 !important
+  }
+</style>
 <body>
   {{ if hasPrefix .Permalink .Site.Params.productionURL }}
   <!-- Google Tag Manager (noscript) -->

@@ -1,0 +1,147 @@
+<div style="margin-bottom:10px;" class = "container">
+
+  <div class="row justify-content-md-center" id="pg-download">
+  </div>
+</div>
+<!--
+<div class = "text">
+  <a class = 'showAllPlatforms'>Show for all platforms</a>
+</div>
+-->
+<script>
+function reqListener () {
+//console.log(this.responseText);
+
+if (this.readyState == 4 && this.status == 200) {
+  json = JSON.parse(this.responseText)
+
+  var box = document.getElementById("pg-download");
+  var count = 0;
+  json.assets.forEach(el => {
+    var div = document.createElement("div");
+    var a = document.createElement("a");
+    var name = document.createElement("div");
+
+    a.innerText = el.name;
+    a.href = el.browser_download_url;
+
+
+    if(el.name.indexOf("win") != -1 && navigator.platform.indexOf("Win") != -1)
+    {
+      if(el.name.indexOf("64bit") != -1 && (navigator.userAgent.indexOf("WOW64") != -1 || navigator.userAgent.indexOf("Win64") != -1 ))
+      {
+        var friendly_name = document.createElement("strong");
+
+        if(el.name.indexOf("setup") != -1)
+        {
+          friendly_name.innerText = "Windows 64bit - " + "{{ i18n "install" }}";
+        }
+        else{
+          friendly_name.innerText = "Windows 64bit - " + "{{ i18n "no_install" }}";
+        }
+
+        var file_name = document.createElement("span");
+        file_name.innerText = el.name;
+        var br = document.createElement("br");
+
+        name.appendChild(friendly_name);
+        name.appendChild(br);
+        name.appendChild(file_name);
+
+        name.classList.add("col-7");
+        name.classList.add("show");
+        name.classList.add("mb-3");
+
+        a.innerText = {{ i18n "download" }};
+        a.classList.add("button");
+        a.classList.add("button--gray");
+        a.classList.add("button--gray--smaller");
+        div.classList.add("show");
+        count++;
+      }
+      else if(el.name.indexOf("32bit") != -1 && (navigator.userAgent.indexOf("WOW32") == -1 && navigator.userAgent.indexOf("Win32") == -1 ))
+      {
+        var friendly_name = document.createElement("strong");
+
+
+        if(el.name.indexOf("setup") != -1)
+        {
+          friendly_name.innerText = "Windows 32bit - " + "{{ i18n "install" }}";
+        }
+        else{
+          friendly_name.innerText = "Windows 32bit - "+ "{{ i18n "no_install" }}";
+        }
+        var file_name = document.createElement("span");
+        file_name.innerText = el.name;
+        var br = document.createElement("br");
+
+        name.appendChild(friendly_name);
+        name.appendChild(br);
+        name.appendChild(file_name);
+
+        name.classList.add("col-7");
+        name.classList.add("show");
+        name.classList.add("mb-3");
+
+        a.innerText = {{ i18n "download" }};
+        a.classList.add("button");
+        a.classList.add("button--gray");
+        a.classList.add("button--gray--smaller");
+        div.classList.add("show");
+        count++;
+      }
+    }
+
+    if(el.name.indexOf("linux") != -1 && navigator.platform.indexOf("Linux") != -1)
+    {
+      name.classList.add("col-7");
+      name.innerText = el.name;
+      name.classList.add("show");
+      name.classList.add("pt-2");
+      name.classList.add("mb-3");
+
+      a.innerText = {{ i18n "download" }};
+      a.classList.add("button");
+      a.classList.add("button--gray");
+      a.classList.add("button--gray--smaller");
+      div.classList.add("show");
+      count++;
+    }
+
+    if(el.name.indexOf("mac") != -1 && navigator.platform.indexOf("Mac") != -1)
+    {
+      a.innerText = {{ i18n "download_for_macos" }};
+      a.classList.add("button");
+      a.classList.add("button--fullred");
+      div.classList.add("show");
+      div.classList.add("col-8");
+      count++;
+    }
+
+    div.appendChild(a);
+    box.appendChild(name);
+    box.appendChild(div);
+  });
+    if(count != 0){
+      $('#pg-download div').hide();
+    }
+    else{
+      //$('.showAllPlatforms').hide();
+    }
+    $('#pg-download div.show').show();
+}
+else{
+  //$('.showAllPlatforms').replaceWith("<a class = 'showAllPlatforms button' href = 'https://github.com/bigclownlabs/bch-playground/releases/latest'>Show for all platforms</a>");
+}
+}
+
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "https://api.github.com/repos/bigclownlabs/bch-playground/releases/latest", true);
+oReq.send();
+
+$('.showAllPlatforms').click(function(){
+  $('#pg-download div').show();
+  $(this).hide();
+});
+</script>

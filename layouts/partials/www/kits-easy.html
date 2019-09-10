@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="title text-center">{{ i18n "start_making" | safeHTML }}</h2>
+          <h2 class="title text-center"><!-- --></h2>
           <div class="row d-none d-lg-flex">
             {{ range sort ($.Site.GetPage "section" "kits").Pages ".Weight" }}
               {{ if not .Params.isStarter }}

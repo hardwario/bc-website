@@ -1,6 +1,7 @@
 ---
 title: Climate Monitor Kit
 id: basic
+kit: climate-monitor
 description: Sleduj svůj teplotní komfort!
 isBasic: true
 isPremium: true
@@ -14,7 +15,7 @@ recommended: false
 included:
 notIncluded:
 weight: 20
-price: €59
+price: 1 490 Kč
 buyLink: "https://obchod.bigclown.cz/climate-monitor-kit/"
 modules: ["core","mini_battery","climate","enclosures_climate"]
 optionalModules: ["usb_dongle","sigfox","lora"]

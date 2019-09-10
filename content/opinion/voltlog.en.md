@@ -6,4 +6,5 @@ author:
 image: voltlog.png
 logo: voltlog.jpg
 video: U9KgWIXIDJE
+draft: true
 ---

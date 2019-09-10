@@ -6,4 +6,5 @@ author:
 image: learnelectronics.png
 logo: learnelectronics.jpg
 video: D6dbG0tKf7Y
+draft: true
 ---

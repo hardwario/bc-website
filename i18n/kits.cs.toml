@@ -62,7 +62,7 @@ other = "Co si dokážeš samostatně postavit"
 other = "Kit je připraven na integraci s"
 
 [many_more]
-other = "a mnohem více ..."
+other = "a dalšími..."
 
 [coming_soon]
 other = "už brzy"
@@ -75,3 +75,6 @@ other = "Integrace Low-Power sítí"
 
 [extend_kit]
 other = "Rozšiř svůj kit modulem pro low-power sítě a udělej jej nezávislým na internetovém připojení a napájení ze zdroje."
+
+[selected_projects]
+other = "Projekty, které si můžeš s kitem postavit"

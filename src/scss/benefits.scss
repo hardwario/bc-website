@@ -1,0 +1,45 @@
+.benefits
+{
+  margin-top: 0.5*$baseline;
+
+  &__item
+  {
+    padding-bottom: 0.5*$baseline;
+  }
+  &__icon
+  {
+    height: 2*$baseline;
+    background: url("../svg/riskfree.svg") no-repeat center center;
+    background-size: 32px 32px;
+    float: left;
+    width: 72px;
+
+    &--2
+    {
+      background-image: url("../svg/shipping.svg");
+    }
+
+    &--3
+    {
+      background-image: url("../svg/percent.svg");
+    }
+
+    &--4
+    {
+      background-image: url("../svg/handbook.svg");
+    }
+
+    &--5
+    {
+      background-image: url("../svg/yoda.svg");
+    }
+
+  }
+
+  p{
+    font-size: 1.1em;
+    line-height: 1.1em;
+    margin: 0;
+    padding-top: 8px;
+  }
+}

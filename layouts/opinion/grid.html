@@ -7,9 +7,6 @@
           </div>
             <h3 class="opinion__text">{{ .Title }}</h3>
             <div>
-                <div class="opinion__image d-flex align-items-center justify-content-center">
-                    <img src="/opinion/{{ .Params.logo }}" alt="{{ .Title }}" />
-                </div>
                 <h3 class="opinion__name">{{ .Params.author.name }}</h3>
                 <div class="opinion__pos">{{ .Params.author.position}}</div>
             </div>
@@ -17,7 +14,7 @@
         </span>
     </div>
 
-    <div class="modal fade modal-{{ .Params.video }}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal modal-{{ .Params.video }}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style = "padding:0!important">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
           <iframe width="100%" height="550px" src="https://www.youtube.com/embed/{{ .Params.video }}?rel=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

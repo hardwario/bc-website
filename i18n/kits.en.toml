@@ -62,7 +62,7 @@ other = "What you'll be able to separately build"
 other = "It's ready for integration with"
 
 [many_more]
-other = "and many more ..."
+other = "and more ..."
 
 [coming_soon]
 other = "coming soon"
@@ -75,3 +75,6 @@ other = "Low-Power Networks Integration"
 
 [extend_kit]
 other = "Extend your kit with our low-power network modules and make it independent of the internet connection and power supply from main."
+
+[selected_projects]
+other = "Projects you can build with this Kit"

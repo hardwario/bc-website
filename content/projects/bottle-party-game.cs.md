@@ -21,6 +21,7 @@ image_main:
 author: lukas_fabik
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]
+kit: "starter-kit"
 handbook:
 ---
 

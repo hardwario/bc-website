@@ -2,7 +2,7 @@
 other = "<strong>Měníme</strong> způsob výuky<br /><span>&nbsp;&nbsp;<strong>Digitálních dovedností</strong></span>"
 
 [partners]
-other = "Technologičtí partneři"
+other = "Spolupracujeme s těmito školami a organizacemi"
 
 [testimonial_heading]
 other = "Nejlepší IoT kit pro učení digitálních dovedností"
@@ -14,7 +14,7 @@ other = "BigClown Educational Kit je perfektní nástroj pro učení nových tec
 other = "<span>Marek Beránek</span> - Ředitel Unicorn College"
 
 [join_our_community]
-other = "Přidejte se k nám"
+other = "Začněte učit s BigClown"
 
 [sign_up_to_get]
 other = "Příhlaste se a získáte výukové materiály a naši podporu"
@@ -26,13 +26,13 @@ other = "Přidejte se"
 other = "Přihlášením získáte"
 
 [access_to_courses]
-other = "Přístup k výukovým kurzům a seminářům"
+other = "Přístup k výukovým kurzům a webinářům"
 
 [advice_and_guidance]
 other = "Rady, doporučení a postup, jak zajistit financování"
 
 [projects_with_tutorials]
-other = "Projekty s návody krok za krokem"
+other = "Ukázkové lekce a projekty s návody krok za krokem"
 
 [one_more_step]
 other = "Ještě jeden krok <small>Prosím, řekněte nám o sobě ještě trochu více informací, ať&nbsp;můžeme připravit nabídku na&nbsp;míru</small>"
@@ -89,10 +89,13 @@ other = "Průmysl"
 other = "Není snadné začít spolupracovat s velkými společnostmi, ale ve chvíli kdy to dokážete, začnou se dít skvělé věci."
 
 [promo_heading]
-other = "Jak v dětech vzbudit zájem o technologie?"
+other = "Jak v dětech vzbudit zájem o&nbsp;výuku a&nbsp;učit je v&nbsp;souvislostech?"
 
 [promo_text]
-other = "Zjistěte, jak motivovat děti učit se digitální dovednosti a jak úspěšně implementovat STEM výuku."
+other = "Zjistěte, jak pomocí digitálních technologií a reálných projektů <strong>motivovat děti</strong> tak, aby je výuka bavila a aktivně se do ní zapojily."
 
 [promo_button]
-other = "Dozvědět se více"
+other = "Chci vědět více"
+
+[kits_for_schools]
+other = "Kity ideální do školy"

@@ -1,19 +1,14 @@
-[blynk]
-name = "Blynk"
-image = "blynk.png"
+[czechitas]
+name = "Czechitas"
+image = "czechitas.png"
+weight = 1
+
+[unicorn]
+name = "Unicorn College"
+image = "unicorn.png"
 weight = 3
 
-[iftt]
-name = "IFTTT"
-image = "ifthis.jpg"
-weight = 4
-
 [nodered]
-name = "Node-RED"
-image = "node-red.png"
+name = "Knightsbridge School"
+image = "ks_logo.png"
 weight = 2
-
-[raspberry]
-name = "Raspberry Pi"
-image = "raspberry.jpg"
-weight = 1

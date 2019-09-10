@@ -21,6 +21,7 @@ image_main: /upload/ilustrace-ochytri-pracku.png
 author: lukas_fabik
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]
+kit: "starter-kit"
 handbook:
 ---
 

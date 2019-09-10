@@ -1,10 +1,11 @@
 ---
-title: Naučila jsem se tady nové věci
+title: I learned new things here [ENG sub.]
 author:
-    position: studentka, 14 let
+    position: student, 14 years
     name: Aneta
 image: aneta.png
 logo:
 video: ZF2ZCYcqumE
 draft: false
+weight: 30
 ---

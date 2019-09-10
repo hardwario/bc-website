@@ -1,10 +1,11 @@
 ---
-title: Ráda bych si to zopakovala
+title: I'd like to repeat that [ENG sub.]
 author:
-    position: studentka, 14 let
+    position: student, 14 years
     name: Anička
 image: anicka.png
 logo:
 video: Eib892Zu7qk
 draft: false
+weight: 20
 ---

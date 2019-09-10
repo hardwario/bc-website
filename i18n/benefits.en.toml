@@ -9,3 +9,6 @@ other = "<strong>You save 22€</strong><br/> compared to the price for modules.
 
 [handbook_included]
 other = "<strong>Handbook</strong> will help you with the start and with many projects."
+
+[master]
+other = "You will have a <strong>personal master</strong> to guide you through BigClown."

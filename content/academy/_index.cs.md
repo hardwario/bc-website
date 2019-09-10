@@ -1,6 +1,6 @@
 ---
 title: Akademie
-mainHeading: Nauč se pracovat s BigClownem
+mainHeading: Zjisti, jak ten BigClown vlastně funguje...
 slug: akademie
 menu: ["main", "footer"]
 weight: 10

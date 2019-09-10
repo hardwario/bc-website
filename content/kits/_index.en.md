@@ -1,6 +1,6 @@
 ---
 title: Kits
-mainHeading: Discover our Plug'n'Make Kits
+mainHeading: Super-smart devices gallery for you
 slug: kits
 menu: ["main", "footer"]
 weight: 30

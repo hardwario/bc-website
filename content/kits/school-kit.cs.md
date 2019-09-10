@@ -1,5 +1,5 @@
 ---
-title: Teacher's Set
+title: Školní Multi Kit
 draft: false
 id: basic
 description: Inspirujte celou třídu!
@@ -16,12 +16,12 @@ recommended: false
 included:
 notIncluded:
 weight: 530
-price: 25 690 Kč
+price: 24 990 Kč
 buyLink: "https://obchod.bigclown.cz/school-multi-kit/"
 modules: ["core","mini_battery","button","enclosures-button"]
 optionalModules: ["usb_dongle","sigfox","lora"]
 eduText: Inspirujte celou třídu, sada obsahuje oblíbené moduly
-eduBenefits: ["Obsahuje 62 modulů a příslušenství", "Obsahuje BigClown Hub","Postavíte libovolný BigClown projekt","Objednejte nyní, zaplaťte na konci roku"]
+eduBenefits: ["Speciální sada pro školy", "Obsahuje 60 modulů a příslušenství", "Obsahuje BigClown Hub","Postavíte libovolný BigClown projekt"]
 ---
 
-Teacher's set je speciální sada pro učitele a učitelky. Umožní vám s třídou postavit jakýkoli BigClown projekt. Sada obsahuje všechny BigClown moduly a taky BigClown Hub s Raspberry Pi.
+Teacher's set je speciální sada pro učitele a učitelky. Umožní vám s třídou postavit jakýkoli BigClown projekt. Sada obsahuje všechny BigClown moduly a BigClown Hub s Raspberry Pi.

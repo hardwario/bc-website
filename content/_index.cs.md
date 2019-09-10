@@ -13,4 +13,4 @@ button_link: https://obchod.bigclown.cz/starter-kit/
 
 Ze všeho, třeba i ze svojí židle, **vytvoříš chytré zařízení** a&nbsp;propojíš ho se svým počítačem nebo mobilem. Díky tomu začneš digitálně vylepšovat svůj domov, třídu a klidně i celé město a svět.
 
-Začni se**Starter Kitem**, který si časem můžeš vylepšit o rozšiřující moduly.
+Začni se **Starter Kitem**, který si časem můžeš vylepšit o rozšiřující moduly.

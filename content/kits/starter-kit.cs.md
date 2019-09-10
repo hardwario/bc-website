@@ -34,7 +34,7 @@ techSpecs:
         heading: "Výdrž na baterky"
         text: "2 roky při standardním použití"
 eduText: Starter Kit vám pomůže seznámit se se stavebnicí
-eduBenefits: ["Obsahuje Push Button Kit", "Obsahuje Radio Dongle","Skvělý začátek pro seznámení se stavebnicí","100 dní na vyzkoušení"]
+eduBenefits: ["Obsahuje Push Button Kit", "Obsahuje Radio Dongle","Skvělý začátek se stavebnicí","100 dní na vyzkoušení"]
 ---
 
 Základní sadou pro začátek s BigClownem je Starter Kit, ale časem ho můžeš vylepšit o rozšiřující moduly. Postav své první chytré zařízení a vytvoř projekty, kterými ohromíš kámoše, rodinu i nás.👌 Kit ti umožní měřit teplotu, pracovat s akcelometrem nebo ovládat cokoli stisknutím tlačítka.

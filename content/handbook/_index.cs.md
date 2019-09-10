@@ -110,7 +110,7 @@ perex: <p>Získej náskok před ostatními. <strong>BigClown</strong> je zábavn
 <img src="/_assets/images/starter-kit/gif-ikonka-playground.gif" alt="BigClown Playground" style = "max-width:100%">
 </div>
 <div class = "col-md-8 text-left">
-{{ partial "playground.html" }}
+{{< playground-download >}}
 </div>
 </div>
 

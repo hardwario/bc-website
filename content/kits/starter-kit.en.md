@@ -34,7 +34,7 @@ techSpecs:
         heading: "Battery life-time"
         text: "2 years for standard use"
 eduText: Starter Kit helps you to became familiar with Kit
-eduBenefits: ["Contains Push Button Kit", "Contains Radio Dongle", "Great to start with the Kit", "100days risk free"]
+eduBenefits: ["Contains Push Button Kit", "Contains Radio Dongle", "The perfect start with BigClown", "100 days risk free"]
 ---
 
 The basic set for start with BigClown is Starter Kit, in future you can upgrade it with more modules. Build your first smart device and create projects to amaze friends, family and us.👌 Kit enables you to measure temperature, work with accelerometer or control anything with a button.

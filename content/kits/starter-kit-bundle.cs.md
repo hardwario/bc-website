@@ -24,6 +24,6 @@ eduText: Sada 10 Starter Kitů umožní zábavu s BigClownem celé třídě
 eduBenefits: ["Obsahuje 10 Starter Kitů", "Obsahuje zdarma BigClown Hub", "Vystačí pro celou třídu","BigClown tričko zdarma"]
 ---
 
-Pořiďte Starter Kity pro celou třídu a začněte s vědátorstvím hned! Starter Kit je základní sadou pro začátek, kterou můžeš časem  vylepšit o rozšiřující moduly. Postav své první chytré zařízení a vytvoř projekty, kterými ohromíš kámoše, rodinu i nás.👌 Kit ti umožní měřit teplotu, pracovat s akcelometrem nebo ovládat cokoli stisknutím tlačítka.
+Pořiďte Starter Kity pro celou třídu a začněte s vědátorstvím hned! Starter Kit je základní sadou pro začátek. Všichni postavíte své první chytré zařízení a vytvoříte projekty, kterými ohromíte všechny okolo.👌 Kit umožňuje měřit teplotu, pracovat s akcelometrem nebo ovládat cokoli stisknutím tlačítka. Časem jej můžete vylepšit o rozšiřující moduly.
 
-Součástí sady je i BigClown tričko, školy mohou využít akci **kup hned, zaplať až na konci roku**.
+Součástí sady je zdarma BigClown tričko a BigClown Hub.

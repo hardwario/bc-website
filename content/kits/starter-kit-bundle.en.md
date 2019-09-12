@@ -26,4 +26,4 @@ eduBenefits: ["Contains 10 Starter Kits", "Contains BigClown Hub for free", "Eno
 
 Get Starter Kits for the whole class and start with inventions now! Starter Kit is basic kit for start, which you can upgrade with more modules in future. Build your first smart device and create projects to amaze friends, family and us.👌 Kit enables you to measure temperature, work with accelerometer or control anything with a button.
 
-Set includes also BigClown T-Shirt as a bonus. Schools can **order now and pay by the end of the year**.
+Set includes also BigClown T-Shirt and BigClown Hub as a bonus.

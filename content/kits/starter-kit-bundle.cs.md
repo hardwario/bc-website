@@ -16,7 +16,7 @@ included:
 notIncluded:
 weight: 500
 price: 14 900 Kč
-buyLink: "https://obchod.bigclown.cz/push-button-kit/"
+buyLink: https://obchod.bigclown.cz/starter-kits-bundle/
 modules: ["core","mini_battery","button","usb_dongle"]
 optionalModules: ["usb_dongle","sigfox","lora"]
 contains: []

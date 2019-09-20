@@ -1,6 +1,6 @@
 ---
 title: 'Instal the right firmware, or “brain”, to your box'
-draft: true
+draft: false
 date: 2019-09-20T07:29:12.756Z
 weight: 30
 description: >-

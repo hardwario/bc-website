@@ -14,7 +14,6 @@ weight: 30
 Bez firmware ti krabička nebude fungovat správně. Na různé projekty přitom potřebuješ různý firmware. Podívej se, jak si krabičku správně nastavíš.
 
 ## Co je to firmware?
-<infografika = zobrazuje rozdíl mezi hardware, software a firmware>
 
 Firmware si představ jako **„mozek” věcí**. 🤖 Je to program, který zařízení řídí. Najdeš ho ve všech chytrých zařízeních, a to i v těch úplně nejjednodušších, třeba v semaforu. Svůj firmware mají i sedadla v autě, aby se dala vyhřívat. Firmwarem je i legendární BIOS, který ti zapíná a vypíná počítač. Hodně pokročilý firmware máš i na svém smartphonu v podobě operačního systému. Ať už je to Android, iOS nebo jakýkoli jiný. 👌
 

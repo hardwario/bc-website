@@ -74,4 +74,4 @@ You can update both the **USB Dongle** and the **Core module** from your kit.
 * The whole time the **USB dongle is disconnected** in the Devices tab and nothing else is connected (the green Connect button is lit but you are not pressing it).
 * When you connect the batteries to the Kit, the **LED** on the Core module flashes red briefly. (If you have multiple boards connected to the Core module, such as a button, you have to look from the side.) That means everything works just fine. ️🎉
 
-Now you only have \[o pair your Dongle with the Core module]({{< ref "/academy/how-to-pair-kit.cs.md" >}}), as usual.
+Now you only have to pair your Dongle with the Core module, as usual.

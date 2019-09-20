@@ -8,7 +8,6 @@ meta:
 description: Aby ti tvůj IoT vynález od BigClowna posílal notifikace na mobil, potřebuješ ho spárovat s Blynkem. Koukni na náš jednoduchý návod.
 image_preview: /upload/mobile-phone.jpg
 image_main: /upload/mobile-phone.jpg
-author: "lukas_fabik"
 weight: 60
 ---
 

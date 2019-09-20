@@ -8,7 +8,6 @@ meta:
 description: Aby si USB Dongle rozuměl s Core modulem, musíš Dongle s krabičkou spárovat. Ti si pak mezi sebou vytvoří spojení. Mrkni, jak na to.
 image_preview: /upload/setup-kit.jpg
 image_main: /upload/setup-kit.jpg
-author: "lukas_fabik"
 weight: 20
 ---
 

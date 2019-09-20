@@ -8,7 +8,6 @@ meta:
 description: Svému BigClown kitu zadáš příkazy v programovacím nástroji Node-RED. Ten je úžasně intuitivní a pracovat se v něm naučíš za pár minut. Přesvědč se sám.
 image_preview: /upload/pouzivani-bigclown-playground.jpg
 image_main: /upload/pouzivani-bigclown-playground.jpg
-author: "lukas_fabik"
 weight: 40
 ---
 

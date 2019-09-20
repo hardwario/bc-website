@@ -8,7 +8,6 @@ meta:
 description: Chceš vidět data ze své BigClown krabičky v barevných grafech a ukazatelích? Vytvoř pro ni šikovný dashboard. Poradíme ti, jak na to.
 image_preview: /upload/dashboard.jpg
 image_main: /upload/dashboard.jpg
-author: "lukas_fabik"
 weight: 50
 ---
 

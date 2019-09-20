@@ -8,7 +8,6 @@ meta:
 description: Bez firmware ti IoT krabička nebude fungovat správně. Díky tomuhle článku pochopíš, na co firmware slouží a správně si ho nastavíš.
 image_preview: /upload/project_placeholder.jpg
 image_main: /upload/project_placeholder.jpg
-author: "lukas_fabik"
 weight: 30
 ---
 

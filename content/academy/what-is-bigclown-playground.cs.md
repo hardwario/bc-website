@@ -8,7 +8,6 @@ meta:
 description: Tvá BigClown krabička dokáže úžasné věci, ale musíš jí povědět, co má dělat. A právě k tomu slouží software BigClown Playground. Mrkni na něj.
 image_preview: /upload/what-is-playground.jpg
 image_main: /upload/what-is-playground.jpg
-author: "lukas_fabik"
 weight: 10
 ---
 

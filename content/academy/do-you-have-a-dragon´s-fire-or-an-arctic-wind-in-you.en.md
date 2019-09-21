@@ -1,5 +1,5 @@
 ---
-title: Do you have a dragon´s fire or an arctic wind in you?
+title: Do you have a dragon's fire or an arctic wind in you?
 draft: true
 date: 2019-09-21T08:58:56.363Z
 weight: 60
@@ -7,7 +7,7 @@ description: >-
   This is an IoT project which focuses on enhancing your digital skills. With
   the BigClown Starter Kit, you can set up a device to measure the temperature
   of your breath and that of your friends. What do you need to do to win?
-meta.title: Do you have a dragon´s fire or an arctic wind in you?
+meta.title: Do you have a dragon's fire or an arctic wind in you?
 meta.description: >-
   This is an IoT project which focuses on enhancing your digital skills. With
   the BigClown Starter Kit, you can set up a device to measure the temperature
@@ -66,7 +66,7 @@ Confirm by clicking the **Done** button.
 ## Start the game with your friends
 
 1. **Sit with your friends at a table.**
-2. First of all, measure who's hiding their **dragon´s fire**. 🔥 **One by one breathe on the box**. All aids are allowed; try warming up your breath with what you have on hand. Go wild and try anything and everything. 🙌 
+2. First of all, measure who's hiding their **dragons fire**. 🔥 **One by one breathe on the box**. All aids are allowed; try warming up your breath with what you have on hand. Go wild and try anything and everything. 🙌 
 
 ❓ **Try**: What makes your breath warmer? Hot tea or chili peppers?
 

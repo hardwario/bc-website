@@ -180,7 +180,7 @@ perex: <p>Získej náskok před ostatními. <strong>BigClown</strong> je zábavn
 </li>
 <li>
 <label class="checkbox">v krabičce máš <strong>firmware pro Starter Kit</strong>. Firmware je program nahraný na Core module. Core module jsme si předtím popsali jako srdce – a firmware je vlastně takový mozek. Celé krabičce říká, co má přesně dělat. Na každý typ kitu proto potřebuješ jiný firmware.<br/><br/>
-Pokud krabičku používal někdo před tebou, může se stát, že do krabičky nahrál firmware z jiného kitu. Ověř si, že používáš firmware pro Starter Kit. Klikni do záložky „Devices”: vidíš ve sloupci <strong>alias</strong> napsané „push-button:0”? Jestli ne, <a href = "#">nainstaluj si firmware Push Button</a>.
+Pokud krabičku používal někdo před tebou, může se stát, že do krabičky nahrál firmware z jiného kitu. Ověř si, že používáš firmware pro Starter Kit. Klikni do záložky „Devices”: vidíš ve sloupci <strong>alias</strong> napsané „push-button:0”? Jestli ne, <a href = "/cs/academy/jak-nahrat-firmware/">nainstaluj si firmware Push Button</a>.
 <input type="checkbox">
 <span class="checkmark"></span>
 </label>

@@ -34,7 +34,7 @@ perex: <p>Get ahead of the game. <strong>BigClown</strong> is an entertaining de
 <p>These parts are collectively called <strong>hardware</strong>, which means a fixed part of any device. Also, these few elements will be enough for many of your projects.</p>
 </div>
 <div class = "col-md-6 align-self-center">
-<img src="/_assets/images/starter-kit/3-infografika-dily-kitu.png" alt="BigClown Playground" style = "max-width:100%">
+<img src="/_assets/images/starter-kit/3-infografika-dily-kitu-en.png" alt="BigClown Playground" style = "max-width:100%">
 </div>
 </div>
 
@@ -186,7 +186,7 @@ perex: <p>Get ahead of the game. <strong>BigClown</strong> is an entertaining de
 </li>
 <li>
 <label class="checkbox">your Starter Kit is <strong>set correctly</strong>. If the device box was used by someone else before you, it is possible that they had loaded settings from another kit (we call it <strong>firmware</strong>). Make sure that you are using the firmware for the Starter Kit.
-Click on the <strong>Devices</strong> tab: do you see “push-button:0” in the <strong>Alias</strong> column? If not, download the Starter Kit firmware called Radio Push Button; <a href = "#">we have prepared a guide for you here</a>.
+Click on the <strong>Devices</strong> tab: do you see “push-button:0” in the <strong>Alias</strong> column? If not, download the Starter Kit firmware called Radio Push Button; <a href = "/academy/how-to-flash-firmware/">we have prepared a guide for you here</a>.
 <input type="checkbox">
 <span class="checkmark"></span>
 </label>
@@ -276,12 +276,6 @@ Click on the <strong>Devices</strong> tab: do you see “push-button:0” in the
 </div>
 <div class = "col-md-6">
 <img src="/_assets/images/starter-kit/pocitani-akce.png" alt="BigClown Playground" style = "max-width:100%">
-</div>
-</div>
-
-<div class="row justify-content-center">
-<div class = "col-md-8">
-<img src="/_assets/images/starter-kit/9-komiks.png" alt="BigClown Playground" style = "max-width:100%">
 </div>
 </div>
 </div>

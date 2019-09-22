@@ -25,20 +25,10 @@
             $('#TableOfContents ul li ul').slideToggle();
           });
         </script>
-        {{ if ne .Params.idea true }}
         </div>
-          <!--<div class="col-12 justify-content-center d-none d-xl-block">
-            <div class="article__author article__author--project d-flex flex-column justify-content-center">
-              {{ $author := index $.Site.Data.authors .Params.author }}
-              <img src="/authors/{{ $author.image }}" alt="{{ $author.name }}" />
-              <strong>{{ $author.name }}</strong>
-              <span>{{ $author.email }}</span>
-            </div>
-          </div>-->
           <div class="col-12 justify-content-center d-none d-xl-block">
             <div class="addthis_inline_share_toolbox article__soc article__soc--project"></div>
           </div>
-        {{ end }}
 
       </div>
       <script>

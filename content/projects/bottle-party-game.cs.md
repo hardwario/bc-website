@@ -43,16 +43,12 @@ Budeš potřebovat **krabičku s tlačítkem** a **USB dongle**. Vystačíš si 
 3. Jdeme na to. 🤞 Na plochu postav node **MQTT** ze sekce Input.
    Na node dvakrát klikni a nastav v něm klíčovou funkci – klikání na tlačítko. **Do pole Topic zkopíruj tenhle řádek:**
    ````
-       ```
-       node/x-axis-detector:0/accelerometer/-/event-count
-       ```
+           ```
+           node/x-axis-detector:0/accelerometer/-/event-count
+           ```
    ````
 
 ![MQTT topic](https://res.cloudinary.com/lukasfabik/image/upload/v1566149308/projects/bottle-party-game/image18.png "MQTT topic")
-
-
-
-{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149308/projects/bottle-party-game/image18.png" alt = "MQTT topic" >}}
 
 Potvrď tlačítkem **Done**.
 

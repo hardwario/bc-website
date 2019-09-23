@@ -1,12 +1,20 @@
 ---
 title: Hraj párty hru „flaška” elektronicky
-meta:
-    title: Hraj párty hru „flaška” elektronicky díky IoT
-    description: Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ náhodného člena vaší party.
-slug: party-hra-flaska
 draft: false
-date: 2019-08-12
-description: Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ náhodného člena vaší party.
+featured: true
+handbook: starter-kit
+date: 2019-08-12T00:00:00.000Z
+description: >-
+  Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ
+  náhodného člena vaší party.
+slug: party-hra-flaska
+meta.title: Hraj párty hru „flaška” elektronicky díky IoT
+meta.description: >-
+  Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ
+  náhodného člena vaší party. slug: party-hra-flaska
+image_preview: /upload/project_placeholder.jpg
+image_main: >-
+  https://res.cloudinary.com/lukasfabik/image/upload/v1566149309/projects/bottle-party-game/image4.png
 tags:
   - Starter Project
 levels:
@@ -15,15 +23,7 @@ places:
   - Home
 devices:
   - Starter Kit
-idea: false
-image_preview: /upload/project_placeholder.jpg
-image_main:
-author: lukas_fabik
-featured: true
-modules: ["core","button","mini_battery","usb_dongle"]
-handbook:
 ---
-
 ## Úvod
 
 {{< perex >}}
@@ -38,14 +38,19 @@ Budeš potřebovat **krabičku s tlačítkem** a **USB dongle**. Vystačíš si 
 
 ## Rozjeď to v Node-RED
 
-1. Starter Kit [sestav a spáruj]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
+1. Starter Kit \[sestav a spáruj]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, \[zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha.
 3. Jdeme na to. 🤞 Na plochu postav node **MQTT** ze sekce Input.
-Na node dvakrát klikni a nastav v něm klíčovou funkci – klikání na tlačítko. **Do pole Topic zkopíruj tenhle řádek:**
+   Na node dvakrát klikni a nastav v něm klíčovou funkci – klikání na tlačítko. **Do pole Topic zkopíruj tenhle řádek:**
+   ````
+       ```
+       node/x-axis-detector:0/accelerometer/-/event-count
+       ```
+   ````
 
-    ```
-    node/x-axis-detector:0/accelerometer/-/event-count
-    ```
+![MQTT topic](https://res.cloudinary.com/lukasfabik/image/upload/v1566149308/projects/bottle-party-game/image18.png "MQTT topic")
+
+
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149308/projects/bottle-party-game/image18.png" alt = "MQTT topic" >}}
 
@@ -58,6 +63,7 @@ Potvrď tlačítkem **Done**.
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149307/projects/bottle-party-game/image5.png" alt = "Node-RED function node" >}}
 
 2. Dvojklikem node otevři. Na řádku **Name** node pojmenuj (třeba Náhoda). Do řádku **Function** zkopíruj tenhle kód, přesně jak to vidíš na obrázku. Díky tomuhle kódu se vylosuje jeden z účastníků.
+
 
 ```
 var rand = Math.round( Math.random() * (flow.get("numberOfContestants") - 1));
@@ -83,7 +89,7 @@ Potvrď tlačítkem **Done**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149306/projects/bottle-party-game/image1.png" alt = "Node-RED change node" >}}
 
-6. Dvojklikem node otevři a napiš sem svoji **hlášku**. Třeba *Vybírám…*
+6. Dvojklikem node otevři a napiš sem svoji **hlášku**. Třeba _Vybírám…_
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149309/projects/bottle-party-game/image4.png" alt = "Node-RED - BigClown playground" >}}
 
@@ -93,7 +99,7 @@ Potvrď tlačítkem **Done**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149308/projects/bottle-party-game/image17.png" alt = "Node-RED dashboard button" >}}
 
-2. Na node dvakrát klikni a v řádku **Label** ho pojmenuj jako *Reset*.
+2. Na node dvakrát klikni a v řádku **Label** ho pojmenuj jako _Reset_.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149308/projects/bottle-party-game/image13.png" alt = "BigClown Playground dashboard button" >}}
 
@@ -104,9 +110,9 @@ Potvrď tlačítkem **Done**.
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149307/projects/bottle-party-game/image10.png" alt = "Node-RED text input" >}}
 
 4. Uvnitř jednotlivých nodů přepiš řádek **Label** na Účastník + číslo od jedné až do tolika, kolik vás je. Takže Účastník 1, Účastník 2… A dál to znáš.
-V okně **Delay** vyplň číslo 0.
-Zaškrtnuté okno hned pod tím **odškrtni**, aby se po resetu pole opravdu resetovala.
-Všechno tohle udělej u všech nodů s účastníky.
+   V okně **Delay** vyplň číslo 0.
+   Zaškrtnuté okno hned pod tím **odškrtni**, aby se po resetu pole opravdu resetovala.
+   Všechno tohle udělej u všech nodů s účastníky.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149306/projects/bottle-party-game/image6.png" alt = "BigClown Playground function" >}}
 
@@ -117,6 +123,7 @@ Potvrď tlačítkem **Done**.
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149306/projects/bottle-party-game/image19.png" alt = "BigClown Playground function" >}}
 
 6. Dvojklikem na node otevřeš jeho nastavení. Do řádku **Label** vyplň jméno nodu a do pole **Function** zkopíruj tenhle kód:
+
 
 ```
 var contestants = flow.get("numberOfContestants") || 0;
@@ -148,7 +155,6 @@ Potvrď tlačítkem **Done**.
 
 Potvrď tlačítkem **Done**.
 
-
 ## Vylosovaný je jen jeden
 
 1. Za tohle všechno polož na plochu poslední node, který všem sdělí, koho osud zvolil. 🙏 Najdeš ho jednoduše jako **Text** node v sekci Dashboard.
@@ -167,7 +173,6 @@ Potvrď tlačítkem **Done**.
 
 4. Nezapomeň zmáčknout tlačítko **Deploy** v pravém horním rohu! 🚨
 
-
 ## Nechť zábava započne!
 
 1. A teď už to rozjeďte! V záložce **Dashboard** vyplň všechny účastníky. Pokud sis v nodech pro jednotlivé účastníky nevolil dobu pro automatické obnovení, nezapomeň za každým jménem zmáčknout **Enter**. 👈
@@ -175,9 +180,9 @@ Potvrď tlačítkem **Done**.
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149306/projects/bottle-party-game/image8.png" alt = "show dashboard Node-RED / BigClown Playground" >}}
 
 2. **Koho osud zvolí?** A na co? To je teď jenom na tobě. 😈
-Takhle můžeš třeba:
-    * losovat, kdo dá pusu komu (woohoo),
-    * tahat nejkratší sirku na vynášení koše,
-    * losovat výherce soutěže,
-    * zadávat bláznivé úkoly, které přiřadí náhoda,
-    * a cokoli dalšího tě napadne!
+   Takhle můžeš třeba:
+        _losovat, kdo dá pusu komu (woohoo),_
+        tahat nejkratší sirku na vynášení koše,
+        _losovat výherce soutěže,_
+        zadávat bláznivé úkoly, které přiřadí náhoda,
+       * a cokoli dalšího tě napadne!

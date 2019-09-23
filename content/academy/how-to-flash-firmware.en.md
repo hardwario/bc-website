@@ -44,9 +44,7 @@ You can update both the **USB Dongle** and the **Core module** from your kit.
 1. Insert the **USB Dongle** into your computer and open the **Playground** programme. How else? 😅
 2. In the Devices tab, you can see in the top field what your dongle is doing. Based on this, you will be able to tell if you have the right firmware or not. Now we want the **Radio Dongle** there.
 
-![BigClown Playground USB dongle](https://res.cloudinary.com/lukasfabik/image/upload/v1566161114/academy/how-to-flash-firmware/image1.png)
-
-{{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566161114/academy/how-to-flash-firmware/image1.png" alt = "BigClown Playground USB dongle" >}}
+![BigClown Playground USB dongle](https://res.cloudinary.com/lukasfabik/image/upload/v1566161114/academy/how-to-flash-firmware/image1.png "BigClown Playground USB dongle")
 
 3. The green Connect button next to the field is lit but **don’t press it**. You don’t want to connect yet. If necessary, disconnect.
 4. Now, you will be interested in the **Firmware** tab. Here you will find lots of firmware for various projects that you can upload to your device. 🕵️

@@ -27,7 +27,6 @@ A programmer can set up firmware according to their needs. For example, it can c
 
 Whether you are using \[Starter Kit]({{< ref "/kits/starter-kit.en.md" >}}), \[Climate Monitor Kit]({{< ref "/kits/climate-monitor.en.md" >}}), \[Motion Detector Kit]({{< ref "/kits/motion-detector.en.md" >}}) or \[other kits]({{< ref "/kits/_index.en.md" >}}), there is **pre-installed firmware** in the Core module in your kit. Thanks to the firmware, the box knows whether to measure temperature, monitor location or anything else.
 
-
 **👉 That’s why you need different firmware for different projects. 👈**
 
 **Every firmware always needs its hardware.** You can’t expect the device to start monitoring location if you don’t have a GPS module. It just doesn’t work. The box is missing a tool that enables it to monitor location. 🤷
@@ -43,7 +42,9 @@ You can update both the **USB Dongle** and the **Core module** from your kit.
 ## Download a firmware to the USB Dongle
 
 1. Insert the **USB Dongle** into your computer and open the **Playground** programme. How else? 😅
-2.  In the Devices tab, you can see in the top field what your dongle is doing. Based on this, you will be able to tell if you have the right firmware or not. Now we want the **Radio Dongle** there.
+2. In the Devices tab, you can see in the top field what your dongle is doing. Based on this, you will be able to tell if you have the right firmware or not. Now we want the **Radio Dongle** there.
+
+![BigClown Playground USB dongle](https://res.cloudinary.com/lukasfabik/image/upload/v1566161114/academy/how-to-flash-firmware/image1.png)
 
 {{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566161114/academy/how-to-flash-firmware/image1.png" alt = "BigClown Playground USB dongle" >}}
 

@@ -84,7 +84,7 @@ Wow, v ruce máš časovač pohybu. Nezní to cool? Zkus si to!
 
 1. **Zmáčkni tlačítko** na krabičce. ⏺️
 
-2. Po malé chvilce s **krabičkou pohniv**.
+2. Po malé chvilce s **krabičkou pohni**.
 
 3. Na záložce **Dashboard** v Playgroundu uvidíš, **kolik času** od zmáčknutí tlačítka a pohybu uběhlo. Mazec! 👍
 

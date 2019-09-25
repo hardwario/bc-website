@@ -2,9 +2,8 @@
 date: "2019-08-12"
 title: "Nainstaluj si do krabičky správný firmware, tedy „mozek”"
 slug: jak-nahrat-firmware
-meta:
-    title: Jak si do BigClownu nainstaluješ firmware
-    description: Bez firmware ti IoT krabička nebude fungovat správně. Díky tomuhle článku pochopíš, na co firmware slouží a správně si ho nastavíš.
+meta_title: Jak si do BigClownu nainstaluješ firmware
+meta_description: Bez firmware ti IoT krabička nebude fungovat správně. Díky tomuhle článku pochopíš, na co firmware slouží a správně si ho nastavíš.
 description: Bez firmware ti IoT krabička nebude fungovat správně. Díky tomuhle článku pochopíš, na co firmware slouží a správně si ho nastavíš.
 image_preview: /upload/project_placeholder.jpg
 image_main: /upload/project_placeholder.jpg

@@ -1,8 +1,7 @@
 ---
 title: Který z tvých kámošů je zenový kung-fu mástr? 🐉
-meta:
-    title: Který z tvých kámošů je zenový kung-fu mástr? 🐉
-    description: Vytvoř si ze Starter Kitu od BigClown IoT detektor změny pohybu s tímhle jednoduchým návodem. A nezapomeň ho s kámoši otestovat v cool hře.
+meta_title: Který z tvých kámošů je zenový kung-fu mástr? 🐉
+meta_description: Vytvoř si ze Starter Kitu od BigClown IoT detektor změny pohybu s tímhle jednoduchým návodem. A nezapomeň ho s kámoši otestovat v cool hře.
 slug: kung-fu-mastr
 draft: false
 date: 2019-08-12

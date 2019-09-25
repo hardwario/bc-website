@@ -1,8 +1,7 @@
 ---
 title: IoT párty hra, máš v sobě dračí oheň, nebo mrazivý dech?
-meta:
-    title: IoT párty hra, máš v sobě dračí oheň, nebo mrazivý dech?
-    description: Jeden z IoT projektů na rozšíření tvých digitálních dovedností. Sestav se Starter Kitem od BigClownu zařízení, se kterým si s kamarády změříte teplotu dechu. Jak si pomůžeš, abys vyhrál?
+meta_title: IoT párty hra, máš v sobě dračí oheň, nebo mrazivý dech?
+meta_description: Jeden z IoT projektů na rozšíření tvých digitálních dovedností. Sestav se Starter Kitem od BigClownu zařízení, se kterým si s kamarády změříte teplotu dechu. Jak si pomůžeš, abys vyhrál?
 slug: draci-dech
 draft: false
 date: 2019-08-12

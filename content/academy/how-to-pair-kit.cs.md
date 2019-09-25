@@ -2,9 +2,8 @@
 date: "2019-08-12"
 title: "Jak spáruješ Dongle s krabičkou"
 slug: jak-sparovat-kit
-meta:
-    title: Jak spáruješ BigClown IoT Dongle s krabičkou
-    description: Aby si USB Dongle rozuměl s Core modulem, musíš Dongle s krabičkou spárovat. Ti si pak mezi sebou vytvoří spojení. Mrkni, jak na to.
+meta_title: Jak spáruješ BigClown IoT Dongle s krabičkou
+meta_description: Aby si USB Dongle rozuměl s Core modulem, musíš Dongle s krabičkou spárovat. Ti si pak mezi sebou vytvoří spojení. Mrkni, jak na to.
 description: Aby si USB Dongle rozuměl s Core modulem, musíš Dongle s krabičkou spárovat. Ti si pak mezi sebou vytvoří spojení. Mrkni, jak na to.
 image_preview: /upload/setup-kit.jpg
 image_main: /upload/setup-kit.jpg

@@ -1,8 +1,7 @@
 ---
 title: Chyť nenasytného vykradače ledniček
-meta:
-    title: Chyť nenasytného vykradače ledniček
-    description: Vytvoř si ze Starter Kitu od BigClown IoT hlídač svého jídla v lednici. Připravili jsme pro tebe jednoduchý návod.
+meta_title: Chyť nenasytného vykradače ledniček
+meta_description: Vytvoř si ze Starter Kitu od BigClown IoT hlídač svého jídla v lednici. Připravili jsme pro tebe jednoduchý návod.
 slug: chyt-mlsouna
 draft: false
 date: 2019-08-12

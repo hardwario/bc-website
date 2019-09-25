@@ -1,8 +1,7 @@
 ---
 title: Hra pro celou třídu, Najděte nejchladnější a nejžhavější místo ve vaší škole
-meta:
-    title: IoT hra pro celou třídu, Změřte teplotu ve vaší škole
-    description: Jeden z IoT projektů na rozšíření digitálních dovedností. Sestavte se Starter Kitem od BigClownu zařízení, se kterým najdete nejchladnější a nejžhavější místo ve škole.
+meta_title: IoT hra pro celou třídu, Změřte teplotu ve vaší škole
+meta_description: Jeden z IoT projektů na rozšíření digitálních dovedností. Sestavte se Starter Kitem od BigClownu zařízení, se kterým najdete nejchladnější a nejžhavější místo ve škole.
 slug: nejteplejsi-nejchladnejsi-misto
 draft: false
 date: 2019-08-12

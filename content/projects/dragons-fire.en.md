@@ -1,8 +1,7 @@
 ---
 title: Do you have a dragon's fire or an arctic wind in you?
-meta:
-    title: Do you have a dragon's fire or an arctic wind in you?
-    description: This is an IoT project which focuses on enhancing your digital skills. With the BigClown Starter Kit, you can set up a device to measure the temperature of your breath and that of your friends. What do you need to do to win?
+meta_title: Do you have a dragon's fire or an arctic wind in you?
+meta_description: This is an IoT project which focuses on enhancing your digital skills. With the BigClown Starter Kit, you can set up a device to measure the temperature of your breath and that of your friends. What do you need to do to win?
 slug: dragons-fire
 draft: false
 date: 2019-08-12

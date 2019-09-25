@@ -1,8 +1,7 @@
 ---
 title: Pošli mámě do mobilu zprávu, že jsi v pohodě přišel domů
-meta:
-    title: Vyrob si IoT tlačítko, se kterým pošleš mámě zprávu do mobilu
-    description: Návod na to, jak si ze Starter Kitu od BigClown vytvoříš chytré tlačítko. To pošle do mobilu zprávu tvojí mámě, že jsi v pohodě dorazil domů.
+meta_title: Vyrob si IoT tlačítko, se kterým pošleš mámě zprávu do mobilu
+meta_description: Návod na to, jak si ze Starter Kitu od BigClown vytvoříš chytré tlačítko. To pošle do mobilu zprávu tvojí mámě, že jsi v pohodě dorazil domů.
 slug: jsem-ok-tlacitko
 draft: false
 date: 2019-08-12
@@ -15,7 +14,6 @@ places:
   - Home
 devices:
   - Starter Kit
-idea: false
 image_preview: /upload/ilustrace-notifikace-tlacitkem-ze-jsem-doma.png
 image_main: /upload/ilustrace-notifikace-tlacitkem-ze-jsem-doma.png
 author: lukas_fabik

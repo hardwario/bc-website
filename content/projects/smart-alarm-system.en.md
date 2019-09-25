@@ -2,9 +2,7 @@
 title: Smart Alarm System
 draft: false
 date: 2018-12-10T12:06:34.786Z
-description: >-
-  Make an affordable but smart Alarm system for your home, or any of your
-  buildings. It can run for almost 2 years just from batteries.
+description: Make an affordable but smart Alarm system for your home, or any of your buildings. It can run for almost 2 years just from batteries.
 tags:
   - Indoor
 levels:

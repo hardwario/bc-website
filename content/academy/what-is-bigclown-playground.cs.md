@@ -2,9 +2,8 @@
 date: "2019-08-12"
 title: "Co je to Playground a kde ho najdeš"
 slug: co-je-to-bigclown-playground
-meta:
-    title: Co je to BigClown Playground a kde ho stáhneš
-    description: Tvá BigClown krabička dokáže úžasné věci, ale musíš jí povědět, co má dělat. A právě k tomu slouží software BigClown Playground. Mrkni na něj.
+meta_title: Co je to BigClown Playground a kde ho stáhneš
+meta_description: Tvá BigClown krabička dokáže úžasné věci, ale musíš jí povědět, co má dělat. A právě k tomu slouží software BigClown Playground. Mrkni na něj.
 description: Tvá BigClown krabička dokáže úžasné věci, ale musíš jí povědět, co má dělat. A právě k tomu slouží software BigClown Playground. Mrkni na něj.
 image_preview: /upload/what-is-playground.jpg
 image_main: /upload/what-is-playground.jpg

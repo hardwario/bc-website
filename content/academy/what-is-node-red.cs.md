@@ -2,9 +2,8 @@
 date: "2019-08-12"
 title: "Co je to Node-RED a jak se v něm programuje"
 slug: co-je-node-red
-meta:
-    title: Nauč se programovat v Node-RED
-    description: Svému BigClown kitu zadáš příkazy v programovacím nástroji Node-RED. Ten je úžasně intuitivní a pracovat se v něm naučíš za pár minut. Přesvědč se sám.
+meta_title: Nauč se programovat v Node-RED
+meta_description: Svému BigClown kitu zadáš příkazy v programovacím nástroji Node-RED. Ten je úžasně intuitivní a pracovat se v něm naučíš za pár minut. Přesvědč se sám.
 description: Svému BigClown kitu zadáš příkazy v programovacím nástroji Node-RED. Ten je úžasně intuitivní a pracovat se v něm naučíš za pár minut. Přesvědč se sám.
 image_preview: /upload/pouzivani-bigclown-playground.jpg
 image_main: /upload/pouzivani-bigclown-playground.jpg

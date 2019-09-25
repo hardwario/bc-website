@@ -1,8 +1,7 @@
 ---
 title: Hlídač teploty pro chlupatého hlídače, kontroluj teplotu v boudě svého psa
-meta:
-    title: IoT projekt, hlídač teploty do psí boudy
-    description: Jeden z IoT projektů na rozšíření digitálních dovedností. Sestav se Starter Kitem od BigClownu zařízení, se kterým uvidíš, jakou má tvůj pes v boudě teplotu.
+meta_title: IoT projekt, hlídač teploty do psí boudy
+meta_description: Jeden z IoT projektů na rozšíření digitálních dovedností. Sestav se Starter Kitem od BigClownu zařízení, se kterým uvidíš, jakou má tvůj pes v boudě teplotu.
 slug: hlidac-teploty-psi-boudy
 draft: false
 date: 2019-08-12

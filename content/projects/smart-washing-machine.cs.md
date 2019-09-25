@@ -1,8 +1,7 @@
 ---
 title: Přeměň vaši starou pračku na chytrou
-meta:
-    title: Proměň vaši starou pračku na chytrou
-    description: Nechej rodiče žasnout. Postav ze Starter Kitu od BigClown IoT detektor, který upozorní, až pračka dopere.
+meta_title: Proměň vaši starou pračku na chytrou
+meta_description: Nechej rodiče žasnout. Postav ze Starter Kitu od BigClown IoT detektor, který upozorní, až pračka dopere.
 slug: chytra-pracka
 draft: false
 date: 2019-08-12

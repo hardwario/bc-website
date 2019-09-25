@@ -3,11 +3,9 @@ title: Learn to debug messages in BigClown
 draft: true
 date: 2019-09-21T08:02:23.137Z
 weight: 60
-description: >-
-  To tune up your IoT box programme to perfection, you can use the simple debugger that will get the kinks out. We will give you advice on how to set it up and get it started.
-meta.title: Learn to debug messages in BigClown
-meta.description: >-
-  To tune up your IoT box programme to perfection, you can use the simple debugger that will get the kinks out. We will give you advice on how to set it up and get it started.
+description: To tune up your IoT box programme to perfection, you can use the simple debugger that will get the kinks out. We will give you advice on how to set it up and get it started.
+meta_title: Learn to debug messages in BigClown
+meta_description: To tune up your IoT box programme to perfection, you can use the simple debugger that will get the kinks out. We will give you advice on how to set it up and get it started.
 image_preview: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1569052768/academy/learn-to-debug-mesagges-in-bigclown/image1.png
 image_main: >-

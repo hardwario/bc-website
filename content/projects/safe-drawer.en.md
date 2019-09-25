@@ -1,8 +1,7 @@
 ---
 title: Catch the nosy parker who's snooping in your drawer!
-meta:
-    title:  Catch the nosy parker who's snooping in your drawer!
-    description: Turn your Starter Kit from BigClown IoT into a drawer monitor and get alerts on your mobile phone. We have prepared a simple guide for you.
+meta_title:  Catch the nosy parker who's snooping in your drawer!
+meta_description: Turn your Starter Kit from BigClown IoT into a drawer monitor and get alerts on your mobile phone. We have prepared a simple guide for you.
 draft: true
 date: 2019-08-12
 description: Turn your Starter Kit from BigClown IoT into a drawer monitor and get alerts on your mobile phone. We have prepared a simple guide for you.
@@ -22,7 +21,7 @@ modules: ["core","button","mini_battery","usb_dongle"]
 handbook:
 ---
 
-## Úvod
+## Introduction
 
 {{< perex >}}
 Do you have a diary, poems or a top secret government-issued document in your drawer? If it's something nobody should see, secure it. 🔒 Turn your IoT Starter Kit into a drawer monitor and get alerts on your mobile phone. 📲
@@ -36,18 +35,18 @@ You only need a **box with a button** and a **Radio dongle**. That's why the bas
 
 ## Download the firmware
 
-1. Pokud to ještě nemáš, Starter Kit [sestav]({{< ref "/handbook/_index.cs.md" >}}).
+1. Pokud to ještě nemáš, Starter Kit [sestav]({{< ref "/handbook/_index.en.md" >}}).
 2. Na Core Module nahraj speciální firmware, a to **bcf-radio-x-axis-detector** (najdeš ho mezi ostatním firmwarem v Playgroundu). Díky tomuhle firmwaru bude krabička citlivější na pohyb. 👌
 
-**Náš tip:** Nevíš, jak si firmware stáhnout nebo co to je? [Zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
+**Náš tip:** Nevíš, jak si firmware stáhnout nebo co to je? [Zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.en.md" >}}).
 
-3. [Core Module spáruj s USB Donglem]({{< ref "/academy/how-to-pair-kit.cs.md" >}}). Hned po spárování uvidíš, že tvůj Core Module změnil Alias na **x-axis-detector**.
+3. [Core Module spáruj s USB Donglem]({{< ref "/academy/how-to-pair-kit.en.md" >}}). Hned po spárování uvidíš, že tvůj Core Module změnil Alias na **x-axis-detector**.
 
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566364970/projects/safe-drawer/image26.png" alt = "BigClown Playground - devices" >}}
 
 ## Rozjeď appku na mobilu
 
-1. **Pokračuj na svém mobilu**. Krabička se propojí se smartphonem díky **appce Blynk**. 📱 [**Zjisti, jak na Blynk**]({{< ref "/academy/how-to-connect-blynk.cs.md" >}}).
+1. **Pokračuj na svém mobilu**. Krabička se propojí se smartphonem díky **appce Blynk**. 📱 [**Zjisti, jak na Blynk**]({{< ref "/academy/how-to-connect-blynk.en.md" >}}).
 
 2. Z nabídky zvol **Styled button** (vyšperkované tlačítko). 🚨 Tlačítko se ti umístí na plochu projektu.
 
@@ -104,7 +103,7 @@ Až všechno budeš mít, **vrať se na plochu** skrz šipku vlevo nahoře.
 
 ## Nastav v Node-RED zprávu
 
-1. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha [Node-RED]({{< ref "/academy/what-is-node-red.cs.md" >}}).
+1. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha Node-RED.
 
 2. Začni jako vždycky: na plochu nejdřív umísti **MQTT node** ze sekce Input.
 

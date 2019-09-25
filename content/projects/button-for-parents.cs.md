@@ -1,8 +1,7 @@
 ---
 title: Vyrob si IoT tlačítko, se kterým tě rodiče zavolají k večeři
-meta:
-    title: Vyrob si IoT tlačítko, které ti pošle zprávu do mobilu
-    description: Návod na to, jak si ze Starter Kitu od BigClown vytvoříš IoT tlačítko, se kterým tě rodiče zavolají k večeři, když zrovna paříš.
+meta_title: Vyrob si IoT tlačítko, které ti pošle zprávu do mobilu
+meta_description: Návod na to, jak si ze Starter Kitu od BigClown vytvoříš IoT tlačítko, se kterým tě rodiče zavolají k večeři, když zrovna paříš.
 slug: tlacitko-pro-rodice
 draft: false
 date: 2019-08-19

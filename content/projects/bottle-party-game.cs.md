@@ -4,14 +4,10 @@ draft: false
 featured: true
 handbook: starter-kit
 date: 2019-08-12T00:00:00.000Z
-description: >-
-  Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ
-  náhodného člena vaší party.
+description: Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ náhodného člena vaší party.
 slug: party-hra-flaska
-meta.title: Hraj párty hru „flaška” elektronicky díky IoT
-meta.description: >-
-  Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ
-  náhodného člena vaší party. slug: party-hra-flaska
+meta_title: Hraj párty hru „flaška” elektronicky díky IoT
+meta_description: Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ náhodného člena vaší party.
 image_preview: /upload/project_placeholder.jpg
 image_main: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1566149309/projects/bottle-party-game/image4.png

@@ -5,9 +5,8 @@ date: 2019-09-20T19:08:04.789Z
 weight: 59
 description: >-
   In order for your IoT invention from BigClown to send you notifications to your mobile, you need to pair it with Blynk. Check out our simple guide.
-meta:
-    title: How to connect BigClown with Blynk app
-    description: To tune up your IoT box programme to perfection, you can use the simple debugger that will get the kinks out. We will give you advice on how to set it up and get it started.
+meta_title: How to connect BigClown with Blynk app
+meta_description: To tune up your IoT box programme to perfection, you can use the simple debugger that will get the kinks out. We will give you advice on how to set it up and get it started.
 image_preview: /upload/mobile-phone.jpg
 image_main: /upload/mobile-phone.jpg
 ---

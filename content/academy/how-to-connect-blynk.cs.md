@@ -2,9 +2,8 @@
 date: "2019-08-12"
 title: "Jak propojíš Blynk s krabičkou"
 slug: jak-pripojit-blynk
-meta:
-    title: Jak propojit BigClown s aplikací Blynk
-    description: Aby ti tvůj IoT vynález od BigClowna posílal notifikace na mobil, potřebuješ ho spárovat s Blynkem. Koukni na náš jednoduchý návod.
+meta_title: Jak propojit BigClown s aplikací Blynk
+meta_description: Aby ti tvůj IoT vynález od BigClowna posílal notifikace na mobil, potřebuješ ho spárovat s Blynkem. Koukni na náš jednoduchý návod.
 description: Aby ti tvůj IoT vynález od BigClowna posílal notifikace na mobil, potřebuješ ho spárovat s Blynkem. Koukni na náš jednoduchý návod.
 image_preview: /upload/mobile-phone.jpg
 image_main: /upload/mobile-phone.jpg

@@ -1,8 +1,7 @@
 ---
 title: Chyť zvědavce, co ti leze do šuplíku
-meta:
-    title:  Chyť zvědavce, co ti leze do šuplíku
-    description: Vytvoř si ze Starter Kitu od BigClown IoT hlídač svého šuplíku a nechej si posílat upozornění do mobilu. Připravili jsme pro tebe jednoduchý návod.
+meta_title:  Chyť zvědavce, co ti leze do šuplíku
+meta_description: Vytvoř si ze Starter Kitu od BigClown IoT hlídač svého šuplíku a nechej si posílat upozornění do mobilu. Připravili jsme pro tebe jednoduchý návod.
 slug: ohlidej-tajny-suplik
 draft: false
 date: 2019-08-12

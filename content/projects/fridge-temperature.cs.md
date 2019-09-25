@@ -1,8 +1,7 @@
 ---
 title: Změř teplotu ve vaší lednici nebo mrazáku
-meta:
-    title: IoT projekt, hlídač teploty pro domácí lednici
-    description: Nauč se jeden z IoT projektů na rozšíření digitálních dovedností. Sestav se Starter Kitem od BigClownu zařízení, se kterým změříš, jak moc je u vás v mrazáku zima.
+meta_title: IoT projekt, hlídač teploty pro domácí lednici
+meta_description: Nauč se jeden z IoT projektů na rozšíření digitálních dovedností. Sestav se Starter Kitem od BigClownu zařízení, se kterým změříš, jak moc je u vás v mrazáku zima.
 slug: teplota-v-lednici
 draft: false
 date: 2019-08-12
@@ -15,10 +14,8 @@ places:
   - Home
 devices:
   - Starter Kit
-idea: false
 image_preview: /upload/ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
 image_main: /upload/ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
-author: lukas_fabik
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]
 handbook:

@@ -58,10 +58,10 @@
 {{ else if eq .Section "academy" }}
 
     {{ if .IsPage }}
-    <title>{{ .Page.Title }} | BigClown</title>
-    <meta name="description" content="{{ .Page.Summary }}">
+    <title>{{ .Page.Params.meta_title }} | BigClown</title>
+    <meta name="description" content="{{ .Page.Params.meta_description }}">
     <meta property="og:url" content="{{ .URL | absURL }}" />
-    <meta property='og:title' content="{{ .Title }} | BigClown Projects">
+    <meta property='og:title' content="{{ .Params.meta_title }} | BigClown">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image_main }}">
 

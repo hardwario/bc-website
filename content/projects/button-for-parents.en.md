@@ -1,10 +1,9 @@
 ---
 title: Make an IoT button for your parents to call you to dinner
-meta:
-    title: Make an IoT button that will send a message to your mobile
-    description: Instructions on how to make an IoT button from the BigClown Starter Kit for your mum to call you to dinner when you are in the middle of playing games.
+meta_title: Make an IoT button that will send a message to your mobile
+meta_description: Instructions on how to make an IoT button from the BigClown Starter Kit for your mum to call you to dinner when you are in the middle of playing games.
 draft: false
-date: 2019-08-19
+date: 2019-09-23
 description: Instructions on how to make an IoT button from the BigClown Starter Kit for your mum to call you to dinner when you are in the middle of playing games.
 tags:
   - Starter Project

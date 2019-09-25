@@ -54,8 +54,9 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Weight", name: "weight", widget: "number"}
       - {label: "Perex", name: "description", widget: "string"}
-      - {label: "MetaTitle", name: "meta.title", widget: "string"}
-      - {label: "MetaDesc", name: "meta.description", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "MetaTitle", name: "meta_title", widget: "string"}
+      - {label: "MetaDesc", name: "meta_description", widget: "string"}
       - {label: "Preview Image", name: "image_preview", widget: "image"}
       - {label: "Main Image", name: "image_main", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -73,8 +74,8 @@ collections:
       - {label: "Weight", name: "weight", widget: "number"}
       - {label: "Perex", name: "description", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "MetaTitle", name: "meta.title", widget: "string"}
-      - {label: "MetaDesc", name: "meta.description", widget: "string"}
+      - {label: "MetaTitle", name: "meta_title", widget: "string"}
+      - {label: "MetaDesc", name: "meta_description", widget: "string"}
       - {label: "Preview Image", name: "image_preview", widget: "image"}
       - {label: "Main Image", name: "image_main", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -92,8 +93,9 @@ collections:
       - {label: "Handbook", name: "handbook", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Perex", name: "description", widget: "string"}
-      - {label: "MetaTitle", name: "meta.title", widget: "string"}
-      - {label: "MetaDesc", name: "meta.description", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "MetaTitle", name: "meta_title", widget: "string"}
+      - {label: "MetaDesc", name: "meta_description", widget: "string"}
       - {label: "Preview Image", name: "image_preview", widget: "image"}
       - {label: "Main Image", name: "image_main", widget: "image"}
       - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}
@@ -117,8 +119,8 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Perex", name: "description", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "MetaTitle", name: "meta.title", widget: "string"}
-      - {label: "MetaDesc", name: "meta.description", widget: "string"}
+      - {label: "MetaTitle", name: "meta_title", widget: "string"}
+      - {label: "MetaDesc", name: "meta_description", widget: "string"}
       - {label: "Preview Image", name: "image_preview", widget: "image"}
       - {label: "Main Image", name: "image_main", widget: "image"}
       - {label: "Environment", name: "tags", widget: "select", multiple: true, options: ["Indoor", "Outdoor"]}

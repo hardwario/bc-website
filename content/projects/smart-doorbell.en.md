@@ -27,8 +27,6 @@ places:
 devices:
   - Starter Kit
 ---
-## Úvod
-
 {{< perex >}}
 Do you think it's the same temperature in different places in your fridge or freezer? And how's the freezer functioning, is it freezing properly? Discover the answers to these questions through our IoT project. Using the BigClown Starter Kit, the temperature will be displayed on your mobile phone. ❄
 {{< /perex >}}

@@ -1,57 +1,84 @@
 ---
-title: Smart Doorbell
-description: "Don't miss any visitors when you are in garden, listening loud music or away from your home"
-idea: false
-tags: ["Outdoor"]
-levels: ["Advanced"]
-places: ["Home"]
-devices: ["Custom Kit"]
-image_preview: /projects/smart-doorbell/preview.jpg
-image_main: /projects/smart-doorbell/preview.jpg
-author: "martin_hubacek"
+title: Temperature monitor for your fridge or freezer
+draft: true
 featured: true
-idea: false
-modules: ["core","mini_battery","button"]
-
+handbook: Temperature monitor for your fridge or freezer
+date: 2019-09-26T13:58:29.753Z
+description: >-
+  This is an IoT project which focuses on enhancing your digital skills. With
+  the BigClown Starter Kit, you can set up a device that measures how cold it is
+  in your freezer.
+slug: Temperature-in-your-fridge
+meta_title: Temperature monitor for your fridge or freezer
+meta_description: >-
+  This is an IoT project which focuses on enhancing your digital skills. With
+  the BigClown Starter Kit, you can set up a device that measures how cold it is
+  in your freezer.
+image_preview: >-
+  https://res.cloudinary.com/lukasfabik/image/upload/v1569507867/projects/fridge-monitoring/8.ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
+image_main: >-
+  https://res.cloudinary.com/lukasfabik/image/upload/v1569507867/projects/fridge-monitoring/8.ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
+tags:
+  - Indoor
+levels:
+  - Beginner
+places:
+  - Home
+devices:
+  - Starter Kit
 ---
+## Úvod
 
-## Introduction
+{{< perex >}}
+Do you think it's the same temperature in different places in your fridge or freezer? And how's the freezer functioning, is it freezing properly? Discover the answers to these questions through our IoT project. Using the BigClown Starter Kit, the temperature will be displayed on your mobile phone. ❄
+{{< /perex >}}
 
-The wireless Push Button Kit will be located at your main door. The button press information is send wirelessly to the Radio Dongle in Raspberry Pi which will notify you over Blynk.
-
-## What you need
-For this project you should have prepared BigClown Hub and this modules:
+This project will teach you how to **measure temperature using IoT**. All you need is the basic BigClown [Starter Kit](https://shop.bigclown.com/starter-kit/). 
 
 {{< modules >}}
 
-## Step 1: Step: Get all hardware together
-Prepare everything you will need on your table, plug you Radio Dongle into your Raspberry Pi or into any computer that you have. Connect Core Module with your Mini Battery Module and the Button Module.
+## Prepare the box
 
-## Step 2: Flash firmware
-Connect Core Module to your computer, open BigClown Playground and flash firmware onto it.
+1. Put the Starter Kit together and pair it. If you are doing this for the first time, \[we’ve prepared a simple guide for you]({{< ref "/handbook/_index.cs.md" >}}). You need the **radio-push-button** firmware for the Core Module. If you don't know how to download the firmware or what it is, \[zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
+2. The temperature changes are displayed in the **Messages** tab in Playground.
 
-## Step 3: Pair Core Module
-* Connect Radio Dongle to your computer
-* In BigClown Playground go to Devices tab
-* Choose the connected Radio Dongle from the list and click Connect
-* Click Start pairing button
-* Power up the Core Module by plugging it into the computer or by inserting the batteries
-* The device will appear in the table with Alias smart-bell:0
-* Don't forget to stop pairing by clicking Stop pairing
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566155066/projects/fridge-monitoring/image4.png" alt = "BigClown Playground MQTT messages" >}}
 
-## Step 4: Import function
-Open Node-RED in Playground (Functions tab) or on your Raspberry Pi and import this simple function. Just copy everything, go to Menu -> Import -> Clipboard and paste it there.
+## Set up Node-RED
 
-You can change the message that will appear in the notification. Just open Message Block and change the text.
+1. To see temperature changes, create your own chart using the bubbles in Node-RED. Firstly, click the **Functions** tab in Playground.
+2. From the Input section, take the light purple **MQTT** node (bubble) and place it onto the empty desktop.
+3. Double-click the node. In the **Topic** line specify what you want the colour indicator to display. This now represents temperature. Copy the temperature message from the Messages tab (without a number) to the line. Alternatively, use this: 
 
-After Import hit Deploy in the top right corner to upload the change.
 
-## Step 5: Blynk integration
-This project is ready for Blynk integration. How to set up Blynk with your BigClown Playground is described here. Start from step 2 and in step 4 scan the QR code that is shown below.
+```
+node/push-button:0/thermometer/0:1/temperature
+```
 
-This is just a simple application with the notification module in it.
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566155066/projects/fridge-monitoring/image2.png" alt = "Node-RED dashboard chart" >}}
 
-## Summary
-If you have everything done you can get one of the 3D printed enclosures and put this smart doorbell instead of your ordinary doorbell switch.
+Confirm by clicking the **Done** button.
 
-You can also use Blynk video stream function and take photo when someone rings the bell.
+4. Next to the MQTT node place a second one, this time a blue **Chart** node. This node can be found in the Dashboard section. This node is used to determine how the measured temperature is displayed on screen. Link both nodes together. 👌
+
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566155066/projects/fridge-monitoring/image5.png" alt = "Node-RED chart settings in BigClown Playground" >}}
+
+5. Double-click on the Chart node. In the **X-axis** line, you can set the period of time the data in the chart will be displayed. This might be, for example, for the duration of your classes.
+   In the Label line, give your chart a name.
+
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566155066/projects/fridge-monitoring/image1.png" alt = "Chart in BigClown Playground" >}}
+
+Confirm by clicking the **Done** button.
+
+6. Now click the **Deploy** button 🚨 in the top right corner to get everything up and running. 
+   ❗ **Beware**: Every time you change the nodes you have to press Deploy again. 
+7. Click on **Dashboard**. Your temperature chart will be displayed. 👏 
+
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566154530/projects/dragon-fire/image3.png" alt = "MQTT topic" >}}
+
+## Measure as you please
+
+1. Now run your **own experiments**. Which place **in your fridge** is the coldest? Is it in the top, the middle, or the very bottom? 👌
+   Is the fridge really cooling **as promised by the manufacturer**? 🕵️
+2. Try the same in your freezer. Move the box from the bottom to the top.
+   ❓ Try to figure out where to put vegetables, meat or milk. Google what foods need to be kept colder than others. 💡

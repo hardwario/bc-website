@@ -1,5 +1,4 @@
 <section>
-  <form method="" action="" id="newsletterSignup">
     <div class="bg bg--darkgray">
       <div class="container">
         <div class="row">
@@ -15,7 +14,7 @@
             <script>
               hbspt.forms.create({
                 portalId: "5560121",
-                formId: "a27d533e-3659-4331-a07e-80ada286f2c5"
+                formId: {{ .Site.Params.clownsletter }},
                 inlineMessage: "<span style = 'display: block; color:white;margin-top:33px;font-weight:bold;font-size: 18px'>Thank you! You are now signed up to our Clownsletter!</span>",
                 onFormReady: function($form) {
                   var b = $form.children(".hs-email");
@@ -37,5 +36,4 @@
         </div>
       </div>
     </div>
-  </form>
 </section>

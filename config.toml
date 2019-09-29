@@ -16,12 +16,14 @@ pygmentsUseClasses = true
     [languages.en.params]
       baseURL = "/"
       shopURL = "https://shop.bigclown.com/"
+      clownsletter = "a27d533e-3659-4331-a07e-80ada286f2c5"
   [languages.cs]
     LanguageName = "CZE"
     weight = 2
     [languages.cs.params]
       baseURL = "/cs/"
       shopURL = "https://obchod.bigclown.cz"
+      clownsletter = "5585816d-f118-4a12-99a6-b82cf1a052fa"
       homeURL = "/cs/"
 
 [blackfriday]

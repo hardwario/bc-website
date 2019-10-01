@@ -34,15 +34,14 @@ Budeš potřebovat **krabičku s tlačítkem** a **USB dongle**. Vystačíš si 
 
 ## Rozjeď to v Node-RED
 
-1. Starter Kit \[sestav a spáruj]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, \[zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
+1. Starter Kit [sestav a spáruj]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, \[zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha.
 3. Jdeme na to. 🤞 Na plochu postav node **MQTT** ze sekce Input.
    Na node dvakrát klikni a nastav v něm klíčovou funkci – klikání na tlačítko. **Do pole Topic zkopíruj tenhle řádek:**
-   ````
-           ```
-           node/x-axis-detector:0/accelerometer/-/event-count
-           ```
-   ````
+
+```
+node/x-axis-detector:0/accelerometer/-/event-count
+```
 
 ![MQTT topic](https://res.cloudinary.com/lukasfabik/image/upload/v1566149308/projects/bottle-party-game/image18.png "MQTT topic")
 
@@ -172,9 +171,10 @@ Potvrď tlačítkem **Done**.
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149306/projects/bottle-party-game/image8.png" alt = "show dashboard Node-RED / BigClown Playground" >}}
 
 2. **Koho osud zvolí?** A na co? To je teď jenom na tobě. 😈
-   Takhle můžeš třeba:
-        _losovat, kdo dá pusu komu (woohoo),_
-        tahat nejkratší sirku na vynášení koše,
-        _losovat výherce soutěže,_
-        zadávat bláznivé úkoly, které přiřadí náhoda,
-       * a cokoli dalšího tě napadne!
+Takhle můžeš třeba:
+
+* _losovat, kdo dá pusu komu (woohoo),_
+* tahat nejkratší sirku na vynášení koše,
+* _losovat výherce soutěže,_
+* zadávat bláznivé úkoly, které přiřadí náhoda,
+* a cokoli dalšího tě napadne!

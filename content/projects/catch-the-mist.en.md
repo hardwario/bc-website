@@ -18,6 +18,7 @@ places:
   - Home
 devices:
   - Starter Kit
+kit: starter-kit
 ---
 
 ## Introduction

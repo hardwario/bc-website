@@ -9,6 +9,7 @@ meta:
 mainHeading: BigClown je zábavný nástroj<small> se kterým pochopíš a navrhneš internet věcí</small>
 button: Kup si Starter Kit za 1 490 Kč
 button_link: https://obchod.bigclown.cz/starter-kit/
+image: starter-kit_CZ.png
 ---
 
 Ze všeho, třeba i ze svojí židle, **vytvoříš chytré zařízení** a&nbsp;propojíš ho se svým počítačem nebo mobilem. Díky tomu začneš digitálně vylepšovat svůj domov, třídu a klidně i celé město a svět.

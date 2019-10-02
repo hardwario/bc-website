@@ -12,6 +12,7 @@ images:
   main: main.png
 isStarter: false
 isEdu: true
+isParents: true
 recommended: false
 included:
 notIncluded:

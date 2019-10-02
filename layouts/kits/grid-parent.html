@@ -1,0 +1,33 @@
+<div class="col-12 col-md-4">
+  <div class="pricelist__item {{ if .Params.p_recommended }} pricelist__item--rec {{ end }}">
+    <div class="pricelist__content">
+      {{ if .Params.p_recommended }} <div class="pricelist__rec">{{ i18n "recommended" }}</div> {{ end }}
+      <!--<div class="logo logo--2"></div>-->
+      <h3 class="pricelist__title">{{ .Title }}</h3>
+
+      <div class="product__images d-flex align-items-center justify-content-center">
+          <img src="{{ .Page.URL }}{{ .Params.images.preview }}" alt="{{ .Title }}" />
+          <img src="{{ .Page.URL }}{{ .Params.images.hover }}" alt="{{ .Title }}" />
+      </div>
+
+
+      <div class="pricelist__title2 text-uppercase">{{ .Params.eduText }}</div>
+
+      <ul class="pricelist__items">
+        {{ range .Params.eduBenefits }}
+
+        <li class="pricelist__items__item">{{ . }}</li>
+        {{ end}}
+      </ul>
+      {{ if .Params.save }}
+        <div class="pricelist__discount">{{ i18n "save" }} {{ .Params.save }}</div>
+      {{ else }}
+        <div class="pricelist__discount">&nbsp;</div>
+      {{ end }}
+      <div class="pricelist__price">{{ .Params.price }}</div>
+      <div class="pricelist__button">
+        <a href="{{ .Permalink }}" class="button button--block {{ if .Params.recommended }} button--fullred {{ else }} button--gray {{ end }}">{{ i18n "learn_more" }}</a>
+      </div>
+    </div>
+  </div>
+</div>

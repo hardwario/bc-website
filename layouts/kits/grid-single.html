@@ -1,0 +1,33 @@
+<div class="row d-none d-lg-flex">
+  <div class="col-12 col-md-6 col-xl-4 ml-auto mr-auto">
+
+      <a href="{{ .Params.buyLink_gps }}" class="product">
+          <div class="product__images d-flex align-items-center justify-content-center">
+              <img src="{{ .URL }}{{ .Params.image_gps }}" alt="{{ .Title }}" />
+              <img src="{{ .URL }}{{ .Params.image_gps }}" alt="{{ .Title }}" />
+          </div>
+          <h3 class="product__title d-flex align-items-center justify-content-center">LoRa Tester with GPS</h3>
+          <p class="product__text d-flex align-items-center justify-content-center">Track automatically position and signal strength to the TTNMapper</p>
+            <div class="pricelist__price">145€</div>
+          <div class="product__button">
+              <span class="button button--gray button--gray--smaller">Buy Now</span>
+          </div>
+      </a>
+  </div>
+</div>
+
+<div class="slick d-block d-lg-none">
+  <div>
+      <a href="{{ .Params.buyLink_gps }}" class="product product--carousel">
+          <div class="product__images d-flex align-items-center justify-content-center">
+              <img src="{{ .URL }}{{ .Params.imagegps }}" alt="{{ .Title }}" />
+              <img src="{{ .URL }}{{ .Params.imagegps }}" alt="{{ .Title }}" />
+          </div>
+          <h3 class="product__title d-flex align-items-center justify-content-center">LoRa Tester with GPS</h3>
+          <p class="product__text d-flex align-items-center justify-content-center">Buy it with GPS</p>
+          <div class="product__button">
+              <span class="button button--gray button--gray--smaller">Buy Now</span>
+          </div>
+      </a>
+  </div>
+</div>

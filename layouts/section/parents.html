@@ -1,0 +1,188 @@
+{{ define "main" }}
+
+<section>
+            <div class="intro imageHeader imageHeader--homepage">
+                <div class="intro__video mb_YTPlayer isMuted" id="video" data-property="{videoURL:'https://youtu.be/n6TyC0Vko3c',containment:'.intro__video',autoPlay:true, mute:true, startAt:0, opacity:1, showControls:false}"><div class="mbYTP_wrapper" id="wrapper_video" style="position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"><iframe id="iframe_video" class="playerBox" style="position: absolute; z-index: 0; width: 1665px; height: 937px; top: 0px; left: 0px; overflow: hidden; opacity: 1; -webkit-user-select: none; margin-top: -293px; margin-left: 0px;" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/3q05fJHeQrg?modestbranding=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;playerapiid=iframe_video&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;widgetid=1" unselectable="on"></iframe><div class="YTPOverlay" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div></div>
+
+                <div class="container">
+                  <div class="row align-items-end">
+                    <div class="col-12 heading">
+                      <h1 class = "cs">
+                        <svg
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="626px" height="135px" viewBox="0 0 626 134">
+                        <path fill-rule="evenodd"  fill="rgb(229, 27, 32)"
+                         d="M7.909,6.947 L593.438,-0.012 L600.999,66.000 L0.000,66.000 L7.909,6.947 Z"/>
+                        <path fill-rule="evenodd"  fill="rgb(227, 7, 17)"
+                         d="M20.398,17.000 L618.218,60.396 L625.993,134.862 L20.398,129.660 L20.398,17.000 Z"/>
+                        </svg>
+                        <div>{{ i18n "parents_intro" | safeHTML }}</div>
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+
+                <!--<div class="intro__play intro__play--2 d-none d-lg-block"></div>
+                <div class="intro__close"></div>-->
+            </div>
+        </section>
+
+        <section>
+          <div>
+            <div class="container">
+              <h2 class="title text-center">{{ .Params.mainHeading | safeHTML }}</h2>
+              <div class="row d-flex align-items-center justify-content-center">
+
+                <div class="col-12 col-md-5 text-center">
+                    <img class="kit__mainimg starterKitImage" src="/_assets/images/{{ .Params.image }}" alt="Starter Kit" />
+                </div>
+                <div class="col-12 col-md-6 pb-4">
+                  <h2>{{ i18n "makes_unique" }}</h2>
+                  <ul class="pricelist__items">
+                    <li class="pricelist__items__item">{{ i18n "meaningful_time" | safeHTML }}</li>
+                    <li class="pricelist__items__item">{{ i18n "discovering_world" | safeHTML }}</li>
+                    <li class="pricelist__items__item">{{ i18n "learn_by_game" | safeHTML }}</li>
+                    <li class="pricelist__items__item">{{ i18n "21st_century" | safeHTML }}</li>
+                    <li class="pricelist__items__item">{{ i18n "real_world" | safeHTML }}</li>
+                    <li class="pricelist__items__item">{{ i18n "approved_by_schools" | safeHTML }}</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="getStarterKit">
+            <div class="container">
+              <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-6">
+                  <div class="text text--perex">
+
+                   <h2>Začít je nejlepší se Starter Kitem</h2>
+                   {{ .Content }}
+                  </div>
+                  <div>
+                  <div class = "benefits row align-items-center justify-content-center">
+                    <div class = "col-12 benefits__item">
+                      <div class="benefits__icon"></div>
+                      <p>{{ i18n "p_no_risk" | safeHTML }}</p>
+                    </div>
+                    <div class = "col-12 benefits__item">
+                      <div class="benefits__icon benefits__icon--2"></div>
+                      <p>{{ i18n "p_free_shipping" | safeHTML }}</p>
+                    </div>
+                    <div class = "col-12 benefits__item">
+                      <div class="benefits__icon benefits__icon--4"></div>
+                      <p>{{ i18n "p_handbook_included" | safeHTML }}</p>
+                    </div>
+                    <div class = "col-12 benefits__item">
+                      <div class="benefits__icon benefits__icon--8"></div>
+                      <p>{{ i18n "p_handbook_projects" | safeHTML }}</p>
+                    </div>
+                    <div class = "col-12 benefits__item">
+                      <div class="benefits__icon benefits__icon--5"></div>
+                      <p>{{ i18n "p_master" | safeHTML }}</p>
+                    </div>
+                  </div>
+                  <br/>
+                  <a href="{{ .Params.button_link }}" class="button button--fullred button--bigger" style = "font-size: 1.4rem">{{ .Params.button | safeHTML }}</a>
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 text-center pr-5">
+                  <img class="kit__mainimg" src="/kits/starter-kit/main.png" alt="Starter Kit" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class = "benefits row align-items-center justify-content-center">
+              <div class = "col-md-12">
+                <div class = "row">
+
+                  <div class = "col-3 benefits__item text-left">
+                    <div class="benefits__icon benefits__icon--3"></div>
+                    <p>{{ i18n "p_you_save" | safeHTML }}</p>
+                  </div>
+                  <div class = "col-3 benefits__item text-left">
+                    <div class="benefits__icon"></div>
+                    <p>{{ i18n "p_recommended" | safeHTML }}</p>
+                  </div>
+                  <div class = "col-3 benefits__item text-left">
+                    <div class="benefits__icon benefits__icon--7"></div>
+                    <p>{{ i18n "p_bought" | safeHTML }}</p>
+                  </div>
+                  <div class = "col-3 benefits__item text-left">
+                    <div class="benefits__icon benefits__icon--6"></div>
+                    <p>{{ i18n "p_rating" | safeHTML }}</p>
+                  </div>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+          <div class="bg bg--gray">
+            <div class="container">
+              <div class="row">
+                <div class="col ">
+                  <div class = "testimonial">
+                    <div class="testimonial__item justify-content-between ">
+                      <div class="row">
+                      <div class = "col-12 col-sm-5 col-md-4 testimonial__image-container">
+                        <img class = "testimonial__image" src = "/_assets/images/anicka_testimonial.jpg" />
+                        <div class = "testimonial__image-shadow"><!-- --></div>
+                      </div>
+                      <div class = "col-12 col-sm-7 col-md-8 testimonial__content">
+                        <p class = "testimonial__text">"{{ .Params.testimonial }}"</p>
+                        <h3 class="testimonial__name">{{ .Params.testimonial_name | safeHTML }}</h3>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {{ $kit := "starter-kit" }}
+        {{ $projects := where (where .Site.Pages "Section" "projects" ) "Params.kit" "in" $kit }}
+
+
+        {{ with $projects }}
+        <section>
+          <div class = "bg">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="title title--withoutsubtitle text-center">{{ i18n "selected_projects_parents" }}</h2>
+                <div class="articles">
+                                    <div class="row">
+                                      {{ range first 3 $projects }}
+                                        <div  class="col-12 col-md-6 col-lg-4 show-item">
+                                            {{ .Render "grid" }}
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="{{ "projects/" | absLangURL }}" class="button button--redtext button--redtext--2">{{ i18n "show_all_projects"}}</a>
+                                    </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        {{ end }}
+
+
+{{ end }}

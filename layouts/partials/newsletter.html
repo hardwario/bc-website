@@ -19,7 +19,8 @@
                 onFormReady: function($form) {
                   var b = $form.children(".hs-email");
                   var f = $form.children(".hs-submit").children(".actions");
-
+                  var c = $form.children(".hs-recaptcha");
+                  c.hide();
                   b.css("marginTop", "20px");
                   b.css("marginBottom", "0");
                   b.children("label").hide();

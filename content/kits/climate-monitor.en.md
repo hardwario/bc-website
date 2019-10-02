@@ -9,6 +9,7 @@ images:
   preview: preview.png
   hover: hover.png
   main: main.png
+isParents: true
 isStarter: false
 recommended: false
 included:

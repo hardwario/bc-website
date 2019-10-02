@@ -8,7 +8,34 @@ other = "<strong>Doprava ZDARMA</strong><br/> Je to tak, tvůj Starter Kit ti do
 other = "<strong>Ušetříš 290 Kč</strong><br/> oproti ceně za samostatné moduly."
 
 [handbook_included]
-other = "<strong>Na startu ti pomůže naše <a href = \"#\">příručka</a></strong> a spousta projektů s&nbsp;manuály."
+other = "<strong>Na startu ti pomůže naše <a href = \"/cs/handbook\">příručka</a></strong> a spousta projektů s&nbsp;manuály."
 
 [master]
 other = "K dispozici budeš mít <strong>osobního mastera</strong>, který tě BigClownem provede."
+
+[p_no_risk]
+other = "<strong>Žádnej risk!</strong> Pokud se vám do 100 dnů BigClowna nezalíbí, vrátíme vám peníze zpět."
+
+[p_free_shipping]
+other = "<strong>Doprava ZDARMA</strong><br/> Je to tak, Starter Kit vám doručíme zdarma."
+
+[p_you_save]
+other = "<strong>Ušetříte 290 Kč</strong> oproti standardní ceně."
+
+[p_handbook_included]
+other = "<strong>Součástí balení je <a href = \"#\">příručka</a></strong>, která pomůže s prvními kroky."
+
+[p_handbook_projects]
+other = "<strong>Spousta projektů</strong> s&nbsp;jasnými manuály <strong>umožní začít každému</strong>."
+
+[p_master]
+other = "<strong>Osobní master</strong> bude vždy na blízku a online pomůže. Nemusíte se bát, že to bude jen na vás."
+
+[p_recommended]
+other = "<strong>98 % zákazníků kit doporučuje.</strong>"
+
+[p_bought]
+other = "<strong>Nakoupilo již 100+ zákazníků.</strong>"
+
+[p_rating]
+other = "<strong>4,8 je průměrné hodnocení.</strong>"

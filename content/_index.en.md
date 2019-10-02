@@ -9,6 +9,7 @@ meta:
 mainHeading: BigClown is an entertaining device<small> that will help you understand and create the Internet of Things (IoT)</small>
 button: Buy Starter Kit for 59€
 button_link: https://shop.bigclown.com/starter-kit/
+image: starter-kit_EN.png
 ---
 
 It means that everything around you, even your chair, **can become a smart device** connected with your computer or mobile phone. Thanks to this connection, you can start to improve your home, classroom or even the entire city and the world in a digital way.

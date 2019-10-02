@@ -5,8 +5,8 @@ url: /
 menu: ["main"]
 weight: 1
 meta:
-    title: Nauč se digitální dovednosti na reálných projektech
-mainHeading: BigClown je zábavný nástroj<small> se kterým pochopíš a navrhneš internet věcí</small>
+    title: BigClown - zábavná elektronická stavebnice
+mainHeading: BigClown je zábavný nástroj<small> se kterým pochopíš svět a vytvoříš chytré projekty</small>
 button: Kup si Starter Kit za 1 490 Kč
 button_link: https://obchod.bigclown.cz/starter-kit/
 image: starter-kit_CZ.png

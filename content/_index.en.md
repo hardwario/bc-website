@@ -5,8 +5,8 @@ url: /
 menu: ["main"]
 weight: 1
 meta:
-    title: Learn Digital Skills By Making Real Projects
-mainHeading: BigClown is an entertaining device<small> that will help you understand and create the Internet of Things (IoT)</small>
+    title: BigClown - educational electronics kit for fun activities
+mainHeading: BigClown is an entertaining device<small> that will help you understand phenomena and create smart projects</small>
 button: Buy Starter Kit for 59€
 button_link: https://shop.bigclown.com/starter-kit/
 image: starter-kit_EN.png

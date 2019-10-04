@@ -8,7 +8,7 @@ description: >-
 image_preview: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1570188430/blog/komensky.jpg
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1570188432/blog/komensky_clown.jpg
+  https://res.cloudinary.com/lukasfabik/image/upload/v1570188802/blog/komensky_wide.jpg
 author: lukas_fabik
 ---
 Internet věcí je zatím stále poměrně mladým pojmem. Přesto je něčím co nás již nyní obklopuje, ale v osnovách výuky informačních technologií nebo společenských věd jej většinou nenajdeme.

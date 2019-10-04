@@ -13,7 +13,7 @@ author: lukas_fabik
 ---
 Internet věcí je zatím stále poměrně mladým pojmem. Přesto je něčím co nás již nyní obklopuje, ale v osnovách výuky informačních technologií nebo společenských věd jej většinou nenajdeme.
 
-Připravili jsme proto ve spolupráci se společností ACCON **akreditovaný kurz _"Jak učit internet věcí"_ pro učitele a pedagogické pracovníky.** 
+Připravili jsme proto ve spolupráci se společností ACCON **akreditovaný kurz _"Jak učit internet věcí"_ pro učitele a pedagogické pracovníky.**
 
 Účastníky během kurzu seznámíme s internetem věcí, jeho dopady na společnost i jendotlivce a na praktických příkladech se stavebnicí BigClown ukážeme, jak internet věcí učit.
 
@@ -21,7 +21,6 @@ Připravili jsme proto ve spolupráci se společností ACCON **akreditovaný kur
 
 **Jedná se o akreditovaný kurz MŠMT pro další vzdělávání pedagogických pracovníků, kurz osvobozen od DPH.**
 
-****
 
 ## Termíny
 

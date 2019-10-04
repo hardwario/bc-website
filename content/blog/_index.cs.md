@@ -2,6 +2,6 @@
 title: Blog
 mainHeading: Co je u nás nového?
 slug: blog
-menu: [footer"]
+menu: ["footer"]
 weight: 500
 ---

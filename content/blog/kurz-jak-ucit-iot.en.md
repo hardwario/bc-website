@@ -1,10 +1,11 @@
 ---
-title: Přijďte na akreditovaný seminář "Jak učit internet věcí"
+title: Come to join our accredited course "How to teach the Internet of Things"
 draft: true
 date: 2019-10-04T10:25:01.285Z
 description: >-
-  Přijďte na akreditovaný kurz "Jak učit internet věcí" a zmodernizujte vaši
-  výuku nejen informačních technologií nebo společenských věd
+  Come to join our accredited course "How to teach the Internet of Things" and
+  modernize your teaching methods not only in Information Technologies or 
+  Social Science
 image_preview: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1570188430/blog/komensky.jpg
 image_main: >-

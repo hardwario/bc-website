@@ -1,6 +1,7 @@
 ---
 title: '1 rada, se kterou budete už dnes před dětmi chytřejší'
 date: 2019-10-06T13:58:10.841Z
+slug: 1-rada-pro-spolecne-vecere
 description: >-
   Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a
   soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i

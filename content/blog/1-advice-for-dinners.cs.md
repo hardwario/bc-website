@@ -7,7 +7,7 @@ description: >-
   celém týdnu.
 image_preview: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1570372579/blog/placeholder.png
-image_main: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570373490/blog/blank.png'
+image_main: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570373685/blog/blank.png'
 author: lukas_fabik
 ---
 Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i celém týdnu.

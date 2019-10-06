@@ -5,11 +5,9 @@ description: >-
   Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a
   soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i
   celém týdnu.
-image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1570372579/blog/placeholder.png
+image_preview: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570375880/blog/place.png'
 image_main: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570373685/blog/blank.png'
 author: lukas_fabik
-slug: 1-rada-pro-spolecne-vecere
 ---
 Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i celém týdnu.
 
@@ -23,7 +21,7 @@ Nejspíše víte, že teplejší místo je u stropu protože teplý vzduch stoup
 
 Tohoto jevu vyuřívají například horkovzdušné balóny. Soustavným zahříváním vzduchu uvnitř balónu se v něm udržuje vzduch s nižší hustotou, než má vzduch okolo a tím míří balón vzhůru.
 
-Bojíte se, že taková moudra neznáte? Můžu vám každý týden v pátek poslat 1 nové moudro moudro, které můžete dětem říct. Stačí se přihlásit formulářem níže.
+Bojíte se, že taková moudra neznáte? Můžu vám každý týden v pátek poslat 1 nové moudro moudro, které můžete dětem říct. Stačí se přihlásit formulářem níže. 
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 

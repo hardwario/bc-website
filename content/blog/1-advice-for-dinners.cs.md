@@ -9,19 +9,20 @@ image_preview: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570375880/b
 image_main: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570373685/blog/blank.png'
 author: lukas_fabik
 ---
-Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i celém týdnu.
+Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i celém týdnu a 
 
 Mám pro vás tip, jak přinést ke stoulu i trochu moudra. Co takhle dětem říct, jak se to má s cirkulací teplého a studeného vzduchu?
 
 > **Jaký vzduch je těžší? Studený, nebo teplý?**
 > A je tepleji u stropu nebo na podlaze?
 
+Teplý vzduch stoupá vzhůru a studený naopak klesá dolů. Tato jednoduchá poučká nám napoví, kde je tepleji. Ale proč tomu tak je? 
 
-Nejspíše víte, že teplejší místo je u stropu protože teplý vzduch stoupá vzhuru a studený naopak klesá dolů. Ale proč tomu tak je? Může za to menší hustota teplého vzduchu. Pokud se vzduch zahřeje, jeho jednotlivé atomy se začnou od sebe oddalovat, tím se sníží hustota vzduchu. A co je hustější, to je těžší, takže studený vzduch klesá dolů a ten teplý míří nahoru.
+Může za to **menší hustota teplého vzduchu**. Pokud se vzduch zahřeje, jeho molekuly se začnou od sebe oddalovat, tím se sníží hustota vzduchu. A co je hustější, to je těžší, takže studený vzduch klesá dolů a ten teplý míří nahoru.
 
-Tohoto jevu vyuřívají například horkovzdušné balóny. Soustavným zahříváním vzduchu uvnitř balónu se v něm udržuje vzduch s nižší hustotou, než má vzduch okolo a tím míří balón vzhůru.
+Tohoto jevu využívají například horkovzdušné balóny. Soustavným zahříváním vzduchu uvnitř balónu se v něm udržuje vzduch s nižší hustotou, než má vzduch okolo a tím míří balón vzhůru.
 
-Bojíte se, že taková moudra neznáte? Můžu vám každý týden v pátek poslat 1 nové moudro moudro, které můžete dětem říct. Stačí se přihlásit formulářem níže. 
+Vyzkoušíte to během příští večeře? Bojíte se, že žádná další moudra neznáte? **Pošlu vám každý týden v pátek 1 nové moudro**, které můžete dětem říct. Stačí se přihlásit formulářem níže. 
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 

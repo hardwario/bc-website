@@ -29,7 +29,7 @@ In this course, participants will learn about the Internet of Things, its impact
 
 **Don't hesitate to sign up**. [You can register here](https://docs.google.com/forms/d/e/1FAIpQLSe3RhJBkoMBr9hMcnGUyycmWOsthwZnw9wkXGqZ7PH5On3PQQ/viewform)**.**
 
-The course is held in the English language.
+The course is held in the Czech language.
 
 ## What is the Internet of Things?
 

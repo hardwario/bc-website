@@ -1,6 +1,6 @@
 ---
 title: Come to join our accredited course "How to teach the Internet of Things"
-draft: true
+draft: false
 date: 2019-10-04T10:25:01.285Z
 description: >-
   Come to join our accredited course "How to teach the Internet of Things" and
@@ -28,6 +28,8 @@ In this course, participants will learn about the Internet of Things, its impact
 * November 8 in Prague
 
 **Don't hesitate to sign up**. [You can register here](https://docs.google.com/forms/d/e/1FAIpQLSe3RhJBkoMBr9hMcnGUyycmWOsthwZnw9wkXGqZ7PH5On3PQQ/viewform)**.**
+
+The course is held in the English language.
 
 ## What is the Internet of Things?
 

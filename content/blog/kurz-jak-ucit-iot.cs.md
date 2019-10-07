@@ -28,6 +28,8 @@ Připravili jsme ve spolupráci se společností ACCON **akreditovaný kurz _"Ja
 
 **S příhláškou neváhejte**. [**Registrovat se můžete zde**](https://docs.google.com/forms/d/e/1FAIpQLSe3RhJBkoMBr9hMcnGUyycmWOsthwZnw9wkXGqZ7PH5On3PQQ/viewform)**.**
 
+**Kurz probíhá v českém jazyce.**
+
 ## Co je to internet věcí?
 
 Myšlenkou The Internet of Things (IoT) je síť propojených prvků - věcí, strojů, čidel nebo senzorů za cílem zlepšit, zautomatizovat a zjednodušit prostředí člověk doma, ve volném čase i v práci.

@@ -23,8 +23,10 @@ Připravili jsme ve spolupráci se společností ACCON **akreditovaný kurz _"Ja
 
 ## Termíny
 
-* 11. října v Brně
+* 11. října v Brně - v hotelu Omega, Křídlovická 19 b
 * 8. listopadu v Praze
+
+Přijít můžete od 8.30, zahájení kurzu je v 9 hodin a potrvá přibližně do 15.30.
 
 **S příhláškou neváhejte**. [**Registrovat se můžete zde**](https://docs.google.com/forms/d/e/1FAIpQLSe3RhJBkoMBr9hMcnGUyycmWOsthwZnw9wkXGqZ7PH5On3PQQ/viewform)**.**
 

@@ -32,11 +32,11 @@ Svoje vlastní IFTTT vytvoříš přes speciální rozhraní [IFTTT.com](https:/
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985210/academy/connect-ifttt-with-your-project-with-the-playground/image18.png)
 
-1. Naběhne ti stránka s velkým textem _IF THIS THEN THAT_. **Klikni na to THIS**. 
+2. Naběhne ti stránka s velkým textem _IF THIS THEN THAT_. **Klikni na to THIS**. 
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985207/academy/connect-ifttt-with-your-project-with-the-playground/image13.png)
 
-1. Vyskočí na tebe spousta možností. Vyber si **WebHooks**. Díky službě Webhooks si vytvoříš svoje vlastní IFTTT projekty, které propojí Playground s různými online appkami.
+3. Vyskočí na tebe spousta možností. Vyber si **WebHooks**. Díky službě Webhooks si vytvoříš svoje vlastní IFTTT projekty, které propojí Playground s různými online appkami.
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985204/academy/connect-ifttt-with-your-project-with-the-playground/image1.png)
 
@@ -48,7 +48,7 @@ Pak ti to nabídne **pojmenování Eventu**. Tam se vydováděj, ale název Even
 
 Pak název potvrď buttonem **Create trigger**. 🙌
 
-1. Teď klikni na **THAT**. 
+4. Teď klikni na **THAT**. 
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985207/academy/connect-ifttt-with-your-project-with-the-playground/image13.png)
 
@@ -71,7 +71,7 @@ Máš zprávu hotovou? Potvrď ji tlačítkem **Create Action**.
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985209/academy/connect-ifttt-with-your-project-with-the-playground/image9.png)
 
-1. Go **Finish!** 👇
+5. Go **Finish!** 👇
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985210/academy/connect-ifttt-with-your-project-with-the-playground/image19.png)
 
@@ -79,11 +79,11 @@ Vidíš Connected? Seš tam! 👍
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985207/academy/connect-ifttt-with-your-project-with-the-playground/image12.png)
 
-1. To ale není všechno, spojení je taky třeba otestovat. Klikni na **ikonku Webhoooks**. 
+6. To ale není všechno, spojení je taky třeba otestovat. Klikni na **ikonku Webhoooks**. 
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985209/academy/connect-ifttt-with-your-project-with-the-playground/image16.png)
 
-1. Vpravo nahoře vyber **Documentation**… 
+7. Vpravo nahoře vyber **Documentation**… 
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985208/academy/connect-ifttt-with-your-project-with-the-playground/image14.png)
 
@@ -93,11 +93,11 @@ Klikni na políčko **Event** a přepiš ho na název svého eventu, jak jsi ho 
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985209/academy/connect-ifttt-with-your-project-with-the-playground/image17.png)
 
-1. Vezmi si do ruky **mobil** 📱 a nainstaluj si **IFTTT appku**: odkaz na [Google Play](https://play.google.com/store/apps/details?id=com.ifttt.ifttt&hl=cs) a odkaz na [Apple Store](https://apps.apple.com/us/app/ifttt/id660944635).
+8. Vezmi si do ruky **mobil** 📱 a nainstaluj si **IFTTT appku**: odkaz na [Google Play](https://play.google.com/store/apps/details?id=com.ifttt.ifttt&hl=cs) a odkaz na [Apple Store](https://apps.apple.com/us/app/ifttt/id660944635).
 
 **Přihlas se** pod stejným účtem jako na webu. 
 
-1. **V počítači** klikni na button **Test it**. Stránku pořád nechej zapnutou.
+9. **V počítači** klikni na button **Test it**. Stránku pořád nechej zapnutou.
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985209/academy/connect-ifttt-with-your-project-with-the-playground/image11.png)
 
@@ -105,7 +105,7 @@ Na mobilu bys měl automaticky vidět, že to funguje. 👌
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985203/academy/connect-ifttt-with-your-project-with-the-playground/image3.png)
 
-1. A teď IFTTT propoj s Playgroundem. Otevři **Playground**.
+10. A teď IFTTT propoj s Playgroundem. Otevři **Playground**.
 
 Programování jsme protentokrát zjednodušili a vyrobili jsme pro tebe přednastavené flow. Vlož ho do Playgroundu. Jak na to? Vpravo nahoře vidíš **menu** (tři čárky). Když na ně klikneš, zobrazí se ti **Import a pod tím Clipboard.** 
 
@@ -121,18 +121,18 @@ Ve flow vidíš **tři nody**:
 * druhý je **Change node** s mazací funkcí. Díky tomu bude mít tvůj HTTP request takovou podobu, jakou má mít, 
 * třetí je **node HTTP**, který jinak najdeš v sekci Function. Díky tomuhle nodu můžeš Playground připojit k webové službě, jako je právě IFTTT. Umí totiž zpracovávat HTTP požadavky.
 
-1. Zkopíruj kód z webu IFTTT... 
+11. Zkopíruj kód z webu IFTTT... 
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985207/academy/connect-ifttt-with-your-project-with-the-playground/image8.png)
 
-1. … a vlož ho v Playgroundu do nastavení nodu HTTP request. 
+12. … a vlož ho v Playgroundu do nastavení nodu HTTP request. 
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985207/academy/connect-ifttt-with-your-project-with-the-playground/image10.png)
 
-1.  Node ulož tlačítkem **Done**. Elektronický zvonek budiž nastaven.
-2. Teď už jenom zmáčkni staré dobré **Deploy**... 
-3. … A oslavuj, že umíš **zase něco navíc**. 👏 Když totiž zmáčkneš tlačítko na krabičce, v mobilu se ti ukáže, že jsi ho zmáčkl. Po rozkliknutí notifikace vidíš detailní Applet. 
+13. Node ulož tlačítkem **Done**. Elektronický zvonek budiž nastaven.
+14. Teď už jenom zmáčkni staré dobré **Deploy**... 
+15. … A oslavuj, že umíš **zase něco navíc**. 👏 Když totiž zmáčkneš tlačítko na krabičce, v mobilu se ti ukáže, že jsi ho zmáčkl. Po rozkliknutí notifikace vidíš detailní Applet. 
 
 ![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985206/academy/connect-ifttt-with-your-project-with-the-playground/image4.png)
 
-1. **Krabičku umísti místo zvonku** a až někdo zazvoní, dozvíš se to i při návštěvě souseda. Žádné kámoše už tak nezmeškáš. 👋
+16. **Krabičku umísti místo zvonku** a až někdo zazvoní, dozvíš se to i při návštěvě souseda. Žádné kámoše už tak nezmeškáš. 👋

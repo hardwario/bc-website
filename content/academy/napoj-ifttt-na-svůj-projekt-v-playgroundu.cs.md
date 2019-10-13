@@ -44,7 +44,7 @@ Postupně musíš odkliknout buttony **Connect a Receive a web request**.
 
 Pak ti to nabídne **pojmenování Eventu**. Tam se vydováděj, ale název Eventu si zapamatuj. 👀 Tenhle název bude důležitý při pozdějším propojování s mobilem a Playgroundem.
 
-![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985209/academy/connect-ifttt-with-your-project-with-the-playground/image15.png)
+![](https://res.cloudinary.com/lukasfabik/image/upload/v1570985205/academy/connect-ifttt-with-your-project-with-the-playground/image7.png)
 
 Pak název potvrď buttonem **Create trigger**. 🙌
 

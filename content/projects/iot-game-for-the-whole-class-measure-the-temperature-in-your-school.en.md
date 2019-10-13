@@ -2,7 +2,7 @@
 title: 'IoT game for the whole class: Measure the temperature in your school'
 draft: true
 featured: true
-handbook: the-coolest-and-the-hottest-place
+handbook: starter-kit
 date: 2019-10-13T15:25:02.143Z
 description: >-
   One of the IoT projects to enhance digital skills. With the BigClown Starter

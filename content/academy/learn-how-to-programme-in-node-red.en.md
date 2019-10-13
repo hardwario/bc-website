@@ -7,7 +7,7 @@ description: >-
   You will give your BigClown kit commands in the Node-RED programming tool. It
   is amazingly intuitive and you will learn to work in it in just a few minutes.
   See for yourself.
-slug: Learn-how-to-programme-in-Node-RED
+slug: what-is-node-red
 meta_title: Learn how to programme in Node-RED
 meta_description: >-
   You will give your BigClown kit commands in the Node-RED programming tool. It

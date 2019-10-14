@@ -146,12 +146,13 @@
     height:3*$baseline;
     border: 0;
     //border-left:1px solid #dfdfdf;
-    padding: 0 22px;
+    padding: 0;
     background-color:transparent;
     border-radius: 0;
     text-transform: uppercase;
     color:#2e343c!important;
     font-size: em(16);
+    line-height: 3*$baseline;
     font-weight: normal;
     margin-right: 50px;
     padding-left: 46px;
@@ -161,7 +162,7 @@
 
     @media(max-width:1400px)
     {
-      margin-right: 0px;
+      margin-right: 20px;
     }
 
     @media(max-width:1230px)
@@ -196,6 +197,16 @@
     {
       background-color:transparent;
       color:#2e343c!important;
+    }
+
+    &.active{
+      color:#ccc!important;
+      margin-right: 20px;
+
+      &:hover
+      {
+        cursor: default;
+      }
     }
 
     &--en
@@ -371,6 +382,20 @@
     {
       border-color: #c10f13;
       background: #c10f13;
+    }
+
+    &.priority{
+      font-size: em(22);
+
+      @media(max-width:767px)
+      {
+        font-size: em(20);
+      }
+
+      @media(max-width:365px)
+      {
+        font-size: em(16);
+      }
     }
   }
 

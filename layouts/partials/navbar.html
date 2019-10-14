@@ -39,30 +39,35 @@
 
         <a href="{{ .Site.Params.shopURL }}" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">{{ i18n "shop_now" }}</a>
 
-        <button class="d-none d-lg-block button button--lang button--arrow button--lang--{{ .Lang }}">{{ .Site.Language.LanguageName }}
+        <div class="d-lg-block">
+        <span class="d-none d-sm-inline button button--lang button--lang--{{ .Lang }} active" href="{{ .Permalink }}">{{ .Site.Language.LanguageName }}</span>
+        {{ if .IsTranslated }}
+          {{ range .Translations }}
+            <a class="button button--lang button--lang--{{ .Lang }}" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+          {{ end }}
+        {{ else }}
+          {{ range .Site.Languages }}
+            {{ if ne .Lang $.Page.Lang }}
+              <a class="button button--lang button--lang--{{ .Lang }}" href="/{{ .Lang }}">{{ .Params.LanguageName }}</a>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        </div>
+        <!--<button class="d-none d-lg-block button button--lang button--arrow button--lang--{{ .Lang }}">{{ .Site.Language.LanguageName }}
           <div class="mydropdown">
             {{ if .IsTranslated }}
               {{ range .Translations }}
                 <a class="button button--lang button--lang--2 button--lang--{{ .Lang }}" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
               {{ end }}
-            {{ else if eq .Section "doc" }}
-            {{ range .Site.Languages }}
-              {{ if ne .Lang $.Page.Lang }}
-                <a class="button button--lang button--lang--2 button--lang--{{ .Lang }}" href="/{{ .Lang }}/doc/">{{ .Params.LanguageName }}</a>
-              {{ end }}
-
-            {{ end }}
             {{ else }}
-
               {{ range .Site.Languages }}
                 {{ if ne .Lang $.Page.Lang }}
                   <a class="button button--lang button--lang--2 button--lang--{{ .Lang }}" href="/{{ .Lang }}">{{ .Params.LanguageName }}</a>
                 {{ end }}
-
               {{ end }}
             {{ end }}
           </div>
-        </button>
+        </button>-->
       </div>
     </div>
   </div>

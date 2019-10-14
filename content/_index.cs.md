@@ -7,7 +7,7 @@ weight: 1
 meta:
     title: BigClown - zábavná elektronická stavebnice
 mainHeading: BigClown je zábavný nástroj<small> se kterým pochopíš svět a vytvoříš chytré projekty</small>
-button: Kup si Starter Kit za 1 490 Kč
+button: Koupit Starter Kit za 1 490 Kč
 button_link: https://obchod.bigclown.cz/starter-kit/
 image: starter-kit_CZ.png
 ---

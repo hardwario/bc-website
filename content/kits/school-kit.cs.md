@@ -5,7 +5,7 @@ id: basic
 description: Inspirujte celou třídu!
 isBasic: false
 isPremium: false
-isUltimate: true
+isUltimate: false
 images:
   preview: preview.png
   hover: hover.png

@@ -19,6 +19,7 @@ image_main: /upload/ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]
 handbook:
+kit: ["starter-kit","button-kit"]
 ---
 
 ## Úvod

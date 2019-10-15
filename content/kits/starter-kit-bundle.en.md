@@ -4,7 +4,7 @@ id: basic
 description: Starter Kits for the entire class!
 isBasic: false
 isPremium: false
-isUltimate: true
+isUltimate: false
 images:
   preview: preview.png
   hover: hover.png

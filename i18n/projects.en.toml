@@ -27,3 +27,12 @@ other = "This project is supported by"
 
 [table_of_contents]
 other = "Table of Contents"
+
+[hackster_heading]
+other = "Do you wanna se more projects?"
+
+[hackster_text]
+other = "<p>We and other BigClown makers are publishing many more project to Hackster.io platform.</p>"
+
+[hackster_button]
+other = "Show me hackster.io projects"

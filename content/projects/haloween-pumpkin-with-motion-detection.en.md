@@ -56,7 +56,7 @@ You have to pair the wireless Core Module with Radio Dongle in your computer.
 * Click Start pairing button
 * Power up the Core Module by plugging DC Adapter to the Power Module
 * The device will appear in the table
-* Don't forget to stop apiring by clicking Stop pairing
+* Don't forget to stop pairing by clicking Stop pairing
 
 ## Step 5: Add Function
 Open Node-RED in the Playground or Raspberry Pi and import the flow from this link in the Menu > Import > Clipboard. Do not forget to hit "Deploy" in the top right corner to apply the changes.
@@ -74,7 +74,7 @@ When you connect the Power Adapter and wave your hand in front of the PIR motion
 {{< youtube "wgsT-WT1Ouw" >}}
 
 ## Step 7: Finish Pumpkin
-Put a thick wire around the servo lever and fix the sevo to the pumpkin through two holes and zip-ties.
+Put a thick wire around the servo lever and fix the servo to the pumpkin through two holes and zip-ties.
 
 Add the electronics and LED strip inside. It's a good idea to put electronics to some plastic bag.
 

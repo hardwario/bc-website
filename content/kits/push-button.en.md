@@ -1,6 +1,7 @@
 ---
 title: Push Button Kit
 id: basic
+kit: ["button-kit"]
 description: Control your space!
 isBasic: false
 isPremium: false

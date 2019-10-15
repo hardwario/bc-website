@@ -1,5 +1,5 @@
 ---
-title: Start
+title: Handbook
 meta:
     title:  The Handbook for Big Clown Maker Kits | A box that helps you take control of your world
     description: Get ahead of the game. Build the kit from BigClown products and create your own IoT project. Use the handbook and our advice for your future digital masterpieces.

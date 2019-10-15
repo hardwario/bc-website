@@ -6,7 +6,7 @@ description: >-
   soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i
   celém týdnu.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1571143323/blog/dinner-thumb.jpg
+  https://res.cloudinary.com/lukasfabik/image/upload/v1571147563/blog/dinner-thumb.jpg
 image_main: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1571143323/blog/dinner-main.jpg
 author: lukas_fabik

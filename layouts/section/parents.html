@@ -32,7 +32,6 @@
                     <li class="pricelist__items__item">{{ i18n "discovering_world" | safeHTML }}</li>
                     <li class="pricelist__items__item">{{ i18n "learn_by_game" | safeHTML }}</li>
                     <li class="pricelist__items__item">{{ i18n "21st_century" | safeHTML }}</li>
-                    <li class="pricelist__items__item">{{ i18n "real_world" | safeHTML }}</li>
                     <li class="pricelist__items__item">{{ i18n "approved_by_schools" | safeHTML }}</li>
                   </ul>
                 </div>
@@ -54,9 +53,9 @@
                   <img class="kit__mainimg" src="/kits/starter-kit/main.png" alt="Starter Kit" />
                 </div>
                 <div class="col-12 col-md-6">
-                  <h2 class = "title title--2">Starter Kit</h2>
+                  <h2 class = "title title--2">{{ .Params.starterKit_heading }}</h2>
                   <div class = "text">
-                  <p>{{ .Params.starterKit_text }}</p>
+                  <p>{{ .Params.starterKit_text | safeHTML }}</p>
                   </div>
                   <a href="{{ .Params.starterKit_url }}" class="button button--fullred mb-1">{{ .Params.more_button }}</a>
                   <a href="{{ .Params.button_link }}" class="button button--gray ml-md-3">{{ .Params.button }}</a>

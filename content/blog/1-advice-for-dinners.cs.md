@@ -5,8 +5,10 @@ description: >-
   Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a
   soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i
   celém týdnu.
-image_preview: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570375880/blog/place.png'
-image_main: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570373685/blog/blank.png'
+image_preview: >-
+  https://res.cloudinary.com/lukasfabik/image/upload/v1571143323/blog/dinner-thumb.jpg
+image_main: >-
+  https://res.cloudinary.com/lukasfabik/image/upload/v1571143323/blog/dinner-main.jpg
 author: lukas_fabik
 ---
 Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i celém týdnu. 

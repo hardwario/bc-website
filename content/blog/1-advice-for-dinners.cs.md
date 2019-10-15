@@ -9,20 +9,19 @@ image_preview: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570375880/b
 image_main: 'https://res.cloudinary.com/lukasfabik/image/upload/v1570373685/blog/blank.png'
 author: lukas_fabik
 ---
-Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i celém týdnu a 
+Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i celém týdnu. 
 
-Mám pro vás tip, jak přinést ke stoulu i trochu moudra. Co takhle dětem říct, jak se to má s cirkulací teplého a studeného vzduchu?
+## 1 moudro týdně
 
-> **Jaký vzduch je těžší? Studený, nebo teplý?**
-> A je tepleji u stropu nebo na podlaze?
+Mám pro vás tip, jak přinést ke společnému stoulu i trochu moudra. Každý týden v pátek vám zašlu do e-mailu jedno moudro zpracované tak, aby bylo jednoduché na vysvětlení a zaujalo. Společně tak budete mít něco dalšího k diskuzi a navíc vás to obohatí.
 
-Teplý vzduch stoupá vzhůru a studený naopak klesá dolů. Tato jednoduchá poučká nám napoví, kde je tepleji. Ale proč tomu tak je? 
+Přihlaste se a hned v pátek dostanete první tip. 
 
-Může za to **menší hustota teplého vzduchu**. Pokud se vzduch zahřeje, jeho molekuly se začnou od sebe oddalovat, tím se sníží hustota vzduchu. A co je hustější, to je těžší, takže studený vzduch klesá dolů a ten teplý míří nahoru.
+> **Jaký vzduch je těžší? Studený, nebo teplý? A víte proč?**
 
-Tohoto jevu využívají například horkovzdušné balóny. Soustavným zahříváním vzduchu uvnitř balónu se v něm udržuje vzduch s nižší hustotou, než má vzduch okolo a tím míří balón vzhůru.
 
-Vyzkoušíte to během příští večeře? Bojíte se, že žádná další moudra neznáte? **Pošlu vám každý týden v pátek 1 nové moudro**, které můžete dětem říct. Stačí se přihlásit formulářem níže. 
+
+## Chci 1 moudro týdně:
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 

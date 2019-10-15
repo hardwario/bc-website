@@ -11,7 +11,7 @@ other = "<strong>You save 22€</strong><br/> compared to the price for modules.
 other = "<strong><a href = \"/handbook\">Handbook</a></strong> will help you with the start and with many projects."
 
 [master]
-other = "You will have a <strong>the personal master</strong> to guide you through BigClown."
+other = "You will have a <strong>the personal guide</strong> to guide you through BigClown."
 
 [p_no_risk]
 other = "<strong>Risk-Free!</strong> If you will not be felt in love with BigClown in 100 days your order is refunded."
@@ -23,13 +23,13 @@ other = "<strong>FREE Shipping</strong><br/> Yes, we will deliver you Starter Ki
 other = "<strong>You save 22€</strong> compared to the standard price."
 
 [p_handbook_included]
-other = "Kit includes <strong>Handbook</strong> which will help on the start."
+other = "Kit includes <strong><a href = \"/handbook/\">Handbook</a></strong> which will help on the start."
 
 [p_handbook_projects]
 other = "<strong>Many projects</strong> with clear step-by-step tutorials enable to start everyone."
 
 [p_master]
-other = "<strong>The personal master</strong> will always be close and help online. You don't have to worry that it's up to you."
+other = "<strong>The personal guide</strong> will always be close and help online. You don't have to worry that it's up to you."
 
 [p_recommended]
 other = "<strong>98% of customers recommended the kit.</strong>"
@@ -38,4 +38,4 @@ other = "<strong>98% of customers recommended the kit.</strong>"
 other = "<strong>100+ customers already bought the kit.</strong>"
 
 [p_rating]
-other = "<strong>4,8 stars is an average rating of a purchase.</strong>"
+other = "<strong>4,8 from 5 stars is an average rating of a purchase.</strong>"

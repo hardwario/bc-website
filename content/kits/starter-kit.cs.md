@@ -1,7 +1,7 @@
 ---
 title: Starter Kit
 id: basic
-kit: starter-kit
+kit: ["starter-kit"]
 description: Perfektní začátek se stavebnicí BigClown!
 isBasic: false
 isPremium: false
@@ -38,4 +38,4 @@ eduText: Starter Kit vám pomůže seznámit se se stavebnicí
 eduBenefits: ["Obsahuje Push Button Kit", "Obsahuje Radio Dongle","Skvělý začátek se stavebnicí","100 dní na vyzkoušení"]
 ---
 
-Základní sadou pro začátek s BigClownem je Starter Kit a užiješ si s ním spoustu skvělých projektů. Postav své první chytré zařízení a vytvoř projekty, kterými ohromíš kámoše, rodinu i nás.👌 Kit ti umožní měřit teplotu, pracovat s akcelometrem nebo ovládat cokoli stisknutím tlačítka. Časem ho můžeš vylepšit o rozšiřující moduly.
+Základní sadou pro začátek s BigClownem je Starter Kit a užiješ si s ním spoustu skvělých projektů. Postav své první chytré zařízení a vytvoř projekty, kterými ohromíš kámoše, rodinu i nás.👌 Kit ti umožní měřit teplotu, pracovat s akcelerometrem nebo ovládat cokoli stisknutím tlačítka. Časem ho můžeš vylepšit o rozšiřující moduly.

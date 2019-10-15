@@ -30,3 +30,12 @@ other = "Tak co, jakým projektem ovládneš svět dnes?"
 
 [table_of_contents]
 other = "Obsah"
+
+[hackster_heading]
+other = "Chceš vidět více projektů?"
+
+[hackster_text]
+other = "<p>Mnoho projektů zveřejňujeme nejen my, ale i další BigClown mejkři na platformě Hackster.io.</p>"
+
+[hackster_button]
+other = "Chci vidět projekty na hackster.io"

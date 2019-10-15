@@ -16,7 +16,9 @@ notIncluded: ["Flood Detector", "LCD Thermostat", "Controller", "Push Button", "
 gifts: ["Klaunský nos"]
 weight: 1
 price: 3 790 Kč
-buyLink: "https://obchod.bigclown.cz/big-kits/"
+buyLink: "https://obchod.bigclown.cz/basic-multi-kit/"
 modules: ["usb_dongle","core-2","mini_battery-2","climate","pir","enclosures-101-2"]
 optionalModules: ["sigfox","lora"]
 ---
+
+Jednoduchý start k vytváření IoT zařízení. S touto sadou si budete moct postavit projekty Motion Detector a Climate Monitor. Sada také obsahuje Radio Dongle, který vytvoří bránu k zařízením, která postavíte.

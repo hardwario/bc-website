@@ -1,6 +1,7 @@
 ---
 title: Push Button Kit
 id: basic
+kit: ["button-kit"]
 description: Kontroluj své prostředí!
 isBasic: false
 isPremium: false

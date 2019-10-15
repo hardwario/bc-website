@@ -1,11 +1,8 @@
 {{ define "main" }}
 
-{{ $title := .Title }}
-{{ partial "www/heading.html" (dict "heading" $title "class" "intro__title3--notupper") }}
-
 {{ $isStarter:= .Params.isStarter }}
 
-<section>
+<!--<section>
   <div class="submenu">
     <div class="container">
       <div class="row">
@@ -13,7 +10,7 @@
           <ul class="submenu__list d-block d-md-flex">
             <li class="submenu__item"><a class="submenu__link submenu__link--overview" href="#overview">{{ i18n "overview" }}</a></li>
             {{ if eq $isStarter true }}<li class="submenu__item"><a class="submenu__link submenu__link--kit" href="#kit">{{ i18n "kits" }}</a></li>{{ end }}
-            <!--<li class="submenu__item"><a class="submenu__link submenu__link--integration" href="#integration">{{ i18n "integration" }}</a></li>-->
+            <!--<li class="submenu__item"><a class="submenu__link submenu__link--integration" href="#integration">{{ i18n "integration" }}</a></li>
             {{ if eq $isStarter false }}<li class="submenu__item"><a class="submenu__link submenu__link--specification" href="#specification">{{ i18n "tech_specs" }}</a></li>{{ end }}
             <li class="submenu__item"><a class="submenu__link submenu__link--support" href="#support">{{ i18n "support" }}</a></li>
             <li class="submenu__item ml-auto"><a class="button button--fullredsmall" href="{{ .Params.buyLink }}">{{ i18n "buy" }}</a></li>
@@ -22,10 +19,8 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
-
-<div id="overview">
   <section>
     <div class="kit">
       <div class="container">
@@ -33,14 +28,12 @@
           <div class="col-12 col-md-6 text-center">
             <img class="kit__mainimg" src="{{ .URL }}{{ .Params.images.main }}" alt="{{ .Title }}" />
           </div>
-          <div class="col-12 col-md-6 text-center">
-            <h2 class="kit__title">{{ .Params.title }}<small>{{ .Params.description }}</small></h2>
-
-            <a href="#explore-modules" class="button button--bigger">{{ i18n "explore_modules" }}</a>
-
-            <div class="kit__or">{{ i18n "or" }}</div>
-
-            <div class="d-flex justify-content-center">
+          <div class="col-12 col-md-6">
+            <h1 class="title">{{ .Params.title }}</h1>
+            <div class = "text">
+            {{ .Content }}
+            </div>
+            <div class="d-flex ">
               <div class="kit__price">{{ .Params.price }}</div>
               <div class="kit__buy">
                 <a href="{{ .Params.buyLink }}" class="button button--fullredmiddle">{{ i18n "buy_it_now" }}</a>
@@ -51,107 +44,95 @@
       </div>
     </div>
   </section>
+{{ if in .Params.kit "starter-kit" }}
+  <section>
+    <div class="container">
+      <div class = "benefits row align-items-center justify-content-center">
+        <div class = "col-md-12">
+          <div class = "row">
 
-<section>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-xl-8">
-        <div class="contactbox__text text-center">
-          <!--<h2 class="title title--3 text-center">{{ i18n "description" }}</h2>-->
-          <br/>
-          {{ .Content }}
+            <div class = "col-md-3 benefits__item text-left">
+              <div class="benefits__icon benefits__icon--3"></div>
+              <p>{{ i18n "p_you_save" | safeHTML }}</p>
+            </div>
+            <div class = "col-md-3 benefits__item text-left">
+              <div class="benefits__icon"></div>
+              <p>{{ i18n "p_recommended" | safeHTML }}</p>
+            </div>
+            <div class = "col-md-3 benefits__item text-left">
+              <div class="benefits__icon benefits__icon--7"></div>
+              <p>{{ i18n "p_bought" | safeHTML }}</p>
+            </div>
+            <div class = "col-md-3 benefits__item text-left">
+              <div class="benefits__icon benefits__icon--6"></div>
+              <p>{{ i18n "p_rating" | safeHTML }}</p>
+            </div>
+        </div>
         </div>
       </div>
-    </div>
 
-    {{ if eq .Params.kit "starter-kit" }}
+    </div>
+  </section>
+<section>
+  <div class="container">
+
+
     <div class = "benefits row align-items-center justify-content-center">
-      <div class = "col-md-9">
+      <h2 class="text-center title">{{ i18n "its_safe" }}</h2>
+      <div class = "col-md-12">
         <div class = "row">
-      <div class = "col-6 benefits__item text-left">
-        <div class="benefits__icon"></div>
-        <p>{{ i18n "no_risk" | safeHTML }}</p>
+          <div class = "col-12 col-md-6 benefits__item">
+            <div class="benefits__icon"></div>
+            <p>{{ i18n "p_no_risk" | safeHTML }}</p>
+          </div>
+          <div class = "col-12 col-md-6 benefits__item">
+            <div class="benefits__icon benefits__icon--2"></div>
+            <p>{{ i18n "p_free_shipping" | safeHTML }}</p>
+          </div>
+          <div class = "col-12 col-md-6 benefits__item">
+            <div class="benefits__icon benefits__icon--4"></div>
+            <p>{{ i18n "p_handbook_included" | safeHTML }}</p>
+          </div>
+          <div class = "col-12 col-md-6 benefits__item">
+            <div class="benefits__icon benefits__icon--8"></div>
+            <p>{{ i18n "p_handbook_projects" | safeHTML }}</p>
+          </div>
+          <div class = "col-12 col-md-6 benefits__item">
+            <div class="benefits__icon benefits__icon--5"></div>
+            <p>{{ i18n "p_master" | safeHTML }}</p>
+          </div>
       </div>
-      <div class = "col-6 benefits__item text-left">
-        <div class="benefits__icon benefits__icon--2"></div>
-        <p>{{ i18n "free_shipping" | safeHTML }}</p>
       </div>
-      <div class = "col-6 benefits__item text-left">
-        <div class="benefits__icon benefits__icon--3"></div>
-        <p>{{ i18n "you_save" | safeHTML }}</p>
-      </div>
-      <div class = "col-6 benefits__item text-left">
-        <div class="benefits__icon benefits__icon--4"></div>
-        <p>{{ i18n "handbook_included" | safeHTML }}</p>
-      </div>
-      </div>
-      </div>
+
+
     </div>
 
   </div>
 </section>
-{{ end }}
-  <section>
-    <div class="modules" id = "explore-modules">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2 class="title title--3 text-center">{{ i18n "modules_in_kit" }}</h2>
 
-            <div class="row">
 
-              {{ range .Params.modules }}
-              <div class="col-12 col-md-6 col-lg-4">
-                {{ $key := . }}
-                {{ $module := index $.Site.Data.modules $key }}
-
-                {{ if eq $.Site.Language.Lang "en"}}
-                <a href="{{ $module.en_link }}" class="modules__photo" target="_blank" onclick="ga('send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
-                  <div class="modules__photo__image d-flex justify-content-center align-items-center">
-                    <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
-                  </div>
-
-                  <div class="modules__photo__desc">
-                    <h3 class="modules__photo__title">{{ $module.name }}</h3>
-                  </div>
-                </a>
-                {{ else }}
-                <a href="{{ $module.cs_link }}" class="modules__photo" target="_blank" onclick="ga('send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
-                  <div class="modules__photo__image d-flex justify-content-center align-items-center">
-                    <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
-                  </div>
-
-                  <div class="modules__photo__desc">
-                    <h3 class="modules__photo__title">{{ $module.name }}</h3>
-                  </div>
-                </a>
-                {{ end }}
-
-                  <!--<a href="/modules/{{ $module.image.small }}" class="modules__photo magnificPopup">
-                    <div class="modules__photo__image d-flex justify-content-center align-items-center">
-                      <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
-                    </div>
-
-                    <div class="modules__photo__desc">
-                      <h3 class="modules__photo__title">{{ $module.name }}</h3>
-                    </div>
-                  </a>-->
-                  </div>
-              {{ end}}
-            </div>
-          </div>
-        </div>
+<section>
+  <div class="container">
+    <div class = "row">
+      <div class = "col-12 col-md-4">
+        <img src="/_assets/images/starter-kit/mas-to-dobre-1.jpg" alt="BigClown Playground" class = "img-fluid">
+      </div>
+      <div class = "col-12 col-md-4">
+        <img src="/_assets/images/starter-kit/mas-to-dobre-2.jpg" alt="BigClown Playground" class = "img-fluid">
+      </div>
+      <div class="col-12 col-md-4">
+          <img src="/_assets/images/starter-kit/skladacka.gif" alt="BigClown Kit" class = "img-fluid">
       </div>
     </div>
-  </section>
-</div>
-
+  </div>
+</section>
+{{ end }}
 
 {{ if eq $isStarter true }}
 <div id="kit">
-  <!--
+
   <section>
-    <div class="bg bg--gray bg--bordered">
+    <div class="bg">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -231,17 +212,17 @@
         </div>
       </div>
     </div>
-  </section>-->
+  </section>
 </div>
 {{ else }}
 
 {{ $kit := .Params.kit }}
-{{ $projects := where (where .Site.Pages "Section" "projects" ) "Params.kit" "in" $kit }}
+{{ $projects := where (where .Site.Pages "Section" "projects" ) "Params.kit" "intersect" $kit}}
 
 
 {{ with $projects }}
 <section>
-  <div class = "bg bg--bordered">
+  <div class = "bg">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -264,6 +245,60 @@
   </div>
 </section>
 {{ end }}
+
+  <section>
+    <div class="modules" id = "explore-modules">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="title title--2 text-center">{{ i18n "modules_in_kit" }}</h2>
+
+            <div class="row">
+
+              {{ range .Params.modules }}
+              <div class="col-12 col-md-6 col-lg-4">
+                {{ $key := . }}
+                {{ $module := index $.Site.Data.modules $key }}
+
+                {{ if eq $.Site.Language.Lang "en"}}
+                <a href="{{ $module.en_link }}" class="modules__photo" target="_blank" onclick="ga('send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
+                  <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                    <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
+                  </div>
+
+                  <div class="modules__photo__desc">
+                    <h3 class="modules__photo__title">{{ $module.name }}</h3>
+                  </div>
+                </a>
+                {{ else }}
+                <a href="{{ $module.cs_link }}" class="modules__photo" target="_blank" onclick="ga('send', 'event', 'Kit', 'click', 'Click on module', '{{ $module.name }}');">
+                  <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                    <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
+                  </div>
+
+                  <div class="modules__photo__desc">
+                    <h3 class="modules__photo__title">{{ $module.name }}</h3>
+                  </div>
+                </a>
+                {{ end }}
+
+                  <!--<a href="/modules/{{ $module.image.small }}" class="modules__photo magnificPopup">
+                    <div class="modules__photo__image d-flex justify-content-center align-items-center">
+                      <img src="/modules/{{ $module.image.small }}" alt="{{ $module.name }}" />
+                    </div>
+
+                    <div class="modules__photo__desc">
+                      <h3 class="modules__photo__title">{{ $module.name }}</h3>
+                    </div>
+                  </a>-->
+                  </div>
+              {{ end}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 {{ end }}
 
@@ -354,36 +389,5 @@
     </div>
   </div>
 </section>-->
-
-{{ if eq $isStarter false }}
-<section>
-  <div class="specification {{ if ne $isStarter false }}suitcase{{ end }}" id="specification">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="title title--3 text-center">{{ i18n "technical_specification" }}</h2>
-          <div class="row">
-            <div class="col col-md-6">
-              <table>
-                {{ range .Params.techSpecs }}
-                <a href="{{ .url }}" class="soc__{{ .name }} text-hide"></a>
-                <tr>
-                  <td><strong>{{ .heading }}</strong></td>
-                  <td>{{ .text }}</td>
-                </tr>
-                {{ end }}
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ else }}
-<div id="specification"></div>
-{{ end }}
-
-  {{ partial "www/support.html" }}
 
 {{ end }}

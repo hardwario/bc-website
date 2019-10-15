@@ -1,7 +1,7 @@
 ---
 title: Starter Kit
 id: basic
-kit: starter-kit
+kit: ["starter-kit"]
 description: The best start with BigClown Kit!
 isBasic: false
 isPremium: false

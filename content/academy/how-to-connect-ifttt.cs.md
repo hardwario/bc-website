@@ -59,7 +59,7 @@ Vyber si, co se má stát jako reakce na akci. Zatím nastavíme oznámení. Naj
 … a postupně je potvrď tlačítky **Connect** a **Send a notification from the IFTTT app**.
 
 Teď vytvoříš obsah upozornění. **Do dalšího políčka vepiš, co chceš, aby ti notifikace sdělila**. A protože vytváříš chytrý zvonek 🔔, bude se ti hodit třeba takováhle zpráva:
-Někdo je u dveri {{OccurredAt}}_
+_Někdo je u dveri {{OccurredAt}}__
 
 ![IFTTT notifikace](https://res.cloudinary.com/lukasfabik/image/upload/v1570985209/academy/connect-ifttt-with-your-project-with-the-playground/image15.png)
 

@@ -1,5 +1,5 @@
 ---
-title: '1 rada, se kterou budete už dnes před dětmi chytřejší'
+title: Obohaťte vaše rodinné večere trochou moudra
 date: 2019-10-06T13:58:10.841Z
 description: >-
   Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a

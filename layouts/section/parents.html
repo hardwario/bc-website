@@ -2,18 +2,18 @@
 
 <section>
   <div class="container pt-5">
-    <div class="row d-flex ialign-items-center ijustify-content-center">
+    <div class="row d-flex align-items-center justify-content-center">
 
-      <div class="col-5">
+      <div class="col-8 col-md-5 text-center">
         <img class="kit__mainimg starterKitImage" src="/_assets/images/{{ .Params.image }}" alt="Starter Kit" />
       </div>
-      <div class="col-6 pl-6">
+      <div class="col-12 col-md-6 pl-md-6">
         <div class = "text">
-        <h1 class = "title">{{ .Params.mainHeading }}</h1>
+        <h1 class = "title title--smallerPadding">{{ .Params.mainHeading }}</h1>
         {{ .Content }}
         </div>
-        <a href="#why-bigclown" class="button button--fullred">{{ .Params.why_button }}</a>
-        <a href="{{ .Params.button_link }}" class="button button--gray ml-3">{{ .Params.button_short }}</a>
+        <a href="#why-bigclown" class="button button--fullred mb-1">{{ .Params.why_button }}</a>
+        <a href="{{ "projects/" | absLangURL }}" class="button button--gray ml-md-3">{{ .Params.projects_button }}</a>
 
       </div>
 
@@ -22,11 +22,12 @@
 </section>
 
         <section>
-          <div id = "why-bigclown" class="pt-5 pb-4">
-            <div class="container mt-5">
-              <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-12 col-md-6 pb-4">
+          <div id = "why-bigclown" class="pt-md-5 pb-4">
+            <div class="container mt-5 pb-4">
+              <div class="row d-flex align-items-top justify-content-center">
+                <div class="col-12 col-md-6">
                   <ul class="pricelist__items">
+                    <li class="pricelist__items__item">{{ i18n "we_guaranteed" | safeHTML }}</li>
                     <li class="pricelist__items__item">{{ i18n "meaningful_time" | safeHTML }}</li>
                     <li class="pricelist__items__item">{{ i18n "discovering_world" | safeHTML }}</li>
                     <li class="pricelist__items__item">{{ i18n "learn_by_game" | safeHTML }}</li>
@@ -46,19 +47,19 @@
         </section>
 
         <section>
-          <div class="getStarterKit pb-5 mb-5 bg bg--borderedTop">
+          <div class="getStarterKit pt-5 pb-5 mb-5 bg bg--borderedTop">
             <div class="container">
               <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-12 col-md-6 text-center pr-5">
                   <img class="kit__mainimg" src="/kits/starter-kit/main.png" alt="Starter Kit" />
                 </div>
                 <div class="col-12 col-md-6">
-                  <h2 class = "title">Starter Kit</h2>
+                  <h2 class = "title title--2">Starter Kit</h2>
                   <div class = "text">
                   <p>{{ .Params.starterKit_text }}</p>
                   </div>
-                  <a href="{{ .Params.starterKit_url }}" class="button button--fullred">{{ .Params.more_button }}</a>
-                  <a href="{{ .Params.button_link }}" class="button button--gray ml-3">{{ .Params.button }}</a>
+                  <a href="{{ .Params.starterKit_url }}" class="button button--fullred mb-1">{{ .Params.more_button }}</a>
+                  <a href="{{ .Params.button_link }}" class="button button--gray ml-md-3">{{ .Params.button }}</a>
                 </div>
 
               </div>

@@ -23,13 +23,13 @@ other = "<strong>Doprava ZDARMA</strong><br/> Je to tak, Starter Kit vám doruč
 other = "<strong>Ušetříte 290 Kč</strong> oproti standardní ceně."
 
 [p_handbook_included]
-other = "<strong>Součástí balení je <a href = \"#\">příručka</a></strong>, která pomůže s prvními kroky."
+other = "<strong>Součástí balení je <a href = \"/cs/handbook/\">příručka</a></strong>, která pomůže s prvními kroky."
 
 [p_handbook_projects]
 other = "<strong>Spousta projektů</strong> s&nbsp;jasnými manuály <strong>umožní začít každému</strong>."
 
 [p_master]
-other = "<strong>Osobní master</strong> bude vždy na blízku a online pomůže. Nemusíte se bát, že to bude jen na vás."
+other = "<strong>Osobní průvodce</strong> bude vždy na blízku a online pomůže. Nemusíte se bát, že to bude jen na vás."
 
 [p_recommended]
 other = "<strong>98 % zákazníků kit doporučuje.</strong>"

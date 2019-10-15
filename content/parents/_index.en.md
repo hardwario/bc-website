@@ -9,6 +9,7 @@ mainHeading: Inspire your inventor of tomorrow with BigClown Kit
 button: Buy Starter Kit for 59€
 button_link: https://shop.bigclown.com/starter-kit/
 button_short: Buy Starter Kit
+projects_button: Examples of projects
 why_button: Why buy BigClown Kit?
 more_button: Lear more
 image: starter-kit_EN.png
@@ -18,5 +19,6 @@ starterKit_text: The basic set for start with BigClown is Starter Kit, in future
 starterKit_url: /kits/starter-kit
 ---
 
-BigClown is an entertaining kit that helps understand the world by making interesting devices and games.
-It means that everything around us, even chair, can become a smart device connected with computer or mobile phone.
+BigClown is an **entertaining kit** that helps anyone discover and understand the world by making interesting projects and games with super smart devices.
+
+This electronic kit is both a toy and a learning tool at one time, with which **your inventor will spend funny leisure time and will learn new things** to use in his life.

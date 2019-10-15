@@ -1,6 +1,6 @@
 ---
 title: Obohaťte vaše rodinné večere trochou moudra
-date: 2019-10-06T13:58:10.841Z
+date: 2019-10-15T12:58:00.000Z
 description: >-
   Společné rodinné večeře bez televize jsou důležitou pro rodinnou pohodu a
   soudržnost. Jsou ideálním místem, kde si společně povykládat o aktuálním dni i

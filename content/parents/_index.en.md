@@ -5,7 +5,7 @@ meta:
 slug: education
 menu: ["footer"]
 weight: 45
-mainHeading: Inspire with us your inventor of tomorrow with BigClown Kit
+mainHeading: Inspire with us your inventor of tomorrow
 button: I want to buy Starter Kit for 59€
 button_link: https://shop.bigclown.com/starter-kit/
 button_short: I want to buy Starter Kit

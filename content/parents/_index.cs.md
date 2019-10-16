@@ -5,7 +5,7 @@ meta:
 slug: pro-rodice
 menu: ["footer"]
 weight: 45
-mainHeading: Inspirujte s námi svého budoucího vynálezce se stavebnicí BigClown
+mainHeading: Inspirujte s námi svého budoucího vynálezce
 button: Chci koupit Starter Kit za 1 490 Kč
 button_link: https://obchod.bigclown.cz/starter-kit/
 button_short: Chci koupit Starter Kit
@@ -15,8 +15,8 @@ more_button: Více informací
 image: starter-kit_CZ.png
 testimonial: Hned s prvním projektem BigClown jsem se naučila, co je to akcelerometr, že jej mám v telefonu a jak se dá použít ve výrobní firmě. Zahráli jsme si IoT káču.
 testimonial_name: <span>Anička</span> - studentka střední školy, 15 let
-starterKit_heading: Začněte se Starter kitem
-starterKit_text: <strong>Základní sadou</strong> pro začátek s BigClownem je <strong>Starter Kit</strong> a každý vynálezce si s ním <strong>užije spoustu skvělých projektů</strong>. Postaví své první chytré zařízení a vytvoří projekty, kterými ohromí kámoše, rodinu i nás.👌 Kit umožní měřit teplotu, pracovat s akcelerometrem nebo ovládat cokoli stisknutím tlačítka. Časem ho <strong>můžete vylepšit o rozšiřující moduly</strong>.
+starterKit_heading: Začněte se Starter Kitem
+starterKit_text: <strong>Základní sadou</strong> do začátku je <strong>BigClown Starter Kit</strong>. Každý vynálezce s ním vytvoří <strong>spoustu skvělých projektů</strong>. Postaví svá první chytrá zařízení, kterými ohromí kámoše, rodinu i nás. 👌</p><p>Kit umožňuje měřit teplotu, pracovat s akcelerometrem nebo ovládat cokoli stisknutím tlačítka. Časem ho <strong>můžete vylepšit o rozšiřující moduly</strong>.
 starterKit_url: /cs/kits/starter-kit
 kit: ["starter-kit"]
 secondaryHeading: BigClown je zábavná stabevnice<small>pro vynálezce budoucnosti</small>

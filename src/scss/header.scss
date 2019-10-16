@@ -44,7 +44,7 @@
     {
       width: 30px;
       height:3px;
-      margin-bottom: 4px;
+      margin-top: 4px;
       background: #2e343c;
       border-radius: 1.5px;
       transition: all 0.7s ease 0s;
@@ -52,7 +52,12 @@
       @media(max-width:767px)
       {
         margin-bottom: 2px;
-        width: 20px;
+        width: 30px;
+      }
+
+      &:first-child
+      {
+        margin-top: 8px;
       }
 
       &:last-child

@@ -11,7 +11,7 @@ other = "Příklady projektů se stavebnicí BigClown"
 other = "Co dělá BigClown výjimečným?"
 
 [we_guaranteed]
-other = "Nejsou potřeba žádné předchozí dovednosti. <strong>Garantujeme</strong>, že s BigClownem díky návodům a naší podpoře <strong>zvládne začít každý</strong>."
+other = "Nejsou potřeba žádné předchozí zkušenosti s technologiemi. <strong>Garantujeme</strong>, že s BigClownem díky přehledným návodům a naší podpoře zvládne tvořit každý."
 
 [meaningful_time]
 other = "Ukáže dětem, jak <strong>využít čas u počítače a telefonu produktivně</strong> tvorbou vlastních vynálezů a her."
@@ -27,3 +27,6 @@ other = "Ukáže, jak fungují digitální technologie včetně IoT a <strong>p�
 
 [approved_by_schools]
 other = "Již <strong>desítky základních a středních škol</strong> ho používají jako nástroj digitálního vzdělávání."
+
+[age_range]
+other = "S BigClownem se stanou vynálezci z dětí od 10 do 99 let."

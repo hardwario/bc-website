@@ -11,7 +11,7 @@ other = "Example projects with BigClown kit"
 other = "What makes BigClown Kit unique?"
 
 [we_guaranteed]
-other = "No skills are needed. <strong>We guarantee</strong> that <strong>everyone can get started</strong> with BigClown thanks to our tutorials and support."
+other = "No tech skills are needed. <strong>We guarantee</strong> that <strong>everyone can get started</strong> with BigClown thanks to our step-by-step tutorials and support."
 
 [meaningful_time]
 other = "It shows to kids how to <strong>spend time with computer and smartphone productively</strong> by easy creation of own inventions and games."
@@ -27,3 +27,6 @@ other = "It shows how digital technologies, including IoT, work and <strong>prep
 
 [approved_by_schools]
 other = "It is already <strong>used and proven by dozens of primary and secondary schools</strong> as a tool for digital education."
+
+[age_range]
+other = "Children from 10 to 99 years will become the inventors with BigClown."

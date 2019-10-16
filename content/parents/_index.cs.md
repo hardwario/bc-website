@@ -18,6 +18,8 @@ testimonial_name: <span>Anička</span> - studentka střední školy, 15 let
 starterKit_heading: Začněte se Starter kitem
 starterKit_text: <strong>Základní sadou</strong> pro začátek s BigClownem je <strong>Starter Kit</strong> a každý vynálezce si s ním <strong>užije spoustu skvělých projektů</strong>. Postaví své první chytré zařízení a vytvoří projekty, kterými ohromí kámoše, rodinu i nás.👌 Kit umožní měřit teplotu, pracovat s akcelerometrem nebo ovládat cokoli stisknutím tlačítka. Časem ho <strong>můžete vylepšit o rozšiřující moduly</strong>.
 starterKit_url: /cs/kits/starter-kit
+kit: ["starter-kit"]
+secondaryHeading: BigClown je zábavná stabevnice<small>pro vynálezce budoucnosti</small>
 ---
 
 BigClown je **zábavná stavebnice**, která umožňuje objevovat a pochopit svět tvorbou zajímavých projektů a her s chytrými zařízení.

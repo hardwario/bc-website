@@ -22,6 +22,6 @@ kit: ["starter-kit"]
 secondaryHeading: BigClown je zábavná stabevnice<small>pro vynálezce budoucnosti</small>
 ---
 
-BigClown je **zábavná stavebnice**, která umožňuje objevovat a pochopit svět tvorbou zajímavých projektů a her s chytrými zařízení.
+BigClown je **zábavná stavebnice**, která dětem umožní poznat a pochopit svět prostřednictvím **projektů a her s chytrými zařízeními**. S jednou krabičkou si sestaví vlastní domovní zvonek, detektor pohybu nebo chytrý teploměr.
 
-Tato elektronická stavebnice je hračkou i naučným nástrojem najednou, se kterou váš vynálezce **stráví zábavně volný čas a naučí se u toho nové věci**, které se mu budou v životě hodit.
+Elektronická stavebnice BigClown je hračkou a naučným nástrojem v jednom. Vaši vynálezci se **zábavnou formou naučí nové věci**, které se jim budou v životě hodit.

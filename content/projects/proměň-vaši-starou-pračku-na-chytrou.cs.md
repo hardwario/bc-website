@@ -37,7 +37,7 @@ Budeš potřebovat jen krabičku s tlačítkem a USB dongle. Proto si vystačí�
 
 {{< modules >}}
 
-## 1. Stáhni si nový firmware
+## Stáhni si nový firmware
 
 1. Pokud to ještě nemáš, Starter Kit [sestav](https://www.bigclown.com/cs/handbook/?utm_source=handbook&utm_medium=print&utm_campaign=starter-kit-handbook&utm_content=cz). 
 2. Na Core Module nahraj nový firmware, a to **bcf-radio-washing-machine-monitor** (najdeš ho mezi ostatním firmwarem v Playgroundu). Díky tomuhle firmwaru bude krabička citlivěji vnímat otřesy pračky. 🔃

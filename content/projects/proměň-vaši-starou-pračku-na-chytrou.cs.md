@@ -95,7 +95,7 @@ Potvrď tlačítkem **Done**.
 
 1. Vrať se k počítači. Na plochu Node-RED umísti poslední node, **Notify** ze sekce Blynk ws. 
 
-![node-notify](https://res.cloudinary.com/lukasfabik/image/upload/v1571473474/projects/Turn-your-old-washing-machine-into-a-smart-one/image10.png)
+![node-notify](https://res.cloudinary.com/lukasfabik/image/upload/v1571473473/projects/Turn-your-old-washing-machine-into-a-smart-one/image6.png)
 
 2. Dvakrát na node klikni. Pak klikni na tužku. ✏
 

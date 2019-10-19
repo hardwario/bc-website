@@ -2,12 +2,16 @@
 title: Hraj párty hru „flaška” elektronicky
 draft: false
 featured: true
-handbook:
+handbook: starter-kit
 date: 2019-08-12T00:00:00.000Z
-description: Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ náhodného člena vaší party.
+description: >-
+  Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ
+  náhodného člena vaší party.
 slug: party-hra-flaska
 meta_title: Hraj párty hru „flaška” elektronicky díky IoT
-meta_description: Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ náhodného člena vaší party.
+meta_description: >-
+  Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ
+  náhodného člena vaší party.
 image_preview: /upload/project_placeholder.jpg
 image_main: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1566149309/projects/bottle-party-game/image4.png
@@ -34,10 +38,11 @@ Budeš potřebovat **krabičku s tlačítkem** a **USB dongle**. Vystačíš si 
 
 ## Rozjeď to v Node-RED
 
-1. Starter Kit [sestav a spáruj]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, \[zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
+1. Starter Kit \[sestav a spáruj]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, \[zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha.
 3. Jdeme na to. 🤞 Na plochu postav node **MQTT** ze sekce Input.
    Na node dvakrát klikni a nastav v něm klíčovou funkci – klikání na tlačítko. **Do pole Topic zkopíruj tenhle řádek:**
+
 
 ```
 node/x-axis-detector:0/accelerometer/-/event-count
@@ -171,10 +176,10 @@ Potvrď tlačítkem **Done**.
 {{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566149306/projects/bottle-party-game/image8.png" alt = "show dashboard Node-RED / BigClown Playground" >}}
 
 2. **Koho osud zvolí?** A na co? To je teď jenom na tobě. 😈
-Takhle můžeš třeba:
+   Takhle můžeš třeba:
 
-* _losovat, kdo dá pusu komu (woohoo),_
+* losovat, kdo dá pusu komu (woohoo),
 * tahat nejkratší sirku na vynášení koše,
-* _losovat výherce soutěže,_
+* losovat výherce soutěže,
 * zadávat bláznivé úkoly, které přiřadí náhoda,
 * a cokoli dalšího tě napadne!

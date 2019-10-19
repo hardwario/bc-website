@@ -111,7 +111,7 @@ Všechno postupně potvrď tlačítky **Add** a **Done**.
 
 4. Už ti to zbývá jenom **propojit** a poslat příkaz do vesmíru červeným tlačítkem **Deploy** vpravo nahoře. 👏
 
-![deploy-tlacitko](https://res.cloudinary.com/lukasfabik/image/upload/v1571473473/projects/Turn-your-old-washing-machine-into-a-smart-one/image6.png)
+![deploy-tlacitko](https://res.cloudinary.com/lukasfabik/image/upload/v1571473474/projects/Turn-your-old-washing-machine-into-a-smart-one/image10.png)
 
 ## Roztoč to!
 

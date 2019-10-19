@@ -33,7 +33,7 @@ Raise the IQ of your family washing machine. 🤖 Using the IoT box, programme a
 
 In this project, you will learn to set up the box so that it recognizes when the washing machine is finished and sends a notification to the mobile. 📱 👈 
 
-All you need is the box with the button and the USB dongle. You will be all set with the basic BicClown kit - the [Starter Kit](https://shop.bigclown.com/starter-kit/).
+All you need is the box with the button and the USB dongle. You will be all set with the basic BigClown kit - the [**Starter Kit**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
@@ -79,7 +79,7 @@ Confirm it with the **Done** button.
 
 ## Set up your mobile
 
-1. It’s time to steal your mom’s or dad’s mobile and set up their own Blynk. If you don’t know how to do it yet, [**check out the instructions**]({{< ref "/academy/how-to-connect-blynk.cs.md" >}}).
+1. It’s time to steal your mom’s or dad’s mobile and set up their own Blynk. If you don’t know how to do it yet, \[check out the instructions]({{< ref "/academy/how-to-connect-blynk.cs.md" >}}).
 2. Create a **new project** in Blynk. Now a token has been sent to your email, but don’t do anything with it just yet.
 3. On the Blynk desktop, **place the notification**.
 
@@ -118,4 +118,4 @@ Confirm everything with the **Add** and **Done** buttons.
 ## Give it a spin!
 
 1. **Put the box on the washing machine.** Stick it with a small piece of tape to prevent it from falling.
-2. **The box will recognize when the washing machine finishes**, **\*\*because it will stop shaking.  It will send a message to your mom’s or dad’s mobile. Cool, huh? All of a sudden, you are living in a** smart household! 🤡\*\*
+2. **The box will recognize when the washing machine finishes**, because it will stop shaking**.**  It will send a message to your mom’s or dad’s mobile. Cool, huh? All of a sudden, you are living in a **smart household**! 🤡

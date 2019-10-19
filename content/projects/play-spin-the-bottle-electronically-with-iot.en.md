@@ -25,7 +25,7 @@ places:
 devices:
   - Starter Kit
 ---
-## Úvod
+## Introduction
 
 {{< perex >}}
 Why play Spin the Bottle with a bottle if all you need is a smart box?  Set your Starter Kit to draw a random member of your group. Whether it be at a party, while drawing a winner or deciding who will clean up. 

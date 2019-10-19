@@ -33,13 +33,13 @@ Raise the IQ of your family washing machine. 🤖 Using the IoT box, programme a
 
 In this project, you will learn to set up the box so that it recognizes when the washing machine is finished and sends a notification to the mobile. 📱 👈 
 
-All you need is the box with the button and the USB dongle. You will be all set with the basic BicClown kit - the Starter Kit.
+All you need is the box with the button and the USB dongle. You will be all set with the basic BicClown kit - the [Starter Kit](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
 ## Download new firmware
 
-1. If you haven’t done it yet, put together \[sestav]({{< ref "/handbook/_index.cs.md" >}}) the Starter Kit.
+1. If you haven’t done it yet, \[put together]({{< ref "/handbook/_index.cs.md" >}}) the Starter Kit.
 2. Upload new firmware to the Core Module - **bcf-radio-washing-machine-monitor** (you will find it among other firmware in the Playground). Thanks to this firmware, the box will be more sensitive to vibrations of the washing machine. 🔃
 
 **Our tip:** If you don’t know how to download the firmware or what it is, \[you will find out here]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
@@ -118,4 +118,4 @@ Confirm everything with the **Add** and **Done** buttons.
 ## Give it a spin!
 
 1. **Put the box on the washing machine.** Stick it with a small piece of tape to prevent it from falling.
-2. **The box will recognize when the washing machine finishes**, ****because it will stop shaking.  It will send a message to your mom’s or dad’s mobile. Cool, huh? All of a sudden, you are living in a **smart household! 🤡**
+2. **The box will recognize when the washing machine finishes**, **\*\*because it will stop shaking.  It will send a message to your mom’s or dad’s mobile. Cool, huh? All of a sudden, you are living in a** smart household! 🤡\*\*

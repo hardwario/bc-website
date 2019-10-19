@@ -35,6 +35,8 @@ V tomhle projektu se naučíš nastavit krabičku tak, že pozná, až pračka d
 
 Budeš potřebovat jen krabičku s tlačítkem a USB dongle. Proto si vystačíš se základní BigClown sadou – [Starter Kitem](https://shop.bigclown.com/starter-kit/).
 
+{{< modules >}}
+
 ## 1. Stáhni si nový firmware
 
 1. Pokud to ještě nemáš, Starter Kit [sestav](https://www.bigclown.com/cs/handbook/?utm_source=handbook&utm_medium=print&utm_campaign=starter-kit-handbook&utm_content=cz). 

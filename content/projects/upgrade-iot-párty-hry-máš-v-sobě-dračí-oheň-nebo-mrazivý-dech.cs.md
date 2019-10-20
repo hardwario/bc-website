@@ -268,3 +268,7 @@ Jak soutěžit?
 \- Až soutěžící zkusí, co umí, **stejně dlouhým stisknutím tlačítka** aktuální soutěž ukončíš a uložíš. 
 
 \- U dalšího soutěžícího postupujte stejně, jedno po druhém.
+
+![soutezici](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image16.png)
+
+2. I u tohohle levelu obtížností platí, že **jakákoli pomoc je povolena**. Vyzkoušej, co ti nejvíc rozžhaví dech, a co ho naopak vymrazí. Držíme palce, draku! 💪

@@ -1,16 +1,22 @@
 ---
-date: "2019-08-13"
-title: "Co je to dashboard a jak ho vytvoříš"
+title: Co je to dashboard a jak ho vytvoříš
+date: '2019-08-13'
+weight: 50
+description: >-
+  Chceš vidět data ze své BigClown krabičky v barevných grafech a ukazatelích?
+  Vytvoř pro ni šikovný dashboard. Poradíme ti, jak na to.
 slug: co-je-dashboard
 meta_title: Vytvoř si pro BigClown vlastní dashboard
-meta_description: Chceš vidět data ze své BigClown krabičky v barevných grafech a ukazatelích? Vytvoř pro ni šikovný dashboard. Poradíme ti, jak na to.
-description: Chceš vidět data ze své BigClown krabičky v barevných grafech a ukazatelích? Vytvoř pro ni šikovný dashboard. Poradíme ti, jak na to.
+meta_description: >-
+  Chceš vidět data ze své BigClown krabičky v barevných grafech a ukazatelích?
+  Vytvoř pro ni šikovný dashboard. Poradíme ti, jak na to.
 image_preview: /upload/dashboard.jpg
 image_main: /upload/dashboard.jpg
-weight: 50
 ---
+Chceš sledovat barevné grafy měnící se teploty ve svém pokoji? Nebo vidět v počítači vyskakovací okno pokaždé, když někdo zmáčkne tlačítko? 🤓 Tohle a mnohem víc dokáže chytré rozhraní jménem Dashboard. Povíme ti, jak na něj.
 
 ## Co je to dashboard?
+
 Dashboard si představ jako svou **virtuální nástěnku**, na které po troše nastavení uvidíš vše, co se kolem tvé krabičky šustne. Chceš třeba vidět barevný graf toho, jak se za uplynulou hodinu měnila teplota v tvém pokoji? Žádný problém! Je jen na tobě, co všechno si do dashboardu dáš. 💪
 
 Jinými slovy vše, co tvoje krabička naměří, se ti **zobrazí právě zde**.
@@ -19,6 +25,7 @@ Ve svém Playgroundu ho najdeš v levém menu pod záložkou **Dashboard**. Kdy�
 {{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160234/academy/what-is-dashboard/image6.png" alt = "Node-RED Dashboard" >}}
 
 ## Čím dashboard naplnit?
+
 Podobu dashboardu ovlivníš pomocí nodů, které najdeš v levém menu v záložce **Functions**. Jsou oddělené hlavičkou Dashboard a mají **tyrkysovou barvu**.
 {{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image1.png" alt = "Node-RED dashboard nodes" >}}
 
@@ -58,5 +65,4 @@ A teď ti ukážeme **tři chytré nody**, kterými si dashboard vytuníš:
     </div>
 </div>
 
-
-Už se ti honí hlavou, co všechno s dashboardem vymyslíš? [Mrkni na naše projekty a inspiruj se!]({{< ref "/projects/_index.cs.md" >}})
+Už se ti honí hlavou, co všechno s dashboardem vymyslíš? \[Mrkni na naše projekty a inspiruj se!]({{< ref "/projects/_index.cs.md" >}})

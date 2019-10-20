@@ -75,7 +75,11 @@ Do you see “Connected”? You are there! 👍
 
 ![IFTTT in playground](https://res.cloudinary.com/lukasfabik/image/upload/v1570985207/academy/connect-ifttt-with-your-project-with-the-playground/image12.png)
 
+<<<<<<< HEAD:content/academy/how-to-connect-ifttt.en.md
 6.  But that’s not all, the connection must also be tested. Click on the **Webhoooks icon**.
+=======
+6. But that’s not all, the connection must also be tested. Click on the **Webhoooks icon**. 
+>>>>>>> 053c8e38e9600cfa62730e9e1e5cebe8f0417531:content/academy/connect-ifttt-with-your-project-in-the-playground.en.md
 
 ![IFTTT in playground](https://res.cloudinary.com/lukasfabik/image/upload/v1570985209/academy/connect-ifttt-with-your-project-with-the-playground/image16.png)
 
@@ -91,7 +95,7 @@ Click on the **Event** field and rewrite it to the name of your event, as you en
 
 8. Take your **mobile phone** 📱 and install the **IFTTT app**: a link to Google Play and a link to Apple Store.
 
-**Sign in** with the same account as on the web. ****
+**Sign in** with the same account as on the web. \*\*\*\*
 
 9. **On your computer**, click on the **Test it button**. Keep the page on.
 
@@ -127,7 +131,7 @@ You see **three nodes** in the flow:
 
 ![IFTTT in playground](https://res.cloudinary.com/lukasfabik/image/upload/v1570985207/academy/connect-ifttt-with-your-project-with-the-playground/image10.png)
 
-13.  Save the node by clicking on **Done** button. Let the electronic doorbell be set.
+13. Save the node by clicking on **Done** button. Let the electronic doorbell be set.
 14. Now just push the good old **Deploy** button...
 15. … and celebrate **you can do yet another cool thing**. 👏 When you press the button on the box, it will show on your mobile that you have pressed it. After clicking on the notification, you will see the detailed Applet.
 

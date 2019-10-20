@@ -247,15 +247,15 @@ flow.set("coldestTemp", 100);
 return msg;
 ```
 
-**Podívej se na tu nádheru**
+## **Have a look at the beauty**
 
-Takhle sexy teď vypadá tvoje plocha. Vychutnej si to, jako když jsi poprvé viděl moře… 🌊 Ještě chvilku… A ještě chvilku… A pak už jenom zmáčkni starýho dobrýho kamaráda **Deploy** vpravo nahoře.
+That’s how sexy your desktop looks like now. Savour it, just as when you’ve seen the sea for the first time... 🌊 Just a little while longer...And a bit longer...And then just click on the good old friend **Deploy** on top right corner.
 
 ![Deploy](https://res.cloudinary.com/lukasfabik/image/upload/v1571551049/projects/hardcore-upgrade-of-iot-party-game/image18.png)
 
-## Jdeme soutěžit!
+## Let’s have a contest!
 
-1. Jak už sis asi všiml, krabička reaguje na dva typy zmáčknutí: při obyčejném krátkém se spustí **soutěž o nejteplejší dech**, při dlouhém podržení tlačítka se spustí **soutěž o nejmrazivější dech**.
+1. As you might have noticed, the box reacts to two types of pressing: when is the button pressed briefly, it launches **the contest for the hottest breath**, when held longer, it launches **the contest for the iciest breath**. 
 
 Jak soutěžit?
 
@@ -270,3 +270,7 @@ Jak soutěžit?
 \- Až soutěžící zkusí, co umí, **stejně dlouhým stisknutím tlačítka** aktuální soutěž ukončíš a uložíš. 
 
 \- U dalšího soutěžícího postupujte stejně, jedno po druhém.
+
+![soutezici](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image16.png)
+
+2. **Invite your friends and have a contest**! Even at this advanced level, **any help is allowed**. Try what gets your breath hot and what makes it icy.  Good luck, dragon! 💪

@@ -20,16 +20,16 @@ Do you want to follow colour charts of changing temperature in your room? Or to 
 
 ## What is a dashboard?
 
-Imagine a dashboard as your virtual message board, where after a little setup you will see everything what is going on around your box. For example, do you want to see a colour chart of how your room temperature has been changing over the past hour? No problem! It’s only up to you what you put in your dashboard. 💪
+Imagine a dashboard as your **virtual message board**, where after a little setup you will see everything what is going on around your box. For example, do you want to see a colour chart of how your room temperature has been changing over the past hour? No problem! It’s only up to you what you put in your dashboard. 💪
 
-In other words, everything that your box measures will be **displayed right here**.
+In other words, everything that your box measures **will be** **displayed right here**.
 
 You can find it in your Playground in the left menu under the **Dashboard** tab. If you haven’t programmed anything yet and you click on it, you will see only a white area. Let’s change it! 
 {{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160234/academy/what-is-dashboard/image6.png" alt = "Node-RED Dashboard" >}}
 
 ## What to fill the dashboard with?
 
-You can influence the appearance of the dashboard using the nodes found in the left menu in the **Functions** tab. The are separated by the Dashboard header and have a **turquoise colour**.
+You can influence the appearance of the dashboard using the nodes found in the left menu in the **Functions** tab. The are separated by the Dashboard header and have **a** **turquoise colour**.
 {{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image1.png" alt = "Node-RED dashboard nodes" >}}
 
 Now, we will show you **three smart nodes** that you can tune up your dashboard with:

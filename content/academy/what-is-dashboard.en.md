@@ -63,7 +63,7 @@ Now, we will show you **three smart nodes** that you can tune up your dashboard 
         {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566160233/academy/what-is-dashboard/image3.png" alt = "Node-RED Dashboard notification" >}}
     </div>
     <div class = "col-md-8">
-        <p>The dashboard can also receive various notifications. When you link your project to the <strong>Notification</strong>node, you will see the hot news about what’s going on in your box. </p>
+        <p>The dashboard can also receive various notifications. When you link your project to the <strong>Notification</strong> node, you will see the hot news about what’s going on in your box. </p>
         <p>For example, set up a pop-up window with a text message when someone presses the button. This is also how you create a simple doorbell at the door of your room.🔔</p>
     </div>
 </div>

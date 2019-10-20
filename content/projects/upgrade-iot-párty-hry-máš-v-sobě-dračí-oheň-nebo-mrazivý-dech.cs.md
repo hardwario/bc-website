@@ -245,7 +245,7 @@ flow.set("coldestTemp", 100);
 return msg;
 ```
 
-**Podívej se na tu nádheru**
+## **Podívej se na tu nádheru**
 
 Takhle sexy teď vypadá tvoje plocha. Vychutnej si to, jako když jsi poprvé viděl moře… 🌊 Ještě chvilku… A ještě chvilku… A pak už jenom zmáčkni starýho dobrýho kamaráda **Deploy** vpravo nahoře.
 

@@ -51,7 +51,7 @@ I tentokrát ti postačí základní BigClown sada, tedy [**Starter Kit**](https
 
 Put together this flow which will reveal **the hottest dragon** from your squad. 🐉 The highest temperature will be measured **by briefly pressing the button**. 
 
-![zmer nejzhavejsi dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image9.png)
+![measure the hottest breath](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image9.png)
 
 **Do you need advice on how to do that?**
 
@@ -94,7 +94,7 @@ Under the previous flow, place another one. With this, you can measure which one
 
 **Our tip:** Avoid creating such flow from scratch by simply copying and rewriting the nodes. Copy and paste it with the simple **CRTL+C & CTRL+V**, it can also be done with several nodes at once. Hooray **🙌**
 
-![zmer nejmrazivejsi dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image1.png)
+![measure the iciest breath](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image1.png)
 
 **Do you need advice on how to do it?**
 
@@ -136,7 +136,7 @@ if(flow.get("contestantTemp") < coldestTemp)
 
 Create new flow and place it under the previous ones. With this flow, you will be able to measure every try and the table will remember the names of contestants.
 
-![prubezna mereni flow](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image15.png)
+![continuous measurements ](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image15.png)
 
 **Do you need advice on how to do it?**
 
@@ -177,7 +177,7 @@ else if(flow.get("holded"))
 
 Change node contains two rules; one sets the xxx, the other one sets the xxx
 
-![prubezne mereni](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image3.png)
+![continuous measurements ](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image3.png)
 
 \- The **Function node** with javascript code for saving the names looks like this: 
 
@@ -202,7 +202,7 @@ Easy peasy? Throw in a **timestamp flow** with which you can change the type of 
 
 Set up in it a repetition after one second.  
 
-![nastaveni intervalu](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image5.png)
+![set up a repetition](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image5.png)
 
 \- **the upper Switch node** reacts to a brief pressing of the button and contains _is true_
 
@@ -210,19 +210,19 @@ Set up in it a repetition after one second.
 
 \- **the bottom Switch node** reacts to holding the button and also contains _is true_
 
-![spodni switch node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image2.png)
+![the bottom switch node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image2.png)
 
 \- all three Change nodes contain the message: the upper one contains a message that announces **a contest for the hottest breath**,
 
-![soutez o nejzhavejsi dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image13.png)
+![a contest for the hottest breath](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image13.png)
 
 the middle one says **there’s currently no contest running**,
 
-![zprava soutez nebezi](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image14.png)
+![message no contest is running](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image14.png)
 
 and the bottom one announces a **contest for the iciest breath**
 
-![soutez o nejmrazivejsi dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image10.png)
+![contest for the iciest breath](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image10.png)
 
 \- the final **Text node** announces the type of contest
 
@@ -230,7 +230,7 @@ and the bottom one announces a **contest for the iciest breath**
 
 Drž si klobouk, frčíme do finále. Poslední flow nastaví **výchozí hodnoty**: 30 °C jako optimální teplotu, hoooodně chladnou nejnižší teplotu a hoooodně horkou nejvyšší teplotu. S těmito teplotami se pak skutečně naměřené teploty porovnávají.
 
-![timestamp nastaveni hodnot](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image17.png)
+![timestamp set up values](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image17.png)
 
 **Do you need advice on how to do it?**
 
@@ -271,6 +271,6 @@ Jak soutěžit?
 
 \- U dalšího soutěžícího postupujte stejně, jedno po druhém.
 
-![soutezici](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image16.png)
+![contestants](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image16.png)
 
 2. **Invite your friends and have a contest**! Even at this advanced level, **any help is allowed**. Try what gets your breath hot and what makes it icy.  Good luck, dragon! 💪

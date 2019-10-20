@@ -54,7 +54,7 @@ And that’s all you need to know to programme in the Node-RED. Being a programm
         {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image3.png" alt = "Change node - Node-RED" >}}
     </div>
     <div class = "col-md-8">
-        <p><strong>Change</strong> Try to imagine \*\*Change\*\* as a dressing room. The programme passes through it and changes into something else. For example, into a text message. It is then sent to other nodes that are connected to it and process it further, for example, they send it to a mobile phone or read the message out loud. </p>
+        <p><strong>Change</strong> Try to imagine \\*\\*Change\\*\\* as a dressing room. The programme passes through it and changes into something else. For example, into a text message. It is then sent to other nodes that are connected to it and process it further, for example, they send it to a mobile phone or read the message out loud. </p>
     </div>
 </div>
 
@@ -63,7 +63,7 @@ And that’s all you need to know to programme in the Node-RED. Being a programm
         {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159446/academy/what-is-node-red/image2.png" alt = "Notify Blynk node - Node-RED" >}}
     </div>
     <div class = "col-md-8">
-        <p>Node <strong>Notify</strong> node has a clear mission - to send a notification to a mobile. It will be displayed in the Blynk app.  \\\[Blynk]({{< ref "/academy/how-to-connect-blynk.en.md" >}}).</p>
+        <p>Node <strong>Notify</strong> node has a clear mission - to send a notification to a mobile. It will be displayed in the Blynk app.  \\\\[Blynk]({{< ref "/academy/how-to-connect-blynk.en.md" >}}).</p>
     </div>
 </div>
 
@@ -81,7 +81,7 @@ And that’s all you need to know to programme in the Node-RED. Being a programm
         {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159445/academy/what-is-node-red/image6.png" alt = "Audio Out node - Node-RED" >}}
     </div>
     <div class = "col-md-8">
-        <p>S nodem <strong>Audio out</strong> you will have a lot of fun with the \\\*\\\*Audio\\\*\\\* node - it tells your computer to make some sound. For example, if you connect it to the Change node, in which you type a message, your computer will read it out loud. But no swears! 😎</p>
+        <p>S nodem <strong>Audio out</strong> you will have a lot of fun with the Audio node - it tells your computer to make some sound. For example, if you connect it to the Change node, in which you type a message, your computer will read it out loud. But no swears! 😎</p>
     </div>
 </div>
 

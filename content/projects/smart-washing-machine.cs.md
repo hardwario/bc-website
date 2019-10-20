@@ -15,8 +15,10 @@ places:
 devices:
   - Starter Kit
 idea: false
-image_preview: /upload/ilustrace-ochytri-pracku.png
-image_main: /upload/ilustrace-ochytri-pracku.png
+image_preview: >-
+  https://res.cloudinary.com/lukasfabik/image/upload/v1571473593/projects/Turn-your-old-washing-machine-into-a-smart-one/6-ilustrace-ochytri-pracku.png
+image_main: >-
+  https://res.cloudinary.com/lukasfabik/image/upload/v1571473593/projects/Turn-your-old-washing-machine-into-a-smart-one/6-ilustrace-ochytri-pracku.png
 author: lukas_fabik
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]

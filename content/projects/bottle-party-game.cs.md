@@ -23,6 +23,8 @@ places:
   - Home
 devices:
   - Starter Kit
+modules: ["core","button","mini_battery","usb_dongle"]
+kit: ["starter-kit","button-kit"]
 ---
 ## Úvod
 
@@ -32,13 +34,13 @@ Proč hrát flašku s flaškou, když ti na to stačí chytrá krabička? Nastav
 
 V tomhle projektu se naučíš, jak nastavit krabičku tak, aby **vylosovala náhodného člena** z vaší skupiny. 😱
 
-Budeš potřebovat **krabičku s tlačítkem** a **USB dongle**. Vystačíš si tedy se základní BigClown sadou, [**Starter Kitem**](https://shop.bigclown.com/starter-kit/).
+Budeš potřebovat **krabičku s tlačítkem** a **USB dongle**. Vystačíš si tedy se základní BigClown sadou, [**Starter Kitem**](https://obchod.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
 ## Rozjeď to v Node-RED
 
-1. Starter Kit \[sestav a spáruj]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, \[zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
+1. Starter Kit [sestav a spáruj]({{< ref "/handbook/_index.cs.md" >}}). Na Core Module potřebuješ firmware **radio push button**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady]({{< ref "/academy/how-to-flash-firmware.cs.md" >}}).
 2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha.
 3. Jdeme na to. 🤞 Na plochu postav node **MQTT** ze sekce Input.
    Na node dvakrát klikni a nastav v něm klíčovou funkci – klikání na tlačítko. **Do pole Topic zkopíruj tenhle řádek:**

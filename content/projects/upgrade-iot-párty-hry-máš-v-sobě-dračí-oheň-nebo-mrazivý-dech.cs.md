@@ -45,13 +45,13 @@ I tentokrát ti postačí základní BigClown sada, tedy [**Starter Kit**](https
 
 1. Starter Kit sestav a spáruj. Na Core Module potřebuješ zase ten starý známý firmware **bcf-radio-push-button**.
 
-![firmware-do-core-modulu](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image6.png)
+![firmware do core modulu](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image6.png)
 
 ## Změř nejžhavější dech
 
 Sestav si tohle flow, se kterým odhalíš **nejžhavějšího draka** z vaší party. 🐉 Nejvyšší teplota se začne měřit **krátkým stisknutím tlačítka**.
 
-![zmer-nejzhavejsi-dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image9.png)
+![zmer nejzhavejsi dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image9.png)
 
 **Potřebuješ poradit, jak na to?**
 
@@ -84,7 +84,7 @@ if(!flow.get("pressed"))
 
 \- **Change node** vypisuje nejžhavějšího účastníka, musíš v něm nastavit flow. contestantName
 
-![change-node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image8.png)
+![change node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image8.png)
 
 \- flow uzavírá obyčejný **Text node**
 
@@ -94,7 +94,7 @@ Pod předchozí flow umísti další. S tímhle změříš, kdo z vás dýchá t
 
 **Náš tip**: Vyhni se tvoření podobného flow od nuly a nody jednoduše zkopíruj a přepiš. Kopírování funguje jednoduchým **CRTL+C & CTRL+V**, jde to udělat i s několika nody naráz. Sláva 🙌
 
-![zmer-nejmrazivejsi-dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image1.png)
+![zmer nejmrazivejsi dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image1.png)
 
 **Potřebuješ poradit, jak na to?**
 
@@ -136,7 +136,7 @@ if(flow.get("contestantTemp") < coldestTemp)
 
 Vytvoř nový flow, který umísti pod oba předchozí. S tímhle flow změříš každý pokus, a navíc si tabulka zapamatuje jména účastníků. 
 
-![prubezna-mereni-flow](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image15.png)
+![prubezna mereni flow](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image15.png)
 
 **Potřebuješ poradit, jak na to?**
 
@@ -175,7 +175,7 @@ else if(flow.get("holded"))
 
 \- **Change node** má dvě pravidla. Jedno nechává prázdnou hodnotu, dokud nezaregistruje první teplotu. A druhé nastaví jako průměrnou teplotu 30 °C, to znamená, že teplejší výsledky budou nad 30 °C, chladnější zase pod.
 
-![prubezne-mereni](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image3.png)
+![prubezne mereni](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image3.png)
 
 \- **Function node** s javascriptem pro ukládání jmen vypadá jednoduše takto
 
@@ -190,7 +190,7 @@ return msg;
 
 Ízy špízy? Tak tam přihoď jeden **timestamp flow**, se kterým změníš typ hry! Krátké zmáčknutí tlačítka změří nejžhavější dech a dlouhé podržení tlačítka změří nejmrazivější dech. Krutý 👍
 
-![timestamp-flow](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image4.png)
+![timestamp flow](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image4.png)
 
 **Potřebuješ poradit, jak na to?**
 
@@ -200,27 +200,27 @@ return msg;
 
 Nastav do něj opakování po jedné sekundě. 
 
-![nastaveni-intervalu](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image5.png)
+![nastaveni intervalu](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image5.png)
 
 \- **vrchní Switch node** reaguje na krátké zmáčknutí tlačítka a obsahuje _is true_
 
-![switch-node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image7.png)
+![switch node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image7.png)
 
 \- **spodní Switch node** reaguje na podržení tlačítka a taky obsahuje _is true_
 
-![spodni-switch-node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image2.png)
+![spodni switch node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image2.png)
 
 \- všechny tři Change nody obsahují zprávu: horní obsahuje zprávu, která oznamuje **soutěž o nejžhavější dech**
 
-![soutez-o-nejzhavejsi-dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image13.png)
+![soutez o nejzhavejsi dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image13.png)
 
 prostřední zprávu, že **zrovna žádná soutěž neběží**
 
-![zprava-soutez-nebezi](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image14.png)
+![zprava soutez nebezi](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image14.png)
 
 a spodní oznamuje **soutěž o nejmrazivější dech**
 
-![soutez-o-nejmrazivejsi-dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image10.png)
+![soutez o nejmrazivejsi dech](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image10.png)
 
 \- no a závěrečný **Text node** oznamuje typ soutěže
 
@@ -228,13 +228,13 @@ a spodní oznamuje **soutěž o nejmrazivější dech**
 
 Drž si klobouk, frčíme do finále. Poslední flow nastaví **výchozí hodnoty**: 30 °C jako optimální teplotu, hoooodně chladnou nejnižší teplotu a hoooodně horkou nejvyšší teplotu. S těmito teplotami se pak skutečně naměřené teploty porovnávají.
 
-![timestamp-nastaveni-hodnot](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image17.png)
+![timestamp nastaveni hodnot](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image17.png)
 
 **Potřebuješ poradit, jak na to?**
 
 \- **Inject node** obsahuje zaškrtnuté políčko, se kterým se nastaví výchozí hodnoty jen malou chvilku po stisknutí tlačítka Deploy.
 
-![inject-node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image11.png)
+![inject node](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image11.png)
 
 \-  a **node Function** obsahuje javascript, který nastavuje výchozí hodnoty.
 

@@ -7,7 +7,7 @@ description: >-
   modernize your teaching methods not only in Information Technologies or 
   Social Science
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1570188430/blog/komensky.jpg
+  https://res.cloudinary.com/lukasfabik/image/upload/v1571147709/blog/komensky_thumb.jpg
 image_main: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1570189074/blog/komensky_wide.jpg
 author: lukas_fabik

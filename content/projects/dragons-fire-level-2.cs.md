@@ -1,6 +1,6 @@
 ---
 title: 'Upgrade IoT párty hry: máš v sobě dračí oheň, nebo mrazivý dech?'
-draft: false
+draft: true
 featured: false
 handbook: starter-kit
 date: 2019-10-20T05:51:56.151Z

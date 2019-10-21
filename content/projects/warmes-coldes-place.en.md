@@ -1,6 +1,6 @@
 ---
 title: 'IoT game for the whole class: Measure the temperature in your school'
-draft: true
+draft: false
 featured: true
 handbook: starter-kit
 date: 2019-10-13T15:25:02.143Z
@@ -118,7 +118,7 @@ Confirm it with the **Done** button.
 
 ##  One-up your class
 
-1. Alone or in a group, **guess which place might be the hottest or coolest at school**. **** 🔥 ⛄
+1. Alone or in a group, **guess which place might be the hottest or coolest at school**.🔥 ⛄
 2. Each individual or a group has **only 15 minutes** to explore. 🔦 Let’s make it exciting.
 3. Take the box to the spot and **watch the temperature on your mobile**. It may take some time for the temperature to show in the gauge.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Upgrade IoT párty hry: máš v sobě dračí oheň, nebo mrazivý dech?'
-draft: true
-featured: true
+draft: false
+featured: false
 handbook: starter-kit
 date: 2019-10-20T05:51:56.151Z
 description: >-
@@ -53,7 +53,7 @@ Sestav si tohle flow, se kterým odhalíš **nejžhavějšího draka** z vaší 
 
 **Potřebuješ poradit, jak na to?**
 
-\- **MQTT node** ze sekce Input v sobě skrývá Topic s krátkým zmáčknutím tlačítka: 
+\- **MQTT node** ze sekce Input v sobě skrývá Topic s krátkým zmáčknutím tlačítka:
 
 ```
 node/push-button:0/push-button/-/event-count
@@ -68,12 +68,12 @@ var pressed = flow.get("pressed") || false;
 flow.set("holded", false);flow.set("pressed", !pressed);
 
 if(!flow.get("pressed"))
-{ 
- if(flow.get("contestantTemp") > hottestTemp) 
- {  
- flow.set("hottestTemp", flow.get("contestantTemp"));  
- msg.payload = flow.get("hottestTemp");  
- return msg; 
+{
+ if(flow.get("contestantTemp") > hottestTemp)
+ {
+ flow.set("hottestTemp", flow.get("contestantTemp"));
+ msg.payload = flow.get("hottestTemp");
+ return msg;
  }
 }
 ```
@@ -113,13 +113,13 @@ flow.set("pressed", false);
 flow.set("holded", !holded);
 
 if(!flow.get("holded"))
-{ 
-if(flow.get("contestantTemp") < coldestTemp) 
- {  
-  flow.set("coldestTemp", flow.get("contestantTemp"));  
+{
+if(flow.get("contestantTemp") < coldestTemp)
+ {
+  flow.set("coldestTemp", flow.get("contestantTemp"));
 
-  msg.payload = flow.get("coldestTemp");  
-  return msg; 
+  msg.payload = flow.get("coldestTemp");
+  return msg;
  }
 }
 ```
@@ -132,13 +132,13 @@ if(flow.get("contestantTemp") < coldestTemp)
 
 ## Nastav průběžná měření
 
-Vytvoř nový flow, který umísti pod oba předchozí. S tímhle flow změříš každý pokus, a navíc si tabulka zapamatuje jména účastníků. 
+Vytvoř nový flow, který umísti pod oba předchozí. S tímhle flow změříš každý pokus, a navíc si tabulka zapamatuje jména účastníků.
 
 ![prubezna mereni flow](https://res.cloudinary.com/lukasfabik/image/upload/v1571551048/projects/hardcore-upgrade-of-iot-party-game/image15.png)
 
 **Potřebuješ poradit, jak na to?**
 
-\- Topic v **MQTT node** obsahuje měření teploty: 
+\- Topic v **MQTT node** obsahuje měření teploty:
 
 ```
 node/push-button:0/thermometer/0:1/temperature
@@ -150,19 +150,19 @@ node/push-button:0/thermometer/0:1/temperature
 var temp = msg.payload;
 
 if(flow.get("pressed"))
-{ 
- if(flow.get("contestantTemp") < temp) 
- {  
-  flow.set("contestantTemp", temp);  
-  return msg; 
+{
+ if(flow.get("contestantTemp") < temp)
+ {
+  flow.set("contestantTemp", temp);
+  return msg;
   }
 }
 else if(flow.get("holded"))
-{ 
-  if(flow.get("contestantTemp") > temp) 
-  {  
-   flow.set("contestantTemp", temp);  
-   return msg; 
+{
+  if(flow.get("contestantTemp") > temp)
+  {
+   flow.set("contestantTemp", temp);
+   return msg;
  }
 }
 ```
@@ -196,7 +196,7 @@ return msg;
 
 ![inject](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image12.png)
 
-Nastav do něj opakování po jedné sekundě. 
+Nastav do něj opakování po jedné sekundě.
 
 ![nastaveni intervalu](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image5.png)
 
@@ -257,13 +257,13 @@ Jak soutěžit?
 
 \- Otevři záložku **Dashboard** v Playgroundu.
 
-\- Nejdřív napiš jméno soutěžícího, 
+\- Nejdřív napiš jméno soutěžícího,
 
-\- potvrď ho pomocí **Enter**, 
+\- potvrď ho pomocí **Enter**,
 
-\- a potom **dlouhým nebo krátkým stisknutím tlačítka** zvol typ soutěže. 👇 
+\- a potom **dlouhým nebo krátkým stisknutím tlačítka** zvol typ soutěže. 👇
 
-\- Až soutěžící zkusí, co umí, **stejně dlouhým stisknutím tlačítka** aktuální soutěž ukončíš a uložíš. 
+\- Až soutěžící zkusí, co umí, **stejně dlouhým stisknutím tlačítka** aktuální soutěž ukončíš a uložíš.
 
 \- U dalšího soutěžícího postupujte stejně, jedno po druhém.
 

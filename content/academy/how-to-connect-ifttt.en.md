@@ -75,11 +75,7 @@ Do you see “Connected”? You are there! 👍
 
 ![IFTTT in playground](https://res.cloudinary.com/lukasfabik/image/upload/v1570985207/academy/connect-ifttt-with-your-project-with-the-playground/image12.png)
 
-<<<<<<< HEAD:content/academy/how-to-connect-ifttt.en.md
-6.  But that’s not all, the connection must also be tested. Click on the **Webhoooks icon**.
-=======
-6. But that’s not all, the connection must also be tested. Click on the **Webhoooks icon**. 
->>>>>>> 053c8e38e9600cfa62730e9e1e5cebe8f0417531:content/academy/connect-ifttt-with-your-project-in-the-playground.en.md
+6. But that’s not all, the connection must also be tested. Click on the **Webhoooks icon**.
 
 ![IFTTT in playground](https://res.cloudinary.com/lukasfabik/image/upload/v1570985209/academy/connect-ifttt-with-your-project-with-the-playground/image16.png)
 

@@ -68,4 +68,4 @@ Now, we will show you **three smart nodes** that you can tune up your dashboard 
     </div>
 </div>
 
-Are you already thinking about what you can come up with in your dashboard? \[Check out our projects and get inspired!]({{< ref "/projects/_index.cs.md" >}})
+Are you already thinking about what you can come up with in your dashboard? [Check out our projects and get inspired!]({{< ref "/projects/_index.en.md" >}})

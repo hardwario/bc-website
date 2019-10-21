@@ -1,6 +1,6 @@
 ---
 title: Play Spin the Bottle electronically with IoT
-draft: true
+draft: false
 featured: true
 handbook: starter-kit
 date: 2019-10-19T09:47:39.764Z
@@ -24,8 +24,6 @@ places:
   - Home
 devices:
   - Starter Kit
-modules: ["core","button","mini_battery","usb_dongle"]
-kit: ["starter-kit","button-kit"]
 ---
 ## Introduction
 
@@ -35,7 +33,7 @@ Why play Spin the Bottle with a bottle if all you need is a smart box?  Set your
 
 In this project, you will learn how to set up the box so it **draws a random member** of your group. 😱
 
-You will need **the box with the button** and the **USB dongle**. All you need is a basic BigClown kit, the [Starter Kit](https://shop.bigclown.com/starter-kit/).
+You will need **the box with the button** and the **USB dongle**. All you need is a basic BigClown kit, the [**Starter Kit**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
@@ -53,7 +51,7 @@ node/x-axis-detector:0/accelerometer/-/event-count
 
 ![MQTT topic](https://res.cloudinary.com/lukasfabik/image/upload/v1566149308/projects/bottle-party-game/image18.png "MQTT topic")
 
-Confirm it with the **Done** button..
+Confirm it with the **Done** button.
 
 ## Set up a random option
 

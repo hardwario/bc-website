@@ -20,7 +20,7 @@ image_main: /upload/ilustrace-chlapec-v-pozici-stromu.png
 author: lukas_fabik
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]
-kit: "starter-kit"
+kit: ["starter-kit"]
 handbook: "starter-kit"
 ---
 

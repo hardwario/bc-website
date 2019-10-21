@@ -1,6 +1,6 @@
 ---
 title: Turn your old washing machine into a smart one
-draft: true
+draft: false
 featured: true
 handbook: starter-kit
 date: 2019-10-19T09:09:28.576Z
@@ -13,9 +13,9 @@ meta_description: >-
   Let your parents marvel. With the BigClown Starter Kit, build a detector to
   alert you when the washing is finished.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1571473593/projects/Turn-your-old-washing-machine-into-a-smart-one/6-ilustrace-ochytri-pracku.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1571601962/projects/smart-washing-machine/hardwario-ilustrace-ochytri-pracku.png
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1571473593/projects/Turn-your-old-washing-machine-into-a-smart-one/6-ilustrace-ochytri-pracku.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1571601962/projects/smart-washing-machine/hardwario-ilustrace-ochytri-pracku.png
 tags:
   - Indoor
 levels:
@@ -121,4 +121,4 @@ Confirm everything with the **Add** and **Done** buttons.
 ## Give it a spin!
 
 1. **Put the box on the washing machine.** Stick it with a small piece of tape to prevent it from falling.
-2. **The box will recognize when the washing machine finishes**, **\*\*because it will stop shaking.  It will send a message to your mom’s or dad’s mobile. Cool, huh? All of a sudden, you are living in a** smart household! 🤡
+2. **The box will recognize when the washing machine finishes**, because it will stop shaking.  It will send a message to your mom’s or dad’s mobile. Cool, huh? All of a sudden, you are **living in a smart household**! 🤡

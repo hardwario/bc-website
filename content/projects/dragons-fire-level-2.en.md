@@ -1,7 +1,7 @@
 ---
 title: 'Upgrade the IoT party games: is there dragon fire or icy breath inside of you?'
-draft: true
-featured: true
+draft: false
+featured: false
 handbook: starter-kit
 date: 2019-10-20T10:57:29.483Z
 description: >-
@@ -31,17 +31,17 @@ devices:
 Are you up for the task? Build one project in which you run two types of your favourite contest at once and switch between them as you please! There will be all kinds of fun at the party. 🕺
 {{< /perex >}}
 
-With this project you will learn **to save the highest measured value and set up several types of contest in one project and switch between them**. 
+With this project you will learn **to save the highest measured value and set up several types of contest in one project and switch between them**.
 
 You'll find the basic version of this project here: [IoT party game: is there dragon fire or icy breath inside of you?](https://www.bigclown.com/projects/dragons-fire/)
 
-Střední obtížnost zase tady: 
+Střední obtížnost zase tady:
 
 I tentokrát ti postačí základní BigClown sada, tedy [**Starter Kit**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
-## **Prepare the Node-RED**
+## Prepare the Node-RED
 
 1. Build and pair the Starter Kit. For the Core Module, you need the good old **bcf-radio-push-button firmware**.
 
@@ -49,13 +49,13 @@ I tentokrát ti postačí základní BigClown sada, tedy [**Starter Kit**](https
 
 ## Measure the hottest breath
 
-Put together this flow which will reveal **the hottest dragon** from your squad. 🐉 The highest temperature will be measured **by briefly pressing the button**. 
+Put together this flow which will reveal **the hottest dragon** from your squad. 🐉 The highest temperature will be measured **by briefly pressing the button**.
 
 ![measure the hottest breath](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image9.png)
 
 **Do you need advice on how to do that?**
 
-\- Topic in **MQTT node** from the Input section contains brief pressing on the button: 
+\- Topic in **MQTT node** from the Input section contains brief pressing on the button:
 
 ```
 node/push-button:0/push-button/-/event-count
@@ -70,12 +70,12 @@ var pressed = flow.get("pressed") || false;
 flow.set("holded", false);flow.set("pressed", !pressed);
 
 if(!flow.get("pressed"))
-{ 
- if(flow.get("contestantTemp") > hottestTemp) 
- {  
- flow.set("hottestTemp", flow.get("contestantTemp"));  
- msg.payload = flow.get("hottestTemp");  
- return msg; 
+{
+ if(flow.get("contestantTemp") > hottestTemp)
+ {
+ flow.set("hottestTemp", flow.get("contestantTemp"));
+ msg.payload = flow.get("hottestTemp");
+ return msg;
  }
 }
 ```
@@ -104,7 +104,7 @@ Under the previous flow, place another one. With this, you can measure which one
 node/push-button:0/push-button/-/hold-count
 ```
 
-\- the javascript code in the **Function node** looks like this: 
+\- the javascript code in the **Function node** looks like this:
 
 ```
 var coldestTemp = flow.get("coldestTemp");
@@ -115,13 +115,13 @@ flow.set("pressed", false);
 flow.set("holded", !holded);
 
 if(!flow.get("holded"))
-{ 
-if(flow.get("contestantTemp") < coldestTemp) 
- {  
-  flow.set("coldestTemp", flow.get("contestantTemp"));  
+{
+if(flow.get("contestantTemp") < coldestTemp)
+ {
+  flow.set("coldestTemp", flow.get("contestantTemp"));
 
-  msg.payload = flow.get("coldestTemp");  
-  return msg; 
+  msg.payload = flow.get("coldestTemp");
+  return msg;
  }
 }
 ```
@@ -152,19 +152,19 @@ node/push-button:0/thermometer/0:1/temperature
 var temp = msg.payload;
 
 if(flow.get("pressed"))
-{ 
- if(flow.get("contestantTemp") < temp) 
- {  
-  flow.set("contestantTemp", temp);  
-  return msg; 
+{
+ if(flow.get("contestantTemp") < temp)
+ {
+  flow.set("contestantTemp", temp);
+  return msg;
   }
 }
 else if(flow.get("holded"))
-{ 
-  if(flow.get("contestantTemp") > temp) 
-  {  
-   flow.set("contestantTemp", temp);  
-   return msg; 
+{
+  if(flow.get("contestantTemp") > temp)
+  {
+   flow.set("contestantTemp", temp);
+   return msg;
  }
 }
 ```
@@ -179,7 +179,7 @@ Change node contains two rules; one sets the xxx, the other one sets the xxx
 
 ![continuous measurements ](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image3.png)
 
-\- The **Function node** with javascript code for saving the names looks like this: 
+\- The **Function node** with javascript code for saving the names looks like this:
 
 ```
 flow.set("contestantName", msg.payload);
@@ -200,7 +200,7 @@ Easy peasy? Throw in a **timestamp flow** with which you can change the type of 
 
 ![inject](https://res.cloudinary.com/lukasfabik/image/upload/v1571551047/projects/hardcore-upgrade-of-iot-party-game/image12.png)
 
-Set up in it a repetition after one second.  
+Set up in it a repetition after one second.
 
 ![set up a repetition](https://res.cloudinary.com/lukasfabik/image/upload/v1571551046/projects/hardcore-upgrade-of-iot-party-game/image5.png)
 
@@ -255,19 +255,19 @@ That’s how sexy your desktop looks like now. Savour it, just as when you’ve 
 
 ## Let’s have a contest!
 
-1. As you might have noticed, the box reacts to two types of pressing: when is the button pressed briefly, it launches **the contest for the hottest breath**, when held longer, it launches **the contest for the iciest breath**. 
+1. As you might have noticed, the box reacts to two types of pressing: when is the button pressed briefly, it launches **the contest for the hottest breath**, when held longer, it launches **the contest for the iciest breath**.
 
 Jak soutěžit?
 
 \- Otevři záložku **Dashboard** v Playgroundu.
 
-\- Nejdřív napiš jméno soutěžícího, 
+\- Nejdřív napiš jméno soutěžícího,
 
-\- potvrď ho pomocí **Enter**, 
+\- potvrď ho pomocí **Enter**,
 
-\- a potom **dlouhým nebo krátkým stisknutím tlačítka** zvol typ soutěže. 👇 
+\- a potom **dlouhým nebo krátkým stisknutím tlačítka** zvol typ soutěže. 👇
 
-\- Až soutěžící zkusí, co umí, **stejně dlouhým stisknutím tlačítka** aktuální soutěž ukončíš a uložíš. 
+\- Až soutěžící zkusí, co umí, **stejně dlouhým stisknutím tlačítka** aktuální soutěž ukončíš a uložíš.
 
 \- U dalšího soutěžícího postupujte stejně, jedno po druhém.
 

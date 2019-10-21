@@ -2,7 +2,7 @@
 title: Catch the nosy parker who's snooping in your drawer!
 meta_title:  Catch the nosy parker who's snooping in your drawer!
 meta_description: Turn your Starter Kit from BigClown IoT into a drawer monitor and get alerts on your mobile phone. We have prepared a simple guide for you.
-draft: true
+draft: false
 date: 2019-08-12
 description: Turn your Starter Kit from BigClown IoT into a drawer monitor and get alerts on your mobile phone. We have prepared a simple guide for you.
 tags:

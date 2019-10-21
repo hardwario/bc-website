@@ -15,7 +15,7 @@ image_main: /upload/project_placeholder.jpg
 ---
 Bez firmware ti krabička nebude fungovat správně. Na různé projekty přitom potřebuješ různý firmware. Podívej se, jak si krabičku správně nastavíš.
 
-![firmware](https://res.cloudinary.com/lukasfabik/image/upload/v1571637597/academy/how-to-flash-firmware/Sni%CC%81mek_obrazovky_2019-10-20_v_12.00.00.png)
+![firmware](https://res.cloudinary.com/lukasfabik/image/upload/v1571663751/academy/how-to-flash-firmware/13-infografika-firmware.png)
 
 ## Co je to firmware?
 

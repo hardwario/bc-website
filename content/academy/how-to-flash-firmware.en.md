@@ -20,7 +20,7 @@ image_main: >-
 ---
 Without firmware, your box won’t work properly. For different projects, you need different firmware, though. See how you can set up the box correctly.
 
-![firmware](https://res.cloudinary.com/lukasfabik/image/upload/v1571637597/academy/how-to-flash-firmware/Sni%CC%81mek_obrazovky_2019-10-20_v_12.00.00.png)
+![firmware](https://res.cloudinary.com/lukasfabik/image/upload/v1571663751/academy/how-to-flash-firmware/13-infografika-firmware.png)
 
 ## What is firmware?
 

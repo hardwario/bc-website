@@ -3,9 +3,16 @@ title: 'Instal the right firmware, or “brain”, to your box'
 draft: false
 date: 2019-09-20T07:29:12.756Z
 weight: 30
-description: Without firmware, your IoT box won’t work properly. Thanks to this article you will understand what is firmware for and you will learn to set it up correctly.
+description: >-
+  Without firmware, your IoT box won’t work properly. Thanks to this article you
+  will understand what is firmware for and you will learn to set it up
+  correctly.
+slug: how-to-flash-firmware
 meta_title: How to instal firmware in your BigClown
-meta_description: Without firmware, your IoT box won’t work properly. Thanks to this article you will understand what is firmware for and you will learn to set it up correctly.
+meta_description: >-
+  Without firmware, your IoT box won’t work properly. Thanks to this article you
+  will understand what is firmware for and you will learn to set it up
+  correctly.
 image_preview: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1568964869/academy/how-to-flash-firmware/project_placeholder.jpg
 image_main: >-
@@ -13,13 +20,15 @@ image_main: >-
 ---
 Without firmware, your box won’t work properly. For different projects, you need different firmware, though. See how you can set up the box correctly.
 
+![firmware](https://res.cloudinary.com/lukasfabik/image/upload/v1571637597/academy/how-to-flash-firmware/Sni%CC%81mek_obrazovky_2019-10-20_v_12.00.00.png)
+
 ## What is firmware?
 
 Imagine firmware as a “brain” of things. 🤖 It’s a programme that controls the device. You can find it in all smart devices, even in those very simple ones, for example, in a traffic light. Even the car seats have firmware to make them heated.   The legendary BIOS that turns on and off your computer, is firmware. A very advanced firmware in the form of an operating system can be found in your smartphone, whether it’s Android, iOS or any other. 👌
 
-A programmer can set up firmware according to their needs. For example, it can change the speed at which the green light blinks at a crossing. For work and firmware settings there is a computer programme (a software). In our kits, its the [Playground]({{< ref "/download/_index.en.md" >}}) programme. 🤡
+A programmer can set up firmware according to their needs. For example, it can change the speed at which the green light blinks at a crossing. For work and firmware settings there is a computer programme (a software). In our kits, its the \[Playground]({{< ref "/download/_index.en.md" >}}) programme. 🤡
 
-Whether you are using [Starter Kit]({{< ref "/kits/starter-kit.en.md" >}}), [Climate Monitor Kit]({{< ref "/kits/climate-monitor.en.md" >}}), [Motion Detector Kit]({{< ref "/kits/motion-detector.en.md" >}}) or [other kits]({{< ref "/kits/_index.en.md" >}}), there is **pre-installed firmware** in the Core module in your kit. Thanks to the firmware, the box knows whether to measure temperature, monitor location or anything else.
+Whether you are using \[Starter Kit]({{< ref "/kits/starter-kit.en.md" >}}), \[Climate Monitor Kit]({{< ref "/kits/climate-monitor.en.md" >}}), \[Motion Detector Kit]({{< ref "/kits/motion-detector.en.md" >}}) or \[other kits]({{< ref "/kits/_index.en.md" >}}), there is **pre-installed firmware** in the Core module in your kit. Thanks to the firmware, the box knows whether to measure temperature, monitor location or anything else.
 
 **👉 That’s why you need different firmware for different projects. 👈**
 

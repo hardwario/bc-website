@@ -1,6 +1,6 @@
 ---
 title: ' Enrich your family dinner with a little wisdom'
-draft: true
+draft: false
 date: 2019-10-22T17:14:05.124Z
 description: >-
   Family dinners are a great recipe for family well-being. You can stop for a

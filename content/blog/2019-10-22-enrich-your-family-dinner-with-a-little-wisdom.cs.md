@@ -8,6 +8,7 @@ image_preview: >-
 image_main: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1571143323/blog/dinner-main.jpg
 author: lukas_fabik
+slug: 2019-10-22-obohatte-rodine-vecere-trochou-moudra
 ---
 
 Můj recept je jednoduchý:

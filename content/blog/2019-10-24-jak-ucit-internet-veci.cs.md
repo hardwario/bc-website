@@ -1,5 +1,5 @@
 ---
-title: Přijďte na seminář o výuce IoT. Už 8 listopadu v Praze
+title: Přijďte na seminář o výuce IoT. Už 8. listopadu v Praze
 date: 2019-10-24T09:40:52.921Z
 description: >-
   Zveme vás na další seminář  "Jak učit internet věcí", který tentokrát pořádáme
@@ -12,14 +12,12 @@ author: lukas_fabik
 ---
 Zveme vás na seminář "Jak učit internet věcí" určený pro učitele a pedagogické pracovníky. Seznámíme vás s teorií i praxí internetu věcí a ukážeme, jak jej využít ve výuce nejen informačních technologií, ale i společenských věd a dalších předmětů.
 
-Kurz je akreditován MŠMT pro další vzdělávání pedagogických pracovníků, kurz je osvobozen od DPH.
+Kurz je akreditován MŠMT pro další vzdělávání pedagogických pracovníků a je osvobozen od DPH.
 
 **Město:** Praha (místo bude včas upřesněno)\
 **Termín:** 8. listopadu 2019\
 **Čas:** 9:00 - 16:30, součástí je občerstvení\
-**Cena:** 2 500 Kč
-
-
+**Cena:** 2 500 Kč, faktura bude vystavena po kurzu
 
 ## Obsah kurzu:
 
@@ -28,8 +26,6 @@ Kurz je akreditován MŠMT pro další vzdělávání pedagogických pracovník�
 * Práce s IoT stavebnicí
 * Aplikace internetu věcí - Starter Kit, CO2 monitor...
 * 3E Framework
-
-
 
 ## Přihláška:
 

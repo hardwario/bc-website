@@ -23,11 +23,11 @@ Kurz je akreditován MŠMT pro další vzdělávání pedagogických pracovník�
 
 ## Obsah kurzu:
 
-1. Výzvy internetu věcí
-2. IoT technologie
-3. Práce s IoT stavebnicí
-4. Aplikace internetu věcí - Starter Kit, CO2 monitor...
-5. 3E Framework
+* Výzvy internetu věcí
+* IoT technologie
+* Práce s IoT stavebnicí
+* Aplikace internetu věcí - Starter Kit, CO2 monitor...
+* 3E Framework
 
 
 

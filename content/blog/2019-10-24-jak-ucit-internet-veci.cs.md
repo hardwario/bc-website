@@ -27,6 +27,8 @@ Kurz je akreditován MŠMT pro další vzdělávání pedagogických pracovník�
 * Aplikace internetu věcí - Starter Kit, CO2 monitor...
 * 3E Framework
 
+Každý účastník obdrží také skripta pro výuku internetu věcí.
+
 ## Přihláška:
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>

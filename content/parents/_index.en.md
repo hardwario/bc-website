@@ -3,7 +3,7 @@ title: For parents
 meta:
     title: Educational electronics kit BigClown for fun activities with kids
 slug: education
-menu: ["footer"]
+menu: ["main","footer"]
 weight: 45
 mainHeading: Inspire with us your inventor of tomorrow
 button: I want to buy Starter Kit for 59€

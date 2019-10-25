@@ -18,7 +18,7 @@ image_preview: /upload/soutez-s-kamarady-o-nejteplejsi-vydech.png
 image_main: /upload/soutez-s-kamarady-o-nejteplejsi-vydech.png
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]
-handbook: "starter-kit"
+handbook:
 kit: "starter-kit"
 ---
 

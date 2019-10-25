@@ -460,6 +460,55 @@
     }
   }
 
+  &--graytext
+  {
+    border: 0;
+    line-height: $baseline;
+    margin: $baseline 0;
+    height: $baseline;
+    color:#e41419!important;
+    font-size: em(18);
+    background: none;
+    text-decoration: underline!important;
+    padding-left: 0;
+
+    @media(max-width: 991px)
+    {
+    }
+
+    @media(max-width: 767px)
+    {
+      margin-top: 0;
+    }
+
+    &:after
+    {
+      background: url("../svg/arrowright.svg") no-repeat center center;
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      margin-left: 16px;
+      width:8px;
+      height: 100%;
+      position: relative;
+      top:-2px;
+      transition: all 0.7s ease 0s;
+      left:0px;
+    }
+
+    &:hover
+    {
+      background: none;
+      color:#e41419!important;
+      text-decoration: none!important;
+
+      &:after
+      {
+        left:10px;
+      }
+    }
+  }
+
   &--tag
   {
     line-height: 23px;

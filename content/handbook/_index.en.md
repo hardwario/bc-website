@@ -6,7 +6,7 @@ meta:
 mainHeading: Handbook for BigClown Kit
 mainParagraph: A device that helps you control your world
 kit: ["starter-kit"]
-menu: ["main"]
+menu: []
 weight: 5
 image: intro_EN.png
 perex: <p>Get ahead of the game. <strong>BigClown</strong> is an entertaining device that will help you understand and create the <strong>Internet of Things</strong> (IoT). It means that everything around you, even your chair, can become a smart device <strong>connected with your computer or mobile phone</strong>. Thanks to this connection, you can start to improve your home, classroom or even the entire city and the world in a digital way.</p><p>The <strong>Starter Kit</strong> is the fundamental kit to get you started, however, you can later upgrade it with our extensive range of kits. See how you can build your first smart device and how to create projects that will amaze your friends, family and us as well. 👌</p>

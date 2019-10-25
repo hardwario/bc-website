@@ -2,7 +2,7 @@
 title: 'Upgrade IoT párty hry: máš v sobě dračí oheň, nebo mrazivý dech?'
 draft: true
 featured: false
-handbook: starter-kit
+handbook:
 date: 2019-10-20T05:51:56.151Z
 description: >-
   IoT hra se Starter Kitem od BigClown. Vytvoř dva typy soutěže v jednom

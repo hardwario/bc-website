@@ -3,7 +3,7 @@ title: Pro rodiče
 meta:
     title: Naučná elektronicka stavebnice BigClown pro zábavné aktivity s dětmi
 slug: pro-rodice
-menu: ["footer"]
+menu: ["main","footer"]
 weight: 45
 mainHeading: Inspirujte s námi svého budoucího vynálezce
 button: Chci koupit Starter Kit za 1 490 Kč

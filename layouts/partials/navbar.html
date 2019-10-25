@@ -34,7 +34,8 @@
                 </li>
             {{ end }}
         {{ end }}
-          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="{{ .Site.Params.shopURL }}" target = "_blank" class="navtop__button button button--cart">{{ i18n "shop_now" }}</a></li>
+
+          <li class="navtop__item d-block d-lg-flex align-items-center"><a href="{{ .Site.Params.shopURL }}" target = "_blank" class="navtop__button button button--cart d-sm-none d-xl-block">{{ i18n "shop_now" }}</a></li>
         </ul>
 
         <a href="{{ .Site.Params.shopURL }}" target = "_blank" class="button button--iconcart d-block d-lg-none text-hide">{{ i18n "shop_now" }}</a>

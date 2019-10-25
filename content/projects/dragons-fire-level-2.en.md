@@ -2,7 +2,7 @@
 title: 'Upgrade the IoT party games: is there dragon fire or icy breath inside of you?'
 draft: true
 featured: false
-handbook: starter-kit
+handbook:
 date: 2019-10-20T10:57:29.483Z
 description: >-
   IoT Starter Kit game from BigClown. Create two types of contest in one project

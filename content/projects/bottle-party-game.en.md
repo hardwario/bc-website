@@ -2,7 +2,7 @@
 title: Play Spin the Bottle electronically with IoT
 draft: false
 featured: true
-handbook: starter-kit
+handbook:
 date: 2019-10-19T09:47:39.764Z
 description: >-
   With the BigClown Starter Kit, create an IoT button that will draw a random

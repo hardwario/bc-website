@@ -1,8 +1,8 @@
 ---
 title: Hraj párty hru „flaška” elektronicky
 draft: false
-featured: true
-handbook: starter-kit
+featured: false
+handbook:
 date: 2019-08-12T00:00:00.000Z
 description: >-
   Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ

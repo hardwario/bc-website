@@ -2,7 +2,7 @@
 title: Turn your old washing machine into a smart one
 draft: false
 featured: true
-handbook: starter-kit
+handbook:
 date: 2019-10-19T09:09:28.576Z
 description: >-
   Let your parents marvel. With the BigClown Starter Kit, build a detector to

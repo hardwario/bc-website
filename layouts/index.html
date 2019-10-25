@@ -93,11 +93,7 @@
 
 <!--{{ partial "www/opinion.html" .  }} -->
 
-{{ if eq $.Site.Language.Lang "en"}}
-    {{ partial "www/projects-newest.html" . }}
-{{ else }}
-    {{ partial "www/projects-starter.html" . }}
-{{ end }}
+{{ partial "www/projects-starter.html" . }}
 
 <script>
   /*$('.starterKitImage').hover(function(){

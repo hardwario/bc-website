@@ -3,7 +3,7 @@ title: Catch the greedy snack thief in the act
 draft: false
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]
-handbook: starter-kit
+handbook:
 date: 2019-09-22T19:29:41.283Z
 description: Using Starter Kit by BigClown, build an IoT guard to watch over your food in the fridge. We have prepared an easy-to-follow instructions to do that.
 meta_title: Catch the greedy snack thief in the act

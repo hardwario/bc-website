@@ -43,20 +43,6 @@ gulp.task("scss", function () {
         .pipe(gulp.dest("data/css"))
 });
 
-// Compile SCSS files to CSS for Documentation
-gulp.task("scss-doc", function () {
-    //del(["static/_assets/css/*"])
-    gulp.src("src/scss/main-doc.scss")
-        .pipe(sass({outputStyle : "compressed"}))
-        .pipe(autoprefixer({browsers : ["last 20 versions"]}))
-        .pipe(hash())
-        .pipe(gulp.dest("static/_assets/css"))
-        //Create a hash map
-        .pipe(hash.manifest("hash.json"))
-        //Put the map in the data directory
-        .pipe(gulp.dest("data/css"))
-});
-
 // Hash javascript
 gulp.task("js", function () {
     //del(["static/_assets/js/www/**/*"])
@@ -68,7 +54,7 @@ gulp.task("js", function () {
 });
 
 // Watch asset folder for changes
-gulp.task("watch", ["js","scss", "scss-doc"], function () {
+gulp.task("watch", ["js","scss"], function () {
     gulp.watch("src/scss/**/*", ["scss"])
     gulp.watch("src/js/**/*", ["js"])
 });

@@ -7,7 +7,7 @@ description: >-
 image_preview: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1571910303/blog/vyuka-digitalnich-dovednosti.jpg
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1570189074/blog/komensky_wide.jpg
+  https://res.cloudinary.com/lukasfabik/image/upload/v1571986647/blog/iot-course_wide.png
 author: lukas_fabik
 ---
 Zveme vás na seminář "Jak učit internet věcí" určený pro učitele a pedagogické pracovníky. Seznámíme vás s teorií i praxí internetu věcí a ukážeme, jak jej využít ve výuce nejen informačních technologií, ale i společenských věd a dalších předmětů.

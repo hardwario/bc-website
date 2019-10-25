@@ -14,7 +14,7 @@ Zveme vás na seminář "Jak učit internet věcí" určený pro učitele a peda
 
 Kurz je akreditován MŠMT pro další vzdělávání pedagogických pracovníků a je osvobozen od DPH.
 
-**Město:** Praha (místo bude včas upřesněno)\
+**Město:** Modrá zasedačka ImpactHub Praha, Drtinova 557/10, Praha - Smíchov\
 **Termín:** 8. listopadu 2019\
 **Čas:** 9:00 - 16:30, součástí je občerstvení\
 **Cena:** 2 500 Kč, faktura bude vystavena po kurzu

@@ -26,9 +26,9 @@ Without firmware, your box won’t work properly. For different projects, you ne
 
 Imagine firmware as a “brain” of things. 🤖 It’s a programme that controls the device. You can find it in all smart devices, even in those very simple ones, for example, in a traffic light. Even the car seats have firmware to make them heated.   The legendary BIOS that turns on and off your computer, is firmware. A very advanced firmware in the form of an operating system can be found in your smartphone, whether it’s Android, iOS or any other. 👌
 
-A programmer can set up firmware according to their needs. For example, it can change the speed at which the green light blinks at a crossing. For work and firmware settings there is a computer programme (a software). In our kits, its the \[Playground]({{< ref "/download/_index.en.md" >}}) programme. 🤡
+A programmer can set up firmware according to their needs. For example, it can change the speed at which the green light blinks at a crossing. For work and firmware settings there is a computer programme (a software). In our kits, its the [Playground]({{< ref "/download/_index.en.md" >}}) programme. 🤡
 
-Whether you are using \[Starter Kit]({{< ref "/kits/starter-kit.en.md" >}}), \[Climate Monitor Kit]({{< ref "/kits/climate-monitor.en.md" >}}), \[Motion Detector Kit]({{< ref "/kits/motion-detector.en.md" >}}) or \[other kits]({{< ref "/kits/_index.en.md" >}}), there is **pre-installed firmware** in the Core module in your kit. Thanks to the firmware, the box knows whether to measure temperature, monitor location or anything else.
+Whether you are using [Starter Kit]({{< ref "/kits/starter-kit.en.md" >}}), [Climate Monitor Kit]({{< ref "/kits/climate-monitor.en.md" >}}), [Motion Detector Kit]({{< ref "/kits/motion-detector.en.md" >}}) or [other kits]({{< ref "/kits/_index.en.md" >}}), there is **pre-installed firmware** in the Core module in your kit. Thanks to the firmware, the box knows whether to measure temperature, monitor location or anything else.
 
 **👉 That’s why you need different firmware for different projects. 👈**
 

@@ -57,4 +57,4 @@ ws://blynk-cloud.com/websockets
 <br/>
 Confirm the settings with the **Add** and **Done** buttons, respectively. And you are all set! 🎉
 
-So you can’t wait to try the Blynk connection out? Screw the theory. \[Jump head first to a specific project, get inspired and be creative!]({{< ref "/projects/_index.en.md" >}})
+So you can’t wait to try the Blynk connection out? Screw the theory. [Jump head first to a specific project, get inspired and be creative!]({{< ref "/projects/_index.en.md" >}})

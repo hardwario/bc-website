@@ -24,7 +24,7 @@ In order for the box to obey your commands, you have to speak its language. And 
 
 Node-RED is a simple **programming tool** in which you tell your box what to do and when to do it. It works on the flow-based principle. It’s a flow for a reason - all your commands flow like a river through the Node-RED. 🌊
 
-In your \[Playground]({{< ref "/academy/what-is-bigclown-playground.en.md" >}}) you will find the Node-RED in the **Functions** tab. When you click on it, you will see a list of so-called nodes on the left. **Nodes** represent individual actions that take place in your programme. For example, pressing a button, sending a message to a mobile or displaying a chart of ambient temperature.
+In your [Playground]({{< ref "/academy/what-is-bigclown-playground.en.md" >}}) you will find the Node-RED in the **Functions** tab. When you click on it, you will see a list of so-called nodes on the left. **Nodes** represent individual actions that take place in your programme. For example, pressing a button, sending a message to a mobile or displaying a chart of ambient temperature.
 {{< b-image src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159446/academy/what-is-node-red/image4.png" alt = "Node-RED flow" >}}
 
 One by one, you **drag nodes from the left menu** to the empty desktop in the middle of the window and **connect them** - in this simple way you create your entire programme. Click on the dot in the right or left of the node and drag it to another node as if you were connecting it with a string.
@@ -63,7 +63,7 @@ And that’s all you need to know to programme in the Node-RED. Being a programm
         {{< img-nm src = "https://res.cloudinary.com/lukasfabik/image/upload/v1566159446/academy/what-is-node-red/image2.png" alt = "Notify Blynk node - Node-RED" >}}
     </div>
     <div class = "col-md-8">
-        <p>Node <strong>Notify</strong> node has a clear mission - to send a notification to a mobile. It will be displayed in the Blynk app. \[Blynk]({{< ref "/academy/how-to-connect-blynk.en.md" >}}).</p>
+        <p>Node <strong>Notify</strong> node has a clear mission - to send a notification to a mobile. It will be displayed in the Blynk app. [Blynk]({{< ref "/academy/how-to-connect-blynk.en.md" >}}).</p>
     </div>
 </div>
 
@@ -86,4 +86,4 @@ And that’s all you need to know to programme in the Node-RED. Being a programm
 </div>
 
 Now that you know what it’s all about, programme your own project! We have prepared a bunch of cunning inventions for inspiration.
-\[Check them out]({{< ref "/projects/_index.en.md" >}})
+[Check them out]({{< ref "/projects/_index.en.md" >}})

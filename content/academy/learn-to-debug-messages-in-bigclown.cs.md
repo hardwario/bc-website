@@ -12,9 +12,9 @@ meta_description: >-
   Abys svůj program pro IoT krabičku vyladil k dokonalosti, pomůže ti jednoduchý
   debugger, se kterým vychytáš mouchy. Poradíme ti, jak ho nastavíš a rozjedeš.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1569050323/projects/learn-to-debug-messages-in-bigclown/image1.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1572800473/academy/learn-to-debug-mesagges-in-bigclown/2E73DFEE-13B1-4CB1-9D3A-1B190D94C8FC.jpg
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1569050325/projects/learn-to-debug-messages-in-bigclown/image3.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1572800473/academy/learn-to-debug-mesagges-in-bigclown/2E73DFEE-13B1-4CB1-9D3A-1B190D94C8FC.jpg
 ---
 Pavouk je rád, když má v síti šťavnatou mouchu nebo jiný hmyz. Do prográmku ale brouci (bugy) nepatří. Vychytej všechny bugy (tak se v angličtině označují hmyzáci i chyby v kódu) ze svých BigClowních projektů. 🐞 Ukážeme ti, jak na to.
 

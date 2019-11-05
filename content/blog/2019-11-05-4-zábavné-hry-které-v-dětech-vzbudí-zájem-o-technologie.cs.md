@@ -7,7 +7,7 @@ description: >-
   dlouhá odpoledne. Přečtěte si 4 tipy na zábavné aktivity pro malé i velké
   děti. 
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1572972239/blog/Workshop_01.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1572974514/blog/Gift-for12-year-old-boy/14-ilustrace-detektor-jezisek.png
 image_main: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1571986647/blog/iot-course_wide.png
 author: lukas_fabik

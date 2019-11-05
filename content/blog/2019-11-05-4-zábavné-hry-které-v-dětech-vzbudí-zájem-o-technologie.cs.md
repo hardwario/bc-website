@@ -24,7 +24,7 @@ Dnes to mají budoucí programátoři a programátorky jednodušší než kdy d�
 
 V BigClownu však kromě užitečných přístrojů do domácnosti, jako je teploměr do psí boudy, alarm proti zlodějům nebo domovní zvonek, vytvoří i ryze **zábavné hry**, u kterých se s kamarády pobaví. Představíme vám **čtyři z nich**.
 
-# Hra č. 1: Chytrá káča aneb kdo má největší odstředivou sílu
+## Hra č. 1: Chytrá káča aneb kdo má největší odstředivou sílu
 
 ![chytrá káča](https://res.cloudinary.com/lukasfabik/image/upload/v1572973820/blog/Gift-for12-year-old-boy/image1.png)
 
@@ -36,7 +36,7 @@ Potom si sednou do kolečka, postupně krabičku roztáčí a na displeji počí
 
 [Podívejte se na přesný návod, jak si děti chytrou káču naprogramují.](https://www.bigclown.com/cs/projects/highest-centrifugal-force/)
 
-# Hra č. 2: Dračí válka aneb souboj o nejžhavější a nejmrazivější dech
+## Hra č. 2: Dračí válka aneb souboj o nejžhavější a nejmrazivější dech
 
 ![dračí válka](https://res.cloudinary.com/lukasfabik/image/upload/v1572973839/blog/Gift-for12-year-old-boy/image3.png)
 
@@ -46,7 +46,7 @@ Po jednoduchém naprogramování si děti sednou okolo stolu a postupně na krab
 
 [Hru o nejžhavější dech si děti naprogramují podle tohoto jednoduchého návodu.](https://www.bigclown.com/cs/projects/draci-dech/)
 
-# Hra č. 3: Turnaj kung-fu mistrů aneb kdo krabičku nejdéle udrží v klidu
+## Hra č. 3: Turnaj kung-fu mistrů aneb kdo krabičku nejdéle udrží v klidu
 
 ![turnaj kung-fu mistrů](https://res.cloudinary.com/lukasfabik/image/upload/v1572973839/blog/Gift-for12-year-old-boy/image4.png)
 
@@ -56,7 +56,7 @@ Děti pak mezi sebou soupeří v různých polohách, například na jedné noze
 
 [Soutěž o zenového mistra si děti naprogramují pomocí tohoto jednoduchého návodu.](https://www.bigclown.com/cs/projects/kung-fu-mastr/)
 
-# Hra č. 4: Chytrý teploměr aneb hledání nejteplejšího místa v okolí
+## Hra č. 4: Chytrý teploměr aneb hledání nejteplejšího místa v okolí
 
 ![chytrý teploměr](https://res.cloudinary.com/lukasfabik/image/upload/v1572973837/blog/Gift-for12-year-old-boy/image2.png)
 
@@ -66,7 +66,7 @@ Hru také mohou navrhnout učiteli fyziky a zahrát si ji s celou třídou – d
 
 [S programováním této dobrodružné hry pomůže dětem jednoduchý návod.](https://www.bigclown.com/cs/projects/nejteplejsi-nejchladnejsi-misto/)
 
-# Další hry si děti vytvoří samy
+## Další hry si děti vytvoří samy
 
 Představili jsme vám čtyři možné hry s IoT kitem, ale v reálu jich mohou děti vytvořit **nekonečné množství**. Záleží jen na jejich **kreativitě a dovednostech**, které při hraní s BigClownem postupně získají.
 

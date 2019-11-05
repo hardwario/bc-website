@@ -23,7 +23,7 @@ IoT kit proto představuje pro učitele mocný nástroj. Už se nemusí trápit,
 
 <fotka z výuky>
 
-# IoT technologie ve výuce fyziky
+## IoT technologie ve výuce fyziky
 
 Stavebnice BigClown umožňuje komukoliv sestrojit chytré zařízení pro **měření hned několika fyzikálních veličin**. Žákům tak můžete v praxi ukázat, jak funguje například 
 
@@ -40,13 +40,13 @@ A jakmile přijde řeč na **odstředivou sílu**, žáci si pomocí [našeho n�
 
 <fotka z výuky>
 
-# IoT technologie ve výuce biologie
+## IoT technologie ve výuce biologie
 
 Vysvětlit žákům princip oxidu uhličitého tak, aby neskončil jen jako pár nudných řádků v sešitě, může být fuška. Pokud si ale na pomoc přizvete stavebnici [CO2 Monitor Kit](https://www.bigclown.com/cs/kits/co2-monitor/), **ukážete jim, jak se oxid uhličitý projevuje v praxi**. Po připojení k počítači zobrazí krabička aktuální míru CO2 v okolí. Jako učitel tak dětem snadno ukážete, jak se míra oxidu uhličitého **mění například po otevření oken** ve vydýchané třídě nebo venku před školou oproti interiéru.
 
 S CO2 Monitor Kitem žáci změří také **teplotu, vlhkost vzduchu a atmosférický tlak**, takže kromě biologie přijde vhod i ve fyzice. A mimo hodiny ho využijete čistě jako **detektor hladiny CO2**, abyste zjistili, zda mají děti pro studium ideální prostředí a kdy potřebují více čistého vzduchu. Díky tomu se budou na hodinách lépe soustředit.
 
-# IoT technologie ve výuce informatiky
+## IoT technologie ve výuce informatiky
 
 Zájem o programování ve svých svěřencích nejrychleji vzbudíte, když je **necháte vytvořit vlastní projekt.** Může to být webová stránka, počítačová hra nebo díky BigClown IoT kitu vlastní chytré zařízení. Vlastnoručně si **sestaví hardware a naprogramují jeho funkce**. Provedou to v programu BigClown Playground, který používá jednoduchý programovací jazyk [Node-Red](https://www.bigclown.com/cs/academy/co-je-node-red/).
 
@@ -58,7 +58,7 @@ Pro začínající programátory jsme jako inspiraci připravili spoustu projekt
 
 <fotka z výuky>
 
-# IoT technologie ve výuce tělocviku
+## IoT technologie ve výuce tělocviku
 
 BigClown IoT kit využijí učitelé nejen v technických a přírodovědných předmětech, ale například i v tělocviku. Chcete-li dětem hodinu tělocviku zpestřit a **probudit v nich soutěživého ducha**, podívejte se na [tenhle projekt](https://www.bigclown.com/cs/projects/kung-fu-mastr/).
 

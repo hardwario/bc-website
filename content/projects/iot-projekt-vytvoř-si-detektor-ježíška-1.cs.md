@@ -141,6 +141,10 @@ Potvrď postupně tlačítky **Add** a **Done**.
 
 2. PIR Module vycítí i sebemenší pohyb a zpráva o cizí přítomnosti ti přijde do mobilu raz dva. **Ježíšek nemá šanci**! Honem se běž podívat a načapej ho
 
+{{< /middle >}}
+
 ![notifikace do mobilu](https://res.cloudinary.com/lukasfabik/image/upload/v1572976411/projects/detektor-jeziska/image5.png)
+
+{{< /middle >}}
 
 3. Poznámka na okraj: Ježíška si po načapání **udobři**, aby ti doma vůbec nějaké dárky nechal. 😜

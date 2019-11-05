@@ -11,7 +11,7 @@ meta_description: Načapej Ježíška pomocí PIR Modulu od BigClown. Ten bude k
 image_preview: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1572976435/projects/detektor-jeziska/image15.png
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1572976443/projects/detektor-jeziska/image21.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1572976427/projects/detektor-jeziska/image12.png
 tags:
   - Indoor
 levels:

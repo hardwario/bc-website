@@ -156,5 +156,5 @@ Pokud jsi node **Switch** nastavil přesně podle našeho obrázku, tak do vrchn
 
 ![nastaveni optimalni teploty](https://res.cloudinary.com/lukasfabik/image/upload/v1573049734/projects/Hlidej-prostredi-v-terarku-pro-sveho-leguana/image15.png)
 
-1. Kontroluj, zda má tvůj kámoš ideální teplotu, a sleduj, jak se **zvyšuje a snižuje** tlak, světelnost a vlhkost.
-2. Pokud je naměřená teplota příliš odlišná od té v terárku, zajdi se poradit do zverimexu nebo k veterináři, ať je tvůj plazák **maximálně spoko**. 👌
+3. Kontroluj, zda má tvůj kámoš ideální teplotu, a sleduj, jak se **zvyšuje a snižuje** tlak, světelnost a vlhkost.
+4. Pokud je naměřená teplota příliš odlišná od té v terárku, zajdi se poradit do zverimexu nebo k veterináři, ať je tvůj plazák **maximálně spoko**. 👌

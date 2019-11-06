@@ -1,6 +1,6 @@
 ---
 title: '4 zábavné hry, které v dětech vzbudí zájem o technologie'
-draft: false
+draft: true
 date: 2019-11-05T16:58:20.200Z
 description: >-
   Se stavebnicí BigClown si děti naprogramují jednoduché hry, které je zabaví na

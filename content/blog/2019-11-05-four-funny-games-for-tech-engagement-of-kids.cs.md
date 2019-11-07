@@ -9,7 +9,7 @@ description: >-
 image_preview: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1572974514/blog/Gift-for12-year-old-boy/14-ilustrace-detektor-jezisek.png
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1571986647/blog/iot-course_wide.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1572007998/blog/iot-course_full.png
 author: lukas_fabik
 ---
 {{< perex >}}

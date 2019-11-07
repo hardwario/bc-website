@@ -1,11 +1,11 @@
 ---
 title: '4 zábavné hry, které v dětech vzbudí zájem o technologie'
-draft: true
+draft: false
 date: 2019-11-05T16:58:20.200Z
 description: >-
   Se stavebnicí BigClown si děti naprogramují jednoduché hry, které je zabaví na
   dlouhá odpoledne. Přečtěte si 4 tipy na zábavné aktivity pro malé i velké
-  děti. 
+  děti.
 image_preview: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1572974514/blog/Gift-for12-year-old-boy/14-ilustrace-detektor-jezisek.png
 image_main: >-
@@ -16,7 +16,7 @@ author: lukas_fabik
 
 Legendární heslo „škola hrou” dnes platí stejně dobře, jako když ho Komenský vypustil do světa. Chcete-li v dětech vzbudit zájem o technologie, programování a obory zítřka, nejsnazší cestou jsou právě hry. Představíme vám čtyři jednoduché hry, u kterých se děti zabaví s BigClown IoT kitem – chytrou krabičkou, díky níž ovládnou svět kolem sebe.
 
-{{< perex >}}
+{{< /perex >}}
 
 Každý profesionál ve svém oboru **musel někde začít**. Dnešní šéfkuchaři kdysi s mámou váleli těsto, grafici kreslili voskovkami jednorožce a byznysmeni kupovali fiktivní hotely na herní ploše Monopoly. Dnešní **programátoři a technologičtí inovátoři** si zase na přelomu století tvořili jednoduché počítačové hry nebo skládali obvody tak, aby se na jejich konci rozsvítila žárovka. A jakmile se úspěšně rozsvítila, následoval výbuch radosti a nadšení.
 
@@ -62,7 +62,7 @@ Děti pak mezi sebou soupeří v různých polohách, například na jedné noze
 
 A do čtveřice hra pro malé dobrodruhy – opět s pomocí teploměru. Děti chodí s naprogramovanou krabičkou po bytě, ve škole či na kterémkoliv jiném místě a hledají **nejteplejší nebo naopak nejstudenější kout**. Údaje o okolní teplotě se jim zobrazí na počítači a na mobilu a vyhrává objevitel nejvyšší nebo naopak nejnižší teploty.
 
-Hru také mohou navrhnout učiteli fyziky a zahrát si ji s celou třídou – dozví se toho během ní spoustu **o teplotě a dalších fyzikálních veličinách**. 
+Hru také mohou navrhnout učiteli fyziky a zahrát si ji s celou třídou – dozví se toho během ní spoustu **o teplotě a dalších fyzikálních veličinách**.
 
 [S programováním této dobrodružné hry pomůže dětem jednoduchý návod.](https://www.bigclown.com/cs/projects/nejteplejsi-nejchladnejsi-misto/)
 
@@ -73,5 +73,3 @@ Představili jsme vám čtyři možné hry s IoT kitem, ale v reálu jich mohou 
 Na všechny zmíněné hry stačí dětem **BigClown Starter Kit**. Pořiďte jim ho a nasměrujte je na dráhu budoucích programátorů a technologických guru.
 
 [\>> BigClown Starter Kit pořídíte dětem v našem e-shopu. <<](https://obchod.bigclown.cz/starter-kit/)
-
-#

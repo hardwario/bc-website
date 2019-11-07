@@ -15,9 +15,9 @@ author: lukas_fabik
 
 Probudit v žácích zájem o probíranou látku je sisyfovský úděl každého učitele. Nejsnazší cestou je ukázat dětem zábavnou formou, jak jev funguje v praxi. To učitelům umožní IoT stavebnice BigClown – studenti s ní snadno postaví chytrá zařízení na měření odstředivé síly, tlaku, CO2 nebo teploty. Přečtěte si tipy pro učitele, jak pomocí moderní technologie zpestřit výuku informatiky, fyziky, biologie nebo třeba tělocviku.
 
-{{< perex >}}
+{{< /perex >}}
 
-Pomocí [IoT stavebnice BigClown](https://www.bigclown.com/cs/education/) si žáci poskládají a naprogramují hardware, se kterým **vytvoří projekty na principu chytré domácnosti**. Nepotřebují k tomu přitom žádné znalosti programování – stavebnice slouží jako odrazový můstek do světa technologií. 
+Pomocí [IoT stavebnice BigClown](https://www.bigclown.com/cs/education/) si žáci poskládají a naprogramují hardware, se kterým **vytvoří projekty na principu chytré domácnosti**. Nepotřebují k tomu přitom žádné znalosti programování – stavebnice slouží jako odrazový můstek do světa technologií.
 
 IoT kit proto představuje pro učitele mocný nástroj. Už se nemusí trápit, jak o učivo probudit zájem. Navíc nejde jenom o látku z informatiky – s IoT kitem představí dětem základní principy atmosférického tlaku i **učitel fyziky, který v životě nenaprogramoval jediný řádek kódu**. Navíc díky krabičce podpoříte přesah mezi předměty a zkombinujete například biologii s informatikou.
 
@@ -25,14 +25,14 @@ IoT kit proto představuje pro učitele mocný nástroj. Už se nemusí trápit,
 
 ## IoT technologie ve výuce fyziky
 
-Stavebnice BigClown umožňuje komukoliv sestrojit chytré zařízení pro **měření hned několika fyzikálních veličin**. Žákům tak můžete v praxi ukázat, jak funguje například 
+Stavebnice BigClown umožňuje komukoliv sestrojit chytré zařízení pro **měření hned několika fyzikálních veličin**. Žákům tak můžete v praxi ukázat, jak funguje například
 
 * teplota vzduchu,
 * atmosférický tlak,
-* světlo 
+* světlo
 * nebo odstředivá síla.
 
-Každý [BigClown Iot Kit](https://www.bigclown.com/cs/kits/) má v sobě modul pro měření teploty. Krabičku propojíte s počítačem a ve volně dostupném programu [BigClown Playground](https://www.bigclown.com/cs/academy/co-je-to-bigclown-playground/) **se okamžitě zobrazí teplota ve třídě a její změny**. Vaši svěřenci tak mohou s teplotou experimentovat a v praxi si ověřit, jak funguje. Zjistí, co se stane, když krabičku vloží do mrazáku, fouknou do ní nebo ji postaví pod svítící žárovku. 
+Každý [BigClown Iot Kit](https://www.bigclown.com/cs/kits/) má v sobě modul pro měření teploty. Krabičku propojíte s počítačem a ve volně dostupném programu [BigClown Playground](https://www.bigclown.com/cs/academy/co-je-to-bigclown-playground/) **se okamžitě zobrazí teplota ve třídě a její změny**. Vaši svěřenci tak mohou s teplotou experimentovat a v praxi si ověřit, jak funguje. Zjistí, co se stane, když krabičku vloží do mrazáku, fouknou do ní nebo ji postaví pod svítící žárovku.
 
 Pomocí [Climate Monitor kitu](https://www.bigclown.com/cs/kits/climate-monitor/) studenti stejným principem změří například i **světelnost nebo atmosferický tlak**. S krabičkou tak můžete v hodině fyziky zajít ven nebo do laboratoře a měřit veličiny v různých podmínkách.
 

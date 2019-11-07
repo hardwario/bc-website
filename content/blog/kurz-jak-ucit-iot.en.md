@@ -12,7 +12,7 @@ image_main: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1570189074/blog/komensky_wide.jpg
 author: lukas_fabik
 ---
-Internet of Things is still a relatively young technology. Nevertheless, it is something that surrounds us everywhere. Unfortunately, in the information of technology or social science curriculum, there is no mention of this topic. How to deal with it?
+Internet of Things is still a relatively young technology. Nevertheless, it is something what surrounds us everywhere. Unfortunately, in the information of technology or social science curriculum, there is no mention of this topic. How to deal with it?
 
 We have prepared an **accredited course** in association with ACCON Academy, **"How to teach the Internet of Things, for teachers".**
 

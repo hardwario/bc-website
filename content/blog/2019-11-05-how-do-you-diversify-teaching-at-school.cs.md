@@ -6,7 +6,7 @@ description: >-
   Oživte dětem výuku fyziky, informatiky nebo biologie pomocí IoT stavebnice, se
   kterou si naprogramují vlastní chytrá zařízení. Poradíme vám, jak na to.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1571910303/blog/vyuka-digitalnich-dovednosti.jpg
+  https://res.cloudinary.com/lukasfabik/image/upload/v1572972239/blog/Workshop_01.png
 image_main: >-
   https://res.cloudinary.com/lukasfabik/image/upload/v1571910303/blog/vyuka-digitalnich-dovednosti.jpg
 author: lukas_fabik
@@ -21,7 +21,7 @@ Pomocí [IoT stavebnice BigClown](https://www.bigclown.com/cs/education/) si ž�
 
 IoT kit proto představuje pro učitele mocný nástroj. Už se nemusí trápit, jak o učivo probudit zájem. Navíc nejde jenom o látku z informatiky – s IoT kitem představí dětem základní principy atmosférického tlaku i **učitel fyziky, který v životě nenaprogramoval jediný řádek kódu**. Navíc díky krabičce podpoříte přesah mezi předměty a zkombinujete například biologii s informatikou.
 
-<fotka z výuky>
+![iot kit pro ucitele](https://res.cloudinary.com/lukasfabik/image/upload/v1572972229/blog/Workshop_04_1.png)
 
 ## IoT technologie ve výuce fyziky
 
@@ -38,7 +38,9 @@ Pomocí [Climate Monitor kitu](https://www.bigclown.com/cs/kits/climate-monitor/
 
 A jakmile přijde řeč na **odstředivou sílu**, žáci si pomocí [našeho návodu](https://www.bigclown.com/cs/projects/highest-centrifugal-force/) vytvoří inteligentní káču. Jednoduchý program promění krabičku ve hru, při které děti soupeří, kdo krabičku roztočí po nejdelší dobu. Čas točení krabička zaznamená pomocí **vestavěného akcelerometru** a na počítači se zobrazí rekord, který musí další soutěžící překonat. Prostě nefalšovaná škola hrou.
 
-<fotka z výuky>
+
+
+![odstrediva sila](https://res.cloudinary.com/lukasfabik/image/upload/v1572972391/blog/Workshop_07.png)
 
 ## IoT technologie ve výuce biologie
 
@@ -56,7 +58,7 @@ Pro začínající programátory jsme jako inspiraci připravili spoustu projekt
 
 <https://www.bigclown.com/cs/projects/>
 
-<fotka z výuky>
+![vytvareni vlastniho projektu](https://res.cloudinary.com/lukasfabik/image/upload/v1572972241/blog/Workshop_05.png)
 
 ## IoT technologie ve výuce tělocviku
 

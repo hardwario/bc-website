@@ -42,6 +42,8 @@ Pokud máš Starter Kit, budeš k němu potřebovat ještě [Climate Module](htt
 
 ![messages](https://res.cloudinary.com/lukasfabik/image/upload/v1573049733/projects/Hlidej-prostredi-v-terarku-pro-sveho-leguana/image4.png)
 
+{{< modules >}}
+
 ## Nastav si Node-RED
 
 1. Programování odstartuj v Node-RED. Nejdřív v Playgroundu klikni na záložku **Functions**.

@@ -25,11 +25,17 @@ places:
 devices:
   - Starter Kit
 ---
+## Úvod
+
+{{< perex >}}
 Leze ti mladší brácha do pokoje? Jedeš na dovolenou a bojíš se, že ti někdo ukradne tvůj poklad? Nastav si alarm proti všem nenechavcům. 👮
+{{< /perex >}}
 
 V tomhle projektu se naučíš vytvořit **detektor cizí přítomnosti, který ti pošle upozornění na mobil**. 👁️
 
 Pokud máš Starter Kit, budeš k němu potřebovat ještě [**PIR Module**](https://obchod.bigclown.cz/pir-module/). Kompletní výbavu najdeš v sadě [Motion Detector Kit](https://www.bigclown.com/kits/motion-detector/).
+
+{{< modules >}}
 
 ## Stáhni si nový firmware
 

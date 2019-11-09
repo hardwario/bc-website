@@ -25,6 +25,8 @@ places:
 devices:
   - Starter Kit
 ---
+## Úvod
+
 {{< perex >}}
 Ani mobil není neomylný. Občas tě třeba zapomene vzbudit. Když se ti to náhodou stane, nezoufej. Zmáčkni tlačítko 👇 a omluvíš se dřív, než učitel začne volat tvým rodičům.
 {{< /perex >}}

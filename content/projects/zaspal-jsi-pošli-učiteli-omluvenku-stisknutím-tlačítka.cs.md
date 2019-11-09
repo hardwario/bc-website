@@ -35,6 +35,8 @@ V tomhle projektu se naučíš, **jak tlačítkem odeslat e-mail**. 📩
 
 Vystačíš si přitom se základní BigClown sadou, tedy [**Starter Kitem**](https://shop.bigclown.com/starter-kit/). 
 
+{{< modules >}}
+
 ## Rozjeď to v Node-RED
 
 1. Starter Kit sestav a spáruj: jestli to děláš poprvé, [připravili jsme k tomu jednoduchou příručku](https://www.bigclown.com/cs/handbook/). Na Core Module potřebuješ firmware radio push button. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady](https://www.bigclown.com/cs/academy/jak-nahrat-firmware/).

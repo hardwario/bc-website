@@ -25,10 +25,10 @@ places:
 devices:
   - Starter Kit
 ---
+## Úvod
+
 {{< perex >}}
-
 Ať už máš doma leguána, želvu, hada nebo gekona, určitě chceš, aby byl u tebe doma co nejvíc spoko. 👌🦎 Sleduj klima v terárku a zjisti, jestli se má zelenáč ideální podmínky pro život.
-
 {{< perex >}}
 
 S tímhle projektem se naučíš **měřit čtyři klimatické hodnoty a zobrazit je v grafech** – teplotu, vlhkost, světelnost a tlak vzduchu. Za odměnu ti tvoji zelení kámoši třeba povypráví historky svých dinosauřích předků. 🦖 Nebo něco na ten způsob. 

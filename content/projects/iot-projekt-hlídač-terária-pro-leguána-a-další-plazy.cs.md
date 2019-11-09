@@ -35,14 +35,14 @@ S tímhle projektem se naučíš **měřit čtyři klimatické hodnoty a zobrazi
 
 Pokud máš Starter Kit, budeš k němu potřebovat ještě [Climate Module](https://obchod.bigclown.cz/climate-module/). **Kompletní** výbavu najdeš v sadě [Climate Monitor Kit](https://obchod.bigclown.cz/climate-monitor-kit/).
 
+{{< modules >}}
+
 ## Připrav si krabičku
 
 1. Climate Monitor Kit sestav a spáruj: jestli to děláš poprvé, [připravili jsme k tomu jednoduchou příručku](https://www.bigclown.com/cs/handbook/) – postup je stejný jako u Starter Kitu. Na Core Module potřebuješ firmware **radio climate monitor**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady](https://www.bigclown.com/cs/academy/jak-nahrat-firmware/).
 2. Změny teploty, světla, vlhkosti a tlaku vzduchu uvidíš v Playgroundu v záložce **Messages**.
 
 ![messages](https://res.cloudinary.com/lukasfabik/image/upload/v1573049733/projects/Hlidej-prostredi-v-terarku-pro-sveho-leguana/image4.png)
-
-{{< modules >}}
 
 ## Nastav si Node-RED
 

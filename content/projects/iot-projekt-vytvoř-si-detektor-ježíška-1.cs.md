@@ -22,14 +22,14 @@ devices:
   - Starter Kit
 ---
 {{< perex >}}
-
 Ježíšek je ultratajná osoba, ale s IoT ho můžeš načapat přímo při rozdávání dárků. 🎄 Pomůže ti k tomu PIR Module: detektor pohybu
-
 {{< perex >}}
 
 S tímhle projektem se naučíš **detekovat pohyb ve vzdáleném pokoji**. Díky tomu si můžeš ověřit, jestli po českých domácnostech chodí Santa, Ježíšek, Děda Mráz nebo někdo úplně jiný. 😲
 
 Pokud máš Starter Kit, budeš k němu potřebovat ještě [PIR Module](https://obchod.bigclown.cz/pir-module/). **Kompletní výbavu** najdeš v sadě [Motion Detector Kit](https://obchod.bigclown.cz/pir-module/).
+
+{{< modules >}}
 
 ## Připrav si krabičku
 

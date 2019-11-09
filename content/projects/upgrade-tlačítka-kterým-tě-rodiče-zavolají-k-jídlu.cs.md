@@ -27,6 +27,8 @@ places:
 devices:
   - Starter Kit
 ---
+## Úvod
+
 {{< perex >}}
 Máš už hotovou základní verzi tlačítka, kterým tě máma zavolá k večeři? Tak to gratulki. 👍 S tímhle vylepšením projekt posuneš dál – zpráva se změní podle denní doby, a ještě na ni můžeš zareagovat.
 {{< /perex >}}
@@ -36,6 +38,8 @@ V tomhle projektu se naučíš **nastavit jinou zprávu na jiný čas**, odeslat
 Základní verzi tohohle projektu najdeš tady: [Vyrob si IoT tlačítko, se kterým tě máma zavolá k večeři](https://www.bigclown.com/cs/projects/tlacitko-pro-rodice/).
 
 Budeš potřebovat **krabičku s tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou, tedy [**Starter Kitem**](https://shop.bigclown.com/starter-kit/).
+
+{{< modules >}}
 
 ## Připrav si Node-RED
 

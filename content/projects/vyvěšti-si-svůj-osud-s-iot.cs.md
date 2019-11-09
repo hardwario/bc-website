@@ -35,6 +35,8 @@ V tomhle projektu se naučíš udělat z krabičky věšteckou kouli neboli **ma
 
 Budeš potřebovat **krabičku s tlačítkem a USB dongle**. Vystačíš si tedy se základní BigClown sadou, [**Starter Kitem**](https://shop.bigclown.com/starter-kit/).
 
+{{< modules >}}
+
 ## Rozjeď to v Node-RED
 
 1. Starter Kit[ sestav a spáruj](https://www.bigclown.com/cs/handbook/). Na Core Module potřebuješ firmware **radio-8-ball**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady](https://www.bigclown.com/cs/academy/jak-nahrat-firmware/). 

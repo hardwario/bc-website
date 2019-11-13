@@ -13,9 +13,9 @@ meta_description: >-
   Využij IoT ve svém pokojíku. Sestav s Climate Monitorem od BigClowna zařízení,
   které ti ukáže, jestli má tvůj zelený kámoš správné klima v terárku.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573064271/projects/Hlidej-prostredi-v-terarku-pro-sveho-leguana/image.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573632812/projects/Hlidej-prostredi-v-terarku-pro-sveho-leguana/1148307889691628.MOu57c2tmKxDlZFXOp8i_height640.png
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573064271/projects/Hlidej-prostredi-v-terarku-pro-sveho-leguana/image.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573632812/projects/Hlidej-prostredi-v-terarku-pro-sveho-leguana/1148307889691628.MOu57c2tmKxDlZFXOp8i_height640.png
 tags:
   - Indoor
 levels:

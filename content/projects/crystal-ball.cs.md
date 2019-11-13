@@ -1,21 +1,21 @@
 ---
 title: Vyvěšti si svůj osud s IoT
-draft: true
-featured: true
+draft: false
+featured: false
 handbook: Starter Kit
 date: 2019-11-09T14:36:10.628Z
 description: >-
   Vytvoř si ze Starter Kitu od BigClown IoT věšteckou kostku neboli magic
   8-ball. Po zatřepání ti dá odpověď na všechno, co chceš vědět.
-slug: starter-kit
+slug: vestecka-koule
 meta_title: Vyvěšti si svůj osud s IoT
 meta_description: >-
   Vytvoř si ze Starter Kitu od BigClown IoT věšteckou kostku neboli magic
   8-ball. Po zatřepání ti dá odpověď na všechno, co chceš vědět.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573310715/projects/vestici-koule/image1.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573640047/projects/project_placeholder.jpg
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573310715/projects/vestici-koule/image1.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573640047/projects/project_placeholder.jpg
 tags:
   - Indoor
 levels:
@@ -24,6 +24,7 @@ places:
   - Home
 devices:
   - Starter Kit
+modules: ["core","pir","mini_battery","usb_dongle"]
 ---
 ## Úvod
 
@@ -39,18 +40,18 @@ Budeš potřebovat **krabičku s tlačítkem a USB dongle**. Vystačíš si tedy
 
 ## Rozjeď to v Node-RED
 
-1. Starter Kit[ sestav a spáruj](https://www.bigclown.com/cs/handbook/). Na Core Module potřebuješ firmware **radio-8-ball**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady](https://www.bigclown.com/cs/academy/jak-nahrat-firmware/). 
+1. Starter Kit[ sestav a spáruj](https://www.bigclown.com/cs/handbook/). Na Core Module potřebuješ firmware **radio-8-ball**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady](https://www.bigclown.com/cs/academy/jak-nahrat-firmware/).
 
 Po nahrání firmware uvidíš, že se Alias tvého přístroje na záložce Devices změnilo na **Future teller**.
 
 ![NODE-RED](https://res.cloudinary.com/lukasfabik/image/upload/v1573310716/projects/vestici-koule/image9.png)
 
-2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha. 
-3. Na plochu postav node **MQTT** ze sekce Input. 
+2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha.
+3. Na plochu postav node **MQTT** ze sekce Input.
 
 ![MQTT](https://res.cloudinary.com/lukasfabik/image/upload/v1573310714/projects/vestici-koule/image3.png)
 
-4. Na node dvakrát klikni a nastav v něm klíčovou funkci – věštění. 🔮 **Do pole Topic zkopíruj tenhle řádek**: 
+4. Na node dvakrát klikni a nastav v něm klíčovou funkci – věštění. 🔮 **Do pole Topic zkopíruj tenhle řádek**:
 
 
 ```
@@ -65,7 +66,7 @@ Potvrď tlačítkem **Done**.
 
 1. Krabička funguje tak, že ti vyhodí jednu z předem nastavených odpovědí. Funguje přitom vždycky **na základě náhody**. Tak ji teď pojď nastavit.
 
-Náhodnou volbu naprogramuješ podle jednoduchého javascriptu. Jak se to dělá? Vedle MQTT postav **node Function**, který najdeš ve stejnojmenné sekci. 
+Náhodnou volbu naprogramuješ podle jednoduchého javascriptu. Jak se to dělá? Vedle MQTT postav **node Function**, který najdeš ve stejnojmenné sekci.
 
 ![node Function](https://res.cloudinary.com/lukasfabik/image/upload/v1573310716/projects/vestici-koule/image11.png)
 
@@ -83,17 +84,17 @@ return msg;
 
 Díky tomuhle kódu se vybere **jedna ze čtyř možností**:
 
-\- Nejspíš ano,
+- Nejspíš ano,
 
-\- S tím nepočítej,
+- S tím nepočítej,
 
-\- Možná,
+- Možná,
 
-\- Určitě ano.
+- Určitě ano.
 
 Potvrď tlačítkem **Done**.
 
-3. Vedle Náhody přidej další node, a to **Text** ze sekce Dashboard. 
+3. Vedle Náhody přidej další node, a to **Text** ze sekce Dashboard.
 
 ![Text](https://res.cloudinary.com/lukasfabik/image/upload/v1573310715/projects/vestici-koule/image2.png)
 
@@ -103,39 +104,39 @@ Potvrď tlačítkem **Done**.
 
 Potvrď tlačítkem **Done**.
 
-5. Přidej na plochu ještě robota, který ti výsledek nahlas přečte. Aby to bylo správně creepy. 🤖 Najdeš ho jako node Audio out taky v sekci Dashboard. 
+5. Přidej na plochu ještě robota, který ti výsledek nahlas přečte. Aby to bylo správně creepy. 🤖 Najdeš ho jako node Audio out taky v sekci Dashboard.
 
 ![Dashboard](https://res.cloudinary.com/lukasfabik/image/upload/v1573310715/projects/vestici-koule/image1.png)
 
-Uvnitř nodu si nastav hlas, který bude zprávu číst. 
+Uvnitř nodu si nastav hlas, který bude zprávu číst.
 
 ![nastavení hlasu](https://res.cloudinary.com/lukasfabik/image/upload/v1573310716/projects/vestici-koule/image10.png)
 
 Potvrď tlačítkem **Done**.
 
-6. **Nody pospojuj** podle obrázku. 
+6. **Nody pospojuj** podle obrázku.
 
 ![Deploy](https://res.cloudinary.com/lukasfabik/image/upload/v1573310715/projects/vestici-koule/image8.png)
 
-Flow odstartuj tlačítkem **Deploy** vpravo nahoře. 
+Flow odstartuj tlačítkem **Deploy** vpravo nahoře.
 
 ## Nechť osud promluví
 
-1. Ó, velký ty, zvedni svou mocnou krabičku a **zeptej se jí na otázku**, která tě pálí. Třeba: 
+1. Ó, velký ty, zvedni svou mocnou krabičku a **zeptej se jí na otázku**, která tě pálí. Třeba:
 
-\- Opětuje David o ročník výš mou lásku? 
+- Opětuje David o ročník výš mou lásku?
 
-\- Budou zítra ve škole k obědu borůvkové knedlíky?
+- Budou zítra ve škole k obědu borůvkové knedlíky?
 
-\- Stanu se jednou úspěšným cirkusovým umělcem? 
+- Stanu se jednou úspěšným cirkusovým umělcem?
 
-\- Vyjde ráno slunce? 
+- Vyjde ráno slunce?
 
-\- Naučím se konečně jíst hůlkami?
+- Naučím se konečně jíst hůlkami?
 
-\- Budu jednou pracovat v Googlu?
+- Budu jednou pracovat v Googlu?
 
-\- Mám si nabarvit vlasy nazeleno?
+- Mám si nabarvit vlasy nazeleno?
 
 2. **Zatřes krabičkou** a v Playgroundu pod záložkou Dashboard se dozvíš svou odpověď. ️🎱 Nezapomeň si zapnout repráky, protože ji i uslyšíš. Aleluja!
 

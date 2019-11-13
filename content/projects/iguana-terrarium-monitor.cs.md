@@ -1,13 +1,13 @@
 ---
 title: 'IoT projekt: hlídač terária pro leguána a další plazy'
-draft: true
-featured: true
+draft: false
+featured: false
 handbook: starter-kit
 date: 2019-11-06T14:07:29.153Z
 description: >-
   Využij IoT ve svém pokojíku. Sestav s Climate Monitorem od BigClowna zařízení,
   které ti ukáže, jestli má tvůj zelený kámoš správné klima v terárku.
-slug: starter kit
+slug: monitor-teraria-pro-leguana
 meta_title: 'IoT projekt: hlídač terária pro leguána a další plazy'
 meta_description: >-
   Využij IoT ve svém pokojíku. Sestav s Climate Monitorem od BigClowna zařízení,
@@ -24,14 +24,16 @@ places:
   - Home
 devices:
   - Starter Kit
+modules: ["core","climate","mini_battery","usb_dongle"]
 ---
+
 ## Úvod
 
 {{< perex >}}
 Ať už máš doma leguána, želvu, hada nebo gekona, určitě chceš, aby byl u tebe doma co nejvíc spoko. 👌🦎 Sleduj klima v terárku a zjisti, jestli se má zelenáč ideální podmínky pro život.
-{{< perex >}}
+{{< /perex >}}
 
-S tímhle projektem se naučíš **měřit čtyři klimatické hodnoty a zobrazit je v grafech** – teplotu, vlhkost, světelnost a tlak vzduchu. Za odměnu ti tvoji zelení kámoši třeba povypráví historky svých dinosauřích předků. 🦖 Nebo něco na ten způsob. 
+S tímhle projektem se naučíš **měřit čtyři klimatické hodnoty a zobrazit je v grafech** – teplotu, vlhkost, světelnost a tlak vzduchu. Za odměnu ti tvoji zelení kámoši třeba povypráví historky svých dinosauřích předků. 🦖 Nebo něco na ten způsob.
 
 Pokud máš Starter Kit, budeš k němu potřebovat ještě [Climate Module](https://obchod.bigclown.cz/climate-module/). **Kompletní** výbavu najdeš v sadě [Climate Monitor Kit](https://obchod.bigclown.cz/climate-monitor-kit/).
 
@@ -48,7 +50,7 @@ Pokud máš Starter Kit, budeš k němu potřebovat ještě [Climate Module](htt
 
 1. Programování odstartuj v Node-RED. Nejdřív v Playgroundu klikni na záložku **Functions**.
 2. Na volnou plochu si přetáhni světle fialový node (bublinu) s názvem **MQTT**. Najdeš ho v sekci Input.
-3. Node rozklikni dvojklikem. V řádku **Topic** určíš, co chceš, aby barevný ukazatel zobrazoval. Teď to bude teplota. Proto do řádku zkopíruj zprávu s teplotou ze záložky Messages (bez čísla). Nebo klidně použij tohle: 
+3. Node rozklikni dvojklikem. V řádku **Topic** určíš, co chceš, aby barevný ukazatel zobrazoval. Teď to bude teplota. Proto do řádku zkopíruj zprávu s teplotou ze záložky Messages (bez čísla). Nebo klidně použij tohle:
 
 
 ```
@@ -68,8 +70,8 @@ Na řádku **Label** si graf libovolně přejmenuj a na řádku **Value format**
 
 Potvrď tlačítkem **Done**.
 
-6. Měření teploty máš ready, tak pojď na další hodnoty. Pod nody pro měření teploty přidej další dva stejné nody, tedy **MQTT** a **Gauge**. 
-7. Do nodu **MQTT** tentokrát zkopíruj Topic pro měření vlhkosti, vypadá takhle: node/climate-monitor:0/hygrometer/0:4/relative-humidity. 
+6. Měření teploty máš ready, tak pojď na další hodnoty. Pod nody pro měření teploty přidej další dva stejné nody, tedy **MQTT** a **Gauge**.
+7. Do nodu **MQTT** tentokrát zkopíruj Topic pro měření vlhkosti, vypadá takhle: node/climate-monitor:0/hygrometer/0:4/relative-humidity.
 
 V novém nodu **Gauge** si nastav **Range** 0 až 100 a do **Value format** dej % (vlhkost se totiž měří v procentech). Nezapomeň si ukazatel pojmenovat, případně vyber barvu.
 
@@ -82,7 +84,7 @@ V novém nodu **Gauge** si nastav **Range** 0 až 100 a do **Value format** dej 
 ![nastaveni value format](https://res.cloudinary.com/lukasfabik/image/upload/v1573049734/projects/Hlidej-prostredi-v-terarku-pro-sveho-leguana/image14.png)
 
 10. 3 ze 4 kroků máš za sebou, tak přihoď ještě poslední hodnotu na měření: tlak vzduchu. Opět přihoď jeden node **MQTT** a jeden **Gauge**.
-11. Do MQTT zkopíruj **Topic** pro měření tlaku vzduchu: 
+11. Do MQTT zkopíruj **Topic** pro měření tlaku vzduchu:
 
 
 ```
@@ -117,7 +119,7 @@ Rozklikni ho a jeho **Range** a **Value format** vyplň úplně stejně jako u p
 
 2. Hned vedle přidej další node, tentokrát to bude nová tvář v podobě nodu **Change** ze sekce Function.
 
-Rozklikni si ho a nastav do něj hned pod sebe **flow.optimal** a **msg.payload** (tak, jak to je na obrázku). 
+Rozklikni si ho a nastav do něj hned pod sebe **flow.optimal** a **msg.payload** (tak, jak to je na obrázku).
 
 **K čemu to je**: Tyhle dva nody (Numeric a Change) ti umožní nastavit ideální teplotu, na jejíž překročení tě bude hlídač upozorňovat. 👮 Pomocí nodu Numeric si budeš v Dashboardu určovat optimální teplotu a node Change ji nastaví do proměnné flow.optimal. S tou pracují další nody, které si umístíme nyní.
 

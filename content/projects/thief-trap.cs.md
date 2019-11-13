@@ -1,21 +1,21 @@
 ---
 title: Vytvoř si IoT past na zloděje
-draft: true
-featured: true
+draft: false
+featured: false
 handbook: starter kit
 date: 2019-11-08T13:34:02.585Z
 description: >-
   Nastav si pomocí Motion Detector Kitu alarm proti zlodějům do svého pokojíčku.
   Připravili jsme pro tebe jednoduchý návod.
-slug: starter-kit
+slug: past-na-zlodeje
 meta_title: Vytvoř si IoT past na zloděje
 meta_description: >-
   Nastav si pomocí Motion Detector Kitu alarm proti zlodějům do svého pokojíčku.
   Připravili jsme pro tebe jednoduchý návod.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573157120/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image21.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573640189/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/2-domaci-alarm.jpg
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573157122/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image24.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573640189/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/2-domaci-alarm.jpg
 tags:
   - Indoor
 levels:
@@ -24,6 +24,7 @@ places:
   - Home
 devices:
   - Starter Kit
+modules: ["core","pir","mini_battery","usb_dongle"]
 ---
 ## Úvod
 
@@ -39,7 +40,7 @@ Pokud máš Starter Kit, budeš k němu potřebovat ještě [**PIR Module**](htt
 
 ## Stáhni si nový firmware
 
-1. Pokud to ještě nemáš, Motion Detector Kit si sestav. 
+1. Pokud to ještě nemáš, Motion Detector Kit si sestav.
 2. Na Core Module nahraj speciální firmware, a to bcf-radio-burglar-alarm (najdeš ho mezi ostatním firmwarem v Playgroundu). Díky tomuhle firmwaru krabička odhalí zloděje. 👂
 
 ![sestavení motion detektor kitu](https://res.cloudinary.com/lukasfabik/image/upload/v1573157109/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image20.png)
@@ -55,9 +56,11 @@ Pokud máš Starter Kit, budeš k němu potřebovat ještě [**PIR Module**](htt
 ## Rozjeď appku na mobilu
 
 1. **Pokračuj na svém mobilu**. Krabička se propojí se smartphonem díky **appce Blynk**. 📱 [Zjisti, jak na Blynk](https://www.bigclown.com/cs/academy/jak-pripojit-blynk/).
-2. Z nabídky zvol **Styled button** (vyšperkované tlačítko). 🚨 Tlačítko se ti umístí na plochu projektu a bude sloužit k vypínání a zapínání detektoru pohybu. 
+2. Z nabídky zvol **Styled button** (vyšperkované tlačítko). 🚨 Tlačítko se ti umístí na plochu projektu a bude sloužit k vypínání a zapínání detektoru pohybu.
 
-![spuštění aplikace](https://res.cloudinary.com/lukasfabik/image/upload/v1573157119/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image22.png)
+{{< middle >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1573157119/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image22.png" alt = "spuštění aplikace" >}}
+{{< /middle >}}
 
 3. Když na tlačítko ťukneš, dostaneš se do nastavení.
 
@@ -69,15 +72,21 @@ Dál už je to na tvém uměleckém cítění. ️🎨 Můžeš si navolit barvu
 
 Až všechno budeš mít, **vrať se na plochu** skrz šipku vlevo nahoře.
 
-![virtuální tlačítko](https://res.cloudinary.com/lukasfabik/image/upload/v1573157108/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image18.png)
+{{< middle >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1573157108/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image18.png" alt = "virtuální tlačítko" >}}
+{{< /middle >}}
 
 4. Klepni na plochu, abys přidal další prvek na plochu. Bude to **notifikace**.
 
-![notifikace](https://res.cloudinary.com/lukasfabik/image/upload/v1573157088/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image4.png)
+{{< middle >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1573157088/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image4.png" alt = "notifikace" >}}
+{{< /middle >}}
 
 5. Celá tvoje plocha teď vypadá takhle. Spusť projekt tlačítkem **Play** vpravo nahoře. ▶️
 
-![spuštění projektu](https://res.cloudinary.com/lukasfabik/image/upload/v1573157116/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image25.png)
+{{< middle >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1573157116/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image25.png" alt = "spuštění projektu" >}}
+{{< /middle >}}
 
 6. **Poťukej na tlačítko**, mělo by se přepínat z módu ON (zapnuto) do módu OFF (vypnuto).
 
@@ -88,7 +97,7 @@ Až všechno budeš mít, **vrať se na plochu** skrz šipku vlevo nahoře.
 
 Dvakrát na něj klikni a do pole Label napiš název nodu: Int parser.
 
-Do pole Function pak zkopíruj tento jednoduchý javascript: 
+Do pole Function pak zkopíruj tento jednoduchý javascript:
 
 ```
 msg.payload = parseInt(msg.payload);
@@ -124,7 +133,7 @@ Pak klikni na malou tužtičku. ✏
 
 A na závěr si v políčku **Label** projekt ještě pro lepší orientaci pojmenuj.
 
-Všechno potvrď a vrátíš se na programovací plochu. 
+Všechno potvrď a vrátíš se na programovací plochu.
 
 ![nastavení propojení](https://res.cloudinary.com/lukasfabik/image/upload/v1573157110/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image17.png)
 
@@ -156,7 +165,7 @@ return msg;
 
 ## Naprogramuj hlavní senzor
 
-1. Celý projekt funguje na principu pohybového čidla – když ti do pokoje vnikne zloděj, krabička si ho všimne a alarm aktivuje. 
+1. Celý projekt funguje na principu pohybového čidla – když ti do pokoje vnikne zloděj, krabička si ho všimne a alarm aktivuje.
 
 A díky měření okolní teploty může alarm měnit svůj stav tak, aby se udržel v low power módu – prostě aby moc neždímal baterky v krabičce. 🔋
 
@@ -176,7 +185,7 @@ msg.payload = flow.get("alarmOn");
 return msg;
 ```
 
-Díky tomuhle node bude senzor aktivní jenom v případě, že ho spustíš tlačítkem v Blynku nebo na počítači. 
+Díky tomuhle node bude senzor aktivní jenom v případě, že ho spustíš tlačítkem v Blynku nebo na počítači.
 
 ![stav alarmu](https://res.cloudinary.com/lukasfabik/image/upload/v1573157118/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image19.png)
 
@@ -200,7 +209,7 @@ Nejdřív si na plochu postav **MQTT node ze sekce Input**. V něm nastav jako *
 
 ![MQTT Node](https://res.cloudinary.com/lukasfabik/image/upload/v1573157123/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image26.png)
 
-1. Za něj patří javascriptík, tedy **node Function**. Jako **Name** nastav _Zpráva_ a kód máš tady: 
+1. Za něj patří javascriptík, tedy **node Function**. Jako **Name** nastav _Zpráva_ a kód máš tady:
 
 
 ```
@@ -222,12 +231,14 @@ return msg;
 
 ## A... akce!
 
-1. Až budeš chtít alarm spustit, **nastav switch** na počítači (v záložce Dashboard) nebo na mobilu. Obě tlačítka spolupracují, proto stačí nastavit buď jedno, nebo druhé. 
+1. Až budeš chtít alarm spustit, **nastav switch** na počítači (v záložce Dashboard) nebo na mobilu. Obě tlačítka spolupracují, proto stačí nastavit buď jedno, nebo druhé.
 
 ![nastav switch](https://res.cloudinary.com/lukasfabik/image/upload/v1573157102/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image13.png)
 
 2. Postav svou krabičku ke dveřím. Až krabička zachytí pohyb, **vyšle ti do mobilu upozornění**.
 
-![upozornění v mobilu](https://res.cloudinary.com/lukasfabik/image/upload/v1573157092/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image9.png)
+{{< middle >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1573157092/projects/pohlidej-si-kdyz-nejsi-doma-jestli-ti-nekdo-neleze-do-pokoje/image9.png" alt = "upozornění v mobilu" >}}
+{{< /middle >}}
 
 Zlodějové, střezte se, zákon je tu! 😱

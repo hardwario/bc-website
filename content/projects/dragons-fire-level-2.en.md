@@ -24,6 +24,7 @@ places:
   - Home
 devices:
   - Starter Kit
+modules: ["core","button","mini_battery","usb_dongle"]
 ---
 ## Introduction
 

@@ -15,8 +15,8 @@ places:
 devices:
   - Starter Kit
 idea: false
-image_preview: /upload/project_placeholder.jpg
-image_main:
+image_preview: https://res.cloudinary.com/lukasfabik/image/upload/v1573639706/projects/Catch-the-greedy-snack-thief-in-the-act/hardwario-ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
+image_main: https://res.cloudinary.com/lukasfabik/image/upload/v1573639706/projects/Catch-the-greedy-snack-thief-in-the-act/hardwario-ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
 author: lukas_fabik
 featured: true
 modules: ["core","button","mini_battery","usb_dongle"]

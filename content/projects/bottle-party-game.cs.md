@@ -12,9 +12,9 @@ meta_title: Hraj párty hru „flaška” elektronicky díky IoT
 meta_description: >-
   Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, se kterým vylosuješ
   náhodného člena vaší party.
-image_preview: /upload/project_placeholder.jpg
+image_preview: https://res.cloudinary.com/lukasfabik/image/upload/v1573640047/projects/project_placeholder.jpg
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1566149309/projects/bottle-party-game/image4.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573640047/projects/project_placeholder.jpg
 tags:
   - Starter Project
 levels:

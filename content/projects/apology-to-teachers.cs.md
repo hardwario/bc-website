@@ -1,21 +1,21 @@
 ---
 title: Zaspal jsi? Pošli učiteli omluvenku stisknutím tlačítka
-draft: true
-featured: true
+draft: false
+featured: false
 handbook: Starter Kit
 date: 2019-11-09T15:06:49.642Z
 description: >-
   Návod na to, jak si ze Starter Kitu od BigClown vytvoříš chytré tlačítko.
-  Pošle tvému učiteli omluvenku, když tě náhodou zradí budík. 
-slug: starter-kit
+  Pošle tvému učiteli omluvenku, když tě náhodou zradí budík.
+slug: omluvenka-uciteli
 meta_title: Zaspal jsi? Pošli učiteli omluvenku stisknutím tlačítka
 meta_description: >-
   Návod na to, jak si ze Starter Kitu od BigClown vytvoříš chytré tlačítko.
-  Pošle tvému učiteli omluvenku, když tě náhodou zradí budík. 
+  Pošle tvému učiteli omluvenku, když tě náhodou zradí budík.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573312453/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image9.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573639907/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/Nocni-lampa.jpg
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573312453/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image9.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573639907/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/Nocni-lampa.jpg
 tags:
   - Indoor
 levels:
@@ -24,6 +24,7 @@ places:
   - Home
 devices:
   - Starter Kit
+modules: ["core","pir","mini_battery","usb_dongle"]
 ---
 ## Úvod
 
@@ -33,23 +34,23 @@ Ani mobil není neomylný. Občas tě třeba zapomene vzbudit. Když se ti to n�
 
 V tomhle projektu se naučíš, **jak tlačítkem odeslat e-mail**. 📩
 
-Vystačíš si přitom se základní BigClown sadou, tedy [**Starter Kitem**](https://shop.bigclown.com/starter-kit/). 
+Vystačíš si přitom se základní BigClown sadou, tedy [**Starter Kitem**](https://shop.bigclown.com/starter-kit/).
 
 {{< modules >}}
 
 ## Rozjeď to v Node-RED
 
-1. Starter Kit sestav a spáruj: jestli to děláš poprvé, [připravili jsme k tomu jednoduchou příručku](https://www.bigclown.com/cs/handbook/). Na Core Module potřebuješ firmware radio push button. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady](https://www.bigclown.com/cs/academy/jak-nahrat-firmware/).
-2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha [Node-RED](https://www.bigclown.com/cs/academy/co-je-node-red/). 🤖
-3. Na plochu Node-RED postav node **MQTT** ze sekce Input. 
+1. Starter Kit sestav a spáruj: jestli to děláš poprvé, [připravili jsme k tomu jednoduchou příručku](/cs/handbook/). Na Core Module potřebuješ firmware radio push button. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady](/cs/academy/jak-nahrat-firmware/).
+2. V Playgroundu klikni na **záložku Functions**, kde je programovací plocha [Node-RED](/cs/academy/co-je-node-red/). 🤖
+3. Na plochu Node-RED postav node **MQTT** ze sekce Input.
 
 ![MQTT](https://res.cloudinary.com/lukasfabik/image/upload/v1573312451/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image6.png)
 
-4. Uvnitř nodu nastavíš klíčovou funkci – a tou je stisknutí tlačítka. Na node dvakrát klikni a **do pole Topic zkopíruj tenhle řádek**: 
+4. Uvnitř nodu nastavíš klíčovou funkci – a tou je stisknutí tlačítka. Na node dvakrát klikni a **do pole Topic zkopíruj tenhle řádek**:
 
 
 ```
-node/push-button:0/push-button/-/event-count 
+node/push-button:0/push-button/-/event-count
 ```
 
 Potvrď tlačítkem **Done**.
@@ -62,7 +63,7 @@ Potvrď tlačítkem **Done**.
 
 2. Na node dvakrát klikni a do pole **Rules** (pravidla) nastav dvě pravidla (viz obrázek níž).
 
-První pravidlo bude **msg. payload**: tím nastavíš obsah zprávy. Mysli na to, že node si s českými čárkami a háčky nerozumí, a nezapomeň se podepsat. Zpráva tak může znít třeba takhle: 
+První pravidlo bude **msg. payload**: tím nastavíš obsah zprávy. Mysli na to, že node si s českými čárkami a háčky nerozumí, a nezapomeň se podepsat. Zpráva tak může znít třeba takhle:
 
 _Dobry den, pane Datle, omlouvam se, ale bohuzel mi pes sezral budika. Prijdu co nevidet. Vas oblibeny zak, ktery si nezaslouzi poznamku, Evzen_
 
@@ -75,13 +76,17 @@ Potvrď to tlačítkem **Done**. 👏
 ## Rozjeď appku na mobilu
 
 1. **Pokračuj na svém mobilu**. E-mail se totiž učiteli po stisknutí tlačítka odešle prostřednictvím appky **Blynk**. 📱 Pokud Blynk ještě neznáš z jiných projektů, [zjisti, jak ho rozjet](https://www.bigclown.com/cs/academy/jak-pripojit-blynk/).
-2. Z nabídky zvol **E-mail**. ✉️ Tlačítko se ti umístí na plochu projektu. 
+2. Z nabídky zvol **E-mail**. ✉️ Tlačítko se ti umístí na plochu projektu.
 
-![E-mail](https://res.cloudinary.com/lukasfabik/image/upload/v1573312453/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image4.jpg)
+{{< middle >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1573312453/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image4.jpg" alt = "E-mail" >}}
+{{< /middle >}}
 
-3. Když na tlačítko ťukneš, dostaneš se do nastavení. Tady už jen nastav e-mail svého učitele, na který budeš chtít omluvenky odesílat. 
+3. Když na tlačítko ťukneš, dostaneš se do nastavení. Tady už jen nastav e-mail svého učitele, na který budeš chtít omluvenky odesílat.
 
-![nastavení e-mailu](https://res.cloudinary.com/lukasfabik/image/upload/v1573312451/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image1.jpg)
+{{< middle >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1573312451/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image1.jpg" alt = "nastavení e-mailu" >}}
+{{< /middle >}}
 
 Až to budeš mít, vrať se na plochu skrz šipku vlevo nahoře a aktivuj Blynk tlačítkem Play vpravo nahoře.
 
@@ -91,11 +96,11 @@ Až to budeš mít, vrať se na plochu skrz šipku vlevo nahoře a aktivuj Blynk
 
 ![node email](https://res.cloudinary.com/lukasfabik/image/upload/v1573312453/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image9.png)
 
-2. Na node dvakrát klikni a na řádek **Email** vyplň učitelovu e-mailovou adresu. 
+2. Na node dvakrát klikni a na řádek **Email** vyplň učitelovu e-mailovou adresu.
 
 ![email](https://res.cloudinary.com/lukasfabik/image/upload/v1573312453/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image8.png)
 
-3. Potom klikni **na tužtičku** vedle řádku **Connection** a nastav ještě pár drobností. Do políčka **Auth Token** zkopíruj kód, který ti Blynk poslal na e-mail. 
+3. Potom klikni **na tužtičku** vedle řádku **Connection** a nastav ještě pár drobností. Do políčka **Auth Token** zkopíruj kód, který ti Blynk poslal na e-mail.
 
 **Do pole Url zkopíruj adresu** ze spodní části okna (checkuj obrázek) a v poli Name si funkci nějak pojmenuj, třeba _Omluvenka_.
 
@@ -107,7 +112,7 @@ Až to budeš mít, vrať se na plochu skrz šipku vlevo nahoře a aktivuj Blynk
 
 ## A… Akce!
 
-1. Chceš si to vyzkoušet? **Změň pro testovací účely e-mailovou adresu na tu svou**. 
+1. Chceš si to vyzkoušet? **Změň pro testovací účely e-mailovou adresu na tu svou**.
 2. Potvrď znovu Deploy, pak prostě zmáčkni tlačítko a… Jůů, **někdo ti píše**! 💌
 
 ![e-mail](https://res.cloudinary.com/lukasfabik/image/upload/v1573312452/projects/poslani-e-mailu-uciteli-s-omluvenkou-z-vyucovani/image10.png)

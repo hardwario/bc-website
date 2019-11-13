@@ -1,14 +1,14 @@
 ---
 title: 'Upgrade tlačítka, kterým tě rodiče zavolají k jídlu'
-draft: true
-featured: true
+draft: false
+featured: false
 handbook: Starter Kit
 date: 2019-11-09T12:09:03.400Z
 description: >-
   Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, kterým tě rodiče přivolají
   k snídani, obědu nebo večeři podle denní doby. Vyšší level pro všechny, kdo se
   nebojí!
-slug: starter-kit
+slug: vylepsene-tlacitko-pro-rodice
 meta_title: 'Upgrade tlačítka, kterým tě rodiče zavolají k jídlu'
 meta_description: >-
   Vytvoř si ze Starter Kitu od BigClown IoT tlačítko, kterým tě rodiče přivolají
@@ -26,6 +26,7 @@ places:
   - Home
 devices:
   - Starter Kit
+modules: ["core","button","mini_battery","usb_dongle"]
 ---
 ## Úvod
 
@@ -33,9 +34,9 @@ devices:
 Máš už hotovou základní verzi tlačítka, kterým tě máma zavolá k večeři? Tak to gratulki. 👍 S tímhle vylepšením projekt posuneš dál – zpráva se změní podle denní doby, a ještě na ni můžeš zareagovat.
 {{< /perex >}}
 
-V tomhle projektu se naučíš **nastavit jinou zprávu na jiný čas**, odeslat speciální notifikaci **dlouhým podržením tlačítka** a naprogramovat možnost jednoduché **reakce**. 👌 
+V tomhle projektu se naučíš **nastavit jinou zprávu na jiný čas**, odeslat speciální notifikaci **dlouhým podržením tlačítka** a naprogramovat možnost jednoduché **reakce**. 👌
 
-Základní verzi tohohle projektu najdeš tady: [Vyrob si IoT tlačítko, se kterým tě máma zavolá k večeři](https://www.bigclown.com/cs/projects/tlacitko-pro-rodice/).
+Základní verzi tohohle projektu najdeš tady: [Vyrob si IoT tlačítko, se kterým tě máma zavolá k večeři](/cs/projects/tlacitko-pro-rodice/).
 
 Budeš potřebovat **krabičku s tlačítkem** a **USB dongle**. Proto si vystačíš se základní BigClown sadou, tedy [**Starter Kitem**](https://shop.bigclown.com/starter-kit/).
 
@@ -49,17 +50,17 @@ Budeš potřebovat **krabičku s tlačítkem** a **USB dongle**. Proto si vysta�
 
 ## Nastav si notifikaci
 
-1. Nastav si flow pro notifikaci podobně jako u [základní verze tohohle projektu](https://www.bigclown.com/cs/projects/tlacitko-pro-rodice/). 
+1. Nastav si flow pro notifikaci podobně jako u [základní verze tohohle projektu](https://www.bigclown.com/cs/projects/tlacitko-pro-rodice/).
 
-Na plochu polož **MQTT node** ze sekce Input, který má v Topicu počítání kliknutí. Vedle něj hoď **notifikaci na mobil** propojenou s Blynkem. 
+Na plochu polož **MQTT node** ze sekce Input, který má v Topicu počítání kliknutí. Vedle něj hoď **notifikaci na mobil** propojenou s Blynkem.
 
-❗ **Change nod zatím vynechej**, hned se dozvíš proč. 
+❗ **Change nod zatím vynechej**, hned se dozvíš proč.
 
 Zatím to vypadá takto:
 
 ![MQTT node](https://res.cloudinary.com/lukasfabik/image/upload/v1573301764/projects/dalsi-level-projekt-tlacitko-pro-mamku/image10.png)
 
-2. Mezi oba nody tentokrát vlož jiný node, do kterého zkopíruješ javascript. Najdeš ho jako **node Function** pod stejnojmennou sekcí. 
+2. Mezi oba nody tentokrát vlož jiný node, do kterého zkopíruješ javascript. Najdeš ho jako **node Function** pod stejnojmennou sekcí.
 
 ![node Function](https://res.cloudinary.com/lukasfabik/image/upload/v1573301763/projects/dalsi-level-projekt-tlacitko-pro-mamku/image1.png)
 
@@ -104,8 +105,7 @@ Na plochu polož **další MQTT** node ze sekce Input.
 
 ![MQTT](https://res.cloudinary.com/lukasfabik/image/upload/v1573301764/projects/dalsi-level-projekt-tlacitko-pro-mamku/image7.png)
 
-2. Nastav do něj ale jiný **Topic**, díky kterému tlačítko zareaguje právě na dlouhé stisknutí. 
-
+2. Nastav do něj ale jiný **Topic**, díky kterému tlačítko zareaguje právě na dlouhé stisknutí.
 
 ```
 node/push-button:0/push-button/-/hold-count
@@ -117,7 +117,7 @@ node/push-button:0/push-button/-/hold-count
 
 ![Change node](https://res.cloudinary.com/lukasfabik/image/upload/v1573301764/projects/dalsi-level-projekt-tlacitko-pro-mamku/image5.png)
 
-4. Za tenhle node hoď ještě jeden, kterým zprávu odklikneš. Navíc ti vyskočí nejenom v mobilu, ale i na počítači. 
+4. Za tenhle node hoď ještě jeden, kterým zprávu odklikneš. Navíc ti vyskočí nejenom v mobilu, ale i na počítači.
 
 Je to **node Notification** pod sekcí Dashboard.
 
@@ -133,13 +133,17 @@ Je to **node Notification** pod sekcí Dashboard.
 
 ## Akce!
 
-1. Stejně jako předtím, vylepšenou krabičku **dej do správy mamce a taťkovi**. 
+1. Stejně jako předtím, vylepšenou krabičku **dej do správy mamce a taťkovi**.
 2. Nauč je, že **krátkým stisknutím** tě zavolají k jídlu…
 
-![vylepšená krabička](https://res.cloudinary.com/lukasfabik/image/upload/v1573301764/projects/dalsi-level-projekt-tlacitko-pro-mamku/image12.png)
+{{< middle >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1573301764/projects/dalsi-level-projekt-tlacitko-pro-mamku/image12.png" alt = "vylepšená krabička" >}}
+{{< /middle >}}
 
-3. A pokud tě chtějí zavolat kvůli čemukoli jinému, musí tlačítko **zmáčknout déle**. 👇 
+3. A pokud tě chtějí zavolat kvůli čemukoli jinému, musí tlačítko **zmáčknout déle**. 👇
 
-![zmáčknutí tlačítka](https://res.cloudinary.com/lukasfabik/image/upload/v1573301765/projects/dalsi-level-projekt-tlacitko-pro-mamku/image13.png)
+{{< middle >}}
+{{< img src = "https://res.cloudinary.com/lukasfabik/image/upload/v1573301765/projects/dalsi-level-projekt-tlacitko-pro-mamku/image13.png" alt = "zmáčknutí tlačítka" >}}
+{{< /middle >}}
 
 Aspoň tě nezklame, když na talíř nedostaneš jídlo, ale rodinnou diskuzi. No fuj, jiné menu, prosím!

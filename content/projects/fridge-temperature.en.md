@@ -12,9 +12,9 @@ meta_title: Temperature monitor for your fridge or freezer
 meta_description: >-
   This is an IoT project which focuses on enhancing your digital skills. With the BigClown Starter Kit, you can set up a device that measures how cold it is in your freezer.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1569507867/projects/fridge-monitoring/8.ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573639788/projects/fridge-monitoring/3-fridge-monitoring.jpg
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1569507867/projects/fridge-monitoring/8.ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
+  https://res.cloudinary.com/lukasfabik/image/upload/v1573639788/projects/fridge-monitoring/3-fridge-monitoring.jpg
 tags:
   - Indoor
 levels:

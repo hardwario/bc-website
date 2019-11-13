@@ -8,8 +8,8 @@ date: 2019-09-22T19:29:41.283Z
 description: Using Starter Kit by BigClown, build an IoT guard to watch over your food in the fridge. We have prepared an easy-to-follow instructions to do that.
 meta_title: Catch the greedy snack thief in the act
 meta_description: Using Starter Kit by BigClown, build an IoT guard to watch over your food in the fridge. We have prepared an easy-to-follow instructions to do that.
-image_preview: /upload/ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
-image_main: /upload/ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
+image_preview: https://res.cloudinary.com/lukasfabik/image/upload/v1573639706/projects/Catch-the-greedy-snack-thief-in-the-act/hardwario-ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
+image_main: https://res.cloudinary.com/lukasfabik/image/upload/v1573639706/projects/Catch-the-greedy-snack-thief-in-the-act/hardwario-ilustrace-zjisttim-jak-velka-zima-je-v-lednici.png
 tags:
   - Indoor
 levels:

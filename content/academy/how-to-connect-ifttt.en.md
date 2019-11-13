@@ -2,7 +2,7 @@
 title: Connect IFTTT with your project in the Playground
 draft: false
 date: 2019-10-15T16:01:55.617Z
-weight: 10
+weight: 100
 description: ' Thanks to IFTTT you can connect the Playground and various apps you use. And that’s really cool. Learn how to do it.'
 slug: connect-ifttt-and-playground
 meta_title: Connect IFTTT with your project in the Playground

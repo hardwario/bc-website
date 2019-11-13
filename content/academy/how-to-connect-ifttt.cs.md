@@ -2,7 +2,7 @@
 title: Napoj IFTTT na svůj projekt v Playgroundu
 draft: false
 date: 2019-10-13T16:42:19.844Z
-weight: 10
+weight: 100
 description: >-
   Díky IFTTT propojíš Playground a různé appky, které používáš. A to už je dost
   cool. Nauč se, jak na to.

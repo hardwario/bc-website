@@ -2,12 +2,12 @@
 title: 'IoT projekt: vytvoř si monitoring výtahu'
 draft: false
 featured: false
-handbook: Starter kit
+handbook:
 date: 2019-11-15T13:23:02.652Z
 description: >-
   Sleduj pomocí Climate modulu od BigClown, jak výtah mění výšku a v jakém je
   zrovna patře.
-slug: starter-kit
+slug: monitoring-vytahu
 meta_title: 'IoT projekt: vytvoř si monitoring výtahu'
 meta_description: >-
   Sleduj pomocí Climate modulu od BigClown, jak výtah mění výšku a v jakém je

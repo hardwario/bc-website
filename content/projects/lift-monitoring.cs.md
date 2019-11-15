@@ -1,21 +1,21 @@
 ---
 title: 'IoT projekt: vytvoř si monitoring výtahu'
-draft: true
-featured: true
+draft: false
+featured: false
 handbook: Starter kit
 date: 2019-11-15T13:23:02.652Z
 description: >-
   Sleduj pomocí Climate modulu od BigClown, jak výtah mění výšku a v jakém je
-  zrovna patře. 
+  zrovna patře.
 slug: starter-kit
 meta_title: 'IoT projekt: vytvoř si monitoring výtahu'
 meta_description: >-
   Sleduj pomocí Climate modulu od BigClown, jak výtah mění výšku a v jakém je
-  zrovna patře. 
+  zrovna patře.
 image_preview: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573824587/projects/monitoring-vytahu/image16.png
+    https://res.cloudinary.com/lukasfabik/image/upload/v1573640047/projects/project_placeholder.jpg
 image_main: >-
-  https://res.cloudinary.com/lukasfabik/image/upload/v1573824587/projects/monitoring-vytahu/image16.png
+    https://res.cloudinary.com/lukasfabik/image/upload/v1573640047/projects/project_placeholder.jpg
 tags:
   - Indoor
 levels:
@@ -24,6 +24,7 @@ places:
   - Home
 devices:
   - Starter Kit
+modules: ["core","climate","mini_battery","usb_dongle"]
 ---
 ## Úvod
 
@@ -39,9 +40,9 @@ Pokud máš Starter Kit, budeš k němu potřebovat ještě [Climate Module](htt
 
 ## Připrav si krabičku
 
-1. [Sestav svůj Kit podobně jako Starter Kit](https://www.bigclown.com/cs/handbook/), ale místo Button Modulu použij Climate Module. 
+1. [Sestav svůj Kit podobně jako Starter Kit](https://www.bigclown.com/cs/handbook/), ale místo Button Modulu použij Climate Module.
 
-Na Core Module potřebuješ firmware **monitor-vytahu**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady](https://www.bigclown.com/cs/academy/jak-nahrat-firmware/). 
+Na Core Module potřebuješ firmware **monitor-vytahu**. Pokud nevíš, jak si firmware stáhnout nebo co to je, [zjistíš to tady](https://www.bigclown.com/cs/academy/jak-nahrat-firmware/).
 
 2. Při správně nainstalovaném firmware uvidíš v Playgroundu na záložce Devices Alias jako **elevator-monitor**.
 
@@ -58,7 +59,7 @@ Na Core Module potřebuješ firmware **monitor-vytahu**. Pokud nevíš, jak si f
 
 ![Topic](https://res.cloudinary.com/lukasfabik/image/upload/v1573824582/projects/monitoring-vytahu/image10.png)
 
-Potvrď tlačítkem **Done**. 
+Potvrď tlačítkem **Done**.
 
 4. Za tenhle node umísti **node Text** ze sekce Dashboard. S ním si ukazatel pojmenuješ.
 
@@ -68,36 +69,36 @@ Potvrď tlačítkem **Done**.
 
 ![Label jako Current Altitude](https://res.cloudinary.com/lukasfabik/image/upload/v1573824580/projects/monitoring-vytahu/image4.png)
 
-Potvrď tlačítkem **Done**. 
+Potvrď tlačítkem **Done**.
 
-6. Oba nody pak spoj a zmáčkni tlačítko **Deploy**. 
+6. Oba nody pak spoj a zmáčkni tlačítko **Deploy**.
 
 ![Deploy](https://res.cloudinary.com/lukasfabik/image/upload/v1573824587/projects/monitoring-vytahu/image16.png)
 
-7. Tím se z tvé krabičky stal barometr – zařízení, které měří atmosférický tlak (tlak vzduchu). 🌤️ **Naměřený tlak vidíš v záložce Dashboard** – krabička začne měřit vždycky po krátkém zatřesení. 
+7. Tím se z tvé krabičky stal barometr – zařízení, které měří atmosférický tlak (tlak vzduchu). 🌤️ **Naměřený tlak vidíš v záložce Dashboard** – krabička začne měřit vždycky po krátkém zatřesení.
 
 ## Změř tlak ve výtahu
 
-1. V tomhle kroku potřebuješ změřit, **jaký tlak je v jakém patře výtahu u vás doma nebo ve škole**. 🕵️ 
+1. V tomhle kroku potřebuješ změřit, **jaký tlak je v jakém patře výtahu u vás doma nebo ve škole**. 🕵️
 
-Tlak se mění podle výšky každého patra. U země je nižší než o kousek výš. Tlak se taky mění v závislosti na místě nebo na počasí, každý den tedy může být hodnota trochu jiná i ve stejné výtahové šachtě. 
+Tlak se mění podle výšky každého patra. U země je nižší než o kousek výš. Tlak se taky mění v závislosti na místě nebo na počasí, každý den tedy může být hodnota trochu jiná i ve stejné výtahové šachtě.
 
 Jak to změříš? **Běž do výtahu**. Vezmi s sebou notebook, papír s tužkou a krabičku.
 
-2. Jeď do prvního patra. Zatřes krabičkou a v Playgroundu na záložce Dashboard **sleduj, jaký tlak zaznamenala**. 
+2. Jeď do prvního patra. Zatřes krabičkou a v Playgroundu na záložce Dashboard **sleduj, jaký tlak zaznamenala**.
 3. Naměřené číslo zapiš na papír společně s číslem patra. ✍️
 4. Vyjeď do druhého patra a **postup zopakuj**. Tlak zapiš postupně na všech patrech, která v budově jsou. 🏡
-5. Z čísel pak **vytvoř graf**: postav je na přímku jedno za druhým a čárami vyznač polovinu mezi každým číslem. Tím zhruba získáš číselné rozmezí pro každé patro. Pokud jsi tedy ve druhém patře naměřil hodnotu 230, platí pro něj rozmezí 229 až 231, protože patra jsou vysoká a jeden bod pro ně nestačí. Nemusí to být přesné – pokud později narazíš na chybu, můžeš to kdykoli změnit. 
+5. Z čísel pak **vytvoř graf**: postav je na přímku jedno za druhým a čárami vyznač polovinu mezi každým číslem. Tím zhruba získáš číselné rozmezí pro každé patro. Pokud jsi tedy ve druhém patře naměřil hodnotu 230, platí pro něj rozmezí 229 až 231, protože patra jsou vysoká a jeden bod pro ně nestačí. Nemusí to být přesné – pokud později narazíš na chybu, můžeš to kdykoli změnit.
 
 ![vytvoření grafu](https://res.cloudinary.com/lukasfabik/image/upload/v1573824581/projects/monitoring-vytahu/image11.png)
 
-6. **Vrať se k počítači** a pokračuj v programování. 
+6. **Vrať se k počítači** a pokračuj v programování.
 
 ## Nastav hlásič pater
 
-1. Běž znovu do Node-RED a pokračuj v upravování projektu. Postavíš ještě jedno flow, které bude fungovat jako hlásič patra. 
+1. Běž znovu do Node-RED a pokračuj v upravování projektu. Postavíš ještě jedno flow, které bude fungovat jako hlásič patra.
 
-Začni tím, že pod první flow umístíš **stejný MQTT node** jako předtím. Můžeš ho jednoduše zkopírovat pomocí CRTL+C a CTRL+V. 
+Začni tím, že pod první flow umístíš **stejný MQTT node** jako předtím. Můžeš ho jednoduše zkopírovat pomocí CRTL+C a CTRL+V.
 
 ![MQTT Node](https://res.cloudinary.com/lukasfabik/image/upload/v1573824585/projects/monitoring-vytahu/image15.png)
 
@@ -105,7 +106,7 @@ Začni tím, že pod první flow umístíš **stejný MQTT node** jako předtím
 
 ![Switch](https://res.cloudinary.com/lukasfabik/image/upload/v1573824583/projects/monitoring-vytahu/image12.png)
 
-3. Teď to bude trošku tricky. Uvnitř nodu nastav postupně **tolik různých pravidel, kolik má budova pater + jedno navíc** (viz obrázek). Pokud nevíš, jak přidat další pravidlo, dělá se to pomocí malého tlačítka **Add** pod oknem. 
+3. Teď to bude trošku tricky. Uvnitř nodu nastav postupně **tolik různých pravidel, kolik má budova pater + jedno navíc** (viz obrázek). Pokud nevíš, jak přidat další pravidlo, dělá se to pomocí malého tlačítka **Add** pod oknem.
 
 Každé z pravidel určuje atmosférický tlak jednoho patra. Pro všechna patra nastav podmínku is between a přidej rozmezí dvou čísel, které jsi vytvořil při cestování výtahem.
 
@@ -117,9 +118,9 @@ Každé z pravidel určuje atmosférický tlak jednoho patra. Pro všechna patra
 
 ![nastavení pravidel](https://res.cloudinary.com/lukasfabik/image/upload/v1573824583/projects/monitoring-vytahu/image7.png)
 
-Všechno potvrď tlačítkem **Done**. 
+Všechno potvrď tlačítkem **Done**.
 
-4. Na každé jedno pravidlo navaž zprávu, která bude oznamovat, ve kterém patře krabička je. Uděláš to pomocí **stejného počtu Change nodů, kolik jsi nastavil pravidel**. Change node najdeš v sekci Function. 
+4. Na každé jedno pravidlo navaž zprávu, která bude oznamovat, ve kterém patře krabička je. Uděláš to pomocí **stejného počtu Change nodů, kolik jsi nastavil pravidel**. Change node najdeš v sekci Function.
 
 ![Change node](https://res.cloudinary.com/lukasfabik/image/upload/v1573824584/projects/monitoring-vytahu/image14.png)
 
@@ -127,7 +128,7 @@ Všechno potvrď tlačítkem **Done**.
 
 ![First Floor](https://res.cloudinary.com/lukasfabik/image/upload/v1573824583/projects/monitoring-vytahu/image8.png)
 
-6. Na závěr přidej další **Text node** se zprávou _Actual Floor_. 
+6. Na závěr přidej další **Text node** se zprávou _Actual Floor_.
 
 ![Text node](https://res.cloudinary.com/lukasfabik/image/upload/v1573824581/projects/monitoring-vytahu/image5.png)
 

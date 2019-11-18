@@ -2,7 +2,7 @@
 title: 'IoT projekt: vytvoř si monitoring výtahu'
 draft: false
 featured: false
-handbook:
+handbook: starter-kit
 date: 2019-11-15T13:23:02.652Z
 description: >-
   Sleduj pomocí Climate modulu od BigClown, jak výtah mění výšku a v jakém je
@@ -13,9 +13,9 @@ meta_description: >-
   Sleduj pomocí Climate modulu od BigClown, jak výtah mění výšku a v jakém je
   zrovna patře.
 image_preview: >-
-    https://res.cloudinary.com/lukasfabik/image/upload/v1573640047/projects/project_placeholder.jpg
+  https://res.cloudinary.com/lukasfabik/image/upload/v1574106355/projects/monitoring-vytahu/1149944623084661.TPLqIamQYHtJT9mBrQDs_height640_2.png
 image_main: >-
-    https://res.cloudinary.com/lukasfabik/image/upload/v1573640047/projects/project_placeholder.jpg
+  https://res.cloudinary.com/lukasfabik/image/upload/v1574106355/projects/monitoring-vytahu/1149944623084661.TPLqIamQYHtJT9mBrQDs_height640_2.png
 tags:
   - Indoor
 levels:
@@ -24,7 +24,6 @@ places:
   - Home
 devices:
   - Starter Kit
-modules: ["core","climate","mini_battery","usb_dongle"]
 ---
 ## Úvod
 

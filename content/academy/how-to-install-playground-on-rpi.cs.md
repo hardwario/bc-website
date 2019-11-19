@@ -7,7 +7,7 @@ description: >-
   Aby tvé projekty běžely, i když budeš mít vypnutý notebook, potřebuješ pomoc
   Raspberry Pi. Tenhle článek ti poradí, jak do něj BigClown Playground
   nainstaluješ.
-slug: starter-kit
+slug: instalace-playgroundu-na-rpi
 meta_title: Jak nainstalovat BigClown Playground na Raspberry Pi
 meta_description: >-
   Aby tvé projekty běžely, i když budeš mít vypnutý notebook, potřebuješ pomoc

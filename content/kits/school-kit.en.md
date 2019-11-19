@@ -17,7 +17,7 @@ included:
 notIncluded:
 weight: 530
 price: 990€
-buyLink: https://shop.bigclown.com/school-multi-kit/
+buyLink: https://shop.bigclown.com/edu-innovation-multi-kit/
 modules: ["core","mini_battery","button","enclosures-button"]
 optionalModules: ["usb_dongle","sigfox","lora"]
 eduText: Inspire the entire classroom, set contains favourite modules

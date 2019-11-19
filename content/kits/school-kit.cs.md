@@ -17,7 +17,7 @@ included:
 notIncluded:
 weight: 530
 price: 24 990 Kč
-buyLink: "https://obchod.bigclown.cz/school-multi-kit/"
+buyLink: https://obchod.bigclown.cz/edu-innovation-multi-kit/
 modules: ["core","mini_battery","button","enclosures-button"]
 optionalModules: ["usb_dongle","sigfox","lora"]
 eduText: Inspirujte celou třídu, sada obsahuje oblíbené moduly

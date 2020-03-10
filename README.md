@@ -1,10 +1,10 @@
-<a href="https://www.bigclown.com/"><img src="https://bigclown.sirv.com/logo.png" width="200" alt="BigClown Logo" align="right"></a>
+<a href="https://www.hardwario.com/"><img src="https://www.hardwario.com/ci/assets/hw-logo.svg" width="200" alt="HARDWARIO Logo" align="right"></a>
 
-# BigClown Website
+# HARDWARIO Website
 
-This repository covers sources for the BigClown **website**, **documentation** and **blog**
+This repository covers sources for the HARDWARIO **website**, **documentation** and **blog**
 
-**The site is hosted at this URL: https://www.bigclown.com/**
+**The site is hosted at this URL: https://www.hardwario.com/**
 
 ## Deployment
 
@@ -21,9 +21,9 @@ The website uses the following core technologies:
 
 ## Contributing
 
-Your contribution is welcome and appreciated. For more information, please see the [**Contribution Setup**](https://www.bigclown.com/doc/documentation/contribution-setup/) document.
+Your contribution is welcome and appreciated. For more information, please see the [**Contribution Setup**](https://www.hardwario.com/doc/documentation/contribution-setup/) document.
 
-To see the rules and available text formatting for writing and/or editing the documentation, please see the document [**Content Contribution**](https://www.bigclown.com/doc/documentation/content-contribution/).
+To see the rules and available text formatting for writing and/or editing the documentation, please see the document [**Content Contribution**](https://www.hardwario.com/doc/documentation/content-contribution/).
 
 ## License
 
